@@ -1,5 +1,4 @@
 # Phase 3: Self-Directed Research
-**Duration:** Open-ended | **Time commitment:** 1 hour/day minimum
 **Prerequisite:** Phase 2 complete, research question selected and 
 preliminarily validated with data
 

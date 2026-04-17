@@ -236,6 +236,6 @@ Start with Question 1.
 
 **Minimum viable portfolio:** Answer 10-12 questions publicly with clean code on GitHub and practitioner-readable write-ups.
 
-**Target:** Answer all 25 over 18 months.
+**Target:** Answer all 25.
 
 **Start here:** Question 1. It is the most accessible entry point into the StatsBomb event data schema and directly connects to the tactical vocabulary being built in Phase 1 of the study plan.

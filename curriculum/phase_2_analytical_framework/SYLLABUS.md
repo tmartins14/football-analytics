@@ -1,5 +1,4 @@
 # Phase 2: Analytical Frameworks
-**Duration:** 6 weeks | **Time commitment:** 1 hour/day (~7 hours/week)
 **Prerequisite:** Phase 1 complete, at least one candidate problem identified
 
 **Goal:** Understand the existing analytical landscape well enough to 
@@ -24,8 +23,6 @@ The critical lens for every piece of reading in Part A:
 
 ## Part A — Theory (Weeks 1–3)
 
-### Week 1: Expected Goals (xG)
-
 **Core question:** xG measures shot quality based on historical conversion 
 rates. When is that useful and when does it mislead you?
 
@@ -46,7 +43,7 @@ scenario.
 
 ---
 
-### Week 2: Possession Value & Pressure Metrics
+### Possession Value & Pressure Metrics
 
 **Core question:** How do analysts measure the value of actions that don't 
 directly create shots?
@@ -71,7 +68,7 @@ completely different styles?
 
 ---
 
-### Week 3: Defensive Metrics & Shape
+### Defensive Metrics & Shape
 
 **Core question:** Why is defensive contribution the hardest thing to 
 measure in football analytics?
@@ -97,7 +94,7 @@ trust most and why? Which would you distrust?
 
 ## Part B — Practice (Weeks 4–6)
 
-### Week 4: Data Sources & Environment Setup
+### Data Sources & Environment Setup
 
 #### Data Sources to Know
 | Source | Access | What It Contains |
@@ -121,9 +118,10 @@ Pull defensive stats for all Premier League teams this season from FBref.
 - Output: clean pandas DataFrame
 - Deliverable: `01-data-sources-exploration.ipynb`
 
+- Advanced data is no longer available on FBREF. Historical data can be found on Edd Webster's football-analytics repo
 ---
 
-### Week 5: Working With Event Data
+### Working With Event Data
 
 #### Exercise 2: StatsBomb Open Data — xG Analysis
 Using StatsBomb's free dataset:
@@ -142,9 +140,9 @@ Using StatsBomb pressure events:
 
 ---
 
-### Week 6: Connecting Data to Your Candidate Problem
+### Connecting Data to Your Open Question
 
-This week is not prescriptive. Take your strongest candidate problem from 
+This week is not prescriptive. Take your strongest open question from 
 Phase 1 and do a preliminary data investigation.
 
 **Questions to answer:**

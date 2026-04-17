@@ -34,7 +34,76 @@ is built from scratch.
 
 ---
 
-## Course Structure
+## Repository Structure
+
+```
+football-analyst-university/
+│
+├── .gitignore
+├── OPEN_QUESTIONS.md                    # Living log of analytical problems worth investigating
+├── README.md
+│
+├── curriculum/
+│   ├── phase_1_tactical_vocabulary/
+│   │   ├── SYLLABUS.md
+│   │   ├── notes.md
+│   │   └── work/
+│   │       ├── week_1_reactions.md
+│   │       ├── week_2_reactions.md
+│   │       ├── week_3_reactions.md
+│   │       └── week_4_reactions.md
+│   │
+│   ├── phase_2_analytical_framework/
+│   │   ├── SYLLABUS.md
+│   │   ├── part_a_theory/
+│   │   │   └── work/
+│   │   │       ├── metric_evaluations.md
+│   │   │       └── reading_reactions.md
+│   │   └── part_b_practice/
+│   │       └── notebooks/
+│   │           ├── 01_data_sources_exploration.ipynb
+│   │           ├── 02_xg_analysis.ipynb
+│   │           ├── 03_pressing_metrics.ipynb
+│   │           └── 04_defensive_shape_analysis.ipynb
+│   │
+│   └── phase_3_research/
+│       ├── SYLLABUS.md
+│       └── work/
+│           ├── methodology.md
+│           └── research_questions.md
+│
+├── data/
+│   └── README.md                        # Data sources, access instructions, gitignore policy
+│
+└── question_bank/
+    ├── question_bank.md                 # Full question index with tiers and sequencing guidance
+    └── questions/
+        ├── q01_pressing_effectiveness.ipynb
+        ├── q02_passing_network_structure.ipynb
+        ├── q03_xg_vs_conversion_rate.ipynb
+        ├── q04_pressing_intensity_game_state.ipynb
+        ├── q05_press_resistance.ipynb
+        ├── q06_progressive_carrying.ipynb
+        ├── q07_undervalued_players_obv.ipynb
+        ├── q08_pass_completion_under_pressure.ipynb
+        ├── q09_progressive_pass_volume.ipynb
+        ├── q10_team_transition_player_metrics.ipynb
+        ├── q11_consistent_xg_overperformers.ipynb
+        ├── q12_defensive_contribution_possession_shift.ipynb
+        ├── q13_set_piece_analysis.ipynb
+        ├── q14_xg_from_transitions.ipynb
+        ├── q15_crossing_analysis.ipynb
+        ├── q16_defensive_systems_central_shots.ipynb
+        ├── q17_late_game_defensive_shape.ipynb
+        ├── q18_pressing_causation.ipynb
+        ├── q19_individual_vs_system.ipynb
+        ├── q20_substitution_timing.ipynb
+        ├── q21_causally_adjusted_valuation.ipynb
+        ├── q22_game_theoretic_decisions.ipynb
+        ├── q23_pressing_system_quality_metric.ipynb
+        ├── q24_substitution_xg_trajectory.ipynb
+        └── q25_league_xg_structural_differences.ipynb
+```
 
 ### Phase 1: The Vocabulary Foundation
 *4 weeks — Tactical vocabulary and match analysis*

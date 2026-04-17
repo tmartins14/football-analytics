@@ -1,5 +1,4 @@
 # Phase 1: The Vocabulary Foundation
-**Duration:** 4 weeks | **Time commitment:** 1 hour/day (~7 hours/week)
 **Goal:** Build tactical vocabulary sufficient to identify a defensible 
 analytical problem worth investigating
 
@@ -17,7 +16,7 @@ Every session has one job: react, don't summarize.
 
 ---
 
-## Weeks 1–2: Defensive Structure & Pressing
+## Defensive Structure & Pressing
 
 ### Viewing Material
 | Content | Link | Purpose |
@@ -35,7 +34,7 @@ Every session has one job: react, don't summarize.
 | Spielverlagerung: Atletico Madrid | [Link](https://spielverlagerung.com/2016/01/09/atletico-madrid-the-secret-behind-europes-most-solid-defence/) | Low block as deliberate philosophy |
 | Spielverlagerung: Bayern Pressing | [Link](https://spielverlagerung.com/2013/07/08/english-bayern-munichs-pressing-201213/) | High press case study |
 
-### Match Watch: Week 1
+### Match Watch
 **Match:** Everton vs Liverpool — Merseyside Derby
 **Date:** Sunday April 19, 2026
 **Watching brief:** First 20 minutes. Track Liverpool's press:
@@ -52,7 +51,7 @@ happens when both teams want to press and both want to build from the back?
 
 ---
 
-## Weeks 3–4: Attacking Structure & Build-Up Play
+## Attacking Structure & Build-Up Play
 
 ### Viewing Material
 Search Tifo Football for:
@@ -67,13 +66,13 @@ Focus on: how teams escape a press, how build-up connects to attacking shape.
 - Read every piece asking: **what football problem is this metric actually 
 solving?**
 
-### Match Watch: Week 3
+### Match Watch
 **Match:** A direct or counter-attacking team — Brentford away or a newly 
 promoted side
 **Purpose:** What does build-up look like when a team doesn't want 
 possession?
 
-### Match Watch: Week 4
+### Match Watch
 **Match:** Your choice
 **Purpose:** By Week 4 you should have enough vocabulary to watch attacking 
 shape with specific questions in mind
@@ -112,6 +111,3 @@ By the end of this phase you should be able to:
 - Articulate at least one candidate analytical problem in one defensible 
 sentence
 - Explain why that problem would matter to a club analyst
-
-You are not trying to become a tactician. You are trying to find your 
-problem.
