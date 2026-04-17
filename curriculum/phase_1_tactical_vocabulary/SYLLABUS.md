@@ -44,7 +44,7 @@ Every session has one job: react, don't summarize.
 
 Write down three specific moments. Not general impressions — moments.
 
-### Match Watch: Week 2
+### Match Watch
 **Match:** Recent Arsenal vs Manchester City (2025-26 season)
 **Purpose:** Two high-press possession systems against each other. What 
 happens when both teams want to press and both want to build from the back?
