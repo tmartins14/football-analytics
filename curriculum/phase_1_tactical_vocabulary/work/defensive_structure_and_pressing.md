@@ -1,4 +1,4 @@
-# Phase 1 Notes and Reactions
+# DEFENSIVE STRUCTURE AND PRESSING
 
 ## Topics to Cover
 - Tifo Football
@@ -37,6 +37,18 @@ https://www.youtube.com/watch?v=0-yqkJjglLM
 **Tactics Explained | Rafa Benitez's Newcastle**
 https://www.youtube.com/watch?v=W4Z984ROU-s&list=PLWYJXDKS21OE39KTymISkCrgCckZh2_sD&index=131
 - No reaction
+
+**Atletico Madrid: The secret behind Europe’s most solid defence**
+- Atletic play a very defensive style of play. For weak teams, they tend to play a 4-4-2. For stronger teams, they play a 4-1-4-1.
+- They play a man-oriented defensive scheme that relies on defensive discipline
+- We can examine Atleti's defensive scheme in each third:
+    - In the final third, they tend to leveage cover shadowing to cut passing lanes while funelling play into predicatbale areas that they can swarm (i.e the pressing trap).
+    - The zig-zag midfield four allows them to maintain both a man-oriented defense and cover hortizontally and veritcally and gives them a layered pressing shape.
+    - in the mid third, they still maintain their man-oriented defense but with a larger emphasis on structure by forcing players into less dangerous spaces.
+    - the same can be said for the first third
+- Where I think this tactic is vulnerable:
+    - Compressing the one side of the field and using the touch line as an extra defender opens up a vulnerability on the far side of the field for a quick switch of play. If a ball switched through quick passing combinations, that leaves Alteti open to an attack down the weak side
+    - Position overload in the central areas: I believe this is a weakness of the 4-4-2. Having two CMs leaves the center of the field vulnerable to a 3-man overload if the 3 CMs can play through the lines, have exception quality and speed of thought. I imagine these team are quite strong and this may be where Simeone employs the 4-1-4-1 to provide additional support to the center of the field.
 
 ## Generals Notes
 - Are some types of tactics more or less effective than other types of tactics?
