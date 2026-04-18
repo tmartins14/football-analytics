@@ -54,8 +54,11 @@ happens when both teams want to press and both want to build from the back?
 ## Attacking Structure & Build-Up Play
 
 ### Viewing Material
+| Content | Link | Purpose |
+|---|---|---|
+| Tifo: What is Positional Play | [Link](https://www.youtube.com/watch?v=dhmCwI5vAlE) | Positional Play Definition and Tactical Breakdown |
+
 Search Tifo Football for:
-- "Positional play"
 - "Build-up play"
 - "Possession"
 
