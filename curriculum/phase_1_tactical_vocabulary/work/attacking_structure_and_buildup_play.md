@@ -8,6 +8,7 @@
 ### Core Concepts
 
 **Zone occupation over ball-chasing**
+
 Positional play — Juego de Posición in its Cruyff/Guardiola form — is built
 around players occupying predefined zones rather than clustering around the
 ball. The pitch is divided into five vertical lanes (two wide, two
@@ -16,11 +17,13 @@ distributed across as many zones simultaneously as possible, stretching the
 opponent both horizontally and vertically.
 
 **The zone overload rule**
+
 A structural constraint limits the number of players permitted in any single
 zone — typically two or three maximum. This forces width and depth and
 prevents the natural human tendency to cluster around the ball.
 
 **Rotation and compliance**
+
 The system is not static. Players rotate fluidly through zones, but the
 structure never breaks — when one player vacates a zone, another fills it.
 A player's movement is triggered not by a coach instruction in the moment
@@ -28,6 +31,7 @@ but by the movements of teammates making their position non-compliant with
 the structure. The discipline is collective and automatic.
 
 **Four types of superiority**
+
 Positional play aims to create:
 - Numerical superiority — more players than opponents in a zone
 - Positional superiority — better positioned to receive and progress
@@ -65,6 +69,7 @@ brilliance rather than collective structure.
 ### Tactical Vulnerability
 
 **Gegenpressing as the antidote**
+
 The gegenpressing moment — 3 to 6 seconds immediately after a turnover —
 is precisely when the shared mental model is most likely to break down. A
 team in positional structure has players spread across zones. When
@@ -74,6 +79,7 @@ players are new, fatigued, or a key connector is absent — the team is
 exposed in exactly the moments the press is designed to exploit.
 
 **Personnel dependency**
+
 Tactic vs personnel is not fully separable. Personnel quality determines
 whether a team can reach the ceiling the tactic provides. Peak City with
 KDB, Silva, and Fernandinho running positional play was nearly unbeatable.
