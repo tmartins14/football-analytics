@@ -63,3 +63,28 @@ https://www.youtube.com/watch?v=W4Z984ROU-s&list=PLWYJXDKS21OE39KTymISkCrgCckZh2
 - **How do you evaluate whether a team's defensive approach is the right one given their constraints and how do you meausre if it's working?**
     - I.e is the low-block underrated as a *deliberate* strategic choice for resource-constrained clubs and do the available metrics even let us evaluate it properly?
 - **Do tactical matchup information represent a pricing inefficiency in football markets?**
+
+## Everton 1-2 Liverpool — Match Analysis Summary
+
+- **Liverpool's structural contradiction:** Liverpool played a high defensive line without the pressing intensity to protect it — a high-risk combination that left space in behind and resulted in Everton generating consistent chances throughout the match.
+
+- **Pressing breakdown is systemic, not situational:** Liverpool's reduced pressing intensity (down 20% from last season, worst in the PL) is a season-long issue driven by integrating too many new signings simultaneously. Wirtz and Isak in particular showed poor pressing coordination in their first derby.
+
+- **The Salah goal — reactive or triggered?** The one successful press leading to Salah's goal likely came on a coached back-pass trigger, but occurred immediately after Everton's disallowed goal. Whether it was the system finally firing or an emotional response remains an open question worth testing in future matches.
+- **The more interesting question isn't pressing intensity — it's line adjustment:** A team aware of its pressing limitations should drop its defensive line to match actual capacity. Liverpool haven't done that, suggesting either tactical stubbornness from Slot or an acceptance that VVD and Konaté's quality can absorb the exposure.
+
+- **Half-space vulnerability:** Dropping the line would demand a disciplined defensive midfielder to control the space between the lines. Gravenberch's box-to-box profile may be insufficient for that role — a more positionally disciplined 6 would be needed to make a lower block structurally sound.
+
+
+
+## Manchester City 2-1 Arsenal — Tactical Summary
+
+- **Arsenal's high press was a double-edged sword:** Arsenal came out pressing aggressively, initially disrupting City's rhythm. But pressing without proper spacing left space in behind — exactly the space City exploited as the half progressed. The one reward was Havertz's deflected goal from a forced Donnarumma error.
+
+- **City's defensive structure was a pre-planned trap, not high intensity pressing:** Rather than chase Arsenal, City used a compact 4-2-4 passive block designed to eliminate vertical passes centrally, keep Rice and Zubimendi out of the game, and funnel Arsenal wide where their press could activate on cue. Low intensity on the surface, highly organized underneath.
+
+- **City used the same blueprint from the EFL Cup Final:** This was the third meeting between these sides this season and City deployed a near-identical pressing structure each time. Arsenal had no convincing answer to it across three matches — a significant tactical problem for Arteta heading into the title run-in.
+
+- **Arsenal's injury list undermined their press-resistance:** Saka, Ødegaard, and Timber — players who provide technical quality to play through a press — were all absent. Without them, Arsenal couldn't reliably break City's first line, exposing a fragility that goes beyond personnel.
+
+- **The title race implication:** City's win tightened the standings significantly. More importantly, they've now demonstrated a repeatable tactical formula against the league leaders — and Arsenal haven't solved it.
