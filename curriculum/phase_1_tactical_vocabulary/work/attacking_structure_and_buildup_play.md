@@ -181,3 +181,63 @@ game state swamps location value in a way it doesn't in basketball. The
 analogy points in the right direction but the mechanism is more complex.
 
 ---
+
+# Counter-Attacking & Direct Play — Discussion Summary
+**Phase 1 | Attacking Structure & Build-Up Play**
+
+---
+
+## Key Points
+
+**1. Counter-attacking is a transition strategy, not a possession strategy**
+
+The core logic is to invite the opponent to overcommit, win the ball, and
+exploit the disorganized defensive shape as quickly as possible. This is
+distinct from the long ball — which is a possession strategy that bypasses
+midfield by design. Both accept possession loss in exchange for territory,
+but counter-attacking is specifically about exploiting the transition
+moment rather than playing direct from settled possession.
+
+
+**2. Personnel requirements are specific**
+
+Counter-attacking teams need pace in behind, physicality to win second
+balls, defensive discipline to hold shape for long periods, and a passer
+who can switch play quickly from deep. Technical quality still matters —
+pure pace without the ability to receive under pressure, finish, or hold
+up play in transition is wasted. The exception is a player whose
+footballing intelligence compensates for physical limitations, which is
+rare. Ball-playing center backs are generally a poor fit. Aerial dominance
+and transition-starting ability matter more.
+
+
+**3. Counter-attacking teams play a low-variance game by design**
+
+By limiting high-quality chances for both teams, counter-attacking sides
+reduce scoring probability across the match. The risk isn't losing — it's
+drawing. A team that creates little and concedes little accumulates draws,
+which compounds badly over a 38-game league season. Patience is required:
+no team can force mistakes from a well-organized possession side without
+the possession side eventually converting the pressure into goals.
+
+
+**4. Set pieces and counter-attacking are structurally linked, not tactically**
+
+The relationship isn't that teams engineer fouls during counter-attacks —
+slowing a counter to win a free kick sacrifices the primary advantage of
+speed. The link is structural: direct play into the box generates physical
+contact and foul situations as a byproduct. Defending a low block for long
+periods means winning the ball in positions that naturally trigger
+transitions. Set pieces and counter-attacks operate as two parallel
+offensive systems that complement each other rather than one feeding the
+other.
+
+
+**5. The set piece edge has been arbitraged**
+
+Brentford and FC Midtjylland industrialised set piece analysis and the
+model is now widely understood and copied across football. The analytical
+edge that existed five to ten years ago has narrowed significantly. If
+set pieces have been arbitraged and counter-attacking is well understood,
+the open question is where the next inefficiency for lower-resource clubs
+is hiding.
