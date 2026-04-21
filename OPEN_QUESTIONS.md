@@ -14,8 +14,8 @@ to choose from.
 | 1 | Are low-block strategies undervalued and under-measured by current metrics? | Practitioners debate this — Slot publicly complained about it in 2025-26 | Phase 1, Week 1 | Active |
 | 2 | Does wage bill predict defensive shape across the big five leagues, and who are the meaningful outliers? | Tests resource constraint hypothesis with real data | Phase 1, Week 1 | Active |
 | 3 | Does tactical matchup information represent a pricing inefficiency in football markets? | Different career path — betting vs club analytics | Phase 1, Week 1 | Active |
-| 4 | Can manager-squad compatibility be measured analytically before an appointment? | Do sporting directors make this decision on intuition? — a compatibility score built from system requirements and squad personnel profiles could have real decision-making value | Phase 1, Week 2 | Active |
----
+| 4 | Can manager-squad compatibility be measured analytically before an appointment? | Sporting directors make this decision on intuition — a compatibility score built from system requirements and squad personnel profiles could have real decision-making value | Phase 1, Week 2 | Active |
+| 5 | Do current possession value models underweight game state — is there a measurable difference in which zones of the pitch matter most depending on scoreline and match minute? | xT and OBV treat game states roughly equally — a dynamic model accounting for score and time could reveal systematic mispricing of territorial value | Phase 1, Week 2 | Active |
 
 ## Retired Questions
 

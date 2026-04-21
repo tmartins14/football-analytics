@@ -1,7 +1,7 @@
 # ATTACKING STRUCTURE AND BUILDUP PLAY
 
 ## Positional Play — Discussion Summary
-**Phase 1 | Week 2 | Attacking Structure & Build-Up Play**
+**Phase 1 | Attacking Structure & Build-Up Play**
 
 ---
 
@@ -122,3 +122,62 @@ largely on intuition and reputation. This may be a tractable analytical
 problem with real decision-making value.
 
 → Added to Open Questions log
+
+## Build-Up Play & Invasion Metrics — Discussion Summary
+**Phase 1 | Attacking Structure & Build-Up Play**
+
+---
+
+### Key Points
+
+**1. Build-up from the back is high risk, high reward**
+
+Playing out from the back is aesthetically compelling but structurally
+vulnerable. A successful press escape against a committed high press
+creates direct goal scoring opportunities because the defensive shape is
+temporarily broken. The risk and the reward are the same coin — the
+question is whether your technical quality is sufficient to flip it
+consistently.
+
+
+**2. The weak link is the pressing trap**
+
+A pressing trap is designed to force the ball toward the least technically
+capable player in the build-up structure. Goalkeepers are the most common
+target, which is why distribution quality under pressure has become a
+genuine recruitment criterion at top clubs. Brighton under De Zerbi are
+the clearest recent example of a low-wage squad executing sophisticated
+build-up because De Zerbi demanded technical quality across all eleven
+positions including the goalkeeper.
+
+
+**3. Football as an invasion sport — territory has non-linear value**
+
+Viewing football through the lens of territory occupation rather than
+possession percentage or xG alone captures something meaningful. The
+closer a team is to goal, the danger level increases non-linearly. This
+is the conceptual foundation of expected threat (xT) and possession value
+models — value assigned to pitch locations based on how likely possession
+there leads to a goal.
+
+
+**4. Territorial dominance and conversion are not the same thing**
+
+A team can dominate high-value territory and still generate few goals if
+final action quality is poor. Brighton under De Zerbi demonstrated this —
+high xT through progressive build-up, persistent weakness in converting
+that territorial advantage into goals. The question is not just where
+teams spend time but whether the actions taken in high-value territory
+convert territorial advantage into actual threat.
+
+
+**5. The Moreyball analogy holds directionally but is messier**
+
+Morey's insight worked cleanly because basketball has fixed point values
+for specific zones. Football's territorial value is contextual — the same
+invasion of the half-space has different value at 0-0 in the 30th minute
+versus 1-0 in the 85th minute. The low-scoring nature of the sport means
+game state swamps location value in a way it doesn't in basketball. The
+analogy points in the right direction but the mechanism is more complex.
+
+---
