@@ -182,12 +182,12 @@ analogy points in the right direction but the mechanism is more complex.
 
 ---
 
-# Counter-Attacking & Direct Play — Discussion Summary
+## Counter-Attacking & Direct Play — Discussion Summary
 **Phase 1 | Attacking Structure & Build-Up Play**
 
 ---
 
-## Key Points
+### Key Points
 
 **1. Counter-attacking is a transition strategy, not a possession strategy**
 
