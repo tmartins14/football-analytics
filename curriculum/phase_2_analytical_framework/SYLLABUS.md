@@ -1,5 +1,5 @@
 # Phase 2: Analytical Frameworks
-**Prerequisite:** Phase 1 complete, at least one candidate problem identified
+**Prerequisite:** Phase 1 complete, at least one open question identified
 
 **Goal:** Understand the existing analytical landscape well enough to 
 identify where your candidate problem fits, what data exists to investigate 
