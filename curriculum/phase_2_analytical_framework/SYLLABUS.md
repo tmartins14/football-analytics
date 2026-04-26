@@ -1,182 +1,95 @@
-# Phase 2: Analytical Frameworks
-**Prerequisite:** Phase 1 complete, at least one open question identified
+# Phase 2 — Part A: Theory
 
-**Goal:** Understand the existing analytical landscape well enough to 
-identify where your candidate problem fits, what data exists to investigate 
-it, and where current frameworks fall short
+**Duration:** 3 weeks | **Time commitment:** ~7 hours/week
+**Prerequisite:** Phase 1 complete, at least one candidate problem identified
 
----
-
-## What This Phase Is
-
-Phase 2 has two distinct parts. Part A builds theoretical fluency — you will 
-read the core analytics literature critically, not to summarize it but to 
-evaluate it. Part B builds practical fluency — you will get your hands on 
-real football data and learn to work with it in Python.
-
-The critical lens for every piece of reading in Part A:
-1. What problem was this framework built to solve?
-2. What does it deliberately ignore or assume away?
-3. When would using it lead you to the wrong conclusion?
+**Goal:** Build enough theoretical fluency to know what every major football metric measures, what it ignores, and where it methodologically fails. Identify which methodological gaps your econometrics background is positioned to address.
 
 ---
 
-## Part A — Theory (Weeks 1–3)
+## The Critical Lens
 
-**Core question:** xG measures shot quality based on historical conversion 
-rates. When is that useful and when does it mislead you?
+Apply to every reading without exception:
 
-#### Reading Material
-| Article | Purpose |
-|---|---|
-| StatsBomb: xG explained | Foundational mechanics |
-| Edd Webster: xG deep dive | Critical evaluation |
-| StatsBomb: Post-shot xG | How PSxG differs from xG and why |
+1. **What problem was this framework built to solve?** Not the marketing claim. The actual technical problem.
+2. **What does it deliberately ignore or assume away?** Every model makes choices. What did this one choose not to model?
+3. **When would using it lead you to the wrong conclusion?** Specific scenarios, not generic caveats.
 
-**Key distinction to understand:**
-- xG = shot quality (location, assist type, situation)
-- PSxG = shot quality after ball leaves foot (accounts for placement)
-- Conversion rate above expectation = finishing skill proxy
-
-**Reaction prompt:** When would a manager be misled by xG? Build a specific 
-scenario.
+A reading where you cannot answer all three has not been read critically.
 
 ---
 
-### Possession Value & Pressure Metrics
+## Week 1 — Action Valuation Models
 
-**Core question:** How do analysts measure the value of actions that don't 
-directly create shots?
+**Core question:** What does it mean to assign a "value" to a football action, and what are the competing answers the field has produced?
 
-#### Reading Material
-| Article | Purpose |
-|---|---|
-| StatsBomb: VAEP explained | Valuing every action |
-| StatsBomb: Pressure events | How pressure is defined and measured |
-| Friends of Tracking: Possession value | Framework overview |
-| PPDA literature | Measuring press intensity |
+### Required reading
+- Decroos et al. (2019), *Actions Speak Louder Than Goals: Valuing Player Actions in Soccer* — the VAEP paper. Read in full, including the feature engineering.
+- Karun Singh, *Introducing Expected Threat (xT)* — original blog post.
+- Van Roy, Robberechts, Decroos, Davis (2020), *Valuing On-the-Ball Actions in Soccer: A Critical Comparison of xT and VAEP* — the comparison paper.
+- Fernández, Bornn, Cervone (2019), *Decomposing the Immeasurable Sport: A Deep Learning EPV Framework for Soccer* — at least the introduction and conceptual sections.
+- StatsBomb's xG and PSxG explainers — short, foundational, read for vocabulary.
 
-**Key concepts:**
-- VAEP (Valuing Actions by Estimating Probabilities)
-- Possession value chains
-- PPDA as press intensity proxy — and its limitations
-- Pressure success rate vs pressure frequency
+### What to extract
+- The three competing metaphysical commitments: value lives in shots (xG), in space (xT), or in trajectory (VAEP).
+- How each model handles context — and what context each ignores.
+- Why none of these is causal, even when the language used to describe them is causal.
 
-**Reaction prompt:** PPDA tells you how often a team presses. What doesn't 
-it tell you? When would two teams with identical PPDA scores be playing 
-completely different styles?
+### Reaction prompt
+Pick one specific player you watch regularly. Predict where xT and VAEP would disagree about their value, and why. Test the prediction on public data if possible.
 
 ---
 
-### Defensive Metrics & Shape
+## Week 2 — Spatial and Off-Ball Models
 
-**Core question:** Why is defensive contribution the hardest thing to 
-measure in football analytics?
+**Core question:** Most of football happens away from the ball. How does the field measure off-ball contribution, and where does the measurement break?
 
-#### Reading Material
-| Article | Purpose |
-|---|---|
-| StatsBomb: Defensive actions | What events data captures defensively |
-| SkillCorner: Defensive shape metrics | Block depth, line height, compactness |
-| Any literature on PPDA limitations | Where press metrics break down |
+### Required reading
+- Fernández, Bornn (2018), *Wide Open Spaces* — pitch control, pitch value, space generation. The foundational tracking-data paper.
+- Spearman (2018), *Beyond Expected Goals* — OBSO and the off-ball scoring opportunity framing.
+- Brefeld et al. (2021), *Space and Control in Soccer* — extends Fernández/Bornn with data-driven movement models.
+- SkillCorner's progressive passing article — adjusting passing metrics for opportunity, which is the bridge from raw counts to decision quality.
+- Le et al. (2017), *Data-Driven Ghosting using Deep Imitation Learning* — predicting where defenders should have been.
 
-**Key concepts:**
-- Defensive line height
-- Block depth classification (high/mid/low)
-- Compactness metrics
-- Why preventing shots is harder to measure than creating them
+### What to extract
+- The shift from event-based to continuous spatial measurement.
+- How "controlling space" is operationalised mathematically and what assumptions get baked in.
+- Why off-ball measurement remains descriptive rather than causal even with tracking data.
 
-**Reaction prompt:** If you were a Sporting Director trying to evaluate 
-whether a manager's defensive system is working, which metric would you 
-trust most and why? Which would you distrust?
+### Reaction prompt
+Pitch control assumes a player's "control" of a point on the pitch is determined by who reaches it first. Construct a scenario where this assumption produces a misleading conclusion about a player's defensive contribution.
 
 ---
 
-## Part B — Practice (Weeks 4–6)
+## Week 3 — Methodological Foundations
 
-### Data Sources & Environment Setup
+**Core question:** Given that all these metrics are noisy, predictive (not causal), and applied to small samples — what can practitioners actually trust, and where is the field's methodology weakest?
 
-#### Data Sources to Know
-| Source | Access | What It Contains |
-|---|---|---|
-| FBref | Free | Match stats, advanced metrics, historical data |
-| StatsBomb Open Data | Free (GitHub) | Full event data for select competitions |
-| Understat | Free | xG data for top European leagues |
-| Capology | Free | Wage bill estimates |
-| SkillCorner | Paid | Tracking data, shape metrics |
-| Wyscout / Opta | Paid (club access) | Professional-grade event data |
+### Required reading
+- Pearl, *The Book of Why* — chapters 1–4. You're already reading this concurrently. This is the week to integrate it explicitly with what you've read in weeks 1–2.
+- Robberechts (2019, StatsBomb), *Valuing the Art of Pressing* — the most explicit attempt to value defensive actions, and a useful target for your "is this actually causal" lens.
+- One PPDA critique piece — pick the densest one you can find, read it for what it implicitly assumes about pressing intent vs execution.
+- Choose one of the following as your methodological deep-dive:
+  - A paper on hierarchical/Bayesian player rating estimation in any sport (basketball is fine, e.g. RAPM or APM literature).
+  - A paper on causal inference in observational sports data (any sport).
+  - A paper on the credit assignment problem in multi-agent prediction.
 
-#### Environment Setup
-```python
-# Required libraries
-pip install pandas numpy matplotlib seaborn mplsoccer statsbombpy requests
-```
+### What to extract
+- The distinction between a model that predicts well and a model that estimates causally — and where football analytics conflates the two.
+- Why year-on-year stability is the right empirical test for whether a metric captures a real player attribute.
+- One specific methodological gap that your econometrics background is positioned to address.
 
-#### Exercise 1: FBref Scrape
-Pull defensive stats for all Premier League teams this season from FBref.
-- Extract: PPDA, pressures, defensive line height proxies
-- Output: clean pandas DataFrame
-- Deliverable: `01-data-sources-exploration.ipynb`
-
-- Advanced data is no longer available on FBREF. Historical data can be found on Edd Webster's football-analytics repo
----
-
-### Working With Event Data
-
-#### Exercise 2: StatsBomb Open Data — xG Analysis
-Using StatsBomb's free dataset:
-- Load a full match of event data
-- Calculate xG by shot location
-- Visualize shot maps using mplsoccer
-- Compare xG vs actual goals for a team across a season
-- Deliverable: `02-xg-analysis.ipynb`
-
-#### Exercise 3: Pressing Metrics
-Using StatsBomb pressure events:
-- Calculate PPDA for a set of teams
-- Identify pressing triggers from event sequences
-- Compare high-press vs low-block teams on pressure metrics
-- Deliverable: `03-pressing-metrics.ipynb`
-
----
-
-### Connecting Data to Your Open Question
-
-This week is not prescriptive. Take your strongest open question from 
-Phase 1 and do a preliminary data investigation.
-
-**Questions to answer:**
-- What data would I need to investigate this properly?
-- Is that data freely available or behind a paywall?
-- What does a preliminary cut of the data suggest?
-- Is the problem still interesting or has the data killed it?
-
-**Deliverable:** `04-candidate-problem-exploration.ipynb`
-
-This notebook is the bridge to Phase 3. It should end with either a refined 
-research question or a documented reason why you moved to a different 
-candidate problem.
+### Reaction prompt
+Identify one published football analytics result that you believe is methodologically wrong or overclaimed. State precisely what the error is, what the correct claim would be, and what evidence would settle the question.
 
 ---
 
 ## What Success Looks Like
 
-By the end of this phase you should be able to:
-- Explain what xG, PPDA, VAEP, and PSxG measure and when not to use them
-- Pull and clean football data from at least two free sources in Python
-- Produce a basic shot map and pressing metrics visualization
-- Have run a preliminary data investigation on your candidate problem
-- Articulate clearly what data you would need to answer your research 
-question properly
+By the end of Part A you should be able to:
+- Explain what xG, xT, VAEP, EPV, OBV, OBSO, pitch control, and pressure events each measure, in one sentence each, and what each ignores.
+- Distinguish predictive from causal claims in football analytics literature.
+- Identify at least one specific methodological gap in current public work that your background is positioned to address.
+- Defend that identified gap as worth working on, with specific reasoning about why it remains unsolved.
 
----
-
-## Key Vocabulary Built This Phase
-- xG / PSxG / xGA
-- VAEP
-- PPDA
-- Possession value
-- Event data vs tracking data
-- Pressure events
-- Expected threat (xT)
-- Goals above expectation
+The defensible methodological gap is the most important deliverable. Without it, Part A produced literacy but no positioning.
