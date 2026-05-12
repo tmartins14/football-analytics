@@ -43,7 +43,7 @@ Richer features (Statsbomb): goalkeeper position, position of all attackers and 
 
 ## How xG fits into the action-valuation lineage
 
-xG is the elemental valuation. Every framework you've covered builds on it:
+xG is the elemental valuation. Every action-valuation framework in the lineage builds on it:
 
 - **xT** uses crude per-zone shot conversion rates ($g_{x,y}$) — a zonal xG, not a trained model.
 - **VAEP's $P_{score}$** is xG generalised over the next 10 actions.

@@ -40,7 +40,7 @@ The shift from event-data models (VAEP, xT, EPV) is on the **State** axis — di
 - **One-match empirical case.** The Messi-walks-into-space narrative is a single-game observation.
 - **First-to-arrive logic survives in modified form.** The Gaussian formulation softens it but still bakes in "closer + faster = more control."
 
-## Tier-3 synthesis: where the model breaks
+## Where the model breaks
 
 **Pitch control is a *local* model. Defensive contribution is often *non-local*.**
 
@@ -73,7 +73,7 @@ Family A patches reduce false-positive rate but don't establish the causal claim
 
 ## What survives if you only have attacker tracking
 
-Asked as a stress test of the framework's commitments. Answer:
+Stress test of the framework's commitments:
 
 - $I_i$ for attackers — fully survives. Gaussian construction is per-player.
 - $\sum_i I_i$ — survives. Unilateral influence sum, not pitch control.
@@ -96,7 +96,7 @@ Substitutes for $PC$ (event-data inference) are structurally weaker — selectio
 
 ## Connections to be made forward
 
-- **Spearman 2018 (next reading)** formalises ball-position-conditional, outcome-grounded value — the closing extension I sketched independently for Wide Open Spaces' value model.
+- **Spearman 2018 (next reading)** formalises ball-position-conditional, outcome-grounded value — the natural closing extension to Wide Open Spaces' value model.
 - **SkillCorner progressive passing** formalises trajectory-based value and reachability — closes the cover-shadow gap.
 - **Brefeld et al. 2021** extends the pitch control side specifically — data-driven movement models replacing the parametric Gaussian.
 - **Ghosting (Le et al. 2017)** addresses defensive evaluation via counterfactual defender positioning — gestures at Family B fixes for SGG-style attribution problems.
@@ -105,16 +105,3 @@ Substitutes for $PC$ (event-data inference) are structurally weaker — selectio
 
 1. Symmetric defensive credit assignment: SGG/SGL formulation that isn't circular with the value model. Unsolved in this paper and in the literature broadly.
 2. Predictive validation of SOG/SGG: does player SOG over a window predict subsequent xG / shot creation? Candidate portfolio question.
-
-## Methodological self-assessment from this session
-
-**Improved:**
-- Pushback discipline: defended a position substantively, accepted defeat where the underlying claim broke under scrutiny.
-- Independently sketched outcome-grounded ball-position-conditional value (the OBSO frame) before being shown the formalisation.
-
-**Still showing:**
-- First-plausible-intervention pattern: when asked for substitutes or fixes, offered one rather than enumerating the design space.
-- Synthesis-stopping-at-description: gave two scenarios in Q3 without articulating their shared non-locality structure.
-- Watch for *only*, *must*, *the* in defended claims — uniqueness claims are the most attackable surface.
-
-**Score:** 6/9 across three comprehension questions. Solid transition into Week 2.

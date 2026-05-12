@@ -29,7 +29,7 @@ $$V(a_i) = \Delta P_{scores}(a_i) - \Delta P_{concedes}(a_i)$$
 
 ### Why "change in state" is the key insight
 
-This formulation is the part of VAEP that matters most, and it has several consequences worth holding onto:
+This formulation is the part of VAEP that matters most, and it has several consequences:
 
 1. **Credit goes to the action that moved the probability, not the action that ended up in the dangerous state.** A line-breaking pass that switches the ball into the final third receives a large $\Delta P_{scores}$. A 5-yard square pass at the edge of the box that immediately precedes a tap-in may receive less VAEP than the pass before it, because the dangerous state was already established.
 
@@ -55,7 +55,7 @@ VAEP trains two independent classifiers rather than one model predicting net goa
 
 This decomposition is the analytical payoff of the two-model design. A holding midfielder might be neutral on offense but elite defensively. A creative #10 might be elite on offense and a liability defensively. A single model predicting net differential collapses this distinction.
 
-**Every action is evaluated by both models.** This is a point worth being explicit about: actions are not routed to one model or the other based on whether they "look offensive" or "look defensive." A shot has both $\Delta P_{scores}$ (likely large positive) and $\Delta P_{concedes}$ (likely near zero, since the ball is at the opposite end). A clearance has both $\Delta P_{scores}$ (likely small) and $\Delta P_{concedes}$ (likely large negative — risk reduced). Both deltas always exist; the model just outputs whichever values the data implies.
+**Every action is evaluated by both models.** Actions are not routed to one model or the other based on whether they "look offensive" or "look defensive." A shot has both $\Delta P_{scores}$ (likely large positive) and $\Delta P_{concedes}$ (likely near zero, since the ball is at the opposite end). A clearance has both $\Delta P_{scores}$ (likely small) and $\Delta P_{concedes}$ (likely large negative — risk reduced). Both deltas always exist; the model just outputs whichever values the data implies.
 
 ### What the split costs
 
@@ -113,11 +113,11 @@ A more rigorous formulation would predict expected goal value of the sequence di
 
 ---
 
-## How to evaluate models that come after VAEP
+## Design axes and VAEP's commitments
 
-VAEP is the reference point in this literature. Every subsequent action-valuation model — xT, OBV, g+, EPV, deep-learning on-ball value — can be mapped against five design axes, and the differences across the literature are differences along these axes:
+VAEP became the reference point in this literature because its design choices are explicit and the framework is reproducible. Subsequent action-valuation models — xT, OBV, g+, EPV, deep-learning on-ball value — differ from VAEP along five identifiable axes:
 
-| Axis | What VAEP commits to | What other models change |
+| Axis | VAEP's choice | Alternatives in the literature |
 |---|---|---|
 | **State representation** | Last 3 actions, event data | Tracking data, pitch control, full possession |
 | **Target** | Binary "goal in next 10 actions" | Continuous xG sum, expected possession value, hazard rate |
@@ -125,7 +125,7 @@ VAEP is the reference point in this literature. Every subsequent action-valuatio
 | **Architecture** | Two independent classifiers | Joint models, end-to-end RL value functions |
 | **Credit assignment** | Marginal delta per action, Markov | Shapley, counterfactual rollouts, off-policy estimators |
 
-Reading a new paper, the first question to ask is: which of these axes did they change, and what does that change buy them — and cost them — relative to VAEP?
+Each axis represents a modelling commitment with its own tradeoffs. The differences between VAEP and other action-valuation models can be characterised by which axes they change and how.
 
 ---
 

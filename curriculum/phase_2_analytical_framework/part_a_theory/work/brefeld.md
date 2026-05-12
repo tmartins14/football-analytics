@@ -43,18 +43,18 @@ Pitch value side is unchanged. Still defender-position-as-revealed-value, still 
 4. **Bundesliga 2017/18 only.** 54 matches. Per-player movement models are empirical to that league/season. Generalisation untested.
 5. **Cold-start problem not flagged.** New signings, young players, returners, players in unfamiliar positions are undermodelled. Per-player density estimation requires per-player trajectory volume.
 
-## Empirical-validation methodology — template for portfolio work
+## Empirical-validation methodology
 
-Brefeld's validation approach is the cleanest in the spatial-models lineage to date. Worth borrowing:
+Brefeld's validation approach is the cleanest in the spatial-models lineage to date:
 
 - Correlate against an external, established metric (xG-style) on out-of-sample data
 - Report Pearson with confidence interval and p-value, not just point estimate
 - Use linear regression with team fixed effects when comparing players across teams (controls for environmental differences)
 - Acknowledge shared-feature contamination explicitly when metric and validation metric depend on overlapping inputs
 
-Higher than WOS or OBSO; still below econometric peer-review standard. Personal portfolio target should be higher than Brefeld's.
+Higher empirical bar than WOS or OBSO; still below econometric peer-review standard.
 
-## Tier-3 synthesis attempt: defensible-for-this-paper, problematic-for-the-lineage
+## Synthesis: defensible-for-this-paper, problematic-for-the-lineage
 
 For *this paper*: Defensible. Holding pitch value constant is the right methodological choice for a clean comparison demonstrating the motion-model swap. Changing two things at once would muddy the contribution.
 
@@ -65,12 +65,6 @@ For the *cumulative spatial-models lineage*: WOS, Brefeld, and most subsequent w
 3. **Outcome accountability.** Revealed value is a behavioural proxy; outcome-grounded value is what we actually care about. The lineage avoids the harder modelling problem by anchoring on the easier (and circular) signal.
 
 What the field would look different like: more honest tools, less convenient ones. Context-dependent value harder to communicate but more accurate. This is a trade-off the field has not been willing to make. Audience considerations matter — outcome-grounded value (OBSO-style) is more communicable to non-technical staff because the reasoning chain matches football intuition; revealed-value requires explaining that defender clustering is a *training signal* for value, two abstraction layers from football reasoning.
-
-## Strategic positioning implications
-
-- The field's lack of internal challenge to defender-revealed value is **not evidence the assumption is correct**. It's evidence of a small, intellectually clustered field where founding-paper assumptions haven't been re-litigated. Causal econometrics' adoption in other fields took decades after Pearl was clearly right.
-- This is the kind of structural blind spot the strategic positioning is designed to address. Default reflex of "if it's not being challenged, it's probably fine" contradicts the wedge the CV is built on. Reverse the reflex.
-- For the target career path (senior analytics → Director of Football Analytics): outcome-grounded value is more communicable to practitioners and aligns with the explainability axis that matters for senior roles. Revealed-value approaches better suited to academic publishing.
 
 ## Connections going forward
 
@@ -83,29 +77,3 @@ What the field would look different like: more honest tools, less convenient one
 1. **Bayesian outcome-grounded pitch value.** Use defender clustering as informative prior, observed possession outcomes as likelihood, train a posterior pitch value surface that combines both signals. Not in the literature. Candidate research direction; not near-term portfolio item.
 2. **Cold-start handling for per-player movement models.** When does Brefeld's KDE approach degrade meaningfully for low-trajectory-count players, and what's the right hierarchical model to share information across similar players? Tractable as portfolio question with sufficient tracking data.
 3. **Cross-league transferability of empirical motion models.** Does a Bundesliga-trained Brefeld model produce reasonable PC values on Premier League or La Liga data? Direct test of generalisation. Tractable with multi-league tracking access.
-
-## Methodological self-assessment from this session
-
-**Improved:**
-- Took a position when asked rather than hedging. Sided with OBSO for audience and ambition.
-- Identified audience segmentation (practitioners vs academics) as a cross-cutting strategic frame for choosing between value approaches.
-- Asked the meta-question about literature work's marginal value at the right time. Recognised the engagement-format mismatch with later-stage papers.
-
-**Still showing:**
-- Deference reflex on academic challenge ("if it's not being challenged, I trust it is for a good reason"). Contradicts the strategic positioning the CV is built on. Most important pattern to catch.
-- Overclaim with strong words: "Pareto improvement" doesn't survive scrutiny — Brefeld's motion model has cold-start and generalisation costs alongside its quality benefits. Same disease as "only" / "must" / "the" from prior sessions.
-- Undercooked closing extension. Two proposals (defender clustering + goal threat; pass origination vs reception trajectory) presented without distinguishing or developing them. The synthesis question asked for *consequences*, not constructions.
-
-**Pattern to actively work against going forward:** the meta-level patterns. Recognise them in your own answers *before* the tutor surfaces them. The improvements from here are about catching the patterns yourself, not waiting for them to be flagged.
-
-## Grade
-
-1.5/3 on the synthesis question. Position-taking present. Audience reasoning sharp. Deference reflex and undercooked closing kept it from Tier-3.
-
-## Cumulative across Week 2 spatial models so far
-
-- WOS: 6/9 (67%)
-- OBSO: 6.5/9 (72%)  
-- Brefeld tight: 1.5/3 (50%)
-
-All in the 50-72% band. Methodological discipline points showing up at higher levels of abstraction. Plateau is real. Improvements from here are meta-level: catching the patterns before posting, not after pushback.

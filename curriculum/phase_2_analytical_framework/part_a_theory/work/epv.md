@@ -1,124 +1,186 @@
-# EPV — Decomposing the Immeasurable Sport (Fernández, Bornn, Cervone, 2019)
+# Van Roy, Robberechts, Decroos, Davis (2020) — A Critical Comparison of xT and VAEP
 
-**Paper:** Fernández, J., Bornn, L., Cervone, D. (2019). *Decomposing the Immeasurable Sport: A Deep Learning Expected Possession Value Framework for Soccer.* MIT Sloan Sports Analytics Conference. [PDF](https://www.lukebornn.com/papers/fernandez_sloan_2019.pdf)
-
-The 2021 *Machine Learning* follow-up (Fernández, Bornn, Cervone) introduces SoccerMap and provides component-level validation.
+**Paper:** Van Roy, M., Robberechts, P., Decroos, T., Davis, J. (2020). *Valuing On-the-Ball Actions in Soccer: A Critical Comparison of xT and VAEP.* AAAI-20 Workshop on Artificial Intelligence in Team Sports. [PDF](https://tomdecroos.github.io/reports/xt_vs_vaep.pdf)
 
 ---
 
-## The conceptual jump
+## What the paper is
 
-xT and VAEP are **action-valuation** models — value is computed at action moments. EPV is a **state-valuation** model — value is computed at every frame, on-ball or off-ball. Action values become a derived quantity (the change in EPV between frames), not the fundamental object.
+A controlled comparison of xT and VAEP — the two canonical action-valuation frameworks for soccer event data. Written by the VAEP team at KU Leuven (Decroos, Davis, plus collaborators Van Roy and Robberechts). The paper introduces no new model; it puts the two existing models side by side, on the same dataset (StatsBomb, EPL 2017/18 train, 2018/19 evaluate), and asks how their design choices lead to different action values, different player rankings, and different stability properties.
 
-EPV is defined in $[-1, 1]$:
-- $+1$ = goal for the attacking team
-- $-1$ = goal for the defending team after immediate possession regain
-- Values in between = expected goal differential
-
-The signed expectation lives in the state itself. A possession with EPV = -0.09 means the model thinks the defending team is more likely to score next, even though the attacking team has the ball.
-
-This is enabled by tracking data: (x, y) positions and velocities of all 22 players plus the ball at 25 frames per second. Event-based models cannot do continuous state valuation because event data only records on-ball moments.
+The authors are not unbiased — they built VAEP. The framing favours VAEP in the qualitative section (the cases they pick highlight what VAEP captures that xT misses). But the most important quantitative finding (xT is dramatically more robust than VAEP) is reported honestly and complicates any clean superiority claim.
 
 ---
 
-## The decomposition
+## The unified frame
 
-The methodological core. EPV is computed as:
+The paper's most useful contribution is a unified equation that both models fit:
 
-$$\text{EPV}(t) = \sum_{A \in \{\text{pass, shot, ball-drive}\}} P(A | t) \cdot E[\text{outcome} | A, t]$$
+$$V(a_i) = Q(S_i) - Q(S_{i-1})$$
 
-Passes are further decomposed into success and turnover paths:
+Both xT and VAEP value an action by the change in some quality function $Q$ between the post-action and pre-action states. What differs across the two models is the state representation $S$ and the value function $Q$.
 
-$$\text{Pass value} = P(\text{success}) \cdot E[\text{value} | \text{success}] + P(\text{turnover}) \cdot E[\text{value} | \text{turnover}]$$
+For xT: $S_i$ is the zone of the ball; $Q(S_i) = xT(\text{zone})$.
+For VAEP: $S_i$ is the last 3 actions plus 151 features; $Q(S_i) = P_{score}(S_i) - P_{concede}(S_i)$.
 
-Each component is a separate model — mostly deep neural networks producing **value surfaces** over the whole pitch. Pass and turnover probabilities use logistic regression. Action likelihood uses CNNs over pitch control surfaces.
-
-### Why decomposition matters
-
-1. **Per-component interpretability.** Each component produces a football-meaningful intermediate output (a heatmap, a probability distribution) that's inspectable independently of the EPV calculation.
-
-2. **Structural prior.** The decomposition encodes football logic — "EPV depends on which action happens next, weighted by its probability." This both helps learning (denser per-component training signal) and constrains what relationships the model can find. Useful prior when football logic is correct; limiting when it isn't.
-
-3. **Multi-purpose analytical capability.** This is the most consequential reason. Each component is a separate analytical tool. The risk-reward decomposition (plotting reward against risk for each pass) is only possible because risk and reward exist as separate model outputs. An end-to-end EPV model couldn't produce it.
+Every action-valuation model in this lineage can be written this way. The first question to ask of any new model in this space is: *what is the state representation, and what is the value function?* Everything else (algorithm choice, feature engineering, hyperparameters) is downstream of those two decisions.
 
 ---
 
-## Dynamic pressure-line zones
+## The two design dimensions
 
-EPV uses dynamic relative location based on opponent formation lines, not absolute pitch coordinates. Spectral clustering on defending players' X-coordinates produces three pressure lines (forwards, midfielders, defenders), defining four zones (Z1-Z4) that move with the opponent's shape.
+The paper organises the comparison around two axes.
 
-This is the framework's answer to a structural critique of xT/VAEP: **football tactics are about relative positioning, not absolute locations.** A pass breaking the first pressure line is tactically meaningful regardless of absolute pitch location.
+### Location-based vs feature-based state representation
 
-The implementation has limitations — three-cluster assumption breaks for asymmetric or transitional formations, the 2-second window misses fast pressure transitions, horizontal-line model misfits diagonal pressing. Better than xT's static grid, but still a choice with assumptions.
+xT represents a state purely as a pitch zone (192 zones on a 16×12 grid). VAEP represents a state as the last three actions plus a feature-rich description including action types, locations, body parts, time elapsed, and game context (score, time remaining, score differential).
 
----
+Three concrete consequences of this difference:
 
-## What EPV unlocks
+**1. xT can only value ball-progressing actions.** Because the state is fully captured by the zone, an action that doesn't move the ball between zones has value zero by construction. Take-ons within a zone, defensive actions like tackles and interceptions, all clearances and blocks, short dribbles in the box that stay within a zone — all of these are assigned zero by xT. This is structural. No extension within a pure zone-based framework can change it without changing the state representation.
 
-**Off-ball valuation.** EPV computes value surfaces over the whole pitch. Teammates in high-value regions are creating value through positioning, even if they never receive the ball. Structurally impossible with event data.
+**2. VAEP captures action context.** A shot following a through-ball is a different state from a shot following a multi-defender dribble. xT cannot see this; VAEP can. This is what enables VAEP to value the same zone-to-zone transition differently depending on what came before.
 
-*Important caveat:* the paper's off-ball analyses sample only at on-ball action moments. This captures **position-at-action-time**, not **trajectory-leading-to-action-time**. The "move before the move" — runs that drew defenders out of position seconds before, structural rotations that maintained shape — is not captured. Fully off-ball valuation would require continuous frame-level evaluation, counterfactual attribution of surface changes to specific player movements, and integration over time. The framework supports this in principle; the paper's analyses don't implement it.
+**3. VAEP captures game context.** Time, score, score differential, match phase — none of these enter xT. A 90th-minute pass while chasing the game has the same xT as a 5th-minute pass in an even game. VAEP includes these features explicitly.
 
-This matters most for positional play (Cruyff/Guardiola school), where off-ball value lives in continuous structural maintenance rather than action-adjacent positioning. EPV captures decisive runs; it misses sustained structural work.
+The cost of this richness: **VAEP is a black box, xT is auditable.** xT zone values decompose into explicit empirical components ($s$, $g$, $m$, $T$). VAEP predictions come from a 151-feature gradient boosted tree ensemble with no comparable transparency. SHAP-style attribution helps but doesn't fully close the gap.
 
-**Risk-reward decomposition.** Reward (EPV given pass success) and risk (EPV given turnover) are separate model outputs. Players' decision-making profiles can be characterised by where they sit in risk-reward space.
+### Possession-based vs window-based action sequencing
 
-**Counterfactual best-action analysis.** EPV computes the value of the action taken *and* the best alternative. Event-based models can't do this. The implementation evaluates discrete alternatives (best pass to each teammate, etc.), not the continuous space of all possible actions.
+This distinction is the more important one and the one to internalise.
 
----
+**xT is possession-based.** It models a state's value as the probability of scoring within the current possession. When the possession ends — by goal, by shot, or by turnover — the Markov chain hits an absorbing state. Goals are absorbing, but so are turnovers.
 
-## What EPV commits to
+**VAEP is window-based.** It looks $k = 10$ actions ahead, regardless of which team has the ball. Possession changes don't reset the window. If your team loses the ball at action 3, action 4 is the opponent's possession, and what happens during that opponent possession is part of VAEP's training signal for the original action.
 
-The continuous frame-by-frame evaluation makes claims the paper takes for granted:
+Two crucial consequences flow from this:
 
-1. **Smoothness** — small position changes produce small EPV changes. Football has discontinuities (a defender stepping into a passing lane is binary, not smooth) the assumption averages over.
-2. **Real off-ball value at frame timescales** — frame-to-frame EPV changes reflect signal, not noise. The paper doesn't validate signal-to-noise at frame resolution.
-3. **Calibration across the full state space** — EPV evaluates configurations that may be rare or out-of-distribution. Not addressed.
-4. **Markov assumption at frame level** — state alone determines expected outcome; path-dependent effects (momentum, recent 1v1 outcomes) are invisible.
-5. **Unsolved attribution at frame resolution** — EPV changes continuously; which players caused which changes is not formally answered.
+**VAEP captures risk.** A risky pass that has high upside if completed but exposes your goal if intercepted gets penalised by VAEP because the post-turnover continuations are part of the training data. xT cannot see this — once the possession ends, the chain absorbs and the post-turnover threat is invisible.
 
-These aren't necessarily wrong, but a user should know which assumptions they're trusting.
+The training-data mechanism matters here, not just the structural one. VAEP's training data contains thousands of examples of (state → turnover → opponent counter → concession) sequences. The model learns that *certain features of states* correlate with concession events that occur after a turnover. xT's training data, being possession-bounded, structurally excludes this relationship — once the possession terminates, the data trail ends and the model cannot learn how features at the action's moment correlate with later concessions.
 
----
+**VAEP can value failed actions.** A clearance kicked out of bounds (giving your team time to organise) is meaningfully different from a clearance that lands at the opponent's feet (giving them a quick attack). Both are losses of possession; both terminate xT's chain identically. VAEP, by tracking what actually happens in the next 10 actions, distinguishes them.
 
-## Other limitations
-
-- **Tracking data dependency.** Present-tense barrier to adoption — most leagues have only event data.
-- **Missing body orientation.** Tracking captures position, not body shape, head direction, or eye gaze. The Sergi Roberto example in the paper acknowledges this.
-- **Average-player modelling.** Messi keeping the ball is modelled the same as a youth player keeping the ball.
-- **Limited validation in the 2019 paper.** Extensive case studies, no split-half robustness, no comparison metrics. The 2021 paper does more but no controlled head-to-head against xT/VAEP exists in the literature.
-- **Interpretability is framework-level, not component-level.** Better than VAEP at the framework level (visual surfaces, separable components), worse than xT at the component level (deep nets vs. explicit empirical aggregations).
+The window-vs-possession distinction is what enables VAEP to value defensive actions, risky decisions, and failed actions. It is a deeper consequence of the design choice than the two-model split (offensive/defensive components), and it's the structural reason VAEP is broader in scope than xT.
 
 ---
 
-## Mapped onto the five design axes
+## The qualitative comparison: four action types
 
-| Axis | EPV |
-|---|---|
-| **State** | Tracking data: positions and velocities of 22 players + ball, every frame. Plus dynamic pressure-line context. |
-| **Target** | Continuous expected goal differential, frame-by-frame |
-| **Horizon** | Possession-based, valued at every instant |
-| **Architecture** | Decomposed component models fused via stochastic process |
-| **Credit** | Δ in EPV between frames; applies to actions and off-ball positioning |
+The paper picks four specific action categories and compares the value distributions each model assigns. Three of them showcase what VAEP captures that xT misses; the fourth is honest about ambiguity.
 
-| | xT | VAEP | EPV |
-|---|---|---|---|
-| **Input** | Event | Event | Tracking |
-| **State richness** | Pitch zone | 3 actions + 151 features | Full spatial config |
-| **Time resolution** | Action | Action | Frame (25 Hz) |
-| **Off-ball valuation** | No | No | Partial |
-| **Risk-reward decomposition** | No | Net only | Yes |
-| **Counterfactuals** | No | No | Yes (discrete) |
-| **Interpretability** | Component-level high | Low | Framework-level high, component-level low |
-| **Robustness validated** | Yes (0.89) | Yes (0.25) | No |
-| **Data accessibility** | Universal | Universal | Restricted |
+**Backward passes into the own penalty box (~19/match).** xT values these near zero — both start and end zones are low-xT, so the delta is negligible. VAEP assigns more diverse values, positive and negative, depending on context: a backward pass to a centre-back with space and time scores positive (low risk, opens future progression); a backward pass under pressure scores negative (high risk of opponent winning the ball in a dangerous area). xT cannot make this distinction. The risk dimension is invisible to it.
 
-EPV occupies a different region of the design space than the event-based models — most ambitious in scope, most demanding in input data. Not a strict improvement over xT/VAEP; operates under different constraints and serves different use cases.
+**First ball progression of a counter attack (~2-3/match).** When you recover the ball in your own half and immediately progress it, the *opponent is still in attacking shape*. The next 10 actions are far more likely to produce a shot than a normal possession from the same start zone. VAEP captures this because its window includes those next actions. xT cannot — its state is just the zone, regardless of recovery context. The paper shows VAEP values for these actions have higher mean and variance; xT values are heavily concentrated near zero.
+
+**Forward dribbles inside the penalty box (~4/match).** xT's grid resolution hurts it here. Many dribbles in the box don't move the ball into a different zone — they rearrange position within a zone. xT assigns these zero by construction. But these dribbles can matter enormously: a dribble past a defender 6m from goal, even within the same zone, dramatically increases scoring probability. VAEP captures this because action type and fine-grained location are part of its state. This is a concrete cost of the location-only representation that's worth remembering.
+
+**Forward passes to the border of the penalty box (~5/match).** This is the only category where xT looks better than VAEP — and the paper is honest about not knowing which is right. xT assigns higher values; VAEP discounts them. Two interpretations: xT might be capturing positional advantage well, or VAEP might be correctly discounting based on context (low completion rate, counter-attack risk) that xT misses. The paper concludes: "determining the ground truth of these action values is very difficult, if not impossible." **There is no oracle for action values.** When two models disagree, neither is the truth — there's no external benchmark, only different assumptions about which choices to trust for a given use case.
+
+---
+
+## The quantitative comparison: player rankings
+
+The paper rates every player in the 2018/19 EPL by both models and analyses the top 25 from each.
+
+### Top rankings diverge
+
+The Jaccard similarity between the top-25 lists is **0.48**. Less than half the players overlap. Eden Hazard is #1 in both; after that the lists diverge quickly.
+
+Two illustrative cases:
+
+- **Sergio Agüero:** VAEP #19, xT #109. Why? Agüero is an elite finisher — he scores more from his shots than expected (positive xG over-performance). VAEP rewards this directly because goals appear in the training labels. xT cannot see finishing skill at all because $g_{x,y}$ is league-average shot conversion, not player-specific. The framework structurally cannot distinguish Agüero from any other player who shoots from the same zones.
+
+- **Alexis Sánchez:** xT #7, VAEP #106. The opposite case. Sánchez had a poor goal-scoring season but his key passes per 90 stayed similar. xT picks up the key passes (they move the ball into high-threat zones); VAEP penalises the missing shots and reduced shot quality.
+
+### The pattern
+
+xT favours playmakers (correlation with assists per 90: 0.53 vs 0.33 for VAEP). VAEP favours goal-scorers (correlation with goals per 90: 0.41 vs 0.26 for xT). This is a direct consequence of design choices, not a model "preference":
+
+- xT's $g$ term uses league-average conversion at each zone, so finishing skill cannot show up in xT.
+- VAEP's $P_{score}$ trains on actual goals, so finishing skill shows up directly.
+
+Both rankings deviate substantially from goals + assists alone, which is the basic justification for using either model — they capture something the simple counting stats don't.
+
+### Discrepancies are evidence of neither model being "better"
+
+When two models disagree on a player's ranking, the disagreement reflects what each model is designed to measure. VAEP measures total contribution including finishing. xT measures contribution from ball progression only. Agüero ranks high in VAEP and low in xT because he's elite at finishing and average at progression — both rankings are correct measurements of their respective definitions.
+
+To say one is "better" requires an external ground truth (actual win contribution, transfer fee, expert assessment), and no such ground truth exists. The right way to use these models is not to pick the "correct" one but to use the disagreement itself as signal: a player whose VAEP rank exceeds their xT rank is likely a finisher; a player with the reverse pattern is likely a progression-focused creator. The gap between rankings is informative, and this is the conceptual basis for player-vector and archetype-based approaches that have followed in the literature.
+
+### Robustness asymmetry
+
+The most important quantitative finding, and the one that complicates any "VAEP is more sophisticated" framing.
+
+Test: split the season into two random disjoint halves, compute each player's per-90 rating on each half, correlate the two ratings.
+
+- **xT correlation: 0.89.** xT player ratings are highly stable across random splits.
+- **VAEP correlation: 0.25.** VAEP ratings vary substantially across splits.
+
+VAEP ratings on the same player can shift dramatically between two random halves of the same season. xT ratings are stable. The paper diagnoses two reasons:
+
+1. **Goals are extreme outliers in VAEP's value distribution.** A goal scores ~1.0; most actions score near 0. A few goals landing in sample 1 vs sample 2 dramatically shifts a player's aggregated VAEP. The paper notes that for defensive players, a difference of three goals can double or halve their ratings.
+
+2. **xT only depends on zonal patterns, which players are highly consistent at.** Players reliably perform similar action types from similar locations across matches; xT picks up this stable pattern. VAEP's contextual sensitivity picks up real signal but also picks up rare-event noise.
+
+A controlled test confirms the diagnosis: restricting VAEP to ball-progressing actions only and to offensive value only raises its split-half correlation to 0.59 — better, but still well below xT's 0.89. So even controlling for actions and risk, VAEP is noisier than xT.
+
+### What the robustness number doesn't tell you
+
+Critical methodological caveat: split-half correlation measures *consistency*, not *validity*. A model that always returns 0.5 has perfect split-half correlation and zero usefulness. xT's high robustness is consistent with capturing something stable about playing style, but it is not evidence that xT captures the *right* thing.
+
+The deeper question — whether VAEP's added variance is signal or noise — cannot be answered from split-half correlation alone. If VAEP is picking up genuine differences between strong and weak performances that xT smooths out, then VAEP's volatility is a feature and xT is regression toward the mean. If VAEP is overfitting to goal-scoring noise, then xT is correctly identifying stable underlying skill. **The paper documents the tradeoff but does not resolve which interpretation is correct.** This remains an open question.
+
+---
+
+## What the paper does not address
+
+Four notable gaps:
+
+1. **No external validation.** Neither model is compared to outcome-relevant ground truth (wage levels, transfer fees, expert ratings, win contributions). The paper compares the two models to each other and to goals/assists.
+
+2. **No analysis of defensive players.** Both models concentrate top-25 lists on attackers. Van Dijk is #81 in VAEP and #142 in xT. The paper notes this but doesn't dig into why or what to do about it.
+
+3. **No feature-importance analysis for VAEP.** The 151-feature CatBoost model is treated as a black box throughout. No ablation of which features drive contextual sensitivity vs noise.
+
+4. **Single league, single season, single data provider.** Generalisation to other leagues, vendors, or seasons is untested.
+
+---
+
+## Practical implications
+
+The paper does not say "use VAEP" or "use xT." It says they're different tools with different operating points on a tradeoff curve. The right choice depends on the use case.
+
+- **xT for evaluating consistent positional/playmaking skill.** Stable across samples. Tells you which players reliably move the ball into threatening areas. Useful for scouting playmakers, identifying build-up patterns, opponent profiling.
+
+- **VAEP for evaluating per-game performance and context-dependent contributions.** Less stable but captures more of what happened in this specific match. Useful for post-match analysis, identifying performances under specific conditions, evaluating risk-adjusted contributions.
+
+- **Neither alone for defenders.** Both models concentrate value on attackers. Defensive evaluation requires extensions or different frameworks.
+
+- **Neither for off-ball contributions.** Tracking-data models required.
+
+"Use both in tandem" is the easy answer; the harder, more useful framing is "use them for different decisions." The disagreement between them is itself signal. A player whose VAEP rank is much higher than their xT rank is plausibly a finisher specialist; the reverse pattern indicates a progression specialist. This is the basis for player-vector and archetype-based approaches that have followed.
+
+### On smoothing VAEP
+
+A natural design question is whether VAEP's robustness can be improved without giving up its contextual sensitivity. The paper's diagnosis (goals as outliers) suggests several interventions:
+
+- **Smooth the target.** Replace binary goal labels with PSxG (post-shot xG) or expected-goal sums in the window. PSxG is strictly denser signal than goals — every shot has a PSxG, but most shots don't become goals. Cost: PSxG only exists where shots occur, so this primarily helps offensive VAEP near shooting events; defensive VAEP improvements are smaller.
+
+- **Regularise the model.** Stronger regularisation of the gradient boosted trees reduces sensitivity to rare events. Cost: loses some contextual sensitivity.
+
+- **Aggregate smarter.** Bayesian shrinkage at the player level pulls ratings toward position priors, reducing the influence of rare high-value events. Cost: introduces hierarchical assumptions.
+
+- **Ensemble VAEP and xT.** Weighted average of the two ratings. Cost: loses interpretability of either component.
+
+Each intervention trades context for stability. There is no free lunch — robustness improvements come at the cost of either model expressiveness, target specificity, or aggregation simplicity. The honest position: VAEP's volatility is partly inherent to its design (fine-grained context comes with fine-grained noise), and the right operating point depends on what you're trying to do with the metric.
 
 ---
 
 ## Bottom line
 
-EPV's three lasting contributions: **continuous frame-by-frame valuation** replacing action-based valuation; **decomposed component models with visual surfaces** replacing scalar action values; **tracking-data input** replacing event data. Together these enable off-ball valuation, risk-reward decomposition, and counterfactual analysis — capabilities structurally impossible with event-based models.
+xT and VAEP are not competing answers to the same question — they are different operating points on a tradeoff between contextual sensitivity and robustness. xT trades expressiveness for stability and interpretability; VAEP trades stability and interpretability for expressiveness. The paper's empirical comparison documents this tradeoff cleanly without resolving which side is correct, because there is no external ground truth that would resolve it.
 
-The framework has real limitations the paper underplays: off-ball analyses sample at on-ball moments and miss continuous structural play; frame-level evaluation makes commitments the paper doesn't validate; tracking data dependency is a present-tense barrier; no controlled comparison against xT/VAEP exists. EPV is the natural ceiling for action-valuation given current optical tracking data — a major waypoint, not the endpoint.
+The framework $V(a_i) = Q(S_i) - Q(S_{i-1})$ unifies both models and provides a template for evaluating new ones. The location-vs-feature axis and the possession-vs-window axis are orthogonal design choices; xT and VAEP happen to occupy opposite corners (location + possession vs feature + window), but other combinations are in principle possible and have been explored in the broader literature.
+
+The robustness asymmetry is the paper's most important practical finding and the one that most complicates a simple "VAEP is better" story. It illustrates a general principle that more sophisticated models trade stability for expressiveness, and that consistency is not validity.
