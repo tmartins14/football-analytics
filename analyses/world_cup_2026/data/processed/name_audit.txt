@@ -1,0 +1,19 @@
+=== world_cup_matches.csv name substitutions ===
+  China → China PR  (3 rows)
+  Dutch East Indies → Indonesia  (1 rows)
+  Soviet Union → Russia  (31 rows)
+  West Germany → Germany  (62 rows)
+  Zaire → DR Congo  (3 rows)
+
+=== WC teams unmatched in results.csv after normalisation ===
+  'East Germany'
+  'Serbia and Montenegro'
+
+=== Known exclusions (not errors) ===
+
+  'East Germany' — appeared at the 1974 World Cup. Has no successor entity
+  in results.csv. Retained as-is. Will receive no Elo rating. Affects 6 matches.
+
+  'Serbia and Montenegro' — appeared at the 2006 World Cup. results.csv only
+  carries the successor states individually (Serbia, Montenegro). Retained
+  as-is. Will receive no Elo rating. Affects 3 matches.
