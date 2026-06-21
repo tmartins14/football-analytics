@@ -1,0 +1,10 @@
+{
+  "_comment": "Synthetic sample for harness use only. Replace with sb.events() output before real work.",
+  "corners": [
+    { "team": "England", "x": 120, "y": 0,  "side": "right", "outcome": "shot" },
+    { "team": "England", "x": 120, "y": 80, "side": "left",  "outcome": "cleared" },
+    { "team": "England", "x": 120, "y": 0,  "side": "right", "outcome": "cleared" },
+    { "team": "England", "x": 120, "y": 80, "side": "left",  "outcome": "shot" },
+    { "team": "England", "x": 120, "y": 0,  "side": "right", "outcome": "lost_aerial" }
+  ]
+}

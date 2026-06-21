@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash scripts/check_docs.sh",
+            "timeout": 120
+          }
+        ]
+      }
+    ]
+  }
+}

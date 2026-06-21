@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>footballd3 — playground</title>
+<link rel="stylesheet" href="../style/style.css">
+<style>
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    background: var(--color-background);
+    color: var(--color-text-primary);
+    font-family: var(--font-body);
+    font-size: 15px;
+    line-height: 1.55;
+  }
+
+  .wrap { max-width: 1200px; margin: 0 auto; padding: var(--space-12) var(--space-6); }
+
+  header {
+    margin-bottom: var(--space-8);
+    padding-bottom: var(--space-6);
+    border-bottom: 1px solid var(--color-structure);
+  }
+
+  header h1 {
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-variation-settings: "opsz" 144, "WONK" 1;
+    font-size: 56px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    margin: 0 0 var(--space-3);
+  }
+
+  header .sub {
+    color: var(--color-text-secondary);
+    font-size: 14px;
+    max-width: 60ch;
+  }
+
+  /* ─── Controls ───────────────────────────────────────────── */
+  .controls {
+    display: flex;
+    gap: var(--space-4);
+    margin-bottom: var(--space-6);
+    flex-wrap: wrap;
+  }
+
+  .control {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+  }
+
+  .control label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--color-text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .control select,
+  .control input[type="number"] {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    padding: 6px 10px;
+    border: 1px solid var(--color-structure);
+    background: var(--color-background);
+    color: var(--color-text-primary);
+    border-radius: 2px;
+  }
+
+  .control input[type="number"] { width: 80px; }
+
+  /* ─── Stage ──────────────────────────────────────────────── */
+  /* Fixed-size container so the pitch can render at its natural size
+     and the layout doesn't jump when the canvas dimensions change. */
+  .stage {
+    background: var(--color-background);
+    border: 1px solid var(--color-structure);
+    border-radius: 2px;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-4);
+    overflow: auto;
+  }
+  .stage svg { display: block; }
+
+  .component-section {
+    margin-top: var(--space-16);
+  }
+
+  .component-heading {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 28px;
+    margin: 0 0 var(--space-2);
+  }
+
+  .component-sub {
+    font-size: 13px;
+    color: var(--color-text-secondary);
+    font-family: var(--font-mono);
+    margin: 0 0 var(--space-4);
+  }
+
+  .shot-map-grid {
+    display: flex;
+    gap: var(--space-6);
+  }
+
+  .shot-map-col {
+    flex: 1;
+  }
+
+  .stage--auto {
+    min-height: unset;
+  }
+
+  .team-label {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--color-text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin: 0 0 var(--space-2);
+  }
+
+  footer {
+    margin-top: var(--space-16);
+    padding-top: var(--space-6);
+    border-top: 1px solid var(--color-structure);
+    color: var(--color-text-secondary);
+    font-size: 12px;
+    font-family: var(--font-mono);
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+<header>
+  <h1>footballd3</h1>
+  <p class="sub">
+    Component playground. Adjust the controls; the pitch re-renders at a
+    consistent pixel-per-yard scale across configurations.
+  </p>
+</header>
+
+<div class="controls">
+  <div class="control">
+    <label>mode</label>
+    <select id="pg-mode">
+      <option value="full">full</option>
+      <option value="half">half</option>
+    </select>
+  </div>
+  <div class="control">
+    <label>orientation</label>
+    <select id="pg-orientation">
+      <option value="horizontal">horizontal</option>
+      <option value="vertical">vertical</option>
+    </select>
+  </div>
+  <div class="control">
+    <label>theme</label>
+    <select id="pg-theme">
+      <option value="whiteboard">whiteboard</option>
+      <option value="green">green</option>
+    </select>
+  </div>
+  <div class="control">
+    <label>show goals</label>
+    <select id="pg-goals">
+      <option value="true">true</option>
+      <option value="false">false</option>
+    </select>
+  </div>
+  <div class="control">
+    <label>px per yard</label>
+    <input id="pg-scale" type="number" min="2" max="20" step="0.5" value="7" />
+  </div>
+</div>
+
+<div class="stage"><svg id="pg-pitch"></svg></div>
+
+<section class="component-section">
+  <h2 class="component-heading">Shot Map — UEFA Euro 2024 Final</h2>
+  <p class="component-sub">Spain 2–1 England · 14 Jul 2024 · 25 shots · circle area ∝ xG</p>
+  <div class="shot-map-grid">
+    <div class="shot-map-col">
+      <p class="team-label" id="team-a-label"></p>
+      <div class="stage stage--auto"><svg id="shot-map-a"></svg></div>
+    </div>
+    <div class="shot-map-col">
+      <p class="team-label" id="team-b-label"></p>
+      <div class="stage stage--auto"><svg id="shot-map-b"></svg></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  footballd3 · playground · serve with <code>python -m http.server 8000</code> from the repo root
+</footer>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script type="module">
+  import { createPitch } from "./components/pitch/pitch.js";
+  import { createShotMap } from "./components/shotMap/shotMap.js";
+
+  function render() {
+    const scale = parseFloat(document.getElementById("pg-scale").value) || 7;
+    createPitch(d3.select("#pg-pitch"), {
+      mode:        document.getElementById("pg-mode").value,
+      orientation: document.getElementById("pg-orientation").value,
+      theme:       document.getElementById("pg-theme").value,
+      showGoals:   document.getElementById("pg-goals").value === "true",
+      pxPerYard:   scale,
+    });
+  }
+
+  ["pg-mode", "pg-orientation", "pg-theme", "pg-goals", "pg-scale"].forEach(id => {
+    document.getElementById(id).addEventListener("change", render);
+    document.getElementById(id).addEventListener("input", render);
+  });
+  render();
+
+  fetch("sample_data/shots_3943043.json")
+    .then(r => r.json())
+    .then(shots => {
+      const teams = [...new Set(shots.map(s => s.team))].sort();
+      const [teamA, teamB] = teams;
+
+      document.getElementById("team-a-label").textContent = teamA;
+      document.getElementById("team-b-label").textContent = teamB;
+
+      createShotMap(d3.select("#shot-map-a"), shots.filter(s => s.team === teamA), { orientation: "vertical", pxPerYard: 7 });
+      createShotMap(d3.select("#shot-map-b"), shots.filter(s => s.team === teamB), { orientation: "vertical", pxPerYard: 7 });
+    });
+</script>
+
+</body>
+</html>

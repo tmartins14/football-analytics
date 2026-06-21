@@ -1,0 +1,40 @@
+/* ============================================================
+   style/style.css
+   Signature design tokens for footballd3.
+   Cross-reference: style/colors.py (matplotlib config) must match.
+   ============================================================ */
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,900&family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap");
+
+:root {
+  /* Palette */
+  --color-background:     #FAF7F0;
+  --color-text-primary:   #171717;
+  --color-text-secondary: #525252;
+  --color-structure:      #E5E5E5;
+  --color-focal:          #9F1239;
+  --color-secondary:      #1E3A5F;
+  --color-non-focal:      #404040;
+
+  /* Typography */
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body:    "Geist", system-ui, sans-serif;
+  --font-mono:    "Geist Mono", "SF Mono", Menlo, monospace;
+
+  /* Spacing rhythm */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+}
+
+/* Fraunces with WONK — critical for the signature character */
+.display {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-variation-settings: "opsz" 144, "WONK" 1;
+}
