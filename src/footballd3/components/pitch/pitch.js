@@ -43,6 +43,13 @@ const SB = {
   goalDepth:     1.5,
 };
 
+/**
+ * Creates a blank pitch.
+ *
+ * @param {d3.Selection} selection - The D3 selection to render the pitch into.
+ * @param {Object} config - Configuration options for the pitch.
+ * @returns {Object} An object containing the pitch group and a pixel conversion function.
+ */
 export function createPitch(selection, config = {}) {
   const {
     mode        = "full",

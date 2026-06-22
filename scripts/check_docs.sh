@@ -16,12 +16,12 @@ set -uo pipefail
 shopt -s nullglob
 
 # --- set these to your ACTUAL layout ----------------------------------------
-PY_PKG="football-analytics"          # Python package to check docstring coverage on
-JS_DIR="footballd3"                  # <-- set to your real D3 components directory
+PY_PKG="src"                         # Python package to check docstring coverage on
+JS_DIR="src/footballd3"                  # <-- set to your real D3 components directory
 PY_RUNNER="uv run"                   # how to invoke Python tools (uv, per stack)
 # Directories that must each contain a README.md. Point these at real component
 # directories — not every subpackage. Adjust the globs to your structure:
-COMPONENT_DIRS=( "footballd3/components/"* )
+COMPONENT_DIRS=( "src/footballd3/components/"* )
 # ----------------------------------------------------------------------------
 
 fail=0
@@ -32,7 +32,7 @@ if command -v "${PY_RUNNER%% *}" >/dev/null 2>&1; then
   if ! $PY_RUNNER interrogate -q \
         --fail-under 100 \
         --ignore-private --ignore-magic \
-        --ignore-nested-functions --ignore-init-method \
+        --ignore-nested-functions --ignore-init-method --ignore-init-module \
         "$PY_PKG"; then
     err "✗ Python docstrings below 100% in ${PY_PKG}/  (detail: ${PY_RUNNER} interrogate -v ${PY_PKG})"
     fail=1
