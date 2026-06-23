@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>footballd3 — playground</title>
-<link rel="stylesheet" href="../style/style.css">
+<link rel="stylesheet" href="./style.css">
 <style>
   * { box-sizing: border-box; }
   html, body {
@@ -130,6 +130,49 @@
     margin: 0 0 var(--space-2);
   }
 
+  /* ─── Pass Network ───────────────────────────────────────────────── */
+  .pn-controls {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    margin-bottom: var(--space-4);
+    flex-wrap: wrap;
+  }
+
+  .pn-btn {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    padding: 4px 10px;
+    border: 1px solid var(--color-structure);
+    background: var(--color-background);
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    border-radius: 2px;
+    transition: color 0.15s, border-color 0.15s;
+  }
+
+  .pn-btn:hover:not(:disabled) {
+    color: var(--color-text-primary);
+    border-color: var(--color-text-secondary);
+  }
+
+  .pn-btn:disabled {
+    opacity: 0.35;
+    cursor: default;
+  }
+
+  .pn-window-label {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--color-text-primary);
+  }
+
+  .pn-sub-label {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--color-text-secondary);
+  }
+
   footer {
     margin-top: var(--space-16);
     padding-top: var(--space-6);
@@ -204,16 +247,36 @@
   </div>
 </section>
 
+<section class="component-section">
+  <h2 class="component-heading">Pass Network — UEFA Euro 2024 Final</h2>
+  <p class="component-sub">avg-position pass network · node size ∝ pass volume · arc width ∝ directed pass count</p>
+  <div class="pn-controls">
+    <div class="control" style="flex-direction:row; align-items:center; gap:var(--space-2)">
+      <label style="margin:0">team</label>
+      <select id="pn-team" class="pn-btn">
+        <option value="Spain">Spain</option>
+        <option value="England">England</option>
+      </select>
+    </div>
+    <button id="pn-prev" class="pn-btn" disabled>← prev</button>
+    <span id="pn-window-label" class="pn-window-label"></span>
+    <span id="pn-sub-label" class="pn-sub-label"></span>
+    <button id="pn-next" class="pn-btn">next →</button>
+  </div>
+  <div class="stage stage--auto"><svg id="pass-network"></svg></div>
+</section>
+
 <footer>
-  footballd3 · playground · serve with <code>python -m http.server 8000</code> from the repo root
+  footballd3 · playground · <code>cd src/footballd3 &amp;&amp; python -m http.server 8000</code> → <code>http://localhost:8000/</code>
 </footer>
 
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
 <script type="module">
-  import { createPitch } from "./components/pitch/pitch.js";
-  import { createShotMap } from "./components/shotMap/shotMap.js";
+  import { createPitch }       from "./components/pitch/pitch.js";
+  import { createShotMap }     from "./components/shotMap/shotMap.js";
+  import { createPassNetwork } from "./components/passNetwork/passNetwork.js";
 
   function render() {
     const scale = parseFloat(document.getElementById("pg-scale").value) || 7;
@@ -231,6 +294,44 @@
     document.getElementById(id).addEventListener("input", render);
   });
   render();
+
+  function loadTeam(team) {
+    fetch(`sample_data/pass_network_3943043_${team}.json`)
+      .then(r => r.json())
+      .then(data => {
+        const pitch = createPitch(d3.select("#pass-network"), {
+          mode:        "full",
+          orientation: "horizontal",
+          pxPerYard:   7,
+          theme:       "whiteboard",
+        });
+
+        const { update } = createPassNetwork(pitch, data, { window: 0 });
+
+        let currentWindow = 0;
+        const totalWindows = data.windows.length;
+
+        function setWindow(idx) {
+          currentWindow = Math.max(0, Math.min(totalWindows - 1, idx));
+          update(currentWindow);
+          const win = data.windows[currentWindow];
+          document.getElementById("pn-window-label").textContent = win.label;
+          const sub = currentWindow > 0 ? data.substitutions[currentWindow - 1] : null;
+          document.getElementById("pn-sub-label").textContent =
+            sub ? `(${sub.player_on} on for ${sub.player_off})` : "";
+          document.getElementById("pn-prev").disabled = currentWindow === 0;
+          document.getElementById("pn-next").disabled = currentWindow === totalWindows - 1;
+        }
+
+        document.getElementById("pn-prev").onclick = () => setWindow(currentWindow - 1);
+        document.getElementById("pn-next").onclick = () => setWindow(currentWindow + 1);
+
+        setWindow(0);
+      });
+  }
+
+  document.getElementById("pn-team").addEventListener("change", e => loadTeam(e.target.value));
+  loadTeam("Spain");
 
   fetch("sample_data/shots_3943043.json")
     .then(r => r.json())

@@ -29,11 +29,7 @@ err() { printf '%s\n' "$*" >&2; }
 
 # 1. Python docstrings — modules + public functions/classes, required at 100%.
 if command -v "${PY_RUNNER%% *}" >/dev/null 2>&1; then
-  if ! $PY_RUNNER interrogate -q \
-        --fail-under 100 \
-        --ignore-private --ignore-magic \
-        --ignore-nested-functions --ignore-init-method --ignore-init-module \
-        "$PY_PKG"; then
+  if ! $PY_RUNNER interrogate -q --fail-under 100 "$PY_PKG"; then
     err "✗ Python docstrings below 100% in ${PY_PKG}/  (detail: ${PY_RUNNER} interrogate -v ${PY_PKG})"
     fail=1
   fi

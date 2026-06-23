@@ -1,3 +1,14 @@
+"""Extract shot events from StatsBomb open data and write a flat JSON contract.
+
+Public API:
+    resolve_euro_2024_final() -> int
+    extract_shots(match_id) -> list[dict]
+    main()
+
+JSON output shape: { x, y, xg, outcome, is_goal, team, player, minute }
+Written to: src/footballd3/sample_data/shots_{match_id}.json
+"""
+
 import json
 import math
 from pathlib import Path
@@ -6,6 +17,15 @@ from statsbombpy import sb
 
 
 def resolve_euro_2024_final() -> int:
+    """Resolve the UEFA Euro 2024 Final match ID from the StatsBomb open data API.
+
+    Returns:
+        int: The StatsBomb match_id for the Euro 2024 Final.
+
+    Raises:
+        ValueError: If the competition/season can't be found, or if the Final
+            can't be isolated to a single match.
+    """
     comps = sb.competitions()
     euro = comps[
         comps["competition_name"].str.contains("UEFA Euro", case=False)
@@ -37,6 +57,25 @@ def resolve_euro_2024_final() -> int:
 
 
 def extract_shots(match_id: int) -> list[dict]:
+    """Extract shot events for one match and return flat records for the JSON contract.
+
+    Calls sb.events(), filters to type == "Shot", and maps each row to the
+    minimal fields the shot map renderer needs. Drops shots where xG is NaN
+    (own goals have no StatsBomb xG value).
+
+    Args:
+        match_id (int): StatsBomb match ID.
+
+    Returns:
+        list[dict]: One dict per shot with keys:
+            x, y (float): StatsBomb-native coordinates (origin top-left, 120×80).
+            xg (float): StatsBomb xG from shot_statsbomb_xg.
+            outcome (str): Shot outcome label (e.g. "Goal", "Blocked", "Saved").
+            is_goal (bool): True when outcome == "Goal".
+            team (str): Team name.
+            player (str): Player name.
+            minute (int): Match minute.
+    """
     events = sb.events(match_id=match_id)
     shots = events[events["type"] == "Shot"].copy()
 
@@ -62,6 +101,10 @@ def extract_shots(match_id: int) -> list[dict]:
 
 
 def main() -> None:
+    """Resolve the Euro 2024 Final, extract its shots, and write the JSON contract.
+
+    Output path: src/footballd3/sample_data/shots_{match_id}.json
+    """
     match_id = resolve_euro_2024_final()
     shots = extract_shots(match_id)
 

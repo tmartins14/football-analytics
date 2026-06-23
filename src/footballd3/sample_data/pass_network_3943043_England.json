@@ -1,0 +1,907 @@
+{
+  "windows": [
+    {
+      "index": 0,
+      "label": "0'\u201360' (Starting XI)",
+      "nodes": [
+        {
+          "player": "Bukayo Saka",
+          "x": 82.56,
+          "y": 68.36,
+          "passes": 14
+        },
+        {
+          "player": "Declan Rice",
+          "x": 55.85,
+          "y": 33.48,
+          "passes": 23
+        },
+        {
+          "player": "Harry Kane",
+          "x": 51.28,
+          "y": 30.2,
+          "passes": 5
+        },
+        {
+          "player": "John Stones",
+          "x": 37.15,
+          "y": 53.95,
+          "passes": 24
+        },
+        {
+          "player": "Jordan Pickford",
+          "x": 11.72,
+          "y": 38.04,
+          "passes": 20
+        },
+        {
+          "player": "Jude Bellingham",
+          "x": 64.96,
+          "y": 21.38,
+          "passes": 18
+        },
+        {
+          "player": "Kobbie Mainoo",
+          "x": 57.55,
+          "y": 47.64,
+          "passes": 14
+        },
+        {
+          "player": "Kyle Walker",
+          "x": 51.59,
+          "y": 68.51,
+          "passes": 24
+        },
+        {
+          "player": "Luke Shaw",
+          "x": 57.05,
+          "y": 8.98,
+          "passes": 15
+        },
+        {
+          "player": "Marc Guehi",
+          "x": 39.2,
+          "y": 19.84,
+          "passes": 15
+        },
+        {
+          "player": "Phil Foden",
+          "x": 56.22,
+          "y": 55.36,
+          "passes": 12
+        }
+      ],
+      "edges": [
+        {
+          "from": "Declan Rice",
+          "to": "Jude Bellingham",
+          "count": 8
+        },
+        {
+          "from": "John Stones",
+          "to": "Jordan Pickford",
+          "count": 8
+        },
+        {
+          "from": "Kyle Walker",
+          "to": "John Stones",
+          "count": 7
+        },
+        {
+          "from": "Marc Guehi",
+          "to": "Declan Rice",
+          "count": 5
+        },
+        {
+          "from": "Bukayo Saka",
+          "to": "Kyle Walker",
+          "count": 5
+        },
+        {
+          "from": "Luke Shaw",
+          "to": "Jude Bellingham",
+          "count": 5
+        },
+        {
+          "from": "Declan Rice",
+          "to": "John Stones",
+          "count": 5
+        },
+        {
+          "from": "Jordan Pickford",
+          "to": "John Stones",
+          "count": 5
+        },
+        {
+          "from": "Kyle Walker",
+          "to": "Kobbie Mainoo",
+          "count": 5
+        },
+        {
+          "from": "Jordan Pickford",
+          "to": "Kyle Walker",
+          "count": 4
+        },
+        {
+          "from": "John Stones",
+          "to": "Phil Foden",
+          "count": 4
+        },
+        {
+          "from": "Bukayo Saka",
+          "to": "Phil Foden",
+          "count": 4
+        },
+        {
+          "from": "Jordan Pickford",
+          "to": "Marc Guehi",
+          "count": 4
+        },
+        {
+          "from": "Kyle Walker",
+          "to": "Bukayo Saka",
+          "count": 4
+        },
+        {
+          "from": "Jude Bellingham",
+          "to": "Harry Kane",
+          "count": 4
+        },
+        {
+          "from": "Jude Bellingham",
+          "to": "Luke Shaw",
+          "count": 3
+        },
+        {
+          "from": "Phil Foden",
+          "to": "Bukayo Saka",
+          "count": 3
+        },
+        {
+          "from": "John Stones",
+          "to": "Bukayo Saka",
+          "count": 3
+        },
+        {
+          "from": "Bukayo Saka",
+          "to": "Kobbie Mainoo",
+          "count": 3
+        },
+        {
+          "from": "Kobbie Mainoo",
+          "to": "Phil Foden",
+          "count": 3
+        },
+        {
+          "from": "Declan Rice",
+          "to": "Kyle Walker",
+          "count": 3
+        },
+        {
+          "from": "Marc Guehi",
+          "to": "Jude Bellingham",
+          "count": 3
+        },
+        {
+          "from": "Luke Shaw",
+          "to": "Kobbie Mainoo",
+          "count": 3
+        },
+        {
+          "from": "John Stones",
+          "to": "Kyle Walker",
+          "count": 3
+        },
+        {
+          "from": "Marc Guehi",
+          "to": "Jordan Pickford",
+          "count": 3
+        },
+        {
+          "from": "John Stones",
+          "to": "Declan Rice",
+          "count": 3
+        },
+        {
+          "from": "Phil Foden",
+          "to": "Kyle Walker",
+          "count": 3
+        },
+        {
+          "from": "Kobbie Mainoo",
+          "to": "Declan Rice",
+          "count": 3
+        },
+        {
+          "from": "Declan Rice",
+          "to": "Luke Shaw",
+          "count": 3
+        },
+        {
+          "from": "Jude Bellingham",
+          "to": "Declan Rice",
+          "count": 3
+        },
+        {
+          "from": "Kobbie Mainoo",
+          "to": "Jordan Pickford",
+          "count": 2
+        },
+        {
+          "from": "Luke Shaw",
+          "to": "Declan Rice",
+          "count": 2
+        },
+        {
+          "from": "Luke Shaw",
+          "to": "Phil Foden",
+          "count": 2
+        },
+        {
+          "from": "Kyle Walker",
+          "to": "Harry Kane",
+          "count": 2
+        },
+        {
+          "from": "Jordan Pickford",
+          "to": "Bukayo Saka",
+          "count": 2
+        },
+        {
+          "from": "Jude Bellingham",
+          "to": "Bukayo Saka",
+          "count": 2
+        },
+        {
+          "from": "Kyle Walker",
+          "to": "Luke Shaw",
+          "count": 2
+        },
+        {
+          "from": "Phil Foden",
+          "to": "Kobbie Mainoo",
+          "count": 2
+        },
+        {
+          "from": "Jordan Pickford",
+          "to": "Jude Bellingham",
+          "count": 2
+        },
+        {
+          "from": "Jude Bellingham",
+          "to": "John Stones",
+          "count": 2
+        },
+        {
+          "from": "Kobbie Mainoo",
+          "to": "Harry Kane",
+          "count": 2
+        },
+        {
+          "from": "Kobbie Mainoo",
+          "to": "Kyle Walker",
+          "count": 2
+        },
+        {
+          "from": "Marc Guehi",
+          "to": "Luke Shaw",
+          "count": 2
+        },
+        {
+          "from": "Jude Bellingham",
+          "to": "Marc Guehi",
+          "count": 2
+        },
+        {
+          "from": "Marc Guehi",
+          "to": "John Stones",
+          "count": 2
+        },
+        {
+          "from": "Phil Foden",
+          "to": "Declan Rice",
+          "count": 2
+        },
+        {
+          "from": "Declan Rice",
+          "to": "Marc Guehi",
+          "count": 2
+        },
+        {
+          "from": "Jude Bellingham",
+          "to": "Phil Foden",
+          "count": 1
+        },
+        {
+          "from": "Phil Foden",
+          "to": "Jordan Pickford",
+          "count": 1
+        },
+        {
+          "from": "Harry Kane",
+          "to": "Phil Foden",
+          "count": 1
+        },
+        {
+          "from": "Phil Foden",
+          "to": "Jude Bellingham",
+          "count": 1
+        },
+        {
+          "from": "Luke Shaw",
+          "to": "Marc Guehi",
+          "count": 1
+        },
+        {
+          "from": "Kobbie Mainoo",
+          "to": "John Stones",
+          "count": 1
+        },
+        {
+          "from": "Luke Shaw",
+          "to": "Bukayo Saka",
+          "count": 1
+        },
+        {
+          "from": "Bukayo Saka",
+          "to": "Declan Rice",
+          "count": 1
+        },
+        {
+          "from": "Kyle Walker",
+          "to": "Marc Guehi",
+          "count": 1
+        },
+        {
+          "from": "Jordan Pickford",
+          "to": "Phil Foden",
+          "count": 1
+        },
+        {
+          "from": "Harry Kane",
+          "to": "Luke Shaw",
+          "count": 1
+        },
+        {
+          "from": "John Stones",
+          "to": "Marc Guehi",
+          "count": 1
+        },
+        {
+          "from": "John Stones",
+          "to": "Luke Shaw",
+          "count": 1
+        },
+        {
+          "from": "Harry Kane",
+          "to": "Kobbie Mainoo",
+          "count": 1
+        },
+        {
+          "from": "Jordan Pickford",
+          "to": "Declan Rice",
+          "count": 1
+        },
+        {
+          "from": "Kyle Walker",
+          "to": "Declan Rice",
+          "count": 1
+        },
+        {
+          "from": "Declan Rice",
+          "to": "Phil Foden",
+          "count": 1
+        },
+        {
+          "from": "Kyle Walker",
+          "to": "Phil Foden",
+          "count": 1
+        },
+        {
+          "from": "Declan Rice",
+          "to": "Harry Kane",
+          "count": 1
+        },
+        {
+          "from": "Harry Kane",
+          "to": "Jude Bellingham",
+          "count": 1
+        },
+        {
+          "from": "Harry Kane",
+          "to": "Bukayo Saka",
+          "count": 1
+        },
+        {
+          "from": "Jordan Pickford",
+          "to": "Harry Kane",
+          "count": 1
+        },
+        {
+          "from": "Kobbie Mainoo",
+          "to": "Jude Bellingham",
+          "count": 1
+        },
+        {
+          "from": "Jude Bellingham",
+          "to": "Kyle Walker",
+          "count": 1
+        },
+        {
+          "from": "Luke Shaw",
+          "to": "Jordan Pickford",
+          "count": 1
+        },
+        {
+          "from": "Kyle Walker",
+          "to": "Jordan Pickford",
+          "count": 1
+        },
+        {
+          "from": "John Stones",
+          "to": "Jude Bellingham",
+          "count": 1
+        },
+        {
+          "from": "Bukayo Saka",
+          "to": "John Stones",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "label": "60'\u201369'",
+      "nodes": [
+        {
+          "player": "Bukayo Saka",
+          "x": 98.15,
+          "y": 73.2,
+          "passes": 2
+        },
+        {
+          "player": "Declan Rice",
+          "x": 61.56,
+          "y": 45.42,
+          "passes": 5
+        },
+        {
+          "player": "John Stones",
+          "x": 48.9,
+          "y": 42.4,
+          "passes": 3
+        },
+        {
+          "player": "Jordan Pickford",
+          "x": 17.9,
+          "y": 41.4,
+          "passes": 2
+        },
+        {
+          "player": "Jude Bellingham",
+          "x": 79.65,
+          "y": 34.0,
+          "passes": 2
+        },
+        {
+          "player": "Kyle Walker",
+          "x": 63.98,
+          "y": 61.12,
+          "passes": 4
+        },
+        {
+          "player": "Luke Shaw",
+          "x": 86.67,
+          "y": 6.43,
+          "passes": 4
+        },
+        {
+          "player": "Marc Guehi",
+          "x": 95.3,
+          "y": 14.83,
+          "passes": 3
+        },
+        {
+          "player": "Phil Foden",
+          "x": 59.37,
+          "y": 60.03,
+          "passes": 3
+        }
+      ],
+      "edges": [
+        {
+          "from": "Luke Shaw",
+          "to": "Marc Guehi",
+          "count": 2
+        },
+        {
+          "from": "Marc Guehi",
+          "to": "Luke Shaw",
+          "count": 2
+        },
+        {
+          "from": "Declan Rice",
+          "to": "Kyle Walker",
+          "count": 2
+        },
+        {
+          "from": "Marc Guehi",
+          "to": "Kyle Walker",
+          "count": 1
+        },
+        {
+          "from": "Kyle Walker",
+          "to": "Kobbie Mainoo",
+          "count": 1
+        },
+        {
+          "from": "Jude Bellingham",
+          "to": "Bukayo Saka",
+          "count": 1
+        },
+        {
+          "from": "Bukayo Saka",
+          "to": "Kyle Walker",
+          "count": 1
+        },
+        {
+          "from": "Kyle Walker",
+          "to": "Declan Rice",
+          "count": 1
+        },
+        {
+          "from": "Declan Rice",
+          "to": "Marc Guehi",
+          "count": 1
+        },
+        {
+          "from": "Luke Shaw",
+          "to": "Declan Rice",
+          "count": 1
+        },
+        {
+          "from": "Kyle Walker",
+          "to": "Bukayo Saka",
+          "count": 1
+        },
+        {
+          "from": "Declan Rice",
+          "to": "Jordan Pickford",
+          "count": 1
+        },
+        {
+          "from": "Jordan Pickford",
+          "to": "Phil Foden",
+          "count": 1
+        },
+        {
+          "from": "Phil Foden",
+          "to": "Bukayo Saka",
+          "count": 1
+        },
+        {
+          "from": "Bukayo Saka",
+          "to": "Jude Bellingham",
+          "count": 1
+        },
+        {
+          "from": "John Stones",
+          "to": "Luke Shaw",
+          "count": 1
+        },
+        {
+          "from": "Luke Shaw",
+          "to": "Jude Bellingham",
+          "count": 1
+        },
+        {
+          "from": "Jude Bellingham",
+          "to": "Declan Rice",
+          "count": 1
+        },
+        {
+          "from": "John Stones",
+          "to": "Declan Rice",
+          "count": 1
+        },
+        {
+          "from": "Declan Rice",
+          "to": "John Stones",
+          "count": 1
+        },
+        {
+          "from": "John Stones",
+          "to": "Jordan Pickford",
+          "count": 1
+        },
+        {
+          "from": "Phil Foden",
+          "to": "Kobbie Mainoo",
+          "count": 1
+        },
+        {
+          "from": "Jordan Pickford",
+          "to": "Kyle Walker",
+          "count": 1
+        },
+        {
+          "from": "Kyle Walker",
+          "to": "Phil Foden",
+          "count": 1
+        },
+        {
+          "from": "Phil Foden",
+          "to": "Kyle Walker",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "label": "69'\u201389'",
+      "nodes": [
+        {
+          "player": "Bukayo Saka",
+          "x": 83.38,
+          "y": 66.38,
+          "passes": 5
+        },
+        {
+          "player": "Cole Palmer",
+          "x": 73.15,
+          "y": 53.95,
+          "passes": 4
+        },
+        {
+          "player": "Declan Rice",
+          "x": 46.5,
+          "y": 59.0,
+          "passes": 4
+        },
+        {
+          "player": "John Stones",
+          "x": 50.13,
+          "y": 55.43,
+          "passes": 3
+        },
+        {
+          "player": "Jordan Pickford",
+          "x": 19.75,
+          "y": 42.7,
+          "passes": 4
+        },
+        {
+          "player": "Jude Bellingham",
+          "x": 71.34,
+          "y": 38.78,
+          "passes": 5
+        },
+        {
+          "player": "Kyle Walker",
+          "x": 62.85,
+          "y": 71.97,
+          "passes": 8
+        },
+        {
+          "player": "Marc Guehi",
+          "x": 40.77,
+          "y": 23.1,
+          "passes": 3
+        },
+        {
+          "player": "Ollie Watkins",
+          "x": 61.0,
+          "y": 40.1,
+          "passes": 1
+        },
+        {
+          "player": "Phil Foden",
+          "x": 41.7,
+          "y": 29.5,
+          "passes": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "Jude Bellingham",
+          "to": "Cole Palmer",
+          "count": 4
+        },
+        {
+          "from": "Cole Palmer",
+          "to": "Bukayo Saka",
+          "count": 3
+        },
+        {
+          "from": "Kyle Walker",
+          "to": "Cole Palmer",
+          "count": 2
+        },
+        {
+          "from": "John Stones",
+          "to": "Marc Guehi",
+          "count": 2
+        },
+        {
+          "from": "Jordan Pickford",
+          "to": "Jude Bellingham",
+          "count": 2
+        },
+        {
+          "from": "Declan Rice",
+          "to": "Kyle Walker",
+          "count": 2
+        },
+        {
+          "from": "Kyle Walker",
+          "to": "Bukayo Saka",
+          "count": 2
+        },
+        {
+          "from": "Kyle Walker",
+          "to": "John Stones",
+          "count": 2
+        },
+        {
+          "from": "Marc Guehi",
+          "to": "Jude Bellingham",
+          "count": 1
+        },
+        {
+          "from": "Bukayo Saka",
+          "to": "Jude Bellingham",
+          "count": 1
+        },
+        {
+          "from": "Declan Rice",
+          "to": "Bukayo Saka",
+          "count": 1
+        },
+        {
+          "from": "Bukayo Saka",
+          "to": "Declan Rice",
+          "count": 1
+        },
+        {
+          "from": "Kyle Walker",
+          "to": "Jordan Pickford",
+          "count": 1
+        },
+        {
+          "from": "Bukayo Saka",
+          "to": "Kyle Walker",
+          "count": 1
+        },
+        {
+          "from": "Bukayo Saka",
+          "to": "Cole Palmer",
+          "count": 1
+        },
+        {
+          "from": "John Stones",
+          "to": "Jordan Pickford",
+          "count": 1
+        },
+        {
+          "from": "Phil Foden",
+          "to": "Jude Bellingham",
+          "count": 1
+        },
+        {
+          "from": "Kyle Walker",
+          "to": "Declan Rice",
+          "count": 1
+        },
+        {
+          "from": "Jordan Pickford",
+          "to": "Kyle Walker",
+          "count": 1
+        },
+        {
+          "from": "Bukayo Saka",
+          "to": "John Stones",
+          "count": 1
+        },
+        {
+          "from": "Marc Guehi",
+          "to": "Declan Rice",
+          "count": 1
+        },
+        {
+          "from": "Declan Rice",
+          "to": "Marc Guehi",
+          "count": 1
+        },
+        {
+          "from": "Marc Guehi",
+          "to": "Jordan Pickford",
+          "count": 1
+        },
+        {
+          "from": "Jordan Pickford",
+          "to": "Marc Guehi",
+          "count": 1
+        },
+        {
+          "from": "Ollie Watkins",
+          "to": "Jordan Pickford",
+          "count": 1
+        },
+        {
+          "from": "Cole Palmer",
+          "to": "Jude Bellingham",
+          "count": 1
+        },
+        {
+          "from": "Jude Bellingham",
+          "to": "Ollie Watkins",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "label": "89'\u2013FT",
+      "nodes": [
+        {
+          "player": "Cole Palmer",
+          "x": 80.45,
+          "y": 33.2,
+          "passes": 2
+        },
+        {
+          "player": "Marc Guehi",
+          "x": 40.95,
+          "y": 24.1,
+          "passes": 2
+        }
+      ],
+      "edges": [
+        {
+          "from": "Cole Palmer",
+          "to": "Declan Rice",
+          "count": 1
+        },
+        {
+          "from": "Marc Guehi",
+          "to": "Jordan Pickford",
+          "count": 1
+        },
+        {
+          "from": "Marc Guehi",
+          "to": "Declan Rice",
+          "count": 1
+        },
+        {
+          "from": "Cole Palmer",
+          "to": "Marc Guehi",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "substitutions": [
+    {
+      "minute": 60,
+      "player_off": "Harry Kane",
+      "player_on": "Ollie Watkins"
+    },
+    {
+      "minute": 69,
+      "player_off": "Kobbie Mainoo",
+      "player_on": "Cole Palmer"
+    },
+    {
+      "minute": 89,
+      "player_off": "Phil Foden",
+      "player_on": "Ivan Toney"
+    }
+  ],
+  "metadata": {
+    "match_id": 3943043,
+    "team": "England",
+    "filter": "completed passes, per substitution window",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Spain vs England"
+  }
+}

@@ -20,7 +20,7 @@ views (dashboards).
   Package manager: **`uv`**.
 - **Viz:** **D3** as ES modules.
 - **Data:** StatsBomb open data, including 360 freeze frames.
-- **Layout:** flat JSON in `sample_data/`; Python package in `football_analytics/`;
+- **Layout:** flat JSON in `sample_data/`; Python package in `src/statsbomb`;
   D3 components in the component-library module (adjust path to the actual layout).
 
 ## Conventions (rules)

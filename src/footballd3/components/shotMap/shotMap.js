@@ -1,4 +1,4 @@
-import { createPitch } from "./pitch.js";
+import { createPitch } from "../pitch/pitch.js";
 
 // StatsBomb normalises all attacks left→right, so shot x-coords are always > 60.
 // Mirror onto the half-pitch by reflecting: mirroredX = 120 - shot.x.

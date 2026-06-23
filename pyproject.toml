@@ -30,9 +30,9 @@ build-backend = "hatchling.build"
 packages = ["football_analytics"]
 
 [tool.interrogate]
-fail-under = 100
+ignore-init-module = true
+ignore-init-method = true
 ignore-private = true
 ignore-magic = true
 ignore-nested-functions = true
-ignore-init-method = true
-ignore-init-module = false   # flip to true to stop requiring __init__.py docstrings
+fail-under = 100
