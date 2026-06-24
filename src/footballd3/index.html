@@ -181,6 +181,67 @@
     font-size: 12px;
     font-family: var(--font-mono);
   }
+
+  /* ─── Freeze Frame ──────────────────────────────────────────────── */
+  .ff-controls {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    margin-bottom: var(--space-4);
+    flex-wrap: wrap;
+  }
+
+  .ff-goal-label {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--color-text-primary);
+  }
+
+  .ff-toggle {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    margin-left: auto;
+    cursor: pointer;
+  }
+
+  .ff-toggle label {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    user-select: none;
+  }
+
+  /* ─── Component reference panel ─────────────────────────────────── */
+  .component-ref {
+    margin-top: var(--space-6);
+    padding: var(--space-4) var(--space-6);
+    border: 1px solid var(--color-structure);
+    border-radius: 2px;
+  }
+  .component-ref-row {
+    display: flex;
+    gap: var(--space-6);
+    align-items: baseline;
+    padding: var(--space-1) 0;
+    border-bottom: 1px solid var(--color-structure);
+  }
+  .component-ref-row:last-child { border-bottom: none; }
+  .ref-label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-text-secondary);
+    min-width: 64px;
+    flex-shrink: 0;
+  }
+  .ref-value {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--color-text-primary);
+  }
 </style>
 </head>
 <body>
@@ -194,6 +255,10 @@
     consistent pixel-per-yard scale across configurations.
   </p>
 </header>
+
+<section class="component-section" style="margin-top:0">
+<h2 class="component-heading">Pitch</h2>
+<p class="component-sub">StatsBomb 120×80 yard coordinate space · configurable mode, orientation, theme, goals</p>
 
 <div class="controls">
   <div class="control">
@@ -232,6 +297,27 @@
 
 <div class="stage"><svg id="pg-pitch"></svg></div>
 
+<div class="component-ref">
+  <div class="component-ref-row">
+    <span class="ref-label">function</span>
+    <code class="ref-value">createPitch(selection, config)</code>
+  </div>
+  <div class="component-ref-row">
+    <span class="ref-label">returns</span>
+    <code class="ref-value">{ svg, g, xScale, yScale, px, width, height, config }</code>
+  </div>
+  <div class="component-ref-row">
+    <span class="ref-label">data</span>
+    <span class="ref-value">none — pitch draws from constants</span>
+  </div>
+  <div class="component-ref-row">
+    <span class="ref-label">extract</span>
+    <span class="ref-value">—</span>
+  </div>
+</div>
+
+</section>
+
 <section class="component-section">
   <h2 class="component-heading">Shot Map — UEFA Euro 2024 Final</h2>
   <p class="component-sub">Spain 2–1 England · 14 Jul 2024 · 25 shots · circle area ∝ xG</p>
@@ -245,11 +331,30 @@
       <div class="stage stage--auto"><svg id="shot-map-b"></svg></div>
     </div>
   </div>
+
+  <div class="component-ref">
+    <div class="component-ref-row">
+      <span class="ref-label">function</span>
+      <code class="ref-value">createShotMap(selection, shots, config)</code>
+    </div>
+    <div class="component-ref-row">
+      <span class="ref-label">returns</span>
+      <code class="ref-value">{ g, px }</code>
+    </div>
+    <div class="component-ref-row">
+      <span class="ref-label">data</span>
+      <code class="ref-value">sample_data/shots_{match_id}.json → [{ x, y, xg, outcome, is_goal, team, player, minute }]</code>
+    </div>
+    <div class="component-ref-row">
+      <span class="ref-label">extract</span>
+      <code class="ref-value">extract_shots(match_id)  ·  src/statsbomb/extract_shots.py</code>
+    </div>
+  </div>
 </section>
 
 <section class="component-section">
   <h2 class="component-heading">Pass Network — UEFA Euro 2024 Final</h2>
-  <p class="component-sub">avg-position pass network · node size ∝ pass volume · arc width ∝ directed pass count</p>
+  <p class="component-sub">avg-position pass network · node size ∝ pass volume · arc width ∝ pass count</p>
   <div class="pn-controls">
     <div class="control" style="flex-direction:row; align-items:center; gap:var(--space-2)">
       <label style="margin:0">team</label>
@@ -258,12 +363,74 @@
         <option value="England">England</option>
       </select>
     </div>
+    <div class="control" style="flex-direction:row; align-items:center; gap:var(--space-2)">
+      <label style="margin:0">direction</label>
+      <select id="pn-directed" class="pn-btn">
+        <option value="directed">directed</option>
+        <option value="undirected">undirected</option>
+      </select>
+    </div>
     <button id="pn-prev" class="pn-btn" disabled>← prev</button>
     <span id="pn-window-label" class="pn-window-label"></span>
     <span id="pn-sub-label" class="pn-sub-label"></span>
     <button id="pn-next" class="pn-btn">next →</button>
   </div>
   <div class="stage stage--auto"><svg id="pass-network"></svg></div>
+
+  <div class="component-ref">
+    <div class="component-ref-row">
+      <span class="ref-label">function</span>
+      <code class="ref-value">createPassNetwork(pitch, data, config)</code>
+    </div>
+    <div class="component-ref-row">
+      <span class="ref-label">returns</span>
+      <code class="ref-value">{ g, px, update(windowIndex) }</code>
+    </div>
+    <div class="component-ref-row">
+      <span class="ref-label">data</span>
+      <code class="ref-value">sample_data/pass_network_{match_id}_{team}.json → { windows, substitutions, metadata }</code>
+    </div>
+    <div class="component-ref-row">
+      <span class="ref-label">extract</span>
+      <code class="ref-value">extract_pass_network(match_id, team)  ·  src/statsbomb/extract_pass_network.py</code>
+    </div>
+  </div>
+</section>
+
+<section class="component-section">
+  <h2 class="component-heading">Freeze Frame — UEFA Euro 2024 Final Goals</h2>
+  <p class="component-sub">StatsBomb 360 · player positions at moment of each goal · ◆ keeper · ○ actor ring</p>
+
+  <div class="ff-controls">
+    <button id="ff-prev" class="pn-btn" disabled>← prev goal</button>
+    <span id="ff-goal-label" class="ff-goal-label"></span>
+    <button id="ff-next" class="pn-btn">next goal →</button>
+    <div class="ff-toggle">
+      <input type="checkbox" id="ff-visible-area" />
+      <label for="ff-visible-area">visible area</label>
+    </div>
+  </div>
+
+  <div class="stage stage--auto"><svg id="freeze-frame"></svg></div>
+
+  <div class="component-ref">
+    <div class="component-ref-row">
+      <span class="ref-label">function</span>
+      <code class="ref-value">createFreezeFrame(pitch, data, config)</code>
+    </div>
+    <div class="component-ref-row">
+      <span class="ref-label">returns</span>
+      <code class="ref-value">{ g, px, update(frameData) }</code>
+    </div>
+    <div class="component-ref-row">
+      <span class="ref-label">data</span>
+      <code class="ref-value">sample_data/freeze_frames_{match_id}_goals.json → { goals: [{ ball, frame, visible_area, metadata }], match_metadata }</code>
+    </div>
+    <div class="component-ref-row">
+      <span class="ref-label">extract</span>
+      <code class="ref-value">extract_freeze_frame(match_id)  ·  src/statsbomb/extract_freeze_frame.py</code>
+    </div>
+  </div>
 </section>
 
 <footer>
@@ -277,6 +444,7 @@
   import { createPitch }       from "./components/pitch/pitch.js";
   import { createShotMap }     from "./components/shotMap/shotMap.js";
   import { createPassNetwork } from "./components/passNetwork/passNetwork.js";
+  import { createFreezeFrame } from "./components/freezeFrame/freezeFrame.js";
 
   function render() {
     const scale = parseFloat(document.getElementById("pg-scale").value) || 7;
@@ -295,7 +463,7 @@
   });
   render();
 
-  function loadTeam(team) {
+  function loadTeam(team, directed) {
     fetch(`sample_data/pass_network_3943043_${team}.json`)
       .then(r => r.json())
       .then(data => {
@@ -306,7 +474,7 @@
           theme:       "whiteboard",
         });
 
-        const { update } = createPassNetwork(pitch, data, { window: 0 });
+        const { update } = createPassNetwork(pitch, data, { window: 0, directed });
 
         let currentWindow = 0;
         const totalWindows = data.windows.length;
@@ -330,8 +498,61 @@
       });
   }
 
-  document.getElementById("pn-team").addEventListener("change", e => loadTeam(e.target.value));
-  loadTeam("Spain");
+  function loadCurrent() {
+    const team     = document.getElementById("pn-team").value;
+    const directed = document.getElementById("pn-directed").value === "directed";
+    loadTeam(team, directed);
+  }
+
+  document.getElementById("pn-team").addEventListener("change", loadCurrent);
+  document.getElementById("pn-directed").addEventListener("change", loadCurrent);
+  loadCurrent();
+
+  // ── Freeze Frame ────────────────────────────────────────────────────────────
+  fetch("sample_data/freeze_frames_3943043_goals.json")
+    .then(r => r.json())
+    .then(data => {
+      const goals = data.goals;
+      let currentGoal    = 0;
+      let showVisibleArea = false;
+      let ff = null;
+
+      function buildFrame() {
+        d3.select("#freeze-frame").selectAll("*").remove();
+        const pitch = createPitch(d3.select("#freeze-frame"), {
+          mode:        "half",
+          orientation: "vertical",
+          pxPerYard:   7,
+          theme:       "whiteboard",
+        });
+        ff = createFreezeFrame(pitch, goals[currentGoal], { showVisibleArea, mirrorX: true });
+        updateNav();
+      }
+
+      function updateNav() {
+        const meta     = goals[currentGoal].metadata;
+        const lastName = meta.player.trim().split(/\s+/).at(-1);
+        document.getElementById("ff-goal-label").textContent =
+          `Goal ${currentGoal + 1} / ${goals.length} — ${lastName}, ${meta.minute}'`;
+        document.getElementById("ff-prev").disabled = currentGoal === 0;
+        document.getElementById("ff-next").disabled = currentGoal === goals.length - 1;
+      }
+
+      function setGoal(idx) {
+        currentGoal = Math.max(0, Math.min(goals.length - 1, idx));
+        ff.update(goals[currentGoal]);
+        updateNav();
+      }
+
+      document.getElementById("ff-prev").onclick = () => setGoal(currentGoal - 1);
+      document.getElementById("ff-next").onclick = () => setGoal(currentGoal + 1);
+      document.getElementById("ff-visible-area").addEventListener("change", e => {
+        showVisibleArea = e.target.checked;
+        buildFrame();
+      });
+
+      buildFrame();
+    });
 
   fetch("sample_data/shots_3943043.json")
     .then(r => r.json())

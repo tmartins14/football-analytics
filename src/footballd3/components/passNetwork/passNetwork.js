@@ -96,6 +96,28 @@ function clipStartpoint(ax, ay, cpx, cpy, r) {
 }
 
 /**
+ * Compute a straight clipped line path for an undirected edge.
+ *
+ * Start and end points are moved inward from the node centres by their respective
+ * radii so the line begins and ends at the circle boundary.
+ *
+ * @param {number} ax    - From-node centre x.
+ * @param {number} ay    - From-node centre y.
+ * @param {number} bx    - To-node centre x.
+ * @param {number} by    - To-node centre y.
+ * @param {number} fromR - From-node radius in pixels.
+ * @param {number} toR   - To-node radius in pixels.
+ * @returns {string} SVG path d-string "M … L …".
+ */
+function straightPath(ax, ay, bx, by, fromR, toR) {
+  const dx  = bx - ax;
+  const dy  = by - ay;
+  const len = Math.sqrt(dx * dx + dy * dy) || 1;
+  return `M ${ax + (dx / len) * fromR} ${ay + (dy / len) * fromR} ` +
+         `L ${bx - (dx / len) * toR}   ${by - (dy / len) * toR}`;
+}
+
+/**
  * Extract the last name token from a StatsBomb full player name.
  *
  * StatsBomb names can be very long ("Lamine Yamal Nasraoui Ebana"); the last
@@ -113,9 +135,10 @@ function lastName(fullName) {
  * Creates a pass network overlay on an existing pitch.
  *
  * Nodes are placed at each player's average pass-origin position within the
- * active window. Node size encodes pass volume (sqrt scale). Directed edges are
- * quadratic Bézier arcs; A→B and B→A bow to opposite sides of the AB line.
- * Edge width encodes pass count in that direction.
+ * active window. Node size encodes pass volume (sqrt scale). In directed mode
+ * (default), edges are quadratic Bézier arcs with arrowheads; A→B and B→A bow
+ * to opposite sides of the AB line. In undirected mode, both directions are
+ * merged into one straight line per pair (count = sum of both directions).
  *
  * All scales are calibrated across ALL windows so sizes remain comparable when
  * animating between substitution windows via update().
@@ -123,17 +146,20 @@ function lastName(fullName) {
  * @param {Object} pitch - Return value of createPitch(): { svg, g, px, ... }.
  * @param {Object} data  - Pass network JSON with windows, substitutions, metadata fields.
  * @param {Object} [config] - Optional visual configuration.
- * @param {number} [config.window=0]          - Initial substitution window index (0-indexed).
- * @param {number} [config.minEdgeCount=3]    - Hide directed edges with count below this threshold.
- * @param {string} [config.nodeColor="#1E3A5F"] - Fill for player nodes.
- * @param {string} [config.edgeColor="#1E3A5F"] - Stroke for directed arcs and arrowheads.
- * @param {string} [config.labelColor="#FAF7F0"] - Fill for player last-name labels inside nodes.
+ * @param {number}  [config.window=0]            - Initial substitution window index (0-indexed).
+ * @param {boolean} [config.directed=true]        - When true, draws curved arcs with arrowheads.
+ *   When false, merges A→B and B→A per pair (count = sum) and draws straight undirected lines.
+ * @param {number}  [config.minEdgeCount=3]       - Hide edges with count below this threshold.
+ * @param {string}  [config.nodeColor="#1E3A5F"]  - Fill for player nodes.
+ * @param {string}  [config.edgeColor="#1E3A5F"]  - Stroke for arcs/lines and arrowheads.
+ * @param {string}  [config.labelColor="#FAF7F0"] - Fill for player last-name labels.
  * @returns {{ g: d3.Selection, px: Function, update: Function }}
  *   g is pitch.g (append further overlays there). update(idx) transitions to window idx.
  */
 export function createPassNetwork(pitch, data, config = {}) {
   const {
     window: initialWindow = 0,
+    directed     = true,
     minEdgeCount = 3,
     nodeColor    = "#1E3A5F",
     edgeColor    = "#1E3A5F",
@@ -187,12 +213,33 @@ export function createPassNetwork(pitch, data, config = {}) {
     const dur    = animate ? 400 : 0;
 
     // ── Edges ────────────────────────────────────────────────────────────────
-    const visibleEdges = win.edges.filter(
-      e => e.count >= minEdgeCount && posMap.has(e.from) && posMap.has(e.to)
-    );
+    // Build edge dataset: directed keeps ordered pairs; undirected merges them.
+    let edgeData;
+    if (directed) {
+      edgeData = win.edges.filter(
+        e => e.count >= minEdgeCount && posMap.has(e.from) && posMap.has(e.to)
+      );
+    } else {
+      const pairMap = new Map();
+      for (const e of win.edges) {
+        if (!posMap.has(e.from) || !posMap.has(e.to)) continue;
+        const key      = [e.from, e.to].sort().join("|");
+        const existing = pairMap.get(key);
+        pairMap.set(key, existing
+          ? { from: existing.from, to: existing.to, count: existing.count + e.count }
+          : { from: e.from, to: e.to, count: e.count }
+        );
+      }
+      edgeData = [...pairMap.values()].filter(e => e.count >= minEdgeCount);
+    }
+
+    const edgeKey  = d => directed
+      ? `${d.from}→${d.to}`
+      : [d.from, d.to].sort().join("↔");
+    const edgeSep  = directed ? " → " : " ↔ ";
 
     const edgeSel = edgesG.selectAll(".pn-edge")
-      .data(visibleEdges, d => `${d.from}→${d.to}`);
+      .data(edgeData, edgeKey);
 
     edgeSel.exit()
       .transition().duration(dur)
@@ -203,13 +250,14 @@ export function createPassNetwork(pitch, data, config = {}) {
       .attr("class", "pn-edge")
       .attr("fill", "none")
       .attr("stroke", edgeColor)
-      .attr("marker-end", `url(#${markerId})`)
       .style("opacity", 0);
+
+    if (directed) edgeEnter.attr("marker-end", `url(#${markerId})`);
 
     edgeEnter.merge(edgeSel)
       .on("mouseover", (event, d) => {
         _tooltip.innerHTML =
-          `<span style="font-weight:600">${d.from}</span> → ${d.to}<br>` +
+          `<span style="font-weight:600">${d.from}</span>${edgeSep}${d.to}<br>` +
           `<span style="color:#525252">${d.count} passes</span>`;
         _tooltip.style.display = "block";
       })
@@ -222,16 +270,19 @@ export function createPassNetwork(pitch, data, config = {}) {
       .style("opacity", d => 0.2 + 0.65 * (d.count / globalMaxCount))
       .attr("stroke-width", d => wScale(d.count))
       .attr("d", d => {
-        const from = posMap.get(d.from);
-        const to   = posMap.get(d.to);
+        const from  = posMap.get(d.from);
+        const to    = posMap.get(d.to);
         const [ax, ay] = px(from.x, from.y);
         const [bx, by] = px(to.x,   to.y);
-        const { cpx, cpy } = arcPath(ax, ay, bx, by);
         const fromR = rScale(from.passes);
         const toR   = rScale(to.passes);
-        const [sx, sy] = clipStartpoint(ax, ay, cpx, cpy, fromR);
-        const [ex, ey] = clipEndpoint(bx, by, cpx, cpy, toR);
-        return `M ${sx} ${sy} Q ${cpx} ${cpy} ${ex} ${ey}`;
+        if (directed) {
+          const { cpx, cpy } = arcPath(ax, ay, bx, by);
+          const [sx, sy] = clipStartpoint(ax, ay, cpx, cpy, fromR);
+          const [ex, ey] = clipEndpoint(bx, by, cpx, cpy, toR);
+          return `M ${sx} ${sy} Q ${cpx} ${cpy} ${ex} ${ey}`;
+        }
+        return straightPath(ax, ay, bx, by, fromR, toR);
       });
 
     // ── Nodes ────────────────────────────────────────────────────────────────

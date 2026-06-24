@@ -2,7 +2,9 @@
 
 Average-position pass network for a single team, rendered as a D3 overlay on an existing `pitch.js` pitch instance.
 
-Nodes represent players at their average pass-origin position within the active substitution window. Node radius encodes pass volume (sqrt scale so area is perceptually linear). Directed edges are quadratic Bézier arcs — the A→B and B→A arcs automatically bow to opposite sides of the AB line, keeping both directions readable. Edge width encodes pass count in that direction.
+Nodes represent players at their average pass-origin position within the active substitution window. Node radius encodes pass volume (sqrt scale so area is perceptually linear). Edge width encodes pass count.
+
+In **directed** mode (default), A→B and B→A are drawn as separate quadratic Bézier arcs that bow to opposite sides of the AB line. In **undirected** mode, both directions are merged into one straight line per pair (count = sum of both directions).
 
 The component exposes an `update(windowIndex)` method so callers can animate through substitution windows without re-rendering the pitch. All scales are calibrated across all windows so visual weight stays comparable as you step through.
 
@@ -63,7 +65,8 @@ const pitch = createPitch(d3.select("#my-svg"), {
 // 2. Overlay the pass network on top.
 const { update } = createPassNetwork(pitch, data, {
   window:       0,          // initial substitution window (0-indexed)
-  minEdgeCount: 3,          // hide directed edges with fewer passes than this
+  directed:     true,       // true = curved arcs + arrows; false = straight undirected lines
+  minEdgeCount: 3,          // hide edges with count below this threshold
   nodeColor:    "#1E3A5F",
   edgeColor:    "#1E3A5F",
   labelColor:   "#FAF7F0",
