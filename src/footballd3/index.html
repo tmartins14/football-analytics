@@ -213,6 +213,31 @@
     user-select: none;
   }
 
+  /* ─── Heatmap ───────────────────────────────────────────────────── */
+  .hm-meta {
+    display: flex;
+    gap: var(--space-6);
+    margin-bottom: var(--space-4);
+    flex-wrap: wrap;
+  }
+  .hm-meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .hm-meta-item .label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--color-text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .hm-meta-item .value {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--color-text-primary);
+  }
+
   /* ─── Component reference panel ─────────────────────────────────── */
   .component-ref {
     margin-top: var(--space-6);
@@ -433,6 +458,83 @@
   </div>
 </section>
 
+<section class="component-section">
+  <h2 class="component-heading">Heatmap — UEFA Euro 2024 Final</h2>
+  <p class="component-sub">on-ball event density · Gaussian KDE · bandwidth = 5 yards · shows where the player was <em>involved in play</em>, not where they stood</p>
+
+  <div class="hm-meta">
+    <div class="hm-meta-item">
+      <span class="label">player</span>
+      <span class="value" id="hm-player">—</span>
+    </div>
+    <div class="hm-meta-item">
+      <span class="label">team</span>
+      <span class="value" id="hm-team">—</span>
+    </div>
+    <div class="hm-meta-item">
+      <span class="label">on-ball events</span>
+      <span class="value" id="hm-events">—</span>
+    </div>
+    <div class="hm-meta-item">
+      <span class="label">bandwidth</span>
+      <span class="value" id="hm-bandwidth">—</span>
+    </div>
+  </div>
+
+  <div class="stage stage--auto"><svg id="heatmap"></svg></div>
+
+  <div class="component-ref">
+    <div class="component-ref-row">
+      <span class="ref-label">function</span>
+      <code class="ref-value">createHeatmap(pitch, data, config)</code>
+    </div>
+    <div class="component-ref-row">
+      <span class="ref-label">returns</span>
+      <code class="ref-value">{ g, px, update(newData) }</code>
+    </div>
+    <div class="component-ref-row">
+      <span class="ref-label">data</span>
+      <code class="ref-value">sample_data/heatmap_{match_id}_{player}.json → { grid: { cols, rows, values }, metadata }</code>
+    </div>
+    <div class="component-ref-row">
+      <span class="ref-label">extract</span>
+      <code class="ref-value">extract_player_events(match_id)  ·  src/statsbomb/extract_heatmap.py</code>
+    </div>
+  </div>
+</section>
+
+<section class="component-section">
+  <h2 class="component-heading">Match Stats — UEFA Euro 2024 Final</h2>
+  <p class="component-sub">Spain 2–1 England · mirrored bar breakdown · composed from comparisonBars</p>
+
+  <div class="stage stage--auto" id="match-stats-stage">
+    <div id="match-stats"></div>
+  </div>
+
+  <div class="component-ref">
+    <div class="component-ref-row">
+      <span class="ref-label">function</span>
+      <code class="ref-value">createMatchStats(selection, data, config)</code>
+    </div>
+    <div class="component-ref-row">
+      <span class="ref-label">composes</span>
+      <code class="ref-value">createComparisonBars(selection, data, config)  ·  comparisonBars.js</code>
+    </div>
+    <div class="component-ref-row">
+      <span class="ref-label">returns</span>
+      <code class="ref-value">{ root, update(newData, newConfig?) }</code>
+    </div>
+    <div class="component-ref-row">
+      <span class="ref-label">data</span>
+      <code class="ref-value">sample_data/match_stats_{match_id}.json → { home, away, rows, metadata }</code>
+    </div>
+    <div class="component-ref-row">
+      <span class="ref-label">extract</span>
+      <code class="ref-value">extract_match_stats(match_id)  ·  src/statsbomb/extract_match_stats.py</code>
+    </div>
+  </div>
+</section>
+
 <footer>
   footballd3 · playground · <code>cd src/footballd3 &amp;&amp; python -m http.server 8000</code> → <code>http://localhost:8000/</code>
 </footer>
@@ -441,10 +543,12 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
 <script type="module">
-  import { createPitch }       from "./components/pitch/pitch.js";
-  import { createShotMap }     from "./components/shotMap/shotMap.js";
-  import { createPassNetwork } from "./components/passNetwork/passNetwork.js";
-  import { createFreezeFrame } from "./components/freezeFrame/freezeFrame.js";
+  import { createPitch }           from "./components/pitch/pitch.js";
+  import { createShotMap }         from "./components/shotMap/shotMap.js";
+  import { createPassNetwork }     from "./components/passNetwork/passNetwork.js";
+  import { createFreezeFrame }     from "./components/freezeFrame/freezeFrame.js";
+  import { createHeatmap }         from "./components/heatmap/heatmap.js";
+  import { createMatchStats }      from "./components/matchStats/matchStats.js";
 
   function render() {
     const scale = parseFloat(document.getElementById("pg-scale").value) || 7;
@@ -552,6 +656,41 @@
       });
 
       buildFrame();
+    });
+
+  // ── Heatmap ─────────────────────────────────────────────────────────────────
+  fetch("sample_data/heatmap_3943043_lamine_yamal_nasraoui_ebana.json")
+    .then(r => r.json())
+    .then(data => {
+      const meta = data.metadata;
+      document.getElementById("hm-player").textContent    = meta.player;
+      document.getElementById("hm-team").textContent      = meta.team;
+      document.getElementById("hm-events").textContent    = meta.event_count;
+      document.getElementById("hm-bandwidth").textContent = `${meta.bandwidth_yards} yards`;
+
+      const pitch = createPitch(d3.select("#heatmap"), {
+        mode:        "full",
+        orientation: "horizontal",
+        pxPerYard:   7,
+        theme:       "whiteboard",
+      });
+      createHeatmap(pitch, data, {
+        renderStyle: "smooth",
+        colorLow:    "#FAF7F0",
+        colorHigh:   "#9F1239",
+        maxOpacity:  0.85,
+      });
+    });
+
+  // ── Match Stats ─────────────────────────────────────────────────────────────
+  fetch("sample_data/match_stats_3943043.json")
+    .then(r => r.json())
+    .then(data => {
+      createMatchStats(d3.select("#match-stats"), data, {
+        tier:           "basic",
+        showTierToggle: true,
+        width:          480,
+      });
     });
 
   fetch("sample_data/shots_3943043.json")

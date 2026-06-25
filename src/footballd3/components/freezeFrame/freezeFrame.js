@@ -38,9 +38,9 @@ function diamondPoints(cx, cy, r) {
  *
  * Renders player positions and the ball for one instant of play. Players are
  * visually distinguished by team side (teammate vs opponent fill), role
- * (keeper = diamond shape), and actor (outer ring around the player who
- * performed the action). An optional broadcast field-of-view polygon can be
- * toggled via config.showVisibleArea.
+ * (keeper = diamond shape), and actor (white fill + team-colour border on the
+ * player who performed the action). An optional broadcast field-of-view polygon
+ * can be toggled via config.showVisibleArea.
  *
  * All coordinates are StatsBomb-native 120×80 yards; the pitch's px() function
  * handles pixel mapping. No pitch is re-rendered inside this component.
@@ -55,13 +55,11 @@ function diamondPoints(cx, cy, r) {
  *   convention used by shotMap.js.
  * @param {string}  [config.teamColor="#1E3A5F"]      - Fill for teammate markers.
  * @param {string}  [config.opponentColor="#9F1239"]  - Fill for opponent markers.
- * @param {string}  [config.actorRingColor="#FAF7F0"] - Stroke colour of the actor ring.
- * @param {number}  [config.actorRingWidth=3]         - Stroke-width of the actor ring (px).
- * @param {number}  [config.actorRadiusBoost=2]       - Added to markerRadius for the ring radius.
+ * @param {number}  [config.actorRingWidth=2]         - Stroke-width of the actor circle border (px).
  * @param {number}  [config.markerRadius=6]           - Base player marker radius (px).
- * @param {number}  [config.ballRadius=5]             - Ball marker radius (px).
- * @param {string}  [config.ballColor="#FAF7F0"]      - Ball fill colour.
- * @param {string}  [config.ballStroke="#171717"]     - Ball stroke colour.
+ * @param {number}  [config.ballRadius=3]             - Ball marker radius (px).
+ * @param {string}  [config.ballColor="#171717"]      - Ball fill colour.
+ * @param {string}  [config.ballStroke="none"]        - Ball stroke colour.
  * @returns {{ g: d3.Selection, px: Function, update: Function }}
  *   g is pitch.g (append further overlays there).
  *   update(frameData) transitions the snapshot to new frame data without re-rendering the pitch.
@@ -72,13 +70,11 @@ export function createFreezeFrame(pitch, data, config = {}) {
     mirrorX          = false,
     teamColor        = "#1E3A5F",
     opponentColor    = "#9F1239",
-    actorRingColor   = "#FAF7F0",
-    actorRingWidth   = 3,
-    actorRadiusBoost = 2,
+    actorRingWidth   = 2,
     markerRadius     = 6,
-    ballRadius       = 5,
-    ballColor        = "#FAF7F0",
-    ballStroke       = "#171717",
+    ballRadius       = 3,
+    ballColor        = "#171717",
+    ballStroke       = "none",
   } = config;
 
   const { g, px } = pitch;
@@ -123,7 +119,7 @@ export function createFreezeFrame(pitch, data, config = {}) {
     // Rendered in this order so teammates draw on top (higher visual priority).
     for (const [group, fill] of [
       [fieldPlayers.filter(p => !p.teammate), opponentColor],
-      [fieldPlayers.filter(p =>  p.teammate), teamColor],
+      [fieldPlayers.filter(p =>  p.teammate && !p.actor), teamColor],
     ]) {
       ffGroup.selectAll(null)
         .data(group)
@@ -151,16 +147,18 @@ export function createFreezeFrame(pitch, data, config = {}) {
         .style("opacity", 1);
     }
 
-    // 5. Actor outer ring — concentric circle outline drawn on top of the actor's marker.
-    if (actor) {
+    // 5. Actor (ball carrier) — white fill + team-colour border, drawn after the
+    // teammate pass so it renders on top of the regular solid-fill circles.
+    // Keeper-actors are skipped here; they already appear as a diamond in step 4.
+    if (actor && !actor.keeper) {
       const [ax, ay] = pxM(actor.x, actor.y);
       ffGroup.append("circle")
-        .attr("class", "ff-actor-ring")
+        .attr("class",        "ff-actor")
         .attr("cx", ax)
         .attr("cy", ay)
-        .attr("r",  markerRadius + actorRadiusBoost)
-        .attr("fill",         "none")
-        .attr("stroke",       actorRingColor)
+        .attr("r",            markerRadius)
+        .attr("fill",         "#FAF7F0")
+        .attr("stroke",       teamColor)
         .attr("stroke-width", actorRingWidth)
         .style("opacity", 0)
         .transition().duration(dur)
@@ -174,9 +172,8 @@ export function createFreezeFrame(pitch, data, config = {}) {
       .attr("cx", bx)
       .attr("cy", by)
       .attr("r",  ballRadius)
-      .attr("fill",         ballColor)
-      .attr("stroke",       ballStroke)
-      .attr("stroke-width", 1.5)
+      .attr("fill",   ballColor)
+      .attr("stroke", ballStroke)
       .style("opacity", 0)
       .transition().duration(dur)
       .style("opacity", 1);
