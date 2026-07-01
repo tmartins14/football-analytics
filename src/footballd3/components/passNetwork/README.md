@@ -19,7 +19,7 @@ The component exposes an `update(windowIndex)` method so callers can animate thr
       "index": 0,
       "label": "0'–63' (Starting XI)",
       "nodes": [
-        { "player": "Rodri", "x": 60.2, "y": 40.1, "passes": 72 }
+        { "player": "Rodri", "display_name": "Rodri", "x": 60.2, "y": 40.1, "passes": 72 }
       ],
       "edges": [
         { "from": "Rodri", "to": "Pedri", "count": 14 },
@@ -41,6 +41,7 @@ The component exposes an `update(windowIndex)` method so callers can animate thr
 | Field | Notes |
 |---|---|
 | `windows[].nodes[].x`, `.y` | StatsBomb-native 120×80 coordinates — untransformed. Pitch handles pixel mapping. |
+| `windows[].nodes[].display_name` | Player nickname (or full name when no nickname exists), resolved Python-side. Rendered as the node label. |
 | `windows[].nodes[].passes` | Total completed passes by this player in this window. Drives node radius. |
 | `windows[].edges[].from`, `.to` | Ordered pair. One record per direction (A→B and B→A are separate). |
 | `windows[].edges[].count` | Completed passes in this direction within this window. Drives edge width. |

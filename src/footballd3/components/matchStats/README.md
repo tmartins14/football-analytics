@@ -51,13 +51,11 @@ is required. Tag it `"tier": "advanced"` to keep the default view clean.
 
 ## Possession method
 
-Possession % is computed as the **share of distinct StatsBomb possession sequences**
-owned by each team. StatsBomb assigns every event a `possession` (integer sequence ID)
-and `possession_team` field; deduplicating on `(possession, possession_team)` and
-counting per team mirrors StatsBomb's own possession model.
-
-This means each possession sequence counts once regardless of duration. A 1-pass move
-and a 20-pass move both count as one sequence. The values always sum to 100%.
+Possession % is computed as the **share of all StatsBomb events attributed to each
+team via the `possession_team` column**. Every event in the match data carries a
+`possession_team` tag indicating which team currently holds the ball; counting these
+per team and expressing as a percentage captures possession intensity in a way that
+aligns with broadcast statistics. Values always sum to 100%.
 
 ## xG source
 

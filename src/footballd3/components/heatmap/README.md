@@ -28,7 +28,7 @@ The heatmap is **not a parameter-free fact**. It is a Gaussian KDE surface evalu
   },
   "metadata": {
     "match_id": 3943043,
-    "player": "Rodri",
+    "display_name": "Rodri",
     "team": "Spain",
     "competition": "UEFA Euro 2024",
     "match_label": "Spain vs England",
@@ -45,6 +45,7 @@ The heatmap is **not a parameter-free fact**. It is a Gaussian KDE surface evalu
 
 | Field | Notes |
 |---|---|
+| `metadata.display_name` | Player nickname (or full name when no nickname exists), resolved Python-side. Displayed in the gallery label. |
 | `grid.values` | 2D array `[rows][cols]` of floats normalised to `[0.0, 1.0]` relative to the grid maximum. The renderer maps this directly to colour and opacity. |
 | `grid.cols`, `grid.rows` | Grid dimensions. Each cell covers `(120/cols) × (80/rows)` yards. Default 60×40 = 2-yard cells. |
 | `metadata.bandwidth_yards` | KDE bandwidth in StatsBomb yards. **Consumed by documentation and tooling only — the renderer does not use it.** Always inspect this field before interpreting the surface. |

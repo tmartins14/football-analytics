@@ -118,20 +118,6 @@ function straightPath(ax, ay, bx, by, fromR, toR) {
 }
 
 /**
- * Extract the last name token from a StatsBomb full player name.
- *
- * StatsBomb names can be very long ("Lamine Yamal Nasraoui Ebana"); the last
- * token is the most recognisable identifier in a pitch context.
- *
- * @param {string} fullName - Full player name string.
- * @returns {string} Last whitespace-delimited token.
- */
-function lastName(fullName) {
-  const parts = fullName.trim().split(/\s+/);
-  return parts[parts.length - 1];
-}
-
-/**
  * Creates a pass network overlay on an existing pitch.
  *
  * Nodes are placed at each player's average pass-origin position within the
@@ -152,7 +138,7 @@ function lastName(fullName) {
  * @param {number}  [config.minEdgeCount=3]       - Hide edges with count below this threshold.
  * @param {string}  [config.nodeColor="#1E3A5F"]  - Fill for player nodes.
  * @param {string}  [config.edgeColor="#1E3A5F"]  - Stroke for arcs/lines and arrowheads.
- * @param {string}  [config.labelColor="#FAF7F0"] - Fill for player last-name labels.
+ * @param {string}  [config.labelColor="#FAF7F0"] - Fill for player display_name labels.
  * @returns {{ g: d3.Selection, px: Function, update: Function }}
  *   g is pitch.g (append further overlays there). update(idx) transitions to window idx.
  */
@@ -308,7 +294,7 @@ export function createPassNetwork(pitch, data, config = {}) {
     nodeEnter.merge(nodeSel)
       .on("mouseover", (event, d) => {
         _tooltip.innerHTML =
-          `<span style="font-weight:600">${d.player}</span><br>` +
+          `<span style="font-weight:600">${d.display_name}</span><br>` +
           `<span style="color:#525252">${d.passes} passes</span>`;
         _tooltip.style.display = "block";
       })
@@ -344,7 +330,7 @@ export function createPassNetwork(pitch, data, config = {}) {
       .style("opacity", 0)
       .attr("x", d => px(d.x, d.y)[0])
       .attr("y", d => px(d.x, d.y)[1])
-      .text(d => lastName(d.player));
+      .text(d => d.display_name);
 
     labelEnter.merge(labelSel)
       .transition().duration(dur)

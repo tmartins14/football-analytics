@@ -47,8 +47,17 @@ const SB = {
  * Creates a blank pitch.
  *
  * @param {d3.Selection} selection - The D3 selection to render the pitch into.
- * @param {Object} config - Configuration options for the pitch.
- * @returns {Object} An object containing the pitch group and a pixel conversion function.
+ * @param {Object}  config - Configuration options for the pitch.
+ * @param {string}  [config.mode="full"]          - "full" or "half".
+ * @param {string}  [config.orientation="horizontal"] - "horizontal" or "vertical".
+ * @param {number}  [config.pxPerYard=8]          - Pixels per StatsBomb yard.
+ * @param {number}  [config.padding=24]            - Padding around the pitch in pixels.
+ * @param {boolean} [config.showGoals=true]        - Render goal nets.
+ * @param {string}  [config.theme="whiteboard"]    - "whiteboard", "green", or a token object.
+ * @param {boolean} [config.flipAttack=false]      - Vertical orientation only. When true, the
+ *   attacking direction (high x) maps to the top of the screen and the defending end (low x)
+ *   maps to the bottom. Useful for formation diagrams drawn with forwards at the top.
+ * @returns {Object} { svg, g, xScale, yScale, px, width, height, config }
  */
 export function createPitch(selection, config = {}) {
   const {
@@ -58,6 +67,7 @@ export function createPitch(selection, config = {}) {
     padding     = 24,
     showGoals   = true,
     theme       = "whiteboard",
+    flipAttack  = false,
   } = config;
 
   // Resolve theme: string key looks up THEMES, object passes through
@@ -79,7 +89,11 @@ export function createPitch(selection, config = {}) {
   const height = innerH + padding * 2;
 
   const xDomain = orientation === "horizontal" ? [0, sbW] : [0, sbH];
-  const yDomain = orientation === "horizontal" ? [0, sbH] : [0, sbW];
+  // flipAttack (vertical only): invert the primary axis so high-x (attacking end)
+  // maps to screen-top and low-x (defending end) maps to screen-bottom.
+  const yDomain = orientation === "horizontal"
+    ? [0, sbH]
+    : (flipAttack ? [sbW, 0] : [0, sbW]);
 
   const xScale = d3.scaleLinear().domain(xDomain).range([padding, padding + innerW]);
   const yScale = d3.scaleLinear().domain(yDomain).range([padding, padding + innerH]);
@@ -193,8 +207,13 @@ export function createPitch(selection, config = {}) {
 
     // d3.arc: 0° = up, clockwise. Horizontal: left arc bulges right (90°),
     // right arc bulges left (270°). Vertical orientation rotates by +90°.
+    // flipAttack swaps the base angle so the arc still bulges away from the
+    // goal line after the y-axis is inverted.
     let centerA = spotX < 60 ? 90 : 270;
-    if (orientation === "vertical") centerA += 90;
+    if (orientation === "vertical") {
+      if (flipAttack) centerA = spotX < 60 ? 270 : 90;
+      centerA += 90;
+    }
 
     const arc = d3.arc()
       .innerRadius(rPx - arcThickness).outerRadius(rPx + arcThickness)
@@ -273,5 +292,5 @@ export function createPitch(selection, config = {}) {
     if (mode === "full") drawGoal(120, 1);
   }
 
-  return { svg, g, xScale, yScale, px, width, height, config: { mode, orientation, padding, pxPerYard } };
+  return { svg, g, xScale, yScale, px, width, height, config: { mode, orientation, padding, pxPerYard, flipAttack } };
 }

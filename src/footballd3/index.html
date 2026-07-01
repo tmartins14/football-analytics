@@ -161,6 +161,12 @@
     cursor: default;
   }
 
+  .ts-active {
+    color: var(--color-text-primary);
+    border-color: var(--color-text-primary);
+    font-weight: 600;
+  }
+
   .pn-window-label {
     font-family: var(--font-mono);
     font-size: 13px;
@@ -213,6 +219,79 @@
     user-select: none;
   }
 
+  /* ─── Progressive Map ──────────────────────────────────────────── */
+  .pm-controls {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    margin-bottom: var(--space-4);
+    flex-wrap: wrap;
+  }
+
+  .pm-legend {
+    display: flex;
+    align-items: center;
+    gap: var(--space-5);
+    margin-left: auto;
+    flex-shrink: 0;
+  }
+
+  .pm-legend-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--color-text-secondary);
+  }
+
+  .pm-swatch {
+    width: 24px;
+    height: 2px;
+    flex-shrink: 0;
+  }
+
+  .pm-swatch--dashed {
+    background: repeating-linear-gradient(
+      to right,
+      #9F1239 0px, #9F1239 5px,
+      transparent 5px, transparent 8px
+    );
+    height: 2px;
+  }
+
+  /* ─── Convex Hull ──────────────────────────────────────────────── */
+  .ch-controls {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    margin-bottom: var(--space-4);
+    flex-wrap: wrap;
+  }
+
+  .ch-legend {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    margin-left: auto;
+  }
+
+  .ch-legend-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--color-text-secondary);
+  }
+
+  .ch-swatch {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    opacity: 0.7;
+  }
+
   /* ─── Heatmap ───────────────────────────────────────────────────── */
   .hm-meta {
     display: flex;
@@ -253,6 +332,14 @@
     border-bottom: 1px solid var(--color-structure);
   }
   .component-ref-row:last-child { border-bottom: none; }
+
+  .component-desc {
+    font-size: 14px;
+    color: var(--color-text-secondary);
+    max-width: 72ch;
+    margin: 0 0 var(--space-4);
+    line-height: 1.6;
+  }
   .ref-label {
     font-family: var(--font-mono);
     font-size: 10px;
@@ -284,6 +371,7 @@
 <section class="component-section" style="margin-top:0">
 <h2 class="component-heading">Pitch</h2>
 <p class="component-sub">StatsBomb 120×80 yard coordinate space · configurable mode, orientation, theme, goals</p>
+<p class="component-desc">The foundational layer every other component builds on. Draws a StatsBomb 120×80 yard pitch into an SVG and exposes a coordinate helper (<code>px</code>) that maps StatsBomb yards to screen pixels.</p>
 
 <div class="controls">
   <div class="control">
@@ -346,6 +434,7 @@
 <section class="component-section">
   <h2 class="component-heading">Shot Map — UEFA Euro 2024 Final</h2>
   <p class="component-sub">Spain 2–1 England · 14 Jul 2024 · 25 shots · circle area ∝ xG</p>
+  <p class="component-desc">Shows where each shot was taken, how dangerous it was, and whether it scored. Circle size encodes expected goals (xG); color encodes outcome — red for goals, navy for non-goals.</p>
   <div class="shot-map-grid">
     <div class="shot-map-col">
       <p class="team-label" id="team-a-label"></p>
@@ -368,7 +457,7 @@
     </div>
     <div class="component-ref-row">
       <span class="ref-label">data</span>
-      <code class="ref-value">sample_data/shots_{match_id}.json → [{ x, y, xg, outcome, is_goal, team, player, minute }]</code>
+      <code class="ref-value">sample_data/shots_{match_id}.json → [{ x, y, xg, outcome, is_goal, team, display_name, minute }]</code>
     </div>
     <div class="component-ref-row">
       <span class="ref-label">extract</span>
@@ -380,6 +469,7 @@
 <section class="component-section">
   <h2 class="component-heading">Pass Network — UEFA Euro 2024 Final</h2>
   <p class="component-sub">avg-position pass network · node size ∝ pass volume · arc width ∝ pass count</p>
+  <p class="component-desc">Reveals how a team moved the ball and which connections were most active. Nodes represent players at their average pass-origin position; node size encodes pass volume, arc width encodes pass count between pairs. Step through substitution windows to see how the network shifted.</p>
   <div class="pn-controls">
     <div class="control" style="flex-direction:row; align-items:center; gap:var(--space-2)">
       <label style="margin:0">team</label>
@@ -425,6 +515,7 @@
 <section class="component-section">
   <h2 class="component-heading">Freeze Frame — UEFA Euro 2024 Final Goals</h2>
   <p class="component-sub">StatsBomb 360 · player positions at moment of each goal · ◆ keeper · ○ actor ring</p>
+  <p class="component-desc">A still snapshot of all player and ball positions at the exact moment of a goal. Navy circles are teammates, red are opponents, diamonds are goalkeepers, and an outer ring marks the actor (the shooter).</p>
 
   <div class="ff-controls">
     <button id="ff-prev" class="pn-btn" disabled>← prev goal</button>
@@ -459,8 +550,68 @@
 </section>
 
 <section class="component-section">
+  <h2 class="component-heading">Convex Hull — UEFA Euro 2024 Final Goals</h2>
+  <p class="component-sub">single-frame territory shape · convex hull over visible outfield players · overlaid on freeze frame · keeper excluded from hull</p>
+  <p class="component-desc">Outlines the territorial footprint each team occupied at the moment of a goal — the smallest convex polygon enclosing each team's visible outfield players. Read hull shape and position to understand spatial structure; area comparisons are unreliable because the broadcast camera captures the two teams to different completeness in the same frame.</p>
+
+  <div class="ch-controls">
+    <button id="ch-prev" class="pn-btn" disabled>← prev goal</button>
+    <span id="ch-goal-label" class="ff-goal-label"></span>
+    <button id="ch-next" class="pn-btn">next goal →</button>
+    <div class="control" style="flex-direction:row; align-items:center; gap:var(--space-2)">
+      <label style="margin:0">show</label>
+      <select id="ch-toggle" class="pn-btn">
+        <option value="both">both</option>
+        <option value="offense">offense only</option>
+        <option value="defense">defense only</option>
+      </select>
+    </div>
+    <div class="ch-legend">
+      <div class="ch-legend-item">
+        <div class="ch-swatch" style="background:#9F1239"></div>
+        <span id="ch-offense-label">offense</span>
+      </div>
+      <div class="ch-legend-item">
+        <div class="ch-swatch" style="background:#1E3A5F"></div>
+        <span id="ch-defense-label">defense</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="stage stage--auto"><svg id="convex-hull-svg"></svg></div>
+
+  <div class="component-ref">
+    <div class="component-ref-row">
+      <span class="ref-label">function</span>
+      <code class="ref-value">createConvexHull(pitch, data, config)</code>
+    </div>
+    <div class="component-ref-row">
+      <span class="ref-label">composes</span>
+      <code class="ref-value">createFreezeFrame(pitch, data, config) — hulls render behind dots via auto-insert before .ff</code>
+    </div>
+    <div class="component-ref-row">
+      <span class="ref-label">returns</span>
+      <code class="ref-value">{ g, px }</code>
+    </div>
+    <div class="component-ref-row">
+      <span class="ref-label">data</span>
+      <code class="ref-value">sample_data/convex_hull_{match_id}_goals.json → { hulls: [{ sides: [{side, team_name, hull_vertices, area, player_count}], metadata }], match_metadata }</code>
+    </div>
+    <div class="component-ref-row">
+      <span class="ref-label">note</span>
+      <span class="ref-value">hull encloses only VISIBLE outfield players (360 = broadcast FOV) · comparing offense vs defense area compares differently-complete samples · keeper excluded from hull by design</span>
+    </div>
+    <div class="component-ref-row">
+      <span class="ref-label">extract</span>
+      <code class="ref-value">main()  ·  src/statsbomb/extract_convex_hull.py</code>
+    </div>
+  </div>
+</section>
+
+<section class="component-section">
   <h2 class="component-heading">Heatmap — UEFA Euro 2024 Final</h2>
   <p class="component-sub">on-ball event density · Gaussian KDE · bandwidth = 5 yards · shows where the player was <em>involved in play</em>, not where they stood</p>
+  <p class="component-desc">Shows where a player was most involved in play — passes, carries, pressures, and other on-ball events — across the match. This is ball-involvement density, not a position-tracking heatmap; StatsBomb open data does not include continuous off-ball tracking.</p>
 
   <div class="hm-meta">
     <div class="hm-meta-item">
@@ -506,6 +657,7 @@
 <section class="component-section">
   <h2 class="component-heading">Match Stats — UEFA Euro 2024 Final</h2>
   <p class="component-sub">Spain 2–1 England · mirrored bar breakdown · composed from comparisonBars</p>
+  <p class="component-desc">A score headline and mirrored bar chart comparing key statistics for both teams. Bars extend outward from the center label; toggle between basic and advanced rows to reveal xG alongside the standard broadcast stats.</p>
 
   <div class="stage stage--auto" id="match-stats-stage">
     <div id="match-stats"></div>
@@ -535,6 +687,203 @@
   </div>
 </section>
 
+<section class="component-section">
+  <h2 class="component-heading">Team Shape — UEFA Euro 2024 Final (Work in Progress)</h2>
+  <p class="component-sub">Empirical shape · on-ball: named player mean positions (event-based) · off-ball: anonymous 360 dot cloud (frame-based) · coordinates normalised attack-right</p>
+  <p class="component-desc">Where players actually operated during the match — the empirical counterpart to the formation diagram. On-ball view shows named nodes at each player's mean event position per lineup window; off-ball view shows an anonymous density surface built from 360 freeze-frame dots, with centroid, thirds spine, covariance ellipse, and a depth line marking how far forward the team's cloud extended out of possession.</p>
+
+  <div class="pn-controls">
+    <div class="control" style="flex-direction:row; align-items:center; gap:var(--space-2)">
+      <label style="margin:0">team</label>
+      <select id="ts-team" class="pn-btn">
+        <option value="spain">Spain</option>
+        <option value="england">England</option>
+      </select>
+    </div>
+    <button id="ts-on-ball"  class="pn-btn ts-active">On-ball</button>
+    <button id="ts-off-ball" class="pn-btn">Off-ball</button>
+    <div class="control" id="ts-period-control" style="flex-direction:row; align-items:center; gap:var(--space-2)">
+      <label style="margin:0">period</label>
+      <select id="ts-period-select" class="pn-btn"></select>
+    </div>
+  </div>
+
+  <div class="stage stage--auto"><svg id="team-shape-svg"></svg></div>
+
+  <div class="component-ref">
+    <div class="component-ref-row">
+      <span class="ref-label">function</span>
+      <code class="ref-value">createTeamShape(pitch, data, config)</code>
+    </div>
+    <div class="component-ref-row">
+      <span class="ref-label">returns</span>
+      <code class="ref-value">{ g, px, update(view), updatePeriod(idx) }</code>
+    </div>
+    <div class="component-ref-row">
+      <span class="ref-label">data</span>
+      <code class="ref-value">sample_data/team_shape_{match_id}_{team}.json → { on_ball: { periods: [{from_minute, to_minute, players_in, players_out, nodes, hull}] }, off_ball: { density_grid, centroid, thirds_spine, ellipse, depth_line }, metadata }</code>
+    </div>
+    <div class="component-ref-row">
+      <span class="ref-label">note</span>
+      <span class="ref-value">on-ball = named event-based nodes · off-ball = anonymous 360 dot cloud — different methods, not equivalent · camera follows ball → off-ball subset is biased near the ball</span>
+    </div>
+    <div class="component-ref-row">
+      <span class="ref-label">extract</span>
+      <code class="ref-value">extract_on_ball() / extract_off_ball()  ·  src/statsbomb/extract_team_shape.py</code>
+    </div>
+  </div>
+</section>
+
+<section class="component-section">
+  <h2 class="component-heading">Formation — UEFA Euro 2024 Final</h2>
+  <p class="component-sub">Declared formation + tactical shifts · canonical template-slot positions · <em>NOT measured from play</em></p>
+  <p class="component-desc">Shows the coach's declared tactical shape and any formation changes during the match. Player markers are placed at canonical template-slot positions derived from StatsBomb position labels — this is stated intent, not empirical data; compare with Team Shape to see how the plan translated to measured positions.</p>
+
+  <div class="pn-controls">
+    <div class="control" style="flex-direction:row; align-items:center; gap:var(--space-2)">
+      <label style="margin:0">team</label>
+      <select id="fm-team" class="pn-btn">
+        <option value="spain">Spain</option>
+        <option value="england">England</option>
+      </select>
+    </div>
+    <div class="control" style="flex-direction:row; align-items:center; gap:var(--space-2)">
+      <label style="margin:0">period</label>
+      <select id="fm-period" class="pn-btn"></select>
+    </div>
+    <div class="control" style="flex-direction:row; align-items:center; gap:var(--space-2)">
+      <label style="margin:0">size</label>
+      <input id="fm-size" type="range" min="4" max="12" step="1" value="7" style="width:90px">
+      <span id="fm-size-val" style="font-family:Geist Mono,monospace;font-size:12px;min-width:52px">7 px/yd</span>
+    </div>
+  </div>
+
+  <div class="stage stage--auto"><svg id="formation-svg"></svg></div>
+
+  <div class="component-ref">
+    <div class="component-ref-row">
+      <span class="ref-label">function</span>
+      <code class="ref-value">createFormation(selection, data, config)</code>
+    </div>
+    <div class="component-ref-row">
+      <span class="ref-label">returns</span>
+      <code class="ref-value">{ svg, g, px, update(periodIdx) }</code>
+    </div>
+    <div class="component-ref-row">
+      <span class="ref-label">data</span>
+      <code class="ref-value">sample_data/formation_{match_id}_{team}.json → { periods: [{ formation, from_minute, to_minute, players }], metadata }</code>
+    </div>
+    <div class="component-ref-row">
+      <span class="ref-label">coords</span>
+      <span class="ref-value">template slots in StatsBomb 120×80 — declared shape, not measured positions</span>
+    </div>
+    <div class="component-ref-row">
+      <span class="ref-label">extract</span>
+      <code class="ref-value">extract_formation_periods(match_id, team)  ·  src/statsbomb/extract_formation.py</code>
+    </div>
+  </div>
+</section>
+
+<section class="component-section">
+  <h2 class="component-heading">Progressive Map — UEFA Euro 2024 Final</h2>
+  <p class="component-sub">All passes &amp; carries · progressive actions highlighted · 25%-of-remaining-distance-to-goal rule · set pieces excluded</p>
+  <p class="component-desc">Shows all of a team's open-play passes and carries. Color encodes action type for every action — red for passes, navy for carries. Progressive actions (those that moved the ball at least 25% of the remaining distance to goal) are bold with arrowheads; non-progressive actions are thin and faded. Switch the filter to progressive-only to remove the background layer. Passes show completed and incomplete attempts; carries are completed only (StatsBomb does not model incomplete carries).</p>
+
+  <div class="pm-controls">
+    <div class="control" style="flex-direction:row; align-items:center; gap:var(--space-2)">
+      <label style="margin:0">team</label>
+      <select id="pm-team" class="pn-btn">
+        <option value="spain">Spain</option>
+        <option value="england">England</option>
+      </select>
+    </div>
+    <div class="control" style="flex-direction:row; align-items:center; gap:var(--space-2)">
+      <label style="margin:0">type</label>
+      <select id="pm-toggle" class="pn-btn">
+        <option value="both">passes + carries</option>
+        <option value="passes">passes only</option>
+        <option value="carries">carries only</option>
+      </select>
+    </div>
+    <div class="control" style="flex-direction:row; align-items:center; gap:var(--space-2)">
+      <label style="margin:0">filter</label>
+      <select id="pm-filter" class="pn-btn">
+        <option value="all">all actions</option>
+        <option value="progressive">progressive only</option>
+      </select>
+    </div>
+    <div class="control" style="flex-direction:row; align-items:center; gap:var(--space-2)">
+      <label style="margin:0">player</label>
+      <select id="pm-player" class="pn-btn">
+        <option value="">all players</option>
+      </select>
+    </div>
+
+    <div class="pm-legend">
+      <div class="pm-legend-item">
+        <svg width="24" height="8" style="overflow:visible">
+          <line x1="0" y1="4" x2="20" y2="4" stroke="#9F1239" stroke-width="1.5" marker-end="url(#pm-legend-arrow-red)"></line>
+          <defs><marker id="pm-legend-arrow-red" viewBox="0 -4 8 8" refX="8" refY="0" markerWidth="4" markerHeight="4" orient="auto"><path d="M0,-4L8,0L0,4Z" fill="#9F1239"></path></marker></defs>
+        </svg>
+        progressive pass ✓
+      </div>
+      <div class="pm-legend-item">
+        <svg width="24" height="8" style="overflow:visible">
+          <line x1="0" y1="4" x2="20" y2="4" stroke="#9F1239" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#pm-legend-arrow-red-d)"></line>
+          <defs><marker id="pm-legend-arrow-red-d" viewBox="0 -4 8 8" refX="8" refY="0" markerWidth="4" markerHeight="4" orient="auto"><path d="M0,-4L8,0L0,4Z" fill="#9F1239"></path></marker></defs>
+        </svg>
+        progressive pass ✗
+      </div>
+      <div class="pm-legend-item">
+        <svg width="24" height="8" style="overflow:visible">
+          <line x1="0" y1="4" x2="20" y2="4" stroke="#1E3A5F" stroke-width="2.5" marker-end="url(#pm-legend-arrow-navy)"></line>
+          <defs><marker id="pm-legend-arrow-navy" viewBox="0 -4 8 8" refX="8" refY="0" markerWidth="4" markerHeight="4" orient="auto"><path d="M0,-4L8,0L0,4Z" fill="#1E3A5F"></path></marker></defs>
+        </svg>
+        progressive carry
+      </div>
+      <div class="pm-legend-item">
+        <svg width="24" height="8" style="overflow:visible">
+          <line x1="0" y1="4" x2="20" y2="4" stroke="#9F1239" stroke-width="1.5" stroke-opacity="0.28" marker-end="url(#pm-legend-arrow-red)"></line>
+        </svg>
+        pass (non-prog)
+      </div>
+      <div class="pm-legend-item">
+        <svg width="24" height="8" style="overflow:visible">
+          <line x1="0" y1="4" x2="20" y2="4" stroke="#1E3A5F" stroke-width="2.5" stroke-opacity="0.28" marker-end="url(#pm-legend-arrow-navy)"></line>
+        </svg>
+        carry (non-prog)
+      </div>
+    </div>
+  </div>
+
+  <p id="pm-counts" style="font-family:var(--font-mono);font-size:12px;color:var(--color-text-secondary);margin:0 0 var(--space-4);"></p>
+
+  <div class="stage stage--auto"><svg id="progressive-map-svg"></svg></div>
+
+  <div class="component-ref">
+    <div class="component-ref-row">
+      <span class="ref-label">function</span>
+      <code class="ref-value">createProgressiveMap(pitch, data, config)</code>
+    </div>
+    <div class="component-ref-row">
+      <span class="ref-label">returns</span>
+      <code class="ref-value">{ g, update({ toggle?, player?, progressiveOnly? }) }</code>
+    </div>
+    <div class="component-ref-row">
+      <span class="ref-label">data</span>
+      <code class="ref-value">sample_data/progressive_map_{match_id}_{team}.json → { team, actions[{ action_type, display_name, x0,y0,x1,y1, completed, progressive, distance_gained, minute }], params, metadata }</code>
+    </div>
+    <div class="component-ref-row">
+      <span class="ref-label">coords</span>
+      <span class="ref-value">StatsBomb 120×80 yards — pitch.px() converts to pixels</span>
+    </div>
+    <div class="component-ref-row">
+      <span class="ref-label">extract</span>
+      <code class="ref-value">extract_progressive_map(match_id, team)  ·  src/statsbomb/extract_progressive_map.py</code>
+    </div>
+  </div>
+</section>
+
 <footer>
   footballd3 · playground · <code>cd src/footballd3 &amp;&amp; python -m http.server 8000</code> → <code>http://localhost:8000/</code>
 </footer>
@@ -543,12 +892,16 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
 <script type="module">
-  import { createPitch }           from "./components/pitch/pitch.js";
-  import { createShotMap }         from "./components/shotMap/shotMap.js";
-  import { createPassNetwork }     from "./components/passNetwork/passNetwork.js";
-  import { createFreezeFrame }     from "./components/freezeFrame/freezeFrame.js";
-  import { createHeatmap }         from "./components/heatmap/heatmap.js";
+  import { createPitch }           from "./components/pitch/pitch.js?v=3";
+  import { createShotMap }         from "./components/shotMap/shotMap.js?v=2";
+  import { createPassNetwork }     from "./components/passNetwork/passNetwork.js?v=2";
+  import { createFreezeFrame }     from "./components/freezeFrame/freezeFrame.js?v=2";
+  import { createConvexHull }      from "./components/convexHull/convexHull.js";
+  import { createHeatmap }         from "./components/heatmap/heatmap.js?v=2";
   import { createMatchStats }      from "./components/matchStats/matchStats.js";
+  import { createFormation }       from "./components/formation/formation.js?v=6";
+  import { createTeamShape }       from "./components/teamShape/teamShape.js?v=2";
+  import { createProgressiveMap }  from "./components/progressiveMap/progressiveMap.js";
 
   function render() {
     const scale = parseFloat(document.getElementById("pg-scale").value) || 7;
@@ -568,7 +921,7 @@
   render();
 
   function loadTeam(team, directed) {
-    fetch(`sample_data/pass_network_3943043_${team}.json`)
+    fetch(`sample_data/pass_network_3943043_${team}.json?v=2`)
       .then(r => r.json())
       .then(data => {
         const pitch = createPitch(d3.select("#pass-network"), {
@@ -613,7 +966,7 @@
   loadCurrent();
 
   // ── Freeze Frame ────────────────────────────────────────────────────────────
-  fetch("sample_data/freeze_frames_3943043_goals.json")
+  fetch("sample_data/freeze_frames_3943043_goals.json?v=2")
     .then(r => r.json())
     .then(data => {
       const goals = data.goals;
@@ -634,10 +987,9 @@
       }
 
       function updateNav() {
-        const meta     = goals[currentGoal].metadata;
-        const lastName = meta.player.trim().split(/\s+/).at(-1);
+        const meta = goals[currentGoal].metadata;
         document.getElementById("ff-goal-label").textContent =
-          `Goal ${currentGoal + 1} / ${goals.length} — ${lastName}, ${meta.minute}'`;
+          `Goal ${currentGoal + 1} / ${goals.length} — ${meta.display_name}, ${meta.minute}'`;
         document.getElementById("ff-prev").disabled = currentGoal === 0;
         document.getElementById("ff-next").disabled = currentGoal === goals.length - 1;
       }
@@ -658,12 +1010,73 @@
       buildFrame();
     });
 
+  // ── Convex Hull ─────────────────────────────────────────────────────────────
+  Promise.all([
+    fetch("sample_data/freeze_frames_3943043_goals.json?v=2").then(r => r.json()),
+    fetch("sample_data/convex_hull_3943043_goals.json").then(r => r.json()),
+  ]).then(([ffData, chData]) => {
+    const goals = ffData.goals;
+    const hulls = chData.hulls;
+    let currentGoal = 0;
+    let toggle      = "both";
+
+    function buildConvexHull() {
+      d3.select("#convex-hull-svg").selectAll("*").remove();
+
+      const pitch = createPitch(d3.select("#convex-hull-svg"), {
+        mode:        "half",
+        orientation: "vertical",
+        pxPerYard:   7,
+        theme:       "whiteboard",
+      });
+
+      // Freeze frame draws dots; hull overlays polygons behind them.
+      createFreezeFrame(pitch, goals[currentGoal], { mirrorX: true });
+      createConvexHull(pitch, hulls[currentGoal], { toggle, mirrorX: true });
+
+      updateNav();
+    }
+
+    function updateNav() {
+      const meta    = goals[currentGoal].metadata;
+      const hull    = hulls[currentGoal];
+      const offense = hull.sides.find(s => s.side === "offense");
+      const defense = hull.sides.find(s => s.side === "defense");
+
+      document.getElementById("ch-goal-label").textContent =
+        `Goal ${currentGoal + 1} / ${goals.length} — ${meta.display_name}, ${meta.minute}'`;
+
+      document.getElementById("ch-offense-label").textContent =
+        offense ? `${offense.team_name} (${offense.area} yd²)` : "offense (n/a)";
+      document.getElementById("ch-defense-label").textContent =
+        defense ? `${defense.team_name} (${defense.area} yd²)` : "defense (n/a)";
+
+      document.getElementById("ch-prev").disabled = currentGoal === 0;
+      document.getElementById("ch-next").disabled = currentGoal === goals.length - 1;
+    }
+
+    document.getElementById("ch-prev").onclick = () => {
+      currentGoal = Math.max(0, currentGoal - 1);
+      buildConvexHull();
+    };
+    document.getElementById("ch-next").onclick = () => {
+      currentGoal = Math.min(goals.length - 1, currentGoal + 1);
+      buildConvexHull();
+    };
+    document.getElementById("ch-toggle").addEventListener("change", e => {
+      toggle = e.target.value;
+      buildConvexHull();
+    });
+
+    buildConvexHull();
+  });
+
   // ── Heatmap ─────────────────────────────────────────────────────────────────
-  fetch("sample_data/heatmap_3943043_lamine_yamal_nasraoui_ebana.json")
+  fetch("sample_data/heatmap_3943043_robin_aime_robert_le_normand.json?v=2")
     .then(r => r.json())
     .then(data => {
       const meta = data.metadata;
-      document.getElementById("hm-player").textContent    = meta.player;
+      document.getElementById("hm-player").textContent    = meta.display_name;
       document.getElementById("hm-team").textContent      = meta.team;
       document.getElementById("hm-events").textContent    = meta.event_count;
       document.getElementById("hm-bandwidth").textContent = `${meta.bandwidth_yards} yards`;
@@ -693,7 +1106,116 @@
       });
     });
 
-  fetch("sample_data/shots_3943043.json")
+  // ── Team Shape ───────────────────────────────────────────────────────────────
+  let _tsUpdate       = null;
+  let _tsUpdatePeriod = null;
+  let _tsView         = "on-ball";
+
+  function _tsPeriodLabel(p, i) {
+    if (i === 0) return `${p.from_minute}'–${p.to_minute}' (Starting XI)`;
+    const lastName = name => name.trim().split(/\s+/).at(-1);
+    const inNames  = p.players_in.map(lastName).join(", ");
+    const outNames = p.players_out.map(lastName).join(", ");
+    return `${p.from_minute}'–${p.to_minute}' (+${inNames} / −${outNames})`;
+  }
+
+  function loadTeamShape(teamSlug) {
+    fetch(`sample_data/team_shape_3943043_${teamSlug}.json?v=2`)
+      .then(r => r.json())
+      .then(data => {
+        const pitch = createPitch(d3.select("#team-shape-svg"), {
+          mode:        "full",
+          orientation: "horizontal",
+          pxPerYard:   7,
+          theme:       "whiteboard",
+        });
+        const { update, updatePeriod } = createTeamShape(pitch, data, {
+          view:        _tsView,
+          nodeColor:   "#1E3A5F",
+          accentColor: "#9F1239",
+        });
+        _tsUpdate       = update;
+        _tsUpdatePeriod = updatePeriod;
+
+        // Populate period dropdown from data.
+        const sel = document.getElementById("ts-period-select");
+        sel.innerHTML = "";
+        data.on_ball.periods.forEach((p, i) => {
+          const opt = document.createElement("option");
+          opt.value = i;
+          opt.textContent = _tsPeriodLabel(p, i);
+          sel.appendChild(opt);
+        });
+        sel.value = 0;
+        sel.onchange = () => { if (_tsUpdatePeriod) _tsUpdatePeriod(+sel.value); };
+      });
+  }
+
+  document.getElementById("ts-on-ball").addEventListener("click", () => {
+    _tsView = "on-ball";
+    document.getElementById("ts-on-ball").classList.add("ts-active");
+    document.getElementById("ts-off-ball").classList.remove("ts-active");
+    document.getElementById("ts-period-control").style.display = "";
+    if (_tsUpdate) _tsUpdate("on-ball");
+  });
+  document.getElementById("ts-off-ball").addEventListener("click", () => {
+    _tsView = "off-ball";
+    document.getElementById("ts-off-ball").classList.add("ts-active");
+    document.getElementById("ts-on-ball").classList.remove("ts-active");
+    document.getElementById("ts-period-control").style.display = "none";
+    if (_tsUpdate) _tsUpdate("off-ball");
+  });
+  document.getElementById("ts-team").addEventListener("change", function () {
+    loadTeamShape(this.value);
+  });
+  loadTeamShape("spain");
+
+  // ── Formation ────────────────────────────────────────────────────────────────
+  let _fmUpdate      = null;
+  let _fmTeam        = "spain";
+  let _fmPxPerYard   = 7;
+
+  function loadFormation(teamSlug, pxPerYard) {
+    fetch(`sample_data/formation_3943043_${teamSlug}.json?v=2`)
+      .then(r => r.json())
+      .then(data => {
+        const { update } = createFormation(d3.select("#formation-svg"), data, { pxPerYard });
+        _fmUpdate = update;
+
+        const sel = document.getElementById("fm-period");
+        const prev = +sel.value || 0;
+        sel.innerHTML = "";
+        data.periods.forEach((p, i) => {
+          const isShift = i > 0 && p.formation !== data.periods[i - 1].formation;
+          const opt = document.createElement("option");
+          opt.value = i;
+          opt.textContent = `${p.formation}  (${p.from_minute}'–${p.to_minute}')${isShift ? "  ← shift" : ""}`;
+          sel.appendChild(opt);
+        });
+
+        const idx = Math.min(prev, data.periods.length - 1);
+        sel.value = idx;
+        sel.onchange = () => _fmUpdate(+sel.value);
+        _fmUpdate(idx);
+      });
+  }
+
+  document.getElementById("fm-team").addEventListener("change", function () {
+    _fmTeam = this.value;
+    loadFormation(_fmTeam, _fmPxPerYard);
+  });
+
+  const _fmSizeInput = document.getElementById("fm-size");
+  const _fmSizeLabel = document.getElementById("fm-size-val");
+  _fmSizeInput.addEventListener("input", function () {
+    _fmPxPerYard = +this.value;
+    _fmSizeLabel.textContent = `${_fmPxPerYard} px/yd`;
+    loadFormation(_fmTeam, _fmPxPerYard);
+  });
+
+  loadFormation(_fmTeam, _fmPxPerYard);
+
+  fetch("sample_data/shots_3943043.json?v=2")
     .then(r => r.json())
     .then(shots => {
       const teams = [...new Set(shots.map(s => s.team))].sort();
@@ -705,6 +1227,82 @@
       createShotMap(d3.select("#shot-map-a"), shots.filter(s => s.team === teamA), { orientation: "vertical", pxPerYard: 7 });
       createShotMap(d3.select("#shot-map-b"), shots.filter(s => s.team === teamB), { orientation: "vertical", pxPerYard: 7 });
     });
+
+  // ── Progressive Map ───────────────────────────────────────────────────────
+  let _pmUpdate = null;
+  let _pmData   = null;
+
+  function updateCounts(player) {
+    const actions = player
+      ? _pmData.actions.filter(a => a.display_name === player)
+      : _pmData.actions;
+    const nPasses      = actions.filter(a => a.action_type === "pass").length;
+    const nCarries     = actions.filter(a => a.action_type === "carry").length;
+    const nProgPasses  = actions.filter(a => a.action_type === "pass"  && a.progressive).length;
+    const nProgCarries = actions.filter(a => a.action_type === "carry" && a.progressive).length;
+    const label = player || _pmData.team;
+    document.getElementById("pm-counts").textContent =
+      `${label} · ${nPasses} passes (${nProgPasses} progressive) · ${nCarries} carries (${nProgCarries} progressive)`;
+  }
+
+  function loadProgressiveMap(teamSlug) {
+    fetch(`sample_data/progressive_map_3943043_${teamSlug}.json`)
+      .then(r => r.json())
+      .then(data => {
+        _pmData = data;
+        d3.select("#progressive-map-svg").selectAll("*").remove();
+
+        const pitch = createPitch(d3.select("#progressive-map-svg"), {
+          mode:        "full",
+          orientation: "horizontal",
+          pxPerYard:   7,
+          theme:       "whiteboard",
+        });
+
+        const toggle         = document.getElementById("pm-toggle").value;
+        const player         = document.getElementById("pm-player").value || null;
+        const progressiveOnly = document.getElementById("pm-filter").value === "progressive";
+
+        const { update } = createProgressiveMap(pitch, data, { toggle, player, progressiveOnly });
+        _pmUpdate = update;
+
+        updateCounts(player);
+
+        // Populate the player filter from the loaded dataset.
+        const sel = document.getElementById("pm-player");
+        const prevPlayer = sel.value;
+        const players = [...new Set(data.actions.map(a => a.display_name))].sort();
+        sel.innerHTML = '<option value="">all players</option>';
+        players.forEach(name => {
+          const opt = document.createElement("option");
+          opt.value = name;
+          opt.textContent = name;
+          sel.appendChild(opt);
+        });
+        // Restore previous selection if still valid.
+        if (players.includes(prevPlayer)) sel.value = prevPlayer;
+      });
+  }
+
+  document.getElementById("pm-team").addEventListener("change", function () {
+    loadProgressiveMap(this.value);
+  });
+
+  document.getElementById("pm-toggle").addEventListener("change", function () {
+    if (_pmUpdate) _pmUpdate({ toggle: this.value });
+  });
+
+  document.getElementById("pm-filter").addEventListener("change", function () {
+    if (_pmUpdate) _pmUpdate({ progressiveOnly: this.value === "progressive" });
+  });
+
+  document.getElementById("pm-player").addEventListener("change", function () {
+    const player = this.value || null;
+    if (_pmUpdate) _pmUpdate({ player });
+    if (_pmData)   updateCounts(player);
+  });
+
+  loadProgressiveMap("spain");
 </script>
 
 </body>

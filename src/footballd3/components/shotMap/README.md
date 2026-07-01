@@ -2,7 +2,7 @@
 
 Overlays shot events from the StatsBomb JSON contract onto a half-pitch. Each
 shot is a circle — area encodes xG, color encodes outcome. Hovering a circle
-shows a tooltip with player name, outcome, match minute, and xG.
+shows a tooltip with player display name, outcome, match minute, and xG.
 
 Internally calls `createPitch` in `mode: "half"`. All StatsBomb shots have
 x > 60 (the library normalises attacks left→right); the component mirrors them
@@ -21,7 +21,7 @@ One object per shot. Produced by `src/statsbomb/extract_shots.py`.
     "outcome": "Goal",
     "is_goal": true,
     "team": "Spain",
-    "player": "Mikel Oyarzabal",
+    "display_name": "Mikel Oyarzabal",
     "minute": 86
   }
 ]
@@ -73,7 +73,7 @@ additional elements to `g` or reuse `px` for further coordinate mapping.
 ## Hover tooltip
 
 Displayed on `mouseover`, follows cursor on `mousemove`, hidden on `mouseout`.
-Shows player name, outcome, minute, and xG formatted to two decimal places.
+Shows player display name, outcome, minute, and xG formatted to two decimal places.
 The tooltip element is a module-level singleton appended to `document.body`
 (`position: fixed`, `pointer-events: none`) — both panels on a page share it
 without conflict.

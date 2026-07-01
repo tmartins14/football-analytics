@@ -519,6 +519,7 @@ dependencies = [
     { name = "mplsoccer" },
     { name = "numpy" },
     { name = "pandas" },
+    { name = "scipy" },
     { name = "statsbombpy" },
 ]
 
@@ -535,6 +536,7 @@ requires-dist = [
     { name = "mplsoccer", specifier = ">=1.4" },
     { name = "numpy", specifier = ">=1.26" },
     { name = "pandas", specifier = ">=2.0" },
+    { name = "scipy", specifier = ">=1.12" },
     { name = "statsbombpy", specifier = ">=1.14.0" },
 ]
 

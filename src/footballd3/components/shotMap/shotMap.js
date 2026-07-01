@@ -59,7 +59,7 @@ export function createShotMap(selection, shots, config = {}) {
       .attr("stroke-width", 1)
       .on("mouseover", () => {
         _tooltip.innerHTML =
-          `<span style="font-weight:600">${shot.player}</span><br>` +
+          `<span style="font-weight:600">${shot.display_name}</span><br>` +
           `${shot.outcome} &middot; min. ${shot.minute}<br>` +
           `<span style="color:#525252">xG ${shot.xg.toFixed(2)}</span>`;
         _tooltip.style.display = "block";

@@ -15,7 +15,7 @@ JSON output shape:
         {
           "index": 0,
           "label": "0'–63' (Starting XI)",
-          "nodes": [{"player", "x", "y", "passes"}],
+          "nodes": [{"player", "display_name", "x", "y", "passes"}],
           "edges": [{"from", "to", "count"}]
         }
       ],
@@ -76,21 +76,24 @@ def resolve_euro_2024_final() -> int:
 
 
 def _build_windows(
-    events: pd.DataFrame, team: str
+    events: pd.DataFrame, team: str, nicknames: dict
 ) -> tuple[list[dict], list[dict]]:
     """Split completed pass events into substitution-bounded windows.
 
     For each window, computes average pass-origin positions per player (nodes)
     and directed pass counts per ordered player pair (edges). Both directions
-    of a pair are emitted as separate edge records.
+    of a pair are emitted as separate edge records. display_name on each node
+    is the StatsBomb nickname when available, otherwise the full player name.
 
     Args:
         events: Full match event DataFrame from sb.events().
         team: Team name to filter on, exactly as returned by StatsBomb.
+        nicknames: player_id (int) -> display_name (str) from sb.lineups().
 
     Returns:
         Tuple of (windows, substitutions):
             windows — list of dicts with keys: index, label, nodes, edges.
+                Each node has keys: player, display_name, x, y, passes.
             substitutions — list of {minute, player_off, player_on} dicts.
     """
     # Substitution breakpoints for this team, sorted by minute
@@ -137,9 +140,12 @@ def _build_windows(
                 continue
             avg_x = round(sum(loc[0] for loc in locs) / len(locs), 2)
             avg_y = round(sum(loc[1] for loc in locs) / len(locs), 2)
+            pid_val = group["player_id"].iloc[0]
+            display_name = nicknames.get(int(pid_val), str(player)) if pid_val == pid_val else str(player)
             nodes.append(
                 {
                     "player": str(player),
+                    "display_name": display_name,
                     "x": avg_x,
                     "y": avg_y,
                     "passes": int(len(group)),
@@ -177,7 +183,8 @@ def extract_pass_network(match_id: int, team: str) -> dict:
     Pulls all events once, computes substitution breakpoints, then for each window
     computes average player positions (nodes) and directed pass counts per ordered
     player pair (edges). Only completed passes are included — StatsBomb marks
-    completions with a null pass_outcome.
+    completions with a null pass_outcome. display_name on each node is resolved
+    from sb.lineups() — StatsBomb nickname when available, otherwise full name.
 
     Coordinates are StatsBomb-native (120×80 yards, origin top-left) and passed
     through untouched. The pitch component owns pixel mapping.
@@ -189,13 +196,22 @@ def extract_pass_network(match_id: int, team: str) -> dict:
     Returns:
         dict: Pass network with keys:
             windows (list[dict]): One entry per substitution window, each with
-                index, label, nodes [{player, x, y, passes}], and
+                index, label, nodes [{player, display_name, x, y, passes}], and
                 edges [{from, to, count}] (ordered pairs, both directions separate).
             substitutions (list[dict]): [{minute, player_off, player_on}].
             metadata (dict): match_id, team, filter description.
     """
+    lineups = sb.lineups(match_id=match_id)
+    team_df = lineups.get(team)
+    nicknames: dict[int, str] = {}
+    if team_df is not None:
+        for _, row in team_df.iterrows():
+            nick = row.get("player_nickname")
+            name = row["player_name"]
+            nicknames[int(row["player_id"])] = nick if (pd.notna(nick) and nick) else name
+
     events = sb.events(match_id=match_id)
-    windows, substitutions = _build_windows(events, team)
+    windows, substitutions = _build_windows(events, team, nicknames)
 
     return {
         "windows": windows,

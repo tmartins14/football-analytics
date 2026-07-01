@@ -5,7 +5,7 @@ Public API:
     extract_shots(match_id) -> list[dict]
     main()
 
-JSON output shape: { x, y, xg, outcome, is_goal, team, player, minute }
+JSON output shape: { x, y, xg, outcome, is_goal, team, display_name, minute }
 Written to: src/footballd3/sample_data/shots_{match_id}.json
 """
 
@@ -13,6 +13,7 @@ import json
 import math
 from pathlib import Path
 
+import pandas as pd
 from statsbombpy import sb
 
 
@@ -56,12 +57,35 @@ def resolve_euro_2024_final() -> int:
     return int(final_rows["match_id"].iloc[0])
 
 
+def _build_nickname_lookup(match_id: int) -> dict:
+    """Build a player_id -> display_name mapping from sb.lineups() for all teams in a match.
+
+    display_name is the StatsBomb player_nickname when non-empty, otherwise player_name.
+
+    Args:
+        match_id (int): StatsBomb match ID.
+
+    Returns:
+        dict[int, str]: Maps player_id to resolved display name.
+    """
+    lineups = sb.lineups(match_id=match_id)
+    lookup: dict[int, str] = {}
+    for team_df in lineups.values():
+        for _, row in team_df.iterrows():
+            nick = row.get("player_nickname")
+            name = row["player_name"]
+            display_name = nick if (pd.notna(nick) and nick) else name
+            lookup[int(row["player_id"])] = display_name
+    return lookup
+
+
 def extract_shots(match_id: int) -> list[dict]:
     """Extract shot events for one match and return flat records for the JSON contract.
 
     Calls sb.events(), filters to type == "Shot", and maps each row to the
     minimal fields the shot map renderer needs. Drops shots where xG is NaN
-    (own goals have no StatsBomb xG value).
+    (own goals have no StatsBomb xG value). display_name is the StatsBomb
+    player nickname when available, otherwise the full player name.
 
     Args:
         match_id (int): StatsBomb match ID.
@@ -73,9 +97,10 @@ def extract_shots(match_id: int) -> list[dict]:
             outcome (str): Shot outcome label (e.g. "Goal", "Blocked", "Saved").
             is_goal (bool): True when outcome == "Goal".
             team (str): Team name.
-            player (str): Player name.
+            display_name (str): Player nickname or full name, resolved Python-side.
             minute (int): Match minute.
     """
+    nicknames = _build_nickname_lookup(match_id)
     events = sb.events(match_id=match_id)
     shots = events[events["type"] == "Shot"].copy()
 
@@ -85,6 +110,8 @@ def extract_shots(match_id: int) -> list[dict]:
         if xg is None or (isinstance(xg, float) and math.isnan(xg)):
             continue
         loc = row["location"]
+        pid = row.get("player_id")
+        display_name = nicknames.get(int(pid), str(row["player"])) if pid == pid else str(row["player"])
         records.append(
             {
                 "x": loc[0],
@@ -93,7 +120,7 @@ def extract_shots(match_id: int) -> list[dict]:
                 "outcome": row["shot_outcome"],
                 "is_goal": row["shot_outcome"] == "Goal",
                 "team": row["team"],
-                "player": row["player"],
+                "display_name": display_name,
                 "minute": int(row["minute"]),
             }
         )

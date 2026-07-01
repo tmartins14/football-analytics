@@ -18,7 +18,7 @@ JSON output shape:
           "ball": {"x": float, "y": float},
           "frame": [{"x": float, "y": float, "teammate": bool, "actor": bool, "keeper": bool}],
           "visible_area": [float, ...],
-          "metadata": {"match_id": int, "event_id": str, "player": str, "team": str,
+          "metadata": {"match_id": int, "event_id": str, "display_name": str, "team": str,
                        "action_type": str, "minute": int, "competition": str, "match_label": str}
         }
       ],
@@ -31,6 +31,7 @@ import json
 import urllib.request
 from pathlib import Path
 
+import pandas as pd
 from statsbombpy import sb
 
 
@@ -154,7 +155,7 @@ def find_goal_frames(events, frame_lookup: dict) -> list:
     return result
 
 
-def transform_frame(event_row, frame_data: dict, match_id: int) -> dict:
+def transform_frame(event_row, frame_data: dict, match_id: int, display_name: str) -> dict:
     """Transform a StatsBomb event row and 360 frame into the freeze-frame JSON contract.
 
     Ball position is taken from the event's location field (where the action
@@ -169,6 +170,7 @@ def transform_frame(event_row, frame_data: dict, match_id: int) -> dict:
         frame_data (dict): Frame entry from load_frames(), with visible_area and
             freeze_frame keys.
         match_id (int): StatsBomb match ID, embedded in metadata for context.
+        display_name (str): Pre-resolved player display name (nickname or full name).
 
     Returns:
         dict: One freeze-frame snapshot with keys:
@@ -177,7 +179,7 @@ def transform_frame(event_row, frame_data: dict, match_id: int) -> dict:
                 player visible in the broadcast field of view.
             visible_area (list): Flat coordinate polygon [x1, y1, ...] in StatsBomb space.
             metadata (dict): Context fields; not rendered by the D3 component but consumed
-                by the index.html goal-navigation label (player, minute, team).
+                by the index.html goal-navigation label (display_name, minute, team).
     """
     loc = event_row["location"]
     players = [
@@ -198,7 +200,7 @@ def transform_frame(event_row, frame_data: dict, match_id: int) -> dict:
         "metadata": {
             "match_id": match_id,
             "event_id": str(event_row["id"]),
-            "player": str(event_row["player"]),
+            "display_name": display_name,
             "team": str(event_row["team"]),
             "action_type": str(event_row["type"]),
             "minute": int(event_row["minute"]),
@@ -224,12 +226,25 @@ def main() -> None:
     frame_lookup = load_frames(match_id)
     print(f"  {len(frame_lookup)} frames loaded")
 
+    print("Building player nickname lookup…")
+    lineups = sb.lineups(match_id=match_id)
+    nicknames: dict[int, str] = {}
+    for team_df in lineups.values():
+        for _, row in team_df.iterrows():
+            nick = row.get("player_nickname")
+            name = row["player_name"]
+            nicknames[int(row["player_id"])] = nick if (pd.notna(nick) and nick) else name
+
     print("Finding goals with freeze frames…")
     goal_frames = find_goal_frames(events, frame_lookup)
     if not goal_frames:
         raise RuntimeError("No goal events with matching 360 frames found.")
 
-    snapshots = [transform_frame(row, frame, match_id) for row, frame in goal_frames]
+    snapshots = []
+    for row, frame in goal_frames:
+        pid = row.get("player_id")
+        display_name = nicknames.get(int(pid), str(row["player"])) if pid == pid else str(row["player"])
+        snapshots.append(transform_frame(row, frame, match_id, display_name))
 
     out_dir = Path(__file__).parents[2] / "src" / "footballd3" / "sample_data"
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -247,8 +262,8 @@ def main() -> None:
     with open(out_path, "w") as f:
         json.dump(payload, f, indent=2)
 
-    for i, (row, _) in enumerate(goal_frames, 1):
-        print(f"  Goal {i}: {row['player']} ({int(row['minute'])}')")
+    for i, (snap, (row, _)) in enumerate(zip(snapshots, goal_frames), 1):
+        print(f"  Goal {i}: {snap['metadata']['display_name']} ({int(row['minute'])}')")
     print(f"Wrote {len(snapshots)} goal snapshots → {out_path}")
 
 

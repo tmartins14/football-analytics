@@ -10,7 +10,7 @@ JSON output shape:
     {
         "grid": {"cols": 60, "rows": 40, "values": [[...], ...]},
         "metadata": {
-            "match_id", "player", "team", "competition", "match_label",
+            "match_id", "display_name", "team", "competition", "match_label",
             "event_count", "method", "bandwidth_yards",
             "grid_cols", "grid_rows", "pitch_width_yards", "pitch_height_yards"
         }
@@ -29,6 +29,7 @@ import re
 from pathlib import Path
 
 import numpy as np
+import pandas as pd
 from scipy.stats import gaussian_kde
 from statsbombpy import sb
 
@@ -257,6 +258,16 @@ def main() -> None:
     player_name, team, events = extract_player_events(match_id)
     print(f"Player: {player_name} ({team}) — {len(events)} on-ball events")
 
+    # Resolve display_name from lineups (nickname or full name).
+    lineups = sb.lineups(match_id=match_id)
+    team_df = lineups.get(team)
+    display_name = player_name
+    if team_df is not None:
+        player_row = team_df[team_df["player_name"] == player_name]
+        if not player_row.empty:
+            nick = player_row.iloc[0].get("player_nickname")
+            display_name = nick if (pd.notna(nick) and nick) else player_name
+
     grid = compute_kde_grid(events, bandwidth_yards=bandwidth_yards, cols=cols, rows=rows)
 
     # Resolve match metadata for the contract.
@@ -278,7 +289,7 @@ def main() -> None:
         "grid": grid,
         "metadata": {
             "match_id": match_id,
-            "player": player_name,
+            "display_name": display_name,
             "team": team,
             "competition": competition,
             "match_label": match_label,

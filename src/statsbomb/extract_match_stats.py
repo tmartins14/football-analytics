@@ -5,10 +5,10 @@ consumed by the matchStats D3 component. Football logic lives entirely here; the
 renderer (matchStats.js) and the generic bar renderer (comparisonBars.js) remain
 football-agnostic at the stat-semantics level.
 
-Possession is computed as the share of distinct StatsBomb possession sequences owned by
-each team. StatsBomb assigns every event a ``possession`` (integer sequence ID) and
-``possession_team`` field; deduplicating on ``(possession, possession_team)`` and counting
-per team mirrors StatsBomb's own possession model without requiring timestamp arithmetic.
+Possession is computed as the share of all StatsBomb events attributed to each team via
+the ``possession_team`` column. Every event carries a ``possession_team`` tag indicating
+which team currently holds the ball; counting events per team and expressing as a
+percentage captures possession intensity and aligns with broadcast statistics.
 
 Yellow cards are sourced from ``foul_committed_card == 'Yellow Card'``. Red cards and
 second yellows from ``foul_committed_card in {'Red Card', 'Second Yellow'}``. The
@@ -136,7 +136,7 @@ def extract_match_stats(match_id: int) -> dict:
     and computes stats using only StatsBomb data — no custom models.
 
     xG is the sum of ``shot_statsbomb_xg`` per team (shots with NaN xG are dropped).
-    Possession is the share of distinct possession sequences owned by each team.
+    Possession is the share of all events attributed to each team via ``possession_team``.
     Corners are passes where ``pass_type == 'Corner'``.
 
     Args:
@@ -186,11 +186,10 @@ def extract_match_stats(match_id: int) -> dict:
     home_sot = int((on_target["team"] == home_team).sum())
     away_sot = int((on_target["team"] == away_team).sum())
 
-    # ── Possession (share of possession sequences) ───────────────────────────────
-    seqs = events[["possession", "possession_team"]].drop_duplicates()
-    seq_counts = seqs["possession_team"].value_counts()
-    total_seqs = seq_counts.sum()
-    home_poss = round(float(seq_counts.get(home_team, 0)) / total_seqs * 100, 1)
+    # ── Possession (share of events per possession_team) ─────────────────────────
+    poss_counts  = events["possession_team"].value_counts()
+    total_events = poss_counts.sum()
+    home_poss = round(float(poss_counts.get(home_team, 0)) / total_events * 100, 1)
     away_poss = round(100.0 - home_poss, 1)
 
     # ── Corners ──────────────────────────────────────────────────────────────────
