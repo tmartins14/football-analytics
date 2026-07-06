@@ -10,7 +10,7 @@ views (dashboards).
 ## Architecture — the seam
 - **Python** extracts from StatsBomb and transforms into clean, analysis-ready data.
 - **D3 / JS** renders. It never touches the StatsBomb schema directly.
-- **Contract between them:** flat JSON written to `sample_data/`. Components consume
+- **Contract between them:** flat JSON written to `src/footballd3/sample_data/`. Components consume
   this JSON. Keep the contract minimal — do not emit fields the consumer doesn't use.
 - **Coordinates:** StatsBomb-native 120×80 (yards). The pitch component handles pixel
   mapping (`px` / `pxPerYard`); pass native coordinates through to it untouched.
@@ -20,7 +20,7 @@ views (dashboards).
   Package manager: **`uv`**.
 - **Viz:** **D3** as ES modules.
 - **Data:** StatsBomb open data, including 360 freeze frames.
-- **Layout:** flat JSON in `sample_data/`; Python package in `src/statsbomb`;
+- **Layout:** flat JSON in `src/footballd3/sample_data/`; Python package in `src/statsbomb`;
   D3 components in `src/footballd3/components/`.
 
 ## Conventions (rules)
@@ -67,24 +67,43 @@ and CI. A turn is not done until the gate passes. Existence of docs is gated
 automatically; quality is on you and code review.
 
 ## JSON contracts (defined so far)
+All files live under `src/footballd3/sample_data/`.
+
 - **Shot:** `{ x, y, xg, outcome, is_goal, team, player, minute }` ->
-  `sample_data/shots_{match_id}.json`. `xg` comes from `shot_statsbomb_xg`; shots are
+  `shots_{match_id}.json`. `xg` comes from `shot_statsbomb_xg`; shots are
   `type == "Shot"` events. `xg` drives marker size; `outcome` / `is_goal` drive color.
 - **Freeze frame:** `{ ball: {x, y}, frame: [{ x, y, teammate, actor, keeper }],
   visible_area, metadata }`.
 - **Convex hull:** `{ hulls: [{ sides: [{ side, team_name, hull_vertices, area, player_count }], metadata }], match_metadata }` ->
-  `sample_data/convex_hull_{match_id}_goals.json`. `hulls[]` is parallel to `goals[]`
+  `convex_hull_{match_id}_goals.json`. `hulls[]` is parallel to `goals[]`
   in the freeze-frame file; pair by `metadata.event_id`. `side` is `"offense"|"defense"`
   resolved from `possession_team`; keeper excluded by default. Vertices in 120×80 yards.
 - **Progressive map:** `{ team, actions: [{ action_type, display_name, x0, y0, x1, y1, completed, progressive, distance_gained, minute }], params: { progressive_threshold }, metadata }` ->
-  `sample_data/progressive_map_{match_id}_{team_slug}.json`. Emits ALL open-play passes and
+  `progressive_map_{match_id}_{team_slug}.json`. Emits ALL open-play passes and
   carries; `progressive: bool` flags the 25%-of-remaining-distance-to-goal rule (goal centre
   (120, 40), threshold 0.25). Set pieces excluded via `play_pattern`. Passes: completed AND
   incomplete (pass_outcome NaN = completed). Carries: `completed` always true — StatsBomb has
   no incomplete-carry event. `distance_gained` is positive (toward goal) or negative (away).
+- **Possession:** `{ match_id, possession, team, events: [{ event_id, event_type, seconds, x, y, end_x, end_y, player, outcome }], metadata }` ->
+  `possession_{match_id}_{possession}.json`. `seconds` is elapsed time within the possession
+  (event timestamp minus first event's timestamp). `end_x`/`end_y` present for Pass, Carry,
+  Shot; null for point events. `player` is the resolved `display_name`. `outcome` is the
+  pass outcome string for Pass events (null = complete), null for all other types.
+  Consumed by both `eventScatter.js` (spatial: x,y) and `timelineStrip.js` (temporal: seconds).
 - **Player label:** any contract carrying players includes `display_name` (resolved
   Python-side via the nickname/name coalesce above). Components render `display_name`
   verbatim; they do not receive `player_name`/`player_nickname` separately.
+- **Play animation / goal animation:** `{ goals: [{ window: {anchor_event_id, start_event_id, end_event_id, period, window_seconds, t_span_seconds}, frames: [{event_id, t_seconds, team, event_type, ball_x, ball_y, ball_end_x, ball_end_y, actor, outcome}], context: {goal?: {event_id, minute, second, scorer, team}}, metadata }], match_metadata }` ->
+  `goal_animation_{match_id}.json`. One file per match; `goals[]` covers all goals in
+  chronological order. General engine is `extract_play_animation(match_id, anchor_event_id,
+  window_seconds)` → one clip dict; `extract_goal_animation` is a thin wrapper that finds all
+  goals, calls the engine for each, and injects `context.goal`. `t_seconds` is **clip-relative**
+  (0.0 at first frame); `window.t_span_seconds` = last frame's t_seconds (clip duration base).
+  `team` field on each frame — both teams included. `ball_end_x/y` null for point events
+  (Pressure, Duel, etc.) — ball stays put. `actor_x/y` omitted (always equal to `ball_x/y`).
+  window_seconds=10 is a configurable choice, not canonical. Events included: Pass, Carry,
+  Shot (ball moves) + Pressure, Duel, Interception, Ball Recovery (point events). Ball
+  Receipt* excluded. Clip is period-isolated (never straddles halftime/extra-time boundary).
 
 ## Components
 Existing:
@@ -102,11 +121,32 @@ Existing:
   completed-only. Config: `toggle` (passes/carries/both), `player` filter (display_name or
   null), `distanceWeight` (off by default). Returns `{ g, update({ toggle?, player? }) }`.
 
+- **`eventScatter.js`** — general-purpose event scatter on the pitch. Renders any event array
+  as markers at (x, y); events with end_x/end_y (Pass, Carry, Shot) also draw an arrow.
+  Encodes event_type by color category (ball-movement=red, defensive=navy, terminal=gray).
+  Ball Receipt* excluded by default (`includeBallReceipt: true` to opt in). Composes on
+  pitch.js. Returns `{ g, update({ events?, filter? }) }`.
+- **`timelineStrip.js`** — single-possession elapsed-seconds horizontal strip. Events are
+  positioned on a real-time X axis (seconds within possession); glyphs are colored circles
+  with a single letter indicating event type. Overlapping events at near-identical timestamps
+  are stacked vertically (deterministic, bin-based). Does NOT compose on pitch.js — standalone
+  chart. Returns `{ svg, g, xScale, update({ events? }) }`.
+- **`playAnimation.js`** — general time-windowed ball-path animation. Animates the ball's
+  path through any event sequence bounded by an anchor event and a window_seconds duration.
+  Both teams' events are included; each frame carries a `team` field. The first component
+  with owned playback state (scrubber + play/pause via `d3.timer`). Composes on pitch.js.
+  Ball moves along straight segments (event start → end); actors highlight at their event
+  origins only (no between-event motion). Point events (Pressure, Duel) pause the ball.
+  Returns `{ g, controls: { play(), pause(), seek(clipSeconds) }, update({ frames?, playbackSpeed? }) }`.
+  Scrubber wired externally via `onTimeUpdate` callback. Default playbackSpeed=2.0×.
+  DISCLAIMER in README: not tracking data; straight-line ball paths; window configurable.
+  Produced by `extract_play_animation` (general) or `extract_goal_animation` (thin wrapper).
+
 Planned — build one at a time, vertically; this is a roadmap, not a build-all-now list:
-- **Tier 1:** pitch map (event scatter), shot map, pass map / network, freeze-frame
+- **Tier 1:** pitch map (event scatter) ✓, shot map, pass map / network, freeze-frame
   snapshot, heatmap / density, match stat breakdown, player formation. ✓ all built
 - **Tier 2:** convex hull / territory ✓, progressive pass / carry map ✓, timeline / event
-  strip, Voronoi, momentum chart, goal animations, AI-summarized data.
+  strip ✓, Voronoi, momentum chart ✓, goal animations ✓, AI-summarized data.
 - **Tier 3:** radar, rolling-average line, distribution (violin / beeswarm), joyplot.
 
 Views (dashboards composed from components): team match analysis, player match

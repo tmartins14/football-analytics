@@ -1,0 +1,411 @@
+{
+  "goals": [
+    {
+      "window": {
+        "anchor_event_id": "bf03dfcf-f281-4646-98de-620649a1308b",
+        "start_event_id": "86b7ae9e-5297-4d67-8f03-f9cff95cef1d",
+        "end_event_id": "bf03dfcf-f281-4646-98de-620649a1308b",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 10.425
+      },
+      "frames": [
+        {
+          "event_id": "86b7ae9e-5297-4d67-8f03-f9cff95cef1d",
+          "t_seconds": 0.0,
+          "team": "Spain",
+          "event_type": "Pass",
+          "ball_x": 47.1,
+          "ball_y": 38.5,
+          "ball_end_x": 47.6,
+          "ball_end_y": 67.7,
+          "actor": "Aymeric Laporte",
+          "outcome": null
+        },
+        {
+          "event_id": "af302792-3c83-4f6e-bf80-b62f2f9820af",
+          "t_seconds": 2.265,
+          "team": "Spain",
+          "event_type": "Carry",
+          "ball_x": 47.6,
+          "ball_y": 67.7,
+          "ball_end_x": 49.7,
+          "ball_end_y": 68.1,
+          "actor": "Fabi\u00e1n Ruiz",
+          "outcome": null
+        },
+        {
+          "event_id": "1a61f138-c90c-465f-8022-b6a2767aead1",
+          "t_seconds": 2.761,
+          "team": "Spain",
+          "event_type": "Pass",
+          "ball_x": 49.7,
+          "ball_y": 68.1,
+          "ball_end_x": 69.2,
+          "ball_end_y": 74.7,
+          "actor": "Fabi\u00e1n Ruiz",
+          "outcome": null
+        },
+        {
+          "event_id": "0d725763-f9ed-4fdc-b0aa-f61ffdf2bbc0",
+          "t_seconds": 4.192,
+          "team": "Spain",
+          "event_type": "Pass",
+          "ball_x": 69.7,
+          "ball_y": 74.3,
+          "ball_end_x": 93.9,
+          "ball_end_y": 60.6,
+          "actor": "Daniel Carvajal",
+          "outcome": null
+        },
+        {
+          "event_id": "3192e93b-75e8-4c6b-9223-c3d77613ca98",
+          "t_seconds": 6.461,
+          "team": "England",
+          "event_type": "Pressure",
+          "ball_x": 28.4,
+          "ball_y": 18.9,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Luke Shaw",
+          "outcome": null
+        },
+        {
+          "event_id": "d710995a-b59c-4760-a22c-3ee4db1e37ae",
+          "t_seconds": 6.571,
+          "team": "Spain",
+          "event_type": "Carry",
+          "ball_x": 93.9,
+          "ball_y": 60.6,
+          "ball_end_x": 100.6,
+          "ball_end_y": 47.0,
+          "actor": "Lamine Yamal",
+          "outcome": null
+        },
+        {
+          "event_id": "7ea6f20b-8cf2-4494-a208-02286d0402c2",
+          "t_seconds": 8.527,
+          "team": "Spain",
+          "event_type": "Pass",
+          "ball_x": 100.6,
+          "ball_y": 47.0,
+          "ball_end_x": 109.9,
+          "ball_end_y": 28.0,
+          "actor": "Lamine Yamal",
+          "outcome": null
+        },
+        {
+          "event_id": "bf03dfcf-f281-4646-98de-620649a1308b",
+          "t_seconds": 10.425,
+          "team": "Spain",
+          "event_type": "Shot",
+          "ball_x": 109.9,
+          "ball_y": 28.0,
+          "ball_end_x": 120.0,
+          "ball_end_y": 42.4,
+          "actor": "Nico Williams",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "bf03dfcf-f281-4646-98de-620649a1308b",
+          "minute": 46,
+          "second": 9,
+          "scorer": "Nico Williams",
+          "team": "Spain"
+        }
+      },
+      "metadata": {
+        "match_id": 3943043,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Spain vs England"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "b4249c3f-4c32-4d2c-bb40-102b5334b3ad",
+        "start_event_id": "98c9b75c-282f-41b9-98c3-e46f2e661c22",
+        "end_event_id": "b4249c3f-4c32-4d2c-bb40-102b5334b3ad",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 10.611
+      },
+      "frames": [
+        {
+          "event_id": "98c9b75c-282f-41b9-98c3-e46f2e661c22",
+          "t_seconds": 0.0,
+          "team": "England",
+          "event_type": "Pass",
+          "ball_x": 46.2,
+          "ball_y": 67.7,
+          "ball_end_x": 70.3,
+          "ball_end_y": 76.5,
+          "actor": "Cole Palmer",
+          "outcome": null
+        },
+        {
+          "event_id": "a14f1449-1330-44d9-9c8e-a3dc0c54d9b5",
+          "t_seconds": 2.141,
+          "team": "England",
+          "event_type": "Carry",
+          "ball_x": 70.3,
+          "ball_y": 76.5,
+          "ball_end_x": 109.5,
+          "ball_end_y": 60.5,
+          "actor": "Bukayo Saka",
+          "outcome": null
+        },
+        {
+          "event_id": "9b78b78a-08f0-4575-b627-91c6c561b036",
+          "t_seconds": 7.743,
+          "team": "Spain",
+          "event_type": "Pressure",
+          "ball_x": 9.8,
+          "ball_y": 21.3,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Fabi\u00e1n Ruiz",
+          "outcome": null
+        },
+        {
+          "event_id": "54c9f1ba-e5c3-442f-86d7-d3e67c4fbf0b",
+          "t_seconds": 8.345,
+          "team": "England",
+          "event_type": "Pass",
+          "ball_x": 109.5,
+          "ball_y": 60.5,
+          "ball_end_x": 107.4,
+          "ball_end_y": 47.0,
+          "actor": "Bukayo Saka",
+          "outcome": null
+        },
+        {
+          "event_id": "f9b8e6ca-f39a-49f1-b870-9a8fe1e9e52f",
+          "t_seconds": 8.821,
+          "team": "Spain",
+          "event_type": "Pressure",
+          "ball_x": 12.8,
+          "ball_y": 34.1,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Mart\u00edn Zubimendi",
+          "outcome": null
+        },
+        {
+          "event_id": "0263fb5f-f75e-4df7-9a01-030ca3087895",
+          "t_seconds": 9.263,
+          "team": "England",
+          "event_type": "Pass",
+          "ball_x": 107.6,
+          "ball_y": 47.0,
+          "ball_end_x": 98.4,
+          "ball_end_y": 51.8,
+          "actor": "Jude Bellingham",
+          "outcome": null
+        },
+        {
+          "event_id": "b4249c3f-4c32-4d2c-bb40-102b5334b3ad",
+          "t_seconds": 10.611,
+          "team": "England",
+          "event_type": "Shot",
+          "ball_x": 98.4,
+          "ball_y": 49.0,
+          "ball_end_x": 120.0,
+          "ball_end_y": 37.1,
+          "actor": "Cole Palmer",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "b4249c3f-4c32-4d2c-bb40-102b5334b3ad",
+          "minute": 72,
+          "second": 8,
+          "scorer": "Cole Palmer",
+          "team": "England"
+        }
+      },
+      "metadata": {
+        "match_id": 3943043,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Spain vs England"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "19d5c45f-8d91-44dd-823a-18966038e3e4",
+        "start_event_id": "8a8a5cb3-17a5-498f-bbb4-f0250d4aa33c",
+        "end_event_id": "19d5c45f-8d91-44dd-823a-18966038e3e4",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 10.686
+      },
+      "frames": [
+        {
+          "event_id": "8a8a5cb3-17a5-498f-bbb4-f0250d4aa33c",
+          "t_seconds": 0.0,
+          "team": "Spain",
+          "event_type": "Carry",
+          "ball_x": 25.1,
+          "ball_y": 50.6,
+          "ball_end_x": 27.0,
+          "ball_end_y": 43.8,
+          "actor": "Aymeric Laporte",
+          "outcome": null
+        },
+        {
+          "event_id": "708e15f7-b7d8-4251-8e9c-c3745c911e07",
+          "t_seconds": 1.346,
+          "team": "Spain",
+          "event_type": "Pass",
+          "ball_x": 27.0,
+          "ball_y": 43.8,
+          "ball_end_x": 49.3,
+          "ball_end_y": 47.0,
+          "actor": "Aymeric Laporte",
+          "outcome": null
+        },
+        {
+          "event_id": "2421b0f2-f599-489e-b0ba-1a230eea7a37",
+          "t_seconds": 2.339,
+          "team": "Spain",
+          "event_type": "Carry",
+          "ball_x": 49.3,
+          "ball_y": 47.0,
+          "ball_end_x": 52.6,
+          "ball_end_y": 46.6,
+          "actor": "Fabi\u00e1n Ruiz",
+          "outcome": null
+        },
+        {
+          "event_id": "09729c9d-67fa-4bc1-b4b3-1d12c4e981aa",
+          "t_seconds": 2.766,
+          "team": "England",
+          "event_type": "Pressure",
+          "ball_x": 69.6,
+          "ball_y": 39.8,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Cole Palmer",
+          "outcome": null
+        },
+        {
+          "event_id": "dfb5ef60-d8b2-4e3f-ac51-176032ebc972",
+          "t_seconds": 3.177,
+          "team": "Spain",
+          "event_type": "Pass",
+          "ball_x": 52.6,
+          "ball_y": 46.6,
+          "ball_end_x": 63.4,
+          "ball_end_y": 34.9,
+          "actor": "Fabi\u00e1n Ruiz",
+          "outcome": null
+        },
+        {
+          "event_id": "3ecbc067-7c40-4baa-adbd-e9e662622e9e",
+          "t_seconds": 4.229,
+          "team": "Spain",
+          "event_type": "Carry",
+          "ball_x": 63.4,
+          "ball_y": 34.9,
+          "ball_end_x": 70.7,
+          "ball_end_y": 33.6,
+          "actor": "Daniel Olmo",
+          "outcome": null
+        },
+        {
+          "event_id": "9d42a231-7f7d-4fc4-a605-c8f97a17535a",
+          "t_seconds": 5.823,
+          "team": "Spain",
+          "event_type": "Pass",
+          "ball_x": 70.7,
+          "ball_y": 33.6,
+          "ball_end_x": 88.2,
+          "ball_end_y": 39.9,
+          "actor": "Daniel Olmo",
+          "outcome": null
+        },
+        {
+          "event_id": "6a5d1d40-30c6-4407-82ce-52744645b2af",
+          "t_seconds": 7.197,
+          "team": "Spain",
+          "event_type": "Pass",
+          "ball_x": 88.9,
+          "ball_y": 37.8,
+          "ball_end_x": 99.7,
+          "ball_end_y": 12.7,
+          "actor": "Mikel Oyarzabal",
+          "outcome": null
+        },
+        {
+          "event_id": "1e10dd5c-e64c-4d9e-8ce4-51bb27ae30b4",
+          "t_seconds": 9.36,
+          "team": "England",
+          "event_type": "Pressure",
+          "ball_x": 21.2,
+          "ball_y": 64.6,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Kyle Walker",
+          "outcome": null
+        },
+        {
+          "event_id": "9955489b-67ac-4e63-b47d-c92d8aafa338",
+          "t_seconds": 9.582,
+          "team": "Spain",
+          "event_type": "Carry",
+          "ball_x": 99.7,
+          "ball_y": 12.7,
+          "ball_end_x": 100.0,
+          "ball_end_y": 12.7,
+          "actor": "Marc Cucurella",
+          "outcome": null
+        },
+        {
+          "event_id": "fbb72e05-3e4d-41f2-978d-7aa4c46464a2",
+          "t_seconds": 9.702,
+          "team": "Spain",
+          "event_type": "Pass",
+          "ball_x": 100.0,
+          "ball_y": 12.7,
+          "ball_end_x": 111.2,
+          "ball_end_y": 36.3,
+          "actor": "Marc Cucurella",
+          "outcome": null
+        },
+        {
+          "event_id": "19d5c45f-8d91-44dd-823a-18966038e3e4",
+          "t_seconds": 10.686,
+          "team": "Spain",
+          "event_type": "Shot",
+          "ball_x": 111.2,
+          "ball_y": 36.3,
+          "ball_end_x": 120.0,
+          "ball_end_y": 38.4,
+          "actor": "Mikel Oyarzabal",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "19d5c45f-8d91-44dd-823a-18966038e3e4",
+          "minute": 85,
+          "second": 56,
+          "scorer": "Mikel Oyarzabal",
+          "team": "Spain"
+        }
+      },
+      "metadata": {
+        "match_id": 3943043,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Spain vs England"
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3943043,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Spain vs England"
+  }
+}
