@@ -19,6 +19,8 @@
  * is delegated entirely to pitch.px() which is orientation-aware.
  */
 
+import * as d3 from "d3";
+
 const _COLOR_LOW  = "#E5E5E5";  // neutral — matches project structure token
 const _COLOR_HIGH = "#9F1239";  // focal accent
 

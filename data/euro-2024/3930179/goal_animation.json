@@ -1,0 +1,131 @@
+{
+  "goals": [
+    {
+      "window": {
+        "anchor_event_id": "2501b8a0-c9c6-4486-9919-507491850295",
+        "start_event_id": "223f4e6a-4cd5-4f42-a6a1-a2a916e77fc0",
+        "end_event_id": "2501b8a0-c9c6-4486-9919-507491850295",
+        "period": 1,
+        "window_seconds": 10.0,
+        "t_span_seconds": 14.145
+      },
+      "frames": [
+        {
+          "event_id": "223f4e6a-4cd5-4f42-a6a1-a2a916e77fc0",
+          "t_seconds": 0.0,
+          "team": "Spain",
+          "event_type": "Carry",
+          "ball_x": 30.8,
+          "ball_y": 56.2,
+          "ball_end_x": 47.9,
+          "ball_end_y": 52.8,
+          "actor": "Dani Vivian",
+          "outcome": null
+        },
+        {
+          "event_id": "57ec5866-4dd3-4aae-a023-08fe4060d2e4",
+          "t_seconds": 6.754,
+          "team": "Spain",
+          "event_type": "Pass",
+          "ball_x": 47.9,
+          "ball_y": 52.8,
+          "ball_end_x": 49.1,
+          "ball_end_y": 32.6,
+          "actor": "Dani Vivian",
+          "outcome": null
+        },
+        {
+          "event_id": "fbb590bb-b9b5-4621-8ef4-cd797982a8a6",
+          "t_seconds": 8.314,
+          "team": "Spain",
+          "event_type": "Carry",
+          "ball_x": 49.1,
+          "ball_y": 32.6,
+          "ball_end_x": 53.5,
+          "ball_end_y": 30.4,
+          "actor": "Aymeric Laporte",
+          "outcome": null
+        },
+        {
+          "event_id": "8fc691da-b58d-4f89-9c8b-74809bc11461",
+          "t_seconds": 9.196,
+          "team": "Spain",
+          "event_type": "Pass",
+          "ball_x": 53.5,
+          "ball_y": 30.4,
+          "ball_end_x": 80.6,
+          "ball_end_y": 54.0,
+          "actor": "Aymeric Laporte",
+          "outcome": null
+        },
+        {
+          "event_id": "676394ed-d491-41d0-9586-196e411140b5",
+          "t_seconds": 10.644,
+          "team": "Spain",
+          "event_type": "Carry",
+          "ball_x": 80.6,
+          "ball_y": 54.0,
+          "ball_end_x": 85.9,
+          "ball_end_y": 55.6,
+          "actor": "Daniel Olmo",
+          "outcome": null
+        },
+        {
+          "event_id": "a91234c7-5473-45e2-a149-994013a34147",
+          "t_seconds": 12.123,
+          "team": "Spain",
+          "event_type": "Pass",
+          "ball_x": 85.9,
+          "ball_y": 55.6,
+          "ball_end_x": 107.5,
+          "ball_end_y": 53.5,
+          "actor": "Daniel Olmo",
+          "outcome": null
+        },
+        {
+          "event_id": "88d22c42-1809-48d7-b886-1f0d4dc47903",
+          "t_seconds": 13.711,
+          "team": "Albania",
+          "event_type": "Pressure",
+          "ball_x": 16.3,
+          "ball_y": 20.9,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Mario Mitaj",
+          "outcome": null
+        },
+        {
+          "event_id": "2501b8a0-c9c6-4486-9919-507491850295",
+          "t_seconds": 14.145,
+          "team": "Spain",
+          "event_type": "Shot",
+          "ball_x": 107.5,
+          "ball_y": 53.5,
+          "ball_end_x": 120.0,
+          "ball_end_y": 36.1,
+          "actor": "Ferr\u00e1n Torres",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "2501b8a0-c9c6-4486-9919-507491850295",
+          "minute": 12,
+          "second": 32,
+          "scorer": "Ferr\u00e1n Torres",
+          "team": "Spain"
+        }
+      },
+      "metadata": {
+        "match_id": 3930179,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Albania vs Spain"
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3930179,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Albania vs Spain"
+  }
+}

@@ -1,0 +1,910 @@
+{
+  "on_ball": {
+    "periods": [
+      {
+        "from_minute": 0,
+        "to_minute": 61,
+        "players_in": [
+          "Florin Constantin Ni\u0163\u0103",
+          "Andrei Florin Ratiu",
+          "Radu Dr\u0103gu\u0219in",
+          "Andrei Burc\u0103 Andonie",
+          "Nicu\u0219or Silviu Bancu",
+          "Marius Mihai Marin",
+          "Dennis Man",
+          "R\u0103zvan Gabriel Marin",
+          "Nicolae Claudiu Stanciu",
+          "Florinel Teodor Coman",
+          "Denis Mihai Dr\u0103gu\u015f"
+        ],
+        "players_out": [],
+        "nodes": [
+          {
+            "player_id": 56905,
+            "player": "Dennis Man",
+            "display_name": "Dennis Man",
+            "x": 85.72,
+            "y": 65.01,
+            "event_count": 45
+          },
+          {
+            "player_id": 24861,
+            "player": "Andrei Florin Ratiu",
+            "display_name": "Andrei Ratiu",
+            "x": 59.3,
+            "y": 63.96,
+            "event_count": 40
+          },
+          {
+            "player_id": 16344,
+            "player": "R\u0103zvan Gabriel Marin",
+            "display_name": "R\u0103zvan Marin",
+            "x": 60.54,
+            "y": 52.33,
+            "event_count": 37
+          },
+          {
+            "player_id": 10916,
+            "player": "Nicolae Claudiu Stanciu",
+            "display_name": "Nicolae Stanciu",
+            "x": 63.83,
+            "y": 41.78,
+            "event_count": 36
+          },
+          {
+            "player_id": 31193,
+            "player": "Denis Mihai Dr\u0103gu\u015f",
+            "display_name": "Denis Dragus",
+            "x": 71.28,
+            "y": 42.1,
+            "event_count": 34
+          },
+          {
+            "player_id": 39615,
+            "player": "Radu Dr\u0103gu\u0219in",
+            "display_name": "Radu Dragusin",
+            "x": 36.21,
+            "y": 56.44,
+            "event_count": 23
+          },
+          {
+            "player_id": 31908,
+            "player": "Andrei Burc\u0103 Andonie",
+            "display_name": "Andrei Burc\u0103 Andonie",
+            "x": 32.85,
+            "y": 31.41,
+            "event_count": 22
+          },
+          {
+            "player_id": 34599,
+            "player": "Florinel Teodor Coman",
+            "display_name": "Florinel Coman",
+            "x": 57.69,
+            "y": 30.11,
+            "event_count": 20
+          },
+          {
+            "player_id": 28242,
+            "player": "Florin Constantin Ni\u0163\u0103",
+            "display_name": "Florin Nita",
+            "x": 9.53,
+            "y": 42.86,
+            "event_count": 18
+          },
+          {
+            "player_id": 34600,
+            "player": "Nicu\u0219or Silviu Bancu",
+            "display_name": "Nicusor Bancu",
+            "x": 45.87,
+            "y": 13.3,
+            "event_count": 18
+          },
+          {
+            "player_id": 30913,
+            "player": "Marius Mihai Marin",
+            "display_name": "Marius Marin",
+            "x": 51.64,
+            "y": 45.76,
+            "event_count": 16
+          }
+        ],
+        "hull": [
+          [
+            9.53,
+            42.86
+          ],
+          [
+            45.87,
+            13.3
+          ],
+          [
+            71.28,
+            42.1
+          ],
+          [
+            85.72,
+            65.01
+          ],
+          [
+            59.3,
+            63.96
+          ],
+          [
+            36.21,
+            56.44
+          ]
+        ]
+      },
+      {
+        "from_minute": 61,
+        "to_minute": 74,
+        "players_in": [
+          "Ianis Hagi",
+          "Valentin Mihai Mih\u0103il\u0103"
+        ],
+        "players_out": [
+          "Dennis Man",
+          "Florinel Teodor Coman"
+        ],
+        "nodes": [
+          {
+            "player_id": 72512,
+            "player": "Valentin Mihai Mih\u0103il\u0103",
+            "display_name": "Valentin Mihai Mih\u0103il\u0103",
+            "x": 33.11,
+            "y": 30.05,
+            "event_count": 13
+          },
+          {
+            "player_id": 16344,
+            "player": "R\u0103zvan Gabriel Marin",
+            "display_name": "R\u0103zvan Marin",
+            "x": 41.84,
+            "y": 41.47,
+            "event_count": 9
+          },
+          {
+            "player_id": 24861,
+            "player": "Andrei Florin Ratiu",
+            "display_name": "Andrei Ratiu",
+            "x": 41.11,
+            "y": 65.42,
+            "event_count": 8
+          },
+          {
+            "player_id": 31193,
+            "player": "Denis Mihai Dr\u0103gu\u015f",
+            "display_name": "Denis Dragus",
+            "x": 60.01,
+            "y": 42.05,
+            "event_count": 8
+          },
+          {
+            "player_id": 28565,
+            "player": "Ianis Hagi",
+            "display_name": "Ianis Hagi",
+            "x": 61.4,
+            "y": 70.41,
+            "event_count": 7
+          },
+          {
+            "player_id": 28242,
+            "player": "Florin Constantin Ni\u0163\u0103",
+            "display_name": "Florin Nita",
+            "x": 10.6,
+            "y": 37.28,
+            "event_count": 5
+          },
+          {
+            "player_id": 39615,
+            "player": "Radu Dr\u0103gu\u0219in",
+            "display_name": "Radu Dragusin",
+            "x": 41.13,
+            "y": 64.43,
+            "event_count": 3
+          },
+          {
+            "player_id": 10916,
+            "player": "Nicolae Claudiu Stanciu",
+            "display_name": "Nicolae Stanciu",
+            "x": 61.3,
+            "y": 37.7,
+            "event_count": 2
+          },
+          {
+            "player_id": 30913,
+            "player": "Marius Mihai Marin",
+            "display_name": "Marius Marin",
+            "x": 22.2,
+            "y": 17.0,
+            "event_count": 1
+          }
+        ],
+        "hull": [
+          [
+            10.6,
+            37.28
+          ],
+          [
+            22.2,
+            17.0
+          ],
+          [
+            61.3,
+            37.7
+          ],
+          [
+            61.4,
+            70.41
+          ],
+          [
+            41.11,
+            65.42
+          ]
+        ]
+      },
+      {
+        "from_minute": 74,
+        "to_minute": 75,
+        "players_in": [
+          "Adri\u00e1n Rus"
+        ],
+        "players_out": [
+          "Marius Mihai Marin"
+        ],
+        "nodes": [
+          {
+            "player_id": 28565,
+            "player": "Ianis Hagi",
+            "display_name": "Ianis Hagi",
+            "x": 36.37,
+            "y": 73.73,
+            "event_count": 3
+          }
+        ],
+        "hull": [
+          [
+            36.37,
+            73.73
+          ]
+        ]
+      },
+      {
+        "from_minute": 75,
+        "to_minute": 86,
+        "players_in": [
+          "George Alexandru Pu\u015fca\u015f"
+        ],
+        "players_out": [
+          "Denis Mihai Dr\u0103gu\u015f"
+        ],
+        "nodes": [
+          {
+            "player_id": 10916,
+            "player": "Nicolae Claudiu Stanciu",
+            "display_name": "Nicolae Stanciu",
+            "x": 42.06,
+            "y": 35.29,
+            "event_count": 10
+          },
+          {
+            "player_id": 34600,
+            "player": "Nicu\u0219or Silviu Bancu",
+            "display_name": "Nicusor Bancu",
+            "x": 33.01,
+            "y": 7.52,
+            "event_count": 9
+          },
+          {
+            "player_id": 72512,
+            "player": "Valentin Mihai Mih\u0103il\u0103",
+            "display_name": "Valentin Mihai Mih\u0103il\u0103",
+            "x": 62.57,
+            "y": 19.6,
+            "event_count": 6
+          },
+          {
+            "player_id": 8660,
+            "player": "George Alexandru Pu\u015fca\u015f",
+            "display_name": "George Puscas",
+            "x": 70.2,
+            "y": 30.24,
+            "event_count": 5
+          },
+          {
+            "player_id": 28242,
+            "player": "Florin Constantin Ni\u0163\u0103",
+            "display_name": "Florin Nita",
+            "x": 5.75,
+            "y": 44.42,
+            "event_count": 4
+          },
+          {
+            "player_id": 16344,
+            "player": "R\u0103zvan Gabriel Marin",
+            "display_name": "R\u0103zvan Marin",
+            "x": 48.7,
+            "y": 11.87,
+            "event_count": 3
+          },
+          {
+            "player_id": 28565,
+            "player": "Ianis Hagi",
+            "display_name": "Ianis Hagi",
+            "x": 51.6,
+            "y": 53.6,
+            "event_count": 1
+          }
+        ],
+        "hull": [
+          [
+            5.75,
+            44.42
+          ],
+          [
+            33.01,
+            7.52
+          ],
+          [
+            48.7,
+            11.87
+          ],
+          [
+            62.57,
+            19.6
+          ],
+          [
+            70.2,
+            30.24
+          ],
+          [
+            51.6,
+            53.6
+          ]
+        ]
+      },
+      {
+        "from_minute": 86,
+        "to_minute": 95,
+        "players_in": [
+          "Bogdan Racovi\u021ban"
+        ],
+        "players_out": [
+          "Nicolae Claudiu Stanciu"
+        ],
+        "nodes": [
+          {
+            "player_id": 24861,
+            "player": "Andrei Florin Ratiu",
+            "display_name": "Andrei Ratiu",
+            "x": 29.45,
+            "y": 73.77,
+            "event_count": 6
+          },
+          {
+            "player_id": 28242,
+            "player": "Florin Constantin Ni\u0163\u0103",
+            "display_name": "Florin Nita",
+            "x": 4.48,
+            "y": 46.3,
+            "event_count": 5
+          },
+          {
+            "player_id": 16344,
+            "player": "R\u0103zvan Gabriel Marin",
+            "display_name": "R\u0103zvan Marin",
+            "x": 39.93,
+            "y": 64.07,
+            "event_count": 3
+          },
+          {
+            "player_id": 28565,
+            "player": "Ianis Hagi",
+            "display_name": "Ianis Hagi",
+            "x": 48.5,
+            "y": 75.1,
+            "event_count": 3
+          },
+          {
+            "player_id": 72512,
+            "player": "Valentin Mihai Mih\u0103il\u0103",
+            "display_name": "Valentin Mihai Mih\u0103il\u0103",
+            "x": 63.7,
+            "y": 6.5,
+            "event_count": 1
+          }
+        ],
+        "hull": [
+          [
+            4.48,
+            46.3
+          ],
+          [
+            63.7,
+            6.5
+          ],
+          [
+            48.5,
+            75.1
+          ],
+          [
+            29.45,
+            73.77
+          ]
+        ]
+      }
+    ]
+  },
+  "off_ball": {
+    "density_grid": {
+      "cols": 24,
+      "rows": 16,
+      "values": [
+        [
+          0.0618,
+          0.0759,
+          0.0915,
+          0.1081,
+          0.1255,
+          0.1435,
+          0.1616,
+          0.1796,
+          0.1971,
+          0.2136,
+          0.2288,
+          0.2419,
+          0.2523,
+          0.2593,
+          0.2622,
+          0.2606,
+          0.254,
+          0.2427,
+          0.2268,
+          0.2073,
+          0.1849,
+          0.161,
+          0.1366,
+          0.113
+        ],
+        [
+          0.0871,
+          0.1068,
+          0.1285,
+          0.1517,
+          0.1761,
+          0.2013,
+          0.2268,
+          0.2523,
+          0.2773,
+          0.3012,
+          0.3233,
+          0.3427,
+          0.3585,
+          0.3696,
+          0.3751,
+          0.3741,
+          0.3661,
+          0.3512,
+          0.3297,
+          0.3026,
+          0.2713,
+          0.2373,
+          0.2024,
+          0.1682
+        ],
+        [
+          0.1156,
+          0.1415,
+          0.1699,
+          0.2003,
+          0.2323,
+          0.2653,
+          0.2991,
+          0.3329,
+          0.3664,
+          0.3987,
+          0.4289,
+          0.4559,
+          0.4785,
+          0.495,
+          0.5042,
+          0.5049,
+          0.4962,
+          0.478,
+          0.4508,
+          0.4157,
+          0.3745,
+          0.3292,
+          0.2822,
+          0.2358
+        ],
+        [
+          0.1454,
+          0.1774,
+          0.2124,
+          0.2499,
+          0.2894,
+          0.3303,
+          0.3722,
+          0.4146,
+          0.4567,
+          0.4978,
+          0.5368,
+          0.5722,
+          0.6023,
+          0.6254,
+          0.6394,
+          0.6428,
+          0.6344,
+          0.6139,
+          0.5816,
+          0.5388,
+          0.4877,
+          0.4309,
+          0.3713,
+          0.3118
+        ],
+        [
+          0.1738,
+          0.2114,
+          0.2524,
+          0.2962,
+          0.3423,
+          0.3903,
+          0.4396,
+          0.4897,
+          0.5399,
+          0.5893,
+          0.6367,
+          0.6804,
+          0.7183,
+          0.7482,
+          0.7677,
+          0.7747,
+          0.7676,
+          0.7458,
+          0.7095,
+          0.6602,
+          0.6002,
+          0.5327,
+          0.4611,
+          0.389
+        ],
+        [
+          0.1981,
+          0.2401,
+          0.2859,
+          0.3347,
+          0.3861,
+          0.4397,
+          0.4949,
+          0.5512,
+          0.6081,
+          0.6644,
+          0.719,
+          0.7699,
+          0.8147,
+          0.8508,
+          0.8755,
+          0.8862,
+          0.8809,
+          0.8588,
+          0.8199,
+          0.7657,
+          0.6986,
+          0.6223,
+          0.5407,
+          0.458
+        ],
+        [
+          0.2154,
+          0.2605,
+          0.3094,
+          0.3615,
+          0.4165,
+          0.4737,
+          0.5328,
+          0.5934,
+          0.6548,
+          0.716,
+          0.7756,
+          0.8316,
+          0.8814,
+          0.9222,
+          0.9508,
+          0.9644,
+          0.9608,
+          0.9388,
+          0.8985,
+          0.8411,
+          0.7695,
+          0.6872,
+          0.5987,
+          0.5085
+        ],
+        [
+          0.2233,
+          0.2697,
+          0.3199,
+          0.3735,
+          0.43,
+          0.4889,
+          0.5499,
+          0.6124,
+          0.6759,
+          0.7394,
+          0.8013,
+          0.8597,
+          0.9118,
+          0.9547,
+          0.985,
+          1.0,
+          0.9972,
+          0.9753,
+          0.9344,
+          0.8757,
+          0.8021,
+          0.7173,
+          0.6258,
+          0.5322
+        ],
+        [
+          0.2204,
+          0.2662,
+          0.3159,
+          0.369,
+          0.425,
+          0.4835,
+          0.544,
+          0.6062,
+          0.6693,
+          0.7322,
+          0.7936,
+          0.8513,
+          0.9027,
+          0.9448,
+          0.9745,
+          0.9888,
+          0.9856,
+          0.9635,
+          0.9227,
+          0.8644,
+          0.7915,
+          0.7077,
+          0.6173,
+          0.525
+        ],
+        [
+          0.2066,
+          0.2501,
+          0.2973,
+          0.348,
+          0.4015,
+          0.4574,
+          0.5154,
+          0.5749,
+          0.6351,
+          0.695,
+          0.7531,
+          0.8074,
+          0.8552,
+          0.8939,
+          0.9206,
+          0.9325,
+          0.9278,
+          0.9054,
+          0.8654,
+          0.8093,
+          0.7397,
+          0.6603,
+          0.575,
+          0.4882
+        ],
+        [
+          0.1837,
+          0.2231,
+          0.2661,
+          0.3125,
+          0.3616,
+          0.4132,
+          0.4666,
+          0.5213,
+          0.5764,
+          0.631,
+          0.6835,
+          0.732,
+          0.7742,
+          0.8076,
+          0.8297,
+          0.8382,
+          0.8316,
+          0.8091,
+          0.7711,
+          0.7189,
+          0.6551,
+          0.5829,
+          0.5062,
+          0.4285
+        ],
+        [
+          0.1545,
+          0.1886,
+          0.2261,
+          0.2666,
+          0.3098,
+          0.3552,
+          0.4023,
+          0.4505,
+          0.4989,
+          0.5464,
+          0.5916,
+          0.6329,
+          0.6682,
+          0.6953,
+          0.7123,
+          0.7173,
+          0.7091,
+          0.6873,
+          0.6525,
+          0.6059,
+          0.5499,
+          0.4874,
+          0.4215,
+          0.3555
+        ],
+        [
+          0.1229,
+          0.1508,
+          0.1818,
+          0.2156,
+          0.2517,
+          0.2898,
+          0.3294,
+          0.3698,
+          0.4102,
+          0.4496,
+          0.4868,
+          0.5202,
+          0.5482,
+          0.569,
+          0.5811,
+          0.5831,
+          0.5742,
+          0.5543,
+          0.5239,
+          0.4844,
+          0.4377,
+          0.3861,
+          0.3324,
+          0.279
+        ],
+        [
+          0.0922,
+          0.1139,
+          0.1381,
+          0.1647,
+          0.1934,
+          0.2237,
+          0.2552,
+          0.2873,
+          0.3193,
+          0.3503,
+          0.3793,
+          0.405,
+          0.426,
+          0.4412,
+          0.4492,
+          0.4492,
+          0.4407,
+          0.4237,
+          0.3987,
+          0.367,
+          0.33,
+          0.2898,
+          0.2483,
+          0.2074
+        ],
+        [
+          0.0652,
+          0.081,
+          0.0989,
+          0.1187,
+          0.14,
+          0.1627,
+          0.1864,
+          0.2105,
+          0.2345,
+          0.2575,
+          0.2789,
+          0.2975,
+          0.3126,
+          0.323,
+          0.328,
+          0.327,
+          0.3196,
+          0.3061,
+          0.2869,
+          0.2629,
+          0.2354,
+          0.2058,
+          0.1755,
+          0.146
+        ],
+        [
+          0.0433,
+          0.0542,
+          0.0666,
+          0.0803,
+          0.0953,
+          0.1113,
+          0.128,
+          0.1449,
+          0.1618,
+          0.1779,
+          0.1927,
+          0.2055,
+          0.2157,
+          0.2225,
+          0.2254,
+          0.2241,
+          0.2184,
+          0.2084,
+          0.1946,
+          0.1777,
+          0.1585,
+          0.138,
+          0.1173,
+          0.0971
+        ]
+      ]
+    },
+    "centroid": {
+      "x": 70.15,
+      "y": 38.87
+    },
+    "thirds_spine": [
+      {
+        "third": "defensive",
+        "x": 25.61,
+        "y": 37.35
+      },
+      {
+        "third": "middle",
+        "x": 63.64,
+        "y": 39.64
+      },
+      {
+        "third": "attacking",
+        "x": 94.22,
+        "y": 38.73
+      }
+    ],
+    "ellipse": {
+      "cx": 70.15,
+      "cy": 38.87,
+      "rx": 26.47,
+      "ry": 15.24,
+      "angle_deg": -179.3
+    },
+    "depth_line": {
+      "x": 87.65,
+      "percentile": 70
+    }
+  },
+  "metadata": {
+    "match_id": 3938638,
+    "team": "Romania",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Romania vs Ukraine",
+    "on_ball_event_count": 424,
+    "on_ball_period_count": 5,
+    "off_ball_bandwidth_yards": 8.0,
+    "off_ball_depth_percentile": 70,
+    "off_ball_grid_cols": 24,
+    "off_ball_grid_rows": 16,
+    "phase_filter": "open_play_only",
+    "coordinate_system": "statsbomb_120x80_normalised_attack_right",
+    "coordinate_note": "Coordinates are normalised so the team always attacks right (increasing x). Raw StatsBomb events are flipped (x\u2192120-x, y\u219280-y) in periods where the team attacks left.",
+    "camera_caveat": "360 frames follow the ball; the visible subset of out-of-possession positions is biased toward areas near the ball. The camera artifact and the real defensive shape point the same direction \u2014 they cannot be cleanly separated."
+  }
+}

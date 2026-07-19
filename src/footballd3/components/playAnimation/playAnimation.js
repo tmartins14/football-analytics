@@ -39,6 +39,8 @@
  *   ga-ball          — ball circle (topmost)
  */
 
+import * as d3 from "d3";
+
 // ── Trail encoding (mirrors progressiveMap.js: Pass=red, Carry=navy) ─────────
 //
 // Differentiates ball-movement types by color and stroke weight on trail lines,
@@ -161,7 +163,7 @@ function _posAtClipSec(segments, clipSec) {
  * @param {Function} [config.onTimeUpdate=null]    - Callback invoked on each animation
  *   tick and after seek: onTimeUpdate(clipSeconds). Use this to sync an external
  *   scrubber without the component touching the DOM directly.
- * @returns {{ g: d3.Selection, controls: Object, update: Function }}
+ * @returns {{ g: d3.Selection, controls: { play: function():void, pause: function():void, seek: function(number):void }, update: Function }}
  *   g:        The outer <g class="ga"> group appended to pitch.g.
  *   controls: { play(), pause(), seek(clipSeconds) } — playback controls.
  *   update:   function({ frames?, playbackSpeed? }) — replace data or change speed.

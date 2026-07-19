@@ -1,0 +1,241 @@
+{
+  "goals": [
+    {
+      "window": {
+        "anchor_event_id": "743de80e-6081-4bee-be14-71cb9eb6cca4",
+        "start_event_id": "db38ab07-4327-4948-aa9a-d0d22152a749",
+        "end_event_id": "743de80e-6081-4bee-be14-71cb9eb6cca4",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 10.987
+      },
+      "frames": [
+        {
+          "event_id": "db38ab07-4327-4948-aa9a-d0d22152a749",
+          "t_seconds": 3.431,
+          "team": "Czech Republic",
+          "event_type": "Ball Recovery",
+          "ball_x": 114.5,
+          "ball_y": 4.8,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "David Doudera",
+          "outcome": null
+        },
+        {
+          "event_id": "581f5825-7420-43d6-910f-a9a45a6c2b2c",
+          "t_seconds": 3.431,
+          "team": "Czech Republic",
+          "event_type": "Carry",
+          "ball_x": 114.5,
+          "ball_y": 4.8,
+          "ball_end_x": 112.1,
+          "ball_end_y": 8.3,
+          "actor": "David Doudera",
+          "outcome": null
+        },
+        {
+          "event_id": "ad7ad090-5932-4e78-b48e-8074d1082c02",
+          "t_seconds": 4.624,
+          "team": "Czech Republic",
+          "event_type": "Pass",
+          "ball_x": 112.1,
+          "ball_y": 8.3,
+          "ball_end_x": 110.3,
+          "ball_end_y": 40.3,
+          "actor": "David Doudera",
+          "outcome": "Incomplete"
+        },
+        {
+          "event_id": "8028fd5f-7933-4988-9d4c-1e3d69c7a6e1",
+          "t_seconds": 7.404,
+          "team": "Czech Republic",
+          "event_type": "Ball Recovery",
+          "ball_x": 104.4,
+          "ball_y": 56.3,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Vladim\u00edr Coufal",
+          "outcome": null
+        },
+        {
+          "event_id": "d7d86fc0-7304-443c-ba41-8d5c583d5a54",
+          "t_seconds": 7.404,
+          "team": "Czech Republic",
+          "event_type": "Carry",
+          "ball_x": 104.4,
+          "ball_y": 56.3,
+          "ball_end_x": 104.0,
+          "ball_end_y": 55.7,
+          "actor": "Vladim\u00edr Coufal",
+          "outcome": null
+        },
+        {
+          "event_id": "fb7a8a1a-248f-4228-9ac0-1f4d2769e8c6",
+          "t_seconds": 9.351,
+          "team": "Portugal",
+          "event_type": "Pressure",
+          "ball_x": 13.9,
+          "ball_y": 27.3,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Bruno Fernandes",
+          "outcome": null
+        },
+        {
+          "event_id": "1320602c-bdb9-40d2-93f8-3023a9440b6f",
+          "t_seconds": 10.009,
+          "team": "Czech Republic",
+          "event_type": "Pass",
+          "ball_x": 104.0,
+          "ball_y": 55.7,
+          "ball_end_x": 98.3,
+          "ball_end_y": 48.1,
+          "actor": "Vladim\u00edr Coufal",
+          "outcome": null
+        },
+        {
+          "event_id": "743de80e-6081-4bee-be14-71cb9eb6cca4",
+          "t_seconds": 10.987,
+          "team": "Czech Republic",
+          "event_type": "Shot",
+          "ball_x": 98.3,
+          "ball_y": 48.1,
+          "ball_end_x": 120.0,
+          "ball_end_y": 37.0,
+          "actor": "Luk\u00e1\u0161 Provod",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "743de80e-6081-4bee-be14-71cb9eb6cca4",
+          "minute": 61,
+          "second": 31,
+          "scorer": "Luk\u00e1\u0161 Provod",
+          "team": "Czech Republic"
+        }
+      },
+      "metadata": {
+        "match_id": 3930166,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Portugal vs Czech Republic"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "65f09c85-eca7-4338-976d-176a04b217dd",
+        "start_event_id": "325f7800-cb86-43eb-bc56-a2592cba6dfd",
+        "end_event_id": "65f09c85-eca7-4338-976d-176a04b217dd",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 10.801
+      },
+      "frames": [
+        {
+          "event_id": "325f7800-cb86-43eb-bc56-a2592cba6dfd",
+          "t_seconds": 0.0,
+          "team": "Portugal",
+          "event_type": "Pass",
+          "ball_x": 46.4,
+          "ball_y": 10.2,
+          "ball_end_x": 99.2,
+          "ball_end_y": 1.7,
+          "actor": "Gon\u00e7alo In\u00e1cio",
+          "outcome": null
+        },
+        {
+          "event_id": "0f0d5ff5-a0fd-420e-bfff-3c98d45ebe61",
+          "t_seconds": 4.221,
+          "team": "Czech Republic",
+          "event_type": "Pressure",
+          "ball_x": 17.3,
+          "ball_y": 74.9,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Vladim\u00edr Coufal",
+          "outcome": null
+        },
+        {
+          "event_id": "4555e75b-b487-4196-951a-b80c617b4b71",
+          "t_seconds": 5.124,
+          "team": "Portugal",
+          "event_type": "Carry",
+          "ball_x": 99.2,
+          "ball_y": 1.7,
+          "ball_end_x": 102.8,
+          "ball_end_y": 3.8,
+          "actor": "Pedro Neto",
+          "outcome": null
+        },
+        {
+          "event_id": "1e8fecec-ac68-4e82-b61c-99e5441be20f",
+          "t_seconds": 5.463,
+          "team": "Portugal",
+          "event_type": "Carry",
+          "ball_x": 102.8,
+          "ball_y": 3.8,
+          "ball_end_x": 111.5,
+          "ball_end_y": 20.1,
+          "actor": "Pedro Neto",
+          "outcome": null
+        },
+        {
+          "event_id": "fc074813-db75-467a-acd3-1c12b9e0d581",
+          "t_seconds": 8.991,
+          "team": "Portugal",
+          "event_type": "Pass",
+          "ball_x": 111.5,
+          "ball_y": 20.1,
+          "ball_end_x": 112.2,
+          "ball_end_y": 25.1,
+          "actor": "Pedro Neto",
+          "outcome": "Incomplete"
+        },
+        {
+          "event_id": "301d8a1f-3edd-446e-aeb9-ea1d838f5c91",
+          "t_seconds": 10.629,
+          "team": "Portugal",
+          "event_type": "Ball Recovery",
+          "ball_x": 114.3,
+          "ball_y": 35.7,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Francisco Concei\u00e7\u00e3o",
+          "outcome": null
+        },
+        {
+          "event_id": "65f09c85-eca7-4338-976d-176a04b217dd",
+          "t_seconds": 10.801,
+          "team": "Portugal",
+          "event_type": "Shot",
+          "ball_x": 115.7,
+          "ball_y": 36.1,
+          "ball_end_x": 120.0,
+          "ball_end_y": 37.8,
+          "actor": "Francisco Concei\u00e7\u00e3o",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "65f09c85-eca7-4338-976d-176a04b217dd",
+          "minute": 91,
+          "second": 11,
+          "scorer": "Francisco Concei\u00e7\u00e3o",
+          "team": "Portugal"
+        }
+      },
+      "metadata": {
+        "match_id": 3930166,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Portugal vs Czech Republic"
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3930166,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Portugal vs Czech Republic"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "home": {
+    "team": "France",
+    "color": "#002395",
+    "score": 0
+  },
+  "away": {
+    "team": "Belgium",
+    "color": "#1D1D1B",
+    "score": 0
+  },
+  "rows": [
+    {
+      "label": "Shots",
+      "home_value": 19.0,
+      "away_value": 5.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Shots on Target",
+      "home_value": 2.0,
+      "away_value": 2.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Possession",
+      "home_value": 56.9,
+      "away_value": 43.1,
+      "scale_type": "fixed100",
+      "format": "pct",
+      "tier": "basic"
+    },
+    {
+      "label": "Corners",
+      "home_value": 5.0,
+      "away_value": 2.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Fouls",
+      "home_value": 8.0,
+      "away_value": 10.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Yellow Cards",
+      "home_value": 3.0,
+      "away_value": 2.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Red Cards",
+      "home_value": 0.0,
+      "away_value": 0.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "xG",
+      "home_value": 1.26,
+      "away_value": 0.36,
+      "scale_type": "sum",
+      "format": "float1",
+      "tier": "advanced"
+    }
+  ],
+  "metadata": {
+    "match_id": 3941019,
+    "competition": "UEFA Euro 2024",
+    "match_label": "France vs Belgium"
+  }
+}

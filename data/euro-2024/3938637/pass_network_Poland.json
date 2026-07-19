@@ -1,0 +1,1150 @@
+{
+  "windows": [
+    {
+      "index": 0,
+      "label": "0'\u201345' (Starting XI)",
+      "nodes": [
+        {
+          "player": "Adam Buksa",
+          "display_name": "Adam Buksa",
+          "x": 66.88,
+          "y": 31.62,
+          "passes": 4
+        },
+        {
+          "player": "Bartosz Salamon",
+          "display_name": "Bartosz Salamon",
+          "x": 26.89,
+          "y": 37.49,
+          "passes": 15
+        },
+        {
+          "player": "Jakub Piotr Kiwior",
+          "display_name": "Jakub Piotr Kiwior",
+          "x": 43.13,
+          "y": 9.13,
+          "passes": 15
+        },
+        {
+          "player": "Jan Bednarek",
+          "display_name": "Jan Bednarek",
+          "x": 42.78,
+          "y": 56.05,
+          "passes": 17
+        },
+        {
+          "player": "Kacper Urbanski",
+          "display_name": "Kacper Urbanski",
+          "x": 82.21,
+          "y": 28.37,
+          "passes": 11
+        },
+        {
+          "player": "Nicola Zalewski",
+          "display_name": "Nicola Zalewski",
+          "x": 64.48,
+          "y": 3.22,
+          "passes": 12
+        },
+        {
+          "player": "Piotr Zieli\u0144ski",
+          "display_name": "Piotr Zieli\u0144ski",
+          "x": 60.09,
+          "y": 30.57,
+          "passes": 25
+        },
+        {
+          "player": "Przemys\u0142aw Frankowski",
+          "display_name": "Przemys\u0142aw Frankowski",
+          "x": 64.19,
+          "y": 68.53,
+          "passes": 13
+        },
+        {
+          "player": "Sebastian Szyma\u0144ski",
+          "display_name": "Sebastian Szyma\u0144ski",
+          "x": 70.97,
+          "y": 46.04,
+          "passes": 12
+        },
+        {
+          "player": "Taras Wiktorowicz Romanczuk",
+          "display_name": "Taras Wiktorowicz Romanczuk",
+          "x": 48.59,
+          "y": 42.59,
+          "passes": 10
+        },
+        {
+          "player": "Wojciech Szcz\u0119sny",
+          "display_name": "Wojciech Szcz\u0119sny",
+          "x": 12.03,
+          "y": 46.52,
+          "passes": 4
+        }
+      ],
+      "edges": [
+        {
+          "from": "Jan Bednarek",
+          "to": "Piotr Zieli\u0144ski",
+          "count": 6
+        },
+        {
+          "from": "Piotr Zieli\u0144ski",
+          "to": "Kacper Urbanski",
+          "count": 6
+        },
+        {
+          "from": "Bartosz Salamon",
+          "to": "Wojciech Szcz\u0119sny",
+          "count": 5
+        },
+        {
+          "from": "Nicola Zalewski",
+          "to": "Jakub Piotr Kiwior",
+          "count": 5
+        },
+        {
+          "from": "Piotr Zieli\u0144ski",
+          "to": "Sebastian Szyma\u0144ski",
+          "count": 4
+        },
+        {
+          "from": "Taras Wiktorowicz Romanczuk",
+          "to": "Jan Bednarek",
+          "count": 4
+        },
+        {
+          "from": "Bartosz Salamon",
+          "to": "Jan Bednarek",
+          "count": 4
+        },
+        {
+          "from": "Przemys\u0142aw Frankowski",
+          "to": "Sebastian Szyma\u0144ski",
+          "count": 4
+        },
+        {
+          "from": "Sebastian Szyma\u0144ski",
+          "to": "Przemys\u0142aw Frankowski",
+          "count": 4
+        },
+        {
+          "from": "Jakub Piotr Kiwior",
+          "to": "Bartosz Salamon",
+          "count": 4
+        },
+        {
+          "from": "Przemys\u0142aw Frankowski",
+          "to": "Jan Bednarek",
+          "count": 4
+        },
+        {
+          "from": "Piotr Zieli\u0144ski",
+          "to": "Jan Bednarek",
+          "count": 3
+        },
+        {
+          "from": "Wojciech Szcz\u0119sny",
+          "to": "Bartosz Salamon",
+          "count": 3
+        },
+        {
+          "from": "Jan Bednarek",
+          "to": "Taras Wiktorowicz Romanczuk",
+          "count": 3
+        },
+        {
+          "from": "Piotr Zieli\u0144ski",
+          "to": "Jakub Piotr Kiwior",
+          "count": 3
+        },
+        {
+          "from": "Nicola Zalewski",
+          "to": "Piotr Zieli\u0144ski",
+          "count": 3
+        },
+        {
+          "from": "Kacper Urbanski",
+          "to": "Piotr Zieli\u0144ski",
+          "count": 3
+        },
+        {
+          "from": "Jakub Piotr Kiwior",
+          "to": "Nicola Zalewski",
+          "count": 3
+        },
+        {
+          "from": "Jakub Piotr Kiwior",
+          "to": "Piotr Zieli\u0144ski",
+          "count": 3
+        },
+        {
+          "from": "Jakub Piotr Kiwior",
+          "to": "Adam Buksa",
+          "count": 3
+        },
+        {
+          "from": "Sebastian Szyma\u0144ski",
+          "to": "Nicola Zalewski",
+          "count": 2
+        },
+        {
+          "from": "Bartosz Salamon",
+          "to": "Jakub Piotr Kiwior",
+          "count": 2
+        },
+        {
+          "from": "Piotr Zieli\u0144ski",
+          "to": "Przemys\u0142aw Frankowski",
+          "count": 2
+        },
+        {
+          "from": "Taras Wiktorowicz Romanczuk",
+          "to": "Przemys\u0142aw Frankowski",
+          "count": 2
+        },
+        {
+          "from": "Piotr Zieli\u0144ski",
+          "to": "Taras Wiktorowicz Romanczuk",
+          "count": 2
+        },
+        {
+          "from": "Taras Wiktorowicz Romanczuk",
+          "to": "Piotr Zieli\u0144ski",
+          "count": 2
+        },
+        {
+          "from": "Kacper Urbanski",
+          "to": "Nicola Zalewski",
+          "count": 2
+        },
+        {
+          "from": "Nicola Zalewski",
+          "to": "Taras Wiktorowicz Romanczuk",
+          "count": 2
+        },
+        {
+          "from": "Bartosz Salamon",
+          "to": "Sebastian Szyma\u0144ski",
+          "count": 2
+        },
+        {
+          "from": "Jan Bednarek",
+          "to": "Wojciech Szcz\u0119sny",
+          "count": 2
+        },
+        {
+          "from": "Piotr Zieli\u0144ski",
+          "to": "Bartosz Salamon",
+          "count": 2
+        },
+        {
+          "from": "Piotr Zieli\u0144ski",
+          "to": "Nicola Zalewski",
+          "count": 2
+        },
+        {
+          "from": "Jan Bednarek",
+          "to": "Kacper Urbanski",
+          "count": 2
+        },
+        {
+          "from": "Sebastian Szyma\u0144ski",
+          "to": "Piotr Zieli\u0144ski",
+          "count": 2
+        },
+        {
+          "from": "Nicola Zalewski",
+          "to": "Sebastian Szyma\u0144ski",
+          "count": 2
+        },
+        {
+          "from": "Kacper Urbanski",
+          "to": "Przemys\u0142aw Frankowski",
+          "count": 2
+        },
+        {
+          "from": "Przemys\u0142aw Frankowski",
+          "to": "Wojciech Szcz\u0119sny",
+          "count": 1
+        },
+        {
+          "from": "Jan Bednarek",
+          "to": "Bartosz Salamon",
+          "count": 1
+        },
+        {
+          "from": "Jakub Piotr Kiwior",
+          "to": "Kacper Urbanski",
+          "count": 1
+        },
+        {
+          "from": "Bartosz Salamon",
+          "to": "Piotr Zieli\u0144ski",
+          "count": 1
+        },
+        {
+          "from": "Przemys\u0142aw Frankowski",
+          "to": "Adam Buksa",
+          "count": 1
+        },
+        {
+          "from": "Taras Wiktorowicz Romanczuk",
+          "to": "Kacper Urbanski",
+          "count": 1
+        },
+        {
+          "from": "Kacper Urbanski",
+          "to": "Adam Buksa",
+          "count": 1
+        },
+        {
+          "from": "Adam Buksa",
+          "to": "Nicola Zalewski",
+          "count": 1
+        },
+        {
+          "from": "Sebastian Szyma\u0144ski",
+          "to": "Taras Wiktorowicz Romanczuk",
+          "count": 1
+        },
+        {
+          "from": "Sebastian Szyma\u0144ski",
+          "to": "Bartosz Salamon",
+          "count": 1
+        },
+        {
+          "from": "Piotr Zieli\u0144ski",
+          "to": "Adam Buksa",
+          "count": 1
+        },
+        {
+          "from": "Przemys\u0142aw Frankowski",
+          "to": "Taras Wiktorowicz Romanczuk",
+          "count": 1
+        },
+        {
+          "from": "Wojciech Szcz\u0119sny",
+          "to": "Adam Buksa",
+          "count": 1
+        },
+        {
+          "from": "Jan Bednarek",
+          "to": "Sebastian Szyma\u0144ski",
+          "count": 1
+        },
+        {
+          "from": "Sebastian Szyma\u0144ski",
+          "to": "Adam Buksa",
+          "count": 1
+        },
+        {
+          "from": "Adam Buksa",
+          "to": "Sebastian Szyma\u0144ski",
+          "count": 1
+        },
+        {
+          "from": "Jan Bednarek",
+          "to": "Jakub Piotr Kiwior",
+          "count": 1
+        },
+        {
+          "from": "Adam Buksa",
+          "to": "Przemys\u0142aw Frankowski",
+          "count": 1
+        },
+        {
+          "from": "Kacper Urbanski",
+          "to": "Jakub Piotr Kiwior",
+          "count": 1
+        },
+        {
+          "from": "Jan Bednarek",
+          "to": "Przemys\u0142aw Frankowski",
+          "count": 1
+        },
+        {
+          "from": "Przemys\u0142aw Frankowski",
+          "to": "Kacper Urbanski",
+          "count": 1
+        },
+        {
+          "from": "Adam Buksa",
+          "to": "Piotr Zieli\u0144ski",
+          "count": 1
+        },
+        {
+          "from": "Jakub Piotr Kiwior",
+          "to": "Sebastian Szyma\u0144ski",
+          "count": 1
+        },
+        {
+          "from": "Sebastian Szyma\u0144ski",
+          "to": "Kacper Urbanski",
+          "count": 1
+        },
+        {
+          "from": "Kacper Urbanski",
+          "to": "Sebastian Szyma\u0144ski",
+          "count": 1
+        },
+        {
+          "from": "Bartosz Salamon",
+          "to": "Przemys\u0142aw Frankowski",
+          "count": 1
+        },
+        {
+          "from": "Kacper Urbanski",
+          "to": "Taras Wiktorowicz Romanczuk",
+          "count": 1
+        },
+        {
+          "from": "Taras Wiktorowicz Romanczuk",
+          "to": "Nicola Zalewski",
+          "count": 1
+        },
+        {
+          "from": "Przemys\u0142aw Frankowski",
+          "to": "Piotr Zieli\u0144ski",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "label": "45'\u201354'",
+      "nodes": [
+        {
+          "player": "Bartosz Salamon",
+          "display_name": "Bartosz Salamon",
+          "x": 20.03,
+          "y": 32.43,
+          "passes": 3
+        },
+        {
+          "player": "Jakub Moder",
+          "display_name": "Jakub Moder",
+          "x": 29.8,
+          "y": 16.95,
+          "passes": 2
+        },
+        {
+          "player": "Jakub Piotr Kiwior",
+          "display_name": "Jakub Piotr Kiwior",
+          "x": 31.5,
+          "y": 17.7,
+          "passes": 2
+        },
+        {
+          "player": "Jan Bednarek",
+          "display_name": "Jan Bednarek",
+          "x": 51.53,
+          "y": 54.87,
+          "passes": 3
+        },
+        {
+          "player": "Kacper Urbanski",
+          "display_name": "Kacper Urbanski",
+          "x": 24.4,
+          "y": 42.2,
+          "passes": 1
+        },
+        {
+          "player": "Nicola Zalewski",
+          "display_name": "Nicola Zalewski",
+          "x": 15.9,
+          "y": 24.8,
+          "passes": 1
+        },
+        {
+          "player": "Piotr Zieli\u0144ski",
+          "display_name": "Piotr Zieli\u0144ski",
+          "x": 64.9,
+          "y": 53.15,
+          "passes": 2
+        },
+        {
+          "player": "Przemys\u0142aw Frankowski",
+          "display_name": "Przemys\u0142aw Frankowski",
+          "x": 83.9,
+          "y": 75.4,
+          "passes": 1
+        },
+        {
+          "player": "Wojciech Szcz\u0119sny",
+          "display_name": "Wojciech Szcz\u0119sny",
+          "x": 5.87,
+          "y": 44.73,
+          "passes": 3
+        }
+      ],
+      "edges": [
+        {
+          "from": "Bartosz Salamon",
+          "to": "Wojciech Szcz\u0119sny",
+          "count": 2
+        },
+        {
+          "from": "Jan Bednarek",
+          "to": "Piotr Zieli\u0144ski",
+          "count": 2
+        },
+        {
+          "from": "Jakub Moder",
+          "to": "Jakub Piotr Kiwior",
+          "count": 1
+        },
+        {
+          "from": "Kacper Urbanski",
+          "to": "Piotr Zieli\u0144ski",
+          "count": 1
+        },
+        {
+          "from": "Jakub Piotr Kiwior",
+          "to": "Kacper Urbanski",
+          "count": 1
+        },
+        {
+          "from": "Wojciech Szcz\u0119sny",
+          "to": "Bartosz Salamon",
+          "count": 1
+        },
+        {
+          "from": "Wojciech Szcz\u0119sny",
+          "to": "Przemys\u0142aw Frankowski",
+          "count": 1
+        },
+        {
+          "from": "Nicola Zalewski",
+          "to": "Wojciech Szcz\u0119sny",
+          "count": 1
+        },
+        {
+          "from": "Wojciech Szcz\u0119sny",
+          "to": "Jakub Moder",
+          "count": 1
+        },
+        {
+          "from": "Jakub Piotr Kiwior",
+          "to": "Jakub Moder",
+          "count": 1
+        },
+        {
+          "from": "Jakub Moder",
+          "to": "Jan Bednarek",
+          "count": 1
+        },
+        {
+          "from": "Piotr Zieli\u0144ski",
+          "to": "Bartosz Salamon",
+          "count": 1
+        },
+        {
+          "from": "Bartosz Salamon",
+          "to": "Jan Bednarek",
+          "count": 1
+        },
+        {
+          "from": "Jan Bednarek",
+          "to": "Adam Buksa",
+          "count": 1
+        },
+        {
+          "from": "Piotr Zieli\u0144ski",
+          "to": "Przemys\u0142aw Frankowski",
+          "count": 1
+        },
+        {
+          "from": "Przemys\u0142aw Frankowski",
+          "to": "Kacper Urbanski",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "label": "54'\u201377'",
+      "nodes": [
+        {
+          "player": "Adam Buksa",
+          "display_name": "Adam Buksa",
+          "x": 118.9,
+          "y": 49.4,
+          "passes": 1
+        },
+        {
+          "player": "Bartosz Salamon",
+          "display_name": "Bartosz Salamon",
+          "x": 13.7,
+          "y": 29.12,
+          "passes": 5
+        },
+        {
+          "player": "Bartosz Slisz",
+          "display_name": "Bartosz Slisz",
+          "x": 60.82,
+          "y": 46.2,
+          "passes": 6
+        },
+        {
+          "player": "Jakub Moder",
+          "display_name": "Jakub Moder",
+          "x": 56.23,
+          "y": 20.48,
+          "passes": 8
+        },
+        {
+          "player": "Jakub Piotr Kiwior",
+          "display_name": "Jakub Piotr Kiwior",
+          "x": 70.95,
+          "y": 22.33,
+          "passes": 6
+        },
+        {
+          "player": "Jan Bednarek",
+          "display_name": "Jan Bednarek",
+          "x": 24.55,
+          "y": 69.25,
+          "passes": 2
+        },
+        {
+          "player": "Karol \u015awiderski",
+          "display_name": "Karol \u015awiderski",
+          "x": 102.2,
+          "y": 17.9,
+          "passes": 2
+        },
+        {
+          "player": "Nicola Zalewski",
+          "display_name": "Nicola Zalewski",
+          "x": 85.24,
+          "y": 14.53,
+          "passes": 8
+        },
+        {
+          "player": "Piotr Zieli\u0144ski",
+          "display_name": "Piotr Zieli\u0144ski",
+          "x": 70.41,
+          "y": 26.91,
+          "passes": 8
+        },
+        {
+          "player": "Przemys\u0142aw Frankowski",
+          "display_name": "Przemys\u0142aw Frankowski",
+          "x": 56.05,
+          "y": 67.23,
+          "passes": 6
+        },
+        {
+          "player": "Wojciech Szcz\u0119sny",
+          "display_name": "Wojciech Szcz\u0119sny",
+          "x": 7.47,
+          "y": 43.77,
+          "passes": 3
+        }
+      ],
+      "edges": [
+        {
+          "from": "Bartosz Salamon",
+          "to": "Wojciech Szcz\u0119sny",
+          "count": 4
+        },
+        {
+          "from": "Nicola Zalewski",
+          "to": "Jakub Piotr Kiwior",
+          "count": 4
+        },
+        {
+          "from": "Jakub Piotr Kiwior",
+          "to": "Jakub Moder",
+          "count": 3
+        },
+        {
+          "from": "Nicola Zalewski",
+          "to": "Piotr Zieli\u0144ski",
+          "count": 3
+        },
+        {
+          "from": "Jakub Piotr Kiwior",
+          "to": "Piotr Zieli\u0144ski",
+          "count": 3
+        },
+        {
+          "from": "Jakub Moder",
+          "to": "Bartosz Salamon",
+          "count": 2
+        },
+        {
+          "from": "Przemys\u0142aw Frankowski",
+          "to": "Nicola Zalewski",
+          "count": 2
+        },
+        {
+          "from": "Piotr Zieli\u0144ski",
+          "to": "Nicola Zalewski",
+          "count": 2
+        },
+        {
+          "from": "Piotr Zieli\u0144ski",
+          "to": "Jakub Moder",
+          "count": 2
+        },
+        {
+          "from": "Bartosz Slisz",
+          "to": "Karol \u015awiderski",
+          "count": 2
+        },
+        {
+          "from": "Bartosz Slisz",
+          "to": "Przemys\u0142aw Frankowski",
+          "count": 2
+        },
+        {
+          "from": "Jakub Moder",
+          "to": "Nicola Zalewski",
+          "count": 2
+        },
+        {
+          "from": "Wojciech Szcz\u0119sny",
+          "to": "Jakub Moder",
+          "count": 1
+        },
+        {
+          "from": "Bartosz Salamon",
+          "to": "Jakub Piotr Kiwior",
+          "count": 1
+        },
+        {
+          "from": "Jakub Moder",
+          "to": "Karol \u015awiderski",
+          "count": 1
+        },
+        {
+          "from": "Adam Buksa",
+          "to": "Jakub Piotr Kiwior",
+          "count": 1
+        },
+        {
+          "from": "Jan Bednarek",
+          "to": "Wojciech Szcz\u0119sny",
+          "count": 1
+        },
+        {
+          "from": "Wojciech Szcz\u0119sny",
+          "to": "Jakub Piotr Kiwior",
+          "count": 1
+        },
+        {
+          "from": "Jakub Moder",
+          "to": "Adam Buksa",
+          "count": 1
+        },
+        {
+          "from": "Przemys\u0142aw Frankowski",
+          "to": "Bartosz Slisz",
+          "count": 1
+        },
+        {
+          "from": "Przemys\u0142aw Frankowski",
+          "to": "Jakub Moder",
+          "count": 1
+        },
+        {
+          "from": "Piotr Zieli\u0144ski",
+          "to": "Karol \u015awiderski",
+          "count": 1
+        },
+        {
+          "from": "Karol \u015awiderski",
+          "to": "Jakub Moder",
+          "count": 1
+        },
+        {
+          "from": "Karol \u015awiderski",
+          "to": "Nicola Zalewski",
+          "count": 1
+        },
+        {
+          "from": "Jakub Moder",
+          "to": "Piotr Zieli\u0144ski",
+          "count": 1
+        },
+        {
+          "from": "Piotr Zieli\u0144ski",
+          "to": "Jakub Piotr Kiwior",
+          "count": 1
+        },
+        {
+          "from": "Wojciech Szcz\u0119sny",
+          "to": "Bartosz Salamon",
+          "count": 1
+        },
+        {
+          "from": "Bartosz Slisz",
+          "to": "Piotr Zieli\u0144ski",
+          "count": 1
+        },
+        {
+          "from": "Piotr Zieli\u0144ski",
+          "to": "Bartosz Slisz",
+          "count": 1
+        },
+        {
+          "from": "Przemys\u0142aw Frankowski",
+          "to": "Piotr Zieli\u0144ski",
+          "count": 1
+        },
+        {
+          "from": "Piotr Zieli\u0144ski",
+          "to": "Przemys\u0142aw Frankowski",
+          "count": 1
+        },
+        {
+          "from": "Przemys\u0142aw Frankowski",
+          "to": "Karol \u015awiderski",
+          "count": 1
+        },
+        {
+          "from": "Jan Bednarek",
+          "to": "Jakub Moder",
+          "count": 1
+        },
+        {
+          "from": "Jakub Moder",
+          "to": "Przemys\u0142aw Frankowski",
+          "count": 1
+        },
+        {
+          "from": "Nicola Zalewski",
+          "to": "Jakub Moder",
+          "count": 1
+        },
+        {
+          "from": "Bartosz Slisz",
+          "to": "Jakub Moder",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "label": "77'\u201385'",
+      "nodes": [
+        {
+          "player": "Bartosz Salamon",
+          "display_name": "Bartosz Salamon",
+          "x": 9.33,
+          "y": 30.9,
+          "passes": 3
+        },
+        {
+          "player": "Jakub Piotr Kiwior",
+          "display_name": "Jakub Piotr Kiwior",
+          "x": 90.8,
+          "y": 38.9,
+          "passes": 2
+        },
+        {
+          "player": "Karol \u015awiderski",
+          "display_name": "Karol \u015awiderski",
+          "x": 120.0,
+          "y": 0.1,
+          "passes": 1
+        },
+        {
+          "player": "Wojciech Szcz\u0119sny",
+          "display_name": "Wojciech Szcz\u0119sny",
+          "x": 12.5,
+          "y": 43.05,
+          "passes": 2
+        }
+      ],
+      "edges": [
+        {
+          "from": "Bartosz Salamon",
+          "to": "Wojciech Szcz\u0119sny",
+          "count": 3
+        },
+        {
+          "from": "Wojciech Szcz\u0119sny",
+          "to": "Nicola Zalewski",
+          "count": 1
+        },
+        {
+          "from": "Jakub Piotr Kiwior",
+          "to": "Adam Buksa",
+          "count": 1
+        },
+        {
+          "from": "Karol \u015awiderski",
+          "to": "Jakub Moder",
+          "count": 1
+        },
+        {
+          "from": "Jakub Piotr Kiwior",
+          "to": "Przemys\u0142aw Frankowski",
+          "count": 1
+        },
+        {
+          "from": "Wojciech Szcz\u0119sny",
+          "to": "Bartosz Salamon",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "label": "85'\u2013FT",
+      "nodes": [
+        {
+          "player": "Adam Buksa",
+          "display_name": "Adam Buksa",
+          "x": 84.6,
+          "y": 26.3,
+          "passes": 1
+        },
+        {
+          "player": "Bartosz Bereszy\u0144ski",
+          "display_name": "Bartosz Bereszy\u0144ski",
+          "x": 44.0,
+          "y": 68.2,
+          "passes": 1
+        },
+        {
+          "player": "Bartosz Slisz",
+          "display_name": "Bartosz Slisz",
+          "x": 55.97,
+          "y": 37.73,
+          "passes": 3
+        },
+        {
+          "player": "Jakub Moder",
+          "display_name": "Jakub Moder",
+          "x": 48.33,
+          "y": 18.07,
+          "passes": 3
+        },
+        {
+          "player": "Jakub Piotr Kiwior",
+          "display_name": "Jakub Piotr Kiwior",
+          "x": 39.62,
+          "y": 8.58,
+          "passes": 5
+        },
+        {
+          "player": "Jakub Piotrowski",
+          "display_name": "Jakub Piotrowski",
+          "x": 69.98,
+          "y": 37.98,
+          "passes": 5
+        },
+        {
+          "player": "Jan Bednarek",
+          "display_name": "Jan Bednarek",
+          "x": 36.7,
+          "y": 34.23,
+          "passes": 3
+        },
+        {
+          "player": "Karol \u015awiderski",
+          "display_name": "Karol \u015awiderski",
+          "x": 65.9,
+          "y": 54.75,
+          "passes": 2
+        },
+        {
+          "player": "Nicola Zalewski",
+          "display_name": "Nicola Zalewski",
+          "x": 85.1,
+          "y": 5.0,
+          "passes": 1
+        },
+        {
+          "player": "Przemys\u0142aw Frankowski",
+          "display_name": "Przemys\u0142aw Frankowski",
+          "x": 77.07,
+          "y": 78.6,
+          "passes": 3
+        },
+        {
+          "player": "Wojciech Szcz\u0119sny",
+          "display_name": "Wojciech Szcz\u0119sny",
+          "x": 26.6,
+          "y": 48.83,
+          "passes": 4
+        }
+      ],
+      "edges": [
+        {
+          "from": "Jakub Piotrowski",
+          "to": "Jakub Moder",
+          "count": 3
+        },
+        {
+          "from": "Jakub Moder",
+          "to": "Nicola Zalewski",
+          "count": 2
+        },
+        {
+          "from": "Jakub Piotr Kiwior",
+          "to": "Nicola Zalewski",
+          "count": 2
+        },
+        {
+          "from": "Karol \u015awiderski",
+          "to": "Jakub Piotrowski",
+          "count": 1
+        },
+        {
+          "from": "Jakub Piotr Kiwior",
+          "to": "Jakub Piotrowski",
+          "count": 1
+        },
+        {
+          "from": "Nicola Zalewski",
+          "to": "Jakub Piotrowski",
+          "count": 1
+        },
+        {
+          "from": "Jakub Piotrowski",
+          "to": "Karol \u015awiderski",
+          "count": 1
+        },
+        {
+          "from": "Jan Bednarek",
+          "to": "Karol \u015awiderski",
+          "count": 1
+        },
+        {
+          "from": "Jakub Piotr Kiwior",
+          "to": "Bartosz Slisz",
+          "count": 1
+        },
+        {
+          "from": "Bartosz Slisz",
+          "to": "Jakub Piotrowski",
+          "count": 1
+        },
+        {
+          "from": "Jakub Piotrowski",
+          "to": "Przemys\u0142aw Frankowski",
+          "count": 1
+        },
+        {
+          "from": "Jan Bednarek",
+          "to": "Bartosz Slisz",
+          "count": 1
+        },
+        {
+          "from": "Bartosz Slisz",
+          "to": "Przemys\u0142aw Frankowski",
+          "count": 1
+        },
+        {
+          "from": "Przemys\u0142aw Frankowski",
+          "to": "Karol \u015awiderski",
+          "count": 1
+        },
+        {
+          "from": "Karol \u015awiderski",
+          "to": "Przemys\u0142aw Frankowski",
+          "count": 1
+        },
+        {
+          "from": "Przemys\u0142aw Frankowski",
+          "to": "Jakub Piotrowski",
+          "count": 1
+        },
+        {
+          "from": "Wojciech Szcz\u0119sny",
+          "to": "Jakub Moder",
+          "count": 1
+        },
+        {
+          "from": "Jakub Moder",
+          "to": "Wojciech Szcz\u0119sny",
+          "count": 1
+        },
+        {
+          "from": "Wojciech Szcz\u0119sny",
+          "to": "Bartosz Bereszy\u0144ski",
+          "count": 1
+        },
+        {
+          "from": "Bartosz Bereszy\u0144ski",
+          "to": "Jakub Piotrowski",
+          "count": 1
+        },
+        {
+          "from": "Przemys\u0142aw Frankowski",
+          "to": "Bartosz Bereszy\u0144ski",
+          "count": 1
+        },
+        {
+          "from": "Wojciech Szcz\u0119sny",
+          "to": "Bartosz Slisz",
+          "count": 1
+        },
+        {
+          "from": "Bartosz Slisz",
+          "to": "Jakub Piotr Kiwior",
+          "count": 1
+        },
+        {
+          "from": "Jakub Piotr Kiwior",
+          "to": "Jan Bednarek",
+          "count": 1
+        },
+        {
+          "from": "Jan Bednarek",
+          "to": "Wojciech Szcz\u0119sny",
+          "count": 1
+        },
+        {
+          "from": "Wojciech Szcz\u0119sny",
+          "to": "Adam Buksa",
+          "count": 1
+        },
+        {
+          "from": "Adam Buksa",
+          "to": "Nicola Zalewski",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "substitutions": [
+    {
+      "minute": 45,
+      "player_off": "Sebastian Szyma\u0144ski",
+      "player_on": "Jakub Moder"
+    },
+    {
+      "minute": 54,
+      "player_off": "Kacper Urbanski",
+      "player_on": "Karol \u015awiderski"
+    },
+    {
+      "minute": 54,
+      "player_off": "Taras Wiktorowicz Romanczuk",
+      "player_on": "Bartosz Slisz"
+    },
+    {
+      "minute": 77,
+      "player_off": "Piotr Zieli\u0144ski",
+      "player_on": "Jakub Piotrowski"
+    },
+    {
+      "minute": 85,
+      "player_off": "Bartosz Salamon",
+      "player_on": "Bartosz Bereszy\u0144ski"
+    }
+  ],
+  "metadata": {
+    "match_id": 3938637,
+    "team": "Poland",
+    "filter": "completed passes, per substitution window",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Poland vs Netherlands"
+  }
+}

@@ -1,24 +1,18 @@
-"""Extract match-level statistics from StatsBomb open data and write the matchStats JSON contract.
+"""Extract match-level statistics from StatsBomb open data and return a tidy DataFrame.
 
-Computes basic and advanced stats for both teams in one match and emits a flat contract
-consumed by the matchStats D3 component. Football logic lives entirely here; the D3
-renderer (matchStats.js) and the generic bar renderer (comparisonBars.js) remain
-football-agnostic at the stat-semantics level.
+Computes basic and advanced stats for both teams in one match. main() wraps the
+DataFrame in the home/away/metadata envelope consumed by the matchStats D3 component.
 
-Possession is computed as the share of all StatsBomb events attributed to each team via
-the ``possession_team`` column. Every event carries a ``possession_team`` tag indicating
-which team currently holds the ball; counting events per team and expressing as a
-percentage captures possession intensity and aligns with broadcast statistics.
-
-Yellow cards are sourced from ``foul_committed_card == 'Yellow Card'``. Red cards and
-second yellows from ``foul_committed_card in {'Red Card', 'Second Yellow'}``. The
-``bad_behaviour_card`` column (cards issued without a foul) is also checked when present.
+Possession is computed as the share of all StatsBomb events attributed to each team
+via the possession_team column. Yellow/red cards are sourced from foul_committed_card
+and bad_behaviour_card columns.
 
 Public API:
-    resolve_euro_2024_final() -> int
+    extract_match_stats(match_id) -> pd.DataFrame
     load_team_colors(out_dir) -> dict
-    extract_match_stats(match_id) -> dict
     main()
+
+DataFrame columns: label, home_value, away_value, scale_type, format, tier
 
 JSON output shape:
     {
@@ -40,53 +34,15 @@ Written to: src/footballd3/sample_data/match_stats_{match_id}.json
 """
 
 import json
-import math
 from pathlib import Path
 
 import pandas as pd
 from statsbombpy import sb
 
+from .utils import fetch_match_info, resolve_match
+
 _DEFAULT_HOME_COLOR = "#9F1239"
 _DEFAULT_AWAY_COLOR = "#1E3A5F"
-
-
-def resolve_euro_2024_final() -> int:
-    """Resolve the UEFA Euro 2024 Final match ID from the StatsBomb open data API.
-
-    Returns:
-        int: The StatsBomb match_id for the Euro 2024 Final.
-
-    Raises:
-        ValueError: If the competition/season can't be found, or if the Final
-            can't be isolated to a single match.
-    """
-    comps = sb.competitions()
-    euro = comps[
-        comps["competition_name"].str.contains("UEFA Euro", case=False)
-        & (comps["season_name"] == "2024")
-    ]
-    if euro.empty:
-        raise ValueError("Could not find UEFA Euro 2024 in sb.competitions()")
-
-    competition_id = int(euro["competition_id"].iloc[0])
-    season_id = int(euro["season_id"].iloc[0])
-
-    matches = sb.matches(competition_id=competition_id, season_id=season_id)
-
-    if "competition_stage" in matches.columns:
-        final_rows = matches[
-            matches["competition_stage"].astype(str).str.strip() == "Final"
-        ]
-    else:
-        final_rows = matches.sort_values("match_date").iloc[[-1]]
-
-    if final_rows.empty or len(final_rows) > 1:
-        raise ValueError(
-            f"Could not isolate Euro 2024 Final unambiguously. "
-            f"Candidates:\n{final_rows[['match_id','match_date','home_team','away_team']]}"
-        )
-
-    return int(final_rows["match_id"].iloc[0])
 
 
 def load_team_colors(out_dir: Path) -> dict:
@@ -108,14 +64,13 @@ def load_team_colors(out_dir: Path) -> dict:
 def _count_cards(events: pd.DataFrame, team: str, card_values: set) -> int:
     """Count disciplinary cards of specified types for a team.
 
-    Checks both ``foul_committed_card`` (card given on a foul) and
-    ``bad_behaviour_card`` (card given without a foul, e.g. simulation) when
-    the column exists.
+    Checks both foul_committed_card (card given on a foul) and bad_behaviour_card
+    (card given without a foul) when the column exists.
 
     Args:
         events (pd.DataFrame): Full match events DataFrame.
         team (str): Team name to filter by.
-        card_values (set[str]): Card label values to count, e.g. {'Yellow Card'}.
+        card_values (set[str]): Card label values to count, e.g. {"Yellow Card"}.
 
     Returns:
         int: Total card count for the team.
@@ -129,25 +84,32 @@ def _count_cards(events: pd.DataFrame, team: str, card_values: set) -> int:
     return count
 
 
-def extract_match_stats(match_id: int) -> dict:
-    """Extract basic and advanced match statistics for both teams.
+def extract_match_stats(match_id: int) -> pd.DataFrame:
+    """Extract basic and advanced match statistics for both teams as a tidy DataFrame.
 
-    Resolves home/away from ``sb.matches()``, pulls all events via ``sb.events()``,
-    and computes stats using only StatsBomb data — no custom models.
+    Resolves home/away from sb.matches(), pulls all events, and computes stats
+    using only StatsBomb data. Returns one row per stat with home/away values;
+    main() wraps this in the full JSON contract (with home/away metadata).
 
-    xG is the sum of ``shot_statsbomb_xg`` per team (shots with NaN xG are dropped).
-    Possession is the share of all events attributed to each team via ``possession_team``.
-    Corners are passes where ``pass_type == 'Corner'``.
+    xG is the sum of shot_statsbomb_xg per team. Possession is the event share
+    per possession_team. Corners are passes where pass_type == "Corner".
 
     Args:
         match_id (int): StatsBomb match ID.
 
     Returns:
-        dict: matchStats JSON contract with keys ``home``, ``away``, ``rows``,
-            ``metadata``. Row dicts carry ``label``, ``home_value``, ``away_value``,
-            ``scale_type``, ``format``, and ``tier``.
+        pd.DataFrame: One row per stat with columns:
+            label (str): Display label (e.g. "Shots", "xG").
+            home_value (float): Stat value for the home team.
+            away_value (float): Stat value for the away team.
+            scale_type (str): "sum", "fixed100", or "max".
+            format (str): "int", "pct", or "float1".
+            tier (str): "basic" or "advanced".
+        Also sets df.attrs["home_team"], df.attrs["away_team"],
+            df.attrs["home_score"], df.attrs["away_score"].
     """
-    # ── Resolve teams ────────────────────────────────────────────────────────────
+    competition, _, match_label = fetch_match_info(match_id)
+
     comps = sb.competitions()
     euro = comps[
         comps["competition_name"].str.contains("UEFA Euro", case=False)
@@ -160,60 +122,43 @@ def extract_match_stats(match_id: int) -> dict:
 
     home_team = str(match_row["home_team"])
     away_team = str(match_row["away_team"])
-    competition = str(match_row.get("competition", "UEFA Euro 2024"))
-    match_label = f"{home_team} vs {away_team}"
 
-    out_dir = Path(__file__).parents[2] / "src" / "footballd3" / "sample_data"
-    team_colors = load_team_colors(out_dir)
-    home_color = team_colors.get(home_team, _DEFAULT_HOME_COLOR)
-    away_color = team_colors.get(away_team, _DEFAULT_AWAY_COLOR)
-
-    # ── Load events ──────────────────────────────────────────────────────────────
     events = sb.events(match_id=match_id)
 
-    # ── Score ────────────────────────────────────────────────────────────────────
     goals = events[(events["type"] == "Shot") & (events["shot_outcome"] == "Goal")]
     home_score = int((goals["team"] == home_team).sum())
     away_score = int((goals["team"] == away_team).sum())
 
-    # ── Shots ────────────────────────────────────────────────────────────────────
     shots = events[events["type"] == "Shot"]
     home_shots = int((shots["team"] == home_team).sum())
     away_shots = int((shots["team"] == away_team).sum())
 
-    # ── Shots on target (Saved or Goal) ─────────────────────────────────────────
     on_target = shots[shots["shot_outcome"].isin({"Saved", "Goal"})]
     home_sot = int((on_target["team"] == home_team).sum())
     away_sot = int((on_target["team"] == away_team).sum())
 
-    # ── Possession (share of events per possession_team) ─────────────────────────
-    poss_counts  = events["possession_team"].value_counts()
+    poss_counts = events["possession_team"].value_counts()
     total_events = poss_counts.sum()
     home_poss = round(float(poss_counts.get(home_team, 0)) / total_events * 100, 1)
     away_poss = round(100.0 - home_poss, 1)
 
-    # ── Corners ──────────────────────────────────────────────────────────────────
     passes = events[events["type"] == "Pass"]
     corners = passes[passes["pass_type"] == "Corner"]
     home_corners = int((corners["team"] == home_team).sum())
     away_corners = int((corners["team"] == away_team).sum())
 
-    # ── Fouls ────────────────────────────────────────────────────────────────────
     fouls = events[events["type"] == "Foul Committed"]
     home_fouls = int((fouls["team"] == home_team).sum())
     away_fouls = int((fouls["team"] == away_team).sum())
 
-    # ── Yellow cards ─────────────────────────────────────────────────────────────
     yellow_vals = {"Yellow Card"}
     home_yellows = _count_cards(events, home_team, yellow_vals)
     away_yellows = _count_cards(events, away_team, yellow_vals)
 
-    # ── Red cards (straight red or second yellow) ────────────────────────────────
     red_vals = {"Red Card", "Second Yellow"}
     home_reds = _count_cards(events, home_team, red_vals)
     away_reds = _count_cards(events, away_team, red_vals)
 
-    # ── xG (StatsBomb value — not a custom model) ────────────────────────────────
     shots_with_xg = shots[shots["shot_statsbomb_xg"].notna()].copy()
     shots_with_xg["shot_statsbomb_xg"] = pd.to_numeric(
         shots_with_xg["shot_statsbomb_xg"], errors="coerce"
@@ -222,7 +167,6 @@ def extract_match_stats(match_id: int) -> dict:
     home_xg = round(float(shots_with_xg[shots_with_xg["team"] == home_team]["shot_statsbomb_xg"].sum()), 2)
     away_xg = round(float(shots_with_xg[shots_with_xg["team"] == away_team]["shot_statsbomb_xg"].sum()), 2)
 
-    # ── Assemble rows ────────────────────────────────────────────────────────────
     rows = [
         {"label": "Shots",           "home_value": home_shots,   "away_value": away_shots,   "scale_type": "sum",      "format": "int",    "tier": "basic"},
         {"label": "Shots on Target", "home_value": home_sot,     "away_value": away_sot,     "scale_type": "sum",      "format": "int",    "tier": "basic"},
@@ -234,38 +178,68 @@ def extract_match_stats(match_id: int) -> dict:
         {"label": "xG",              "home_value": home_xg,      "away_value": away_xg,      "scale_type": "sum",      "format": "float1", "tier": "advanced"},
     ]
 
-    return {
-        "home": {"team": home_team, "color": home_color, "score": home_score},
-        "away": {"team": away_team, "color": away_color, "score": away_score},
-        "rows": rows,
+    df = pd.DataFrame(rows)
+    df.attrs["home_team"]  = home_team
+    df.attrs["away_team"]  = away_team
+    df.attrs["home_score"] = home_score
+    df.attrs["away_score"] = away_score
+    df.attrs["competition"] = competition
+    df.attrs["match_label"] = match_label
+    return df
+
+
+def main(match_id: int | None = None, out_dir: Path | None = None) -> None:
+    """Extract match stats for a match and write the JSON contract.
+
+    Args:
+        match_id (int | None): StatsBomb match ID; defaults to Euro 2024 Final.
+        out_dir (Path | None): Output directory; defaults to data/euro-2024/{match_id}/.
+
+    Output path: {out_dir}/match_stats.json
+    """
+    if match_id is None:
+        match_id = resolve_match("UEFA Euro", "2024", "Spain", "England")
+    if out_dir is None:
+        out_dir = Path(__file__).parents[2] / "data" / "euro-2024" / str(match_id)
+    df = extract_match_stats(match_id)
+
+    out_dir.mkdir(parents=True, exist_ok=True)
+    # Look for team_colors.json in the shared data/ root (two levels up from match dir),
+    # falling back to the match dir itself for backward compatibility.
+    shared_dir = out_dir.parents[1]
+    team_colors = load_team_colors(shared_dir) or load_team_colors(out_dir)
+
+    home_team  = df.attrs["home_team"]
+    away_team  = df.attrs["away_team"]
+    competition = df.attrs["competition"]
+    match_label = df.attrs["match_label"]
+
+    payload = {
+        "home": {
+            "team":  home_team,
+            "color": team_colors.get(home_team, _DEFAULT_HOME_COLOR),
+            "score": df.attrs["home_score"],
+        },
+        "away": {
+            "team":  away_team,
+            "color": team_colors.get(away_team, _DEFAULT_AWAY_COLOR),
+            "score": df.attrs["away_score"],
+        },
+        "rows": df.to_dict(orient="records"),
         "metadata": {
-            "match_id": match_id,
+            "match_id":    match_id,
             "competition": competition,
             "match_label": match_label,
         },
     }
 
-
-def main() -> None:
-    """Resolve the Euro 2024 Final, extract match stats, and write the JSON contract.
-
-    Output path: src/footballd3/sample_data/match_stats_{match_id}.json
-    """
-    match_id = resolve_euro_2024_final()
-    stats = extract_match_stats(match_id)
-
-    out_dir = Path(__file__).parents[2] / "src" / "footballd3" / "sample_data"
-    out_dir.mkdir(parents=True, exist_ok=True)
-    out_path = out_dir / f"match_stats_{match_id}.json"
-
+    out_path = out_dir / "match_stats.json"
     with open(out_path, "w") as f:
-        json.dump(stats, f, indent=2)
+        json.dump(payload, f, indent=2)
 
-    home = stats["home"]
-    away = stats["away"]
     print(
         f"Wrote match stats → {out_path}\n"
-        f"  {home['team']} {home['score']}–{away['score']} {away['team']}"
+        f"  {home_team} {df.attrs['home_score']}–{df.attrs['away_score']} {away_team}"
     )
 
 

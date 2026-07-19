@@ -26,25 +26,35 @@
  * Does not compose on pitch.js. Creates its own SVG inside the given selection.
  */
 
-// ── Tooltip ───────────────────────────────────────────────────────────────────
+import * as d3 from "d3";
 
-const _tooltip = document.createElement("div");
-Object.assign(_tooltip.style, {
-  position:      "fixed",
-  pointerEvents: "none",
-  display:       "none",
-  background:    "#FAF7F0",
-  border:        "1px solid #E5E5E5",
-  borderRadius:  "2px",
-  padding:       "8px 10px",
-  fontFamily:    "Geist Mono, monospace",
-  fontSize:      "12px",
-  lineHeight:    "1.6",
-  color:         "#171717",
-  whiteSpace:    "nowrap",
-  zIndex:        "100",
-});
-document.body.appendChild(_tooltip);
+// ── Tooltip ───────────────────────────────────────────────────────────────────
+// Created lazily (not at module scope) so this file can be imported in a
+// server-rendering context without touching `document` on the server.
+
+let _tooltip;
+function getTooltip() {
+  if (!_tooltip) {
+    _tooltip = document.createElement("div");
+    Object.assign(_tooltip.style, {
+      position:      "fixed",
+      pointerEvents: "none",
+      display:       "none",
+      background:    "#FAF7F0",
+      border:        "1px solid #E5E5E5",
+      borderRadius:  "2px",
+      padding:       "8px 10px",
+      fontFamily:    "Geist Mono, monospace",
+      fontSize:      "12px",
+      lineHeight:    "1.6",
+      color:         "#171717",
+      whiteSpace:    "nowrap",
+      zIndex:        "100",
+    });
+    document.body.appendChild(_tooltip);
+  }
+  return _tooltip;
+}
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 
@@ -208,7 +218,7 @@ export function createMomentumChart(selection, data, config = {}) {
     // ── Background ─────────────────────────────────────────────────────────────
     g.append("rect")
       .attr("width", iW).attr("height", iH)
-      .attr("fill", "#FAF7F0").attr("rx", 2);
+      .attr("fill", "var(--elevated, #FAF7F0)").attr("rx", 2);
 
     // Zero baseline.
     const z = momentumScale(0);
@@ -218,7 +228,7 @@ export function createMomentumChart(selection, data, config = {}) {
       .attr(isH ? "y1" : "y1", isH ? z    : 0)
       .attr(isH ? "x2" : "x2", isH ? iW   : z)
       .attr(isH ? "y2" : "y2", isH ? z    : iH)
-      .attr("stroke", "#D4D4D4")
+      .attr("stroke", "var(--border-strong, #D4D4D4)")
       .attr("stroke-width", 1.5);
 
     // Soft gridlines at ±60% of the momentum extent.
@@ -227,7 +237,7 @@ export function createMomentumChart(selection, data, config = {}) {
       g.append("line")
         .attr("x1", isH ? 0  : p).attr("y1", isH ? p  : 0)
         .attr("x2", isH ? iW : p).attr("y2", isH ? p  : iH)
-        .attr("stroke", "#E5E5E5")
+        .attr("stroke", "var(--border, #E5E5E5)")
         .attr("stroke-width", 0.75)
         .attr("stroke-dasharray", "3,4");
     });
@@ -239,7 +249,7 @@ export function createMomentumChart(selection, data, config = {}) {
         .attr("class", "mc-ht-line")
         .attr("x1", isH ? htPos : 0 ).attr("y1", isH ? 0    : htPos)
         .attr("x2", isH ? htPos : iW).attr("y2", isH ? iH   : htPos)
-        .attr("stroke", "#D4D4D4")
+        .attr("stroke", "var(--border-strong, #D4D4D4)")
         .attr("stroke-width", 1)
         .attr("stroke-dasharray", "4,4");
 
@@ -249,7 +259,7 @@ export function createMomentumChart(selection, data, config = {}) {
         .attr("text-anchor", isH ? "start" : "end")
         .attr("font-family", "Geist Mono, monospace")
         .attr("font-size", "9px")
-        .attr("fill", "#A3A3A3")
+        .attr("fill", "var(--faint, #A3A3A3)")
         .text("HT");
     }
 
@@ -296,14 +306,14 @@ export function createMomentumChart(selection, data, config = {}) {
     g.append("path").attr("class", "mc-primary-line")
       .datum(d.minutes).attr("d", momentumLine)
       .attr("fill", "none")
-      .attr("stroke", "#525252").attr("stroke-width", 1.5).attr("stroke-opacity", 0.6);
+      .attr("stroke", "var(--muted, #525252)").attr("stroke-width", 1.5).attr("stroke-opacity", 0.6);
 
     // Secondary window overlay.
     if (_showSecondaryWindow && d.secondary_minutes?.length > 0) {
       g.append("path").attr("class", "mc-secondary-line")
         .datum(d.secondary_minutes).attr("d", momentumLine)
         .attr("fill", "none")
-        .attr("stroke", "#525252").attr("stroke-width", 1)
+        .attr("stroke", "var(--muted, #525252)").attr("stroke-width", 1)
         .attr("stroke-opacity", 0.3).attr("stroke-dasharray", "5,4");
     }
 
@@ -497,26 +507,26 @@ export function createMomentumChart(selection, data, config = {}) {
         g.append("line")
           .attr("x1", tp).attr("y1", iH)
           .attr("x2", tp).attr("y2", iH + 5)
-          .attr("stroke", "#D4D4D4").attr("stroke-width", 1);
+          .attr("stroke", "var(--border-strong, #D4D4D4)").attr("stroke-width", 1);
 
         g.append("text")
           .attr("x", tp).attr("y", iH + 16)
           .attr("text-anchor", "middle")
           .attr("font-family", "Geist Mono, monospace")
-          .attr("font-size", "10px").attr("fill", "#525252")
+          .attr("font-size", "10px").attr("fill", "var(--muted, #525252)")
           .text(`${t}'`);
       } else {
         // Left Y axis.
         g.append("line")
           .attr("x1", -5).attr("y1", tp)
           .attr("x2", 0 ).attr("y2", tp)
-          .attr("stroke", "#D4D4D4").attr("stroke-width", 1);
+          .attr("stroke", "var(--border-strong, #D4D4D4)").attr("stroke-width", 1);
 
         g.append("text")
           .attr("x", -8).attr("y", tp)
           .attr("text-anchor", "end").attr("dominant-baseline", "middle")
           .attr("font-family", "Geist Mono, monospace")
-          .attr("font-size", "10px").attr("fill", "#525252")
+          .attr("font-size", "10px").attr("fill", "var(--muted, #525252)")
           .text(`${t}'`);
       }
     });
@@ -525,17 +535,17 @@ export function createMomentumChart(selection, data, config = {}) {
     if (isH) {
       g.append("line")  // X axis bottom border
         .attr("x1", 0).attr("y1", iH).attr("x2", iW).attr("y2", iH)
-        .attr("stroke", "#E5E5E5").attr("stroke-width", 1);
+        .attr("stroke", "var(--border, #E5E5E5)").attr("stroke-width", 1);
       g.append("line")  // Y axis left border
         .attr("x1", 0).attr("y1", 0).attr("x2", 0).attr("y2", iH)
-        .attr("stroke", "#E5E5E5").attr("stroke-width", 1);
+        .attr("stroke", "var(--border, #E5E5E5)").attr("stroke-width", 1);
     } else {
       g.append("line")  // Y axis left border
         .attr("x1", 0).attr("y1", 0).attr("x2", 0).attr("y2", iH)
-        .attr("stroke", "#E5E5E5").attr("stroke-width", 1);
+        .attr("stroke", "var(--border, #E5E5E5)").attr("stroke-width", 1);
       g.append("line")  // X axis bottom border
         .attr("x1", 0).attr("y1", iH).attr("x2", iW).attr("y2", iH)
-        .attr("stroke", "#E5E5E5").attr("stroke-width", 1);
+        .attr("stroke", "var(--border, #E5E5E5)").attr("stroke-width", 1);
     }
 
     // Momentum ticks (value axis) — top, zero, bottom of domain.
@@ -547,28 +557,28 @@ export function createMomentumChart(selection, data, config = {}) {
         // Left Y axis momentum ticks.
         g.append("line")
           .attr("x1", -4).attr("y1", mp).attr("x2", 0).attr("y2", mp)
-          .attr("stroke", "#D4D4D4").attr("stroke-width", 1);
+          .attr("stroke", "var(--border-strong, #D4D4D4)").attr("stroke-width", 1);
 
         if (v !== 0) {
           g.append("text")
             .attr("x", -7).attr("y", mp + 1)
             .attr("text-anchor", "end").attr("dominant-baseline", "middle")
             .attr("font-family", "Geist Mono, monospace")
-            .attr("font-size", "9px").attr("fill", "#A3A3A3")
+            .attr("font-size", "9px").attr("fill", "var(--faint, #A3A3A3)")
             .text(_fmtMomentum(v));
         }
       } else {
         // Bottom X axis momentum ticks.
         g.append("line")
           .attr("x1", mp).attr("y1", iH).attr("x2", mp).attr("y2", iH + 4)
-          .attr("stroke", "#D4D4D4").attr("stroke-width", 1);
+          .attr("stroke", "var(--border-strong, #D4D4D4)").attr("stroke-width", 1);
 
         if (v !== 0) {
           g.append("text")
             .attr("x", mp).attr("y", iH + 14)
             .attr("text-anchor", "middle")
             .attr("font-family", "Geist Mono, monospace")
-            .attr("font-size", "9px").attr("fill", "#A3A3A3")
+            .attr("font-size", "9px").attr("fill", "var(--faint, #A3A3A3)")
             .text(_fmtMomentum(v));
         }
       }
@@ -600,7 +610,7 @@ export function createMomentumChart(selection, data, config = {}) {
       .attr("class", "mc-crosshair")
       .attr("x1", isH ? 0   : 0 ).attr("y1", isH ? 0    : 0 )
       .attr("x2", isH ? 0   : iW).attr("y2", isH ? iH   : 0 )
-      .attr("stroke", "#525252").attr("stroke-width", 1)
+      .attr("stroke", "var(--muted, #525252)").attr("stroke-width", 1)
       .attr("stroke-dasharray", "3,3").attr("stroke-opacity", 0.5)
       .attr("pointer-events", "none").attr("display", "none");
 
@@ -629,19 +639,20 @@ export function createMomentumChart(selection, data, config = {}) {
           ? `<span style="color:#A3A3A3">secondary  ${_fmtMomentum(sm.momentum)}</span><br>`
           : "";
 
-        _tooltip.innerHTML =
+        const tooltip = getTooltip();
+        tooltip.innerHTML =
           `<strong>${minute}'</strong><br>` +
           `${homeLabel} ${_fmtThreat(m.home_threat)}<br>` +
           `${awayLabel} ${_fmtThreat(m.away_threat)}<br>` +
           `momentum  ${_fmtMomentum(m.momentum)}<br>` +
           secLine;
-        _tooltip.style.display = "block";
-        _tooltip.style.left = (ev.clientX + 14) + "px";
-        _tooltip.style.top  = (ev.clientY - 28) + "px";
+        tooltip.style.display = "block";
+        tooltip.style.left = (ev.clientX + 14) + "px";
+        tooltip.style.top  = (ev.clientY - 28) + "px";
       })
       .on("mouseout", function () {
         crosshair.attr("display", "none");
-        _tooltip.style.display = "none";
+        getTooltip().style.display = "none";
       });
   }
 

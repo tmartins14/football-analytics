@@ -1,0 +1,1805 @@
+{
+  "windows": [
+    {
+      "index": 0,
+      "label": "0'\u201345' (Starting XI)",
+      "nodes": [
+        {
+          "player": "Antonio R\u00fcdiger",
+          "display_name": "Antonio R\u00fcdiger",
+          "x": 35.68,
+          "y": 62.37,
+          "passes": 26
+        },
+        {
+          "player": "David Raum",
+          "display_name": "David Raum",
+          "x": 55.04,
+          "y": 8.06,
+          "passes": 18
+        },
+        {
+          "player": "Emre Can",
+          "display_name": "Emre Can",
+          "x": 62.9,
+          "y": 45.65,
+          "passes": 18
+        },
+        {
+          "player": "Jamal Musiala",
+          "display_name": "Jamal Musiala",
+          "x": 66.77,
+          "y": 15.31,
+          "passes": 10
+        },
+        {
+          "player": "Jonathan Tah",
+          "display_name": "Jonathan Tah",
+          "x": 54.06,
+          "y": 29.7,
+          "passes": 26
+        },
+        {
+          "player": "Joshua Kimmich",
+          "display_name": "Joshua Kimmich",
+          "x": 55.99,
+          "y": 68.99,
+          "passes": 33
+        },
+        {
+          "player": "Kai Havertz",
+          "display_name": "Kai Havertz",
+          "x": 68.72,
+          "y": 45.36,
+          "passes": 8
+        },
+        {
+          "player": "Leroy San\u00e9",
+          "display_name": "Leroy San\u00e9",
+          "x": 84.88,
+          "y": 61.95,
+          "passes": 6
+        },
+        {
+          "player": "Manuel Neuer",
+          "display_name": "Manuel Neuer",
+          "x": 10.12,
+          "y": 40.73,
+          "passes": 15
+        },
+        {
+          "player": "Toni Kroos",
+          "display_name": "Toni Kroos",
+          "x": 53.8,
+          "y": 41.21,
+          "passes": 35
+        },
+        {
+          "player": "\u0130lkay G\u00fcndo\u011fan",
+          "display_name": "\u0130lkay G\u00fcndo\u011fan",
+          "x": 61.02,
+          "y": 26.83,
+          "passes": 12
+        }
+      ],
+      "edges": [
+        {
+          "from": "Joshua Kimmich",
+          "to": "Antonio R\u00fcdiger",
+          "count": 10
+        },
+        {
+          "from": "Toni Kroos",
+          "to": "Emre Can",
+          "count": 7
+        },
+        {
+          "from": "Antonio R\u00fcdiger",
+          "to": "Joshua Kimmich",
+          "count": 7
+        },
+        {
+          "from": "Joshua Kimmich",
+          "to": "Emre Can",
+          "count": 7
+        },
+        {
+          "from": "Antonio R\u00fcdiger",
+          "to": "Toni Kroos",
+          "count": 7
+        },
+        {
+          "from": "Toni Kroos",
+          "to": "Antonio R\u00fcdiger",
+          "count": 6
+        },
+        {
+          "from": "Jonathan Tah",
+          "to": "David Raum",
+          "count": 6
+        },
+        {
+          "from": "Joshua Kimmich",
+          "to": "Toni Kroos",
+          "count": 6
+        },
+        {
+          "from": "Toni Kroos",
+          "to": "Jonathan Tah",
+          "count": 6
+        },
+        {
+          "from": "David Raum",
+          "to": "Jonathan Tah",
+          "count": 5
+        },
+        {
+          "from": "Jonathan Tah",
+          "to": "Toni Kroos",
+          "count": 5
+        },
+        {
+          "from": "Manuel Neuer",
+          "to": "Joshua Kimmich",
+          "count": 5
+        },
+        {
+          "from": "Toni Kroos",
+          "to": "David Raum",
+          "count": 5
+        },
+        {
+          "from": "Jonathan Tah",
+          "to": "Emre Can",
+          "count": 5
+        },
+        {
+          "from": "Emre Can",
+          "to": "Jonathan Tah",
+          "count": 5
+        },
+        {
+          "from": "David Raum",
+          "to": "Toni Kroos",
+          "count": 5
+        },
+        {
+          "from": "Joshua Kimmich",
+          "to": "Leroy San\u00e9",
+          "count": 4
+        },
+        {
+          "from": "Leroy San\u00e9",
+          "to": "Joshua Kimmich",
+          "count": 4
+        },
+        {
+          "from": "Emre Can",
+          "to": "Joshua Kimmich",
+          "count": 4
+        },
+        {
+          "from": "Antonio R\u00fcdiger",
+          "to": "Manuel Neuer",
+          "count": 4
+        },
+        {
+          "from": "Jamal Musiala",
+          "to": "\u0130lkay G\u00fcndo\u011fan",
+          "count": 4
+        },
+        {
+          "from": "Toni Kroos",
+          "to": "Joshua Kimmich",
+          "count": 4
+        },
+        {
+          "from": "Joshua Kimmich",
+          "to": "Kai Havertz",
+          "count": 3
+        },
+        {
+          "from": "Toni Kroos",
+          "to": "\u0130lkay G\u00fcndo\u011fan",
+          "count": 3
+        },
+        {
+          "from": "David Raum",
+          "to": "Jamal Musiala",
+          "count": 3
+        },
+        {
+          "from": "Manuel Neuer",
+          "to": "Jonathan Tah",
+          "count": 3
+        },
+        {
+          "from": "Jonathan Tah",
+          "to": "Jamal Musiala",
+          "count": 3
+        },
+        {
+          "from": "Manuel Neuer",
+          "to": "David Raum",
+          "count": 3
+        },
+        {
+          "from": "Emre Can",
+          "to": "Toni Kroos",
+          "count": 3
+        },
+        {
+          "from": "Jonathan Tah",
+          "to": "Antonio R\u00fcdiger",
+          "count": 3
+        },
+        {
+          "from": "Kai Havertz",
+          "to": "Toni Kroos",
+          "count": 2
+        },
+        {
+          "from": "Emre Can",
+          "to": "Antonio R\u00fcdiger",
+          "count": 2
+        },
+        {
+          "from": "\u0130lkay G\u00fcndo\u011fan",
+          "to": "Leroy San\u00e9",
+          "count": 2
+        },
+        {
+          "from": "Manuel Neuer",
+          "to": "Antonio R\u00fcdiger",
+          "count": 2
+        },
+        {
+          "from": "Antonio R\u00fcdiger",
+          "to": "Emre Can",
+          "count": 2
+        },
+        {
+          "from": "Antonio R\u00fcdiger",
+          "to": "Leroy San\u00e9",
+          "count": 2
+        },
+        {
+          "from": "\u0130lkay G\u00fcndo\u011fan",
+          "to": "Jonathan Tah",
+          "count": 2
+        },
+        {
+          "from": "David Raum",
+          "to": "\u0130lkay G\u00fcndo\u011fan",
+          "count": 2
+        },
+        {
+          "from": "\u0130lkay G\u00fcndo\u011fan",
+          "to": "Jamal Musiala",
+          "count": 2
+        },
+        {
+          "from": "\u0130lkay G\u00fcndo\u011fan",
+          "to": "Kai Havertz",
+          "count": 2
+        },
+        {
+          "from": "Jamal Musiala",
+          "to": "David Raum",
+          "count": 2
+        },
+        {
+          "from": "\u0130lkay G\u00fcndo\u011fan",
+          "to": "David Raum",
+          "count": 2
+        },
+        {
+          "from": "Antonio R\u00fcdiger",
+          "to": "Jonathan Tah",
+          "count": 2
+        },
+        {
+          "from": "\u0130lkay G\u00fcndo\u011fan",
+          "to": "Joshua Kimmich",
+          "count": 2
+        },
+        {
+          "from": "Manuel Neuer",
+          "to": "Toni Kroos",
+          "count": 2
+        },
+        {
+          "from": "Joshua Kimmich",
+          "to": "Jonathan Tah",
+          "count": 2
+        },
+        {
+          "from": "Jamal Musiala",
+          "to": "Toni Kroos",
+          "count": 2
+        },
+        {
+          "from": "David Raum",
+          "to": "Emre Can",
+          "count": 2
+        },
+        {
+          "from": "Toni Kroos",
+          "to": "Jamal Musiala",
+          "count": 2
+        },
+        {
+          "from": "Kai Havertz",
+          "to": "\u0130lkay G\u00fcndo\u011fan",
+          "count": 1
+        },
+        {
+          "from": "Kai Havertz",
+          "to": "David Raum",
+          "count": 1
+        },
+        {
+          "from": "Emre Can",
+          "to": "Manuel Neuer",
+          "count": 1
+        },
+        {
+          "from": "Leroy San\u00e9",
+          "to": "Toni Kroos",
+          "count": 1
+        },
+        {
+          "from": "Joshua Kimmich",
+          "to": "Manuel Neuer",
+          "count": 1
+        },
+        {
+          "from": "Kai Havertz",
+          "to": "Jamal Musiala",
+          "count": 1
+        },
+        {
+          "from": "Jonathan Tah",
+          "to": "Manuel Neuer",
+          "count": 1
+        },
+        {
+          "from": "Toni Kroos",
+          "to": "Kai Havertz",
+          "count": 1
+        },
+        {
+          "from": "Jonathan Tah",
+          "to": "Joshua Kimmich",
+          "count": 1
+        },
+        {
+          "from": "Leroy San\u00e9",
+          "to": "Jamal Musiala",
+          "count": 1
+        },
+        {
+          "from": "Jamal Musiala",
+          "to": "Antonio R\u00fcdiger",
+          "count": 1
+        },
+        {
+          "from": "Emre Can",
+          "to": "\u0130lkay G\u00fcndo\u011fan",
+          "count": 1
+        },
+        {
+          "from": "Antonio R\u00fcdiger",
+          "to": "\u0130lkay G\u00fcndo\u011fan",
+          "count": 1
+        },
+        {
+          "from": "Jonathan Tah",
+          "to": "Leroy San\u00e9",
+          "count": 1
+        },
+        {
+          "from": "Toni Kroos",
+          "to": "Leroy San\u00e9",
+          "count": 1
+        },
+        {
+          "from": "Jonathan Tah",
+          "to": "\u0130lkay G\u00fcndo\u011fan",
+          "count": 1
+        },
+        {
+          "from": "Jamal Musiala",
+          "to": "Kai Havertz",
+          "count": 1
+        },
+        {
+          "from": "Kai Havertz",
+          "to": "Emre Can",
+          "count": 1
+        },
+        {
+          "from": "Emre Can",
+          "to": "Kai Havertz",
+          "count": 1
+        },
+        {
+          "from": "Kai Havertz",
+          "to": "Joshua Kimmich",
+          "count": 1
+        },
+        {
+          "from": "Emre Can",
+          "to": "Jamal Musiala",
+          "count": 1
+        },
+        {
+          "from": "Antonio R\u00fcdiger",
+          "to": "Kai Havertz",
+          "count": 1
+        },
+        {
+          "from": "David Raum",
+          "to": "Kai Havertz",
+          "count": 1
+        },
+        {
+          "from": "Kai Havertz",
+          "to": "Antonio R\u00fcdiger",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "label": "45'\u201356'",
+      "nodes": [
+        {
+          "player": "Antonio R\u00fcdiger",
+          "display_name": "Antonio R\u00fcdiger",
+          "x": 43.7,
+          "y": 67.67,
+          "passes": 3
+        },
+        {
+          "player": "David Raum",
+          "display_name": "David Raum",
+          "x": 61.43,
+          "y": 8.6,
+          "passes": 6
+        },
+        {
+          "player": "Florian Wirtz",
+          "display_name": "Florian Wirtz",
+          "x": 102.17,
+          "y": 56.73,
+          "passes": 3
+        },
+        {
+          "player": "Jamal Musiala",
+          "display_name": "Jamal Musiala",
+          "x": 78.0,
+          "y": 17.13,
+          "passes": 3
+        },
+        {
+          "player": "Jonathan Tah",
+          "display_name": "Jonathan Tah",
+          "x": 29.54,
+          "y": 21.9,
+          "passes": 5
+        },
+        {
+          "player": "Joshua Kimmich",
+          "display_name": "Joshua Kimmich",
+          "x": 79.93,
+          "y": 68.47,
+          "passes": 7
+        },
+        {
+          "player": "Kai Havertz",
+          "display_name": "Kai Havertz",
+          "x": 75.1,
+          "y": 43.55,
+          "passes": 2
+        },
+        {
+          "player": "Leroy San\u00e9",
+          "display_name": "Leroy San\u00e9",
+          "x": 29.0,
+          "y": 43.3,
+          "passes": 1
+        },
+        {
+          "player": "Manuel Neuer",
+          "display_name": "Manuel Neuer",
+          "x": 7.96,
+          "y": 39.78,
+          "passes": 5
+        },
+        {
+          "player": "Robert Andrich",
+          "display_name": "Robert Andrich",
+          "x": 68.13,
+          "y": 53.1,
+          "passes": 3
+        },
+        {
+          "player": "Toni Kroos",
+          "display_name": "Toni Kroos",
+          "x": 38.84,
+          "y": 30.76,
+          "passes": 9
+        },
+        {
+          "player": "\u0130lkay G\u00fcndo\u011fan",
+          "display_name": "\u0130lkay G\u00fcndo\u011fan",
+          "x": 77.42,
+          "y": 40.79,
+          "passes": 9
+        }
+      ],
+      "edges": [
+        {
+          "from": "Toni Kroos",
+          "to": "\u0130lkay G\u00fcndo\u011fan",
+          "count": 3
+        },
+        {
+          "from": "\u0130lkay G\u00fcndo\u011fan",
+          "to": "David Raum",
+          "count": 3
+        },
+        {
+          "from": "\u0130lkay G\u00fcndo\u011fan",
+          "to": "Joshua Kimmich",
+          "count": 3
+        },
+        {
+          "from": "Manuel Neuer",
+          "to": "Jonathan Tah",
+          "count": 2
+        },
+        {
+          "from": "Jonathan Tah",
+          "to": "Manuel Neuer",
+          "count": 2
+        },
+        {
+          "from": "Manuel Neuer",
+          "to": "Toni Kroos",
+          "count": 2
+        },
+        {
+          "from": "Toni Kroos",
+          "to": "Jonathan Tah",
+          "count": 2
+        },
+        {
+          "from": "Jonathan Tah",
+          "to": "David Raum",
+          "count": 2
+        },
+        {
+          "from": "David Raum",
+          "to": "Toni Kroos",
+          "count": 2
+        },
+        {
+          "from": "David Raum",
+          "to": "Florian Wirtz",
+          "count": 2
+        },
+        {
+          "from": "Joshua Kimmich",
+          "to": "Robert Andrich",
+          "count": 2
+        },
+        {
+          "from": "Joshua Kimmich",
+          "to": "\u0130lkay G\u00fcndo\u011fan",
+          "count": 2
+        },
+        {
+          "from": "Robert Andrich",
+          "to": "Joshua Kimmich",
+          "count": 2
+        },
+        {
+          "from": "Jamal Musiala",
+          "to": "\u0130lkay G\u00fcndo\u011fan",
+          "count": 2
+        },
+        {
+          "from": "Joshua Kimmich",
+          "to": "Florian Wirtz",
+          "count": 2
+        },
+        {
+          "from": "Florian Wirtz",
+          "to": "\u0130lkay G\u00fcndo\u011fan",
+          "count": 2
+        },
+        {
+          "from": "\u0130lkay G\u00fcndo\u011fan",
+          "to": "Florian Wirtz",
+          "count": 2
+        },
+        {
+          "from": "Toni Kroos",
+          "to": "Leroy San\u00e9",
+          "count": 1
+        },
+        {
+          "from": "Leroy San\u00e9",
+          "to": "Toni Kroos",
+          "count": 1
+        },
+        {
+          "from": "Toni Kroos",
+          "to": "Antonio R\u00fcdiger",
+          "count": 1
+        },
+        {
+          "from": "Antonio R\u00fcdiger",
+          "to": "Joshua Kimmich",
+          "count": 1
+        },
+        {
+          "from": "Antonio R\u00fcdiger",
+          "to": "Manuel Neuer",
+          "count": 1
+        },
+        {
+          "from": "Manuel Neuer",
+          "to": "David Raum",
+          "count": 1
+        },
+        {
+          "from": "Florian Wirtz",
+          "to": "Kai Havertz",
+          "count": 1
+        },
+        {
+          "from": "Kai Havertz",
+          "to": "Joshua Kimmich",
+          "count": 1
+        },
+        {
+          "from": "Toni Kroos",
+          "to": "David Raum",
+          "count": 1
+        },
+        {
+          "from": "David Raum",
+          "to": "Robert Andrich",
+          "count": 1
+        },
+        {
+          "from": "Kai Havertz",
+          "to": "Robert Andrich",
+          "count": 1
+        },
+        {
+          "from": "Joshua Kimmich",
+          "to": "Antonio R\u00fcdiger",
+          "count": 1
+        },
+        {
+          "from": "Antonio R\u00fcdiger",
+          "to": "\u0130lkay G\u00fcndo\u011fan",
+          "count": 1
+        },
+        {
+          "from": "Jonathan Tah",
+          "to": "\u0130lkay G\u00fcndo\u011fan",
+          "count": 1
+        },
+        {
+          "from": "\u0130lkay G\u00fcndo\u011fan",
+          "to": "Toni Kroos",
+          "count": 1
+        },
+        {
+          "from": "Toni Kroos",
+          "to": "Jamal Musiala",
+          "count": 1
+        },
+        {
+          "from": "Jamal Musiala",
+          "to": "David Raum",
+          "count": 1
+        },
+        {
+          "from": "David Raum",
+          "to": "Jamal Musiala",
+          "count": 1
+        },
+        {
+          "from": "Robert Andrich",
+          "to": "Jamal Musiala",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "label": "56'\u201379'",
+      "nodes": [
+        {
+          "player": "Antonio R\u00fcdiger",
+          "display_name": "Antonio R\u00fcdiger",
+          "x": 64.8,
+          "y": 62.2,
+          "passes": 20
+        },
+        {
+          "player": "Florian Wirtz",
+          "display_name": "Florian Wirtz",
+          "x": 78.35,
+          "y": 50.02,
+          "passes": 13
+        },
+        {
+          "player": "Jamal Musiala",
+          "display_name": "Jamal Musiala",
+          "x": 56.1,
+          "y": 27.47,
+          "passes": 3
+        },
+        {
+          "player": "Jonathan Tah",
+          "display_name": "Jonathan Tah",
+          "x": 57.78,
+          "y": 31.97,
+          "passes": 12
+        },
+        {
+          "player": "Joshua Kimmich",
+          "display_name": "Joshua Kimmich",
+          "x": 76.7,
+          "y": 70.84,
+          "passes": 17
+        },
+        {
+          "player": "Kai Havertz",
+          "display_name": "Kai Havertz",
+          "x": 87.28,
+          "y": 55.48,
+          "passes": 6
+        },
+        {
+          "player": "Manuel Neuer",
+          "display_name": "Manuel Neuer",
+          "x": 19.73,
+          "y": 47.17,
+          "passes": 3
+        },
+        {
+          "player": "Maximilian Mittelst\u00e4dt",
+          "display_name": "Maximilian Mittelst\u00e4dt",
+          "x": 60.91,
+          "y": 13.83,
+          "passes": 9
+        },
+        {
+          "player": "Niclas F\u00fcllkrug",
+          "display_name": "Niclas F\u00fcllkrug",
+          "x": 89.9,
+          "y": 44.85,
+          "passes": 4
+        },
+        {
+          "player": "Robert Andrich",
+          "display_name": "Robert Andrich",
+          "x": 64.62,
+          "y": 43.91,
+          "passes": 11
+        },
+        {
+          "player": "Toni Kroos",
+          "display_name": "Toni Kroos",
+          "x": 65.62,
+          "y": 42.51,
+          "passes": 10
+        }
+      ],
+      "edges": [
+        {
+          "from": "Antonio R\u00fcdiger",
+          "to": "Joshua Kimmich",
+          "count": 8
+        },
+        {
+          "from": "Joshua Kimmich",
+          "to": "Antonio R\u00fcdiger",
+          "count": 7
+        },
+        {
+          "from": "Antonio R\u00fcdiger",
+          "to": "Toni Kroos",
+          "count": 5
+        },
+        {
+          "from": "Jonathan Tah",
+          "to": "Antonio R\u00fcdiger",
+          "count": 5
+        },
+        {
+          "from": "Joshua Kimmich",
+          "to": "Florian Wirtz",
+          "count": 4
+        },
+        {
+          "from": "Florian Wirtz",
+          "to": "Joshua Kimmich",
+          "count": 3
+        },
+        {
+          "from": "Toni Kroos",
+          "to": "Jonathan Tah",
+          "count": 3
+        },
+        {
+          "from": "Robert Andrich",
+          "to": "Joshua Kimmich",
+          "count": 3
+        },
+        {
+          "from": "Maximilian Mittelst\u00e4dt",
+          "to": "Jonathan Tah",
+          "count": 3
+        },
+        {
+          "from": "Toni Kroos",
+          "to": "Antonio R\u00fcdiger",
+          "count": 3
+        },
+        {
+          "from": "Toni Kroos",
+          "to": "Florian Wirtz",
+          "count": 2
+        },
+        {
+          "from": "Jonathan Tah",
+          "to": "Robert Andrich",
+          "count": 2
+        },
+        {
+          "from": "Robert Andrich",
+          "to": "Florian Wirtz",
+          "count": 2
+        },
+        {
+          "from": "Robert Andrich",
+          "to": "Jonathan Tah",
+          "count": 2
+        },
+        {
+          "from": "Antonio R\u00fcdiger",
+          "to": "Florian Wirtz",
+          "count": 2
+        },
+        {
+          "from": "Joshua Kimmich",
+          "to": "Robert Andrich",
+          "count": 2
+        },
+        {
+          "from": "Maximilian Mittelst\u00e4dt",
+          "to": "Jamal Musiala",
+          "count": 2
+        },
+        {
+          "from": "Florian Wirtz",
+          "to": "Jamal Musiala",
+          "count": 2
+        },
+        {
+          "from": "Kai Havertz",
+          "to": "Niclas F\u00fcllkrug",
+          "count": 2
+        },
+        {
+          "from": "Florian Wirtz",
+          "to": "Maximilian Mittelst\u00e4dt",
+          "count": 2
+        },
+        {
+          "from": "Antonio R\u00fcdiger",
+          "to": "Niclas F\u00fcllkrug",
+          "count": 2
+        },
+        {
+          "from": "Niclas F\u00fcllkrug",
+          "to": "Kai Havertz",
+          "count": 2
+        },
+        {
+          "from": "Florian Wirtz",
+          "to": "Niclas F\u00fcllkrug",
+          "count": 2
+        },
+        {
+          "from": "Manuel Neuer",
+          "to": "Antonio R\u00fcdiger",
+          "count": 2
+        },
+        {
+          "from": "Robert Andrich",
+          "to": "Antonio R\u00fcdiger",
+          "count": 2
+        },
+        {
+          "from": "Kai Havertz",
+          "to": "Joshua Kimmich",
+          "count": 2
+        },
+        {
+          "from": "Joshua Kimmich",
+          "to": "Toni Kroos",
+          "count": 1
+        },
+        {
+          "from": "Joshua Kimmich",
+          "to": "Manuel Neuer",
+          "count": 1
+        },
+        {
+          "from": "Manuel Neuer",
+          "to": "Jonathan Tah",
+          "count": 1
+        },
+        {
+          "from": "Jonathan Tah",
+          "to": "Jamal Musiala",
+          "count": 1
+        },
+        {
+          "from": "Florian Wirtz",
+          "to": "Robert Andrich",
+          "count": 1
+        },
+        {
+          "from": "Jonathan Tah",
+          "to": "Maximilian Mittelst\u00e4dt",
+          "count": 1
+        },
+        {
+          "from": "Robert Andrich",
+          "to": "Niclas F\u00fcllkrug",
+          "count": 1
+        },
+        {
+          "from": "Joshua Kimmich",
+          "to": "Jonathan Tah",
+          "count": 1
+        },
+        {
+          "from": "Toni Kroos",
+          "to": "Niclas F\u00fcllkrug",
+          "count": 1
+        },
+        {
+          "from": "Maximilian Mittelst\u00e4dt",
+          "to": "Niclas F\u00fcllkrug",
+          "count": 1
+        },
+        {
+          "from": "Kai Havertz",
+          "to": "Robert Andrich",
+          "count": 1
+        },
+        {
+          "from": "Florian Wirtz",
+          "to": "Kai Havertz",
+          "count": 1
+        },
+        {
+          "from": "Jamal Musiala",
+          "to": "Niclas F\u00fcllkrug",
+          "count": 1
+        },
+        {
+          "from": "Niclas F\u00fcllkrug",
+          "to": "Jamal Musiala",
+          "count": 1
+        },
+        {
+          "from": "Robert Andrich",
+          "to": "Kai Havertz",
+          "count": 1
+        },
+        {
+          "from": "Kai Havertz",
+          "to": "Florian Wirtz",
+          "count": 1
+        },
+        {
+          "from": "Jamal Musiala",
+          "to": "Florian Wirtz",
+          "count": 1
+        },
+        {
+          "from": "Maximilian Mittelst\u00e4dt",
+          "to": "Kai Havertz",
+          "count": 1
+        },
+        {
+          "from": "Niclas F\u00fcllkrug",
+          "to": "Robert Andrich",
+          "count": 1
+        },
+        {
+          "from": "Jamal Musiala",
+          "to": "Maximilian Mittelst\u00e4dt",
+          "count": 1
+        },
+        {
+          "from": "Antonio R\u00fcdiger",
+          "to": "Jonathan Tah",
+          "count": 1
+        },
+        {
+          "from": "Jonathan Tah",
+          "to": "Toni Kroos",
+          "count": 1
+        },
+        {
+          "from": "Toni Kroos",
+          "to": "Robert Andrich",
+          "count": 1
+        },
+        {
+          "from": "Jonathan Tah",
+          "to": "Florian Wirtz",
+          "count": 1
+        },
+        {
+          "from": "Florian Wirtz",
+          "to": "Jonathan Tah",
+          "count": 1
+        },
+        {
+          "from": "Maximilian Mittelst\u00e4dt",
+          "to": "Antonio R\u00fcdiger",
+          "count": 1
+        },
+        {
+          "from": "Jonathan Tah",
+          "to": "Niclas F\u00fcllkrug",
+          "count": 1
+        },
+        {
+          "from": "Maximilian Mittelst\u00e4dt",
+          "to": "Manuel Neuer",
+          "count": 1
+        },
+        {
+          "from": "Florian Wirtz",
+          "to": "Antonio R\u00fcdiger",
+          "count": 1
+        },
+        {
+          "from": "Antonio R\u00fcdiger",
+          "to": "Robert Andrich",
+          "count": 1
+        },
+        {
+          "from": "Antonio R\u00fcdiger",
+          "to": "Manuel Neuer",
+          "count": 1
+        },
+        {
+          "from": "Joshua Kimmich",
+          "to": "Kai Havertz",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "label": "79'\u201390'",
+      "nodes": [
+        {
+          "player": "Antonio R\u00fcdiger",
+          "display_name": "Antonio R\u00fcdiger",
+          "x": 46.4,
+          "y": 65.68,
+          "passes": 5
+        },
+        {
+          "player": "Florian Wirtz",
+          "display_name": "Florian Wirtz",
+          "x": 66.9,
+          "y": 56.82,
+          "passes": 5
+        },
+        {
+          "player": "Jamal Musiala",
+          "display_name": "Jamal Musiala",
+          "x": 101.9,
+          "y": 31.2,
+          "passes": 1
+        },
+        {
+          "player": "Joshua Kimmich",
+          "display_name": "Joshua Kimmich",
+          "x": 64.56,
+          "y": 46.54,
+          "passes": 5
+        },
+        {
+          "player": "Manuel Neuer",
+          "display_name": "Manuel Neuer",
+          "x": 16.47,
+          "y": 24.87,
+          "passes": 3
+        },
+        {
+          "player": "Maximilian Mittelst\u00e4dt",
+          "display_name": "Maximilian Mittelst\u00e4dt",
+          "x": 56.1,
+          "y": 18.32,
+          "passes": 4
+        },
+        {
+          "player": "Niclas F\u00fcllkrug",
+          "display_name": "Niclas F\u00fcllkrug",
+          "x": 98.35,
+          "y": 36.3,
+          "passes": 2
+        },
+        {
+          "player": "Robert Andrich",
+          "display_name": "Robert Andrich",
+          "x": 41.86,
+          "y": 48.6,
+          "passes": 5
+        },
+        {
+          "player": "Thomas M\u00fcller",
+          "display_name": "Thomas M\u00fcller",
+          "x": 93.7,
+          "y": 74.1,
+          "passes": 1
+        },
+        {
+          "player": "Toni Kroos",
+          "display_name": "Toni Kroos",
+          "x": 82.63,
+          "y": 37.46,
+          "passes": 7
+        }
+      ],
+      "edges": [
+        {
+          "from": "Joshua Kimmich",
+          "to": "Florian Wirtz",
+          "count": 2
+        },
+        {
+          "from": "Niclas F\u00fcllkrug",
+          "to": "Jamal Musiala",
+          "count": 2
+        },
+        {
+          "from": "Joshua Kimmich",
+          "to": "Robert Andrich",
+          "count": 2
+        },
+        {
+          "from": "Robert Andrich",
+          "to": "Florian Wirtz",
+          "count": 2
+        },
+        {
+          "from": "Antonio R\u00fcdiger",
+          "to": "Toni Kroos",
+          "count": 2
+        },
+        {
+          "from": "Toni Kroos",
+          "to": "Maximilian Mittelst\u00e4dt",
+          "count": 2
+        },
+        {
+          "from": "Florian Wirtz",
+          "to": "Kai Havertz",
+          "count": 1
+        },
+        {
+          "from": "Robert Andrich",
+          "to": "Toni Kroos",
+          "count": 1
+        },
+        {
+          "from": "Toni Kroos",
+          "to": "Niclas F\u00fcllkrug",
+          "count": 1
+        },
+        {
+          "from": "Maximilian Mittelst\u00e4dt",
+          "to": "Manuel Neuer",
+          "count": 1
+        },
+        {
+          "from": "Manuel Neuer",
+          "to": "Robert Andrich",
+          "count": 1
+        },
+        {
+          "from": "Robert Andrich",
+          "to": "Antonio R\u00fcdiger",
+          "count": 1
+        },
+        {
+          "from": "Antonio R\u00fcdiger",
+          "to": "Niclas F\u00fcllkrug",
+          "count": 1
+        },
+        {
+          "from": "Manuel Neuer",
+          "to": "Antonio R\u00fcdiger",
+          "count": 1
+        },
+        {
+          "from": "Antonio R\u00fcdiger",
+          "to": "Joshua Kimmich",
+          "count": 1
+        },
+        {
+          "from": "Florian Wirtz",
+          "to": "Antonio R\u00fcdiger",
+          "count": 1
+        },
+        {
+          "from": "Maximilian Mittelst\u00e4dt",
+          "to": "Antonio R\u00fcdiger",
+          "count": 1
+        },
+        {
+          "from": "Robert Andrich",
+          "to": "Kai Havertz",
+          "count": 1
+        },
+        {
+          "from": "Toni Kroos",
+          "to": "Joshua Kimmich",
+          "count": 1
+        },
+        {
+          "from": "Joshua Kimmich",
+          "to": "Toni Kroos",
+          "count": 1
+        },
+        {
+          "from": "Toni Kroos",
+          "to": "Jamal Musiala",
+          "count": 1
+        },
+        {
+          "from": "Jamal Musiala",
+          "to": "Maximilian Mittelst\u00e4dt",
+          "count": 1
+        },
+        {
+          "from": "Florian Wirtz",
+          "to": "Joshua Kimmich",
+          "count": 1
+        },
+        {
+          "from": "Florian Wirtz",
+          "to": "Niclas F\u00fcllkrug",
+          "count": 1
+        },
+        {
+          "from": "Manuel Neuer",
+          "to": "Maximilian Mittelst\u00e4dt",
+          "count": 1
+        },
+        {
+          "from": "Maximilian Mittelst\u00e4dt",
+          "to": "Toni Kroos",
+          "count": 1
+        },
+        {
+          "from": "Toni Kroos",
+          "to": "Thomas M\u00fcller",
+          "count": 1
+        },
+        {
+          "from": "Thomas M\u00fcller",
+          "to": "Antonio R\u00fcdiger",
+          "count": 1
+        },
+        {
+          "from": "Toni Kroos",
+          "to": "Antonio R\u00fcdiger",
+          "count": 1
+        },
+        {
+          "from": "Antonio R\u00fcdiger",
+          "to": "Kai Havertz",
+          "count": 1
+        },
+        {
+          "from": "Florian Wirtz",
+          "to": "Toni Kroos",
+          "count": 1
+        },
+        {
+          "from": "Maximilian Mittelst\u00e4dt",
+          "to": "Joshua Kimmich",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "label": "90'\u2013FT",
+      "nodes": [
+        {
+          "player": "Antonio R\u00fcdiger",
+          "display_name": "Antonio R\u00fcdiger",
+          "x": 38.21,
+          "y": 60.06,
+          "passes": 8
+        },
+        {
+          "player": "Florian Wirtz",
+          "display_name": "Florian Wirtz",
+          "x": 70.95,
+          "y": 46.24,
+          "passes": 14
+        },
+        {
+          "player": "Jamal Musiala",
+          "display_name": "Jamal Musiala",
+          "x": 73.19,
+          "y": 22.05,
+          "passes": 12
+        },
+        {
+          "player": "Joshua Kimmich",
+          "display_name": "Joshua Kimmich",
+          "x": 48.42,
+          "y": 62.86,
+          "passes": 9
+        },
+        {
+          "player": "Kai Havertz",
+          "display_name": "Kai Havertz",
+          "x": 39.2,
+          "y": 61.5,
+          "passes": 1
+        },
+        {
+          "player": "Manuel Neuer",
+          "display_name": "Manuel Neuer",
+          "x": 10.37,
+          "y": 37.18,
+          "passes": 13
+        },
+        {
+          "player": "Maximilian Mittelst\u00e4dt",
+          "display_name": "Maximilian Mittelst\u00e4dt",
+          "x": 56.48,
+          "y": 13.56,
+          "passes": 17
+        },
+        {
+          "player": "Niclas F\u00fcllkrug",
+          "display_name": "Niclas F\u00fcllkrug",
+          "x": 91.54,
+          "y": 40.1,
+          "passes": 8
+        },
+        {
+          "player": "Robert Andrich",
+          "display_name": "Robert Andrich",
+          "x": 57.42,
+          "y": 39.21,
+          "passes": 12
+        },
+        {
+          "player": "Thomas M\u00fcller",
+          "display_name": "Thomas M\u00fcller",
+          "x": 78.97,
+          "y": 46.49,
+          "passes": 9
+        },
+        {
+          "player": "Toni Kroos",
+          "display_name": "Toni Kroos",
+          "x": 55.49,
+          "y": 32.65,
+          "passes": 15
+        },
+        {
+          "player": "Waldemar Anton",
+          "display_name": "Waldemar Anton",
+          "x": 38.22,
+          "y": 23.07,
+          "passes": 16
+        }
+      ],
+      "edges": [
+        {
+          "from": "Waldemar Anton",
+          "to": "Maximilian Mittelst\u00e4dt",
+          "count": 8
+        },
+        {
+          "from": "Manuel Neuer",
+          "to": "Waldemar Anton",
+          "count": 6
+        },
+        {
+          "from": "Florian Wirtz",
+          "to": "Thomas M\u00fcller",
+          "count": 5
+        },
+        {
+          "from": "Jamal Musiala",
+          "to": "Florian Wirtz",
+          "count": 5
+        },
+        {
+          "from": "Maximilian Mittelst\u00e4dt",
+          "to": "Jamal Musiala",
+          "count": 5
+        },
+        {
+          "from": "Manuel Neuer",
+          "to": "Niclas F\u00fcllkrug",
+          "count": 4
+        },
+        {
+          "from": "Robert Andrich",
+          "to": "Toni Kroos",
+          "count": 3
+        },
+        {
+          "from": "Florian Wirtz",
+          "to": "Toni Kroos",
+          "count": 3
+        },
+        {
+          "from": "Florian Wirtz",
+          "to": "Jamal Musiala",
+          "count": 3
+        },
+        {
+          "from": "Thomas M\u00fcller",
+          "to": "Florian Wirtz",
+          "count": 3
+        },
+        {
+          "from": "Maximilian Mittelst\u00e4dt",
+          "to": "Waldemar Anton",
+          "count": 3
+        },
+        {
+          "from": "Waldemar Anton",
+          "to": "Toni Kroos",
+          "count": 3
+        },
+        {
+          "from": "Antonio R\u00fcdiger",
+          "to": "Waldemar Anton",
+          "count": 3
+        },
+        {
+          "from": "Antonio R\u00fcdiger",
+          "to": "Manuel Neuer",
+          "count": 3
+        },
+        {
+          "from": "Robert Andrich",
+          "to": "Niclas F\u00fcllkrug",
+          "count": 3
+        },
+        {
+          "from": "Toni Kroos",
+          "to": "Maximilian Mittelst\u00e4dt",
+          "count": 3
+        },
+        {
+          "from": "Maximilian Mittelst\u00e4dt",
+          "to": "Toni Kroos",
+          "count": 3
+        },
+        {
+          "from": "Toni Kroos",
+          "to": "Antonio R\u00fcdiger",
+          "count": 3
+        },
+        {
+          "from": "Niclas F\u00fcllkrug",
+          "to": "Jamal Musiala",
+          "count": 3
+        },
+        {
+          "from": "Toni Kroos",
+          "to": "Robert Andrich",
+          "count": 2
+        },
+        {
+          "from": "Toni Kroos",
+          "to": "Thomas M\u00fcller",
+          "count": 2
+        },
+        {
+          "from": "Niclas F\u00fcllkrug",
+          "to": "Florian Wirtz",
+          "count": 2
+        },
+        {
+          "from": "Maximilian Mittelst\u00e4dt",
+          "to": "Niclas F\u00fcllkrug",
+          "count": 2
+        },
+        {
+          "from": "Jamal Musiala",
+          "to": "Maximilian Mittelst\u00e4dt",
+          "count": 2
+        },
+        {
+          "from": "Toni Kroos",
+          "to": "Florian Wirtz",
+          "count": 2
+        },
+        {
+          "from": "Waldemar Anton",
+          "to": "Manuel Neuer",
+          "count": 2
+        },
+        {
+          "from": "Waldemar Anton",
+          "to": "Antonio R\u00fcdiger",
+          "count": 2
+        },
+        {
+          "from": "Robert Andrich",
+          "to": "Jamal Musiala",
+          "count": 2
+        },
+        {
+          "from": "Jamal Musiala",
+          "to": "Thomas M\u00fcller",
+          "count": 2
+        },
+        {
+          "from": "Maximilian Mittelst\u00e4dt",
+          "to": "Robert Andrich",
+          "count": 2
+        },
+        {
+          "from": "Thomas M\u00fcller",
+          "to": "Niclas F\u00fcllkrug",
+          "count": 2
+        },
+        {
+          "from": "Manuel Neuer",
+          "to": "Florian Wirtz",
+          "count": 2
+        },
+        {
+          "from": "Robert Andrich",
+          "to": "Joshua Kimmich",
+          "count": 2
+        },
+        {
+          "from": "Florian Wirtz",
+          "to": "Kai Havertz",
+          "count": 1
+        },
+        {
+          "from": "Jamal Musiala",
+          "to": "Kai Havertz",
+          "count": 1
+        },
+        {
+          "from": "Kai Havertz",
+          "to": "Florian Wirtz",
+          "count": 1
+        },
+        {
+          "from": "Antonio R\u00fcdiger",
+          "to": "Toni Kroos",
+          "count": 1
+        },
+        {
+          "from": "Niclas F\u00fcllkrug",
+          "to": "Joshua Kimmich",
+          "count": 1
+        },
+        {
+          "from": "Joshua Kimmich",
+          "to": "Thomas M\u00fcller",
+          "count": 1
+        },
+        {
+          "from": "Jamal Musiala",
+          "to": "Niclas F\u00fcllkrug",
+          "count": 1
+        },
+        {
+          "from": "Toni Kroos",
+          "to": "Jamal Musiala",
+          "count": 1
+        },
+        {
+          "from": "Joshua Kimmich",
+          "to": "Waldemar Anton",
+          "count": 1
+        },
+        {
+          "from": "Toni Kroos",
+          "to": "Waldemar Anton",
+          "count": 1
+        },
+        {
+          "from": "Manuel Neuer",
+          "to": "Robert Andrich",
+          "count": 1
+        },
+        {
+          "from": "Robert Andrich",
+          "to": "Waldemar Anton",
+          "count": 1
+        },
+        {
+          "from": "Joshua Kimmich",
+          "to": "Robert Andrich",
+          "count": 1
+        },
+        {
+          "from": "Jamal Musiala",
+          "to": "Robert Andrich",
+          "count": 1
+        },
+        {
+          "from": "Thomas M\u00fcller",
+          "to": "Toni Kroos",
+          "count": 1
+        },
+        {
+          "from": "Maximilian Mittelst\u00e4dt",
+          "to": "Thomas M\u00fcller",
+          "count": 1
+        },
+        {
+          "from": "Thomas M\u00fcller",
+          "to": "Maximilian Mittelst\u00e4dt",
+          "count": 1
+        },
+        {
+          "from": "Robert Andrich",
+          "to": "Maximilian Mittelst\u00e4dt",
+          "count": 1
+        },
+        {
+          "from": "Florian Wirtz",
+          "to": "Robert Andrich",
+          "count": 1
+        },
+        {
+          "from": "Niclas F\u00fcllkrug",
+          "to": "Thomas M\u00fcller",
+          "count": 1
+        },
+        {
+          "from": "Thomas M\u00fcller",
+          "to": "Robert Andrich",
+          "count": 1
+        },
+        {
+          "from": "Florian Wirtz",
+          "to": "Niclas F\u00fcllkrug",
+          "count": 1
+        },
+        {
+          "from": "Joshua Kimmich",
+          "to": "Antonio R\u00fcdiger",
+          "count": 1
+        },
+        {
+          "from": "Antonio R\u00fcdiger",
+          "to": "Niclas F\u00fcllkrug",
+          "count": 1
+        },
+        {
+          "from": "Joshua Kimmich",
+          "to": "Florian Wirtz",
+          "count": 1
+        },
+        {
+          "from": "Toni Kroos",
+          "to": "Joshua Kimmich",
+          "count": 1
+        },
+        {
+          "from": "Joshua Kimmich",
+          "to": "Manuel Neuer",
+          "count": 1
+        },
+        {
+          "from": "Joshua Kimmich",
+          "to": "Niclas F\u00fcllkrug",
+          "count": 1
+        },
+        {
+          "from": "Niclas F\u00fcllkrug",
+          "to": "Toni Kroos",
+          "count": 1
+        },
+        {
+          "from": "Joshua Kimmich",
+          "to": "Toni Kroos",
+          "count": 1
+        },
+        {
+          "from": "Waldemar Anton",
+          "to": "Robert Andrich",
+          "count": 1
+        },
+        {
+          "from": "Maximilian Mittelst\u00e4dt",
+          "to": "Joshua Kimmich",
+          "count": 1
+        },
+        {
+          "from": "Joshua Kimmich",
+          "to": "Maximilian Mittelst\u00e4dt",
+          "count": 1
+        },
+        {
+          "from": "Thomas M\u00fcller",
+          "to": "Waldemar Anton",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "substitutions": [
+    {
+      "minute": 45,
+      "player_off": "Leroy San\u00e9",
+      "player_on": "Florian Wirtz"
+    },
+    {
+      "minute": 45,
+      "player_off": "Emre Can",
+      "player_on": "Robert Andrich"
+    },
+    {
+      "minute": 56,
+      "player_off": "David Raum",
+      "player_on": "Maximilian Mittelst\u00e4dt"
+    },
+    {
+      "minute": 56,
+      "player_off": "\u0130lkay G\u00fcndo\u011fan",
+      "player_on": "Niclas F\u00fcllkrug"
+    },
+    {
+      "minute": 79,
+      "player_off": "Jonathan Tah",
+      "player_on": "Thomas M\u00fcller"
+    },
+    {
+      "minute": 90,
+      "player_off": "Kai Havertz",
+      "player_on": "Waldemar Anton"
+    }
+  ],
+  "metadata": {
+    "match_id": 3942226,
+    "team": "Germany",
+    "filter": "completed passes, per substitution window",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Spain vs Germany"
+  }
+}

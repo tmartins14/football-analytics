@@ -1,0 +1,485 @@
+{
+  "goals": [
+    {
+      "window": {
+        "anchor_event_id": "de9877c1-6b10-44b5-a1c4-da55f680eaf6",
+        "start_event_id": "83a3d047-fbc1-4e0d-bb5c-f4d6e022c434",
+        "end_event_id": "de9877c1-6b10-44b5-a1c4-da55f680eaf6",
+        "period": 1,
+        "window_seconds": 10.0,
+        "t_span_seconds": 32.376
+      },
+      "frames": [
+        {
+          "event_id": "83a3d047-fbc1-4e0d-bb5c-f4d6e022c434",
+          "t_seconds": 0.0,
+          "team": "Poland",
+          "event_type": "Duel",
+          "ball_x": 11.0,
+          "ball_y": 68.6,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Przemys\u0142aw Frankowski",
+          "outcome": null
+        },
+        {
+          "event_id": "edd35c96-d51f-4b40-b011-02603ae3f614",
+          "t_seconds": 24.857,
+          "team": "Austria",
+          "event_type": "Pass",
+          "ball_x": 110.0,
+          "ball_y": 0.1,
+          "ball_end_x": 114.2,
+          "ball_end_y": 34.3,
+          "actor": "Philipp Mwene",
+          "outcome": "Incomplete"
+        },
+        {
+          "event_id": "676cfc7d-8edf-4aed-85de-4d67a1627717",
+          "t_seconds": 28.896,
+          "team": "Austria",
+          "event_type": "Ball Recovery",
+          "ball_x": 107.8,
+          "ball_y": 17.9,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Philipp Mwene",
+          "outcome": null
+        },
+        {
+          "event_id": "25d3cead-2afe-45fc-b07a-f8af253a3591",
+          "t_seconds": 28.896,
+          "team": "Austria",
+          "event_type": "Carry",
+          "ball_x": 107.8,
+          "ball_y": 17.9,
+          "ball_end_x": 112.4,
+          "ball_end_y": 16.5,
+          "actor": "Philipp Mwene",
+          "outcome": null
+        },
+        {
+          "event_id": "6d6bc070-1a08-447d-a5de-d2595884708e",
+          "t_seconds": 28.92,
+          "team": "Poland",
+          "event_type": "Pressure",
+          "ball_x": 11.0,
+          "ball_y": 63.6,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Przemys\u0142aw Frankowski",
+          "outcome": null
+        },
+        {
+          "event_id": "19630609-bbab-4faf-8b7f-026731f1f26e",
+          "t_seconds": 29.251,
+          "team": "Austria",
+          "event_type": "Carry",
+          "ball_x": 112.4,
+          "ball_y": 16.5,
+          "ball_end_x": 118.0,
+          "ball_end_y": 16.7,
+          "actor": "Philipp Mwene",
+          "outcome": null
+        },
+        {
+          "event_id": "ba5db38d-322d-48a1-915b-8132af303166",
+          "t_seconds": 31.352,
+          "team": "Austria",
+          "event_type": "Pass",
+          "ball_x": 118.0,
+          "ball_y": 16.7,
+          "ball_end_x": 115.0,
+          "ball_end_y": 33.0,
+          "actor": "Philipp Mwene",
+          "outcome": null
+        },
+        {
+          "event_id": "de9877c1-6b10-44b5-a1c4-da55f680eaf6",
+          "t_seconds": 32.376,
+          "team": "Austria",
+          "event_type": "Shot",
+          "ball_x": 115.0,
+          "ball_y": 33.0,
+          "ball_end_x": 120.0,
+          "ball_end_y": 37.0,
+          "actor": "Gernot Trauner",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "de9877c1-6b10-44b5-a1c4-da55f680eaf6",
+          "minute": 8,
+          "second": 45,
+          "scorer": "Gernot Trauner",
+          "team": "Austria"
+        }
+      },
+      "metadata": {
+        "match_id": 3938641,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Poland vs Austria"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "da70dc6f-386b-4dc8-8d60-28f8e2f3ed35",
+        "start_event_id": "6ee21de4-6da1-4ee4-ba9d-595b8b1c9aa4",
+        "end_event_id": "da70dc6f-386b-4dc8-8d60-28f8e2f3ed35",
+        "period": 1,
+        "window_seconds": 10.0,
+        "t_span_seconds": 10.346
+      },
+      "frames": [
+        {
+          "event_id": "6ee21de4-6da1-4ee4-ba9d-595b8b1c9aa4",
+          "t_seconds": 0.0,
+          "team": "Poland",
+          "event_type": "Pass",
+          "ball_x": 85.8,
+          "ball_y": 65.8,
+          "ball_end_x": 100.5,
+          "ball_end_y": 71.9,
+          "actor": "Przemys\u0142aw Frankowski",
+          "outcome": null
+        },
+        {
+          "event_id": "a0158a9c-c73e-4d5d-a4b2-74240e11f00e",
+          "t_seconds": 0.919,
+          "team": "Poland",
+          "event_type": "Carry",
+          "ball_x": 100.5,
+          "ball_y": 71.9,
+          "ball_end_x": 97.5,
+          "ball_end_y": 71.0,
+          "actor": "Piotr Zieli\u0144ski",
+          "outcome": null
+        },
+        {
+          "event_id": "9ed8929b-e838-4ac3-b16f-380e88a6ffbe",
+          "t_seconds": 2.554,
+          "team": "Poland",
+          "event_type": "Pass",
+          "ball_x": 97.5,
+          "ball_y": 71.0,
+          "ball_end_x": 110.6,
+          "ball_end_y": 28.5,
+          "actor": "Piotr Zieli\u0144ski",
+          "outcome": "Incomplete"
+        },
+        {
+          "event_id": "181953f5-a51d-4621-88f7-674b276e60a9",
+          "t_seconds": 5.289,
+          "team": "Poland",
+          "event_type": "Duel",
+          "ball_x": 110.6,
+          "ball_y": 28.5,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Jakub Piotrowski",
+          "outcome": null
+        },
+        {
+          "event_id": "1f664547-2b5b-4a74-bb22-b3783c86acba",
+          "t_seconds": 6.859,
+          "team": "Poland",
+          "event_type": "Ball Recovery",
+          "ball_x": 111.7,
+          "ball_y": 19.3,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Jakub Piotr Kiwior",
+          "outcome": null
+        },
+        {
+          "event_id": "99b7f6d8-24b9-488e-b5f0-84b85b2da8af",
+          "t_seconds": 6.859,
+          "team": "Poland",
+          "event_type": "Carry",
+          "ball_x": 111.7,
+          "ball_y": 19.3,
+          "ball_end_x": 115.6,
+          "ball_end_y": 20.0,
+          "actor": "Jakub Piotr Kiwior",
+          "outcome": null
+        },
+        {
+          "event_id": "92fe647e-8096-4771-b591-a7e7d49018db",
+          "t_seconds": 7.025,
+          "team": "Austria",
+          "event_type": "Pressure",
+          "ball_x": 6.0,
+          "ball_y": 60.8,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Marko Arnautovi\u0107",
+          "outcome": null
+        },
+        {
+          "event_id": "7285b10b-3abe-485e-9c00-7e6ed0888510",
+          "t_seconds": 7.722,
+          "team": "Poland",
+          "event_type": "Pass",
+          "ball_x": 115.6,
+          "ball_y": 20.0,
+          "ball_end_x": 108.9,
+          "ball_end_y": 40.0,
+          "actor": "Jakub Piotr Kiwior",
+          "outcome": null
+        },
+        {
+          "event_id": "858b71bf-d008-4cc7-887c-c3e3b39085aa",
+          "t_seconds": 8.775,
+          "team": "Poland",
+          "event_type": "Shot",
+          "ball_x": 108.9,
+          "ball_y": 40.0,
+          "ball_end_x": 113.4,
+          "ball_end_y": 40.7,
+          "actor": "Jan Bednarek",
+          "outcome": null
+        },
+        {
+          "event_id": "29958efa-5085-4d6c-ac54-d67b4043efa6",
+          "t_seconds": 9.371,
+          "team": "Austria",
+          "event_type": "Pressure",
+          "ball_x": 9.3,
+          "ball_y": 38.6,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Gernot Trauner",
+          "outcome": null
+        },
+        {
+          "event_id": "c195ee1b-e1e0-40c0-8a91-6878cca221c3",
+          "t_seconds": 9.592,
+          "team": "Poland",
+          "event_type": "Ball Recovery",
+          "ball_x": 114.0,
+          "ball_y": 39.6,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Krzysztof Pi\u0105tek",
+          "outcome": null
+        },
+        {
+          "event_id": "30f35191-d3b7-4ed5-89e3-4888122c6afc",
+          "t_seconds": 9.592,
+          "team": "Poland",
+          "event_type": "Carry",
+          "ball_x": 114.0,
+          "ball_y": 39.6,
+          "ball_end_x": 113.8,
+          "ball_end_y": 41.6,
+          "actor": "Krzysztof Pi\u0105tek",
+          "outcome": null
+        },
+        {
+          "event_id": "da70dc6f-386b-4dc8-8d60-28f8e2f3ed35",
+          "t_seconds": 10.346,
+          "team": "Poland",
+          "event_type": "Shot",
+          "ball_x": 113.8,
+          "ball_y": 41.6,
+          "ball_end_x": 120.0,
+          "ball_end_y": 43.2,
+          "actor": "Krzysztof Pi\u0105tek",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "da70dc6f-386b-4dc8-8d60-28f8e2f3ed35",
+          "minute": 29,
+          "second": 36,
+          "scorer": "Krzysztof Pi\u0105tek",
+          "team": "Poland"
+        }
+      },
+      "metadata": {
+        "match_id": 3938641,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Poland vs Austria"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "910d285f-16d4-41a7-8c00-ea7d66a88556",
+        "start_event_id": "05981a0e-5f64-4e54-bc76-2e56fd46f647",
+        "end_event_id": "910d285f-16d4-41a7-8c00-ea7d66a88556",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 10.021
+      },
+      "frames": [
+        {
+          "event_id": "05981a0e-5f64-4e54-bc76-2e56fd46f647",
+          "t_seconds": 0.0,
+          "team": "Austria",
+          "event_type": "Carry",
+          "ball_x": 54.2,
+          "ball_y": 51.8,
+          "ball_end_x": 54.1,
+          "ball_end_y": 50.9,
+          "actor": "Nicolas Seiwald",
+          "outcome": null
+        },
+        {
+          "event_id": "898f3b4b-a3f7-469c-b6c4-dbbb20b4b9bc",
+          "t_seconds": 0.575,
+          "team": "Poland",
+          "event_type": "Pressure",
+          "ball_x": 62.2,
+          "ball_y": 28.6,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Bartosz Slisz",
+          "outcome": null
+        },
+        {
+          "event_id": "39590623-124f-49bc-b9a1-d1ac68b55cf9",
+          "t_seconds": 0.957,
+          "team": "Austria",
+          "event_type": "Pass",
+          "ball_x": 54.1,
+          "ball_y": 50.9,
+          "ball_end_x": 55.1,
+          "ball_end_y": 10.9,
+          "actor": "Nicolas Seiwald",
+          "outcome": null
+        },
+        {
+          "event_id": "d5ebd51f-00d4-4619-8350-cc73c73e2c8f",
+          "t_seconds": 2.982,
+          "team": "Austria",
+          "event_type": "Carry",
+          "ball_x": 55.1,
+          "ball_y": 10.9,
+          "ball_end_x": 84.0,
+          "ball_end_y": 8.7,
+          "actor": "Alexander Prass",
+          "outcome": null
+        },
+        {
+          "event_id": "140b1078-e456-44c4-a021-014c3f1e398a",
+          "t_seconds": 7.759,
+          "team": "Austria",
+          "event_type": "Pass",
+          "ball_x": 84.0,
+          "ball_y": 8.7,
+          "ball_end_x": 95.6,
+          "ball_end_y": 31.2,
+          "actor": "Alexander Prass",
+          "outcome": null
+        },
+        {
+          "event_id": "07fb7014-77fd-4a74-83ac-672afc2546d2",
+          "t_seconds": 8.627,
+          "team": "Austria",
+          "event_type": "Pass",
+          "ball_x": 95.6,
+          "ball_y": 31.2,
+          "ball_end_x": 96.0,
+          "ball_end_y": 36.7,
+          "actor": "Marko Arnautovi\u0107",
+          "outcome": null
+        },
+        {
+          "event_id": "1f1ffcb8-8c22-4888-b877-b1e46f8f8340",
+          "t_seconds": 8.785,
+          "team": "Austria",
+          "event_type": "Carry",
+          "ball_x": 96.0,
+          "ball_y": 36.7,
+          "ball_end_x": 102.5,
+          "ball_end_y": 36.3,
+          "actor": "Christoph Baumgartner",
+          "outcome": null
+        },
+        {
+          "event_id": "3d2dc9b8-d0ee-4c09-9e51-f437856c024c",
+          "t_seconds": 8.992,
+          "team": "Poland",
+          "event_type": "Pressure",
+          "ball_x": 24.1,
+          "ball_y": 47.5,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Pawe\u0142 Dawidowicz",
+          "outcome": null
+        },
+        {
+          "event_id": "910d285f-16d4-41a7-8c00-ea7d66a88556",
+          "t_seconds": 10.021,
+          "team": "Austria",
+          "event_type": "Shot",
+          "ball_x": 102.5,
+          "ball_y": 36.3,
+          "ball_end_x": 120.0,
+          "ball_end_y": 41.9,
+          "actor": "Christoph Baumgartner",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "910d285f-16d4-41a7-8c00-ea7d66a88556",
+          "minute": 65,
+          "second": 58,
+          "scorer": "Christoph Baumgartner",
+          "team": "Austria"
+        }
+      },
+      "metadata": {
+        "match_id": 3938641,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Poland vs Austria"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "142f46bf-f06b-45a7-aa1a-51fa41f3123a",
+        "start_event_id": "142f46bf-f06b-45a7-aa1a-51fa41f3123a",
+        "end_event_id": "142f46bf-f06b-45a7-aa1a-51fa41f3123a",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 88.928
+      },
+      "frames": [
+        {
+          "event_id": "142f46bf-f06b-45a7-aa1a-51fa41f3123a",
+          "t_seconds": 88.928,
+          "team": "Austria",
+          "event_type": "Shot",
+          "ball_x": 108.0,
+          "ball_y": 40.0,
+          "ball_end_x": 120.0,
+          "ball_end_y": 42.6,
+          "actor": "Marko Arnautovi\u0107",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "142f46bf-f06b-45a7-aa1a-51fa41f3123a",
+          "minute": 77,
+          "second": 50,
+          "scorer": "Marko Arnautovi\u0107",
+          "team": "Austria"
+        }
+      },
+      "metadata": {
+        "match_id": 3938641,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Poland vs Austria"
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3938641,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Poland vs Austria"
+  }
+}

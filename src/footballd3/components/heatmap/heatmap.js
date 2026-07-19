@@ -14,6 +14,8 @@
 //   const { update } = createHeatmap(pitch, data, { renderStyle: "smooth" });
 //   update(newData);  // swap to a different player/match without re-drawing the pitch
 
+import * as d3 from "d3";
+
 /**
  * Bilinear interpolation of a normalised density value at sub-cell position.
  *

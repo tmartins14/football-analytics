@@ -22,6 +22,8 @@
  *   Non-progressive carry:        #1E3A5F (navy), solid,  opacity 0.18, 2.5px, arrow
  */
 
+import * as d3 from "d3";
+
 const _tooltip = document.createElement("div");
 Object.assign(_tooltip.style, {
   position:      "fixed",

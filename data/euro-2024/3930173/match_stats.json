@@ -1,0 +1,83 @@
+{
+  "home": {
+    "team": "Netherlands",
+    "color": "#EF7D00",
+    "score": 0
+  },
+  "away": {
+    "team": "France",
+    "color": "#002395",
+    "score": 0
+  },
+  "rows": [
+    {
+      "label": "Shots",
+      "home_value": 9.0,
+      "away_value": 15.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Shots on Target",
+      "home_value": 4.0,
+      "away_value": 3.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Possession",
+      "home_value": 36.1,
+      "away_value": 63.9,
+      "scale_type": "fixed100",
+      "format": "pct",
+      "tier": "basic"
+    },
+    {
+      "label": "Corners",
+      "home_value": 3.0,
+      "away_value": 6.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Fouls",
+      "home_value": 14.0,
+      "away_value": 9.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Yellow Cards",
+      "home_value": 1.0,
+      "away_value": 0.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Red Cards",
+      "home_value": 0.0,
+      "away_value": 0.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "xG",
+      "home_value": 0.74,
+      "away_value": 1.22,
+      "scale_type": "sum",
+      "format": "float1",
+      "tier": "advanced"
+    }
+  ],
+  "metadata": {
+    "match_id": 3930173,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Netherlands vs France"
+  }
+}

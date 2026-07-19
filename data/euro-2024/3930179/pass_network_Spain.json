@@ -1,0 +1,1620 @@
+{
+  "windows": [
+    {
+      "index": 0,
+      "label": "0'\u201345' (Starting XI)",
+      "nodes": [
+        {
+          "player": "Alejandro Grimaldo Garc\u00eda",
+          "display_name": "\u00c1lex Grimaldo",
+          "x": 82.1,
+          "y": 13.15,
+          "passes": 27
+        },
+        {
+          "player": "Aymeric Laporte",
+          "display_name": "Aymeric Laporte",
+          "x": 50.75,
+          "y": 26.38,
+          "passes": 45
+        },
+        {
+          "player": "Daniel Olmo Carvajal",
+          "display_name": "Daniel Olmo",
+          "x": 69.16,
+          "y": 47.61,
+          "passes": 17
+        },
+        {
+          "player": "Daniel Vivian Moreno",
+          "display_name": "Dani Vivian",
+          "x": 50.37,
+          "y": 54.52,
+          "passes": 46
+        },
+        {
+          "player": "David Raya Martin",
+          "display_name": "David Raya",
+          "x": 16.96,
+          "y": 39.93,
+          "passes": 12
+        },
+        {
+          "player": "Ferr\u00e1n Torres Garc\u00eda",
+          "display_name": "Ferr\u00e1n Torres",
+          "x": 89.89,
+          "y": 42.09,
+          "passes": 11
+        },
+        {
+          "player": "Jes\u00fas Navas Gonz\u00e1lez",
+          "display_name": "Jes\u00fas Navas",
+          "x": 68.26,
+          "y": 71.52,
+          "passes": 25
+        },
+        {
+          "player": "Jos\u00e9 Luis Sanmart\u00edn Mato",
+          "display_name": "Joselu",
+          "x": 57.5,
+          "y": 46.8,
+          "passes": 3
+        },
+        {
+          "player": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "display_name": "Mart\u00edn Zubimendi",
+          "x": 64.74,
+          "y": 41.56,
+          "passes": 33
+        },
+        {
+          "player": "Mikel Merino Zaz\u00f3n",
+          "display_name": "Mikel Merino",
+          "x": 70.73,
+          "y": 23.61,
+          "passes": 26
+        },
+        {
+          "player": "Mikel Oyarzabal Ugarte",
+          "display_name": "Mikel Oyarzabal",
+          "x": 80.89,
+          "y": 23.96,
+          "passes": 11
+        }
+      ],
+      "edges": [
+        {
+          "from": "Daniel Vivian Moreno",
+          "to": "Aymeric Laporte",
+          "count": 14
+        },
+        {
+          "from": "Aymeric Laporte",
+          "to": "Daniel Vivian Moreno",
+          "count": 13
+        },
+        {
+          "from": "Jes\u00fas Navas Gonz\u00e1lez",
+          "to": "Daniel Vivian Moreno",
+          "count": 12
+        },
+        {
+          "from": "Aymeric Laporte",
+          "to": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "count": 11
+        },
+        {
+          "from": "Daniel Vivian Moreno",
+          "to": "Jes\u00fas Navas Gonz\u00e1lez",
+          "count": 10
+        },
+        {
+          "from": "Alejandro Grimaldo Garc\u00eda",
+          "to": "Aymeric Laporte",
+          "count": 9
+        },
+        {
+          "from": "Alejandro Grimaldo Garc\u00eda",
+          "to": "Mikel Merino Zaz\u00f3n",
+          "count": 9
+        },
+        {
+          "from": "David Raya Martin",
+          "to": "Aymeric Laporte",
+          "count": 7
+        },
+        {
+          "from": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "to": "Daniel Vivian Moreno",
+          "count": 7
+        },
+        {
+          "from": "Daniel Vivian Moreno",
+          "to": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "count": 7
+        },
+        {
+          "from": "Daniel Olmo Carvajal",
+          "to": "Ferr\u00e1n Torres Garc\u00eda",
+          "count": 7
+        },
+        {
+          "from": "Aymeric Laporte",
+          "to": "Alejandro Grimaldo Garc\u00eda",
+          "count": 6
+        },
+        {
+          "from": "Daniel Vivian Moreno",
+          "to": "Daniel Olmo Carvajal",
+          "count": 6
+        },
+        {
+          "from": "Mikel Merino Zaz\u00f3n",
+          "to": "Alejandro Grimaldo Garc\u00eda",
+          "count": 6
+        },
+        {
+          "from": "Mikel Merino Zaz\u00f3n",
+          "to": "Mikel Oyarzabal Ugarte",
+          "count": 6
+        },
+        {
+          "from": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "to": "Aymeric Laporte",
+          "count": 5
+        },
+        {
+          "from": "Aymeric Laporte",
+          "to": "Mikel Oyarzabal Ugarte",
+          "count": 5
+        },
+        {
+          "from": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "to": "Daniel Olmo Carvajal",
+          "count": 5
+        },
+        {
+          "from": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "to": "Mikel Merino Zaz\u00f3n",
+          "count": 5
+        },
+        {
+          "from": "Aymeric Laporte",
+          "to": "David Raya Martin",
+          "count": 4
+        },
+        {
+          "from": "Mikel Merino Zaz\u00f3n",
+          "to": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "count": 4
+        },
+        {
+          "from": "Mikel Oyarzabal Ugarte",
+          "to": "Mikel Merino Zaz\u00f3n",
+          "count": 4
+        },
+        {
+          "from": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "to": "Alejandro Grimaldo Garc\u00eda",
+          "count": 4
+        },
+        {
+          "from": "Daniel Vivian Moreno",
+          "to": "Mikel Merino Zaz\u00f3n",
+          "count": 4
+        },
+        {
+          "from": "Alejandro Grimaldo Garc\u00eda",
+          "to": "Ferr\u00e1n Torres Garc\u00eda",
+          "count": 4
+        },
+        {
+          "from": "David Raya Martin",
+          "to": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "count": 3
+        },
+        {
+          "from": "Mikel Oyarzabal Ugarte",
+          "to": "Alejandro Grimaldo Garc\u00eda",
+          "count": 3
+        },
+        {
+          "from": "Daniel Vivian Moreno",
+          "to": "Jos\u00e9 Luis Sanmart\u00edn Mato",
+          "count": 3
+        },
+        {
+          "from": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "to": "Jes\u00fas Navas Gonz\u00e1lez",
+          "count": 3
+        },
+        {
+          "from": "Daniel Olmo Carvajal",
+          "to": "Jes\u00fas Navas Gonz\u00e1lez",
+          "count": 3
+        },
+        {
+          "from": "Mikel Merino Zaz\u00f3n",
+          "to": "Aymeric Laporte",
+          "count": 3
+        },
+        {
+          "from": "Mikel Merino Zaz\u00f3n",
+          "to": "Daniel Olmo Carvajal",
+          "count": 3
+        },
+        {
+          "from": "Ferr\u00e1n Torres Garc\u00eda",
+          "to": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "count": 3
+        },
+        {
+          "from": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "to": "Ferr\u00e1n Torres Garc\u00eda",
+          "count": 2
+        },
+        {
+          "from": "Ferr\u00e1n Torres Garc\u00eda",
+          "to": "Jes\u00fas Navas Gonz\u00e1lez",
+          "count": 2
+        },
+        {
+          "from": "Jos\u00e9 Luis Sanmart\u00edn Mato",
+          "to": "Jes\u00fas Navas Gonz\u00e1lez",
+          "count": 2
+        },
+        {
+          "from": "Jes\u00fas Navas Gonz\u00e1lez",
+          "to": "David Raya Martin",
+          "count": 2
+        },
+        {
+          "from": "Daniel Olmo Carvajal",
+          "to": "Daniel Vivian Moreno",
+          "count": 2
+        },
+        {
+          "from": "Aymeric Laporte",
+          "to": "Mikel Merino Zaz\u00f3n",
+          "count": 2
+        },
+        {
+          "from": "Aymeric Laporte",
+          "to": "Jes\u00fas Navas Gonz\u00e1lez",
+          "count": 2
+        },
+        {
+          "from": "Jes\u00fas Navas Gonz\u00e1lez",
+          "to": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "count": 2
+        },
+        {
+          "from": "Jes\u00fas Navas Gonz\u00e1lez",
+          "to": "Mikel Merino Zaz\u00f3n",
+          "count": 2
+        },
+        {
+          "from": "Jes\u00fas Navas Gonz\u00e1lez",
+          "to": "Aymeric Laporte",
+          "count": 2
+        },
+        {
+          "from": "Mikel Merino Zaz\u00f3n",
+          "to": "Daniel Vivian Moreno",
+          "count": 2
+        },
+        {
+          "from": "Jes\u00fas Navas Gonz\u00e1lez",
+          "to": "Ferr\u00e1n Torres Garc\u00eda",
+          "count": 2
+        },
+        {
+          "from": "Alejandro Grimaldo Garc\u00eda",
+          "to": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "count": 2
+        },
+        {
+          "from": "Ferr\u00e1n Torres Garc\u00eda",
+          "to": "Daniel Olmo Carvajal",
+          "count": 2
+        },
+        {
+          "from": "Daniel Olmo Carvajal",
+          "to": "Alejandro Grimaldo Garc\u00eda",
+          "count": 2
+        },
+        {
+          "from": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "to": "David Raya Martin",
+          "count": 2
+        },
+        {
+          "from": "Ferr\u00e1n Torres Garc\u00eda",
+          "to": "Alejandro Grimaldo Garc\u00eda",
+          "count": 2
+        },
+        {
+          "from": "Jes\u00fas Navas Gonz\u00e1lez",
+          "to": "Daniel Olmo Carvajal",
+          "count": 2
+        },
+        {
+          "from": "David Raya Martin",
+          "to": "Daniel Vivian Moreno",
+          "count": 2
+        },
+        {
+          "from": "Jes\u00fas Navas Gonz\u00e1lez",
+          "to": "Alejandro Grimaldo Garc\u00eda",
+          "count": 1
+        },
+        {
+          "from": "Daniel Vivian Moreno",
+          "to": "David Raya Martin",
+          "count": 1
+        },
+        {
+          "from": "Daniel Vivian Moreno",
+          "to": "Alejandro Grimaldo Garc\u00eda",
+          "count": 1
+        },
+        {
+          "from": "Aymeric Laporte",
+          "to": "Jos\u00e9 Luis Sanmart\u00edn Mato",
+          "count": 1
+        },
+        {
+          "from": "Aymeric Laporte",
+          "to": "Daniel Olmo Carvajal",
+          "count": 1
+        },
+        {
+          "from": "Mikel Oyarzabal Ugarte",
+          "to": "Jos\u00e9 Luis Sanmart\u00edn Mato",
+          "count": 1
+        },
+        {
+          "from": "Jos\u00e9 Luis Sanmart\u00edn Mato",
+          "to": "Alejandro Grimaldo Garc\u00eda",
+          "count": 1
+        },
+        {
+          "from": "Daniel Olmo Carvajal",
+          "to": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "count": 1
+        },
+        {
+          "from": "Daniel Olmo Carvajal",
+          "to": "Aymeric Laporte",
+          "count": 1
+        },
+        {
+          "from": "Ferr\u00e1n Torres Garc\u00eda",
+          "to": "Aymeric Laporte",
+          "count": 1
+        },
+        {
+          "from": "Alejandro Grimaldo Garc\u00eda",
+          "to": "Mikel Oyarzabal Ugarte",
+          "count": 1
+        },
+        {
+          "from": "Mikel Oyarzabal Ugarte",
+          "to": "Aymeric Laporte",
+          "count": 1
+        },
+        {
+          "from": "Mikel Oyarzabal Ugarte",
+          "to": "Daniel Olmo Carvajal",
+          "count": 1
+        },
+        {
+          "from": "Alejandro Grimaldo Garc\u00eda",
+          "to": "Daniel Vivian Moreno",
+          "count": 1
+        },
+        {
+          "from": "Ferr\u00e1n Torres Garc\u00eda",
+          "to": "Mikel Oyarzabal Ugarte",
+          "count": 1
+        },
+        {
+          "from": "Mikel Oyarzabal Ugarte",
+          "to": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "count": 1
+        },
+        {
+          "from": "Daniel Olmo Carvajal",
+          "to": "David Raya Martin",
+          "count": 1
+        },
+        {
+          "from": "Mikel Merino Zaz\u00f3n",
+          "to": "Ferr\u00e1n Torres Garc\u00eda",
+          "count": 1
+        },
+        {
+          "from": "Mikel Merino Zaz\u00f3n",
+          "to": "David Raya Martin",
+          "count": 1
+        },
+        {
+          "from": "Alejandro Grimaldo Garc\u00eda",
+          "to": "Jes\u00fas Navas Gonz\u00e1lez",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "label": "45'\u201361'",
+      "nodes": [
+        {
+          "player": "Alejandro Grimaldo Garc\u00eda",
+          "display_name": "\u00c1lex Grimaldo",
+          "x": 67.29,
+          "y": 9.98,
+          "passes": 18
+        },
+        {
+          "player": "Daniel Olmo Carvajal",
+          "display_name": "Daniel Olmo",
+          "x": 67.98,
+          "y": 45.94,
+          "passes": 8
+        },
+        {
+          "player": "Daniel Vivian Moreno",
+          "display_name": "Dani Vivian",
+          "x": 49.56,
+          "y": 55.69,
+          "passes": 22
+        },
+        {
+          "player": "David Raya Martin",
+          "display_name": "David Raya",
+          "x": 16.61,
+          "y": 41.26,
+          "passes": 8
+        },
+        {
+          "player": "Ferr\u00e1n Torres Garc\u00eda",
+          "display_name": "Ferr\u00e1n Torres",
+          "x": 93.15,
+          "y": 76.35,
+          "passes": 2
+        },
+        {
+          "player": "Jes\u00fas Navas Gonz\u00e1lez",
+          "display_name": "Jes\u00fas Navas",
+          "x": 70.41,
+          "y": 71.13,
+          "passes": 9
+        },
+        {
+          "player": "Jos\u00e9 Luis Sanmart\u00edn Mato",
+          "display_name": "Joselu",
+          "x": 65.75,
+          "y": 39.12,
+          "passes": 6
+        },
+        {
+          "player": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "display_name": "Mart\u00edn Zubimendi",
+          "x": 61.67,
+          "y": 38.97,
+          "passes": 19
+        },
+        {
+          "player": "Mikel Merino Zaz\u00f3n",
+          "display_name": "Mikel Merino",
+          "x": 60.84,
+          "y": 31.57,
+          "passes": 21
+        },
+        {
+          "player": "Mikel Oyarzabal Ugarte",
+          "display_name": "Mikel Oyarzabal",
+          "x": 88.46,
+          "y": 11.31,
+          "passes": 14
+        },
+        {
+          "player": "Robin Aime Robert Le Normand",
+          "display_name": "Robin Le Normand",
+          "x": 45.15,
+          "y": 22.64,
+          "passes": 25
+        }
+      ],
+      "edges": [
+        {
+          "from": "Robin Aime Robert Le Normand",
+          "to": "Daniel Vivian Moreno",
+          "count": 8
+        },
+        {
+          "from": "Daniel Vivian Moreno",
+          "to": "Robin Aime Robert Le Normand",
+          "count": 7
+        },
+        {
+          "from": "Mikel Merino Zaz\u00f3n",
+          "to": "Robin Aime Robert Le Normand",
+          "count": 6
+        },
+        {
+          "from": "Robin Aime Robert Le Normand",
+          "to": "Alejandro Grimaldo Garc\u00eda",
+          "count": 5
+        },
+        {
+          "from": "Robin Aime Robert Le Normand",
+          "to": "Mikel Merino Zaz\u00f3n",
+          "count": 5
+        },
+        {
+          "from": "Alejandro Grimaldo Garc\u00eda",
+          "to": "Mikel Oyarzabal Ugarte",
+          "count": 5
+        },
+        {
+          "from": "Mikel Oyarzabal Ugarte",
+          "to": "Alejandro Grimaldo Garc\u00eda",
+          "count": 5
+        },
+        {
+          "from": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "to": "Mikel Merino Zaz\u00f3n",
+          "count": 5
+        },
+        {
+          "from": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "to": "Daniel Vivian Moreno",
+          "count": 4
+        },
+        {
+          "from": "Mikel Merino Zaz\u00f3n",
+          "to": "Mikel Oyarzabal Ugarte",
+          "count": 4
+        },
+        {
+          "from": "Robin Aime Robert Le Normand",
+          "to": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "count": 4
+        },
+        {
+          "from": "Daniel Vivian Moreno",
+          "to": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "count": 3
+        },
+        {
+          "from": "Alejandro Grimaldo Garc\u00eda",
+          "to": "Robin Aime Robert Le Normand",
+          "count": 3
+        },
+        {
+          "from": "Jes\u00fas Navas Gonz\u00e1lez",
+          "to": "Daniel Vivian Moreno",
+          "count": 3
+        },
+        {
+          "from": "Alejandro Grimaldo Garc\u00eda",
+          "to": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "count": 3
+        },
+        {
+          "from": "Mikel Merino Zaz\u00f3n",
+          "to": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "count": 3
+        },
+        {
+          "from": "Daniel Vivian Moreno",
+          "to": "David Raya Martin",
+          "count": 3
+        },
+        {
+          "from": "Alejandro Grimaldo Garc\u00eda",
+          "to": "Mikel Merino Zaz\u00f3n",
+          "count": 2
+        },
+        {
+          "from": "Daniel Olmo Carvajal",
+          "to": "Robin Aime Robert Le Normand",
+          "count": 2
+        },
+        {
+          "from": "Mikel Merino Zaz\u00f3n",
+          "to": "Alejandro Grimaldo Garc\u00eda",
+          "count": 2
+        },
+        {
+          "from": "Alejandro Grimaldo Garc\u00eda",
+          "to": "Daniel Olmo Carvajal",
+          "count": 2
+        },
+        {
+          "from": "Daniel Olmo Carvajal",
+          "to": "Jes\u00fas Navas Gonz\u00e1lez",
+          "count": 2
+        },
+        {
+          "from": "Daniel Vivian Moreno",
+          "to": "Mikel Oyarzabal Ugarte",
+          "count": 2
+        },
+        {
+          "from": "Alejandro Grimaldo Garc\u00eda",
+          "to": "Jos\u00e9 Luis Sanmart\u00edn Mato",
+          "count": 2
+        },
+        {
+          "from": "Daniel Vivian Moreno",
+          "to": "Mikel Merino Zaz\u00f3n",
+          "count": 2
+        },
+        {
+          "from": "Mikel Merino Zaz\u00f3n",
+          "to": "Daniel Olmo Carvajal",
+          "count": 2
+        },
+        {
+          "from": "Mikel Oyarzabal Ugarte",
+          "to": "Mikel Merino Zaz\u00f3n",
+          "count": 2
+        },
+        {
+          "from": "David Raya Martin",
+          "to": "Robin Aime Robert Le Normand",
+          "count": 2
+        },
+        {
+          "from": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "to": "Jes\u00fas Navas Gonz\u00e1lez",
+          "count": 2
+        },
+        {
+          "from": "Mikel Merino Zaz\u00f3n",
+          "to": "Ferr\u00e1n Torres Garc\u00eda",
+          "count": 2
+        },
+        {
+          "from": "Jes\u00fas Navas Gonz\u00e1lez",
+          "to": "Daniel Olmo Carvajal",
+          "count": 2
+        },
+        {
+          "from": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "to": "Alejandro Grimaldo Garc\u00eda",
+          "count": 2
+        },
+        {
+          "from": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "to": "Robin Aime Robert Le Normand",
+          "count": 2
+        },
+        {
+          "from": "Robin Aime Robert Le Normand",
+          "to": "David Raya Martin",
+          "count": 2
+        },
+        {
+          "from": "David Raya Martin",
+          "to": "Daniel Vivian Moreno",
+          "count": 2
+        },
+        {
+          "from": "Daniel Vivian Moreno",
+          "to": "Jos\u00e9 Luis Sanmart\u00edn Mato",
+          "count": 2
+        },
+        {
+          "from": "Jos\u00e9 Luis Sanmart\u00edn Mato",
+          "to": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "count": 2
+        },
+        {
+          "from": "Daniel Olmo Carvajal",
+          "to": "Alejandro Grimaldo Garc\u00eda",
+          "count": 2
+        },
+        {
+          "from": "David Raya Martin",
+          "to": "Mikel Merino Zaz\u00f3n",
+          "count": 2
+        },
+        {
+          "from": "Mikel Oyarzabal Ugarte",
+          "to": "Robin Aime Robert Le Normand",
+          "count": 2
+        },
+        {
+          "from": "Mikel Oyarzabal Ugarte",
+          "to": "Daniel Olmo Carvajal",
+          "count": 2
+        },
+        {
+          "from": "Mikel Oyarzabal Ugarte",
+          "to": "Daniel Vivian Moreno",
+          "count": 2
+        },
+        {
+          "from": "David Raya Martin",
+          "to": "Alejandro Grimaldo Garc\u00eda",
+          "count": 1
+        },
+        {
+          "from": "Mikel Merino Zaz\u00f3n",
+          "to": "Aymeric Laporte",
+          "count": 1
+        },
+        {
+          "from": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "to": "Jos\u00e9 Luis Sanmart\u00edn Mato",
+          "count": 1
+        },
+        {
+          "from": "Jos\u00e9 Luis Sanmart\u00edn Mato",
+          "to": "Daniel Olmo Carvajal",
+          "count": 1
+        },
+        {
+          "from": "Jes\u00fas Navas Gonz\u00e1lez",
+          "to": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "count": 1
+        },
+        {
+          "from": "Daniel Vivian Moreno",
+          "to": "Alejandro Grimaldo Garc\u00eda",
+          "count": 1
+        },
+        {
+          "from": "Alejandro Grimaldo Garc\u00eda",
+          "to": "Jes\u00fas Navas Gonz\u00e1lez",
+          "count": 1
+        },
+        {
+          "from": "Jos\u00e9 Luis Sanmart\u00edn Mato",
+          "to": "Mikel Merino Zaz\u00f3n",
+          "count": 1
+        },
+        {
+          "from": "Jes\u00fas Navas Gonz\u00e1lez",
+          "to": "Ferr\u00e1n Torres Garc\u00eda",
+          "count": 1
+        },
+        {
+          "from": "Jes\u00fas Navas Gonz\u00e1lez",
+          "to": "Mikel Merino Zaz\u00f3n",
+          "count": 1
+        },
+        {
+          "from": "Daniel Olmo Carvajal",
+          "to": "Mikel Merino Zaz\u00f3n",
+          "count": 1
+        },
+        {
+          "from": "Daniel Vivian Moreno",
+          "to": "Daniel Olmo Carvajal",
+          "count": 1
+        },
+        {
+          "from": "Daniel Olmo Carvajal",
+          "to": "Daniel Vivian Moreno",
+          "count": 1
+        },
+        {
+          "from": "David Raya Martin",
+          "to": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "count": 1
+        },
+        {
+          "from": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "to": "David Raya Martin",
+          "count": 1
+        },
+        {
+          "from": "Mikel Merino Zaz\u00f3n",
+          "to": "Jos\u00e9 Luis Sanmart\u00edn Mato",
+          "count": 1
+        },
+        {
+          "from": "Jos\u00e9 Luis Sanmart\u00edn Mato",
+          "to": "Alejandro Grimaldo Garc\u00eda",
+          "count": 1
+        },
+        {
+          "from": "Daniel Vivian Moreno",
+          "to": "Jes\u00fas Navas Gonz\u00e1lez",
+          "count": 1
+        },
+        {
+          "from": "Jos\u00e9 Luis Sanmart\u00edn Mato",
+          "to": "Robin Aime Robert Le Normand",
+          "count": 1
+        },
+        {
+          "from": "Ferr\u00e1n Torres Garc\u00eda",
+          "to": "Mikel Merino Zaz\u00f3n",
+          "count": 1
+        },
+        {
+          "from": "Jes\u00fas Navas Gonz\u00e1lez",
+          "to": "Mikel Oyarzabal Ugarte",
+          "count": 1
+        },
+        {
+          "from": "Mikel Oyarzabal Ugarte",
+          "to": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "count": 1
+        },
+        {
+          "from": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "to": "Mikel Oyarzabal Ugarte",
+          "count": 1
+        },
+        {
+          "from": "Ferr\u00e1n Torres Garc\u00eda",
+          "to": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "count": 1
+        },
+        {
+          "from": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "to": "Daniel Olmo Carvajal",
+          "count": 1
+        },
+        {
+          "from": "Robin Aime Robert Le Normand",
+          "to": "Mikel Oyarzabal Ugarte",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "label": "61'\u201370'",
+      "nodes": [
+        {
+          "player": "Alejandro Grimaldo Garc\u00eda",
+          "display_name": "\u00c1lex Grimaldo",
+          "x": 39.43,
+          "y": 4.97,
+          "passes": 3
+        },
+        {
+          "player": "Daniel Vivian Moreno",
+          "display_name": "Dani Vivian",
+          "x": 33.88,
+          "y": 56.22,
+          "passes": 5
+        },
+        {
+          "player": "David Raya Martin",
+          "display_name": "David Raya",
+          "x": 11.8,
+          "y": 47.21,
+          "passes": 7
+        },
+        {
+          "player": "Fermin Lopez Marin",
+          "display_name": "Ferm\u00edn L\u00f3pez",
+          "x": 49.0,
+          "y": 21.5,
+          "passes": 1
+        },
+        {
+          "player": "Ferr\u00e1n Torres Garc\u00eda",
+          "display_name": "Ferr\u00e1n Torres",
+          "x": 103.0,
+          "y": 57.6,
+          "passes": 1
+        },
+        {
+          "player": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "display_name": "Mart\u00edn Zubimendi",
+          "x": 29.2,
+          "y": 51.5,
+          "passes": 1
+        },
+        {
+          "player": "Mikel Merino Zaz\u00f3n",
+          "display_name": "Mikel Merino",
+          "x": 36.75,
+          "y": 10.0,
+          "passes": 2
+        },
+        {
+          "player": "Robin Aime Robert Le Normand",
+          "display_name": "Robin Le Normand",
+          "x": 33.2,
+          "y": 25.82,
+          "passes": 5
+        }
+      ],
+      "edges": [
+        {
+          "from": "David Raya Martin",
+          "to": "Robin Aime Robert Le Normand",
+          "count": 3
+        },
+        {
+          "from": "David Raya Martin",
+          "to": "Daniel Vivian Moreno",
+          "count": 2
+        },
+        {
+          "from": "Robin Aime Robert Le Normand",
+          "to": "Daniel Vivian Moreno",
+          "count": 2
+        },
+        {
+          "from": "Daniel Vivian Moreno",
+          "to": "Robin Aime Robert Le Normand",
+          "count": 2
+        },
+        {
+          "from": "Alejandro Grimaldo Garc\u00eda",
+          "to": "Mikel Merino Zaz\u00f3n",
+          "count": 2
+        },
+        {
+          "from": "Robin Aime Robert Le Normand",
+          "to": "Alejandro Grimaldo Garc\u00eda",
+          "count": 1
+        },
+        {
+          "from": "Alejandro Grimaldo Garc\u00eda",
+          "to": "David Raya Martin",
+          "count": 1
+        },
+        {
+          "from": "Daniel Vivian Moreno",
+          "to": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "count": 1
+        },
+        {
+          "from": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "to": "David Raya Martin",
+          "count": 1
+        },
+        {
+          "from": "Daniel Vivian Moreno",
+          "to": "David Raya Martin",
+          "count": 1
+        },
+        {
+          "from": "Daniel Vivian Moreno",
+          "to": "Fermin Lopez Marin",
+          "count": 1
+        },
+        {
+          "from": "David Raya Martin",
+          "to": "Jos\u00e9 Luis Sanmart\u00edn Mato",
+          "count": 1
+        },
+        {
+          "from": "Robin Aime Robert Le Normand",
+          "to": "David Raya Martin",
+          "count": 1
+        },
+        {
+          "from": "Robin Aime Robert Le Normand",
+          "to": "Mikel Merino Zaz\u00f3n",
+          "count": 1
+        },
+        {
+          "from": "Mikel Merino Zaz\u00f3n",
+          "to": "Alejandro Grimaldo Garc\u00eda",
+          "count": 1
+        },
+        {
+          "from": "David Raya Martin",
+          "to": "Alejandro Grimaldo Garc\u00eda",
+          "count": 1
+        },
+        {
+          "from": "Mikel Merino Zaz\u00f3n",
+          "to": "Fermin Lopez Marin",
+          "count": 1
+        },
+        {
+          "from": "Fermin Lopez Marin",
+          "to": "Ferr\u00e1n Torres Garc\u00eda",
+          "count": 1
+        },
+        {
+          "from": "Ferr\u00e1n Torres Garc\u00eda",
+          "to": "Jes\u00fas Navas Gonz\u00e1lez",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "label": "70'\u201383'",
+      "nodes": [
+        {
+          "player": "Alejandro Grimaldo Garc\u00eda",
+          "display_name": "\u00c1lex Grimaldo",
+          "x": 71.93,
+          "y": 5.93,
+          "passes": 15
+        },
+        {
+          "player": "Daniel Olmo Carvajal",
+          "display_name": "Daniel Olmo",
+          "x": 82.83,
+          "y": 5.47,
+          "passes": 3
+        },
+        {
+          "player": "Daniel Vivian Moreno",
+          "display_name": "Dani Vivian",
+          "x": 44.86,
+          "y": 48.77,
+          "passes": 7
+        },
+        {
+          "player": "David Raya Martin",
+          "display_name": "David Raya",
+          "x": 11.88,
+          "y": 42.33,
+          "passes": 4
+        },
+        {
+          "player": "Fermin Lopez Marin",
+          "display_name": "Ferm\u00edn L\u00f3pez",
+          "x": 65.83,
+          "y": 42.95,
+          "passes": 4
+        },
+        {
+          "player": "Jes\u00fas Navas Gonz\u00e1lez",
+          "display_name": "Jes\u00fas Navas",
+          "x": 55.83,
+          "y": 65.45,
+          "passes": 4
+        },
+        {
+          "player": "Lamine Yamal Nasraoui Ebana",
+          "display_name": "Lamine Yamal",
+          "x": 79.87,
+          "y": 68.0,
+          "passes": 6
+        },
+        {
+          "player": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "display_name": "Mart\u00edn Zubimendi",
+          "x": 66.77,
+          "y": 32.5,
+          "passes": 14
+        },
+        {
+          "player": "Mikel Merino Zaz\u00f3n",
+          "display_name": "Mikel Merino",
+          "x": 59.68,
+          "y": 26.8,
+          "passes": 11
+        },
+        {
+          "player": "Robin Aime Robert Le Normand",
+          "display_name": "Robin Le Normand",
+          "x": 41.71,
+          "y": 19.72,
+          "passes": 10
+        },
+        {
+          "player": "\u00c1lvaro Borja Morata Mart\u00edn",
+          "display_name": "\u00c1lvaro Morata",
+          "x": 65.2,
+          "y": 29.34,
+          "passes": 5
+        }
+      ],
+      "edges": [
+        {
+          "from": "Alejandro Grimaldo Garc\u00eda",
+          "to": "Daniel Olmo Carvajal",
+          "count": 5
+        },
+        {
+          "from": "Mikel Merino Zaz\u00f3n",
+          "to": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "count": 4
+        },
+        {
+          "from": "Alejandro Grimaldo Garc\u00eda",
+          "to": "Robin Aime Robert Le Normand",
+          "count": 4
+        },
+        {
+          "from": "Robin Aime Robert Le Normand",
+          "to": "Alejandro Grimaldo Garc\u00eda",
+          "count": 4
+        },
+        {
+          "from": "Lamine Yamal Nasraoui Ebana",
+          "to": "Fermin Lopez Marin",
+          "count": 4
+        },
+        {
+          "from": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "to": "Alejandro Grimaldo Garc\u00eda",
+          "count": 4
+        },
+        {
+          "from": "Mikel Merino Zaz\u00f3n",
+          "to": "Daniel Vivian Moreno",
+          "count": 4
+        },
+        {
+          "from": "Robin Aime Robert Le Normand",
+          "to": "Daniel Vivian Moreno",
+          "count": 3
+        },
+        {
+          "from": "Fermin Lopez Marin",
+          "to": "Mikel Merino Zaz\u00f3n",
+          "count": 2
+        },
+        {
+          "from": "Daniel Vivian Moreno",
+          "to": "Robin Aime Robert Le Normand",
+          "count": 2
+        },
+        {
+          "from": "Daniel Olmo Carvajal",
+          "to": "Alejandro Grimaldo Garc\u00eda",
+          "count": 2
+        },
+        {
+          "from": "Alejandro Grimaldo Garc\u00eda",
+          "to": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "count": 2
+        },
+        {
+          "from": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "to": "Lamine Yamal Nasraoui Ebana",
+          "count": 2
+        },
+        {
+          "from": "Alejandro Grimaldo Garc\u00eda",
+          "to": "\u00c1lvaro Borja Morata Mart\u00edn",
+          "count": 2
+        },
+        {
+          "from": "Robin Aime Robert Le Normand",
+          "to": "Mikel Merino Zaz\u00f3n",
+          "count": 2
+        },
+        {
+          "from": "Daniel Vivian Moreno",
+          "to": "Jes\u00fas Navas Gonz\u00e1lez",
+          "count": 2
+        },
+        {
+          "from": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "to": "\u00c1lvaro Borja Morata Mart\u00edn",
+          "count": 2
+        },
+        {
+          "from": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "to": "Robin Aime Robert Le Normand",
+          "count": 2
+        },
+        {
+          "from": "Jes\u00fas Navas Gonz\u00e1lez",
+          "to": "Lamine Yamal Nasraoui Ebana",
+          "count": 2
+        },
+        {
+          "from": "Mikel Merino Zaz\u00f3n",
+          "to": "Fermin Lopez Marin",
+          "count": 1
+        },
+        {
+          "from": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "to": "Daniel Vivian Moreno",
+          "count": 1
+        },
+        {
+          "from": "Fermin Lopez Marin",
+          "to": "Jes\u00fas Navas Gonz\u00e1lez",
+          "count": 1
+        },
+        {
+          "from": "Daniel Vivian Moreno",
+          "to": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "count": 1
+        },
+        {
+          "from": "\u00c1lvaro Borja Morata Mart\u00edn",
+          "to": "Robin Aime Robert Le Normand",
+          "count": 1
+        },
+        {
+          "from": "Robin Aime Robert Le Normand",
+          "to": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "count": 1
+        },
+        {
+          "from": "Jes\u00fas Navas Gonz\u00e1lez",
+          "to": "Mikel Merino Zaz\u00f3n",
+          "count": 1
+        },
+        {
+          "from": "\u00c1lvaro Borja Morata Mart\u00edn",
+          "to": "Mikel Merino Zaz\u00f3n",
+          "count": 1
+        },
+        {
+          "from": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "to": "Mikel Merino Zaz\u00f3n",
+          "count": 1
+        },
+        {
+          "from": "Mikel Merino Zaz\u00f3n",
+          "to": "Robin Aime Robert Le Normand",
+          "count": 1
+        },
+        {
+          "from": "Jes\u00fas Navas Gonz\u00e1lez",
+          "to": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "count": 1
+        },
+        {
+          "from": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "to": "Jes\u00fas Navas Gonz\u00e1lez",
+          "count": 1
+        },
+        {
+          "from": "Lamine Yamal Nasraoui Ebana",
+          "to": "\u00c1lvaro Borja Morata Mart\u00edn",
+          "count": 1
+        },
+        {
+          "from": "\u00c1lvaro Borja Morata Mart\u00edn",
+          "to": "Lamine Yamal Nasraoui Ebana",
+          "count": 1
+        },
+        {
+          "from": "Mikel Merino Zaz\u00f3n",
+          "to": "Jes\u00fas Navas Gonz\u00e1lez",
+          "count": 1
+        },
+        {
+          "from": "David Raya Martin",
+          "to": "Mikel Merino Zaz\u00f3n",
+          "count": 1
+        },
+        {
+          "from": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "to": "Fermin Lopez Marin",
+          "count": 1
+        },
+        {
+          "from": "David Raya Martin",
+          "to": "Robin Aime Robert Le Normand",
+          "count": 1
+        },
+        {
+          "from": "Alejandro Grimaldo Garc\u00eda",
+          "to": "Mikel Merino Zaz\u00f3n",
+          "count": 1
+        },
+        {
+          "from": "\u00c1lvaro Borja Morata Mart\u00edn",
+          "to": "Alejandro Grimaldo Garc\u00eda",
+          "count": 1
+        },
+        {
+          "from": "Daniel Vivian Moreno",
+          "to": "\u00c1lvaro Borja Morata Mart\u00edn",
+          "count": 1
+        },
+        {
+          "from": "\u00c1lvaro Borja Morata Mart\u00edn",
+          "to": "Fermin Lopez Marin",
+          "count": 1
+        },
+        {
+          "from": "Fermin Lopez Marin",
+          "to": "Lamine Yamal Nasraoui Ebana",
+          "count": 1
+        },
+        {
+          "from": "David Raya Martin",
+          "to": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "count": 1
+        },
+        {
+          "from": "Alejandro Grimaldo Garc\u00eda",
+          "to": "David Raya Martin",
+          "count": 1
+        },
+        {
+          "from": "David Raya Martin",
+          "to": "Jes\u00fas Navas Gonz\u00e1lez",
+          "count": 1
+        },
+        {
+          "from": "Lamine Yamal Nasraoui Ebana",
+          "to": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "count": 1
+        },
+        {
+          "from": "Daniel Olmo Carvajal",
+          "to": "Mikel Merino Zaz\u00f3n",
+          "count": 1
+        },
+        {
+          "from": "Daniel Vivian Moreno",
+          "to": "Lamine Yamal Nasraoui Ebana",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "label": "83'\u2013FT",
+      "nodes": [
+        {
+          "player": "Alejandro Baena Rodr\u00edguez",
+          "display_name": "\u00c1lex Baena",
+          "x": 38.62,
+          "y": 7.83,
+          "passes": 4
+        },
+        {
+          "player": "Alejandro Grimaldo Garc\u00eda",
+          "display_name": "\u00c1lex Grimaldo",
+          "x": 37.43,
+          "y": 9.07,
+          "passes": 6
+        },
+        {
+          "player": "Daniel Vivian Moreno",
+          "display_name": "Dani Vivian",
+          "x": 33.05,
+          "y": 44.0,
+          "passes": 2
+        },
+        {
+          "player": "David Raya Martin",
+          "display_name": "David Raya",
+          "x": 16.43,
+          "y": 34.08,
+          "passes": 4
+        },
+        {
+          "player": "Fermin Lopez Marin",
+          "display_name": "Ferm\u00edn L\u00f3pez",
+          "x": 32.62,
+          "y": 37.17,
+          "passes": 4
+        },
+        {
+          "player": "Jes\u00fas Navas Gonz\u00e1lez",
+          "display_name": "Jes\u00fas Navas",
+          "x": 82.55,
+          "y": 78.45,
+          "passes": 2
+        },
+        {
+          "player": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "display_name": "Mart\u00edn Zubimendi",
+          "x": 45.23,
+          "y": 26.45,
+          "passes": 4
+        },
+        {
+          "player": "Mikel Merino Zaz\u00f3n",
+          "display_name": "Mikel Merino",
+          "x": 40.3,
+          "y": 10.0,
+          "passes": 2
+        },
+        {
+          "player": "Robin Aime Robert Le Normand",
+          "display_name": "Robin Le Normand",
+          "x": 34.83,
+          "y": 19.77,
+          "passes": 3
+        },
+        {
+          "player": "\u00c1lvaro Borja Morata Mart\u00edn",
+          "display_name": "\u00c1lvaro Morata",
+          "x": 66.25,
+          "y": 43.6,
+          "passes": 2
+        }
+      ],
+      "edges": [
+        {
+          "from": "Robin Aime Robert Le Normand",
+          "to": "Daniel Vivian Moreno",
+          "count": 2
+        },
+        {
+          "from": "Fermin Lopez Marin",
+          "to": "Alejandro Baena Rodr\u00edguez",
+          "count": 2
+        },
+        {
+          "from": "Alejandro Grimaldo Garc\u00eda",
+          "to": "Alejandro Baena Rodr\u00edguez",
+          "count": 2
+        },
+        {
+          "from": "David Raya Martin",
+          "to": "\u00c1lvaro Borja Morata Mart\u00edn",
+          "count": 1
+        },
+        {
+          "from": "Alejandro Baena Rodr\u00edguez",
+          "to": "Alejandro Grimaldo Garc\u00eda",
+          "count": 1
+        },
+        {
+          "from": "Alejandro Grimaldo Garc\u00eda",
+          "to": "Mikel Merino Zaz\u00f3n",
+          "count": 1
+        },
+        {
+          "from": "Mikel Merino Zaz\u00f3n",
+          "to": "Robin Aime Robert Le Normand",
+          "count": 1
+        },
+        {
+          "from": "Daniel Vivian Moreno",
+          "to": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "count": 1
+        },
+        {
+          "from": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "to": "Alejandro Baena Rodr\u00edguez",
+          "count": 1
+        },
+        {
+          "from": "David Raya Martin",
+          "to": "Robin Aime Robert Le Normand",
+          "count": 1
+        },
+        {
+          "from": "Alejandro Baena Rodr\u00edguez",
+          "to": "Mikel Merino Zaz\u00f3n",
+          "count": 1
+        },
+        {
+          "from": "Mikel Merino Zaz\u00f3n",
+          "to": "Alejandro Baena Rodr\u00edguez",
+          "count": 1
+        },
+        {
+          "from": "Alejandro Baena Rodr\u00edguez",
+          "to": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "count": 1
+        },
+        {
+          "from": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "to": "Alejandro Grimaldo Garc\u00eda",
+          "count": 1
+        },
+        {
+          "from": "Alejandro Grimaldo Garc\u00eda",
+          "to": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "count": 1
+        },
+        {
+          "from": "Alejandro Grimaldo Garc\u00eda",
+          "to": "Robin Aime Robert Le Normand",
+          "count": 1
+        },
+        {
+          "from": "Robin Aime Robert Le Normand",
+          "to": "David Raya Martin",
+          "count": 1
+        },
+        {
+          "from": "David Raya Martin",
+          "to": "Fermin Lopez Marin",
+          "count": 1
+        },
+        {
+          "from": "Daniel Vivian Moreno",
+          "to": "David Raya Martin",
+          "count": 1
+        },
+        {
+          "from": "David Raya Martin",
+          "to": "Jes\u00fas Navas Gonz\u00e1lez",
+          "count": 1
+        },
+        {
+          "from": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "to": "Lamine Yamal Nasraoui Ebana",
+          "count": 1
+        },
+        {
+          "from": "Jes\u00fas Navas Gonz\u00e1lez",
+          "to": "\u00c1lvaro Borja Morata Mart\u00edn",
+          "count": 1
+        },
+        {
+          "from": "\u00c1lvaro Borja Morata Mart\u00edn",
+          "to": "Jes\u00fas Navas Gonz\u00e1lez",
+          "count": 1
+        },
+        {
+          "from": "Jes\u00fas Navas Gonz\u00e1lez",
+          "to": "Lamine Yamal Nasraoui Ebana",
+          "count": 1
+        },
+        {
+          "from": "Alejandro Grimaldo Garc\u00eda",
+          "to": "\u00c1lvaro Borja Morata Mart\u00edn",
+          "count": 1
+        },
+        {
+          "from": "Alejandro Baena Rodr\u00edguez",
+          "to": "Fermin Lopez Marin",
+          "count": 1
+        },
+        {
+          "from": "Fermin Lopez Marin",
+          "to": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "count": 1
+        },
+        {
+          "from": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "to": "\u00c1lvaro Borja Morata Mart\u00edn",
+          "count": 1
+        },
+        {
+          "from": "\u00c1lvaro Borja Morata Mart\u00edn",
+          "to": "Fermin Lopez Marin",
+          "count": 1
+        },
+        {
+          "from": "Fermin Lopez Marin",
+          "to": "Lamine Yamal Nasraoui Ebana",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "substitutions": [
+    {
+      "minute": 45,
+      "player_off": "Aymeric Laporte",
+      "player_on": "Robin Aime Robert Le Normand"
+    },
+    {
+      "minute": 61,
+      "player_off": "Mikel Oyarzabal Ugarte",
+      "player_on": "Fermin Lopez Marin"
+    },
+    {
+      "minute": 70,
+      "player_off": "Ferr\u00e1n Torres Garc\u00eda",
+      "player_on": "Lamine Yamal Nasraoui Ebana"
+    },
+    {
+      "minute": 70,
+      "player_off": "Jos\u00e9 Luis Sanmart\u00edn Mato",
+      "player_on": "\u00c1lvaro Borja Morata Mart\u00edn"
+    },
+    {
+      "minute": 83,
+      "player_off": "Daniel Olmo Carvajal",
+      "player_on": "Alejandro Baena Rodr\u00edguez"
+    }
+  ],
+  "metadata": {
+    "match_id": 3930179,
+    "team": "Spain",
+    "filter": "completed passes, per substitution window",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Albania vs Spain"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "home": {
+    "team": "Czech Republic",
+    "color": "#D7141A",
+    "score": 1
+  },
+  "away": {
+    "team": "Turkey",
+    "color": "#E30A17",
+    "score": 2
+  },
+  "rows": [
+    {
+      "label": "Shots",
+      "home_value": 12.0,
+      "away_value": 18.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Shots on Target",
+      "home_value": 6.0,
+      "away_value": 5.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Possession",
+      "home_value": 36.0,
+      "away_value": 64.0,
+      "scale_type": "fixed100",
+      "format": "pct",
+      "tier": "basic"
+    },
+    {
+      "label": "Corners",
+      "home_value": 3.0,
+      "away_value": 7.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Fouls",
+      "home_value": 18.0,
+      "away_value": 10.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Yellow Cards",
+      "home_value": 6.0,
+      "away_value": 11.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Red Cards",
+      "home_value": 2.0,
+      "away_value": 0.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "xG",
+      "home_value": 1.41,
+      "away_value": 1.22,
+      "scale_type": "sum",
+      "format": "float1",
+      "tier": "advanced"
+    }
+  ],
+  "metadata": {
+    "match_id": 3930184,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Czech Republic vs Turkey"
+  }
+}

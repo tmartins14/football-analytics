@@ -1,0 +1,1309 @@
+{
+  "windows": [
+    {
+      "index": 0,
+      "label": "0'\u201357' (Starting XI)",
+      "nodes": [
+        {
+          "player": "Aymeric Laporte",
+          "display_name": "Aymeric Laporte",
+          "x": 53.01,
+          "y": 15.85,
+          "passes": 51
+        },
+        {
+          "player": "Daniel Olmo Carvajal",
+          "display_name": "Daniel Olmo",
+          "x": 69.96,
+          "y": 35.45,
+          "passes": 24
+        },
+        {
+          "player": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "display_name": "Fabi\u00e1n Ruiz",
+          "x": 57.76,
+          "y": 29.18,
+          "passes": 28
+        },
+        {
+          "player": "Jes\u00fas Navas Gonz\u00e1lez",
+          "display_name": "Jes\u00fas Navas",
+          "x": 58.6,
+          "y": 74.26,
+          "passes": 13
+        },
+        {
+          "player": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "display_name": "Nacho",
+          "x": 47.57,
+          "y": 49.23,
+          "passes": 30
+        },
+        {
+          "player": "Lamine Yamal Nasraoui Ebana",
+          "display_name": "Lamine Yamal",
+          "x": 72.34,
+          "y": 64.56,
+          "passes": 20
+        },
+        {
+          "player": "Marc Cucurella Saseta",
+          "display_name": "Marc Cucurella",
+          "x": 69.6,
+          "y": 8.64,
+          "passes": 35
+        },
+        {
+          "player": "Nicholas Williams Arthuer",
+          "display_name": "Nico Williams",
+          "x": 90.43,
+          "y": 10.46,
+          "passes": 18
+        },
+        {
+          "player": "Rodrigo Hern\u00e1ndez Cascante",
+          "display_name": "Rodri",
+          "x": 51.82,
+          "y": 41.55,
+          "passes": 31
+        },
+        {
+          "player": "Unai Sim\u00f3n Mendibil",
+          "display_name": "Unai Sim\u00f3n",
+          "x": 11.62,
+          "y": 38.75,
+          "passes": 18
+        },
+        {
+          "player": "\u00c1lvaro Borja Morata Mart\u00edn",
+          "display_name": "\u00c1lvaro Morata",
+          "x": 62.08,
+          "y": 35.68,
+          "passes": 5
+        }
+      ],
+      "edges": [
+        {
+          "from": "Marc Cucurella Saseta",
+          "to": "Aymeric Laporte",
+          "count": 16
+        },
+        {
+          "from": "Aymeric Laporte",
+          "to": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "count": 12
+        },
+        {
+          "from": "Aymeric Laporte",
+          "to": "Nicholas Williams Arthuer",
+          "count": 9
+        },
+        {
+          "from": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "to": "Aymeric Laporte",
+          "count": 9
+        },
+        {
+          "from": "Aymeric Laporte",
+          "to": "Marc Cucurella Saseta",
+          "count": 9
+        },
+        {
+          "from": "Rodrigo Hern\u00e1ndez Cascante",
+          "to": "Aymeric Laporte",
+          "count": 8
+        },
+        {
+          "from": "Lamine Yamal Nasraoui Ebana",
+          "to": "Daniel Olmo Carvajal",
+          "count": 8
+        },
+        {
+          "from": "Aymeric Laporte",
+          "to": "Unai Sim\u00f3n Mendibil",
+          "count": 8
+        },
+        {
+          "from": "Unai Sim\u00f3n Mendibil",
+          "to": "Aymeric Laporte",
+          "count": 8
+        },
+        {
+          "from": "Marc Cucurella Saseta",
+          "to": "Daniel Olmo Carvajal",
+          "count": 7
+        },
+        {
+          "from": "Nicholas Williams Arthuer",
+          "to": "Marc Cucurella Saseta",
+          "count": 6
+        },
+        {
+          "from": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "to": "Rodrigo Hern\u00e1ndez Cascante",
+          "count": 6
+        },
+        {
+          "from": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "to": "Nicholas Williams Arthuer",
+          "count": 6
+        },
+        {
+          "from": "Rodrigo Hern\u00e1ndez Cascante",
+          "to": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "count": 6
+        },
+        {
+          "from": "Unai Sim\u00f3n Mendibil",
+          "to": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "count": 6
+        },
+        {
+          "from": "Rodrigo Hern\u00e1ndez Cascante",
+          "to": "Lamine Yamal Nasraoui Ebana",
+          "count": 6
+        },
+        {
+          "from": "Daniel Olmo Carvajal",
+          "to": "Jes\u00fas Navas Gonz\u00e1lez",
+          "count": 5
+        },
+        {
+          "from": "Lamine Yamal Nasraoui Ebana",
+          "to": "Jes\u00fas Navas Gonz\u00e1lez",
+          "count": 5
+        },
+        {
+          "from": "Aymeric Laporte",
+          "to": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "count": 5
+        },
+        {
+          "from": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "to": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "count": 5
+        },
+        {
+          "from": "Rodrigo Hern\u00e1ndez Cascante",
+          "to": "Marc Cucurella Saseta",
+          "count": 5
+        },
+        {
+          "from": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "to": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "count": 5
+        },
+        {
+          "from": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "to": "Aymeric Laporte",
+          "count": 5
+        },
+        {
+          "from": "Daniel Olmo Carvajal",
+          "to": "Rodrigo Hern\u00e1ndez Cascante",
+          "count": 4
+        },
+        {
+          "from": "Nicholas Williams Arthuer",
+          "to": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "count": 4
+        },
+        {
+          "from": "Lamine Yamal Nasraoui Ebana",
+          "to": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "count": 4
+        },
+        {
+          "from": "Aymeric Laporte",
+          "to": "Rodrigo Hern\u00e1ndez Cascante",
+          "count": 4
+        },
+        {
+          "from": "Daniel Olmo Carvajal",
+          "to": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "count": 4
+        },
+        {
+          "from": "Jes\u00fas Navas Gonz\u00e1lez",
+          "to": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "count": 4
+        },
+        {
+          "from": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "to": "Lamine Yamal Nasraoui Ebana",
+          "count": 4
+        },
+        {
+          "from": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "to": "Rodrigo Hern\u00e1ndez Cascante",
+          "count": 4
+        },
+        {
+          "from": "Daniel Olmo Carvajal",
+          "to": "Marc Cucurella Saseta",
+          "count": 4
+        },
+        {
+          "from": "Jes\u00fas Navas Gonz\u00e1lez",
+          "to": "Lamine Yamal Nasraoui Ebana",
+          "count": 3
+        },
+        {
+          "from": "Marc Cucurella Saseta",
+          "to": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "count": 3
+        },
+        {
+          "from": "Nicholas Williams Arthuer",
+          "to": "Daniel Olmo Carvajal",
+          "count": 3
+        },
+        {
+          "from": "Marc Cucurella Saseta",
+          "to": "Nicholas Williams Arthuer",
+          "count": 3
+        },
+        {
+          "from": "Daniel Olmo Carvajal",
+          "to": "Aymeric Laporte",
+          "count": 3
+        },
+        {
+          "from": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "to": "Marc Cucurella Saseta",
+          "count": 3
+        },
+        {
+          "from": "\u00c1lvaro Borja Morata Mart\u00edn",
+          "to": "Daniel Olmo Carvajal",
+          "count": 2
+        },
+        {
+          "from": "Jes\u00fas Navas Gonz\u00e1lez",
+          "to": "Daniel Olmo Carvajal",
+          "count": 2
+        },
+        {
+          "from": "Aymeric Laporte",
+          "to": "Lamine Yamal Nasraoui Ebana",
+          "count": 2
+        },
+        {
+          "from": "Daniel Olmo Carvajal",
+          "to": "Nicholas Williams Arthuer",
+          "count": 2
+        },
+        {
+          "from": "Nicholas Williams Arthuer",
+          "to": "Lamine Yamal Nasraoui Ebana",
+          "count": 2
+        },
+        {
+          "from": "Marc Cucurella Saseta",
+          "to": "Rodrigo Hern\u00e1ndez Cascante",
+          "count": 2
+        },
+        {
+          "from": "\u00c1lvaro Borja Morata Mart\u00edn",
+          "to": "Rodrigo Hern\u00e1ndez Cascante",
+          "count": 2
+        },
+        {
+          "from": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "to": "Daniel Olmo Carvajal",
+          "count": 2
+        },
+        {
+          "from": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "to": "Lamine Yamal Nasraoui Ebana",
+          "count": 2
+        },
+        {
+          "from": "Nicholas Williams Arthuer",
+          "to": "\u00c1lvaro Borja Morata Mart\u00edn",
+          "count": 2
+        },
+        {
+          "from": "Rodrigo Hern\u00e1ndez Cascante",
+          "to": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "count": 2
+        },
+        {
+          "from": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "to": "Unai Sim\u00f3n Mendibil",
+          "count": 2
+        },
+        {
+          "from": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "to": "Daniel Olmo Carvajal",
+          "count": 2
+        },
+        {
+          "from": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "to": "Jes\u00fas Navas Gonz\u00e1lez",
+          "count": 2
+        },
+        {
+          "from": "Daniel Olmo Carvajal",
+          "to": "Lamine Yamal Nasraoui Ebana",
+          "count": 2
+        },
+        {
+          "from": "Marc Cucurella Saseta",
+          "to": "Lamine Yamal Nasraoui Ebana",
+          "count": 2
+        },
+        {
+          "from": "Jes\u00fas Navas Gonz\u00e1lez",
+          "to": "Rodrigo Hern\u00e1ndez Cascante",
+          "count": 2
+        },
+        {
+          "from": "Jes\u00fas Navas Gonz\u00e1lez",
+          "to": "Aymeric Laporte",
+          "count": 1
+        },
+        {
+          "from": "Lamine Yamal Nasraoui Ebana",
+          "to": "Nicholas Williams Arthuer",
+          "count": 1
+        },
+        {
+          "from": "Aymeric Laporte",
+          "to": "Daniel Olmo Carvajal",
+          "count": 1
+        },
+        {
+          "from": "Jes\u00fas Navas Gonz\u00e1lez",
+          "to": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "count": 1
+        },
+        {
+          "from": "Marc Cucurella Saseta",
+          "to": "Unai Sim\u00f3n Mendibil",
+          "count": 1
+        },
+        {
+          "from": "Marc Cucurella Saseta",
+          "to": "\u00c1lvaro Borja Morata Mart\u00edn",
+          "count": 1
+        },
+        {
+          "from": "Rodrigo Hern\u00e1ndez Cascante",
+          "to": "Nicholas Williams Arthuer",
+          "count": 1
+        },
+        {
+          "from": "Lamine Yamal Nasraoui Ebana",
+          "to": "Unai Sim\u00f3n Mendibil",
+          "count": 1
+        },
+        {
+          "from": "Unai Sim\u00f3n Mendibil",
+          "to": "Rodrigo Hern\u00e1ndez Cascante",
+          "count": 1
+        },
+        {
+          "from": "Rodrigo Hern\u00e1ndez Cascante",
+          "to": "Daniel Olmo Carvajal",
+          "count": 1
+        },
+        {
+          "from": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "to": "Jes\u00fas Navas Gonz\u00e1lez",
+          "count": 1
+        },
+        {
+          "from": "Aymeric Laporte",
+          "to": "\u00c1lvaro Borja Morata Mart\u00edn",
+          "count": 1
+        },
+        {
+          "from": "Rodrigo Hern\u00e1ndez Cascante",
+          "to": "Jes\u00fas Navas Gonz\u00e1lez",
+          "count": 1
+        },
+        {
+          "from": "Nicholas Williams Arthuer",
+          "to": "Aymeric Laporte",
+          "count": 1
+        },
+        {
+          "from": "Unai Sim\u00f3n Mendibil",
+          "to": "Lamine Yamal Nasraoui Ebana",
+          "count": 1
+        },
+        {
+          "from": "Unai Sim\u00f3n Mendibil",
+          "to": "Jes\u00fas Navas Gonz\u00e1lez",
+          "count": 1
+        },
+        {
+          "from": "Rodrigo Hern\u00e1ndez Cascante",
+          "to": "\u00c1lvaro Borja Morata Mart\u00edn",
+          "count": 1
+        },
+        {
+          "from": "\u00c1lvaro Borja Morata Mart\u00edn",
+          "to": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "count": 1
+        },
+        {
+          "from": "Lamine Yamal Nasraoui Ebana",
+          "to": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "count": 1
+        },
+        {
+          "from": "Unai Sim\u00f3n Mendibil",
+          "to": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "label": "57'\u201375'",
+      "nodes": [
+        {
+          "player": "Aymeric Laporte",
+          "display_name": "Aymeric Laporte",
+          "x": 51.02,
+          "y": 20.91,
+          "passes": 18
+        },
+        {
+          "player": "Daniel Olmo Carvajal",
+          "display_name": "Daniel Olmo",
+          "x": 70.09,
+          "y": 36.38,
+          "passes": 10
+        },
+        {
+          "player": "Daniel Vivian Moreno",
+          "display_name": "Dani Vivian",
+          "x": 43.92,
+          "y": 57.72,
+          "passes": 15
+        },
+        {
+          "player": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "display_name": "Fabi\u00e1n Ruiz",
+          "x": 62.56,
+          "y": 38.69,
+          "passes": 14
+        },
+        {
+          "player": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "display_name": "Nacho",
+          "x": 59.69,
+          "y": 69.81,
+          "passes": 7
+        },
+        {
+          "player": "Lamine Yamal Nasraoui Ebana",
+          "display_name": "Lamine Yamal",
+          "x": 75.02,
+          "y": 71.76,
+          "passes": 5
+        },
+        {
+          "player": "Marc Cucurella Saseta",
+          "display_name": "Marc Cucurella",
+          "x": 77.25,
+          "y": 10.04,
+          "passes": 12
+        },
+        {
+          "player": "Nicholas Williams Arthuer",
+          "display_name": "Nico Williams",
+          "x": 85.98,
+          "y": 18.57,
+          "passes": 6
+        },
+        {
+          "player": "Rodrigo Hern\u00e1ndez Cascante",
+          "display_name": "Rodri",
+          "x": 65.73,
+          "y": 34.97,
+          "passes": 11
+        },
+        {
+          "player": "Unai Sim\u00f3n Mendibil",
+          "display_name": "Unai Sim\u00f3n",
+          "x": 15.57,
+          "y": 40.64,
+          "passes": 16
+        },
+        {
+          "player": "\u00c1lvaro Borja Morata Mart\u00edn",
+          "display_name": "\u00c1lvaro Morata",
+          "x": 78.2,
+          "y": 17.53,
+          "passes": 3
+        }
+      ],
+      "edges": [
+        {
+          "from": "Unai Sim\u00f3n Mendibil",
+          "to": "Aymeric Laporte",
+          "count": 7
+        },
+        {
+          "from": "Unai Sim\u00f3n Mendibil",
+          "to": "Daniel Vivian Moreno",
+          "count": 6
+        },
+        {
+          "from": "Aymeric Laporte",
+          "to": "Unai Sim\u00f3n Mendibil",
+          "count": 6
+        },
+        {
+          "from": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "to": "Aymeric Laporte",
+          "count": 5
+        },
+        {
+          "from": "Daniel Vivian Moreno",
+          "to": "Unai Sim\u00f3n Mendibil",
+          "count": 5
+        },
+        {
+          "from": "Daniel Vivian Moreno",
+          "to": "Lamine Yamal Nasraoui Ebana",
+          "count": 3
+        },
+        {
+          "from": "Nicholas Williams Arthuer",
+          "to": "Marc Cucurella Saseta",
+          "count": 3
+        },
+        {
+          "from": "Aymeric Laporte",
+          "to": "Daniel Vivian Moreno",
+          "count": 3
+        },
+        {
+          "from": "Daniel Vivian Moreno",
+          "to": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "count": 3
+        },
+        {
+          "from": "Aymeric Laporte",
+          "to": "Marc Cucurella Saseta",
+          "count": 3
+        },
+        {
+          "from": "Marc Cucurella Saseta",
+          "to": "Nicholas Williams Arthuer",
+          "count": 3
+        },
+        {
+          "from": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "to": "Marc Cucurella Saseta",
+          "count": 3
+        },
+        {
+          "from": "Aymeric Laporte",
+          "to": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "count": 3
+        },
+        {
+          "from": "Marc Cucurella Saseta",
+          "to": "Daniel Olmo Carvajal",
+          "count": 3
+        },
+        {
+          "from": "Daniel Olmo Carvajal",
+          "to": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "count": 3
+        },
+        {
+          "from": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "to": "Rodrigo Hern\u00e1ndez Cascante",
+          "count": 3
+        },
+        {
+          "from": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "to": "Daniel Vivian Moreno",
+          "count": 3
+        },
+        {
+          "from": "Marc Cucurella Saseta",
+          "to": "Aymeric Laporte",
+          "count": 2
+        },
+        {
+          "from": "Rodrigo Hern\u00e1ndez Cascante",
+          "to": "Daniel Vivian Moreno",
+          "count": 2
+        },
+        {
+          "from": "Marc Cucurella Saseta",
+          "to": "Rodrigo Hern\u00e1ndez Cascante",
+          "count": 2
+        },
+        {
+          "from": "Marc Cucurella Saseta",
+          "to": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "count": 2
+        },
+        {
+          "from": "Rodrigo Hern\u00e1ndez Cascante",
+          "to": "Aymeric Laporte",
+          "count": 2
+        },
+        {
+          "from": "Daniel Olmo Carvajal",
+          "to": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "count": 2
+        },
+        {
+          "from": "Lamine Yamal Nasraoui Ebana",
+          "to": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "count": 2
+        },
+        {
+          "from": "Unai Sim\u00f3n Mendibil",
+          "to": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "count": 2
+        },
+        {
+          "from": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "to": "Lamine Yamal Nasraoui Ebana",
+          "count": 2
+        },
+        {
+          "from": "Rodrigo Hern\u00e1ndez Cascante",
+          "to": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "count": 2
+        },
+        {
+          "from": "Aymeric Laporte",
+          "to": "Rodrigo Hern\u00e1ndez Cascante",
+          "count": 2
+        },
+        {
+          "from": "Daniel Olmo Carvajal",
+          "to": "Rodrigo Hern\u00e1ndez Cascante",
+          "count": 2
+        },
+        {
+          "from": "Lamine Yamal Nasraoui Ebana",
+          "to": "Daniel Olmo Carvajal",
+          "count": 1
+        },
+        {
+          "from": "Daniel Olmo Carvajal",
+          "to": "Nicholas Williams Arthuer",
+          "count": 1
+        },
+        {
+          "from": "Daniel Vivian Moreno",
+          "to": "Rodrigo Hern\u00e1ndez Cascante",
+          "count": 1
+        },
+        {
+          "from": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "to": "\u00c1lvaro Borja Morata Mart\u00edn",
+          "count": 1
+        },
+        {
+          "from": "Daniel Vivian Moreno",
+          "to": "Aymeric Laporte",
+          "count": 1
+        },
+        {
+          "from": "Nicholas Williams Arthuer",
+          "to": "Aymeric Laporte",
+          "count": 1
+        },
+        {
+          "from": "Daniel Olmo Carvajal",
+          "to": "\u00c1lvaro Borja Morata Mart\u00edn",
+          "count": 1
+        },
+        {
+          "from": "\u00c1lvaro Borja Morata Mart\u00edn",
+          "to": "Nicholas Williams Arthuer",
+          "count": 1
+        },
+        {
+          "from": "Aymeric Laporte",
+          "to": "\u00c1lvaro Borja Morata Mart\u00edn",
+          "count": 1
+        },
+        {
+          "from": "\u00c1lvaro Borja Morata Mart\u00edn",
+          "to": "Marc Cucurella Saseta",
+          "count": 1
+        },
+        {
+          "from": "Daniel Vivian Moreno",
+          "to": "Daniel Olmo Carvajal",
+          "count": 1
+        },
+        {
+          "from": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "to": "Daniel Vivian Moreno",
+          "count": 1
+        },
+        {
+          "from": "Unai Sim\u00f3n Mendibil",
+          "to": "Daniel Olmo Carvajal",
+          "count": 1
+        },
+        {
+          "from": "Rodrigo Hern\u00e1ndez Cascante",
+          "to": "Lamine Yamal Nasraoui Ebana",
+          "count": 1
+        },
+        {
+          "from": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "to": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "count": 1
+        },
+        {
+          "from": "Nicholas Williams Arthuer",
+          "to": "\u00c1lvaro Borja Morata Mart\u00edn",
+          "count": 1
+        },
+        {
+          "from": "Rodrigo Hern\u00e1ndez Cascante",
+          "to": "\u00c1lvaro Borja Morata Mart\u00edn",
+          "count": 1
+        },
+        {
+          "from": "Daniel Vivian Moreno",
+          "to": "\u00c1lvaro Borja Morata Mart\u00edn",
+          "count": 1
+        },
+        {
+          "from": "\u00c1lvaro Borja Morata Mart\u00edn",
+          "to": "Daniel Olmo Carvajal",
+          "count": 1
+        },
+        {
+          "from": "Rodrigo Hern\u00e1ndez Cascante",
+          "to": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "count": 1
+        },
+        {
+          "from": "Lamine Yamal Nasraoui Ebana",
+          "to": "Nicholas Williams Arthuer",
+          "count": 1
+        },
+        {
+          "from": "Nicholas Williams Arthuer",
+          "to": "Lamine Yamal Nasraoui Ebana",
+          "count": 1
+        },
+        {
+          "from": "Lamine Yamal Nasraoui Ebana",
+          "to": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "count": 1
+        },
+        {
+          "from": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "to": "Daniel Olmo Carvajal",
+          "count": 1
+        },
+        {
+          "from": "Daniel Olmo Carvajal",
+          "to": "Aymeric Laporte",
+          "count": 1
+        },
+        {
+          "from": "Rodrigo Hern\u00e1ndez Cascante",
+          "to": "Daniel Olmo Carvajal",
+          "count": 1
+        },
+        {
+          "from": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "to": "Daniel Olmo Carvajal",
+          "count": 1
+        },
+        {
+          "from": "Rodrigo Hern\u00e1ndez Cascante",
+          "to": "Marc Cucurella Saseta",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "label": "76'\u201392'",
+      "nodes": [
+        {
+          "player": "Aymeric Laporte",
+          "display_name": "Aymeric Laporte",
+          "x": 27.43,
+          "y": 26.13,
+          "passes": 6
+        },
+        {
+          "player": "Daniel Vivian Moreno",
+          "display_name": "Dani Vivian",
+          "x": 42.4,
+          "y": 56.3,
+          "passes": 3
+        },
+        {
+          "player": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "display_name": "Fabi\u00e1n Ruiz",
+          "x": 56.12,
+          "y": 31.36,
+          "passes": 12
+        },
+        {
+          "player": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "display_name": "Nacho",
+          "x": 32.98,
+          "y": 70.36,
+          "passes": 5
+        },
+        {
+          "player": "Marc Cucurella Saseta",
+          "display_name": "Marc Cucurella",
+          "x": 51.6,
+          "y": 7.7,
+          "passes": 4
+        },
+        {
+          "player": "Mikel Merino Zaz\u00f3n",
+          "display_name": "Mikel Merino",
+          "x": 64.76,
+          "y": 49.12,
+          "passes": 13
+        },
+        {
+          "player": "Mikel Oyarzabal Ugarte",
+          "display_name": "Mikel Oyarzabal",
+          "x": 68.25,
+          "y": 27.07,
+          "passes": 4
+        },
+        {
+          "player": "Nicholas Williams Arthuer",
+          "display_name": "Nico Williams",
+          "x": 91.43,
+          "y": 9.43,
+          "passes": 3
+        },
+        {
+          "player": "Rodrigo Hern\u00e1ndez Cascante",
+          "display_name": "Rodri",
+          "x": 59.29,
+          "y": 36.57,
+          "passes": 10
+        },
+        {
+          "player": "Unai Sim\u00f3n Mendibil",
+          "display_name": "Unai Sim\u00f3n",
+          "x": 11.5,
+          "y": 40.6,
+          "passes": 3
+        }
+      ],
+      "edges": [
+        {
+          "from": "Rodrigo Hern\u00e1ndez Cascante",
+          "to": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "count": 5
+        },
+        {
+          "from": "Mikel Merino Zaz\u00f3n",
+          "to": "Rodrigo Hern\u00e1ndez Cascante",
+          "count": 3
+        },
+        {
+          "from": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "to": "Daniel Vivian Moreno",
+          "count": 3
+        },
+        {
+          "from": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "to": "Mikel Merino Zaz\u00f3n",
+          "count": 3
+        },
+        {
+          "from": "Mikel Merino Zaz\u00f3n",
+          "to": "Lamine Yamal Nasraoui Ebana",
+          "count": 3
+        },
+        {
+          "from": "Rodrigo Hern\u00e1ndez Cascante",
+          "to": "Mikel Merino Zaz\u00f3n",
+          "count": 3
+        },
+        {
+          "from": "Mikel Merino Zaz\u00f3n",
+          "to": "Mikel Oyarzabal Ugarte",
+          "count": 3
+        },
+        {
+          "from": "Aymeric Laporte",
+          "to": "Unai Sim\u00f3n Mendibil",
+          "count": 2
+        },
+        {
+          "from": "Daniel Vivian Moreno",
+          "to": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "count": 2
+        },
+        {
+          "from": "Unai Sim\u00f3n Mendibil",
+          "to": "Mikel Merino Zaz\u00f3n",
+          "count": 2
+        },
+        {
+          "from": "Mikel Merino Zaz\u00f3n",
+          "to": "Nicholas Williams Arthuer",
+          "count": 2
+        },
+        {
+          "from": "Rodrigo Hern\u00e1ndez Cascante",
+          "to": "Mikel Oyarzabal Ugarte",
+          "count": 2
+        },
+        {
+          "from": "Aymeric Laporte",
+          "to": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "count": 2
+        },
+        {
+          "from": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "to": "Marc Cucurella Saseta",
+          "count": 2
+        },
+        {
+          "from": "Marc Cucurella Saseta",
+          "to": "Rodrigo Hern\u00e1ndez Cascante",
+          "count": 2
+        },
+        {
+          "from": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "to": "Rodrigo Hern\u00e1ndez Cascante",
+          "count": 2
+        },
+        {
+          "from": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "to": "Mikel Merino Zaz\u00f3n",
+          "count": 2
+        },
+        {
+          "from": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "to": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "count": 1
+        },
+        {
+          "from": "Daniel Vivian Moreno",
+          "to": "Unai Sim\u00f3n Mendibil",
+          "count": 1
+        },
+        {
+          "from": "Unai Sim\u00f3n Mendibil",
+          "to": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "count": 1
+        },
+        {
+          "from": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "to": "Unai Sim\u00f3n Mendibil",
+          "count": 1
+        },
+        {
+          "from": "Nicholas Williams Arthuer",
+          "to": "Mikel Oyarzabal Ugarte",
+          "count": 1
+        },
+        {
+          "from": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "to": "Rodrigo Hern\u00e1ndez Cascante",
+          "count": 1
+        },
+        {
+          "from": "Mikel Oyarzabal Ugarte",
+          "to": "Rodrigo Hern\u00e1ndez Cascante",
+          "count": 1
+        },
+        {
+          "from": "Mikel Merino Zaz\u00f3n",
+          "to": "Daniel Vivian Moreno",
+          "count": 1
+        },
+        {
+          "from": "Mikel Merino Zaz\u00f3n",
+          "to": "Aymeric Laporte",
+          "count": 1
+        },
+        {
+          "from": "Aymeric Laporte",
+          "to": "Marc Cucurella Saseta",
+          "count": 1
+        },
+        {
+          "from": "Marc Cucurella Saseta",
+          "to": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "count": 1
+        },
+        {
+          "from": "Aymeric Laporte",
+          "to": "Mikel Oyarzabal Ugarte",
+          "count": 1
+        },
+        {
+          "from": "Mikel Oyarzabal Ugarte",
+          "to": "Mikel Merino Zaz\u00f3n",
+          "count": 1
+        },
+        {
+          "from": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "to": "Nicholas Williams Arthuer",
+          "count": 1
+        },
+        {
+          "from": "Nicholas Williams Arthuer",
+          "to": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "count": 1
+        },
+        {
+          "from": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "to": "Aymeric Laporte",
+          "count": 1
+        },
+        {
+          "from": "Mikel Oyarzabal Ugarte",
+          "to": "Nicholas Williams Arthuer",
+          "count": 1
+        },
+        {
+          "from": "Mikel Oyarzabal Ugarte",
+          "to": "Marc Cucurella Saseta",
+          "count": 1
+        },
+        {
+          "from": "Nicholas Williams Arthuer",
+          "to": "Marc Cucurella Saseta",
+          "count": 1
+        },
+        {
+          "from": "Marc Cucurella Saseta",
+          "to": "Nicholas Williams Arthuer",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "label": "92'\u201393'",
+      "nodes": [
+        {
+          "player": "Nicholas Williams Arthuer",
+          "display_name": "Nico Williams",
+          "x": 90.6,
+          "y": 3.7,
+          "passes": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "Nicholas Williams Arthuer",
+          "to": "Rodrigo Hern\u00e1ndez Cascante",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "label": "93'\u2013FT",
+      "nodes": [
+        {
+          "player": "Aymeric Laporte",
+          "display_name": "Aymeric Laporte",
+          "x": 49.5,
+          "y": 48.0,
+          "passes": 1
+        },
+        {
+          "player": "Daniel Vivian Moreno",
+          "display_name": "Dani Vivian",
+          "x": 36.05,
+          "y": 51.45,
+          "passes": 2
+        },
+        {
+          "player": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "display_name": "Fabi\u00e1n Ruiz",
+          "x": 85.35,
+          "y": 13.53,
+          "passes": 4
+        },
+        {
+          "player": "Ferr\u00e1n Torres Garc\u00eda",
+          "display_name": "Ferr\u00e1n Torres",
+          "x": 111.2,
+          "y": 4.3,
+          "passes": 1
+        },
+        {
+          "player": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "display_name": "Nacho",
+          "x": 73.45,
+          "y": 69.65,
+          "passes": 2
+        },
+        {
+          "player": "Marc Cucurella Saseta",
+          "display_name": "Marc Cucurella",
+          "x": 69.3,
+          "y": 10.8,
+          "passes": 1
+        },
+        {
+          "player": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "display_name": "Mart\u00edn Zubimendi",
+          "x": 76.3,
+          "y": 47.0,
+          "passes": 2
+        },
+        {
+          "player": "Mikel Merino Zaz\u00f3n",
+          "display_name": "Mikel Merino",
+          "x": 103.3,
+          "y": 14.8,
+          "passes": 1
+        },
+        {
+          "player": "Mikel Oyarzabal Ugarte",
+          "display_name": "Mikel Oyarzabal",
+          "x": 102.2,
+          "y": 9.13,
+          "passes": 3
+        },
+        {
+          "player": "Rodrigo Hern\u00e1ndez Cascante",
+          "display_name": "Rodri",
+          "x": 66.95,
+          "y": 46.8,
+          "passes": 2
+        }
+      ],
+      "edges": [
+        {
+          "from": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "to": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "count": 2
+        },
+        {
+          "from": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "to": "Mikel Oyarzabal Ugarte",
+          "count": 2
+        },
+        {
+          "from": "Mikel Oyarzabal Ugarte",
+          "to": "Ferr\u00e1n Torres Garc\u00eda",
+          "count": 2
+        },
+        {
+          "from": "Rodrigo Hern\u00e1ndez Cascante",
+          "to": "Aymeric Laporte",
+          "count": 1
+        },
+        {
+          "from": "Aymeric Laporte",
+          "to": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "count": 1
+        },
+        {
+          "from": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "to": "Marc Cucurella Saseta",
+          "count": 1
+        },
+        {
+          "from": "Marc Cucurella Saseta",
+          "to": "Mikel Oyarzabal Ugarte",
+          "count": 1
+        },
+        {
+          "from": "Mikel Oyarzabal Ugarte",
+          "to": "Mikel Merino Zaz\u00f3n",
+          "count": 1
+        },
+        {
+          "from": "Mikel Merino Zaz\u00f3n",
+          "to": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "count": 1
+        },
+        {
+          "from": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "to": "Rodrigo Hern\u00e1ndez Cascante",
+          "count": 1
+        },
+        {
+          "from": "Rodrigo Hern\u00e1ndez Cascante",
+          "to": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "count": 1
+        },
+        {
+          "from": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "to": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "count": 1
+        },
+        {
+          "from": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "to": "Daniel Vivian Moreno",
+          "count": 1
+        },
+        {
+          "from": "Daniel Vivian Moreno",
+          "to": "Unai Sim\u00f3n Mendibil",
+          "count": 1
+        },
+        {
+          "from": "Daniel Vivian Moreno",
+          "to": "Mikel Oyarzabal Ugarte",
+          "count": 1
+        },
+        {
+          "from": "Ferr\u00e1n Torres Garc\u00eda",
+          "to": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "substitutions": [
+    {
+      "minute": 57,
+      "player_off": "Jes\u00fas Navas Gonz\u00e1lez",
+      "player_on": "Daniel Vivian Moreno"
+    },
+    {
+      "minute": 75,
+      "player_off": "Daniel Olmo Carvajal",
+      "player_on": "Mikel Merino Zaz\u00f3n"
+    },
+    {
+      "minute": 76,
+      "player_off": "\u00c1lvaro Borja Morata Mart\u00edn",
+      "player_on": "Mikel Oyarzabal Ugarte"
+    },
+    {
+      "minute": 92,
+      "player_off": "Lamine Yamal Nasraoui Ebana",
+      "player_on": "Ferr\u00e1n Torres Garc\u00eda"
+    },
+    {
+      "minute": 93,
+      "player_off": "Nicholas Williams Arthuer",
+      "player_on": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez"
+    }
+  ],
+  "metadata": {
+    "match_id": 3942752,
+    "team": "Spain",
+    "filter": "completed passes, per substitution window",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Spain vs France"
+  }
+}

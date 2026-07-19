@@ -1,0 +1,848 @@
+{
+  "windows": [
+    {
+      "index": 0,
+      "label": "0'\u201367' (Starting XI)",
+      "nodes": [
+        {
+          "player": "Jakub Moder",
+          "display_name": "Jakub Moder",
+          "x": 47.08,
+          "y": 31.5,
+          "passes": 47
+        },
+        {
+          "player": "Jakub Piotr Kiwior",
+          "display_name": "Jakub Piotr Kiwior",
+          "x": 47.16,
+          "y": 10.64,
+          "passes": 34
+        },
+        {
+          "player": "Jan Bednarek",
+          "display_name": "Jan Bednarek",
+          "x": 31.56,
+          "y": 58.39,
+          "passes": 19
+        },
+        {
+          "player": "Kacper Urbanski",
+          "display_name": "Kacper Urbanski",
+          "x": 65.79,
+          "y": 42.99,
+          "passes": 22
+        },
+        {
+          "player": "Nicola Zalewski",
+          "display_name": "Nicola Zalewski",
+          "x": 58.33,
+          "y": 8.54,
+          "passes": 18
+        },
+        {
+          "player": "Pawe\u0142 Dawidowicz",
+          "display_name": "Pawe\u0142 Dawidowicz",
+          "x": 23.55,
+          "y": 31.4,
+          "passes": 24
+        },
+        {
+          "player": "Piotr Zieli\u0144ski",
+          "display_name": "Piotr Zieli\u0144ski",
+          "x": 56.46,
+          "y": 41.53,
+          "passes": 37
+        },
+        {
+          "player": "Przemys\u0142aw Frankowski",
+          "display_name": "Przemys\u0142aw Frankowski",
+          "x": 44.19,
+          "y": 68.24,
+          "passes": 27
+        },
+        {
+          "player": "Robert Lewandowski",
+          "display_name": "Robert Lewandowski",
+          "x": 47.72,
+          "y": 32.44,
+          "passes": 14
+        },
+        {
+          "player": "Sebastian Szyma\u0144ski",
+          "display_name": "Sebastian Szyma\u0144ski",
+          "x": 53.54,
+          "y": 48.94,
+          "passes": 16
+        },
+        {
+          "player": "\u0141ukasz Skorupski",
+          "display_name": "\u0141ukasz Skorupski",
+          "x": 8.64,
+          "y": 38.36,
+          "passes": 20
+        }
+      ],
+      "edges": [
+        {
+          "from": "Jakub Moder",
+          "to": "Jakub Piotr Kiwior",
+          "count": 13
+        },
+        {
+          "from": "Jakub Piotr Kiwior",
+          "to": "Nicola Zalewski",
+          "count": 12
+        },
+        {
+          "from": "Jakub Moder",
+          "to": "Piotr Zieli\u0144ski",
+          "count": 10
+        },
+        {
+          "from": "Jakub Piotr Kiwior",
+          "to": "Jakub Moder",
+          "count": 10
+        },
+        {
+          "from": "\u0141ukasz Skorupski",
+          "to": "Pawe\u0142 Dawidowicz",
+          "count": 9
+        },
+        {
+          "from": "Pawe\u0142 Dawidowicz",
+          "to": "Jakub Moder",
+          "count": 8
+        },
+        {
+          "from": "Piotr Zieli\u0144ski",
+          "to": "Przemys\u0142aw Frankowski",
+          "count": 8
+        },
+        {
+          "from": "Piotr Zieli\u0144ski",
+          "to": "Kacper Urbanski",
+          "count": 8
+        },
+        {
+          "from": "Przemys\u0142aw Frankowski",
+          "to": "Piotr Zieli\u0144ski",
+          "count": 7
+        },
+        {
+          "from": "Kacper Urbanski",
+          "to": "Piotr Zieli\u0144ski",
+          "count": 6
+        },
+        {
+          "from": "Jan Bednarek",
+          "to": "Jakub Moder",
+          "count": 6
+        },
+        {
+          "from": "Jakub Moder",
+          "to": "Pawe\u0142 Dawidowicz",
+          "count": 6
+        },
+        {
+          "from": "Piotr Zieli\u0144ski",
+          "to": "Jakub Moder",
+          "count": 6
+        },
+        {
+          "from": "Nicola Zalewski",
+          "to": "Jakub Moder",
+          "count": 5
+        },
+        {
+          "from": "Nicola Zalewski",
+          "to": "Robert Lewandowski",
+          "count": 5
+        },
+        {
+          "from": "Jakub Moder",
+          "to": "Jan Bednarek",
+          "count": 5
+        },
+        {
+          "from": "Sebastian Szyma\u0144ski",
+          "to": "Przemys\u0142aw Frankowski",
+          "count": 5
+        },
+        {
+          "from": "Nicola Zalewski",
+          "to": "Jakub Piotr Kiwior",
+          "count": 5
+        },
+        {
+          "from": "Przemys\u0142aw Frankowski",
+          "to": "Jakub Moder",
+          "count": 5
+        },
+        {
+          "from": "Pawe\u0142 Dawidowicz",
+          "to": "Jakub Piotr Kiwior",
+          "count": 4
+        },
+        {
+          "from": "Pawe\u0142 Dawidowicz",
+          "to": "Jan Bednarek",
+          "count": 4
+        },
+        {
+          "from": "Przemys\u0142aw Frankowski",
+          "to": "Sebastian Szyma\u0144ski",
+          "count": 4
+        },
+        {
+          "from": "Piotr Zieli\u0144ski",
+          "to": "Sebastian Szyma\u0144ski",
+          "count": 4
+        },
+        {
+          "from": "Robert Lewandowski",
+          "to": "Sebastian Szyma\u0144ski",
+          "count": 4
+        },
+        {
+          "from": "Jakub Moder",
+          "to": "Kacper Urbanski",
+          "count": 4
+        },
+        {
+          "from": "Jan Bednarek",
+          "to": "Piotr Zieli\u0144ski",
+          "count": 4
+        },
+        {
+          "from": "Przemys\u0142aw Frankowski",
+          "to": "Kacper Urbanski",
+          "count": 4
+        },
+        {
+          "from": "Przemys\u0142aw Frankowski",
+          "to": "Robert Lewandowski",
+          "count": 4
+        },
+        {
+          "from": "Piotr Zieli\u0144ski",
+          "to": "Robert Lewandowski",
+          "count": 3
+        },
+        {
+          "from": "\u0141ukasz Skorupski",
+          "to": "Jakub Moder",
+          "count": 3
+        },
+        {
+          "from": "Sebastian Szyma\u0144ski",
+          "to": "Piotr Zieli\u0144ski",
+          "count": 3
+        },
+        {
+          "from": "Pawe\u0142 Dawidowicz",
+          "to": "\u0141ukasz Skorupski",
+          "count": 3
+        },
+        {
+          "from": "Jan Bednarek",
+          "to": "Pawe\u0142 Dawidowicz",
+          "count": 3
+        },
+        {
+          "from": "Kacper Urbanski",
+          "to": "Sebastian Szyma\u0144ski",
+          "count": 3
+        },
+        {
+          "from": "Piotr Zieli\u0144ski",
+          "to": "Nicola Zalewski",
+          "count": 3
+        },
+        {
+          "from": "Robert Lewandowski",
+          "to": "Jakub Piotr Kiwior",
+          "count": 3
+        },
+        {
+          "from": "Jakub Piotr Kiwior",
+          "to": "Sebastian Szyma\u0144ski",
+          "count": 3
+        },
+        {
+          "from": "\u0141ukasz Skorupski",
+          "to": "Kacper Urbanski",
+          "count": 3
+        },
+        {
+          "from": "Kacper Urbanski",
+          "to": "Przemys\u0142aw Frankowski",
+          "count": 3
+        },
+        {
+          "from": "Robert Lewandowski",
+          "to": "Przemys\u0142aw Frankowski",
+          "count": 3
+        },
+        {
+          "from": "Kacper Urbanski",
+          "to": "Jakub Piotr Kiwior",
+          "count": 3
+        },
+        {
+          "from": "Kacper Urbanski",
+          "to": "Jakub Moder",
+          "count": 3
+        },
+        {
+          "from": "Jan Bednarek",
+          "to": "Przemys\u0142aw Frankowski",
+          "count": 3
+        },
+        {
+          "from": "Jakub Moder",
+          "to": "Robert Lewandowski",
+          "count": 3
+        },
+        {
+          "from": "Jakub Moder",
+          "to": "Przemys\u0142aw Frankowski",
+          "count": 3
+        },
+        {
+          "from": "Jakub Piotr Kiwior",
+          "to": "\u0141ukasz Skorupski",
+          "count": 2
+        },
+        {
+          "from": "Sebastian Szyma\u0144ski",
+          "to": "Kacper Urbanski",
+          "count": 2
+        },
+        {
+          "from": "Pawe\u0142 Dawidowicz",
+          "to": "Kacper Urbanski",
+          "count": 2
+        },
+        {
+          "from": "Jakub Piotr Kiwior",
+          "to": "Piotr Zieli\u0144ski",
+          "count": 2
+        },
+        {
+          "from": "Jakub Piotr Kiwior",
+          "to": "Robert Lewandowski",
+          "count": 2
+        },
+        {
+          "from": "Jakub Moder",
+          "to": "Sebastian Szyma\u0144ski",
+          "count": 2
+        },
+        {
+          "from": "Piotr Zieli\u0144ski",
+          "to": "Jan Bednarek",
+          "count": 2
+        },
+        {
+          "from": "\u0141ukasz Skorupski",
+          "to": "Jakub Piotr Kiwior",
+          "count": 2
+        },
+        {
+          "from": "Jakub Piotr Kiwior",
+          "to": "Kacper Urbanski",
+          "count": 2
+        },
+        {
+          "from": "Sebastian Szyma\u0144ski",
+          "to": "Jakub Moder",
+          "count": 2
+        },
+        {
+          "from": "Robert Lewandowski",
+          "to": "Nicola Zalewski",
+          "count": 2
+        },
+        {
+          "from": "Sebastian Szyma\u0144ski",
+          "to": "Nicola Zalewski",
+          "count": 2
+        },
+        {
+          "from": "Piotr Zieli\u0144ski",
+          "to": "Jakub Piotr Kiwior",
+          "count": 2
+        },
+        {
+          "from": "Nicola Zalewski",
+          "to": "Piotr Zieli\u0144ski",
+          "count": 2
+        },
+        {
+          "from": "Pawe\u0142 Dawidowicz",
+          "to": "Nicola Zalewski",
+          "count": 2
+        },
+        {
+          "from": "Kacper Urbanski",
+          "to": "Pawe\u0142 Dawidowicz",
+          "count": 2
+        },
+        {
+          "from": "Robert Lewandowski",
+          "to": "Jan Bednarek",
+          "count": 1
+        },
+        {
+          "from": "Jan Bednarek",
+          "to": "\u0141ukasz Skorupski",
+          "count": 1
+        },
+        {
+          "from": "Sebastian Szyma\u0144ski",
+          "to": "Jan Bednarek",
+          "count": 1
+        },
+        {
+          "from": "Przemys\u0142aw Frankowski",
+          "to": "Jan Bednarek",
+          "count": 1
+        },
+        {
+          "from": "Przemys\u0142aw Frankowski",
+          "to": "Nicola Zalewski",
+          "count": 1
+        },
+        {
+          "from": "Sebastian Szyma\u0144ski",
+          "to": "Robert Lewandowski",
+          "count": 1
+        },
+        {
+          "from": "Piotr Zieli\u0144ski",
+          "to": "\u0141ukasz Skorupski",
+          "count": 1
+        },
+        {
+          "from": "Kacper Urbanski",
+          "to": "Nicola Zalewski",
+          "count": 1
+        },
+        {
+          "from": "\u0141ukasz Skorupski",
+          "to": "Przemys\u0142aw Frankowski",
+          "count": 1
+        },
+        {
+          "from": "Jan Bednarek",
+          "to": "Jakub Piotr Kiwior",
+          "count": 1
+        },
+        {
+          "from": "Nicola Zalewski",
+          "to": "Sebastian Szyma\u0144ski",
+          "count": 1
+        },
+        {
+          "from": "Kacper Urbanski",
+          "to": "Robert Lewandowski",
+          "count": 1
+        },
+        {
+          "from": "Jakub Moder",
+          "to": "Nicola Zalewski",
+          "count": 1
+        },
+        {
+          "from": "\u0141ukasz Skorupski",
+          "to": "Jan Bednarek",
+          "count": 1
+        },
+        {
+          "from": "Robert Lewandowski",
+          "to": "Piotr Zieli\u0144ski",
+          "count": 1
+        },
+        {
+          "from": "Przemys\u0142aw Frankowski",
+          "to": "Pawe\u0142 Dawidowicz",
+          "count": 1
+        },
+        {
+          "from": "Jan Bednarek",
+          "to": "Kacper Urbanski",
+          "count": 1
+        },
+        {
+          "from": "Pawe\u0142 Dawidowicz",
+          "to": "Piotr Zieli\u0144ski",
+          "count": 1
+        },
+        {
+          "from": "Jakub Piotr Kiwior",
+          "to": "Pawe\u0142 Dawidowicz",
+          "count": 1
+        },
+        {
+          "from": "\u0141ukasz Skorupski",
+          "to": "Piotr Zieli\u0144ski",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "label": "67'\u2013FT",
+      "nodes": [
+        {
+          "player": "Jakub Moder",
+          "display_name": "Jakub Moder",
+          "x": 53.49,
+          "y": 36.95,
+          "passes": 15
+        },
+        {
+          "player": "Jakub Piotr Kiwior",
+          "display_name": "Jakub Piotr Kiwior",
+          "x": 54.53,
+          "y": 14.83,
+          "passes": 15
+        },
+        {
+          "player": "Jan Bednarek",
+          "display_name": "Jan Bednarek",
+          "x": 22.91,
+          "y": 61.3,
+          "passes": 8
+        },
+        {
+          "player": "Kacper Urbanski",
+          "display_name": "Kacper Urbanski",
+          "x": 45.53,
+          "y": 42.47,
+          "passes": 6
+        },
+        {
+          "player": "Karol \u015awiderski",
+          "display_name": "Karol \u015awiderski",
+          "x": 70.95,
+          "y": 30.0,
+          "passes": 2
+        },
+        {
+          "player": "Micha\u0142 Sk\u00f3ra\u015b",
+          "display_name": "Micha\u0142 Sk\u00f3ra\u015b",
+          "x": 61.67,
+          "y": 72.62,
+          "passes": 6
+        },
+        {
+          "player": "Pawe\u0142 Dawidowicz",
+          "display_name": "Pawe\u0142 Dawidowicz",
+          "x": 39.6,
+          "y": 30.07,
+          "passes": 10
+        },
+        {
+          "player": "Piotr Zieli\u0144ski",
+          "display_name": "Piotr Zieli\u0144ski",
+          "x": 54.24,
+          "y": 31.1,
+          "passes": 14
+        },
+        {
+          "player": "Przemys\u0142aw Frankowski",
+          "display_name": "Przemys\u0142aw Frankowski",
+          "x": 68.39,
+          "y": 7.13,
+          "passes": 12
+        },
+        {
+          "player": "Robert Lewandowski",
+          "display_name": "Robert Lewandowski",
+          "x": 64.6,
+          "y": 43.4,
+          "passes": 3
+        },
+        {
+          "player": "\u0141ukasz Skorupski",
+          "display_name": "\u0141ukasz Skorupski",
+          "x": 8.6,
+          "y": 43.4,
+          "passes": 3
+        }
+      ],
+      "edges": [
+        {
+          "from": "Przemys\u0142aw Frankowski",
+          "to": "Piotr Zieli\u0144ski",
+          "count": 6
+        },
+        {
+          "from": "Jakub Piotr Kiwior",
+          "to": "Przemys\u0142aw Frankowski",
+          "count": 5
+        },
+        {
+          "from": "Przemys\u0142aw Frankowski",
+          "to": "Jakub Piotr Kiwior",
+          "count": 4
+        },
+        {
+          "from": "Pawe\u0142 Dawidowicz",
+          "to": "Przemys\u0142aw Frankowski",
+          "count": 3
+        },
+        {
+          "from": "Jakub Moder",
+          "to": "Piotr Zieli\u0144ski",
+          "count": 3
+        },
+        {
+          "from": "Jakub Piotr Kiwior",
+          "to": "Piotr Zieli\u0144ski",
+          "count": 3
+        },
+        {
+          "from": "Piotr Zieli\u0144ski",
+          "to": "Jakub Moder",
+          "count": 3
+        },
+        {
+          "from": "Piotr Zieli\u0144ski",
+          "to": "Przemys\u0142aw Frankowski",
+          "count": 3
+        },
+        {
+          "from": "Pawe\u0142 Dawidowicz",
+          "to": "Jakub Piotr Kiwior",
+          "count": 3
+        },
+        {
+          "from": "Piotr Zieli\u0144ski",
+          "to": "Robert Lewandowski",
+          "count": 3
+        },
+        {
+          "from": "Jakub Moder",
+          "to": "Przemys\u0142aw Frankowski",
+          "count": 3
+        },
+        {
+          "from": "Jakub Piotr Kiwior",
+          "to": "Pawe\u0142 Dawidowicz",
+          "count": 3
+        },
+        {
+          "from": "Jan Bednarek",
+          "to": "Kacper Urbanski",
+          "count": 2
+        },
+        {
+          "from": "Kacper Urbanski",
+          "to": "Pawe\u0142 Dawidowicz",
+          "count": 2
+        },
+        {
+          "from": "Jakub Moder",
+          "to": "Kacper Urbanski",
+          "count": 2
+        },
+        {
+          "from": "Pawe\u0142 Dawidowicz",
+          "to": "Jan Bednarek",
+          "count": 2
+        },
+        {
+          "from": "Jan Bednarek",
+          "to": "Jakub Moder",
+          "count": 2
+        },
+        {
+          "from": "Piotr Zieli\u0144ski",
+          "to": "Jakub Piotr Kiwior",
+          "count": 2
+        },
+        {
+          "from": "Jakub Moder",
+          "to": "Jakub Piotr Kiwior",
+          "count": 2
+        },
+        {
+          "from": "Jakub Moder",
+          "to": "Jan Bednarek",
+          "count": 2
+        },
+        {
+          "from": "Kacper Urbanski",
+          "to": "Karol \u015awiderski",
+          "count": 2
+        },
+        {
+          "from": "Jakub Moder",
+          "to": "Pawe\u0142 Dawidowicz",
+          "count": 2
+        },
+        {
+          "from": "Przemys\u0142aw Frankowski",
+          "to": "Jakub Moder",
+          "count": 2
+        },
+        {
+          "from": "Jan Bednarek",
+          "to": "Piotr Zieli\u0144ski",
+          "count": 2
+        },
+        {
+          "from": "Micha\u0142 Sk\u00f3ra\u015b",
+          "to": "Piotr Zieli\u0144ski",
+          "count": 2
+        },
+        {
+          "from": "\u0141ukasz Skorupski",
+          "to": "Micha\u0142 Sk\u00f3ra\u015b",
+          "count": 2
+        },
+        {
+          "from": "\u0141ukasz Skorupski",
+          "to": "Jan Bednarek",
+          "count": 1
+        },
+        {
+          "from": "Jakub Piotr Kiwior",
+          "to": "Jakub Moder",
+          "count": 1
+        },
+        {
+          "from": "Jan Bednarek",
+          "to": "Pawe\u0142 Dawidowicz",
+          "count": 1
+        },
+        {
+          "from": "Robert Lewandowski",
+          "to": "Kacper Urbanski",
+          "count": 1
+        },
+        {
+          "from": "Karol \u015awiderski",
+          "to": "Przemys\u0142aw Frankowski",
+          "count": 1
+        },
+        {
+          "from": "Piotr Zieli\u0144ski",
+          "to": "Kacper Urbanski",
+          "count": 1
+        },
+        {
+          "from": "Kacper Urbanski",
+          "to": "Przemys\u0142aw Frankowski",
+          "count": 1
+        },
+        {
+          "from": "Robert Lewandowski",
+          "to": "Karol \u015awiderski",
+          "count": 1
+        },
+        {
+          "from": "Micha\u0142 Sk\u00f3ra\u015b",
+          "to": "Robert Lewandowski",
+          "count": 1
+        },
+        {
+          "from": "Robert Lewandowski",
+          "to": "Jakub Moder",
+          "count": 1
+        },
+        {
+          "from": "Pawe\u0142 Dawidowicz",
+          "to": "Jakub Moder",
+          "count": 1
+        },
+        {
+          "from": "Jakub Piotr Kiwior",
+          "to": "Karol \u015awiderski",
+          "count": 1
+        },
+        {
+          "from": "Jakub Piotr Kiwior",
+          "to": "Micha\u0142 Sk\u00f3ra\u015b",
+          "count": 1
+        },
+        {
+          "from": "Micha\u0142 Sk\u00f3ra\u015b",
+          "to": "Jakub Moder",
+          "count": 1
+        },
+        {
+          "from": "Piotr Zieli\u0144ski",
+          "to": "Jan Bednarek",
+          "count": 1
+        },
+        {
+          "from": "Jan Bednarek",
+          "to": "Micha\u0142 Sk\u00f3ra\u015b",
+          "count": 1
+        },
+        {
+          "from": "Jakub Moder",
+          "to": "Micha\u0142 Sk\u00f3ra\u015b",
+          "count": 1
+        },
+        {
+          "from": "Micha\u0142 Sk\u00f3ra\u015b",
+          "to": "Kacper Urbanski",
+          "count": 1
+        },
+        {
+          "from": "Kacper Urbanski",
+          "to": "Jakub Piotr Kiwior",
+          "count": 1
+        },
+        {
+          "from": "Pawe\u0142 Dawidowicz",
+          "to": "\u0141ukasz Skorupski",
+          "count": 1
+        },
+        {
+          "from": "Micha\u0142 Sk\u00f3ra\u015b",
+          "to": "Karol \u015awiderski",
+          "count": 1
+        },
+        {
+          "from": "Piotr Zieli\u0144ski",
+          "to": "Micha\u0142 Sk\u00f3ra\u015b",
+          "count": 1
+        },
+        {
+          "from": "Jakub Piotr Kiwior",
+          "to": "Robert Lewandowski",
+          "count": 1
+        },
+        {
+          "from": "Karol \u015awiderski",
+          "to": "Robert Lewandowski",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "substitutions": [
+    {
+      "minute": 67,
+      "player_off": "Nicola Zalewski",
+      "player_on": "Micha\u0142 Sk\u00f3ra\u015b"
+    },
+    {
+      "minute": 67,
+      "player_off": "Sebastian Szyma\u0144ski",
+      "player_on": "Karol \u015awiderski"
+    }
+  ],
+  "metadata": {
+    "match_id": 3938643,
+    "team": "Poland",
+    "filter": "completed passes, per substitution window",
+    "competition": "UEFA Euro 2024",
+    "match_label": "France vs Poland"
+  }
+}

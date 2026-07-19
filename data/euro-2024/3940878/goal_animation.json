@@ -1,0 +1,325 @@
+{
+  "goals": [
+    {
+      "window": {
+        "anchor_event_id": "3f60f7da-f2e4-419e-97bb-9345de9d32ab",
+        "start_event_id": "299bcae5-514c-4fa6-b6f6-f6deefcb14fb",
+        "end_event_id": "3f60f7da-f2e4-419e-97bb-9345de9d32ab",
+        "period": 1,
+        "window_seconds": 10.0,
+        "t_span_seconds": 10.667
+      },
+      "frames": [
+        {
+          "event_id": "299bcae5-514c-4fa6-b6f6-f6deefcb14fb",
+          "t_seconds": 0.0,
+          "team": "Switzerland",
+          "event_type": "Pass",
+          "ball_x": 48.8,
+          "ball_y": 42.4,
+          "ball_end_x": 73.8,
+          "ball_end_y": 30.4,
+          "actor": "Manuel Akanji",
+          "outcome": null
+        },
+        {
+          "event_id": "f4b5761c-5155-4d83-9e6e-8c55efec30f5",
+          "t_seconds": 1.949,
+          "team": "Italy",
+          "event_type": "Pressure",
+          "ball_x": 41.9,
+          "ball_y": 47.6,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Gianluca Mancini",
+          "outcome": null
+        },
+        {
+          "event_id": "f52cc04b-5596-453a-ad59-1eef3ea133e0",
+          "t_seconds": 2.037,
+          "team": "Switzerland",
+          "event_type": "Pass",
+          "ball_x": 75.1,
+          "ball_y": 30.9,
+          "ball_end_x": 83.3,
+          "ball_end_y": 36.8,
+          "actor": "Breel Embolo",
+          "outcome": null
+        },
+        {
+          "event_id": "8e29e517-56c0-4a39-882b-c161f721a4e5",
+          "t_seconds": 3.66,
+          "team": "Switzerland",
+          "event_type": "Carry",
+          "ball_x": 83.3,
+          "ball_y": 36.8,
+          "ball_end_x": 84.1,
+          "ball_end_y": 32.5,
+          "actor": "Dan Ndoye",
+          "outcome": null
+        },
+        {
+          "event_id": "e506d12d-32b3-41e9-ad6f-d520f6b7ec45",
+          "t_seconds": 3.807,
+          "team": "Italy",
+          "event_type": "Pressure",
+          "ball_x": 35.8,
+          "ball_y": 42.3,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Alessandro Bastoni",
+          "outcome": null
+        },
+        {
+          "event_id": "82d880ec-3888-4c93-bedb-36efea02f4fd",
+          "t_seconds": 4.496,
+          "team": "Switzerland",
+          "event_type": "Pass",
+          "ball_x": 84.1,
+          "ball_y": 32.5,
+          "ball_end_x": 94.5,
+          "ball_end_y": 14.8,
+          "actor": "Dan Ndoye",
+          "outcome": null
+        },
+        {
+          "event_id": "bca8566f-25f2-43e9-8563-b080fa743871",
+          "t_seconds": 5.86,
+          "team": "Switzerland",
+          "event_type": "Carry",
+          "ball_x": 94.5,
+          "ball_y": 14.8,
+          "ball_end_x": 100.4,
+          "ball_end_y": 16.6,
+          "actor": "Ruben Vargas",
+          "outcome": null
+        },
+        {
+          "event_id": "a9b94a7d-c80d-4197-97c1-de29f93948e6",
+          "t_seconds": 8.799,
+          "team": "Switzerland",
+          "event_type": "Pass",
+          "ball_x": 100.4,
+          "ball_y": 16.6,
+          "ball_end_x": 106.0,
+          "ball_end_y": 37.3,
+          "actor": "Ruben Vargas",
+          "outcome": null
+        },
+        {
+          "event_id": "313b9ecb-1ec5-448c-ab46-027989e604e6",
+          "t_seconds": 9.617,
+          "team": "Switzerland",
+          "event_type": "Carry",
+          "ball_x": 106.0,
+          "ball_y": 37.3,
+          "ball_end_x": 111.1,
+          "ball_end_y": 34.4,
+          "actor": "Remo Freuler",
+          "outcome": null
+        },
+        {
+          "event_id": "3f60f7da-f2e4-419e-97bb-9345de9d32ab",
+          "t_seconds": 10.667,
+          "team": "Switzerland",
+          "event_type": "Shot",
+          "ball_x": 111.1,
+          "ball_y": 34.4,
+          "ball_end_x": 120.0,
+          "ball_end_y": 36.9,
+          "actor": "Remo Freuler",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "3f60f7da-f2e4-419e-97bb-9345de9d32ab",
+          "minute": 36,
+          "second": 20,
+          "scorer": "Remo Freuler",
+          "team": "Switzerland"
+        }
+      },
+      "metadata": {
+        "match_id": 3940878,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Switzerland vs Italy"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "e1ac10e8-cebd-4c9f-b221-22482aeb307f",
+        "start_event_id": "ac2ccd4e-67b4-4d7e-9134-6b66738f4f80",
+        "end_event_id": "e1ac10e8-cebd-4c9f-b221-22482aeb307f",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 10.419
+      },
+      "frames": [
+        {
+          "event_id": "ac2ccd4e-67b4-4d7e-9134-6b66738f4f80",
+          "t_seconds": 0.0,
+          "team": "Switzerland",
+          "event_type": "Carry",
+          "ball_x": 112.5,
+          "ball_y": 7.9,
+          "ball_end_x": 111.2,
+          "ball_end_y": 6.5,
+          "actor": "Michel Aebischer",
+          "outcome": null
+        },
+        {
+          "event_id": "1192ccd0-5ebf-4896-8279-8da772984737",
+          "t_seconds": 1.644,
+          "team": "Italy",
+          "event_type": "Pressure",
+          "ball_x": 6.7,
+          "ball_y": 71.8,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Nicol\u00f2 Fagioli",
+          "outcome": null
+        },
+        {
+          "event_id": "9a2580bd-2908-46f8-8e30-da6769ab236f",
+          "t_seconds": 3.196,
+          "team": "Switzerland",
+          "event_type": "Pass",
+          "ball_x": 111.2,
+          "ball_y": 6.5,
+          "ball_end_x": 102.9,
+          "ball_end_y": 3.3,
+          "actor": "Michel Aebischer",
+          "outcome": null
+        },
+        {
+          "event_id": "cae87275-04aa-4aba-af49-ddfe2db85ff5",
+          "t_seconds": 4.029,
+          "team": "Switzerland",
+          "event_type": "Carry",
+          "ball_x": 102.9,
+          "ball_y": 3.3,
+          "ball_end_x": 102.7,
+          "ball_end_y": 5.8,
+          "actor": "Ruben Vargas",
+          "outcome": null
+        },
+        {
+          "event_id": "ea23e777-f26c-47cd-9e1c-311702fe00a4",
+          "t_seconds": 4.721,
+          "team": "Switzerland",
+          "event_type": "Pass",
+          "ball_x": 102.7,
+          "ball_y": 5.8,
+          "ball_end_x": 105.2,
+          "ball_end_y": 16.0,
+          "actor": "Ruben Vargas",
+          "outcome": null
+        },
+        {
+          "event_id": "7324db3f-e076-4500-9f8a-3ffd08f5ec12",
+          "t_seconds": 5.426,
+          "team": "Switzerland",
+          "event_type": "Carry",
+          "ball_x": 105.2,
+          "ball_y": 16.0,
+          "ball_end_x": 102.9,
+          "ball_end_y": 14.3,
+          "actor": "Granit Xhaka",
+          "outcome": null
+        },
+        {
+          "event_id": "0adca109-8bf7-4d8d-8983-f971e7b385e9",
+          "t_seconds": 6.794,
+          "team": "Switzerland",
+          "event_type": "Pass",
+          "ball_x": 102.9,
+          "ball_y": 14.3,
+          "ball_end_x": 104.2,
+          "ball_end_y": 3.8,
+          "actor": "Granit Xhaka",
+          "outcome": null
+        },
+        {
+          "event_id": "0c99a372-37bd-4607-b57c-8dcccc057e3c",
+          "t_seconds": 7.775,
+          "team": "Switzerland",
+          "event_type": "Carry",
+          "ball_x": 104.2,
+          "ball_y": 3.8,
+          "ball_end_x": 103.9,
+          "ball_end_y": 4.4,
+          "actor": "Michel Aebischer",
+          "outcome": null
+        },
+        {
+          "event_id": "22f7fb5c-f306-4ee4-a28c-b12bf233e420",
+          "t_seconds": 8.507,
+          "team": "Switzerland",
+          "event_type": "Pass",
+          "ball_x": 103.9,
+          "ball_y": 4.4,
+          "ball_end_x": 103.1,
+          "ball_end_y": 23.1,
+          "actor": "Michel Aebischer",
+          "outcome": null
+        },
+        {
+          "event_id": "90be5bd3-ceda-4214-aacd-e5ae3ea350cf",
+          "t_seconds": 9.213,
+          "team": "Switzerland",
+          "event_type": "Carry",
+          "ball_x": 103.1,
+          "ball_y": 23.1,
+          "ball_end_x": 103.5,
+          "ball_end_y": 25.6,
+          "actor": "Ruben Vargas",
+          "outcome": null
+        },
+        {
+          "event_id": "bbc22d4f-3844-4ed1-a2b4-80cd2a97279f",
+          "t_seconds": 10.005,
+          "team": "Italy",
+          "event_type": "Pressure",
+          "ball_x": 15.2,
+          "ball_y": 53.3,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Bryan Cristante",
+          "outcome": null
+        },
+        {
+          "event_id": "e1ac10e8-cebd-4c9f-b221-22482aeb307f",
+          "t_seconds": 10.419,
+          "team": "Switzerland",
+          "event_type": "Shot",
+          "ball_x": 103.5,
+          "ball_y": 25.6,
+          "ball_end_x": 120.0,
+          "ball_end_y": 43.2,
+          "actor": "Ruben Vargas",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "e1ac10e8-cebd-4c9f-b221-22482aeb307f",
+          "minute": 45,
+          "second": 27,
+          "scorer": "Ruben Vargas",
+          "team": "Switzerland"
+        }
+      },
+      "metadata": {
+        "match_id": 3940878,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Switzerland vs Italy"
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3940878,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Switzerland vs Italy"
+  }
+}

@@ -117,7 +117,7 @@ function drawRows(rowsG, data, cfg, halfW, maxBarW) {
       .attr("y",                cy)
       .attr("text-anchor",      "middle")
       .attr("dominant-baseline","middle")
-      .attr("fill",             "#525252")
+      .attr("fill",             "var(--muted, #525252)")
       .attr("font-family",      "var(--font-mono,'Geist Mono',monospace)")
       .attr("font-size",        "11px")
       .attr("letter-spacing",   "0.02em")
@@ -130,7 +130,7 @@ function drawRows(rowsG, data, cfg, halfW, maxBarW) {
       .attr("y",                cy)
       .attr("text-anchor",      "end")
       .attr("dominant-baseline","middle")
-      .attr("fill",             "#171717")
+      .attr("fill",             "var(--text, #171717)")
       .attr("font-family",      "var(--font-mono,'Geist Mono',monospace)")
       .attr("font-size",        "12px")
       .attr("font-weight",      "500")
@@ -143,7 +143,7 @@ function drawRows(rowsG, data, cfg, halfW, maxBarW) {
       .attr("y",                cy)
       .attr("text-anchor",      "start")
       .attr("dominant-baseline","middle")
-      .attr("fill",             "#171717")
+      .attr("fill",             "var(--text, #171717)")
       .attr("font-family",      "var(--font-mono,'Geist Mono',monospace)")
       .attr("font-size",        "12px")
       .attr("font-weight",      "500")
@@ -156,7 +156,7 @@ function drawRows(rowsG, data, cfg, halfW, maxBarW) {
         .attr("x2",   cfg.width)
         .attr("y1",   cy + cfg.rowHeight / 2)
         .attr("y2",   cy + cfg.rowHeight / 2)
-        .attr("stroke",        "#E5E5E5")
+        .attr("stroke",        "var(--border, #E5E5E5)")
         .attr("stroke-width",  1);
     }
   });
@@ -255,7 +255,7 @@ export function createComparisonBars(selection, data, config = {}) {
     headerG.append("line")
       .attr("x1",  0).attr("x2",  cfg.width)
       .attr("y1",  headerH).attr("y2", headerH)
-      .attr("stroke", "#E5E5E5").attr("stroke-width", 1);
+      .attr("stroke", "var(--border, #E5E5E5)").attr("stroke-width", 1);
   }
 
   // ── Rows ────────────────────────────────────────────────────────────────────

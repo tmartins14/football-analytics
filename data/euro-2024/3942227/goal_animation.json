@@ -1,0 +1,569 @@
+{
+  "goals": [
+    {
+      "window": {
+        "anchor_event_id": "3cc0520d-338c-48b1-8e46-237e81965d70",
+        "start_event_id": "7b7509b1-b04f-4064-a5da-dfafcfccb9dc",
+        "end_event_id": "3cc0520d-338c-48b1-8e46-237e81965d70",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 10.814
+      },
+      "frames": [
+        {
+          "event_id": "7b7509b1-b04f-4064-a5da-dfafcfccb9dc",
+          "t_seconds": 0.0,
+          "team": "Switzerland",
+          "event_type": "Pass",
+          "ball_x": 84.2,
+          "ball_y": 22.4,
+          "ball_end_x": 79.8,
+          "ball_end_y": 38.8,
+          "actor": "Granit Xhaka",
+          "outcome": null
+        },
+        {
+          "event_id": "b30c8ceb-e5c1-4730-a730-7e10c996dda5",
+          "t_seconds": 1.162,
+          "team": "Switzerland",
+          "event_type": "Carry",
+          "ball_x": 79.8,
+          "ball_y": 38.8,
+          "ball_end_x": 83.4,
+          "ball_end_y": 41.8,
+          "actor": "Manuel Akanji",
+          "outcome": null
+        },
+        {
+          "event_id": "ca47c553-b3f7-41f4-8fc5-8ad08b4783c4",
+          "t_seconds": 2.978,
+          "team": "Switzerland",
+          "event_type": "Pass",
+          "ball_x": 83.4,
+          "ball_y": 41.8,
+          "ball_end_x": 97.7,
+          "ball_end_y": 65.9,
+          "actor": "Manuel Akanji",
+          "outcome": null
+        },
+        {
+          "event_id": "c5f612f4-67e7-43e5-a41f-68becf51f70a",
+          "t_seconds": 4.613,
+          "team": "Switzerland",
+          "event_type": "Carry",
+          "ball_x": 97.7,
+          "ball_y": 65.9,
+          "ball_end_x": 95.7,
+          "ball_end_y": 59.7,
+          "actor": "Fabian Sch\u00e4r",
+          "outcome": null
+        },
+        {
+          "event_id": "d29e8885-87e1-416a-a7c7-affae6ae3c8f",
+          "t_seconds": 7.577,
+          "team": "Switzerland",
+          "event_type": "Pass",
+          "ball_x": 95.7,
+          "ball_y": 59.7,
+          "ball_end_x": 105.2,
+          "ball_end_y": 54.6,
+          "actor": "Fabian Sch\u00e4r",
+          "outcome": null
+        },
+        {
+          "event_id": "33f96548-0a83-404c-ae89-e6ba836b0b59",
+          "t_seconds": 8.521,
+          "team": "Switzerland",
+          "event_type": "Carry",
+          "ball_x": 105.2,
+          "ball_y": 54.6,
+          "ball_end_x": 111.6,
+          "ball_end_y": 55.8,
+          "actor": "Dan Ndoye",
+          "outcome": null
+        },
+        {
+          "event_id": "77634028-77b4-4ba7-8ca6-c034e59ef904",
+          "t_seconds": 9.146,
+          "team": "England",
+          "event_type": "Pressure",
+          "ball_x": 8.1,
+          "ball_y": 24.9,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Ezri Konsa",
+          "outcome": null
+        },
+        {
+          "event_id": "b50717fb-c320-464a-b339-c3631b329798",
+          "t_seconds": 9.738,
+          "team": "Switzerland",
+          "event_type": "Pass",
+          "ball_x": 111.6,
+          "ball_y": 55.8,
+          "ball_end_x": 111.0,
+          "ball_end_y": 44.4,
+          "actor": "Dan Ndoye",
+          "outcome": "Incomplete"
+        },
+        {
+          "event_id": "29ebd927-d0fd-456b-9c56-6a37b013c179",
+          "t_seconds": 10.4,
+          "team": "England",
+          "event_type": "Pressure",
+          "ball_x": 6.1,
+          "ball_y": 42.8,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Kyle Walker",
+          "outcome": null
+        },
+        {
+          "event_id": "afd99d71-c303-44b6-b6e2-6330c2290576",
+          "t_seconds": 10.776,
+          "team": "Switzerland",
+          "event_type": "Ball Recovery",
+          "ball_x": 115.9,
+          "ball_y": 37.6,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Breel Embolo",
+          "outcome": null
+        },
+        {
+          "event_id": "3cc0520d-338c-48b1-8e46-237e81965d70",
+          "t_seconds": 10.814,
+          "team": "Switzerland",
+          "event_type": "Shot",
+          "ball_x": 116.9,
+          "ball_y": 38.5,
+          "ball_end_x": 120.0,
+          "ball_end_y": 37.3,
+          "actor": "Breel Embolo",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "3cc0520d-338c-48b1-8e46-237e81965d70",
+          "minute": 74,
+          "second": 14,
+          "scorer": "Breel Embolo",
+          "team": "Switzerland"
+        }
+      },
+      "metadata": {
+        "match_id": 3942227,
+        "competition": "UEFA Euro 2024",
+        "match_label": "England vs Switzerland"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "f49ffee0-1a8a-4d16-b892-78c20e740cf1",
+        "start_event_id": "d3596347-9050-47ae-a8c0-8923fb2e34aa",
+        "end_event_id": "f49ffee0-1a8a-4d16-b892-78c20e740cf1",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 10.101
+      },
+      "frames": [
+        {
+          "event_id": "d3596347-9050-47ae-a8c0-8923fb2e34aa",
+          "t_seconds": 0.0,
+          "team": "England",
+          "event_type": "Carry",
+          "ball_x": 85.8,
+          "ball_y": 26.5,
+          "ball_end_x": 87.5,
+          "ball_end_y": 26.3,
+          "actor": "Jude Bellingham",
+          "outcome": null
+        },
+        {
+          "event_id": "645e013e-b061-4502-ba58-0de49ef06bb1",
+          "t_seconds": 2.748,
+          "team": "England",
+          "event_type": "Pass",
+          "ball_x": 87.5,
+          "ball_y": 26.3,
+          "ball_end_x": 84.6,
+          "ball_end_y": 46.0,
+          "actor": "Jude Bellingham",
+          "outcome": null
+        },
+        {
+          "event_id": "63e835b5-dfc7-42da-92d6-6b187a8a7be4",
+          "t_seconds": 4.273,
+          "team": "England",
+          "event_type": "Carry",
+          "ball_x": 84.6,
+          "ball_y": 46.0,
+          "ball_end_x": 85.2,
+          "ball_end_y": 54.5,
+          "actor": "Declan Rice",
+          "outcome": null
+        },
+        {
+          "event_id": "f7a82873-958f-4f69-8c5f-9edfc0ea6109",
+          "t_seconds": 5.331,
+          "team": "England",
+          "event_type": "Pass",
+          "ball_x": 85.2,
+          "ball_y": 54.5,
+          "ball_end_x": 98.4,
+          "ball_end_y": 66.7,
+          "actor": "Declan Rice",
+          "outcome": null
+        },
+        {
+          "event_id": "496b291d-841a-4a75-a820-0683ad828110",
+          "t_seconds": 6.731,
+          "team": "England",
+          "event_type": "Carry",
+          "ball_x": 98.4,
+          "ball_y": 66.7,
+          "ball_end_x": 100.3,
+          "ball_end_y": 56.6,
+          "actor": "Bukayo Saka",
+          "outcome": null
+        },
+        {
+          "event_id": "f49ffee0-1a8a-4d16-b892-78c20e740cf1",
+          "t_seconds": 10.101,
+          "team": "England",
+          "event_type": "Shot",
+          "ball_x": 100.3,
+          "ball_y": 56.6,
+          "ball_end_x": 120.0,
+          "ball_end_y": 36.4,
+          "actor": "Bukayo Saka",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "f49ffee0-1a8a-4d16-b892-78c20e740cf1",
+          "minute": 79,
+          "second": 46,
+          "scorer": "Bukayo Saka",
+          "team": "England"
+        }
+      },
+      "metadata": {
+        "match_id": 3942227,
+        "competition": "UEFA Euro 2024",
+        "match_label": "England vs Switzerland"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "f0980e44-8548-468a-a8f2-30140609027c",
+        "start_event_id": "f0980e44-8548-468a-a8f2-30140609027c",
+        "end_event_id": "f0980e44-8548-468a-a8f2-30140609027c",
+        "period": 5,
+        "window_seconds": 10.0,
+        "t_span_seconds": 1.872
+      },
+      "frames": [
+        {
+          "event_id": "f0980e44-8548-468a-a8f2-30140609027c",
+          "t_seconds": 1.872,
+          "team": "England",
+          "event_type": "Shot",
+          "ball_x": 108.1,
+          "ball_y": 40.1,
+          "ball_end_x": 120.0,
+          "ball_end_y": 37.3,
+          "actor": "Cole Palmer",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "f0980e44-8548-468a-a8f2-30140609027c",
+          "minute": 120,
+          "second": 1,
+          "scorer": "Cole Palmer",
+          "team": "England"
+        }
+      },
+      "metadata": {
+        "match_id": 3942227,
+        "competition": "UEFA Euro 2024",
+        "match_label": "England vs Switzerland"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "ccf36164-cc53-44a5-bfac-a9aec09b285f",
+        "start_event_id": "ccf36164-cc53-44a5-bfac-a9aec09b285f",
+        "end_event_id": "ccf36164-cc53-44a5-bfac-a9aec09b285f",
+        "period": 5,
+        "window_seconds": 10.0,
+        "t_span_seconds": 55.316
+      },
+      "frames": [
+        {
+          "event_id": "ccf36164-cc53-44a5-bfac-a9aec09b285f",
+          "t_seconds": 55.316,
+          "team": "England",
+          "event_type": "Shot",
+          "ball_x": 108.1,
+          "ball_y": 40.1,
+          "ball_end_x": 120.0,
+          "ball_end_y": 43.4,
+          "actor": "Jude Bellingham",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "ccf36164-cc53-44a5-bfac-a9aec09b285f",
+          "minute": 121,
+          "second": 59,
+          "scorer": "Jude Bellingham",
+          "team": "England"
+        }
+      },
+      "metadata": {
+        "match_id": 3942227,
+        "competition": "UEFA Euro 2024",
+        "match_label": "England vs Switzerland"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "b0f972bd-11cb-4049-b77e-17e3efad438f",
+        "start_event_id": "b0f972bd-11cb-4049-b77e-17e3efad438f",
+        "end_event_id": "b0f972bd-11cb-4049-b77e-17e3efad438f",
+        "period": 5,
+        "window_seconds": 10.0,
+        "t_span_seconds": 52.97
+      },
+      "frames": [
+        {
+          "event_id": "b0f972bd-11cb-4049-b77e-17e3efad438f",
+          "t_seconds": 52.97,
+          "team": "Switzerland",
+          "event_type": "Shot",
+          "ball_x": 108.1,
+          "ball_y": 40.1,
+          "ball_end_x": 120.0,
+          "ball_end_y": 42.6,
+          "actor": "Fabian Sch\u00e4r",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "b0f972bd-11cb-4049-b77e-17e3efad438f",
+          "minute": 122,
+          "second": 52,
+          "scorer": "Fabian Sch\u00e4r",
+          "team": "Switzerland"
+        }
+      },
+      "metadata": {
+        "match_id": 3942227,
+        "competition": "UEFA Euro 2024",
+        "match_label": "England vs Switzerland"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "b6321c10-e88e-46fd-9ba9-d1533ce165fb",
+        "start_event_id": "b6321c10-e88e-46fd-9ba9-d1533ce165fb",
+        "end_event_id": "b6321c10-e88e-46fd-9ba9-d1533ce165fb",
+        "period": 5,
+        "window_seconds": 10.0,
+        "t_span_seconds": 60.057
+      },
+      "frames": [
+        {
+          "event_id": "b6321c10-e88e-46fd-9ba9-d1533ce165fb",
+          "t_seconds": 60.057,
+          "team": "England",
+          "event_type": "Shot",
+          "ball_x": 108.1,
+          "ball_y": 40.1,
+          "ball_end_x": 120.0,
+          "ball_end_y": 43.8,
+          "actor": "Bukayo Saka",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "b6321c10-e88e-46fd-9ba9-d1533ce165fb",
+          "minute": 123,
+          "second": 53,
+          "scorer": "Bukayo Saka",
+          "team": "England"
+        }
+      },
+      "metadata": {
+        "match_id": 3942227,
+        "competition": "UEFA Euro 2024",
+        "match_label": "England vs Switzerland"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "dc843aa4-7eeb-43ca-acc9-27a108a20028",
+        "start_event_id": "dc843aa4-7eeb-43ca-acc9-27a108a20028",
+        "end_event_id": "dc843aa4-7eeb-43ca-acc9-27a108a20028",
+        "period": 5,
+        "window_seconds": 10.0,
+        "t_span_seconds": 44.378
+      },
+      "frames": [
+        {
+          "event_id": "dc843aa4-7eeb-43ca-acc9-27a108a20028",
+          "t_seconds": 44.378,
+          "team": "Switzerland",
+          "event_type": "Shot",
+          "ball_x": 108.1,
+          "ball_y": 40.1,
+          "ball_end_x": 120.0,
+          "ball_end_y": 43.8,
+          "actor": "Xherdan Shaqiri",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "dc843aa4-7eeb-43ca-acc9-27a108a20028",
+          "minute": 124,
+          "second": 38,
+          "scorer": "Xherdan Shaqiri",
+          "team": "Switzerland"
+        }
+      },
+      "metadata": {
+        "match_id": 3942227,
+        "competition": "UEFA Euro 2024",
+        "match_label": "England vs Switzerland"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "cd47aff6-eaf3-4c00-aa07-3cc4a93343fc",
+        "start_event_id": "cd47aff6-eaf3-4c00-aa07-3cc4a93343fc",
+        "end_event_id": "cd47aff6-eaf3-4c00-aa07-3cc4a93343fc",
+        "period": 5,
+        "window_seconds": 10.0,
+        "t_span_seconds": 51.741
+      },
+      "frames": [
+        {
+          "event_id": "cd47aff6-eaf3-4c00-aa07-3cc4a93343fc",
+          "t_seconds": 51.741,
+          "team": "England",
+          "event_type": "Shot",
+          "ball_x": 108.1,
+          "ball_y": 40.1,
+          "ball_end_x": 120.0,
+          "ball_end_y": 37.3,
+          "actor": "Ivan Toney",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "cd47aff6-eaf3-4c00-aa07-3cc4a93343fc",
+          "minute": 125,
+          "second": 30,
+          "scorer": "Ivan Toney",
+          "team": "England"
+        }
+      },
+      "metadata": {
+        "match_id": 3942227,
+        "competition": "UEFA Euro 2024",
+        "match_label": "England vs Switzerland"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "ffb782cd-891c-4b04-b15c-9fc9eaf43ac0",
+        "start_event_id": "ffb782cd-891c-4b04-b15c-9fc9eaf43ac0",
+        "end_event_id": "ffb782cd-891c-4b04-b15c-9fc9eaf43ac0",
+        "period": 5,
+        "window_seconds": 10.0,
+        "t_span_seconds": 54.154
+      },
+      "frames": [
+        {
+          "event_id": "ffb782cd-891c-4b04-b15c-9fc9eaf43ac0",
+          "t_seconds": 54.154,
+          "team": "Switzerland",
+          "event_type": "Shot",
+          "ball_x": 108.1,
+          "ball_y": 40.1,
+          "ball_end_x": 120.0,
+          "ball_end_y": 39.7,
+          "actor": "Mohamed Amdouni",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "ffb782cd-891c-4b04-b15c-9fc9eaf43ac0",
+          "minute": 126,
+          "second": 25,
+          "scorer": "Mohamed Amdouni",
+          "team": "Switzerland"
+        }
+      },
+      "metadata": {
+        "match_id": 3942227,
+        "competition": "UEFA Euro 2024",
+        "match_label": "England vs Switzerland"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "48bad4bc-a8f9-4138-bbc6-15dceb3e55df",
+        "start_event_id": "48bad4bc-a8f9-4138-bbc6-15dceb3e55df",
+        "end_event_id": "48bad4bc-a8f9-4138-bbc6-15dceb3e55df",
+        "period": 5,
+        "window_seconds": 10.0,
+        "t_span_seconds": 54.862
+      },
+      "frames": [
+        {
+          "event_id": "48bad4bc-a8f9-4138-bbc6-15dceb3e55df",
+          "t_seconds": 54.862,
+          "team": "England",
+          "event_type": "Shot",
+          "ball_x": 108.1,
+          "ball_y": 40.1,
+          "ball_end_x": 120.0,
+          "ball_end_y": 36.9,
+          "actor": "Trent Alexander-Arnold",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "48bad4bc-a8f9-4138-bbc6-15dceb3e55df",
+          "minute": 127,
+          "second": 21,
+          "scorer": "Trent Alexander-Arnold",
+          "team": "England"
+        }
+      },
+      "metadata": {
+        "match_id": 3942227,
+        "competition": "UEFA Euro 2024",
+        "match_label": "England vs Switzerland"
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3942227,
+    "competition": "UEFA Euro 2024",
+    "match_label": "England vs Switzerland"
+  }
+}

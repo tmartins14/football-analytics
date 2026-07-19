@@ -1,0 +1,912 @@
+{
+  "on_ball": {
+    "periods": [
+      {
+        "from_minute": 0,
+        "to_minute": 57,
+        "players_in": [
+          "Fehmi Mert G\u00fcnok",
+          "Kaan Ayhan",
+          "Merih Demiral",
+          "Abd\u00fclkerim Bardakc\u0131",
+          "Mert M\u00fcld\u00fcr",
+          "Ferdi Erenay Kad\u0131o\u011flu",
+          "\u0130smail Y\u00fcksek",
+          "Orkun K\u00f6k\u00e7\u00fc",
+          "Bar\u0131\u015f Alper Y\u0131lmaz",
+          "Kenan Yildiz",
+          "Arda G\u00fcler"
+        ],
+        "players_out": [],
+        "nodes": [
+          {
+            "player_id": 22212,
+            "player": "Orkun K\u00f6k\u00e7\u00fc",
+            "display_name": "Orkun K\u00f6k\u00e7\u00fc",
+            "x": 60.02,
+            "y": 28.25,
+            "event_count": 74
+          },
+          {
+            "player_id": 116587,
+            "player": "Arda G\u00fcler",
+            "display_name": "Arda G\u00fcler",
+            "x": 61.43,
+            "y": 40.89,
+            "event_count": 68
+          },
+          {
+            "player_id": 30438,
+            "player": "Ferdi Erenay Kad\u0131o\u011flu",
+            "display_name": "Ferdi Kadioglu",
+            "x": 58.62,
+            "y": 9.9,
+            "event_count": 56
+          },
+          {
+            "player_id": 48383,
+            "player": "Abd\u00fclkerim Bardakc\u0131",
+            "display_name": "Abd\u00fclkerim Bardakc\u0131",
+            "x": 36.81,
+            "y": 12.62,
+            "event_count": 55
+          },
+          {
+            "player_id": 134209,
+            "player": "Bar\u0131\u015f Alper Y\u0131lmaz",
+            "display_name": "Bar\u0131\u015f Alper Y\u0131lmaz",
+            "x": 72.64,
+            "y": 54.94,
+            "event_count": 39
+          },
+          {
+            "player_id": 12293,
+            "player": "Kaan Ayhan",
+            "display_name": "Kaan Ayhan",
+            "x": 42.55,
+            "y": 62.09,
+            "event_count": 39
+          },
+          {
+            "player_id": 78241,
+            "player": "\u0130smail Y\u00fcksek",
+            "display_name": "\u0130smail Y\u00fcksek",
+            "x": 50.06,
+            "y": 42.81,
+            "event_count": 37
+          },
+          {
+            "player_id": 10826,
+            "player": "Mert M\u00fcld\u00fcr",
+            "display_name": "Mert M\u00fcld\u00fcr",
+            "x": 63.97,
+            "y": 68.08,
+            "event_count": 37
+          },
+          {
+            "player_id": 23558,
+            "player": "Merih Demiral",
+            "display_name": "Merih Demiral",
+            "x": 35.36,
+            "y": 28.24,
+            "event_count": 35
+          },
+          {
+            "player_id": 151813,
+            "player": "Kenan Yildiz",
+            "display_name": "Kenan Yildiz",
+            "x": 75.63,
+            "y": 12.31,
+            "event_count": 31
+          },
+          {
+            "player_id": 30310,
+            "player": "Fehmi Mert G\u00fcnok",
+            "display_name": "Mert G\u00fcnok",
+            "x": 9.31,
+            "y": 40.86,
+            "event_count": 25
+          }
+        ],
+        "hull": [
+          [
+            9.31,
+            40.86
+          ],
+          [
+            36.81,
+            12.62
+          ],
+          [
+            58.62,
+            9.9
+          ],
+          [
+            75.63,
+            12.31
+          ],
+          [
+            72.64,
+            54.94
+          ],
+          [
+            63.97,
+            68.08
+          ],
+          [
+            42.55,
+            62.09
+          ]
+        ]
+      },
+      {
+        "from_minute": 57,
+        "to_minute": 77,
+        "players_in": [
+          "Salih \u00d6zcan"
+        ],
+        "players_out": [
+          "\u0130smail Y\u00fcksek"
+        ],
+        "nodes": [
+          {
+            "player_id": 151813,
+            "player": "Kenan Yildiz",
+            "display_name": "Kenan Yildiz",
+            "x": 38.78,
+            "y": 15.67,
+            "event_count": 19
+          },
+          {
+            "player_id": 116587,
+            "player": "Arda G\u00fcler",
+            "display_name": "Arda G\u00fcler",
+            "x": 56.99,
+            "y": 40.64,
+            "event_count": 18
+          },
+          {
+            "player_id": 30438,
+            "player": "Ferdi Erenay Kad\u0131o\u011flu",
+            "display_name": "Ferdi Kadioglu",
+            "x": 34.16,
+            "y": 9.08,
+            "event_count": 15
+          },
+          {
+            "player_id": 48383,
+            "player": "Abd\u00fclkerim Bardakc\u0131",
+            "display_name": "Abd\u00fclkerim Bardakc\u0131",
+            "x": 7.97,
+            "y": 18.24,
+            "event_count": 15
+          },
+          {
+            "player_id": 22212,
+            "player": "Orkun K\u00f6k\u00e7\u00fc",
+            "display_name": "Orkun K\u00f6k\u00e7\u00fc",
+            "x": 51.2,
+            "y": 23.32,
+            "event_count": 13
+          },
+          {
+            "player_id": 30310,
+            "player": "Fehmi Mert G\u00fcnok",
+            "display_name": "Mert G\u00fcnok",
+            "x": 8.75,
+            "y": 43.33,
+            "event_count": 13
+          },
+          {
+            "player_id": 9085,
+            "player": "Salih \u00d6zcan",
+            "display_name": "Salih \u00d6zcan",
+            "x": 47.68,
+            "y": 29.48,
+            "event_count": 12
+          },
+          {
+            "player_id": 12293,
+            "player": "Kaan Ayhan",
+            "display_name": "Kaan Ayhan",
+            "x": 52.16,
+            "y": 54.19,
+            "event_count": 10
+          },
+          {
+            "player_id": 10826,
+            "player": "Mert M\u00fcld\u00fcr",
+            "display_name": "Mert M\u00fcld\u00fcr",
+            "x": 59.47,
+            "y": 70.42,
+            "event_count": 9
+          },
+          {
+            "player_id": 134209,
+            "player": "Bar\u0131\u015f Alper Y\u0131lmaz",
+            "display_name": "Bar\u0131\u015f Alper Y\u0131lmaz",
+            "x": 100.91,
+            "y": 54.39,
+            "event_count": 8
+          },
+          {
+            "player_id": 23558,
+            "player": "Merih Demiral",
+            "display_name": "Merih Demiral",
+            "x": 36.83,
+            "y": 35.15,
+            "event_count": 4
+          }
+        ],
+        "hull": [
+          [
+            100.91,
+            54.39
+          ],
+          [
+            59.47,
+            70.42
+          ],
+          [
+            8.75,
+            43.33
+          ],
+          [
+            7.97,
+            18.24
+          ],
+          [
+            34.16,
+            9.08
+          ]
+        ]
+      },
+      {
+        "from_minute": 77,
+        "to_minute": 82,
+        "players_in": [
+          "Okay Yoku\u015flu",
+          "Muhammed Kerem Akt\u00fcrko\u011flu"
+        ],
+        "players_out": [
+          "Arda G\u00fcler",
+          "Kenan Yildiz"
+        ],
+        "nodes": [
+          {
+            "player_id": 134209,
+            "player": "Bar\u0131\u015f Alper Y\u0131lmaz",
+            "display_name": "Bar\u0131\u015f Alper Y\u0131lmaz",
+            "x": 49.08,
+            "y": 70.9,
+            "event_count": 8
+          },
+          {
+            "player_id": 9085,
+            "player": "Salih \u00d6zcan",
+            "display_name": "Salih \u00d6zcan",
+            "x": 61.71,
+            "y": 74.1,
+            "event_count": 8
+          },
+          {
+            "player_id": 10826,
+            "player": "Mert M\u00fcld\u00fcr",
+            "display_name": "Mert M\u00fcld\u00fcr",
+            "x": 44.4,
+            "y": 75.53,
+            "event_count": 4
+          },
+          {
+            "player_id": 12555,
+            "player": "Okay Yoku\u015flu",
+            "display_name": "Okay Yoku\u015flu",
+            "x": 67.07,
+            "y": 64.37,
+            "event_count": 3
+          },
+          {
+            "player_id": 22212,
+            "player": "Orkun K\u00f6k\u00e7\u00fc",
+            "display_name": "Orkun K\u00f6k\u00e7\u00fc",
+            "x": 65.6,
+            "y": 47.17,
+            "event_count": 3
+          }
+        ],
+        "hull": [
+          [
+            44.4,
+            75.53
+          ],
+          [
+            65.6,
+            47.17
+          ],
+          [
+            67.07,
+            64.37
+          ],
+          [
+            61.71,
+            74.1
+          ]
+        ]
+      },
+      {
+        "from_minute": 82,
+        "to_minute": 96,
+        "players_in": [
+          "\u0130rfan Can Kahveci"
+        ],
+        "players_out": [
+          "Orkun K\u00f6k\u00e7\u00fc"
+        ],
+        "nodes": [
+          {
+            "player_id": 49689,
+            "player": "Muhammed Kerem Akt\u00fcrko\u011flu",
+            "display_name": "Kerem Akt\u00fcrkoglu",
+            "x": 64.73,
+            "y": 72.97,
+            "event_count": 6
+          },
+          {
+            "player_id": 9085,
+            "player": "Salih \u00d6zcan",
+            "display_name": "Salih \u00d6zcan",
+            "x": 43.23,
+            "y": 67.28,
+            "event_count": 6
+          },
+          {
+            "player_id": 134209,
+            "player": "Bar\u0131\u015f Alper Y\u0131lmaz",
+            "display_name": "Bar\u0131\u015f Alper Y\u0131lmaz",
+            "x": 95.7,
+            "y": 35.82,
+            "event_count": 6
+          },
+          {
+            "player_id": 12293,
+            "player": "Kaan Ayhan",
+            "display_name": "Kaan Ayhan",
+            "x": 13.77,
+            "y": 65.55,
+            "event_count": 4
+          },
+          {
+            "player_id": 10826,
+            "player": "Mert M\u00fcld\u00fcr",
+            "display_name": "Mert M\u00fcld\u00fcr",
+            "x": 6.4,
+            "y": 69.27,
+            "event_count": 3
+          },
+          {
+            "player_id": 23558,
+            "player": "Merih Demiral",
+            "display_name": "Merih Demiral",
+            "x": 4.83,
+            "y": 61.3,
+            "event_count": 3
+          },
+          {
+            "player_id": 30438,
+            "player": "Ferdi Erenay Kad\u0131o\u011flu",
+            "display_name": "Ferdi Kadioglu",
+            "x": 25.8,
+            "y": 24.27,
+            "event_count": 3
+          },
+          {
+            "player_id": 48383,
+            "player": "Abd\u00fclkerim Bardakc\u0131",
+            "display_name": "Abd\u00fclkerim Bardakc\u0131",
+            "x": 8.4,
+            "y": 34.2,
+            "event_count": 1
+          }
+        ],
+        "hull": [
+          [
+            25.8,
+            24.27
+          ],
+          [
+            95.7,
+            35.82
+          ],
+          [
+            64.73,
+            72.97
+          ],
+          [
+            6.4,
+            69.27
+          ],
+          [
+            4.83,
+            61.3
+          ],
+          [
+            8.4,
+            34.2
+          ]
+        ]
+      }
+    ]
+  },
+  "off_ball": {
+    "density_grid": {
+      "cols": 24,
+      "rows": 16,
+      "values": [
+        [
+          0.0725,
+          0.086,
+          0.1006,
+          0.1161,
+          0.1325,
+          0.1494,
+          0.1668,
+          0.1842,
+          0.2015,
+          0.2181,
+          0.2335,
+          0.2471,
+          0.2583,
+          0.2665,
+          0.271,
+          0.2714,
+          0.2675,
+          0.2592,
+          0.2467,
+          0.2305,
+          0.2112,
+          0.1896,
+          0.1668,
+          0.1437
+        ],
+        [
+          0.1017,
+          0.1201,
+          0.14,
+          0.1611,
+          0.1832,
+          0.2062,
+          0.2297,
+          0.2535,
+          0.2772,
+          0.3001,
+          0.3216,
+          0.341,
+          0.3572,
+          0.3695,
+          0.377,
+          0.3789,
+          0.3749,
+          0.3647,
+          0.3485,
+          0.3269,
+          0.3008,
+          0.2713,
+          0.2397,
+          0.2073
+        ],
+        [
+          0.136,
+          0.1601,
+          0.1858,
+          0.2131,
+          0.2415,
+          0.271,
+          0.3013,
+          0.332,
+          0.3626,
+          0.3925,
+          0.4209,
+          0.4468,
+          0.469,
+          0.4864,
+          0.4977,
+          0.502,
+          0.4985,
+          0.4868,
+          0.4671,
+          0.44,
+          0.4066,
+          0.3683,
+          0.3268,
+          0.2838
+        ],
+        [
+          0.1739,
+          0.2039,
+          0.2358,
+          0.2693,
+          0.3041,
+          0.3402,
+          0.3772,
+          0.4147,
+          0.4524,
+          0.4894,
+          0.5249,
+          0.5577,
+          0.5864,
+          0.6095,
+          0.6253,
+          0.6326,
+          0.6303,
+          0.6178,
+          0.5951,
+          0.5628,
+          0.5222,
+          0.4749,
+          0.4231,
+          0.369
+        ],
+        [
+          0.2127,
+          0.2484,
+          0.2861,
+          0.3255,
+          0.3664,
+          0.4085,
+          0.4516,
+          0.4954,
+          0.5395,
+          0.5832,
+          0.6253,
+          0.6647,
+          0.6997,
+          0.7284,
+          0.749,
+          0.7598,
+          0.7593,
+          0.7466,
+          0.7216,
+          0.6849,
+          0.6378,
+          0.5821,
+          0.5205,
+          0.4557
+        ],
+        [
+          0.2486,
+          0.2893,
+          0.3321,
+          0.3766,
+          0.4225,
+          0.4697,
+          0.5178,
+          0.5668,
+          0.6161,
+          0.6651,
+          0.7128,
+          0.7577,
+          0.798,
+          0.8318,
+          0.8567,
+          0.8707,
+          0.8722,
+          0.8599,
+          0.8334,
+          0.7933,
+          0.7409,
+          0.6784,
+          0.6085,
+          0.5343
+        ],
+        [
+          0.2771,
+          0.3217,
+          0.3684,
+          0.4168,
+          0.4664,
+          0.5171,
+          0.5688,
+          0.6212,
+          0.6741,
+          0.7268,
+          0.7782,
+          0.8269,
+          0.871,
+          0.9083,
+          0.9363,
+          0.9529,
+          0.9559,
+          0.9441,
+          0.9168,
+          0.8745,
+          0.8185,
+          0.7511,
+          0.6753,
+          0.5944
+        ],
+        [
+          0.2942,
+          0.3412,
+          0.3902,
+          0.4407,
+          0.4924,
+          0.545,
+          0.5985,
+          0.6526,
+          0.707,
+          0.7612,
+          0.8142,
+          0.8645,
+          0.9102,
+          0.949,
+          0.9785,
+          0.9962,
+          1.0,
+          0.9885,
+          0.9609,
+          0.9175,
+          0.8599,
+          0.7901,
+          0.7112,
+          0.6269
+        ],
+        [
+          0.2972,
+          0.3448,
+          0.3942,
+          0.4451,
+          0.497,
+          0.5497,
+          0.603,
+          0.6568,
+          0.7108,
+          0.7643,
+          0.8165,
+          0.866,
+          0.9109,
+          0.9489,
+          0.9778,
+          0.995,
+          0.9985,
+          0.9869,
+          0.9593,
+          0.9162,
+          0.8587,
+          0.7893,
+          0.7108,
+          0.6267
+        ],
+        [
+          0.2857,
+          0.3318,
+          0.3798,
+          0.4291,
+          0.4794,
+          0.5303,
+          0.5817,
+          0.6332,
+          0.6847,
+          0.7355,
+          0.7847,
+          0.8311,
+          0.8729,
+          0.9081,
+          0.9344,
+          0.9496,
+          0.9519,
+          0.9397,
+          0.9126,
+          0.8708,
+          0.8156,
+          0.7491,
+          0.6742,
+          0.5941
+        ],
+        [
+          0.2613,
+          0.3041,
+          0.3488,
+          0.3949,
+          0.4418,
+          0.4892,
+          0.5369,
+          0.5845,
+          0.6317,
+          0.678,
+          0.7224,
+          0.7639,
+          0.8009,
+          0.8315,
+          0.8539,
+          0.8661,
+          0.8664,
+          0.8537,
+          0.8276,
+          0.7884,
+          0.7372,
+          0.676,
+          0.6075,
+          0.5346
+        ],
+        [
+          0.2275,
+          0.2657,
+          0.3056,
+          0.3469,
+          0.3889,
+          0.4314,
+          0.474,
+          0.5163,
+          0.5579,
+          0.5983,
+          0.6367,
+          0.6721,
+          0.7031,
+          0.7283,
+          0.746,
+          0.7547,
+          0.7531,
+          0.7402,
+          0.7158,
+          0.6803,
+          0.6346,
+          0.5807,
+          0.5207,
+          0.4573
+        ],
+        [
+          0.1888,
+          0.2213,
+          0.2555,
+          0.2909,
+          0.327,
+          0.3635,
+          0.3999,
+          0.436,
+          0.4711,
+          0.5049,
+          0.5366,
+          0.5654,
+          0.5901,
+          0.6097,
+          0.6228,
+          0.6282,
+          0.625,
+          0.6126,
+          0.5907,
+          0.5598,
+          0.5208,
+          0.4753,
+          0.4251,
+          0.3724
+        ],
+        [
+          0.1493,
+          0.1757,
+          0.2036,
+          0.2327,
+          0.2623,
+          0.2923,
+          0.3221,
+          0.3515,
+          0.3799,
+          0.4068,
+          0.4318,
+          0.4541,
+          0.4729,
+          0.4872,
+          0.4962,
+          0.499,
+          0.495,
+          0.4836,
+          0.4649,
+          0.4393,
+          0.4076,
+          0.3709,
+          0.3309,
+          0.289
+        ],
+        [
+          0.1125,
+          0.1329,
+          0.1547,
+          0.1773,
+          0.2005,
+          0.224,
+          0.2472,
+          0.27,
+          0.2918,
+          0.3124,
+          0.3311,
+          0.3475,
+          0.361,
+          0.371,
+          0.3767,
+          0.3777,
+          0.3734,
+          0.3638,
+          0.3487,
+          0.3285,
+          0.3039,
+          0.2759,
+          0.2454,
+          0.2139
+        ],
+        [
+          0.0806,
+          0.0957,
+          0.1117,
+          0.1285,
+          0.1457,
+          0.1631,
+          0.1803,
+          0.1971,
+          0.213,
+          0.2279,
+          0.2412,
+          0.2527,
+          0.2619,
+          0.2684,
+          0.2718,
+          0.2717,
+          0.2678,
+          0.2601,
+          0.2486,
+          0.2336,
+          0.2156,
+          0.1952,
+          0.1733,
+          0.1507
+        ]
+      ]
+    },
+    "centroid": {
+      "x": 70.37,
+      "y": 40.28
+    },
+    "thirds_spine": [
+      {
+        "third": "defensive",
+        "x": 23.04,
+        "y": 40.94
+      },
+      {
+        "third": "middle",
+        "x": 62.73,
+        "y": 39.64
+      },
+      {
+        "third": "attacking",
+        "x": 95.93,
+        "y": 40.48
+      }
+    ],
+    "ellipse": {
+      "cx": 70.37,
+      "cy": 40.28,
+      "rx": 29.35,
+      "ry": 15.98,
+      "angle_deg": 179.8
+    },
+    "depth_line": {
+      "x": 91.21,
+      "percentile": 70
+    }
+  },
+  "metadata": {
+    "match_id": 3941022,
+    "team": "Turkey",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Austria vs Turkey",
+    "on_ball_event_count": 690,
+    "on_ball_period_count": 4,
+    "off_ball_bandwidth_yards": 8.0,
+    "off_ball_depth_percentile": 70,
+    "off_ball_grid_cols": 24,
+    "off_ball_grid_rows": 16,
+    "phase_filter": "open_play_only",
+    "coordinate_system": "statsbomb_120x80_normalised_attack_right",
+    "coordinate_note": "Coordinates are normalised so the team always attacks right (increasing x). Raw StatsBomb events are flipped (x\u2192120-x, y\u219280-y) in periods where the team attacks left.",
+    "camera_caveat": "360 frames follow the ball; the visible subset of out-of-possession positions is biased toward areas near the ball. The camera artifact and the real defensive shape point the same direction \u2014 they cannot be cleanly separated."
+  }
+}

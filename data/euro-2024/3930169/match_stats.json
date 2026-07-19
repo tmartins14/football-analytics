@@ -1,0 +1,83 @@
+{
+  "home": {
+    "team": "Scotland",
+    "color": "#003F87",
+    "score": 1
+  },
+  "away": {
+    "team": "Switzerland",
+    "color": "#E30A17",
+    "score": 1
+  },
+  "rows": [
+    {
+      "label": "Shots",
+      "home_value": 12.0,
+      "away_value": 11.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Shots on Target",
+      "home_value": 3.0,
+      "away_value": 5.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Possession",
+      "home_value": 48.9,
+      "away_value": 51.1,
+      "scale_type": "fixed100",
+      "format": "pct",
+      "tier": "basic"
+    },
+    {
+      "label": "Corners",
+      "home_value": 5.0,
+      "away_value": 8.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Fouls",
+      "home_value": 13.0,
+      "away_value": 12.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Yellow Cards",
+      "home_value": 3.0,
+      "away_value": 2.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Red Cards",
+      "home_value": 0.0,
+      "away_value": 0.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "xG",
+      "home_value": 0.77,
+      "away_value": 0.99,
+      "scale_type": "sum",
+      "format": "float1",
+      "tier": "advanced"
+    }
+  ],
+  "metadata": {
+    "match_id": 3930169,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Scotland vs Switzerland"
+  }
+}

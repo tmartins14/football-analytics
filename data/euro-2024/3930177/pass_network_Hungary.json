@@ -1,0 +1,1189 @@
+{
+  "windows": [
+    {
+      "index": 0,
+      "label": "0'\u201360' (Starting XI)",
+      "nodes": [
+        {
+          "player": "Andr\u00e1s Sch\u00e4fer",
+          "display_name": "Andr\u00e1s Sch\u00e4fer",
+          "x": 56.85,
+          "y": 47.03,
+          "passes": 22
+        },
+        {
+          "player": "Barnab\u00e1s Varga",
+          "display_name": "Barnab\u00e1s Varga",
+          "x": 68.6,
+          "y": 34.24,
+          "passes": 8
+        },
+        {
+          "player": "Bendeg\u00faz Bolla",
+          "display_name": "Bendeg\u00faz Bolla",
+          "x": 63.55,
+          "y": 71.47,
+          "passes": 8
+        },
+        {
+          "player": "Callum Styles",
+          "display_name": "Callum Styles",
+          "x": 55.02,
+          "y": 37.93,
+          "passes": 19
+        },
+        {
+          "player": "Dominik Szoboszlai",
+          "display_name": "Dominik Szoboszlai",
+          "x": 64.83,
+          "y": 40.78,
+          "passes": 20
+        },
+        {
+          "player": "Endre Botka",
+          "display_name": "Endre Botka",
+          "x": 51.29,
+          "y": 71.85,
+          "passes": 21
+        },
+        {
+          "player": "Milos Kerkez",
+          "display_name": "Milos Kerkez",
+          "x": 51.59,
+          "y": 7.84,
+          "passes": 9
+        },
+        {
+          "player": "M\u00e1rton D\u00e1rdai",
+          "display_name": "M\u00e1rton D\u00e1rdai",
+          "x": 40.0,
+          "y": 20.44,
+          "passes": 25
+        },
+        {
+          "player": "P\u00e9ter Gul\u00e1csi",
+          "display_name": "P\u00e9ter Gul\u00e1csi",
+          "x": 11.72,
+          "y": 40.64,
+          "passes": 11
+        },
+        {
+          "player": "Roland Sallai",
+          "display_name": "Roland Sallai",
+          "x": 70.07,
+          "y": 18.32,
+          "passes": 9
+        },
+        {
+          "player": "Willi Orban",
+          "display_name": "Willi Orban",
+          "x": 36.39,
+          "y": 53.08,
+          "passes": 21
+        }
+      ],
+      "edges": [
+        {
+          "from": "Endre Botka",
+          "to": "Willi Orban",
+          "count": 9
+        },
+        {
+          "from": "Willi Orban",
+          "to": "M\u00e1rton D\u00e1rdai",
+          "count": 6
+        },
+        {
+          "from": "Willi Orban",
+          "to": "P\u00e9ter Gul\u00e1csi",
+          "count": 5
+        },
+        {
+          "from": "Barnab\u00e1s Varga",
+          "to": "Roland Sallai",
+          "count": 5
+        },
+        {
+          "from": "P\u00e9ter Gul\u00e1csi",
+          "to": "M\u00e1rton D\u00e1rdai",
+          "count": 5
+        },
+        {
+          "from": "Callum Styles",
+          "to": "Andr\u00e1s Sch\u00e4fer",
+          "count": 5
+        },
+        {
+          "from": "Willi Orban",
+          "to": "Endre Botka",
+          "count": 5
+        },
+        {
+          "from": "Dominik Szoboszlai",
+          "to": "Andr\u00e1s Sch\u00e4fer",
+          "count": 4
+        },
+        {
+          "from": "Andr\u00e1s Sch\u00e4fer",
+          "to": "Endre Botka",
+          "count": 4
+        },
+        {
+          "from": "Endre Botka",
+          "to": "Andr\u00e1s Sch\u00e4fer",
+          "count": 4
+        },
+        {
+          "from": "Andr\u00e1s Sch\u00e4fer",
+          "to": "Bendeg\u00faz Bolla",
+          "count": 4
+        },
+        {
+          "from": "M\u00e1rton D\u00e1rdai",
+          "to": "Callum Styles",
+          "count": 4
+        },
+        {
+          "from": "Milos Kerkez",
+          "to": "M\u00e1rton D\u00e1rdai",
+          "count": 4
+        },
+        {
+          "from": "M\u00e1rton D\u00e1rdai",
+          "to": "Dominik Szoboszlai",
+          "count": 4
+        },
+        {
+          "from": "Dominik Szoboszlai",
+          "to": "Barnab\u00e1s Varga",
+          "count": 4
+        },
+        {
+          "from": "Willi Orban",
+          "to": "Callum Styles",
+          "count": 3
+        },
+        {
+          "from": "Roland Sallai",
+          "to": "Callum Styles",
+          "count": 3
+        },
+        {
+          "from": "M\u00e1rton D\u00e1rdai",
+          "to": "Milos Kerkez",
+          "count": 3
+        },
+        {
+          "from": "Andr\u00e1s Sch\u00e4fer",
+          "to": "Callum Styles",
+          "count": 3
+        },
+        {
+          "from": "M\u00e1rton D\u00e1rdai",
+          "to": "P\u00e9ter Gul\u00e1csi",
+          "count": 3
+        },
+        {
+          "from": "Bendeg\u00faz Bolla",
+          "to": "Andr\u00e1s Sch\u00e4fer",
+          "count": 3
+        },
+        {
+          "from": "Andr\u00e1s Sch\u00e4fer",
+          "to": "Milos Kerkez",
+          "count": 3
+        },
+        {
+          "from": "M\u00e1rton D\u00e1rdai",
+          "to": "Willi Orban",
+          "count": 3
+        },
+        {
+          "from": "Callum Styles",
+          "to": "M\u00e1rton D\u00e1rdai",
+          "count": 3
+        },
+        {
+          "from": "Dominik Szoboszlai",
+          "to": "M\u00e1rton D\u00e1rdai",
+          "count": 3
+        },
+        {
+          "from": "Endre Botka",
+          "to": "Callum Styles",
+          "count": 3
+        },
+        {
+          "from": "Dominik Szoboszlai",
+          "to": "Willi Orban",
+          "count": 3
+        },
+        {
+          "from": "Bendeg\u00faz Bolla",
+          "to": "Dominik Szoboszlai",
+          "count": 3
+        },
+        {
+          "from": "Andr\u00e1s Sch\u00e4fer",
+          "to": "Willi Orban",
+          "count": 2
+        },
+        {
+          "from": "P\u00e9ter Gul\u00e1csi",
+          "to": "Barnab\u00e1s Varga",
+          "count": 2
+        },
+        {
+          "from": "Endre Botka",
+          "to": "P\u00e9ter Gul\u00e1csi",
+          "count": 2
+        },
+        {
+          "from": "Callum Styles",
+          "to": "Roland Sallai",
+          "count": 2
+        },
+        {
+          "from": "Roland Sallai",
+          "to": "Andr\u00e1s Sch\u00e4fer",
+          "count": 2
+        },
+        {
+          "from": "Barnab\u00e1s Varga",
+          "to": "Andr\u00e1s Sch\u00e4fer",
+          "count": 2
+        },
+        {
+          "from": "M\u00e1rton D\u00e1rdai",
+          "to": "Barnab\u00e1s Varga",
+          "count": 2
+        },
+        {
+          "from": "Callum Styles",
+          "to": "Milos Kerkez",
+          "count": 2
+        },
+        {
+          "from": "M\u00e1rton D\u00e1rdai",
+          "to": "Andr\u00e1s Sch\u00e4fer",
+          "count": 2
+        },
+        {
+          "from": "Andr\u00e1s Sch\u00e4fer",
+          "to": "M\u00e1rton D\u00e1rdai",
+          "count": 2
+        },
+        {
+          "from": "Dominik Szoboszlai",
+          "to": "Milos Kerkez",
+          "count": 2
+        },
+        {
+          "from": "Milos Kerkez",
+          "to": "Dominik Szoboszlai",
+          "count": 2
+        },
+        {
+          "from": "M\u00e1rton D\u00e1rdai",
+          "to": "Roland Sallai",
+          "count": 2
+        },
+        {
+          "from": "Callum Styles",
+          "to": "Willi Orban",
+          "count": 2
+        },
+        {
+          "from": "Callum Styles",
+          "to": "Dominik Szoboszlai",
+          "count": 2
+        },
+        {
+          "from": "Dominik Szoboszlai",
+          "to": "Roland Sallai",
+          "count": 2
+        },
+        {
+          "from": "Andr\u00e1s Sch\u00e4fer",
+          "to": "Dominik Szoboszlai",
+          "count": 2
+        },
+        {
+          "from": "P\u00e9ter Gul\u00e1csi",
+          "to": "Endre Botka",
+          "count": 1
+        },
+        {
+          "from": "Dominik Szoboszlai",
+          "to": "Bendeg\u00faz Bolla",
+          "count": 1
+        },
+        {
+          "from": "Callum Styles",
+          "to": "Bendeg\u00faz Bolla",
+          "count": 1
+        },
+        {
+          "from": "Milos Kerkez",
+          "to": "Callum Styles",
+          "count": 1
+        },
+        {
+          "from": "P\u00e9ter Gul\u00e1csi",
+          "to": "Willi Orban",
+          "count": 1
+        },
+        {
+          "from": "Endre Botka",
+          "to": "M\u00e1rton D\u00e1rdai",
+          "count": 1
+        },
+        {
+          "from": "Andr\u00e1s Sch\u00e4fer",
+          "to": "Barnab\u00e1s Varga",
+          "count": 1
+        },
+        {
+          "from": "Willi Orban",
+          "to": "Bendeg\u00faz Bolla",
+          "count": 1
+        },
+        {
+          "from": "P\u00e9ter Gul\u00e1csi",
+          "to": "Callum Styles",
+          "count": 1
+        },
+        {
+          "from": "Milos Kerkez",
+          "to": "Willi Orban",
+          "count": 1
+        },
+        {
+          "from": "Roland Sallai",
+          "to": "Milos Kerkez",
+          "count": 1
+        },
+        {
+          "from": "Roland Sallai",
+          "to": "Bendeg\u00faz Bolla",
+          "count": 1
+        },
+        {
+          "from": "Milos Kerkez",
+          "to": "Roland Sallai",
+          "count": 1
+        },
+        {
+          "from": "Roland Sallai",
+          "to": "Dominik Szoboszlai",
+          "count": 1
+        },
+        {
+          "from": "Barnab\u00e1s Varga",
+          "to": "Milos Kerkez",
+          "count": 1
+        },
+        {
+          "from": "Bendeg\u00faz Bolla",
+          "to": "Willi Orban",
+          "count": 1
+        },
+        {
+          "from": "Bendeg\u00faz Bolla",
+          "to": "Endre Botka",
+          "count": 1
+        },
+        {
+          "from": "Andr\u00e1s Sch\u00e4fer",
+          "to": "Roland Sallai",
+          "count": 1
+        },
+        {
+          "from": "Roland Sallai",
+          "to": "Willi Orban",
+          "count": 1
+        },
+        {
+          "from": "P\u00e9ter Gul\u00e1csi",
+          "to": "Bendeg\u00faz Bolla",
+          "count": 1
+        },
+        {
+          "from": "Willi Orban",
+          "to": "Dominik Szoboszlai",
+          "count": 1
+        },
+        {
+          "from": "Endre Botka",
+          "to": "Bendeg\u00faz Bolla",
+          "count": 1
+        },
+        {
+          "from": "M\u00e1rton D\u00e1rdai",
+          "to": "Bendeg\u00faz Bolla",
+          "count": 1
+        },
+        {
+          "from": "M\u00e1rton D\u00e1rdai",
+          "to": "Endre Botka",
+          "count": 1
+        },
+        {
+          "from": "Endre Botka",
+          "to": "Dominik Szoboszlai",
+          "count": 1
+        },
+        {
+          "from": "Callum Styles",
+          "to": "Barnab\u00e1s Varga",
+          "count": 1
+        },
+        {
+          "from": "Dominik Szoboszlai",
+          "to": "Callum Styles",
+          "count": 1
+        },
+        {
+          "from": "Callum Styles",
+          "to": "Endre Botka",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "label": "60'\u201373'",
+      "nodes": [
+        {
+          "player": "Andr\u00e1s Sch\u00e4fer",
+          "display_name": "Andr\u00e1s Sch\u00e4fer",
+          "x": 82.77,
+          "y": 25.1,
+          "passes": 3
+        },
+        {
+          "player": "Bendeg\u00faz Bolla",
+          "display_name": "Bendeg\u00faz Bolla",
+          "x": 86.13,
+          "y": 71.3,
+          "passes": 3
+        },
+        {
+          "player": "Dominik Szoboszlai",
+          "display_name": "Dominik Szoboszlai",
+          "x": 95.67,
+          "y": 49.77,
+          "passes": 6
+        },
+        {
+          "player": "Endre Botka",
+          "display_name": "Endre Botka",
+          "x": 91.85,
+          "y": 68.8,
+          "passes": 2
+        },
+        {
+          "player": "M\u00e1rton D\u00e1rdai",
+          "display_name": "M\u00e1rton D\u00e1rdai",
+          "x": 46.1,
+          "y": 13.5,
+          "passes": 1
+        },
+        {
+          "player": "P\u00e9ter Gul\u00e1csi",
+          "display_name": "P\u00e9ter Gul\u00e1csi",
+          "x": 4.7,
+          "y": 39.9,
+          "passes": 1
+        },
+        {
+          "player": "Roland Sallai",
+          "display_name": "Roland Sallai",
+          "x": 88.8,
+          "y": 10.85,
+          "passes": 2
+        },
+        {
+          "player": "Willi Orban",
+          "display_name": "Willi Orban",
+          "x": 40.5,
+          "y": 41.47,
+          "passes": 3
+        },
+        {
+          "player": "\u00c1d\u00e1m Nagy",
+          "display_name": "\u00c1d\u00e1m Nagy",
+          "x": 68.0,
+          "y": 42.9,
+          "passes": 2
+        }
+      ],
+      "edges": [
+        {
+          "from": "Dominik Szoboszlai",
+          "to": "Bendeg\u00faz Bolla",
+          "count": 2
+        },
+        {
+          "from": "Bendeg\u00faz Bolla",
+          "to": "Dominik Szoboszlai",
+          "count": 2
+        },
+        {
+          "from": "Dominik Szoboszlai",
+          "to": "Roland Sallai",
+          "count": 2
+        },
+        {
+          "from": "P\u00e9ter Gul\u00e1csi",
+          "to": "M\u00e1rton D\u00e1rdai",
+          "count": 1
+        },
+        {
+          "from": "M\u00e1rton D\u00e1rdai",
+          "to": "Andr\u00e1s Sch\u00e4fer",
+          "count": 1
+        },
+        {
+          "from": "Willi Orban",
+          "to": "Barnab\u00e1s Varga",
+          "count": 1
+        },
+        {
+          "from": "\u00c1d\u00e1m Nagy",
+          "to": "Dominik Szoboszlai",
+          "count": 1
+        },
+        {
+          "from": "Dominik Szoboszlai",
+          "to": "\u00c1d\u00e1m Nagy",
+          "count": 1
+        },
+        {
+          "from": "\u00c1d\u00e1m Nagy",
+          "to": "Milos Kerkez",
+          "count": 1
+        },
+        {
+          "from": "Bendeg\u00faz Bolla",
+          "to": "M\u00e1rton D\u00e1rdai",
+          "count": 1
+        },
+        {
+          "from": "Andr\u00e1s Sch\u00e4fer",
+          "to": "Roland Sallai",
+          "count": 1
+        },
+        {
+          "from": "Roland Sallai",
+          "to": "Dominik Szoboszlai",
+          "count": 1
+        },
+        {
+          "from": "Willi Orban",
+          "to": "Roland Sallai",
+          "count": 1
+        },
+        {
+          "from": "Roland Sallai",
+          "to": "Andr\u00e1s Sch\u00e4fer",
+          "count": 1
+        },
+        {
+          "from": "Andr\u00e1s Sch\u00e4fer",
+          "to": "Dominik Szoboszlai",
+          "count": 1
+        },
+        {
+          "from": "Dominik Szoboszlai",
+          "to": "Andr\u00e1s Sch\u00e4fer",
+          "count": 1
+        },
+        {
+          "from": "Andr\u00e1s Sch\u00e4fer",
+          "to": "Endre Botka",
+          "count": 1
+        },
+        {
+          "from": "Endre Botka",
+          "to": "Bendeg\u00faz Bolla",
+          "count": 1
+        },
+        {
+          "from": "Endre Botka",
+          "to": "Willi Orban",
+          "count": 1
+        },
+        {
+          "from": "Willi Orban",
+          "to": "M\u00e1rton D\u00e1rdai",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "label": "73'\u201385'",
+      "nodes": [
+        {
+          "player": "Andr\u00e1s Sch\u00e4fer",
+          "display_name": "Andr\u00e1s Sch\u00e4fer",
+          "x": 47.56,
+          "y": 52.54,
+          "passes": 9
+        },
+        {
+          "player": "Attila Szalai",
+          "display_name": "Attila Szalai",
+          "x": 42.42,
+          "y": 15.82,
+          "passes": 5
+        },
+        {
+          "player": "Bendeg\u00faz Bolla",
+          "display_name": "Bendeg\u00faz Bolla",
+          "x": 75.78,
+          "y": 69.36,
+          "passes": 5
+        },
+        {
+          "player": "Dominik Szoboszlai",
+          "display_name": "Dominik Szoboszlai",
+          "x": 69.56,
+          "y": 63.59,
+          "passes": 8
+        },
+        {
+          "player": "Endre Botka",
+          "display_name": "Endre Botka",
+          "x": 40.84,
+          "y": 65.06,
+          "passes": 7
+        },
+        {
+          "player": "Martin \u00c1d\u00e1m",
+          "display_name": "Martin \u00c1d\u00e1m",
+          "x": 90.73,
+          "y": 53.67,
+          "passes": 3
+        },
+        {
+          "player": "Milos Kerkez",
+          "display_name": "Milos Kerkez",
+          "x": 78.95,
+          "y": 14.68,
+          "passes": 6
+        },
+        {
+          "player": "P\u00e9ter Gul\u00e1csi",
+          "display_name": "P\u00e9ter Gul\u00e1csi",
+          "x": 14.37,
+          "y": 45.2,
+          "passes": 3
+        },
+        {
+          "player": "Roland Sallai",
+          "display_name": "Roland Sallai",
+          "x": 67.9,
+          "y": 18.02,
+          "passes": 4
+        },
+        {
+          "player": "Willi Orban",
+          "display_name": "Willi Orban",
+          "x": 46.82,
+          "y": 39.37,
+          "passes": 6
+        },
+        {
+          "player": "\u00c1d\u00e1m Nagy",
+          "display_name": "\u00c1d\u00e1m Nagy",
+          "x": 57.9,
+          "y": 22.6,
+          "passes": 2
+        }
+      ],
+      "edges": [
+        {
+          "from": "Milos Kerkez",
+          "to": "Roland Sallai",
+          "count": 3
+        },
+        {
+          "from": "Endre Botka",
+          "to": "Dominik Szoboszlai",
+          "count": 2
+        },
+        {
+          "from": "Endre Botka",
+          "to": "Willi Orban",
+          "count": 2
+        },
+        {
+          "from": "Martin \u00c1d\u00e1m",
+          "to": "Dominik Szoboszlai",
+          "count": 2
+        },
+        {
+          "from": "Bendeg\u00faz Bolla",
+          "to": "Andr\u00e1s Sch\u00e4fer",
+          "count": 2
+        },
+        {
+          "from": "Andr\u00e1s Sch\u00e4fer",
+          "to": "Endre Botka",
+          "count": 2
+        },
+        {
+          "from": "Dominik Szoboszlai",
+          "to": "Andr\u00e1s Sch\u00e4fer",
+          "count": 2
+        },
+        {
+          "from": "Bendeg\u00faz Bolla",
+          "to": "Dominik Szoboszlai",
+          "count": 2
+        },
+        {
+          "from": "Andr\u00e1s Sch\u00e4fer",
+          "to": "Attila Szalai",
+          "count": 2
+        },
+        {
+          "from": "Milos Kerkez",
+          "to": "Willi Orban",
+          "count": 2
+        },
+        {
+          "from": "Andr\u00e1s Sch\u00e4fer",
+          "to": "Dominik Szoboszlai",
+          "count": 2
+        },
+        {
+          "from": "Endre Botka",
+          "to": "Martin \u00c1d\u00e1m",
+          "count": 2
+        },
+        {
+          "from": "Dominik Szoboszlai",
+          "to": "Bendeg\u00faz Bolla",
+          "count": 2
+        },
+        {
+          "from": "Dominik Szoboszlai",
+          "to": "Endre Botka",
+          "count": 1
+        },
+        {
+          "from": "Martin \u00c1d\u00e1m",
+          "to": "Bendeg\u00faz Bolla",
+          "count": 1
+        },
+        {
+          "from": "Bendeg\u00faz Bolla",
+          "to": "Milos Kerkez",
+          "count": 1
+        },
+        {
+          "from": "Milos Kerkez",
+          "to": "Martin \u00c1d\u00e1m",
+          "count": 1
+        },
+        {
+          "from": "Attila Szalai",
+          "to": "Martin \u00c1d\u00e1m",
+          "count": 1
+        },
+        {
+          "from": "Roland Sallai",
+          "to": "Attila Szalai",
+          "count": 1
+        },
+        {
+          "from": "P\u00e9ter Gul\u00e1csi",
+          "to": "Bendeg\u00faz Bolla",
+          "count": 1
+        },
+        {
+          "from": "Endre Botka",
+          "to": "Andr\u00e1s Sch\u00e4fer",
+          "count": 1
+        },
+        {
+          "from": "Andr\u00e1s Sch\u00e4fer",
+          "to": "Willi Orban",
+          "count": 1
+        },
+        {
+          "from": "Willi Orban",
+          "to": "Attila Szalai",
+          "count": 1
+        },
+        {
+          "from": "Andr\u00e1s Sch\u00e4fer",
+          "to": "Bendeg\u00faz Bolla",
+          "count": 1
+        },
+        {
+          "from": "Dominik Szoboszlai",
+          "to": "\u00c1d\u00e1m Nagy",
+          "count": 1
+        },
+        {
+          "from": "\u00c1d\u00e1m Nagy",
+          "to": "Roland Sallai",
+          "count": 1
+        },
+        {
+          "from": "Roland Sallai",
+          "to": "Dominik Szoboszlai",
+          "count": 1
+        },
+        {
+          "from": "Attila Szalai",
+          "to": "Roland Sallai",
+          "count": 1
+        },
+        {
+          "from": "Roland Sallai",
+          "to": "Martin \u00c1d\u00e1m",
+          "count": 1
+        },
+        {
+          "from": "Attila Szalai",
+          "to": "Willi Orban",
+          "count": 1
+        },
+        {
+          "from": "Willi Orban",
+          "to": "P\u00e9ter Gul\u00e1csi",
+          "count": 1
+        },
+        {
+          "from": "P\u00e9ter Gul\u00e1csi",
+          "to": "Martin \u00c1d\u00e1m",
+          "count": 1
+        },
+        {
+          "from": "Roland Sallai",
+          "to": "Andr\u00e1s Sch\u00e4fer",
+          "count": 1
+        },
+        {
+          "from": "Andr\u00e1s Sch\u00e4fer",
+          "to": "Milos Kerkez",
+          "count": 1
+        },
+        {
+          "from": "Willi Orban",
+          "to": "Milos Kerkez",
+          "count": 1
+        },
+        {
+          "from": "Willi Orban",
+          "to": "\u00c1d\u00e1m Nagy",
+          "count": 1
+        },
+        {
+          "from": "Dominik Szoboszlai",
+          "to": "Willi Orban",
+          "count": 1
+        },
+        {
+          "from": "Willi Orban",
+          "to": "Andr\u00e1s Sch\u00e4fer",
+          "count": 1
+        },
+        {
+          "from": "Attila Szalai",
+          "to": "\u00c1d\u00e1m Nagy",
+          "count": 1
+        },
+        {
+          "from": "\u00c1d\u00e1m Nagy",
+          "to": "Attila Szalai",
+          "count": 1
+        },
+        {
+          "from": "Attila Szalai",
+          "to": "P\u00e9ter Gul\u00e1csi",
+          "count": 1
+        },
+        {
+          "from": "Willi Orban",
+          "to": "Endre Botka",
+          "count": 1
+        },
+        {
+          "from": "P\u00e9ter Gul\u00e1csi",
+          "to": "Endre Botka",
+          "count": 1
+        },
+        {
+          "from": "Dominik Szoboszlai",
+          "to": "Milos Kerkez",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "label": "85'\u2013FT",
+      "nodes": [
+        {
+          "player": "Andr\u00e1s Sch\u00e4fer",
+          "display_name": "Andr\u00e1s Sch\u00e4fer",
+          "x": 53.32,
+          "y": 47.56,
+          "passes": 5
+        },
+        {
+          "player": "Attila Szalai",
+          "display_name": "Attila Szalai",
+          "x": 42.7,
+          "y": 12.05,
+          "passes": 2
+        },
+        {
+          "player": "Dominik Szoboszlai",
+          "display_name": "Dominik Szoboszlai",
+          "x": 59.28,
+          "y": 57.97,
+          "passes": 6
+        },
+        {
+          "player": "Endre Botka",
+          "display_name": "Endre Botka",
+          "x": 43.32,
+          "y": 68.14,
+          "passes": 5
+        },
+        {
+          "player": "Kevin Csoboth",
+          "display_name": "Kevin Csoboth",
+          "x": 67.26,
+          "y": 57.38,
+          "passes": 5
+        },
+        {
+          "player": "Martin \u00c1d\u00e1m",
+          "display_name": "Martin \u00c1d\u00e1m",
+          "x": 75.73,
+          "y": 46.0,
+          "passes": 3
+        },
+        {
+          "player": "P\u00e9ter Gul\u00e1csi",
+          "display_name": "P\u00e9ter Gul\u00e1csi",
+          "x": 3.8,
+          "y": 48.3,
+          "passes": 1
+        },
+        {
+          "player": "Roland Sallai",
+          "display_name": "Roland Sallai",
+          "x": 83.73,
+          "y": 42.9,
+          "passes": 3
+        },
+        {
+          "player": "Willi Orban",
+          "display_name": "Willi Orban",
+          "x": 46.77,
+          "y": 42.2,
+          "passes": 3
+        },
+        {
+          "player": "Zsolt Nagy",
+          "display_name": "Zsolt Nagy",
+          "x": 38.6,
+          "y": 0.1,
+          "passes": 1
+        },
+        {
+          "player": "\u00c1d\u00e1m Nagy",
+          "display_name": "\u00c1d\u00e1m Nagy",
+          "x": 12.0,
+          "y": 35.7,
+          "passes": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "Roland Sallai",
+          "to": "Kevin Csoboth",
+          "count": 3
+        },
+        {
+          "from": "Andr\u00e1s Sch\u00e4fer",
+          "to": "Dominik Szoboszlai",
+          "count": 2
+        },
+        {
+          "from": "Dominik Szoboszlai",
+          "to": "Andr\u00e1s Sch\u00e4fer",
+          "count": 2
+        },
+        {
+          "from": "Endre Botka",
+          "to": "Dominik Szoboszlai",
+          "count": 2
+        },
+        {
+          "from": "Martin \u00c1d\u00e1m",
+          "to": "Roland Sallai",
+          "count": 2
+        },
+        {
+          "from": "Kevin Csoboth",
+          "to": "Dominik Szoboszlai",
+          "count": 2
+        },
+        {
+          "from": "Kevin Csoboth",
+          "to": "\u00c1d\u00e1m Nagy",
+          "count": 1
+        },
+        {
+          "from": "Willi Orban",
+          "to": "Andr\u00e1s Sch\u00e4fer",
+          "count": 1
+        },
+        {
+          "from": "Endre Botka",
+          "to": "Martin \u00c1d\u00e1m",
+          "count": 1
+        },
+        {
+          "from": "Dominik Szoboszlai",
+          "to": "Attila Szalai",
+          "count": 1
+        },
+        {
+          "from": "Attila Szalai",
+          "to": "Zsolt Nagy",
+          "count": 1
+        },
+        {
+          "from": "Andr\u00e1s Sch\u00e4fer",
+          "to": "Endre Botka",
+          "count": 1
+        },
+        {
+          "from": "Willi Orban",
+          "to": "P\u00e9ter Gul\u00e1csi",
+          "count": 1
+        },
+        {
+          "from": "P\u00e9ter Gul\u00e1csi",
+          "to": "Martin \u00c1d\u00e1m",
+          "count": 1
+        },
+        {
+          "from": "Kevin Csoboth",
+          "to": "Martin \u00c1d\u00e1m",
+          "count": 1
+        },
+        {
+          "from": "Martin \u00c1d\u00e1m",
+          "to": "Dominik Szoboszlai",
+          "count": 1
+        },
+        {
+          "from": "Zsolt Nagy",
+          "to": "Attila Szalai",
+          "count": 1
+        },
+        {
+          "from": "Attila Szalai",
+          "to": "Martin \u00c1d\u00e1m",
+          "count": 1
+        },
+        {
+          "from": "Dominik Szoboszlai",
+          "to": "Endre Botka",
+          "count": 1
+        },
+        {
+          "from": "Endre Botka",
+          "to": "Kevin Csoboth",
+          "count": 1
+        },
+        {
+          "from": "Endre Botka",
+          "to": "Andr\u00e1s Sch\u00e4fer",
+          "count": 1
+        },
+        {
+          "from": "Andr\u00e1s Sch\u00e4fer",
+          "to": "Kevin Csoboth",
+          "count": 1
+        },
+        {
+          "from": "Andr\u00e1s Sch\u00e4fer",
+          "to": "Willi Orban",
+          "count": 1
+        },
+        {
+          "from": "Willi Orban",
+          "to": "Dominik Szoboszlai",
+          "count": 1
+        },
+        {
+          "from": "Dominik Szoboszlai",
+          "to": "\u00c1d\u00e1m Nagy",
+          "count": 1
+        },
+        {
+          "from": "\u00c1d\u00e1m Nagy",
+          "to": "Dominik Szoboszlai",
+          "count": 1
+        },
+        {
+          "from": "Dominik Szoboszlai",
+          "to": "Kevin Csoboth",
+          "count": 1
+        },
+        {
+          "from": "Kevin Csoboth",
+          "to": "Roland Sallai",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "substitutions": [
+    {
+      "minute": 60,
+      "player_off": "Callum Styles",
+      "player_on": "\u00c1d\u00e1m Nagy"
+    },
+    {
+      "minute": 73,
+      "player_off": "Barnab\u00e1s Varga",
+      "player_on": "Martin \u00c1d\u00e1m"
+    },
+    {
+      "minute": 73,
+      "player_off": "M\u00e1rton D\u00e1rdai",
+      "player_on": "Attila Szalai"
+    },
+    {
+      "minute": 85,
+      "player_off": "Milos Kerkez",
+      "player_on": "Zsolt Nagy"
+    },
+    {
+      "minute": 85,
+      "player_off": "Bendeg\u00faz Bolla",
+      "player_on": "Kevin Csoboth"
+    }
+  ],
+  "metadata": {
+    "match_id": 3930177,
+    "team": "Hungary",
+    "filter": "completed passes, per substitution window",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Scotland vs Hungary"
+  }
+}

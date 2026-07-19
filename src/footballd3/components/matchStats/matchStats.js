@@ -47,7 +47,7 @@ function ensureStyles() {
       font-size: 10px;
       letter-spacing: 0.06em;
       text-transform: uppercase;
-      color: #525252;
+      color: var(--muted, #525252);
       margin-bottom: 12px;
     }
     .ms-score-block {
@@ -70,24 +70,24 @@ function ensureStyles() {
       font-weight: 900;
       font-size: 48px;
       line-height: 1;
-      color: #171717;
+      color: var(--text, #171717);
       display: flex;
       align-items: center;
       gap: 8px;
     }
-    .ms-score-sep { font-size: 32px; color: #525252; }
+    .ms-score-sep { font-size: 32px; color: var(--muted, #525252); }
     .ms-tier-toggle { display: flex; gap: 8px; margin-bottom: 12px; }
     .ms-tier-btn {
       font-family: var(--font-mono, 'Geist Mono', monospace);
       font-size: 11px;
       padding: 3px 10px;
-      border: 1px solid #E5E5E5;
-      background: #FAF7F0;
-      color: #525252;
+      border: 1px solid var(--border, #E5E5E5);
+      background: var(--background, #FAF7F0);
+      color: var(--muted, #525252);
       cursor: pointer;
       border-radius: 2px;
     }
-    .ms-tier-btn.active { border-color: #171717; color: #171717; }
+    .ms-tier-btn.active { border-color: var(--text, #171717); color: var(--text, #171717); }
   `;
   document.head.appendChild(style);
 }
@@ -221,6 +221,9 @@ function toBarRow(row) {
  * @param {"basic"|"all"} [config.tier="basic"] - Initial tier filter:
  *   "basic" shows only tier="basic" rows; "all" shows every row.
  * @param {boolean} [config.showTierToggle=true] - Show the basic/all tier toggle.
+ * @param {boolean} [config.showHeader=true] - Render the match-label + score-block
+ *   headline above the bars. Pass false when the caller renders its own match header
+ *   elsewhere (e.g. a dashboard's dedicated header card) so it isn't duplicated here.
  * @param {number} [config.width=480]        - Passed through to comparisonBars.
  * @param {number} [config.rowHeight=40]     - Passed through to comparisonBars.
  * @param {number} [config.barHeight=14]     - Passed through to comparisonBars.
@@ -238,6 +241,7 @@ export function createMatchStats(selection, data, config = {}) {
   const cfg = {
     tier:           "basic",
     showTierToggle: true,
+    showHeader:     true,
     width:          480,
     rowHeight:      40,
     barHeight:      14,
@@ -262,13 +266,17 @@ export function createMatchStats(selection, data, config = {}) {
   // ── Root ────────────────────────────────────────────────────────────────────
   const root = selection.append("div").attr("class", "ms-root");
 
-  // Match label
-  const matchLabelEl = root.append("div").attr("class", "ms-match-label");
+  // Match label + score headline (optional — suppressed when the caller renders
+  // its own match header elsewhere via config.showHeader:false).
+  const matchLabelEl = cfg.showHeader !== false
+    ? root.append("div").attr("class", "ms-match-label")
+    : null;
 
-  // Score headline — same width as the chart so justify-content:center sits over the bars
-  const scoreEl = root.append("div")
-    .attr("class", "ms-score-block")
-    .style("width", `${cfg.width}px`);
+  const scoreEl = cfg.showHeader !== false
+    ? root.append("div")
+        .attr("class", "ms-score-block")
+        .style("width", `${cfg.width}px`)
+    : null;
 
   // Tier toggle (optional)
   let btnBasic, btnAll;
@@ -326,8 +334,8 @@ export function createMatchStats(selection, data, config = {}) {
 
   // Initial render
   function initialRender(d) {
-    matchLabelEl.text(`${d.metadata.match_label} · ${d.metadata.competition}`);
-    fillScoreBlock(scoreEl, d);
+    if (matchLabelEl) matchLabelEl.text(`${d.metadata.match_label} · ${d.metadata.competition}`);
+    if (scoreEl) fillScoreBlock(scoreEl, d);
     redrawBars(d);
   }
 
@@ -351,8 +359,8 @@ export function createMatchStats(selection, data, config = {}) {
         btnAll.attr("class",   "ms-tier-btn" + (activeTier === "all"   ? " active" : ""));
       }
     }
-    matchLabelEl.text(`${newData.metadata.match_label} · ${newData.metadata.competition}`);
-    fillScoreBlock(scoreEl, newData);
+    if (matchLabelEl) matchLabelEl.text(`${newData.metadata.match_label} · ${newData.metadata.competition}`);
+    if (scoreEl) fillScoreBlock(scoreEl, newData);
     redrawBars(newData);
   }
 

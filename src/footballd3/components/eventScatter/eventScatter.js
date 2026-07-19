@@ -28,6 +28,8 @@
  * rebuilding the component.
  */
 
+import * as d3 from "d3";
+
 // ── Color encoding ────────────────────────────────────────────────────────────
 
 const _TYPE_CATEGORY = {

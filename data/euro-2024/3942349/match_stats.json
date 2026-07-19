@@ -1,0 +1,83 @@
+{
+  "home": {
+    "team": "Portugal",
+    "color": "#006600",
+    "score": 3
+  },
+  "away": {
+    "team": "France",
+    "color": "#002395",
+    "score": 5
+  },
+  "rows": [
+    {
+      "label": "Shots",
+      "home_value": 19.0,
+      "away_value": 25.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Shots on Target",
+      "home_value": 7.0,
+      "away_value": 10.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Possession",
+      "home_value": 58.1,
+      "away_value": 41.9,
+      "scale_type": "fixed100",
+      "format": "pct",
+      "tier": "basic"
+    },
+    {
+      "label": "Corners",
+      "home_value": 11.0,
+      "away_value": 4.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Fouls",
+      "home_value": 11.0,
+      "away_value": 16.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Yellow Cards",
+      "home_value": 1.0,
+      "away_value": 1.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Red Cards",
+      "home_value": 0.0,
+      "away_value": 0.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "xG",
+      "home_value": 4.54,
+      "away_value": 4.98,
+      "scale_type": "sum",
+      "format": "float1",
+      "tier": "advanced"
+    }
+  ],
+  "metadata": {
+    "match_id": 3942349,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Portugal vs France"
+  }
+}

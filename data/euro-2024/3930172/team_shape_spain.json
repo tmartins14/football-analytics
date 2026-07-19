@@ -1,0 +1,934 @@
+{
+  "on_ball": {
+    "periods": [
+      {
+        "from_minute": 0,
+        "to_minute": 70,
+        "players_in": [
+          "Unai Sim\u00f3n Mendibil",
+          "Daniel Carvajal Ramos",
+          "Robin Aime Robert Le Normand",
+          "Aymeric Laporte",
+          "Marc Cucurella Saseta",
+          "Rodrigo Hern\u00e1ndez Cascante",
+          "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "Lamine Yamal Nasraoui Ebana",
+          "Pedro Gonz\u00e1lez L\u00f3pez",
+          "Nicholas Williams Arthuer",
+          "\u00c1lvaro Borja Morata Mart\u00edn"
+        ],
+        "players_out": [],
+        "nodes": [
+          {
+            "player_id": 6655,
+            "player": "Fabi\u00e1n Ruiz Pe\u00f1a",
+            "display_name": "Fabi\u00e1n Ruiz",
+            "x": 71.07,
+            "y": 23.68,
+            "event_count": 132
+          },
+          {
+            "player_id": 6765,
+            "player": "Rodrigo Hern\u00e1ndez Cascante",
+            "display_name": "Rodri",
+            "x": 63.3,
+            "y": 35.48,
+            "event_count": 120
+          },
+          {
+            "player_id": 68574,
+            "player": "Nicholas Williams Arthuer",
+            "display_name": "Nico Williams",
+            "x": 89.13,
+            "y": 13.17,
+            "event_count": 87
+          },
+          {
+            "player_id": 4353,
+            "player": "Aymeric Laporte",
+            "display_name": "Aymeric Laporte",
+            "x": 53.63,
+            "y": 19.21,
+            "event_count": 83
+          },
+          {
+            "player_id": 22128,
+            "player": "Robin Aime Robert Le Normand",
+            "display_name": "Robin Le Normand",
+            "x": 53.7,
+            "y": 50.26,
+            "event_count": 74
+          },
+          {
+            "player_id": 5721,
+            "player": "Daniel Carvajal Ramos",
+            "display_name": "Daniel Carvajal",
+            "x": 70.11,
+            "y": 67.62,
+            "event_count": 70
+          },
+          {
+            "player_id": 17620,
+            "player": "Marc Cucurella Saseta",
+            "display_name": "Marc Cucurella",
+            "x": 72.13,
+            "y": 8.56,
+            "event_count": 67
+          },
+          {
+            "player_id": 30486,
+            "player": "Pedro Gonz\u00e1lez L\u00f3pez",
+            "display_name": "Pedri",
+            "x": 77.01,
+            "y": 43.12,
+            "event_count": 62
+          },
+          {
+            "player_id": 316046,
+            "player": "Lamine Yamal Nasraoui Ebana",
+            "display_name": "Lamine Yamal",
+            "x": 83.95,
+            "y": 70.31,
+            "event_count": 59
+          },
+          {
+            "player_id": 11748,
+            "player": "Unai Sim\u00f3n Mendibil",
+            "display_name": "Unai Sim\u00f3n",
+            "x": 14.99,
+            "y": 41.98,
+            "event_count": 37
+          },
+          {
+            "player_id": 3477,
+            "player": "\u00c1lvaro Borja Morata Mart\u00edn",
+            "display_name": "\u00c1lvaro Morata",
+            "x": 86.12,
+            "y": 27.19,
+            "event_count": 29
+          }
+        ],
+        "hull": [
+          [
+            89.13,
+            13.17
+          ],
+          [
+            83.95,
+            70.31
+          ],
+          [
+            70.11,
+            67.62
+          ],
+          [
+            14.99,
+            41.98
+          ],
+          [
+            53.63,
+            19.21
+          ],
+          [
+            72.13,
+            8.56
+          ]
+        ]
+      },
+      {
+        "from_minute": 70,
+        "to_minute": 77,
+        "players_in": [
+          "Alejandro Baena Rodr\u00edguez",
+          "Ferr\u00e1n Torres Garc\u00eda"
+        ],
+        "players_out": [
+          "Pedro Gonz\u00e1lez L\u00f3pez",
+          "Lamine Yamal Nasraoui Ebana"
+        ],
+        "nodes": [
+          {
+            "player_id": 68574,
+            "player": "Nicholas Williams Arthuer",
+            "display_name": "Nico Williams",
+            "x": 107.72,
+            "y": 11.2,
+            "event_count": 9
+          },
+          {
+            "player_id": 17620,
+            "player": "Marc Cucurella Saseta",
+            "display_name": "Marc Cucurella",
+            "x": 95.97,
+            "y": 6.77,
+            "event_count": 9
+          },
+          {
+            "player_id": 6655,
+            "player": "Fabi\u00e1n Ruiz Pe\u00f1a",
+            "display_name": "Fabi\u00e1n Ruiz",
+            "x": 94.6,
+            "y": 22.1,
+            "event_count": 7
+          },
+          {
+            "player_id": 4353,
+            "player": "Aymeric Laporte",
+            "display_name": "Aymeric Laporte",
+            "x": 69.9,
+            "y": 10.83,
+            "event_count": 3
+          },
+          {
+            "player_id": 22128,
+            "player": "Robin Aime Robert Le Normand",
+            "display_name": "Robin Le Normand",
+            "x": 66.63,
+            "y": 51.83,
+            "event_count": 3
+          },
+          {
+            "player_id": 5721,
+            "player": "Daniel Carvajal Ramos",
+            "display_name": "Daniel Carvajal",
+            "x": 86.7,
+            "y": 75.77,
+            "event_count": 3
+          },
+          {
+            "player_id": 6748,
+            "player": "Ferr\u00e1n Torres Garc\u00eda",
+            "display_name": "Ferr\u00e1n Torres",
+            "x": 102.2,
+            "y": 76.8,
+            "event_count": 3
+          },
+          {
+            "player_id": 3477,
+            "player": "\u00c1lvaro Borja Morata Mart\u00edn",
+            "display_name": "\u00c1lvaro Morata",
+            "x": 113.8,
+            "y": 40.45,
+            "event_count": 2
+          }
+        ],
+        "hull": [
+          [
+            113.8,
+            40.45
+          ],
+          [
+            102.2,
+            76.8
+          ],
+          [
+            86.7,
+            75.77
+          ],
+          [
+            66.63,
+            51.83
+          ],
+          [
+            69.9,
+            10.83
+          ],
+          [
+            95.97,
+            6.77
+          ],
+          [
+            107.72,
+            11.2
+          ]
+        ]
+      },
+      {
+        "from_minute": 77,
+        "to_minute": 93,
+        "players_in": [
+          "Ayoze P\u00e9rez Guti\u00e9rrez",
+          "Mikel Oyarzabal Ugarte"
+        ],
+        "players_out": [
+          "Nicholas Williams Arthuer",
+          "\u00c1lvaro Borja Morata Mart\u00edn"
+        ],
+        "nodes": [
+          {
+            "player_id": 6765,
+            "player": "Rodrigo Hern\u00e1ndez Cascante",
+            "display_name": "Rodri",
+            "x": 38.31,
+            "y": 52.27,
+            "event_count": 17
+          },
+          {
+            "player_id": 5721,
+            "player": "Daniel Carvajal Ramos",
+            "display_name": "Daniel Carvajal",
+            "x": 36.58,
+            "y": 73.48,
+            "event_count": 16
+          },
+          {
+            "player_id": 4353,
+            "player": "Aymeric Laporte",
+            "display_name": "Aymeric Laporte",
+            "x": 28.75,
+            "y": 16.93,
+            "event_count": 15
+          },
+          {
+            "player_id": 41115,
+            "player": "Alejandro Baena Rodr\u00edguez",
+            "display_name": "\u00c1lex Baena",
+            "x": 54.86,
+            "y": 64.35,
+            "event_count": 14
+          },
+          {
+            "player_id": 11748,
+            "player": "Unai Sim\u00f3n Mendibil",
+            "display_name": "Unai Sim\u00f3n",
+            "x": 9.24,
+            "y": 42.51,
+            "event_count": 11
+          },
+          {
+            "player_id": 6655,
+            "player": "Fabi\u00e1n Ruiz Pe\u00f1a",
+            "display_name": "Fabi\u00e1n Ruiz",
+            "x": 44.6,
+            "y": 31.92,
+            "event_count": 9
+          },
+          {
+            "player_id": 17620,
+            "player": "Marc Cucurella Saseta",
+            "display_name": "Marc Cucurella",
+            "x": 33.59,
+            "y": 17.91,
+            "event_count": 9
+          },
+          {
+            "player_id": 22128,
+            "player": "Robin Aime Robert Le Normand",
+            "display_name": "Robin Le Normand",
+            "x": 31.22,
+            "y": 56.91,
+            "event_count": 9
+          },
+          {
+            "player_id": 3076,
+            "player": "Ayoze P\u00e9rez Guti\u00e9rrez",
+            "display_name": "Ayoze P\u00e9rez",
+            "x": 70.32,
+            "y": 14.34,
+            "event_count": 8
+          },
+          {
+            "player_id": 6748,
+            "player": "Ferr\u00e1n Torres Garc\u00eda",
+            "display_name": "Ferr\u00e1n Torres",
+            "x": 46.73,
+            "y": 73.57,
+            "event_count": 7
+          }
+        ],
+        "hull": [
+          [
+            9.24,
+            42.51
+          ],
+          [
+            28.75,
+            16.93
+          ],
+          [
+            70.32,
+            14.34
+          ],
+          [
+            54.86,
+            64.35
+          ],
+          [
+            46.73,
+            73.57
+          ],
+          [
+            36.58,
+            73.48
+          ]
+        ]
+      },
+      {
+        "from_minute": 93,
+        "to_minute": 97,
+        "players_in": [
+          "Mikel Merino Zaz\u00f3n"
+        ],
+        "players_out": [
+          "Fabi\u00e1n Ruiz Pe\u00f1a"
+        ],
+        "nodes": [
+          {
+            "player_id": 41115,
+            "player": "Alejandro Baena Rodr\u00edguez",
+            "display_name": "\u00c1lex Baena",
+            "x": 55.48,
+            "y": 34.78,
+            "event_count": 5
+          },
+          {
+            "player_id": 22128,
+            "player": "Robin Aime Robert Le Normand",
+            "display_name": "Robin Le Normand",
+            "x": 38.2,
+            "y": 64.23,
+            "event_count": 3
+          },
+          {
+            "player_id": 11748,
+            "player": "Unai Sim\u00f3n Mendibil",
+            "display_name": "Unai Sim\u00f3n",
+            "x": 13.47,
+            "y": 46.53,
+            "event_count": 3
+          },
+          {
+            "player_id": 4353,
+            "player": "Aymeric Laporte",
+            "display_name": "Aymeric Laporte",
+            "x": 19.27,
+            "y": 25.63,
+            "event_count": 3
+          },
+          {
+            "player_id": 6685,
+            "player": "Mikel Oyarzabal Ugarte",
+            "display_name": "Mikel Oyarzabal",
+            "x": 55.1,
+            "y": 40.83,
+            "event_count": 3
+          },
+          {
+            "player_id": 3076,
+            "player": "Ayoze P\u00e9rez Guti\u00e9rrez",
+            "display_name": "Ayoze P\u00e9rez",
+            "x": 31.0,
+            "y": 13.2,
+            "event_count": 2
+          },
+          {
+            "player_id": 17620,
+            "player": "Marc Cucurella Saseta",
+            "display_name": "Marc Cucurella",
+            "x": 21.6,
+            "y": 15.8,
+            "event_count": 1
+          }
+        ],
+        "hull": [
+          [
+            31.0,
+            13.2
+          ],
+          [
+            55.48,
+            34.78
+          ],
+          [
+            55.1,
+            40.83
+          ],
+          [
+            38.2,
+            64.23
+          ],
+          [
+            13.47,
+            46.53
+          ],
+          [
+            21.6,
+            15.8
+          ]
+        ]
+      }
+    ]
+  },
+  "off_ball": {
+    "density_grid": {
+      "cols": 24,
+      "rows": 16,
+      "values": [
+        [
+          0.0914,
+          0.1128,
+          0.1362,
+          0.1612,
+          0.1871,
+          0.2133,
+          0.239,
+          0.2636,
+          0.2865,
+          0.307,
+          0.3246,
+          0.3388,
+          0.349,
+          0.3547,
+          0.3555,
+          0.3512,
+          0.3416,
+          0.3268,
+          0.3071,
+          0.2832,
+          0.2561,
+          0.2267,
+          0.1964,
+          0.1663
+        ],
+        [
+          0.1282,
+          0.1571,
+          0.1884,
+          0.2215,
+          0.2555,
+          0.2895,
+          0.3227,
+          0.3543,
+          0.3834,
+          0.4095,
+          0.4317,
+          0.4495,
+          0.4622,
+          0.4691,
+          0.4698,
+          0.4636,
+          0.4506,
+          0.4307,
+          0.4044,
+          0.3727,
+          0.3367,
+          0.2978,
+          0.2577,
+          0.218
+        ],
+        [
+          0.1707,
+          0.2077,
+          0.2476,
+          0.2892,
+          0.3316,
+          0.3737,
+          0.4146,
+          0.4531,
+          0.4886,
+          0.5202,
+          0.5471,
+          0.5686,
+          0.5837,
+          0.5917,
+          0.5919,
+          0.5837,
+          0.5668,
+          0.5414,
+          0.508,
+          0.4677,
+          0.4221,
+          0.373,
+          0.3225,
+          0.2724
+        ],
+        [
+          0.2161,
+          0.2614,
+          0.3096,
+          0.3596,
+          0.4101,
+          0.4599,
+          0.5079,
+          0.553,
+          0.5944,
+          0.6312,
+          0.6624,
+          0.6872,
+          0.7046,
+          0.7136,
+          0.7131,
+          0.7027,
+          0.6818,
+          0.6507,
+          0.61,
+          0.5611,
+          0.5059,
+          0.4465,
+          0.3856,
+          0.3254
+        ],
+        [
+          0.2606,
+          0.3134,
+          0.3691,
+          0.4264,
+          0.484,
+          0.5405,
+          0.5946,
+          0.6454,
+          0.6918,
+          0.733,
+          0.768,
+          0.7957,
+          0.8149,
+          0.8245,
+          0.8233,
+          0.8106,
+          0.7858,
+          0.7491,
+          0.7015,
+          0.6445,
+          0.5803,
+          0.5116,
+          0.4411,
+          0.3717
+        ],
+        [
+          0.2996,
+          0.3585,
+          0.4202,
+          0.4833,
+          0.5463,
+          0.6078,
+          0.6666,
+          0.7216,
+          0.7719,
+          0.8165,
+          0.8543,
+          0.8841,
+          0.9047,
+          0.9146,
+          0.9124,
+          0.8974,
+          0.869,
+          0.8274,
+          0.7738,
+          0.7098,
+          0.638,
+          0.5615,
+          0.4832,
+          0.4064
+        ],
+        [
+          0.329,
+          0.3919,
+          0.4575,
+          0.5242,
+          0.5906,
+          0.6552,
+          0.7168,
+          0.7744,
+          0.827,
+          0.8737,
+          0.9132,
+          0.9443,
+          0.9654,
+          0.9751,
+          0.9718,
+          0.9546,
+          0.923,
+          0.8774,
+          0.819,
+          0.7498,
+          0.6725,
+          0.5904,
+          0.507,
+          0.4254
+        ],
+        [
+          0.3452,
+          0.4098,
+          0.4769,
+          0.5449,
+          0.6123,
+          0.6779,
+          0.7403,
+          0.7987,
+          0.8521,
+          0.8994,
+          0.9393,
+          0.9705,
+          0.9912,
+          1.0,
+          0.9953,
+          0.9761,
+          0.942,
+          0.8935,
+          0.832,
+          0.7596,
+          0.6794,
+          0.5948,
+          0.5091,
+          0.4258
+        ],
+        [
+          0.3465,
+          0.4103,
+          0.4765,
+          0.5434,
+          0.6096,
+          0.674,
+          0.7353,
+          0.7927,
+          0.845,
+          0.8913,
+          0.9302,
+          0.9601,
+          0.9796,
+          0.9868,
+          0.9804,
+          0.9594,
+          0.9235,
+          0.8735,
+          0.8108,
+          0.7378,
+          0.6576,
+          0.5735,
+          0.489,
+          0.4074
+        ],
+        [
+          0.333,
+          0.3938,
+          0.4567,
+          0.5203,
+          0.5833,
+          0.6445,
+          0.7028,
+          0.7572,
+          0.8069,
+          0.8506,
+          0.8869,
+          0.9145,
+          0.9316,
+          0.9367,
+          0.9284,
+          0.906,
+          0.8694,
+          0.8194,
+          0.7576,
+          0.6865,
+          0.6092,
+          0.5288,
+          0.4487,
+          0.372
+        ],
+        [
+          0.3067,
+          0.3624,
+          0.4202,
+          0.4786,
+          0.5365,
+          0.5927,
+          0.6463,
+          0.6963,
+          0.7417,
+          0.7814,
+          0.814,
+          0.838,
+          0.852,
+          0.8546,
+          0.8445,
+          0.8213,
+          0.785,
+          0.7367,
+          0.678,
+          0.6113,
+          0.5396,
+          0.4658,
+          0.3931,
+          0.324
+        ],
+        [
+          0.2707,
+          0.32,
+          0.3712,
+          0.423,
+          0.4743,
+          0.5243,
+          0.5718,
+          0.616,
+          0.6559,
+          0.6903,
+          0.7182,
+          0.738,
+          0.7485,
+          0.7484,
+          0.737,
+          0.7138,
+          0.6791,
+          0.6341,
+          0.5804,
+          0.5204,
+          0.4565,
+          0.3916,
+          0.3283,
+          0.2688
+        ],
+        [
+          0.2291,
+          0.2711,
+          0.3147,
+          0.3589,
+          0.4028,
+          0.4455,
+          0.486,
+          0.5235,
+          0.557,
+          0.5857,
+          0.6082,
+          0.6236,
+          0.6306,
+          0.6283,
+          0.6161,
+          0.5939,
+          0.5622,
+          0.5219,
+          0.4749,
+          0.423,
+          0.3686,
+          0.314,
+          0.2613,
+          0.2123
+        ],
+        [
+          0.1859,
+          0.2202,
+          0.2559,
+          0.2922,
+          0.3282,
+          0.3631,
+          0.3962,
+          0.4266,
+          0.4536,
+          0.4762,
+          0.4935,
+          0.5045,
+          0.5085,
+          0.5046,
+          0.4926,
+          0.4724,
+          0.4446,
+          0.4102,
+          0.3708,
+          0.328,
+          0.2837,
+          0.2398,
+          0.198,
+          0.1596
+        ],
+        [
+          0.1444,
+          0.1713,
+          0.1993,
+          0.2277,
+          0.256,
+          0.2833,
+          0.3091,
+          0.3326,
+          0.3532,
+          0.3701,
+          0.3827,
+          0.39,
+          0.3916,
+          0.387,
+          0.3759,
+          0.3585,
+          0.3354,
+          0.3074,
+          0.2759,
+          0.2423,
+          0.2079,
+          0.1744,
+          0.1428,
+          0.1141
+        ],
+        [
+          0.1072,
+          0.1273,
+          0.1483,
+          0.1696,
+          0.1907,
+          0.2111,
+          0.2302,
+          0.2475,
+          0.2624,
+          0.2744,
+          0.2829,
+          0.2874,
+          0.2874,
+          0.2827,
+          0.2732,
+          0.2591,
+          0.2409,
+          0.2193,
+          0.1955,
+          0.1703,
+          0.145,
+          0.1206,
+          0.0978,
+          0.0775
+        ]
+      ]
+    },
+    "centroid": {
+      "x": 62.57,
+      "y": 38.18
+    },
+    "thirds_spine": [
+      {
+        "third": "defensive",
+        "x": 24.74,
+        "y": 40.28
+      },
+      {
+        "third": "middle",
+        "x": 62.0,
+        "y": 38.85
+      },
+      {
+        "third": "attacking",
+        "x": 93.06,
+        "y": 35.58
+      }
+    ],
+    "ellipse": {
+      "cx": 62.57,
+      "cy": 38.18,
+      "rx": 27.26,
+      "ry": 16.71,
+      "angle_deg": 174.9
+    },
+    "depth_line": {
+      "x": 80.81,
+      "percentile": 70
+    }
+  },
+  "metadata": {
+    "match_id": 3930172,
+    "team": "Spain",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Spain vs Italy",
+    "on_ball_event_count": 994,
+    "on_ball_period_count": 4,
+    "off_ball_bandwidth_yards": 8.0,
+    "off_ball_depth_percentile": 70,
+    "off_ball_grid_cols": 24,
+    "off_ball_grid_rows": 16,
+    "phase_filter": "open_play_only",
+    "coordinate_system": "statsbomb_120x80_normalised_attack_right",
+    "coordinate_note": "Coordinates are normalised so the team always attacks right (increasing x). Raw StatsBomb events are flipped (x\u2192120-x, y\u219280-y) in periods where the team attacks left.",
+    "camera_caveat": "360 frames follow the ball; the visible subset of out-of-possession positions is biased toward areas near the ball. The camera artifact and the real defensive shape point the same direction \u2014 they cannot be cleanly separated."
+  }
+}

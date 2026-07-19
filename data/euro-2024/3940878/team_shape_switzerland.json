@@ -1,0 +1,804 @@
+{
+  "on_ball": {
+    "periods": [
+      {
+        "from_minute": 0,
+        "to_minute": 70,
+        "players_in": [
+          "Yann Sommer",
+          "Fabian Lukas Sch\u00e4r",
+          "Manuel Obafemi Akanji",
+          "Ricardo Iv\u00e1n Rodr\u00edguez Araya",
+          "Dan Ndoye",
+          "Michel Aebischer",
+          "Remo Freuler",
+          "Granit Xhaka",
+          "Fabian Rieder",
+          "Ruben Vargas",
+          "Breel-Donald Embolo"
+        ],
+        "players_out": [],
+        "nodes": [
+          {
+            "player_id": 3500,
+            "player": "Granit Xhaka",
+            "display_name": "Granit Xhaka",
+            "x": 65.13,
+            "y": 29.05,
+            "event_count": 101
+          },
+          {
+            "player_id": 5544,
+            "player": "Ricardo Iv\u00e1n Rodr\u00edguez Araya",
+            "display_name": "Ricardo Rodr\u00edguez",
+            "x": 65.16,
+            "y": 14.03,
+            "event_count": 81
+          },
+          {
+            "player_id": 16016,
+            "player": "Michel Aebischer",
+            "display_name": "Michel Aebischer",
+            "x": 81.52,
+            "y": 14.91,
+            "event_count": 81
+          },
+          {
+            "player_id": 6983,
+            "player": "Remo Freuler",
+            "display_name": "Remo Freuler",
+            "x": 63.03,
+            "y": 42.42,
+            "event_count": 58
+          },
+          {
+            "player_id": 30401,
+            "player": "Ruben Vargas",
+            "display_name": "Ruben Vargas",
+            "x": 84.49,
+            "y": 10.43,
+            "event_count": 51
+          },
+          {
+            "player_id": 45190,
+            "player": "Dan Ndoye",
+            "display_name": "Dan Ndoye",
+            "x": 78.87,
+            "y": 60.0,
+            "event_count": 50
+          },
+          {
+            "player_id": 5549,
+            "player": "Manuel Obafemi Akanji",
+            "display_name": "Manuel Akanji",
+            "x": 52.14,
+            "y": 35.61,
+            "event_count": 45
+          },
+          {
+            "player_id": 50436,
+            "player": "Fabian Rieder",
+            "display_name": "Fabian Rieder",
+            "x": 73.82,
+            "y": 46.33,
+            "event_count": 38
+          },
+          {
+            "player_id": 5545,
+            "player": "Breel-Donald Embolo",
+            "display_name": "Breel Embolo",
+            "x": 85.06,
+            "y": 39.37,
+            "event_count": 36
+          },
+          {
+            "player_id": 5537,
+            "player": "Fabian Lukas Sch\u00e4r",
+            "display_name": "Fabian Sch\u00e4r",
+            "x": 55.93,
+            "y": 56.97,
+            "event_count": 27
+          },
+          {
+            "player_id": 5550,
+            "player": "Yann Sommer",
+            "display_name": "Yann Sommer",
+            "x": 13.85,
+            "y": 39.28,
+            "event_count": 17
+          }
+        ],
+        "hull": [
+          [
+            84.49,
+            10.43
+          ],
+          [
+            85.06,
+            39.37
+          ],
+          [
+            78.87,
+            60.0
+          ],
+          [
+            55.93,
+            56.97
+          ],
+          [
+            13.85,
+            39.28
+          ],
+          [
+            65.16,
+            14.03
+          ]
+        ]
+      },
+      {
+        "from_minute": 70,
+        "to_minute": 76,
+        "players_in": [
+          "Leonidas Stergiou",
+          "Steven Zuber"
+        ],
+        "players_out": [
+          "Fabian Rieder",
+          "Ruben Vargas"
+        ],
+        "nodes": [
+          {
+            "player_id": 29227,
+            "player": "Leonidas Stergiou",
+            "display_name": "Leonidas Stergiou",
+            "x": 24.3,
+            "y": 68.2,
+            "event_count": 5
+          },
+          {
+            "player_id": 5544,
+            "player": "Ricardo Iv\u00e1n Rodr\u00edguez Araya",
+            "display_name": "Ricardo Rodr\u00edguez",
+            "x": 42.1,
+            "y": 13.45,
+            "event_count": 4
+          },
+          {
+            "player_id": 16016,
+            "player": "Michel Aebischer",
+            "display_name": "Michel Aebischer",
+            "x": 51.63,
+            "y": 1.63,
+            "event_count": 3
+          },
+          {
+            "player_id": 6983,
+            "player": "Remo Freuler",
+            "display_name": "Remo Freuler",
+            "x": 13.83,
+            "y": 54.17,
+            "event_count": 3
+          },
+          {
+            "player_id": 45190,
+            "player": "Dan Ndoye",
+            "display_name": "Dan Ndoye",
+            "x": 25.87,
+            "y": 57.97,
+            "event_count": 3
+          },
+          {
+            "player_id": 5537,
+            "player": "Fabian Lukas Sch\u00e4r",
+            "display_name": "Fabian Sch\u00e4r",
+            "x": 49.6,
+            "y": 38.53,
+            "event_count": 3
+          },
+          {
+            "player_id": 5545,
+            "player": "Breel-Donald Embolo",
+            "display_name": "Breel Embolo",
+            "x": 75.97,
+            "y": 75.83,
+            "event_count": 3
+          },
+          {
+            "player_id": 5550,
+            "player": "Yann Sommer",
+            "display_name": "Yann Sommer",
+            "x": 5.3,
+            "y": 34.6,
+            "event_count": 1
+          }
+        ],
+        "hull": [
+          [
+            5.3,
+            34.6
+          ],
+          [
+            51.63,
+            1.63
+          ],
+          [
+            75.97,
+            75.83
+          ],
+          [
+            24.3,
+            68.2
+          ],
+          [
+            13.83,
+            54.17
+          ]
+        ]
+      },
+      {
+        "from_minute": 76,
+        "to_minute": 91,
+        "players_in": [
+          "Vincent Sierro",
+          "Kwadwo Duah"
+        ],
+        "players_out": [
+          "Dan Ndoye",
+          "Breel-Donald Embolo"
+        ],
+        "nodes": [
+          {
+            "player_id": 5548,
+            "player": "Steven Zuber",
+            "display_name": "Steven Zuber",
+            "x": 77.83,
+            "y": 17.28,
+            "event_count": 19
+          },
+          {
+            "player_id": 3500,
+            "player": "Granit Xhaka",
+            "display_name": "Granit Xhaka",
+            "x": 64.73,
+            "y": 22.93,
+            "event_count": 18
+          },
+          {
+            "player_id": 11457,
+            "player": "Vincent Sierro",
+            "display_name": "Vincent Sierro",
+            "x": 71.31,
+            "y": 41.61,
+            "event_count": 14
+          },
+          {
+            "player_id": 16016,
+            "player": "Michel Aebischer",
+            "display_name": "Michel Aebischer",
+            "x": 72.13,
+            "y": 6.5,
+            "event_count": 12
+          },
+          {
+            "player_id": 49007,
+            "player": "Kwadwo Duah",
+            "display_name": "Kwadwo Duah",
+            "x": 53.55,
+            "y": 36.4,
+            "event_count": 6
+          },
+          {
+            "player_id": 5549,
+            "player": "Manuel Obafemi Akanji",
+            "display_name": "Manuel Akanji",
+            "x": 19.4,
+            "y": 40.2,
+            "event_count": 1
+          }
+        ],
+        "hull": [
+          [
+            71.31,
+            41.61
+          ],
+          [
+            19.4,
+            40.2
+          ],
+          [
+            72.13,
+            6.5
+          ],
+          [
+            77.83,
+            17.28
+          ]
+        ]
+      },
+      {
+        "from_minute": 91,
+        "to_minute": 93,
+        "players_in": [
+          "Renato Steffen"
+        ],
+        "players_out": [
+          "Michel Aebischer"
+        ],
+        "nodes": [],
+        "hull": []
+      }
+    ]
+  },
+  "off_ball": {
+    "density_grid": {
+      "cols": 24,
+      "rows": 16,
+      "values": [
+        [
+          0.0732,
+          0.0865,
+          0.1004,
+          0.1147,
+          0.1291,
+          0.1435,
+          0.1576,
+          0.1713,
+          0.1845,
+          0.197,
+          0.2085,
+          0.2186,
+          0.2269,
+          0.2327,
+          0.2356,
+          0.2351,
+          0.2307,
+          0.2225,
+          0.2105,
+          0.1951,
+          0.177,
+          0.157,
+          0.1361,
+          0.1151
+        ],
+        [
+          0.1037,
+          0.1223,
+          0.1417,
+          0.1617,
+          0.1818,
+          0.202,
+          0.2219,
+          0.2414,
+          0.2604,
+          0.2785,
+          0.2953,
+          0.3104,
+          0.3229,
+          0.332,
+          0.337,
+          0.337,
+          0.3316,
+          0.3204,
+          0.3037,
+          0.2821,
+          0.2564,
+          0.2279,
+          0.1979,
+          0.1678
+        ],
+        [
+          0.1401,
+          0.1648,
+          0.1906,
+          0.217,
+          0.2437,
+          0.2704,
+          0.2969,
+          0.3231,
+          0.3487,
+          0.3734,
+          0.3966,
+          0.4175,
+          0.4352,
+          0.4484,
+          0.4561,
+          0.4571,
+          0.4507,
+          0.4364,
+          0.4145,
+          0.3858,
+          0.3513,
+          0.3129,
+          0.2722,
+          0.2313
+        ],
+        [
+          0.1805,
+          0.2118,
+          0.2442,
+          0.2775,
+          0.311,
+          0.3446,
+          0.3781,
+          0.4113,
+          0.444,
+          0.4757,
+          0.5058,
+          0.5332,
+          0.5567,
+          0.5746,
+          0.5855,
+          0.5879,
+          0.5808,
+          0.5635,
+          0.5362,
+          0.5,
+          0.4563,
+          0.4071,
+          0.355,
+          0.3022
+        ],
+        [
+          0.2217,
+          0.2594,
+          0.2984,
+          0.3382,
+          0.3784,
+          0.4187,
+          0.459,
+          0.499,
+          0.5386,
+          0.5772,
+          0.6141,
+          0.6481,
+          0.6774,
+          0.7003,
+          0.7146,
+          0.7187,
+          0.7111,
+          0.6911,
+          0.6589,
+          0.6154,
+          0.5626,
+          0.503,
+          0.4394,
+          0.3749
+        ],
+        [
+          0.2593,
+          0.3027,
+          0.3475,
+          0.3932,
+          0.4393,
+          0.4855,
+          0.5317,
+          0.5777,
+          0.6234,
+          0.6683,
+          0.7113,
+          0.7512,
+          0.7859,
+          0.8133,
+          0.8309,
+          0.8367,
+          0.8289,
+          0.8068,
+          0.7702,
+          0.7205,
+          0.6598,
+          0.5908,
+          0.517,
+          0.4419
+        ],
+        [
+          0.2888,
+          0.3366,
+          0.386,
+          0.4362,
+          0.4869,
+          0.5377,
+          0.5885,
+          0.6392,
+          0.6898,
+          0.7395,
+          0.7873,
+          0.8318,
+          0.8708,
+          0.9018,
+          0.9221,
+          0.9293,
+          0.9215,
+          0.8977,
+          0.8579,
+          0.8034,
+          0.7365,
+          0.6603,
+          0.5786,
+          0.4952
+        ],
+        [
+          0.3064,
+          0.357,
+          0.4091,
+          0.4622,
+          0.5157,
+          0.5694,
+          0.6232,
+          0.677,
+          0.7305,
+          0.7832,
+          0.8341,
+          0.8814,
+          0.9229,
+          0.956,
+          0.9779,
+          0.9859,
+          0.978,
+          0.9532,
+          0.9114,
+          0.8539,
+          0.7832,
+          0.7027,
+          0.6161,
+          0.5278
+        ],
+        [
+          0.31,
+          0.3612,
+          0.4142,
+          0.4682,
+          0.5227,
+          0.5773,
+          0.6321,
+          0.6868,
+          0.7413,
+          0.7949,
+          0.8466,
+          0.8946,
+          0.9366,
+          0.9701,
+          0.9921,
+          1.0,
+          0.9918,
+          0.9665,
+          0.9239,
+          0.8656,
+          0.7939,
+          0.7122,
+          0.6245,
+          0.5349
+        ],
+        [
+          0.2993,
+          0.3493,
+          0.4011,
+          0.4539,
+          0.5072,
+          0.5608,
+          0.6144,
+          0.668,
+          0.7212,
+          0.7734,
+          0.8236,
+          0.87,
+          0.9104,
+          0.9423,
+          0.963,
+          0.97,
+          0.9613,
+          0.936,
+          0.8941,
+          0.8369,
+          0.767,
+          0.6875,
+          0.6024,
+          0.5156
+        ],
+        [
+          0.2762,
+          0.323,
+          0.3716,
+          0.4213,
+          0.4715,
+          0.522,
+          0.5725,
+          0.6228,
+          0.6726,
+          0.7212,
+          0.7677,
+          0.8104,
+          0.8473,
+          0.8761,
+          0.8942,
+          0.8995,
+          0.8903,
+          0.8656,
+          0.8257,
+          0.7718,
+          0.7063,
+          0.6322,
+          0.5531,
+          0.4728
+        ],
+        [
+          0.2438,
+          0.2859,
+          0.3296,
+          0.3745,
+          0.4199,
+          0.4655,
+          0.511,
+          0.5562,
+          0.6007,
+          0.6439,
+          0.6849,
+          0.7223,
+          0.7542,
+          0.7787,
+          0.7935,
+          0.7968,
+          0.7872,
+          0.764,
+          0.7274,
+          0.6786,
+          0.6198,
+          0.5537,
+          0.4835,
+          0.4124
+        ],
+        [
+          0.2059,
+          0.242,
+          0.2798,
+          0.3185,
+          0.3577,
+          0.3971,
+          0.4363,
+          0.475,
+          0.513,
+          0.5495,
+          0.5839,
+          0.6149,
+          0.641,
+          0.6606,
+          0.6718,
+          0.6732,
+          0.6637,
+          0.6427,
+          0.6106,
+          0.5684,
+          0.5179,
+          0.4616,
+          0.4022,
+          0.3422
+        ],
+        [
+          0.166,
+          0.1957,
+          0.2268,
+          0.2587,
+          0.2911,
+          0.3234,
+          0.3555,
+          0.3871,
+          0.4178,
+          0.4471,
+          0.4744,
+          0.4987,
+          0.5189,
+          0.5337,
+          0.5416,
+          0.5415,
+          0.5326,
+          0.5146,
+          0.4877,
+          0.453,
+          0.4118,
+          0.3662,
+          0.3182,
+          0.2702
+        ],
+        [
+          0.1277,
+          0.1509,
+          0.1752,
+          0.2002,
+          0.2255,
+          0.2508,
+          0.2757,
+          0.3,
+          0.3235,
+          0.3458,
+          0.3663,
+          0.3843,
+          0.399,
+          0.4095,
+          0.4146,
+          0.4136,
+          0.4059,
+          0.3913,
+          0.37,
+          0.3429,
+          0.3111,
+          0.276,
+          0.2393,
+          0.2027
+        ],
+        [
+          0.0932,
+          0.1105,
+          0.1285,
+          0.1471,
+          0.1658,
+          0.1844,
+          0.2027,
+          0.2204,
+          0.2374,
+          0.2533,
+          0.2678,
+          0.2804,
+          0.2905,
+          0.2974,
+          0.3005,
+          0.2991,
+          0.2929,
+          0.2818,
+          0.266,
+          0.246,
+          0.2228,
+          0.1973,
+          0.1708,
+          0.1445
+        ]
+      ]
+    },
+    "centroid": {
+      "x": 67.06,
+      "y": 41.58
+    },
+    "thirds_spine": [
+      {
+        "third": "defensive",
+        "x": 23.92,
+        "y": 41.69
+      },
+      {
+        "third": "middle",
+        "x": 63.57,
+        "y": 42.07
+      },
+      {
+        "third": "attacking",
+        "x": 92.78,
+        "y": 41.12
+      }
+    ],
+    "ellipse": {
+      "cx": 67.06,
+      "cy": 41.58,
+      "rx": 28.43,
+      "ry": 15.94,
+      "angle_deg": 180.0
+    },
+    "depth_line": {
+      "x": 87.16,
+      "percentile": 70
+    }
+  },
+  "metadata": {
+    "match_id": 3940878,
+    "team": "Switzerland",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Switzerland vs Italy",
+    "on_ball_event_count": 680,
+    "on_ball_period_count": 4,
+    "off_ball_bandwidth_yards": 8.0,
+    "off_ball_depth_percentile": 70,
+    "off_ball_grid_cols": 24,
+    "off_ball_grid_rows": 16,
+    "phase_filter": "open_play_only",
+    "coordinate_system": "statsbomb_120x80_normalised_attack_right",
+    "coordinate_note": "Coordinates are normalised so the team always attacks right (increasing x). Raw StatsBomb events are flipped (x\u2192120-x, y\u219280-y) in periods where the team attacks left.",
+    "camera_caveat": "360 frames follow the ball; the visible subset of out-of-possession positions is biased toward areas near the ball. The camera artifact and the real defensive shape point the same direction \u2014 they cannot be cleanly separated."
+  }
+}

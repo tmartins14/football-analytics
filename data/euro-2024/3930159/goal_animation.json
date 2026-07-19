@@ -1,0 +1,545 @@
+{
+  "goals": [
+    {
+      "window": {
+        "anchor_event_id": "238ad2b4-c744-4b64-990d-d9e53b1d9e92",
+        "start_event_id": "04829064-2a29-4e32-b6a1-b293b8ec557d",
+        "end_event_id": "238ad2b4-c744-4b64-990d-d9e53b1d9e92",
+        "period": 1,
+        "window_seconds": 10.0,
+        "t_span_seconds": 10.407
+      },
+      "frames": [
+        {
+          "event_id": "04829064-2a29-4e32-b6a1-b293b8ec557d",
+          "t_seconds": 0.0,
+          "team": "Switzerland",
+          "event_type": "Pass",
+          "ball_x": 86.5,
+          "ball_y": 78.6,
+          "ball_end_x": 83.6,
+          "ball_end_y": 72.7,
+          "actor": "Remo Freuler",
+          "outcome": null
+        },
+        {
+          "event_id": "3f4d9c69-1fb9-4db4-801b-77f9b1f4b9b3",
+          "t_seconds": 1.472,
+          "team": "Switzerland",
+          "event_type": "Carry",
+          "ball_x": 83.6,
+          "ball_y": 72.7,
+          "ball_end_x": 83.6,
+          "ball_end_y": 72.7,
+          "actor": "Granit Xhaka",
+          "outcome": null
+        },
+        {
+          "event_id": "04638a10-8d3f-49e6-ba14-7c64d1057888",
+          "t_seconds": 2.851,
+          "team": "Switzerland",
+          "event_type": "Pass",
+          "ball_x": 83.6,
+          "ball_y": 72.7,
+          "ball_end_x": 71.1,
+          "ball_end_y": 42.3,
+          "actor": "Granit Xhaka",
+          "outcome": null
+        },
+        {
+          "event_id": "16febb39-215a-4454-9038-e1635c0dc345",
+          "t_seconds": 4.9,
+          "team": "Switzerland",
+          "event_type": "Carry",
+          "ball_x": 71.1,
+          "ball_y": 42.3,
+          "ball_end_x": 75.8,
+          "ball_end_y": 39.6,
+          "actor": "Manuel Akanji",
+          "outcome": null
+        },
+        {
+          "event_id": "57012e6a-32f6-49e0-b177-eb769b397dc9",
+          "t_seconds": 7.047,
+          "team": "Switzerland",
+          "event_type": "Pass",
+          "ball_x": 75.8,
+          "ball_y": 39.6,
+          "ball_end_x": 84.8,
+          "ball_end_y": 46.2,
+          "actor": "Manuel Akanji",
+          "outcome": null
+        },
+        {
+          "event_id": "eea4e8a7-aff2-43d8-8901-a7d581c7282f",
+          "t_seconds": 7.732,
+          "team": "Switzerland",
+          "event_type": "Carry",
+          "ball_x": 84.8,
+          "ball_y": 46.2,
+          "ball_end_x": 84.6,
+          "ball_end_y": 46.6,
+          "actor": "Michel Aebischer",
+          "outcome": null
+        },
+        {
+          "event_id": "c12b72d8-8a84-45c1-aaa6-e40701a86f6b",
+          "t_seconds": 8.533,
+          "team": "Switzerland",
+          "event_type": "Pass",
+          "ball_x": 84.6,
+          "ball_y": 46.6,
+          "ball_end_x": 108.4,
+          "ball_end_y": 41.6,
+          "actor": "Michel Aebischer",
+          "outcome": null
+        },
+        {
+          "event_id": "a5ab81b9-3ac3-4121-b0d0-020a1c86335f",
+          "t_seconds": 9.423,
+          "team": "Hungary",
+          "event_type": "Pressure",
+          "ball_x": 15.5,
+          "ball_y": 38.0,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Willi Orban",
+          "outcome": null
+        },
+        {
+          "event_id": "238ad2b4-c744-4b64-990d-d9e53b1d9e92",
+          "t_seconds": 10.407,
+          "team": "Switzerland",
+          "event_type": "Shot",
+          "ball_x": 108.4,
+          "ball_y": 41.6,
+          "ball_end_x": 120.0,
+          "ball_end_y": 37.8,
+          "actor": "Kwadwo Duah",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "238ad2b4-c744-4b64-990d-d9e53b1d9e92",
+          "minute": 11,
+          "second": 55,
+          "scorer": "Kwadwo Duah",
+          "team": "Switzerland"
+        }
+      },
+      "metadata": {
+        "match_id": 3930159,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Hungary vs Switzerland"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "4215ba9b-4cad-45cb-80de-4eb9c70f3b40",
+        "start_event_id": "9c3fa50e-a7d1-4df4-b070-d740ed1b3a8f",
+        "end_event_id": "4215ba9b-4cad-45cb-80de-4eb9c70f3b40",
+        "period": 1,
+        "window_seconds": 10.0,
+        "t_span_seconds": 10.217
+      },
+      "frames": [
+        {
+          "event_id": "9c3fa50e-a7d1-4df4-b070-d740ed1b3a8f",
+          "t_seconds": 0.0,
+          "team": "Switzerland",
+          "event_type": "Pass",
+          "ball_x": 85.6,
+          "ball_y": 76.4,
+          "ball_end_x": 108.6,
+          "ball_end_y": 52.0,
+          "actor": "Granit Xhaka",
+          "outcome": null
+        },
+        {
+          "event_id": "66e8fdcd-5671-4411-b5a2-99fcd25ae9e5",
+          "t_seconds": 1.653,
+          "team": "Switzerland",
+          "event_type": "Carry",
+          "ball_x": 108.6,
+          "ball_y": 52.0,
+          "ball_end_x": 108.6,
+          "ball_end_y": 52.0,
+          "actor": "Ruben Vargas",
+          "outcome": null
+        },
+        {
+          "event_id": "dcb00c68-b99c-4fd3-aa21-4993de0aae57",
+          "t_seconds": 2.489,
+          "team": "Hungary",
+          "event_type": "Pass",
+          "ball_x": 16.3,
+          "ball_y": 21.8,
+          "ball_end_x": 14.5,
+          "ball_end_y": 27.8,
+          "actor": "Attila Szalai",
+          "outcome": null
+        },
+        {
+          "event_id": "c2a0fd99-104c-49d5-8e5e-434ab17696da",
+          "t_seconds": 3.32,
+          "team": "Switzerland",
+          "event_type": "Pressure",
+          "ball_x": 103.8,
+          "ball_y": 54.2,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Dan Ndoye",
+          "outcome": null
+        },
+        {
+          "event_id": "4a55719a-676d-4aa6-ad96-941e2c41e666",
+          "t_seconds": 3.408,
+          "team": "Hungary",
+          "event_type": "Carry",
+          "ball_x": 14.5,
+          "ball_y": 27.8,
+          "ball_end_x": 14.3,
+          "ball_end_y": 27.3,
+          "actor": "\u00c1d\u00e1m Nagy",
+          "outcome": null
+        },
+        {
+          "event_id": "ce486a86-2baa-430a-a244-e39bc10c71b4",
+          "t_seconds": 3.627,
+          "team": "Hungary",
+          "event_type": "Pass",
+          "ball_x": 14.3,
+          "ball_y": 27.3,
+          "ball_end_x": 16.6,
+          "ball_end_y": 22.0,
+          "actor": "\u00c1d\u00e1m Nagy",
+          "outcome": "Incomplete"
+        },
+        {
+          "event_id": "56e58eb6-7054-4557-a6c4-d53caa3b4056",
+          "t_seconds": 4.438,
+          "team": "Switzerland",
+          "event_type": "Ball Recovery",
+          "ball_x": 103.5,
+          "ball_y": 58.1,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Ruben Vargas",
+          "outcome": null
+        },
+        {
+          "event_id": "8787bf8d-87a3-44b8-af7e-ea55243a347a",
+          "t_seconds": 4.438,
+          "team": "Switzerland",
+          "event_type": "Carry",
+          "ball_x": 103.5,
+          "ball_y": 58.1,
+          "ball_end_x": 104.9,
+          "ball_end_y": 57.7,
+          "actor": "Ruben Vargas",
+          "outcome": null
+        },
+        {
+          "event_id": "75750099-688f-4c9b-8082-8af32a99444a",
+          "t_seconds": 4.775,
+          "team": "Hungary",
+          "event_type": "Pressure",
+          "ball_x": 14.1,
+          "ball_y": 23.8,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "\u00c1d\u00e1m Nagy",
+          "outcome": null
+        },
+        {
+          "event_id": "776052a0-688a-4341-ad99-a2e6b48f8f78",
+          "t_seconds": 5.102,
+          "team": "Switzerland",
+          "event_type": "Pass",
+          "ball_x": 104.9,
+          "ball_y": 57.7,
+          "ball_end_x": 99.2,
+          "ball_end_y": 54.0,
+          "actor": "Ruben Vargas",
+          "outcome": null
+        },
+        {
+          "event_id": "1248252b-246a-41e0-952a-6213a0e0a214",
+          "t_seconds": 5.937,
+          "team": "Switzerland",
+          "event_type": "Carry",
+          "ball_x": 99.2,
+          "ball_y": 54.0,
+          "ball_end_x": 96.9,
+          "ball_end_y": 46.6,
+          "actor": "Remo Freuler",
+          "outcome": null
+        },
+        {
+          "event_id": "29e44715-ca55-48b5-9c79-a9078789f7a9",
+          "t_seconds": 6.784,
+          "team": "Switzerland",
+          "event_type": "Pass",
+          "ball_x": 96.9,
+          "ball_y": 46.6,
+          "ball_end_x": 96.5,
+          "ball_end_y": 31.0,
+          "actor": "Remo Freuler",
+          "outcome": null
+        },
+        {
+          "event_id": "56d1db27-5c62-47a0-b29d-25c4416e32bf",
+          "t_seconds": 7.781,
+          "team": "Switzerland",
+          "event_type": "Carry",
+          "ball_x": 96.5,
+          "ball_y": 31.0,
+          "ball_end_x": 96.0,
+          "ball_end_y": 34.5,
+          "actor": "Michel Aebischer",
+          "outcome": null
+        },
+        {
+          "event_id": "4215ba9b-4cad-45cb-80de-4eb9c70f3b40",
+          "t_seconds": 10.217,
+          "team": "Switzerland",
+          "event_type": "Shot",
+          "ball_x": 96.0,
+          "ball_y": 34.5,
+          "ball_end_x": 120.0,
+          "ball_end_y": 43.5,
+          "actor": "Michel Aebischer",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "4215ba9b-4cad-45cb-80de-4eb9c70f3b40",
+          "minute": 44,
+          "second": 42,
+          "scorer": "Michel Aebischer",
+          "team": "Switzerland"
+        }
+      },
+      "metadata": {
+        "match_id": 3930159,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Hungary vs Switzerland"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "a36fac65-921d-48e5-a85a-2848c2390560",
+        "start_event_id": "5729c7d7-bbd7-4889-a6cc-bf7f6c0e7d51",
+        "end_event_id": "a36fac65-921d-48e5-a85a-2848c2390560",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 12.407
+      },
+      "frames": [
+        {
+          "event_id": "5729c7d7-bbd7-4889-a6cc-bf7f6c0e7d51",
+          "t_seconds": 0.0,
+          "team": "Hungary",
+          "event_type": "Carry",
+          "ball_x": 54.5,
+          "ball_y": 67.3,
+          "ball_end_x": 68.7,
+          "ball_end_y": 40.8,
+          "actor": "Bendeg\u00faz Bolla",
+          "outcome": null
+        },
+        {
+          "event_id": "6dc7b4fc-e45a-4f3b-b0b7-037efb67234c",
+          "t_seconds": 3.731,
+          "team": "Hungary",
+          "event_type": "Pass",
+          "ball_x": 68.7,
+          "ball_y": 40.8,
+          "ball_end_x": 78.0,
+          "ball_end_y": 17.5,
+          "actor": "Bendeg\u00faz Bolla",
+          "outcome": null
+        },
+        {
+          "event_id": "eff02b71-b075-4367-b35b-b5efee32cde2",
+          "t_seconds": 5.127,
+          "team": "Hungary",
+          "event_type": "Carry",
+          "ball_x": 78.0,
+          "ball_y": 17.5,
+          "ball_end_x": 97.7,
+          "ball_end_y": 20.6,
+          "actor": "Roland Sallai",
+          "outcome": null
+        },
+        {
+          "event_id": "bed49861-eeaf-47ed-bb60-d81f0950d56e",
+          "t_seconds": 8.854,
+          "team": "Hungary",
+          "event_type": "Pass",
+          "ball_x": 97.7,
+          "ball_y": 20.6,
+          "ball_end_x": 106.5,
+          "ball_end_y": 14.3,
+          "actor": "Roland Sallai",
+          "outcome": null
+        },
+        {
+          "event_id": "b27a7b39-6e72-434e-82e7-b34f0d998dbd",
+          "t_seconds": 9.725,
+          "team": "Hungary",
+          "event_type": "Carry",
+          "ball_x": 106.5,
+          "ball_y": 14.3,
+          "ball_end_x": 106.5,
+          "ball_end_y": 14.3,
+          "actor": "Dominik Szoboszlai",
+          "outcome": null
+        },
+        {
+          "event_id": "48bdb536-d9ea-4146-82be-51e7cc5d48bb",
+          "t_seconds": 10.629,
+          "team": "Hungary",
+          "event_type": "Pass",
+          "ball_x": 106.5,
+          "ball_y": 14.3,
+          "ball_end_x": 115.5,
+          "ball_end_y": 42.1,
+          "actor": "Dominik Szoboszlai",
+          "outcome": null
+        },
+        {
+          "event_id": "a36fac65-921d-48e5-a85a-2848c2390560",
+          "t_seconds": 12.407,
+          "team": "Hungary",
+          "event_type": "Shot",
+          "ball_x": 115.5,
+          "ball_y": 42.1,
+          "ball_end_x": 120.0,
+          "ball_end_y": 42.4,
+          "actor": "Barnab\u00e1s Varga",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "a36fac65-921d-48e5-a85a-2848c2390560",
+          "minute": 65,
+          "second": 25,
+          "scorer": "Barnab\u00e1s Varga",
+          "team": "Hungary"
+        }
+      },
+      "metadata": {
+        "match_id": 3930159,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Hungary vs Switzerland"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "5d6f7f49-9789-4d8f-9735-19b8aad1e82b",
+        "start_event_id": "54f83ee6-518c-4b96-9aee-da4136ffa182",
+        "end_event_id": "5d6f7f49-9789-4d8f-9735-19b8aad1e82b",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 20.713
+      },
+      "frames": [
+        {
+          "event_id": "54f83ee6-518c-4b96-9aee-da4136ffa182",
+          "t_seconds": 0.0,
+          "team": "Switzerland",
+          "event_type": "Ball Recovery",
+          "ball_x": 2.6,
+          "ball_y": 36.1,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Yann Sommer",
+          "outcome": null
+        },
+        {
+          "event_id": "e92a1556-98ca-4456-89fd-4bd61c63757c",
+          "t_seconds": 0.0,
+          "team": "Switzerland",
+          "event_type": "Carry",
+          "ball_x": 2.6,
+          "ball_y": 36.1,
+          "ball_end_x": 15.6,
+          "ball_end_y": 42.8,
+          "actor": "Yann Sommer",
+          "outcome": null
+        },
+        {
+          "event_id": "5c263597-9628-417e-a785-6155d30e7383",
+          "t_seconds": 13.875,
+          "team": "Switzerland",
+          "event_type": "Pass",
+          "ball_x": 15.6,
+          "ball_y": 42.8,
+          "ball_end_x": 91.1,
+          "ball_end_y": 29.7,
+          "actor": "Yann Sommer",
+          "outcome": "Incomplete"
+        },
+        {
+          "event_id": "7d63bef0-b8f3-498b-b3e2-0803e63994e1",
+          "t_seconds": 19.375,
+          "team": "Switzerland",
+          "event_type": "Ball Recovery",
+          "ball_x": 98.4,
+          "ball_y": 36.1,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Breel Embolo",
+          "outcome": null
+        },
+        {
+          "event_id": "f3255c04-1f5f-4a80-b441-3e8af73de2b7",
+          "t_seconds": 19.375,
+          "team": "Switzerland",
+          "event_type": "Carry",
+          "ball_x": 98.4,
+          "ball_y": 36.1,
+          "ball_end_x": 104.3,
+          "ball_end_y": 41.5,
+          "actor": "Breel Embolo",
+          "outcome": null
+        },
+        {
+          "event_id": "5d6f7f49-9789-4d8f-9735-19b8aad1e82b",
+          "t_seconds": 20.713,
+          "team": "Switzerland",
+          "event_type": "Shot",
+          "ball_x": 104.3,
+          "ball_y": 41.5,
+          "ball_end_x": 120.0,
+          "ball_end_y": 38.2,
+          "actor": "Breel Embolo",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "5d6f7f49-9789-4d8f-9735-19b8aad1e82b",
+          "minute": 92,
+          "second": 40,
+          "scorer": "Breel Embolo",
+          "team": "Switzerland"
+        }
+      },
+      "metadata": {
+        "match_id": 3930159,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Hungary vs Switzerland"
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3930159,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Hungary vs Switzerland"
+  }
+}

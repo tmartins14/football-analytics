@@ -1,0 +1,387 @@
+{
+  "goals": [
+    {
+      "window": {
+        "anchor_event_id": "35ffbe01-16f3-4365-97a4-1a068203d17f",
+        "start_event_id": "3e7db32f-ef89-4984-9d35-90e4311fd342",
+        "end_event_id": "35ffbe01-16f3-4365-97a4-1a068203d17f",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 10.64
+      },
+      "frames": [
+        {
+          "event_id": "3e7db32f-ef89-4984-9d35-90e4311fd342",
+          "t_seconds": 0.0,
+          "team": "Turkey",
+          "event_type": "Pass",
+          "ball_x": 111.9,
+          "ball_y": 62.9,
+          "ball_end_x": 106.4,
+          "ball_end_y": 37.9,
+          "actor": "Bar\u0131\u015f Alper Y\u0131lmaz",
+          "outcome": null
+        },
+        {
+          "event_id": "45645626-96ec-43cb-92bf-3d468fe24c0b",
+          "t_seconds": 1.856,
+          "team": "Turkey",
+          "event_type": "Shot",
+          "ball_x": 106.4,
+          "ball_y": 37.9,
+          "ball_end_x": 107.2,
+          "ball_end_y": 38.2,
+          "actor": "Kenan Yildiz",
+          "outcome": null
+        },
+        {
+          "event_id": "b754121b-ff87-441f-9e28-c096dbdc574c",
+          "t_seconds": 2.696,
+          "team": "Turkey",
+          "event_type": "Ball Recovery",
+          "ball_x": 107.9,
+          "ball_y": 41.6,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Kenan Yildiz",
+          "outcome": null
+        },
+        {
+          "event_id": "da2aad2a-2d57-4900-91f5-5d6e1f99203c",
+          "t_seconds": 3.421,
+          "team": "Turkey",
+          "event_type": "Shot",
+          "ball_x": 109.4,
+          "ball_y": 42.3,
+          "ball_end_x": 117.0,
+          "ball_end_y": 39.7,
+          "actor": "Kenan Yildiz",
+          "outcome": null
+        },
+        {
+          "event_id": "4bead433-22ba-418e-a0da-be8297e9632b",
+          "t_seconds": 6.269,
+          "team": "Turkey",
+          "event_type": "Ball Recovery",
+          "ball_x": 96.7,
+          "ball_y": 36.4,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "\u0130smail Y\u00fcksek",
+          "outcome": null
+        },
+        {
+          "event_id": "771962dc-521b-462a-8f9c-20ac8e37aa69",
+          "t_seconds": 6.269,
+          "team": "Turkey",
+          "event_type": "Carry",
+          "ball_x": 96.7,
+          "ball_y": 36.4,
+          "ball_end_x": 98.8,
+          "ball_end_y": 38.1,
+          "actor": "\u0130smail Y\u00fcksek",
+          "outcome": null
+        },
+        {
+          "event_id": "9ad809f6-53ce-4e7f-bfc5-487ae044e8d7",
+          "t_seconds": 7.22,
+          "team": "Turkey",
+          "event_type": "Shot",
+          "ball_x": 98.8,
+          "ball_y": 38.1,
+          "ball_end_x": 101.3,
+          "ball_end_y": 38.5,
+          "actor": "\u0130smail Y\u00fcksek",
+          "outcome": null
+        },
+        {
+          "event_id": "ac7e2c21-2958-4aaa-a3cd-5cd90d21c424",
+          "t_seconds": 8.427,
+          "team": "Turkey",
+          "event_type": "Ball Recovery",
+          "ball_x": 97.4,
+          "ball_y": 28.9,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "\u0130smail Y\u00fcksek",
+          "outcome": null
+        },
+        {
+          "event_id": "d5437925-b028-4858-b6e3-baac8b79099f",
+          "t_seconds": 8.427,
+          "team": "Turkey",
+          "event_type": "Carry",
+          "ball_x": 97.4,
+          "ball_y": 28.9,
+          "ball_end_x": 98.6,
+          "ball_end_y": 28.6,
+          "actor": "\u0130smail Y\u00fcksek",
+          "outcome": null
+        },
+        {
+          "event_id": "1809d15e-d5f0-4d10-930b-4dcce1cf2e49",
+          "t_seconds": 9.336,
+          "team": "Turkey",
+          "event_type": "Pass",
+          "ball_x": 98.6,
+          "ball_y": 28.6,
+          "ball_end_x": 109.2,
+          "ball_end_y": 26.0,
+          "actor": "\u0130smail Y\u00fcksek",
+          "outcome": null
+        },
+        {
+          "event_id": "35ffbe01-16f3-4365-97a4-1a068203d17f",
+          "t_seconds": 10.64,
+          "team": "Turkey",
+          "event_type": "Shot",
+          "ball_x": 109.2,
+          "ball_y": 26.0,
+          "ball_end_x": 120.0,
+          "ball_end_y": 43.0,
+          "actor": "Hakan \u00c7alhano\u011flu",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "35ffbe01-16f3-4365-97a4-1a068203d17f",
+          "minute": 50,
+          "second": 48,
+          "scorer": "Hakan \u00c7alhano\u011flu",
+          "team": "Turkey"
+        }
+      },
+      "metadata": {
+        "match_id": 3930184,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Czech Republic vs Turkey"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "1f458a66-1588-4ad8-95c0-d6238de4db48",
+        "start_event_id": "6b82cef1-9da3-4a23-9f5b-cdf11fd8007a",
+        "end_event_id": "1f458a66-1588-4ad8-95c0-d6238de4db48",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 51.337
+      },
+      "frames": [
+        {
+          "event_id": "6b82cef1-9da3-4a23-9f5b-cdf11fd8007a",
+          "t_seconds": 0.0,
+          "team": "Turkey",
+          "event_type": "Duel",
+          "ball_x": 37.8,
+          "ball_y": 1.6,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Okay Yoku\u015flu",
+          "outcome": null
+        },
+        {
+          "event_id": "e1d44e4f-9a11-466d-a6ef-7b353a88b4ad",
+          "t_seconds": 44.716,
+          "team": "Czech Republic",
+          "event_type": "Pass",
+          "ball_x": 90.6,
+          "ball_y": 80.0,
+          "ball_end_x": 106.7,
+          "ball_end_y": 48.4,
+          "actor": "Vladim\u00edr Coufal",
+          "outcome": null
+        },
+        {
+          "event_id": "a3a95d08-3b2f-4288-b588-b24b31b2882d",
+          "t_seconds": 46.511,
+          "team": "Czech Republic",
+          "event_type": "Pass",
+          "ball_x": 106.7,
+          "ball_y": 48.4,
+          "ball_end_x": 116.8,
+          "ball_end_y": 43.7,
+          "actor": "Tom\u00e1\u0161 Sou\u010dek",
+          "outcome": "Incomplete"
+        },
+        {
+          "event_id": "3a5ab9a5-fdd1-4908-b713-2df33f3c479e",
+          "t_seconds": 46.511,
+          "team": "Turkey",
+          "event_type": "Duel",
+          "ball_x": 13.4,
+          "ball_y": 31.7,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Hakan \u00c7alhano\u011flu",
+          "outcome": null
+        },
+        {
+          "event_id": "617c957a-0508-4851-a9f5-bf058be1590a",
+          "t_seconds": 49.431,
+          "team": "Czech Republic",
+          "event_type": "Ball Recovery",
+          "ball_x": 116.8,
+          "ball_y": 44.4,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Tom\u00e1\u0161 Chor\u00fd",
+          "outcome": null
+        },
+        {
+          "event_id": "d87501a5-2029-4ab6-8747-67035c6b48eb",
+          "t_seconds": 49.431,
+          "team": "Czech Republic",
+          "event_type": "Carry",
+          "ball_x": 116.8,
+          "ball_y": 44.4,
+          "ball_end_x": 116.0,
+          "ball_end_y": 44.0,
+          "actor": "Tom\u00e1\u0161 Chor\u00fd",
+          "outcome": null
+        },
+        {
+          "event_id": "9b3864f7-be79-4115-bf97-45a623634be4",
+          "t_seconds": 49.698,
+          "team": "Czech Republic",
+          "event_type": "Shot",
+          "ball_x": 116.0,
+          "ball_y": 44.0,
+          "ball_end_x": 118.7,
+          "ball_end_y": 43.1,
+          "actor": "Tom\u00e1\u0161 Chor\u00fd",
+          "outcome": null
+        },
+        {
+          "event_id": "09239e19-41f0-4545-9c62-deea5472c27c",
+          "t_seconds": 51.24,
+          "team": "Czech Republic",
+          "event_type": "Ball Recovery",
+          "ball_x": 113.7,
+          "ball_y": 46.0,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Tom\u00e1\u0161 Sou\u010dek",
+          "outcome": null
+        },
+        {
+          "event_id": "1f458a66-1588-4ad8-95c0-d6238de4db48",
+          "t_seconds": 51.337,
+          "team": "Czech Republic",
+          "event_type": "Shot",
+          "ball_x": 113.6,
+          "ball_y": 46.4,
+          "ball_end_x": 120.0,
+          "ball_end_y": 42.5,
+          "actor": "Tom\u00e1\u0161 Sou\u010dek",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "1f458a66-1588-4ad8-95c0-d6238de4db48",
+          "minute": 65,
+          "second": 25,
+          "scorer": "Tom\u00e1\u0161 Sou\u010dek",
+          "team": "Czech Republic"
+        }
+      },
+      "metadata": {
+        "match_id": 3930184,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Czech Republic vs Turkey"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "b1c0ef3d-61c1-44fb-ba83-27d645a9ee0c",
+        "start_event_id": "90ad78dc-83cf-4e5d-a4c6-23866cc2b51e",
+        "end_event_id": "b1c0ef3d-61c1-44fb-ba83-27d645a9ee0c",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 10.192
+      },
+      "frames": [
+        {
+          "event_id": "90ad78dc-83cf-4e5d-a4c6-23866cc2b51e",
+          "t_seconds": 0.0,
+          "team": "Turkey",
+          "event_type": "Pass",
+          "ball_x": 56.3,
+          "ball_y": 52.5,
+          "ball_end_x": 66.4,
+          "ball_end_y": 39.3,
+          "actor": "Kaan Ayhan",
+          "outcome": null
+        },
+        {
+          "event_id": "7727f44f-8821-4b92-b968-8a10ae724813",
+          "t_seconds": 1.237,
+          "team": "Turkey",
+          "event_type": "Carry",
+          "ball_x": 66.4,
+          "ball_y": 39.3,
+          "ball_end_x": 78.2,
+          "ball_end_y": 31.6,
+          "actor": "Orkun K\u00f6k\u00e7\u00fc",
+          "outcome": null
+        },
+        {
+          "event_id": "a5bdbd12-d822-4e9b-a1ee-c0439bdbd8f2",
+          "t_seconds": 3.386,
+          "team": "Turkey",
+          "event_type": "Pass",
+          "ball_x": 78.2,
+          "ball_y": 31.6,
+          "ball_end_x": 93.3,
+          "ball_end_y": 16.0,
+          "actor": "Orkun K\u00f6k\u00e7\u00fc",
+          "outcome": null
+        },
+        {
+          "event_id": "ba2075a0-8ef1-4bc1-ab6b-3f846bc8f905",
+          "t_seconds": 5.577,
+          "team": "Turkey",
+          "event_type": "Carry",
+          "ball_x": 93.3,
+          "ball_y": 16.0,
+          "ball_end_x": 105.3,
+          "ball_end_y": 34.5,
+          "actor": "Cenk Tosun",
+          "outcome": null
+        },
+        {
+          "event_id": "b1c0ef3d-61c1-44fb-ba83-27d645a9ee0c",
+          "t_seconds": 10.192,
+          "team": "Turkey",
+          "event_type": "Shot",
+          "ball_x": 105.3,
+          "ball_y": 34.5,
+          "ball_end_x": 120.0,
+          "ball_end_y": 42.8,
+          "actor": "Cenk Tosun",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "b1c0ef3d-61c1-44fb-ba83-27d645a9ee0c",
+          "minute": 93,
+          "second": 45,
+          "scorer": "Cenk Tosun",
+          "team": "Turkey"
+        }
+      },
+      "metadata": {
+        "match_id": 3930184,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Czech Republic vs Turkey"
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3930184,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Czech Republic vs Turkey"
+  }
+}

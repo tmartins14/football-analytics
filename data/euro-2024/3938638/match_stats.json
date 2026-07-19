@@ -1,0 +1,83 @@
+{
+  "home": {
+    "team": "Romania",
+    "color": "#002B7F",
+    "score": 3
+  },
+  "away": {
+    "team": "Ukraine",
+    "color": "#005BBB",
+    "score": 0
+  },
+  "rows": [
+    {
+      "label": "Shots",
+      "home_value": 10.0,
+      "away_value": 13.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Shots on Target",
+      "home_value": 5.0,
+      "away_value": 2.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Possession",
+      "home_value": 33.5,
+      "away_value": 66.5,
+      "scale_type": "fixed100",
+      "format": "pct",
+      "tier": "basic"
+    },
+    {
+      "label": "Corners",
+      "home_value": 3.0,
+      "away_value": 8.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Fouls",
+      "home_value": 12.0,
+      "away_value": 9.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Yellow Cards",
+      "home_value": 1.0,
+      "away_value": 1.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Red Cards",
+      "home_value": 0.0,
+      "away_value": 0.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "xG",
+      "home_value": 1.12,
+      "away_value": 0.54,
+      "scale_type": "sum",
+      "format": "float1",
+      "tier": "advanced"
+    }
+  ],
+  "metadata": {
+    "match_id": 3938638,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Romania vs Ukraine"
+  }
+}

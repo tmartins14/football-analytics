@@ -1,0 +1,83 @@
+{
+  "home": {
+    "team": "Poland",
+    "color": "#DC143C",
+    "score": 1
+  },
+  "away": {
+    "team": "Austria",
+    "color": "#ED2939",
+    "score": 3
+  },
+  "rows": [
+    {
+      "label": "Shots",
+      "home_value": 15.0,
+      "away_value": 15.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Shots on Target",
+      "home_value": 3.0,
+      "away_value": 9.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Possession",
+      "home_value": 49.5,
+      "away_value": 50.5,
+      "scale_type": "fixed100",
+      "format": "pct",
+      "tier": "basic"
+    },
+    {
+      "label": "Corners",
+      "home_value": 4.0,
+      "away_value": 3.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Fouls",
+      "home_value": 15.0,
+      "away_value": 17.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Yellow Cards",
+      "home_value": 4.0,
+      "away_value": 2.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Red Cards",
+      "home_value": 0.0,
+      "away_value": 0.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "xG",
+      "home_value": 1.44,
+      "away_value": 1.82,
+      "scale_type": "sum",
+      "format": "float1",
+      "tier": "advanced"
+    }
+  ],
+  "metadata": {
+    "match_id": 3938641,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Poland vs Austria"
+  }
+}

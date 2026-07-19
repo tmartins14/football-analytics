@@ -1,0 +1,315 @@
+{
+  "goals": [
+    {
+      "window": {
+        "anchor_event_id": "72247bbc-f0ba-42cd-baa3-999a353b2714",
+        "start_event_id": "35ec8d6b-5d01-4a8e-ae0a-8f3510984062",
+        "end_event_id": "72247bbc-f0ba-42cd-baa3-999a353b2714",
+        "period": 1,
+        "window_seconds": 10.0,
+        "t_span_seconds": 27.615
+      },
+      "frames": [
+        {
+          "event_id": "35ec8d6b-5d01-4a8e-ae0a-8f3510984062",
+          "t_seconds": 23.657,
+          "team": "Slovakia",
+          "event_type": "Pass",
+          "ball_x": 106.0,
+          "ball_y": 0.1,
+          "ball_end_x": 117.9,
+          "ball_end_y": 18.4,
+          "actor": "D\u00e1vid Hancko",
+          "outcome": null
+        },
+        {
+          "event_id": "5320034b-80a6-409d-bfc5-217d0e6b1216",
+          "t_seconds": 25.948,
+          "team": "Slovakia",
+          "event_type": "Carry",
+          "ball_x": 117.9,
+          "ball_y": 18.4,
+          "ball_end_x": 117.9,
+          "ball_end_y": 18.4,
+          "actor": "Luk\u00e1\u0161 Harasl\u00edn",
+          "outcome": null
+        },
+        {
+          "event_id": "994a5306-c8b9-43b7-88ac-cc68c8232ff0",
+          "t_seconds": 26.028,
+          "team": "Slovakia",
+          "event_type": "Pass",
+          "ball_x": 117.9,
+          "ball_y": 18.4,
+          "ball_end_x": 114.4,
+          "ball_end_y": 45.7,
+          "actor": "Luk\u00e1\u0161 Harasl\u00edn",
+          "outcome": null
+        },
+        {
+          "event_id": "72247bbc-f0ba-42cd-baa3-999a353b2714",
+          "t_seconds": 27.615,
+          "team": "Slovakia",
+          "event_type": "Shot",
+          "ball_x": 114.4,
+          "ball_y": 45.7,
+          "ball_end_x": 120.0,
+          "ball_end_y": 37.6,
+          "actor": "Ivan Schranz",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "72247bbc-f0ba-42cd-baa3-999a353b2714",
+          "minute": 16,
+          "second": 56,
+          "scorer": "Ivan Schranz",
+          "team": "Slovakia"
+        }
+      },
+      "metadata": {
+        "match_id": 3938640,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Slovakia vs Ukraine"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "4500f096-c934-4f1a-a2f3-b4f81c4e30e7",
+        "start_event_id": "620bfa2a-3dfa-478e-b3d4-03565458930b",
+        "end_event_id": "4500f096-c934-4f1a-a2f3-b4f81c4e30e7",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 10.571
+      },
+      "frames": [
+        {
+          "event_id": "620bfa2a-3dfa-478e-b3d4-03565458930b",
+          "t_seconds": 0.0,
+          "team": "Ukraine",
+          "event_type": "Carry",
+          "ball_x": 100.5,
+          "ball_y": 26.2,
+          "ball_end_x": 106.0,
+          "ball_end_y": 20.2,
+          "actor": "Artem Dovbyk",
+          "outcome": null
+        },
+        {
+          "event_id": "5eef7e81-69b1-4051-8201-63f1dc224d3a",
+          "t_seconds": 5.494,
+          "team": "Ukraine",
+          "event_type": "Pass",
+          "ball_x": 106.0,
+          "ball_y": 20.2,
+          "ball_end_x": 96.0,
+          "ball_end_y": 21.9,
+          "actor": "Artem Dovbyk",
+          "outcome": null
+        },
+        {
+          "event_id": "2bd19f83-638e-4a25-a788-012184816714",
+          "t_seconds": 6.768,
+          "team": "Ukraine",
+          "event_type": "Carry",
+          "ball_x": 96.0,
+          "ball_y": 21.9,
+          "ball_end_x": 96.0,
+          "ball_end_y": 22.4,
+          "actor": "Georgiy Sudakov",
+          "outcome": null
+        },
+        {
+          "event_id": "d2323aac-759f-4168-961d-d637028bfc5d",
+          "t_seconds": 7.948,
+          "team": "Ukraine",
+          "event_type": "Pass",
+          "ball_x": 96.0,
+          "ball_y": 22.4,
+          "ball_end_x": 106.2,
+          "ball_end_y": 14.5,
+          "actor": "Georgiy Sudakov",
+          "outcome": null
+        },
+        {
+          "event_id": "11ea2fe8-2f6d-457f-8bce-6727b1f29a89",
+          "t_seconds": 9.687,
+          "team": "Ukraine",
+          "event_type": "Carry",
+          "ball_x": 106.2,
+          "ball_y": 14.5,
+          "ball_end_x": 106.2,
+          "ball_end_y": 14.5,
+          "actor": "Oleksandr Zinchenko",
+          "outcome": null
+        },
+        {
+          "event_id": "eb58dd91-4c29-4790-a987-d342d9e3eed1",
+          "t_seconds": 9.727,
+          "team": "Ukraine",
+          "event_type": "Pass",
+          "ball_x": 106.2,
+          "ball_y": 14.5,
+          "ball_end_x": 108.8,
+          "ball_end_y": 37.3,
+          "actor": "Oleksandr Zinchenko",
+          "outcome": null
+        },
+        {
+          "event_id": "4500f096-c934-4f1a-a2f3-b4f81c4e30e7",
+          "t_seconds": 10.571,
+          "team": "Ukraine",
+          "event_type": "Shot",
+          "ball_x": 108.8,
+          "ball_y": 37.3,
+          "ball_end_x": 120.0,
+          "ball_end_y": 36.6,
+          "actor": "Mykola Shaparenko",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "4500f096-c934-4f1a-a2f3-b4f81c4e30e7",
+          "minute": 53,
+          "second": 7,
+          "scorer": "Mykola Shaparenko",
+          "team": "Ukraine"
+        }
+      },
+      "metadata": {
+        "match_id": 3938640,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Slovakia vs Ukraine"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "62045ae1-e364-40ed-a0d1-801c4f47125e",
+        "start_event_id": "6eda4bd8-517d-4755-9558-52b70ba16f15",
+        "end_event_id": "62045ae1-e364-40ed-a0d1-801c4f47125e",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 10.337
+      },
+      "frames": [
+        {
+          "event_id": "6eda4bd8-517d-4755-9558-52b70ba16f15",
+          "t_seconds": 0.0,
+          "team": "Ukraine",
+          "event_type": "Carry",
+          "ball_x": 36.9,
+          "ball_y": 21.9,
+          "ball_end_x": 37.2,
+          "ball_end_y": 24.2,
+          "actor": "Volodymyr Brazhko",
+          "outcome": null
+        },
+        {
+          "event_id": "a80e6bd5-5029-43bb-8b73-fcb5e89da958",
+          "t_seconds": 1.091,
+          "team": "Ukraine",
+          "event_type": "Pass",
+          "ball_x": 37.2,
+          "ball_y": 24.2,
+          "ball_end_x": 41.4,
+          "ball_end_y": 56.8,
+          "actor": "Volodymyr Brazhko",
+          "outcome": null
+        },
+        {
+          "event_id": "9012399e-7725-4fd6-86c3-c9d40eb1af94",
+          "t_seconds": 2.74,
+          "team": "Ukraine",
+          "event_type": "Carry",
+          "ball_x": 41.4,
+          "ball_y": 56.8,
+          "ball_end_x": 41.4,
+          "ball_end_y": 61.9,
+          "actor": "Ilya Zabarnyi",
+          "outcome": null
+        },
+        {
+          "event_id": "d82b7c48-8796-4645-8c9b-d886172aa21d",
+          "t_seconds": 3.525,
+          "team": "Ukraine",
+          "event_type": "Pass",
+          "ball_x": 41.4,
+          "ball_y": 61.9,
+          "ball_end_x": 63.3,
+          "ball_end_y": 61.7,
+          "actor": "Ilya Zabarnyi",
+          "outcome": null
+        },
+        {
+          "event_id": "c698c90a-618f-4960-a0e7-f4d2ab310788",
+          "t_seconds": 4.589,
+          "team": "Ukraine",
+          "event_type": "Carry",
+          "ball_x": 63.3,
+          "ball_y": 61.7,
+          "ball_end_x": 76.1,
+          "ball_end_y": 73.3,
+          "actor": "Mykola Shaparenko",
+          "outcome": null
+        },
+        {
+          "event_id": "f561337f-7b08-4737-b225-d5f43436700a",
+          "t_seconds": 7.221,
+          "team": "Ukraine",
+          "event_type": "Pass",
+          "ball_x": 76.1,
+          "ball_y": 73.3,
+          "ball_end_x": 110.7,
+          "ball_end_y": 50.0,
+          "actor": "Mykola Shaparenko",
+          "outcome": null
+        },
+        {
+          "event_id": "4903d629-d2ba-4434-944c-1c773709c336",
+          "t_seconds": 9.862,
+          "team": "Ukraine",
+          "event_type": "Carry",
+          "ball_x": 110.7,
+          "ball_y": 50.0,
+          "ball_end_x": 114.8,
+          "ball_end_y": 49.2,
+          "actor": "Roman Yaremchuk",
+          "outcome": null
+        },
+        {
+          "event_id": "62045ae1-e364-40ed-a0d1-801c4f47125e",
+          "t_seconds": 10.337,
+          "team": "Ukraine",
+          "event_type": "Shot",
+          "ball_x": 114.8,
+          "ball_y": 49.2,
+          "ball_end_x": 120.0,
+          "ball_end_y": 40.4,
+          "actor": "Roman Yaremchuk",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "62045ae1-e364-40ed-a0d1-801c4f47125e",
+          "minute": 79,
+          "second": 5,
+          "scorer": "Roman Yaremchuk",
+          "team": "Ukraine"
+        }
+      },
+      "metadata": {
+        "match_id": 3938640,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Slovakia vs Ukraine"
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3938640,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Slovakia vs Ukraine"
+  }
+}

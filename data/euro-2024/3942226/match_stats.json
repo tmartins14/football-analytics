@@ -1,0 +1,83 @@
+{
+  "home": {
+    "team": "Spain",
+    "color": "#C60B1E",
+    "score": 2
+  },
+  "away": {
+    "team": "Germany",
+    "color": "#1C1C1C",
+    "score": 1
+  },
+  "rows": [
+    {
+      "label": "Shots",
+      "home_value": 19.0,
+      "away_value": 23.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Shots on Target",
+      "home_value": 6.0,
+      "away_value": 5.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Possession",
+      "home_value": 48.4,
+      "away_value": 51.6,
+      "scale_type": "fixed100",
+      "format": "pct",
+      "tier": "basic"
+    },
+    {
+      "label": "Corners",
+      "home_value": 1.0,
+      "away_value": 5.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Fouls",
+      "home_value": 17.0,
+      "away_value": 22.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Yellow Cards",
+      "home_value": 6.0,
+      "away_value": 8.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Red Cards",
+      "home_value": 1.0,
+      "away_value": 0.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "xG",
+      "home_value": 1.53,
+      "away_value": 1.63,
+      "scale_type": "sum",
+      "format": "float1",
+      "tier": "advanced"
+    }
+  ],
+  "metadata": {
+    "match_id": 3942226,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Spain vs Germany"
+  }
+}

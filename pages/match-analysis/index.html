@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Match Analysis — Spain vs England · Euro 2024 Final</title>
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body class="dev-host">
+<div id="match-dashboard">
+
+  <header class="dash-header">
+    <h1>Spain 2–1 England</h1>
+    <p class="match-meta">UEFA Euro 2024 Final · Berlin · 14 July 2024</p>
+  </header>
+
+  <div class="dash-body">
+
+    <!-- LEFT — Spain -->
+    <div id="spain-panel" class="team-panel">
+      <p class="panel-label">Spain</p>
+      <div class="panel-controls">
+        <div class="toggle-group" id="spain-toggle">
+          <button class="toggle-btn active" data-view="formation">Formation</button>
+          <button class="toggle-btn" data-view="passnetwork">Pass Network</button>
+          <button class="toggle-btn" data-view="teamshape">Team Shape</button>
+        </div>
+
+        <!-- Pass network window selector -->
+        <select id="spain-pn-window" class="dash-select hidden" title="Substitution window"></select>
+
+        <!-- TeamShape sub-controls -->
+        <div id="spain-ts-controls" class="sub-controls hidden">
+          <div class="toggle-group" id="spain-ts-toggle">
+            <button class="toggle-btn active" data-ts="on-ball">On-ball</button>
+            <button class="toggle-btn" data-ts="off-ball">Off-ball</button>
+          </div>
+          <select id="spain-ts-period" class="dash-select" title="Lineup period"></select>
+        </div>
+      </div>
+
+      <div class="component-wrap">
+        <div id="spain-formation"></div>
+        <div id="spain-passnetwork" class="hidden"></div>
+        <div id="spain-teamshape" class="hidden"></div>
+      </div>
+      <!-- Per-team shot map: always visible, below the pitch toggle -->
+      <div id="spain-shotmap" class="shot-map-wrap"></div>
+    </div>
+
+    <!-- CENTER — Goal Animation | Match Stats | Momentum -->
+    <div id="center-panel">
+      <div class="center-header">
+        <div class="panel-controls">
+          <div class="toggle-group" id="center-toggle">
+            <button class="toggle-btn active" data-view="stats">Match Stats</button>
+            <button class="toggle-btn" data-view="momentum">Momentum</button>
+            <button class="toggle-btn" data-view="animation">Goal Animation</button>
+          </div>
+        </div>
+      </div>
+      <div class="center-content">
+        <div id="center-stats-container"></div>
+        <div id="center-momentum-container" class="hidden"></div>
+        <div id="animation-view" class="hidden">
+          <div id="goal-selector"></div>
+          <div id="playback-controls">
+            <button id="btn-play-pause">&#9654; Play</button>
+            <input id="scrubber" type="range" min="0" max="10" step="0.1" value="0" />
+            <span id="scrubber-time">0.0s</span>
+          </div>
+          <div id="animation-container"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT — England -->
+    <div id="england-panel" class="team-panel">
+      <p class="panel-label">England</p>
+      <div class="panel-controls">
+        <div class="toggle-group" id="england-toggle">
+          <button class="toggle-btn active" data-view="formation">Formation</button>
+          <button class="toggle-btn" data-view="passnetwork">Pass Network</button>
+          <button class="toggle-btn" data-view="teamshape">Team Shape</button>
+        </div>
+
+        <select id="england-pn-window" class="dash-select hidden" title="Substitution window"></select>
+
+        <div id="england-ts-controls" class="sub-controls hidden">
+          <div class="toggle-group" id="england-ts-toggle">
+            <button class="toggle-btn active" data-ts="on-ball">On-ball</button>
+            <button class="toggle-btn" data-ts="off-ball">Off-ball</button>
+          </div>
+          <select id="england-ts-period" class="dash-select" title="Lineup period"></select>
+        </div>
+      </div>
+
+      <div class="component-wrap">
+        <div id="england-formation"></div>
+        <div id="england-passnetwork" class="hidden"></div>
+        <div id="england-teamshape" class="hidden"></div>
+      </div>
+      <!-- Per-team shot map: always visible, below the pitch toggle -->
+      <div id="england-shotmap" class="shot-map-wrap"></div>
+    </div>
+
+  </div><!-- /.dash-body -->
+
+</div><!-- /#match-dashboard -->
+
+  <script type="importmap">
+  { "imports": { "d3": "https://esm.sh/d3@7.9.0" } }
+  </script>
+  <script type="module" src="dashboard.js"></script>
+</body>
+</html>

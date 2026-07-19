@@ -1,0 +1,83 @@
+{
+  "home": {
+    "team": "Albania",
+    "color": "#E41E20",
+    "score": 0
+  },
+  "away": {
+    "team": "Spain",
+    "color": "#C60B1E",
+    "score": 1
+  },
+  "rows": [
+    {
+      "label": "Shots",
+      "home_value": 10.0,
+      "away_value": 16.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Shots on Target",
+      "home_value": 4.0,
+      "away_value": 3.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Possession",
+      "home_value": 42.7,
+      "away_value": 57.3,
+      "scale_type": "fixed100",
+      "format": "pct",
+      "tier": "basic"
+    },
+    {
+      "label": "Corners",
+      "home_value": 2.0,
+      "away_value": 7.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Fouls",
+      "home_value": 8.0,
+      "away_value": 17.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Yellow Cards",
+      "home_value": 2.0,
+      "away_value": 1.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Red Cards",
+      "home_value": 0.0,
+      "away_value": 0.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "xG",
+      "home_value": 0.5,
+      "away_value": 0.95,
+      "scale_type": "sum",
+      "format": "float1",
+      "tier": "advanced"
+    }
+  ],
+  "metadata": {
+    "match_id": 3930179,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Albania vs Spain"
+  }
+}

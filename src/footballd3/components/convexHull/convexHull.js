@@ -1,3 +1,5 @@
+import * as d3 from "d3";
+
 /**
  * convexHull.js — territory-shape convex hull overlay for freeze-frame snapshots.
  *

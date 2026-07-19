@@ -15,22 +15,37 @@
 // B→A curves the other; this constant controls how much they bow apart.
 const CURVE_OFFSET = 14;
 
-const _tooltip = document.createElement("div");
-Object.assign(_tooltip.style, {
-  position:      "fixed",
-  pointerEvents: "none",
-  display:       "none",
-  background:    "#FAF7F0",
-  border:        "1px solid #E5E5E5",
-  borderRadius:  "2px",
-  padding:       "8px 10px",
-  fontFamily:    "Geist Mono, monospace",
-  fontSize:      "12px",
-  lineHeight:    "1.6",
-  color:         "#171717",
-  whiteSpace:    "nowrap",
-});
-document.body.appendChild(_tooltip);
+import * as d3 from "d3";
+
+// Each instance gets a unique marker ID — SVG url(#id) resolves document-wide,
+// so two networks with the same ID would share whichever arrowhead appears first
+// in the DOM, giving the second team the wrong arrow color.
+let _nextInstanceId = 0;
+
+// Created lazily (not at module scope) so this file can be imported in a
+// server-rendering context without touching `document` on the server.
+let _tooltip;
+function getTooltip() {
+  if (!_tooltip) {
+    _tooltip = document.createElement("div");
+    Object.assign(_tooltip.style, {
+      position:      "fixed",
+      pointerEvents: "none",
+      display:       "none",
+      background:    "#FAF7F0",
+      border:        "1px solid #E5E5E5",
+      borderRadius:  "2px",
+      padding:       "8px 10px",
+      fontFamily:    "Geist Mono, monospace",
+      fontSize:      "12px",
+      lineHeight:    "1.6",
+      color:         "#171717",
+      whiteSpace:    "nowrap",
+    });
+    document.body.appendChild(_tooltip);
+  }
+  return _tooltip;
+}
 
 /**
  * Compute a quadratic Bézier path string and control point for a directed edge.
@@ -154,8 +169,8 @@ export function createPassNetwork(pitch, data, config = {}) {
 
   const { svg, g, px } = pitch;
 
-  // Inject SVG arrowhead marker into <defs>; safe to call multiple times.
-  const markerId = "pn-arrow";
+  // Unique per-instance marker ID so Spain and England arrowheads don't collide.
+  const markerId = `pn-arrow-${++_nextInstanceId}`;
   let defs = svg.select("defs");
   if (defs.empty()) defs = svg.insert("defs", ":first-child");
   if (defs.select(`#${markerId}`).empty()) {
@@ -242,16 +257,18 @@ export function createPassNetwork(pitch, data, config = {}) {
 
     edgeEnter.merge(edgeSel)
       .on("mouseover", (event, d) => {
-        _tooltip.innerHTML =
+        const tooltip = getTooltip();
+        tooltip.innerHTML =
           `<span style="font-weight:600">${d.from}</span>${edgeSep}${d.to}<br>` +
           `<span style="color:#525252">${d.count} passes</span>`;
-        _tooltip.style.display = "block";
+        tooltip.style.display = "block";
       })
       .on("mousemove", event => {
-        _tooltip.style.left = (event.clientX + 14) + "px";
-        _tooltip.style.top  = (event.clientY - 28) + "px";
+        const tooltip = getTooltip();
+        tooltip.style.left = (event.clientX + 14) + "px";
+        tooltip.style.top  = (event.clientY - 28) + "px";
       })
-      .on("mouseout", () => { _tooltip.style.display = "none"; })
+      .on("mouseout", () => { getTooltip().style.display = "none"; })
       .transition().duration(dur)
       .style("opacity", d => 0.2 + 0.65 * (d.count / globalMaxCount))
       .attr("stroke-width", d => wScale(d.count))
@@ -283,7 +300,7 @@ export function createPassNetwork(pitch, data, config = {}) {
     const nodeEnter = nodeSel.enter().append("circle")
       .attr("class", "pn-node")
       .attr("fill", nodeColor)
-      .attr("stroke", "#FAF7F0")
+      .attr("stroke", "var(--elevated, #FAF7F0)")
       .attr("stroke-width", 2)
       .style("opacity", 0)
       .style("cursor", "pointer")
@@ -293,16 +310,18 @@ export function createPassNetwork(pitch, data, config = {}) {
 
     nodeEnter.merge(nodeSel)
       .on("mouseover", (event, d) => {
-        _tooltip.innerHTML =
+        const tooltip = getTooltip();
+        tooltip.innerHTML =
           `<span style="font-weight:600">${d.display_name}</span><br>` +
           `<span style="color:#525252">${d.passes} passes</span>`;
-        _tooltip.style.display = "block";
+        tooltip.style.display = "block";
       })
       .on("mousemove", event => {
-        _tooltip.style.left = (event.clientX + 14) + "px";
-        _tooltip.style.top  = (event.clientY - 28) + "px";
+        const tooltip = getTooltip();
+        tooltip.style.left = (event.clientX + 14) + "px";
+        tooltip.style.top  = (event.clientY - 28) + "px";
       })
-      .on("mouseout", () => { _tooltip.style.display = "none"; })
+      .on("mouseout", () => { getTooltip().style.display = "none"; })
       .transition().duration(dur)
       .style("opacity", 1)
       .attr("r",  d => rScale(d.passes))

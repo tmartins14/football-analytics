@@ -1,0 +1,83 @@
+{
+  "home": {
+    "team": "Serbia",
+    "color": "#C6363C",
+    "score": 0
+  },
+  "away": {
+    "team": "England",
+    "color": "#1E3A5F",
+    "score": 1
+  },
+  "rows": [
+    {
+      "label": "Shots",
+      "home_value": 6.0,
+      "away_value": 5.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Shots on Target",
+      "home_value": 1.0,
+      "away_value": 2.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Possession",
+      "home_value": 45.7,
+      "away_value": 54.3,
+      "scale_type": "fixed100",
+      "format": "pct",
+      "tier": "basic"
+    },
+    {
+      "label": "Corners",
+      "home_value": 2.0,
+      "away_value": 1.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Fouls",
+      "home_value": 28.0,
+      "away_value": 12.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Yellow Cards",
+      "home_value": 2.0,
+      "away_value": 0.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Red Cards",
+      "home_value": 0.0,
+      "away_value": 0.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "xG",
+      "home_value": 0.25,
+      "away_value": 0.56,
+      "scale_type": "sum",
+      "format": "float1",
+      "tier": "advanced"
+    }
+  ],
+  "metadata": {
+    "match_id": 3930163,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Serbia vs England"
+  }
+}

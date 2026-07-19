@@ -1,0 +1,984 @@
+{
+  "on_ball": {
+    "periods": [
+      {
+        "from_minute": 0,
+        "to_minute": 34,
+        "players_in": [
+          "Bart Verbruggen",
+          "Lutsharel Geertruida",
+          "Stefan de Vrij",
+          "Virgil van Dijk",
+          "Nathan Ak\u00e9",
+          "Jerdy Schouten",
+          "Tijjani Reijnders",
+          "Joey Veerman",
+          "Donyell Malen",
+          "Cody Math\u00e8s Gakpo",
+          "Memphis Depay"
+        ],
+        "players_out": [],
+        "nodes": [
+          {
+            "player_id": 7787,
+            "player": "Stefan de Vrij",
+            "display_name": "Stefan de Vrij",
+            "x": 40.67,
+            "y": 43.8,
+            "event_count": 25
+          },
+          {
+            "player_id": 2988,
+            "player": "Memphis Depay",
+            "display_name": "Memphis Depay",
+            "x": 69.94,
+            "y": 25.38,
+            "event_count": 18
+          },
+          {
+            "player_id": 21633,
+            "player": "Joey Veerman",
+            "display_name": "Joey Veerman",
+            "x": 56.54,
+            "y": 17.03,
+            "event_count": 18
+          },
+          {
+            "player_id": 3306,
+            "player": "Nathan Ak\u00e9",
+            "display_name": "Nathan Ak\u00e9",
+            "x": 47.31,
+            "y": 12.0,
+            "event_count": 15
+          },
+          {
+            "player_id": 3669,
+            "player": "Virgil van Dijk",
+            "display_name": "Virgil van Dijk",
+            "x": 34.09,
+            "y": 27.83,
+            "event_count": 15
+          },
+          {
+            "player_id": 22352,
+            "player": "Lutsharel Geertruida",
+            "display_name": "Lutsharel Geertruida",
+            "x": 68.94,
+            "y": 60.95,
+            "event_count": 12
+          },
+          {
+            "player_id": 20750,
+            "player": "Cody Math\u00e8s Gakpo",
+            "display_name": "Cody Gakpo",
+            "x": 85.54,
+            "y": 9.63,
+            "event_count": 9
+          },
+          {
+            "player_id": 37274,
+            "player": "Bart Verbruggen",
+            "display_name": "Bart Verbruggen",
+            "x": 9.7,
+            "y": 41.8,
+            "event_count": 8
+          },
+          {
+            "player_id": 15503,
+            "player": "Jerdy Schouten",
+            "display_name": "Jerdy Schouten",
+            "x": 74.06,
+            "y": 58.62,
+            "event_count": 8
+          },
+          {
+            "player_id": 15582,
+            "player": "Donyell Malen",
+            "display_name": "Donyell Malen",
+            "x": 77.74,
+            "y": 38.47,
+            "event_count": 7
+          },
+          {
+            "player_id": 21582,
+            "player": "Tijjani Reijnders",
+            "display_name": "Tijjani Reijnders",
+            "x": 81.7,
+            "y": 30.3,
+            "event_count": 6
+          }
+        ],
+        "hull": [
+          [
+            68.94,
+            60.95
+          ],
+          [
+            9.7,
+            41.8
+          ],
+          [
+            47.31,
+            12.0
+          ],
+          [
+            85.54,
+            9.63
+          ],
+          [
+            81.7,
+            30.3
+          ],
+          [
+            74.06,
+            58.62
+          ]
+        ]
+      },
+      {
+        "from_minute": 34,
+        "to_minute": 64,
+        "players_in": [
+          "Xavi Simons"
+        ],
+        "players_out": [
+          "Joey Veerman"
+        ],
+        "nodes": [
+          {
+            "player_id": 7787,
+            "player": "Stefan de Vrij",
+            "display_name": "Stefan de Vrij",
+            "x": 31.91,
+            "y": 53.47,
+            "event_count": 19
+          },
+          {
+            "player_id": 21582,
+            "player": "Tijjani Reijnders",
+            "display_name": "Tijjani Reijnders",
+            "x": 53.42,
+            "y": 24.4,
+            "event_count": 18
+          },
+          {
+            "player_id": 15582,
+            "player": "Donyell Malen",
+            "display_name": "Donyell Malen",
+            "x": 77.13,
+            "y": 63.57,
+            "event_count": 16
+          },
+          {
+            "player_id": 22352,
+            "player": "Lutsharel Geertruida",
+            "display_name": "Lutsharel Geertruida",
+            "x": 56.81,
+            "y": 64.49,
+            "event_count": 14
+          },
+          {
+            "player_id": 39167,
+            "player": "Xavi Simons",
+            "display_name": "Xavi Simons",
+            "x": 47.08,
+            "y": 19.57,
+            "event_count": 13
+          },
+          {
+            "player_id": 15503,
+            "player": "Jerdy Schouten",
+            "display_name": "Jerdy Schouten",
+            "x": 60.52,
+            "y": 55.24,
+            "event_count": 11
+          },
+          {
+            "player_id": 20750,
+            "player": "Cody Math\u00e8s Gakpo",
+            "display_name": "Cody Gakpo",
+            "x": 93.68,
+            "y": 20.64,
+            "event_count": 11
+          },
+          {
+            "player_id": 37274,
+            "player": "Bart Verbruggen",
+            "display_name": "Bart Verbruggen",
+            "x": 10.3,
+            "y": 35.24,
+            "event_count": 11
+          },
+          {
+            "player_id": 3306,
+            "player": "Nathan Ak\u00e9",
+            "display_name": "Nathan Ak\u00e9",
+            "x": 35.97,
+            "y": 15.9,
+            "event_count": 11
+          },
+          {
+            "player_id": 3669,
+            "player": "Virgil van Dijk",
+            "display_name": "Virgil van Dijk",
+            "x": 32.01,
+            "y": 20.89,
+            "event_count": 9
+          },
+          {
+            "player_id": 2988,
+            "player": "Memphis Depay",
+            "display_name": "Memphis Depay",
+            "x": 93.07,
+            "y": 32.05,
+            "event_count": 6
+          }
+        ],
+        "hull": [
+          [
+            77.13,
+            63.57
+          ],
+          [
+            56.81,
+            64.49
+          ],
+          [
+            31.91,
+            53.47
+          ],
+          [
+            10.3,
+            35.24
+          ],
+          [
+            35.97,
+            15.9
+          ],
+          [
+            93.68,
+            20.64
+          ],
+          [
+            93.07,
+            32.05
+          ]
+        ]
+      },
+      {
+        "from_minute": 64,
+        "to_minute": 71,
+        "players_in": [
+          "Georginio Wijnaldum",
+          "Micky van de Ven"
+        ],
+        "players_out": [
+          "Tijjani Reijnders",
+          "Nathan Ak\u00e9"
+        ],
+        "nodes": [
+          {
+            "player_id": 3669,
+            "player": "Virgil van Dijk",
+            "display_name": "Virgil van Dijk",
+            "x": 34.78,
+            "y": 39.94,
+            "event_count": 12
+          },
+          {
+            "player_id": 37274,
+            "player": "Bart Verbruggen",
+            "display_name": "Bart Verbruggen",
+            "x": 10.34,
+            "y": 41.59,
+            "event_count": 11
+          },
+          {
+            "player_id": 32547,
+            "player": "Micky van de Ven",
+            "display_name": "Micky van de Ven",
+            "x": 30.11,
+            "y": 15.5,
+            "event_count": 9
+          },
+          {
+            "player_id": 15503,
+            "player": "Jerdy Schouten",
+            "display_name": "Jerdy Schouten",
+            "x": 51.35,
+            "y": 42.53,
+            "event_count": 6
+          },
+          {
+            "player_id": 3567,
+            "player": "Georginio Wijnaldum",
+            "display_name": "Georginio Wijnaldum",
+            "x": 51.82,
+            "y": 6.37,
+            "event_count": 6
+          },
+          {
+            "player_id": 15582,
+            "player": "Donyell Malen",
+            "display_name": "Donyell Malen",
+            "x": 60.68,
+            "y": 59.87,
+            "event_count": 6
+          },
+          {
+            "player_id": 2988,
+            "player": "Memphis Depay",
+            "display_name": "Memphis Depay",
+            "x": 89.5,
+            "y": 22.8,
+            "event_count": 5
+          },
+          {
+            "player_id": 7787,
+            "player": "Stefan de Vrij",
+            "display_name": "Stefan de Vrij",
+            "x": 43.9,
+            "y": 50.35,
+            "event_count": 4
+          },
+          {
+            "player_id": 20750,
+            "player": "Cody Math\u00e8s Gakpo",
+            "display_name": "Cody Gakpo",
+            "x": 97.3,
+            "y": 23.6,
+            "event_count": 1
+          },
+          {
+            "player_id": 39167,
+            "player": "Xavi Simons",
+            "display_name": "Xavi Simons",
+            "x": 44.0,
+            "y": 65.1,
+            "event_count": 1
+          }
+        ],
+        "hull": [
+          [
+            44.0,
+            65.1
+          ],
+          [
+            10.34,
+            41.59
+          ],
+          [
+            30.11,
+            15.5
+          ],
+          [
+            51.82,
+            6.37
+          ],
+          [
+            97.3,
+            23.6
+          ],
+          [
+            60.68,
+            59.87
+          ]
+        ]
+      },
+      {
+        "from_minute": 71,
+        "to_minute": 98,
+        "players_in": [
+          "Wout Weghorst"
+        ],
+        "players_out": [
+          "Donyell Malen"
+        ],
+        "nodes": [
+          {
+            "player_id": 3669,
+            "player": "Virgil van Dijk",
+            "display_name": "Virgil van Dijk",
+            "x": 54.93,
+            "y": 33.56,
+            "event_count": 20
+          },
+          {
+            "player_id": 22352,
+            "player": "Lutsharel Geertruida",
+            "display_name": "Lutsharel Geertruida",
+            "x": 55.46,
+            "y": 46.87,
+            "event_count": 19
+          },
+          {
+            "player_id": 32547,
+            "player": "Micky van de Ven",
+            "display_name": "Micky van de Ven",
+            "x": 72.37,
+            "y": 15.26,
+            "event_count": 18
+          },
+          {
+            "player_id": 37274,
+            "player": "Bart Verbruggen",
+            "display_name": "Bart Verbruggen",
+            "x": 18.17,
+            "y": 35.6,
+            "event_count": 11
+          },
+          {
+            "player_id": 39167,
+            "player": "Xavi Simons",
+            "display_name": "Xavi Simons",
+            "x": 56.91,
+            "y": 69.18,
+            "event_count": 10
+          },
+          {
+            "player_id": 7787,
+            "player": "Stefan de Vrij",
+            "display_name": "Stefan de Vrij",
+            "x": 52.34,
+            "y": 56.62,
+            "event_count": 10
+          },
+          {
+            "player_id": 20750,
+            "player": "Cody Math\u00e8s Gakpo",
+            "display_name": "Cody Gakpo",
+            "x": 87.98,
+            "y": 12.93,
+            "event_count": 10
+          },
+          {
+            "player_id": 3567,
+            "player": "Georginio Wijnaldum",
+            "display_name": "Georginio Wijnaldum",
+            "x": 84.06,
+            "y": 24.07,
+            "event_count": 10
+          },
+          {
+            "player_id": 7829,
+            "player": "Wout Weghorst",
+            "display_name": "Wout Weghorst",
+            "x": 84.24,
+            "y": 58.94,
+            "event_count": 9
+          },
+          {
+            "player_id": 2988,
+            "player": "Memphis Depay",
+            "display_name": "Memphis Depay",
+            "x": 82.83,
+            "y": 26.44,
+            "event_count": 8
+          },
+          {
+            "player_id": 15503,
+            "player": "Jerdy Schouten",
+            "display_name": "Jerdy Schouten",
+            "x": 46.46,
+            "y": 57.73,
+            "event_count": 7
+          }
+        ],
+        "hull": [
+          [
+            56.91,
+            69.18
+          ],
+          [
+            18.17,
+            35.6
+          ],
+          [
+            72.37,
+            15.26
+          ],
+          [
+            87.98,
+            12.93
+          ],
+          [
+            84.24,
+            58.94
+          ]
+        ]
+      }
+    ]
+  },
+  "off_ball": {
+    "density_grid": {
+      "cols": 24,
+      "rows": 16,
+      "values": [
+        [
+          0.0564,
+          0.0716,
+          0.089,
+          0.1086,
+          0.1299,
+          0.1527,
+          0.1763,
+          0.1998,
+          0.2224,
+          0.2431,
+          0.2607,
+          0.2742,
+          0.2827,
+          0.2854,
+          0.2822,
+          0.2729,
+          0.258,
+          0.2383,
+          0.2149,
+          0.1892,
+          0.1624,
+          0.1359,
+          0.1108,
+          0.088
+        ],
+        [
+          0.0783,
+          0.099,
+          0.1225,
+          0.1489,
+          0.1777,
+          0.2082,
+          0.2398,
+          0.2714,
+          0.3017,
+          0.3294,
+          0.3531,
+          0.3712,
+          0.3827,
+          0.3866,
+          0.3824,
+          0.3702,
+          0.3505,
+          0.3244,
+          0.2932,
+          0.2588,
+          0.2229,
+          0.1872,
+          0.1533,
+          0.1222
+        ],
+        [
+          0.1037,
+          0.1303,
+          0.1608,
+          0.1946,
+          0.2315,
+          0.2707,
+          0.3111,
+          0.3515,
+          0.3903,
+          0.4259,
+          0.4563,
+          0.4798,
+          0.4948,
+          0.5002,
+          0.4953,
+          0.4801,
+          0.4553,
+          0.4223,
+          0.3828,
+          0.3389,
+          0.2929,
+          0.247,
+          0.2031,
+          0.1628
+        ],
+        [
+          0.1309,
+          0.1639,
+          0.2014,
+          0.243,
+          0.2882,
+          0.3361,
+          0.3856,
+          0.4351,
+          0.4828,
+          0.5265,
+          0.5641,
+          0.5933,
+          0.6123,
+          0.6195,
+          0.6143,
+          0.5965,
+          0.567,
+          0.5272,
+          0.4792,
+          0.4257,
+          0.3693,
+          0.3128,
+          0.2584,
+          0.2082
+        ],
+        [
+          0.1578,
+          0.1969,
+          0.2411,
+          0.2902,
+          0.3433,
+          0.3996,
+          0.4578,
+          0.516,
+          0.5722,
+          0.6239,
+          0.6686,
+          0.7036,
+          0.7268,
+          0.7364,
+          0.7314,
+          0.7116,
+          0.678,
+          0.6321,
+          0.5763,
+          0.5137,
+          0.4474,
+          0.3804,
+          0.3157,
+          0.2555
+        ],
+        [
+          0.1818,
+          0.2262,
+          0.2764,
+          0.3318,
+          0.3919,
+          0.4555,
+          0.5213,
+          0.5872,
+          0.651,
+          0.7099,
+          0.7612,
+          0.8018,
+          0.8292,
+          0.8414,
+          0.8372,
+          0.8163,
+          0.7796,
+          0.7287,
+          0.6665,
+          0.596,
+          0.5208,
+          0.4445,
+          0.3703,
+          0.3009
+        ],
+        [
+          0.2001,
+          0.2486,
+          0.3033,
+          0.3637,
+          0.4291,
+          0.4985,
+          0.5701,
+          0.6422,
+          0.7121,
+          0.7769,
+          0.8336,
+          0.8791,
+          0.9104,
+          0.9253,
+          0.9223,
+          0.9012,
+          0.8626,
+          0.8083,
+          0.7412,
+          0.6646,
+          0.5825,
+          0.4986,
+          0.4166,
+          0.3396
+        ],
+        [
+          0.2105,
+          0.2615,
+          0.3189,
+          0.3824,
+          0.4511,
+          0.524,
+          0.5995,
+          0.6756,
+          0.7496,
+          0.8186,
+          0.8793,
+          0.9284,
+          0.9628,
+          0.98,
+          0.9786,
+          0.9579,
+          0.9186,
+          0.8626,
+          0.7926,
+          0.7123,
+          0.6256,
+          0.5366,
+          0.4493,
+          0.3669
+        ],
+        [
+          0.2115,
+          0.2631,
+          0.3213,
+          0.3856,
+          0.4555,
+          0.5297,
+          0.6066,
+          0.6843,
+          0.7601,
+          0.831,
+          0.8937,
+          0.9448,
+          0.981,
+          1.0,
+          0.9999,
+          0.9802,
+          0.9414,
+          0.8852,
+          0.8145,
+          0.7329,
+          0.6445,
+          0.5535,
+          0.4639,
+          0.3792
+        ],
+        [
+          0.2032,
+          0.2535,
+          0.3103,
+          0.3734,
+          0.442,
+          0.515,
+          0.5909,
+          0.6676,
+          0.7427,
+          0.813,
+          0.8754,
+          0.9265,
+          0.9631,
+          0.9827,
+          0.9836,
+          0.9651,
+          0.9276,
+          0.873,
+          0.8038,
+          0.7236,
+          0.6365,
+          0.5468,
+          0.4582,
+          0.3744
+        ],
+        [
+          0.1867,
+          0.2339,
+          0.2875,
+          0.3472,
+          0.4124,
+          0.4818,
+          0.5542,
+          0.6274,
+          0.6991,
+          0.7664,
+          0.8261,
+          0.875,
+          0.9103,
+          0.9294,
+          0.9306,
+          0.9134,
+          0.8781,
+          0.8264,
+          0.7608,
+          0.6848,
+          0.6021,
+          0.5168,
+          0.4327,
+          0.3531
+        ],
+        [
+          0.1643,
+          0.207,
+          0.2557,
+          0.3103,
+          0.37,
+          0.4338,
+          0.5003,
+          0.5677,
+          0.6336,
+          0.6955,
+          0.7503,
+          0.7952,
+          0.8275,
+          0.8448,
+          0.8459,
+          0.8299,
+          0.7975,
+          0.7501,
+          0.69,
+          0.6204,
+          0.5449,
+          0.467,
+          0.3904,
+          0.318
+        ],
+        [
+          0.1385,
+          0.1757,
+          0.2184,
+          0.2664,
+          0.3191,
+          0.3755,
+          0.4345,
+          0.4941,
+          0.5524,
+          0.6069,
+          0.655,
+          0.6943,
+          0.7222,
+          0.737,
+          0.7373,
+          0.7228,
+          0.6938,
+          0.6517,
+          0.5987,
+          0.5375,
+          0.4712,
+          0.4031,
+          0.3362,
+          0.2732
+        ],
+        [
+          0.1119,
+          0.143,
+          0.1789,
+          0.2196,
+          0.2643,
+          0.3123,
+          0.3624,
+          0.413,
+          0.4624,
+          0.5083,
+          0.5486,
+          0.5812,
+          0.6041,
+          0.6157,
+          0.6152,
+          0.6021,
+          0.577,
+          0.5411,
+          0.4961,
+          0.4445,
+          0.3889,
+          0.332,
+          0.2762,
+          0.2239
+        ],
+        [
+          0.0866,
+          0.1115,
+          0.1406,
+          0.1735,
+          0.2099,
+          0.249,
+          0.2897,
+          0.3308,
+          0.3707,
+          0.4076,
+          0.4398,
+          0.4654,
+          0.4831,
+          0.4916,
+          0.4902,
+          0.4788,
+          0.4578,
+          0.4284,
+          0.3919,
+          0.3503,
+          0.3058,
+          0.2604,
+          0.2161,
+          0.1747
+        ],
+        [
+          0.0641,
+          0.0832,
+          0.1056,
+          0.1311,
+          0.1593,
+          0.1897,
+          0.2213,
+          0.2532,
+          0.2839,
+          0.3121,
+          0.3364,
+          0.3555,
+          0.3684,
+          0.374,
+          0.3721,
+          0.3625,
+          0.3457,
+          0.3227,
+          0.2944,
+          0.2625,
+          0.2286,
+          0.1941,
+          0.1607,
+          0.1296
+        ]
+      ]
+    },
+    "centroid": {
+      "x": 66.29,
+      "y": 42.08
+    },
+    "thirds_spine": [
+      {
+        "third": "defensive",
+        "x": 26.17,
+        "y": 41.51
+      },
+      {
+        "third": "middle",
+        "x": 62.6,
+        "y": 42.09
+      },
+      {
+        "third": "attacking",
+        "x": 93.85,
+        "y": 42.37
+      }
+    ],
+    "ellipse": {
+      "cx": 66.29,
+      "cy": 42.08,
+      "rx": 24.63,
+      "ry": 16.96,
+      "angle_deg": -178.4
+    },
+    "depth_line": {
+      "x": 80.33,
+      "percentile": 70
+    }
+  },
+  "metadata": {
+    "match_id": 3930180,
+    "team": "Netherlands",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Netherlands vs Austria",
+    "on_ball_event_count": 473,
+    "on_ball_period_count": 4,
+    "off_ball_bandwidth_yards": 8.0,
+    "off_ball_depth_percentile": 70,
+    "off_ball_grid_cols": 24,
+    "off_ball_grid_rows": 16,
+    "phase_filter": "open_play_only",
+    "coordinate_system": "statsbomb_120x80_normalised_attack_right",
+    "coordinate_note": "Coordinates are normalised so the team always attacks right (increasing x). Raw StatsBomb events are flipped (x\u2192120-x, y\u219280-y) in periods where the team attacks left.",
+    "camera_caveat": "360 frames follow the ball; the visible subset of out-of-possession positions is biased toward areas near the ball. The camera artifact and the real defensive shape point the same direction \u2014 they cannot be cleanly separated."
+  }
+}

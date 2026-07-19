@@ -1,0 +1,1170 @@
+{
+  "windows": [
+    {
+      "index": 0,
+      "label": "0'\u201358' (Starting XI)",
+      "nodes": [
+        {
+          "player": "Dan Ndoye",
+          "display_name": "Dan Ndoye",
+          "x": 78.09,
+          "y": 56.29,
+          "passes": 8
+        },
+        {
+          "player": "Fabian Lukas Sch\u00e4r",
+          "display_name": "Fabian Sch\u00e4r",
+          "x": 43.35,
+          "y": 66.96,
+          "passes": 34
+        },
+        {
+          "player": "Granit Xhaka",
+          "display_name": "Granit Xhaka",
+          "x": 62.74,
+          "y": 33.19,
+          "passes": 29
+        },
+        {
+          "player": "Manuel Obafemi Akanji",
+          "display_name": "Manuel Akanji",
+          "x": 34.9,
+          "y": 43.55,
+          "passes": 29
+        },
+        {
+          "player": "Michel Aebischer",
+          "display_name": "Michel Aebischer",
+          "x": 71.78,
+          "y": 11.74,
+          "passes": 25
+        },
+        {
+          "player": "Remo Freuler",
+          "display_name": "Remo Freuler",
+          "x": 64.75,
+          "y": 59.62,
+          "passes": 28
+        },
+        {
+          "player": "Ricardo Iv\u00e1n Rodr\u00edguez Araya",
+          "display_name": "Ricardo Rodr\u00edguez",
+          "x": 62.98,
+          "y": 10.95,
+          "passes": 22
+        },
+        {
+          "player": "Ruben Vargas",
+          "display_name": "Ruben Vargas",
+          "x": 92.76,
+          "y": 29.98,
+          "passes": 14
+        },
+        {
+          "player": "Silvan Widmer",
+          "display_name": "Silvan Widmer",
+          "x": 59.75,
+          "y": 76.09,
+          "passes": 20
+        },
+        {
+          "player": "Xherdan Shaqiri",
+          "display_name": "Xherdan Shaqiri",
+          "x": 77.33,
+          "y": 61.16,
+          "passes": 21
+        },
+        {
+          "player": "Yann Sommer",
+          "display_name": "Yann Sommer",
+          "x": 12.24,
+          "y": 42.22,
+          "passes": 18
+        }
+      ],
+      "edges": [
+        {
+          "from": "Michel Aebischer",
+          "to": "Granit Xhaka",
+          "count": 9
+        },
+        {
+          "from": "Silvan Widmer",
+          "to": "Fabian Lukas Sch\u00e4r",
+          "count": 9
+        },
+        {
+          "from": "Manuel Obafemi Akanji",
+          "to": "Fabian Lukas Sch\u00e4r",
+          "count": 8
+        },
+        {
+          "from": "Remo Freuler",
+          "to": "Xherdan Shaqiri",
+          "count": 8
+        },
+        {
+          "from": "Manuel Obafemi Akanji",
+          "to": "Yann Sommer",
+          "count": 7
+        },
+        {
+          "from": "Fabian Lukas Sch\u00e4r",
+          "to": "Manuel Obafemi Akanji",
+          "count": 6
+        },
+        {
+          "from": "Fabian Lukas Sch\u00e4r",
+          "to": "Remo Freuler",
+          "count": 6
+        },
+        {
+          "from": "Michel Aebischer",
+          "to": "Ricardo Iv\u00e1n Rodr\u00edguez Araya",
+          "count": 6
+        },
+        {
+          "from": "Granit Xhaka",
+          "to": "Fabian Lukas Sch\u00e4r",
+          "count": 5
+        },
+        {
+          "from": "Yann Sommer",
+          "to": "Fabian Lukas Sch\u00e4r",
+          "count": 5
+        },
+        {
+          "from": "Fabian Lukas Sch\u00e4r",
+          "to": "Silvan Widmer",
+          "count": 5
+        },
+        {
+          "from": "Fabian Lukas Sch\u00e4r",
+          "to": "Yann Sommer",
+          "count": 5
+        },
+        {
+          "from": "Remo Freuler",
+          "to": "Silvan Widmer",
+          "count": 5
+        },
+        {
+          "from": "Granit Xhaka",
+          "to": "Ricardo Iv\u00e1n Rodr\u00edguez Araya",
+          "count": 5
+        },
+        {
+          "from": "Fabian Lukas Sch\u00e4r",
+          "to": "Xherdan Shaqiri",
+          "count": 5
+        },
+        {
+          "from": "Michel Aebischer",
+          "to": "Ruben Vargas",
+          "count": 5
+        },
+        {
+          "from": "Yann Sommer",
+          "to": "Ricardo Iv\u00e1n Rodr\u00edguez Araya",
+          "count": 5
+        },
+        {
+          "from": "Ricardo Iv\u00e1n Rodr\u00edguez Araya",
+          "to": "Granit Xhaka",
+          "count": 5
+        },
+        {
+          "from": "Ricardo Iv\u00e1n Rodr\u00edguez Araya",
+          "to": "Michel Aebischer",
+          "count": 5
+        },
+        {
+          "from": "Granit Xhaka",
+          "to": "Michel Aebischer",
+          "count": 5
+        },
+        {
+          "from": "Ruben Vargas",
+          "to": "Dan Ndoye",
+          "count": 5
+        },
+        {
+          "from": "Granit Xhaka",
+          "to": "Manuel Obafemi Akanji",
+          "count": 4
+        },
+        {
+          "from": "Ricardo Iv\u00e1n Rodr\u00edguez Araya",
+          "to": "Ruben Vargas",
+          "count": 4
+        },
+        {
+          "from": "Silvan Widmer",
+          "to": "Remo Freuler",
+          "count": 4
+        },
+        {
+          "from": "Remo Freuler",
+          "to": "Fabian Lukas Sch\u00e4r",
+          "count": 4
+        },
+        {
+          "from": "Xherdan Shaqiri",
+          "to": "Fabian Lukas Sch\u00e4r",
+          "count": 4
+        },
+        {
+          "from": "Xherdan Shaqiri",
+          "to": "Ruben Vargas",
+          "count": 4
+        },
+        {
+          "from": "Xherdan Shaqiri",
+          "to": "Silvan Widmer",
+          "count": 4
+        },
+        {
+          "from": "Yann Sommer",
+          "to": "Granit Xhaka",
+          "count": 3
+        },
+        {
+          "from": "Remo Freuler",
+          "to": "Manuel Obafemi Akanji",
+          "count": 3
+        },
+        {
+          "from": "Manuel Obafemi Akanji",
+          "to": "Ricardo Iv\u00e1n Rodr\u00edguez Araya",
+          "count": 3
+        },
+        {
+          "from": "Granit Xhaka",
+          "to": "Remo Freuler",
+          "count": 3
+        },
+        {
+          "from": "Remo Freuler",
+          "to": "Dan Ndoye",
+          "count": 3
+        },
+        {
+          "from": "Ruben Vargas",
+          "to": "Remo Freuler",
+          "count": 3
+        },
+        {
+          "from": "Manuel Obafemi Akanji",
+          "to": "Remo Freuler",
+          "count": 3
+        },
+        {
+          "from": "Yann Sommer",
+          "to": "Manuel Obafemi Akanji",
+          "count": 3
+        },
+        {
+          "from": "Silvan Widmer",
+          "to": "Granit Xhaka",
+          "count": 3
+        },
+        {
+          "from": "Fabian Lukas Sch\u00e4r",
+          "to": "Granit Xhaka",
+          "count": 2
+        },
+        {
+          "from": "Dan Ndoye",
+          "to": "Fabian Lukas Sch\u00e4r",
+          "count": 2
+        },
+        {
+          "from": "Fabian Lukas Sch\u00e4r",
+          "to": "Dan Ndoye",
+          "count": 2
+        },
+        {
+          "from": "Ricardo Iv\u00e1n Rodr\u00edguez Araya",
+          "to": "Fabian Lukas Sch\u00e4r",
+          "count": 2
+        },
+        {
+          "from": "Remo Freuler",
+          "to": "Michel Aebischer",
+          "count": 2
+        },
+        {
+          "from": "Manuel Obafemi Akanji",
+          "to": "Ruben Vargas",
+          "count": 2
+        },
+        {
+          "from": "Ruben Vargas",
+          "to": "Michel Aebischer",
+          "count": 2
+        },
+        {
+          "from": "Xherdan Shaqiri",
+          "to": "Manuel Obafemi Akanji",
+          "count": 2
+        },
+        {
+          "from": "Manuel Obafemi Akanji",
+          "to": "Xherdan Shaqiri",
+          "count": 2
+        },
+        {
+          "from": "Granit Xhaka",
+          "to": "Ruben Vargas",
+          "count": 2
+        },
+        {
+          "from": "Michel Aebischer",
+          "to": "Manuel Obafemi Akanji",
+          "count": 2
+        },
+        {
+          "from": "Xherdan Shaqiri",
+          "to": "Dan Ndoye",
+          "count": 2
+        },
+        {
+          "from": "Ricardo Iv\u00e1n Rodr\u00edguez Araya",
+          "to": "Xherdan Shaqiri",
+          "count": 2
+        },
+        {
+          "from": "Dan Ndoye",
+          "to": "Xherdan Shaqiri",
+          "count": 2
+        },
+        {
+          "from": "Xherdan Shaqiri",
+          "to": "Remo Freuler",
+          "count": 2
+        },
+        {
+          "from": "Granit Xhaka",
+          "to": "Xherdan Shaqiri",
+          "count": 2
+        },
+        {
+          "from": "Xherdan Shaqiri",
+          "to": "Granit Xhaka",
+          "count": 2
+        },
+        {
+          "from": "Ricardo Iv\u00e1n Rodr\u00edguez Araya",
+          "to": "Manuel Obafemi Akanji",
+          "count": 2
+        },
+        {
+          "from": "Fabian Lukas Sch\u00e4r",
+          "to": "Ruben Vargas",
+          "count": 2
+        },
+        {
+          "from": "Ruben Vargas",
+          "to": "Ricardo Iv\u00e1n Rodr\u00edguez Araya",
+          "count": 2
+        },
+        {
+          "from": "Manuel Obafemi Akanji",
+          "to": "Silvan Widmer",
+          "count": 2
+        },
+        {
+          "from": "Michel Aebischer",
+          "to": "Dan Ndoye",
+          "count": 2
+        },
+        {
+          "from": "Manuel Obafemi Akanji",
+          "to": "Dan Ndoye",
+          "count": 1
+        },
+        {
+          "from": "Manuel Obafemi Akanji",
+          "to": "Michel Aebischer",
+          "count": 1
+        },
+        {
+          "from": "Ruben Vargas",
+          "to": "Granit Xhaka",
+          "count": 1
+        },
+        {
+          "from": "Yann Sommer",
+          "to": "Remo Freuler",
+          "count": 1
+        },
+        {
+          "from": "Dan Ndoye",
+          "to": "Michel Aebischer",
+          "count": 1
+        },
+        {
+          "from": "Michel Aebischer",
+          "to": "Silvan Widmer",
+          "count": 1
+        },
+        {
+          "from": "Fabian Lukas Sch\u00e4r",
+          "to": "Michel Aebischer",
+          "count": 1
+        },
+        {
+          "from": "Silvan Widmer",
+          "to": "Ruben Vargas",
+          "count": 1
+        },
+        {
+          "from": "Remo Freuler",
+          "to": "Ricardo Iv\u00e1n Rodr\u00edguez Araya",
+          "count": 1
+        },
+        {
+          "from": "Silvan Widmer",
+          "to": "Yann Sommer",
+          "count": 1
+        },
+        {
+          "from": "Dan Ndoye",
+          "to": "Remo Freuler",
+          "count": 1
+        },
+        {
+          "from": "Remo Freuler",
+          "to": "Ruben Vargas",
+          "count": 1
+        },
+        {
+          "from": "Silvan Widmer",
+          "to": "Xherdan Shaqiri",
+          "count": 1
+        },
+        {
+          "from": "Ricardo Iv\u00e1n Rodr\u00edguez Araya",
+          "to": "Yann Sommer",
+          "count": 1
+        },
+        {
+          "from": "Ricardo Iv\u00e1n Rodr\u00edguez Araya",
+          "to": "Remo Freuler",
+          "count": 1
+        },
+        {
+          "from": "Granit Xhaka",
+          "to": "Yann Sommer",
+          "count": 1
+        },
+        {
+          "from": "Granit Xhaka",
+          "to": "Dan Ndoye",
+          "count": 1
+        },
+        {
+          "from": "Dan Ndoye",
+          "to": "Ruben Vargas",
+          "count": 1
+        },
+        {
+          "from": "Granit Xhaka",
+          "to": "Silvan Widmer",
+          "count": 1
+        },
+        {
+          "from": "Silvan Widmer",
+          "to": "Manuel Obafemi Akanji",
+          "count": 1
+        },
+        {
+          "from": "Remo Freuler",
+          "to": "Granit Xhaka",
+          "count": 1
+        },
+        {
+          "from": "Dan Ndoye",
+          "to": "Granit Xhaka",
+          "count": 1
+        },
+        {
+          "from": "Yann Sommer",
+          "to": "Ruben Vargas",
+          "count": 1
+        },
+        {
+          "from": "Ruben Vargas",
+          "to": "Xherdan Shaqiri",
+          "count": 1
+        },
+        {
+          "from": "Xherdan Shaqiri",
+          "to": "Ricardo Iv\u00e1n Rodr\u00edguez Araya",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "label": "58'\u201373'",
+      "nodes": [
+        {
+          "player": "Breel-Donald Embolo",
+          "display_name": "Breel Embolo",
+          "x": 85.15,
+          "y": 30.4,
+          "passes": 2
+        },
+        {
+          "player": "Dan Ndoye",
+          "display_name": "Dan Ndoye",
+          "x": 48.4,
+          "y": 42.9,
+          "passes": 1
+        },
+        {
+          "player": "Fabian Lukas Sch\u00e4r",
+          "display_name": "Fabian Sch\u00e4r",
+          "x": 37.67,
+          "y": 63.2,
+          "passes": 4
+        },
+        {
+          "player": "Granit Xhaka",
+          "display_name": "Granit Xhaka",
+          "x": 68.33,
+          "y": 16.3,
+          "passes": 4
+        },
+        {
+          "player": "Manuel Obafemi Akanji",
+          "display_name": "Manuel Akanji",
+          "x": 43.3,
+          "y": 28.55,
+          "passes": 2
+        },
+        {
+          "player": "Michel Aebischer",
+          "display_name": "Michel Aebischer",
+          "x": 69.33,
+          "y": 2.51,
+          "passes": 7
+        },
+        {
+          "player": "Remo Freuler",
+          "display_name": "Remo Freuler",
+          "x": 64.13,
+          "y": 26.33,
+          "passes": 7
+        },
+        {
+          "player": "Ricardo Iv\u00e1n Rodr\u00edguez Araya",
+          "display_name": "Ricardo Rodr\u00edguez",
+          "x": 49.85,
+          "y": 7.98,
+          "passes": 6
+        },
+        {
+          "player": "Ruben Vargas",
+          "display_name": "Ruben Vargas",
+          "x": 85.45,
+          "y": 14.25,
+          "passes": 4
+        },
+        {
+          "player": "Silvan Widmer",
+          "display_name": "Silvan Widmer",
+          "x": 51.62,
+          "y": 73.62,
+          "passes": 5
+        }
+      ],
+      "edges": [
+        {
+          "from": "Silvan Widmer",
+          "to": "Fabian Lukas Sch\u00e4r",
+          "count": 4
+        },
+        {
+          "from": "Michel Aebischer",
+          "to": "Remo Freuler",
+          "count": 3
+        },
+        {
+          "from": "Remo Freuler",
+          "to": "Michel Aebischer",
+          "count": 3
+        },
+        {
+          "from": "Granit Xhaka",
+          "to": "Ruben Vargas",
+          "count": 2
+        },
+        {
+          "from": "Ruben Vargas",
+          "to": "Michel Aebischer",
+          "count": 2
+        },
+        {
+          "from": "Fabian Lukas Sch\u00e4r",
+          "to": "Silvan Widmer",
+          "count": 2
+        },
+        {
+          "from": "Michel Aebischer",
+          "to": "Ricardo Iv\u00e1n Rodr\u00edguez Araya",
+          "count": 2
+        },
+        {
+          "from": "Remo Freuler",
+          "to": "Silvan Widmer",
+          "count": 2
+        },
+        {
+          "from": "Ruben Vargas",
+          "to": "Ricardo Iv\u00e1n Rodr\u00edguez Araya",
+          "count": 2
+        },
+        {
+          "from": "Ricardo Iv\u00e1n Rodr\u00edguez Araya",
+          "to": "Ruben Vargas",
+          "count": 2
+        },
+        {
+          "from": "Michel Aebischer",
+          "to": "Ruben Vargas",
+          "count": 1
+        },
+        {
+          "from": "Granit Xhaka",
+          "to": "Ricardo Iv\u00e1n Rodr\u00edguez Araya",
+          "count": 1
+        },
+        {
+          "from": "Ricardo Iv\u00e1n Rodr\u00edguez Araya",
+          "to": "Fabian Lukas Sch\u00e4r",
+          "count": 1
+        },
+        {
+          "from": "Fabian Lukas Sch\u00e4r",
+          "to": "Manuel Obafemi Akanji",
+          "count": 1
+        },
+        {
+          "from": "Manuel Obafemi Akanji",
+          "to": "Breel-Donald Embolo",
+          "count": 1
+        },
+        {
+          "from": "Breel-Donald Embolo",
+          "to": "Remo Freuler",
+          "count": 1
+        },
+        {
+          "from": "Ricardo Iv\u00e1n Rodr\u00edguez Araya",
+          "to": "Manuel Obafemi Akanji",
+          "count": 1
+        },
+        {
+          "from": "Manuel Obafemi Akanji",
+          "to": "Michel Aebischer",
+          "count": 1
+        },
+        {
+          "from": "Remo Freuler",
+          "to": "Fabian Lukas Sch\u00e4r",
+          "count": 1
+        },
+        {
+          "from": "Fabian Lukas Sch\u00e4r",
+          "to": "Ruben Vargas",
+          "count": 1
+        },
+        {
+          "from": "Dan Ndoye",
+          "to": "Silvan Widmer",
+          "count": 1
+        },
+        {
+          "from": "Silvan Widmer",
+          "to": "Remo Freuler",
+          "count": 1
+        },
+        {
+          "from": "Ricardo Iv\u00e1n Rodr\u00edguez Araya",
+          "to": "Yann Sommer",
+          "count": 1
+        },
+        {
+          "from": "Remo Freuler",
+          "to": "Granit Xhaka",
+          "count": 1
+        },
+        {
+          "from": "Michel Aebischer",
+          "to": "Breel-Donald Embolo",
+          "count": 1
+        },
+        {
+          "from": "Breel-Donald Embolo",
+          "to": "Granit Xhaka",
+          "count": 1
+        },
+        {
+          "from": "Granit Xhaka",
+          "to": "Remo Freuler",
+          "count": 1
+        },
+        {
+          "from": "Ricardo Iv\u00e1n Rodr\u00edguez Araya",
+          "to": "Breel-Donald Embolo",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "label": "74'\u201385'",
+      "nodes": [
+        {
+          "player": "Dan Ndoye",
+          "display_name": "Dan Ndoye",
+          "x": 60.37,
+          "y": 4.83,
+          "passes": 3
+        },
+        {
+          "player": "Fabian Lukas Sch\u00e4r",
+          "display_name": "Fabian Sch\u00e4r",
+          "x": 29.0,
+          "y": 67.6,
+          "passes": 1
+        },
+        {
+          "player": "Fabian Rieder",
+          "display_name": "Fabian Rieder",
+          "x": 6.5,
+          "y": 73.4,
+          "passes": 1
+        },
+        {
+          "player": "Granit Xhaka",
+          "display_name": "Granit Xhaka",
+          "x": 42.86,
+          "y": 22.68,
+          "passes": 9
+        },
+        {
+          "player": "Manuel Obafemi Akanji",
+          "display_name": "Manuel Akanji",
+          "x": 32.06,
+          "y": 36.83,
+          "passes": 7
+        },
+        {
+          "player": "Michel Aebischer",
+          "display_name": "Michel Aebischer",
+          "x": 68.91,
+          "y": 14.46,
+          "passes": 7
+        },
+        {
+          "player": "Ricardo Iv\u00e1n Rodr\u00edguez Araya",
+          "display_name": "Ricardo Rodr\u00edguez",
+          "x": 66.27,
+          "y": 10.8,
+          "passes": 6
+        },
+        {
+          "player": "Vincent Sierro",
+          "display_name": "Vincent Sierro",
+          "x": 48.83,
+          "y": 28.95,
+          "passes": 4
+        },
+        {
+          "player": "Yann Sommer",
+          "display_name": "Yann Sommer",
+          "x": 3.07,
+          "y": 36.23,
+          "passes": 3
+        }
+      ],
+      "edges": [
+        {
+          "from": "Ricardo Iv\u00e1n Rodr\u00edguez Araya",
+          "to": "Michel Aebischer",
+          "count": 4
+        },
+        {
+          "from": "Granit Xhaka",
+          "to": "Michel Aebischer",
+          "count": 3
+        },
+        {
+          "from": "Granit Xhaka",
+          "to": "Dan Ndoye",
+          "count": 3
+        },
+        {
+          "from": "Manuel Obafemi Akanji",
+          "to": "Yann Sommer",
+          "count": 2
+        },
+        {
+          "from": "Michel Aebischer",
+          "to": "Vincent Sierro",
+          "count": 2
+        },
+        {
+          "from": "Vincent Sierro",
+          "to": "Granit Xhaka",
+          "count": 2
+        },
+        {
+          "from": "Manuel Obafemi Akanji",
+          "to": "Ricardo Iv\u00e1n Rodr\u00edguez Araya",
+          "count": 2
+        },
+        {
+          "from": "Michel Aebischer",
+          "to": "Dan Ndoye",
+          "count": 2
+        },
+        {
+          "from": "Ricardo Iv\u00e1n Rodr\u00edguez Araya",
+          "to": "Manuel Obafemi Akanji",
+          "count": 2
+        },
+        {
+          "from": "Yann Sommer",
+          "to": "Fabian Lukas Sch\u00e4r",
+          "count": 1
+        },
+        {
+          "from": "Fabian Rieder",
+          "to": "Breel-Donald Embolo",
+          "count": 1
+        },
+        {
+          "from": "Fabian Lukas Sch\u00e4r",
+          "to": "Manuel Obafemi Akanji",
+          "count": 1
+        },
+        {
+          "from": "Yann Sommer",
+          "to": "Manuel Obafemi Akanji",
+          "count": 1
+        },
+        {
+          "from": "Manuel Obafemi Akanji",
+          "to": "Granit Xhaka",
+          "count": 1
+        },
+        {
+          "from": "Granit Xhaka",
+          "to": "Yann Sommer",
+          "count": 1
+        },
+        {
+          "from": "Yann Sommer",
+          "to": "Dan Ndoye",
+          "count": 1
+        },
+        {
+          "from": "Dan Ndoye",
+          "to": "Granit Xhaka",
+          "count": 1
+        },
+        {
+          "from": "Dan Ndoye",
+          "to": "Vincent Sierro",
+          "count": 1
+        },
+        {
+          "from": "Vincent Sierro",
+          "to": "Manuel Obafemi Akanji",
+          "count": 1
+        },
+        {
+          "from": "Michel Aebischer",
+          "to": "Ricardo Iv\u00e1n Rodr\u00edguez Araya",
+          "count": 1
+        },
+        {
+          "from": "Dan Ndoye",
+          "to": "Ricardo Iv\u00e1n Rodr\u00edguez Araya",
+          "count": 1
+        },
+        {
+          "from": "Vincent Sierro",
+          "to": "Ricardo Iv\u00e1n Rodr\u00edguez Araya",
+          "count": 1
+        },
+        {
+          "from": "Michel Aebischer",
+          "to": "Manuel Obafemi Akanji",
+          "count": 1
+        },
+        {
+          "from": "Manuel Obafemi Akanji",
+          "to": "Fabian Rieder",
+          "count": 1
+        },
+        {
+          "from": "Michel Aebischer",
+          "to": "Granit Xhaka",
+          "count": 1
+        },
+        {
+          "from": "Granit Xhaka",
+          "to": "Fabian Rieder",
+          "count": 1
+        },
+        {
+          "from": "Granit Xhaka",
+          "to": "Vincent Sierro",
+          "count": 1
+        },
+        {
+          "from": "Manuel Obafemi Akanji",
+          "to": "Michel Aebischer",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "label": "85'\u2013FT",
+      "nodes": [
+        {
+          "player": "Breel-Donald Embolo",
+          "display_name": "Breel Embolo",
+          "x": 50.2,
+          "y": 54.3,
+          "passes": 1
+        },
+        {
+          "player": "Fabian Lukas Sch\u00e4r",
+          "display_name": "Fabian Sch\u00e4r",
+          "x": 39.48,
+          "y": 69.75,
+          "passes": 6
+        },
+        {
+          "player": "Fabian Rieder",
+          "display_name": "Fabian Rieder",
+          "x": 81.1,
+          "y": 69.1,
+          "passes": 2
+        },
+        {
+          "player": "Granit Xhaka",
+          "display_name": "Granit Xhaka",
+          "x": 55.75,
+          "y": 25.6,
+          "passes": 2
+        },
+        {
+          "player": "Leonidas Stergiou",
+          "display_name": "Leonidas Stergiou",
+          "x": 57.0,
+          "y": 70.4,
+          "passes": 1
+        },
+        {
+          "player": "Manuel Obafemi Akanji",
+          "display_name": "Manuel Akanji",
+          "x": 36.03,
+          "y": 32.88,
+          "passes": 10
+        },
+        {
+          "player": "Michel Aebischer",
+          "display_name": "Michel Aebischer",
+          "x": 46.65,
+          "y": 0.5,
+          "passes": 2
+        },
+        {
+          "player": "Ricardo Iv\u00e1n Rodr\u00edguez Araya",
+          "display_name": "Ricardo Rodr\u00edguez",
+          "x": 40.7,
+          "y": 6.45,
+          "passes": 4
+        },
+        {
+          "player": "Vincent Sierro",
+          "display_name": "Vincent Sierro",
+          "x": 39.8,
+          "y": 59.6,
+          "passes": 2
+        },
+        {
+          "player": "Yann Sommer",
+          "display_name": "Yann Sommer",
+          "x": 13.85,
+          "y": 44.95,
+          "passes": 4
+        }
+      ],
+      "edges": [
+        {
+          "from": "Manuel Obafemi Akanji",
+          "to": "Fabian Lukas Sch\u00e4r",
+          "count": 5
+        },
+        {
+          "from": "Fabian Lukas Sch\u00e4r",
+          "to": "Yann Sommer",
+          "count": 3
+        },
+        {
+          "from": "Ricardo Iv\u00e1n Rodr\u00edguez Araya",
+          "to": "Manuel Obafemi Akanji",
+          "count": 3
+        },
+        {
+          "from": "Yann Sommer",
+          "to": "Manuel Obafemi Akanji",
+          "count": 2
+        },
+        {
+          "from": "Manuel Obafemi Akanji",
+          "to": "Vincent Sierro",
+          "count": 2
+        },
+        {
+          "from": "Vincent Sierro",
+          "to": "Breel-Donald Embolo",
+          "count": 1
+        },
+        {
+          "from": "Breel-Donald Embolo",
+          "to": "Granit Xhaka",
+          "count": 1
+        },
+        {
+          "from": "Granit Xhaka",
+          "to": "Mohamed Zeki Amdouni",
+          "count": 1
+        },
+        {
+          "from": "Fabian Rieder",
+          "to": "Leonidas Stergiou",
+          "count": 1
+        },
+        {
+          "from": "Leonidas Stergiou",
+          "to": "Manuel Obafemi Akanji",
+          "count": 1
+        },
+        {
+          "from": "Fabian Lukas Sch\u00e4r",
+          "to": "Manuel Obafemi Akanji",
+          "count": 1
+        },
+        {
+          "from": "Yann Sommer",
+          "to": "Ricardo Iv\u00e1n Rodr\u00edguez Araya",
+          "count": 1
+        },
+        {
+          "from": "Ricardo Iv\u00e1n Rodr\u00edguez Araya",
+          "to": "Michel Aebischer",
+          "count": 1
+        },
+        {
+          "from": "Michel Aebischer",
+          "to": "Granit Xhaka",
+          "count": 1
+        },
+        {
+          "from": "Fabian Rieder",
+          "to": "Mohamed Zeki Amdouni",
+          "count": 1
+        },
+        {
+          "from": "Manuel Obafemi Akanji",
+          "to": "Fabian Rieder",
+          "count": 1
+        },
+        {
+          "from": "Granit Xhaka",
+          "to": "Vincent Sierro",
+          "count": 1
+        },
+        {
+          "from": "Michel Aebischer",
+          "to": "Ricardo Iv\u00e1n Rodr\u00edguez Araya",
+          "count": 1
+        },
+        {
+          "from": "Yann Sommer",
+          "to": "Fabian Lukas Sch\u00e4r",
+          "count": 1
+        },
+        {
+          "from": "Fabian Lukas Sch\u00e4r",
+          "to": "Vincent Sierro",
+          "count": 1
+        },
+        {
+          "from": "Vincent Sierro",
+          "to": "Fabian Lukas Sch\u00e4r",
+          "count": 1
+        },
+        {
+          "from": "Manuel Obafemi Akanji",
+          "to": "Ricardo Iv\u00e1n Rodr\u00edguez Araya",
+          "count": 1
+        },
+        {
+          "from": "Fabian Lukas Sch\u00e4r",
+          "to": "Mohamed Zeki Amdouni",
+          "count": 1
+        },
+        {
+          "from": "Manuel Obafemi Akanji",
+          "to": "Granit Xhaka",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "substitutions": [
+    {
+      "minute": 58,
+      "player_off": "Xherdan Shaqiri",
+      "player_on": "Breel-Donald Embolo"
+    },
+    {
+      "minute": 73,
+      "player_off": "Remo Freuler",
+      "player_on": "Vincent Sierro"
+    },
+    {
+      "minute": 74,
+      "player_off": "Ruben Vargas",
+      "player_on": "Fabian Rieder"
+    },
+    {
+      "minute": 85,
+      "player_off": "Silvan Widmer",
+      "player_on": "Leonidas Stergiou"
+    },
+    {
+      "minute": 85,
+      "player_off": "Dan Ndoye",
+      "player_on": "Mohamed Zeki Amdouni"
+    }
+  ],
+  "metadata": {
+    "match_id": 3930169,
+    "team": "Switzerland",
+    "filter": "completed passes, per substitution window",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Scotland vs Switzerland"
+  }
+}

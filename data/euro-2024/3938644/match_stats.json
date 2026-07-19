@@ -1,0 +1,83 @@
+{
+  "home": {
+    "team": "Georgia",
+    "color": "#D0011A",
+    "score": 2
+  },
+  "away": {
+    "team": "Portugal",
+    "color": "#006600",
+    "score": 0
+  },
+  "rows": [
+    {
+      "label": "Shots",
+      "home_value": 7.0,
+      "away_value": 22.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Shots on Target",
+      "home_value": 3.0,
+      "away_value": 5.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Possession",
+      "home_value": 30.9,
+      "away_value": 69.1,
+      "scale_type": "fixed100",
+      "format": "pct",
+      "tier": "basic"
+    },
+    {
+      "label": "Corners",
+      "home_value": 1.0,
+      "away_value": 11.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Fouls",
+      "home_value": 8.0,
+      "away_value": 11.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Yellow Cards",
+      "home_value": 1.0,
+      "away_value": 3.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Red Cards",
+      "home_value": 0.0,
+      "away_value": 0.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "xG",
+      "home_value": 1.35,
+      "away_value": 2.36,
+      "scale_type": "sum",
+      "format": "float1",
+      "tier": "advanced"
+    }
+  ],
+  "metadata": {
+    "match_id": 3938644,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Georgia vs Portugal"
+  }
+}

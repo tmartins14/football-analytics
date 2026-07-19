@@ -1,0 +1,435 @@
+{
+  "goals": [
+    {
+      "window": {
+        "anchor_event_id": "d43cc345-870d-4089-862d-e4cca8ae9702",
+        "start_event_id": "cf3244a6-129b-4559-9a80-2b4151ab31e4",
+        "end_event_id": "d43cc345-870d-4089-862d-e4cca8ae9702",
+        "period": 1,
+        "window_seconds": 10.0,
+        "t_span_seconds": 10.652
+      },
+      "frames": [
+        {
+          "event_id": "cf3244a6-129b-4559-9a80-2b4151ab31e4",
+          "t_seconds": 0.0,
+          "team": "France",
+          "event_type": "Carry",
+          "ball_x": 77.6,
+          "ball_y": 69.1,
+          "ball_end_x": 82.2,
+          "ball_end_y": 58.2,
+          "actor": "Ousmane Demb\u00e9l\u00e9",
+          "outcome": null
+        },
+        {
+          "event_id": "dcee377c-f946-466a-b1d0-1fe3bc8bf4c5",
+          "t_seconds": 4.236,
+          "team": "France",
+          "event_type": "Pass",
+          "ball_x": 82.2,
+          "ball_y": 58.2,
+          "ball_end_x": 110.1,
+          "ball_end_y": 16.8,
+          "actor": "Ousmane Demb\u00e9l\u00e9",
+          "outcome": null
+        },
+        {
+          "event_id": "1b7adfd5-d828-4ddb-9789-65d72cda7e71",
+          "t_seconds": 5.906,
+          "team": "France",
+          "event_type": "Carry",
+          "ball_x": 110.1,
+          "ball_y": 16.8,
+          "ball_end_x": 108.3,
+          "ball_end_y": 21.7,
+          "actor": "Kylian Mbapp\u00e9",
+          "outcome": null
+        },
+        {
+          "event_id": "3189bc88-5e60-4b91-b5c5-266b3e2f9a4f",
+          "t_seconds": 9.229,
+          "team": "France",
+          "event_type": "Pass",
+          "ball_x": 108.3,
+          "ball_y": 21.7,
+          "ball_end_x": 114.9,
+          "ball_end_y": 43.7,
+          "actor": "Kylian Mbapp\u00e9",
+          "outcome": null
+        },
+        {
+          "event_id": "d43cc345-870d-4089-862d-e4cca8ae9702",
+          "t_seconds": 10.652,
+          "team": "France",
+          "event_type": "Shot",
+          "ball_x": 114.9,
+          "ball_y": 43.7,
+          "ball_end_x": 120.0,
+          "ball_end_y": 43.6,
+          "actor": "Randal Kolo",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "d43cc345-870d-4089-862d-e4cca8ae9702",
+          "minute": 8,
+          "second": 1,
+          "scorer": "Randal Kolo",
+          "team": "France"
+        }
+      },
+      "metadata": {
+        "match_id": 3942752,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Spain vs France"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "fedfb68d-1107-4594-984e-6761d6ccb9b2",
+        "start_event_id": "7a5fe02d-d8c8-4dc1-9ad5-4d07ff299547",
+        "end_event_id": "fedfb68d-1107-4594-984e-6761d6ccb9b2",
+        "period": 1,
+        "window_seconds": 10.0,
+        "t_span_seconds": 12.597
+      },
+      "frames": [
+        {
+          "event_id": "7a5fe02d-d8c8-4dc1-9ad5-4d07ff299547",
+          "t_seconds": 0.0,
+          "team": "Spain",
+          "event_type": "Carry",
+          "ball_x": 46.7,
+          "ball_y": 24.7,
+          "ball_end_x": 45.3,
+          "ball_end_y": 35.6,
+          "actor": "Aymeric Laporte",
+          "outcome": null
+        },
+        {
+          "event_id": "6deab816-e1a0-4d63-a444-ce28a079e8f1",
+          "t_seconds": 3.46,
+          "team": "Spain",
+          "event_type": "Pass",
+          "ball_x": 45.3,
+          "ball_y": 35.6,
+          "ball_end_x": 51.5,
+          "ball_end_y": 48.9,
+          "actor": "Aymeric Laporte",
+          "outcome": null
+        },
+        {
+          "event_id": "6b0c8bb5-6e76-40f3-8fd4-64dfd2908297",
+          "t_seconds": 4.568,
+          "team": "Spain",
+          "event_type": "Carry",
+          "ball_x": 51.5,
+          "ball_y": 48.9,
+          "ball_end_x": 54.5,
+          "ball_end_y": 49.2,
+          "actor": "Nacho",
+          "outcome": null
+        },
+        {
+          "event_id": "bbc6392e-9a89-4451-95a1-462d56965553",
+          "t_seconds": 5.505,
+          "team": "Spain",
+          "event_type": "Pass",
+          "ball_x": 54.5,
+          "ball_y": 49.2,
+          "ball_end_x": 80.0,
+          "ball_end_y": 40.8,
+          "actor": "Nacho",
+          "outcome": null
+        },
+        {
+          "event_id": "881234e1-6258-4d65-8cfc-e120112e7b28",
+          "t_seconds": 6.384,
+          "team": "France",
+          "event_type": "Pressure",
+          "ball_x": 39.2,
+          "ball_y": 37.9,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Adrien Rabiot",
+          "outcome": null
+        },
+        {
+          "event_id": "cf8068ad-5714-4377-9c06-7852f2dbe806",
+          "t_seconds": 6.646,
+          "team": "Spain",
+          "event_type": "Carry",
+          "ball_x": 80.0,
+          "ball_y": 40.8,
+          "ball_end_x": 85.3,
+          "ball_end_y": 34.5,
+          "actor": "Daniel Olmo",
+          "outcome": null
+        },
+        {
+          "event_id": "1be39afa-f841-4d04-ad43-60d6f21aa05a",
+          "t_seconds": 7.851,
+          "team": "France",
+          "event_type": "Pressure",
+          "ball_x": 35.8,
+          "ball_y": 42.6,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Aur\u00e9lien Tchouam\u00e9ni",
+          "outcome": null
+        },
+        {
+          "event_id": "362820fd-6a5b-45fc-9500-89b600cbc857",
+          "t_seconds": 8.122,
+          "team": "Spain",
+          "event_type": "Pass",
+          "ball_x": 85.3,
+          "ball_y": 34.5,
+          "ball_end_x": 91.5,
+          "ball_end_y": 43.6,
+          "actor": "Daniel Olmo",
+          "outcome": "Incomplete"
+        },
+        {
+          "event_id": "e86f39ca-f863-448d-8036-3b423d0ef592",
+          "t_seconds": 9.966,
+          "team": "Spain",
+          "event_type": "Ball Recovery",
+          "ball_x": 89.7,
+          "ball_y": 47.5,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Lamine Yamal",
+          "outcome": null
+        },
+        {
+          "event_id": "fe3ca64c-ebee-4685-bd27-2f89fff5638a",
+          "t_seconds": 9.966,
+          "team": "Spain",
+          "event_type": "Carry",
+          "ball_x": 89.7,
+          "ball_y": 47.5,
+          "ball_end_x": 93.2,
+          "ball_end_y": 47.1,
+          "actor": "Lamine Yamal",
+          "outcome": null
+        },
+        {
+          "event_id": "fedfb68d-1107-4594-984e-6761d6ccb9b2",
+          "t_seconds": 12.597,
+          "team": "Spain",
+          "event_type": "Shot",
+          "ball_x": 93.2,
+          "ball_y": 47.1,
+          "ball_end_x": 120.0,
+          "ball_end_y": 36.0,
+          "actor": "Lamine Yamal",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "fedfb68d-1107-4594-984e-6761d6ccb9b2",
+          "minute": 20,
+          "second": 15,
+          "scorer": "Lamine Yamal",
+          "team": "Spain"
+        }
+      },
+      "metadata": {
+        "match_id": 3942752,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Spain vs France"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "e6efc8f2-04ee-4e4a-8b34-e40166ad550d",
+        "start_event_id": "97f72c71-ef0f-41e4-b2af-97751ba47f24",
+        "end_event_id": "e6efc8f2-04ee-4e4a-8b34-e40166ad550d",
+        "period": 1,
+        "window_seconds": 10.0,
+        "t_span_seconds": 12.243
+      },
+      "frames": [
+        {
+          "event_id": "97f72c71-ef0f-41e4-b2af-97751ba47f24",
+          "t_seconds": 0.0,
+          "team": "Spain",
+          "event_type": "Carry",
+          "ball_x": 80.9,
+          "ball_y": 55.8,
+          "ball_end_x": 80.3,
+          "ball_end_y": 39.2,
+          "actor": "Lamine Yamal",
+          "outcome": null
+        },
+        {
+          "event_id": "d7a5288c-4f90-433b-839e-e3c2646b07cc",
+          "t_seconds": 3.306,
+          "team": "Spain",
+          "event_type": "Pass",
+          "ball_x": 80.3,
+          "ball_y": 39.2,
+          "ball_end_x": 91.4,
+          "ball_end_y": 43.6,
+          "actor": "Lamine Yamal",
+          "outcome": null
+        },
+        {
+          "event_id": "11d972c1-b5d7-4276-a7a1-4d6bce62e240",
+          "t_seconds": 4.318,
+          "team": "France",
+          "event_type": "Pressure",
+          "ball_x": 26.1,
+          "ball_y": 37.7,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Aur\u00e9lien Tchouam\u00e9ni",
+          "outcome": null
+        },
+        {
+          "event_id": "0045d082-095a-4e24-98ad-ee0565d2bfb1",
+          "t_seconds": 4.427,
+          "team": "Spain",
+          "event_type": "Carry",
+          "ball_x": 91.4,
+          "ball_y": 43.6,
+          "ball_end_x": 93.4,
+          "ball_end_y": 48.8,
+          "actor": "Daniel Olmo",
+          "outcome": null
+        },
+        {
+          "event_id": "254c6118-2b88-40da-8366-1d4f315ab2cb",
+          "t_seconds": 5.204,
+          "team": "Spain",
+          "event_type": "Pass",
+          "ball_x": 93.4,
+          "ball_y": 48.8,
+          "ball_end_x": 106.7,
+          "ball_end_y": 66.0,
+          "actor": "Daniel Olmo",
+          "outcome": null
+        },
+        {
+          "event_id": "bb971e4c-3284-4187-aac7-0221b12a6001",
+          "t_seconds": 6.824,
+          "team": "Spain",
+          "event_type": "Carry",
+          "ball_x": 106.7,
+          "ball_y": 66.0,
+          "ball_end_x": 106.7,
+          "ball_end_y": 66.0,
+          "actor": "Jes\u00fas Navas",
+          "outcome": null
+        },
+        {
+          "event_id": "727c6b1d-bcea-4f6c-a355-3b8fd57c2ba2",
+          "t_seconds": 8.289,
+          "team": "Spain",
+          "event_type": "Pass",
+          "ball_x": 106.7,
+          "ball_y": 66.0,
+          "ball_end_x": 113.1,
+          "ball_end_y": 41.6,
+          "actor": "Jes\u00fas Navas",
+          "outcome": "Incomplete"
+        },
+        {
+          "event_id": "d53db71b-bd6b-4133-9fd5-bf5d9c22f1c0",
+          "t_seconds": 10.008,
+          "team": "Spain",
+          "event_type": "Ball Recovery",
+          "ball_x": 104.7,
+          "ball_y": 46.9,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Daniel Olmo",
+          "outcome": null
+        },
+        {
+          "event_id": "8e26256c-9a7c-4b3c-b6a1-19714efd9c52",
+          "t_seconds": 10.008,
+          "team": "Spain",
+          "event_type": "Carry",
+          "ball_x": 104.7,
+          "ball_y": 46.9,
+          "ball_end_x": 107.8,
+          "ball_end_y": 45.5,
+          "actor": "Daniel Olmo",
+          "outcome": null
+        },
+        {
+          "event_id": "517fbecf-aeba-4fa3-a402-57f86697dbec",
+          "t_seconds": 10.295,
+          "team": "France",
+          "event_type": "Pressure",
+          "ball_x": 14.2,
+          "ball_y": 35.9,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Aur\u00e9lien Tchouam\u00e9ni",
+          "outcome": null
+        },
+        {
+          "event_id": "6cc6678e-3af8-4aee-af2b-6cd7ad2626fa",
+          "t_seconds": 11.27,
+          "team": "Spain",
+          "event_type": "Carry",
+          "ball_x": 107.8,
+          "ball_y": 45.5,
+          "ball_end_x": 111.6,
+          "ball_end_y": 50.8,
+          "actor": "Daniel Olmo",
+          "outcome": null
+        },
+        {
+          "event_id": "f904a3c7-82d7-49be-91ee-f0bd2c192ae1",
+          "t_seconds": 12.094,
+          "team": "France",
+          "event_type": "Pressure",
+          "ball_x": 6.2,
+          "ball_y": 34.1,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "William Saliba",
+          "outcome": null
+        },
+        {
+          "event_id": "e6efc8f2-04ee-4e4a-8b34-e40166ad550d",
+          "t_seconds": 12.243,
+          "team": "Spain",
+          "event_type": "Shot",
+          "ball_x": 111.6,
+          "ball_y": 50.8,
+          "ball_end_x": 120.0,
+          "ball_end_y": 40.9,
+          "actor": "Daniel Olmo",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "e6efc8f2-04ee-4e4a-8b34-e40166ad550d",
+          "minute": 24,
+          "second": 23,
+          "scorer": "Daniel Olmo",
+          "team": "Spain"
+        }
+      },
+      "metadata": {
+        "match_id": 3942752,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Spain vs France"
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3942752,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Spain vs France"
+  }
+}

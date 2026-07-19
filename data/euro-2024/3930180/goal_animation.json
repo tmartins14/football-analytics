@@ -1,0 +1,545 @@
+{
+  "goals": [
+    {
+      "window": {
+        "anchor_event_id": "0d62fa24-8457-4216-acd4-a1235c7b0388",
+        "start_event_id": "f425ca84-5a54-4aa3-b8a7-1f2f2cb198b5",
+        "end_event_id": "0d62fa24-8457-4216-acd4-a1235c7b0388",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 11.116
+      },
+      "frames": [
+        {
+          "event_id": "f425ca84-5a54-4aa3-b8a7-1f2f2cb198b5",
+          "t_seconds": 0.0,
+          "team": "Austria",
+          "event_type": "Pass",
+          "ball_x": 91.1,
+          "ball_y": 58.1,
+          "ball_end_x": 79.7,
+          "ball_end_y": 49.3,
+          "actor": "Marko Arnautovi\u0107",
+          "outcome": null
+        },
+        {
+          "event_id": "b78150c7-54e3-4e68-b2f8-8ba945950f2e",
+          "t_seconds": 1.471,
+          "team": "Austria",
+          "event_type": "Carry",
+          "ball_x": 79.7,
+          "ball_y": 49.3,
+          "ball_end_x": 80.5,
+          "ball_end_y": 46.3,
+          "actor": "Florian Grillitsch",
+          "outcome": null
+        },
+        {
+          "event_id": "970e1488-1e62-405e-8c8a-6cc8da9cbe00",
+          "t_seconds": 1.536,
+          "team": "Netherlands",
+          "event_type": "Pressure",
+          "ball_x": 35.5,
+          "ball_y": 34.7,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Lutsharel Geertruida",
+          "outcome": null
+        },
+        {
+          "event_id": "e7540771-9483-4e2f-8bc2-1106d1bac2a6",
+          "t_seconds": 2.407,
+          "team": "Netherlands",
+          "event_type": "Duel",
+          "ball_x": 39.6,
+          "ball_y": 33.8,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Lutsharel Geertruida",
+          "outcome": null
+        },
+        {
+          "event_id": "e02cc508-e49f-41b1-90dd-f40f014d5c5f",
+          "t_seconds": 3.51,
+          "team": "Netherlands",
+          "event_type": "Ball Recovery",
+          "ball_x": 43.0,
+          "ball_y": 34.9,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Xavi Simons",
+          "outcome": null
+        },
+        {
+          "event_id": "bdd63dfa-ea5c-45a9-bce1-8e731e4d8f84",
+          "t_seconds": 3.51,
+          "team": "Netherlands",
+          "event_type": "Carry",
+          "ball_x": 43.0,
+          "ball_y": 34.9,
+          "ball_end_x": 92.3,
+          "ball_end_y": 35.3,
+          "actor": "Xavi Simons",
+          "outcome": null
+        },
+        {
+          "event_id": "960c9ed0-f6e0-4bc0-8fe6-4622794f3f36",
+          "t_seconds": 8.922,
+          "team": "Netherlands",
+          "event_type": "Pass",
+          "ball_x": 92.3,
+          "ball_y": 35.3,
+          "ball_end_x": 106.1,
+          "ball_end_y": 28.9,
+          "actor": "Xavi Simons",
+          "outcome": null
+        },
+        {
+          "event_id": "29a9a6b9-b883-4657-a331-7c78d60d4978",
+          "t_seconds": 10.391,
+          "team": "Netherlands",
+          "event_type": "Carry",
+          "ball_x": 106.1,
+          "ball_y": 28.9,
+          "ball_end_x": 107.4,
+          "ball_end_y": 30.2,
+          "actor": "Cody Gakpo",
+          "outcome": null
+        },
+        {
+          "event_id": "0d62fa24-8457-4216-acd4-a1235c7b0388",
+          "t_seconds": 11.116,
+          "team": "Netherlands",
+          "event_type": "Shot",
+          "ball_x": 107.4,
+          "ball_y": 30.2,
+          "ball_end_x": 120.0,
+          "ball_end_y": 42.6,
+          "actor": "Cody Gakpo",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "0d62fa24-8457-4216-acd4-a1235c7b0388",
+          "minute": 46,
+          "second": 12,
+          "scorer": "Cody Gakpo",
+          "team": "Netherlands"
+        }
+      },
+      "metadata": {
+        "match_id": 3930180,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Netherlands vs Austria"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "4a41a200-203e-446b-b6d5-75df3cc3ed21",
+        "start_event_id": "3364d434-3b13-4e90-a404-e882b5664bc9",
+        "end_event_id": "4a41a200-203e-446b-b6d5-75df3cc3ed21",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 10.533
+      },
+      "frames": [
+        {
+          "event_id": "3364d434-3b13-4e90-a404-e882b5664bc9",
+          "t_seconds": 0.0,
+          "team": "Austria",
+          "event_type": "Pass",
+          "ball_x": 111.9,
+          "ball_y": 11.5,
+          "ball_end_x": 104.9,
+          "ball_end_y": 27.9,
+          "actor": "Patrick Wimmer",
+          "outcome": null
+        },
+        {
+          "event_id": "06451a56-84fe-49ee-ae51-a44f86d3daa0",
+          "t_seconds": 1.309,
+          "team": "Austria",
+          "event_type": "Carry",
+          "ball_x": 104.9,
+          "ball_y": 27.9,
+          "ball_end_x": 104.7,
+          "ball_end_y": 13.8,
+          "actor": "Marcel Sabitzer",
+          "outcome": null
+        },
+        {
+          "event_id": "401f9858-3851-4972-bae7-0f1bf00f277f",
+          "t_seconds": 4.659,
+          "team": "Austria",
+          "event_type": "Pass",
+          "ball_x": 104.7,
+          "ball_y": 13.8,
+          "ball_end_x": 97.8,
+          "ball_end_y": 9.7,
+          "actor": "Marcel Sabitzer",
+          "outcome": null
+        },
+        {
+          "event_id": "d3a99c75-4f40-426f-82d0-78a78bc48b32",
+          "t_seconds": 5.39,
+          "team": "Austria",
+          "event_type": "Carry",
+          "ball_x": 97.8,
+          "ball_y": 9.7,
+          "ball_end_x": 95.0,
+          "ball_end_y": 10.2,
+          "actor": "Alexander Prass",
+          "outcome": null
+        },
+        {
+          "event_id": "54e653c2-f039-4c2c-bba3-83c87884cfff",
+          "t_seconds": 6.778,
+          "team": "Austria",
+          "event_type": "Pass",
+          "ball_x": 95.0,
+          "ball_y": 10.2,
+          "ball_end_x": 117.6,
+          "ball_end_y": 22.1,
+          "actor": "Alexander Prass",
+          "outcome": null
+        },
+        {
+          "event_id": "73e5ae94-08b2-4ed6-bfa9-7e2f361f9a50",
+          "t_seconds": 9.024,
+          "team": "Austria",
+          "event_type": "Carry",
+          "ball_x": 117.6,
+          "ball_y": 22.1,
+          "ball_end_x": 117.6,
+          "ball_end_y": 22.1,
+          "actor": "Florian Grillitsch",
+          "outcome": null
+        },
+        {
+          "event_id": "25996793-6515-44de-9244-c45153f327eb",
+          "t_seconds": 9.04,
+          "team": "Austria",
+          "event_type": "Pass",
+          "ball_x": 117.6,
+          "ball_y": 22.1,
+          "ball_end_x": 110.2,
+          "ball_end_y": 40.7,
+          "actor": "Florian Grillitsch",
+          "outcome": null
+        },
+        {
+          "event_id": "e064f972-91b4-49d5-b6d8-df6913e80a63",
+          "t_seconds": 10.342,
+          "team": "Netherlands",
+          "event_type": "Pressure",
+          "ball_x": 11.1,
+          "ball_y": 36.5,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Cody Gakpo",
+          "outcome": null
+        },
+        {
+          "event_id": "4a41a200-203e-446b-b6d5-75df3cc3ed21",
+          "t_seconds": 10.533,
+          "team": "Austria",
+          "event_type": "Shot",
+          "ball_x": 110.2,
+          "ball_y": 40.7,
+          "ball_end_x": 120.0,
+          "ball_end_y": 38.7,
+          "actor": "Romano Schmid",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "4a41a200-203e-446b-b6d5-75df3cc3ed21",
+          "minute": 58,
+          "second": 31,
+          "scorer": "Romano Schmid",
+          "team": "Austria"
+        }
+      },
+      "metadata": {
+        "match_id": 3930180,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Netherlands vs Austria"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "6a758809-2c2c-49fb-8f8d-42e2a994227c",
+        "start_event_id": "681b837f-88f5-4f69-92e3-ef486c598e79",
+        "end_event_id": "6a758809-2c2c-49fb-8f8d-42e2a994227c",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 10.971
+      },
+      "frames": [
+        {
+          "event_id": "681b837f-88f5-4f69-92e3-ef486c598e79",
+          "t_seconds": 0.0,
+          "team": "Netherlands",
+          "event_type": "Carry",
+          "ball_x": 78.9,
+          "ball_y": 45.2,
+          "ball_end_x": 76.1,
+          "ball_end_y": 41.9,
+          "actor": "Wout Weghorst",
+          "outcome": null
+        },
+        {
+          "event_id": "c5601c4f-5d68-4eb3-aeef-aa03f0a17cf8",
+          "t_seconds": 1.387,
+          "team": "Austria",
+          "event_type": "Pressure",
+          "ball_x": 43.8,
+          "ball_y": 36.6,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Christoph Baumgartner",
+          "outcome": null
+        },
+        {
+          "event_id": "f8910a0c-e141-43a8-ac0c-729c7240b917",
+          "t_seconds": 1.81,
+          "team": "Netherlands",
+          "event_type": "Pass",
+          "ball_x": 76.1,
+          "ball_y": 41.9,
+          "ball_end_x": 72.0,
+          "ball_end_y": 40.1,
+          "actor": "Wout Weghorst",
+          "outcome": null
+        },
+        {
+          "event_id": "afe27b4e-e90b-4992-b11c-bb9835b782ab",
+          "t_seconds": 2.55,
+          "team": "Netherlands",
+          "event_type": "Pass",
+          "ball_x": 72.0,
+          "ball_y": 40.1,
+          "ball_end_x": 92.8,
+          "ball_end_y": 8.5,
+          "actor": "Jerdy Schouten",
+          "outcome": null
+        },
+        {
+          "event_id": "d1a1488f-0cda-480e-b86a-412930a0f7ff",
+          "t_seconds": 4.481,
+          "team": "Netherlands",
+          "event_type": "Carry",
+          "ball_x": 92.8,
+          "ball_y": 8.5,
+          "ball_end_x": 95.8,
+          "ball_end_y": 13.4,
+          "actor": "Cody Gakpo",
+          "outcome": null
+        },
+        {
+          "event_id": "bf3093fd-f64c-4dd8-8019-26f4f9796f15",
+          "t_seconds": 7.277,
+          "team": "Netherlands",
+          "event_type": "Pass",
+          "ball_x": 95.8,
+          "ball_y": 13.4,
+          "ball_end_x": 106.7,
+          "ball_end_y": 47.1,
+          "actor": "Cody Gakpo",
+          "outcome": null
+        },
+        {
+          "event_id": "a8851b6a-98f5-4c83-ab19-580c28c62ed6",
+          "t_seconds": 9.684,
+          "team": "Austria",
+          "event_type": "Duel",
+          "ball_x": 13.4,
+          "ball_y": 33.0,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Maximilian W\u00f6ber",
+          "outcome": null
+        },
+        {
+          "event_id": "63cdac1f-dea7-49ac-8319-c45ed05d2f80",
+          "t_seconds": 9.684,
+          "team": "Netherlands",
+          "event_type": "Pass",
+          "ball_x": 106.7,
+          "ball_y": 47.1,
+          "ball_end_x": 110.8,
+          "ball_end_y": 35.4,
+          "actor": "Wout Weghorst",
+          "outcome": null
+        },
+        {
+          "event_id": "f321c31e-d298-44f1-9f70-cfa1e2d04cd9",
+          "t_seconds": 10.213,
+          "team": "Austria",
+          "event_type": "Pressure",
+          "ball_x": 9.8,
+          "ball_y": 46.3,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Nicolas Seiwald",
+          "outcome": null
+        },
+        {
+          "event_id": "714fcf8d-9c0e-47d2-aedc-e446be9c65da",
+          "t_seconds": 10.64,
+          "team": "Austria",
+          "event_type": "Pressure",
+          "ball_x": 11.1,
+          "ball_y": 48.1,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Leopold Querfeld",
+          "outcome": null
+        },
+        {
+          "event_id": "cd7ebfe9-fdb5-4fbc-a10a-140d90ebc87d",
+          "t_seconds": 10.668,
+          "team": "Netherlands",
+          "event_type": "Carry",
+          "ball_x": 110.8,
+          "ball_y": 35.4,
+          "ball_end_x": 109.7,
+          "ball_end_y": 37.5,
+          "actor": "Memphis Depay",
+          "outcome": null
+        },
+        {
+          "event_id": "6a758809-2c2c-49fb-8f8d-42e2a994227c",
+          "t_seconds": 10.971,
+          "team": "Netherlands",
+          "event_type": "Shot",
+          "ball_x": 109.7,
+          "ball_y": 37.5,
+          "ball_end_x": 120.0,
+          "ball_end_y": 43.3,
+          "actor": "Memphis Depay",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "6a758809-2c2c-49fb-8f8d-42e2a994227c",
+          "minute": 74,
+          "second": 53,
+          "scorer": "Memphis Depay",
+          "team": "Netherlands"
+        }
+      },
+      "metadata": {
+        "match_id": 3930180,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Netherlands vs Austria"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "71471b83-25a5-40b3-a485-defc7b8e0dbb",
+        "start_event_id": "ef020d01-ce6a-40e4-9ba7-4641e600e246",
+        "end_event_id": "71471b83-25a5-40b3-a485-defc7b8e0dbb",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 11.804
+      },
+      "frames": [
+        {
+          "event_id": "ef020d01-ce6a-40e4-9ba7-4641e600e246",
+          "t_seconds": 0.0,
+          "team": "Austria",
+          "event_type": "Carry",
+          "ball_x": 43.8,
+          "ball_y": 17.0,
+          "ball_end_x": 91.5,
+          "ball_end_y": 14.7,
+          "actor": "Marcel Sabitzer",
+          "outcome": null
+        },
+        {
+          "event_id": "01a9d003-fa76-4563-a534-a10275a079a2",
+          "t_seconds": 5.89,
+          "team": "Austria",
+          "event_type": "Pass",
+          "ball_x": 91.5,
+          "ball_y": 14.7,
+          "ball_end_x": 90.7,
+          "ball_end_y": 4.5,
+          "actor": "Marcel Sabitzer",
+          "outcome": null
+        },
+        {
+          "event_id": "0ea20d80-e80e-4db9-ab8a-6d0c9c3a1297",
+          "t_seconds": 6.831,
+          "team": "Austria",
+          "event_type": "Pass",
+          "ball_x": 92.0,
+          "ball_y": 4.8,
+          "ball_end_x": 90.0,
+          "ball_end_y": 20.7,
+          "actor": "Alexander Prass",
+          "outcome": null
+        },
+        {
+          "event_id": "3f77ee4b-f930-4d02-8dfd-46509903430e",
+          "t_seconds": 7.821,
+          "team": "Austria",
+          "event_type": "Carry",
+          "ball_x": 90.0,
+          "ball_y": 20.7,
+          "ball_end_x": 92.0,
+          "ball_end_y": 19.9,
+          "actor": "Christoph Baumgartner",
+          "outcome": null
+        },
+        {
+          "event_id": "4316c770-efe9-4a05-9145-d6d2a394958d",
+          "t_seconds": 9.414,
+          "team": "Austria",
+          "event_type": "Pass",
+          "ball_x": 92.0,
+          "ball_y": 19.9,
+          "ball_end_x": 114.9,
+          "ball_end_y": 29.1,
+          "actor": "Christoph Baumgartner",
+          "outcome": null
+        },
+        {
+          "event_id": "71471b83-25a5-40b3-a485-defc7b8e0dbb",
+          "t_seconds": 11.804,
+          "team": "Austria",
+          "event_type": "Shot",
+          "ball_x": 114.9,
+          "ball_y": 29.1,
+          "ball_end_x": 120.0,
+          "ball_end_y": 39.7,
+          "actor": "Marcel Sabitzer",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "71471b83-25a5-40b3-a485-defc7b8e0dbb",
+          "minute": 79,
+          "second": 56,
+          "scorer": "Marcel Sabitzer",
+          "team": "Austria"
+        }
+      },
+      "metadata": {
+        "match_id": 3930180,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Netherlands vs Austria"
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3930180,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Netherlands vs Austria"
+  }
+}

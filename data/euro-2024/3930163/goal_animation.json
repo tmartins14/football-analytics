@@ -1,0 +1,155 @@
+{
+  "goals": [
+    {
+      "window": {
+        "anchor_event_id": "68dfccce-11da-4fef-b838-b01c4f973567",
+        "start_event_id": "44e4d7b3-f761-4ad7-bf2a-fff9f3aa2e42",
+        "end_event_id": "68dfccce-11da-4fef-b838-b01c4f973567",
+        "period": 1,
+        "window_seconds": 10.0,
+        "t_span_seconds": 10.28
+      },
+      "frames": [
+        {
+          "event_id": "44e4d7b3-f761-4ad7-bf2a-fff9f3aa2e42",
+          "t_seconds": 0.0,
+          "team": "England",
+          "event_type": "Carry",
+          "ball_x": 68.1,
+          "ball_y": 40.6,
+          "ball_end_x": 72.6,
+          "ball_end_y": 37.0,
+          "actor": "Jude Bellingham",
+          "outcome": null
+        },
+        {
+          "event_id": "325b7ddf-372b-4d69-9373-3e0bccc1d503",
+          "t_seconds": 2.144,
+          "team": "England",
+          "event_type": "Pass",
+          "ball_x": 72.6,
+          "ball_y": 37.0,
+          "ball_end_x": 77.5,
+          "ball_end_y": 66.6,
+          "actor": "Jude Bellingham",
+          "outcome": null
+        },
+        {
+          "event_id": "93ae033b-0c05-4353-b671-640606987a1b",
+          "t_seconds": 3.686,
+          "team": "England",
+          "event_type": "Carry",
+          "ball_x": 77.5,
+          "ball_y": 66.6,
+          "ball_end_x": 92.0,
+          "ball_end_y": 77.8,
+          "actor": "Kyle Walker",
+          "outcome": null
+        },
+        {
+          "event_id": "8eccfd4a-bafb-475e-91cd-4b6d2b98cb37",
+          "t_seconds": 5.873,
+          "team": "England",
+          "event_type": "Pass",
+          "ball_x": 92.0,
+          "ball_y": 77.8,
+          "ball_end_x": 114.5,
+          "ball_end_y": 66.6,
+          "actor": "Kyle Walker",
+          "outcome": null
+        },
+        {
+          "event_id": "ab2f7b06-5a86-4bd9-ba7a-46d63bf290c1",
+          "t_seconds": 7.743,
+          "team": "Serbia",
+          "event_type": "Pressure",
+          "ball_x": 7.6,
+          "ball_y": 16.6,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Strahinja Pavlovi\u0107",
+          "outcome": null
+        },
+        {
+          "event_id": "f20837c2-2d8f-46e9-8b69-a348d79dc1f8",
+          "t_seconds": 8.299,
+          "team": "England",
+          "event_type": "Carry",
+          "ball_x": 114.5,
+          "ball_y": 66.6,
+          "ball_end_x": 115.2,
+          "ball_end_y": 66.4,
+          "actor": "Bukayo Saka",
+          "outcome": null
+        },
+        {
+          "event_id": "60794be7-fe97-4777-9bbb-806b0f7c7a8b",
+          "t_seconds": 8.674,
+          "team": "England",
+          "event_type": "Pass",
+          "ball_x": 115.2,
+          "ball_y": 66.4,
+          "ball_end_x": 115.2,
+          "ball_end_y": 63.5,
+          "actor": "Bukayo Saka",
+          "outcome": "Incomplete"
+        },
+        {
+          "event_id": "4b812a7c-165d-4347-b5eb-e99a2a57593e",
+          "t_seconds": 10.258,
+          "team": "England",
+          "event_type": "Ball Recovery",
+          "ball_x": 113.9,
+          "ball_y": 40.1,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Jude Bellingham",
+          "outcome": null
+        },
+        {
+          "event_id": "99809ef8-e996-4906-916c-fa47092b4226",
+          "t_seconds": 10.28,
+          "team": "Serbia",
+          "event_type": "Duel",
+          "ball_x": 6.7,
+          "ball_y": 40.6,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Andrija \u017divkovi\u0107",
+          "outcome": null
+        },
+        {
+          "event_id": "68dfccce-11da-4fef-b838-b01c4f973567",
+          "t_seconds": 10.28,
+          "team": "England",
+          "event_type": "Shot",
+          "ball_x": 113.4,
+          "ball_y": 39.5,
+          "ball_end_x": 120.0,
+          "ball_end_y": 37.7,
+          "actor": "Jude Bellingham",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "68dfccce-11da-4fef-b838-b01c4f973567",
+          "minute": 12,
+          "second": 11,
+          "scorer": "Jude Bellingham",
+          "team": "England"
+        }
+      },
+      "metadata": {
+        "match_id": 3930163,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Serbia vs England"
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3930163,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Serbia vs England"
+  }
+}

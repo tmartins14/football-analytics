@@ -1,0 +1,339 @@
+{
+  "goals": [
+    {
+      "window": {
+        "anchor_event_id": "4ba3377a-2d4f-455e-ae0a-d5d0aea183dc",
+        "start_event_id": "d1ceb47d-518e-4322-84fe-95133439f6a1",
+        "end_event_id": "4ba3377a-2d4f-455e-ae0a-d5d0aea183dc",
+        "period": 1,
+        "window_seconds": 10.0,
+        "t_span_seconds": 25.599
+      },
+      "frames": [
+        {
+          "event_id": "d1ceb47d-518e-4322-84fe-95133439f6a1",
+          "t_seconds": 24.319,
+          "team": "Poland",
+          "event_type": "Pass",
+          "ball_x": 120.0,
+          "ball_y": 0.1,
+          "ball_end_x": 114.6,
+          "ball_end_y": 33.6,
+          "actor": "Piotr Zieli\u0144ski",
+          "outcome": null
+        },
+        {
+          "event_id": "713aa1f6-1a77-43ae-b9e9-f7b7fbbc8b12",
+          "t_seconds": 25.599,
+          "team": "Netherlands",
+          "event_type": "Duel",
+          "ball_x": 5.5,
+          "ball_y": 46.5,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Denzel Dumfries",
+          "outcome": null
+        },
+        {
+          "event_id": "4ba3377a-2d4f-455e-ae0a-d5d0aea183dc",
+          "t_seconds": 25.599,
+          "team": "Poland",
+          "event_type": "Shot",
+          "ball_x": 114.6,
+          "ball_y": 33.6,
+          "ball_end_x": 120.0,
+          "ball_end_y": 42.6,
+          "actor": "Adam Buksa",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "4ba3377a-2d4f-455e-ae0a-d5d0aea183dc",
+          "minute": 15,
+          "second": 50,
+          "scorer": "Adam Buksa",
+          "team": "Poland"
+        }
+      },
+      "metadata": {
+        "match_id": 3938637,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Poland vs Netherlands"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "8604f989-3b09-4587-94de-2184479443bb",
+        "start_event_id": "6e529369-0a5a-4d5f-9d11-5cd099c4b245",
+        "end_event_id": "8604f989-3b09-4587-94de-2184479443bb",
+        "period": 1,
+        "window_seconds": 10.0,
+        "t_span_seconds": 11.79
+      },
+      "frames": [
+        {
+          "event_id": "6e529369-0a5a-4d5f-9d11-5cd099c4b245",
+          "t_seconds": 0.0,
+          "team": "Poland",
+          "event_type": "Ball Recovery",
+          "ball_x": 16.8,
+          "ball_y": 11.3,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Nicola Zalewski",
+          "outcome": null
+        },
+        {
+          "event_id": "3ec0d00d-6aa5-4b5c-bf08-fd5985d65475",
+          "t_seconds": 0.0,
+          "team": "Poland",
+          "event_type": "Carry",
+          "ball_x": 16.8,
+          "ball_y": 11.3,
+          "ball_end_x": 11.6,
+          "ball_end_y": 4.7,
+          "actor": "Nicola Zalewski",
+          "outcome": null
+        },
+        {
+          "event_id": "54108042-68e6-4050-940e-609dd138a4bf",
+          "t_seconds": 4.521,
+          "team": "Netherlands",
+          "event_type": "Pressure",
+          "ball_x": 106.7,
+          "ball_y": 78.0,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Denzel Dumfries",
+          "outcome": null
+        },
+        {
+          "event_id": "e3a34548-17e7-4d58-b6bc-88ffa2003832",
+          "t_seconds": 5.029,
+          "team": "Poland",
+          "event_type": "Pass",
+          "ball_x": 11.6,
+          "ball_y": 4.7,
+          "ball_end_x": 42.5,
+          "ball_end_y": 54.4,
+          "actor": "Nicola Zalewski",
+          "outcome": "Incomplete"
+        },
+        {
+          "event_id": "7fdb32bf-37de-4e38-9d5f-ad29f98de8f7",
+          "t_seconds": 8.638,
+          "team": "Netherlands",
+          "event_type": "Pass",
+          "ball_x": 77.6,
+          "ball_y": 25.7,
+          "ball_end_x": 86.7,
+          "ball_end_y": 24.8,
+          "actor": "Nathan Ak\u00e9",
+          "outcome": null
+        },
+        {
+          "event_id": "64262995-7a7e-41eb-b766-7b7adf633e0f",
+          "t_seconds": 9.686,
+          "team": "Netherlands",
+          "event_type": "Carry",
+          "ball_x": 86.7,
+          "ball_y": 24.8,
+          "ball_end_x": 97.7,
+          "ball_end_y": 34.5,
+          "actor": "Cody Gakpo",
+          "outcome": null
+        },
+        {
+          "event_id": "8604f989-3b09-4587-94de-2184479443bb",
+          "t_seconds": 11.79,
+          "team": "Netherlands",
+          "event_type": "Shot",
+          "ball_x": 97.7,
+          "ball_y": 34.5,
+          "ball_end_x": 120.0,
+          "ball_end_y": 40.0,
+          "actor": "Cody Gakpo",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "8604f989-3b09-4587-94de-2184479443bb",
+          "minute": 28,
+          "second": 49,
+          "scorer": "Cody Gakpo",
+          "team": "Netherlands"
+        }
+      },
+      "metadata": {
+        "match_id": 3938637,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Poland vs Netherlands"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "837e3832-5f47-460e-b3c8-5dcd4696aba0",
+        "start_event_id": "185897d8-fc5a-4a56-bd11-871b8aed4797",
+        "end_event_id": "837e3832-5f47-460e-b3c8-5dcd4696aba0",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 12.37
+      },
+      "frames": [
+        {
+          "event_id": "185897d8-fc5a-4a56-bd11-871b8aed4797",
+          "t_seconds": 0.0,
+          "team": "Netherlands",
+          "event_type": "Carry",
+          "ball_x": 63.7,
+          "ball_y": 39.4,
+          "ball_end_x": 63.4,
+          "ball_end_y": 36.1,
+          "actor": "Stefan de Vrij",
+          "outcome": null
+        },
+        {
+          "event_id": "0d9042be-a9d8-451a-984f-aa0a89489567",
+          "t_seconds": 5.116,
+          "team": "Netherlands",
+          "event_type": "Pass",
+          "ball_x": 63.4,
+          "ball_y": 36.1,
+          "ball_end_x": 75.5,
+          "ball_end_y": 27.4,
+          "actor": "Stefan de Vrij",
+          "outcome": null
+        },
+        {
+          "event_id": "0c960965-0ff9-4b84-abe5-c314b7525b51",
+          "t_seconds": 6.1,
+          "team": "Netherlands",
+          "event_type": "Carry",
+          "ball_x": 75.5,
+          "ball_y": 27.4,
+          "ball_end_x": 75.1,
+          "ball_end_y": 25.7,
+          "actor": "Tijjani Reijnders",
+          "outcome": null
+        },
+        {
+          "event_id": "d7b2d98f-2b23-460d-9805-ac4d6d5ea97c",
+          "t_seconds": 6.207,
+          "team": "Poland",
+          "event_type": "Pressure",
+          "ball_x": 42.2,
+          "ball_y": 55.5,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Jakub Piotrowski",
+          "outcome": null
+        },
+        {
+          "event_id": "1a446cb2-4538-4d8f-8bb5-79d7fc0bbe34",
+          "t_seconds": 6.523,
+          "team": "Netherlands",
+          "event_type": "Pass",
+          "ball_x": 75.1,
+          "ball_y": 25.7,
+          "ball_end_x": 80.0,
+          "ball_end_y": 12.7,
+          "actor": "Tijjani Reijnders",
+          "outcome": null
+        },
+        {
+          "event_id": "a15537d2-82ae-48e4-8433-411224becd7e",
+          "t_seconds": 7.67,
+          "team": "Netherlands",
+          "event_type": "Carry",
+          "ball_x": 80.0,
+          "ball_y": 12.7,
+          "ball_end_x": 98.1,
+          "ball_end_y": 20.0,
+          "actor": "Nathan Ak\u00e9",
+          "outcome": null
+        },
+        {
+          "event_id": "1048d13f-2bfb-49d4-89e6-41144ad9ca02",
+          "t_seconds": 9.995,
+          "team": "Poland",
+          "event_type": "Pressure",
+          "ball_x": 26.6,
+          "ball_y": 59.2,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Jakub Piotrowski",
+          "outcome": null
+        },
+        {
+          "event_id": "8d1a115d-58e0-4acc-96a1-354013116b6c",
+          "t_seconds": 10.937,
+          "team": "Netherlands",
+          "event_type": "Pass",
+          "ball_x": 98.1,
+          "ball_y": 20.0,
+          "ball_end_x": 105.0,
+          "ball_end_y": 23.8,
+          "actor": "Nathan Ak\u00e9",
+          "outcome": "Incomplete"
+        },
+        {
+          "event_id": "afff9db0-f98d-4ca8-b235-16a7d23c4b9f",
+          "t_seconds": 12.263,
+          "team": "Poland",
+          "event_type": "Pressure",
+          "ball_x": 8.0,
+          "ball_y": 43.8,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Bartosz Salamon",
+          "outcome": null
+        },
+        {
+          "event_id": "aa166a18-f79c-4859-814e-c332c2348603",
+          "t_seconds": 12.281,
+          "team": "Netherlands",
+          "event_type": "Ball Recovery",
+          "ball_x": 111.2,
+          "ball_y": 33.3,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Wout Weghorst",
+          "outcome": null
+        },
+        {
+          "event_id": "837e3832-5f47-460e-b3c8-5dcd4696aba0",
+          "t_seconds": 12.37,
+          "team": "Netherlands",
+          "event_type": "Shot",
+          "ball_x": 110.6,
+          "ball_y": 36.7,
+          "ball_end_x": 120.0,
+          "ball_end_y": 38.3,
+          "actor": "Wout Weghorst",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "837e3832-5f47-460e-b3c8-5dcd4696aba0",
+          "minute": 82,
+          "second": 42,
+          "scorer": "Wout Weghorst",
+          "team": "Netherlands"
+        }
+      },
+      "metadata": {
+        "match_id": 3938637,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Poland vs Netherlands"
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3938637,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Poland vs Netherlands"
+  }
+}

@@ -1,0 +1,1174 @@
+{
+  "windows": [
+    {
+      "index": 0,
+      "label": "0'\u201337' (Starting XI)",
+      "nodes": [
+        {
+          "player": "Andrei Burc\u0103 Andonie",
+          "display_name": "Andrei Burc\u0103 Andonie",
+          "x": 48.14,
+          "y": 22.54,
+          "passes": 9
+        },
+        {
+          "player": "Andrei Florin Ratiu",
+          "display_name": "Andrei Ratiu",
+          "x": 90.6,
+          "y": 72.37,
+          "passes": 3
+        },
+        {
+          "player": "Denis Mihai Dr\u0103gu\u015f",
+          "display_name": "Denis Dragus",
+          "x": 70.68,
+          "y": 32.36,
+          "passes": 5
+        },
+        {
+          "player": "Dennis Man",
+          "display_name": "Dennis Man",
+          "x": 85.6,
+          "y": 63.3,
+          "passes": 1
+        },
+        {
+          "player": "Florin Constantin Ni\u0163\u0103",
+          "display_name": "Florin Nita",
+          "x": 16.57,
+          "y": 35.33,
+          "passes": 4
+        },
+        {
+          "player": "Ianis Hagi",
+          "display_name": "Ianis Hagi",
+          "x": 66.57,
+          "y": 21.83,
+          "passes": 3
+        },
+        {
+          "player": "Marius Mihai Marin",
+          "display_name": "Marius Marin",
+          "x": 51.96,
+          "y": 37.02,
+          "passes": 12
+        },
+        {
+          "player": "Nicolae Claudiu Stanciu",
+          "display_name": "Nicolae Stanciu",
+          "x": 67.67,
+          "y": 28.34,
+          "passes": 7
+        },
+        {
+          "player": "Radu Dr\u0103gu\u0219in",
+          "display_name": "Radu Dragusin",
+          "x": 49.59,
+          "y": 50.67,
+          "passes": 8
+        },
+        {
+          "player": "R\u0103zvan Gabriel Marin",
+          "display_name": "R\u0103zvan Marin",
+          "x": 60.92,
+          "y": 64.2,
+          "passes": 5
+        },
+        {
+          "player": "Vasile Mogo\u0219",
+          "display_name": "Vasile Mogos",
+          "x": 78.55,
+          "y": 3.27,
+          "passes": 6
+        }
+      ],
+      "edges": [
+        {
+          "from": "Vasile Mogo\u0219",
+          "to": "Denis Mihai Dr\u0103gu\u015f",
+          "count": 4
+        },
+        {
+          "from": "Marius Mihai Marin",
+          "to": "Andrei Burc\u0103 Andonie",
+          "count": 4
+        },
+        {
+          "from": "Marius Mihai Marin",
+          "to": "Denis Mihai Dr\u0103gu\u015f",
+          "count": 3
+        },
+        {
+          "from": "Andrei Burc\u0103 Andonie",
+          "to": "Radu Dr\u0103gu\u0219in",
+          "count": 3
+        },
+        {
+          "from": "Andrei Burc\u0103 Andonie",
+          "to": "Nicolae Claudiu Stanciu",
+          "count": 3
+        },
+        {
+          "from": "R\u0103zvan Gabriel Marin",
+          "to": "Denis Mihai Dr\u0103gu\u015f",
+          "count": 2
+        },
+        {
+          "from": "Denis Mihai Dr\u0103gu\u015f",
+          "to": "Ianis Hagi",
+          "count": 2
+        },
+        {
+          "from": "Marius Mihai Marin",
+          "to": "Nicolae Claudiu Stanciu",
+          "count": 2
+        },
+        {
+          "from": "Nicolae Claudiu Stanciu",
+          "to": "Andrei Burc\u0103 Andonie",
+          "count": 2
+        },
+        {
+          "from": "Radu Dr\u0103gu\u0219in",
+          "to": "Dennis Man",
+          "count": 2
+        },
+        {
+          "from": "Denis Mihai Dr\u0103gu\u015f",
+          "to": "Marius Mihai Marin",
+          "count": 2
+        },
+        {
+          "from": "Radu Dr\u0103gu\u0219in",
+          "to": "Andrei Burc\u0103 Andonie",
+          "count": 2
+        },
+        {
+          "from": "Radu Dr\u0103gu\u0219in",
+          "to": "Marius Mihai Marin",
+          "count": 2
+        },
+        {
+          "from": "Marius Mihai Marin",
+          "to": "Andrei Florin Ratiu",
+          "count": 2
+        },
+        {
+          "from": "Florin Constantin Ni\u0163\u0103",
+          "to": "Andrei Burc\u0103 Andonie",
+          "count": 2
+        },
+        {
+          "from": "Nicolae Claudiu Stanciu",
+          "to": "Dennis Man",
+          "count": 2
+        },
+        {
+          "from": "Radu Dr\u0103gu\u0219in",
+          "to": "R\u0103zvan Gabriel Marin",
+          "count": 1
+        },
+        {
+          "from": "Denis Mihai Dr\u0103gu\u015f",
+          "to": "R\u0103zvan Gabriel Marin",
+          "count": 1
+        },
+        {
+          "from": "Vasile Mogo\u0219",
+          "to": "Marius Mihai Marin",
+          "count": 1
+        },
+        {
+          "from": "Marius Mihai Marin",
+          "to": "Vasile Mogo\u0219",
+          "count": 1
+        },
+        {
+          "from": "Vasile Mogo\u0219",
+          "to": "Nicolae Claudiu Stanciu",
+          "count": 1
+        },
+        {
+          "from": "Radu Dr\u0103gu\u0219in",
+          "to": "Nicolae Claudiu Stanciu",
+          "count": 1
+        },
+        {
+          "from": "Andrei Florin Ratiu",
+          "to": "Nicolae Claudiu Stanciu",
+          "count": 1
+        },
+        {
+          "from": "Andrei Florin Ratiu",
+          "to": "R\u0103zvan Gabriel Marin",
+          "count": 1
+        },
+        {
+          "from": "R\u0103zvan Gabriel Marin",
+          "to": "Dennis Man",
+          "count": 1
+        },
+        {
+          "from": "Andrei Burc\u0103 Andonie",
+          "to": "Vasile Mogo\u0219",
+          "count": 1
+        },
+        {
+          "from": "Nicolae Claudiu Stanciu",
+          "to": "Ianis Hagi",
+          "count": 1
+        },
+        {
+          "from": "Ianis Hagi",
+          "to": "Marius Mihai Marin",
+          "count": 1
+        },
+        {
+          "from": "Florin Constantin Ni\u0163\u0103",
+          "to": "Vasile Mogo\u0219",
+          "count": 1
+        },
+        {
+          "from": "Andrei Florin Ratiu",
+          "to": "Florin Constantin Ni\u0163\u0103",
+          "count": 1
+        },
+        {
+          "from": "Nicolae Claudiu Stanciu",
+          "to": "Radu Dr\u0103gu\u0219in",
+          "count": 1
+        },
+        {
+          "from": "Andrei Burc\u0103 Andonie",
+          "to": "R\u0103zvan Gabriel Marin",
+          "count": 1
+        },
+        {
+          "from": "R\u0103zvan Gabriel Marin",
+          "to": "Nicolae Claudiu Stanciu",
+          "count": 1
+        },
+        {
+          "from": "Dennis Man",
+          "to": "Ianis Hagi",
+          "count": 1
+        },
+        {
+          "from": "Ianis Hagi",
+          "to": "Nicolae Claudiu Stanciu",
+          "count": 1
+        },
+        {
+          "from": "Florin Constantin Ni\u0163\u0103",
+          "to": "Marius Mihai Marin",
+          "count": 1
+        },
+        {
+          "from": "Andrei Burc\u0103 Andonie",
+          "to": "Florin Constantin Ni\u0163\u0103",
+          "count": 1
+        },
+        {
+          "from": "Nicolae Claudiu Stanciu",
+          "to": "R\u0103zvan Gabriel Marin",
+          "count": 1
+        },
+        {
+          "from": "R\u0103zvan Gabriel Marin",
+          "to": "Marius Mihai Marin",
+          "count": 1
+        },
+        {
+          "from": "Ianis Hagi",
+          "to": "Denis Mihai Dr\u0103gu\u015f",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "label": "37'\u201370'",
+      "nodes": [
+        {
+          "player": "Andrei Burc\u0103 Andonie",
+          "display_name": "Andrei Burc\u0103 Andonie",
+          "x": 62.76,
+          "y": 4.3,
+          "passes": 8
+        },
+        {
+          "player": "Andrei Florin Ratiu",
+          "display_name": "Andrei Ratiu",
+          "x": 57.78,
+          "y": 73.23,
+          "passes": 13
+        },
+        {
+          "player": "Bogdan Racovi\u021ban",
+          "display_name": "Bogdan Racovi\u021ban",
+          "x": 37.72,
+          "y": 22.2,
+          "passes": 10
+        },
+        {
+          "player": "Denis Mihai Dr\u0103gu\u015f",
+          "display_name": "Denis Dragus",
+          "x": 72.45,
+          "y": 15.55,
+          "passes": 4
+        },
+        {
+          "player": "Dennis Man",
+          "display_name": "Dennis Man",
+          "x": 74.23,
+          "y": 73.56,
+          "passes": 7
+        },
+        {
+          "player": "Florin Constantin Ni\u0163\u0103",
+          "display_name": "Florin Nita",
+          "x": 9.12,
+          "y": 37.19,
+          "passes": 11
+        },
+        {
+          "player": "Ianis Hagi",
+          "display_name": "Ianis Hagi",
+          "x": 66.6,
+          "y": 14.16,
+          "passes": 7
+        },
+        {
+          "player": "Marius Mihai Marin",
+          "display_name": "Marius Marin",
+          "x": 38.75,
+          "y": 47.11,
+          "passes": 10
+        },
+        {
+          "player": "Nicolae Claudiu Stanciu",
+          "display_name": "Nicolae Stanciu",
+          "x": 58.9,
+          "y": 16.5,
+          "passes": 4
+        },
+        {
+          "player": "Radu Dr\u0103gu\u0219in",
+          "display_name": "Radu Dragusin",
+          "x": 28.41,
+          "y": 39.53,
+          "passes": 7
+        },
+        {
+          "player": "R\u0103zvan Gabriel Marin",
+          "display_name": "R\u0103zvan Marin",
+          "x": 68.12,
+          "y": 63.39,
+          "passes": 8
+        }
+      ],
+      "edges": [
+        {
+          "from": "Andrei Florin Ratiu",
+          "to": "Marius Mihai Marin",
+          "count": 7
+        },
+        {
+          "from": "R\u0103zvan Gabriel Marin",
+          "to": "Dennis Man",
+          "count": 5
+        },
+        {
+          "from": "Andrei Burc\u0103 Andonie",
+          "to": "Ianis Hagi",
+          "count": 4
+        },
+        {
+          "from": "Andrei Florin Ratiu",
+          "to": "Dennis Man",
+          "count": 4
+        },
+        {
+          "from": "Marius Mihai Marin",
+          "to": "Radu Dr\u0103gu\u0219in",
+          "count": 3
+        },
+        {
+          "from": "Florin Constantin Ni\u0163\u0103",
+          "to": "Andrei Burc\u0103 Andonie",
+          "count": 3
+        },
+        {
+          "from": "Florin Constantin Ni\u0163\u0103",
+          "to": "Bogdan Racovi\u021ban",
+          "count": 3
+        },
+        {
+          "from": "Dennis Man",
+          "to": "R\u0103zvan Gabriel Marin",
+          "count": 3
+        },
+        {
+          "from": "Radu Dr\u0103gu\u0219in",
+          "to": "Bogdan Racovi\u021ban",
+          "count": 3
+        },
+        {
+          "from": "Ianis Hagi",
+          "to": "Denis Mihai Dr\u0103gu\u015f",
+          "count": 3
+        },
+        {
+          "from": "Marius Mihai Marin",
+          "to": "Andrei Florin Ratiu",
+          "count": 3
+        },
+        {
+          "from": "Florin Constantin Ni\u0163\u0103",
+          "to": "Nicolae Claudiu Stanciu",
+          "count": 2
+        },
+        {
+          "from": "Marius Mihai Marin",
+          "to": "Bogdan Racovi\u021ban",
+          "count": 2
+        },
+        {
+          "from": "Bogdan Racovi\u021ban",
+          "to": "Radu Dr\u0103gu\u0219in",
+          "count": 2
+        },
+        {
+          "from": "Bogdan Racovi\u021ban",
+          "to": "Florin Constantin Ni\u0163\u0103",
+          "count": 2
+        },
+        {
+          "from": "Andrei Burc\u0103 Andonie",
+          "to": "Bogdan Racovi\u021ban",
+          "count": 2
+        },
+        {
+          "from": "Bogdan Racovi\u021ban",
+          "to": "Andrei Burc\u0103 Andonie",
+          "count": 2
+        },
+        {
+          "from": "Dennis Man",
+          "to": "Andrei Florin Ratiu",
+          "count": 2
+        },
+        {
+          "from": "Denis Mihai Dr\u0103gu\u015f",
+          "to": "Ianis Hagi",
+          "count": 2
+        },
+        {
+          "from": "Nicolae Claudiu Stanciu",
+          "to": "Ianis Hagi",
+          "count": 2
+        },
+        {
+          "from": "Florin Constantin Ni\u0163\u0103",
+          "to": "Marius Mihai Marin",
+          "count": 1
+        },
+        {
+          "from": "Radu Dr\u0103gu\u0219in",
+          "to": "Florin Constantin Ni\u0163\u0103",
+          "count": 1
+        },
+        {
+          "from": "Andrei Burc\u0103 Andonie",
+          "to": "Radu Dr\u0103gu\u0219in",
+          "count": 1
+        },
+        {
+          "from": "Bogdan Racovi\u021ban",
+          "to": "Marius Mihai Marin",
+          "count": 1
+        },
+        {
+          "from": "Radu Dr\u0103gu\u0219in",
+          "to": "R\u0103zvan Gabriel Marin",
+          "count": 1
+        },
+        {
+          "from": "Bogdan Racovi\u021ban",
+          "to": "Andrei Florin Ratiu",
+          "count": 1
+        },
+        {
+          "from": "Marius Mihai Marin",
+          "to": "R\u0103zvan Gabriel Marin",
+          "count": 1
+        },
+        {
+          "from": "R\u0103zvan Gabriel Marin",
+          "to": "Andrei Florin Ratiu",
+          "count": 1
+        },
+        {
+          "from": "Andrei Florin Ratiu",
+          "to": "R\u0103zvan Gabriel Marin",
+          "count": 1
+        },
+        {
+          "from": "Dennis Man",
+          "to": "Ianis Hagi",
+          "count": 1
+        },
+        {
+          "from": "R\u0103zvan Gabriel Marin",
+          "to": "Marius Mihai Marin",
+          "count": 1
+        },
+        {
+          "from": "Nicolae Claudiu Stanciu",
+          "to": "Denis Mihai Dr\u0103gu\u015f",
+          "count": 1
+        },
+        {
+          "from": "Denis Mihai Dr\u0103gu\u015f",
+          "to": "Andrei Florin Ratiu",
+          "count": 1
+        },
+        {
+          "from": "Radu Dr\u0103gu\u0219in",
+          "to": "Nicolae Claudiu Stanciu",
+          "count": 1
+        },
+        {
+          "from": "Nicolae Claudiu Stanciu",
+          "to": "Andrei Burc\u0103 Andonie",
+          "count": 1
+        },
+        {
+          "from": "Andrei Burc\u0103 Andonie",
+          "to": "Denis Mihai Dr\u0103gu\u015f",
+          "count": 1
+        },
+        {
+          "from": "Ianis Hagi",
+          "to": "Marius Mihai Marin",
+          "count": 1
+        },
+        {
+          "from": "Bogdan Racovi\u021ban",
+          "to": "Ianis Hagi",
+          "count": 1
+        },
+        {
+          "from": "Ianis Hagi",
+          "to": "R\u0103zvan Gabriel Marin",
+          "count": 1
+        },
+        {
+          "from": "Florin Constantin Ni\u0163\u0103",
+          "to": "Radu Dr\u0103gu\u0219in",
+          "count": 1
+        },
+        {
+          "from": "Florin Constantin Ni\u0163\u0103",
+          "to": "Denis Mihai Dr\u0103gu\u015f",
+          "count": 1
+        },
+        {
+          "from": "Denis Mihai Dr\u0103gu\u015f",
+          "to": "R\u0103zvan Gabriel Marin",
+          "count": 1
+        },
+        {
+          "from": "R\u0103zvan Gabriel Marin",
+          "to": "Ianis Hagi",
+          "count": 1
+        },
+        {
+          "from": "Bogdan Racovi\u021ban",
+          "to": "Nicolae Claudiu Stanciu",
+          "count": 1
+        },
+        {
+          "from": "Ianis Hagi",
+          "to": "Andrei Burc\u0103 Andonie",
+          "count": 1
+        },
+        {
+          "from": "Ianis Hagi",
+          "to": "Dennis Man",
+          "count": 1
+        },
+        {
+          "from": "Dennis Man",
+          "to": "Marius Mihai Marin",
+          "count": 1
+        },
+        {
+          "from": "Andrei Florin Ratiu",
+          "to": "Denis Mihai Dr\u0103gu\u015f",
+          "count": 1
+        },
+        {
+          "from": "Radu Dr\u0103gu\u0219in",
+          "to": "Andrei Burc\u0103 Andonie",
+          "count": 1
+        },
+        {
+          "from": "Marius Mihai Marin",
+          "to": "Florin Constantin Ni\u0163\u0103",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "label": "70'\u201371'",
+      "nodes": [
+        {
+          "player": "Andrei Burc\u0103 Andonie",
+          "display_name": "Andrei Burc\u0103 Andonie",
+          "x": 58.4,
+          "y": 0.5,
+          "passes": 1
+        },
+        {
+          "player": "Andrei Florin Ratiu",
+          "display_name": "Andrei Ratiu",
+          "x": 110.3,
+          "y": 64.3,
+          "passes": 1
+        },
+        {
+          "player": "Dennis Man",
+          "display_name": "Dennis Man",
+          "x": 100.6,
+          "y": 66.25,
+          "passes": 2
+        },
+        {
+          "player": "Marius Mihai Marin",
+          "display_name": "Marius Marin",
+          "x": 42.6,
+          "y": 51.2,
+          "passes": 1
+        },
+        {
+          "player": "Nicolae Claudiu Stanciu",
+          "display_name": "Nicolae Stanciu",
+          "x": 53.8,
+          "y": 12.4,
+          "passes": 2
+        }
+      ],
+      "edges": [
+        {
+          "from": "Marius Mihai Marin",
+          "to": "Nicolae Claudiu Stanciu",
+          "count": 1
+        },
+        {
+          "from": "Nicolae Claudiu Stanciu",
+          "to": "Andrei Burc\u0103 Andonie",
+          "count": 1
+        },
+        {
+          "from": "Andrei Burc\u0103 Andonie",
+          "to": "Nicolae Claudiu Stanciu",
+          "count": 1
+        },
+        {
+          "from": "Nicolae Claudiu Stanciu",
+          "to": "Dennis Man",
+          "count": 1
+        },
+        {
+          "from": "Dennis Man",
+          "to": "Andrei Florin Ratiu",
+          "count": 1
+        },
+        {
+          "from": "Andrei Florin Ratiu",
+          "to": "Dennis Man",
+          "count": 1
+        },
+        {
+          "from": "Dennis Man",
+          "to": "Andrei Burc\u0103 Andonie",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "label": "71'\u201387'",
+      "nodes": [
+        {
+          "player": "Alexandru Cic\u00e2ld\u0103u",
+          "display_name": "Alexandru Cic\u00e2ld\u0103u",
+          "x": 57.8,
+          "y": 6.3,
+          "passes": 1
+        },
+        {
+          "player": "Andrei Burc\u0103 Andonie",
+          "display_name": "Andrei Burc\u0103 Andonie",
+          "x": 50.12,
+          "y": 4.74,
+          "passes": 5
+        },
+        {
+          "player": "Andrei Florin Ratiu",
+          "display_name": "Andrei Ratiu",
+          "x": 70.8,
+          "y": 59.3,
+          "passes": 2
+        },
+        {
+          "player": "Bogdan Racovi\u021ban",
+          "display_name": "Bogdan Racovi\u021ban",
+          "x": 39.82,
+          "y": 21.34,
+          "passes": 9
+        },
+        {
+          "player": "Dennis Man",
+          "display_name": "Dennis Man",
+          "x": 62.18,
+          "y": 59.05,
+          "passes": 4
+        },
+        {
+          "player": "Florin Constantin Ni\u0163\u0103",
+          "display_name": "Florin Nita",
+          "x": 8.3,
+          "y": 39.78,
+          "passes": 5
+        },
+        {
+          "player": "Nicolae Claudiu Stanciu",
+          "display_name": "Nicolae Stanciu",
+          "x": 58.44,
+          "y": 38.32,
+          "passes": 5
+        },
+        {
+          "player": "Radu Dr\u0103gu\u0219in",
+          "display_name": "Radu Dragusin",
+          "x": 44.62,
+          "y": 60.44,
+          "passes": 5
+        },
+        {
+          "player": "R\u0103zvan Gabriel Marin",
+          "display_name": "R\u0103zvan Marin",
+          "x": 44.66,
+          "y": 26.95,
+          "passes": 8
+        },
+        {
+          "player": "Valentin Mihai Mih\u0103il\u0103",
+          "display_name": "Valentin Mihai Mih\u0103il\u0103",
+          "x": 34.07,
+          "y": 16.4,
+          "passes": 3
+        }
+      ],
+      "edges": [
+        {
+          "from": "Bogdan Racovi\u021ban",
+          "to": "R\u0103zvan Gabriel Marin",
+          "count": 5
+        },
+        {
+          "from": "Florin Constantin Ni\u0163\u0103",
+          "to": "Bogdan Racovi\u021ban",
+          "count": 4
+        },
+        {
+          "from": "R\u0103zvan Gabriel Marin",
+          "to": "Bogdan Racovi\u021ban",
+          "count": 4
+        },
+        {
+          "from": "Nicolae Claudiu Stanciu",
+          "to": "Bogdan Racovi\u021ban",
+          "count": 2
+        },
+        {
+          "from": "Bogdan Racovi\u021ban",
+          "to": "Andrei Burc\u0103 Andonie",
+          "count": 2
+        },
+        {
+          "from": "Andrei Burc\u0103 Andonie",
+          "to": "Alexandru Cic\u00e2ld\u0103u",
+          "count": 2
+        },
+        {
+          "from": "Valentin Mihai Mih\u0103il\u0103",
+          "to": "Andrei Burc\u0103 Andonie",
+          "count": 2
+        },
+        {
+          "from": "Radu Dr\u0103gu\u0219in",
+          "to": "R\u0103zvan Gabriel Marin",
+          "count": 2
+        },
+        {
+          "from": "Nicolae Claudiu Stanciu",
+          "to": "Dennis Man",
+          "count": 1
+        },
+        {
+          "from": "Dennis Man",
+          "to": "Alexandru Cic\u00e2ld\u0103u",
+          "count": 1
+        },
+        {
+          "from": "Andrei Burc\u0103 Andonie",
+          "to": "Florin Constantin Ni\u0163\u0103",
+          "count": 1
+        },
+        {
+          "from": "Radu Dr\u0103gu\u0219in",
+          "to": "Nicolae Claudiu Stanciu",
+          "count": 1
+        },
+        {
+          "from": "Alexandru Cic\u00e2ld\u0103u",
+          "to": "Bogdan Racovi\u021ban",
+          "count": 1
+        },
+        {
+          "from": "Bogdan Racovi\u021ban",
+          "to": "Valentin Mihai Mih\u0103il\u0103",
+          "count": 1
+        },
+        {
+          "from": "R\u0103zvan Gabriel Marin",
+          "to": "Valentin Mihai Mih\u0103il\u0103",
+          "count": 1
+        },
+        {
+          "from": "Valentin Mihai Mih\u0103il\u0103",
+          "to": "Nicolae Claudiu Stanciu",
+          "count": 1
+        },
+        {
+          "from": "R\u0103zvan Gabriel Marin",
+          "to": "Nicolae Claudiu Stanciu",
+          "count": 1
+        },
+        {
+          "from": "R\u0103zvan Gabriel Marin",
+          "to": "Radu Dr\u0103gu\u0219in",
+          "count": 1
+        },
+        {
+          "from": "Radu Dr\u0103gu\u0219in",
+          "to": "Andrei Florin Ratiu",
+          "count": 1
+        },
+        {
+          "from": "Andrei Florin Ratiu",
+          "to": "Radu Dr\u0103gu\u0219in",
+          "count": 1
+        },
+        {
+          "from": "Andrei Burc\u0103 Andonie",
+          "to": "Nicolae Claudiu Stanciu",
+          "count": 1
+        },
+        {
+          "from": "Nicolae Claudiu Stanciu",
+          "to": "R\u0103zvan Gabriel Marin",
+          "count": 1
+        },
+        {
+          "from": "Bogdan Racovi\u021ban",
+          "to": "Dennis Man",
+          "count": 1
+        },
+        {
+          "from": "Dennis Man",
+          "to": "Andrei Florin Ratiu",
+          "count": 1
+        },
+        {
+          "from": "Andrei Florin Ratiu",
+          "to": "Dennis Man",
+          "count": 1
+        },
+        {
+          "from": "Dennis Man",
+          "to": "R\u0103zvan Gabriel Marin",
+          "count": 1
+        },
+        {
+          "from": "R\u0103zvan Gabriel Marin",
+          "to": "Andrei Burc\u0103 Andonie",
+          "count": 1
+        },
+        {
+          "from": "Nicolae Claudiu Stanciu",
+          "to": "Radu Dr\u0103gu\u0219in",
+          "count": 1
+        },
+        {
+          "from": "Radu Dr\u0103gu\u0219in",
+          "to": "Dennis Man",
+          "count": 1
+        },
+        {
+          "from": "Dennis Man",
+          "to": "Florin Constantin Ni\u0163\u0103",
+          "count": 1
+        },
+        {
+          "from": "Florin Constantin Ni\u0163\u0103",
+          "to": "R\u0103zvan Gabriel Marin",
+          "count": 1
+        },
+        {
+          "from": "Andrei Burc\u0103 Andonie",
+          "to": "Valentin Mihai Mih\u0103il\u0103",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "label": "87'\u2013FT",
+      "nodes": [
+        {
+          "player": "Alexandru Cic\u00e2ld\u0103u",
+          "display_name": "Alexandru Cic\u00e2ld\u0103u",
+          "x": 54.6,
+          "y": 22.6,
+          "passes": 1
+        },
+        {
+          "player": "Andrei Burc\u0103 Andonie",
+          "display_name": "Andrei Burc\u0103 Andonie",
+          "x": 69.55,
+          "y": 4.15,
+          "passes": 2
+        },
+        {
+          "player": "Andrei Florin Ratiu",
+          "display_name": "Andrei Ratiu",
+          "x": 56.8,
+          "y": 63.85,
+          "passes": 2
+        },
+        {
+          "player": "Bogdan Racovi\u021ban",
+          "display_name": "Bogdan Racovi\u021ban",
+          "x": 40.82,
+          "y": 28.48,
+          "passes": 5
+        },
+        {
+          "player": "Darius Dumitru Olaru",
+          "display_name": "Darius Dumitru Olaru",
+          "x": 61.15,
+          "y": 39.8,
+          "passes": 2
+        },
+        {
+          "player": "Denis Alibec",
+          "display_name": "Denis Alibec",
+          "x": 68.75,
+          "y": 54.05,
+          "passes": 2
+        },
+        {
+          "player": "Dennis Man",
+          "display_name": "Dennis Man",
+          "x": 73.45,
+          "y": 64.3,
+          "passes": 2
+        },
+        {
+          "player": "Florin Constantin Ni\u0163\u0103",
+          "display_name": "Florin Nita",
+          "x": 13.27,
+          "y": 43.73,
+          "passes": 3
+        },
+        {
+          "player": "Radu Dr\u0103gu\u0219in",
+          "display_name": "Radu Dragusin",
+          "x": 19.9,
+          "y": 53.8,
+          "passes": 1
+        },
+        {
+          "player": "R\u0103zvan Gabriel Marin",
+          "display_name": "R\u0103zvan Marin",
+          "x": 84.0,
+          "y": 28.8,
+          "passes": 1
+        },
+        {
+          "player": "Valentin Mihai Mih\u0103il\u0103",
+          "display_name": "Valentin Mihai Mih\u0103il\u0103",
+          "x": 102.05,
+          "y": 7.2,
+          "passes": 2
+        }
+      ],
+      "edges": [
+        {
+          "from": "Bogdan Racovi\u021ban",
+          "to": "Florin Constantin Ni\u0163\u0103",
+          "count": 1
+        },
+        {
+          "from": "Florin Constantin Ni\u0163\u0103",
+          "to": "Radu Dr\u0103gu\u0219in",
+          "count": 1
+        },
+        {
+          "from": "Radu Dr\u0103gu\u0219in",
+          "to": "Andrei Florin Ratiu",
+          "count": 1
+        },
+        {
+          "from": "Andrei Florin Ratiu",
+          "to": "Radu Dr\u0103gu\u0219in",
+          "count": 1
+        },
+        {
+          "from": "Bogdan Racovi\u021ban",
+          "to": "Darius Dumitru Olaru",
+          "count": 1
+        },
+        {
+          "from": "Darius Dumitru Olaru",
+          "to": "Andrei Burc\u0103 Andonie",
+          "count": 1
+        },
+        {
+          "from": "Andrei Burc\u0103 Andonie",
+          "to": "Bogdan Racovi\u021ban",
+          "count": 1
+        },
+        {
+          "from": "Bogdan Racovi\u021ban",
+          "to": "Andrei Burc\u0103 Andonie",
+          "count": 1
+        },
+        {
+          "from": "Andrei Burc\u0103 Andonie",
+          "to": "Valentin Mihai Mih\u0103il\u0103",
+          "count": 1
+        },
+        {
+          "from": "Valentin Mihai Mih\u0103il\u0103",
+          "to": "Alexandru Cic\u00e2ld\u0103u",
+          "count": 1
+        },
+        {
+          "from": "Florin Constantin Ni\u0163\u0103",
+          "to": "Denis Alibec",
+          "count": 1
+        },
+        {
+          "from": "Darius Dumitru Olaru",
+          "to": "Andrei Florin Ratiu",
+          "count": 1
+        },
+        {
+          "from": "Andrei Florin Ratiu",
+          "to": "Denis Alibec",
+          "count": 1
+        },
+        {
+          "from": "Denis Alibec",
+          "to": "R\u0103zvan Gabriel Marin",
+          "count": 1
+        },
+        {
+          "from": "R\u0103zvan Gabriel Marin",
+          "to": "Andrei Burc\u0103 Andonie",
+          "count": 1
+        },
+        {
+          "from": "Alexandru Cic\u00e2ld\u0103u",
+          "to": "Bogdan Racovi\u021ban",
+          "count": 1
+        },
+        {
+          "from": "Bogdan Racovi\u021ban",
+          "to": "Dennis Man",
+          "count": 1
+        },
+        {
+          "from": "Bogdan Racovi\u021ban",
+          "to": "Alexandru Cic\u00e2ld\u0103u",
+          "count": 1
+        },
+        {
+          "from": "Florin Constantin Ni\u0163\u0103",
+          "to": "Dennis Man",
+          "count": 1
+        },
+        {
+          "from": "Dennis Man",
+          "to": "Denis Alibec",
+          "count": 1
+        },
+        {
+          "from": "Valentin Mihai Mih\u0103il\u0103",
+          "to": "Dennis Man",
+          "count": 1
+        },
+        {
+          "from": "Dennis Man",
+          "to": "R\u0103zvan Gabriel Marin",
+          "count": 1
+        },
+        {
+          "from": "Denis Alibec",
+          "to": "Darius Dumitru Olaru",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "substitutions": [
+    {
+      "minute": 37,
+      "player_off": "Vasile Mogo\u0219",
+      "player_on": "Bogdan Racovi\u021ban"
+    },
+    {
+      "minute": 70,
+      "player_off": "Ianis Hagi",
+      "player_on": "Denis Alibec"
+    },
+    {
+      "minute": 71,
+      "player_off": "Denis Mihai Dr\u0103gu\u015f",
+      "player_on": "Valentin Mihai Mih\u0103il\u0103"
+    },
+    {
+      "minute": 71,
+      "player_off": "Marius Mihai Marin",
+      "player_on": "Alexandru Cic\u00e2ld\u0103u"
+    },
+    {
+      "minute": 87,
+      "player_off": "Nicolae Claudiu Stanciu",
+      "player_on": "Darius Dumitru Olaru"
+    }
+  ],
+  "metadata": {
+    "match_id": 3941021,
+    "team": "Romania",
+    "filter": "completed passes, per substitution window",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Romania vs Netherlands"
+  }
+}

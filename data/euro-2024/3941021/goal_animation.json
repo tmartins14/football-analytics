@@ -1,0 +1,363 @@
+{
+  "goals": [
+    {
+      "window": {
+        "anchor_event_id": "68407818-ca45-41b2-a6c6-5470a655f811",
+        "start_event_id": "f80aaf93-9fbe-48cf-9528-dc4c63aba5e1",
+        "end_event_id": "68407818-ca45-41b2-a6c6-5470a655f811",
+        "period": 1,
+        "window_seconds": 10.0,
+        "t_span_seconds": 10.517
+      },
+      "frames": [
+        {
+          "event_id": "f80aaf93-9fbe-48cf-9528-dc4c63aba5e1",
+          "t_seconds": 0.0,
+          "team": "Romania",
+          "event_type": "Pressure",
+          "ball_x": 63.7,
+          "ball_y": 35.8,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Denis Dragus",
+          "outcome": null
+        },
+        {
+          "event_id": "552dd3b5-9e55-4ef8-afdd-afe26948c5a0",
+          "t_seconds": 0.924,
+          "team": "Netherlands",
+          "event_type": "Carry",
+          "ball_x": 56.2,
+          "ball_y": 47.6,
+          "ball_end_x": 56.5,
+          "ball_end_y": 35.0,
+          "actor": "Jerdy Schouten",
+          "outcome": null
+        },
+        {
+          "event_id": "210f3c02-d338-41a8-b7ee-34220bc046c8",
+          "t_seconds": 3.181,
+          "team": "Netherlands",
+          "event_type": "Pass",
+          "ball_x": 56.5,
+          "ball_y": 35.0,
+          "ball_end_x": 77.1,
+          "ball_end_y": 29.0,
+          "actor": "Jerdy Schouten",
+          "outcome": null
+        },
+        {
+          "event_id": "17e20965-05d6-49df-a5f4-964fd93c3284",
+          "t_seconds": 4.192,
+          "team": "Netherlands",
+          "event_type": "Carry",
+          "ball_x": 77.1,
+          "ball_y": 29.0,
+          "ball_end_x": 77.6,
+          "ball_end_y": 27.2,
+          "actor": "Xavi Simons",
+          "outcome": null
+        },
+        {
+          "event_id": "2cdd39f0-7ae1-4eb5-ba45-0a577598df43",
+          "t_seconds": 5.217,
+          "team": "Netherlands",
+          "event_type": "Pass",
+          "ball_x": 77.6,
+          "ball_y": 27.2,
+          "ball_end_x": 102.6,
+          "ball_end_y": 7.4,
+          "actor": "Xavi Simons",
+          "outcome": null
+        },
+        {
+          "event_id": "ea7aed76-6a49-48e2-bfd4-671716947824",
+          "t_seconds": 7.378,
+          "team": "Netherlands",
+          "event_type": "Carry",
+          "ball_x": 102.6,
+          "ball_y": 7.4,
+          "ball_end_x": 107.5,
+          "ball_end_y": 24.9,
+          "actor": "Cody Gakpo",
+          "outcome": null
+        },
+        {
+          "event_id": "68407818-ca45-41b2-a6c6-5470a655f811",
+          "t_seconds": 10.517,
+          "team": "Netherlands",
+          "event_type": "Shot",
+          "ball_x": 107.5,
+          "ball_y": 24.9,
+          "ball_end_x": 119.9,
+          "ball_end_y": 37.0,
+          "actor": "Cody Gakpo",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "68407818-ca45-41b2-a6c6-5470a655f811",
+          "minute": 19,
+          "second": 7,
+          "scorer": "Cody Gakpo",
+          "team": "Netherlands"
+        }
+      },
+      "metadata": {
+        "match_id": 3941021,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Romania vs Netherlands"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "95438759-00a4-49c4-9c40-85cbfe4e6fd8",
+        "start_event_id": "e63a7303-6297-404d-a679-69e74bef000b",
+        "end_event_id": "95438759-00a4-49c4-9c40-85cbfe4e6fd8",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 32.239
+      },
+      "frames": [
+        {
+          "event_id": "e63a7303-6297-404d-a679-69e74bef000b",
+          "t_seconds": 22.604,
+          "team": "Netherlands",
+          "event_type": "Pass",
+          "ball_x": 93.0,
+          "ball_y": 0.1,
+          "ball_end_x": 116.5,
+          "ball_end_y": 6.5,
+          "actor": "Micky van de Ven",
+          "outcome": null
+        },
+        {
+          "event_id": "8428f7c1-47ce-4e4c-aba6-66424c5cdabc",
+          "t_seconds": 24.396,
+          "team": "Romania",
+          "event_type": "Pressure",
+          "ball_x": 4.7,
+          "ball_y": 72.1,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Andrei Ratiu",
+          "outcome": null
+        },
+        {
+          "event_id": "4a7eac75-59c0-4c97-b567-c8fbe7f8ee33",
+          "t_seconds": 24.644,
+          "team": "Netherlands",
+          "event_type": "Carry",
+          "ball_x": 116.5,
+          "ball_y": 6.5,
+          "ball_end_x": 117.4,
+          "ball_end_y": 4.1,
+          "actor": "Memphis Depay",
+          "outcome": null
+        },
+        {
+          "event_id": "f7e5e2cc-bb26-4c02-86d3-ee7665bc7efe",
+          "t_seconds": 25.25,
+          "team": "Netherlands",
+          "event_type": "Pass",
+          "ball_x": 117.4,
+          "ball_y": 4.1,
+          "ball_end_x": 110.8,
+          "ball_end_y": 16.9,
+          "actor": "Memphis Depay",
+          "outcome": null
+        },
+        {
+          "event_id": "5f562bca-8238-4ccc-b16a-5f9075629719",
+          "t_seconds": 28.347,
+          "team": "Netherlands",
+          "event_type": "Carry",
+          "ball_x": 110.8,
+          "ball_y": 16.9,
+          "ball_end_x": 120.0,
+          "ball_end_y": 30.7,
+          "actor": "Cody Gakpo",
+          "outcome": null
+        },
+        {
+          "event_id": "261e332c-6947-440e-9caa-f5c0cb3e669b",
+          "t_seconds": 28.94,
+          "team": "Romania",
+          "event_type": "Pressure",
+          "ball_x": 4.2,
+          "ball_y": 59.2,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Radu Dragusin",
+          "outcome": null
+        },
+        {
+          "event_id": "cfb470e3-ae99-4d51-8f06-52f189c6021a",
+          "t_seconds": 31.384,
+          "team": "Netherlands",
+          "event_type": "Carry",
+          "ball_x": 120.0,
+          "ball_y": 30.7,
+          "ball_end_x": 119.7,
+          "ball_end_y": 34.6,
+          "actor": "Cody Gakpo",
+          "outcome": null
+        },
+        {
+          "event_id": "9757b0ef-1b60-44b3-a2d6-37904b85ee75",
+          "t_seconds": 31.605,
+          "team": "Romania",
+          "event_type": "Pressure",
+          "ball_x": 2.2,
+          "ball_y": 44.6,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Bogdan Racovi\u021ban",
+          "outcome": null
+        },
+        {
+          "event_id": "d2a4b9dc-4806-4bf4-ac5e-36afe1006223",
+          "t_seconds": 31.758,
+          "team": "Netherlands",
+          "event_type": "Pass",
+          "ball_x": 119.7,
+          "ball_y": 34.6,
+          "ball_end_x": 115.6,
+          "ball_end_y": 36.0,
+          "actor": "Cody Gakpo",
+          "outcome": null
+        },
+        {
+          "event_id": "95438759-00a4-49c4-9c40-85cbfe4e6fd8",
+          "t_seconds": 32.239,
+          "team": "Netherlands",
+          "event_type": "Shot",
+          "ball_x": 115.6,
+          "ball_y": 36.0,
+          "ball_end_x": 120.0,
+          "ball_end_y": 37.3,
+          "actor": "Donyell Malen",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "95438759-00a4-49c4-9c40-85cbfe4e6fd8",
+          "minute": 82,
+          "second": 23,
+          "scorer": "Donyell Malen",
+          "team": "Netherlands"
+        }
+      },
+      "metadata": {
+        "match_id": 3941021,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Romania vs Netherlands"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "e396a17d-ab0e-4f33-8fc8-9cf1b4fa5294",
+        "start_event_id": "9cc4f00a-38bb-4f22-b3c6-e07dfee4f453",
+        "end_event_id": "e396a17d-ab0e-4f33-8fc8-9cf1b4fa5294",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 10.784
+      },
+      "frames": [
+        {
+          "event_id": "9cc4f00a-38bb-4f22-b3c6-e07dfee4f453",
+          "t_seconds": 0.0,
+          "team": "Romania",
+          "event_type": "Ball Recovery",
+          "ball_x": 93.9,
+          "ball_y": 48.8,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Alexandru Cic\u00e2ld\u0103u",
+          "outcome": null
+        },
+        {
+          "event_id": "74e4363e-8456-4bf4-8078-4fef591d18f3",
+          "t_seconds": 1.869,
+          "team": "Netherlands",
+          "event_type": "Pass",
+          "ball_x": 35.2,
+          "ball_y": 26.6,
+          "ball_end_x": 58.3,
+          "ball_end_y": 10.4,
+          "actor": "Xavi Simons",
+          "outcome": null
+        },
+        {
+          "event_id": "42dc7ebd-b8ac-427b-9ac6-7226dd1b7745",
+          "t_seconds": 4.791,
+          "team": "Netherlands",
+          "event_type": "Carry",
+          "ball_x": 58.3,
+          "ball_y": 10.4,
+          "ball_end_x": 100.8,
+          "ball_end_y": 30.0,
+          "actor": "Donyell Malen",
+          "outcome": null
+        },
+        {
+          "event_id": "47ea11a1-17a8-4dab-8fe1-4a64f7e60e0c",
+          "t_seconds": 10.134,
+          "team": "Netherlands",
+          "event_type": "Carry",
+          "ball_x": 100.8,
+          "ball_y": 30.0,
+          "ball_end_x": 104.2,
+          "ball_end_y": 33.2,
+          "actor": "Donyell Malen",
+          "outcome": null
+        },
+        {
+          "event_id": "9898dcf8-91b9-4819-a7f8-279f5b40e294",
+          "t_seconds": 10.544,
+          "team": "Romania",
+          "event_type": "Pressure",
+          "ball_x": 20.2,
+          "ball_y": 46.4,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Alexandru Cic\u00e2ld\u0103u",
+          "outcome": null
+        },
+        {
+          "event_id": "e396a17d-ab0e-4f33-8fc8-9cf1b4fa5294",
+          "t_seconds": 10.784,
+          "team": "Netherlands",
+          "event_type": "Shot",
+          "ball_x": 104.2,
+          "ball_y": 33.2,
+          "ball_end_x": 120.0,
+          "ball_end_y": 37.0,
+          "actor": "Donyell Malen",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "e396a17d-ab0e-4f33-8fc8-9cf1b4fa5294",
+          "minute": 92,
+          "second": 42,
+          "scorer": "Donyell Malen",
+          "team": "Netherlands"
+        }
+      },
+      "metadata": {
+        "match_id": 3941021,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Romania vs Netherlands"
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3941021,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Romania vs Netherlands"
+  }
+}

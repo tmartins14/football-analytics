@@ -4,11 +4,11 @@ Produces two separate measurements, intentionally using different methods:
 
 ON-BALL (in-possession): event-based, identified by player. Mean position per
 named player from that team's open-play events where possession_team == team.
-Produces individual nodes + a convex hull of those nodes.
+Returns a tidy DataFrame with one row per player per lineup period.
 
 OFF-BALL (out-of-possession): frame-based, anonymous. Pools 360 frame dots for
-the analyzed team while the opponent has the ball (open play only). Produces an
-aggregate cloud: density grid, centroid, thirds-spine, covariance ellipse, and
+the analyzed team while the opponent has the ball (open play only). Returns an
+aggregate dict: density grid, centroid, thirds-spine, covariance ellipse, and
 a percentile-depth line. No player identities are assigned to the cloud.
 
 OPEN-PLAY FILTER: play_pattern not in (From Corner, From Free Kick, From Goal
@@ -27,17 +27,14 @@ TEAMMATE-BOOLEAN INVERSION: in a 360 frame, `teammate` is relative to the
     marks OPPONENT players and teammate=False marks OUR players.
 
 Public API:
-    resolve_euro_2024_final() -> int
-    load_frames(match_id) -> dict
-    extract_on_ball(events, team, attack_dir_by_period, nicknames) -> dict
-    extract_off_ball(events, frame_lookup, team, attack_dir_by_period,
-                     bandwidth_yards, depth_percentile, cols, rows) -> dict
+    extract_team_shape_on_ball(match_id, team) -> pd.DataFrame
+    extract_team_shape_off_ball(match_id, team, bandwidth_yards, depth_percentile, cols, rows) -> dict
     main()
 
-Private helpers:
-    _build_lineup_periods(events, team) -> list[dict]
+DataFrame columns (extract_team_shape_on_ball):
+    period_from_minute, period_to_minute, player_id, player, display_name, x, y, event_count
 
-JSON output shape:
+JSON output shape (team_shape_{match_id}_{team_slug}.json):
     {
       "on_ball": {
         "periods": [
@@ -68,7 +65,6 @@ Written to: src/footballd3/sample_data/team_shape_{match_id}_{team_slug}.json
 
 import json
 import re
-import urllib.request
 from pathlib import Path
 
 import numpy as np
@@ -77,103 +73,20 @@ from scipy.spatial import ConvexHull
 from scipy.stats import gaussian_kde
 from statsbombpy import sb
 
-SB_PITCH_WIDTH = 120
+from .utils import (
+    SET_PIECE_PLAY_PATTERNS,
+    build_nickname_lookup,
+    fetch_match_info,
+    load_360_frames,
+    open_play_mask,
+    resolve_match,
+)
+
+SB_PITCH_WIDTH  = 120
 SB_PITCH_HEIGHT = 80
 
-SET_PIECE_PLAY_PATTERNS = frozenset([
-    "From Corner",
-    "From Free Kick",
-    "From Goal Kick",
-    "From Kick Off",
-    "From Throw In",
-])
 
-
-def resolve_euro_2024_final() -> int:
-    """Resolve the UEFA Euro 2024 Final match ID from the StatsBomb open data API.
-
-    Duplicated from extract_shots.resolve_euro_2024_final. Once a third script
-    needs the same resolution, extract to a shared utility module.
-
-    Returns:
-        int: The StatsBomb match_id for the Euro 2024 Final.
-
-    Raises:
-        ValueError: If the competition/season can't be found, or if the Final
-            can't be isolated to a single match.
-    """
-    comps = sb.competitions()
-    euro = comps[
-        comps["competition_name"].str.contains("UEFA Euro", case=False)
-        & (comps["season_name"] == "2024")
-    ]
-    if euro.empty:
-        raise ValueError("Could not find UEFA Euro 2024 in sb.competitions()")
-
-    competition_id = int(euro["competition_id"].iloc[0])
-    season_id = int(euro["season_id"].iloc[0])
-
-    matches = sb.matches(competition_id=competition_id, season_id=season_id)
-
-    if "competition_stage" in matches.columns:
-        final_rows = matches[
-            matches["competition_stage"].astype(str).str.strip() == "Final"
-        ]
-    else:
-        final_rows = matches.sort_values("match_date").iloc[[-1]]
-
-    if final_rows.empty or len(final_rows) > 1:
-        raise ValueError(
-            f"Could not isolate Euro 2024 Final unambiguously. "
-            f"Candidates:\n{final_rows[['match_id', 'match_date', 'home_team', 'away_team']]}"
-        )
-
-    return int(final_rows["match_id"].iloc[0])
-
-
-def load_frames(match_id: int) -> dict:
-    """Load all 360 freeze-frame data for a match, keyed by event UUID.
-
-    Tries sb.frames() first; falls back to reading raw JSON from the StatsBomb
-    open-data GitHub repository if sb.frames() raises. This handles the known
-    InvalidIndexError bug in statsbombpy <= 1.18 for Euro 2024 match IDs.
-    Pattern duplicated from extract_freeze_frame.py — no shared utility yet.
-
-    Args:
-        match_id (int): StatsBomb match ID.
-
-    Returns:
-        dict[str, dict]: Maps event UUID (str) to a frame data dict with keys:
-            freeze_frame (list[dict]): Player entries, each with location,
-                teammate, actor, and keeper fields.
-
-    Raises:
-        urllib.error.HTTPError: If both sb.frames() and the GitHub fallback fail.
-    """
-    try:
-        frames_df = sb.frames(match_id=match_id)
-        uuid_col = "id" if "id" in frames_df.columns else "event_uuid"
-        return {
-            str(row[uuid_col]): {"freeze_frame": row["freeze_frame"]}
-            for _, row in frames_df.iterrows()
-        }
-    except Exception:  # noqa: BLE001
-        print("  sb.frames() raised; using GitHub raw JSON fallback.")
-
-    url = (
-        f"https://raw.githubusercontent.com/statsbomb/open-data/master"
-        f"/data/three-sixty/{match_id}.json"
-    )
-    with urllib.request.urlopen(url) as resp:  # noqa: S310
-        raw = json.loads(resp.read())
-
-    return {
-        entry["event_uuid"]: {"freeze_frame": entry["freeze_frame"]}
-        for entry in raw
-    }
-
-
-def _attack_direction_by_period(events, team: str) -> dict[int, str]:
+def _attack_direction_by_period(events: pd.DataFrame, team: str) -> dict[int, str]:
     """Determine which direction the team attacks in each match period.
 
     Uses shot locations as the primary indicator: shots always happen in the
@@ -183,7 +96,7 @@ def _attack_direction_by_period(events, team: str) -> dict[int, str]:
     defensive events) is unreliable when one team defends deeply.
 
     Args:
-        events (pandas.DataFrame): Full match event DataFrame from sb.events().
+        events (pd.DataFrame): Full match event DataFrame from sb.events().
         team (str): Team name to analyze.
 
     Returns:
@@ -235,24 +148,6 @@ def _normalize_xy(x: float, y: float, direction: str) -> tuple[float, float]:
     return x, y
 
 
-def _open_play_mask(events) -> "pandas.Series":
-    """Return a boolean mask selecting open-play events.
-
-    Excludes set pieces (corners, free kicks, goal kicks, kick-offs, throw-ins).
-    Transitions (from counter) are included. The play_pattern column is coerced
-    to string to handle any version differences in statsbombpy's output type.
-
-    Args:
-        events (pandas.DataFrame): Full match event DataFrame.
-
-    Returns:
-        pandas.Series[bool]: True for open-play events.
-    """
-    if "play_pattern" not in events.columns:
-        return events.index.notna()  # keep all if column absent
-    return ~events["play_pattern"].astype(str).isin(SET_PIECE_PLAY_PATTERNS)
-
-
 def _compute_kde_grid(
     xs: np.ndarray,
     ys: np.ndarray,
@@ -267,8 +162,8 @@ def _compute_kde_grid(
     the grid of cell centres, then normalises values to [0, 1].
 
     Args:
-        xs (numpy.ndarray): x coordinates of source dots (StatsBomb yards, 0–120).
-        ys (numpy.ndarray): y coordinates of source dots (StatsBomb yards, 0–80).
+        xs (np.ndarray): x coordinates of source dots (StatsBomb yards, 0–120).
+        ys (np.ndarray): y coordinates of source dots (StatsBomb yards, 0–80).
         bandwidth_yards (float): Gaussian kernel bandwidth in yards.
         cols (int): Grid columns (x-axis).
         rows (int): Grid rows (y-axis).
@@ -317,8 +212,8 @@ def _compute_ellipse(xs: np.ndarray, ys: np.ndarray) -> dict:
     measured from the x-axis to the major axis, in degrees.
 
     Args:
-        xs (numpy.ndarray): x coordinates in StatsBomb yards.
-        ys (numpy.ndarray): y coordinates in StatsBomb yards.
+        xs (np.ndarray): x coordinates in StatsBomb yards.
+        ys (np.ndarray): y coordinates in StatsBomb yards.
 
     Returns:
         dict: {"cx", "cy", "rx", "ry", "angle_deg"} where rx >= ry.
@@ -353,8 +248,8 @@ def _compute_thirds_spine(xs: np.ndarray, ys: np.ndarray) -> list[dict]:
         attacking: x >= 80
 
     Args:
-        xs (numpy.ndarray): x coordinates in normalised StatsBomb yards.
-        ys (numpy.ndarray): y coordinates.
+        xs (np.ndarray): x coordinates in normalised StatsBomb yards.
+        ys (np.ndarray): y coordinates.
 
     Returns:
         list[dict]: Up to 3 entries in order (defensive, middle, attacking),
@@ -362,7 +257,11 @@ def _compute_thirds_spine(xs: np.ndarray, ys: np.ndarray) -> list[dict]:
             Thirds with no dots are omitted.
     """
     spine = []
-    thresholds = [("defensive", xs < 40), ("middle", (xs >= 40) & (xs < 80)), ("attacking", xs >= 80)]
+    thresholds = [
+        ("defensive", xs < 40),
+        ("middle",    (xs >= 40) & (xs < 80)),
+        ("attacking", xs >= 80),
+    ]
     for label, mask in thresholds:
         if mask.sum() > 0:
             spine.append({
@@ -395,7 +294,7 @@ def _compute_hull(nodes: list[dict]) -> list[list[float]]:
         return [[round(float(p[0]), 2), round(float(p[1]), 2)] for p in pts]
 
 
-def _build_lineup_periods(events, team: str) -> list[dict]:
+def _build_lineup_periods(events: pd.DataFrame, team: str) -> list[dict]:
     """Build lineup windows for a team, separated by substitution events.
 
     Reads the Starting XI event to establish the opening roster, then reads
@@ -405,7 +304,7 @@ def _build_lineup_periods(events, team: str) -> list[dict]:
     the pitch during that window.
 
     Args:
-        events (pandas.DataFrame): Full match event DataFrame from sb.events().
+        events (pd.DataFrame): Full match event DataFrame from sb.events().
         team (str): Team name to analyze.
 
     Returns:
@@ -415,6 +314,9 @@ def _build_lineup_periods(events, team: str) -> list[dict]:
             players     (set[str]): Player names on the pitch in this window.
             players_in  (list[str]): Who joined at from_minute (all 11 for window 0).
             players_out (list[str]): Who left at from_minute (empty for window 0).
+
+    Raises:
+        ValueError: If no Starting XI event is found for the given team.
     """
     xi_rows = events[(events["team"] == team) & (events["type"] == "Starting XI")]
     if xi_rows.empty:
@@ -474,60 +376,47 @@ def _build_lineup_periods(events, team: str) -> list[dict]:
     return periods
 
 
-def extract_on_ball(
-    events, team: str, attack_dir_by_period: dict, nicknames: dict
-) -> dict:
-    """Extract empirical on-ball shape from open-play events, split by lineup period.
+def _on_ball_periods(
+    events: pd.DataFrame,
+    team: str,
+    attack_dir_by_period: dict[int, str],
+    nicknames: dict[int, str],
+) -> list[dict]:
+    """Compute on-ball player mean positions for each lineup period.
 
-    Builds lineup windows from Starting XI + Substitution events (one window per
-    substitution boundary). For each window, filters to events where:
-      - team == team (actor is on our team — required; possession_team alone
-        would include opponent events during our possession phases)
-      - possession_team == team
-      - play pattern is open play
-      - location is present
-      - player is in the current lineup window
-      - minute falls within [from_minute, to_minute)
-
-    Computes mean (x, y) per player within their window, then builds a convex hull
-    of those mean positions. Coordinates are normalised so the team always attacks
-    right (increasing x). Players with zero events in a window are omitted; their
-    absence is visible via event_count on the nodes.
+    Shared logic called by extract_team_shape_on_ball. Filters to open-play
+    in-possession events for the team, normalizes coordinates, and computes
+    mean (x, y) per player per lineup window along with a convex hull of nodes.
 
     Args:
-        events (pandas.DataFrame): Full match event DataFrame from sb.events().
+        events (pd.DataFrame): Full match event DataFrame.
         team (str): Team name to analyze.
-        attack_dir_by_period (dict[int, str]): Period → "right"/"left" from
-            _attack_direction_by_period().
-        nicknames (dict[int, str]): player_id -> display_name from sb.lineups().
-            Players absent from this dict fall back to full player name.
+        attack_dir_by_period (dict[int, str]): Period → "right"/"left".
+        nicknames (dict[int, str]): player_id → display_name.
 
     Returns:
-        dict: {
-            "periods": list[dict] — one per lineup window, each with:
-                from_minute (int), to_minute (int),
-                players_in (list[str]), players_out (list[str]),
-                nodes (list[dict]) — player_id, player, display_name, x, y, event_count,
-                hull  (list[[float, float]]) — convex hull vertices.
-        }
+        list[dict]: One entry per lineup window with keys:
+            from_minute, to_minute (int),
+            players_in, players_out (list[str]),
+            nodes (list[dict]): player_id, player, display_name, x, y, event_count,
+            hull  (list[[float, float]]).
     """
     lineup_periods = _build_lineup_periods(events, team)
 
-    open_play  = _open_play_mask(events)
-    is_actor   = events["team"] == team
-    in_poss    = events["possession_team"] == team
-    has_loc    = events["location"].notna()
+    op_mask   = open_play_mask(events)
+    is_actor  = events["team"] == team
+    in_poss   = events["possession_team"] == team
+    has_loc   = events["location"].notna()
     has_player = events["player"].notna()
 
-    base_mask = open_play & is_actor & in_poss & has_loc & has_player
-    base_subset = events[base_mask].copy()
+    base_subset = events[op_mask & is_actor & in_poss & has_loc & has_player].copy()
 
     result_periods: list[dict] = []
 
     for lp in lineup_periods:
-        from_min  = lp["from_minute"]
-        to_min    = lp["to_minute"]
-        squad     = lp["players"]
+        from_min = lp["from_minute"]
+        to_min   = lp["to_minute"]
+        squad    = lp["players"]
 
         in_window = (base_subset["minute"] >= from_min) & (base_subset["minute"] < to_min)
         is_squad  = base_subset["player"].isin(squad)
@@ -536,7 +425,6 @@ def extract_on_ball(
         player_records: dict[str, dict] = {}
 
         for _, row in subset.iterrows():
-            # Use player name as the stable key (player_id may be NaN for some types).
             pid = str(row["player"])
             period_half = int(row.get("period", 1))
             direction   = attack_dir_by_period.get(period_half, "right")
@@ -552,8 +440,8 @@ def extract_on_ball(
                     "player_id":    int_pid,
                     "player":       player_name,
                     "display_name": display_name,
-                    "xs":           [],
-                    "ys":           [],
+                    "xs": [],
+                    "ys": [],
                 }
             player_records[pid]["xs"].append(nx)
             player_records[pid]["ys"].append(ny)
@@ -583,40 +471,103 @@ def extract_on_ball(
             "hull":        hull,
         })
 
-    return {"periods": result_periods}
+    return result_periods
 
 
-def extract_off_ball(
-    events,
-    frame_lookup: dict,
+def extract_team_shape_on_ball(match_id: int, team: str) -> pd.DataFrame:
+    """Extract empirical on-ball team shape as a tidy DataFrame.
+
+    Builds lineup windows from Starting XI + Substitution events. For each
+    window, filters to open-play in-possession events where the player is on
+    the pitch, normalizes coordinates (team always attacks right), and computes
+    the mean (x, y) per player. Returns one row per player per lineup period.
+
+    Coordinate normalization: mean shot x > 60 in period 1 → team attacks right
+    in H1 and flips H2. Flip is x → 120-x, y → 80-y.
+
+    Args:
+        match_id (int): StatsBomb match ID.
+        team (str): Team name exactly as it appears in StatsBomb data (e.g. "Spain").
+
+    Returns:
+        pd.DataFrame: One row per player per lineup period with columns:
+            period_from_minute (int): Period start minute (inclusive).
+            period_to_minute (int): Period end minute (exclusive).
+            player_id (int | None): StatsBomb player ID.
+            player (str): Full player name.
+            display_name (str): Resolved display name (nickname or full name).
+            x, y (float): Mean normalised position in StatsBomb 120×80 yards.
+            event_count (int): Number of open-play in-possession events.
+        Also sets df.attrs:
+            periods_meta (list[dict]): Per-period hull + players_in/out for JSON reconstruction.
+            competition, match_label (str).
+
+    Raises:
+        ValueError: If no Starting XI event is found for the given team.
+    """
+    nicknames = build_nickname_lookup(match_id)
+    events = sb.events(match_id=match_id)
+    competition, _, match_label = fetch_match_info(match_id)
+
+    attack_dir = _attack_direction_by_period(events, team)
+    periods = _on_ball_periods(events, team, attack_dir, nicknames)
+
+    records: list[dict] = []
+    periods_meta: list[dict] = []
+
+    for p in periods:
+        for node in p["nodes"]:
+            records.append({
+                "period_from_minute": p["from_minute"],
+                "period_to_minute":   p["to_minute"],
+                "player_id":          node["player_id"],
+                "player":             node["player"],
+                "display_name":       node["display_name"],
+                "x":                  node["x"],
+                "y":                  node["y"],
+                "event_count":        node["event_count"],
+            })
+        periods_meta.append({
+            "from_minute": p["from_minute"],
+            "to_minute":   p["to_minute"],
+            "players_in":  p["players_in"],
+            "players_out": p["players_out"],
+            "hull":        p["hull"],
+        })
+
+    df = pd.DataFrame(records)
+    df.attrs["periods_meta"]  = periods_meta
+    df.attrs["competition"]   = competition
+    df.attrs["match_label"]   = match_label
+    return df
+
+
+def extract_team_shape_off_ball(
+    match_id: int,
     team: str,
-    attack_dir_by_period: dict,
-    bandwidth_yards: float,
-    depth_percentile: int,
-    cols: int,
-    rows: int,
+    bandwidth_yards: float = 8.0,
+    depth_percentile: int = 70,
+    cols: int = 24,
+    rows: int = 16,
 ) -> dict:
-    """Extract empirical off-ball shape from 360 frames for one team.
+    """Extract empirical off-ball team shape from 360 freeze frames.
 
     Collects every 360 frame dot belonging to the analyzed team while the team
-    is OUT of possession (open-play events only). Applies the teammate-boolean
-    inversion: in each frame, teammate is relative to the ACTOR (the player
-    who performed the event). When the actor is an opponent, teammate=True
-    marks OPPONENTS and teammate=False marks OUR team. See module docstring.
+    is OUT of possession (open-play events only). Applies teammate-boolean
+    inversion: when the actor is an opponent, teammate=True marks opponents and
+    teammate=False marks the analyzed team.
 
     Coordinates are normalised so the team always attacks right. Computes:
     density grid (Gaussian KDE), centroid, thirds-spine, covariance ellipse,
-    and a percentile depth line (where the team sits defensively).
+    and a percentile depth line.
 
     Args:
-        events (pandas.DataFrame): Full match event DataFrame from sb.events().
-        frame_lookup (dict[str, dict]): Event UUID → frame data from load_frames().
-        team (str): Team name to analyze.
-        attack_dir_by_period (dict[int, str]): Period → "right"/"left".
-        bandwidth_yards (float): Gaussian KDE bandwidth in yards.
-        depth_percentile (int): Percentile (0–100) for the depth line x value.
-        cols (int): KDE grid columns.
-        rows (int): KDE grid rows.
+        match_id (int): StatsBomb match ID.
+        team (str): Team name exactly as it appears in StatsBomb data.
+        bandwidth_yards (float): Gaussian KDE bandwidth in yards. Default: 8.0.
+        depth_percentile (int): Percentile (0–100) for the depth line x value. Default: 70.
+        cols (int): KDE grid columns. Default: 24.
+        rows (int): KDE grid rows. Default: 16.
 
     Returns:
         dict: {
@@ -626,12 +577,17 @@ def extract_off_ball(
             "ellipse":      {"cx", "cy", "rx", "ry", "angle_deg"},
             "depth_line":   {"x", "percentile"}
         }
-    """
-    open_play = _open_play_mask(events)
-    out_of_poss = events["possession_team"] != team
 
-    # Only events that have a matching 360 frame.
-    subset = events[open_play & out_of_poss].copy()
+    Raises:
+        ValueError: If fewer than 2 frame dots are found for the team.
+    """
+    events = sb.events(match_id=match_id)
+    frame_lookup = load_360_frames(match_id)
+    attack_dir = _attack_direction_by_period(events, team)
+
+    op_mask    = open_play_mask(events)
+    out_of_poss = events["possession_team"] != team
+    subset = events[op_mask & out_of_poss].copy()
 
     all_xs: list[float] = []
     all_ys: list[float] = []
@@ -641,22 +597,19 @@ def extract_off_ball(
         if event_uuid not in frame_lookup:
             continue
 
-        frame_data = frame_lookup[event_uuid]
-        actor_team = str(row["team"])
-        period = int(row.get("period", 1))
-        direction = attack_dir_by_period.get(period, "right")
+        frame_data  = frame_lookup[event_uuid]
+        actor_team  = str(row["team"])
+        period      = int(row.get("period", 1))
+        direction   = attack_dir.get(period, "right")
 
         # Teammate-boolean inversion: actor is opponent when actor_team != team.
         # When actor is opponent: teammate=True → opponent, teammate=False → our team.
-        # When actor is our team (shouldn't happen in out-of-possession, but guard anyway):
-        # teammate=True → our team.
         actor_is_opponent = (actor_team != team)
 
         for dot in frame_data["freeze_frame"]:
             is_our_dot = (not dot["teammate"]) if actor_is_opponent else dot["teammate"]
             if not is_our_dot:
                 continue
-
             raw_x = float(dot["location"][0])
             raw_y = float(dot["location"][1])
             nx, ny = _normalize_xy(raw_x, raw_y, direction)
@@ -667,11 +620,11 @@ def extract_off_ball(
     ys = np.array(all_ys)
 
     density_grid = _compute_kde_grid(xs, ys, bandwidth_yards, cols, rows)
-    centroid = {"x": round(float(xs.mean()), 2), "y": round(float(ys.mean()), 2)}
+    centroid     = {"x": round(float(xs.mean()), 2), "y": round(float(ys.mean()), 2)}
     thirds_spine = _compute_thirds_spine(xs, ys)
-    ellipse = _compute_ellipse(xs, ys)
-    depth_x = float(np.percentile(xs, depth_percentile))
-    depth_line = {"x": round(depth_x, 2), "percentile": depth_percentile}
+    ellipse      = _compute_ellipse(xs, ys)
+    depth_x      = float(np.percentile(xs, depth_percentile))
+    depth_line   = {"x": round(depth_x, 2), "percentile": depth_percentile}
 
     return {
         "density_grid": density_grid,
@@ -682,99 +635,105 @@ def extract_off_ball(
     }
 
 
-def main() -> None:
-    """Resolve the Euro 2024 Final, extract team shape for both teams, and write JSON.
+def main(
+    match_id: int | None = None,
+    out_dir: Path | None = None,
+    teams: list[str] | None = None,
+) -> None:
+    """Extract on-ball and off-ball team shape for a match and write JSON.
 
-    Output: src/footballd3/sample_data/team_shape_{match_id}_{team_slug}.json
+    Args:
+        match_id (int | None): StatsBomb match ID; defaults to Euro 2024 Final.
+        out_dir (Path | None): Output directory; defaults to data/euro-2024/{match_id}/.
+        teams (list[str] | None): Teams to extract; defaults to both teams in the match.
+
+    Output: {out_dir}/team_shape_{team_slug}.json
     """
-    bandwidth_yards = 8.0
+    bandwidth_yards  = 8.0
     depth_percentile = 70
     cols = 24
     rows = 16
 
-    print("Resolving Euro 2024 Final…")
-    match_id = resolve_euro_2024_final()
+    if match_id is None:
+        print("Resolving Euro 2024 Final…")
+        match_id = resolve_match("UEFA Euro", "2024", "Spain", "England")
     print(f"  match_id = {match_id}")
 
-    comps = sb.competitions()
-    euro = comps[
-        comps["competition_name"].str.contains("UEFA Euro", case=False)
-        & (comps["season_name"] == "2024")
-    ]
-    competition = str(euro["competition_name"].iloc[0]) if not euro.empty else "UEFA Euro 2024"
+    competition, _, match_label = fetch_match_info(match_id)
 
-    matches = sb.matches(
-        competition_id=int(euro["competition_id"].iloc[0]),
-        season_id=int(euro["season_id"].iloc[0]),
-    )
-    match_row = matches[matches["match_id"] == match_id].iloc[0]
-    home_team = str(match_row["home_team"])
-    away_team = str(match_row["away_team"])
-    match_label = f"{home_team} vs {away_team}"
+    if teams is None:
+        comps = sb.competitions()
+        euro = comps[
+            comps["competition_name"].str.contains("UEFA Euro", case=False)
+            & (comps["season_name"] == "2024")
+        ]
+        matches = sb.matches(
+            competition_id=int(euro["competition_id"].iloc[0]),
+            season_id=int(euro["season_id"].iloc[0]),
+        )
+        match_row = matches[matches["match_id"] == match_id].iloc[0]
+        teams = [str(match_row["home_team"]), str(match_row["away_team"])]
 
-    print("Loading events…")
-    events = sb.events(match_id=match_id)
-
-    print("Loading 360 frames…")
-    frame_lookup = load_frames(match_id)
-    print(f"  {len(frame_lookup)} frames loaded")
-
-    out_dir = Path(__file__).parents[2] / "src" / "footballd3" / "sample_data"
+    if out_dir is None:
+        out_dir = Path(__file__).parents[2] / "data" / "euro-2024" / str(match_id)
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    lineups = sb.lineups(match_id=match_id)
-
-    for team in [home_team, away_team]:
+    for team in teams:
         print(f"\nProcessing {team}…")
 
-        team_df = lineups.get(team)
-        nicknames: dict[int, str] = {}
-        if team_df is not None:
-            for _, row in team_df.iterrows():
-                nick = row.get("player_nickname")
-                name = row["player_name"]
-                nicknames[int(row["player_id"])] = nick if (pd.notna(nick) and nick) else name
-
-        attack_dir = _attack_direction_by_period(events, team)
-        print(f"  Attack direction by period: {attack_dir}")
-
         print("  Extracting on-ball shape…")
-        on_ball = extract_on_ball(events, team, attack_dir, nicknames)
-        print(f"  → {len(on_ball['periods'])} lineup periods")
+        on_df = extract_team_shape_on_ball(match_id, team)
+        periods_meta = on_df.attrs["periods_meta"]
+        print(f"  → {len(periods_meta)} lineup period(s)")
+
+        # Reconstruct nested on_ball dict from the tidy DataFrame + attrs.
+        on_ball_periods: list[dict] = []
+        for pm in periods_meta:
+            group = on_df[
+                (on_df["period_from_minute"] == pm["from_minute"])
+                & (on_df["period_to_minute"] == pm["to_minute"])
+            ]
+            nodes = group.drop(columns=["period_from_minute", "period_to_minute"]).to_dict(
+                orient="records"
+            )
+            on_ball_periods.append({
+                "from_minute": pm["from_minute"],
+                "to_minute":   pm["to_minute"],
+                "players_in":  pm["players_in"],
+                "players_out": pm["players_out"],
+                "nodes":       nodes,
+                "hull":        pm["hull"],
+            })
+            print(f"    {pm['from_minute']}'–{pm['to_minute']}': {len(nodes)} players")
 
         print("  Extracting off-ball shape…")
-        off_ball = extract_off_ball(
-            events, frame_lookup, team, attack_dir,
+        off_ball = extract_team_shape_off_ball(
+            match_id, team,
             bandwidth_yards=bandwidth_yards,
             depth_percentile=depth_percentile,
             cols=cols,
             rows=rows,
         )
 
-        # Count total on-ball events across all lineup periods.
-        on_event_count = sum(
-            n["event_count"]
-            for p in on_ball["periods"]
-            for n in p["nodes"]
-        )
+        on_event_count = int(on_df["event_count"].sum())
 
         payload = {
-            "on_ball":  on_ball,
+            "on_ball":  {"periods": on_ball_periods},
             "off_ball": off_ball,
             "metadata": {
-                "match_id":               match_id,
-                "team":                   team,
-                "competition":            competition,
-                "match_label":            match_label,
-                "on_ball_event_count":    on_event_count,
-                "on_ball_period_count":   len(on_ball["periods"]),
-                "off_ball_bandwidth_yards": bandwidth_yards,
+                "match_id":                  match_id,
+                "team":                      team,
+                "competition":               competition,
+                "match_label":               match_label,
+                "on_ball_event_count":       on_event_count,
+                "on_ball_period_count":      len(on_ball_periods),
+                "off_ball_bandwidth_yards":  bandwidth_yards,
                 "off_ball_depth_percentile": depth_percentile,
-                "off_ball_grid_cols":     cols,
-                "off_ball_grid_rows":     rows,
-                "phase_filter":           "open_play_only",
-                "coordinate_system":      "statsbomb_120x80_normalised_attack_right",
-                "coordinate_note":        (
+                "off_ball_grid_cols":        cols,
+                "off_ball_grid_rows":        rows,
+                "phase_filter":              "open_play_only",
+                "coordinate_system":         "statsbomb_120x80_normalised_attack_right",
+                "coordinate_note": (
                     "Coordinates are normalised so the team always attacks right "
                     "(increasing x). Raw StatsBomb events are flipped (x→120-x, "
                     "y→80-y) in periods where the team attacks left."
@@ -789,11 +748,9 @@ def main() -> None:
         }
 
         team_slug = re.sub(r"[^a-z0-9]+", "_", team.lower()).strip("_")
-        out_path = out_dir / f"team_shape_{match_id}_{team_slug}.json"
-
+        out_path = out_dir / f"team_shape_{team_slug}.json"
         with open(out_path, "w") as f:
             json.dump(payload, f, indent=2)
-
         print(f"  Wrote → {out_path}")
 
 

@@ -1,0 +1,841 @@
+{
+  "windows": [
+    {
+      "index": 0,
+      "label": "0'\u201362' (Starting XI)",
+      "nodes": [
+        {
+          "player": "Georges Mikautadze",
+          "display_name": "Georges Mikautadze",
+          "x": 71.48,
+          "y": 46.42,
+          "passes": 12
+        },
+        {
+          "player": "Giorgi Chakvetadze",
+          "display_name": "Giorgi Chakvetadze",
+          "x": 50.81,
+          "y": 50.79,
+          "passes": 22
+        },
+        {
+          "player": "Giorgi Gvelesiani",
+          "display_name": "Giorgi Gvelesiani",
+          "x": 28.68,
+          "y": 61.39,
+          "passes": 16
+        },
+        {
+          "player": "Giorgi Kochorashvili",
+          "display_name": "Giorgi Kochorashvili",
+          "x": 45.47,
+          "y": 44.2,
+          "passes": 28
+        },
+        {
+          "player": "Giorgi Mamardashvili",
+          "display_name": "Giorgi Mamardashvili",
+          "x": 7.96,
+          "y": 43.21,
+          "passes": 10
+        },
+        {
+          "player": "Guram Kashia",
+          "display_name": "Guram Kashia",
+          "x": 27.03,
+          "y": 38.48,
+          "passes": 12
+        },
+        {
+          "player": "Khvicha Kvaratskhelia",
+          "display_name": "Kvara",
+          "x": 60.83,
+          "y": 41.42,
+          "passes": 8
+        },
+        {
+          "player": "Lasha Dvali",
+          "display_name": "Lasha Dvali",
+          "x": 31.27,
+          "y": 17.9,
+          "passes": 12
+        },
+        {
+          "player": "Luka Lochoshvili",
+          "display_name": "Luka Lochoshvili",
+          "x": 43.93,
+          "y": 6.3,
+          "passes": 11
+        },
+        {
+          "player": "Otar Kakabadze",
+          "display_name": "Otar Kakabadze",
+          "x": 46.43,
+          "y": 72.1,
+          "passes": 19
+        },
+        {
+          "player": "Otar Kiteishvili",
+          "display_name": "Otar Kiteishvili",
+          "x": 44.16,
+          "y": 41.79,
+          "passes": 23
+        }
+      ],
+      "edges": [
+        {
+          "from": "Otar Kiteishvili",
+          "to": "Giorgi Kochorashvili",
+          "count": 11
+        },
+        {
+          "from": "Luka Lochoshvili",
+          "to": "Lasha Dvali",
+          "count": 8
+        },
+        {
+          "from": "Giorgi Chakvetadze",
+          "to": "Otar Kakabadze",
+          "count": 6
+        },
+        {
+          "from": "Giorgi Kochorashvili",
+          "to": "Georges Mikautadze",
+          "count": 5
+        },
+        {
+          "from": "Giorgi Gvelesiani",
+          "to": "Giorgi Kochorashvili",
+          "count": 4
+        },
+        {
+          "from": "Giorgi Kochorashvili",
+          "to": "Giorgi Gvelesiani",
+          "count": 4
+        },
+        {
+          "from": "Lasha Dvali",
+          "to": "Giorgi Chakvetadze",
+          "count": 4
+        },
+        {
+          "from": "Georges Mikautadze",
+          "to": "Otar Kakabadze",
+          "count": 4
+        },
+        {
+          "from": "Giorgi Chakvetadze",
+          "to": "Otar Kiteishvili",
+          "count": 4
+        },
+        {
+          "from": "Guram Kashia",
+          "to": "Georges Mikautadze",
+          "count": 3
+        },
+        {
+          "from": "Otar Kakabadze",
+          "to": "Giorgi Chakvetadze",
+          "count": 3
+        },
+        {
+          "from": "Otar Kakabadze",
+          "to": "Otar Kiteishvili",
+          "count": 3
+        },
+        {
+          "from": "Otar Kiteishvili",
+          "to": "Otar Kakabadze",
+          "count": 3
+        },
+        {
+          "from": "Otar Kakabadze",
+          "to": "Giorgi Gvelesiani",
+          "count": 3
+        },
+        {
+          "from": "Giorgi Gvelesiani",
+          "to": "Giorgi Mamardashvili",
+          "count": 3
+        },
+        {
+          "from": "Giorgi Chakvetadze",
+          "to": "Giorgi Gvelesiani",
+          "count": 3
+        },
+        {
+          "from": "Giorgi Gvelesiani",
+          "to": "Otar Kakabadze",
+          "count": 3
+        },
+        {
+          "from": "Otar Kakabadze",
+          "to": "Khvicha Kvaratskhelia",
+          "count": 3
+        },
+        {
+          "from": "Lasha Dvali",
+          "to": "Otar Kiteishvili",
+          "count": 3
+        },
+        {
+          "from": "Giorgi Gvelesiani",
+          "to": "Giorgi Chakvetadze",
+          "count": 3
+        },
+        {
+          "from": "Giorgi Kochorashvili",
+          "to": "Giorgi Chakvetadze",
+          "count": 3
+        },
+        {
+          "from": "Giorgi Chakvetadze",
+          "to": "Luka Lochoshvili",
+          "count": 3
+        },
+        {
+          "from": "Giorgi Chakvetadze",
+          "to": "Giorgi Kochorashvili",
+          "count": 3
+        },
+        {
+          "from": "Giorgi Kochorashvili",
+          "to": "Guram Kashia",
+          "count": 3
+        },
+        {
+          "from": "Otar Kakabadze",
+          "to": "Giorgi Kochorashvili",
+          "count": 3
+        },
+        {
+          "from": "Giorgi Kochorashvili",
+          "to": "Otar Kakabadze",
+          "count": 3
+        },
+        {
+          "from": "Giorgi Mamardashvili",
+          "to": "Guram Kashia",
+          "count": 3
+        },
+        {
+          "from": "Otar Kakabadze",
+          "to": "Georges Mikautadze",
+          "count": 3
+        },
+        {
+          "from": "Giorgi Kochorashvili",
+          "to": "Otar Kiteishvili",
+          "count": 3
+        },
+        {
+          "from": "Giorgi Kochorashvili",
+          "to": "Luka Lochoshvili",
+          "count": 3
+        },
+        {
+          "from": "Giorgi Mamardashvili",
+          "to": "Otar Kakabadze",
+          "count": 3
+        },
+        {
+          "from": "Khvicha Kvaratskhelia",
+          "to": "Giorgi Chakvetadze",
+          "count": 3
+        },
+        {
+          "from": "Giorgi Mamardashvili",
+          "to": "Giorgi Gvelesiani",
+          "count": 3
+        },
+        {
+          "from": "Guram Kashia",
+          "to": "Khvicha Kvaratskhelia",
+          "count": 2
+        },
+        {
+          "from": "Otar Kiteishvili",
+          "to": "Georges Mikautadze",
+          "count": 2
+        },
+        {
+          "from": "Georges Mikautadze",
+          "to": "Khvicha Kvaratskhelia",
+          "count": 2
+        },
+        {
+          "from": "Giorgi Kochorashvili",
+          "to": "Khvicha Kvaratskhelia",
+          "count": 2
+        },
+        {
+          "from": "Lasha Dvali",
+          "to": "Giorgi Gvelesiani",
+          "count": 2
+        },
+        {
+          "from": "Khvicha Kvaratskhelia",
+          "to": "Giorgi Kochorashvili",
+          "count": 2
+        },
+        {
+          "from": "Georges Mikautadze",
+          "to": "Giorgi Kochorashvili",
+          "count": 2
+        },
+        {
+          "from": "Guram Kashia",
+          "to": "Giorgi Chakvetadze",
+          "count": 2
+        },
+        {
+          "from": "Guram Kashia",
+          "to": "Giorgi Gvelesiani",
+          "count": 2
+        },
+        {
+          "from": "Giorgi Kochorashvili",
+          "to": "Lasha Dvali",
+          "count": 2
+        },
+        {
+          "from": "Otar Kiteishvili",
+          "to": "Giorgi Gvelesiani",
+          "count": 2
+        },
+        {
+          "from": "Georges Mikautadze",
+          "to": "Giorgi Chakvetadze",
+          "count": 2
+        },
+        {
+          "from": "Georges Mikautadze",
+          "to": "Otar Kiteishvili",
+          "count": 2
+        },
+        {
+          "from": "Luka Lochoshvili",
+          "to": "Giorgi Chakvetadze",
+          "count": 2
+        },
+        {
+          "from": "Giorgi Chakvetadze",
+          "to": "Khvicha Kvaratskhelia",
+          "count": 2
+        },
+        {
+          "from": "Otar Kiteishvili",
+          "to": "Giorgi Chakvetadze",
+          "count": 2
+        },
+        {
+          "from": "Khvicha Kvaratskhelia",
+          "to": "Otar Kiteishvili",
+          "count": 1
+        },
+        {
+          "from": "Giorgi Mamardashvili",
+          "to": "Lasha Dvali",
+          "count": 1
+        },
+        {
+          "from": "Guram Kashia",
+          "to": "Lasha Dvali",
+          "count": 1
+        },
+        {
+          "from": "Lasha Dvali",
+          "to": "Khvicha Kvaratskhelia",
+          "count": 1
+        },
+        {
+          "from": "Khvicha Kvaratskhelia",
+          "to": "Georges Mikautadze",
+          "count": 1
+        },
+        {
+          "from": "Guram Kashia",
+          "to": "Otar Kiteishvili",
+          "count": 1
+        },
+        {
+          "from": "Otar Kakabadze",
+          "to": "Luka Lochoshvili",
+          "count": 1
+        },
+        {
+          "from": "Giorgi Gvelesiani",
+          "to": "Georges Mikautadze",
+          "count": 1
+        },
+        {
+          "from": "Lasha Dvali",
+          "to": "Luka Lochoshvili",
+          "count": 1
+        },
+        {
+          "from": "Giorgi Chakvetadze",
+          "to": "Georges Mikautadze",
+          "count": 1
+        },
+        {
+          "from": "Otar Kiteishvili",
+          "to": "Guram Kashia",
+          "count": 1
+        },
+        {
+          "from": "Guram Kashia",
+          "to": "Giorgi Kochorashvili",
+          "count": 1
+        },
+        {
+          "from": "Luka Lochoshvili",
+          "to": "Otar Kiteishvili",
+          "count": 1
+        },
+        {
+          "from": "Giorgi Gvelesiani",
+          "to": "Khvicha Kvaratskhelia",
+          "count": 1
+        },
+        {
+          "from": "Khvicha Kvaratskhelia",
+          "to": "Otar Kakabadze",
+          "count": 1
+        },
+        {
+          "from": "Otar Kiteishvili",
+          "to": "Lasha Dvali",
+          "count": 1
+        },
+        {
+          "from": "Giorgi Gvelesiani",
+          "to": "Guram Kashia",
+          "count": 1
+        },
+        {
+          "from": "Otar Kiteishvili",
+          "to": "Khvicha Kvaratskhelia",
+          "count": 1
+        },
+        {
+          "from": "Lasha Dvali",
+          "to": "Guram Kashia",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "label": "62'\u201375'",
+      "nodes": [
+        {
+          "player": "Georges Mikautadze",
+          "display_name": "Georges Mikautadze",
+          "x": 45.73,
+          "y": 22.87,
+          "passes": 3
+        },
+        {
+          "player": "Giorgi Chakvetadze",
+          "display_name": "Giorgi Chakvetadze",
+          "x": 43.9,
+          "y": 72.7,
+          "passes": 1
+        },
+        {
+          "player": "Giorgi Kochorashvili",
+          "display_name": "Giorgi Kochorashvili",
+          "x": 18.0,
+          "y": 67.1,
+          "passes": 1
+        },
+        {
+          "player": "Heorhii Tsitaishvili",
+          "display_name": "Georgiy Tsitaishvili",
+          "x": 62.9,
+          "y": 0.1,
+          "passes": 1
+        },
+        {
+          "player": "Lasha Dvali",
+          "display_name": "Lasha Dvali",
+          "x": 16.1,
+          "y": 26.03,
+          "passes": 3
+        },
+        {
+          "player": "Otar Kakabadze",
+          "display_name": "Otar Kakabadze",
+          "x": 14.4,
+          "y": 80.0,
+          "passes": 1
+        },
+        {
+          "player": "Otar Kiteishvili",
+          "display_name": "Otar Kiteishvili",
+          "x": 38.15,
+          "y": 42.9,
+          "passes": 4
+        }
+      ],
+      "edges": [
+        {
+          "from": "Otar Kiteishvili",
+          "to": "Giorgi Chakvetadze",
+          "count": 2
+        },
+        {
+          "from": "Georges Mikautadze",
+          "to": "Otar Kiteishvili",
+          "count": 2
+        },
+        {
+          "from": "Otar Kakabadze",
+          "to": "Giorgi Kochorashvili",
+          "count": 1
+        },
+        {
+          "from": "Giorgi Kochorashvili",
+          "to": "Giorgi Chakvetadze",
+          "count": 1
+        },
+        {
+          "from": "Giorgi Chakvetadze",
+          "to": "Otar Kiteishvili",
+          "count": 1
+        },
+        {
+          "from": "Otar Kiteishvili",
+          "to": "Lasha Dvali",
+          "count": 1
+        },
+        {
+          "from": "Lasha Dvali",
+          "to": "Giorgi Mamardashvili",
+          "count": 1
+        },
+        {
+          "from": "Heorhii Tsitaishvili",
+          "to": "Georges Mikautadze",
+          "count": 1
+        },
+        {
+          "from": "Georges Mikautadze",
+          "to": "Heorhii Tsitaishvili",
+          "count": 1
+        },
+        {
+          "from": "Lasha Dvali",
+          "to": "Khvicha Kvaratskhelia",
+          "count": 1
+        },
+        {
+          "from": "Lasha Dvali",
+          "to": "Heorhii Tsitaishvili",
+          "count": 1
+        },
+        {
+          "from": "Otar Kiteishvili",
+          "to": "Georges Mikautadze",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "label": "75'\u201380'",
+      "nodes": [
+        {
+          "player": "Giorgi Chakvetadze",
+          "display_name": "Giorgi Chakvetadze",
+          "x": 56.3,
+          "y": 41.2,
+          "passes": 1
+        },
+        {
+          "player": "Heorhii Tsitaishvili",
+          "display_name": "Georgiy Tsitaishvili",
+          "x": 80.7,
+          "y": 33.8,
+          "passes": 1
+        },
+        {
+          "player": "Khvicha Kvaratskhelia",
+          "display_name": "Kvara",
+          "x": 95.7,
+          "y": 17.5,
+          "passes": 1
+        },
+        {
+          "player": "Otar Kakabadze",
+          "display_name": "Otar Kakabadze",
+          "x": 22.9,
+          "y": 69.9,
+          "passes": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "Otar Kakabadze",
+          "to": "Solomon Kverkvelia",
+          "count": 1
+        },
+        {
+          "from": "Giorgi Chakvetadze",
+          "to": "Khvicha Kvaratskhelia",
+          "count": 1
+        },
+        {
+          "from": "Khvicha Kvaratskhelia",
+          "to": "Heorhii Tsitaishvili",
+          "count": 1
+        },
+        {
+          "from": "Heorhii Tsitaishvili",
+          "to": "Giorgi Mamardashvili",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "label": "81'\u2013FT",
+      "nodes": [
+        {
+          "player": "Anzor Mekvabishvili",
+          "display_name": "Anzor Mekvabishvili",
+          "x": 58.07,
+          "y": 65.2,
+          "passes": 6
+        },
+        {
+          "player": "Georges Mikautadze",
+          "display_name": "Georges Mikautadze",
+          "x": 94.3,
+          "y": 20.05,
+          "passes": 2
+        },
+        {
+          "player": "Giorgi Kochorashvili",
+          "display_name": "Giorgi Kochorashvili",
+          "x": 62.6,
+          "y": 52.15,
+          "passes": 2
+        },
+        {
+          "player": "Giorgi Mamardashvili",
+          "display_name": "Giorgi Mamardashvili",
+          "x": 11.5,
+          "y": 46.35,
+          "passes": 2
+        },
+        {
+          "player": "Guram Kashia",
+          "display_name": "Guram Kashia",
+          "x": 42.13,
+          "y": 42.23,
+          "passes": 3
+        },
+        {
+          "player": "Heorhii Tsitaishvili",
+          "display_name": "Georgiy Tsitaishvili",
+          "x": 61.65,
+          "y": 4.2,
+          "passes": 2
+        },
+        {
+          "player": "Lasha Dvali",
+          "display_name": "Lasha Dvali",
+          "x": 50.9,
+          "y": 12.6,
+          "passes": 1
+        },
+        {
+          "player": "Otar Kakabadze",
+          "display_name": "Otar Kakabadze",
+          "x": 75.33,
+          "y": 75.99,
+          "passes": 8
+        },
+        {
+          "player": "Otar Kiteishvili",
+          "display_name": "Otar Kiteishvili",
+          "x": 57.1,
+          "y": 52.73,
+          "passes": 4
+        },
+        {
+          "player": "Solomon Kverkvelia",
+          "display_name": "Saba Kverkvelia",
+          "x": 53.7,
+          "y": 72.5,
+          "passes": 1
+        },
+        {
+          "player": "Zuriko Davitashvili",
+          "display_name": "Zurab Davitashvili",
+          "x": 80.1,
+          "y": 56.2,
+          "passes": 2
+        }
+      ],
+      "edges": [
+        {
+          "from": "Otar Kakabadze",
+          "to": "Anzor Mekvabishvili",
+          "count": 3
+        },
+        {
+          "from": "Anzor Mekvabishvili",
+          "to": "Otar Kakabadze",
+          "count": 3
+        },
+        {
+          "from": "Otar Kakabadze",
+          "to": "Georges Mikautadze",
+          "count": 3
+        },
+        {
+          "from": "Giorgi Mamardashvili",
+          "to": "Otar Kakabadze",
+          "count": 2
+        },
+        {
+          "from": "Anzor Mekvabishvili",
+          "to": "Giorgi Kochorashvili",
+          "count": 2
+        },
+        {
+          "from": "Otar Kiteishvili",
+          "to": "Anzor Mekvabishvili",
+          "count": 1
+        },
+        {
+          "from": "Giorgi Kochorashvili",
+          "to": "Otar Kiteishvili",
+          "count": 1
+        },
+        {
+          "from": "Otar Kiteishvili",
+          "to": "Solomon Kverkvelia",
+          "count": 1
+        },
+        {
+          "from": "Solomon Kverkvelia",
+          "to": "Anzor Mekvabishvili",
+          "count": 1
+        },
+        {
+          "from": "Heorhii Tsitaishvili",
+          "to": "Georges Mikautadze",
+          "count": 1
+        },
+        {
+          "from": "Otar Kiteishvili",
+          "to": "Georges Mikautadze",
+          "count": 1
+        },
+        {
+          "from": "Georges Mikautadze",
+          "to": "Zuriko Davitashvili",
+          "count": 1
+        },
+        {
+          "from": "Anzor Mekvabishvili",
+          "to": "Georges Mikautadze",
+          "count": 1
+        },
+        {
+          "from": "Georges Mikautadze",
+          "to": "Heorhii Tsitaishvili",
+          "count": 1
+        },
+        {
+          "from": "Heorhii Tsitaishvili",
+          "to": "Lasha Dvali",
+          "count": 1
+        },
+        {
+          "from": "Lasha Dvali",
+          "to": "Guram Kashia",
+          "count": 1
+        },
+        {
+          "from": "Guram Kashia",
+          "to": "Anzor Mekvabishvili",
+          "count": 1
+        },
+        {
+          "from": "Otar Kakabadze",
+          "to": "Otar Kiteishvili",
+          "count": 1
+        },
+        {
+          "from": "Otar Kiteishvili",
+          "to": "Zuriko Davitashvili",
+          "count": 1
+        },
+        {
+          "from": "Zuriko Davitashvili",
+          "to": "Guram Kashia",
+          "count": 1
+        },
+        {
+          "from": "Guram Kashia",
+          "to": "Giorgi Kochorashvili",
+          "count": 1
+        },
+        {
+          "from": "Giorgi Kochorashvili",
+          "to": "Otar Kakabadze",
+          "count": 1
+        },
+        {
+          "from": "Otar Kakabadze",
+          "to": "Zuriko Davitashvili",
+          "count": 1
+        },
+        {
+          "from": "Zuriko Davitashvili",
+          "to": "Giorgi Kochorashvili",
+          "count": 1
+        },
+        {
+          "from": "Guram Kashia",
+          "to": "Giorgi Mamardashvili",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "substitutions": [
+    {
+      "minute": 62,
+      "player_off": "Luka Lochoshvili",
+      "player_on": "Heorhii Tsitaishvili"
+    },
+    {
+      "minute": 75,
+      "player_off": "Giorgi Gvelesiani",
+      "player_on": "Solomon Kverkvelia"
+    },
+    {
+      "minute": 80,
+      "player_off": "Giorgi Chakvetadze",
+      "player_on": "Anzor Mekvabishvili"
+    },
+    {
+      "minute": 81,
+      "player_off": "Khvicha Kvaratskhelia",
+      "player_on": "Zuriko Davitashvili"
+    }
+  ],
+  "metadata": {
+    "match_id": 3938644,
+    "team": "Georgia",
+    "filter": "completed passes, per substitution window",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Georgia vs Portugal"
+  }
+}

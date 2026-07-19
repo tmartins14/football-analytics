@@ -1,0 +1,872 @@
+{
+  "on_ball": {
+    "periods": [
+      {
+        "from_minute": 0,
+        "to_minute": 53,
+        "players_in": [
+          "Jordan Pickford",
+          "Kyle Walker",
+          "John Stones",
+          "Marc Guehi",
+          "Kieran Trippier",
+          "Trent Alexander-Arnold",
+          "Declan Rice",
+          "Bukayo Saka",
+          "Jude Bellingham",
+          "Phil Foden",
+          "Harry Kane"
+        ],
+        "players_out": [],
+        "nodes": [
+          {
+            "player_id": 3943,
+            "player": "Declan Rice",
+            "display_name": "Declan Rice",
+            "x": 53.52,
+            "y": 32.14,
+            "event_count": 82
+          },
+          {
+            "player_id": 30714,
+            "player": "Jude Bellingham",
+            "display_name": "Jude Bellingham",
+            "x": 67.36,
+            "y": 35.31,
+            "event_count": 72
+          },
+          {
+            "player_id": 3244,
+            "player": "John Stones",
+            "display_name": "John Stones",
+            "x": 32.74,
+            "y": 53.79,
+            "event_count": 69
+          },
+          {
+            "player_id": 4354,
+            "player": "Phil Foden",
+            "display_name": "Phil Foden",
+            "x": 70.89,
+            "y": 26.29,
+            "event_count": 67
+          },
+          {
+            "player_id": 3205,
+            "player": "Kyle Walker",
+            "display_name": "Kyle Walker",
+            "x": 55.23,
+            "y": 65.92,
+            "event_count": 67
+          },
+          {
+            "player_id": 22084,
+            "player": "Bukayo Saka",
+            "display_name": "Bukayo Saka",
+            "x": 71.77,
+            "y": 67.4,
+            "event_count": 63
+          },
+          {
+            "player_id": 3664,
+            "player": "Trent Alexander-Arnold",
+            "display_name": "Trent Alexander-Arnold",
+            "x": 58.13,
+            "y": 45.68,
+            "event_count": 61
+          },
+          {
+            "player_id": 3308,
+            "player": "Kieran Trippier",
+            "display_name": "Kieran Trippier",
+            "x": 66.94,
+            "y": 6.92,
+            "event_count": 55
+          },
+          {
+            "player_id": 34526,
+            "player": "Marc Guehi",
+            "display_name": "Marc Guehi",
+            "x": 44.02,
+            "y": 26.18,
+            "event_count": 53
+          },
+          {
+            "player_id": 3468,
+            "player": "Jordan Pickford",
+            "display_name": "Jordan Pickford",
+            "x": 9.0,
+            "y": 39.61,
+            "event_count": 29
+          },
+          {
+            "player_id": 10955,
+            "player": "Harry Kane",
+            "display_name": "Harry Kane",
+            "x": 81.58,
+            "y": 59.14,
+            "event_count": 26
+          }
+        ],
+        "hull": [
+          [
+            9.0,
+            39.61
+          ],
+          [
+            66.94,
+            6.92
+          ],
+          [
+            81.58,
+            59.14
+          ],
+          [
+            71.77,
+            67.4
+          ],
+          [
+            55.23,
+            65.92
+          ],
+          [
+            32.74,
+            53.79
+          ]
+        ]
+      },
+      {
+        "from_minute": 53,
+        "to_minute": 68,
+        "players_in": [
+          "Conor Gallagher"
+        ],
+        "players_out": [
+          "Trent Alexander-Arnold"
+        ],
+        "nodes": [
+          {
+            "player_id": 22084,
+            "player": "Bukayo Saka",
+            "display_name": "Bukayo Saka",
+            "x": 85.19,
+            "y": 69.56,
+            "event_count": 20
+          },
+          {
+            "player_id": 34526,
+            "player": "Marc Guehi",
+            "display_name": "Marc Guehi",
+            "x": 49.76,
+            "y": 43.07,
+            "event_count": 19
+          },
+          {
+            "player_id": 3244,
+            "player": "John Stones",
+            "display_name": "John Stones",
+            "x": 36.21,
+            "y": 66.82,
+            "event_count": 16
+          },
+          {
+            "player_id": 3205,
+            "player": "Kyle Walker",
+            "display_name": "Kyle Walker",
+            "x": 55.09,
+            "y": 69.6,
+            "event_count": 16
+          },
+          {
+            "player_id": 3943,
+            "player": "Declan Rice",
+            "display_name": "Declan Rice",
+            "x": 29.21,
+            "y": 31.05,
+            "event_count": 16
+          },
+          {
+            "player_id": 3468,
+            "player": "Jordan Pickford",
+            "display_name": "Jordan Pickford",
+            "x": 11.41,
+            "y": 42.35,
+            "event_count": 15
+          },
+          {
+            "player_id": 4354,
+            "player": "Phil Foden",
+            "display_name": "Phil Foden",
+            "x": 47.56,
+            "y": 19.34,
+            "event_count": 14
+          },
+          {
+            "player_id": 30714,
+            "player": "Jude Bellingham",
+            "display_name": "Jude Bellingham",
+            "x": 63.68,
+            "y": 49.58,
+            "event_count": 13
+          },
+          {
+            "player_id": 3308,
+            "player": "Kieran Trippier",
+            "display_name": "Kieran Trippier",
+            "x": 34.52,
+            "y": 17.65,
+            "event_count": 12
+          },
+          {
+            "player_id": 29399,
+            "player": "Conor Gallagher",
+            "display_name": "Conor Gallagher",
+            "x": 56.43,
+            "y": 44.63,
+            "event_count": 10
+          },
+          {
+            "player_id": 10955,
+            "player": "Harry Kane",
+            "display_name": "Harry Kane",
+            "x": 54.0,
+            "y": 23.56,
+            "event_count": 9
+          }
+        ],
+        "hull": [
+          [
+            11.41,
+            42.35
+          ],
+          [
+            34.52,
+            17.65
+          ],
+          [
+            47.56,
+            19.34
+          ],
+          [
+            54.0,
+            23.56
+          ],
+          [
+            85.19,
+            69.56
+          ],
+          [
+            55.09,
+            69.6
+          ],
+          [
+            36.21,
+            66.82
+          ]
+        ]
+      },
+      {
+        "from_minute": 68,
+        "to_minute": 94,
+        "players_in": [
+          "Jarrod Bowen",
+          "Ollie Watkins",
+          "Eberechi Eze"
+        ],
+        "players_out": [
+          "Phil Foden",
+          "Harry Kane",
+          "Bukayo Saka"
+        ],
+        "nodes": [
+          {
+            "player_id": 3244,
+            "player": "John Stones",
+            "display_name": "John Stones",
+            "x": 29.96,
+            "y": 48.71,
+            "event_count": 18
+          },
+          {
+            "player_id": 3468,
+            "player": "Jordan Pickford",
+            "display_name": "Jordan Pickford",
+            "x": 6.5,
+            "y": 34.2,
+            "event_count": 16
+          },
+          {
+            "player_id": 34526,
+            "player": "Marc Guehi",
+            "display_name": "Marc Guehi",
+            "x": 34.68,
+            "y": 37.55,
+            "event_count": 15
+          },
+          {
+            "player_id": 3205,
+            "player": "Kyle Walker",
+            "display_name": "Kyle Walker",
+            "x": 34.62,
+            "y": 66.67,
+            "event_count": 15
+          },
+          {
+            "player_id": 29399,
+            "player": "Conor Gallagher",
+            "display_name": "Conor Gallagher",
+            "x": 41.81,
+            "y": 42.95,
+            "event_count": 14
+          },
+          {
+            "player_id": 3943,
+            "player": "Declan Rice",
+            "display_name": "Declan Rice",
+            "x": 38.29,
+            "y": 19.15,
+            "event_count": 11
+          },
+          {
+            "player_id": 9000,
+            "player": "Eberechi Eze",
+            "display_name": "Eberechi Eze",
+            "x": 51.62,
+            "y": 15.0,
+            "event_count": 9
+          },
+          {
+            "player_id": 3308,
+            "player": "Kieran Trippier",
+            "display_name": "Kieran Trippier",
+            "x": 18.77,
+            "y": 7.15,
+            "event_count": 6
+          },
+          {
+            "player_id": 4760,
+            "player": "Ollie Watkins",
+            "display_name": "Ollie Watkins",
+            "x": 101.0,
+            "y": 37.26,
+            "event_count": 5
+          },
+          {
+            "player_id": 9640,
+            "player": "Jarrod Bowen",
+            "display_name": "Jarrod Bowen",
+            "x": 51.27,
+            "y": 62.67,
+            "event_count": 3
+          },
+          {
+            "player_id": 30714,
+            "player": "Jude Bellingham",
+            "display_name": "Jude Bellingham",
+            "x": 85.35,
+            "y": 34.1,
+            "event_count": 2
+          }
+        ],
+        "hull": [
+          [
+            34.62,
+            66.67
+          ],
+          [
+            6.5,
+            34.2
+          ],
+          [
+            18.77,
+            7.15
+          ],
+          [
+            51.62,
+            15.0
+          ],
+          [
+            101.0,
+            37.26
+          ],
+          [
+            51.27,
+            62.67
+          ]
+        ]
+      }
+    ]
+  },
+  "off_ball": {
+    "density_grid": {
+      "cols": 24,
+      "rows": 16,
+      "values": [
+        [
+          0.0703,
+          0.0872,
+          0.1058,
+          0.1257,
+          0.1465,
+          0.1674,
+          0.1879,
+          0.2071,
+          0.2243,
+          0.2388,
+          0.2496,
+          0.2563,
+          0.2582,
+          0.2551,
+          0.2468,
+          0.2337,
+          0.2163,
+          0.1954,
+          0.1721,
+          0.1477,
+          0.1233,
+          0.1,
+          0.0788,
+          0.0602
+        ],
+        [
+          0.0927,
+          0.1151,
+          0.1399,
+          0.1667,
+          0.1949,
+          0.2237,
+          0.2522,
+          0.2795,
+          0.3045,
+          0.3261,
+          0.3432,
+          0.3548,
+          0.3601,
+          0.3584,
+          0.3495,
+          0.3336,
+          0.3113,
+          0.2836,
+          0.2521,
+          0.2183,
+          0.1839,
+          0.1507,
+          0.1199,
+          0.0926
+        ],
+        [
+          0.1162,
+          0.1444,
+          0.1758,
+          0.21,
+          0.2463,
+          0.2837,
+          0.3213,
+          0.3579,
+          0.3921,
+          0.4224,
+          0.4474,
+          0.4657,
+          0.4759,
+          0.4772,
+          0.4689,
+          0.4511,
+          0.4244,
+          0.39,
+          0.3497,
+          0.3055,
+          0.2599,
+          0.215,
+          0.1729,
+          0.1349
+        ],
+        [
+          0.1386,
+          0.1725,
+          0.2104,
+          0.2519,
+          0.2962,
+          0.3425,
+          0.3895,
+          0.4359,
+          0.4801,
+          0.5202,
+          0.5544,
+          0.5808,
+          0.5976,
+          0.6035,
+          0.5974,
+          0.5791,
+          0.5492,
+          0.5088,
+          0.4601,
+          0.4057,
+          0.3483,
+          0.291,
+          0.2363,
+          0.1863
+        ],
+        [
+          0.1578,
+          0.1966,
+          0.2402,
+          0.2883,
+          0.34,
+          0.3945,
+          0.4505,
+          0.5065,
+          0.5607,
+          0.6109,
+          0.6549,
+          0.6903,
+          0.7149,
+          0.7267,
+          0.7244,
+          0.7073,
+          0.6758,
+          0.6311,
+          0.5753,
+          0.5115,
+          0.4431,
+          0.3736,
+          0.3063,
+          0.2439
+        ],
+        [
+          0.1715,
+          0.2141,
+          0.2622,
+          0.3155,
+          0.3733,
+          0.4348,
+          0.4985,
+          0.563,
+          0.6263,
+          0.686,
+          0.7394,
+          0.7839,
+          0.8167,
+          0.8354,
+          0.8381,
+          0.8238,
+          0.7926,
+          0.7454,
+          0.6847,
+          0.6135,
+          0.5358,
+          0.4556,
+          0.3768,
+          0.3028
+        ],
+        [
+          0.178,
+          0.223,
+          0.274,
+          0.3308,
+          0.3928,
+          0.4593,
+          0.5289,
+          0.6,
+          0.6707,
+          0.7383,
+          0.8,
+          0.8527,
+          0.8933,
+          0.919,
+          0.9273,
+          0.917,
+          0.8876,
+          0.8401,
+          0.7768,
+          0.7009,
+          0.6165,
+          0.5281,
+          0.4402,
+          0.3568
+        ],
+        [
+          0.1767,
+          0.2222,
+          0.2742,
+          0.3325,
+          0.3967,
+          0.4658,
+          0.5389,
+          0.6142,
+          0.6898,
+          0.7631,
+          0.831,
+          0.8902,
+          0.9373,
+          0.9692,
+          0.9831,
+          0.9772,
+          0.951,
+          0.9051,
+          0.8416,
+          0.7639,
+          0.676,
+          0.5828,
+          0.489,
+          0.399
+        ],
+        [
+          0.1676,
+          0.212,
+          0.2631,
+          0.3207,
+          0.3845,
+          0.4538,
+          0.5276,
+          0.6044,
+          0.6821,
+          0.7582,
+          0.8296,
+          0.893,
+          0.9447,
+          0.9813,
+          1.0,
+          0.9986,
+          0.9763,
+          0.9336,
+          0.8722,
+          0.7954,
+          0.7074,
+          0.613,
+          0.5171,
+          0.4243
+        ],
+        [
+          0.1518,
+          0.1934,
+          0.2417,
+          0.2965,
+          0.3576,
+          0.4245,
+          0.4963,
+          0.5715,
+          0.6482,
+          0.7241,
+          0.796,
+          0.8608,
+          0.9147,
+          0.9543,
+          0.9766,
+          0.9792,
+          0.9612,
+          0.9227,
+          0.8655,
+          0.7923,
+          0.7074,
+          0.6154,
+          0.5213,
+          0.4295
+        ],
+        [
+          0.1313,
+          0.1687,
+          0.2124,
+          0.2625,
+          0.3187,
+          0.3808,
+          0.4478,
+          0.5185,
+          0.5913,
+          0.6638,
+          0.7333,
+          0.7965,
+          0.8501,
+          0.8906,
+          0.9151,
+          0.9211,
+          0.9074,
+          0.8741,
+          0.8226,
+          0.7555,
+          0.6766,
+          0.5904,
+          0.5016,
+          0.4145
+        ],
+        [
+          0.1083,
+          0.1404,
+          0.1783,
+          0.2221,
+          0.2717,
+          0.3268,
+          0.3867,
+          0.4505,
+          0.5165,
+          0.5828,
+          0.647,
+          0.706,
+          0.7568,
+          0.7962,
+          0.8213,
+          0.8298,
+          0.8204,
+          0.7929,
+          0.7485,
+          0.6894,
+          0.619,
+          0.5415,
+          0.461,
+          0.3818
+        ],
+        [
+          0.085,
+          0.1113,
+          0.1426,
+          0.1792,
+          0.2209,
+          0.2676,
+          0.3188,
+          0.3736,
+          0.4307,
+          0.4886,
+          0.545,
+          0.5976,
+          0.6435,
+          0.6799,
+          0.7042,
+          0.7143,
+          0.7087,
+          0.6873,
+          0.6508,
+          0.6011,
+          0.5411,
+          0.4744,
+          0.4047,
+          0.3358
+        ],
+        [
+          0.0635,
+          0.0839,
+          0.1086,
+          0.1375,
+          0.1709,
+          0.2085,
+          0.25,
+          0.2947,
+          0.3418,
+          0.3897,
+          0.4369,
+          0.4814,
+          0.5207,
+          0.5526,
+          0.5748,
+          0.5854,
+          0.5831,
+          0.5676,
+          0.5392,
+          0.4996,
+          0.451,
+          0.3963,
+          0.3388,
+          0.2816
+        ],
+        [
+          0.045,
+          0.0601,
+          0.0784,
+          0.1002,
+          0.1254,
+          0.1541,
+          0.1859,
+          0.2205,
+          0.2571,
+          0.2947,
+          0.3321,
+          0.3676,
+          0.3995,
+          0.4259,
+          0.445,
+          0.4552,
+          0.4553,
+          0.4449,
+          0.4243,
+          0.3945,
+          0.3572,
+          0.3149,
+          0.2699,
+          0.2248
+        ],
+        [
+          0.0302,
+          0.0407,
+          0.0536,
+          0.069,
+          0.087,
+          0.1077,
+          0.1307,
+          0.1559,
+          0.1827,
+          0.2105,
+          0.2384,
+          0.2651,
+          0.2895,
+          0.31,
+          0.3254,
+          0.3344,
+          0.3359,
+          0.3297,
+          0.3157,
+          0.2947,
+          0.2679,
+          0.237,
+          0.2038,
+          0.1702
+        ]
+      ]
+    },
+    "centroid": {
+      "x": 69.32,
+      "y": 41.46
+    },
+    "thirds_spine": [
+      {
+        "third": "defensive",
+        "x": 26.86,
+        "y": 37.01
+      },
+      {
+        "third": "middle",
+        "x": 63.0,
+        "y": 40.8
+      },
+      {
+        "third": "attacking",
+        "x": 93.45,
+        "y": 43.98
+      }
+    ],
+    "ellipse": {
+      "cx": 69.32,
+      "cy": 41.46,
+      "rx": 24.79,
+      "ry": 15.93,
+      "angle_deg": -169.5
+    },
+    "depth_line": {
+      "x": 84.63,
+      "percentile": 70
+    }
+  },
+  "metadata": {
+    "match_id": 3930171,
+    "team": "England",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Denmark vs England",
+    "on_ball_event_count": 918,
+    "on_ball_period_count": 3,
+    "off_ball_bandwidth_yards": 8.0,
+    "off_ball_depth_percentile": 70,
+    "off_ball_grid_cols": 24,
+    "off_ball_grid_rows": 16,
+    "phase_filter": "open_play_only",
+    "coordinate_system": "statsbomb_120x80_normalised_attack_right",
+    "coordinate_note": "Coordinates are normalised so the team always attacks right (increasing x). Raw StatsBomb events are flipped (x\u2192120-x, y\u219280-y) in periods where the team attacks left.",
+    "camera_caveat": "360 frames follow the ball; the visible subset of out-of-possession positions is biased toward areas near the ball. The camera artifact and the real defensive shape point the same direction \u2014 they cannot be cleanly separated."
+  }
+}

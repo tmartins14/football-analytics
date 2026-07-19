@@ -1,0 +1,736 @@
+{
+  "on_ball": {
+    "periods": [
+      {
+        "from_minute": 0,
+        "to_minute": 62,
+        "players_in": [
+          "Diogo Meireles Costa",
+          "R\u00faben Santos Gato Alves Dias",
+          "Kl\u00e9per Laveran Lima Ferreira",
+          "Nuno Mendes",
+          "Jos\u00e9 Diogo Dalot Teixeira",
+          "Jo\u00e3o Pedro Cavaco Cancelo",
+          "Vitor Machado Ferreira",
+          "Bruno Miguel Borges Fernandes",
+          "Bernardo Mota Veiga de Carvalho e Silva",
+          "Cristiano Ronaldo dos Santos Aveiro",
+          "Rafael Alexandre Concei\u00e7\u00e3o Le\u00e3o"
+        ],
+        "players_out": [],
+        "nodes": [
+          {
+            "player_id": 5204,
+            "player": "Bruno Miguel Borges Fernandes",
+            "display_name": "Bruno Fernandes",
+            "x": 66.85,
+            "y": 42.17,
+            "event_count": 133
+          },
+          {
+            "player_id": 41092,
+            "player": "Nuno Mendes",
+            "display_name": "Nuno Mendes",
+            "x": 61.84,
+            "y": 17.17,
+            "event_count": 124
+          },
+          {
+            "player_id": 34639,
+            "player": "Vitor Machado Ferreira",
+            "display_name": "Vitinha",
+            "x": 73.95,
+            "y": 42.62,
+            "event_count": 106
+          },
+          {
+            "player_id": 5206,
+            "player": "R\u00faben Santos Gato Alves Dias",
+            "display_name": "R\u00faben Dias",
+            "x": 58.63,
+            "y": 63.37,
+            "event_count": 99
+          },
+          {
+            "player_id": 7005,
+            "player": "Jo\u00e3o Pedro Cavaco Cancelo",
+            "display_name": "Jo\u00e3o Cancelo",
+            "x": 66.91,
+            "y": 20.25,
+            "event_count": 95
+          },
+          {
+            "player_id": 20016,
+            "player": "Kl\u00e9per Laveran Lima Ferreira",
+            "display_name": "Pepe",
+            "x": 48.22,
+            "y": 32.54,
+            "event_count": 81
+          },
+          {
+            "player_id": 16028,
+            "player": "Jos\u00e9 Diogo Dalot Teixeira",
+            "display_name": "Diogo Dalot",
+            "x": 72.07,
+            "y": 71.85,
+            "event_count": 76
+          },
+          {
+            "player_id": 3193,
+            "player": "Bernardo Mota Veiga de Carvalho e Silva",
+            "display_name": "Bernardo Silva",
+            "x": 82.15,
+            "y": 48.48,
+            "event_count": 70
+          },
+          {
+            "player_id": 18360,
+            "player": "Rafael Alexandre Concei\u00e7\u00e3o Le\u00e3o",
+            "display_name": "Rafael Le\u00e3o",
+            "x": 91.7,
+            "y": 14.65,
+            "event_count": 54
+          },
+          {
+            "player_id": 5207,
+            "player": "Cristiano Ronaldo dos Santos Aveiro",
+            "display_name": "Cristiano Ronaldo",
+            "x": 91.88,
+            "y": 39.93,
+            "event_count": 52
+          },
+          {
+            "player_id": 32975,
+            "player": "Diogo Meireles Costa",
+            "display_name": "Diogo Costa",
+            "x": 10.54,
+            "y": 43.88,
+            "event_count": 12
+          }
+        ],
+        "hull": [
+          [
+            72.07,
+            71.85
+          ],
+          [
+            10.54,
+            43.88
+          ],
+          [
+            61.84,
+            17.17
+          ],
+          [
+            91.7,
+            14.65
+          ],
+          [
+            91.88,
+            39.93
+          ]
+        ]
+      },
+      {
+        "from_minute": 62,
+        "to_minute": 89,
+        "players_in": [
+          "Gon\u00e7alo Bernardo In\u00e1cio",
+          "Diogo Jos\u00e9 Teixeira da Silva"
+        ],
+        "players_out": [
+          "Jos\u00e9 Diogo Dalot Teixeira",
+          "Rafael Alexandre Concei\u00e7\u00e3o Le\u00e3o"
+        ],
+        "nodes": [
+          {
+            "player_id": 20016,
+            "player": "Kl\u00e9per Laveran Lima Ferreira",
+            "display_name": "Pepe",
+            "x": 36.24,
+            "y": 18.2,
+            "event_count": 17
+          },
+          {
+            "player_id": 34639,
+            "player": "Vitor Machado Ferreira",
+            "display_name": "Vitinha",
+            "x": 49.0,
+            "y": 36.44,
+            "event_count": 16
+          },
+          {
+            "player_id": 42106,
+            "player": "Gon\u00e7alo Bernardo In\u00e1cio",
+            "display_name": "Gon\u00e7alo In\u00e1cio",
+            "x": 45.42,
+            "y": 7.87,
+            "event_count": 15
+          },
+          {
+            "player_id": 9929,
+            "player": "Diogo Jos\u00e9 Teixeira da Silva",
+            "display_name": "Diogo Jota",
+            "x": 74.04,
+            "y": 18.31,
+            "event_count": 14
+          },
+          {
+            "player_id": 5204,
+            "player": "Bruno Miguel Borges Fernandes",
+            "display_name": "Bruno Fernandes",
+            "x": 52.99,
+            "y": 30.78,
+            "event_count": 12
+          },
+          {
+            "player_id": 41092,
+            "player": "Nuno Mendes",
+            "display_name": "Nuno Mendes",
+            "x": 62.19,
+            "y": 13.49,
+            "event_count": 8
+          },
+          {
+            "player_id": 3193,
+            "player": "Bernardo Mota Veiga de Carvalho e Silva",
+            "display_name": "Bernardo Silva",
+            "x": 33.17,
+            "y": 12.55,
+            "event_count": 6
+          },
+          {
+            "player_id": 5207,
+            "player": "Cristiano Ronaldo dos Santos Aveiro",
+            "display_name": "Cristiano Ronaldo",
+            "x": 85.47,
+            "y": 30.52,
+            "event_count": 6
+          },
+          {
+            "player_id": 32975,
+            "player": "Diogo Meireles Costa",
+            "display_name": "Diogo Costa",
+            "x": 6.53,
+            "y": 49.83,
+            "event_count": 3
+          }
+        ],
+        "hull": [
+          [
+            85.47,
+            30.52
+          ],
+          [
+            6.53,
+            49.83
+          ],
+          [
+            33.17,
+            12.55
+          ],
+          [
+            45.42,
+            7.87
+          ],
+          [
+            62.19,
+            13.49
+          ],
+          [
+            74.04,
+            18.31
+          ]
+        ]
+      },
+      {
+        "from_minute": 89,
+        "to_minute": 96,
+        "players_in": [
+          "N\u00e9lson Cabral Semedo",
+          "Francisco Fernandes Concei\u00e7\u00e3o",
+          "Pedro Lomba Neto"
+        ],
+        "players_out": [
+          "Jo\u00e3o Pedro Cavaco Cancelo",
+          "Vitor Machado Ferreira",
+          "Nuno Mendes"
+        ],
+        "nodes": [],
+        "hull": []
+      }
+    ]
+  },
+  "off_ball": {
+    "density_grid": {
+      "cols": 24,
+      "rows": 16,
+      "values": [
+        [
+          0.2811,
+          0.3189,
+          0.3545,
+          0.3862,
+          0.4129,
+          0.4334,
+          0.4472,
+          0.4538,
+          0.4534,
+          0.4465,
+          0.4338,
+          0.416,
+          0.3942,
+          0.369,
+          0.3415,
+          0.3123,
+          0.2821,
+          0.2516,
+          0.2214,
+          0.192,
+          0.164,
+          0.1379,
+          0.1139,
+          0.0924
+        ],
+        [
+          0.3355,
+          0.3825,
+          0.4272,
+          0.468,
+          0.503,
+          0.5309,
+          0.5509,
+          0.5623,
+          0.5653,
+          0.5601,
+          0.5476,
+          0.5285,
+          0.5039,
+          0.4748,
+          0.4422,
+          0.4069,
+          0.37,
+          0.3321,
+          0.2941,
+          0.2568,
+          0.2207,
+          0.1867,
+          0.1551,
+          0.1266
+        ],
+        [
+          0.3851,
+          0.4408,
+          0.4945,
+          0.5442,
+          0.5878,
+          0.6237,
+          0.6506,
+          0.6679,
+          0.6754,
+          0.6733,
+          0.6623,
+          0.6434,
+          0.6175,
+          0.5857,
+          0.5492,
+          0.5089,
+          0.4659,
+          0.4212,
+          0.3756,
+          0.3302,
+          0.2858,
+          0.2434,
+          0.2037,
+          0.1674
+        ],
+        [
+          0.4261,
+          0.4896,
+          0.5515,
+          0.6095,
+          0.6613,
+          0.705,
+          0.7392,
+          0.7629,
+          0.7758,
+          0.778,
+          0.7701,
+          0.7528,
+          0.7274,
+          0.6947,
+          0.656,
+          0.6122,
+          0.5646,
+          0.5141,
+          0.4619,
+          0.4091,
+          0.3568,
+          0.3061,
+          0.2581,
+          0.2137
+        ],
+        [
+          0.4558,
+          0.5255,
+          0.5942,
+          0.6593,
+          0.7183,
+          0.7692,
+          0.8104,
+          0.8406,
+          0.8594,
+          0.8668,
+          0.8631,
+          0.8492,
+          0.8259,
+          0.7942,
+          0.7552,
+          0.71,
+          0.6597,
+          0.6052,
+          0.5479,
+          0.489,
+          0.4298,
+          0.3717,
+          0.3159,
+          0.2636
+        ],
+        [
+          0.4718,
+          0.546,
+          0.6196,
+          0.6901,
+          0.755,
+          0.812,
+          0.8593,
+          0.8957,
+          0.9205,
+          0.9336,
+          0.9351,
+          0.9256,
+          0.906,
+          0.8772,
+          0.84,
+          0.7954,
+          0.7444,
+          0.6881,
+          0.6277,
+          0.5645,
+          0.5001,
+          0.4358,
+          0.3733,
+          0.314
+        ],
+        [
+          0.473,
+          0.5494,
+          0.6259,
+          0.6999,
+          0.7688,
+          0.8305,
+          0.8829,
+          0.9247,
+          0.9552,
+          0.974,
+          0.9811,
+          0.977,
+          0.9623,
+          0.9378,
+          0.9041,
+          0.862,
+          0.8125,
+          0.7565,
+          0.6951,
+          0.6298,
+          0.5621,
+          0.4935,
+          0.426,
+          0.361
+        ],
+        [
+          0.4587,
+          0.5352,
+          0.6123,
+          0.6877,
+          0.7588,
+          0.8234,
+          0.8795,
+          0.9258,
+          0.9613,
+          0.9854,
+          0.9983,
+          1.0,
+          0.991,
+          0.9718,
+          0.9429,
+          0.905,
+          0.8587,
+          0.805,
+          0.7448,
+          0.6795,
+          0.6106,
+          0.5399,
+          0.4693,
+          0.4006
+        ],
+        [
+          0.43,
+          0.5041,
+          0.5796,
+          0.6542,
+          0.7254,
+          0.7911,
+          0.8494,
+          0.8988,
+          0.9383,
+          0.9672,
+          0.9855,
+          0.993,
+          0.99,
+          0.9768,
+          0.9537,
+          0.9211,
+          0.8796,
+          0.8297,
+          0.7725,
+          0.7092,
+          0.6414,
+          0.5707,
+          0.4992,
+          0.4289
+        ],
+        [
+          0.3889,
+          0.4585,
+          0.5301,
+          0.6015,
+          0.6707,
+          0.7355,
+          0.7942,
+          0.8452,
+          0.8875,
+          0.9203,
+          0.9433,
+          0.9563,
+          0.9593,
+          0.9523,
+          0.9355,
+          0.909,
+          0.8732,
+          0.8286,
+          0.776,
+          0.7165,
+          0.6516,
+          0.5831,
+          0.5129,
+          0.4431
+        ],
+        [
+          0.3388,
+          0.4019,
+          0.4675,
+          0.5337,
+          0.5988,
+          0.6607,
+          0.7178,
+          0.7686,
+          0.8122,
+          0.8476,
+          0.8743,
+          0.8921,
+          0.9005,
+          0.8996,
+          0.8892,
+          0.8692,
+          0.8399,
+          0.8015,
+          0.7547,
+          0.7006,
+          0.6404,
+          0.576,
+          0.5092,
+          0.442
+        ],
+        [
+          0.2839,
+          0.3389,
+          0.3968,
+          0.456,
+          0.515,
+          0.572,
+          0.6256,
+          0.6745,
+          0.7175,
+          0.754,
+          0.7831,
+          0.8044,
+          0.8175,
+          0.822,
+          0.8176,
+          0.8042,
+          0.7817,
+          0.7502,
+          0.7102,
+          0.6626,
+          0.6087,
+          0.55,
+          0.4884,
+          0.4258
+        ],
+        [
+          0.2284,
+          0.2745,
+          0.3236,
+          0.3744,
+          0.4258,
+          0.4763,
+          0.5246,
+          0.5697,
+          0.6104,
+          0.6461,
+          0.6759,
+          0.6993,
+          0.7157,
+          0.7247,
+          0.7257,
+          0.7184,
+          0.7025,
+          0.6782,
+          0.6456,
+          0.6055,
+          0.5589,
+          0.5073,
+          0.4524,
+          0.3961
+        ],
+        [
+          0.1763,
+          0.2133,
+          0.2531,
+          0.2949,
+          0.3378,
+          0.3805,
+          0.4223,
+          0.4619,
+          0.4987,
+          0.5319,
+          0.5607,
+          0.5845,
+          0.6027,
+          0.6147,
+          0.6199,
+          0.6179,
+          0.6082,
+          0.5907,
+          0.5656,
+          0.5333,
+          0.4948,
+          0.4513,
+          0.4042,
+          0.3554
+        ],
+        [
+          0.1304,
+          0.1587,
+          0.1896,
+          0.2225,
+          0.2566,
+          0.2912,
+          0.3255,
+          0.3588,
+          0.3903,
+          0.4195,
+          0.4457,
+          0.4682,
+          0.4866,
+          0.5001,
+          0.5081,
+          0.51,
+          0.5055,
+          0.4942,
+          0.4761,
+          0.4516,
+          0.4213,
+          0.3863,
+          0.3477,
+          0.307
+        ],
+        [
+          0.0923,
+          0.1131,
+          0.1359,
+          0.1605,
+          0.1863,
+          0.2129,
+          0.2397,
+          0.2662,
+          0.2918,
+          0.3161,
+          0.3385,
+          0.3585,
+          0.3755,
+          0.3889,
+          0.3982,
+          0.4027,
+          0.4021,
+          0.3958,
+          0.3839,
+          0.3665,
+          0.3439,
+          0.3171,
+          0.287,
+          0.2547
+        ]
+      ]
+    },
+    "centroid": {
+      "x": 59.01,
+      "y": 39.17
+    },
+    "thirds_spine": [
+      {
+        "third": "defensive",
+        "x": 25.75,
+        "y": 34.11
+      },
+      {
+        "third": "middle",
+        "x": 60.05,
+        "y": 38.16
+      },
+      {
+        "third": "attacking",
+        "x": 95.46,
+        "y": 46.2
+      }
+    ],
+    "ellipse": {
+      "cx": 59.01,
+      "cy": 39.17,
+      "rx": 30.14,
+      "ry": 17.82,
+      "angle_deg": -166.0
+    },
+    "depth_line": {
+      "x": 79.64,
+      "percentile": 70
+    }
+  },
+  "metadata": {
+    "match_id": 3930166,
+    "team": "Portugal",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Portugal vs Czech Republic",
+    "on_ball_event_count": 999,
+    "on_ball_period_count": 3,
+    "off_ball_bandwidth_yards": 8.0,
+    "off_ball_depth_percentile": 70,
+    "off_ball_grid_cols": 24,
+    "off_ball_grid_rows": 16,
+    "phase_filter": "open_play_only",
+    "coordinate_system": "statsbomb_120x80_normalised_attack_right",
+    "coordinate_note": "Coordinates are normalised so the team always attacks right (increasing x). Raw StatsBomb events are flipped (x\u2192120-x, y\u219280-y) in periods where the team attacks left.",
+    "camera_caveat": "360 frames follow the ball; the visible subset of out-of-possession positions is biased toward areas near the ball. The camera artifact and the real defensive shape point the same direction \u2014 they cannot be cleanly separated."
+  }
+}

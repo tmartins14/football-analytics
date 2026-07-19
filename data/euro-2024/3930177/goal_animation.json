@@ -1,0 +1,107 @@
+{
+  "goals": [
+    {
+      "window": {
+        "anchor_event_id": "59f6a9f1-0f92-4ea8-84e7-c6f18f25e1a7",
+        "start_event_id": "309a6328-7006-4209-b7e5-1d303e108411",
+        "end_event_id": "59f6a9f1-0f92-4ea8-84e7-c6f18f25e1a7",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 11.909
+      },
+      "frames": [
+        {
+          "event_id": "309a6328-7006-4209-b7e5-1d303e108411",
+          "t_seconds": 0.0,
+          "team": "Hungary",
+          "event_type": "Pass",
+          "ball_x": 33.2,
+          "ball_y": 47.5,
+          "ball_end_x": 62.1,
+          "ball_end_y": 34.9,
+          "actor": "Dominik Szoboszlai",
+          "outcome": null
+        },
+        {
+          "event_id": "03199749-9731-4b90-8687-acb5c35d09d4",
+          "t_seconds": 2.616,
+          "team": "Hungary",
+          "event_type": "Carry",
+          "ball_x": 62.1,
+          "ball_y": 34.9,
+          "ball_end_x": 69.6,
+          "ball_end_y": 29.8,
+          "actor": "Kevin Csoboth",
+          "outcome": null
+        },
+        {
+          "event_id": "b9c67886-90a8-432b-832a-5237dd0d346e",
+          "t_seconds": 4.53,
+          "team": "Hungary",
+          "event_type": "Pass",
+          "ball_x": 69.6,
+          "ball_y": 29.8,
+          "ball_end_x": 89.3,
+          "ball_end_y": 60.2,
+          "actor": "Kevin Csoboth",
+          "outcome": null
+        },
+        {
+          "event_id": "c54a7d22-75ff-4bb8-8008-1629c78cb3a7",
+          "t_seconds": 6.571,
+          "team": "Hungary",
+          "event_type": "Carry",
+          "ball_x": 89.3,
+          "ball_y": 60.2,
+          "ball_end_x": 117.8,
+          "ball_end_y": 54.6,
+          "actor": "Roland Sallai",
+          "outcome": null
+        },
+        {
+          "event_id": "3919e651-0022-4749-8c58-02af1418dd28",
+          "t_seconds": 10.378,
+          "team": "Hungary",
+          "event_type": "Pass",
+          "ball_x": 117.8,
+          "ball_y": 54.6,
+          "ball_end_x": 107.2,
+          "ball_end_y": 36.6,
+          "actor": "Roland Sallai",
+          "outcome": null
+        },
+        {
+          "event_id": "59f6a9f1-0f92-4ea8-84e7-c6f18f25e1a7",
+          "t_seconds": 11.909,
+          "team": "Hungary",
+          "event_type": "Shot",
+          "ball_x": 107.2,
+          "ball_y": 36.6,
+          "ball_end_x": 120.0,
+          "ball_end_y": 37.0,
+          "actor": "Kevin Csoboth",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "59f6a9f1-0f92-4ea8-84e7-c6f18f25e1a7",
+          "minute": 99,
+          "second": 33,
+          "scorer": "Kevin Csoboth",
+          "team": "Hungary"
+        }
+      },
+      "metadata": {
+        "match_id": 3930177,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Scotland vs Hungary"
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3930177,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Scotland vs Hungary"
+  }
+}

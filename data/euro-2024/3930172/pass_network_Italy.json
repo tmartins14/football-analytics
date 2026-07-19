@@ -1,0 +1,1398 @@
+{
+  "windows": [
+    {
+      "index": 0,
+      "label": "0'\u201345' (Starting XI)",
+      "nodes": [
+        {
+          "player": "Alessandro Bastoni",
+          "display_name": "Alessandro Bastoni",
+          "x": 32.01,
+          "y": 47.4,
+          "passes": 26
+        },
+        {
+          "player": "Davide Frattesi",
+          "display_name": "Davide Frattesi",
+          "x": 50.74,
+          "y": 65.56,
+          "passes": 5
+        },
+        {
+          "player": "Federico Chiesa",
+          "display_name": "Federico Chiesa",
+          "x": 41.52,
+          "y": 65.85,
+          "passes": 4
+        },
+        {
+          "player": "Federico Dimarco",
+          "display_name": "Federico Dimarco",
+          "x": 40.8,
+          "y": 7.42,
+          "passes": 8
+        },
+        {
+          "player": "Gianluca Scamacca",
+          "display_name": "Gianluca Scamacca",
+          "x": 54.17,
+          "y": 44.68,
+          "passes": 4
+        },
+        {
+          "player": "Gianluigi Donnarumma",
+          "display_name": "Gianluigi Donnarumma",
+          "x": 7.71,
+          "y": 43.13,
+          "passes": 13
+        },
+        {
+          "player": "Giovanni Di Lorenzo",
+          "display_name": "Giovanni Di Lorenzo",
+          "x": 41.11,
+          "y": 71.88,
+          "passes": 24
+        },
+        {
+          "player": "Jorge Luiz Frello Filho",
+          "display_name": "Jorginho",
+          "x": 47.99,
+          "y": 42.41,
+          "passes": 25
+        },
+        {
+          "player": "Lorenzo Pellegrini",
+          "display_name": "Lorenzo Pellegrini",
+          "x": 52.15,
+          "y": 24.05,
+          "passes": 14
+        },
+        {
+          "player": "Nicol\u00f2 Barella",
+          "display_name": "Nicol\u00f2 Barella",
+          "x": 50.35,
+          "y": 31.77,
+          "passes": 20
+        },
+        {
+          "player": "Riccardo Calafiori",
+          "display_name": "Riccardo Calafiori",
+          "x": 42.28,
+          "y": 22.47,
+          "passes": 24
+        }
+      ],
+      "edges": [
+        {
+          "from": "Alessandro Bastoni",
+          "to": "Giovanni Di Lorenzo",
+          "count": 9
+        },
+        {
+          "from": "Riccardo Calafiori",
+          "to": "Jorge Luiz Frello Filho",
+          "count": 7
+        },
+        {
+          "from": "Alessandro Bastoni",
+          "to": "Jorge Luiz Frello Filho",
+          "count": 6
+        },
+        {
+          "from": "Giovanni Di Lorenzo",
+          "to": "Alessandro Bastoni",
+          "count": 6
+        },
+        {
+          "from": "Giovanni Di Lorenzo",
+          "to": "Federico Chiesa",
+          "count": 6
+        },
+        {
+          "from": "Lorenzo Pellegrini",
+          "to": "Nicol\u00f2 Barella",
+          "count": 5
+        },
+        {
+          "from": "Alessandro Bastoni",
+          "to": "Gianluigi Donnarumma",
+          "count": 5
+        },
+        {
+          "from": "Jorge Luiz Frello Filho",
+          "to": "Nicol\u00f2 Barella",
+          "count": 4
+        },
+        {
+          "from": "Gianluigi Donnarumma",
+          "to": "Riccardo Calafiori",
+          "count": 4
+        },
+        {
+          "from": "Federico Dimarco",
+          "to": "Riccardo Calafiori",
+          "count": 4
+        },
+        {
+          "from": "Riccardo Calafiori",
+          "to": "Lorenzo Pellegrini",
+          "count": 4
+        },
+        {
+          "from": "Jorge Luiz Frello Filho",
+          "to": "Davide Frattesi",
+          "count": 4
+        },
+        {
+          "from": "Nicol\u00f2 Barella",
+          "to": "Federico Dimarco",
+          "count": 4
+        },
+        {
+          "from": "Riccardo Calafiori",
+          "to": "Nicol\u00f2 Barella",
+          "count": 4
+        },
+        {
+          "from": "Nicol\u00f2 Barella",
+          "to": "Alessandro Bastoni",
+          "count": 4
+        },
+        {
+          "from": "Jorge Luiz Frello Filho",
+          "to": "Alessandro Bastoni",
+          "count": 4
+        },
+        {
+          "from": "Jorge Luiz Frello Filho",
+          "to": "Giovanni Di Lorenzo",
+          "count": 4
+        },
+        {
+          "from": "Alessandro Bastoni",
+          "to": "Riccardo Calafiori",
+          "count": 4
+        },
+        {
+          "from": "Nicol\u00f2 Barella",
+          "to": "Giovanni Di Lorenzo",
+          "count": 3
+        },
+        {
+          "from": "Lorenzo Pellegrini",
+          "to": "Federico Dimarco",
+          "count": 3
+        },
+        {
+          "from": "Lorenzo Pellegrini",
+          "to": "Gianluca Scamacca",
+          "count": 3
+        },
+        {
+          "from": "Gianluigi Donnarumma",
+          "to": "Alessandro Bastoni",
+          "count": 3
+        },
+        {
+          "from": "Jorge Luiz Frello Filho",
+          "to": "Riccardo Calafiori",
+          "count": 3
+        },
+        {
+          "from": "Giovanni Di Lorenzo",
+          "to": "Jorge Luiz Frello Filho",
+          "count": 3
+        },
+        {
+          "from": "Nicol\u00f2 Barella",
+          "to": "Jorge Luiz Frello Filho",
+          "count": 3
+        },
+        {
+          "from": "Giovanni Di Lorenzo",
+          "to": "Nicol\u00f2 Barella",
+          "count": 3
+        },
+        {
+          "from": "Riccardo Calafiori",
+          "to": "Federico Dimarco",
+          "count": 2
+        },
+        {
+          "from": "Jorge Luiz Frello Filho",
+          "to": "Federico Dimarco",
+          "count": 2
+        },
+        {
+          "from": "Federico Dimarco",
+          "to": "Lorenzo Pellegrini",
+          "count": 2
+        },
+        {
+          "from": "Federico Dimarco",
+          "to": "Nicol\u00f2 Barella",
+          "count": 2
+        },
+        {
+          "from": "Davide Frattesi",
+          "to": "Federico Chiesa",
+          "count": 2
+        },
+        {
+          "from": "Jorge Luiz Frello Filho",
+          "to": "Gianluigi Donnarumma",
+          "count": 2
+        },
+        {
+          "from": "Gianluigi Donnarumma",
+          "to": "Giovanni Di Lorenzo",
+          "count": 2
+        },
+        {
+          "from": "Giovanni Di Lorenzo",
+          "to": "Davide Frattesi",
+          "count": 2
+        },
+        {
+          "from": "Giovanni Di Lorenzo",
+          "to": "Lorenzo Pellegrini",
+          "count": 2
+        },
+        {
+          "from": "Federico Chiesa",
+          "to": "Giovanni Di Lorenzo",
+          "count": 2
+        },
+        {
+          "from": "Gianluigi Donnarumma",
+          "to": "Federico Dimarco",
+          "count": 2
+        },
+        {
+          "from": "Nicol\u00f2 Barella",
+          "to": "Davide Frattesi",
+          "count": 2
+        },
+        {
+          "from": "Gianluca Scamacca",
+          "to": "Lorenzo Pellegrini",
+          "count": 2
+        },
+        {
+          "from": "Nicol\u00f2 Barella",
+          "to": "Federico Chiesa",
+          "count": 2
+        },
+        {
+          "from": "Riccardo Calafiori",
+          "to": "Giovanni Di Lorenzo",
+          "count": 2
+        },
+        {
+          "from": "Riccardo Calafiori",
+          "to": "Alessandro Bastoni",
+          "count": 2
+        },
+        {
+          "from": "Riccardo Calafiori",
+          "to": "Gianluigi Donnarumma",
+          "count": 2
+        },
+        {
+          "from": "Jorge Luiz Frello Filho",
+          "to": "Federico Chiesa",
+          "count": 1
+        },
+        {
+          "from": "Giovanni Di Lorenzo",
+          "to": "Riccardo Calafiori",
+          "count": 1
+        },
+        {
+          "from": "Lorenzo Pellegrini",
+          "to": "Riccardo Calafiori",
+          "count": 1
+        },
+        {
+          "from": "Giovanni Di Lorenzo",
+          "to": "Gianluigi Donnarumma",
+          "count": 1
+        },
+        {
+          "from": "Nicol\u00f2 Barella",
+          "to": "Riccardo Calafiori",
+          "count": 1
+        },
+        {
+          "from": "Jorge Luiz Frello Filho",
+          "to": "Gianluca Scamacca",
+          "count": 1
+        },
+        {
+          "from": "Davide Frattesi",
+          "to": "Jorge Luiz Frello Filho",
+          "count": 1
+        },
+        {
+          "from": "Gianluca Scamacca",
+          "to": "Federico Chiesa",
+          "count": 1
+        },
+        {
+          "from": "Federico Chiesa",
+          "to": "Alessandro Bastoni",
+          "count": 1
+        },
+        {
+          "from": "Riccardo Calafiori",
+          "to": "Gianluca Scamacca",
+          "count": 1
+        },
+        {
+          "from": "Lorenzo Pellegrini",
+          "to": "Alessandro Bastoni",
+          "count": 1
+        },
+        {
+          "from": "Gianluigi Donnarumma",
+          "to": "Lorenzo Pellegrini",
+          "count": 1
+        },
+        {
+          "from": "Federico Chiesa",
+          "to": "Lorenzo Pellegrini",
+          "count": 1
+        },
+        {
+          "from": "Gianluca Scamacca",
+          "to": "Nicol\u00f2 Barella",
+          "count": 1
+        },
+        {
+          "from": "Gianluigi Donnarumma",
+          "to": "Gianluca Scamacca",
+          "count": 1
+        },
+        {
+          "from": "Davide Frattesi",
+          "to": "Giovanni Di Lorenzo",
+          "count": 1
+        },
+        {
+          "from": "Lorenzo Pellegrini",
+          "to": "Jorge Luiz Frello Filho",
+          "count": 1
+        },
+        {
+          "from": "Alessandro Bastoni",
+          "to": "Nicol\u00f2 Barella",
+          "count": 1
+        },
+        {
+          "from": "Alessandro Bastoni",
+          "to": "Lorenzo Pellegrini",
+          "count": 1
+        },
+        {
+          "from": "Davide Frattesi",
+          "to": "Nicol\u00f2 Barella",
+          "count": 1
+        },
+        {
+          "from": "Nicol\u00f2 Barella",
+          "to": "Gianluca Scamacca",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "label": "45'\u201363'",
+      "nodes": [
+        {
+          "player": "Alessandro Bastoni",
+          "display_name": "Alessandro Bastoni",
+          "x": 20.56,
+          "y": 48.86,
+          "passes": 7
+        },
+        {
+          "player": "Andrea Cambiaso",
+          "display_name": "Andrea Cambiaso",
+          "x": 48.03,
+          "y": 37.07,
+          "passes": 3
+        },
+        {
+          "player": "Bryan Cristante",
+          "display_name": "Bryan Cristante",
+          "x": 31.2,
+          "y": 49.2,
+          "passes": 3
+        },
+        {
+          "player": "Federico Chiesa",
+          "display_name": "Federico Chiesa",
+          "x": 51.5,
+          "y": 54.8,
+          "passes": 2
+        },
+        {
+          "player": "Federico Dimarco",
+          "display_name": "Federico Dimarco",
+          "x": 40.0,
+          "y": 14.9,
+          "passes": 2
+        },
+        {
+          "player": "Gianluca Scamacca",
+          "display_name": "Gianluca Scamacca",
+          "x": 56.85,
+          "y": 40.7,
+          "passes": 2
+        },
+        {
+          "player": "Gianluigi Donnarumma",
+          "display_name": "Gianluigi Donnarumma",
+          "x": 7.16,
+          "y": 38.2,
+          "passes": 8
+        },
+        {
+          "player": "Giovanni Di Lorenzo",
+          "display_name": "Giovanni Di Lorenzo",
+          "x": 43.6,
+          "y": 65.87,
+          "passes": 3
+        },
+        {
+          "player": "Jorge Luiz Frello Filho",
+          "display_name": "Jorginho",
+          "x": 52.1,
+          "y": 45.65,
+          "passes": 2
+        },
+        {
+          "player": "Lorenzo Pellegrini",
+          "display_name": "Lorenzo Pellegrini",
+          "x": 79.8,
+          "y": 24.5,
+          "passes": 1
+        },
+        {
+          "player": "Nicol\u00f2 Barella",
+          "display_name": "Nicol\u00f2 Barella",
+          "x": 27.45,
+          "y": 53.1,
+          "passes": 2
+        },
+        {
+          "player": "Riccardo Calafiori",
+          "display_name": "Riccardo Calafiori",
+          "x": 25.04,
+          "y": 24.94,
+          "passes": 8
+        }
+      ],
+      "edges": [
+        {
+          "from": "Gianluigi Donnarumma",
+          "to": "Riccardo Calafiori",
+          "count": 4
+        },
+        {
+          "from": "Riccardo Calafiori",
+          "to": "Federico Dimarco",
+          "count": 3
+        },
+        {
+          "from": "Riccardo Calafiori",
+          "to": "Alessandro Bastoni",
+          "count": 2
+        },
+        {
+          "from": "Alessandro Bastoni",
+          "to": "Gianluigi Donnarumma",
+          "count": 2
+        },
+        {
+          "from": "Alessandro Bastoni",
+          "to": "Andrea Cambiaso",
+          "count": 2
+        },
+        {
+          "from": "Alessandro Bastoni",
+          "to": "Jorge Luiz Frello Filho",
+          "count": 1
+        },
+        {
+          "from": "Jorge Luiz Frello Filho",
+          "to": "Gianluca Scamacca",
+          "count": 1
+        },
+        {
+          "from": "Federico Chiesa",
+          "to": "Jorge Luiz Frello Filho",
+          "count": 1
+        },
+        {
+          "from": "Jorge Luiz Frello Filho",
+          "to": "Federico Chiesa",
+          "count": 1
+        },
+        {
+          "from": "Federico Chiesa",
+          "to": "Federico Dimarco",
+          "count": 1
+        },
+        {
+          "from": "Federico Dimarco",
+          "to": "Riccardo Calafiori",
+          "count": 1
+        },
+        {
+          "from": "Andrea Cambiaso",
+          "to": "Giovanni Di Lorenzo",
+          "count": 1
+        },
+        {
+          "from": "Giovanni Di Lorenzo",
+          "to": "Gianluigi Donnarumma",
+          "count": 1
+        },
+        {
+          "from": "Gianluigi Donnarumma",
+          "to": "Gianluca Scamacca",
+          "count": 1
+        },
+        {
+          "from": "Gianluigi Donnarumma",
+          "to": "Andrea Cambiaso",
+          "count": 1
+        },
+        {
+          "from": "Bryan Cristante",
+          "to": "Gianluca Scamacca",
+          "count": 1
+        },
+        {
+          "from": "Gianluigi Donnarumma",
+          "to": "Nicol\u00f2 Barella",
+          "count": 1
+        },
+        {
+          "from": "Nicol\u00f2 Barella",
+          "to": "Alessandro Bastoni",
+          "count": 1
+        },
+        {
+          "from": "Bryan Cristante",
+          "to": "Giovanni Di Lorenzo",
+          "count": 1
+        },
+        {
+          "from": "Gianluca Scamacca",
+          "to": "Giovanni Di Lorenzo",
+          "count": 1
+        },
+        {
+          "from": "Giovanni Di Lorenzo",
+          "to": "Andrea Cambiaso",
+          "count": 1
+        },
+        {
+          "from": "Federico Dimarco",
+          "to": "Federico Chiesa",
+          "count": 1
+        },
+        {
+          "from": "Gianluigi Donnarumma",
+          "to": "Alessandro Bastoni",
+          "count": 1
+        },
+        {
+          "from": "Alessandro Bastoni",
+          "to": "Giovanni Di Lorenzo",
+          "count": 1
+        },
+        {
+          "from": "Riccardo Calafiori",
+          "to": "Lorenzo Pellegrini",
+          "count": 1
+        },
+        {
+          "from": "Andrea Cambiaso",
+          "to": "Gianluca Scamacca",
+          "count": 1
+        },
+        {
+          "from": "Gianluca Scamacca",
+          "to": "Andrea Cambiaso",
+          "count": 1
+        },
+        {
+          "from": "Andrea Cambiaso",
+          "to": "Lorenzo Pellegrini",
+          "count": 1
+        },
+        {
+          "from": "Lorenzo Pellegrini",
+          "to": "Bryan Cristante",
+          "count": 1
+        },
+        {
+          "from": "Giovanni Di Lorenzo",
+          "to": "Nicol\u00f2 Barella",
+          "count": 1
+        },
+        {
+          "from": "Nicol\u00f2 Barella",
+          "to": "Riccardo Calafiori",
+          "count": 1
+        },
+        {
+          "from": "Riccardo Calafiori",
+          "to": "Bryan Cristante",
+          "count": 1
+        },
+        {
+          "from": "Bryan Cristante",
+          "to": "Alessandro Bastoni",
+          "count": 1
+        },
+        {
+          "from": "Alessandro Bastoni",
+          "to": "Riccardo Calafiori",
+          "count": 1
+        },
+        {
+          "from": "Riccardo Calafiori",
+          "to": "Gianluca Scamacca",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "label": "63'\u201381'",
+      "nodes": [
+        {
+          "player": "Alessandro Bastoni",
+          "display_name": "Alessandro Bastoni",
+          "x": 37.61,
+          "y": 48.67,
+          "passes": 16
+        },
+        {
+          "player": "Andrea Cambiaso",
+          "display_name": "Andrea Cambiaso",
+          "x": 54.07,
+          "y": 55.39,
+          "passes": 9
+        },
+        {
+          "player": "Bryan Cristante",
+          "display_name": "Bryan Cristante",
+          "x": 68.31,
+          "y": 46.26,
+          "passes": 11
+        },
+        {
+          "player": "Federico Dimarco",
+          "display_name": "Federico Dimarco",
+          "x": 75.29,
+          "y": 4.06,
+          "passes": 10
+        },
+        {
+          "player": "Gianluigi Donnarumma",
+          "display_name": "Gianluigi Donnarumma",
+          "x": 9.29,
+          "y": 38.2,
+          "passes": 7
+        },
+        {
+          "player": "Giovanni Di Lorenzo",
+          "display_name": "Giovanni Di Lorenzo",
+          "x": 51.12,
+          "y": 68.47,
+          "passes": 13
+        },
+        {
+          "player": "Lorenzo Pellegrini",
+          "display_name": "Lorenzo Pellegrini",
+          "x": 76.83,
+          "y": 9.03,
+          "passes": 4
+        },
+        {
+          "player": "Mattia Zaccagni",
+          "display_name": "Mattia Zaccagni",
+          "x": 85.7,
+          "y": 9.17,
+          "passes": 3
+        },
+        {
+          "player": "Nicol\u00f2 Barella",
+          "display_name": "Nicol\u00f2 Barella",
+          "x": 60.07,
+          "y": 19.62,
+          "passes": 12
+        },
+        {
+          "player": "Riccardo Calafiori",
+          "display_name": "Riccardo Calafiori",
+          "x": 51.77,
+          "y": 18.64,
+          "passes": 14
+        }
+      ],
+      "edges": [
+        {
+          "from": "Giovanni Di Lorenzo",
+          "to": "Andrea Cambiaso",
+          "count": 5
+        },
+        {
+          "from": "Alessandro Bastoni",
+          "to": "Giovanni Di Lorenzo",
+          "count": 4
+        },
+        {
+          "from": "Alessandro Bastoni",
+          "to": "Riccardo Calafiori",
+          "count": 4
+        },
+        {
+          "from": "Giovanni Di Lorenzo",
+          "to": "Alessandro Bastoni",
+          "count": 4
+        },
+        {
+          "from": "Alessandro Bastoni",
+          "to": "Bryan Cristante",
+          "count": 4
+        },
+        {
+          "from": "Riccardo Calafiori",
+          "to": "Federico Dimarco",
+          "count": 4
+        },
+        {
+          "from": "Riccardo Calafiori",
+          "to": "Alessandro Bastoni",
+          "count": 3
+        },
+        {
+          "from": "Giovanni Di Lorenzo",
+          "to": "Bryan Cristante",
+          "count": 3
+        },
+        {
+          "from": "Federico Dimarco",
+          "to": "Riccardo Calafiori",
+          "count": 3
+        },
+        {
+          "from": "Nicol\u00f2 Barella",
+          "to": "Federico Dimarco",
+          "count": 3
+        },
+        {
+          "from": "Federico Dimarco",
+          "to": "Nicol\u00f2 Barella",
+          "count": 3
+        },
+        {
+          "from": "Bryan Cristante",
+          "to": "Nicol\u00f2 Barella",
+          "count": 3
+        },
+        {
+          "from": "Gianluigi Donnarumma",
+          "to": "Alessandro Bastoni",
+          "count": 3
+        },
+        {
+          "from": "Alessandro Bastoni",
+          "to": "Gianluigi Donnarumma",
+          "count": 3
+        },
+        {
+          "from": "Andrea Cambiaso",
+          "to": "Giovanni Di Lorenzo",
+          "count": 3
+        },
+        {
+          "from": "Gianluigi Donnarumma",
+          "to": "Riccardo Calafiori",
+          "count": 3
+        },
+        {
+          "from": "Riccardo Calafiori",
+          "to": "Lorenzo Pellegrini",
+          "count": 2
+        },
+        {
+          "from": "Bryan Cristante",
+          "to": "Giovanni Di Lorenzo",
+          "count": 2
+        },
+        {
+          "from": "Riccardo Calafiori",
+          "to": "Nicol\u00f2 Barella",
+          "count": 2
+        },
+        {
+          "from": "Andrea Cambiaso",
+          "to": "Nicol\u00f2 Barella",
+          "count": 2
+        },
+        {
+          "from": "Nicol\u00f2 Barella",
+          "to": "Gianluigi Donnarumma",
+          "count": 2
+        },
+        {
+          "from": "Nicol\u00f2 Barella",
+          "to": "Alessandro Bastoni",
+          "count": 2
+        },
+        {
+          "from": "Federico Dimarco",
+          "to": "Mattia Zaccagni",
+          "count": 2
+        },
+        {
+          "from": "Bryan Cristante",
+          "to": "Lorenzo Pellegrini",
+          "count": 1
+        },
+        {
+          "from": "Lorenzo Pellegrini",
+          "to": "Andrea Cambiaso",
+          "count": 1
+        },
+        {
+          "from": "Andrea Cambiaso",
+          "to": "Riccardo Calafiori",
+          "count": 1
+        },
+        {
+          "from": "Bryan Cristante",
+          "to": "Alessandro Bastoni",
+          "count": 1
+        },
+        {
+          "from": "Riccardo Calafiori",
+          "to": "Mattia Zaccagni",
+          "count": 1
+        },
+        {
+          "from": "Mattia Zaccagni",
+          "to": "Riccardo Calafiori",
+          "count": 1
+        },
+        {
+          "from": "Riccardo Calafiori",
+          "to": "Bryan Cristante",
+          "count": 1
+        },
+        {
+          "from": "Bryan Cristante",
+          "to": "Riccardo Calafiori",
+          "count": 1
+        },
+        {
+          "from": "Nicol\u00f2 Barella",
+          "to": "Bryan Cristante",
+          "count": 1
+        },
+        {
+          "from": "Nicol\u00f2 Barella",
+          "to": "Giovanni Di Lorenzo",
+          "count": 1
+        },
+        {
+          "from": "Lorenzo Pellegrini",
+          "to": "Nicol\u00f2 Barella",
+          "count": 1
+        },
+        {
+          "from": "Nicol\u00f2 Barella",
+          "to": "Andrea Cambiaso",
+          "count": 1
+        },
+        {
+          "from": "Lorenzo Pellegrini",
+          "to": "Federico Dimarco",
+          "count": 1
+        },
+        {
+          "from": "Nicol\u00f2 Barella",
+          "to": "Mattia Zaccagni",
+          "count": 1
+        },
+        {
+          "from": "Mattia Zaccagni",
+          "to": "Bryan Cristante",
+          "count": 1
+        },
+        {
+          "from": "Bryan Cristante",
+          "to": "Federico Dimarco",
+          "count": 1
+        },
+        {
+          "from": "Gianluigi Donnarumma",
+          "to": "Giovanni Di Lorenzo",
+          "count": 1
+        },
+        {
+          "from": "Andrea Cambiaso",
+          "to": "Bryan Cristante",
+          "count": 1
+        },
+        {
+          "from": "Bryan Cristante",
+          "to": "Andrea Cambiaso",
+          "count": 1
+        },
+        {
+          "from": "Riccardo Calafiori",
+          "to": "Andrea Cambiaso",
+          "count": 1
+        },
+        {
+          "from": "Giovanni Di Lorenzo",
+          "to": "Riccardo Calafiori",
+          "count": 1
+        },
+        {
+          "from": "Mattia Zaccagni",
+          "to": "Lorenzo Pellegrini",
+          "count": 1
+        },
+        {
+          "from": "Bryan Cristante",
+          "to": "Gianluigi Donnarumma",
+          "count": 1
+        },
+        {
+          "from": "Federico Dimarco",
+          "to": "Lorenzo Pellegrini",
+          "count": 1
+        },
+        {
+          "from": "Federico Dimarco",
+          "to": "Giovanni Di Lorenzo",
+          "count": 1
+        },
+        {
+          "from": "Alessandro Bastoni",
+          "to": "Andrea Cambiaso",
+          "count": 1
+        },
+        {
+          "from": "Andrea Cambiaso",
+          "to": "Lorenzo Pellegrini",
+          "count": 1
+        },
+        {
+          "from": "Lorenzo Pellegrini",
+          "to": "Alessandro Bastoni",
+          "count": 1
+        },
+        {
+          "from": "Nicol\u00f2 Barella",
+          "to": "Riccardo Calafiori",
+          "count": 1
+        },
+        {
+          "from": "Andrea Cambiaso",
+          "to": "Alessandro Bastoni",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "label": "81'\u2013FT",
+      "nodes": [
+        {
+          "player": "Alessandro Bastoni",
+          "display_name": "Alessandro Bastoni",
+          "x": 49.9,
+          "y": 35.16,
+          "passes": 12
+        },
+        {
+          "player": "Andrea Cambiaso",
+          "display_name": "Andrea Cambiaso",
+          "x": 77.04,
+          "y": 57.94,
+          "passes": 7
+        },
+        {
+          "player": "Bryan Cristante",
+          "display_name": "Bryan Cristante",
+          "x": 55.47,
+          "y": 52.08,
+          "passes": 6
+        },
+        {
+          "player": "Federico Dimarco",
+          "display_name": "Federico Dimarco",
+          "x": 61.7,
+          "y": 9.92,
+          "passes": 5
+        },
+        {
+          "player": "Giacomo Raspadori",
+          "display_name": "Giacomo Raspadori",
+          "x": 75.77,
+          "y": 12.16,
+          "passes": 13
+        },
+        {
+          "player": "Gianluigi Donnarumma",
+          "display_name": "Gianluigi Donnarumma",
+          "x": 20.0,
+          "y": 41.4,
+          "passes": 1
+        },
+        {
+          "player": "Giovanni Di Lorenzo",
+          "display_name": "Giovanni Di Lorenzo",
+          "x": 54.45,
+          "y": 59.35,
+          "passes": 11
+        },
+        {
+          "player": "Mateo Retegui",
+          "display_name": "Mateo Retegui",
+          "x": 50.9,
+          "y": 50.0,
+          "passes": 1
+        },
+        {
+          "player": "Mattia Zaccagni",
+          "display_name": "Mattia Zaccagni",
+          "x": 91.45,
+          "y": 6.9,
+          "passes": 6
+        },
+        {
+          "player": "Nicol\u00f2 Barella",
+          "display_name": "Nicol\u00f2 Barella",
+          "x": 69.85,
+          "y": 22.53,
+          "passes": 6
+        },
+        {
+          "player": "Riccardo Calafiori",
+          "display_name": "Riccardo Calafiori",
+          "x": 56.38,
+          "y": 31.72,
+          "passes": 12
+        }
+      ],
+      "edges": [
+        {
+          "from": "Alessandro Bastoni",
+          "to": "Giovanni Di Lorenzo",
+          "count": 4
+        },
+        {
+          "from": "Giovanni Di Lorenzo",
+          "to": "Riccardo Calafiori",
+          "count": 4
+        },
+        {
+          "from": "Riccardo Calafiori",
+          "to": "Alessandro Bastoni",
+          "count": 4
+        },
+        {
+          "from": "Federico Dimarco",
+          "to": "Giacomo Raspadori",
+          "count": 3
+        },
+        {
+          "from": "Andrea Cambiaso",
+          "to": "Giovanni Di Lorenzo",
+          "count": 3
+        },
+        {
+          "from": "Mattia Zaccagni",
+          "to": "Giacomo Raspadori",
+          "count": 3
+        },
+        {
+          "from": "Giacomo Raspadori",
+          "to": "Mattia Zaccagni",
+          "count": 3
+        },
+        {
+          "from": "Giovanni Di Lorenzo",
+          "to": "Nicol\u00f2 Barella",
+          "count": 2
+        },
+        {
+          "from": "Andrea Cambiaso",
+          "to": "Riccardo Calafiori",
+          "count": 2
+        },
+        {
+          "from": "Giovanni Di Lorenzo",
+          "to": "Bryan Cristante",
+          "count": 2
+        },
+        {
+          "from": "Alessandro Bastoni",
+          "to": "Riccardo Calafiori",
+          "count": 2
+        },
+        {
+          "from": "Bryan Cristante",
+          "to": "Andrea Cambiaso",
+          "count": 2
+        },
+        {
+          "from": "Giacomo Raspadori",
+          "to": "Mateo Retegui",
+          "count": 2
+        },
+        {
+          "from": "Giacomo Raspadori",
+          "to": "Riccardo Calafiori",
+          "count": 2
+        },
+        {
+          "from": "Riccardo Calafiori",
+          "to": "Bryan Cristante",
+          "count": 2
+        },
+        {
+          "from": "Nicol\u00f2 Barella",
+          "to": "Bryan Cristante",
+          "count": 2
+        },
+        {
+          "from": "Giacomo Raspadori",
+          "to": "Nicol\u00f2 Barella",
+          "count": 2
+        },
+        {
+          "from": "Alessandro Bastoni",
+          "to": "Mattia Zaccagni",
+          "count": 2
+        },
+        {
+          "from": "Bryan Cristante",
+          "to": "Nicol\u00f2 Barella",
+          "count": 1
+        },
+        {
+          "from": "Giovanni Di Lorenzo",
+          "to": "Alessandro Bastoni",
+          "count": 1
+        },
+        {
+          "from": "Alessandro Bastoni",
+          "to": "Giacomo Raspadori",
+          "count": 1
+        },
+        {
+          "from": "Giacomo Raspadori",
+          "to": "Andrea Cambiaso",
+          "count": 1
+        },
+        {
+          "from": "Riccardo Calafiori",
+          "to": "Giovanni Di Lorenzo",
+          "count": 1
+        },
+        {
+          "from": "Bryan Cristante",
+          "to": "Giovanni Di Lorenzo",
+          "count": 1
+        },
+        {
+          "from": "Riccardo Calafiori",
+          "to": "Federico Dimarco",
+          "count": 1
+        },
+        {
+          "from": "Giacomo Raspadori",
+          "to": "Federico Dimarco",
+          "count": 1
+        },
+        {
+          "from": "Federico Dimarco",
+          "to": "Alessandro Bastoni",
+          "count": 1
+        },
+        {
+          "from": "Alessandro Bastoni",
+          "to": "Gianluigi Donnarumma",
+          "count": 1
+        },
+        {
+          "from": "Gianluigi Donnarumma",
+          "to": "Riccardo Calafiori",
+          "count": 1
+        },
+        {
+          "from": "Riccardo Calafiori",
+          "to": "Mateo Retegui",
+          "count": 1
+        },
+        {
+          "from": "Mateo Retegui",
+          "to": "Andrea Cambiaso",
+          "count": 1
+        },
+        {
+          "from": "Andrea Cambiaso",
+          "to": "Alessandro Bastoni",
+          "count": 1
+        },
+        {
+          "from": "Alessandro Bastoni",
+          "to": "Federico Dimarco",
+          "count": 1
+        },
+        {
+          "from": "Giacomo Raspadori",
+          "to": "Bryan Cristante",
+          "count": 1
+        },
+        {
+          "from": "Andrea Cambiaso",
+          "to": "Giacomo Raspadori",
+          "count": 1
+        },
+        {
+          "from": "Bryan Cristante",
+          "to": "Riccardo Calafiori",
+          "count": 1
+        },
+        {
+          "from": "Riccardo Calafiori",
+          "to": "Giacomo Raspadori",
+          "count": 1
+        },
+        {
+          "from": "Nicol\u00f2 Barella",
+          "to": "Giovanni Di Lorenzo",
+          "count": 1
+        },
+        {
+          "from": "Giovanni Di Lorenzo",
+          "to": "Andrea Cambiaso",
+          "count": 1
+        },
+        {
+          "from": "Giovanni Di Lorenzo",
+          "to": "Giacomo Raspadori",
+          "count": 1
+        },
+        {
+          "from": "Giacomo Raspadori",
+          "to": "Alessandro Bastoni",
+          "count": 1
+        },
+        {
+          "from": "Riccardo Calafiori",
+          "to": "Mattia Zaccagni",
+          "count": 1
+        },
+        {
+          "from": "Mattia Zaccagni",
+          "to": "Nicol\u00f2 Barella",
+          "count": 1
+        },
+        {
+          "from": "Bryan Cristante",
+          "to": "Giacomo Raspadori",
+          "count": 1
+        },
+        {
+          "from": "Nicol\u00f2 Barella",
+          "to": "Mattia Zaccagni",
+          "count": 1
+        },
+        {
+          "from": "Nicol\u00f2 Barella",
+          "to": "Giacomo Raspadori",
+          "count": 1
+        },
+        {
+          "from": "Federico Dimarco",
+          "to": "Nicol\u00f2 Barella",
+          "count": 1
+        },
+        {
+          "from": "Riccardo Calafiori",
+          "to": "Nicol\u00f2 Barella",
+          "count": 1
+        },
+        {
+          "from": "Nicol\u00f2 Barella",
+          "to": "Alessandro Bastoni",
+          "count": 1
+        },
+        {
+          "from": "Mattia Zaccagni",
+          "to": "Alessandro Bastoni",
+          "count": 1
+        },
+        {
+          "from": "Alessandro Bastoni",
+          "to": "Andrea Cambiaso",
+          "count": 1
+        },
+        {
+          "from": "Mattia Zaccagni",
+          "to": "Andrea Cambiaso",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "substitutions": [
+    {
+      "minute": 45,
+      "player_off": "Davide Frattesi",
+      "player_on": "Andrea Cambiaso"
+    },
+    {
+      "minute": 45,
+      "player_off": "Jorge Luiz Frello Filho",
+      "player_on": "Bryan Cristante"
+    },
+    {
+      "minute": 63,
+      "player_off": "Federico Chiesa",
+      "player_on": "Mattia Zaccagni"
+    },
+    {
+      "minute": 63,
+      "player_off": "Gianluca Scamacca",
+      "player_on": "Mateo Retegui"
+    },
+    {
+      "minute": 81,
+      "player_off": "Lorenzo Pellegrini",
+      "player_on": "Giacomo Raspadori"
+    }
+  ],
+  "metadata": {
+    "match_id": 3930172,
+    "team": "Italy",
+    "filter": "completed passes, per substitution window",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Spain vs Italy"
+  }
+}

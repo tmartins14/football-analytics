@@ -1,0 +1,992 @@
+{
+  "on_ball": {
+    "periods": [
+      {
+        "from_minute": 0,
+        "to_minute": 45,
+        "players_in": [
+          "Dominik Livakovi\u0107",
+          "Josip Stani\u0161i\u0107",
+          "Josip \u0160utalo",
+          "Marin Pongracic",
+          "Jo\u0161ko Gvardiol",
+          "Marcelo Brozovi\u0107",
+          "Luka Modri\u0107",
+          "Mateo Kova\u010di\u0107",
+          "Luka Su\u010di\u0107",
+          "Mario Pa\u0161ali\u0107",
+          "Andrej Kramari\u0107"
+        ],
+        "players_out": [],
+        "nodes": [
+          {
+            "player_id": 5469,
+            "player": "Marcelo Brozovi\u0107",
+            "display_name": "Marcelo Brozovi\u0107",
+            "x": 53.42,
+            "y": 45.12,
+            "event_count": 68
+          },
+          {
+            "player_id": 49337,
+            "player": "Josip Stani\u0161i\u0107",
+            "display_name": "Josip Stani\u0161i\u0107",
+            "x": 57.26,
+            "y": 70.3,
+            "event_count": 66
+          },
+          {
+            "player_id": 5463,
+            "player": "Luka Modri\u0107",
+            "display_name": "Luka Modri\u0107",
+            "x": 63.35,
+            "y": 58.27,
+            "event_count": 60
+          },
+          {
+            "player_id": 39490,
+            "player": "Luka Su\u010di\u0107",
+            "display_name": "Luka Su\u010di\u0107",
+            "x": 71.32,
+            "y": 63.86,
+            "event_count": 56
+          },
+          {
+            "player_id": 37148,
+            "player": "Josip \u0160utalo",
+            "display_name": "Josip \u0160utalo",
+            "x": 38.43,
+            "y": 56.96,
+            "event_count": 55
+          },
+          {
+            "player_id": 33018,
+            "player": "Jo\u0161ko Gvardiol",
+            "display_name": "Jo\u0161ko Gvardiol",
+            "x": 56.71,
+            "y": 19.8,
+            "event_count": 48
+          },
+          {
+            "player_id": 8773,
+            "player": "Marin Pongracic",
+            "display_name": "Marin Pongracic",
+            "x": 46.2,
+            "y": 27.25,
+            "event_count": 47
+          },
+          {
+            "player_id": 5456,
+            "player": "Mateo Kova\u010di\u0107",
+            "display_name": "Mateo Kova\u010di\u0107",
+            "x": 55.28,
+            "y": 25.55,
+            "event_count": 44
+          },
+          {
+            "player_id": 5460,
+            "player": "Andrej Kramari\u0107",
+            "display_name": "Andrej Kramari\u0107",
+            "x": 75.65,
+            "y": 47.36,
+            "event_count": 22
+          },
+          {
+            "player_id": 11603,
+            "player": "Mario Pa\u0161ali\u0107",
+            "display_name": "Mario Pa\u0161ali\u0107",
+            "x": 79.03,
+            "y": 23.93,
+            "event_count": 16
+          },
+          {
+            "player_id": 16531,
+            "player": "Dominik Livakovi\u0107",
+            "display_name": "Dominik Livakovi\u0107",
+            "x": 12.14,
+            "y": 36.42,
+            "event_count": 14
+          }
+        ],
+        "hull": [
+          [
+            71.32,
+            63.86
+          ],
+          [
+            57.26,
+            70.3
+          ],
+          [
+            38.43,
+            56.96
+          ],
+          [
+            12.14,
+            36.42
+          ],
+          [
+            56.71,
+            19.8
+          ],
+          [
+            79.03,
+            23.93
+          ],
+          [
+            75.65,
+            47.36
+          ]
+        ]
+      },
+      {
+        "from_minute": 45,
+        "to_minute": 69,
+        "players_in": [
+          "Ante Budimir"
+        ],
+        "players_out": [
+          "Mario Pa\u0161ali\u0107"
+        ],
+        "nodes": [
+          {
+            "player_id": 37148,
+            "player": "Josip \u0160utalo",
+            "display_name": "Josip \u0160utalo",
+            "x": 33.54,
+            "y": 58.45,
+            "event_count": 18
+          },
+          {
+            "player_id": 49337,
+            "player": "Josip Stani\u0161i\u0107",
+            "display_name": "Josip Stani\u0161i\u0107",
+            "x": 62.25,
+            "y": 67.88,
+            "event_count": 17
+          },
+          {
+            "player_id": 8773,
+            "player": "Marin Pongracic",
+            "display_name": "Marin Pongracic",
+            "x": 48.62,
+            "y": 27.12,
+            "event_count": 13
+          },
+          {
+            "player_id": 5460,
+            "player": "Andrej Kramari\u0107",
+            "display_name": "Andrej Kramari\u0107",
+            "x": 76.76,
+            "y": 13.43,
+            "event_count": 11
+          },
+          {
+            "player_id": 33018,
+            "player": "Jo\u0161ko Gvardiol",
+            "display_name": "Jo\u0161ko Gvardiol",
+            "x": 54.52,
+            "y": 12.36,
+            "event_count": 9
+          },
+          {
+            "player_id": 16531,
+            "player": "Dominik Livakovi\u0107",
+            "display_name": "Dominik Livakovi\u0107",
+            "x": 8.41,
+            "y": 35.78,
+            "event_count": 9
+          },
+          {
+            "player_id": 8654,
+            "player": "Ante Budimir",
+            "display_name": "Ante Budimir",
+            "x": 96.62,
+            "y": 39.11,
+            "event_count": 8
+          },
+          {
+            "player_id": 39490,
+            "player": "Luka Su\u010di\u0107",
+            "display_name": "Luka Su\u010di\u0107",
+            "x": 91.61,
+            "y": 61.51,
+            "event_count": 7
+          },
+          {
+            "player_id": 5463,
+            "player": "Luka Modri\u0107",
+            "display_name": "Luka Modri\u0107",
+            "x": 103.91,
+            "y": 44.53,
+            "event_count": 7
+          },
+          {
+            "player_id": 5469,
+            "player": "Marcelo Brozovi\u0107",
+            "display_name": "Marcelo Brozovi\u0107",
+            "x": 47.38,
+            "y": 34.38,
+            "event_count": 4
+          },
+          {
+            "player_id": 5456,
+            "player": "Mateo Kova\u010di\u0107",
+            "display_name": "Mateo Kova\u010di\u0107",
+            "x": 52.0,
+            "y": 14.5,
+            "event_count": 1
+          }
+        ],
+        "hull": [
+          [
+            8.41,
+            35.78
+          ],
+          [
+            54.52,
+            12.36
+          ],
+          [
+            76.76,
+            13.43
+          ],
+          [
+            103.91,
+            44.53
+          ],
+          [
+            91.61,
+            61.51
+          ],
+          [
+            62.25,
+            67.88
+          ],
+          [
+            33.54,
+            58.45
+          ]
+        ]
+      },
+      {
+        "from_minute": 69,
+        "to_minute": 80,
+        "players_in": [
+          "Ivan Peri\u0161i\u0107",
+          "Luka Ivanu\u0161ec"
+        ],
+        "players_out": [
+          "Luka Su\u010di\u0107",
+          "Mateo Kova\u010di\u0107"
+        ],
+        "nodes": [],
+        "hull": []
+      },
+      {
+        "from_minute": 80,
+        "to_minute": 89,
+        "players_in": [
+          "Lovro Majer"
+        ],
+        "players_out": [
+          "Luka Modri\u0107"
+        ],
+        "nodes": [
+          {
+            "player_id": 49337,
+            "player": "Josip Stani\u0161i\u0107",
+            "display_name": "Josip Stani\u0161i\u0107",
+            "x": 95.82,
+            "y": 74.35,
+            "event_count": 17
+          },
+          {
+            "player_id": 5469,
+            "player": "Marcelo Brozovi\u0107",
+            "display_name": "Marcelo Brozovi\u0107",
+            "x": 73.91,
+            "y": 38.93,
+            "event_count": 15
+          },
+          {
+            "player_id": 28914,
+            "player": "Lovro Majer",
+            "display_name": "Lovro Majer",
+            "x": 83.32,
+            "y": 43.11,
+            "event_count": 12
+          },
+          {
+            "player_id": 5460,
+            "player": "Andrej Kramari\u0107",
+            "display_name": "Andrej Kramari\u0107",
+            "x": 88.82,
+            "y": 69.28,
+            "event_count": 6
+          },
+          {
+            "player_id": 28368,
+            "player": "Luka Ivanu\u0161ec",
+            "display_name": "Luka Ivanu\u0161ec",
+            "x": 51.7,
+            "y": 23.77,
+            "event_count": 4
+          },
+          {
+            "player_id": 37148,
+            "player": "Josip \u0160utalo",
+            "display_name": "Josip \u0160utalo",
+            "x": 50.0,
+            "y": 61.13,
+            "event_count": 3
+          },
+          {
+            "player_id": 16531,
+            "player": "Dominik Livakovi\u0107",
+            "display_name": "Dominik Livakovi\u0107",
+            "x": 16.17,
+            "y": 39.67,
+            "event_count": 3
+          },
+          {
+            "player_id": 5474,
+            "player": "Ivan Peri\u0161i\u0107",
+            "display_name": "Ivan Peri\u0161i\u0107",
+            "x": 73.03,
+            "y": 3.5,
+            "event_count": 3
+          },
+          {
+            "player_id": 8654,
+            "player": "Ante Budimir",
+            "display_name": "Ante Budimir",
+            "x": 99.8,
+            "y": 22.27,
+            "event_count": 3
+          },
+          {
+            "player_id": 8773,
+            "player": "Marin Pongracic",
+            "display_name": "Marin Pongracic",
+            "x": 39.7,
+            "y": 25.8,
+            "event_count": 1
+          }
+        ],
+        "hull": [
+          [
+            99.8,
+            22.27
+          ],
+          [
+            95.82,
+            74.35
+          ],
+          [
+            50.0,
+            61.13
+          ],
+          [
+            16.17,
+            39.67
+          ],
+          [
+            73.03,
+            3.5
+          ]
+        ]
+      },
+      {
+        "from_minute": 89,
+        "to_minute": 100,
+        "players_in": [
+          "Josip Juranovi\u0107"
+        ],
+        "players_out": [
+          "Andrej Kramari\u0107"
+        ],
+        "nodes": [
+          {
+            "player_id": 28368,
+            "player": "Luka Ivanu\u0161ec",
+            "display_name": "Luka Ivanu\u0161ec",
+            "x": 90.47,
+            "y": 19.35,
+            "event_count": 10
+          },
+          {
+            "player_id": 29163,
+            "player": "Josip Juranovi\u0107",
+            "display_name": "Josip Juranovi\u0107",
+            "x": 61.79,
+            "y": 42.15,
+            "event_count": 8
+          },
+          {
+            "player_id": 33018,
+            "player": "Jo\u0161ko Gvardiol",
+            "display_name": "Jo\u0161ko Gvardiol",
+            "x": 30.2,
+            "y": 31.95,
+            "event_count": 6
+          },
+          {
+            "player_id": 28914,
+            "player": "Lovro Majer",
+            "display_name": "Lovro Majer",
+            "x": 85.68,
+            "y": 12.4,
+            "event_count": 5
+          },
+          {
+            "player_id": 49337,
+            "player": "Josip Stani\u0161i\u0107",
+            "display_name": "Josip Stani\u0161i\u0107",
+            "x": 14.93,
+            "y": 57.55,
+            "event_count": 4
+          },
+          {
+            "player_id": 37148,
+            "player": "Josip \u0160utalo",
+            "display_name": "Josip \u0160utalo",
+            "x": 15.77,
+            "y": 53.3,
+            "event_count": 3
+          },
+          {
+            "player_id": 5469,
+            "player": "Marcelo Brozovi\u0107",
+            "display_name": "Marcelo Brozovi\u0107",
+            "x": 77.37,
+            "y": 20.97,
+            "event_count": 3
+          },
+          {
+            "player_id": 5474,
+            "player": "Ivan Peri\u0161i\u0107",
+            "display_name": "Ivan Peri\u0161i\u0107",
+            "x": 76.73,
+            "y": 6.23,
+            "event_count": 3
+          },
+          {
+            "player_id": 8773,
+            "player": "Marin Pongracic",
+            "display_name": "Marin Pongracic",
+            "x": 63.1,
+            "y": 11.6,
+            "event_count": 1
+          }
+        ],
+        "hull": [
+          [
+            61.79,
+            42.15
+          ],
+          [
+            14.93,
+            57.55
+          ],
+          [
+            15.77,
+            53.3
+          ],
+          [
+            30.2,
+            31.95
+          ],
+          [
+            63.1,
+            11.6
+          ],
+          [
+            76.73,
+            6.23
+          ],
+          [
+            85.68,
+            12.4
+          ],
+          [
+            90.47,
+            19.35
+          ]
+        ]
+      }
+    ]
+  },
+  "off_ball": {
+    "density_grid": {
+      "cols": 24,
+      "rows": 16,
+      "values": [
+        [
+          0.0691,
+          0.0889,
+          0.1113,
+          0.1361,
+          0.1626,
+          0.19,
+          0.2176,
+          0.2443,
+          0.2691,
+          0.2909,
+          0.3087,
+          0.3216,
+          0.3288,
+          0.3296,
+          0.324,
+          0.312,
+          0.2942,
+          0.2714,
+          0.2448,
+          0.2158,
+          0.1858,
+          0.1561,
+          0.1279,
+          0.1022
+        ],
+        [
+          0.0918,
+          0.1178,
+          0.1473,
+          0.18,
+          0.2151,
+          0.2516,
+          0.2885,
+          0.3244,
+          0.358,
+          0.388,
+          0.4128,
+          0.4311,
+          0.4418,
+          0.444,
+          0.4375,
+          0.4223,
+          0.3992,
+          0.3692,
+          0.3339,
+          0.2952,
+          0.2549,
+          0.2148,
+          0.1766,
+          0.1416
+        ],
+        [
+          0.1163,
+          0.1488,
+          0.186,
+          0.227,
+          0.2712,
+          0.3174,
+          0.3643,
+          0.4102,
+          0.4536,
+          0.4925,
+          0.5251,
+          0.5496,
+          0.5645,
+          0.5686,
+          0.5614,
+          0.5431,
+          0.5145,
+          0.4769,
+          0.4324,
+          0.3832,
+          0.3318,
+          0.2805,
+          0.2315,
+          0.1862
+        ],
+        [
+          0.141,
+          0.1801,
+          0.2246,
+          0.274,
+          0.3272,
+          0.383,
+          0.4398,
+          0.4959,
+          0.5491,
+          0.5971,
+          0.6377,
+          0.6686,
+          0.6879,
+          0.6941,
+          0.6865,
+          0.6653,
+          0.6313,
+          0.5863,
+          0.5327,
+          0.4732,
+          0.4108,
+          0.3483,
+          0.2883,
+          0.2328
+        ],
+        [
+          0.1642,
+          0.2092,
+          0.2605,
+          0.3174,
+          0.3788,
+          0.4434,
+          0.5094,
+          0.5747,
+          0.637,
+          0.6935,
+          0.7414,
+          0.7783,
+          0.8016,
+          0.8098,
+          0.8019,
+          0.778,
+          0.7393,
+          0.6876,
+          0.6257,
+          0.5568,
+          0.4844,
+          0.4117,
+          0.3417,
+          0.2767
+        ],
+        [
+          0.1839,
+          0.2339,
+          0.2908,
+          0.3539,
+          0.4221,
+          0.4939,
+          0.5675,
+          0.6404,
+          0.7101,
+          0.7734,
+          0.8274,
+          0.8689,
+          0.8955,
+          0.905,
+          0.8967,
+          0.8705,
+          0.8276,
+          0.7704,
+          0.7017,
+          0.6253,
+          0.5447,
+          0.4638,
+          0.3857,
+          0.313
+        ],
+        [
+          0.1986,
+          0.2521,
+          0.313,
+          0.3805,
+          0.4536,
+          0.5305,
+          0.6093,
+          0.6875,
+          0.7622,
+          0.8301,
+          0.8878,
+          0.9322,
+          0.9605,
+          0.9706,
+          0.9614,
+          0.9332,
+          0.8872,
+          0.8259,
+          0.7524,
+          0.6707,
+          0.5846,
+          0.4981,
+          0.4146,
+          0.3369
+        ],
+        [
+          0.2067,
+          0.2621,
+          0.3251,
+          0.395,
+          0.4705,
+          0.55,
+          0.6313,
+          0.7119,
+          0.7887,
+          0.8583,
+          0.9173,
+          0.9623,
+          0.9906,
+          1.0,
+          0.9896,
+          0.9597,
+          0.9116,
+          0.8479,
+          0.772,
+          0.6877,
+          0.5992,
+          0.5103,
+          0.4247,
+          0.345
+        ],
+        [
+          0.2074,
+          0.2629,
+          0.326,
+          0.3958,
+          0.4713,
+          0.5505,
+          0.6314,
+          0.7112,
+          0.787,
+          0.8554,
+          0.9128,
+          0.9562,
+          0.9826,
+          0.9903,
+          0.9784,
+          0.9472,
+          0.8982,
+          0.8341,
+          0.7581,
+          0.6743,
+          0.5865,
+          0.4987,
+          0.4143,
+          0.336
+        ],
+        [
+          0.2004,
+          0.2541,
+          0.3152,
+          0.3827,
+          0.4554,
+          0.5316,
+          0.609,
+          0.6852,
+          0.7569,
+          0.8212,
+          0.8746,
+          0.9141,
+          0.9373,
+          0.9425,
+          0.9289,
+          0.8971,
+          0.8486,
+          0.786,
+          0.7125,
+          0.632,
+          0.5482,
+          0.4647,
+          0.3849,
+          0.3112
+        ],
+        [
+          0.1863,
+          0.2364,
+          0.2934,
+          0.3562,
+          0.4238,
+          0.4943,
+          0.5657,
+          0.6354,
+          0.7006,
+          0.7583,
+          0.8056,
+          0.8398,
+          0.8587,
+          0.861,
+          0.8461,
+          0.8146,
+          0.7681,
+          0.709,
+          0.6405,
+          0.566,
+          0.4891,
+          0.4129,
+          0.3405,
+          0.274
+        ],
+        [
+          0.1662,
+          0.2112,
+          0.2623,
+          0.3186,
+          0.3789,
+          0.4416,
+          0.5047,
+          0.5658,
+          0.6225,
+          0.6721,
+          0.712,
+          0.74,
+          0.7543,
+          0.7538,
+          0.7382,
+          0.7081,
+          0.6652,
+          0.6116,
+          0.5502,
+          0.484,
+          0.4162,
+          0.3496,
+          0.2867,
+          0.2294
+        ],
+        [
+          0.142,
+          0.1808,
+          0.2247,
+          0.273,
+          0.3246,
+          0.3779,
+          0.4313,
+          0.4826,
+          0.5296,
+          0.5702,
+          0.6023,
+          0.6239,
+          0.6338,
+          0.6311,
+          0.6157,
+          0.5883,
+          0.5503,
+          0.5038,
+          0.451,
+          0.3948,
+          0.3376,
+          0.2819,
+          0.2298,
+          0.1826
+        ],
+        [
+          0.116,
+          0.1479,
+          0.1839,
+          0.2235,
+          0.2656,
+          0.3089,
+          0.3519,
+          0.3929,
+          0.4301,
+          0.4617,
+          0.4861,
+          0.5019,
+          0.508,
+          0.5039,
+          0.4897,
+          0.466,
+          0.434,
+          0.3954,
+          0.3523,
+          0.3066,
+          0.2607,
+          0.2163,
+          0.1751,
+          0.1382
+        ],
+        [
+          0.0903,
+          0.1152,
+          0.1433,
+          0.1742,
+          0.2068,
+          0.2402,
+          0.2732,
+          0.3043,
+          0.3323,
+          0.3557,
+          0.3733,
+          0.3841,
+          0.3874,
+          0.3828,
+          0.3705,
+          0.3511,
+          0.3256,
+          0.2952,
+          0.2616,
+          0.2265,
+          0.1914,
+          0.1578,
+          0.1269,
+          0.0994
+        ],
+        [
+          0.0667,
+          0.0852,
+          0.1061,
+          0.1288,
+          0.1528,
+          0.1772,
+          0.2011,
+          0.2236,
+          0.2435,
+          0.2598,
+          0.2719,
+          0.2788,
+          0.2802,
+          0.2759,
+          0.266,
+          0.251,
+          0.2317,
+          0.2091,
+          0.1844,
+          0.1588,
+          0.1334,
+          0.1093,
+          0.0872,
+          0.0678
+        ]
+      ]
+    },
+    "centroid": {
+      "x": 64.25,
+      "y": 38.67
+    },
+    "thirds_spine": [
+      {
+        "third": "defensive",
+        "x": 27.37,
+        "y": 38.71
+      },
+      {
+        "third": "middle",
+        "x": 61.68,
+        "y": 38.98
+      },
+      {
+        "third": "attacking",
+        "x": 93.51,
+        "y": 38.04
+      }
+    ],
+    "ellipse": {
+      "cx": 64.25,
+      "cy": 38.67,
+      "rx": 24.31,
+      "ry": 16.55,
+      "angle_deg": 177.7
+    },
+    "depth_line": {
+      "x": 78.24,
+      "percentile": 70
+    }
+  },
+  "metadata": {
+    "match_id": 3930178,
+    "team": "Croatia",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Croatia vs Italy",
+    "on_ball_event_count": 710,
+    "on_ball_period_count": 5,
+    "off_ball_bandwidth_yards": 8.0,
+    "off_ball_depth_percentile": 70,
+    "off_ball_grid_cols": 24,
+    "off_ball_grid_rows": 16,
+    "phase_filter": "open_play_only",
+    "coordinate_system": "statsbomb_120x80_normalised_attack_right",
+    "coordinate_note": "Coordinates are normalised so the team always attacks right (increasing x). Raw StatsBomb events are flipped (x\u2192120-x, y\u219280-y) in periods where the team attacks left.",
+    "camera_caveat": "360 frames follow the ball; the visible subset of out-of-possession positions is biased toward areas near the ball. The camera artifact and the real defensive shape point the same direction \u2014 they cannot be cleanly separated."
+  }
+}

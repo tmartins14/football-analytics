@@ -1,0 +1,1588 @@
+{
+  "windows": [
+    {
+      "index": 0,
+      "label": "0'\u201345' (Starting XI)",
+      "nodes": [
+        {
+          "player": "Bernardo Mota Veiga de Carvalho e Silva",
+          "display_name": "Bernardo Silva",
+          "x": 77.94,
+          "y": 71.09,
+          "passes": 20
+        },
+        {
+          "player": "Bruno Miguel Borges Fernandes",
+          "display_name": "Bruno Fernandes",
+          "x": 62.25,
+          "y": 36.41,
+          "passes": 11
+        },
+        {
+          "player": "Cristiano Ronaldo dos Santos Aveiro",
+          "display_name": "Cristiano Ronaldo",
+          "x": 81.82,
+          "y": 38.08,
+          "passes": 6
+        },
+        {
+          "player": "Diogo Meireles Costa",
+          "display_name": "Diogo Costa",
+          "x": 13.77,
+          "y": 39.66,
+          "passes": 17
+        },
+        {
+          "player": "Jo\u00e3o Maria Lobo Alves Palhinha Gon\u00e7alves",
+          "display_name": "Jo\u00e3o Palhinha",
+          "x": 51.66,
+          "y": 49.55,
+          "passes": 19
+        },
+        {
+          "player": "Jo\u00e3o Pedro Cavaco Cancelo",
+          "display_name": "Jo\u00e3o Cancelo",
+          "x": 61.74,
+          "y": 69.33,
+          "passes": 28
+        },
+        {
+          "player": "Kl\u00e9per Laveran Lima Ferreira",
+          "display_name": "Pepe",
+          "x": 43.1,
+          "y": 25.28,
+          "passes": 38
+        },
+        {
+          "player": "Nuno Mendes",
+          "display_name": "Nuno Mendes",
+          "x": 57.08,
+          "y": 9.0,
+          "passes": 28
+        },
+        {
+          "player": "Rafael Alexandre Concei\u00e7\u00e3o Le\u00e3o",
+          "display_name": "Rafael Le\u00e3o",
+          "x": 76.87,
+          "y": 4.57,
+          "passes": 10
+        },
+        {
+          "player": "R\u00faben Santos Gato Alves Dias",
+          "display_name": "R\u00faben Dias",
+          "x": 42.0,
+          "y": 62.82,
+          "passes": 48
+        },
+        {
+          "player": "Vitor Machado Ferreira",
+          "display_name": "Vitinha",
+          "x": 59.0,
+          "y": 56.25,
+          "passes": 28
+        }
+      ],
+      "edges": [
+        {
+          "from": "Kl\u00e9per Laveran Lima Ferreira",
+          "to": "Nuno Mendes",
+          "count": 13
+        },
+        {
+          "from": "Nuno Mendes",
+          "to": "Rafael Alexandre Concei\u00e7\u00e3o Le\u00e3o",
+          "count": 13
+        },
+        {
+          "from": "R\u00faben Santos Gato Alves Dias",
+          "to": "Vitor Machado Ferreira",
+          "count": 12
+        },
+        {
+          "from": "Jo\u00e3o Pedro Cavaco Cancelo",
+          "to": "R\u00faben Santos Gato Alves Dias",
+          "count": 11
+        },
+        {
+          "from": "Diogo Meireles Costa",
+          "to": "R\u00faben Santos Gato Alves Dias",
+          "count": 9
+        },
+        {
+          "from": "Kl\u00e9per Laveran Lima Ferreira",
+          "to": "Diogo Meireles Costa",
+          "count": 8
+        },
+        {
+          "from": "Nuno Mendes",
+          "to": "Kl\u00e9per Laveran Lima Ferreira",
+          "count": 8
+        },
+        {
+          "from": "R\u00faben Santos Gato Alves Dias",
+          "to": "Kl\u00e9per Laveran Lima Ferreira",
+          "count": 7
+        },
+        {
+          "from": "Bernardo Mota Veiga de Carvalho e Silva",
+          "to": "Jo\u00e3o Pedro Cavaco Cancelo",
+          "count": 7
+        },
+        {
+          "from": "R\u00faben Santos Gato Alves Dias",
+          "to": "Jo\u00e3o Pedro Cavaco Cancelo",
+          "count": 7
+        },
+        {
+          "from": "R\u00faben Santos Gato Alves Dias",
+          "to": "Jo\u00e3o Maria Lobo Alves Palhinha Gon\u00e7alves",
+          "count": 7
+        },
+        {
+          "from": "Bernardo Mota Veiga de Carvalho e Silva",
+          "to": "R\u00faben Santos Gato Alves Dias",
+          "count": 7
+        },
+        {
+          "from": "Jo\u00e3o Maria Lobo Alves Palhinha Gon\u00e7alves",
+          "to": "Vitor Machado Ferreira",
+          "count": 7
+        },
+        {
+          "from": "R\u00faben Santos Gato Alves Dias",
+          "to": "Bernardo Mota Veiga de Carvalho e Silva",
+          "count": 6
+        },
+        {
+          "from": "Rafael Alexandre Concei\u00e7\u00e3o Le\u00e3o",
+          "to": "Nuno Mendes",
+          "count": 6
+        },
+        {
+          "from": "R\u00faben Santos Gato Alves Dias",
+          "to": "Diogo Meireles Costa",
+          "count": 6
+        },
+        {
+          "from": "Kl\u00e9per Laveran Lima Ferreira",
+          "to": "R\u00faben Santos Gato Alves Dias",
+          "count": 5
+        },
+        {
+          "from": "Kl\u00e9per Laveran Lima Ferreira",
+          "to": "Jo\u00e3o Maria Lobo Alves Palhinha Gon\u00e7alves",
+          "count": 5
+        },
+        {
+          "from": "Jo\u00e3o Maria Lobo Alves Palhinha Gon\u00e7alves",
+          "to": "R\u00faben Santos Gato Alves Dias",
+          "count": 5
+        },
+        {
+          "from": "Vitor Machado Ferreira",
+          "to": "Bernardo Mota Veiga de Carvalho e Silva",
+          "count": 5
+        },
+        {
+          "from": "Jo\u00e3o Pedro Cavaco Cancelo",
+          "to": "Bernardo Mota Veiga de Carvalho e Silva",
+          "count": 5
+        },
+        {
+          "from": "Vitor Machado Ferreira",
+          "to": "Kl\u00e9per Laveran Lima Ferreira",
+          "count": 5
+        },
+        {
+          "from": "Vitor Machado Ferreira",
+          "to": "R\u00faben Santos Gato Alves Dias",
+          "count": 5
+        },
+        {
+          "from": "Bruno Miguel Borges Fernandes",
+          "to": "Nuno Mendes",
+          "count": 4
+        },
+        {
+          "from": "Vitor Machado Ferreira",
+          "to": "Jo\u00e3o Pedro Cavaco Cancelo",
+          "count": 4
+        },
+        {
+          "from": "Bernardo Mota Veiga de Carvalho e Silva",
+          "to": "Cristiano Ronaldo dos Santos Aveiro",
+          "count": 3
+        },
+        {
+          "from": "Jo\u00e3o Pedro Cavaco Cancelo",
+          "to": "Jo\u00e3o Maria Lobo Alves Palhinha Gon\u00e7alves",
+          "count": 3
+        },
+        {
+          "from": "Jo\u00e3o Maria Lobo Alves Palhinha Gon\u00e7alves",
+          "to": "Kl\u00e9per Laveran Lima Ferreira",
+          "count": 3
+        },
+        {
+          "from": "Jo\u00e3o Pedro Cavaco Cancelo",
+          "to": "Vitor Machado Ferreira",
+          "count": 3
+        },
+        {
+          "from": "Vitor Machado Ferreira",
+          "to": "Bruno Miguel Borges Fernandes",
+          "count": 3
+        },
+        {
+          "from": "Diogo Meireles Costa",
+          "to": "Kl\u00e9per Laveran Lima Ferreira",
+          "count": 3
+        },
+        {
+          "from": "Kl\u00e9per Laveran Lima Ferreira",
+          "to": "Vitor Machado Ferreira",
+          "count": 3
+        },
+        {
+          "from": "Kl\u00e9per Laveran Lima Ferreira",
+          "to": "Rafael Alexandre Concei\u00e7\u00e3o Le\u00e3o",
+          "count": 3
+        },
+        {
+          "from": "Jo\u00e3o Pedro Cavaco Cancelo",
+          "to": "Bruno Miguel Borges Fernandes",
+          "count": 3
+        },
+        {
+          "from": "Rafael Alexandre Concei\u00e7\u00e3o Le\u00e3o",
+          "to": "Bruno Miguel Borges Fernandes",
+          "count": 2
+        },
+        {
+          "from": "Bruno Miguel Borges Fernandes",
+          "to": "Bernardo Mota Veiga de Carvalho e Silva",
+          "count": 2
+        },
+        {
+          "from": "Jo\u00e3o Pedro Cavaco Cancelo",
+          "to": "Kl\u00e9per Laveran Lima Ferreira",
+          "count": 2
+        },
+        {
+          "from": "Nuno Mendes",
+          "to": "Jo\u00e3o Maria Lobo Alves Palhinha Gon\u00e7alves",
+          "count": 2
+        },
+        {
+          "from": "Jo\u00e3o Maria Lobo Alves Palhinha Gon\u00e7alves",
+          "to": "Jo\u00e3o Pedro Cavaco Cancelo",
+          "count": 2
+        },
+        {
+          "from": "Vitor Machado Ferreira",
+          "to": "Cristiano Ronaldo dos Santos Aveiro",
+          "count": 2
+        },
+        {
+          "from": "Cristiano Ronaldo dos Santos Aveiro",
+          "to": "Vitor Machado Ferreira",
+          "count": 2
+        },
+        {
+          "from": "Cristiano Ronaldo dos Santos Aveiro",
+          "to": "Rafael Alexandre Concei\u00e7\u00e3o Le\u00e3o",
+          "count": 2
+        },
+        {
+          "from": "Vitor Machado Ferreira",
+          "to": "Jo\u00e3o Maria Lobo Alves Palhinha Gon\u00e7alves",
+          "count": 2
+        },
+        {
+          "from": "Jo\u00e3o Maria Lobo Alves Palhinha Gon\u00e7alves",
+          "to": "Bernardo Mota Veiga de Carvalho e Silva",
+          "count": 2
+        },
+        {
+          "from": "Bruno Miguel Borges Fernandes",
+          "to": "R\u00faben Santos Gato Alves Dias",
+          "count": 2
+        },
+        {
+          "from": "R\u00faben Santos Gato Alves Dias",
+          "to": "Bruno Miguel Borges Fernandes",
+          "count": 2
+        },
+        {
+          "from": "Bernardo Mota Veiga de Carvalho e Silva",
+          "to": "Bruno Miguel Borges Fernandes",
+          "count": 2
+        },
+        {
+          "from": "Diogo Meireles Costa",
+          "to": "Nuno Mendes",
+          "count": 2
+        },
+        {
+          "from": "Nuno Mendes",
+          "to": "Cristiano Ronaldo dos Santos Aveiro",
+          "count": 2
+        },
+        {
+          "from": "Nuno Mendes",
+          "to": "Bernardo Mota Veiga de Carvalho e Silva",
+          "count": 1
+        },
+        {
+          "from": "Diogo Meireles Costa",
+          "to": "Jo\u00e3o Pedro Cavaco Cancelo",
+          "count": 1
+        },
+        {
+          "from": "Rafael Alexandre Concei\u00e7\u00e3o Le\u00e3o",
+          "to": "Cristiano Ronaldo dos Santos Aveiro",
+          "count": 1
+        },
+        {
+          "from": "Bruno Miguel Borges Fernandes",
+          "to": "Cristiano Ronaldo dos Santos Aveiro",
+          "count": 1
+        },
+        {
+          "from": "Jo\u00e3o Pedro Cavaco Cancelo",
+          "to": "Cristiano Ronaldo dos Santos Aveiro",
+          "count": 1
+        },
+        {
+          "from": "R\u00faben Santos Gato Alves Dias",
+          "to": "Rafael Alexandre Concei\u00e7\u00e3o Le\u00e3o",
+          "count": 1
+        },
+        {
+          "from": "Kl\u00e9per Laveran Lima Ferreira",
+          "to": "Bruno Miguel Borges Fernandes",
+          "count": 1
+        },
+        {
+          "from": "Bruno Miguel Borges Fernandes",
+          "to": "Diogo Meireles Costa",
+          "count": 1
+        },
+        {
+          "from": "Diogo Meireles Costa",
+          "to": "Jo\u00e3o Maria Lobo Alves Palhinha Gon\u00e7alves",
+          "count": 1
+        },
+        {
+          "from": "Vitor Machado Ferreira",
+          "to": "Rafael Alexandre Concei\u00e7\u00e3o Le\u00e3o",
+          "count": 1
+        },
+        {
+          "from": "Nuno Mendes",
+          "to": "Bruno Miguel Borges Fernandes",
+          "count": 1
+        },
+        {
+          "from": "Bernardo Mota Veiga de Carvalho e Silva",
+          "to": "Vitor Machado Ferreira",
+          "count": 1
+        },
+        {
+          "from": "Bruno Miguel Borges Fernandes",
+          "to": "Kl\u00e9per Laveran Lima Ferreira",
+          "count": 1
+        },
+        {
+          "from": "Nuno Mendes",
+          "to": "Diogo Meireles Costa",
+          "count": 1
+        },
+        {
+          "from": "Diogo Meireles Costa",
+          "to": "Rafael Alexandre Concei\u00e7\u00e3o Le\u00e3o",
+          "count": 1
+        },
+        {
+          "from": "Cristiano Ronaldo dos Santos Aveiro",
+          "to": "Nuno Mendes",
+          "count": 1
+        },
+        {
+          "from": "Rafael Alexandre Concei\u00e7\u00e3o Le\u00e3o",
+          "to": "Kl\u00e9per Laveran Lima Ferreira",
+          "count": 1
+        },
+        {
+          "from": "Cristiano Ronaldo dos Santos Aveiro",
+          "to": "Bruno Miguel Borges Fernandes",
+          "count": 1
+        },
+        {
+          "from": "Vitor Machado Ferreira",
+          "to": "Nuno Mendes",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "label": "45'\u201368'",
+      "nodes": [
+        {
+          "player": "Bernardo Mota Veiga de Carvalho e Silva",
+          "display_name": "Bernardo Silva",
+          "x": 72.45,
+          "y": 69.61,
+          "passes": 17
+        },
+        {
+          "player": "Bruno Miguel Borges Fernandes",
+          "display_name": "Bruno Fernandes",
+          "x": 69.83,
+          "y": 41.36,
+          "passes": 11
+        },
+        {
+          "player": "Cristiano Ronaldo dos Santos Aveiro",
+          "display_name": "Cristiano Ronaldo",
+          "x": 88.9,
+          "y": 21.24,
+          "passes": 5
+        },
+        {
+          "player": "Diogo Meireles Costa",
+          "display_name": "Diogo Costa",
+          "x": 10.84,
+          "y": 42.12,
+          "passes": 18
+        },
+        {
+          "player": "Jo\u00e3o Maria Lobo Alves Palhinha Gon\u00e7alves",
+          "display_name": "Jo\u00e3o Palhinha",
+          "x": 38.6,
+          "y": 40.0,
+          "passes": 2
+        },
+        {
+          "player": "Jo\u00e3o Pedro Cavaco Cancelo",
+          "display_name": "Jo\u00e3o Cancelo",
+          "x": 66.22,
+          "y": 72.59,
+          "passes": 20
+        },
+        {
+          "player": "Kl\u00e9per Laveran Lima Ferreira",
+          "display_name": "Pepe",
+          "x": 41.19,
+          "y": 29.82,
+          "passes": 19
+        },
+        {
+          "player": "Nuno Mendes",
+          "display_name": "Nuno Mendes",
+          "x": 43.28,
+          "y": 11.39,
+          "passes": 19
+        },
+        {
+          "player": "Pedro Lomba Neto",
+          "display_name": "Pedro Neto",
+          "x": 69.84,
+          "y": 28.73,
+          "passes": 9
+        },
+        {
+          "player": "Rafael Alexandre Concei\u00e7\u00e3o Le\u00e3o",
+          "display_name": "Rafael Le\u00e3o",
+          "x": 66.2,
+          "y": 17.7,
+          "passes": 2
+        },
+        {
+          "player": "R\u00faben Diogo Da Silva Neves",
+          "display_name": "R\u00faben Neves",
+          "x": 55.13,
+          "y": 38.34,
+          "passes": 17
+        },
+        {
+          "player": "R\u00faben Santos Gato Alves Dias",
+          "display_name": "R\u00faben Dias",
+          "x": 39.25,
+          "y": 62.96,
+          "passes": 28
+        },
+        {
+          "player": "Vitor Machado Ferreira",
+          "display_name": "Vitinha",
+          "x": 56.25,
+          "y": 47.76,
+          "passes": 20
+        }
+      ],
+      "edges": [
+        {
+          "from": "Diogo Meireles Costa",
+          "to": "R\u00faben Santos Gato Alves Dias",
+          "count": 9
+        },
+        {
+          "from": "R\u00faben Diogo Da Silva Neves",
+          "to": "Kl\u00e9per Laveran Lima Ferreira",
+          "count": 7
+        },
+        {
+          "from": "Kl\u00e9per Laveran Lima Ferreira",
+          "to": "Nuno Mendes",
+          "count": 7
+        },
+        {
+          "from": "Bernardo Mota Veiga de Carvalho e Silva",
+          "to": "Jo\u00e3o Pedro Cavaco Cancelo",
+          "count": 7
+        },
+        {
+          "from": "R\u00faben Santos Gato Alves Dias",
+          "to": "Bernardo Mota Veiga de Carvalho e Silva",
+          "count": 6
+        },
+        {
+          "from": "R\u00faben Santos Gato Alves Dias",
+          "to": "Vitor Machado Ferreira",
+          "count": 6
+        },
+        {
+          "from": "Jo\u00e3o Pedro Cavaco Cancelo",
+          "to": "Bernardo Mota Veiga de Carvalho e Silva",
+          "count": 6
+        },
+        {
+          "from": "R\u00faben Santos Gato Alves Dias",
+          "to": "Jo\u00e3o Pedro Cavaco Cancelo",
+          "count": 5
+        },
+        {
+          "from": "Jo\u00e3o Pedro Cavaco Cancelo",
+          "to": "R\u00faben Santos Gato Alves Dias",
+          "count": 5
+        },
+        {
+          "from": "Nuno Mendes",
+          "to": "Diogo Meireles Costa",
+          "count": 5
+        },
+        {
+          "from": "Jo\u00e3o Pedro Cavaco Cancelo",
+          "to": "Vitor Machado Ferreira",
+          "count": 5
+        },
+        {
+          "from": "Bernardo Mota Veiga de Carvalho e Silva",
+          "to": "R\u00faben Santos Gato Alves Dias",
+          "count": 4
+        },
+        {
+          "from": "R\u00faben Santos Gato Alves Dias",
+          "to": "Diogo Meireles Costa",
+          "count": 4
+        },
+        {
+          "from": "Diogo Meireles Costa",
+          "to": "Nuno Mendes",
+          "count": 4
+        },
+        {
+          "from": "Vitor Machado Ferreira",
+          "to": "Bruno Miguel Borges Fernandes",
+          "count": 4
+        },
+        {
+          "from": "Nuno Mendes",
+          "to": "Pedro Lomba Neto",
+          "count": 4
+        },
+        {
+          "from": "Bruno Miguel Borges Fernandes",
+          "to": "R\u00faben Santos Gato Alves Dias",
+          "count": 3
+        },
+        {
+          "from": "R\u00faben Santos Gato Alves Dias",
+          "to": "Kl\u00e9per Laveran Lima Ferreira",
+          "count": 3
+        },
+        {
+          "from": "Kl\u00e9per Laveran Lima Ferreira",
+          "to": "R\u00faben Santos Gato Alves Dias",
+          "count": 3
+        },
+        {
+          "from": "R\u00faben Diogo Da Silva Neves",
+          "to": "Nuno Mendes",
+          "count": 3
+        },
+        {
+          "from": "Nuno Mendes",
+          "to": "R\u00faben Diogo Da Silva Neves",
+          "count": 3
+        },
+        {
+          "from": "R\u00faben Diogo Da Silva Neves",
+          "to": "Jo\u00e3o Pedro Cavaco Cancelo",
+          "count": 3
+        },
+        {
+          "from": "Vitor Machado Ferreira",
+          "to": "Kl\u00e9per Laveran Lima Ferreira",
+          "count": 3
+        },
+        {
+          "from": "Pedro Lomba Neto",
+          "to": "Nuno Mendes",
+          "count": 3
+        },
+        {
+          "from": "Vitor Machado Ferreira",
+          "to": "Jo\u00e3o Pedro Cavaco Cancelo",
+          "count": 3
+        },
+        {
+          "from": "Kl\u00e9per Laveran Lima Ferreira",
+          "to": "Bruno Miguel Borges Fernandes",
+          "count": 2
+        },
+        {
+          "from": "Vitor Machado Ferreira",
+          "to": "R\u00faben Santos Gato Alves Dias",
+          "count": 2
+        },
+        {
+          "from": "R\u00faben Santos Gato Alves Dias",
+          "to": "R\u00faben Diogo Da Silva Neves",
+          "count": 2
+        },
+        {
+          "from": "Kl\u00e9per Laveran Lima Ferreira",
+          "to": "Diogo Meireles Costa",
+          "count": 2
+        },
+        {
+          "from": "Jo\u00e3o Pedro Cavaco Cancelo",
+          "to": "R\u00faben Diogo Da Silva Neves",
+          "count": 2
+        },
+        {
+          "from": "Vitor Machado Ferreira",
+          "to": "R\u00faben Diogo Da Silva Neves",
+          "count": 2
+        },
+        {
+          "from": "Nuno Mendes",
+          "to": "Kl\u00e9per Laveran Lima Ferreira",
+          "count": 2
+        },
+        {
+          "from": "Kl\u00e9per Laveran Lima Ferreira",
+          "to": "Bernardo Mota Veiga de Carvalho e Silva",
+          "count": 2
+        },
+        {
+          "from": "Bernardo Mota Veiga de Carvalho e Silva",
+          "to": "Diogo Meireles Costa",
+          "count": 2
+        },
+        {
+          "from": "Bruno Miguel Borges Fernandes",
+          "to": "R\u00faben Diogo Da Silva Neves",
+          "count": 2
+        },
+        {
+          "from": "Nuno Mendes",
+          "to": "Vitor Machado Ferreira",
+          "count": 2
+        },
+        {
+          "from": "Bruno Miguel Borges Fernandes",
+          "to": "Nuno Mendes",
+          "count": 2
+        },
+        {
+          "from": "Cristiano Ronaldo dos Santos Aveiro",
+          "to": "Bruno Miguel Borges Fernandes",
+          "count": 2
+        },
+        {
+          "from": "Bernardo Mota Veiga de Carvalho e Silva",
+          "to": "Bruno Miguel Borges Fernandes",
+          "count": 2
+        },
+        {
+          "from": "Vitor Machado Ferreira",
+          "to": "Bernardo Mota Veiga de Carvalho e Silva",
+          "count": 2
+        },
+        {
+          "from": "Kl\u00e9per Laveran Lima Ferreira",
+          "to": "Vitor Machado Ferreira",
+          "count": 2
+        },
+        {
+          "from": "Diogo Meireles Costa",
+          "to": "Vitor Machado Ferreira",
+          "count": 2
+        },
+        {
+          "from": "Jo\u00e3o Maria Lobo Alves Palhinha Gon\u00e7alves",
+          "to": "Bruno Miguel Borges Fernandes",
+          "count": 1
+        },
+        {
+          "from": "Bruno Miguel Borges Fernandes",
+          "to": "Rafael Alexandre Concei\u00e7\u00e3o Le\u00e3o",
+          "count": 1
+        },
+        {
+          "from": "Rafael Alexandre Concei\u00e7\u00e3o Le\u00e3o",
+          "to": "Cristiano Ronaldo dos Santos Aveiro",
+          "count": 1
+        },
+        {
+          "from": "Cristiano Ronaldo dos Santos Aveiro",
+          "to": "Rafael Alexandre Concei\u00e7\u00e3o Le\u00e3o",
+          "count": 1
+        },
+        {
+          "from": "Rafael Alexandre Concei\u00e7\u00e3o Le\u00e3o",
+          "to": "Kl\u00e9per Laveran Lima Ferreira",
+          "count": 1
+        },
+        {
+          "from": "R\u00faben Santos Gato Alves Dias",
+          "to": "Jo\u00e3o Maria Lobo Alves Palhinha Gon\u00e7alves",
+          "count": 1
+        },
+        {
+          "from": "Jo\u00e3o Maria Lobo Alves Palhinha Gon\u00e7alves",
+          "to": "R\u00faben Santos Gato Alves Dias",
+          "count": 1
+        },
+        {
+          "from": "Pedro Lomba Neto",
+          "to": "Jo\u00e3o Pedro Cavaco Cancelo",
+          "count": 1
+        },
+        {
+          "from": "Kl\u00e9per Laveran Lima Ferreira",
+          "to": "R\u00faben Diogo Da Silva Neves",
+          "count": 1
+        },
+        {
+          "from": "R\u00faben Diogo Da Silva Neves",
+          "to": "Pedro Lomba Neto",
+          "count": 1
+        },
+        {
+          "from": "Pedro Lomba Neto",
+          "to": "Vitor Machado Ferreira",
+          "count": 1
+        },
+        {
+          "from": "Nuno Mendes",
+          "to": "Cristiano Ronaldo dos Santos Aveiro",
+          "count": 1
+        },
+        {
+          "from": "Cristiano Ronaldo dos Santos Aveiro",
+          "to": "Nuno Mendes",
+          "count": 1
+        },
+        {
+          "from": "Vitor Machado Ferreira",
+          "to": "Pedro Lomba Neto",
+          "count": 1
+        },
+        {
+          "from": "Pedro Lomba Neto",
+          "to": "R\u00faben Santos Gato Alves Dias",
+          "count": 1
+        },
+        {
+          "from": "Vitor Machado Ferreira",
+          "to": "Cristiano Ronaldo dos Santos Aveiro",
+          "count": 1
+        },
+        {
+          "from": "Cristiano Ronaldo dos Santos Aveiro",
+          "to": "Vitor Machado Ferreira",
+          "count": 1
+        },
+        {
+          "from": "Vitor Machado Ferreira",
+          "to": "Nuno Mendes",
+          "count": 1
+        },
+        {
+          "from": "Jo\u00e3o Pedro Cavaco Cancelo",
+          "to": "Pedro Lomba Neto",
+          "count": 1
+        },
+        {
+          "from": "Jo\u00e3o Pedro Cavaco Cancelo",
+          "to": "Bruno Miguel Borges Fernandes",
+          "count": 1
+        },
+        {
+          "from": "Bruno Miguel Borges Fernandes",
+          "to": "Jo\u00e3o Pedro Cavaco Cancelo",
+          "count": 1
+        },
+        {
+          "from": "Bruno Miguel Borges Fernandes",
+          "to": "Cristiano Ronaldo dos Santos Aveiro",
+          "count": 1
+        },
+        {
+          "from": "Nuno Mendes",
+          "to": "Bernardo Mota Veiga de Carvalho e Silva",
+          "count": 1
+        },
+        {
+          "from": "Bernardo Mota Veiga de Carvalho e Silva",
+          "to": "R\u00faben Diogo Da Silva Neves",
+          "count": 1
+        },
+        {
+          "from": "R\u00faben Diogo Da Silva Neves",
+          "to": "Cristiano Ronaldo dos Santos Aveiro",
+          "count": 1
+        },
+        {
+          "from": "Diogo Meireles Costa",
+          "to": "R\u00faben Diogo Da Silva Neves",
+          "count": 1
+        },
+        {
+          "from": "R\u00faben Santos Gato Alves Dias",
+          "to": "Bruno Miguel Borges Fernandes",
+          "count": 1
+        },
+        {
+          "from": "Diogo Meireles Costa",
+          "to": "Kl\u00e9per Laveran Lima Ferreira",
+          "count": 1
+        },
+        {
+          "from": "Bruno Miguel Borges Fernandes",
+          "to": "Pedro Lomba Neto",
+          "count": 1
+        },
+        {
+          "from": "Pedro Lomba Neto",
+          "to": "Bernardo Mota Veiga de Carvalho e Silva",
+          "count": 1
+        },
+        {
+          "from": "R\u00faben Diogo Da Silva Neves",
+          "to": "Vitor Machado Ferreira",
+          "count": 1
+        },
+        {
+          "from": "Pedro Lomba Neto",
+          "to": "Kl\u00e9per Laveran Lima Ferreira",
+          "count": 1
+        },
+        {
+          "from": "Diogo Meireles Costa",
+          "to": "Pedro Lomba Neto",
+          "count": 1
+        },
+        {
+          "from": "Pedro Lomba Neto",
+          "to": "Bruno Miguel Borges Fernandes",
+          "count": 1
+        },
+        {
+          "from": "R\u00faben Diogo Da Silva Neves",
+          "to": "Bernardo Mota Veiga de Carvalho e Silva",
+          "count": 1
+        },
+        {
+          "from": "Bernardo Mota Veiga de Carvalho e Silva",
+          "to": "Cristiano Ronaldo dos Santos Aveiro",
+          "count": 1
+        },
+        {
+          "from": "Vitor Machado Ferreira",
+          "to": "Diogo Meireles Costa",
+          "count": 1
+        },
+        {
+          "from": "Nuno Mendes",
+          "to": "Bruno Miguel Borges Fernandes",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "label": "68'\u201382'",
+      "nodes": [
+        {
+          "player": "Bernardo Mota Veiga de Carvalho e Silva",
+          "display_name": "Bernardo Silva",
+          "x": 51.13,
+          "y": 55.86,
+          "passes": 7
+        },
+        {
+          "player": "Bruno Miguel Borges Fernandes",
+          "display_name": "Bruno Fernandes",
+          "x": 59.45,
+          "y": 11.88,
+          "passes": 4
+        },
+        {
+          "player": "Diogo Meireles Costa",
+          "display_name": "Diogo Costa",
+          "x": 16.0,
+          "y": 46.4,
+          "passes": 2
+        },
+        {
+          "player": "Kl\u00e9per Laveran Lima Ferreira",
+          "display_name": "Pepe",
+          "x": 61.06,
+          "y": 23.0,
+          "passes": 5
+        },
+        {
+          "player": "Nuno Mendes",
+          "display_name": "Nuno Mendes",
+          "x": 34.28,
+          "y": 6.58,
+          "passes": 5
+        },
+        {
+          "player": "N\u00e9lson Cabral Semedo",
+          "display_name": "N\u00e9lson Semedo",
+          "x": 72.2,
+          "y": 76.53,
+          "passes": 3
+        },
+        {
+          "player": "Pedro Lomba Neto",
+          "display_name": "Pedro Neto",
+          "x": 22.4,
+          "y": 32.2,
+          "passes": 1
+        },
+        {
+          "player": "R\u00faben Diogo Da Silva Neves",
+          "display_name": "R\u00faben Neves",
+          "x": 49.4,
+          "y": 48.34,
+          "passes": 7
+        },
+        {
+          "player": "R\u00faben Santos Gato Alves Dias",
+          "display_name": "R\u00faben Dias",
+          "x": 52.97,
+          "y": 72.06,
+          "passes": 7
+        },
+        {
+          "player": "Vitor Machado Ferreira",
+          "display_name": "Vitinha",
+          "x": 55.2,
+          "y": 38.22,
+          "passes": 5
+        }
+      ],
+      "edges": [
+        {
+          "from": "Bernardo Mota Veiga de Carvalho e Silva",
+          "to": "R\u00faben Diogo Da Silva Neves",
+          "count": 4
+        },
+        {
+          "from": "R\u00faben Diogo Da Silva Neves",
+          "to": "R\u00faben Santos Gato Alves Dias",
+          "count": 4
+        },
+        {
+          "from": "N\u00e9lson Cabral Semedo",
+          "to": "R\u00faben Santos Gato Alves Dias",
+          "count": 2
+        },
+        {
+          "from": "Bruno Miguel Borges Fernandes",
+          "to": "Pedro Lomba Neto",
+          "count": 2
+        },
+        {
+          "from": "Kl\u00e9per Laveran Lima Ferreira",
+          "to": "Nuno Mendes",
+          "count": 2
+        },
+        {
+          "from": "Vitor Machado Ferreira",
+          "to": "R\u00faben Diogo Da Silva Neves",
+          "count": 2
+        },
+        {
+          "from": "R\u00faben Santos Gato Alves Dias",
+          "to": "Bernardo Mota Veiga de Carvalho e Silva",
+          "count": 2
+        },
+        {
+          "from": "Kl\u00e9per Laveran Lima Ferreira",
+          "to": "Pedro Lomba Neto",
+          "count": 2
+        },
+        {
+          "from": "Bernardo Mota Veiga de Carvalho e Silva",
+          "to": "Vitor Machado Ferreira",
+          "count": 2
+        },
+        {
+          "from": "Nuno Mendes",
+          "to": "Diogo Meireles Costa",
+          "count": 1
+        },
+        {
+          "from": "Diogo Meireles Costa",
+          "to": "N\u00e9lson Cabral Semedo",
+          "count": 1
+        },
+        {
+          "from": "N\u00e9lson Cabral Semedo",
+          "to": "Bernardo Mota Veiga de Carvalho e Silva",
+          "count": 1
+        },
+        {
+          "from": "R\u00faben Santos Gato Alves Dias",
+          "to": "Vitor Machado Ferreira",
+          "count": 1
+        },
+        {
+          "from": "Vitor Machado Ferreira",
+          "to": "Kl\u00e9per Laveran Lima Ferreira",
+          "count": 1
+        },
+        {
+          "from": "Kl\u00e9per Laveran Lima Ferreira",
+          "to": "Diogo Meireles Costa",
+          "count": 1
+        },
+        {
+          "from": "Diogo Meireles Costa",
+          "to": "R\u00faben Diogo Da Silva Neves",
+          "count": 1
+        },
+        {
+          "from": "R\u00faben Diogo Da Silva Neves",
+          "to": "Bernardo Mota Veiga de Carvalho e Silva",
+          "count": 1
+        },
+        {
+          "from": "R\u00faben Diogo Da Silva Neves",
+          "to": "N\u00e9lson Cabral Semedo",
+          "count": 1
+        },
+        {
+          "from": "R\u00faben Santos Gato Alves Dias",
+          "to": "R\u00faben Diogo Da Silva Neves",
+          "count": 1
+        },
+        {
+          "from": "R\u00faben Santos Gato Alves Dias",
+          "to": "Diogo Meireles Costa",
+          "count": 1
+        },
+        {
+          "from": "Vitor Machado Ferreira",
+          "to": "Bruno Miguel Borges Fernandes",
+          "count": 1
+        },
+        {
+          "from": "Nuno Mendes",
+          "to": "Pedro Lomba Neto",
+          "count": 1
+        },
+        {
+          "from": "R\u00faben Santos Gato Alves Dias",
+          "to": "N\u00e9lson Cabral Semedo",
+          "count": 1
+        },
+        {
+          "from": "R\u00faben Santos Gato Alves Dias",
+          "to": "Kl\u00e9per Laveran Lima Ferreira",
+          "count": 1
+        },
+        {
+          "from": "Nuno Mendes",
+          "to": "Kl\u00e9per Laveran Lima Ferreira",
+          "count": 1
+        },
+        {
+          "from": "Bruno Miguel Borges Fernandes",
+          "to": "Kl\u00e9per Laveran Lima Ferreira",
+          "count": 1
+        },
+        {
+          "from": "Bruno Miguel Borges Fernandes",
+          "to": "Nuno Mendes",
+          "count": 1
+        },
+        {
+          "from": "Nuno Mendes",
+          "to": "R\u00faben Diogo Da Silva Neves",
+          "count": 1
+        },
+        {
+          "from": "Vitor Machado Ferreira",
+          "to": "Bernardo Mota Veiga de Carvalho e Silva",
+          "count": 1
+        },
+        {
+          "from": "Nuno Mendes",
+          "to": "Bernardo Mota Veiga de Carvalho e Silva",
+          "count": 1
+        },
+        {
+          "from": "Bernardo Mota Veiga de Carvalho e Silva",
+          "to": "Bruno Miguel Borges Fernandes",
+          "count": 1
+        },
+        {
+          "from": "Pedro Lomba Neto",
+          "to": "Bruno Miguel Borges Fernandes",
+          "count": 1
+        },
+        {
+          "from": "R\u00faben Diogo Da Silva Neves",
+          "to": "Kl\u00e9per Laveran Lima Ferreira",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "label": "82'\u201387'",
+      "nodes": [
+        {
+          "player": "Ant\u00f3nio Jo\u00e3o Pereira Albuquerque Tavares Silva",
+          "display_name": "Ant\u00f3nio Silva",
+          "x": 52.2,
+          "y": 66.8,
+          "passes": 3
+        },
+        {
+          "player": "Bernardo Mota Veiga de Carvalho e Silva",
+          "display_name": "Bernardo Silva",
+          "x": 75.73,
+          "y": 57.7,
+          "passes": 3
+        },
+        {
+          "player": "Bruno Miguel Borges Fernandes",
+          "display_name": "Bruno Fernandes",
+          "x": 64.53,
+          "y": 44.0,
+          "passes": 4
+        },
+        {
+          "player": "Cristiano Ronaldo dos Santos Aveiro",
+          "display_name": "Cristiano Ronaldo",
+          "x": 94.8,
+          "y": 46.8,
+          "passes": 1
+        },
+        {
+          "player": "Diogo Meireles Costa",
+          "display_name": "Diogo Costa",
+          "x": 7.8,
+          "y": 43.45,
+          "passes": 2
+        },
+        {
+          "player": "Nuno Mendes",
+          "display_name": "Nuno Mendes",
+          "x": 82.8,
+          "y": 13.5,
+          "passes": 2
+        },
+        {
+          "player": "N\u00e9lson Cabral Semedo",
+          "display_name": "N\u00e9lson Semedo",
+          "x": 57.85,
+          "y": 75.35,
+          "passes": 2
+        },
+        {
+          "player": "Pedro Lomba Neto",
+          "display_name": "Pedro Neto",
+          "x": 91.93,
+          "y": 8.73,
+          "passes": 3
+        },
+        {
+          "player": "R\u00faben Diogo Da Silva Neves",
+          "display_name": "R\u00faben Neves",
+          "x": 53.83,
+          "y": 44.67,
+          "passes": 4
+        },
+        {
+          "player": "R\u00faben Santos Gato Alves Dias",
+          "display_name": "R\u00faben Dias",
+          "x": 40.23,
+          "y": 18.22,
+          "passes": 6
+        },
+        {
+          "player": "Vitor Machado Ferreira",
+          "display_name": "Vitinha",
+          "x": 38.63,
+          "y": 38.57,
+          "passes": 3
+        }
+      ],
+      "edges": [
+        {
+          "from": "R\u00faben Santos Gato Alves Dias",
+          "to": "Pedro Lomba Neto",
+          "count": 2
+        },
+        {
+          "from": "Bernardo Mota Veiga de Carvalho e Silva",
+          "to": "R\u00faben Diogo Da Silva Neves",
+          "count": 2
+        },
+        {
+          "from": "Vitor Machado Ferreira",
+          "to": "Bernardo Mota Veiga de Carvalho e Silva",
+          "count": 2
+        },
+        {
+          "from": "R\u00faben Diogo Da Silva Neves",
+          "to": "Bruno Miguel Borges Fernandes",
+          "count": 2
+        },
+        {
+          "from": "N\u00e9lson Cabral Semedo",
+          "to": "Ant\u00f3nio Jo\u00e3o Pereira Albuquerque Tavares Silva",
+          "count": 2
+        },
+        {
+          "from": "Nuno Mendes",
+          "to": "R\u00faben Santos Gato Alves Dias",
+          "count": 2
+        },
+        {
+          "from": "Ant\u00f3nio Jo\u00e3o Pereira Albuquerque Tavares Silva",
+          "to": "Bernardo Mota Veiga de Carvalho e Silva",
+          "count": 2
+        },
+        {
+          "from": "Pedro Lomba Neto",
+          "to": "Bernardo Mota Veiga de Carvalho e Silva",
+          "count": 1
+        },
+        {
+          "from": "R\u00faben Diogo Da Silva Neves",
+          "to": "Pedro Lomba Neto",
+          "count": 1
+        },
+        {
+          "from": "Pedro Lomba Neto",
+          "to": "Nuno Mendes",
+          "count": 1
+        },
+        {
+          "from": "Ant\u00f3nio Jo\u00e3o Pereira Albuquerque Tavares Silva",
+          "to": "Bruno Miguel Borges Fernandes",
+          "count": 1
+        },
+        {
+          "from": "Bruno Miguel Borges Fernandes",
+          "to": "Diogo Meireles Costa",
+          "count": 1
+        },
+        {
+          "from": "Diogo Meireles Costa",
+          "to": "R\u00faben Santos Gato Alves Dias",
+          "count": 1
+        },
+        {
+          "from": "R\u00faben Santos Gato Alves Dias",
+          "to": "Diogo Meireles Costa",
+          "count": 1
+        },
+        {
+          "from": "Diogo Meireles Costa",
+          "to": "Vitor Machado Ferreira",
+          "count": 1
+        },
+        {
+          "from": "Vitor Machado Ferreira",
+          "to": "R\u00faben Santos Gato Alves Dias",
+          "count": 1
+        },
+        {
+          "from": "R\u00faben Santos Gato Alves Dias",
+          "to": "Cristiano Ronaldo dos Santos Aveiro",
+          "count": 1
+        },
+        {
+          "from": "Bruno Miguel Borges Fernandes",
+          "to": "Pedro Lomba Neto",
+          "count": 1
+        },
+        {
+          "from": "Pedro Lomba Neto",
+          "to": "Cristiano Ronaldo dos Santos Aveiro",
+          "count": 1
+        },
+        {
+          "from": "Bruno Miguel Borges Fernandes",
+          "to": "Nuno Mendes",
+          "count": 1
+        },
+        {
+          "from": "R\u00faben Santos Gato Alves Dias",
+          "to": "Nuno Mendes",
+          "count": 1
+        },
+        {
+          "from": "R\u00faben Santos Gato Alves Dias",
+          "to": "Ant\u00f3nio Jo\u00e3o Pereira Albuquerque Tavares Silva",
+          "count": 1
+        },
+        {
+          "from": "R\u00faben Diogo Da Silva Neves",
+          "to": "Vitor Machado Ferreira",
+          "count": 1
+        },
+        {
+          "from": "Bernardo Mota Veiga de Carvalho e Silva",
+          "to": "N\u00e9lson Cabral Semedo",
+          "count": 1
+        },
+        {
+          "from": "Cristiano Ronaldo dos Santos Aveiro",
+          "to": "Bruno Miguel Borges Fernandes",
+          "count": 1
+        },
+        {
+          "from": "Bruno Miguel Borges Fernandes",
+          "to": "Bernardo Mota Veiga de Carvalho e Silva",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "label": "87'\u2013FT",
+      "nodes": [
+        {
+          "player": "Ant\u00f3nio Jo\u00e3o Pereira Albuquerque Tavares Silva",
+          "display_name": "Ant\u00f3nio Silva",
+          "x": 33.1,
+          "y": 60.15,
+          "passes": 2
+        },
+        {
+          "player": "Bernardo Mota Veiga de Carvalho e Silva",
+          "display_name": "Bernardo Silva",
+          "x": 92.75,
+          "y": 55.0,
+          "passes": 2
+        },
+        {
+          "player": "Bruno Miguel Borges Fernandes",
+          "display_name": "Bruno Fernandes",
+          "x": 42.8,
+          "y": 10.07,
+          "passes": 3
+        },
+        {
+          "player": "Cristiano Ronaldo dos Santos Aveiro",
+          "display_name": "Cristiano Ronaldo",
+          "x": 95.1,
+          "y": 27.8,
+          "passes": 2
+        },
+        {
+          "player": "Diogo Meireles Costa",
+          "display_name": "Diogo Costa",
+          "x": 7.0,
+          "y": 33.2,
+          "passes": 1
+        },
+        {
+          "player": "Jo\u00e3o Neves",
+          "display_name": "Jo\u00e3o Neves",
+          "x": 53.82,
+          "y": 37.62,
+          "passes": 4
+        },
+        {
+          "player": "N\u00e9lson Cabral Semedo",
+          "display_name": "N\u00e9lson Semedo",
+          "x": 56.1,
+          "y": 76.75,
+          "passes": 2
+        },
+        {
+          "player": "Pedro Lomba Neto",
+          "display_name": "Pedro Neto",
+          "x": 21.3,
+          "y": 4.9,
+          "passes": 1
+        },
+        {
+          "player": "R\u00faben Diogo Da Silva Neves",
+          "display_name": "R\u00faben Neves",
+          "x": 48.3,
+          "y": 65.7,
+          "passes": 2
+        },
+        {
+          "player": "R\u00faben Santos Gato Alves Dias",
+          "display_name": "R\u00faben Dias",
+          "x": 13.8,
+          "y": 27.9,
+          "passes": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "Cristiano Ronaldo dos Santos Aveiro",
+          "to": "Bernardo Mota Veiga de Carvalho e Silva",
+          "count": 2
+        },
+        {
+          "from": "R\u00faben Diogo Da Silva Neves",
+          "to": "N\u00e9lson Cabral Semedo",
+          "count": 2
+        },
+        {
+          "from": "Bruno Miguel Borges Fernandes",
+          "to": "Pedro Lomba Neto",
+          "count": 1
+        },
+        {
+          "from": "Jo\u00e3o Neves",
+          "to": "Bernardo Mota Veiga de Carvalho e Silva",
+          "count": 1
+        },
+        {
+          "from": "Bernardo Mota Veiga de Carvalho e Silva",
+          "to": "Jo\u00e3o Neves",
+          "count": 1
+        },
+        {
+          "from": "Jo\u00e3o Neves",
+          "to": "Cristiano Ronaldo dos Santos Aveiro",
+          "count": 1
+        },
+        {
+          "from": "Ant\u00f3nio Jo\u00e3o Pereira Albuquerque Tavares Silva",
+          "to": "N\u00e9lson Cabral Semedo",
+          "count": 1
+        },
+        {
+          "from": "Diogo Meireles Costa",
+          "to": "R\u00faben Santos Gato Alves Dias",
+          "count": 1
+        },
+        {
+          "from": "R\u00faben Santos Gato Alves Dias",
+          "to": "Jo\u00e3o Neves",
+          "count": 1
+        },
+        {
+          "from": "Jo\u00e3o Neves",
+          "to": "Ant\u00f3nio Jo\u00e3o Pereira Albuquerque Tavares Silva",
+          "count": 1
+        },
+        {
+          "from": "Ant\u00f3nio Jo\u00e3o Pereira Albuquerque Tavares Silva",
+          "to": "R\u00faben Diogo Da Silva Neves",
+          "count": 1
+        },
+        {
+          "from": "N\u00e9lson Cabral Semedo",
+          "to": "R\u00faben Diogo Da Silva Neves",
+          "count": 1
+        },
+        {
+          "from": "N\u00e9lson Cabral Semedo",
+          "to": "Bernardo Mota Veiga de Carvalho e Silva",
+          "count": 1
+        },
+        {
+          "from": "Jo\u00e3o Neves",
+          "to": "Bruno Miguel Borges Fernandes",
+          "count": 1
+        },
+        {
+          "from": "Bruno Miguel Borges Fernandes",
+          "to": "Jo\u00e3o Neves",
+          "count": 1
+        },
+        {
+          "from": "Pedro Lomba Neto",
+          "to": "Bruno Miguel Borges Fernandes",
+          "count": 1
+        },
+        {
+          "from": "Bruno Miguel Borges Fernandes",
+          "to": "Cristiano Ronaldo dos Santos Aveiro",
+          "count": 1
+        },
+        {
+          "from": "Bernardo Mota Veiga de Carvalho e Silva",
+          "to": "R\u00faben Diogo Da Silva Neves",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "substitutions": [
+    {
+      "minute": 45,
+      "player_off": "Rafael Alexandre Concei\u00e7\u00e3o Le\u00e3o",
+      "player_on": "Pedro Lomba Neto"
+    },
+    {
+      "minute": 45,
+      "player_off": "Jo\u00e3o Maria Lobo Alves Palhinha Gon\u00e7alves",
+      "player_on": "R\u00faben Diogo Da Silva Neves"
+    },
+    {
+      "minute": 68,
+      "player_off": "Jo\u00e3o Pedro Cavaco Cancelo",
+      "player_on": "N\u00e9lson Cabral Semedo"
+    },
+    {
+      "minute": 82,
+      "player_off": "Kl\u00e9per Laveran Lima Ferreira",
+      "player_on": "Ant\u00f3nio Jo\u00e3o Pereira Albuquerque Tavares Silva"
+    },
+    {
+      "minute": 87,
+      "player_off": "Vitor Machado Ferreira",
+      "player_on": "Jo\u00e3o Neves"
+    }
+  ],
+  "metadata": {
+    "match_id": 3930174,
+    "team": "Portugal",
+    "filter": "completed passes, per substitution window",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Turkey vs Portugal"
+  }
+}

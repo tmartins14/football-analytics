@@ -1,0 +1,169 @@
+{
+  "goals": [
+    {
+      "window": {
+        "anchor_event_id": "00ea5b92-508e-4939-8c56-4fffe22e53b6",
+        "start_event_id": "5943e646-bd84-472d-a231-95c006e77574",
+        "end_event_id": "00ea5b92-508e-4939-8c56-4fffe22e53b6",
+        "period": 1,
+        "window_seconds": 10.0,
+        "t_span_seconds": 13.579
+      },
+      "frames": [
+        {
+          "event_id": "5943e646-bd84-472d-a231-95c006e77574",
+          "t_seconds": 0.0,
+          "team": "Portugal",
+          "event_type": "Carry",
+          "ball_x": 67.9,
+          "ball_y": 70.7,
+          "ball_end_x": 71.3,
+          "ball_end_y": 67.8,
+          "actor": "Ant\u00f3nio Silva",
+          "outcome": null
+        },
+        {
+          "event_id": "0037f4d5-313d-4d36-a569-bd2538302005",
+          "t_seconds": 5.492,
+          "team": "Portugal",
+          "event_type": "Pass",
+          "ball_x": 71.3,
+          "ball_y": 67.8,
+          "ball_end_x": 63.7,
+          "ball_end_y": 48.5,
+          "actor": "Ant\u00f3nio Silva",
+          "outcome": "Incomplete"
+        },
+        {
+          "event_id": "94af2ea7-60b3-45dc-9731-a943d796a390",
+          "t_seconds": 7.261,
+          "team": "Georgia",
+          "event_type": "Ball Recovery",
+          "ball_x": 56.4,
+          "ball_y": 31.6,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Georges Mikautadze",
+          "outcome": null
+        },
+        {
+          "event_id": "647cc002-28a1-4a33-a493-aa28f0643041",
+          "t_seconds": 7.261,
+          "team": "Georgia",
+          "event_type": "Carry",
+          "ball_x": 56.4,
+          "ball_y": 31.6,
+          "ball_end_x": 78.0,
+          "ball_end_y": 40.4,
+          "actor": "Georges Mikautadze",
+          "outcome": null
+        },
+        {
+          "event_id": "22b3b650-1904-41e3-9df7-470a75471737",
+          "t_seconds": 10.29,
+          "team": "Georgia",
+          "event_type": "Pass",
+          "ball_x": 78.0,
+          "ball_y": 40.4,
+          "ball_end_x": 99.6,
+          "ball_end_y": 21.3,
+          "actor": "Georges Mikautadze",
+          "outcome": null
+        },
+        {
+          "event_id": "4ad0e276-8605-44e3-a5a5-eb793561838a",
+          "t_seconds": 11.808,
+          "team": "Georgia",
+          "event_type": "Carry",
+          "ball_x": 99.6,
+          "ball_y": 21.3,
+          "ball_end_x": 111.4,
+          "ball_end_y": 29.2,
+          "actor": "Kvara",
+          "outcome": null
+        },
+        {
+          "event_id": "02d241f6-77c5-4a7d-a209-56cfd0dab6fb",
+          "t_seconds": 12.833,
+          "team": "Portugal",
+          "event_type": "Pressure",
+          "ball_x": 13.3,
+          "ball_y": 52.3,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Ant\u00f3nio Silva",
+          "outcome": null
+        },
+        {
+          "event_id": "00ea5b92-508e-4939-8c56-4fffe22e53b6",
+          "t_seconds": 13.579,
+          "team": "Georgia",
+          "event_type": "Shot",
+          "ball_x": 111.4,
+          "ball_y": 29.2,
+          "ball_end_x": 120.0,
+          "ball_end_y": 42.7,
+          "actor": "Kvara",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "00ea5b92-508e-4939-8c56-4fffe22e53b6",
+          "minute": 1,
+          "second": 32,
+          "scorer": "Kvara",
+          "team": "Georgia"
+        }
+      },
+      "metadata": {
+        "match_id": 3938644,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Georgia vs Portugal"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "0a072739-a996-4f43-b7cc-ac90010da8d1",
+        "start_event_id": "0a072739-a996-4f43-b7cc-ac90010da8d1",
+        "end_event_id": "0a072739-a996-4f43-b7cc-ac90010da8d1",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 111.256
+      },
+      "frames": [
+        {
+          "event_id": "0a072739-a996-4f43-b7cc-ac90010da8d1",
+          "t_seconds": 111.256,
+          "team": "Georgia",
+          "event_type": "Shot",
+          "ball_x": 108.1,
+          "ball_y": 40.1,
+          "ball_end_x": 120.0,
+          "ball_end_y": 43.7,
+          "actor": "Georges Mikautadze",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "0a072739-a996-4f43-b7cc-ac90010da8d1",
+          "minute": 56,
+          "second": 13,
+          "scorer": "Georges Mikautadze",
+          "team": "Georgia"
+        }
+      },
+      "metadata": {
+        "match_id": 3938644,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Georgia vs Portugal"
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3938644,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Georgia vs Portugal"
+  }
+}

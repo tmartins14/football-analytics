@@ -16,6 +16,8 @@
 //   const { update } = createFreezeFrame(pitch, goalFrameData, { mirrorX: true });
 //   update(nextGoalFrameData);   // swap to a different freeze frame
 
+import * as d3 from "d3";
+
 const SB_PITCH_WIDTH = 120;
 
 /**

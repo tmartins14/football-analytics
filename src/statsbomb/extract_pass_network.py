@@ -1,13 +1,15 @@
-"""Extract pass-network data from StatsBomb open data and write a flat JSON contract.
+"""Extract a substitution-windowed pass network for one team as a tidy DataFrame.
 
-Computes one substitution-bounded window per lineup phase. Each window contains
-average player positions (nodes) and directed pass counts per ordered player pair
-(edges). Only completed passes are included.
+Each window covers the time between two lineup changes. Nodes are average player
+positions (from pass origins); edges are directed pass counts (both directions
+emitted separately). Only completed passes are included.
 
 Public API:
-    resolve_euro_2024_final() -> int
-    extract_pass_network(match_id, team) -> dict
+    extract_pass_network(match_id, team) -> pd.DataFrame
     main()
+
+DataFrame columns: window_index, window_label, from_player, from_x, from_y,
+    to_player, count
 
 JSON output shape:
     {
@@ -32,90 +34,46 @@ from pathlib import Path
 import pandas as pd
 from statsbombpy import sb
 
-
-def resolve_euro_2024_final() -> int:
-    """Resolve the UEFA Euro 2024 Final match ID from the StatsBomb open data API.
-
-    Duplicated from extract_shots.resolve_euro_2024_final. Once a third script
-    needs the same resolution, extract to a shared utility module.
-
-    Returns:
-        int: The StatsBomb match_id for the Euro 2024 Final.
-
-    Raises:
-        ValueError: If the competition/season can't be found, or if the Final
-            can't be isolated to a single match.
-    """
-    comps = sb.competitions()
-    euro = comps[
-        comps["competition_name"].str.contains("UEFA Euro", case=False)
-        & (comps["season_name"] == "2024")
-    ]
-    if euro.empty:
-        raise ValueError("Could not find UEFA Euro 2024 in sb.competitions()")
-
-    competition_id = int(euro["competition_id"].iloc[0])
-    season_id = int(euro["season_id"].iloc[0])
-
-    matches = sb.matches(competition_id=competition_id, season_id=season_id)
-
-    if "competition_stage" in matches.columns:
-        final_rows = matches[
-            matches["competition_stage"].astype(str).str.strip() == "Final"
-        ]
-    else:
-        final_rows = matches.sort_values("match_date").iloc[[-1]]
-
-    if final_rows.empty or len(final_rows) > 1:
-        raise ValueError(
-            f"Could not isolate Euro 2024 Final unambiguously. "
-            f"Candidates:\n{final_rows[['match_id', 'match_date', 'home_team', 'away_team']]}"
-        )
-
-    return int(final_rows["match_id"].iloc[0])
+from .utils import build_nickname_lookup, fetch_match_info, resolve_match
 
 
 def _build_windows(
-    events: pd.DataFrame, team: str, nicknames: dict
+    events: pd.DataFrame,
+    team: str,
+    nicknames: dict,
 ) -> tuple[list[dict], list[dict]]:
     """Split completed pass events into substitution-bounded windows.
 
     For each window, computes average pass-origin positions per player (nodes)
     and directed pass counts per ordered player pair (edges). Both directions
-    of a pair are emitted as separate edge records. display_name on each node
-    is the StatsBomb nickname when available, otherwise the full player name.
+    of a pair are emitted as separate edge records.
 
     Args:
-        events: Full match event DataFrame from sb.events().
-        team: Team name to filter on, exactly as returned by StatsBomb.
-        nicknames: player_id (int) -> display_name (str) from sb.lineups().
+        events (pd.DataFrame): Full match event DataFrame from sb.events().
+        team (str): Team name to filter on, exactly as returned by StatsBomb.
+        nicknames (dict[int, str]): player_id -> display_name from sb.lineups().
 
     Returns:
-        Tuple of (windows, substitutions):
-            windows — list of dicts with keys: index, label, nodes, edges.
+        tuple[list[dict], list[dict]]: (windows, substitutions).
+            windows: list of dicts with keys index, label, nodes, edges.
                 Each node has keys: player, display_name, x, y, passes.
-            substitutions — list of {minute, player_off, player_on} dicts.
+            substitutions: list of {minute, player_off, player_on} dicts.
     """
-    # Substitution breakpoints for this team, sorted by minute
     sub_mask = (events["type"] == "Substitution") & (events["team"] == team)
     sub_rows = events[sub_mask].sort_values("minute")
 
     substitutions = []
     for _, row in sub_rows.iterrows():
-        substitutions.append(
-            {
-                "minute": int(row["minute"]),
-                "player_off": str(row["player"]),
-                "player_on": str(row.get("substitution_replacement", "")),
-            }
-        )
+        substitutions.append({
+            "minute":     int(row["minute"]),
+            "player_off": str(row["player"]),
+            "player_on":  str(row.get("substitution_replacement", "")),
+        })
 
-    # Time window boundaries: [(start, end), ...]; last end is None (= full time)
     sub_minutes = [s["minute"] for s in substitutions]
     starts = [0] + sub_minutes
     ends = sub_minutes + [None]
 
-    # Completed passes for this team: pass_outcome is NaN for completions
     pass_mask = (
         (events["type"] == "Pass")
         & (events["team"] == team)
@@ -128,11 +86,9 @@ def _build_windows(
         w = passes[passes["minute"] >= start]
         if end is not None:
             w = w[w["minute"] < end]
-
         if w.empty:
             continue
 
-        # Nodes: average pass-origin (location) per player
         nodes = []
         for player, group in w.groupby("player"):
             locs = [loc for loc in group["location"] if isinstance(loc, list)]
@@ -141,25 +97,21 @@ def _build_windows(
             avg_x = round(sum(loc[0] for loc in locs) / len(locs), 2)
             avg_y = round(sum(loc[1] for loc in locs) / len(locs), 2)
             pid_val = group["player_id"].iloc[0]
-            display_name = nicknames.get(int(pid_val), str(player)) if pid_val == pid_val else str(player)
-            nodes.append(
-                {
-                    "player": str(player),
-                    "display_name": display_name,
-                    "x": avg_x,
-                    "y": avg_y,
-                    "passes": int(len(group)),
-                }
+            display_name = (
+                nicknames.get(int(pid_val), str(player)) if pid_val == pid_val else str(player)
             )
+            nodes.append({
+                "player":       str(player),
+                "display_name": display_name,
+                "x":            avg_x,
+                "y":            avg_y,
+                "passes":       int(len(group)),
+            })
 
-        # Edges: one ordered-pair record per direction (A→B and B→A separate).
-        # StatsBomb flattens pass.recipient.name as "pass_recipient" (not _name).
         edge_counts: dict[tuple[str, str], int] = {}
         for _, row in w.iterrows():
             recipient = row.get("pass_recipient")
-            if recipient is None or (
-                isinstance(recipient, float) and math.isnan(recipient)
-            ):
+            if recipient is None or (isinstance(recipient, float) and math.isnan(recipient)):
                 continue
             key = (str(row["player"]), str(recipient))
             edge_counts[key] = edge_counts.get(key, 0) + 1
@@ -171,81 +123,115 @@ def _build_windows(
 
         end_str = f"{end}'" if end is not None else "FT"
         label = f"0'–{end_str} (Starting XI)" if i == 0 else f"{start}'–{end_str}"
-
         windows.append({"index": i, "label": label, "nodes": nodes, "edges": edges})
 
     return windows, substitutions
 
 
-def extract_pass_network(match_id: int, team: str) -> dict:
-    """Extract a substitution-windowed pass network for one team from a StatsBomb match.
+def extract_pass_network(match_id: int, team: str) -> pd.DataFrame:
+    """Extract a substitution-windowed pass network as a tidy edges DataFrame.
 
-    Pulls all events once, computes substitution breakpoints, then for each window
-    computes average player positions (nodes) and directed pass counts per ordered
-    player pair (edges). Only completed passes are included — StatsBomb marks
-    completions with a null pass_outcome. display_name on each node is resolved
-    from sb.lineups() — StatsBomb nickname when available, otherwise full name.
-
-    Coordinates are StatsBomb-native (120×80 yards, origin top-left) and passed
-    through untouched. The pitch component owns pixel mapping.
+    Computes directed pass counts per ordered player pair per substitution
+    window. The from_player's average pass-origin position (from_x, from_y) is
+    included so spatial analysis is possible without a second call. Only
+    completed passes (pass_outcome is NaN) are included.
 
     Args:
         match_id (int): StatsBomb match ID.
         team (str): Team name exactly as returned by StatsBomb (e.g. "Spain").
 
     Returns:
-        dict: Pass network with keys:
-            windows (list[dict]): One entry per substitution window, each with
-                index, label, nodes [{player, display_name, x, y, passes}], and
-                edges [{from, to, count}] (ordered pairs, both directions separate).
-            substitutions (list[dict]): [{minute, player_off, player_on}].
-            metadata (dict): match_id, team, filter description.
+        pd.DataFrame: One row per directed pass pair per window with columns:
+            window_index (int): Window index (0 = Starting XI).
+            window_label (str): Human-readable window label (e.g. "0'–63' (Starting XI)").
+            from_player (str): Display name of the passer.
+            from_x, from_y (float): Average pass-origin position for from_player in
+                this window, in StatsBomb 120×80 yards.
+            to_player (str): Display name of the recipient.
+            count (int): Number of completed passes from from_player to to_player.
+        Returns an empty DataFrame when no completed passes exist.
     """
-    lineups = sb.lineups(match_id=match_id)
-    team_df = lineups.get(team)
-    nicknames: dict[int, str] = {}
-    if team_df is not None:
-        for _, row in team_df.iterrows():
-            nick = row.get("player_nickname")
-            name = row["player_name"]
-            nicknames[int(row["player_id"])] = nick if (pd.notna(nick) and nick) else name
-
+    nicknames = build_nickname_lookup(match_id)
     events = sb.events(match_id=match_id)
-    windows, substitutions = _build_windows(events, team, nicknames)
+    windows, _ = _build_windows(events, team, nicknames)
 
-    return {
-        "windows": windows,
-        "substitutions": substitutions,
-        "metadata": {
-            "match_id": match_id,
-            "team": team,
-            "filter": "completed passes, per substitution window",
-        },
-    }
+    records = []
+    for window in windows:
+        node_pos = {n["player"]: (n["x"], n["y"]) for n in window["nodes"]}
+        for edge in window["edges"]:
+            pos = node_pos.get(edge["from"], (None, None))
+            records.append({
+                "window_index": window["index"],
+                "window_label": window["label"],
+                "from_player":  edge["from"],
+                "from_x":       pos[0],
+                "from_y":       pos[1],
+                "to_player":    edge["to"],
+                "count":        edge["count"],
+            })
+    return pd.DataFrame(records)
 
 
-def main() -> None:
-    """Resolve the Euro 2024 Final, extract pass networks for both teams, and write JSON.
+def main(
+    match_id: int | None = None,
+    out_dir: Path | None = None,
+    teams: list[str] | None = None,
+) -> None:
+    """Extract pass networks for a match and write JSON.
 
-    Output: src/footballd3/sample_data/pass_network_{match_id}_{team}.json
+    Args:
+        match_id (int | None): StatsBomb match ID; defaults to Euro 2024 Final.
+        out_dir (Path | None): Output directory; defaults to data/euro-2024/{match_id}/.
+        teams (list[str] | None): Teams to extract; defaults to both teams in the match.
+
+    Output: {out_dir}/pass_network_{team}.json
     """
-    match_id = resolve_euro_2024_final()
+    if match_id is None:
+        match_id = resolve_match("UEFA Euro", "2024", "Spain", "England")
+    if out_dir is None:
+        out_dir = Path(__file__).parents[2] / "data" / "euro-2024" / str(match_id)
 
-    out_dir = Path(__file__).parents[2] / "src" / "footballd3" / "sample_data"
+    competition, _, match_label = fetch_match_info(match_id)
+
+    nicknames = build_nickname_lookup(match_id)
+    events = sb.events(match_id=match_id)
+
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    for team in ["Spain", "England"]:
-        data = extract_pass_network(match_id, team)
-        data["metadata"]["competition"] = "UEFA Euro 2024"
-        data["metadata"]["match_label"] = "Spain vs England"
+    if teams is None:
+        comps = sb.competitions()
+        euro = comps[
+            comps["competition_name"].str.contains("UEFA Euro", case=False)
+            & (comps["season_name"] == "2024")
+        ]
+        matches = sb.matches(
+            competition_id=int(euro["competition_id"].iloc[0]),
+            season_id=int(euro["season_id"].iloc[0]),
+        )
+        match_row = matches[matches["match_id"] == match_id].iloc[0]
+        teams = [str(match_row["home_team"]), str(match_row["away_team"])]
 
-        out_path = out_dir / f"pass_network_{match_id}_{team}.json"
+    for team in teams:
+        windows, substitutions = _build_windows(events, team, nicknames)
+
+        payload = {
+            "windows": windows,
+            "substitutions": substitutions,
+            "metadata": {
+                "match_id":    match_id,
+                "team":        team,
+                "filter":      "completed passes, per substitution window",
+                "competition": competition,
+                "match_label": match_label,
+            },
+        }
+
+        out_path = out_dir / f"pass_network_{team}.json"
         with open(out_path, "w") as f:
-            json.dump(data, f, indent=2)
+            json.dump(payload, f, indent=2)
 
-        n_windows = len(data["windows"])
-        n_nodes = len(data["windows"][0]["nodes"]) if data["windows"] else 0
-        print(f"[{team}] {n_windows} windows · {n_nodes} players in window 0 → {out_path}")
+        n_nodes = len(windows[0]["nodes"]) if windows else 0
+        print(f"[{team}] {len(windows)} windows · {n_nodes} players in window 0 → {out_path}")
 
 
 if __name__ == "__main__":

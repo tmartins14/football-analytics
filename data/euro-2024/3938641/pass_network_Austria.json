@@ -1,0 +1,1382 @@
+{
+  "windows": [
+    {
+      "index": 0,
+      "label": "0'\u201345' (Starting XI)",
+      "nodes": [
+        {
+          "player": "Christoph Baumgartner",
+          "display_name": "Christoph Baumgartner",
+          "x": 72.63,
+          "y": 50.16,
+          "passes": 21
+        },
+        {
+          "player": "Florian Grillitsch",
+          "display_name": "Florian Grillitsch",
+          "x": 67.31,
+          "y": 30.43,
+          "passes": 31
+        },
+        {
+          "player": "Gernot Trauner",
+          "display_name": "Gernot Trauner",
+          "x": 40.63,
+          "y": 50.59,
+          "passes": 35
+        },
+        {
+          "player": "Konrad Laimer",
+          "display_name": "Konrad Laimer",
+          "x": 74.45,
+          "y": 54.2,
+          "passes": 11
+        },
+        {
+          "player": "Marcel Sabitzer",
+          "display_name": "Marcel Sabitzer",
+          "x": 86.88,
+          "y": 21.05,
+          "passes": 19
+        },
+        {
+          "player": "Marko Arnautovi\u0107",
+          "display_name": "Marko Arnautovi\u0107",
+          "x": 93.08,
+          "y": 50.04,
+          "passes": 5
+        },
+        {
+          "player": "Nicolas Seiwald",
+          "display_name": "Nicolas Seiwald",
+          "x": 64.86,
+          "y": 53.9,
+          "passes": 27
+        },
+        {
+          "player": "Patrick Pentz",
+          "display_name": "Patrick Pentz",
+          "x": 19.26,
+          "y": 39.78,
+          "passes": 23
+        },
+        {
+          "player": "Philipp Lienhart",
+          "display_name": "Philipp Lienhart",
+          "x": 52.28,
+          "y": 20.11,
+          "passes": 24
+        },
+        {
+          "player": "Philipp Mwene",
+          "display_name": "Philipp Mwene",
+          "x": 77.98,
+          "y": 14.89,
+          "passes": 33
+        },
+        {
+          "player": "Stefan Posch",
+          "display_name": "Stefan Posch",
+          "x": 57.37,
+          "y": 62.24,
+          "passes": 21
+        }
+      ],
+      "edges": [
+        {
+          "from": "Florian Grillitsch",
+          "to": "Philipp Mwene",
+          "count": 9
+        },
+        {
+          "from": "Gernot Trauner",
+          "to": "Patrick Pentz",
+          "count": 9
+        },
+        {
+          "from": "Marcel Sabitzer",
+          "to": "Philipp Mwene",
+          "count": 8
+        },
+        {
+          "from": "Philipp Mwene",
+          "to": "Marcel Sabitzer",
+          "count": 7
+        },
+        {
+          "from": "Philipp Mwene",
+          "to": "Philipp Lienhart",
+          "count": 7
+        },
+        {
+          "from": "Nicolas Seiwald",
+          "to": "Christoph Baumgartner",
+          "count": 7
+        },
+        {
+          "from": "Patrick Pentz",
+          "to": "Gernot Trauner",
+          "count": 7
+        },
+        {
+          "from": "Philipp Mwene",
+          "to": "Florian Grillitsch",
+          "count": 6
+        },
+        {
+          "from": "Philipp Lienhart",
+          "to": "Gernot Trauner",
+          "count": 6
+        },
+        {
+          "from": "Stefan Posch",
+          "to": "Nicolas Seiwald",
+          "count": 6
+        },
+        {
+          "from": "Philipp Lienhart",
+          "to": "Patrick Pentz",
+          "count": 6
+        },
+        {
+          "from": "Christoph Baumgartner",
+          "to": "Marcel Sabitzer",
+          "count": 5
+        },
+        {
+          "from": "Gernot Trauner",
+          "to": "Christoph Baumgartner",
+          "count": 5
+        },
+        {
+          "from": "Gernot Trauner",
+          "to": "Stefan Posch",
+          "count": 5
+        },
+        {
+          "from": "Nicolas Seiwald",
+          "to": "Florian Grillitsch",
+          "count": 5
+        },
+        {
+          "from": "Florian Grillitsch",
+          "to": "Gernot Trauner",
+          "count": 5
+        },
+        {
+          "from": "Gernot Trauner",
+          "to": "Philipp Lienhart",
+          "count": 5
+        },
+        {
+          "from": "Nicolas Seiwald",
+          "to": "Philipp Mwene",
+          "count": 4
+        },
+        {
+          "from": "Nicolas Seiwald",
+          "to": "Stefan Posch",
+          "count": 4
+        },
+        {
+          "from": "Philipp Lienhart",
+          "to": "Florian Grillitsch",
+          "count": 4
+        },
+        {
+          "from": "Marcel Sabitzer",
+          "to": "Marko Arnautovi\u0107",
+          "count": 4
+        },
+        {
+          "from": "Patrick Pentz",
+          "to": "Florian Grillitsch",
+          "count": 4
+        },
+        {
+          "from": "Florian Grillitsch",
+          "to": "Philipp Lienhart",
+          "count": 4
+        },
+        {
+          "from": "Patrick Pentz",
+          "to": "Nicolas Seiwald",
+          "count": 4
+        },
+        {
+          "from": "Gernot Trauner",
+          "to": "Nicolas Seiwald",
+          "count": 4
+        },
+        {
+          "from": "Stefan Posch",
+          "to": "Gernot Trauner",
+          "count": 4
+        },
+        {
+          "from": "Florian Grillitsch",
+          "to": "Konrad Laimer",
+          "count": 3
+        },
+        {
+          "from": "Philipp Mwene",
+          "to": "Nicolas Seiwald",
+          "count": 3
+        },
+        {
+          "from": "Christoph Baumgartner",
+          "to": "Stefan Posch",
+          "count": 3
+        },
+        {
+          "from": "Christoph Baumgartner",
+          "to": "Patrick Pentz",
+          "count": 3
+        },
+        {
+          "from": "Patrick Pentz",
+          "to": "Stefan Posch",
+          "count": 3
+        },
+        {
+          "from": "Christoph Baumgartner",
+          "to": "Nicolas Seiwald",
+          "count": 3
+        },
+        {
+          "from": "Nicolas Seiwald",
+          "to": "Gernot Trauner",
+          "count": 3
+        },
+        {
+          "from": "Gernot Trauner",
+          "to": "Florian Grillitsch",
+          "count": 3
+        },
+        {
+          "from": "Marcel Sabitzer",
+          "to": "Florian Grillitsch",
+          "count": 3
+        },
+        {
+          "from": "Philipp Lienhart",
+          "to": "Philipp Mwene",
+          "count": 3
+        },
+        {
+          "from": "Philipp Mwene",
+          "to": "Christoph Baumgartner",
+          "count": 3
+        },
+        {
+          "from": "Christoph Baumgartner",
+          "to": "Florian Grillitsch",
+          "count": 3
+        },
+        {
+          "from": "Florian Grillitsch",
+          "to": "Stefan Posch",
+          "count": 3
+        },
+        {
+          "from": "Konrad Laimer",
+          "to": "Christoph Baumgartner",
+          "count": 2
+        },
+        {
+          "from": "Konrad Laimer",
+          "to": "Philipp Mwene",
+          "count": 2
+        },
+        {
+          "from": "Gernot Trauner",
+          "to": "Philipp Mwene",
+          "count": 2
+        },
+        {
+          "from": "Philipp Mwene",
+          "to": "Marko Arnautovi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Florian Grillitsch",
+          "to": "Marcel Sabitzer",
+          "count": 2
+        },
+        {
+          "from": "Stefan Posch",
+          "to": "Marko Arnautovi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Philipp Mwene",
+          "to": "Gernot Trauner",
+          "count": 2
+        },
+        {
+          "from": "Nicolas Seiwald",
+          "to": "Marcel Sabitzer",
+          "count": 2
+        },
+        {
+          "from": "Stefan Posch",
+          "to": "Christoph Baumgartner",
+          "count": 2
+        },
+        {
+          "from": "Florian Grillitsch",
+          "to": "Nicolas Seiwald",
+          "count": 2
+        },
+        {
+          "from": "Marko Arnautovi\u0107",
+          "to": "Christoph Baumgartner",
+          "count": 2
+        },
+        {
+          "from": "Christoph Baumgartner",
+          "to": "Philipp Mwene",
+          "count": 2
+        },
+        {
+          "from": "Marcel Sabitzer",
+          "to": "Philipp Lienhart",
+          "count": 2
+        },
+        {
+          "from": "Patrick Pentz",
+          "to": "Christoph Baumgartner",
+          "count": 2
+        },
+        {
+          "from": "Konrad Laimer",
+          "to": "Nicolas Seiwald",
+          "count": 2
+        },
+        {
+          "from": "Florian Grillitsch",
+          "to": "Patrick Pentz",
+          "count": 2
+        },
+        {
+          "from": "Stefan Posch",
+          "to": "Florian Grillitsch",
+          "count": 2
+        },
+        {
+          "from": "Konrad Laimer",
+          "to": "Florian Grillitsch",
+          "count": 2
+        },
+        {
+          "from": "Philipp Lienhart",
+          "to": "Stefan Posch",
+          "count": 2
+        },
+        {
+          "from": "Stefan Posch",
+          "to": "Konrad Laimer",
+          "count": 2
+        },
+        {
+          "from": "Marcel Sabitzer",
+          "to": "Konrad Laimer",
+          "count": 1
+        },
+        {
+          "from": "Marcel Sabitzer",
+          "to": "Nicolas Seiwald",
+          "count": 1
+        },
+        {
+          "from": "Christoph Baumgartner",
+          "to": "Gernot Trauner",
+          "count": 1
+        },
+        {
+          "from": "Marko Arnautovi\u0107",
+          "to": "Marcel Sabitzer",
+          "count": 1
+        },
+        {
+          "from": "Marko Arnautovi\u0107",
+          "to": "Stefan Posch",
+          "count": 1
+        },
+        {
+          "from": "Philipp Lienhart",
+          "to": "Christoph Baumgartner",
+          "count": 1
+        },
+        {
+          "from": "Konrad Laimer",
+          "to": "Marcel Sabitzer",
+          "count": 1
+        },
+        {
+          "from": "Philipp Mwene",
+          "to": "Stefan Posch",
+          "count": 1
+        },
+        {
+          "from": "Stefan Posch",
+          "to": "Philipp Mwene",
+          "count": 1
+        },
+        {
+          "from": "Philipp Lienhart",
+          "to": "Marcel Sabitzer",
+          "count": 1
+        },
+        {
+          "from": "Marko Arnautovi\u0107",
+          "to": "Florian Grillitsch",
+          "count": 1
+        },
+        {
+          "from": "Philipp Mwene",
+          "to": "Konrad Laimer",
+          "count": 1
+        },
+        {
+          "from": "Christoph Baumgartner",
+          "to": "Marko Arnautovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Gernot Trauner",
+          "to": "Konrad Laimer",
+          "count": 1
+        },
+        {
+          "from": "Patrick Pentz",
+          "to": "Philipp Mwene",
+          "count": 1
+        },
+        {
+          "from": "Stefan Posch",
+          "to": "Philipp Lienhart",
+          "count": 1
+        },
+        {
+          "from": "Stefan Posch",
+          "to": "Marcel Sabitzer",
+          "count": 1
+        },
+        {
+          "from": "Gernot Trauner",
+          "to": "Marcel Sabitzer",
+          "count": 1
+        },
+        {
+          "from": "Philipp Mwene",
+          "to": "Patrick Pentz",
+          "count": 1
+        },
+        {
+          "from": "Nicolas Seiwald",
+          "to": "Patrick Pentz",
+          "count": 1
+        },
+        {
+          "from": "Patrick Pentz",
+          "to": "Konrad Laimer",
+          "count": 1
+        },
+        {
+          "from": "Konrad Laimer",
+          "to": "Patrick Pentz",
+          "count": 1
+        },
+        {
+          "from": "Patrick Pentz",
+          "to": "Philipp Lienhart",
+          "count": 1
+        },
+        {
+          "from": "Nicolas Seiwald",
+          "to": "Konrad Laimer",
+          "count": 1
+        },
+        {
+          "from": "Philipp Lienhart",
+          "to": "Nicolas Seiwald",
+          "count": 1
+        },
+        {
+          "from": "Florian Grillitsch",
+          "to": "Christoph Baumgartner",
+          "count": 1
+        },
+        {
+          "from": "Konrad Laimer",
+          "to": "Marko Arnautovi\u0107",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "label": "45'\u201358'",
+      "nodes": [
+        {
+          "player": "Christoph Baumgartner",
+          "display_name": "Christoph Baumgartner",
+          "x": 73.6,
+          "y": 14.4,
+          "passes": 1
+        },
+        {
+          "player": "Gernot Trauner",
+          "display_name": "Gernot Trauner",
+          "x": 36.08,
+          "y": 52.35,
+          "passes": 6
+        },
+        {
+          "player": "Konrad Laimer",
+          "display_name": "Konrad Laimer",
+          "x": 76.25,
+          "y": 35.86,
+          "passes": 13
+        },
+        {
+          "player": "Marcel Sabitzer",
+          "display_name": "Marcel Sabitzer",
+          "x": 83.9,
+          "y": 14.96,
+          "passes": 7
+        },
+        {
+          "player": "Marko Arnautovi\u0107",
+          "display_name": "Marko Arnautovi\u0107",
+          "x": 82.72,
+          "y": 60.1,
+          "passes": 4
+        },
+        {
+          "player": "Nicolas Seiwald",
+          "display_name": "Nicolas Seiwald",
+          "x": 49.6,
+          "y": 57.87,
+          "passes": 6
+        },
+        {
+          "player": "Patrick Pentz",
+          "display_name": "Patrick Pentz",
+          "x": 3.3,
+          "y": 35.7,
+          "passes": 1
+        },
+        {
+          "player": "Patrick Wimmer",
+          "display_name": "Patrick Wimmer",
+          "x": 94.28,
+          "y": 69.7,
+          "passes": 4
+        },
+        {
+          "player": "Philipp Lienhart",
+          "display_name": "Philipp Lienhart",
+          "x": 39.3,
+          "y": 21.04,
+          "passes": 5
+        },
+        {
+          "player": "Philipp Mwene",
+          "display_name": "Philipp Mwene",
+          "x": 83.4,
+          "y": 12.53,
+          "passes": 7
+        },
+        {
+          "player": "Stefan Posch",
+          "display_name": "Stefan Posch",
+          "x": 66.36,
+          "y": 64.39,
+          "passes": 10
+        }
+      ],
+      "edges": [
+        {
+          "from": "Konrad Laimer",
+          "to": "Marcel Sabitzer",
+          "count": 5
+        },
+        {
+          "from": "Marcel Sabitzer",
+          "to": "Philipp Mwene",
+          "count": 4
+        },
+        {
+          "from": "Philipp Mwene",
+          "to": "Konrad Laimer",
+          "count": 4
+        },
+        {
+          "from": "Stefan Posch",
+          "to": "Konrad Laimer",
+          "count": 3
+        },
+        {
+          "from": "Patrick Wimmer",
+          "to": "Stefan Posch",
+          "count": 3
+        },
+        {
+          "from": "Konrad Laimer",
+          "to": "Philipp Mwene",
+          "count": 3
+        },
+        {
+          "from": "Konrad Laimer",
+          "to": "Stefan Posch",
+          "count": 3
+        },
+        {
+          "from": "Stefan Posch",
+          "to": "Gernot Trauner",
+          "count": 2
+        },
+        {
+          "from": "Stefan Posch",
+          "to": "Nicolas Seiwald",
+          "count": 2
+        },
+        {
+          "from": "Marko Arnautovi\u0107",
+          "to": "Konrad Laimer",
+          "count": 2
+        },
+        {
+          "from": "Philipp Mwene",
+          "to": "Philipp Lienhart",
+          "count": 2
+        },
+        {
+          "from": "Gernot Trauner",
+          "to": "Stefan Posch",
+          "count": 2
+        },
+        {
+          "from": "Stefan Posch",
+          "to": "Marko Arnautovi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Philipp Lienhart",
+          "to": "Christoph Baumgartner",
+          "count": 2
+        },
+        {
+          "from": "Marcel Sabitzer",
+          "to": "Konrad Laimer",
+          "count": 2
+        },
+        {
+          "from": "Gernot Trauner",
+          "to": "Patrick Wimmer",
+          "count": 1
+        },
+        {
+          "from": "Nicolas Seiwald",
+          "to": "Stefan Posch",
+          "count": 1
+        },
+        {
+          "from": "Nicolas Seiwald",
+          "to": "Marko Arnautovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Philipp Lienhart",
+          "to": "Stefan Posch",
+          "count": 1
+        },
+        {
+          "from": "Gernot Trauner",
+          "to": "Konrad Laimer",
+          "count": 1
+        },
+        {
+          "from": "Konrad Laimer",
+          "to": "Marko Arnautovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Marko Arnautovi\u0107",
+          "to": "Nicolas Seiwald",
+          "count": 1
+        },
+        {
+          "from": "Nicolas Seiwald",
+          "to": "Patrick Wimmer",
+          "count": 1
+        },
+        {
+          "from": "Nicolas Seiwald",
+          "to": "Gernot Trauner",
+          "count": 1
+        },
+        {
+          "from": "Marko Arnautovi\u0107",
+          "to": "Patrick Wimmer",
+          "count": 1
+        },
+        {
+          "from": "Konrad Laimer",
+          "to": "Philipp Lienhart",
+          "count": 1
+        },
+        {
+          "from": "Christoph Baumgartner",
+          "to": "Marcel Sabitzer",
+          "count": 1
+        },
+        {
+          "from": "Patrick Wimmer",
+          "to": "Nicolas Seiwald",
+          "count": 1
+        },
+        {
+          "from": "Nicolas Seiwald",
+          "to": "Konrad Laimer",
+          "count": 1
+        },
+        {
+          "from": "Stefan Posch",
+          "to": "Patrick Wimmer",
+          "count": 1
+        },
+        {
+          "from": "Patrick Pentz",
+          "to": "Gernot Trauner",
+          "count": 1
+        },
+        {
+          "from": "Gernot Trauner",
+          "to": "Philipp Lienhart",
+          "count": 1
+        },
+        {
+          "from": "Philipp Lienhart",
+          "to": "Philipp Mwene",
+          "count": 1
+        },
+        {
+          "from": "Gernot Trauner",
+          "to": "Patrick Pentz",
+          "count": 1
+        },
+        {
+          "from": "Nicolas Seiwald",
+          "to": "Marcel Sabitzer",
+          "count": 1
+        },
+        {
+          "from": "Philipp Mwene",
+          "to": "Marcel Sabitzer",
+          "count": 1
+        },
+        {
+          "from": "Philipp Lienhart",
+          "to": "Gernot Trauner",
+          "count": 1
+        },
+        {
+          "from": "Marcel Sabitzer",
+          "to": "Patrick Wimmer",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "label": "58'\u201362'",
+      "nodes": [
+        {
+          "player": "Christoph Baumgartner",
+          "display_name": "Christoph Baumgartner",
+          "x": 47.1,
+          "y": 9.9,
+          "passes": 1
+        },
+        {
+          "player": "Kevin Danso",
+          "display_name": "Kevin Danso",
+          "x": 3.0,
+          "y": 46.6,
+          "passes": 1
+        },
+        {
+          "player": "Konrad Laimer",
+          "display_name": "Konrad Laimer",
+          "x": 72.8,
+          "y": 17.7,
+          "passes": 1
+        },
+        {
+          "player": "Patrick Pentz",
+          "display_name": "Patrick Pentz",
+          "x": 3.8,
+          "y": 40.0,
+          "passes": 1
+        },
+        {
+          "player": "Philipp Mwene",
+          "display_name": "Philipp Mwene",
+          "x": 34.0,
+          "y": 0.1,
+          "passes": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "Kevin Danso",
+          "to": "Patrick Pentz",
+          "count": 1
+        },
+        {
+          "from": "Patrick Pentz",
+          "to": "Philipp Lienhart",
+          "count": 1
+        },
+        {
+          "from": "Philipp Mwene",
+          "to": "Christoph Baumgartner",
+          "count": 1
+        },
+        {
+          "from": "Christoph Baumgartner",
+          "to": "Philipp Mwene",
+          "count": 1
+        },
+        {
+          "from": "Konrad Laimer",
+          "to": "Christoph Baumgartner",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "label": "62'\u201379'",
+      "nodes": [
+        {
+          "player": "Alexander Prass",
+          "display_name": "Alexander Prass",
+          "x": 73.15,
+          "y": 3.97,
+          "passes": 6
+        },
+        {
+          "player": "Christoph Baumgartner",
+          "display_name": "Christoph Baumgartner",
+          "x": 66.63,
+          "y": 55.47,
+          "passes": 3
+        },
+        {
+          "player": "Kevin Danso",
+          "display_name": "Kevin Danso",
+          "x": 34.25,
+          "y": 50.42,
+          "passes": 4
+        },
+        {
+          "player": "Konrad Laimer",
+          "display_name": "Konrad Laimer",
+          "x": 49.23,
+          "y": 18.35,
+          "passes": 4
+        },
+        {
+          "player": "Marko Arnautovi\u0107",
+          "display_name": "Marko Arnautovi\u0107",
+          "x": 87.47,
+          "y": 29.23,
+          "passes": 3
+        },
+        {
+          "player": "Nicolas Seiwald",
+          "display_name": "Nicolas Seiwald",
+          "x": 49.97,
+          "y": 45.43,
+          "passes": 3
+        },
+        {
+          "player": "Patrick Pentz",
+          "display_name": "Patrick Pentz",
+          "x": 19.45,
+          "y": 37.52,
+          "passes": 4
+        },
+        {
+          "player": "Patrick Wimmer",
+          "display_name": "Patrick Wimmer",
+          "x": 54.4,
+          "y": 68.7,
+          "passes": 3
+        },
+        {
+          "player": "Philipp Lienhart",
+          "display_name": "Philipp Lienhart",
+          "x": 37.37,
+          "y": 20.13,
+          "passes": 3
+        },
+        {
+          "player": "Stefan Posch",
+          "display_name": "Stefan Posch",
+          "x": 37.05,
+          "y": 67.35,
+          "passes": 2
+        }
+      ],
+      "edges": [
+        {
+          "from": "Christoph Baumgartner",
+          "to": "Patrick Wimmer",
+          "count": 3
+        },
+        {
+          "from": "Kevin Danso",
+          "to": "Stefan Posch",
+          "count": 2
+        },
+        {
+          "from": "Alexander Prass",
+          "to": "Marko Arnautovi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Konrad Laimer",
+          "to": "Nicolas Seiwald",
+          "count": 2
+        },
+        {
+          "from": "Nicolas Seiwald",
+          "to": "Christoph Baumgartner",
+          "count": 2
+        },
+        {
+          "from": "Kevin Danso",
+          "to": "Patrick Pentz",
+          "count": 2
+        },
+        {
+          "from": "Patrick Pentz",
+          "to": "Christoph Baumgartner",
+          "count": 2
+        },
+        {
+          "from": "Marko Arnautovi\u0107",
+          "to": "Alexander Prass",
+          "count": 2
+        },
+        {
+          "from": "Alexander Prass",
+          "to": "Konrad Laimer",
+          "count": 2
+        },
+        {
+          "from": "Philipp Lienhart",
+          "to": "Alexander Prass",
+          "count": 1
+        },
+        {
+          "from": "Alexander Prass",
+          "to": "Marcel Sabitzer",
+          "count": 1
+        },
+        {
+          "from": "Alexander Prass",
+          "to": "Kevin Danso",
+          "count": 1
+        },
+        {
+          "from": "Stefan Posch",
+          "to": "Patrick Wimmer",
+          "count": 1
+        },
+        {
+          "from": "Patrick Wimmer",
+          "to": "Nicolas Seiwald",
+          "count": 1
+        },
+        {
+          "from": "Nicolas Seiwald",
+          "to": "Alexander Prass",
+          "count": 1
+        },
+        {
+          "from": "Marko Arnautovi\u0107",
+          "to": "Christoph Baumgartner",
+          "count": 1
+        },
+        {
+          "from": "Stefan Posch",
+          "to": "Christoph Baumgartner",
+          "count": 1
+        },
+        {
+          "from": "Patrick Wimmer",
+          "to": "Christoph Baumgartner",
+          "count": 1
+        },
+        {
+          "from": "Konrad Laimer",
+          "to": "Philipp Lienhart",
+          "count": 1
+        },
+        {
+          "from": "Philipp Lienhart",
+          "to": "Konrad Laimer",
+          "count": 1
+        },
+        {
+          "from": "Konrad Laimer",
+          "to": "Patrick Pentz",
+          "count": 1
+        },
+        {
+          "from": "Patrick Pentz",
+          "to": "Kevin Danso",
+          "count": 1
+        },
+        {
+          "from": "Patrick Wimmer",
+          "to": "Marko Arnautovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Patrick Pentz",
+          "to": "Philipp Lienhart",
+          "count": 1
+        },
+        {
+          "from": "Philipp Lienhart",
+          "to": "Patrick Pentz",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "label": "80'\u2013FT",
+      "nodes": [
+        {
+          "player": "Alexander Prass",
+          "display_name": "Alexander Prass",
+          "x": 76.23,
+          "y": 7.47,
+          "passes": 3
+        },
+        {
+          "player": "Kevin Danso",
+          "display_name": "Kevin Danso",
+          "x": 37.65,
+          "y": 50.78,
+          "passes": 6
+        },
+        {
+          "player": "Konrad Laimer",
+          "display_name": "Konrad Laimer",
+          "x": 67.14,
+          "y": 17.35,
+          "passes": 8
+        },
+        {
+          "player": "Marcel Sabitzer",
+          "display_name": "Marcel Sabitzer",
+          "x": 65.35,
+          "y": 44.8,
+          "passes": 2
+        },
+        {
+          "player": "Michael Gregoritsch",
+          "display_name": "Michael Gregoritsch",
+          "x": 79.67,
+          "y": 25.49,
+          "passes": 7
+        },
+        {
+          "player": "Nicolas Seiwald",
+          "display_name": "Nicolas Seiwald",
+          "x": 68.67,
+          "y": 32.27,
+          "passes": 6
+        },
+        {
+          "player": "Patrick Wimmer",
+          "display_name": "Patrick Wimmer",
+          "x": 74.62,
+          "y": 41.8,
+          "passes": 5
+        },
+        {
+          "player": "Philipp Lienhart",
+          "display_name": "Philipp Lienhart",
+          "x": 46.16,
+          "y": 30.08,
+          "passes": 5
+        },
+        {
+          "player": "Romano Schmid",
+          "display_name": "Romano Schmid",
+          "x": 78.63,
+          "y": 20.05,
+          "passes": 6
+        },
+        {
+          "player": "Stefan Posch",
+          "display_name": "Stefan Posch",
+          "x": 51.84,
+          "y": 66.38,
+          "passes": 8
+        }
+      ],
+      "edges": [
+        {
+          "from": "Kevin Danso",
+          "to": "Stefan Posch",
+          "count": 3
+        },
+        {
+          "from": "Michael Gregoritsch",
+          "to": "Romano Schmid",
+          "count": 3
+        },
+        {
+          "from": "Romano Schmid",
+          "to": "Michael Gregoritsch",
+          "count": 3
+        },
+        {
+          "from": "Philipp Lienhart",
+          "to": "Konrad Laimer",
+          "count": 3
+        },
+        {
+          "from": "Stefan Posch",
+          "to": "Kevin Danso",
+          "count": 3
+        },
+        {
+          "from": "Nicolas Seiwald",
+          "to": "Michael Gregoritsch",
+          "count": 2
+        },
+        {
+          "from": "Romano Schmid",
+          "to": "Konrad Laimer",
+          "count": 2
+        },
+        {
+          "from": "Patrick Wimmer",
+          "to": "Stefan Posch",
+          "count": 2
+        },
+        {
+          "from": "Konrad Laimer",
+          "to": "Nicolas Seiwald",
+          "count": 2
+        },
+        {
+          "from": "Konrad Laimer",
+          "to": "Romano Schmid",
+          "count": 2
+        },
+        {
+          "from": "Stefan Posch",
+          "to": "Marcel Sabitzer",
+          "count": 1
+        },
+        {
+          "from": "Marcel Sabitzer",
+          "to": "Stefan Posch",
+          "count": 1
+        },
+        {
+          "from": "Patrick Wimmer",
+          "to": "Kevin Danso",
+          "count": 1
+        },
+        {
+          "from": "Philipp Lienhart",
+          "to": "Patrick Wimmer",
+          "count": 1
+        },
+        {
+          "from": "Patrick Wimmer",
+          "to": "Michael Gregoritsch",
+          "count": 1
+        },
+        {
+          "from": "Kevin Danso",
+          "to": "Romano Schmid",
+          "count": 1
+        },
+        {
+          "from": "Michael Gregoritsch",
+          "to": "Patrick Wimmer",
+          "count": 1
+        },
+        {
+          "from": "Patrick Wimmer",
+          "to": "Romano Schmid",
+          "count": 1
+        },
+        {
+          "from": "Romano Schmid",
+          "to": "Patrick Wimmer",
+          "count": 1
+        },
+        {
+          "from": "Stefan Posch",
+          "to": "Philipp Lienhart",
+          "count": 1
+        },
+        {
+          "from": "Michael Gregoritsch",
+          "to": "Nicolas Seiwald",
+          "count": 1
+        },
+        {
+          "from": "Nicolas Seiwald",
+          "to": "Stefan Posch",
+          "count": 1
+        },
+        {
+          "from": "Stefan Posch",
+          "to": "Nicolas Seiwald",
+          "count": 1
+        },
+        {
+          "from": "Nicolas Seiwald",
+          "to": "Konrad Laimer",
+          "count": 1
+        },
+        {
+          "from": "Konrad Laimer",
+          "to": "Marcel Sabitzer",
+          "count": 1
+        },
+        {
+          "from": "Marcel Sabitzer",
+          "to": "Konrad Laimer",
+          "count": 1
+        },
+        {
+          "from": "Michael Gregoritsch",
+          "to": "Alexander Prass",
+          "count": 1
+        },
+        {
+          "from": "Alexander Prass",
+          "to": "Konrad Laimer",
+          "count": 1
+        },
+        {
+          "from": "Konrad Laimer",
+          "to": "Alexander Prass",
+          "count": 1
+        },
+        {
+          "from": "Alexander Prass",
+          "to": "Nicolas Seiwald",
+          "count": 1
+        },
+        {
+          "from": "Nicolas Seiwald",
+          "to": "Alexander Prass",
+          "count": 1
+        },
+        {
+          "from": "Alexander Prass",
+          "to": "Philipp Lienhart",
+          "count": 1
+        },
+        {
+          "from": "Nicolas Seiwald",
+          "to": "Kevin Danso",
+          "count": 1
+        },
+        {
+          "from": "Stefan Posch",
+          "to": "Patrick Wimmer",
+          "count": 1
+        },
+        {
+          "from": "Kevin Danso",
+          "to": "Patrick Pentz",
+          "count": 1
+        },
+        {
+          "from": "Konrad Laimer",
+          "to": "Michael Gregoritsch",
+          "count": 1
+        },
+        {
+          "from": "Michael Gregoritsch",
+          "to": "Konrad Laimer",
+          "count": 1
+        },
+        {
+          "from": "Kevin Danso",
+          "to": "Patrick Wimmer",
+          "count": 1
+        },
+        {
+          "from": "Stefan Posch",
+          "to": "Konrad Laimer",
+          "count": 1
+        },
+        {
+          "from": "Konrad Laimer",
+          "to": "Philipp Lienhart",
+          "count": 1
+        },
+        {
+          "from": "Philipp Lienhart",
+          "to": "Kevin Danso",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "substitutions": [
+    {
+      "minute": 45,
+      "player_off": "Florian Grillitsch",
+      "player_on": "Patrick Wimmer"
+    },
+    {
+      "minute": 58,
+      "player_off": "Gernot Trauner",
+      "player_on": "Kevin Danso"
+    },
+    {
+      "minute": 62,
+      "player_off": "Philipp Mwene",
+      "player_on": "Alexander Prass"
+    },
+    {
+      "minute": 79,
+      "player_off": "Christoph Baumgartner",
+      "player_on": "Romano Schmid"
+    },
+    {
+      "minute": 80,
+      "player_off": "Marko Arnautovi\u0107",
+      "player_on": "Michael Gregoritsch"
+    }
+  ],
+  "metadata": {
+    "match_id": 3938641,
+    "team": "Austria",
+    "filter": "completed passes, per substitution window",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Poland vs Austria"
+  }
+}

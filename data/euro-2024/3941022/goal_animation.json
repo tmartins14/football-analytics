@@ -1,0 +1,219 @@
+{
+  "goals": [
+    {
+      "window": {
+        "anchor_event_id": "72dc211e-9b90-4575-8968-b2c1a3b5bf2b",
+        "start_event_id": "2fe6e407-269d-485c-99f7-c208fc2581a8",
+        "end_event_id": "72dc211e-9b90-4575-8968-b2c1a3b5bf2b",
+        "period": 1,
+        "window_seconds": 10.0,
+        "t_span_seconds": 28.254
+      },
+      "frames": [
+        {
+          "event_id": "2fe6e407-269d-485c-99f7-c208fc2581a8",
+          "t_seconds": 0.0,
+          "team": "Austria",
+          "event_type": "Interception",
+          "ball_x": 4.4,
+          "ball_y": 27.0,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Nicolas Seiwald",
+          "outcome": null
+        },
+        {
+          "event_id": "6f1b507c-d0eb-4d67-abdb-5dc0e1904bf3",
+          "t_seconds": 25.199,
+          "team": "Turkey",
+          "event_type": "Pass",
+          "ball_x": 120.0,
+          "ball_y": 80.0,
+          "ball_end_x": 116.7,
+          "ball_end_y": 38.1,
+          "actor": "Arda G\u00fcler",
+          "outcome": "Incomplete"
+        },
+        {
+          "event_id": "7d597c0e-cdcc-461e-b397-012836e8d62b",
+          "t_seconds": 28.205,
+          "team": "Turkey",
+          "event_type": "Ball Recovery",
+          "ball_x": 117.7,
+          "ball_y": 37.6,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Merih Demiral",
+          "outcome": null
+        },
+        {
+          "event_id": "72dc211e-9b90-4575-8968-b2c1a3b5bf2b",
+          "t_seconds": 28.254,
+          "team": "Turkey",
+          "event_type": "Shot",
+          "ball_x": 115.8,
+          "ball_y": 39.0,
+          "ball_end_x": 120.0,
+          "ball_end_y": 37.5,
+          "actor": "Merih Demiral",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "72dc211e-9b90-4575-8968-b2c1a3b5bf2b",
+          "minute": 0,
+          "second": 58,
+          "scorer": "Merih Demiral",
+          "team": "Turkey"
+        }
+      },
+      "metadata": {
+        "match_id": 3941022,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Austria vs Turkey"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "e5d34fc9-1f3c-471d-95a8-50888dece857",
+        "start_event_id": "b53aefc4-1d5c-4918-b0a6-c0335efc4326",
+        "end_event_id": "e5d34fc9-1f3c-471d-95a8-50888dece857",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 37.207
+      },
+      "frames": [
+        {
+          "event_id": "b53aefc4-1d5c-4918-b0a6-c0335efc4326",
+          "t_seconds": 35.824,
+          "team": "Turkey",
+          "event_type": "Pass",
+          "ball_x": 120.0,
+          "ball_y": 80.0,
+          "ball_end_x": 116.9,
+          "ball_end_y": 44.8,
+          "actor": "Arda G\u00fcler",
+          "outcome": null
+        },
+        {
+          "event_id": "7dc5c068-2467-428c-a2dd-fcf2378cb528",
+          "t_seconds": 37.207,
+          "team": "Austria",
+          "event_type": "Duel",
+          "ball_x": 3.2,
+          "ball_y": 35.3,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Kevin Danso",
+          "outcome": null
+        },
+        {
+          "event_id": "e5d34fc9-1f3c-471d-95a8-50888dece857",
+          "t_seconds": 37.207,
+          "team": "Turkey",
+          "event_type": "Shot",
+          "ball_x": 116.9,
+          "ball_y": 44.8,
+          "ball_end_x": 120.0,
+          "ball_end_y": 42.4,
+          "actor": "Merih Demiral",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "e5d34fc9-1f3c-471d-95a8-50888dece857",
+          "minute": 58,
+          "second": 51,
+          "scorer": "Merih Demiral",
+          "team": "Turkey"
+        }
+      },
+      "metadata": {
+        "match_id": 3941022,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Austria vs Turkey"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "a5c81c5a-c8a3-4525-8ca7-a16e4fd48269",
+        "start_event_id": "3b6a8605-74f1-40a6-bd3e-268ec30d2118",
+        "end_event_id": "a5c81c5a-c8a3-4525-8ca7-a16e4fd48269",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 23.043
+      },
+      "frames": [
+        {
+          "event_id": "3b6a8605-74f1-40a6-bd3e-268ec30d2118",
+          "t_seconds": 21.042,
+          "team": "Austria",
+          "event_type": "Pass",
+          "ball_x": 120.0,
+          "ball_y": 80.0,
+          "ball_end_x": 113.1,
+          "ball_end_y": 41.9,
+          "actor": "Marcel Sabitzer",
+          "outcome": null
+        },
+        {
+          "event_id": "8c1419a2-d06e-491c-bd02-e690fd948851",
+          "t_seconds": 22.411,
+          "team": "Austria",
+          "event_type": "Shot",
+          "ball_x": 113.1,
+          "ball_y": 41.9,
+          "ball_end_x": 115.6,
+          "ball_end_y": 35.4,
+          "actor": "Stefan Posch",
+          "outcome": null
+        },
+        {
+          "event_id": "1e8669c9-417b-487b-8544-4ae057067121",
+          "t_seconds": 23.003,
+          "team": "Austria",
+          "event_type": "Ball Recovery",
+          "ball_x": 116.6,
+          "ball_y": 35.1,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Michael Gregoritsch",
+          "outcome": null
+        },
+        {
+          "event_id": "a5c81c5a-c8a3-4525-8ca7-a16e4fd48269",
+          "t_seconds": 23.043,
+          "team": "Austria",
+          "event_type": "Shot",
+          "ball_x": 116.2,
+          "ball_y": 36.5,
+          "ball_end_x": 120.0,
+          "ball_end_y": 38.2,
+          "actor": "Michael Gregoritsch",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "a5c81c5a-c8a3-4525-8ca7-a16e4fd48269",
+          "minute": 65,
+          "second": 53,
+          "scorer": "Michael Gregoritsch",
+          "team": "Austria"
+        }
+      },
+      "metadata": {
+        "match_id": 3941022,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Austria vs Turkey"
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3941022,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Austria vs Turkey"
+  }
+}

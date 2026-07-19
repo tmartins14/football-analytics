@@ -1,0 +1,106 @@
+{
+  "periods": [
+    {
+      "formation": "3-4-2-1",
+      "from_minute": 0,
+      "to_minute": 101,
+      "players": [
+        {
+          "player": "P\u00e9ter Gul\u00e1csi",
+          "display_name": "P\u00e9ter Gul\u00e1csi",
+          "jersey_number": 1,
+          "position": "Goalkeeper",
+          "template_x": 6.0,
+          "template_y": 40.0
+        },
+        {
+          "player": "Willi Orban",
+          "display_name": "Willi Orban",
+          "jersey_number": 6,
+          "position": "Center Back",
+          "template_x": 20.0,
+          "template_y": 40.0
+        },
+        {
+          "player": "Dominik Szoboszlai",
+          "display_name": "Dominik Szoboszlai",
+          "jersey_number": 10,
+          "position": "Right Attacking Midfield",
+          "template_x": 72.0,
+          "template_y": 62.0
+        },
+        {
+          "player": "Milos Kerkez",
+          "display_name": "Milos Kerkez",
+          "jersey_number": 11,
+          "position": "Left Wing Back",
+          "template_x": 26.0,
+          "template_y": 8.0
+        },
+        {
+          "player": "Andr\u00e1s Sch\u00e4fer",
+          "display_name": "Andr\u00e1s Sch\u00e4fer",
+          "jersey_number": 13,
+          "position": "Right Defensive Midfield",
+          "template_x": 40.0,
+          "template_y": 62.0
+        },
+        {
+          "player": "Bendeg\u00faz Bolla",
+          "display_name": "Bendeg\u00faz Bolla",
+          "jersey_number": 14,
+          "position": "Right Wing Back",
+          "template_x": 26.0,
+          "template_y": 72.0
+        },
+        {
+          "player": "Callum Styles",
+          "display_name": "Callum Styles",
+          "jersey_number": 17,
+          "position": "Left Defensive Midfield",
+          "template_x": 40.0,
+          "template_y": 18.0
+        },
+        {
+          "player": "Barnab\u00e1s Varga",
+          "display_name": "Barnab\u00e1s Varga",
+          "jersey_number": 19,
+          "position": "Center Forward",
+          "template_x": 92.0,
+          "template_y": 40.0
+        },
+        {
+          "player": "Roland Sallai",
+          "display_name": "Roland Sallai",
+          "jersey_number": 20,
+          "position": "Left Attacking Midfield",
+          "template_x": 72.0,
+          "template_y": 18.0
+        },
+        {
+          "player": "Endre Botka",
+          "display_name": "Endre Botka",
+          "jersey_number": 21,
+          "position": "Right Center Back",
+          "template_x": 20.0,
+          "template_y": 52.0
+        },
+        {
+          "player": "M\u00e1rton D\u00e1rdai",
+          "display_name": "M\u00e1rton D\u00e1rdai",
+          "jersey_number": 24,
+          "position": "Left Center Back",
+          "template_x": 20.0,
+          "template_y": 28.0
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "match_id": 3930177,
+    "team": "Hungary",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Scotland vs Hungary",
+    "coordinate_note": "template_x and template_y are canonical formation-slot positions in StatsBomb 120\u00d780 coordinate space. They are NOT measured from play \u2014 they represent the declared tactical shape derived from StatsBomb position labels."
+  }
+}

@@ -1,0 +1,962 @@
+{
+  "on_ball": {
+    "periods": [
+      {
+        "from_minute": 0,
+        "to_minute": 56,
+        "players_in": [
+          "Kasper Schmeichel",
+          "Joachim Andersen",
+          "Jannik Vestergaard",
+          "Andreas Christensen",
+          "Joakim M\u00e6hle",
+          "Victor Bernth Kristansen",
+          "Morten Hjulmand",
+          "Pierre-Emile H\u00f8jbjerg",
+          "Jonas Older Wind",
+          "Christian Dannemann Eriksen",
+          "Rasmus Winther H\u00f8jlund"
+        ],
+        "players_out": [],
+        "nodes": [
+          {
+            "player_id": 3570,
+            "player": "Pierre-Emile H\u00f8jbjerg",
+            "display_name": "Pierre-Emile H\u00f8jbjerg",
+            "x": 63.26,
+            "y": 43.11,
+            "event_count": 110
+          },
+          {
+            "player_id": 8621,
+            "player": "Morten Hjulmand",
+            "display_name": "Morten Hjulmand",
+            "x": 61.0,
+            "y": 46.18,
+            "event_count": 97
+          },
+          {
+            "player_id": 8815,
+            "player": "Jannik Vestergaard",
+            "display_name": "Jannik Vestergaard",
+            "x": 45.56,
+            "y": 41.67,
+            "event_count": 83
+          },
+          {
+            "player_id": 8247,
+            "player": "Joachim Andersen",
+            "display_name": "Joachim Andersen",
+            "x": 58.22,
+            "y": 62.82,
+            "event_count": 80
+          },
+          {
+            "player_id": 16554,
+            "player": "Joakim M\u00e6hle",
+            "display_name": "Joakim Maehle",
+            "x": 81.77,
+            "y": 72.84,
+            "event_count": 79
+          },
+          {
+            "player_id": 3959,
+            "player": "Andreas Christensen",
+            "display_name": "Andreas Christensen",
+            "x": 51.73,
+            "y": 22.74,
+            "event_count": 54
+          },
+          {
+            "player_id": 21261,
+            "player": "Jonas Older Wind",
+            "display_name": "Jonas Wind",
+            "x": 77.39,
+            "y": 54.8,
+            "event_count": 46
+          },
+          {
+            "player_id": 3043,
+            "player": "Christian Dannemann Eriksen",
+            "display_name": "Christian Eriksen",
+            "x": 71.76,
+            "y": 43.02,
+            "event_count": 39
+          },
+          {
+            "player_id": 60343,
+            "player": "Victor Bernth Kristansen",
+            "display_name": "Victor Kristiansen",
+            "x": 64.84,
+            "y": 7.06,
+            "event_count": 24
+          },
+          {
+            "player_id": 51672,
+            "player": "Rasmus Winther H\u00f8jlund",
+            "display_name": "Rasmus H\u00f6jlund",
+            "x": 82.48,
+            "y": 39.94,
+            "event_count": 23
+          },
+          {
+            "player_id": 3815,
+            "player": "Kasper Schmeichel",
+            "display_name": "Kasper Schmeichel",
+            "x": 8.41,
+            "y": 38.24,
+            "event_count": 22
+          }
+        ],
+        "hull": [
+          [
+            82.48,
+            39.94
+          ],
+          [
+            81.77,
+            72.84
+          ],
+          [
+            58.22,
+            62.82
+          ],
+          [
+            8.41,
+            38.24
+          ],
+          [
+            64.84,
+            7.06
+          ]
+        ]
+      },
+      {
+        "from_minute": 56,
+        "to_minute": 66,
+        "players_in": [
+          "Alexander Hartmann Bah",
+          "Mikkel Damsgaard"
+        ],
+        "players_out": [
+          "Victor Bernth Kristansen",
+          "Jonas Older Wind"
+        ],
+        "nodes": [
+          {
+            "player_id": 3570,
+            "player": "Pierre-Emile H\u00f8jbjerg",
+            "display_name": "Pierre-Emile H\u00f8jbjerg",
+            "x": 71.83,
+            "y": 36.38,
+            "event_count": 11
+          },
+          {
+            "player_id": 24547,
+            "player": "Alexander Hartmann Bah",
+            "display_name": "Alexander Bah",
+            "x": 60.37,
+            "y": 49.52,
+            "event_count": 6
+          },
+          {
+            "player_id": 8247,
+            "player": "Joachim Andersen",
+            "display_name": "Joachim Andersen",
+            "x": 60.33,
+            "y": 64.73,
+            "event_count": 6
+          },
+          {
+            "player_id": 3043,
+            "player": "Christian Dannemann Eriksen",
+            "display_name": "Christian Eriksen",
+            "x": 72.5,
+            "y": 38.9,
+            "event_count": 3
+          },
+          {
+            "player_id": 24443,
+            "player": "Mikkel Damsgaard",
+            "display_name": "Mikkel Damsgaard",
+            "x": 108.43,
+            "y": 63.7,
+            "event_count": 3
+          },
+          {
+            "player_id": 3815,
+            "player": "Kasper Schmeichel",
+            "display_name": "Kasper Schmeichel",
+            "x": 35.3,
+            "y": 54.67,
+            "event_count": 3
+          },
+          {
+            "player_id": 51672,
+            "player": "Rasmus Winther H\u00f8jlund",
+            "display_name": "Rasmus H\u00f6jlund",
+            "x": 115.07,
+            "y": 43.63,
+            "event_count": 3
+          },
+          {
+            "player_id": 16554,
+            "player": "Joakim M\u00e6hle",
+            "display_name": "Joakim Maehle",
+            "x": 58.65,
+            "y": 19.45,
+            "event_count": 2
+          },
+          {
+            "player_id": 3959,
+            "player": "Andreas Christensen",
+            "display_name": "Andreas Christensen",
+            "x": 55.9,
+            "y": 27.15,
+            "event_count": 2
+          }
+        ],
+        "hull": [
+          [
+            35.3,
+            54.67
+          ],
+          [
+            58.65,
+            19.45
+          ],
+          [
+            115.07,
+            43.63
+          ],
+          [
+            108.43,
+            63.7
+          ],
+          [
+            60.33,
+            64.73
+          ]
+        ]
+      },
+      {
+        "from_minute": 66,
+        "to_minute": 81,
+        "players_in": [
+          "Yussuf Yurary Poulsen"
+        ],
+        "players_out": [
+          "Rasmus Winther H\u00f8jlund"
+        ],
+        "nodes": [
+          {
+            "player_id": 3570,
+            "player": "Pierre-Emile H\u00f8jbjerg",
+            "display_name": "Pierre-Emile H\u00f8jbjerg",
+            "x": 63.51,
+            "y": 30.04,
+            "event_count": 30
+          },
+          {
+            "player_id": 8247,
+            "player": "Joachim Andersen",
+            "display_name": "Joachim Andersen",
+            "x": 58.72,
+            "y": 63.63,
+            "event_count": 29
+          },
+          {
+            "player_id": 8815,
+            "player": "Jannik Vestergaard",
+            "display_name": "Jannik Vestergaard",
+            "x": 51.54,
+            "y": 26.35,
+            "event_count": 28
+          },
+          {
+            "player_id": 3043,
+            "player": "Christian Dannemann Eriksen",
+            "display_name": "Christian Eriksen",
+            "x": 83.21,
+            "y": 22.37,
+            "event_count": 19
+          },
+          {
+            "player_id": 8621,
+            "player": "Morten Hjulmand",
+            "display_name": "Morten Hjulmand",
+            "x": 53.69,
+            "y": 44.91,
+            "event_count": 15
+          },
+          {
+            "player_id": 24547,
+            "player": "Alexander Hartmann Bah",
+            "display_name": "Alexander Bah",
+            "x": 76.15,
+            "y": 72.67,
+            "event_count": 13
+          },
+          {
+            "player_id": 3959,
+            "player": "Andreas Christensen",
+            "display_name": "Andreas Christensen",
+            "x": 54.86,
+            "y": 37.76,
+            "event_count": 13
+          },
+          {
+            "player_id": 24443,
+            "player": "Mikkel Damsgaard",
+            "display_name": "Mikkel Damsgaard",
+            "x": 64.43,
+            "y": 28.68,
+            "event_count": 13
+          },
+          {
+            "player_id": 16554,
+            "player": "Joakim M\u00e6hle",
+            "display_name": "Joakim Maehle",
+            "x": 80.21,
+            "y": 3.66,
+            "event_count": 10
+          },
+          {
+            "player_id": 5536,
+            "player": "Yussuf Yurary Poulsen",
+            "display_name": "Yussuf Poulsen",
+            "x": 88.17,
+            "y": 32.07,
+            "event_count": 6
+          },
+          {
+            "player_id": 3815,
+            "player": "Kasper Schmeichel",
+            "display_name": "Kasper Schmeichel",
+            "x": 9.07,
+            "y": 39.95,
+            "event_count": 6
+          }
+        ],
+        "hull": [
+          [
+            76.15,
+            72.67
+          ],
+          [
+            9.07,
+            39.95
+          ],
+          [
+            80.21,
+            3.66
+          ],
+          [
+            88.17,
+            32.07
+          ]
+        ]
+      },
+      {
+        "from_minute": 81,
+        "to_minute": 94,
+        "players_in": [
+          "Andreas Skov Olsen",
+          "Christian N\u00f8rgaard"
+        ],
+        "players_out": [
+          "Christian Dannemann Eriksen",
+          "Morten Hjulmand"
+        ],
+        "nodes": [
+          {
+            "player_id": 24547,
+            "player": "Alexander Hartmann Bah",
+            "display_name": "Alexander Bah",
+            "x": 53.4,
+            "y": 69.6,
+            "event_count": 21
+          },
+          {
+            "player_id": 17042,
+            "player": "Andreas Skov Olsen",
+            "display_name": "Andreas Skov Olsen",
+            "x": 54.33,
+            "y": 68.11,
+            "event_count": 15
+          },
+          {
+            "player_id": 8247,
+            "player": "Joachim Andersen",
+            "display_name": "Joachim Andersen",
+            "x": 36.79,
+            "y": 54.33,
+            "event_count": 14
+          },
+          {
+            "player_id": 3570,
+            "player": "Pierre-Emile H\u00f8jbjerg",
+            "display_name": "Pierre-Emile H\u00f8jbjerg",
+            "x": 44.23,
+            "y": 21.61,
+            "event_count": 14
+          },
+          {
+            "player_id": 7097,
+            "player": "Christian N\u00f8rgaard",
+            "display_name": "Christian N\u00f8rgaard",
+            "x": 44.64,
+            "y": 39.92,
+            "event_count": 14
+          },
+          {
+            "player_id": 16554,
+            "player": "Joakim M\u00e6hle",
+            "display_name": "Joakim Maehle",
+            "x": 43.18,
+            "y": 5.64,
+            "event_count": 12
+          },
+          {
+            "player_id": 8815,
+            "player": "Jannik Vestergaard",
+            "display_name": "Jannik Vestergaard",
+            "x": 38.02,
+            "y": 15.09,
+            "event_count": 12
+          },
+          {
+            "player_id": 5536,
+            "player": "Yussuf Yurary Poulsen",
+            "display_name": "Yussuf Poulsen",
+            "x": 59.95,
+            "y": 44.43,
+            "event_count": 10
+          },
+          {
+            "player_id": 24443,
+            "player": "Mikkel Damsgaard",
+            "display_name": "Mikkel Damsgaard",
+            "x": 45.44,
+            "y": 8.3,
+            "event_count": 7
+          },
+          {
+            "player_id": 3959,
+            "player": "Andreas Christensen",
+            "display_name": "Andreas Christensen",
+            "x": 34.84,
+            "y": 30.92,
+            "event_count": 5
+          }
+        ],
+        "hull": [
+          [
+            34.84,
+            30.92
+          ],
+          [
+            38.02,
+            15.09
+          ],
+          [
+            43.18,
+            5.64
+          ],
+          [
+            45.44,
+            8.3
+          ],
+          [
+            59.95,
+            44.43
+          ],
+          [
+            54.33,
+            68.11
+          ],
+          [
+            53.4,
+            69.6
+          ],
+          [
+            36.79,
+            54.33
+          ]
+        ]
+      }
+    ]
+  },
+  "off_ball": {
+    "density_grid": {
+      "cols": 24,
+      "rows": 16,
+      "values": [
+        [
+          0.1021,
+          0.1234,
+          0.146,
+          0.1693,
+          0.1926,
+          0.215,
+          0.2359,
+          0.2544,
+          0.2698,
+          0.2815,
+          0.2892,
+          0.2925,
+          0.2911,
+          0.2853,
+          0.275,
+          0.2606,
+          0.2427,
+          0.2218,
+          0.1989,
+          0.1748,
+          0.1503,
+          0.1264,
+          0.1039,
+          0.0834
+        ],
+        [
+          0.1362,
+          0.1647,
+          0.195,
+          0.2264,
+          0.2578,
+          0.2884,
+          0.317,
+          0.3427,
+          0.3644,
+          0.3815,
+          0.3931,
+          0.3989,
+          0.3986,
+          0.392,
+          0.3793,
+          0.3608,
+          0.3374,
+          0.3097,
+          0.2789,
+          0.2461,
+          0.2127,
+          0.1798,
+          0.1485,
+          0.1198
+        ],
+        [
+          0.1727,
+          0.2089,
+          0.2476,
+          0.2877,
+          0.3282,
+          0.3678,
+          0.4051,
+          0.439,
+          0.4681,
+          0.4915,
+          0.5082,
+          0.5175,
+          0.5189,
+          0.5122,
+          0.4976,
+          0.4753,
+          0.4463,
+          0.4114,
+          0.3721,
+          0.33,
+          0.2865,
+          0.2434,
+          0.2021,
+          0.164
+        ],
+        [
+          0.2083,
+          0.2523,
+          0.2994,
+          0.3485,
+          0.3982,
+          0.4471,
+          0.4936,
+          0.5361,
+          0.5733,
+          0.6038,
+          0.6264,
+          0.64,
+          0.6441,
+          0.6382,
+          0.6224,
+          0.597,
+          0.5629,
+          0.5212,
+          0.4735,
+          0.4218,
+          0.3681,
+          0.3143,
+          0.2624,
+          0.2141
+        ],
+        [
+          0.2397,
+          0.2907,
+          0.3455,
+          0.4029,
+          0.4613,
+          0.5191,
+          0.5745,
+          0.6257,
+          0.671,
+          0.7089,
+          0.7377,
+          0.7564,
+          0.764,
+          0.7598,
+          0.7438,
+          0.7163,
+          0.6781,
+          0.6305,
+          0.5754,
+          0.5149,
+          0.4514,
+          0.3873,
+          0.3251,
+          0.2666
+        ],
+        [
+          0.2633,
+          0.32,
+          0.3812,
+          0.4455,
+          0.5113,
+          0.5768,
+          0.6401,
+          0.6992,
+          0.7521,
+          0.797,
+          0.8321,
+          0.8561,
+          0.8676,
+          0.866,
+          0.8508,
+          0.8223,
+          0.7814,
+          0.7294,
+          0.6683,
+          0.6005,
+          0.5287,
+          0.4558,
+          0.3843,
+          0.3166
+        ],
+        [
+          0.2766,
+          0.337,
+          0.4026,
+          0.4718,
+          0.5431,
+          0.6145,
+          0.684,
+          0.7494,
+          0.8087,
+          0.8596,
+          0.9004,
+          0.9293,
+          0.9449,
+          0.9462,
+          0.9327,
+          0.9045,
+          0.8624,
+          0.8078,
+          0.7427,
+          0.6698,
+          0.5919,
+          0.5121,
+          0.4335,
+          0.3586
+        ],
+        [
+          0.2781,
+          0.34,
+          0.4075,
+          0.4793,
+          0.5535,
+          0.6284,
+          0.7019,
+          0.7715,
+          0.8352,
+          0.8907,
+          0.9359,
+          0.9689,
+          0.9882,
+          0.9925,
+          0.9812,
+          0.9543,
+          0.9124,
+          0.8571,
+          0.7903,
+          0.7147,
+          0.6334,
+          0.5496,
+          0.4666,
+          0.3873
+        ],
+        [
+          0.2679,
+          0.3289,
+          0.3958,
+          0.4673,
+          0.5419,
+          0.6175,
+          0.6922,
+          0.7636,
+          0.8294,
+          0.8874,
+          0.9352,
+          0.971,
+          0.9931,
+          1.0,
+          0.9911,
+          0.9662,
+          0.926,
+          0.8717,
+          0.8055,
+          0.7299,
+          0.6482,
+          0.5636,
+          0.4795,
+          0.3988
+        ],
+        [
+          0.2475,
+          0.3052,
+          0.369,
+          0.4376,
+          0.5095,
+          0.5831,
+          0.6561,
+          0.7265,
+          0.7919,
+          0.85,
+          0.8985,
+          0.9355,
+          0.9592,
+          0.9681,
+          0.9615,
+          0.9392,
+          0.9017,
+          0.8502,
+          0.7867,
+          0.7138,
+          0.6347,
+          0.5525,
+          0.4705,
+          0.3916
+        ],
+        [
+          0.2191,
+          0.2717,
+          0.33,
+          0.3933,
+          0.4601,
+          0.5288,
+          0.5975,
+          0.6642,
+          0.7265,
+          0.7823,
+          0.8295,
+          0.8659,
+          0.8899,
+          0.9001,
+          0.8956,
+          0.8762,
+          0.8423,
+          0.795,
+          0.7363,
+          0.6686,
+          0.5947,
+          0.5178,
+          0.441,
+          0.3671
+        ],
+        [
+          0.186,
+          0.2318,
+          0.2831,
+          0.339,
+          0.3985,
+          0.4601,
+          0.5221,
+          0.5826,
+          0.6396,
+          0.691,
+          0.7348,
+          0.769,
+          0.7921,
+          0.8028,
+          0.8001,
+          0.7838,
+          0.7543,
+          0.7125,
+          0.6602,
+          0.5995,
+          0.5333,
+          0.4642,
+          0.3951,
+          0.3286
+        ],
+        [
+          0.1511,
+          0.1893,
+          0.2324,
+          0.2798,
+          0.3305,
+          0.3833,
+          0.4368,
+          0.4893,
+          0.5391,
+          0.5844,
+          0.6232,
+          0.654,
+          0.6751,
+          0.6855,
+          0.6843,
+          0.6712,
+          0.6465,
+          0.6111,
+          0.5664,
+          0.5144,
+          0.4573,
+          0.3978,
+          0.3383,
+          0.281
+        ],
+        [
+          0.1173,
+          0.1478,
+          0.1824,
+          0.2207,
+          0.2619,
+          0.3051,
+          0.3491,
+          0.3926,
+          0.4341,
+          0.472,
+          0.5049,
+          0.5311,
+          0.5496,
+          0.5591,
+          0.559,
+          0.549,
+          0.5293,
+          0.5007,
+          0.4642,
+          0.4215,
+          0.3746,
+          0.3256,
+          0.2766,
+          0.2294
+        ],
+        [
+          0.087,
+          0.1101,
+          0.1366,
+          0.166,
+          0.1978,
+          0.2314,
+          0.2659,
+          0.3001,
+          0.3329,
+          0.3631,
+          0.3895,
+          0.4108,
+          0.426,
+          0.4342,
+          0.4349,
+          0.4277,
+          0.4128,
+          0.3908,
+          0.3625,
+          0.3292,
+          0.2925,
+          0.2541,
+          0.2157,
+          0.1787
+        ],
+        [
+          0.0614,
+          0.0781,
+          0.0973,
+          0.1187,
+          0.1421,
+          0.1668,
+          0.1924,
+          0.2179,
+          0.2425,
+          0.2652,
+          0.2853,
+          0.3016,
+          0.3135,
+          0.3201,
+          0.3212,
+          0.3164,
+          0.3057,
+          0.2897,
+          0.2689,
+          0.2443,
+          0.2171,
+          0.1886,
+          0.16,
+          0.1324
+        ]
+      ]
+    },
+    "centroid": {
+      "x": 63.89,
+      "y": 40.33
+    },
+    "thirds_spine": [
+      {
+        "third": "defensive",
+        "x": 25.92,
+        "y": 37.32
+      },
+      {
+        "third": "middle",
+        "x": 60.71,
+        "y": 40.66
+      },
+      {
+        "third": "attacking",
+        "x": 93.74,
+        "y": 41.74
+      }
+    ],
+    "ellipse": {
+      "cx": 63.89,
+      "cy": 40.33,
+      "rx": 26.13,
+      "ry": 16.45,
+      "angle_deg": -174.5
+    },
+    "depth_line": {
+      "x": 80.43,
+      "percentile": 70
+    }
+  },
+  "metadata": {
+    "match_id": 3930171,
+    "team": "Denmark",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Denmark vs England",
+    "on_ball_event_count": 1002,
+    "on_ball_period_count": 4,
+    "off_ball_bandwidth_yards": 8.0,
+    "off_ball_depth_percentile": 70,
+    "off_ball_grid_cols": 24,
+    "off_ball_grid_rows": 16,
+    "phase_filter": "open_play_only",
+    "coordinate_system": "statsbomb_120x80_normalised_attack_right",
+    "coordinate_note": "Coordinates are normalised so the team always attacks right (increasing x). Raw StatsBomb events are flipped (x\u2192120-x, y\u219280-y) in periods where the team attacks left.",
+    "camera_caveat": "360 frames follow the ball; the visible subset of out-of-possession positions is biased toward areas near the ball. The camera artifact and the real defensive shape point the same direction \u2014 they cannot be cleanly separated."
+  }
+}

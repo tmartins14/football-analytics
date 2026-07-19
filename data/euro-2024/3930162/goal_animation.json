@@ -1,0 +1,253 @@
+{
+  "goals": [
+    {
+      "window": {
+        "anchor_event_id": "5d639789-9b50-441e-acb0-d2a1af382381",
+        "start_event_id": "1f6affda-efd2-4429-ba4e-895b69e699dc",
+        "end_event_id": "5d639789-9b50-441e-acb0-d2a1af382381",
+        "period": 1,
+        "window_seconds": 10.0,
+        "t_span_seconds": 12.538
+      },
+      "frames": [
+        {
+          "event_id": "1f6affda-efd2-4429-ba4e-895b69e699dc",
+          "t_seconds": 0.0,
+          "team": "Denmark",
+          "event_type": "Pass",
+          "ball_x": 64.5,
+          "ball_y": 73.1,
+          "ball_end_x": 95.0,
+          "ball_end_y": 74.6,
+          "actor": "Alexander Bah",
+          "outcome": null
+        },
+        {
+          "event_id": "2e13f56d-c1db-4634-9b7c-f1399dcdf64a",
+          "t_seconds": 2.84,
+          "team": "Denmark",
+          "event_type": "Carry",
+          "ball_x": 95.0,
+          "ball_y": 74.6,
+          "ball_end_x": 99.0,
+          "ball_end_y": 74.9,
+          "actor": "Rasmus H\u00f6jlund",
+          "outcome": null
+        },
+        {
+          "event_id": "61be1a26-89a1-4f78-bcc9-1b13e0fb9a43",
+          "t_seconds": 4.055,
+          "team": "Slovenia",
+          "event_type": "Pressure",
+          "ball_x": 21.7,
+          "ball_y": 4.5,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Jaka Bijol",
+          "outcome": null
+        },
+        {
+          "event_id": "9d62f210-25f4-4e6b-9ab7-713c18f0a8b1",
+          "t_seconds": 5.627,
+          "team": "Slovenia",
+          "event_type": "Duel",
+          "ball_x": 21.1,
+          "ball_y": 5.2,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Jaka Bijol",
+          "outcome": null
+        },
+        {
+          "event_id": "541fba78-f98b-4bfa-be5d-f8e35e3f1096",
+          "t_seconds": 5.627,
+          "team": "Slovenia",
+          "event_type": "Carry",
+          "ball_x": 21.1,
+          "ball_y": 5.2,
+          "ball_end_x": 20.9,
+          "ball_end_y": 4.2,
+          "actor": "Jaka Bijol",
+          "outcome": null
+        },
+        {
+          "event_id": "dfe4de5e-3254-4dec-893c-8ceb7c52fcb5",
+          "t_seconds": 6.139,
+          "team": "Slovenia",
+          "event_type": "Pass",
+          "ball_x": 20.9,
+          "ball_y": 4.2,
+          "ball_end_x": 26.8,
+          "ball_end_y": 0.1,
+          "actor": "Jaka Bijol",
+          "outcome": "Out"
+        },
+        {
+          "event_id": "ce30fd67-1bdd-4d6e-9060-6f5cf374f59a",
+          "t_seconds": 9.369,
+          "team": "Denmark",
+          "event_type": "Pass",
+          "ball_x": 99.0,
+          "ball_y": 80.0,
+          "ball_end_x": 110.6,
+          "ball_end_y": 54.3,
+          "actor": "Alexander Bah",
+          "outcome": null
+        },
+        {
+          "event_id": "38535395-e400-4670-b5ca-f28c6aa464d2",
+          "t_seconds": 10.68,
+          "team": "Slovenia",
+          "event_type": "Pressure",
+          "ball_x": 9.5,
+          "ball_y": 26.1,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Vanja Drku\u0161i\u0107",
+          "outcome": null
+        },
+        {
+          "event_id": "122fac77-d268-4a09-83bc-2fc1583caf60",
+          "t_seconds": 11.221,
+          "team": "Denmark",
+          "event_type": "Pass",
+          "ball_x": 110.8,
+          "ball_y": 55.2,
+          "ball_end_x": 111.2,
+          "ball_end_y": 50.7,
+          "actor": "Jonas Wind",
+          "outcome": null
+        },
+        {
+          "event_id": "97af539f-139c-4508-b51c-9f73664d2909",
+          "t_seconds": 12.308,
+          "team": "Slovenia",
+          "event_type": "Pressure",
+          "ball_x": 11.8,
+          "ball_y": 33.8,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "\u017dan Karni\u010dnik",
+          "outcome": null
+        },
+        {
+          "event_id": "727f7e78-7527-4a12-9d76-ddfa216bba1c",
+          "t_seconds": 12.322,
+          "team": "Denmark",
+          "event_type": "Carry",
+          "ball_x": 111.2,
+          "ball_y": 50.7,
+          "ball_end_x": 109.7,
+          "ball_end_y": 46.4,
+          "actor": "Christian Eriksen",
+          "outcome": null
+        },
+        {
+          "event_id": "5d639789-9b50-441e-acb0-d2a1af382381",
+          "t_seconds": 12.538,
+          "team": "Denmark",
+          "event_type": "Shot",
+          "ball_x": 109.7,
+          "ball_y": 46.4,
+          "ball_end_x": 120.0,
+          "ball_end_y": 37.5,
+          "actor": "Christian Eriksen",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "5d639789-9b50-441e-acb0-d2a1af382381",
+          "minute": 16,
+          "second": 36,
+          "scorer": "Christian Eriksen",
+          "team": "Denmark"
+        }
+      },
+      "metadata": {
+        "match_id": 3930162,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Slovenia vs Denmark"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "5c6df9de-3954-42c6-8632-30a0ba2976b2",
+        "start_event_id": "1dec81d1-18a1-4350-b134-6e1479a3381d",
+        "end_event_id": "5c6df9de-3954-42c6-8632-30a0ba2976b2",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 38.13
+      },
+      "frames": [
+        {
+          "event_id": "1dec81d1-18a1-4350-b134-6e1479a3381d",
+          "t_seconds": 0.0,
+          "team": "Denmark",
+          "event_type": "Pass",
+          "ball_x": 12.9,
+          "ball_y": 31.7,
+          "ball_end_x": 0.1,
+          "ball_end_y": 21.9,
+          "actor": "Victor Kristiansen",
+          "outcome": "Out"
+        },
+        {
+          "event_id": "0f73e32a-fe61-4e7f-b37b-35ddcfe615eb",
+          "t_seconds": 34.316,
+          "team": "Slovenia",
+          "event_type": "Pass",
+          "ball_x": 120.0,
+          "ball_y": 80.0,
+          "ball_end_x": 115.0,
+          "ball_end_y": 46.8,
+          "actor": "Adam Gnezda \u010cerin",
+          "outcome": "Incomplete"
+        },
+        {
+          "event_id": "a3b37bd6-b9e0-45b4-975a-539de2bace27",
+          "t_seconds": 38.054,
+          "team": "Slovenia",
+          "event_type": "Ball Recovery",
+          "ball_x": 99.2,
+          "ball_y": 23.9,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Erik Jan\u017ea",
+          "outcome": null
+        },
+        {
+          "event_id": "5c6df9de-3954-42c6-8632-30a0ba2976b2",
+          "t_seconds": 38.13,
+          "team": "Slovenia",
+          "event_type": "Shot",
+          "ball_x": 98.1,
+          "ball_y": 22.6,
+          "ball_end_x": 120.0,
+          "ball_end_y": 41.0,
+          "actor": "Erik Jan\u017ea",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "5c6df9de-3954-42c6-8632-30a0ba2976b2",
+          "minute": 76,
+          "second": 26,
+          "scorer": "Erik Jan\u017ea",
+          "team": "Slovenia"
+        }
+      },
+      "metadata": {
+        "match_id": 3930162,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Slovenia vs Denmark"
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3930162,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Slovenia vs Denmark"
+  }
+}

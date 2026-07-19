@@ -1,0 +1,123 @@
+{
+  "goals": [
+    {
+      "window": {
+        "anchor_event_id": "174dda5d-71f1-4499-abae-196b6bdae6d5",
+        "start_event_id": "174dda5d-71f1-4499-abae-196b6bdae6d5",
+        "end_event_id": "174dda5d-71f1-4499-abae-196b6bdae6d5",
+        "period": 5,
+        "window_seconds": 10.0,
+        "t_span_seconds": 49.381
+      },
+      "frames": [
+        {
+          "event_id": "174dda5d-71f1-4499-abae-196b6bdae6d5",
+          "t_seconds": 49.381,
+          "team": "Portugal",
+          "event_type": "Shot",
+          "ball_x": 108.1,
+          "ball_y": 40.1,
+          "ball_end_x": 120.0,
+          "ball_end_y": 36.6,
+          "actor": "Cristiano Ronaldo",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "174dda5d-71f1-4499-abae-196b6bdae6d5",
+          "minute": 120,
+          "second": 58,
+          "scorer": "Cristiano Ronaldo",
+          "team": "Portugal"
+        }
+      },
+      "metadata": {
+        "match_id": 3941020,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Portugal vs Slovenia"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "7fc8af2f-bd95-404a-bc9d-1bfa7ca48c75",
+        "start_event_id": "7fc8af2f-bd95-404a-bc9d-1bfa7ca48c75",
+        "end_event_id": "7fc8af2f-bd95-404a-bc9d-1bfa7ca48c75",
+        "period": 5,
+        "window_seconds": 10.0,
+        "t_span_seconds": 53.556
+      },
+      "frames": [
+        {
+          "event_id": "7fc8af2f-bd95-404a-bc9d-1bfa7ca48c75",
+          "t_seconds": 53.556,
+          "team": "Portugal",
+          "event_type": "Shot",
+          "ball_x": 108.2,
+          "ball_y": 40.1,
+          "ball_end_x": 120.0,
+          "ball_end_y": 37.1,
+          "actor": "Bruno Fernandes",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "7fc8af2f-bd95-404a-bc9d-1bfa7ca48c75",
+          "minute": 122,
+          "second": 34,
+          "scorer": "Bruno Fernandes",
+          "team": "Portugal"
+        }
+      },
+      "metadata": {
+        "match_id": 3941020,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Portugal vs Slovenia"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "09b3ee41-99d7-4162-8477-f486dd28c59d",
+        "start_event_id": "09b3ee41-99d7-4162-8477-f486dd28c59d",
+        "end_event_id": "09b3ee41-99d7-4162-8477-f486dd28c59d",
+        "period": 5,
+        "window_seconds": 10.0,
+        "t_span_seconds": 51.546
+      },
+      "frames": [
+        {
+          "event_id": "09b3ee41-99d7-4162-8477-f486dd28c59d",
+          "t_seconds": 51.546,
+          "team": "Portugal",
+          "event_type": "Shot",
+          "ball_x": 108.1,
+          "ball_y": 40.1,
+          "ball_end_x": 120.0,
+          "ball_end_y": 43.8,
+          "actor": "Bernardo Silva",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "09b3ee41-99d7-4162-8477-f486dd28c59d",
+          "minute": 124,
+          "second": 13,
+          "scorer": "Bernardo Silva",
+          "team": "Portugal"
+        }
+      },
+      "metadata": {
+        "match_id": 3941020,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Portugal vs Slovenia"
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3941020,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Portugal vs Slovenia"
+  }
+}

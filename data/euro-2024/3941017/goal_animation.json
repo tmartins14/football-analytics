@@ -1,0 +1,303 @@
+{
+  "goals": [
+    {
+      "window": {
+        "anchor_event_id": "7ba2b321-b31e-420e-a0ae-58032ca2781d",
+        "start_event_id": "462dcacc-4a0d-4b4e-95a0-5897345c589e",
+        "end_event_id": "7ba2b321-b31e-420e-a0ae-58032ca2781d",
+        "period": 1,
+        "window_seconds": 10.0,
+        "t_span_seconds": 11.152
+      },
+      "frames": [
+        {
+          "event_id": "462dcacc-4a0d-4b4e-95a0-5897345c589e",
+          "t_seconds": 0.0,
+          "team": "Slovakia",
+          "event_type": "Carry",
+          "ball_x": 44.2,
+          "ball_y": 63.5,
+          "ball_end_x": 44.0,
+          "ball_end_y": 78.2,
+          "actor": "Denis Vavro",
+          "outcome": null
+        },
+        {
+          "event_id": "8ebb96ec-4862-4156-b3ca-0c7a4e4dc8d5",
+          "t_seconds": 2.461,
+          "team": "Slovakia",
+          "event_type": "Pass",
+          "ball_x": 44.0,
+          "ball_y": 78.2,
+          "ball_end_x": 84.8,
+          "ball_end_y": 61.1,
+          "actor": "Denis Vavro",
+          "outcome": null
+        },
+        {
+          "event_id": "4faa13d1-4396-427d-807b-381688b4a284",
+          "t_seconds": 5.404,
+          "team": "England",
+          "event_type": "Duel",
+          "ball_x": 35.3,
+          "ball_y": 19.0,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Marc Guehi",
+          "outcome": null
+        },
+        {
+          "event_id": "38459312-8903-4be4-bc3a-5251d95ea3b1",
+          "t_seconds": 5.404,
+          "team": "Slovakia",
+          "event_type": "Pass",
+          "ball_x": 84.8,
+          "ball_y": 61.1,
+          "ball_end_x": 93.4,
+          "ball_end_y": 54.8,
+          "actor": "Juraj Kucka",
+          "outcome": null
+        },
+        {
+          "event_id": "44ab13b7-e255-4fd2-a3ba-8d30c25a5548",
+          "t_seconds": 7.056,
+          "team": "Slovakia",
+          "event_type": "Carry",
+          "ball_x": 93.4,
+          "ball_y": 54.8,
+          "ball_end_x": 97.1,
+          "ball_end_y": 45.6,
+          "actor": "David Strelec",
+          "outcome": null
+        },
+        {
+          "event_id": "ae2ad8cf-7065-4691-a87a-1fcd05051978",
+          "t_seconds": 9.36,
+          "team": "Slovakia",
+          "event_type": "Pass",
+          "ball_x": 97.1,
+          "ball_y": 45.6,
+          "ball_end_x": 106.8,
+          "ball_end_y": 47.4,
+          "actor": "David Strelec",
+          "outcome": null
+        },
+        {
+          "event_id": "fd5141cd-88e0-4716-997c-49aca31d0576",
+          "t_seconds": 9.817,
+          "team": "England",
+          "event_type": "Pressure",
+          "ball_x": 15.2,
+          "ball_y": 32.3,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Marc Guehi",
+          "outcome": null
+        },
+        {
+          "event_id": "cda21764-98fa-46f6-b385-a90d18b9ddab",
+          "t_seconds": 10.112,
+          "team": "Slovakia",
+          "event_type": "Carry",
+          "ball_x": 106.8,
+          "ball_y": 47.4,
+          "ball_end_x": 113.3,
+          "ball_end_y": 44.7,
+          "actor": "Ivan Schranz",
+          "outcome": null
+        },
+        {
+          "event_id": "7ba2b321-b31e-420e-a0ae-58032ca2781d",
+          "t_seconds": 11.152,
+          "team": "Slovakia",
+          "event_type": "Shot",
+          "ball_x": 113.3,
+          "ball_y": 44.7,
+          "ball_end_x": 120.0,
+          "ball_end_y": 37.4,
+          "actor": "Ivan Schranz",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "7ba2b321-b31e-420e-a0ae-58032ca2781d",
+          "minute": 24,
+          "second": 23,
+          "scorer": "Ivan Schranz",
+          "team": "Slovakia"
+        }
+      },
+      "metadata": {
+        "match_id": 3941017,
+        "competition": "UEFA Euro 2024",
+        "match_label": "England vs Slovakia"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "7d959296-6408-44f2-b7cb-9105cd55a19d",
+        "start_event_id": "26dc0583-ca95-4ceb-b611-9038cb370d84",
+        "end_event_id": "7d959296-6408-44f2-b7cb-9105cd55a19d",
+        "period": 3,
+        "window_seconds": 10.0,
+        "t_span_seconds": 36.122
+      },
+      "frames": [
+        {
+          "event_id": "26dc0583-ca95-4ceb-b611-9038cb370d84",
+          "t_seconds": 30.944,
+          "team": "England",
+          "event_type": "Pass",
+          "ball_x": 116.9,
+          "ball_y": 73.0,
+          "ball_end_x": 116.1,
+          "ball_end_y": 38.5,
+          "actor": "Cole Palmer",
+          "outcome": "Incomplete"
+        },
+        {
+          "event_id": "bac89ef5-f458-4d37-93d4-4ce7305a79bc",
+          "t_seconds": 33.79,
+          "team": "England",
+          "event_type": "Ball Recovery",
+          "ball_x": 96.0,
+          "ball_y": 35.6,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Eberechi Eze",
+          "outcome": null
+        },
+        {
+          "event_id": "327fee61-fc5d-4084-b7f2-d1b27e1632a6",
+          "t_seconds": 33.912,
+          "team": "England",
+          "event_type": "Shot",
+          "ball_x": 96.5,
+          "ball_y": 37.6,
+          "ball_end_x": 109.2,
+          "ball_end_y": 34.2,
+          "actor": "Eberechi Eze",
+          "outcome": null
+        },
+        {
+          "event_id": "7d7c2456-d6ba-4f13-99ae-22675c75b2ed",
+          "t_seconds": 34.833,
+          "team": "England",
+          "event_type": "Pass",
+          "ball_x": 110.2,
+          "ball_y": 30.9,
+          "ball_end_x": 116.2,
+          "ball_end_y": 42.1,
+          "actor": "Ivan Toney",
+          "outcome": null
+        },
+        {
+          "event_id": "7d959296-6408-44f2-b7cb-9105cd55a19d",
+          "t_seconds": 36.122,
+          "team": "England",
+          "event_type": "Shot",
+          "ball_x": 116.2,
+          "ball_y": 42.1,
+          "ball_end_x": 120.0,
+          "ball_end_y": 41.1,
+          "actor": "Harry Kane",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "7d959296-6408-44f2-b7cb-9105cd55a19d",
+          "minute": 90,
+          "second": 51,
+          "scorer": "Harry Kane",
+          "team": "England"
+        }
+      },
+      "metadata": {
+        "match_id": 3941017,
+        "competition": "UEFA Euro 2024",
+        "match_label": "England vs Slovakia"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "c71a4f0a-5d51-45d0-88ad-261e32e3f7c0",
+        "start_event_id": "21f094d3-18d1-453c-a4eb-279fa1e11639",
+        "end_event_id": "c71a4f0a-5d51-45d0-88ad-261e32e3f7c0",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 15.713
+      },
+      "frames": [
+        {
+          "event_id": "21f094d3-18d1-453c-a4eb-279fa1e11639",
+          "t_seconds": 12.853,
+          "team": "England",
+          "event_type": "Pass",
+          "ball_x": 114.2,
+          "ball_y": 80.0,
+          "ball_end_x": 112.1,
+          "ball_end_y": 51.6,
+          "actor": "Kyle Walker",
+          "outcome": null
+        },
+        {
+          "event_id": "f95ccaaf-3b7f-4533-9945-4c13e283cfe9",
+          "t_seconds": 14.724,
+          "team": "Slovakia",
+          "event_type": "Duel",
+          "ball_x": 8.0,
+          "ball_y": 28.5,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "D\u00e1vid Hancko",
+          "outcome": null
+        },
+        {
+          "event_id": "0768c129-252b-4933-8214-fdbdc90c2b87",
+          "t_seconds": 14.724,
+          "team": "England",
+          "event_type": "Pass",
+          "ball_x": 112.1,
+          "ball_y": 51.6,
+          "ball_end_x": 110.1,
+          "ball_end_y": 40.9,
+          "actor": "Marc Guehi",
+          "outcome": null
+        },
+        {
+          "event_id": "c71a4f0a-5d51-45d0-88ad-261e32e3f7c0",
+          "t_seconds": 15.713,
+          "team": "England",
+          "event_type": "Shot",
+          "ball_x": 110.1,
+          "ball_y": 40.9,
+          "ball_end_x": 120.0,
+          "ball_end_y": 43.3,
+          "actor": "Jude Bellingham",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "c71a4f0a-5d51-45d0-88ad-261e32e3f7c0",
+          "minute": 94,
+          "second": 33,
+          "scorer": "Jude Bellingham",
+          "team": "England"
+        }
+      },
+      "metadata": {
+        "match_id": 3941017,
+        "competition": "UEFA Euro 2024",
+        "match_label": "England vs Slovakia"
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3941017,
+    "competition": "UEFA Euro 2024",
+    "match_label": "England vs Slovakia"
+  }
+}

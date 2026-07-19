@@ -1,0 +1,73 @@
+{
+  "hulls": [
+    {
+      "sides": [
+        {
+          "side": "offense",
+          "team_name": "Spain",
+          "hull_vertices": [
+            [
+              92.08048976655593,
+              57.617593506071024
+            ],
+            [
+              81.59893025789069,
+              22.62406713886164
+            ],
+            [
+              100.41181984742181,
+              32.41350379696956
+            ],
+            [
+              107.00509963585839,
+              39.61877114401441
+            ],
+            [
+              107.5,
+              53.5
+            ]
+          ],
+          "area": 499.0,
+          "player_count": 6
+        },
+        {
+          "side": "defense",
+          "team_name": "opponent",
+          "hull_vertices": [
+            [
+              92.13837230645231,
+              27.414239573066006
+            ],
+            [
+              107.599239702268,
+              38.9639613215078
+            ],
+            [
+              106.2586734299278,
+              55.50272731104212
+            ],
+            [
+              92.45174029300775,
+              51.009550199893155
+            ]
+          ],
+          "area": 297.78,
+          "player_count": 8
+        }
+      ],
+      "metadata": {
+        "match_id": 3930179,
+        "event_id": "2501b8a0-c9c6-4486-9919-507491850295",
+        "minute": 12,
+        "possession_team_name": "Spain",
+        "actor_team_name": "Spain",
+        "include_keeper": false
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3930179,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Albania vs Spain"
+  }
+}

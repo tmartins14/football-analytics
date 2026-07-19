@@ -1,0 +1,83 @@
+{
+  "home": {
+    "team": "England",
+    "color": "#1E3A5F",
+    "score": 6
+  },
+  "away": {
+    "team": "Switzerland",
+    "color": "#E30A17",
+    "score": 4
+  },
+  "rows": [
+    {
+      "label": "Shots",
+      "home_value": 18.0,
+      "away_value": 16.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Shots on Target",
+      "home_value": 8.0,
+      "away_value": 7.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Possession",
+      "home_value": 51.7,
+      "away_value": 48.3,
+      "scale_type": "fixed100",
+      "format": "pct",
+      "tier": "basic"
+    },
+    {
+      "label": "Corners",
+      "home_value": 4.0,
+      "away_value": 2.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Fouls",
+      "home_value": 9.0,
+      "away_value": 15.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Yellow Cards",
+      "home_value": 1.0,
+      "away_value": 2.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Red Cards",
+      "home_value": 0.0,
+      "away_value": 0.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "xG",
+      "home_value": 4.45,
+      "away_value": 4.34,
+      "scale_type": "sum",
+      "format": "float1",
+      "tier": "advanced"
+    }
+  ],
+  "metadata": {
+    "match_id": 3942227,
+    "competition": "UEFA Euro 2024",
+    "match_label": "England vs Switzerland"
+  }
+}

@@ -1,0 +1,1267 @@
+{
+  "windows": [
+    {
+      "index": 0,
+      "label": "0'\u201358' (Starting XI)",
+      "nodes": [
+        {
+          "player": "Daniel Carvajal Ramos",
+          "display_name": "Daniel Carvajal",
+          "x": 60.19,
+          "y": 67.92,
+          "passes": 29
+        },
+        {
+          "player": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "display_name": "Fabi\u00e1n Ruiz",
+          "x": 64.44,
+          "y": 27.51,
+          "passes": 27
+        },
+        {
+          "player": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "display_name": "Nacho",
+          "x": 43.61,
+          "y": 28.46,
+          "passes": 33
+        },
+        {
+          "player": "Lamine Yamal Nasraoui Ebana",
+          "display_name": "Lamine Yamal",
+          "x": 95.13,
+          "y": 66.75,
+          "passes": 13
+        },
+        {
+          "player": "Marc Cucurella Saseta",
+          "display_name": "Marc Cucurella",
+          "x": 57.33,
+          "y": 7.47,
+          "passes": 26
+        },
+        {
+          "player": "Nicholas Williams Arthuer",
+          "display_name": "Nico Williams",
+          "x": 87.32,
+          "y": 18.65,
+          "passes": 11
+        },
+        {
+          "player": "Pedro Gonz\u00e1lez L\u00f3pez",
+          "display_name": "Pedri",
+          "x": 68.92,
+          "y": 49.78,
+          "passes": 17
+        },
+        {
+          "player": "Robin Aime Robert Le Normand",
+          "display_name": "Robin Le Normand",
+          "x": 44.62,
+          "y": 51.45,
+          "passes": 31
+        },
+        {
+          "player": "Rodrigo Hern\u00e1ndez Cascante",
+          "display_name": "Rodri",
+          "x": 64.33,
+          "y": 45.17,
+          "passes": 31
+        },
+        {
+          "player": "Unai Sim\u00f3n Mendibil",
+          "display_name": "Unai Sim\u00f3n",
+          "x": 13.89,
+          "y": 37.78,
+          "passes": 19
+        },
+        {
+          "player": "\u00c1lvaro Borja Morata Mart\u00edn",
+          "display_name": "\u00c1lvaro Morata",
+          "x": 77.08,
+          "y": 35.12,
+          "passes": 6
+        }
+      ],
+      "edges": [
+        {
+          "from": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "to": "Marc Cucurella Saseta",
+          "count": 11
+        },
+        {
+          "from": "Robin Aime Robert Le Normand",
+          "to": "Daniel Carvajal Ramos",
+          "count": 9
+        },
+        {
+          "from": "Rodrigo Hern\u00e1ndez Cascante",
+          "to": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "count": 9
+        },
+        {
+          "from": "Unai Sim\u00f3n Mendibil",
+          "to": "Robin Aime Robert Le Normand",
+          "count": 8
+        },
+        {
+          "from": "Daniel Carvajal Ramos",
+          "to": "Robin Aime Robert Le Normand",
+          "count": 7
+        },
+        {
+          "from": "Marc Cucurella Saseta",
+          "to": "Nicholas Williams Arthuer",
+          "count": 7
+        },
+        {
+          "from": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "to": "Unai Sim\u00f3n Mendibil",
+          "count": 6
+        },
+        {
+          "from": "Robin Aime Robert Le Normand",
+          "to": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "count": 6
+        },
+        {
+          "from": "Rodrigo Hern\u00e1ndez Cascante",
+          "to": "Robin Aime Robert Le Normand",
+          "count": 6
+        },
+        {
+          "from": "Robin Aime Robert Le Normand",
+          "to": "Unai Sim\u00f3n Mendibil",
+          "count": 6
+        },
+        {
+          "from": "Marc Cucurella Saseta",
+          "to": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "count": 6
+        },
+        {
+          "from": "Nicholas Williams Arthuer",
+          "to": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "count": 6
+        },
+        {
+          "from": "Unai Sim\u00f3n Mendibil",
+          "to": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "count": 5
+        },
+        {
+          "from": "Rodrigo Hern\u00e1ndez Cascante",
+          "to": "Daniel Carvajal Ramos",
+          "count": 5
+        },
+        {
+          "from": "Daniel Carvajal Ramos",
+          "to": "Lamine Yamal Nasraoui Ebana",
+          "count": 5
+        },
+        {
+          "from": "Lamine Yamal Nasraoui Ebana",
+          "to": "Daniel Carvajal Ramos",
+          "count": 5
+        },
+        {
+          "from": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "to": "Robin Aime Robert Le Normand",
+          "count": 5
+        },
+        {
+          "from": "Daniel Carvajal Ramos",
+          "to": "Pedro Gonz\u00e1lez L\u00f3pez",
+          "count": 5
+        },
+        {
+          "from": "Pedro Gonz\u00e1lez L\u00f3pez",
+          "to": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "count": 5
+        },
+        {
+          "from": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "to": "Rodrigo Hern\u00e1ndez Cascante",
+          "count": 4
+        },
+        {
+          "from": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "to": "Rodrigo Hern\u00e1ndez Cascante",
+          "count": 4
+        },
+        {
+          "from": "Daniel Carvajal Ramos",
+          "to": "Rodrigo Hern\u00e1ndez Cascante",
+          "count": 4
+        },
+        {
+          "from": "Rodrigo Hern\u00e1ndez Cascante",
+          "to": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "count": 4
+        },
+        {
+          "from": "Robin Aime Robert Le Normand",
+          "to": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "count": 4
+        },
+        {
+          "from": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "to": "Nicholas Williams Arthuer",
+          "count": 4
+        },
+        {
+          "from": "Pedro Gonz\u00e1lez L\u00f3pez",
+          "to": "Rodrigo Hern\u00e1ndez Cascante",
+          "count": 4
+        },
+        {
+          "from": "Marc Cucurella Saseta",
+          "to": "\u00c1lvaro Borja Morata Mart\u00edn",
+          "count": 3
+        },
+        {
+          "from": "Marc Cucurella Saseta",
+          "to": "Unai Sim\u00f3n Mendibil",
+          "count": 3
+        },
+        {
+          "from": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "to": "Lamine Yamal Nasraoui Ebana",
+          "count": 3
+        },
+        {
+          "from": "Daniel Carvajal Ramos",
+          "to": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "count": 3
+        },
+        {
+          "from": "Marc Cucurella Saseta",
+          "to": "Rodrigo Hern\u00e1ndez Cascante",
+          "count": 3
+        },
+        {
+          "from": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "to": "Robin Aime Robert Le Normand",
+          "count": 3
+        },
+        {
+          "from": "Rodrigo Hern\u00e1ndez Cascante",
+          "to": "Lamine Yamal Nasraoui Ebana",
+          "count": 3
+        },
+        {
+          "from": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "to": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "count": 3
+        },
+        {
+          "from": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "to": "Pedro Gonz\u00e1lez L\u00f3pez",
+          "count": 3
+        },
+        {
+          "from": "Marc Cucurella Saseta",
+          "to": "Pedro Gonz\u00e1lez L\u00f3pez",
+          "count": 3
+        },
+        {
+          "from": "Pedro Gonz\u00e1lez L\u00f3pez",
+          "to": "Lamine Yamal Nasraoui Ebana",
+          "count": 3
+        },
+        {
+          "from": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "to": "Nicholas Williams Arthuer",
+          "count": 3
+        },
+        {
+          "from": "Daniel Carvajal Ramos",
+          "to": "\u00c1lvaro Borja Morata Mart\u00edn",
+          "count": 2
+        },
+        {
+          "from": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "to": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "count": 2
+        },
+        {
+          "from": "\u00c1lvaro Borja Morata Mart\u00edn",
+          "to": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "count": 2
+        },
+        {
+          "from": "Rodrigo Hern\u00e1ndez Cascante",
+          "to": "Marc Cucurella Saseta",
+          "count": 2
+        },
+        {
+          "from": "Robin Aime Robert Le Normand",
+          "to": "Lamine Yamal Nasraoui Ebana",
+          "count": 2
+        },
+        {
+          "from": "Lamine Yamal Nasraoui Ebana",
+          "to": "\u00c1lvaro Borja Morata Mart\u00edn",
+          "count": 2
+        },
+        {
+          "from": "Robin Aime Robert Le Normand",
+          "to": "Rodrigo Hern\u00e1ndez Cascante",
+          "count": 2
+        },
+        {
+          "from": "Rodrigo Hern\u00e1ndez Cascante",
+          "to": "Pedro Gonz\u00e1lez L\u00f3pez",
+          "count": 2
+        },
+        {
+          "from": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "to": "\u00c1lvaro Borja Morata Mart\u00edn",
+          "count": 2
+        },
+        {
+          "from": "Lamine Yamal Nasraoui Ebana",
+          "to": "Rodrigo Hern\u00e1ndez Cascante",
+          "count": 2
+        },
+        {
+          "from": "Nicholas Williams Arthuer",
+          "to": "Lamine Yamal Nasraoui Ebana",
+          "count": 2
+        },
+        {
+          "from": "\u00c1lvaro Borja Morata Mart\u00edn",
+          "to": "Marc Cucurella Saseta",
+          "count": 2
+        },
+        {
+          "from": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "to": "Unai Sim\u00f3n Mendibil",
+          "count": 2
+        },
+        {
+          "from": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "to": "Daniel Carvajal Ramos",
+          "count": 2
+        },
+        {
+          "from": "Lamine Yamal Nasraoui Ebana",
+          "to": "Nicholas Williams Arthuer",
+          "count": 2
+        },
+        {
+          "from": "Pedro Gonz\u00e1lez L\u00f3pez",
+          "to": "\u00c1lvaro Borja Morata Mart\u00edn",
+          "count": 2
+        },
+        {
+          "from": "Unai Sim\u00f3n Mendibil",
+          "to": "Marc Cucurella Saseta",
+          "count": 2
+        },
+        {
+          "from": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "to": "Marc Cucurella Saseta",
+          "count": 1
+        },
+        {
+          "from": "Pedro Gonz\u00e1lez L\u00f3pez",
+          "to": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "count": 1
+        },
+        {
+          "from": "Daniel Carvajal Ramos",
+          "to": "Unai Sim\u00f3n Mendibil",
+          "count": 1
+        },
+        {
+          "from": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "to": "Pedro Gonz\u00e1lez L\u00f3pez",
+          "count": 1
+        },
+        {
+          "from": "Robin Aime Robert Le Normand",
+          "to": "Nicholas Williams Arthuer",
+          "count": 1
+        },
+        {
+          "from": "Nicholas Williams Arthuer",
+          "to": "Marc Cucurella Saseta",
+          "count": 1
+        },
+        {
+          "from": "Pedro Gonz\u00e1lez L\u00f3pez",
+          "to": "Unai Sim\u00f3n Mendibil",
+          "count": 1
+        },
+        {
+          "from": "Marc Cucurella Saseta",
+          "to": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "count": 1
+        },
+        {
+          "from": "Unai Sim\u00f3n Mendibil",
+          "to": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "count": 1
+        },
+        {
+          "from": "Lamine Yamal Nasraoui Ebana",
+          "to": "Pedro Gonz\u00e1lez L\u00f3pez",
+          "count": 1
+        },
+        {
+          "from": "\u00c1lvaro Borja Morata Mart\u00edn",
+          "to": "Pedro Gonz\u00e1lez L\u00f3pez",
+          "count": 1
+        },
+        {
+          "from": "Nicholas Williams Arthuer",
+          "to": "Robin Aime Robert Le Normand",
+          "count": 1
+        },
+        {
+          "from": "Pedro Gonz\u00e1lez L\u00f3pez",
+          "to": "Daniel Carvajal Ramos",
+          "count": 1
+        },
+        {
+          "from": "Unai Sim\u00f3n Mendibil",
+          "to": "\u00c1lvaro Borja Morata Mart\u00edn",
+          "count": 1
+        },
+        {
+          "from": "Daniel Carvajal Ramos",
+          "to": "Nicholas Williams Arthuer",
+          "count": 1
+        },
+        {
+          "from": "\u00c1lvaro Borja Morata Mart\u00edn",
+          "to": "Rodrigo Hern\u00e1ndez Cascante",
+          "count": 1
+        },
+        {
+          "from": "Lamine Yamal Nasraoui Ebana",
+          "to": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "count": 1
+        },
+        {
+          "from": "Robin Aime Robert Le Normand",
+          "to": "Marc Cucurella Saseta",
+          "count": 1
+        },
+        {
+          "from": "Unai Sim\u00f3n Mendibil",
+          "to": "Daniel Carvajal Ramos",
+          "count": 1
+        },
+        {
+          "from": "Nicholas Williams Arthuer",
+          "to": "Pedro Gonz\u00e1lez L\u00f3pez",
+          "count": 1
+        },
+        {
+          "from": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "to": "\u00c1lvaro Borja Morata Mart\u00edn",
+          "count": 1
+        },
+        {
+          "from": "Unai Sim\u00f3n Mendibil",
+          "to": "Lamine Yamal Nasraoui Ebana",
+          "count": 1
+        },
+        {
+          "from": "Daniel Carvajal Ramos",
+          "to": "Marc Cucurella Saseta",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "label": "58'\u201366'",
+      "nodes": [
+        {
+          "player": "Daniel Carvajal Ramos",
+          "display_name": "Daniel Carvajal",
+          "x": 40.4,
+          "y": 67.08,
+          "passes": 5
+        },
+        {
+          "player": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "display_name": "Fabi\u00e1n Ruiz",
+          "x": 60.5,
+          "y": 46.34,
+          "passes": 5
+        },
+        {
+          "player": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "display_name": "Nacho",
+          "x": 40.68,
+          "y": 22.73,
+          "passes": 6
+        },
+        {
+          "player": "Lamine Yamal Nasraoui Ebana",
+          "display_name": "Lamine Yamal",
+          "x": 120.0,
+          "y": 73.3,
+          "passes": 1
+        },
+        {
+          "player": "Marc Cucurella Saseta",
+          "display_name": "Marc Cucurella",
+          "x": 39.47,
+          "y": 10.57,
+          "passes": 3
+        },
+        {
+          "player": "Nicholas Williams Arthuer",
+          "display_name": "Nico Williams",
+          "x": 23.1,
+          "y": 19.2,
+          "passes": 1
+        },
+        {
+          "player": "Robin Aime Robert Le Normand",
+          "display_name": "Robin Le Normand",
+          "x": 39.24,
+          "y": 56.12,
+          "passes": 5
+        },
+        {
+          "player": "Rodrigo Hern\u00e1ndez Cascante",
+          "display_name": "Rodri",
+          "x": 41.34,
+          "y": 41.4,
+          "passes": 7
+        },
+        {
+          "player": "Unai Sim\u00f3n Mendibil",
+          "display_name": "Unai Sim\u00f3n",
+          "x": 7.7,
+          "y": 42.87,
+          "passes": 3
+        }
+      ],
+      "edges": [
+        {
+          "from": "Rodrigo Hern\u00e1ndez Cascante",
+          "to": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "count": 3
+        },
+        {
+          "from": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "to": "Rodrigo Hern\u00e1ndez Cascante",
+          "count": 2
+        },
+        {
+          "from": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "to": "Marc Cucurella Saseta",
+          "count": 2
+        },
+        {
+          "from": "Daniel Carvajal Ramos",
+          "to": "Unai Sim\u00f3n Mendibil",
+          "count": 2
+        },
+        {
+          "from": "Robin Aime Robert Le Normand",
+          "to": "Daniel Carvajal Ramos",
+          "count": 2
+        },
+        {
+          "from": "Rodrigo Hern\u00e1ndez Cascante",
+          "to": "Robin Aime Robert Le Normand",
+          "count": 2
+        },
+        {
+          "from": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "to": "Daniel Carvajal Ramos",
+          "count": 2
+        },
+        {
+          "from": "Rodrigo Hern\u00e1ndez Cascante",
+          "to": "Marc Cucurella Saseta",
+          "count": 1
+        },
+        {
+          "from": "Marc Cucurella Saseta",
+          "to": "Nicholas Williams Arthuer",
+          "count": 1
+        },
+        {
+          "from": "Nicholas Williams Arthuer",
+          "to": "Pedro Gonz\u00e1lez L\u00f3pez",
+          "count": 1
+        },
+        {
+          "from": "Unai Sim\u00f3n Mendibil",
+          "to": "Robin Aime Robert Le Normand",
+          "count": 1
+        },
+        {
+          "from": "Daniel Carvajal Ramos",
+          "to": "Rodrigo Hern\u00e1ndez Cascante",
+          "count": 1
+        },
+        {
+          "from": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "to": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "count": 1
+        },
+        {
+          "from": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "to": "Marc Cucurella Saseta",
+          "count": 1
+        },
+        {
+          "from": "Marc Cucurella Saseta",
+          "to": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "count": 1
+        },
+        {
+          "from": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "to": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "count": 1
+        },
+        {
+          "from": "Robin Aime Robert Le Normand",
+          "to": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "count": 1
+        },
+        {
+          "from": "Daniel Carvajal Ramos",
+          "to": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "count": 1
+        },
+        {
+          "from": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "to": "Robin Aime Robert Le Normand",
+          "count": 1
+        },
+        {
+          "from": "Robin Aime Robert Le Normand",
+          "to": "Unai Sim\u00f3n Mendibil",
+          "count": 1
+        },
+        {
+          "from": "Unai Sim\u00f3n Mendibil",
+          "to": "Rodrigo Hern\u00e1ndez Cascante",
+          "count": 1
+        },
+        {
+          "from": "Unai Sim\u00f3n Mendibil",
+          "to": "Marc Cucurella Saseta",
+          "count": 1
+        },
+        {
+          "from": "Lamine Yamal Nasraoui Ebana",
+          "to": "Rodrigo Hern\u00e1ndez Cascante",
+          "count": 1
+        },
+        {
+          "from": "Rodrigo Hern\u00e1ndez Cascante",
+          "to": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "count": 1
+        },
+        {
+          "from": "Daniel Carvajal Ramos",
+          "to": "Robin Aime Robert Le Normand",
+          "count": 1
+        },
+        {
+          "from": "Robin Aime Robert Le Normand",
+          "to": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "count": 1
+        },
+        {
+          "from": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "to": "\u00c1lvaro Borja Morata Mart\u00edn",
+          "count": 1
+        },
+        {
+          "from": "Marc Cucurella Saseta",
+          "to": "Unai Sim\u00f3n Mendibil",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "label": "66'\u201385'",
+      "nodes": [
+        {
+          "player": "Daniel Carvajal Ramos",
+          "display_name": "Daniel Carvajal",
+          "x": 47.66,
+          "y": 69.49,
+          "passes": 13
+        },
+        {
+          "player": "Daniel Olmo Carvajal",
+          "display_name": "Daniel Olmo",
+          "x": 72.0,
+          "y": 4.74,
+          "passes": 7
+        },
+        {
+          "player": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "display_name": "Fabi\u00e1n Ruiz",
+          "x": 50.14,
+          "y": 45.56,
+          "passes": 11
+        },
+        {
+          "player": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "display_name": "Nacho",
+          "x": 48.93,
+          "y": 20.33,
+          "passes": 10
+        },
+        {
+          "player": "Lamine Yamal Nasraoui Ebana",
+          "display_name": "Lamine Yamal",
+          "x": 68.17,
+          "y": 75.83,
+          "passes": 3
+        },
+        {
+          "player": "Marc Cucurella Saseta",
+          "display_name": "Marc Cucurella",
+          "x": 59.4,
+          "y": 7.92,
+          "passes": 10
+        },
+        {
+          "player": "Mikel Merino Zaz\u00f3n",
+          "display_name": "Mikel Merino",
+          "x": 57.91,
+          "y": 18.9,
+          "passes": 7
+        },
+        {
+          "player": "Mikel Oyarzabal Ugarte",
+          "display_name": "Mikel Oyarzabal",
+          "x": 45.95,
+          "y": 58.05,
+          "passes": 2
+        },
+        {
+          "player": "Robin Aime Robert Le Normand",
+          "display_name": "Robin Le Normand",
+          "x": 27.04,
+          "y": 58.68,
+          "passes": 5
+        },
+        {
+          "player": "Rodrigo Hern\u00e1ndez Cascante",
+          "display_name": "Rodri",
+          "x": 52.65,
+          "y": 33.95,
+          "passes": 19
+        },
+        {
+          "player": "Unai Sim\u00f3n Mendibil",
+          "display_name": "Unai Sim\u00f3n",
+          "x": 12.66,
+          "y": 42.12,
+          "passes": 5
+        }
+      ],
+      "edges": [
+        {
+          "from": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "to": "Rodrigo Hern\u00e1ndez Cascante",
+          "count": 6
+        },
+        {
+          "from": "Daniel Olmo Carvajal",
+          "to": "Marc Cucurella Saseta",
+          "count": 5
+        },
+        {
+          "from": "Mikel Merino Zaz\u00f3n",
+          "to": "Daniel Olmo Carvajal",
+          "count": 4
+        },
+        {
+          "from": "Daniel Carvajal Ramos",
+          "to": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "count": 4
+        },
+        {
+          "from": "Marc Cucurella Saseta",
+          "to": "Daniel Olmo Carvajal",
+          "count": 4
+        },
+        {
+          "from": "Rodrigo Hern\u00e1ndez Cascante",
+          "to": "Daniel Carvajal Ramos",
+          "count": 4
+        },
+        {
+          "from": "Daniel Carvajal Ramos",
+          "to": "Robin Aime Robert Le Normand",
+          "count": 3
+        },
+        {
+          "from": "Marc Cucurella Saseta",
+          "to": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "count": 3
+        },
+        {
+          "from": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "to": "Rodrigo Hern\u00e1ndez Cascante",
+          "count": 3
+        },
+        {
+          "from": "Rodrigo Hern\u00e1ndez Cascante",
+          "to": "Mikel Merino Zaz\u00f3n",
+          "count": 3
+        },
+        {
+          "from": "Rodrigo Hern\u00e1ndez Cascante",
+          "to": "Marc Cucurella Saseta",
+          "count": 3
+        },
+        {
+          "from": "Daniel Carvajal Ramos",
+          "to": "Rodrigo Hern\u00e1ndez Cascante",
+          "count": 3
+        },
+        {
+          "from": "Rodrigo Hern\u00e1ndez Cascante",
+          "to": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "count": 3
+        },
+        {
+          "from": "Marc Cucurella Saseta",
+          "to": "Rodrigo Hern\u00e1ndez Cascante",
+          "count": 3
+        },
+        {
+          "from": "Robin Aime Robert Le Normand",
+          "to": "Unai Sim\u00f3n Mendibil",
+          "count": 2
+        },
+        {
+          "from": "Unai Sim\u00f3n Mendibil",
+          "to": "Mikel Merino Zaz\u00f3n",
+          "count": 2
+        },
+        {
+          "from": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "to": "Robin Aime Robert Le Normand",
+          "count": 2
+        },
+        {
+          "from": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "to": "Unai Sim\u00f3n Mendibil",
+          "count": 2
+        },
+        {
+          "from": "Daniel Carvajal Ramos",
+          "to": "Lamine Yamal Nasraoui Ebana",
+          "count": 2
+        },
+        {
+          "from": "Lamine Yamal Nasraoui Ebana",
+          "to": "Daniel Carvajal Ramos",
+          "count": 2
+        },
+        {
+          "from": "Rodrigo Hern\u00e1ndez Cascante",
+          "to": "Daniel Olmo Carvajal",
+          "count": 2
+        },
+        {
+          "from": "Robin Aime Robert Le Normand",
+          "to": "Daniel Carvajal Ramos",
+          "count": 2
+        },
+        {
+          "from": "Rodrigo Hern\u00e1ndez Cascante",
+          "to": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "count": 2
+        },
+        {
+          "from": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "to": "Daniel Olmo Carvajal",
+          "count": 2
+        },
+        {
+          "from": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "to": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "count": 1
+        },
+        {
+          "from": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "to": "Unai Sim\u00f3n Mendibil",
+          "count": 1
+        },
+        {
+          "from": "Mikel Merino Zaz\u00f3n",
+          "to": "Marc Cucurella Saseta",
+          "count": 1
+        },
+        {
+          "from": "Daniel Olmo Carvajal",
+          "to": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "count": 1
+        },
+        {
+          "from": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "to": "Daniel Olmo Carvajal",
+          "count": 1
+        },
+        {
+          "from": "Mikel Merino Zaz\u00f3n",
+          "to": "Rodrigo Hern\u00e1ndez Cascante",
+          "count": 1
+        },
+        {
+          "from": "Robin Aime Robert Le Normand",
+          "to": "Rodrigo Hern\u00e1ndez Cascante",
+          "count": 1
+        },
+        {
+          "from": "Unai Sim\u00f3n Mendibil",
+          "to": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "count": 1
+        },
+        {
+          "from": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "to": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "count": 1
+        },
+        {
+          "from": "Daniel Olmo Carvajal",
+          "to": "Mikel Merino Zaz\u00f3n",
+          "count": 1
+        },
+        {
+          "from": "Rodrigo Hern\u00e1ndez Cascante",
+          "to": "Unai Sim\u00f3n Mendibil",
+          "count": 1
+        },
+        {
+          "from": "Unai Sim\u00f3n Mendibil",
+          "to": "Rodrigo Hern\u00e1ndez Cascante",
+          "count": 1
+        },
+        {
+          "from": "Rodrigo Hern\u00e1ndez Cascante",
+          "to": "Mikel Oyarzabal Ugarte",
+          "count": 1
+        },
+        {
+          "from": "Mikel Oyarzabal Ugarte",
+          "to": "Rodrigo Hern\u00e1ndez Cascante",
+          "count": 1
+        },
+        {
+          "from": "Mikel Merino Zaz\u00f3n",
+          "to": "Lamine Yamal Nasraoui Ebana",
+          "count": 1
+        },
+        {
+          "from": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "to": "Mikel Merino Zaz\u00f3n",
+          "count": 1
+        },
+        {
+          "from": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "to": "Robin Aime Robert Le Normand",
+          "count": 1
+        },
+        {
+          "from": "Unai Sim\u00f3n Mendibil",
+          "to": "Robin Aime Robert Le Normand",
+          "count": 1
+        },
+        {
+          "from": "Daniel Carvajal Ramos",
+          "to": "Mikel Oyarzabal Ugarte",
+          "count": 1
+        },
+        {
+          "from": "Mikel Oyarzabal Ugarte",
+          "to": "Daniel Carvajal Ramos",
+          "count": 1
+        },
+        {
+          "from": "Lamine Yamal Nasraoui Ebana",
+          "to": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "label": "85'\u2013FT",
+      "nodes": [
+        {
+          "player": "Daniel Carvajal Ramos",
+          "display_name": "Daniel Carvajal",
+          "x": 47.03,
+          "y": 68.33,
+          "passes": 3
+        },
+        {
+          "player": "Daniel Olmo Carvajal",
+          "display_name": "Daniel Olmo",
+          "x": 81.18,
+          "y": 4.26,
+          "passes": 5
+        },
+        {
+          "player": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "display_name": "Fabi\u00e1n Ruiz",
+          "x": 50.32,
+          "y": 53.02,
+          "passes": 5
+        },
+        {
+          "player": "Ferr\u00e1n Torres Garc\u00eda",
+          "display_name": "Ferr\u00e1n Torres",
+          "x": 66.25,
+          "y": 33.05,
+          "passes": 2
+        },
+        {
+          "player": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "display_name": "Nacho",
+          "x": 66.08,
+          "y": 24.82,
+          "passes": 5
+        },
+        {
+          "player": "Marc Cucurella Saseta",
+          "display_name": "Marc Cucurella",
+          "x": 53.4,
+          "y": 16.1,
+          "passes": 3
+        },
+        {
+          "player": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "display_name": "Mart\u00edn Zubimendi",
+          "x": 58.88,
+          "y": 33.44,
+          "passes": 9
+        },
+        {
+          "player": "Mikel Oyarzabal Ugarte",
+          "display_name": "Mikel Oyarzabal",
+          "x": 45.73,
+          "y": 34.17,
+          "passes": 3
+        },
+        {
+          "player": "Robin Aime Robert Le Normand",
+          "display_name": "Robin Le Normand",
+          "x": 44.5,
+          "y": 64.65,
+          "passes": 2
+        },
+        {
+          "player": "Unai Sim\u00f3n Mendibil",
+          "display_name": "Unai Sim\u00f3n",
+          "x": 20.5,
+          "y": 35.15,
+          "passes": 2
+        }
+      ],
+      "edges": [
+        {
+          "from": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "to": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "count": 3
+        },
+        {
+          "from": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "to": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "count": 3
+        },
+        {
+          "from": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "to": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "count": 3
+        },
+        {
+          "from": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "to": "Robin Aime Robert Le Normand",
+          "count": 2
+        },
+        {
+          "from": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "to": "Marc Cucurella Saseta",
+          "count": 2
+        },
+        {
+          "from": "Daniel Carvajal Ramos",
+          "to": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "count": 1
+        },
+        {
+          "from": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "to": "Mikel Oyarzabal Ugarte",
+          "count": 1
+        },
+        {
+          "from": "Mikel Oyarzabal Ugarte",
+          "to": "Daniel Carvajal Ramos",
+          "count": 1
+        },
+        {
+          "from": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "to": "Mikel Oyarzabal Ugarte",
+          "count": 1
+        },
+        {
+          "from": "Mikel Oyarzabal Ugarte",
+          "to": "Ferr\u00e1n Torres Garc\u00eda",
+          "count": 1
+        },
+        {
+          "from": "Daniel Olmo Carvajal",
+          "to": "Marc Cucurella Saseta",
+          "count": 1
+        },
+        {
+          "from": "Marc Cucurella Saseta",
+          "to": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "count": 1
+        },
+        {
+          "from": "Marc Cucurella Saseta",
+          "to": "Unai Sim\u00f3n Mendibil",
+          "count": 1
+        },
+        {
+          "from": "Unai Sim\u00f3n Mendibil",
+          "to": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "count": 1
+        },
+        {
+          "from": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "to": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "count": 1
+        },
+        {
+          "from": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "to": "Daniel Carvajal Ramos",
+          "count": 1
+        },
+        {
+          "from": "Daniel Carvajal Ramos",
+          "to": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "count": 1
+        },
+        {
+          "from": "Marc Cucurella Saseta",
+          "to": "Daniel Olmo Carvajal",
+          "count": 1
+        },
+        {
+          "from": "Daniel Olmo Carvajal",
+          "to": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+          "count": 1
+        },
+        {
+          "from": "Fabi\u00e1n Ruiz Pe\u00f1a",
+          "to": "Daniel Carvajal Ramos",
+          "count": 1
+        },
+        {
+          "from": "Daniel Carvajal Ramos",
+          "to": "Robin Aime Robert Le Normand",
+          "count": 1
+        },
+        {
+          "from": "Robin Aime Robert Le Normand",
+          "to": "Unai Sim\u00f3n Mendibil",
+          "count": 1
+        },
+        {
+          "from": "Unai Sim\u00f3n Mendibil",
+          "to": "Robin Aime Robert Le Normand",
+          "count": 1
+        },
+        {
+          "from": "Robin Aime Robert Le Normand",
+          "to": "Ferr\u00e1n Torres Garc\u00eda",
+          "count": 1
+        },
+        {
+          "from": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "to": "Daniel Olmo Carvajal",
+          "count": 1
+        },
+        {
+          "from": "Daniel Olmo Carvajal",
+          "to": "Mikel Merino Zaz\u00f3n",
+          "count": 1
+        },
+        {
+          "from": "Ferr\u00e1n Torres Garc\u00eda",
+          "to": "Daniel Olmo Carvajal",
+          "count": 1
+        },
+        {
+          "from": "Daniel Olmo Carvajal",
+          "to": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+          "count": 1
+        },
+        {
+          "from": "Mikel Oyarzabal Ugarte",
+          "to": "Daniel Olmo Carvajal",
+          "count": 1
+        },
+        {
+          "from": "Daniel Olmo Carvajal",
+          "to": "Mikel Oyarzabal Ugarte",
+          "count": 1
+        },
+        {
+          "from": "Ferr\u00e1n Torres Garc\u00eda",
+          "to": "Daniel Carvajal Ramos",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "substitutions": [
+    {
+      "minute": 58,
+      "player_off": "Pedro Gonz\u00e1lez L\u00f3pez",
+      "player_on": "Daniel Olmo Carvajal"
+    },
+    {
+      "minute": 66,
+      "player_off": "\u00c1lvaro Borja Morata Mart\u00edn",
+      "player_on": "Mikel Oyarzabal Ugarte"
+    },
+    {
+      "minute": 66,
+      "player_off": "Nicholas Williams Arthuer",
+      "player_on": "Mikel Merino Zaz\u00f3n"
+    },
+    {
+      "minute": 85,
+      "player_off": "Rodrigo Hern\u00e1ndez Cascante",
+      "player_on": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez"
+    },
+    {
+      "minute": 85,
+      "player_off": "Lamine Yamal Nasraoui Ebana",
+      "player_on": "Ferr\u00e1n Torres Garc\u00eda"
+    }
+  ],
+  "metadata": {
+    "match_id": 3930160,
+    "team": "Spain",
+    "filter": "completed passes, per substitution window",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Spain vs Croatia"
+  }
+}

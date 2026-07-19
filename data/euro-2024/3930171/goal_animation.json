@@ -1,0 +1,277 @@
+{
+  "goals": [
+    {
+      "window": {
+        "anchor_event_id": "0720ee4d-e7eb-490d-8282-59ae8d515a4d",
+        "start_event_id": "c82f7345-37f7-43c1-a33e-f4b3230661bf",
+        "end_event_id": "0720ee4d-e7eb-490d-8282-59ae8d515a4d",
+        "period": 1,
+        "window_seconds": 10.0,
+        "t_span_seconds": 10.233
+      },
+      "frames": [
+        {
+          "event_id": "c82f7345-37f7-43c1-a33e-f4b3230661bf",
+          "t_seconds": 0.0,
+          "team": "Denmark",
+          "event_type": "Pressure",
+          "ball_x": 48.3,
+          "ball_y": 12.4,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Victor Kristiansen",
+          "outcome": null
+        },
+        {
+          "event_id": "5bd9642f-22fb-4b10-8862-23368141b8b4",
+          "t_seconds": 0.239,
+          "team": "England",
+          "event_type": "Pass",
+          "ball_x": 69.5,
+          "ball_y": 67.8,
+          "ball_end_x": 71.2,
+          "ball_end_y": 52.4,
+          "actor": "Bukayo Saka",
+          "outcome": null
+        },
+        {
+          "event_id": "e7571734-b3d4-4bb0-b63e-c89b0cc9209c",
+          "t_seconds": 1.241,
+          "team": "England",
+          "event_type": "Carry",
+          "ball_x": 71.2,
+          "ball_y": 52.4,
+          "ball_end_x": 69.8,
+          "ball_end_y": 55.2,
+          "actor": "Jude Bellingham",
+          "outcome": null
+        },
+        {
+          "event_id": "873953ad-f5dd-47c3-a49a-cfaedd1e6b90",
+          "t_seconds": 1.384,
+          "team": "Denmark",
+          "event_type": "Pressure",
+          "ball_x": 48.0,
+          "ball_y": 26.8,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Andreas Christensen",
+          "outcome": null
+        },
+        {
+          "event_id": "5f3ee7d3-7b35-4d53-8bfd-7f9ed7c96bcf",
+          "t_seconds": 1.864,
+          "team": "England",
+          "event_type": "Pass",
+          "ball_x": 69.8,
+          "ball_y": 55.2,
+          "ball_end_x": 99.2,
+          "ball_end_y": 73.4,
+          "actor": "Jude Bellingham",
+          "outcome": null
+        },
+        {
+          "event_id": "186102b1-474c-4491-ad44-ee40705e90ab",
+          "t_seconds": 5.056,
+          "team": "England",
+          "event_type": "Carry",
+          "ball_x": 99.2,
+          "ball_y": 73.4,
+          "ball_end_x": 115.0,
+          "ball_end_y": 53.9,
+          "actor": "Kyle Walker",
+          "outcome": null
+        },
+        {
+          "event_id": "a495cf1b-d46e-47cd-be9d-9b4466a62375",
+          "t_seconds": 8.574,
+          "team": "England",
+          "event_type": "Pass",
+          "ball_x": 115.0,
+          "ball_y": 53.9,
+          "ball_end_x": 115.5,
+          "ball_end_y": 51.4,
+          "actor": "Kyle Walker",
+          "outcome": "Incomplete"
+        },
+        {
+          "event_id": "18cfbc20-671f-43fa-9db3-488364d57824",
+          "t_seconds": 9.983,
+          "team": "Denmark",
+          "event_type": "Pressure",
+          "ball_x": 5.4,
+          "ball_y": 39.8,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Joachim Andersen",
+          "outcome": null
+        },
+        {
+          "event_id": "a968c64c-822d-4452-9c08-0422a87f92e5",
+          "t_seconds": 10.118,
+          "team": "England",
+          "event_type": "Ball Recovery",
+          "ball_x": 112.0,
+          "ball_y": 37.9,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Harry Kane",
+          "outcome": null
+        },
+        {
+          "event_id": "0720ee4d-e7eb-490d-8282-59ae8d515a4d",
+          "t_seconds": 10.233,
+          "team": "England",
+          "event_type": "Shot",
+          "ball_x": 112.9,
+          "ball_y": 40.4,
+          "ball_end_x": 120.0,
+          "ball_end_y": 36.7,
+          "actor": "Harry Kane",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "0720ee4d-e7eb-490d-8282-59ae8d515a4d",
+          "minute": 17,
+          "second": 21,
+          "scorer": "Harry Kane",
+          "team": "England"
+        }
+      },
+      "metadata": {
+        "match_id": 3930171,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Denmark vs England"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "0f5ff540-9645-4e2e-b8f2-4e4a4a5aeb3d",
+        "start_event_id": "60933c2f-19ce-43ba-a525-37c77109ddf1",
+        "end_event_id": "0f5ff540-9645-4e2e-b8f2-4e4a4a5aeb3d",
+        "period": 1,
+        "window_seconds": 10.0,
+        "t_span_seconds": 10.011
+      },
+      "frames": [
+        {
+          "event_id": "60933c2f-19ce-43ba-a525-37c77109ddf1",
+          "t_seconds": 0.0,
+          "team": "England",
+          "event_type": "Pass",
+          "ball_x": 15.2,
+          "ball_y": 0.1,
+          "ball_end_x": 26.3,
+          "ball_end_y": 1.7,
+          "actor": "Kieran Trippier",
+          "outcome": null
+        },
+        {
+          "event_id": "c1cf504f-b9c6-46ce-b198-4711415af8ed",
+          "t_seconds": 3.132,
+          "team": "England",
+          "event_type": "Pass",
+          "ball_x": 22.5,
+          "ball_y": 6.8,
+          "ball_end_x": 35.6,
+          "ball_end_y": 52.6,
+          "actor": "Harry Kane",
+          "outcome": "Incomplete"
+        },
+        {
+          "event_id": "c319fc83-0a7c-44f9-8150-65618f05ca0e",
+          "t_seconds": 3.789,
+          "team": "Denmark",
+          "event_type": "Pressure",
+          "ball_x": 99.1,
+          "ball_y": 73.7,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Joakim Maehle",
+          "outcome": null
+        },
+        {
+          "event_id": "4205d44a-b93c-441d-ade1-8c1d5beab221",
+          "t_seconds": 6.1,
+          "team": "Denmark",
+          "event_type": "Ball Recovery",
+          "ball_x": 84.5,
+          "ball_y": 27.5,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Victor Kristiansen",
+          "outcome": null
+        },
+        {
+          "event_id": "076bfee8-3ae8-43de-96fd-decb51dcaa04",
+          "t_seconds": 8.1,
+          "team": "Denmark",
+          "event_type": "Pass",
+          "ball_x": 85.7,
+          "ball_y": 27.8,
+          "ball_end_x": 86.1,
+          "ball_end_y": 40.3,
+          "actor": "Victor Kristiansen",
+          "outcome": null
+        },
+        {
+          "event_id": "f5b95e4f-68bd-45d9-8528-24b0f6bf2eb3",
+          "t_seconds": 9.074,
+          "team": "Denmark",
+          "event_type": "Carry",
+          "ball_x": 86.1,
+          "ball_y": 40.3,
+          "ball_end_x": 88.6,
+          "ball_end_y": 40.7,
+          "actor": "Morten Hjulmand",
+          "outcome": null
+        },
+        {
+          "event_id": "dbc72e2f-1f9a-4723-b024-16a36d9191e8",
+          "t_seconds": 9.304,
+          "team": "England",
+          "event_type": "Pressure",
+          "ball_x": 34.7,
+          "ball_y": 43.0,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Bukayo Saka",
+          "outcome": null
+        },
+        {
+          "event_id": "0f5ff540-9645-4e2e-b8f2-4e4a4a5aeb3d",
+          "t_seconds": 10.011,
+          "team": "Denmark",
+          "event_type": "Shot",
+          "ball_x": 88.6,
+          "ball_y": 40.7,
+          "ball_end_x": 120.0,
+          "ball_end_y": 36.2,
+          "actor": "Morten Hjulmand",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "0f5ff540-9645-4e2e-b8f2-4e4a4a5aeb3d",
+          "minute": 33,
+          "second": 36,
+          "scorer": "Morten Hjulmand",
+          "team": "Denmark"
+        }
+      },
+      "metadata": {
+        "match_id": 3930171,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Denmark vs England"
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3930171,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Denmark vs England"
+  }
+}

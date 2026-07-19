@@ -1,0 +1,882 @@
+{
+  "on_ball": {
+    "periods": [
+      {
+        "from_minute": 0,
+        "to_minute": 62,
+        "players_in": [
+          "Giorgi Mamardashvili",
+          "Giorgi Gvelesiani",
+          "Guram Kashia",
+          "Lasha Dvali",
+          "Otar Kakabadze",
+          "Luka Lochoshvili",
+          "Otar Kiteishvili",
+          "Giorgi Chakvetadze",
+          "Giorgi Kochorashvili",
+          "Georges Mikautadze",
+          "Khvicha Kvaratskhelia"
+        ],
+        "players_out": [],
+        "nodes": [
+          {
+            "player_id": 23646,
+            "player": "Giorgi Chakvetadze",
+            "display_name": "Giorgi Chakvetadze",
+            "x": 48.92,
+            "y": 45.39,
+            "event_count": 65
+          },
+          {
+            "player_id": 41202,
+            "player": "Giorgi Kochorashvili",
+            "display_name": "Giorgi Kochorashvili",
+            "x": 38.9,
+            "y": 43.19,
+            "event_count": 62
+          },
+          {
+            "player_id": 33234,
+            "player": "Georges Mikautadze",
+            "display_name": "Georges Mikautadze",
+            "x": 58.92,
+            "y": 49.95,
+            "event_count": 54
+          },
+          {
+            "player_id": 11335,
+            "player": "Otar Kiteishvili",
+            "display_name": "Otar Kiteishvili",
+            "x": 37.81,
+            "y": 46.78,
+            "event_count": 40
+          },
+          {
+            "player_id": 25036,
+            "player": "Otar Kakabadze",
+            "display_name": "Otar Kakabadze",
+            "x": 31.78,
+            "y": 71.0,
+            "event_count": 37
+          },
+          {
+            "player_id": 398886,
+            "player": "Giorgi Gvelesiani",
+            "display_name": "Giorgi Gvelesiani",
+            "x": 24.32,
+            "y": 61.15,
+            "event_count": 37
+          },
+          {
+            "player_id": 38229,
+            "player": "Khvicha Kvaratskhelia",
+            "display_name": "Kvara",
+            "x": 65.33,
+            "y": 28.74,
+            "event_count": 31
+          },
+          {
+            "player_id": 7655,
+            "player": "Lasha Dvali",
+            "display_name": "Lasha Dvali",
+            "x": 29.92,
+            "y": 19.8,
+            "event_count": 23
+          },
+          {
+            "player_id": 7839,
+            "player": "Guram Kashia",
+            "display_name": "Guram Kashia",
+            "x": 31.71,
+            "y": 35.58,
+            "event_count": 22
+          },
+          {
+            "player_id": 102371,
+            "player": "Giorgi Mamardashvili",
+            "display_name": "Giorgi Mamardashvili",
+            "x": 7.22,
+            "y": 43.71,
+            "event_count": 15
+          },
+          {
+            "player_id": 48178,
+            "player": "Luka Lochoshvili",
+            "display_name": "Luka Lochoshvili",
+            "x": 45.72,
+            "y": 8.12,
+            "event_count": 12
+          }
+        ],
+        "hull": [
+          [
+            31.78,
+            71.0
+          ],
+          [
+            7.22,
+            43.71
+          ],
+          [
+            29.92,
+            19.8
+          ],
+          [
+            45.72,
+            8.12
+          ],
+          [
+            65.33,
+            28.74
+          ],
+          [
+            58.92,
+            49.95
+          ]
+        ]
+      },
+      {
+        "from_minute": 62,
+        "to_minute": 75,
+        "players_in": [
+          "Heorhii Tsitaishvili"
+        ],
+        "players_out": [
+          "Luka Lochoshvili"
+        ],
+        "nodes": [
+          {
+            "player_id": 38229,
+            "player": "Khvicha Kvaratskhelia",
+            "display_name": "Kvara",
+            "x": 40.07,
+            "y": 41.24,
+            "event_count": 9
+          },
+          {
+            "player_id": 11335,
+            "player": "Otar Kiteishvili",
+            "display_name": "Otar Kiteishvili",
+            "x": 30.82,
+            "y": 30.48,
+            "event_count": 6
+          },
+          {
+            "player_id": 33234,
+            "player": "Georges Mikautadze",
+            "display_name": "Georges Mikautadze",
+            "x": 35.08,
+            "y": 27.27,
+            "event_count": 4
+          },
+          {
+            "player_id": 23646,
+            "player": "Giorgi Chakvetadze",
+            "display_name": "Giorgi Chakvetadze",
+            "x": 77.4,
+            "y": 57.37,
+            "event_count": 3
+          },
+          {
+            "player_id": 102371,
+            "player": "Giorgi Mamardashvili",
+            "display_name": "Giorgi Mamardashvili",
+            "x": 9.1,
+            "y": 47.9,
+            "event_count": 2
+          },
+          {
+            "player_id": 7655,
+            "player": "Lasha Dvali",
+            "display_name": "Lasha Dvali",
+            "x": 15.7,
+            "y": 31.8,
+            "event_count": 1
+          }
+        ],
+        "hull": [
+          [
+            77.4,
+            57.37
+          ],
+          [
+            9.1,
+            47.9
+          ],
+          [
+            15.7,
+            31.8
+          ],
+          [
+            35.08,
+            27.27
+          ]
+        ]
+      },
+      {
+        "from_minute": 75,
+        "to_minute": 80,
+        "players_in": [
+          "Solomon Kverkvelia"
+        ],
+        "players_out": [
+          "Giorgi Gvelesiani"
+        ],
+        "nodes": [
+          {
+            "player_id": 23646,
+            "player": "Giorgi Chakvetadze",
+            "display_name": "Giorgi Chakvetadze",
+            "x": 36.17,
+            "y": 52.93,
+            "event_count": 3
+          },
+          {
+            "player_id": 38229,
+            "player": "Khvicha Kvaratskhelia",
+            "display_name": "Kvara",
+            "x": 74.7,
+            "y": 19.37,
+            "event_count": 3
+          },
+          {
+            "player_id": 22242,
+            "player": "Heorhii Tsitaishvili",
+            "display_name": "Georgiy Tsitaishvili",
+            "x": 108.5,
+            "y": 12.4,
+            "event_count": 3
+          },
+          {
+            "player_id": 33234,
+            "player": "Georges Mikautadze",
+            "display_name": "Georges Mikautadze",
+            "x": 111.7,
+            "y": 40.6,
+            "event_count": 1
+          },
+          {
+            "player_id": 11335,
+            "player": "Otar Kiteishvili",
+            "display_name": "Otar Kiteishvili",
+            "x": 20.8,
+            "y": 57.9,
+            "event_count": 1
+          }
+        ],
+        "hull": [
+          [
+            111.7,
+            40.6
+          ],
+          [
+            20.8,
+            57.9
+          ],
+          [
+            74.7,
+            19.37
+          ],
+          [
+            108.5,
+            12.4
+          ]
+        ]
+      },
+      {
+        "from_minute": 80,
+        "to_minute": 81,
+        "players_in": [
+          "Anzor Mekvabishvili"
+        ],
+        "players_out": [
+          "Giorgi Chakvetadze"
+        ],
+        "nodes": [],
+        "hull": []
+      },
+      {
+        "from_minute": 81,
+        "to_minute": 95,
+        "players_in": [
+          "Zuriko Davitashvili"
+        ],
+        "players_out": [
+          "Khvicha Kvaratskhelia"
+        ],
+        "nodes": [
+          {
+            "player_id": 25036,
+            "player": "Otar Kakabadze",
+            "display_name": "Otar Kakabadze",
+            "x": 48.28,
+            "y": 76.23,
+            "event_count": 13
+          },
+          {
+            "player_id": 264017,
+            "player": "Anzor Mekvabishvili",
+            "display_name": "Anzor Mekvabishvili",
+            "x": 51.52,
+            "y": 67.68,
+            "event_count": 12
+          },
+          {
+            "player_id": 7839,
+            "player": "Guram Kashia",
+            "display_name": "Guram Kashia",
+            "x": 42.85,
+            "y": 36.22,
+            "event_count": 6
+          },
+          {
+            "player_id": 11335,
+            "player": "Otar Kiteishvili",
+            "display_name": "Otar Kiteishvili",
+            "x": 56.88,
+            "y": 64.5,
+            "event_count": 4
+          },
+          {
+            "player_id": 33234,
+            "player": "Georges Mikautadze",
+            "display_name": "Georges Mikautadze",
+            "x": 88.8,
+            "y": 16.57,
+            "event_count": 3
+          },
+          {
+            "player_id": 22242,
+            "player": "Heorhii Tsitaishvili",
+            "display_name": "Georgiy Tsitaishvili",
+            "x": 88.53,
+            "y": 8.43,
+            "event_count": 3
+          },
+          {
+            "player_id": 7655,
+            "player": "Lasha Dvali",
+            "display_name": "Lasha Dvali",
+            "x": 53.23,
+            "y": 12.87,
+            "event_count": 3
+          },
+          {
+            "player_id": 44183,
+            "player": "Zuriko Davitashvili",
+            "display_name": "Zurab Davitashvili",
+            "x": 65.97,
+            "y": 60.1,
+            "event_count": 3
+          },
+          {
+            "player_id": 41202,
+            "player": "Giorgi Kochorashvili",
+            "display_name": "Giorgi Kochorashvili",
+            "x": 62.83,
+            "y": 32.7,
+            "event_count": 3
+          }
+        ],
+        "hull": [
+          [
+            48.28,
+            76.23
+          ],
+          [
+            42.85,
+            36.22
+          ],
+          [
+            53.23,
+            12.87
+          ],
+          [
+            88.53,
+            8.43
+          ],
+          [
+            88.8,
+            16.57
+          ],
+          [
+            65.97,
+            60.1
+          ]
+        ]
+      }
+    ]
+  },
+  "off_ball": {
+    "density_grid": {
+      "cols": 24,
+      "rows": 16,
+      "values": [
+        [
+          0.0582,
+          0.0702,
+          0.0831,
+          0.097,
+          0.112,
+          0.128,
+          0.1454,
+          0.1642,
+          0.1845,
+          0.2062,
+          0.229,
+          0.252,
+          0.2743,
+          0.2943,
+          0.3104,
+          0.321,
+          0.3247,
+          0.3206,
+          0.3084,
+          0.2887,
+          0.2627,
+          0.232,
+          0.1988,
+          0.1651
+        ],
+        [
+          0.0751,
+          0.0905,
+          0.1073,
+          0.1254,
+          0.1449,
+          0.1659,
+          0.1888,
+          0.2137,
+          0.2408,
+          0.2699,
+          0.3007,
+          0.332,
+          0.3625,
+          0.3903,
+          0.4131,
+          0.4287,
+          0.4352,
+          0.4313,
+          0.4166,
+          0.3916,
+          0.3578,
+          0.3174,
+          0.2733,
+          0.2281
+        ],
+        [
+          0.0928,
+          0.1118,
+          0.1324,
+          0.1547,
+          0.1788,
+          0.205,
+          0.2336,
+          0.265,
+          0.2993,
+          0.3365,
+          0.3759,
+          0.4165,
+          0.4562,
+          0.4928,
+          0.5234,
+          0.5451,
+          0.5554,
+          0.5526,
+          0.5359,
+          0.5058,
+          0.4641,
+          0.4136,
+          0.3577,
+          0.3
+        ],
+        [
+          0.1101,
+          0.1324,
+          0.1566,
+          0.1829,
+          0.2113,
+          0.2424,
+          0.2765,
+          0.3142,
+          0.3557,
+          0.4009,
+          0.4492,
+          0.4991,
+          0.5486,
+          0.5945,
+          0.6336,
+          0.6622,
+          0.6772,
+          0.6762,
+          0.6583,
+          0.6238,
+          0.5748,
+          0.5145,
+          0.447,
+          0.3767
+        ],
+        [
+          0.1256,
+          0.1507,
+          0.178,
+          0.2077,
+          0.2399,
+          0.2752,
+          0.3141,
+          0.3574,
+          0.4053,
+          0.4579,
+          0.5144,
+          0.5733,
+          0.632,
+          0.6872,
+          0.7348,
+          0.7705,
+          0.7907,
+          0.7924,
+          0.7742,
+          0.7364,
+          0.6813,
+          0.6123,
+          0.5343,
+          0.4523
+        ],
+        [
+          0.1378,
+          0.1652,
+          0.1948,
+          0.227,
+          0.2621,
+          0.3006,
+          0.3433,
+          0.3909,
+          0.444,
+          0.5027,
+          0.5662,
+          0.6328,
+          0.6996,
+          0.7629,
+          0.8182,
+          0.8607,
+          0.8861,
+          0.8909,
+          0.8733,
+          0.8336,
+          0.7739,
+          0.6982,
+          0.6116,
+          0.5198
+        ],
+        [
+          0.1455,
+          0.1742,
+          0.2053,
+          0.239,
+          0.2758,
+          0.3163,
+          0.3614,
+          0.412,
+          0.4687,
+          0.5316,
+          0.6001,
+          0.6723,
+          0.7453,
+          0.815,
+          0.8765,
+          0.9246,
+          0.9545,
+          0.9624,
+          0.9462,
+          0.9059,
+          0.8437,
+          0.7635,
+          0.671,
+          0.5723
+        ],
+        [
+          0.1476,
+          0.1767,
+          0.2082,
+          0.2424,
+          0.2797,
+          0.3209,
+          0.3669,
+          0.4187,
+          0.477,
+          0.542,
+          0.6131,
+          0.6884,
+          0.765,
+          0.8385,
+          0.904,
+          0.956,
+          0.9894,
+          1.0,
+          0.9856,
+          0.9459,
+          0.8831,
+          0.8013,
+          0.706,
+          0.6038
+        ],
+        [
+          0.1437,
+          0.1722,
+          0.2031,
+          0.2367,
+          0.2734,
+          0.3139,
+          0.3593,
+          0.4105,
+          0.4684,
+          0.5332,
+          0.6042,
+          0.6799,
+          0.7571,
+          0.8316,
+          0.8985,
+          0.9521,
+          0.9873,
+          0.9999,
+          0.9874,
+          0.9495,
+          0.8881,
+          0.8073,
+          0.7127,
+          0.6106
+        ],
+        [
+          0.1342,
+          0.1612,
+          0.1906,
+          0.2225,
+          0.2574,
+          0.296,
+          0.3393,
+          0.3883,
+          0.4438,
+          0.506,
+          0.5745,
+          0.6475,
+          0.7224,
+          0.795,
+          0.8605,
+          0.9135,
+          0.9488,
+          0.9624,
+          0.9518,
+          0.9165,
+          0.8583,
+          0.7812,
+          0.6904,
+          0.5922
+        ],
+        [
+          0.1202,
+          0.1448,
+          0.1718,
+          0.2011,
+          0.2333,
+          0.2689,
+          0.3089,
+          0.3542,
+          0.4055,
+          0.4631,
+          0.5266,
+          0.5946,
+          0.6644,
+          0.7324,
+          0.794,
+          0.8441,
+          0.878,
+          0.8917,
+          0.8828,
+          0.8508,
+          0.7975,
+          0.7262,
+          0.6422,
+          0.5511
+        ],
+        [
+          0.1031,
+          0.1248,
+          0.1487,
+          0.1748,
+          0.2035,
+          0.2352,
+          0.2709,
+          0.3112,
+          0.3569,
+          0.4083,
+          0.4651,
+          0.5259,
+          0.5885,
+          0.6497,
+          0.7053,
+          0.7508,
+          0.7818,
+          0.7948,
+          0.7875,
+          0.7595,
+          0.7123,
+          0.6488,
+          0.5738,
+          0.4923
+        ],
+        [
+          0.0847,
+          0.1032,
+          0.1236,
+          0.1459,
+          0.1705,
+          0.1979,
+          0.2285,
+          0.2631,
+          0.3023,
+          0.3464,
+          0.3951,
+          0.4473,
+          0.5013,
+          0.5541,
+          0.6023,
+          0.6419,
+          0.6692,
+          0.681,
+          0.6753,
+          0.6516,
+          0.6113,
+          0.5569,
+          0.4924,
+          0.4224
+        ],
+        [
+          0.0666,
+          0.0817,
+          0.0984,
+          0.1168,
+          0.1372,
+          0.1597,
+          0.185,
+          0.2135,
+          0.2458,
+          0.2821,
+          0.3221,
+          0.3652,
+          0.4098,
+          0.4535,
+          0.4935,
+          0.5266,
+          0.5496,
+          0.5599,
+          0.5556,
+          0.5365,
+          0.5035,
+          0.4588,
+          0.4057,
+          0.3478
+        ],
+        [
+          0.0501,
+          0.0619,
+          0.075,
+          0.0895,
+          0.1056,
+          0.1235,
+          0.1435,
+          0.166,
+          0.1914,
+          0.22,
+          0.2515,
+          0.2854,
+          0.3206,
+          0.3553,
+          0.3871,
+          0.4136,
+          0.4322,
+          0.4407,
+          0.4378,
+          0.4231,
+          0.3973,
+          0.3622,
+          0.3203,
+          0.2746
+        ],
+        [
+          0.036,
+          0.0447,
+          0.0546,
+          0.0655,
+          0.0776,
+          0.0911,
+          0.1062,
+          0.1232,
+          0.1423,
+          0.1637,
+          0.1874,
+          0.2129,
+          0.2394,
+          0.2655,
+          0.2897,
+          0.3099,
+          0.3243,
+          0.3312,
+          0.3294,
+          0.3187,
+          0.2996,
+          0.2733,
+          0.2418,
+          0.2073
+        ]
+      ]
+    },
+    "centroid": {
+      "x": 77.71,
+      "y": 39.76
+    },
+    "thirds_spine": [
+      {
+        "third": "defensive",
+        "x": 23.57,
+        "y": 37.41
+      },
+      {
+        "third": "middle",
+        "x": 64.21,
+        "y": 38.34
+      },
+      {
+        "third": "attacking",
+        "x": 94.42,
+        "y": 40.86
+      }
+    ],
+    "ellipse": {
+      "cx": 77.71,
+      "cy": 39.76,
+      "rx": 25.79,
+      "ry": 17.03,
+      "angle_deg": -175.1
+    },
+    "depth_line": {
+      "x": 94.46,
+      "percentile": 70
+    }
+  },
+  "metadata": {
+    "match_id": 3938644,
+    "team": "Georgia",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Georgia vs Portugal",
+    "on_ball_event_count": 484,
+    "on_ball_period_count": 5,
+    "off_ball_bandwidth_yards": 8.0,
+    "off_ball_depth_percentile": 70,
+    "off_ball_grid_cols": 24,
+    "off_ball_grid_rows": 16,
+    "phase_filter": "open_play_only",
+    "coordinate_system": "statsbomb_120x80_normalised_attack_right",
+    "coordinate_note": "Coordinates are normalised so the team always attacks right (increasing x). Raw StatsBomb events are flipped (x\u2192120-x, y\u219280-y) in periods where the team attacks left.",
+    "camera_caveat": "360 frames follow the ball; the visible subset of out-of-possession positions is biased toward areas near the ball. The camera artifact and the real defensive shape point the same direction \u2014 they cannot be cleanly separated."
+  }
+}

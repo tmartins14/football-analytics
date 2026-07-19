@@ -1,0 +1,93 @@
+{
+  "hulls": [
+    {
+      "sides": [
+        {
+          "side": "defense",
+          "team_name": "Poland",
+          "hull_vertices": [
+            [
+              102.64034559465688,
+              49.492471639655214
+            ],
+            [
+              97.39747311498994,
+              36.925067272148766
+            ],
+            [
+              101.53441271198568,
+              31.13687130362341
+            ]
+          ],
+          "area": 41.17,
+          "player_count": 4
+        }
+      ],
+      "metadata": {
+        "match_id": 3938643,
+        "event_id": "00633ba6-692b-40d1-ba13-535406bf78a1",
+        "minute": 55,
+        "possession_team_name": "France",
+        "actor_team_name": "France",
+        "include_keeper": false
+      }
+    },
+    {
+      "sides": [
+        {
+          "side": "offense",
+          "team_name": "Poland",
+          "hull_vertices": [
+            [
+              96.49847198965355,
+              46.62506656834017
+            ],
+            [
+              108.0,
+              40.0
+            ],
+            [
+              101.66693556035882,
+              52.642232322064
+            ]
+          ],
+          "area": 51.72,
+          "player_count": 4
+        },
+        {
+          "side": "defense",
+          "team_name": "France",
+          "hull_vertices": [
+            [
+              99.71201662334754,
+              42.6832958227621
+            ],
+            [
+              102.0481346255125,
+              50.09751973263192
+            ],
+            [
+              101.60900017231798,
+              49.10116977638918
+            ]
+          ],
+          "area": 0.46,
+          "player_count": 3
+        }
+      ],
+      "metadata": {
+        "match_id": 3938643,
+        "event_id": "03afed8a-fcf7-4c46-9316-9ec3e99b6795",
+        "minute": 78,
+        "possession_team_name": "Poland",
+        "actor_team_name": "Poland",
+        "include_keeper": false
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3938643,
+    "competition": "UEFA Euro 2024",
+    "match_label": "France vs Poland"
+  }
+}

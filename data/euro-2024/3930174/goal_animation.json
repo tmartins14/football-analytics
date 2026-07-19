@@ -1,0 +1,277 @@
+{
+  "goals": [
+    {
+      "window": {
+        "anchor_event_id": "96de6997-f9da-4735-a9d4-5a143f991f04",
+        "start_event_id": "0075bfca-e3ee-48e2-b600-2913ba9bec20",
+        "end_event_id": "96de6997-f9da-4735-a9d4-5a143f991f04",
+        "period": 1,
+        "window_seconds": 10.0,
+        "t_span_seconds": 10.608
+      },
+      "frames": [
+        {
+          "event_id": "0075bfca-e3ee-48e2-b600-2913ba9bec20",
+          "t_seconds": 0.0,
+          "team": "Portugal",
+          "event_type": "Pass",
+          "ball_x": 78.5,
+          "ball_y": 32.8,
+          "ball_end_x": 63.0,
+          "ball_end_y": 34.6,
+          "actor": "Bruno Fernandes",
+          "outcome": null
+        },
+        {
+          "event_id": "06411960-fcf2-46a2-9728-fccfc00b0039",
+          "t_seconds": 1.332,
+          "team": "Portugal",
+          "event_type": "Pass",
+          "ball_x": 63.0,
+          "ball_y": 34.6,
+          "ball_end_x": 71.0,
+          "ball_end_y": 13.8,
+          "actor": "Pepe",
+          "outcome": null
+        },
+        {
+          "event_id": "8dc4e5f5-01f8-41c2-bcb3-8e154f6b44ef",
+          "t_seconds": 2.544,
+          "team": "Portugal",
+          "event_type": "Carry",
+          "ball_x": 71.0,
+          "ball_y": 13.8,
+          "ball_end_x": 72.8,
+          "ball_end_y": 12.1,
+          "actor": "Nuno Mendes",
+          "outcome": null
+        },
+        {
+          "event_id": "02d4351d-fdff-483a-9553-56a7966c3092",
+          "t_seconds": 3.744,
+          "team": "Portugal",
+          "event_type": "Pass",
+          "ball_x": 72.8,
+          "ball_y": 12.1,
+          "ball_end_x": 92.6,
+          "ball_end_y": 1.9,
+          "actor": "Nuno Mendes",
+          "outcome": null
+        },
+        {
+          "event_id": "3fdf441e-5ff7-4d1f-a0ba-0787cf8f2b23",
+          "t_seconds": 4.944,
+          "team": "Portugal",
+          "event_type": "Carry",
+          "ball_x": 92.6,
+          "ball_y": 1.9,
+          "ball_end_x": 103.1,
+          "ball_end_y": 4.8,
+          "actor": "Rafael Le\u00e3o",
+          "outcome": null
+        },
+        {
+          "event_id": "76c1eda0-1b93-489a-86f8-c31196bf6ea1",
+          "t_seconds": 7.265,
+          "team": "Portugal",
+          "event_type": "Pass",
+          "ball_x": 103.1,
+          "ball_y": 4.8,
+          "ball_end_x": 111.7,
+          "ball_end_y": 19.8,
+          "actor": "Rafael Le\u00e3o",
+          "outcome": null
+        },
+        {
+          "event_id": "54c40919-155e-484e-8dd4-b2e936ac5f68",
+          "t_seconds": 8.444,
+          "team": "Turkey",
+          "event_type": "Pressure",
+          "ball_x": 8.8,
+          "ball_y": 57.7,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Samet Akaydin",
+          "outcome": null
+        },
+        {
+          "event_id": "2825d263-620d-4a32-96fd-2e86f841a0b0",
+          "t_seconds": 8.637,
+          "team": "Portugal",
+          "event_type": "Pass",
+          "ball_x": 112.8,
+          "ball_y": 19.6,
+          "ball_end_x": 112.2,
+          "ball_end_y": 36.0,
+          "actor": "Nuno Mendes",
+          "outcome": "Incomplete"
+        },
+        {
+          "event_id": "c4947c36-b0f6-454a-b993-97c353d4988c",
+          "t_seconds": 10.417,
+          "team": "Portugal",
+          "event_type": "Ball Recovery",
+          "ball_x": 108.8,
+          "ball_y": 44.6,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Bernardo Silva",
+          "outcome": null
+        },
+        {
+          "event_id": "96de6997-f9da-4735-a9d4-5a143f991f04",
+          "t_seconds": 10.608,
+          "team": "Portugal",
+          "event_type": "Shot",
+          "ball_x": 108.8,
+          "ball_y": 44.0,
+          "ball_end_x": 120.0,
+          "ball_end_y": 43.4,
+          "actor": "Bernardo Silva",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "96de6997-f9da-4735-a9d4-5a143f991f04",
+          "minute": 20,
+          "second": 58,
+          "scorer": "Bernardo Silva",
+          "team": "Portugal"
+        }
+      },
+      "metadata": {
+        "match_id": 3930174,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Turkey vs Portugal"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "2a0573ed-49c7-466d-ba51-6f64fff2cd01",
+        "start_event_id": "5663c57e-ec99-4c9e-ab4b-3a4411732575",
+        "end_event_id": "2a0573ed-49c7-466d-ba51-6f64fff2cd01",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 12.67
+      },
+      "frames": [
+        {
+          "event_id": "5663c57e-ec99-4c9e-ab4b-3a4411732575",
+          "t_seconds": 0.0,
+          "team": "Portugal",
+          "event_type": "Pass",
+          "ball_x": 40.5,
+          "ball_y": 2.5,
+          "ball_end_x": 61.9,
+          "ball_end_y": 76.1,
+          "actor": "Nuno Mendes",
+          "outcome": null
+        },
+        {
+          "event_id": "9c2dfc30-434a-4b0a-a2d2-eab656424e39",
+          "t_seconds": 3.497,
+          "team": "Portugal",
+          "event_type": "Carry",
+          "ball_x": 61.9,
+          "ball_y": 76.1,
+          "ball_end_x": 55.7,
+          "ball_end_y": 77.5,
+          "actor": "Bernardo Silva",
+          "outcome": null
+        },
+        {
+          "event_id": "aa1d324c-e271-4d39-81c5-f511468afb26",
+          "t_seconds": 4.954,
+          "team": "Portugal",
+          "event_type": "Pass",
+          "ball_x": 55.7,
+          "ball_y": 77.5,
+          "ball_end_x": 53.5,
+          "ball_end_y": 68.9,
+          "actor": "Bernardo Silva",
+          "outcome": null
+        },
+        {
+          "event_id": "4613042a-f80c-4533-988f-d1247cdc488f",
+          "t_seconds": 5.84,
+          "team": "Portugal",
+          "event_type": "Carry",
+          "ball_x": 53.5,
+          "ball_y": 68.9,
+          "ball_end_x": 55.1,
+          "ball_end_y": 67.5,
+          "actor": "R\u00faben Neves",
+          "outcome": null
+        },
+        {
+          "event_id": "3229520f-7257-43a3-aae7-c50d464d6c26",
+          "t_seconds": 7.179,
+          "team": "Portugal",
+          "event_type": "Pass",
+          "ball_x": 55.1,
+          "ball_y": 67.5,
+          "ball_end_x": 97.8,
+          "ball_end_y": 52.0,
+          "actor": "R\u00faben Neves",
+          "outcome": null
+        },
+        {
+          "event_id": "c2f1245a-33d1-4d6d-81ac-c4ea3353cae7",
+          "t_seconds": 9.842,
+          "team": "Portugal",
+          "event_type": "Carry",
+          "ball_x": 97.8,
+          "ball_y": 52.0,
+          "ball_end_x": 109.9,
+          "ball_end_y": 46.8,
+          "actor": "Cristiano Ronaldo",
+          "outcome": null
+        },
+        {
+          "event_id": "369a20de-0ae0-426e-a77b-ba60458f62e4",
+          "t_seconds": 11.751,
+          "team": "Portugal",
+          "event_type": "Pass",
+          "ball_x": 109.9,
+          "ball_y": 46.8,
+          "ball_end_x": 111.5,
+          "ball_end_y": 36.3,
+          "actor": "Cristiano Ronaldo",
+          "outcome": null
+        },
+        {
+          "event_id": "2a0573ed-49c7-466d-ba51-6f64fff2cd01",
+          "t_seconds": 12.67,
+          "team": "Portugal",
+          "event_type": "Shot",
+          "ball_x": 111.5,
+          "ball_y": 36.3,
+          "ball_end_x": 120.0,
+          "ball_end_y": 39.8,
+          "actor": "Bruno Fernandes",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "2a0573ed-49c7-466d-ba51-6f64fff2cd01",
+          "minute": 55,
+          "second": 3,
+          "scorer": "Bruno Fernandes",
+          "team": "Portugal"
+        }
+      },
+      "metadata": {
+        "match_id": 3930174,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Turkey vs Portugal"
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3930174,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Turkey vs Portugal"
+  }
+}

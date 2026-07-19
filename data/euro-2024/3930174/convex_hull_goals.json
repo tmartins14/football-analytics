@@ -1,0 +1,137 @@
+{
+  "hulls": [
+    {
+      "sides": [
+        {
+          "side": "offense",
+          "team_name": "Portugal",
+          "hull_vertices": [
+            [
+              100.02811896900567,
+              49.81756028943384
+            ],
+            [
+              107.84218294403033,
+              30.71802821676434
+            ],
+            [
+              119.87510554451904,
+              18.72766504879595
+            ],
+            [
+              117.6799839689663,
+              33.17669243636364
+            ],
+            [
+              108.80000305175781,
+              44.0
+            ]
+          ],
+          "area": 198.97,
+          "player_count": 6
+        },
+        {
+          "side": "defense",
+          "team_name": "opponent",
+          "hull_vertices": [
+            [
+              109.6957466423055,
+              19.024976356874845
+            ],
+            [
+              117.99662363953118,
+              24.478944097716184
+            ],
+            [
+              116.54197902277608,
+              35.30770684374514
+            ],
+            [
+              112.055759432931,
+              46.795062723754086
+            ],
+            [
+              101.96599552560592,
+              43.819052896629756
+            ],
+            [
+              102.50271005657099,
+              32.43611603542582
+            ]
+          ],
+          "area": 298.68,
+          "player_count": 9
+        }
+      ],
+      "metadata": {
+        "match_id": 3930174,
+        "event_id": "96de6997-f9da-4735-a9d4-5a143f991f04",
+        "minute": 20,
+        "possession_team_name": "Portugal",
+        "actor_team_name": "Portugal",
+        "include_keeper": false
+      }
+    },
+    {
+      "sides": [
+        {
+          "side": "offense",
+          "team_name": "Portugal",
+          "hull_vertices": [
+            [
+              112.38076041734236,
+              49.09750555602252
+            ],
+            [
+              91.860921158408,
+              24.814123631985062
+            ],
+            [
+              111.5,
+              36.29999923706055
+            ]
+          ],
+          "area": 120.61,
+          "player_count": 3
+        },
+        {
+          "side": "defense",
+          "team_name": "opponent",
+          "hull_vertices": [
+            [
+              88.4493792114669,
+              32.5718880525169
+            ],
+            [
+              109.75853449326253,
+              44.357680669050204
+            ],
+            [
+              95.01852127594319,
+              54.26076620758009
+            ],
+            [
+              90.01382194288283,
+              39.82136021902401
+            ]
+          ],
+          "area": 199.22,
+          "player_count": 4
+        }
+      ],
+      "metadata": {
+        "match_id": 3930174,
+        "event_id": "2a0573ed-49c7-466d-ba51-6f64fff2cd01",
+        "minute": 55,
+        "possession_team_name": "Portugal",
+        "actor_team_name": "Portugal",
+        "include_keeper": false
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3930174,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Turkey vs Portugal"
+  }
+}

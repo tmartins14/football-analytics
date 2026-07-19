@@ -1,0 +1,471 @@
+{
+  "goals": [
+    {
+      "window": {
+        "anchor_event_id": "c459bd16-2837-4f00-8059-21c04f513544",
+        "start_event_id": "ee91c3b1-a07e-4c1c-a99b-fc7998f63e07",
+        "end_event_id": "c459bd16-2837-4f00-8059-21c04f513544",
+        "period": 1,
+        "window_seconds": 10.0,
+        "t_span_seconds": 13.01
+      },
+      "frames": [
+        {
+          "event_id": "ee91c3b1-a07e-4c1c-a99b-fc7998f63e07",
+          "t_seconds": 0.0,
+          "team": "Ukraine",
+          "event_type": "Carry",
+          "ball_x": 29.0,
+          "ball_y": 72.1,
+          "ball_end_x": 21.9,
+          "ball_end_y": 65.7,
+          "actor": "Georgiy Sudakov",
+          "outcome": null
+        },
+        {
+          "event_id": "692cc390-1eb8-4054-ab38-31a54c758f2f",
+          "t_seconds": 4.268,
+          "team": "Ukraine",
+          "event_type": "Pass",
+          "ball_x": 21.9,
+          "ball_y": 65.7,
+          "ball_end_x": 16.1,
+          "ball_end_y": 45.1,
+          "actor": "Georgiy Sudakov",
+          "outcome": null
+        },
+        {
+          "event_id": "324bddf4-e6f5-4578-8b52-69f3c480f755",
+          "t_seconds": 6.085,
+          "team": "Ukraine",
+          "event_type": "Carry",
+          "ball_x": 16.1,
+          "ball_y": 45.1,
+          "ball_end_x": 15.5,
+          "ball_end_y": 41.4,
+          "actor": "Mykola Matvienko",
+          "outcome": null
+        },
+        {
+          "event_id": "33efcd5d-189d-44c4-b670-d52b299b9a71",
+          "t_seconds": 6.792,
+          "team": "Romania",
+          "event_type": "Pressure",
+          "ball_x": 101.1,
+          "ball_y": 39.3,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "R\u0103zvan Marin",
+          "outcome": null
+        },
+        {
+          "event_id": "a64b9086-ba69-4633-82dc-0662441c4e66",
+          "t_seconds": 7.529,
+          "team": "Ukraine",
+          "event_type": "Pass",
+          "ball_x": 15.5,
+          "ball_y": 41.4,
+          "ball_end_x": 4.4,
+          "ball_end_y": 37.5,
+          "actor": "Mykola Matvienko",
+          "outcome": null
+        },
+        {
+          "event_id": "94334c5f-fbfe-4ab7-8a85-0964db184744",
+          "t_seconds": 8.293,
+          "team": "Romania",
+          "event_type": "Pressure",
+          "ball_x": 110.9,
+          "ball_y": 42.0,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "R\u0103zvan Marin",
+          "outcome": null
+        },
+        {
+          "event_id": "76d956c1-763c-41c0-a5c6-1246158a272c",
+          "t_seconds": 8.749,
+          "team": "Ukraine",
+          "event_type": "Carry",
+          "ball_x": 4.4,
+          "ball_y": 37.5,
+          "ball_end_x": 4.4,
+          "ball_end_y": 37.1,
+          "actor": "Andriy Lunin",
+          "outcome": null
+        },
+        {
+          "event_id": "2ecdbb7b-16f0-493c-9059-f9066d77caa1",
+          "t_seconds": 8.829,
+          "team": "Ukraine",
+          "event_type": "Pass",
+          "ball_x": 4.4,
+          "ball_y": 37.1,
+          "ball_end_x": 27.0,
+          "ball_end_y": 15.1,
+          "actor": "Andriy Lunin",
+          "outcome": "Incomplete"
+        },
+        {
+          "event_id": "11e9e2b8-386e-4c27-95c1-47dde27df2e4",
+          "t_seconds": 9.816,
+          "team": "Romania",
+          "event_type": "Ball Recovery",
+          "ball_x": 93.1,
+          "ball_y": 65.0,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Dennis Man",
+          "outcome": null
+        },
+        {
+          "event_id": "0b835289-33c4-452f-b0ac-b837faa036c9",
+          "t_seconds": 9.816,
+          "team": "Romania",
+          "event_type": "Carry",
+          "ball_x": 93.1,
+          "ball_y": 65.0,
+          "ball_end_x": 101.9,
+          "ball_end_y": 57.9,
+          "actor": "Dennis Man",
+          "outcome": null
+        },
+        {
+          "event_id": "831bb0fa-5f85-404c-bfbe-8b6ac8d7faef",
+          "t_seconds": 11.659,
+          "team": "Romania",
+          "event_type": "Pass",
+          "ball_x": 101.9,
+          "ball_y": 57.9,
+          "ball_end_x": 96.6,
+          "ball_end_y": 45.0,
+          "actor": "Dennis Man",
+          "outcome": null
+        },
+        {
+          "event_id": "700a9498-682e-4699-b7cb-7c438a41a6c3",
+          "t_seconds": 12.4,
+          "team": "Ukraine",
+          "event_type": "Pressure",
+          "ball_x": 22.8,
+          "ball_y": 33.3,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Mykola Shaparenko",
+          "outcome": null
+        },
+        {
+          "event_id": "c459bd16-2837-4f00-8059-21c04f513544",
+          "t_seconds": 13.01,
+          "team": "Romania",
+          "event_type": "Shot",
+          "ball_x": 96.6,
+          "ball_y": 45.0,
+          "ball_end_x": 120.0,
+          "ball_end_y": 37.3,
+          "actor": "Nicolae Stanciu",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "c459bd16-2837-4f00-8059-21c04f513544",
+          "minute": 28,
+          "second": 46,
+          "scorer": "Nicolae Stanciu",
+          "team": "Romania"
+        }
+      },
+      "metadata": {
+        "match_id": 3938638,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Romania vs Ukraine"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "d0dd7a7a-038e-493d-89a6-b63d8cb8809a",
+        "start_event_id": "034d371e-a985-41b5-b9b8-9b3bd7666021",
+        "end_event_id": "d0dd7a7a-038e-493d-89a6-b63d8cb8809a",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 11.783
+      },
+      "frames": [
+        {
+          "event_id": "034d371e-a985-41b5-b9b8-9b3bd7666021",
+          "t_seconds": 0.0,
+          "team": "Ukraine",
+          "event_type": "Pressure",
+          "ball_x": 80.7,
+          "ball_y": 62.0,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Ilya Zabarnyi",
+          "outcome": null
+        },
+        {
+          "event_id": "888e9b79-9de2-4f4e-ae53-672a7216700c",
+          "t_seconds": 2.635,
+          "team": "Romania",
+          "event_type": "Pass",
+          "ball_x": 51.1,
+          "ball_y": 29.9,
+          "ball_end_x": 62.9,
+          "ball_end_y": 54.7,
+          "actor": "Denis Dragus",
+          "outcome": null
+        },
+        {
+          "event_id": "24acc4d0-eb64-442a-a76c-aa41135cfbb3",
+          "t_seconds": 4.26,
+          "team": "Romania",
+          "event_type": "Carry",
+          "ball_x": 62.9,
+          "ball_y": 54.7,
+          "ball_end_x": 80.5,
+          "ball_end_y": 50.6,
+          "actor": "Andrei Ratiu",
+          "outcome": null
+        },
+        {
+          "event_id": "270e3897-fb60-459a-8448-4c7dabc5c9f1",
+          "t_seconds": 6.474,
+          "team": "Romania",
+          "event_type": "Pass",
+          "ball_x": 80.5,
+          "ball_y": 50.6,
+          "ball_end_x": 100.0,
+          "ball_end_y": 56.2,
+          "actor": "Andrei Ratiu",
+          "outcome": null
+        },
+        {
+          "event_id": "739e1ac3-a618-464a-92e6-aad4c94518df",
+          "t_seconds": 8.178,
+          "team": "Romania",
+          "event_type": "Carry",
+          "ball_x": 100.0,
+          "ball_y": 56.2,
+          "ball_end_x": 96.6,
+          "ball_end_y": 42.9,
+          "actor": "Dennis Man",
+          "outcome": null
+        },
+        {
+          "event_id": "7f8ec0fe-f61c-4ead-8b9a-2470cb62f078",
+          "t_seconds": 9.913,
+          "team": "Ukraine",
+          "event_type": "Pressure",
+          "ball_x": 23.3,
+          "ball_y": 39.4,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Mykola Shaparenko",
+          "outcome": null
+        },
+        {
+          "event_id": "74f667dc-5f0a-4901-ae48-7964c802e8d0",
+          "t_seconds": 10.322,
+          "team": "Ukraine",
+          "event_type": "Duel",
+          "ball_x": 23.5,
+          "ball_y": 37.2,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Mykola Shaparenko",
+          "outcome": null
+        },
+        {
+          "event_id": "e5ccf988-fe3b-43e2-8638-bd43b85166d7",
+          "t_seconds": 11.516,
+          "team": "Ukraine",
+          "event_type": "Pressure",
+          "ball_x": 23.0,
+          "ball_y": 31.6,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Mykola Shaparenko",
+          "outcome": null
+        },
+        {
+          "event_id": "07fc17bb-7063-4cd5-abf2-70fa01deef55",
+          "t_seconds": 11.703,
+          "team": "Romania",
+          "event_type": "Ball Recovery",
+          "ball_x": 90.8,
+          "ball_y": 48.9,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "R\u0103zvan Marin",
+          "outcome": null
+        },
+        {
+          "event_id": "d0dd7a7a-038e-493d-89a6-b63d8cb8809a",
+          "t_seconds": 11.783,
+          "team": "Romania",
+          "event_type": "Shot",
+          "ball_x": 93.2,
+          "ball_y": 49.7,
+          "ball_end_x": 120.0,
+          "ball_end_y": 36.7,
+          "actor": "R\u0103zvan Marin",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "d0dd7a7a-038e-493d-89a6-b63d8cb8809a",
+          "minute": 52,
+          "second": 24,
+          "scorer": "R\u0103zvan Marin",
+          "team": "Romania"
+        }
+      },
+      "metadata": {
+        "match_id": 3938638,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Romania vs Ukraine"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "748f4f64-4894-4934-ac41-52aec8517ba6",
+        "start_event_id": "59ff2cd0-0a9d-4287-8ddc-2a4b19f305cb",
+        "end_event_id": "748f4f64-4894-4934-ac41-52aec8517ba6",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 26.976
+      },
+      "frames": [
+        {
+          "event_id": "59ff2cd0-0a9d-4287-8ddc-2a4b19f305cb",
+          "t_seconds": 22.167,
+          "team": "Romania",
+          "event_type": "Pass",
+          "ball_x": 120.0,
+          "ball_y": 80.0,
+          "ball_end_x": 115.4,
+          "ball_end_y": 67.2,
+          "actor": "Dennis Man",
+          "outcome": null
+        },
+        {
+          "event_id": "9296e5c0-56d2-407c-aaaf-be927d009148",
+          "t_seconds": 23.497,
+          "team": "Romania",
+          "event_type": "Pass",
+          "ball_x": 116.6,
+          "ball_y": 67.4,
+          "ball_end_x": 106.0,
+          "ball_end_y": 55.5,
+          "actor": "Nicolae Stanciu",
+          "outcome": null
+        },
+        {
+          "event_id": "50b44594-1a31-4786-abca-f83073019c6f",
+          "t_seconds": 24.884,
+          "team": "Ukraine",
+          "event_type": "Pressure",
+          "ball_x": 15.7,
+          "ball_y": 26.0,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Mykola Shaparenko",
+          "outcome": null
+        },
+        {
+          "event_id": "be4afa61-efd7-4d04-8925-5a996f26c36e",
+          "t_seconds": 24.975,
+          "team": "Romania",
+          "event_type": "Carry",
+          "ball_x": 106.0,
+          "ball_y": 55.5,
+          "ball_end_x": 110.1,
+          "ball_end_y": 54.7,
+          "actor": "Dennis Man",
+          "outcome": null
+        },
+        {
+          "event_id": "7a9d2b24-ae61-4aee-94f2-879819be286d",
+          "t_seconds": 25.43,
+          "team": "Romania",
+          "event_type": "Carry",
+          "ball_x": 110.1,
+          "ball_y": 54.7,
+          "ball_end_x": 115.4,
+          "ball_end_y": 51.8,
+          "actor": "Dennis Man",
+          "outcome": null
+        },
+        {
+          "event_id": "69eb9ff9-87ab-4d04-85ea-cd3214696697",
+          "t_seconds": 26.324,
+          "team": "Ukraine",
+          "event_type": "Pressure",
+          "ball_x": 10.3,
+          "ball_y": 30.7,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Artem Dovbyk",
+          "outcome": null
+        },
+        {
+          "event_id": "97e36a36-8c00-4626-b379-a10430e08327",
+          "t_seconds": 26.346,
+          "team": "Ukraine",
+          "event_type": "Pressure",
+          "ball_x": 8.2,
+          "ball_y": 32.3,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Yukhym Konoplya",
+          "outcome": null
+        },
+        {
+          "event_id": "e2a05f20-283f-4646-86cb-4eb203e134a5",
+          "t_seconds": 26.534,
+          "team": "Romania",
+          "event_type": "Pass",
+          "ball_x": 115.4,
+          "ball_y": 51.8,
+          "ball_end_x": 116.3,
+          "ball_end_y": 41.2,
+          "actor": "Dennis Man",
+          "outcome": null
+        },
+        {
+          "event_id": "748f4f64-4894-4934-ac41-52aec8517ba6",
+          "t_seconds": 26.976,
+          "team": "Romania",
+          "event_type": "Shot",
+          "ball_x": 116.3,
+          "ball_y": 41.2,
+          "ball_end_x": 120.0,
+          "ball_end_y": 40.5,
+          "actor": "Denis Dragus",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "748f4f64-4894-4934-ac41-52aec8517ba6",
+          "minute": 56,
+          "second": 27,
+          "scorer": "Denis Dragus",
+          "team": "Romania"
+        }
+      },
+      "metadata": {
+        "match_id": 3938638,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Romania vs Ukraine"
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3938638,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Romania vs Ukraine"
+  }
+}

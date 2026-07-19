@@ -1,0 +1,145 @@
+{
+  "goals": [
+    {
+      "window": {
+        "anchor_event_id": "d54bfe16-4356-4892-9899-6144e547a033",
+        "start_event_id": "d54bfe16-4356-4892-9899-6144e547a033",
+        "end_event_id": "d54bfe16-4356-4892-9899-6144e547a033",
+        "period": 1,
+        "window_seconds": 10.0,
+        "t_span_seconds": 183.922
+      },
+      "frames": [
+        {
+          "event_id": "d54bfe16-4356-4892-9899-6144e547a033",
+          "t_seconds": 183.922,
+          "team": "Georgia",
+          "event_type": "Shot",
+          "ball_x": 108.1,
+          "ball_y": 40.1,
+          "ball_end_x": 120.0,
+          "ball_end_y": 43.1,
+          "actor": "Georges Mikautadze",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "d54bfe16-4356-4892-9899-6144e547a033",
+          "minute": 48,
+          "second": 20,
+          "scorer": "Georges Mikautadze",
+          "team": "Georgia"
+        }
+      },
+      "metadata": {
+        "match_id": 3938642,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Georgia vs Czech Republic"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "3ede987e-9251-4bd9-9467-605bdf40dfc0",
+        "start_event_id": "43e4ea95-bd29-48d8-8cf4-25c0cad38051",
+        "end_event_id": "3ede987e-9251-4bd9-9467-605bdf40dfc0",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 22.362
+      },
+      "frames": [
+        {
+          "event_id": "43e4ea95-bd29-48d8-8cf4-25c0cad38051",
+          "t_seconds": 19.879,
+          "team": "Czech Republic",
+          "event_type": "Pass",
+          "ball_x": 120.0,
+          "ball_y": 80.0,
+          "ball_end_x": 115.4,
+          "ball_end_y": 43.9,
+          "actor": "Vladim\u00edr Coufal",
+          "outcome": null
+        },
+        {
+          "event_id": "0131e976-a61f-40d2-b00c-a582c82c86ce",
+          "t_seconds": 21.353,
+          "team": "Georgia",
+          "event_type": "Duel",
+          "ball_x": 5.0,
+          "ball_y": 36.0,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Saba Kverkvelia",
+          "outcome": null
+        },
+        {
+          "event_id": "d1fdc378-c651-40bf-98aa-64d59fb2a2e5",
+          "t_seconds": 21.353,
+          "team": "Czech Republic",
+          "event_type": "Shot",
+          "ball_x": 115.1,
+          "ball_y": 44.1,
+          "ball_end_x": 120.0,
+          "ball_end_y": 36.1,
+          "actor": "Ond\u0159ej Lingr",
+          "outcome": null
+        },
+        {
+          "event_id": "216ed840-5d3d-441f-aede-319e79d7481d",
+          "t_seconds": 22.181,
+          "team": "Czech Republic",
+          "event_type": "Ball Recovery",
+          "ball_x": 117.7,
+          "ball_y": 38.1,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Patrik Schick",
+          "outcome": null
+        },
+        {
+          "event_id": "3147676b-2df2-48f6-bc66-2428c80db7d3",
+          "t_seconds": 22.181,
+          "team": "Czech Republic",
+          "event_type": "Carry",
+          "ball_x": 117.7,
+          "ball_y": 38.1,
+          "ball_end_x": 117.7,
+          "ball_end_y": 36.5,
+          "actor": "Patrik Schick",
+          "outcome": null
+        },
+        {
+          "event_id": "3ede987e-9251-4bd9-9467-605bdf40dfc0",
+          "t_seconds": 22.362,
+          "team": "Czech Republic",
+          "event_type": "Shot",
+          "ball_x": 117.7,
+          "ball_y": 36.5,
+          "ball_end_x": 120.0,
+          "ball_end_y": 36.8,
+          "actor": "Patrik Schick",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "3ede987e-9251-4bd9-9467-605bdf40dfc0",
+          "minute": 58,
+          "second": 7,
+          "scorer": "Patrik Schick",
+          "team": "Czech Republic"
+        }
+      },
+      "metadata": {
+        "match_id": 3938642,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Georgia vs Czech Republic"
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3938642,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Georgia vs Czech Republic"
+  }
+}

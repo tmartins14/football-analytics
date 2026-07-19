@@ -1,0 +1,904 @@
+{
+  "windows": [
+    {
+      "index": 0,
+      "label": "0'\u201359' (Starting XI)",
+      "nodes": [
+        {
+          "player": "David Doudera",
+          "display_name": "David Doudera",
+          "x": 51.08,
+          "y": 6.24,
+          "passes": 15
+        },
+        {
+          "player": "Jan Kuchta",
+          "display_name": "Jan Kuchta",
+          "x": 60.35,
+          "y": 39.56,
+          "passes": 8
+        },
+        {
+          "player": "Jind\u0159ich Stan\u011bk",
+          "display_name": "Jind\u0159ich Stan\u011bk",
+          "x": 8.33,
+          "y": 38.38,
+          "passes": 12
+        },
+        {
+          "player": "Ladislav Krej\u010d\u00ed",
+          "display_name": "Ladislav Krej\u010d\u00ed",
+          "x": 38.62,
+          "y": 19.37,
+          "passes": 12
+        },
+        {
+          "player": "Luk\u00e1\u0161 Provod",
+          "display_name": "Luk\u00e1\u0161 Provod",
+          "x": 62.97,
+          "y": 35.98,
+          "passes": 16
+        },
+        {
+          "player": "Patrik Schick",
+          "display_name": "Patrik Schick",
+          "x": 57.89,
+          "y": 40.75,
+          "passes": 8
+        },
+        {
+          "player": "Pavel \u0160ulc",
+          "display_name": "Pavel \u0160ulc",
+          "x": 62.62,
+          "y": 48.55,
+          "passes": 10
+        },
+        {
+          "player": "Robin Hran\u00e1\u010d",
+          "display_name": "Robin Hran\u00e1\u010d",
+          "x": 31.03,
+          "y": 32.85,
+          "passes": 10
+        },
+        {
+          "player": "Tom\u00e1\u0161 Hole\u0161",
+          "display_name": "Tom\u00e1\u0161 Hole\u0161",
+          "x": 43.94,
+          "y": 57.54,
+          "passes": 5
+        },
+        {
+          "player": "Tom\u00e1\u0161 Sou\u010dek",
+          "display_name": "Tom\u00e1\u0161 Sou\u010dek",
+          "x": 51.01,
+          "y": 40.96,
+          "passes": 14
+        },
+        {
+          "player": "Vladim\u00edr Coufal",
+          "display_name": "Vladim\u00edr Coufal",
+          "x": 56.75,
+          "y": 71.89,
+          "passes": 8
+        }
+      ],
+      "edges": [
+        {
+          "from": "David Doudera",
+          "to": "Ladislav Krej\u010d\u00ed",
+          "count": 5
+        },
+        {
+          "from": "Luk\u00e1\u0161 Provod",
+          "to": "David Doudera",
+          "count": 5
+        },
+        {
+          "from": "Tom\u00e1\u0161 Sou\u010dek",
+          "to": "Luk\u00e1\u0161 Provod",
+          "count": 4
+        },
+        {
+          "from": "Jind\u0159ich Stan\u011bk",
+          "to": "Jan Kuchta",
+          "count": 4
+        },
+        {
+          "from": "Jan Kuchta",
+          "to": "Patrik Schick",
+          "count": 4
+        },
+        {
+          "from": "Ladislav Krej\u010d\u00ed",
+          "to": "Jind\u0159ich Stan\u011bk",
+          "count": 4
+        },
+        {
+          "from": "Vladim\u00edr Coufal",
+          "to": "Luk\u00e1\u0161 Provod",
+          "count": 3
+        },
+        {
+          "from": "Robin Hran\u00e1\u010d",
+          "to": "Jind\u0159ich Stan\u011bk",
+          "count": 3
+        },
+        {
+          "from": "Ladislav Krej\u010d\u00ed",
+          "to": "Robin Hran\u00e1\u010d",
+          "count": 3
+        },
+        {
+          "from": "Luk\u00e1\u0161 Provod",
+          "to": "Tom\u00e1\u0161 Sou\u010dek",
+          "count": 3
+        },
+        {
+          "from": "Tom\u00e1\u0161 Sou\u010dek",
+          "to": "Jind\u0159ich Stan\u011bk",
+          "count": 3
+        },
+        {
+          "from": "David Doudera",
+          "to": "Tom\u00e1\u0161 Sou\u010dek",
+          "count": 3
+        },
+        {
+          "from": "David Doudera",
+          "to": "Pavel \u0160ulc",
+          "count": 3
+        },
+        {
+          "from": "Pavel \u0160ulc",
+          "to": "Vladim\u00edr Coufal",
+          "count": 2
+        },
+        {
+          "from": "Luk\u00e1\u0161 Provod",
+          "to": "Vladim\u00edr Coufal",
+          "count": 2
+        },
+        {
+          "from": "Vladim\u00edr Coufal",
+          "to": "Tom\u00e1\u0161 Sou\u010dek",
+          "count": 2
+        },
+        {
+          "from": "Patrik Schick",
+          "to": "Pavel \u0160ulc",
+          "count": 2
+        },
+        {
+          "from": "Patrik Schick",
+          "to": "Tom\u00e1\u0161 Sou\u010dek",
+          "count": 2
+        },
+        {
+          "from": "Pavel \u0160ulc",
+          "to": "David Doudera",
+          "count": 2
+        },
+        {
+          "from": "Robin Hran\u00e1\u010d",
+          "to": "Ladislav Krej\u010d\u00ed",
+          "count": 2
+        },
+        {
+          "from": "Jind\u0159ich Stan\u011bk",
+          "to": "Robin Hran\u00e1\u010d",
+          "count": 2
+        },
+        {
+          "from": "Ladislav Krej\u010d\u00ed",
+          "to": "David Doudera",
+          "count": 2
+        },
+        {
+          "from": "Jind\u0159ich Stan\u011bk",
+          "to": "Ladislav Krej\u010d\u00ed",
+          "count": 2
+        },
+        {
+          "from": "Jan Kuchta",
+          "to": "David Doudera",
+          "count": 2
+        },
+        {
+          "from": "Vladim\u00edr Coufal",
+          "to": "Patrik Schick",
+          "count": 2
+        },
+        {
+          "from": "Jind\u0159ich Stan\u011bk",
+          "to": "David Doudera",
+          "count": 2
+        },
+        {
+          "from": "David Doudera",
+          "to": "Luk\u00e1\u0161 Provod",
+          "count": 2
+        },
+        {
+          "from": "Luk\u00e1\u0161 Provod",
+          "to": "Ladislav Krej\u010d\u00ed",
+          "count": 2
+        },
+        {
+          "from": "Ladislav Krej\u010d\u00ed",
+          "to": "Tom\u00e1\u0161 Hole\u0161",
+          "count": 2
+        },
+        {
+          "from": "David Doudera",
+          "to": "Jind\u0159ich Stan\u011bk",
+          "count": 2
+        },
+        {
+          "from": "Jind\u0159ich Stan\u011bk",
+          "to": "Patrik Schick",
+          "count": 2
+        },
+        {
+          "from": "Tom\u00e1\u0161 Hole\u0161",
+          "to": "Vladim\u00edr Coufal",
+          "count": 2
+        },
+        {
+          "from": "Pavel \u0160ulc",
+          "to": "Luk\u00e1\u0161 Provod",
+          "count": 2
+        },
+        {
+          "from": "Tom\u00e1\u0161 Sou\u010dek",
+          "to": "David Doudera",
+          "count": 2
+        },
+        {
+          "from": "Luk\u00e1\u0161 Provod",
+          "to": "Patrik Schick",
+          "count": 1
+        },
+        {
+          "from": "Pavel \u0160ulc",
+          "to": "Jind\u0159ich Stan\u011bk",
+          "count": 1
+        },
+        {
+          "from": "Tom\u00e1\u0161 Sou\u010dek",
+          "to": "Pavel \u0160ulc",
+          "count": 1
+        },
+        {
+          "from": "Ladislav Krej\u010d\u00ed",
+          "to": "Luk\u00e1\u0161 Provod",
+          "count": 1
+        },
+        {
+          "from": "Tom\u00e1\u0161 Sou\u010dek",
+          "to": "Robin Hran\u00e1\u010d",
+          "count": 1
+        },
+        {
+          "from": "Robin Hran\u00e1\u010d",
+          "to": "Tom\u00e1\u0161 Hole\u0161",
+          "count": 1
+        },
+        {
+          "from": "Tom\u00e1\u0161 Hole\u0161",
+          "to": "Ladislav Krej\u010d\u00ed",
+          "count": 1
+        },
+        {
+          "from": "Tom\u00e1\u0161 Hole\u0161",
+          "to": "Jan Kuchta",
+          "count": 1
+        },
+        {
+          "from": "Jan Kuchta",
+          "to": "Tom\u00e1\u0161 Sou\u010dek",
+          "count": 1
+        },
+        {
+          "from": "Tom\u00e1\u0161 Sou\u010dek",
+          "to": "Vladim\u00edr Coufal",
+          "count": 1
+        },
+        {
+          "from": "Vladim\u00edr Coufal",
+          "to": "Robin Hran\u00e1\u010d",
+          "count": 1
+        },
+        {
+          "from": "Patrik Schick",
+          "to": "Vladim\u00edr Coufal",
+          "count": 1
+        },
+        {
+          "from": "Patrik Schick",
+          "to": "David Doudera",
+          "count": 1
+        },
+        {
+          "from": "Robin Hran\u00e1\u010d",
+          "to": "Jan Kuchta",
+          "count": 1
+        },
+        {
+          "from": "Luk\u00e1\u0161 Provod",
+          "to": "Jan Kuchta",
+          "count": 1
+        },
+        {
+          "from": "Pavel \u0160ulc",
+          "to": "Tom\u00e1\u0161 Hole\u0161",
+          "count": 1
+        },
+        {
+          "from": "Tom\u00e1\u0161 Hole\u0161",
+          "to": "Pavel \u0160ulc",
+          "count": 1
+        },
+        {
+          "from": "Luk\u00e1\u0161 Provod",
+          "to": "Tom\u00e1\u0161 Hole\u0161",
+          "count": 1
+        },
+        {
+          "from": "Robin Hran\u00e1\u010d",
+          "to": "Tom\u00e1\u0161 Sou\u010dek",
+          "count": 1
+        },
+        {
+          "from": "Pavel \u0160ulc",
+          "to": "Patrik Schick",
+          "count": 1
+        },
+        {
+          "from": "Patrik Schick",
+          "to": "Jan Kuchta",
+          "count": 1
+        },
+        {
+          "from": "Jan Kuchta",
+          "to": "Vladim\u00edr Coufal",
+          "count": 1
+        },
+        {
+          "from": "Robin Hran\u00e1\u010d",
+          "to": "Luk\u00e1\u0161 Provod",
+          "count": 1
+        },
+        {
+          "from": "Patrik Schick",
+          "to": "Luk\u00e1\u0161 Provod",
+          "count": 1
+        },
+        {
+          "from": "Tom\u00e1\u0161 Sou\u010dek",
+          "to": "Tom\u00e1\u0161 Hole\u0161",
+          "count": 1
+        },
+        {
+          "from": "Luk\u00e1\u0161 Provod",
+          "to": "Pavel \u0160ulc",
+          "count": 1
+        },
+        {
+          "from": "Pavel \u0160ulc",
+          "to": "Jan Kuchta",
+          "count": 1
+        },
+        {
+          "from": "Tom\u00e1\u0161 Sou\u010dek",
+          "to": "Patrik Schick",
+          "count": 1
+        },
+        {
+          "from": "Robin Hran\u00e1\u010d",
+          "to": "David Doudera",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "label": "60'\u201378'",
+      "nodes": [
+        {
+          "player": "David Doudera",
+          "display_name": "David Doudera",
+          "x": 35.1,
+          "y": 12.2,
+          "passes": 1
+        },
+        {
+          "player": "Jind\u0159ich Stan\u011bk",
+          "display_name": "Jind\u0159ich Stan\u011bk",
+          "x": 9.8,
+          "y": 35.0,
+          "passes": 1
+        },
+        {
+          "player": "Ladislav Krej\u010d\u00ed",
+          "display_name": "Ladislav Krej\u010d\u00ed",
+          "x": 42.43,
+          "y": 25.7,
+          "passes": 3
+        },
+        {
+          "player": "Luk\u00e1\u0161 Provod",
+          "display_name": "Luk\u00e1\u0161 Provod",
+          "x": 73.8,
+          "y": 56.27,
+          "passes": 3
+        },
+        {
+          "player": "Mojm\u00edr Chytil",
+          "display_name": "Mojm\u00edr Chytil",
+          "x": 84.8,
+          "y": 75.0,
+          "passes": 1
+        },
+        {
+          "player": "Ond\u0159ej Lingr",
+          "display_name": "Ond\u0159ej Lingr",
+          "x": 63.02,
+          "y": 48.92,
+          "passes": 4
+        },
+        {
+          "player": "Pavel \u0160ulc",
+          "display_name": "Pavel \u0160ulc",
+          "x": 94.95,
+          "y": 58.85,
+          "passes": 2
+        },
+        {
+          "player": "Robin Hran\u00e1\u010d",
+          "display_name": "Robin Hran\u00e1\u010d",
+          "x": 45.7,
+          "y": 53.25,
+          "passes": 2
+        },
+        {
+          "player": "Tom\u00e1\u0161 Hole\u0161",
+          "display_name": "Tom\u00e1\u0161 Hole\u0161",
+          "x": 36.63,
+          "y": 68.03,
+          "passes": 3
+        },
+        {
+          "player": "Tom\u00e1\u0161 Sou\u010dek",
+          "display_name": "Tom\u00e1\u0161 Sou\u010dek",
+          "x": 73.0,
+          "y": 60.5,
+          "passes": 1
+        },
+        {
+          "player": "Vladim\u00edr Coufal",
+          "display_name": "Vladim\u00edr Coufal",
+          "x": 90.8,
+          "y": 70.45,
+          "passes": 6
+        }
+      ],
+      "edges": [
+        {
+          "from": "Pavel \u0160ulc",
+          "to": "Vladim\u00edr Coufal",
+          "count": 2
+        },
+        {
+          "from": "Vladim\u00edr Coufal",
+          "to": "Mojm\u00edr Chytil",
+          "count": 2
+        },
+        {
+          "from": "Vladim\u00edr Coufal",
+          "to": "Luk\u00e1\u0161 Provod",
+          "count": 2
+        },
+        {
+          "from": "Ond\u0159ej Lingr",
+          "to": "Luk\u00e1\u0161 Provod",
+          "count": 2
+        },
+        {
+          "from": "Vladim\u00edr Coufal",
+          "to": "Ond\u0159ej Lingr",
+          "count": 1
+        },
+        {
+          "from": "Ond\u0159ej Lingr",
+          "to": "Vladim\u00edr Coufal",
+          "count": 1
+        },
+        {
+          "from": "Luk\u00e1\u0161 Provod",
+          "to": "Ond\u0159ej Lingr",
+          "count": 1
+        },
+        {
+          "from": "Vladim\u00edr Coufal",
+          "to": "Pavel \u0160ulc",
+          "count": 1
+        },
+        {
+          "from": "Ond\u0159ej Lingr",
+          "to": "Ladislav Krej\u010d\u00ed",
+          "count": 1
+        },
+        {
+          "from": "Ladislav Krej\u010d\u00ed",
+          "to": "Robin Hran\u00e1\u010d",
+          "count": 1
+        },
+        {
+          "from": "Robin Hran\u00e1\u010d",
+          "to": "Vladim\u00edr Coufal",
+          "count": 1
+        },
+        {
+          "from": "Ladislav Krej\u010d\u00ed",
+          "to": "Mojm\u00edr Chytil",
+          "count": 1
+        },
+        {
+          "from": "Tom\u00e1\u0161 Hole\u0161",
+          "to": "Robin Hran\u00e1\u010d",
+          "count": 1
+        },
+        {
+          "from": "Robin Hran\u00e1\u010d",
+          "to": "Tom\u00e1\u0161 Hole\u0161",
+          "count": 1
+        },
+        {
+          "from": "Tom\u00e1\u0161 Hole\u0161",
+          "to": "Jind\u0159ich Stan\u011bk",
+          "count": 1
+        },
+        {
+          "from": "Mojm\u00edr Chytil",
+          "to": "Luk\u00e1\u0161 Provod",
+          "count": 1
+        },
+        {
+          "from": "Luk\u00e1\u0161 Provod",
+          "to": "Tom\u00e1\u0161 Sou\u010dek",
+          "count": 1
+        },
+        {
+          "from": "Tom\u00e1\u0161 Sou\u010dek",
+          "to": "Ladislav Krej\u010d\u00ed",
+          "count": 1
+        },
+        {
+          "from": "Ladislav Krej\u010d\u00ed",
+          "to": "David Doudera",
+          "count": 1
+        },
+        {
+          "from": "Jind\u0159ich Stan\u011bk",
+          "to": "David Doudera",
+          "count": 1
+        },
+        {
+          "from": "David Doudera",
+          "to": "Ond\u0159ej Lingr",
+          "count": 1
+        },
+        {
+          "from": "Luk\u00e1\u0161 Provod",
+          "to": "Tom\u00e1\u0161 Hole\u0161",
+          "count": 1
+        },
+        {
+          "from": "Tom\u00e1\u0161 Hole\u0161",
+          "to": "Vladim\u00edr Coufal",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "label": "78'\u201392'",
+      "nodes": [
+        {
+          "player": "Anton\u00edn Bar\u00e1k",
+          "display_name": "Anton\u00edn Bar\u00e1k",
+          "x": 74.43,
+          "y": 48.3,
+          "passes": 3
+        },
+        {
+          "player": "David Doudera",
+          "display_name": "David Doudera",
+          "x": 54.25,
+          "y": 9.0,
+          "passes": 2
+        },
+        {
+          "player": "Jind\u0159ich Stan\u011bk",
+          "display_name": "Jind\u0159ich Stan\u011bk",
+          "x": 19.0,
+          "y": 53.4,
+          "passes": 2
+        },
+        {
+          "player": "Ladislav Krej\u010d\u00ed",
+          "display_name": "Ladislav Krej\u010d\u00ed",
+          "x": 49.1,
+          "y": 28.63,
+          "passes": 3
+        },
+        {
+          "player": "Mojm\u00edr Chytil",
+          "display_name": "Mojm\u00edr Chytil",
+          "x": 106.55,
+          "y": 54.0,
+          "passes": 2
+        },
+        {
+          "player": "Ond\u0159ej Lingr",
+          "display_name": "Ond\u0159ej Lingr",
+          "x": 93.7,
+          "y": 80.0,
+          "passes": 1
+        },
+        {
+          "player": "Petr \u0160ev\u010d\u00edk",
+          "display_name": "Petr \u0160ev\u010d\u00edk",
+          "x": 55.7,
+          "y": 42.1,
+          "passes": 2
+        },
+        {
+          "player": "Robin Hran\u00e1\u010d",
+          "display_name": "Robin Hran\u00e1\u010d",
+          "x": 16.7,
+          "y": 58.15,
+          "passes": 2
+        },
+        {
+          "player": "Tom\u00e1\u0161 Hole\u0161",
+          "display_name": "Tom\u00e1\u0161 Hole\u0161",
+          "x": 32.75,
+          "y": 74.65,
+          "passes": 2
+        },
+        {
+          "player": "Tom\u00e1\u0161 Sou\u010dek",
+          "display_name": "Tom\u00e1\u0161 Sou\u010dek",
+          "x": 18.6,
+          "y": 17.0,
+          "passes": 2
+        },
+        {
+          "player": "Vladim\u00edr Coufal",
+          "display_name": "Vladim\u00edr Coufal",
+          "x": 62.2,
+          "y": 74.97,
+          "passes": 4
+        }
+      ],
+      "edges": [
+        {
+          "from": "Robin Hran\u00e1\u010d",
+          "to": "Vladim\u00edr Coufal",
+          "count": 2
+        },
+        {
+          "from": "Vladim\u00edr Coufal",
+          "to": "Mojm\u00edr Chytil",
+          "count": 2
+        },
+        {
+          "from": "Tom\u00e1\u0161 Hole\u0161",
+          "to": "Vladim\u00edr Coufal",
+          "count": 2
+        },
+        {
+          "from": "Jind\u0159ich Stan\u011bk",
+          "to": "Ond\u0159ej Lingr",
+          "count": 1
+        },
+        {
+          "from": "Ond\u0159ej Lingr",
+          "to": "Anton\u00edn Bar\u00e1k",
+          "count": 1
+        },
+        {
+          "from": "Anton\u00edn Bar\u00e1k",
+          "to": "Mojm\u00edr Chytil",
+          "count": 1
+        },
+        {
+          "from": "Mojm\u00edr Chytil",
+          "to": "Petr \u0160ev\u010d\u00edk",
+          "count": 1
+        },
+        {
+          "from": "Tom\u00e1\u0161 Sou\u010dek",
+          "to": "David Doudera",
+          "count": 1
+        },
+        {
+          "from": "Ladislav Krej\u010d\u00ed",
+          "to": "Anton\u00edn Bar\u00e1k",
+          "count": 1
+        },
+        {
+          "from": "Anton\u00edn Bar\u00e1k",
+          "to": "David Doudera",
+          "count": 1
+        },
+        {
+          "from": "David Doudera",
+          "to": "Petr \u0160ev\u010d\u00edk",
+          "count": 1
+        },
+        {
+          "from": "Petr \u0160ev\u010d\u00edk",
+          "to": "Tom\u00e1\u0161 Sou\u010dek",
+          "count": 1
+        },
+        {
+          "from": "Tom\u00e1\u0161 Sou\u010dek",
+          "to": "Robin Hran\u00e1\u010d",
+          "count": 1
+        },
+        {
+          "from": "Ladislav Krej\u010d\u00ed",
+          "to": "Mojm\u00edr Chytil",
+          "count": 1
+        },
+        {
+          "from": "Jind\u0159ich Stan\u011bk",
+          "to": "Mojm\u00edr Chytil",
+          "count": 1
+        },
+        {
+          "from": "Mojm\u00edr Chytil",
+          "to": "Anton\u00edn Bar\u00e1k",
+          "count": 1
+        },
+        {
+          "from": "Anton\u00edn Bar\u00e1k",
+          "to": "Petr \u0160ev\u010d\u00edk",
+          "count": 1
+        },
+        {
+          "from": "Petr \u0160ev\u010d\u00edk",
+          "to": "Tom\u00e1\u0161 Hole\u0161",
+          "count": 1
+        },
+        {
+          "from": "Vladim\u00edr Coufal",
+          "to": "Ond\u0159ej Lingr",
+          "count": 1
+        },
+        {
+          "from": "Vladim\u00edr Coufal",
+          "to": "Anton\u00edn Bar\u00e1k",
+          "count": 1
+        },
+        {
+          "from": "Ladislav Krej\u010d\u00ed",
+          "to": "David Doudera",
+          "count": 1
+        },
+        {
+          "from": "David Doudera",
+          "to": "Anton\u00edn Bar\u00e1k",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "label": "92'\u2013FT",
+      "nodes": [
+        {
+          "player": "Anton\u00edn Bar\u00e1k",
+          "display_name": "Anton\u00edn Bar\u00e1k",
+          "x": 51.5,
+          "y": 47.9,
+          "passes": 2
+        },
+        {
+          "player": "Petr \u0160ev\u010d\u00edk",
+          "display_name": "Petr \u0160ev\u010d\u00edk",
+          "x": 68.9,
+          "y": 60.0,
+          "passes": 1
+        },
+        {
+          "player": "Robin Hran\u00e1\u010d",
+          "display_name": "Robin Hran\u00e1\u010d",
+          "x": 35.7,
+          "y": 45.35,
+          "passes": 2
+        },
+        {
+          "player": "Tom\u00e1\u0161 Sou\u010dek",
+          "display_name": "Tom\u00e1\u0161 Sou\u010dek",
+          "x": 89.1,
+          "y": 63.65,
+          "passes": 2
+        }
+      ],
+      "edges": [
+        {
+          "from": "Anton\u00edn Bar\u00e1k",
+          "to": "Robin Hran\u00e1\u010d",
+          "count": 1
+        },
+        {
+          "from": "Robin Hran\u00e1\u010d",
+          "to": "David Doudera",
+          "count": 1
+        },
+        {
+          "from": "Petr \u0160ev\u010d\u00edk",
+          "to": "Tom\u00e1\u0161 Sou\u010dek",
+          "count": 1
+        },
+        {
+          "from": "Tom\u00e1\u0161 Sou\u010dek",
+          "to": "Ond\u0159ej Lingr",
+          "count": 1
+        },
+        {
+          "from": "Tom\u00e1\u0161 Sou\u010dek",
+          "to": "Anton\u00edn Bar\u00e1k",
+          "count": 1
+        },
+        {
+          "from": "Robin Hran\u00e1\u010d",
+          "to": "Anton\u00edn Bar\u00e1k",
+          "count": 1
+        },
+        {
+          "from": "Anton\u00edn Bar\u00e1k",
+          "to": "Petr \u0160ev\u010d\u00edk",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "substitutions": [
+    {
+      "minute": 59,
+      "player_off": "Jan Kuchta",
+      "player_on": "Ond\u0159ej Lingr"
+    },
+    {
+      "minute": 60,
+      "player_off": "Patrik Schick",
+      "player_on": "Mojm\u00edr Chytil"
+    },
+    {
+      "minute": 78,
+      "player_off": "Pavel \u0160ulc",
+      "player_on": "Petr \u0160ev\u010d\u00edk"
+    },
+    {
+      "minute": 78,
+      "player_off": "Luk\u00e1\u0161 Provod",
+      "player_on": "Anton\u00edn Bar\u00e1k"
+    },
+    {
+      "minute": 92,
+      "player_off": "Tom\u00e1\u0161 Hole\u0161",
+      "player_on": "Tom\u00e1\u0161 Chor\u00fd"
+    }
+  ],
+  "metadata": {
+    "match_id": 3930166,
+    "team": "Czech Republic",
+    "filter": "completed passes, per substitution window",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Portugal vs Czech Republic"
+  }
+}

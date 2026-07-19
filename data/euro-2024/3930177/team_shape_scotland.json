@@ -1,0 +1,902 @@
+{
+  "on_ball": {
+    "periods": [
+      {
+        "from_minute": 0,
+        "to_minute": 75,
+        "players_in": [
+          "Angus Gunn",
+          "Jack Hendry",
+          "Grant Campbell Hanley",
+          "Scott McKenna",
+          "Anthony Ralston",
+          "Andrew Robertson",
+          "Billy Gilmour",
+          "Callum McGregor",
+          "John McGinn",
+          "Scott McTominay",
+          "Che Adams"
+        ],
+        "players_out": [],
+        "nodes": [
+          {
+            "player_id": 10534,
+            "player": "Callum McGregor",
+            "display_name": "Callum McGregor",
+            "x": 56.39,
+            "y": 44.15,
+            "event_count": 75
+          },
+          {
+            "player_id": 9481,
+            "player": "Grant Campbell Hanley",
+            "display_name": "Grant Campbell Hanley",
+            "x": 71.76,
+            "y": 45.49,
+            "event_count": 71
+          },
+          {
+            "player_id": 10002,
+            "player": "Scott McKenna",
+            "display_name": "Scott McKenna",
+            "x": 64.53,
+            "y": 60.96,
+            "event_count": 62
+          },
+          {
+            "player_id": 31067,
+            "player": "Billy Gilmour",
+            "display_name": "Billy Gilmour",
+            "x": 63.54,
+            "y": 39.19,
+            "event_count": 58
+          },
+          {
+            "player_id": 11116,
+            "player": "Jack Hendry",
+            "display_name": "Jack Hendry",
+            "x": 65.33,
+            "y": 28.36,
+            "event_count": 53
+          },
+          {
+            "player_id": 22308,
+            "player": "Anthony Ralston",
+            "display_name": "Anthony Ralston",
+            "x": 52.81,
+            "y": 25.39,
+            "event_count": 29
+          },
+          {
+            "player_id": 3620,
+            "player": "Scott McTominay",
+            "display_name": "Scott McTominay",
+            "x": 65.4,
+            "y": 44.76,
+            "event_count": 28
+          },
+          {
+            "player_id": 22379,
+            "player": "Angus Gunn",
+            "display_name": "Angus Gunn",
+            "x": 77.44,
+            "y": 40.41,
+            "event_count": 27
+          },
+          {
+            "player_id": 3655,
+            "player": "Andrew Robertson",
+            "display_name": "Andrew Robertson",
+            "x": 52.98,
+            "y": 55.43,
+            "event_count": 24
+          },
+          {
+            "player_id": 9466,
+            "player": "Che Adams",
+            "display_name": "Che Adams",
+            "x": 46.0,
+            "y": 26.0,
+            "event_count": 24
+          },
+          {
+            "player_id": 9974,
+            "player": "John McGinn",
+            "display_name": "John McGinn",
+            "x": 51.56,
+            "y": 26.06,
+            "event_count": 16
+          }
+        ],
+        "hull": [
+          [
+            77.44,
+            40.41
+          ],
+          [
+            64.53,
+            60.96
+          ],
+          [
+            52.98,
+            55.43
+          ],
+          [
+            46.0,
+            26.0
+          ],
+          [
+            52.81,
+            25.39
+          ],
+          [
+            65.33,
+            28.36
+          ]
+        ]
+      },
+      {
+        "from_minute": 75,
+        "to_minute": 82,
+        "players_in": [
+          "Stuart Armstrong",
+          "Lawrence Shankland"
+        ],
+        "players_out": [
+          "John McGinn",
+          "Che Adams"
+        ],
+        "nodes": [
+          {
+            "player_id": 22379,
+            "player": "Angus Gunn",
+            "display_name": "Angus Gunn",
+            "x": 11.45,
+            "y": 32.78,
+            "event_count": 6
+          },
+          {
+            "player_id": 22308,
+            "player": "Anthony Ralston",
+            "display_name": "Anthony Ralston",
+            "x": 81.17,
+            "y": 73.12,
+            "event_count": 6
+          },
+          {
+            "player_id": 3655,
+            "player": "Andrew Robertson",
+            "display_name": "Andrew Robertson",
+            "x": 39.75,
+            "y": 11.25,
+            "event_count": 4
+          },
+          {
+            "player_id": 10534,
+            "player": "Callum McGregor",
+            "display_name": "Callum McGregor",
+            "x": 45.1,
+            "y": 32.95,
+            "event_count": 4
+          },
+          {
+            "player_id": 3620,
+            "player": "Scott McTominay",
+            "display_name": "Scott McTominay",
+            "x": 86.27,
+            "y": 74.87,
+            "event_count": 3
+          },
+          {
+            "player_id": 9481,
+            "player": "Grant Campbell Hanley",
+            "display_name": "Grant Campbell Hanley",
+            "x": 67.13,
+            "y": 17.63,
+            "event_count": 3
+          },
+          {
+            "player_id": 10285,
+            "player": "Stuart Armstrong",
+            "display_name": "Stuart Armstrong",
+            "x": 58.6,
+            "y": 8.5,
+            "event_count": 1
+          }
+        ],
+        "hull": [
+          [
+            11.45,
+            32.78
+          ],
+          [
+            39.75,
+            11.25
+          ],
+          [
+            58.6,
+            8.5
+          ],
+          [
+            67.13,
+            17.63
+          ],
+          [
+            86.27,
+            74.87
+          ],
+          [
+            81.17,
+            73.12
+          ]
+        ]
+      },
+      {
+        "from_minute": 82,
+        "to_minute": 88,
+        "players_in": [
+          "Ryan Christie",
+          "Kenneth McLean"
+        ],
+        "players_out": [
+          "Billy Gilmour",
+          "Anthony Ralston"
+        ],
+        "nodes": [
+          {
+            "player_id": 12510,
+            "player": "Ryan Christie",
+            "display_name": "Ryan Christie",
+            "x": 54.63,
+            "y": 56.33,
+            "event_count": 6
+          },
+          {
+            "player_id": 10534,
+            "player": "Callum McGregor",
+            "display_name": "Callum McGregor",
+            "x": 39.2,
+            "y": 54.7,
+            "event_count": 3
+          },
+          {
+            "player_id": 9478,
+            "player": "Kenneth McLean",
+            "display_name": "Kenneth McLean",
+            "x": 53.07,
+            "y": 71.47,
+            "event_count": 3
+          },
+          {
+            "player_id": 22379,
+            "player": "Angus Gunn",
+            "display_name": "Angus Gunn",
+            "x": 11.85,
+            "y": 45.65,
+            "event_count": 2
+          },
+          {
+            "player_id": 10285,
+            "player": "Stuart Armstrong",
+            "display_name": "Stuart Armstrong",
+            "x": 28.0,
+            "y": 51.8,
+            "event_count": 2
+          },
+          {
+            "player_id": 38169,
+            "player": "Lawrence Shankland",
+            "display_name": "Lawrence Shankland",
+            "x": 114.3,
+            "y": 52.6,
+            "event_count": 1
+          }
+        ],
+        "hull": [
+          [
+            11.85,
+            45.65
+          ],
+          [
+            114.3,
+            52.6
+          ],
+          [
+            53.07,
+            71.47
+          ]
+        ]
+      },
+      {
+        "from_minute": 88,
+        "to_minute": 102,
+        "players_in": [
+          "Lewis Morgan"
+        ],
+        "players_out": [
+          "Andrew Robertson"
+        ],
+        "nodes": [
+          {
+            "player_id": 22379,
+            "player": "Angus Gunn",
+            "display_name": "Angus Gunn",
+            "x": 9.86,
+            "y": 37.4,
+            "event_count": 11
+          },
+          {
+            "player_id": 38169,
+            "player": "Lawrence Shankland",
+            "display_name": "Lawrence Shankland",
+            "x": 74.87,
+            "y": 61.91,
+            "event_count": 7
+          },
+          {
+            "player_id": 9478,
+            "player": "Kenneth McLean",
+            "display_name": "Kenneth McLean",
+            "x": 31.84,
+            "y": 20.38,
+            "event_count": 5
+          },
+          {
+            "player_id": 16931,
+            "player": "Lewis Morgan",
+            "display_name": "Lewis Morgan",
+            "x": 73.1,
+            "y": 42.34,
+            "event_count": 5
+          },
+          {
+            "player_id": 9481,
+            "player": "Grant Campbell Hanley",
+            "display_name": "Grant Campbell Hanley",
+            "x": 79.44,
+            "y": 41.74,
+            "event_count": 5
+          },
+          {
+            "player_id": 12510,
+            "player": "Ryan Christie",
+            "display_name": "Ryan Christie",
+            "x": 71.7,
+            "y": 68.06,
+            "event_count": 5
+          },
+          {
+            "player_id": 3620,
+            "player": "Scott McTominay",
+            "display_name": "Scott McTominay",
+            "x": 57.02,
+            "y": 43.65,
+            "event_count": 4
+          },
+          {
+            "player_id": 10002,
+            "player": "Scott McKenna",
+            "display_name": "Scott McKenna",
+            "x": 43.07,
+            "y": 41.83,
+            "event_count": 3
+          },
+          {
+            "player_id": 11116,
+            "player": "Jack Hendry",
+            "display_name": "Jack Hendry",
+            "x": 63.7,
+            "y": 74.93,
+            "event_count": 3
+          },
+          {
+            "player_id": 10534,
+            "player": "Callum McGregor",
+            "display_name": "Callum McGregor",
+            "x": 61.0,
+            "y": 34.0,
+            "event_count": 1
+          }
+        ],
+        "hull": [
+          [
+            63.7,
+            74.93
+          ],
+          [
+            9.86,
+            37.4
+          ],
+          [
+            31.84,
+            20.38
+          ],
+          [
+            79.44,
+            41.74
+          ],
+          [
+            74.87,
+            61.91
+          ],
+          [
+            71.7,
+            68.06
+          ]
+        ]
+      }
+    ]
+  },
+  "off_ball": {
+    "density_grid": {
+      "cols": 24,
+      "rows": 16,
+      "values": [
+        [
+          0.0862,
+          0.1074,
+          0.1314,
+          0.1577,
+          0.1859,
+          0.2154,
+          0.2453,
+          0.2744,
+          0.3016,
+          0.3255,
+          0.3448,
+          0.3583,
+          0.3651,
+          0.3643,
+          0.356,
+          0.3404,
+          0.3184,
+          0.2912,
+          0.2602,
+          0.2272,
+          0.1938,
+          0.1613,
+          0.1311,
+          0.1039
+        ],
+        [
+          0.1172,
+          0.1451,
+          0.1763,
+          0.2103,
+          0.2466,
+          0.2843,
+          0.3224,
+          0.3597,
+          0.3946,
+          0.4256,
+          0.4509,
+          0.4691,
+          0.4788,
+          0.4793,
+          0.4701,
+          0.4516,
+          0.4247,
+          0.3907,
+          0.3516,
+          0.3092,
+          0.2658,
+          0.2232,
+          0.183,
+          0.1464
+        ],
+        [
+          0.1522,
+          0.187,
+          0.2256,
+          0.2674,
+          0.3118,
+          0.3577,
+          0.404,
+          0.4493,
+          0.4919,
+          0.5299,
+          0.5614,
+          0.5846,
+          0.598,
+          0.6003,
+          0.5911,
+          0.5705,
+          0.5394,
+          0.4993,
+          0.4523,
+          0.4008,
+          0.3473,
+          0.294,
+          0.2432,
+          0.1964
+        ],
+        [
+          0.1887,
+          0.2303,
+          0.276,
+          0.3252,
+          0.3771,
+          0.4305,
+          0.4843,
+          0.5368,
+          0.5864,
+          0.631,
+          0.6685,
+          0.6967,
+          0.714,
+          0.7188,
+          0.7104,
+          0.6887,
+          0.6546,
+          0.6096,
+          0.5559,
+          0.4961,
+          0.433,
+          0.3696,
+          0.3082,
+          0.251
+        ],
+        [
+          0.2234,
+          0.2712,
+          0.3233,
+          0.3789,
+          0.4372,
+          0.497,
+          0.557,
+          0.6157,
+          0.6712,
+          0.7214,
+          0.7641,
+          0.797,
+          0.8181,
+          0.8257,
+          0.8188,
+          0.7971,
+          0.7613,
+          0.7128,
+          0.6539,
+          0.5873,
+          0.5162,
+          0.4437,
+          0.3728,
+          0.3059
+        ],
+        [
+          0.2528,
+          0.3056,
+          0.3627,
+          0.4234,
+          0.4867,
+          0.5514,
+          0.6161,
+          0.6794,
+          0.7394,
+          0.794,
+          0.8409,
+          0.8777,
+          0.9022,
+          0.9126,
+          0.9076,
+          0.8867,
+          0.8503,
+          0.7999,
+          0.7375,
+          0.6661,
+          0.5888,
+          0.5092,
+          0.4304,
+          0.3554
+        ],
+        [
+          0.2731,
+          0.3293,
+          0.3899,
+          0.454,
+          0.5205,
+          0.5884,
+          0.6563,
+          0.7226,
+          0.7856,
+          0.8431,
+          0.8929,
+          0.9325,
+          0.9597,
+          0.9724,
+          0.9693,
+          0.9496,
+          0.9136,
+          0.8625,
+          0.7985,
+          0.7242,
+          0.6431,
+          0.5588,
+          0.4746,
+          0.3938
+        ],
+        [
+          0.2815,
+          0.3392,
+          0.4013,
+          0.4669,
+          0.5349,
+          0.6042,
+          0.6734,
+          0.7411,
+          0.8054,
+          0.8643,
+          0.9156,
+          0.9568,
+          0.9856,
+          1.0,
+          0.9984,
+          0.9801,
+          0.9451,
+          0.8945,
+          0.8304,
+          0.7554,
+          0.6729,
+          0.5866,
+          0.4999,
+          0.4162
+        ],
+        [
+          0.2769,
+          0.3339,
+          0.3955,
+          0.4605,
+          0.5279,
+          0.5967,
+          0.6654,
+          0.7327,
+          0.7966,
+          0.8554,
+          0.9066,
+          0.9481,
+          0.9774,
+          0.9926,
+          0.9921,
+          0.975,
+          0.9415,
+          0.8925,
+          0.8298,
+          0.7561,
+          0.6748,
+          0.5892,
+          0.5031,
+          0.4197
+        ],
+        [
+          0.2599,
+          0.3143,
+          0.3731,
+          0.4354,
+          0.5002,
+          0.5664,
+          0.6328,
+          0.6977,
+          0.7596,
+          0.8164,
+          0.8662,
+          0.9065,
+          0.9352,
+          0.9503,
+          0.9504,
+          0.9347,
+          0.9031,
+          0.8566,
+          0.7969,
+          0.7265,
+          0.6487,
+          0.5667,
+          0.4841,
+          0.404
+        ],
+        [
+          0.233,
+          0.2828,
+          0.3369,
+          0.3945,
+          0.4547,
+          0.5164,
+          0.5784,
+          0.6392,
+          0.6972,
+          0.7505,
+          0.7972,
+          0.8351,
+          0.8622,
+          0.8766,
+          0.877,
+          0.8626,
+          0.8335,
+          0.7905,
+          0.7353,
+          0.6701,
+          0.598,
+          0.5221,
+          0.4457,
+          0.3716
+        ],
+        [
+          0.1997,
+          0.2435,
+          0.2913,
+          0.3426,
+          0.3964,
+          0.4518,
+          0.5076,
+          0.5624,
+          0.6149,
+          0.6632,
+          0.7055,
+          0.7399,
+          0.7645,
+          0.7776,
+          0.7782,
+          0.7654,
+          0.7394,
+          0.7009,
+          0.6514,
+          0.5931,
+          0.5287,
+          0.461,
+          0.3928,
+          0.327
+        ],
+        [
+          0.1637,
+          0.2006,
+          0.2411,
+          0.2848,
+          0.331,
+          0.3787,
+          0.4269,
+          0.4745,
+          0.5201,
+          0.5621,
+          0.599,
+          0.6289,
+          0.6504,
+          0.662,
+          0.6627,
+          0.6518,
+          0.6294,
+          0.5962,
+          0.5536,
+          0.5035,
+          0.448,
+          0.3899,
+          0.3315,
+          0.2753
+        ],
+        [
+          0.1284,
+          0.1581,
+          0.1909,
+          0.2265,
+          0.2643,
+          0.3036,
+          0.3435,
+          0.3829,
+          0.4208,
+          0.4558,
+          0.4866,
+          0.5117,
+          0.5297,
+          0.5395,
+          0.5403,
+          0.5314,
+          0.5131,
+          0.4857,
+          0.4506,
+          0.4092,
+          0.3635,
+          0.3157,
+          0.2678,
+          0.2217
+        ],
+        [
+          0.0962,
+          0.119,
+          0.1444,
+          0.172,
+          0.2015,
+          0.2323,
+          0.2637,
+          0.2949,
+          0.3249,
+          0.3527,
+          0.3772,
+          0.3972,
+          0.4118,
+          0.4198,
+          0.4206,
+          0.4138,
+          0.3995,
+          0.378,
+          0.3504,
+          0.3178,
+          0.2819,
+          0.2444,
+          0.2068,
+          0.1707
+        ],
+        [
+          0.0687,
+          0.0854,
+          0.104,
+          0.1244,
+          0.1463,
+          0.1692,
+          0.1927,
+          0.216,
+          0.2386,
+          0.2596,
+          0.2782,
+          0.2934,
+          0.3046,
+          0.3108,
+          0.3117,
+          0.3068,
+          0.2962,
+          0.2803,
+          0.2596,
+          0.2353,
+          0.2084,
+          0.1803,
+          0.1523,
+          0.1254
+        ]
+      ]
+    },
+    "centroid": {
+      "x": 64.83,
+      "y": 39.21
+    },
+    "thirds_spine": [
+      {
+        "third": "defensive",
+        "x": 24.76,
+        "y": 39.01
+      },
+      {
+        "third": "middle",
+        "x": 62.4,
+        "y": 38.04
+      },
+      {
+        "third": "attacking",
+        "x": 94.07,
+        "y": 41.27
+      }
+    ],
+    "ellipse": {
+      "cx": 64.83,
+      "cy": 39.21,
+      "rx": 26.05,
+      "ry": 16.84,
+      "angle_deg": -177.3
+    },
+    "depth_line": {
+      "x": 80.09,
+      "percentile": 70
+    }
+  },
+  "metadata": {
+    "match_id": 3930177,
+    "team": "Scotland",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Scotland vs Hungary",
+    "on_ball_event_count": 560,
+    "on_ball_period_count": 4,
+    "off_ball_bandwidth_yards": 8.0,
+    "off_ball_depth_percentile": 70,
+    "off_ball_grid_cols": 24,
+    "off_ball_grid_rows": 16,
+    "phase_filter": "open_play_only",
+    "coordinate_system": "statsbomb_120x80_normalised_attack_right",
+    "coordinate_note": "Coordinates are normalised so the team always attacks right (increasing x). Raw StatsBomb events are flipped (x\u2192120-x, y\u219280-y) in periods where the team attacks left.",
+    "camera_caveat": "360 frames follow the ball; the visible subset of out-of-possession positions is biased toward areas near the ball. The camera artifact and the real defensive shape point the same direction \u2014 they cannot be cleanly separated."
+  }
+}

@@ -1229,8 +1229,11 @@
 
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script type="importmap">
+{ "imports": { "d3": "https://esm.sh/d3@7.9.0" } }
+</script>
 <script type="module">
+  import * as d3 from "d3";
   import { createPitch }           from "./components/pitch/pitch.js?v=3";
   import { createShotMap }         from "./components/shotMap/shotMap.js?v=2";
   import { createPassNetwork }     from "./components/passNetwork/passNetwork.js?v=2";

@@ -1,0 +1,109 @@
+{
+  "hulls": [
+    {
+      "sides": [
+        {
+          "side": "defense",
+          "team_name": "opponent",
+          "hull_vertices": [
+            [
+              104.97796919040955,
+              41.16996236444939
+            ],
+            [
+              96.90700461952854,
+              38.75777601489564
+            ],
+            [
+              100.22636107740182,
+              32.56673203306255
+            ],
+            [
+              111.02248203382025,
+              28.701753897737543
+            ],
+            [
+              111.02602261559618,
+              33.46069636412743
+            ]
+          ],
+          "area": 99.02,
+          "player_count": 5
+        }
+      ],
+      "metadata": {
+        "match_id": 3938644,
+        "event_id": "00ea5b92-508e-4939-8c56-4fffe22e53b6",
+        "minute": 1,
+        "possession_team_name": "Georgia",
+        "actor_team_name": "Georgia",
+        "include_keeper": false
+      }
+    },
+    {
+      "sides": [
+        {
+          "side": "offense",
+          "team_name": "Georgia",
+          "hull_vertices": [
+            [
+              100.12950510790327,
+              25.606523963460205
+            ],
+            [
+              108.0999984741211,
+              40.099998474121094
+            ],
+            [
+              101.58919107305361,
+              33.06253446876952
+            ]
+          ],
+          "area": 19.14,
+          "player_count": 3
+        },
+        {
+          "side": "defense",
+          "team_name": "opponent",
+          "hull_vertices": [
+            [
+              99.32744597085858,
+              34.35556791584198
+            ],
+            [
+              101.19163436873707,
+              29.551057277765224
+            ],
+            [
+              101.85456375830304,
+              31.409302178825705
+            ],
+            [
+              101.62845850669058,
+              32.12135037635512
+            ],
+            [
+              101.07676846928396,
+              33.210316238897356
+            ]
+          ],
+          "area": 4.53,
+          "player_count": 5
+        }
+      ],
+      "metadata": {
+        "match_id": 3938644,
+        "event_id": "0a072739-a996-4f43-b7cc-ac90010da8d1",
+        "minute": 56,
+        "possession_team_name": "Georgia",
+        "actor_team_name": "Georgia",
+        "include_keeper": false
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3938644,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Georgia vs Portugal"
+  }
+}

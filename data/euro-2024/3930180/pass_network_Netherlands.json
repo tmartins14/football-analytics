@@ -1,0 +1,1418 @@
+{
+  "windows": [
+    {
+      "index": 0,
+      "label": "0'\u201334' (Starting XI)",
+      "nodes": [
+        {
+          "player": "Bart Verbruggen",
+          "display_name": "Bart Verbruggen",
+          "x": 11.52,
+          "y": 40.55,
+          "passes": 11
+        },
+        {
+          "player": "Cody Math\u00e8s Gakpo",
+          "display_name": "Cody Gakpo",
+          "x": 90.17,
+          "y": 11.9,
+          "passes": 6
+        },
+        {
+          "player": "Donyell Malen",
+          "display_name": "Donyell Malen",
+          "x": 98.95,
+          "y": 45.95,
+          "passes": 2
+        },
+        {
+          "player": "Jerdy Schouten",
+          "display_name": "Jerdy Schouten",
+          "x": 59.96,
+          "y": 40.67,
+          "passes": 7
+        },
+        {
+          "player": "Joey Veerman",
+          "display_name": "Joey Veerman",
+          "x": 62.11,
+          "y": 26.37,
+          "passes": 11
+        },
+        {
+          "player": "Lutsharel Geertruida",
+          "display_name": "Lutsharel Geertruida",
+          "x": 56.02,
+          "y": 59.19,
+          "passes": 15
+        },
+        {
+          "player": "Memphis Depay",
+          "display_name": "Memphis Depay",
+          "x": 75.3,
+          "y": 31.15,
+          "passes": 10
+        },
+        {
+          "player": "Nathan Ak\u00e9",
+          "display_name": "Nathan Ak\u00e9",
+          "x": 47.1,
+          "y": 7.86,
+          "passes": 22
+        },
+        {
+          "player": "Stefan de Vrij",
+          "display_name": "Stefan de Vrij",
+          "x": 41.38,
+          "y": 49.96,
+          "passes": 18
+        },
+        {
+          "player": "Tijjani Reijnders",
+          "display_name": "Tijjani Reijnders",
+          "x": 73.71,
+          "y": 20.1,
+          "passes": 8
+        },
+        {
+          "player": "Virgil van Dijk",
+          "display_name": "Virgil van Dijk",
+          "x": 32.22,
+          "y": 24.78,
+          "passes": 25
+        }
+      ],
+      "edges": [
+        {
+          "from": "Nathan Ak\u00e9",
+          "to": "Memphis Depay",
+          "count": 7
+        },
+        {
+          "from": "Virgil van Dijk",
+          "to": "Stefan de Vrij",
+          "count": 7
+        },
+        {
+          "from": "Stefan de Vrij",
+          "to": "Virgil van Dijk",
+          "count": 7
+        },
+        {
+          "from": "Stefan de Vrij",
+          "to": "Lutsharel Geertruida",
+          "count": 7
+        },
+        {
+          "from": "Virgil van Dijk",
+          "to": "Bart Verbruggen",
+          "count": 7
+        },
+        {
+          "from": "Nathan Ak\u00e9",
+          "to": "Joey Veerman",
+          "count": 5
+        },
+        {
+          "from": "Lutsharel Geertruida",
+          "to": "Stefan de Vrij",
+          "count": 5
+        },
+        {
+          "from": "Nathan Ak\u00e9",
+          "to": "Virgil van Dijk",
+          "count": 4
+        },
+        {
+          "from": "Jerdy Schouten",
+          "to": "Donyell Malen",
+          "count": 3
+        },
+        {
+          "from": "Bart Verbruggen",
+          "to": "Nathan Ak\u00e9",
+          "count": 3
+        },
+        {
+          "from": "Virgil van Dijk",
+          "to": "Lutsharel Geertruida",
+          "count": 3
+        },
+        {
+          "from": "Virgil van Dijk",
+          "to": "Nathan Ak\u00e9",
+          "count": 3
+        },
+        {
+          "from": "Joey Veerman",
+          "to": "Nathan Ak\u00e9",
+          "count": 3
+        },
+        {
+          "from": "Bart Verbruggen",
+          "to": "Memphis Depay",
+          "count": 3
+        },
+        {
+          "from": "Lutsharel Geertruida",
+          "to": "Joey Veerman",
+          "count": 3
+        },
+        {
+          "from": "Lutsharel Geertruida",
+          "to": "Bart Verbruggen",
+          "count": 2
+        },
+        {
+          "from": "Tijjani Reijnders",
+          "to": "Joey Veerman",
+          "count": 2
+        },
+        {
+          "from": "Nathan Ak\u00e9",
+          "to": "Cody Math\u00e8s Gakpo",
+          "count": 2
+        },
+        {
+          "from": "Joey Veerman",
+          "to": "Virgil van Dijk",
+          "count": 2
+        },
+        {
+          "from": "Joey Veerman",
+          "to": "Cody Math\u00e8s Gakpo",
+          "count": 2
+        },
+        {
+          "from": "Cody Math\u00e8s Gakpo",
+          "to": "Tijjani Reijnders",
+          "count": 2
+        },
+        {
+          "from": "Tijjani Reijnders",
+          "to": "Cody Math\u00e8s Gakpo",
+          "count": 2
+        },
+        {
+          "from": "Joey Veerman",
+          "to": "Lutsharel Geertruida",
+          "count": 2
+        },
+        {
+          "from": "Jerdy Schouten",
+          "to": "Stefan de Vrij",
+          "count": 2
+        },
+        {
+          "from": "Virgil van Dijk",
+          "to": "Joey Veerman",
+          "count": 2
+        },
+        {
+          "from": "Memphis Depay",
+          "to": "Tijjani Reijnders",
+          "count": 2
+        },
+        {
+          "from": "Bart Verbruggen",
+          "to": "Virgil van Dijk",
+          "count": 2
+        },
+        {
+          "from": "Memphis Depay",
+          "to": "Jerdy Schouten",
+          "count": 2
+        },
+        {
+          "from": "Cody Math\u00e8s Gakpo",
+          "to": "Nathan Ak\u00e9",
+          "count": 2
+        },
+        {
+          "from": "Memphis Depay",
+          "to": "Cody Math\u00e8s Gakpo",
+          "count": 2
+        },
+        {
+          "from": "Nathan Ak\u00e9",
+          "to": "Tijjani Reijnders",
+          "count": 2
+        },
+        {
+          "from": "Virgil van Dijk",
+          "to": "Jerdy Schouten",
+          "count": 1
+        },
+        {
+          "from": "Memphis Depay",
+          "to": "Virgil van Dijk",
+          "count": 1
+        },
+        {
+          "from": "Lutsharel Geertruida",
+          "to": "Jerdy Schouten",
+          "count": 1
+        },
+        {
+          "from": "Cody Math\u00e8s Gakpo",
+          "to": "Joey Veerman",
+          "count": 1
+        },
+        {
+          "from": "Lutsharel Geertruida",
+          "to": "Donyell Malen",
+          "count": 1
+        },
+        {
+          "from": "Stefan de Vrij",
+          "to": "Donyell Malen",
+          "count": 1
+        },
+        {
+          "from": "Stefan de Vrij",
+          "to": "Joey Veerman",
+          "count": 1
+        },
+        {
+          "from": "Bart Verbruggen",
+          "to": "Stefan de Vrij",
+          "count": 1
+        },
+        {
+          "from": "Lutsharel Geertruida",
+          "to": "Nathan Ak\u00e9",
+          "count": 1
+        },
+        {
+          "from": "Nathan Ak\u00e9",
+          "to": "Stefan de Vrij",
+          "count": 1
+        },
+        {
+          "from": "Stefan de Vrij",
+          "to": "Jerdy Schouten",
+          "count": 1
+        },
+        {
+          "from": "Stefan de Vrij",
+          "to": "Nathan Ak\u00e9",
+          "count": 1
+        },
+        {
+          "from": "Memphis Depay",
+          "to": "Joey Veerman",
+          "count": 1
+        },
+        {
+          "from": "Donyell Malen",
+          "to": "Cody Math\u00e8s Gakpo",
+          "count": 1
+        },
+        {
+          "from": "Joey Veerman",
+          "to": "Stefan de Vrij",
+          "count": 1
+        },
+        {
+          "from": "Bart Verbruggen",
+          "to": "Joey Veerman",
+          "count": 1
+        },
+        {
+          "from": "Nathan Ak\u00e9",
+          "to": "Jerdy Schouten",
+          "count": 1
+        },
+        {
+          "from": "Jerdy Schouten",
+          "to": "Joey Veerman",
+          "count": 1
+        },
+        {
+          "from": "Lutsharel Geertruida",
+          "to": "Tijjani Reijnders",
+          "count": 1
+        },
+        {
+          "from": "Tijjani Reijnders",
+          "to": "Lutsharel Geertruida",
+          "count": 1
+        },
+        {
+          "from": "Bart Verbruggen",
+          "to": "Cody Math\u00e8s Gakpo",
+          "count": 1
+        },
+        {
+          "from": "Virgil van Dijk",
+          "to": "Donyell Malen",
+          "count": 1
+        },
+        {
+          "from": "Virgil van Dijk",
+          "to": "Memphis Depay",
+          "count": 1
+        },
+        {
+          "from": "Tijjani Reijnders",
+          "to": "Donyell Malen",
+          "count": 1
+        },
+        {
+          "from": "Joey Veerman",
+          "to": "Memphis Depay",
+          "count": 1
+        },
+        {
+          "from": "Memphis Depay",
+          "to": "Donyell Malen",
+          "count": 1
+        },
+        {
+          "from": "Donyell Malen",
+          "to": "Lutsharel Geertruida",
+          "count": 1
+        },
+        {
+          "from": "Cody Math\u00e8s Gakpo",
+          "to": "Memphis Depay",
+          "count": 1
+        },
+        {
+          "from": "Tijjani Reijnders",
+          "to": "Nathan Ak\u00e9",
+          "count": 1
+        },
+        {
+          "from": "Tijjani Reijnders",
+          "to": "Memphis Depay",
+          "count": 1
+        },
+        {
+          "from": "Memphis Depay",
+          "to": "Lutsharel Geertruida",
+          "count": 1
+        },
+        {
+          "from": "Lutsharel Geertruida",
+          "to": "Memphis Depay",
+          "count": 1
+        },
+        {
+          "from": "Jerdy Schouten",
+          "to": "Tijjani Reijnders",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "label": "34'\u201364'",
+      "nodes": [
+        {
+          "player": "Bart Verbruggen",
+          "display_name": "Bart Verbruggen",
+          "x": 11.65,
+          "y": 35.28,
+          "passes": 10
+        },
+        {
+          "player": "Cody Math\u00e8s Gakpo",
+          "display_name": "Cody Gakpo",
+          "x": 97.0,
+          "y": 31.15,
+          "passes": 2
+        },
+        {
+          "player": "Donyell Malen",
+          "display_name": "Donyell Malen",
+          "x": 92.29,
+          "y": 69.76,
+          "passes": 7
+        },
+        {
+          "player": "Jerdy Schouten",
+          "display_name": "Jerdy Schouten",
+          "x": 55.41,
+          "y": 42.31,
+          "passes": 14
+        },
+        {
+          "player": "Lutsharel Geertruida",
+          "display_name": "Lutsharel Geertruida",
+          "x": 57.21,
+          "y": 67.64,
+          "passes": 19
+        },
+        {
+          "player": "Memphis Depay",
+          "display_name": "Memphis Depay",
+          "x": 80.88,
+          "y": 36.24,
+          "passes": 9
+        },
+        {
+          "player": "Nathan Ak\u00e9",
+          "display_name": "Nathan Ak\u00e9",
+          "x": 42.99,
+          "y": 11.29,
+          "passes": 9
+        },
+        {
+          "player": "Stefan de Vrij",
+          "display_name": "Stefan de Vrij",
+          "x": 33.52,
+          "y": 52.67,
+          "passes": 16
+        },
+        {
+          "player": "Tijjani Reijnders",
+          "display_name": "Tijjani Reijnders",
+          "x": 41.38,
+          "y": 32.53,
+          "passes": 6
+        },
+        {
+          "player": "Virgil van Dijk",
+          "display_name": "Virgil van Dijk",
+          "x": 35.92,
+          "y": 25.19,
+          "passes": 10
+        },
+        {
+          "player": "Xavi Simons",
+          "display_name": "Xavi Simons",
+          "x": 67.5,
+          "y": 35.34,
+          "passes": 7
+        }
+      ],
+      "edges": [
+        {
+          "from": "Lutsharel Geertruida",
+          "to": "Donyell Malen",
+          "count": 6
+        },
+        {
+          "from": "Stefan de Vrij",
+          "to": "Lutsharel Geertruida",
+          "count": 5
+        },
+        {
+          "from": "Stefan de Vrij",
+          "to": "Virgil van Dijk",
+          "count": 4
+        },
+        {
+          "from": "Lutsharel Geertruida",
+          "to": "Stefan de Vrij",
+          "count": 4
+        },
+        {
+          "from": "Lutsharel Geertruida",
+          "to": "Jerdy Schouten",
+          "count": 4
+        },
+        {
+          "from": "Jerdy Schouten",
+          "to": "Lutsharel Geertruida",
+          "count": 4
+        },
+        {
+          "from": "Bart Verbruggen",
+          "to": "Stefan de Vrij",
+          "count": 4
+        },
+        {
+          "from": "Virgil van Dijk",
+          "to": "Nathan Ak\u00e9",
+          "count": 3
+        },
+        {
+          "from": "Donyell Malen",
+          "to": "Lutsharel Geertruida",
+          "count": 3
+        },
+        {
+          "from": "Jerdy Schouten",
+          "to": "Xavi Simons",
+          "count": 2
+        },
+        {
+          "from": "Nathan Ak\u00e9",
+          "to": "Stefan de Vrij",
+          "count": 2
+        },
+        {
+          "from": "Stefan de Vrij",
+          "to": "Bart Verbruggen",
+          "count": 2
+        },
+        {
+          "from": "Bart Verbruggen",
+          "to": "Tijjani Reijnders",
+          "count": 2
+        },
+        {
+          "from": "Virgil van Dijk",
+          "to": "Stefan de Vrij",
+          "count": 2
+        },
+        {
+          "from": "Stefan de Vrij",
+          "to": "Tijjani Reijnders",
+          "count": 2
+        },
+        {
+          "from": "Tijjani Reijnders",
+          "to": "Xavi Simons",
+          "count": 2
+        },
+        {
+          "from": "Xavi Simons",
+          "to": "Cody Math\u00e8s Gakpo",
+          "count": 2
+        },
+        {
+          "from": "Memphis Depay",
+          "to": "Xavi Simons",
+          "count": 2
+        },
+        {
+          "from": "Jerdy Schouten",
+          "to": "Stefan de Vrij",
+          "count": 2
+        },
+        {
+          "from": "Virgil van Dijk",
+          "to": "Donyell Malen",
+          "count": 2
+        },
+        {
+          "from": "Donyell Malen",
+          "to": "Jerdy Schouten",
+          "count": 2
+        },
+        {
+          "from": "Nathan Ak\u00e9",
+          "to": "Xavi Simons",
+          "count": 2
+        },
+        {
+          "from": "Memphis Depay",
+          "to": "Stefan de Vrij",
+          "count": 2
+        },
+        {
+          "from": "Jerdy Schouten",
+          "to": "Tijjani Reijnders",
+          "count": 2
+        },
+        {
+          "from": "Lutsharel Geertruida",
+          "to": "Memphis Depay",
+          "count": 2
+        },
+        {
+          "from": "Memphis Depay",
+          "to": "Lutsharel Geertruida",
+          "count": 2
+        },
+        {
+          "from": "Xavi Simons",
+          "to": "Donyell Malen",
+          "count": 2
+        },
+        {
+          "from": "Jerdy Schouten",
+          "to": "Donyell Malen",
+          "count": 2
+        },
+        {
+          "from": "Stefan de Vrij",
+          "to": "Donyell Malen",
+          "count": 2
+        },
+        {
+          "from": "Virgil van Dijk",
+          "to": "Lutsharel Geertruida",
+          "count": 1
+        },
+        {
+          "from": "Tijjani Reijnders",
+          "to": "Nathan Ak\u00e9",
+          "count": 1
+        },
+        {
+          "from": "Lutsharel Geertruida",
+          "to": "Bart Verbruggen",
+          "count": 1
+        },
+        {
+          "from": "Tijjani Reijnders",
+          "to": "Lutsharel Geertruida",
+          "count": 1
+        },
+        {
+          "from": "Xavi Simons",
+          "to": "Jerdy Schouten",
+          "count": 1
+        },
+        {
+          "from": "Lutsharel Geertruida",
+          "to": "Virgil van Dijk",
+          "count": 1
+        },
+        {
+          "from": "Tijjani Reijnders",
+          "to": "Cody Math\u00e8s Gakpo",
+          "count": 1
+        },
+        {
+          "from": "Cody Math\u00e8s Gakpo",
+          "to": "Memphis Depay",
+          "count": 1
+        },
+        {
+          "from": "Virgil van Dijk",
+          "to": "Tijjani Reijnders",
+          "count": 1
+        },
+        {
+          "from": "Bart Verbruggen",
+          "to": "Jerdy Schouten",
+          "count": 1
+        },
+        {
+          "from": "Nathan Ak\u00e9",
+          "to": "Cody Math\u00e8s Gakpo",
+          "count": 1
+        },
+        {
+          "from": "Bart Verbruggen",
+          "to": "Nathan Ak\u00e9",
+          "count": 1
+        },
+        {
+          "from": "Nathan Ak\u00e9",
+          "to": "Tijjani Reijnders",
+          "count": 1
+        },
+        {
+          "from": "Virgil van Dijk",
+          "to": "Bart Verbruggen",
+          "count": 1
+        },
+        {
+          "from": "Xavi Simons",
+          "to": "Lutsharel Geertruida",
+          "count": 1
+        },
+        {
+          "from": "Donyell Malen",
+          "to": "Memphis Depay",
+          "count": 1
+        },
+        {
+          "from": "Bart Verbruggen",
+          "to": "Cody Math\u00e8s Gakpo",
+          "count": 1
+        },
+        {
+          "from": "Lutsharel Geertruida",
+          "to": "Xavi Simons",
+          "count": 1
+        },
+        {
+          "from": "Tijjani Reijnders",
+          "to": "Bart Verbruggen",
+          "count": 1
+        },
+        {
+          "from": "Bart Verbruggen",
+          "to": "Virgil van Dijk",
+          "count": 1
+        },
+        {
+          "from": "Nathan Ak\u00e9",
+          "to": "Jerdy Schouten",
+          "count": 1
+        },
+        {
+          "from": "Jerdy Schouten",
+          "to": "Bart Verbruggen",
+          "count": 1
+        },
+        {
+          "from": "Memphis Depay",
+          "to": "Virgil van Dijk",
+          "count": 1
+        },
+        {
+          "from": "Memphis Depay",
+          "to": "Donyell Malen",
+          "count": 1
+        },
+        {
+          "from": "Stefan de Vrij",
+          "to": "Jerdy Schouten",
+          "count": 1
+        },
+        {
+          "from": "Donyell Malen",
+          "to": "Tijjani Reijnders",
+          "count": 1
+        },
+        {
+          "from": "Xavi Simons",
+          "to": "Nathan Ak\u00e9",
+          "count": 1
+        },
+        {
+          "from": "Nathan Ak\u00e9",
+          "to": "Virgil van Dijk",
+          "count": 1
+        },
+        {
+          "from": "Nathan Ak\u00e9",
+          "to": "Memphis Depay",
+          "count": 1
+        },
+        {
+          "from": "Memphis Depay",
+          "to": "Jerdy Schouten",
+          "count": 1
+        },
+        {
+          "from": "Cody Math\u00e8s Gakpo",
+          "to": "Jerdy Schouten",
+          "count": 1
+        },
+        {
+          "from": "Jerdy Schouten",
+          "to": "Memphis Depay",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "label": "64'\u201371'",
+      "nodes": [
+        {
+          "player": "Bart Verbruggen",
+          "display_name": "Bart Verbruggen",
+          "x": 11.37,
+          "y": 43.0,
+          "passes": 3
+        },
+        {
+          "player": "Donyell Malen",
+          "display_name": "Donyell Malen",
+          "x": 89.6,
+          "y": 72.7,
+          "passes": 1
+        },
+        {
+          "player": "Georginio Wijnaldum",
+          "display_name": "Georginio Wijnaldum",
+          "x": 51.95,
+          "y": 6.2,
+          "passes": 2
+        },
+        {
+          "player": "Jerdy Schouten",
+          "display_name": "Jerdy Schouten",
+          "x": 50.25,
+          "y": 41.8,
+          "passes": 2
+        },
+        {
+          "player": "Lutsharel Geertruida",
+          "display_name": "Lutsharel Geertruida",
+          "x": 57.3,
+          "y": 73.5,
+          "passes": 3
+        },
+        {
+          "player": "Micky van de Ven",
+          "display_name": "Micky van de Ven",
+          "x": 37.28,
+          "y": 18.08,
+          "passes": 6
+        },
+        {
+          "player": "Nathan Ak\u00e9",
+          "display_name": "Nathan Ak\u00e9",
+          "x": 51.5,
+          "y": 12.1,
+          "passes": 2
+        },
+        {
+          "player": "Stefan de Vrij",
+          "display_name": "Stefan de Vrij",
+          "x": 41.64,
+          "y": 55.0,
+          "passes": 5
+        },
+        {
+          "player": "Tijjani Reijnders",
+          "display_name": "Tijjani Reijnders",
+          "x": 44.8,
+          "y": 34.2,
+          "passes": 1
+        },
+        {
+          "player": "Virgil van Dijk",
+          "display_name": "Virgil van Dijk",
+          "x": 38.58,
+          "y": 40.29,
+          "passes": 9
+        },
+        {
+          "player": "Xavi Simons",
+          "display_name": "Xavi Simons",
+          "x": 70.4,
+          "y": 51.7,
+          "passes": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "Virgil van Dijk",
+          "to": "Micky van de Ven",
+          "count": 4
+        },
+        {
+          "from": "Micky van de Ven",
+          "to": "Virgil van Dijk",
+          "count": 3
+        },
+        {
+          "from": "Bart Verbruggen",
+          "to": "Virgil van Dijk",
+          "count": 2
+        },
+        {
+          "from": "Micky van de Ven",
+          "to": "Georginio Wijnaldum",
+          "count": 2
+        },
+        {
+          "from": "Virgil van Dijk",
+          "to": "Stefan de Vrij",
+          "count": 2
+        },
+        {
+          "from": "Virgil van Dijk",
+          "to": "Nathan Ak\u00e9",
+          "count": 1
+        },
+        {
+          "from": "Nathan Ak\u00e9",
+          "to": "Tijjani Reijnders",
+          "count": 1
+        },
+        {
+          "from": "Tijjani Reijnders",
+          "to": "Virgil van Dijk",
+          "count": 1
+        },
+        {
+          "from": "Virgil van Dijk",
+          "to": "Jerdy Schouten",
+          "count": 1
+        },
+        {
+          "from": "Jerdy Schouten",
+          "to": "Nathan Ak\u00e9",
+          "count": 1
+        },
+        {
+          "from": "Nathan Ak\u00e9",
+          "to": "Memphis Depay",
+          "count": 1
+        },
+        {
+          "from": "Stefan de Vrij",
+          "to": "Bart Verbruggen",
+          "count": 1
+        },
+        {
+          "from": "Virgil van Dijk",
+          "to": "Bart Verbruggen",
+          "count": 1
+        },
+        {
+          "from": "Bart Verbruggen",
+          "to": "Micky van de Ven",
+          "count": 1
+        },
+        {
+          "from": "Georginio Wijnaldum",
+          "to": "Micky van de Ven",
+          "count": 1
+        },
+        {
+          "from": "Micky van de Ven",
+          "to": "Bart Verbruggen",
+          "count": 1
+        },
+        {
+          "from": "Lutsharel Geertruida",
+          "to": "Stefan de Vrij",
+          "count": 1
+        },
+        {
+          "from": "Stefan de Vrij",
+          "to": "Micky van de Ven",
+          "count": 1
+        },
+        {
+          "from": "Stefan de Vrij",
+          "to": "Virgil van Dijk",
+          "count": 1
+        },
+        {
+          "from": "Stefan de Vrij",
+          "to": "Xavi Simons",
+          "count": 1
+        },
+        {
+          "from": "Xavi Simons",
+          "to": "Donyell Malen",
+          "count": 1
+        },
+        {
+          "from": "Donyell Malen",
+          "to": "Xavi Simons",
+          "count": 1
+        },
+        {
+          "from": "Lutsharel Geertruida",
+          "to": "Memphis Depay",
+          "count": 1
+        },
+        {
+          "from": "Jerdy Schouten",
+          "to": "Virgil van Dijk",
+          "count": 1
+        },
+        {
+          "from": "Stefan de Vrij",
+          "to": "Donyell Malen",
+          "count": 1
+        },
+        {
+          "from": "Lutsharel Geertruida",
+          "to": "Virgil van Dijk",
+          "count": 1
+        },
+        {
+          "from": "Georginio Wijnaldum",
+          "to": "Memphis Depay",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "label": "71'\u2013FT",
+      "nodes": [
+        {
+          "player": "Bart Verbruggen",
+          "display_name": "Bart Verbruggen",
+          "x": 17.93,
+          "y": 40.64,
+          "passes": 7
+        },
+        {
+          "player": "Cody Math\u00e8s Gakpo",
+          "display_name": "Cody Gakpo",
+          "x": 83.11,
+          "y": 20.89,
+          "passes": 7
+        },
+        {
+          "player": "Georginio Wijnaldum",
+          "display_name": "Georginio Wijnaldum",
+          "x": 81.75,
+          "y": 30.7,
+          "passes": 2
+        },
+        {
+          "player": "Jerdy Schouten",
+          "display_name": "Jerdy Schouten",
+          "x": 62.57,
+          "y": 31.73,
+          "passes": 18
+        },
+        {
+          "player": "Lutsharel Geertruida",
+          "display_name": "Lutsharel Geertruida",
+          "x": 65.97,
+          "y": 46.73,
+          "passes": 20
+        },
+        {
+          "player": "Memphis Depay",
+          "display_name": "Memphis Depay",
+          "x": 75.33,
+          "y": 37.29,
+          "passes": 7
+        },
+        {
+          "player": "Micky van de Ven",
+          "display_name": "Micky van de Ven",
+          "x": 65.98,
+          "y": 12.69,
+          "passes": 17
+        },
+        {
+          "player": "Stefan de Vrij",
+          "display_name": "Stefan de Vrij",
+          "x": 41.85,
+          "y": 58.42,
+          "passes": 6
+        },
+        {
+          "player": "Virgil van Dijk",
+          "display_name": "Virgil van Dijk",
+          "x": 49.21,
+          "y": 34.42,
+          "passes": 17
+        },
+        {
+          "player": "Wout Weghorst",
+          "display_name": "Wout Weghorst",
+          "x": 80.03,
+          "y": 42.99,
+          "passes": 7
+        },
+        {
+          "player": "Xavi Simons",
+          "display_name": "Xavi Simons",
+          "x": 75.31,
+          "y": 60.07,
+          "passes": 8
+        }
+      ],
+      "edges": [
+        {
+          "from": "Virgil van Dijk",
+          "to": "Lutsharel Geertruida",
+          "count": 6
+        },
+        {
+          "from": "Jerdy Schouten",
+          "to": "Micky van de Ven",
+          "count": 5
+        },
+        {
+          "from": "Micky van de Ven",
+          "to": "Jerdy Schouten",
+          "count": 5
+        },
+        {
+          "from": "Lutsharel Geertruida",
+          "to": "Xavi Simons",
+          "count": 4
+        },
+        {
+          "from": "Jerdy Schouten",
+          "to": "Xavi Simons",
+          "count": 4
+        },
+        {
+          "from": "Cody Math\u00e8s Gakpo",
+          "to": "Memphis Depay",
+          "count": 4
+        },
+        {
+          "from": "Micky van de Ven",
+          "to": "Virgil van Dijk",
+          "count": 4
+        },
+        {
+          "from": "Jerdy Schouten",
+          "to": "Lutsharel Geertruida",
+          "count": 4
+        },
+        {
+          "from": "Lutsharel Geertruida",
+          "to": "Virgil van Dijk",
+          "count": 4
+        },
+        {
+          "from": "Jerdy Schouten",
+          "to": "Memphis Depay",
+          "count": 3
+        },
+        {
+          "from": "Lutsharel Geertruida",
+          "to": "Memphis Depay",
+          "count": 3
+        },
+        {
+          "from": "Lutsharel Geertruida",
+          "to": "Jerdy Schouten",
+          "count": 3
+        },
+        {
+          "from": "Memphis Depay",
+          "to": "Wout Weghorst",
+          "count": 3
+        },
+        {
+          "from": "Wout Weghorst",
+          "to": "Jerdy Schouten",
+          "count": 3
+        },
+        {
+          "from": "Micky van de Ven",
+          "to": "Bart Verbruggen",
+          "count": 3
+        },
+        {
+          "from": "Lutsharel Geertruida",
+          "to": "Micky van de Ven",
+          "count": 3
+        },
+        {
+          "from": "Stefan de Vrij",
+          "to": "Virgil van Dijk",
+          "count": 3
+        },
+        {
+          "from": "Virgil van Dijk",
+          "to": "Jerdy Schouten",
+          "count": 3
+        },
+        {
+          "from": "Xavi Simons",
+          "to": "Lutsharel Geertruida",
+          "count": 2
+        },
+        {
+          "from": "Micky van de Ven",
+          "to": "Cody Math\u00e8s Gakpo",
+          "count": 2
+        },
+        {
+          "from": "Virgil van Dijk",
+          "to": "Stefan de Vrij",
+          "count": 2
+        },
+        {
+          "from": "Wout Weghorst",
+          "to": "Memphis Depay",
+          "count": 2
+        },
+        {
+          "from": "Memphis Depay",
+          "to": "Cody Math\u00e8s Gakpo",
+          "count": 2
+        },
+        {
+          "from": "Xavi Simons",
+          "to": "Memphis Depay",
+          "count": 2
+        },
+        {
+          "from": "Micky van de Ven",
+          "to": "Lutsharel Geertruida",
+          "count": 2
+        },
+        {
+          "from": "Georginio Wijnaldum",
+          "to": "Micky van de Ven",
+          "count": 2
+        },
+        {
+          "from": "Virgil van Dijk",
+          "to": "Cody Math\u00e8s Gakpo",
+          "count": 2
+        },
+        {
+          "from": "Bart Verbruggen",
+          "to": "Virgil van Dijk",
+          "count": 2
+        },
+        {
+          "from": "Jerdy Schouten",
+          "to": "Bart Verbruggen",
+          "count": 1
+        },
+        {
+          "from": "Bart Verbruggen",
+          "to": "Jerdy Schouten",
+          "count": 1
+        },
+        {
+          "from": "Lutsharel Geertruida",
+          "to": "Stefan de Vrij",
+          "count": 1
+        },
+        {
+          "from": "Memphis Depay",
+          "to": "Micky van de Ven",
+          "count": 1
+        },
+        {
+          "from": "Virgil van Dijk",
+          "to": "Bart Verbruggen",
+          "count": 1
+        },
+        {
+          "from": "Bart Verbruggen",
+          "to": "Micky van de Ven",
+          "count": 1
+        },
+        {
+          "from": "Stefan de Vrij",
+          "to": "Xavi Simons",
+          "count": 1
+        },
+        {
+          "from": "Xavi Simons",
+          "to": "Stefan de Vrij",
+          "count": 1
+        },
+        {
+          "from": "Stefan de Vrij",
+          "to": "Jerdy Schouten",
+          "count": 1
+        },
+        {
+          "from": "Jerdy Schouten",
+          "to": "Cody Math\u00e8s Gakpo",
+          "count": 1
+        },
+        {
+          "from": "Cody Math\u00e8s Gakpo",
+          "to": "Wout Weghorst",
+          "count": 1
+        },
+        {
+          "from": "Bart Verbruggen",
+          "to": "Cody Math\u00e8s Gakpo",
+          "count": 1
+        },
+        {
+          "from": "Xavi Simons",
+          "to": "Wout Weghorst",
+          "count": 1
+        },
+        {
+          "from": "Memphis Depay",
+          "to": "Lutsharel Geertruida",
+          "count": 1
+        },
+        {
+          "from": "Lutsharel Geertruida",
+          "to": "Wout Weghorst",
+          "count": 1
+        },
+        {
+          "from": "Bart Verbruggen",
+          "to": "Stefan de Vrij",
+          "count": 1
+        },
+        {
+          "from": "Virgil van Dijk",
+          "to": "Micky van de Ven",
+          "count": 1
+        },
+        {
+          "from": "Virgil van Dijk",
+          "to": "Wout Weghorst",
+          "count": 1
+        },
+        {
+          "from": "Cody Math\u00e8s Gakpo",
+          "to": "Georginio Wijnaldum",
+          "count": 1
+        },
+        {
+          "from": "Xavi Simons",
+          "to": "Virgil van Dijk",
+          "count": 1
+        },
+        {
+          "from": "Virgil van Dijk",
+          "to": "Xavi Simons",
+          "count": 1
+        },
+        {
+          "from": "Micky van de Ven",
+          "to": "Memphis Depay",
+          "count": 1
+        },
+        {
+          "from": "Stefan de Vrij",
+          "to": "Lutsharel Geertruida",
+          "count": 1
+        },
+        {
+          "from": "Wout Weghorst",
+          "to": "Lutsharel Geertruida",
+          "count": 1
+        },
+        {
+          "from": "Cody Math\u00e8s Gakpo",
+          "to": "Micky van de Ven",
+          "count": 1
+        },
+        {
+          "from": "Xavi Simons",
+          "to": "Jerdy Schouten",
+          "count": 1
+        },
+        {
+          "from": "Lutsharel Geertruida",
+          "to": "Georginio Wijnaldum",
+          "count": 1
+        },
+        {
+          "from": "Bart Verbruggen",
+          "to": "Wout Weghorst",
+          "count": 1
+        },
+        {
+          "from": "Wout Weghorst",
+          "to": "Virgil van Dijk",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "substitutions": [
+    {
+      "minute": 34,
+      "player_off": "Joey Veerman",
+      "player_on": "Xavi Simons"
+    },
+    {
+      "minute": 64,
+      "player_off": "Tijjani Reijnders",
+      "player_on": "Georginio Wijnaldum"
+    },
+    {
+      "minute": 64,
+      "player_off": "Nathan Ak\u00e9",
+      "player_on": "Micky van de Ven"
+    },
+    {
+      "minute": 71,
+      "player_off": "Donyell Malen",
+      "player_on": "Wout Weghorst"
+    }
+  ],
+  "metadata": {
+    "match_id": 3930180,
+    "team": "Netherlands",
+    "filter": "completed passes, per substitution window",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Netherlands vs Austria"
+  }
+}

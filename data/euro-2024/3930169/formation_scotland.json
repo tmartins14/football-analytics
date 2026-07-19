@@ -1,0 +1,106 @@
+{
+  "periods": [
+    {
+      "formation": "3-4-1-2",
+      "from_minute": 0,
+      "to_minute": 94,
+      "players": [
+        {
+          "player": "Angus Gunn",
+          "display_name": "Angus Gunn",
+          "jersey_number": 1,
+          "position": "Goalkeeper",
+          "template_x": 6.0,
+          "template_y": 40.0
+        },
+        {
+          "player": "Anthony Ralston",
+          "display_name": "Anthony Ralston",
+          "jersey_number": 2,
+          "position": "Right Wing Back",
+          "template_x": 26.0,
+          "template_y": 72.0
+        },
+        {
+          "player": "Andrew Robertson",
+          "display_name": "Andrew Robertson",
+          "jersey_number": 3,
+          "position": "Left Wing Back",
+          "template_x": 26.0,
+          "template_y": 8.0
+        },
+        {
+          "player": "Scott McTominay",
+          "display_name": "Scott McTominay",
+          "jersey_number": 4,
+          "position": "Center Attacking Midfield",
+          "template_x": 72.0,
+          "template_y": 40.0
+        },
+        {
+          "player": "Grant Campbell Hanley",
+          "display_name": "Grant Campbell Hanley",
+          "jersey_number": 5,
+          "position": "Center Back",
+          "template_x": 20.0,
+          "template_y": 40.0
+        },
+        {
+          "player": "Kieran Tierney",
+          "display_name": "Kieran Tierney",
+          "jersey_number": 6,
+          "position": "Left Center Back",
+          "template_x": 20.0,
+          "template_y": 28.0
+        },
+        {
+          "player": "John McGinn",
+          "display_name": "John McGinn",
+          "jersey_number": 7,
+          "position": "Left Center Forward",
+          "template_x": 92.0,
+          "template_y": 22.0
+        },
+        {
+          "player": "Callum McGregor",
+          "display_name": "Callum McGregor",
+          "jersey_number": 8,
+          "position": "Left Defensive Midfield",
+          "template_x": 40.0,
+          "template_y": 18.0
+        },
+        {
+          "player": "Che Adams",
+          "display_name": "Che Adams",
+          "jersey_number": 10,
+          "position": "Right Center Forward",
+          "template_x": 92.0,
+          "template_y": 58.0
+        },
+        {
+          "player": "Jack Hendry",
+          "display_name": "Jack Hendry",
+          "jersey_number": 13,
+          "position": "Right Center Back",
+          "template_x": 20.0,
+          "template_y": 52.0
+        },
+        {
+          "player": "Billy Gilmour",
+          "display_name": "Billy Gilmour",
+          "jersey_number": 14,
+          "position": "Right Defensive Midfield",
+          "template_x": 40.0,
+          "template_y": 62.0
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "match_id": 3930169,
+    "team": "Scotland",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Scotland vs Switzerland",
+    "coordinate_note": "template_x and template_y are canonical formation-slot positions in StatsBomb 120\u00d780 coordinate space. They are NOT measured from play \u2014 they represent the declared tactical shape derived from StatsBomb position labels."
+  }
+}

@@ -1,0 +1,1453 @@
+{
+  "windows": [
+    {
+      "index": 0,
+      "label": "0'\u201360' (Starting XI)",
+      "nodes": [
+        {
+          "player": "David Strelec",
+          "display_name": "David Strelec",
+          "x": 66.94,
+          "y": 36.09,
+          "passes": 8
+        },
+        {
+          "player": "Denis Vavro",
+          "display_name": "Denis Vavro",
+          "x": 26.23,
+          "y": 58.67,
+          "passes": 15
+        },
+        {
+          "player": "D\u00e1vid Hancko",
+          "display_name": "D\u00e1vid Hancko",
+          "x": 55.15,
+          "y": 7.47,
+          "passes": 13
+        },
+        {
+          "player": "Ivan Schranz",
+          "display_name": "Ivan Schranz",
+          "x": 56.12,
+          "y": 71.3,
+          "passes": 6
+        },
+        {
+          "player": "Juraj Kucka",
+          "display_name": "Juraj Kucka",
+          "x": 69.52,
+          "y": 52.91,
+          "passes": 9
+        },
+        {
+          "player": "Luk\u00e1\u0161 Harasl\u00edn",
+          "display_name": "Luk\u00e1\u0161 Harasl\u00edn",
+          "x": 84.2,
+          "y": 22.46,
+          "passes": 5
+        },
+        {
+          "player": "Martin D\u00fabravka",
+          "display_name": "Martin D\u00fabravka",
+          "x": 11.11,
+          "y": 40.06,
+          "passes": 7
+        },
+        {
+          "player": "Milan \u0160kriniar",
+          "display_name": "Milan \u0160kriniar",
+          "x": 38.14,
+          "y": 21.4,
+          "passes": 14
+        },
+        {
+          "player": "Ondrej Duda",
+          "display_name": "Ondrej Duda",
+          "x": 59.46,
+          "y": 29.32,
+          "passes": 13
+        },
+        {
+          "player": "Peter Pekar\u00edk",
+          "display_name": "Peter Pekar\u00edk",
+          "x": 43.42,
+          "y": 72.3,
+          "passes": 8
+        },
+        {
+          "player": "Stanislav Lobotka",
+          "display_name": "Stanislav Lobotka",
+          "x": 50.36,
+          "y": 29.52,
+          "passes": 12
+        }
+      ],
+      "edges": [
+        {
+          "from": "Denis Vavro",
+          "to": "Milan \u0160kriniar",
+          "count": 5
+        },
+        {
+          "from": "D\u00e1vid Hancko",
+          "to": "Ondrej Duda",
+          "count": 5
+        },
+        {
+          "from": "Peter Pekar\u00edk",
+          "to": "Denis Vavro",
+          "count": 4
+        },
+        {
+          "from": "Denis Vavro",
+          "to": "Juraj Kucka",
+          "count": 4
+        },
+        {
+          "from": "Juraj Kucka",
+          "to": "Ivan Schranz",
+          "count": 4
+        },
+        {
+          "from": "Milan \u0160kriniar",
+          "to": "Denis Vavro",
+          "count": 3
+        },
+        {
+          "from": "Milan \u0160kriniar",
+          "to": "Stanislav Lobotka",
+          "count": 3
+        },
+        {
+          "from": "Stanislav Lobotka",
+          "to": "Ondrej Duda",
+          "count": 3
+        },
+        {
+          "from": "Martin D\u00fabravka",
+          "to": "Milan \u0160kriniar",
+          "count": 3
+        },
+        {
+          "from": "Denis Vavro",
+          "to": "Martin D\u00fabravka",
+          "count": 3
+        },
+        {
+          "from": "Ondrej Duda",
+          "to": "Stanislav Lobotka",
+          "count": 3
+        },
+        {
+          "from": "Milan \u0160kriniar",
+          "to": "D\u00e1vid Hancko",
+          "count": 3
+        },
+        {
+          "from": "David Strelec",
+          "to": "Ondrej Duda",
+          "count": 3
+        },
+        {
+          "from": "Peter Pekar\u00edk",
+          "to": "Juraj Kucka",
+          "count": 3
+        },
+        {
+          "from": "Ondrej Duda",
+          "to": "Milan \u0160kriniar",
+          "count": 2
+        },
+        {
+          "from": "Stanislav Lobotka",
+          "to": "Milan \u0160kriniar",
+          "count": 2
+        },
+        {
+          "from": "D\u00e1vid Hancko",
+          "to": "Luk\u00e1\u0161 Harasl\u00edn",
+          "count": 2
+        },
+        {
+          "from": "Luk\u00e1\u0161 Harasl\u00edn",
+          "to": "D\u00e1vid Hancko",
+          "count": 2
+        },
+        {
+          "from": "Milan \u0160kriniar",
+          "to": "Martin D\u00fabravka",
+          "count": 2
+        },
+        {
+          "from": "Stanislav Lobotka",
+          "to": "Peter Pekar\u00edk",
+          "count": 2
+        },
+        {
+          "from": "Milan \u0160kriniar",
+          "to": "Luk\u00e1\u0161 Harasl\u00edn",
+          "count": 2
+        },
+        {
+          "from": "Juraj Kucka",
+          "to": "David Strelec",
+          "count": 2
+        },
+        {
+          "from": "David Strelec",
+          "to": "Luk\u00e1\u0161 Harasl\u00edn",
+          "count": 2
+        },
+        {
+          "from": "Ivan Schranz",
+          "to": "Juraj Kucka",
+          "count": 2
+        },
+        {
+          "from": "Martin D\u00fabravka",
+          "to": "David Strelec",
+          "count": 2
+        },
+        {
+          "from": "Ondrej Duda",
+          "to": "Luk\u00e1\u0161 Harasl\u00edn",
+          "count": 2
+        },
+        {
+          "from": "D\u00e1vid Hancko",
+          "to": "Milan \u0160kriniar",
+          "count": 2
+        },
+        {
+          "from": "Ondrej Duda",
+          "to": "Juraj Kucka",
+          "count": 2
+        },
+        {
+          "from": "Stanislav Lobotka",
+          "to": "Luk\u00e1\u0161 Harasl\u00edn",
+          "count": 2
+        },
+        {
+          "from": "David Strelec",
+          "to": "Ivan Schranz",
+          "count": 2
+        },
+        {
+          "from": "D\u00e1vid Hancko",
+          "to": "David Strelec",
+          "count": 2
+        },
+        {
+          "from": "Ivan Schranz",
+          "to": "Peter Pekar\u00edk",
+          "count": 2
+        },
+        {
+          "from": "David Strelec",
+          "to": "Milan \u0160kriniar",
+          "count": 1
+        },
+        {
+          "from": "Martin D\u00fabravka",
+          "to": "Denis Vavro",
+          "count": 1
+        },
+        {
+          "from": "Denis Vavro",
+          "to": "Ondrej Duda",
+          "count": 1
+        },
+        {
+          "from": "Ondrej Duda",
+          "to": "Peter Pekar\u00edk",
+          "count": 1
+        },
+        {
+          "from": "Ondrej Duda",
+          "to": "David Strelec",
+          "count": 1
+        },
+        {
+          "from": "Milan \u0160kriniar",
+          "to": "Peter Pekar\u00edk",
+          "count": 1
+        },
+        {
+          "from": "Luk\u00e1\u0161 Harasl\u00edn",
+          "to": "Juraj Kucka",
+          "count": 1
+        },
+        {
+          "from": "D\u00e1vid Hancko",
+          "to": "Denis Vavro",
+          "count": 1
+        },
+        {
+          "from": "Martin D\u00fabravka",
+          "to": "Juraj Kucka",
+          "count": 1
+        },
+        {
+          "from": "Juraj Kucka",
+          "to": "Martin D\u00fabravka",
+          "count": 1
+        },
+        {
+          "from": "D\u00e1vid Hancko",
+          "to": "Juraj Kucka",
+          "count": 1
+        },
+        {
+          "from": "Juraj Kucka",
+          "to": "Stanislav Lobotka",
+          "count": 1
+        },
+        {
+          "from": "Luk\u00e1\u0161 Harasl\u00edn",
+          "to": "Ondrej Duda",
+          "count": 1
+        },
+        {
+          "from": "Luk\u00e1\u0161 Harasl\u00edn",
+          "to": "Stanislav Lobotka",
+          "count": 1
+        },
+        {
+          "from": "Ivan Schranz",
+          "to": "Denis Vavro",
+          "count": 1
+        },
+        {
+          "from": "Peter Pekar\u00edk",
+          "to": "Martin D\u00fabravka",
+          "count": 1
+        },
+        {
+          "from": "Denis Vavro",
+          "to": "Stanislav Lobotka",
+          "count": 1
+        },
+        {
+          "from": "Stanislav Lobotka",
+          "to": "Denis Vavro",
+          "count": 1
+        },
+        {
+          "from": "Ivan Schranz",
+          "to": "David Strelec",
+          "count": 1
+        },
+        {
+          "from": "Juraj Kucka",
+          "to": "Ondrej Duda",
+          "count": 1
+        },
+        {
+          "from": "Ondrej Duda",
+          "to": "D\u00e1vid Hancko",
+          "count": 1
+        },
+        {
+          "from": "Denis Vavro",
+          "to": "Peter Pekar\u00edk",
+          "count": 1
+        },
+        {
+          "from": "Stanislav Lobotka",
+          "to": "Martin D\u00fabravka",
+          "count": 1
+        },
+        {
+          "from": "Ondrej Duda",
+          "to": "Ivan Schranz",
+          "count": 1
+        },
+        {
+          "from": "Stanislav Lobotka",
+          "to": "David Strelec",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "label": "60'\u201380'",
+      "nodes": [
+        {
+          "player": "Denis Vavro",
+          "display_name": "Denis Vavro",
+          "x": 61.8,
+          "y": 45.7,
+          "passes": 1
+        },
+        {
+          "player": "D\u00e1vid Hancko",
+          "display_name": "D\u00e1vid Hancko",
+          "x": 52.22,
+          "y": 4.86,
+          "passes": 5
+        },
+        {
+          "player": "Ivan Schranz",
+          "display_name": "Ivan Schranz",
+          "x": 85.55,
+          "y": 74.88,
+          "passes": 4
+        },
+        {
+          "player": "Juraj Kucka",
+          "display_name": "Juraj Kucka",
+          "x": 66.56,
+          "y": 58.24,
+          "passes": 7
+        },
+        {
+          "player": "Martin D\u00fabravka",
+          "display_name": "Martin D\u00fabravka",
+          "x": 10.43,
+          "y": 42.5,
+          "passes": 6
+        },
+        {
+          "player": "Milan \u0160kriniar",
+          "display_name": "Milan \u0160kriniar",
+          "x": 42.93,
+          "y": 26.0,
+          "passes": 6
+        },
+        {
+          "player": "Ondrej Duda",
+          "display_name": "Ondrej Duda",
+          "x": 59.48,
+          "y": 18.27,
+          "passes": 9
+        },
+        {
+          "player": "Peter Pekar\u00edk",
+          "display_name": "Peter Pekar\u00edk",
+          "x": 60.7,
+          "y": 69.9,
+          "passes": 5
+        },
+        {
+          "player": "R\u00f3bert Bo\u017een\u00edk",
+          "display_name": "R\u00f3bert Bo\u017een\u00edk",
+          "x": 71.26,
+          "y": 40.86,
+          "passes": 5
+        },
+        {
+          "player": "Stanislav Lobotka",
+          "display_name": "Stanislav Lobotka",
+          "x": 59.07,
+          "y": 37.54,
+          "passes": 9
+        },
+        {
+          "player": "Tom\u00e1\u0161 Suslov",
+          "display_name": "Tom\u00e1\u0161 Suslov",
+          "x": 52.1,
+          "y": 27.9,
+          "passes": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "Stanislav Lobotka",
+          "to": "Ondrej Duda",
+          "count": 4
+        },
+        {
+          "from": "Martin D\u00fabravka",
+          "to": "R\u00f3bert Bo\u017een\u00edk",
+          "count": 3
+        },
+        {
+          "from": "Peter Pekar\u00edk",
+          "to": "Ivan Schranz",
+          "count": 3
+        },
+        {
+          "from": "Ondrej Duda",
+          "to": "D\u00e1vid Hancko",
+          "count": 3
+        },
+        {
+          "from": "Milan \u0160kriniar",
+          "to": "Stanislav Lobotka",
+          "count": 3
+        },
+        {
+          "from": "Ondrej Duda",
+          "to": "Milan \u0160kriniar",
+          "count": 3
+        },
+        {
+          "from": "Juraj Kucka",
+          "to": "R\u00f3bert Bo\u017een\u00edk",
+          "count": 2
+        },
+        {
+          "from": "R\u00f3bert Bo\u017een\u00edk",
+          "to": "Juraj Kucka",
+          "count": 2
+        },
+        {
+          "from": "D\u00e1vid Hancko",
+          "to": "Ondrej Duda",
+          "count": 2
+        },
+        {
+          "from": "Ondrej Duda",
+          "to": "Stanislav Lobotka",
+          "count": 2
+        },
+        {
+          "from": "Juraj Kucka",
+          "to": "Ondrej Duda",
+          "count": 2
+        },
+        {
+          "from": "D\u00e1vid Hancko",
+          "to": "Tom\u00e1\u0161 Suslov",
+          "count": 2
+        },
+        {
+          "from": "Ivan Schranz",
+          "to": "Juraj Kucka",
+          "count": 2
+        },
+        {
+          "from": "Stanislav Lobotka",
+          "to": "Milan \u0160kriniar",
+          "count": 2
+        },
+        {
+          "from": "R\u00f3bert Bo\u017een\u00edk",
+          "to": "D\u00e1vid Hancko",
+          "count": 1
+        },
+        {
+          "from": "Martin D\u00fabravka",
+          "to": "Peter Pekar\u00edk",
+          "count": 1
+        },
+        {
+          "from": "Martin D\u00fabravka",
+          "to": "D\u00e1vid Hancko",
+          "count": 1
+        },
+        {
+          "from": "R\u00f3bert Bo\u017een\u00edk",
+          "to": "Peter Pekar\u00edk",
+          "count": 1
+        },
+        {
+          "from": "Ivan Schranz",
+          "to": "Peter Pekar\u00edk",
+          "count": 1
+        },
+        {
+          "from": "Peter Pekar\u00edk",
+          "to": "Juraj Kucka",
+          "count": 1
+        },
+        {
+          "from": "Juraj Kucka",
+          "to": "Ivan Schranz",
+          "count": 1
+        },
+        {
+          "from": "Ivan Schranz",
+          "to": "Stanislav Lobotka",
+          "count": 1
+        },
+        {
+          "from": "D\u00e1vid Hancko",
+          "to": "R\u00f3bert Bo\u017een\u00edk",
+          "count": 1
+        },
+        {
+          "from": "Juraj Kucka",
+          "to": "Peter Pekar\u00edk",
+          "count": 1
+        },
+        {
+          "from": "R\u00f3bert Bo\u017een\u00edk",
+          "to": "Ondrej Duda",
+          "count": 1
+        },
+        {
+          "from": "Ondrej Duda",
+          "to": "Martin D\u00fabravka",
+          "count": 1
+        },
+        {
+          "from": "Peter Pekar\u00edk",
+          "to": "Martin D\u00fabravka",
+          "count": 1
+        },
+        {
+          "from": "Martin D\u00fabravka",
+          "to": "Milan \u0160kriniar",
+          "count": 1
+        },
+        {
+          "from": "Stanislav Lobotka",
+          "to": "D\u00e1vid Hancko",
+          "count": 1
+        },
+        {
+          "from": "Tom\u00e1\u0161 Suslov",
+          "to": "Peter Pekar\u00edk",
+          "count": 1
+        },
+        {
+          "from": "Juraj Kucka",
+          "to": "Stanislav Lobotka",
+          "count": 1
+        },
+        {
+          "from": "Milan \u0160kriniar",
+          "to": "Denis Vavro",
+          "count": 1
+        },
+        {
+          "from": "Denis Vavro",
+          "to": "Ondrej Duda",
+          "count": 1
+        },
+        {
+          "from": "Milan \u0160kriniar",
+          "to": "Ondrej Duda",
+          "count": 1
+        },
+        {
+          "from": "Stanislav Lobotka",
+          "to": "Peter Pekar\u00edk",
+          "count": 1
+        },
+        {
+          "from": "Stanislav Lobotka",
+          "to": "Juraj Kucka",
+          "count": 1
+        },
+        {
+          "from": "Milan \u0160kriniar",
+          "to": "R\u00f3bert Bo\u017een\u00edk",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "label": "81'\u201392'",
+      "nodes": [
+        {
+          "player": "D\u00e1vid Hancko",
+          "display_name": "D\u00e1vid Hancko",
+          "x": 33.1,
+          "y": 15.4,
+          "passes": 4
+        },
+        {
+          "player": "Ivan Schranz",
+          "display_name": "Ivan Schranz",
+          "x": 51.95,
+          "y": 62.9,
+          "passes": 2
+        },
+        {
+          "player": "L\u00e1szl\u00f3 B\u00e9nes",
+          "display_name": "L\u00e1szl\u00f3 B\u00e9nes",
+          "x": 49.13,
+          "y": 29.47,
+          "passes": 3
+        },
+        {
+          "player": "Mat\u00fa\u0161 Bero",
+          "display_name": "Mat\u00fa\u0161 Bero",
+          "x": 51.13,
+          "y": 25.67,
+          "passes": 3
+        },
+        {
+          "player": "R\u00f3bert Bo\u017een\u00edk",
+          "display_name": "R\u00f3bert Bo\u017een\u00edk",
+          "x": 58.25,
+          "y": 35.85,
+          "passes": 2
+        },
+        {
+          "player": "Stanislav Lobotka",
+          "display_name": "Stanislav Lobotka",
+          "x": 25.9,
+          "y": 15.2,
+          "passes": 2
+        },
+        {
+          "player": "Tom\u00e1\u0161 Suslov",
+          "display_name": "Tom\u00e1\u0161 Suslov",
+          "x": 30.6,
+          "y": 16.3,
+          "passes": 2
+        }
+      ],
+      "edges": [
+        {
+          "from": "Mat\u00fa\u0161 Bero",
+          "to": "Stanislav Lobotka",
+          "count": 1
+        },
+        {
+          "from": "Stanislav Lobotka",
+          "to": "Tom\u00e1\u0161 Suslov",
+          "count": 1
+        },
+        {
+          "from": "Tom\u00e1\u0161 Suslov",
+          "to": "Mat\u00fa\u0161 Bero",
+          "count": 1
+        },
+        {
+          "from": "Mat\u00fa\u0161 Bero",
+          "to": "L\u00e1szl\u00f3 B\u00e9nes",
+          "count": 1
+        },
+        {
+          "from": "L\u00e1szl\u00f3 B\u00e9nes",
+          "to": "Tom\u00e1\u0161 Suslov",
+          "count": 1
+        },
+        {
+          "from": "Ivan Schranz",
+          "to": "L\u00e1szl\u00f3 B\u00e9nes",
+          "count": 1
+        },
+        {
+          "from": "D\u00e1vid Hancko",
+          "to": "Tom\u00e1\u0161 Suslov",
+          "count": 1
+        },
+        {
+          "from": "Tom\u00e1\u0161 Suslov",
+          "to": "D\u00e1vid Hancko",
+          "count": 1
+        },
+        {
+          "from": "D\u00e1vid Hancko",
+          "to": "R\u00f3bert Bo\u017een\u00edk",
+          "count": 1
+        },
+        {
+          "from": "R\u00f3bert Bo\u017een\u00edk",
+          "to": "Mat\u00fa\u0161 Bero",
+          "count": 1
+        },
+        {
+          "from": "R\u00f3bert Bo\u017een\u00edk",
+          "to": "Ivan Schranz",
+          "count": 1
+        },
+        {
+          "from": "Ivan Schranz",
+          "to": "R\u00f3bert Bo\u017een\u00edk",
+          "count": 1
+        },
+        {
+          "from": "L\u00e1szl\u00f3 B\u00e9nes",
+          "to": "D\u00e1vid Hancko",
+          "count": 1
+        },
+        {
+          "from": "D\u00e1vid Hancko",
+          "to": "Martin D\u00fabravka",
+          "count": 1
+        },
+        {
+          "from": "D\u00e1vid Hancko",
+          "to": "L\u00e1szl\u00f3 B\u00e9nes",
+          "count": 1
+        },
+        {
+          "from": "L\u00e1szl\u00f3 B\u00e9nes",
+          "to": "Mat\u00fa\u0161 Bero",
+          "count": 1
+        },
+        {
+          "from": "Mat\u00fa\u0161 Bero",
+          "to": "Ivan Schranz",
+          "count": 1
+        },
+        {
+          "from": "Stanislav Lobotka",
+          "to": "L\u00e1szl\u00f3 B\u00e9nes",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "label": "92'\u2013108'",
+      "nodes": [
+        {
+          "player": "Denis Vavro",
+          "display_name": "Denis Vavro",
+          "x": 51.04,
+          "y": 57.34,
+          "passes": 19
+        },
+        {
+          "player": "D\u00e1vid Hancko",
+          "display_name": "D\u00e1vid Hancko",
+          "x": 92.48,
+          "y": 3.53,
+          "passes": 6
+        },
+        {
+          "player": "L\u00e1szl\u00f3 B\u00e9nes",
+          "display_name": "L\u00e1szl\u00f3 B\u00e9nes",
+          "x": 78.22,
+          "y": 22.99,
+          "passes": 19
+        },
+        {
+          "player": "Martin D\u00fabravka",
+          "display_name": "Martin D\u00fabravka",
+          "x": 18.88,
+          "y": 39.34,
+          "passes": 5
+        },
+        {
+          "player": "Mat\u00fa\u0161 Bero",
+          "display_name": "Mat\u00fa\u0161 Bero",
+          "x": 78.13,
+          "y": 59.27,
+          "passes": 3
+        },
+        {
+          "player": "Milan \u0160kriniar",
+          "display_name": "Milan \u0160kriniar",
+          "x": 60.5,
+          "y": 16.9,
+          "passes": 27
+        },
+        {
+          "player": "Norbert Gy\u00f6mb\u00e9r",
+          "display_name": "Norbert Gy\u00f6mb\u00e9r",
+          "x": 53.13,
+          "y": 36.54,
+          "passes": 26
+        },
+        {
+          "player": "Peter Pekar\u00edk",
+          "display_name": "Peter Pekar\u00edk",
+          "x": 57.22,
+          "y": 69.5,
+          "passes": 5
+        },
+        {
+          "player": "R\u00f3bert Bo\u017een\u00edk",
+          "display_name": "R\u00f3bert Bo\u017een\u00edk",
+          "x": 79.8,
+          "y": 37.88,
+          "passes": 4
+        },
+        {
+          "player": "Stanislav Lobotka",
+          "display_name": "Stanislav Lobotka",
+          "x": 60.61,
+          "y": 40.76,
+          "passes": 18
+        },
+        {
+          "player": "Tom\u00e1\u0161 Suslov",
+          "display_name": "Tom\u00e1\u0161 Suslov",
+          "x": 81.35,
+          "y": 12.92,
+          "passes": 13
+        }
+      ],
+      "edges": [
+        {
+          "from": "Milan \u0160kriniar",
+          "to": "Norbert Gy\u00f6mb\u00e9r",
+          "count": 11
+        },
+        {
+          "from": "Norbert Gy\u00f6mb\u00e9r",
+          "to": "Milan \u0160kriniar",
+          "count": 9
+        },
+        {
+          "from": "L\u00e1szl\u00f3 B\u00e9nes",
+          "to": "Milan \u0160kriniar",
+          "count": 8
+        },
+        {
+          "from": "Milan \u0160kriniar",
+          "to": "Tom\u00e1\u0161 Suslov",
+          "count": 8
+        },
+        {
+          "from": "Denis Vavro",
+          "to": "Norbert Gy\u00f6mb\u00e9r",
+          "count": 7
+        },
+        {
+          "from": "Norbert Gy\u00f6mb\u00e9r",
+          "to": "Denis Vavro",
+          "count": 7
+        },
+        {
+          "from": "Denis Vavro",
+          "to": "Stanislav Lobotka",
+          "count": 6
+        },
+        {
+          "from": "Stanislav Lobotka",
+          "to": "L\u00e1szl\u00f3 B\u00e9nes",
+          "count": 5
+        },
+        {
+          "from": "L\u00e1szl\u00f3 B\u00e9nes",
+          "to": "Tom\u00e1\u0161 Suslov",
+          "count": 5
+        },
+        {
+          "from": "Milan \u0160kriniar",
+          "to": "L\u00e1szl\u00f3 B\u00e9nes",
+          "count": 4
+        },
+        {
+          "from": "Norbert Gy\u00f6mb\u00e9r",
+          "to": "L\u00e1szl\u00f3 B\u00e9nes",
+          "count": 4
+        },
+        {
+          "from": "Peter Pekar\u00edk",
+          "to": "Denis Vavro",
+          "count": 4
+        },
+        {
+          "from": "Tom\u00e1\u0161 Suslov",
+          "to": "D\u00e1vid Hancko",
+          "count": 4
+        },
+        {
+          "from": "D\u00e1vid Hancko",
+          "to": "L\u00e1szl\u00f3 B\u00e9nes",
+          "count": 4
+        },
+        {
+          "from": "Stanislav Lobotka",
+          "to": "Milan \u0160kriniar",
+          "count": 3
+        },
+        {
+          "from": "Stanislav Lobotka",
+          "to": "Denis Vavro",
+          "count": 3
+        },
+        {
+          "from": "Milan \u0160kriniar",
+          "to": "Stanislav Lobotka",
+          "count": 3
+        },
+        {
+          "from": "Tom\u00e1\u0161 Suslov",
+          "to": "Norbert Gy\u00f6mb\u00e9r",
+          "count": 3
+        },
+        {
+          "from": "R\u00f3bert Bo\u017een\u00edk",
+          "to": "Stanislav Lobotka",
+          "count": 2
+        },
+        {
+          "from": "Denis Vavro",
+          "to": "Martin D\u00fabravka",
+          "count": 2
+        },
+        {
+          "from": "L\u00e1szl\u00f3 B\u00e9nes",
+          "to": "Stanislav Lobotka",
+          "count": 2
+        },
+        {
+          "from": "Stanislav Lobotka",
+          "to": "Mat\u00fa\u0161 Bero",
+          "count": 2
+        },
+        {
+          "from": "Denis Vavro",
+          "to": "Milan \u0160kriniar",
+          "count": 2
+        },
+        {
+          "from": "Stanislav Lobotka",
+          "to": "Norbert Gy\u00f6mb\u00e9r",
+          "count": 2
+        },
+        {
+          "from": "Tom\u00e1\u0161 Suslov",
+          "to": "Milan \u0160kriniar",
+          "count": 2
+        },
+        {
+          "from": "Norbert Gy\u00f6mb\u00e9r",
+          "to": "Stanislav Lobotka",
+          "count": 2
+        },
+        {
+          "from": "Martin D\u00fabravka",
+          "to": "Milan \u0160kriniar",
+          "count": 2
+        },
+        {
+          "from": "Tom\u00e1\u0161 Suslov",
+          "to": "L\u00e1szl\u00f3 B\u00e9nes",
+          "count": 2
+        },
+        {
+          "from": "Martin D\u00fabravka",
+          "to": "Denis Vavro",
+          "count": 2
+        },
+        {
+          "from": "Martin D\u00fabravka",
+          "to": "Peter Pekar\u00edk",
+          "count": 1
+        },
+        {
+          "from": "Milan \u0160kriniar",
+          "to": "Denis Vavro",
+          "count": 1
+        },
+        {
+          "from": "Mat\u00fa\u0161 Bero",
+          "to": "Stanislav Lobotka",
+          "count": 1
+        },
+        {
+          "from": "L\u00e1szl\u00f3 B\u00e9nes",
+          "to": "Martin D\u00fabravka",
+          "count": 1
+        },
+        {
+          "from": "Norbert Gy\u00f6mb\u00e9r",
+          "to": "Peter Pekar\u00edk",
+          "count": 1
+        },
+        {
+          "from": "Mat\u00fa\u0161 Bero",
+          "to": "Denis Vavro",
+          "count": 1
+        },
+        {
+          "from": "Mat\u00fa\u0161 Bero",
+          "to": "Peter Pekar\u00edk",
+          "count": 1
+        },
+        {
+          "from": "L\u00e1szl\u00f3 B\u00e9nes",
+          "to": "D\u00e1vid Hancko",
+          "count": 1
+        },
+        {
+          "from": "Norbert Gy\u00f6mb\u00e9r",
+          "to": "Martin D\u00fabravka",
+          "count": 1
+        },
+        {
+          "from": "L\u00e1szl\u00f3 B\u00e9nes",
+          "to": "Norbert Gy\u00f6mb\u00e9r",
+          "count": 1
+        },
+        {
+          "from": "Denis Vavro",
+          "to": "Tom\u00e1\u0161 Suslov",
+          "count": 1
+        },
+        {
+          "from": "Tom\u00e1\u0161 Suslov",
+          "to": "Mat\u00fa\u0161 Bero",
+          "count": 1
+        },
+        {
+          "from": "Denis Vavro",
+          "to": "Peter Pekar\u00edk",
+          "count": 1
+        },
+        {
+          "from": "Peter Pekar\u00edk",
+          "to": "L\u00e1szl\u00f3 B\u00e9nes",
+          "count": 1
+        },
+        {
+          "from": "Stanislav Lobotka",
+          "to": "Tom\u00e1\u0161 Suslov",
+          "count": 1
+        },
+        {
+          "from": "D\u00e1vid Hancko",
+          "to": "Tom\u00e1\u0161 Suslov",
+          "count": 1
+        },
+        {
+          "from": "Norbert Gy\u00f6mb\u00e9r",
+          "to": "Tom\u00e1\u0161 Suslov",
+          "count": 1
+        },
+        {
+          "from": "Tom\u00e1\u0161 Suslov",
+          "to": "R\u00f3bert Bo\u017een\u00edk",
+          "count": 1
+        },
+        {
+          "from": "R\u00f3bert Bo\u017een\u00edk",
+          "to": "L\u00e1szl\u00f3 B\u00e9nes",
+          "count": 1
+        },
+        {
+          "from": "L\u00e1szl\u00f3 B\u00e9nes",
+          "to": "Peter Pekar\u00edk",
+          "count": 1
+        },
+        {
+          "from": "D\u00e1vid Hancko",
+          "to": "Norbert Gy\u00f6mb\u00e9r",
+          "count": 1
+        },
+        {
+          "from": "Norbert Gy\u00f6mb\u00e9r",
+          "to": "R\u00f3bert Bo\u017een\u00edk",
+          "count": 1
+        },
+        {
+          "from": "R\u00f3bert Bo\u017een\u00edk",
+          "to": "Mat\u00fa\u0161 Bero",
+          "count": 1
+        },
+        {
+          "from": "Stanislav Lobotka",
+          "to": "Peter Pekar\u00edk",
+          "count": 1
+        },
+        {
+          "from": "Stanislav Lobotka",
+          "to": "R\u00f3bert Bo\u017een\u00edk",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "label": "108'\u2013FT",
+      "nodes": [
+        {
+          "player": "Denis Vavro",
+          "display_name": "Denis Vavro",
+          "x": 69.9,
+          "y": 50.92,
+          "passes": 6
+        },
+        {
+          "player": "D\u00e1vid Hancko",
+          "display_name": "D\u00e1vid Hancko",
+          "x": 87.8,
+          "y": 7.45,
+          "passes": 2
+        },
+        {
+          "player": "L\u00e1szl\u00f3 B\u00e9nes",
+          "display_name": "L\u00e1szl\u00f3 B\u00e9nes",
+          "x": 67.5,
+          "y": 16.95,
+          "passes": 2
+        },
+        {
+          "player": "Martin D\u00fabravka",
+          "display_name": "Martin D\u00fabravka",
+          "x": 24.47,
+          "y": 55.2,
+          "passes": 3
+        },
+        {
+          "player": "Mat\u00fa\u0161 Bero",
+          "display_name": "Mat\u00fa\u0161 Bero",
+          "x": 70.56,
+          "y": 72.65,
+          "passes": 11
+        },
+        {
+          "player": "Milan \u0160kriniar",
+          "display_name": "Milan \u0160kriniar",
+          "x": 66.27,
+          "y": 26.33,
+          "passes": 6
+        },
+        {
+          "player": "Norbert Gy\u00f6mb\u00e9r",
+          "display_name": "Norbert Gy\u00f6mb\u00e9r",
+          "x": 60.91,
+          "y": 53.27,
+          "passes": 9
+        },
+        {
+          "player": "Stanislav Lobotka",
+          "display_name": "Stanislav Lobotka",
+          "x": 69.99,
+          "y": 33.31,
+          "passes": 17
+        },
+        {
+          "player": "Tom\u00e1\u0161 Suslov",
+          "display_name": "Tom\u00e1\u0161 Suslov",
+          "x": 76.8,
+          "y": 67.57,
+          "passes": 9
+        },
+        {
+          "player": "\u013dubom\u00edr Tupta",
+          "display_name": "\u013dubom\u00edr Tupta",
+          "x": 87.67,
+          "y": 17.32,
+          "passes": 4
+        }
+      ],
+      "edges": [
+        {
+          "from": "Mat\u00fa\u0161 Bero",
+          "to": "Tom\u00e1\u0161 Suslov",
+          "count": 6
+        },
+        {
+          "from": "Norbert Gy\u00f6mb\u00e9r",
+          "to": "Stanislav Lobotka",
+          "count": 4
+        },
+        {
+          "from": "Stanislav Lobotka",
+          "to": "Milan \u0160kriniar",
+          "count": 4
+        },
+        {
+          "from": "Stanislav Lobotka",
+          "to": "Denis Vavro",
+          "count": 3
+        },
+        {
+          "from": "Denis Vavro",
+          "to": "Mat\u00fa\u0161 Bero",
+          "count": 3
+        },
+        {
+          "from": "Stanislav Lobotka",
+          "to": "\u013dubom\u00edr Tupta",
+          "count": 3
+        },
+        {
+          "from": "Milan \u0160kriniar",
+          "to": "Stanislav Lobotka",
+          "count": 3
+        },
+        {
+          "from": "Tom\u00e1\u0161 Suslov",
+          "to": "Stanislav Lobotka",
+          "count": 2
+        },
+        {
+          "from": "Stanislav Lobotka",
+          "to": "Mat\u00fa\u0161 Bero",
+          "count": 2
+        },
+        {
+          "from": "Mat\u00fa\u0161 Bero",
+          "to": "Stanislav Lobotka",
+          "count": 2
+        },
+        {
+          "from": "Stanislav Lobotka",
+          "to": "R\u00f3bert Bo\u017een\u00edk",
+          "count": 2
+        },
+        {
+          "from": "Mat\u00fa\u0161 Bero",
+          "to": "Norbert Gy\u00f6mb\u00e9r",
+          "count": 2
+        },
+        {
+          "from": "Norbert Gy\u00f6mb\u00e9r",
+          "to": "Denis Vavro",
+          "count": 2
+        },
+        {
+          "from": "Tom\u00e1\u0161 Suslov",
+          "to": "Mat\u00fa\u0161 Bero",
+          "count": 2
+        },
+        {
+          "from": "Tom\u00e1\u0161 Suslov",
+          "to": "Norbert Gy\u00f6mb\u00e9r",
+          "count": 2
+        },
+        {
+          "from": "Denis Vavro",
+          "to": "Tom\u00e1\u0161 Suslov",
+          "count": 2
+        },
+        {
+          "from": "Martin D\u00fabravka",
+          "to": "Norbert Gy\u00f6mb\u00e9r",
+          "count": 2
+        },
+        {
+          "from": "\u013dubom\u00edr Tupta",
+          "to": "Stanislav Lobotka",
+          "count": 2
+        },
+        {
+          "from": "Stanislav Lobotka",
+          "to": "Norbert Gy\u00f6mb\u00e9r",
+          "count": 2
+        },
+        {
+          "from": "L\u00e1szl\u00f3 B\u00e9nes",
+          "to": "Stanislav Lobotka",
+          "count": 1
+        },
+        {
+          "from": "Stanislav Lobotka",
+          "to": "Tom\u00e1\u0161 Suslov",
+          "count": 1
+        },
+        {
+          "from": "Norbert Gy\u00f6mb\u00e9r",
+          "to": "Mat\u00fa\u0161 Bero",
+          "count": 1
+        },
+        {
+          "from": "\u013dubom\u00edr Tupta",
+          "to": "D\u00e1vid Hancko",
+          "count": 1
+        },
+        {
+          "from": "D\u00e1vid Hancko",
+          "to": "Stanislav Lobotka",
+          "count": 1
+        },
+        {
+          "from": "Tom\u00e1\u0161 Suslov",
+          "to": "Denis Vavro",
+          "count": 1
+        },
+        {
+          "from": "Martin D\u00fabravka",
+          "to": "Stanislav Lobotka",
+          "count": 1
+        },
+        {
+          "from": "Mat\u00fa\u0161 Bero",
+          "to": "Denis Vavro",
+          "count": 1
+        },
+        {
+          "from": "Denis Vavro",
+          "to": "Milan \u0160kriniar",
+          "count": 1
+        },
+        {
+          "from": "Milan \u0160kriniar",
+          "to": "Martin D\u00fabravka",
+          "count": 1
+        },
+        {
+          "from": "Milan \u0160kriniar",
+          "to": "D\u00e1vid Hancko",
+          "count": 1
+        },
+        {
+          "from": "D\u00e1vid Hancko",
+          "to": "\u013dubom\u00edr Tupta",
+          "count": 1
+        },
+        {
+          "from": "Milan \u0160kriniar",
+          "to": "Mat\u00fa\u0161 Bero",
+          "count": 1
+        },
+        {
+          "from": "Norbert Gy\u00f6mb\u00e9r",
+          "to": "D\u00e1vid Hancko",
+          "count": 1
+        },
+        {
+          "from": "L\u00e1szl\u00f3 B\u00e9nes",
+          "to": "Milan \u0160kriniar",
+          "count": 1
+        },
+        {
+          "from": "\u013dubom\u00edr Tupta",
+          "to": "Denis Vavro",
+          "count": 1
+        },
+        {
+          "from": "Tom\u00e1\u0161 Suslov",
+          "to": "Milan \u0160kriniar",
+          "count": 1
+        },
+        {
+          "from": "Norbert Gy\u00f6mb\u00e9r",
+          "to": "Tom\u00e1\u0161 Suslov",
+          "count": 1
+        },
+        {
+          "from": "Tom\u00e1\u0161 Suslov",
+          "to": "D\u00e1vid Hancko",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "substitutions": [
+    {
+      "minute": 60,
+      "player_off": "Luk\u00e1\u0161 Harasl\u00edn",
+      "player_on": "Tom\u00e1\u0161 Suslov"
+    },
+    {
+      "minute": 60,
+      "player_off": "David Strelec",
+      "player_on": "R\u00f3bert Bo\u017een\u00edk"
+    },
+    {
+      "minute": 80,
+      "player_off": "Juraj Kucka",
+      "player_on": "Mat\u00fa\u0161 Bero"
+    },
+    {
+      "minute": 81,
+      "player_off": "Ondrej Duda",
+      "player_on": "L\u00e1szl\u00f3 B\u00e9nes"
+    },
+    {
+      "minute": 92,
+      "player_off": "Ivan Schranz",
+      "player_on": "Norbert Gy\u00f6mb\u00e9r"
+    },
+    {
+      "minute": 108,
+      "player_off": "Peter Pekar\u00edk",
+      "player_on": "\u013dubom\u00edr Tupta"
+    }
+  ],
+  "metadata": {
+    "match_id": 3941017,
+    "team": "Slovakia",
+    "filter": "completed passes, per substitution window",
+    "competition": "UEFA Euro 2024",
+    "match_label": "England vs Slovakia"
+  }
+}

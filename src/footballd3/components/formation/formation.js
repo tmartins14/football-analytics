@@ -11,26 +11,35 @@
 //   const { update } = createFormation(pitch, data);
 //   update(1); // transition to formation period index 1
 
+import * as d3 from "d3";
 import { createPitch } from "../pitch/pitch.js?v=3";
 
 const NODE_R = 14;
 
-const _tooltip = document.createElement("div");
-Object.assign(_tooltip.style, {
-  position:      "fixed",
-  pointerEvents: "none",
-  display:       "none",
-  background:    "#FAF7F0",
-  border:        "1px solid #E5E5E5",
-  borderRadius:  "2px",
-  padding:       "8px 10px",
-  fontFamily:    "Geist Mono, monospace",
-  fontSize:      "12px",
-  lineHeight:    "1.6",
-  color:         "#171717",
-  whiteSpace:    "nowrap",
-});
-document.body.appendChild(_tooltip);
+// Created lazily (not at module scope) so this file can be imported in a
+// server-rendering context without touching `document` on the server.
+let _tooltip;
+function getTooltip() {
+  if (!_tooltip) {
+    _tooltip = document.createElement("div");
+    Object.assign(_tooltip.style, {
+      position:      "fixed",
+      pointerEvents: "none",
+      display:       "none",
+      background:    "#FAF7F0",
+      border:        "1px solid #E5E5E5",
+      borderRadius:  "2px",
+      padding:       "8px 10px",
+      fontFamily:    "Geist Mono, monospace",
+      fontSize:      "12px",
+      lineHeight:    "1.6",
+      color:         "#171717",
+      whiteSpace:    "nowrap",
+    });
+    document.body.appendChild(_tooltip);
+  }
+  return _tooltip;
+}
 
 
 /**
@@ -49,8 +58,9 @@ document.body.appendChild(_tooltip);
  * @param {number} bounds.maxX - Maximum screen X for node center.
  * @param {number} bounds.minY - Minimum screen Y for node center.
  * @param {number} bounds.maxY - Maximum screen Y for node center.
+ * @param {string} backgroundColor - Stroke color separating nodes from the pitch surface.
  */
-function renderPeriod(g, px, period, nodeColor, labelColor, bounds) {
+function renderPeriod(g, px, period, nodeColor, labelColor, bounds, backgroundColor) {
   g.selectAll(".fm-player").remove();
 
   period.players.forEach(player => {
@@ -66,7 +76,7 @@ function renderPeriod(g, px, period, nodeColor, labelColor, bounds) {
       .attr("cx", cx).attr("cy", cy)
       .attr("r", NODE_R)
       .attr("fill", nodeColor)
-      .attr("stroke", "#FAF7F0")
+      .attr("stroke", backgroundColor)
       .attr("stroke-width", 1.5);
 
     // Jersey number inside the circle.
@@ -93,17 +103,19 @@ function renderPeriod(g, px, period, nodeColor, labelColor, bounds) {
 
     playerG
       .on("mouseover", () => {
-        _tooltip.innerHTML =
+        const tooltip = getTooltip();
+        tooltip.innerHTML =
           `<span style="font-weight:600">${player.display_name}</span><br>` +
           `#${player.jersey_number} &middot; ${player.position}`;
-        _tooltip.style.display = "block";
+        tooltip.style.display = "block";
       })
       .on("mousemove", event => {
-        _tooltip.style.left = (event.clientX + 14) + "px";
-        _tooltip.style.top  = (event.clientY - 28) + "px";
+        const tooltip = getTooltip();
+        tooltip.style.left = (event.clientX + 14) + "px";
+        tooltip.style.top  = (event.clientY - 28) + "px";
       })
       .on("mouseout", () => {
-        _tooltip.style.display = "none";
+        getTooltip().style.display = "none";
       });
   });
 }
@@ -130,9 +142,12 @@ function renderPeriod(g, px, period, nodeColor, labelColor, bounds) {
  *   canonical slots, not measured positions.
  * @param {Object} [config] - Optional visual configuration.
  * @param {number}  [config.pxPerYard=7]          - Pixels per StatsBomb yard.
- * @param {string}  [config.theme="whiteboard"]    - Pitch theme ("whiteboard" or "green").
+ * @param {string|Object} [config.theme="whiteboard"] - Pitch theme ("whiteboard", "green", or a token object).
  * @param {string}  [config.nodeColor="#1E3A5F"]   - Player circle fill color.
  * @param {string}  [config.labelColor="#171717"]  - Surname label fill color.
+ * @param {string}  [config.backgroundColor="#FAF7F0"] - Stroke color separating player
+ *   circles from the pitch surface — pass the current theme's page background so the
+ *   separator matches in both light and dark themes.
  * @returns {{ svg: d3.Selection, g: d3.Selection, px: Function, update: Function }}
  *   svg — the SVG element.
  *   g   — the pitch group; append further overlays here.
@@ -141,10 +156,11 @@ function renderPeriod(g, px, period, nodeColor, labelColor, bounds) {
  */
 export function createFormation(selection, data, config = {}) {
   const {
-    pxPerYard  = 7,
-    theme      = "whiteboard",
-    nodeColor  = "#1E3A5F",
-    labelColor = "#171717",
+    pxPerYard       = 7,
+    theme           = "whiteboard",
+    nodeColor       = "#1E3A5F",
+    labelColor      = "#171717",
+    backgroundColor = "#FAF7F0",
   } = config;
 
   const { svg, g, px, width, height, config: pitchCfg } = createPitch(selection, {
@@ -165,7 +181,7 @@ export function createFormation(selection, data, config = {}) {
     maxY: height - pad - NODE_R,
   };
 
-  renderPeriod(g, px, data.periods[0], nodeColor, labelColor, bounds);
+  renderPeriod(g, px, data.periods[0], nodeColor, labelColor, bounds, backgroundColor);
 
   /**
    * Transition the diagram to a different formation period.
@@ -177,7 +193,7 @@ export function createFormation(selection, data, config = {}) {
   function update(periodIdx) {
     const period = data.periods[periodIdx];
     if (!period) return;
-    renderPeriod(g, px, period, nodeColor, labelColor, bounds);
+    renderPeriod(g, px, period, nodeColor, labelColor, bounds, backgroundColor);
   }
 
   return { svg, g, px, update };

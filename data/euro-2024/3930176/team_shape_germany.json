@@ -1,0 +1,950 @@
+{
+  "on_ball": {
+    "periods": [
+      {
+        "from_minute": 0,
+        "to_minute": 60,
+        "players_in": [
+          "Manuel Neuer",
+          "Joshua Kimmich",
+          "Antonio R\u00fcdiger",
+          "Jonathan Tah",
+          "Maximilian Mittelst\u00e4dt",
+          "Robert Andrich",
+          "Toni Kroos",
+          "Jamal Musiala",
+          "\u0130lkay G\u00fcndo\u011fan",
+          "Florian Wirtz",
+          "Kai Havertz"
+        ],
+        "players_out": [],
+        "nodes": [
+          {
+            "player_id": 5574,
+            "player": "Toni Kroos",
+            "display_name": "Toni Kroos",
+            "x": 54.4,
+            "y": 39.41,
+            "event_count": 109
+          },
+          {
+            "player_id": 5579,
+            "player": "Joshua Kimmich",
+            "display_name": "Joshua Kimmich",
+            "x": 65.78,
+            "y": 65.66,
+            "event_count": 84
+          },
+          {
+            "player_id": 3167,
+            "player": "Antonio R\u00fcdiger",
+            "display_name": "Antonio R\u00fcdiger",
+            "x": 43.81,
+            "y": 56.1,
+            "event_count": 80
+          },
+          {
+            "player_id": 9195,
+            "player": "Robert Andrich",
+            "display_name": "Robert Andrich",
+            "x": 59.02,
+            "y": 40.38,
+            "event_count": 73
+          },
+          {
+            "player_id": 40724,
+            "player": "Florian Wirtz",
+            "display_name": "Florian Wirtz",
+            "x": 63.84,
+            "y": 36.72,
+            "event_count": 70
+          },
+          {
+            "player_id": 12407,
+            "player": "Maximilian Mittelst\u00e4dt",
+            "display_name": "Maximilian Mittelst\u00e4dt",
+            "x": 56.11,
+            "y": 8.98,
+            "event_count": 64
+          },
+          {
+            "player_id": 8221,
+            "player": "Jonathan Tah",
+            "display_name": "Jonathan Tah",
+            "x": 37.94,
+            "y": 27.22,
+            "event_count": 58
+          },
+          {
+            "player_id": 8966,
+            "player": "Kai Havertz",
+            "display_name": "Kai Havertz",
+            "x": 69.6,
+            "y": 51.2,
+            "event_count": 48
+          },
+          {
+            "player_id": 39565,
+            "player": "Jamal Musiala",
+            "display_name": "Jamal Musiala",
+            "x": 72.45,
+            "y": 36.47,
+            "event_count": 42
+          },
+          {
+            "player_id": 5570,
+            "player": "Manuel Neuer",
+            "display_name": "Manuel Neuer",
+            "x": 9.97,
+            "y": 43.56,
+            "event_count": 41
+          },
+          {
+            "player_id": 10287,
+            "player": "\u0130lkay G\u00fcndo\u011fan",
+            "display_name": "\u0130lkay G\u00fcndo\u011fan",
+            "x": 68.73,
+            "y": 40.73,
+            "event_count": 34
+          }
+        ],
+        "hull": [
+          [
+            9.97,
+            43.56
+          ],
+          [
+            56.11,
+            8.98
+          ],
+          [
+            72.45,
+            36.47
+          ],
+          [
+            69.6,
+            51.2
+          ],
+          [
+            65.78,
+            65.66
+          ]
+        ]
+      },
+      {
+        "from_minute": 60,
+        "to_minute": 65,
+        "players_in": [
+          "Nico Schlotterbeck",
+          "David Raum"
+        ],
+        "players_out": [
+          "Jonathan Tah",
+          "Maximilian Mittelst\u00e4dt"
+        ],
+        "nodes": [
+          {
+            "player_id": 5574,
+            "player": "Toni Kroos",
+            "display_name": "Toni Kroos",
+            "x": 72.1,
+            "y": 43.77,
+            "event_count": 6
+          },
+          {
+            "player_id": 8966,
+            "player": "Kai Havertz",
+            "display_name": "Kai Havertz",
+            "x": 93.02,
+            "y": 54.5,
+            "event_count": 6
+          },
+          {
+            "player_id": 12034,
+            "player": "David Raum",
+            "display_name": "David Raum",
+            "x": 46.53,
+            "y": 16.1,
+            "event_count": 3
+          },
+          {
+            "player_id": 39565,
+            "player": "Jamal Musiala",
+            "display_name": "Jamal Musiala",
+            "x": 67.53,
+            "y": 17.5,
+            "event_count": 3
+          },
+          {
+            "player_id": 40724,
+            "player": "Florian Wirtz",
+            "display_name": "Florian Wirtz",
+            "x": 95.3,
+            "y": 73.13,
+            "event_count": 3
+          },
+          {
+            "player_id": 5579,
+            "player": "Joshua Kimmich",
+            "display_name": "Joshua Kimmich",
+            "x": 94.83,
+            "y": 61.1,
+            "event_count": 3
+          },
+          {
+            "player_id": 10287,
+            "player": "\u0130lkay G\u00fcndo\u011fan",
+            "display_name": "\u0130lkay G\u00fcndo\u011fan",
+            "x": 110.0,
+            "y": 40.4,
+            "event_count": 2
+          }
+        ],
+        "hull": [
+          [
+            95.3,
+            73.13
+          ],
+          [
+            46.53,
+            16.1
+          ],
+          [
+            67.53,
+            17.5
+          ],
+          [
+            110.0,
+            40.4
+          ]
+        ]
+      },
+      {
+        "from_minute": 65,
+        "to_minute": 75,
+        "players_in": [
+          "Maximilian Beier"
+        ],
+        "players_out": [
+          "Robert Andrich"
+        ],
+        "nodes": [
+          {
+            "player_id": 5579,
+            "player": "Joshua Kimmich",
+            "display_name": "Joshua Kimmich",
+            "x": 60.43,
+            "y": 59.11,
+            "event_count": 32
+          },
+          {
+            "player_id": 10287,
+            "player": "\u0130lkay G\u00fcndo\u011fan",
+            "display_name": "\u0130lkay G\u00fcndo\u011fan",
+            "x": 70.24,
+            "y": 44.52,
+            "event_count": 23
+          },
+          {
+            "player_id": 3167,
+            "player": "Antonio R\u00fcdiger",
+            "display_name": "Antonio R\u00fcdiger",
+            "x": 53.67,
+            "y": 58.09,
+            "event_count": 22
+          },
+          {
+            "player_id": 39565,
+            "player": "Jamal Musiala",
+            "display_name": "Jamal Musiala",
+            "x": 70.59,
+            "y": 28.79,
+            "event_count": 17
+          },
+          {
+            "player_id": 5570,
+            "player": "Manuel Neuer",
+            "display_name": "Manuel Neuer",
+            "x": 9.55,
+            "y": 42.38,
+            "event_count": 14
+          },
+          {
+            "player_id": 5574,
+            "player": "Toni Kroos",
+            "display_name": "Toni Kroos",
+            "x": 53.89,
+            "y": 46.79,
+            "event_count": 14
+          },
+          {
+            "player_id": 24118,
+            "player": "Nico Schlotterbeck",
+            "display_name": "Nico Schlotterbeck",
+            "x": 50.09,
+            "y": 39.3,
+            "event_count": 11
+          },
+          {
+            "player_id": 40724,
+            "player": "Florian Wirtz",
+            "display_name": "Florian Wirtz",
+            "x": 78.65,
+            "y": 45.14,
+            "event_count": 11
+          },
+          {
+            "player_id": 35242,
+            "player": "Maximilian Beier",
+            "display_name": "Maximilian Beier",
+            "x": 90.99,
+            "y": 36.01,
+            "event_count": 7
+          },
+          {
+            "player_id": 8966,
+            "player": "Kai Havertz",
+            "display_name": "Kai Havertz",
+            "x": 84.04,
+            "y": 53.01,
+            "event_count": 7
+          },
+          {
+            "player_id": 12034,
+            "player": "David Raum",
+            "display_name": "David Raum",
+            "x": 37.97,
+            "y": 5.87,
+            "event_count": 3
+          }
+        ],
+        "hull": [
+          [
+            9.55,
+            42.38
+          ],
+          [
+            37.97,
+            5.87
+          ],
+          [
+            90.99,
+            36.01
+          ],
+          [
+            84.04,
+            53.01
+          ],
+          [
+            60.43,
+            59.11
+          ],
+          [
+            53.67,
+            58.09
+          ]
+        ]
+      },
+      {
+        "from_minute": 75,
+        "to_minute": 95,
+        "players_in": [
+          "Leroy San\u00e9",
+          "Niclas F\u00fcllkrug"
+        ],
+        "players_out": [
+          "Florian Wirtz",
+          "Jamal Musiala"
+        ],
+        "nodes": [
+          {
+            "player_id": 12034,
+            "player": "David Raum",
+            "display_name": "David Raum",
+            "x": 71.91,
+            "y": 7.69,
+            "event_count": 30
+          },
+          {
+            "player_id": 5574,
+            "player": "Toni Kroos",
+            "display_name": "Toni Kroos",
+            "x": 56.56,
+            "y": 25.19,
+            "event_count": 30
+          },
+          {
+            "player_id": 3167,
+            "player": "Antonio R\u00fcdiger",
+            "display_name": "Antonio R\u00fcdiger",
+            "x": 54.66,
+            "y": 48.48,
+            "event_count": 18
+          },
+          {
+            "player_id": 5579,
+            "player": "Joshua Kimmich",
+            "display_name": "Joshua Kimmich",
+            "x": 57.94,
+            "y": 65.74,
+            "event_count": 16
+          },
+          {
+            "player_id": 10287,
+            "player": "\u0130lkay G\u00fcndo\u011fan",
+            "display_name": "\u0130lkay G\u00fcndo\u011fan",
+            "x": 65.45,
+            "y": 41.37,
+            "event_count": 15
+          },
+          {
+            "player_id": 3053,
+            "player": "Leroy San\u00e9",
+            "display_name": "Leroy San\u00e9",
+            "x": 65.51,
+            "y": 65.08,
+            "event_count": 15
+          },
+          {
+            "player_id": 35242,
+            "player": "Maximilian Beier",
+            "display_name": "Maximilian Beier",
+            "x": 98.72,
+            "y": 17.1,
+            "event_count": 13
+          },
+          {
+            "player_id": 24118,
+            "player": "Nico Schlotterbeck",
+            "display_name": "Nico Schlotterbeck",
+            "x": 49.61,
+            "y": 32.87,
+            "event_count": 10
+          },
+          {
+            "player_id": 8966,
+            "player": "Kai Havertz",
+            "display_name": "Kai Havertz",
+            "x": 82.57,
+            "y": 55.68,
+            "event_count": 9
+          },
+          {
+            "player_id": 5570,
+            "player": "Manuel Neuer",
+            "display_name": "Manuel Neuer",
+            "x": 16.78,
+            "y": 32.57,
+            "event_count": 6
+          },
+          {
+            "player_id": 8546,
+            "player": "Niclas F\u00fcllkrug",
+            "display_name": "Niclas F\u00fcllkrug",
+            "x": 105.07,
+            "y": 48.67,
+            "event_count": 3
+          }
+        ],
+        "hull": [
+          [
+            16.78,
+            32.57
+          ],
+          [
+            71.91,
+            7.69
+          ],
+          [
+            98.72,
+            17.1
+          ],
+          [
+            105.07,
+            48.67
+          ],
+          [
+            65.51,
+            65.08
+          ],
+          [
+            57.94,
+            65.74
+          ]
+        ]
+      }
+    ]
+  },
+  "off_ball": {
+    "density_grid": {
+      "cols": 24,
+      "rows": 16,
+      "values": [
+        [
+          0.1622,
+          0.1911,
+          0.2207,
+          0.2501,
+          0.2784,
+          0.3047,
+          0.328,
+          0.3478,
+          0.3634,
+          0.3746,
+          0.3811,
+          0.3831,
+          0.3805,
+          0.3736,
+          0.3627,
+          0.3481,
+          0.3302,
+          0.3093,
+          0.2859,
+          0.2605,
+          0.2337,
+          0.2062,
+          0.1787,
+          0.152
+        ],
+        [
+          0.2105,
+          0.2479,
+          0.2862,
+          0.3244,
+          0.3612,
+          0.3953,
+          0.4257,
+          0.4515,
+          0.472,
+          0.4867,
+          0.4956,
+          0.4984,
+          0.4955,
+          0.487,
+          0.4733,
+          0.4549,
+          0.4321,
+          0.4055,
+          0.3755,
+          0.3429,
+          0.3084,
+          0.2729,
+          0.2372,
+          0.2024
+        ],
+        [
+          0.2614,
+          0.3077,
+          0.3551,
+          0.4024,
+          0.4479,
+          0.4902,
+          0.5279,
+          0.56,
+          0.5856,
+          0.6042,
+          0.6154,
+          0.6194,
+          0.6163,
+          0.6064,
+          0.59,
+          0.5678,
+          0.5402,
+          0.5078,
+          0.4712,
+          0.4313,
+          0.3889,
+          0.345,
+          0.3008,
+          0.2575
+        ],
+        [
+          0.3112,
+          0.366,
+          0.4223,
+          0.4783,
+          0.5322,
+          0.5823,
+          0.6271,
+          0.6653,
+          0.6959,
+          0.7182,
+          0.7321,
+          0.7373,
+          0.7342,
+          0.7231,
+          0.7045,
+          0.6789,
+          0.6469,
+          0.6091,
+          0.5663,
+          0.5195,
+          0.4695,
+          0.4176,
+          0.3651,
+          0.3135
+        ],
+        [
+          0.3555,
+          0.4179,
+          0.4818,
+          0.5454,
+          0.6067,
+          0.6638,
+          0.7149,
+          0.7585,
+          0.7936,
+          0.8195,
+          0.8358,
+          0.8425,
+          0.8397,
+          0.8278,
+          0.8074,
+          0.7791,
+          0.7434,
+          0.7011,
+          0.653,
+          0.6,
+          0.5434,
+          0.4845,
+          0.4247,
+          0.3655
+        ],
+        [
+          0.3899,
+          0.4581,
+          0.528,
+          0.5975,
+          0.6646,
+          0.7271,
+          0.7832,
+          0.8313,
+          0.8703,
+          0.8992,
+          0.9178,
+          0.9258,
+          0.9236,
+          0.9115,
+          0.8899,
+          0.8596,
+          0.8212,
+          0.7754,
+          0.7232,
+          0.6656,
+          0.6038,
+          0.5392,
+          0.4735,
+          0.4084
+        ],
+        [
+          0.4105,
+          0.4822,
+          0.5557,
+          0.629,
+          0.6998,
+          0.766,
+          0.8255,
+          0.8768,
+          0.9186,
+          0.95,
+          0.9704,
+          0.9799,
+          0.9785,
+          0.9665,
+          0.9445,
+          0.9132,
+          0.8731,
+          0.8251,
+          0.7702,
+          0.7095,
+          0.6442,
+          0.576,
+          0.5064,
+          0.4374
+        ],
+        [
+          0.4146,
+          0.4873,
+          0.562,
+          0.6365,
+          0.7088,
+          0.7765,
+          0.8377,
+          0.8907,
+          0.9343,
+          0.9673,
+          0.9893,
+          1.0,
+          0.9995,
+          0.9882,
+          0.9664,
+          0.9349,
+          0.8943,
+          0.8455,
+          0.7895,
+          0.7274,
+          0.6606,
+          0.5908,
+          0.5196,
+          0.449
+        ],
+        [
+          0.4019,
+          0.4729,
+          0.5461,
+          0.6194,
+          0.6907,
+          0.7578,
+          0.8189,
+          0.8721,
+          0.9162,
+          0.95,
+          0.973,
+          0.9848,
+          0.9854,
+          0.975,
+          0.9541,
+          0.9233,
+          0.8833,
+          0.8349,
+          0.7793,
+          0.7177,
+          0.6515,
+          0.5823,
+          0.5118,
+          0.442
+        ],
+        [
+          0.3738,
+          0.4407,
+          0.5099,
+          0.5796,
+          0.6478,
+          0.7123,
+          0.7714,
+          0.8233,
+          0.8667,
+          0.9004,
+          0.9238,
+          0.9363,
+          0.938,
+          0.9289,
+          0.9094,
+          0.8801,
+          0.8417,
+          0.7952,
+          0.7416,
+          0.6822,
+          0.6184,
+          0.552,
+          0.4845,
+          0.4178
+        ],
+        [
+          0.3337,
+          0.3945,
+          0.4578,
+          0.5218,
+          0.5848,
+          0.6449,
+          0.7004,
+          0.7495,
+          0.7909,
+          0.8236,
+          0.8466,
+          0.8595,
+          0.8621,
+          0.8545,
+          0.8369,
+          0.8099,
+          0.7742,
+          0.7308,
+          0.6807,
+          0.6252,
+          0.5657,
+          0.5039,
+          0.4413,
+          0.3797
+        ],
+        [
+          0.2861,
+          0.3393,
+          0.3951,
+          0.452,
+          0.5083,
+          0.5624,
+          0.6127,
+          0.6577,
+          0.696,
+          0.7266,
+          0.7486,
+          0.7614,
+          0.7648,
+          0.7587,
+          0.7434,
+          0.7194,
+          0.6874,
+          0.6482,
+          0.6029,
+          0.5527,
+          0.4991,
+          0.4435,
+          0.3874,
+          0.3324
+        ],
+        [
+          0.2355,
+          0.2804,
+          0.3278,
+          0.3765,
+          0.425,
+          0.472,
+          0.5161,
+          0.5558,
+          0.59,
+          0.6176,
+          0.6378,
+          0.65,
+          0.6539,
+          0.6494,
+          0.6367,
+          0.6163,
+          0.5886,
+          0.5546,
+          0.5152,
+          0.4715,
+          0.4249,
+          0.3766,
+          0.3281,
+          0.2807
+        ],
+        [
+          0.186,
+          0.2225,
+          0.2613,
+          0.3013,
+          0.3415,
+          0.3808,
+          0.4178,
+          0.4515,
+          0.4808,
+          0.5047,
+          0.5225,
+          0.5336,
+          0.5378,
+          0.5348,
+          0.5248,
+          0.5082,
+          0.4854,
+          0.4572,
+          0.4243,
+          0.3879,
+          0.3489,
+          0.3087,
+          0.2683,
+          0.2289
+        ],
+        [
+          0.1409,
+          0.1693,
+          0.1997,
+          0.2313,
+          0.2632,
+          0.2946,
+          0.3245,
+          0.3518,
+          0.3758,
+          0.3956,
+          0.4105,
+          0.4202,
+          0.4242,
+          0.4225,
+          0.4152,
+          0.4024,
+          0.3846,
+          0.3623,
+          0.3362,
+          0.3071,
+          0.2761,
+          0.2439,
+          0.2116,
+          0.1802
+        ],
+        [
+          0.1022,
+          0.1234,
+          0.1461,
+          0.1699,
+          0.1941,
+          0.218,
+          0.241,
+          0.2621,
+          0.2808,
+          0.2963,
+          0.3083,
+          0.3163,
+          0.32,
+          0.3193,
+          0.3143,
+          0.305,
+          0.2918,
+          0.2752,
+          0.2555,
+          0.2336,
+          0.2099,
+          0.1854,
+          0.1608,
+          0.1368
+        ]
+      ]
+    },
+    "centroid": {
+      "x": 61.25,
+      "y": 38.19
+    },
+    "thirds_spine": [
+      {
+        "third": "defensive",
+        "x": 24.85,
+        "y": 36.52
+      },
+      {
+        "third": "middle",
+        "x": 59.02,
+        "y": 38.99
+      },
+      {
+        "third": "attacking",
+        "x": 96.6,
+        "y": 38.49
+      }
+    ],
+    "ellipse": {
+      "cx": 61.25,
+      "cy": 38.19,
+      "rx": 28.73,
+      "ry": 17.41,
+      "angle_deg": -177.8
+    },
+    "depth_line": {
+      "x": 79.87,
+      "percentile": 70
+    }
+  },
+  "metadata": {
+    "match_id": 3930176,
+    "team": "Germany",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Switzerland vs Germany",
+    "on_ball_event_count": 1055,
+    "on_ball_period_count": 4,
+    "off_ball_bandwidth_yards": 8.0,
+    "off_ball_depth_percentile": 70,
+    "off_ball_grid_cols": 24,
+    "off_ball_grid_rows": 16,
+    "phase_filter": "open_play_only",
+    "coordinate_system": "statsbomb_120x80_normalised_attack_right",
+    "coordinate_note": "Coordinates are normalised so the team always attacks right (increasing x). Raw StatsBomb events are flipped (x\u2192120-x, y\u219280-y) in periods where the team attacks left.",
+    "camera_caveat": "360 frames follow the ball; the visible subset of out-of-possession positions is biased toward areas near the ball. The camera artifact and the real defensive shape point the same direction \u2014 they cannot be cleanly separated."
+  }
+}

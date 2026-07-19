@@ -1,0 +1,125 @@
+{
+  "hulls": [
+    {
+      "sides": [
+        {
+          "side": "offense",
+          "team_name": "Germany",
+          "hull_vertices": [
+            [
+              101.10938276938192,
+              48.6521267339184
+            ],
+            [
+              101.63003679986895,
+              30.92451027282536
+            ],
+            [
+              108.0,
+              40.0
+            ],
+            [
+              102.01363778262568,
+              52.64331992488283
+            ]
+          ],
+          "area": 76.49,
+          "player_count": 5
+        },
+        {
+          "side": "defense",
+          "team_name": "opponent",
+          "hull_vertices": [
+            [
+              101.47529081799837,
+              54.30267830855366
+            ],
+            [
+              98.02539316773999,
+              39.60881609900794
+            ],
+            [
+              101.11663722953088,
+              32.920335679960345
+            ],
+            [
+              102.68145765798798,
+              30.504393433804704
+            ]
+          ],
+          "area": 51.41,
+          "player_count": 7
+        }
+      ],
+      "metadata": {
+        "match_id": 3940983,
+        "event_id": "b8618f78-ecfd-479d-8e22-6b10a899a256",
+        "minute": 52,
+        "possession_team_name": "Germany",
+        "actor_team_name": "Germany",
+        "include_keeper": false
+      }
+    },
+    {
+      "sides": [
+        {
+          "side": "offense",
+          "team_name": "Germany",
+          "hull_vertices": [
+            [
+              110.19999694824219,
+              28.899999618530273
+            ],
+            [
+              106.38938326154292,
+              45.779579893878086
+            ],
+            [
+              106.70671120708741,
+              40.09834712583641
+            ]
+          ],
+          "area": 8.15,
+          "player_count": 3
+        },
+        {
+          "side": "defense",
+          "team_name": "opponent",
+          "hull_vertices": [
+            [
+              93.41906726993915,
+              50.18141077842485
+            ],
+            [
+              99.93696053837411,
+              39.38768469034993
+            ],
+            [
+              108.15920153668287,
+              29.818180808405472
+            ],
+            [
+              108.01397761682027,
+              35.92664584578626
+            ]
+          ],
+          "area": 56.73,
+          "player_count": 4
+        }
+      ],
+      "metadata": {
+        "match_id": 3940983,
+        "event_id": "fb2a3700-38db-44d9-9c84-b7420fa27075",
+        "minute": 67,
+        "possession_team_name": "Germany",
+        "actor_team_name": "Germany",
+        "include_keeper": false
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3940983,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Germany vs Denmark"
+  }
+}

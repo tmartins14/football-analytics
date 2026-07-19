@@ -33,6 +33,8 @@
  * That linkage is additive; no infrastructure is built here for it.
  */
 
+import * as d3 from "d3";
+
 // ── Shared encoding (mirrors eventScatter.js) ─────────────────────────────────
 
 const _TYPE_CATEGORY = {

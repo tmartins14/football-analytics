@@ -1,0 +1,1266 @@
+{
+  "windows": [
+    {
+      "index": 0,
+      "label": "0'\u201361' (Starting XI)",
+      "nodes": [
+        {
+          "player": "Andriy Lunin",
+          "display_name": "Andriy Lunin",
+          "x": 11.89,
+          "y": 40.45,
+          "passes": 18
+        },
+        {
+          "player": "Artem Dovbyk",
+          "display_name": "Artem Dovbyk",
+          "x": 83.76,
+          "y": 48.23,
+          "passes": 7
+        },
+        {
+          "player": "Georgiy Sudakov",
+          "display_name": "Georgiy Sudakov",
+          "x": 65.31,
+          "y": 24.41,
+          "passes": 28
+        },
+        {
+          "player": "Illia Zabarnyi",
+          "display_name": "Ilya Zabarnyi",
+          "x": 49.39,
+          "y": 50.82,
+          "passes": 53
+        },
+        {
+          "player": "Mykhailo Mudryk",
+          "display_name": "Mykhailo Mudryk",
+          "x": 81.64,
+          "y": 14.61,
+          "passes": 18
+        },
+        {
+          "player": "Mykola Matvienko",
+          "display_name": "Mykola Matvienko",
+          "x": 47.95,
+          "y": 30.23,
+          "passes": 62
+        },
+        {
+          "player": "Mykola Shaparenko",
+          "display_name": "Mykola Shaparenko",
+          "x": 59.06,
+          "y": 50.03,
+          "passes": 56
+        },
+        {
+          "player": "Oleksandr Zinchenko",
+          "display_name": "Oleksandr Zinchenko",
+          "x": 60.74,
+          "y": 13.97,
+          "passes": 55
+        },
+        {
+          "player": "Taras Stepanenko",
+          "display_name": "Taras Stepanenko",
+          "x": 61.59,
+          "y": 34.5,
+          "passes": 48
+        },
+        {
+          "player": "Viktor Tsygankov",
+          "display_name": "Viktor Tsygankov",
+          "x": 78.42,
+          "y": 63.73,
+          "passes": 24
+        },
+        {
+          "player": "Yukhym Konoplya",
+          "display_name": "Yukhym Konoplya",
+          "x": 64.12,
+          "y": 68.29,
+          "passes": 30
+        }
+      ],
+      "edges": [
+        {
+          "from": "Mykola Matvienko",
+          "to": "Oleksandr Zinchenko",
+          "count": 20
+        },
+        {
+          "from": "Illia Zabarnyi",
+          "to": "Mykola Matvienko",
+          "count": 19
+        },
+        {
+          "from": "Oleksandr Zinchenko",
+          "to": "Taras Stepanenko",
+          "count": 16
+        },
+        {
+          "from": "Mykola Shaparenko",
+          "to": "Yukhym Konoplya",
+          "count": 12
+        },
+        {
+          "from": "Mykola Shaparenko",
+          "to": "Mykola Matvienko",
+          "count": 12
+        },
+        {
+          "from": "Taras Stepanenko",
+          "to": "Oleksandr Zinchenko",
+          "count": 12
+        },
+        {
+          "from": "Illia Zabarnyi",
+          "to": "Mykola Shaparenko",
+          "count": 11
+        },
+        {
+          "from": "Mykola Matvienko",
+          "to": "Illia Zabarnyi",
+          "count": 10
+        },
+        {
+          "from": "Taras Stepanenko",
+          "to": "Mykola Shaparenko",
+          "count": 10
+        },
+        {
+          "from": "Oleksandr Zinchenko",
+          "to": "Georgiy Sudakov",
+          "count": 10
+        },
+        {
+          "from": "Yukhym Konoplya",
+          "to": "Viktor Tsygankov",
+          "count": 10
+        },
+        {
+          "from": "Mykola Matvienko",
+          "to": "Taras Stepanenko",
+          "count": 9
+        },
+        {
+          "from": "Mykola Shaparenko",
+          "to": "Viktor Tsygankov",
+          "count": 9
+        },
+        {
+          "from": "Oleksandr Zinchenko",
+          "to": "Mykola Matvienko",
+          "count": 9
+        },
+        {
+          "from": "Illia Zabarnyi",
+          "to": "Yukhym Konoplya",
+          "count": 9
+        },
+        {
+          "from": "Taras Stepanenko",
+          "to": "Mykola Matvienko",
+          "count": 8
+        },
+        {
+          "from": "Andriy Lunin",
+          "to": "Illia Zabarnyi",
+          "count": 8
+        },
+        {
+          "from": "Georgiy Sudakov",
+          "to": "Mykhailo Mudryk",
+          "count": 8
+        },
+        {
+          "from": "Mykola Shaparenko",
+          "to": "Taras Stepanenko",
+          "count": 8
+        },
+        {
+          "from": "Mykola Shaparenko",
+          "to": "Illia Zabarnyi",
+          "count": 8
+        },
+        {
+          "from": "Taras Stepanenko",
+          "to": "Illia Zabarnyi",
+          "count": 7
+        },
+        {
+          "from": "Mykola Matvienko",
+          "to": "Mykola Shaparenko",
+          "count": 7
+        },
+        {
+          "from": "Oleksandr Zinchenko",
+          "to": "Illia Zabarnyi",
+          "count": 7
+        },
+        {
+          "from": "Illia Zabarnyi",
+          "to": "Andriy Lunin",
+          "count": 6
+        },
+        {
+          "from": "Andriy Lunin",
+          "to": "Mykola Matvienko",
+          "count": 6
+        },
+        {
+          "from": "Yukhym Konoplya",
+          "to": "Mykola Shaparenko",
+          "count": 6
+        },
+        {
+          "from": "Viktor Tsygankov",
+          "to": "Yukhym Konoplya",
+          "count": 6
+        },
+        {
+          "from": "Mykola Matvienko",
+          "to": "Georgiy Sudakov",
+          "count": 6
+        },
+        {
+          "from": "Georgiy Sudakov",
+          "to": "Oleksandr Zinchenko",
+          "count": 6
+        },
+        {
+          "from": "Oleksandr Zinchenko",
+          "to": "Mykhailo Mudryk",
+          "count": 6
+        },
+        {
+          "from": "Mykhailo Mudryk",
+          "to": "Taras Stepanenko",
+          "count": 6
+        },
+        {
+          "from": "Mykola Matvienko",
+          "to": "Andriy Lunin",
+          "count": 5
+        },
+        {
+          "from": "Viktor Tsygankov",
+          "to": "Georgiy Sudakov",
+          "count": 5
+        },
+        {
+          "from": "Viktor Tsygankov",
+          "to": "Mykola Shaparenko",
+          "count": 5
+        },
+        {
+          "from": "Oleksandr Zinchenko",
+          "to": "Mykola Shaparenko",
+          "count": 5
+        },
+        {
+          "from": "Yukhym Konoplya",
+          "to": "Mykola Matvienko",
+          "count": 5
+        },
+        {
+          "from": "Taras Stepanenko",
+          "to": "Georgiy Sudakov",
+          "count": 5
+        },
+        {
+          "from": "Viktor Tsygankov",
+          "to": "Taras Stepanenko",
+          "count": 5
+        },
+        {
+          "from": "Yukhym Konoplya",
+          "to": "Illia Zabarnyi",
+          "count": 5
+        },
+        {
+          "from": "Georgiy Sudakov",
+          "to": "Taras Stepanenko",
+          "count": 4
+        },
+        {
+          "from": "Mykhailo Mudryk",
+          "to": "Georgiy Sudakov",
+          "count": 4
+        },
+        {
+          "from": "Artem Dovbyk",
+          "to": "Viktor Tsygankov",
+          "count": 4
+        },
+        {
+          "from": "Mykhailo Mudryk",
+          "to": "Oleksandr Zinchenko",
+          "count": 4
+        },
+        {
+          "from": "Yukhym Konoplya",
+          "to": "Taras Stepanenko",
+          "count": 3
+        },
+        {
+          "from": "Viktor Tsygankov",
+          "to": "Illia Zabarnyi",
+          "count": 3
+        },
+        {
+          "from": "Georgiy Sudakov",
+          "to": "Mykola Matvienko",
+          "count": 3
+        },
+        {
+          "from": "Mykola Shaparenko",
+          "to": "Georgiy Sudakov",
+          "count": 3
+        },
+        {
+          "from": "Illia Zabarnyi",
+          "to": "Viktor Tsygankov",
+          "count": 3
+        },
+        {
+          "from": "Taras Stepanenko",
+          "to": "Yukhym Konoplya",
+          "count": 3
+        },
+        {
+          "from": "Mykola Matvienko",
+          "to": "Yukhym Konoplya",
+          "count": 2
+        },
+        {
+          "from": "Oleksandr Zinchenko",
+          "to": "Artem Dovbyk",
+          "count": 2
+        },
+        {
+          "from": "Mykola Matvienko",
+          "to": "Mykhailo Mudryk",
+          "count": 2
+        },
+        {
+          "from": "Georgiy Sudakov",
+          "to": "Mykola Shaparenko",
+          "count": 2
+        },
+        {
+          "from": "Mykola Shaparenko",
+          "to": "Mykhailo Mudryk",
+          "count": 2
+        },
+        {
+          "from": "Georgiy Sudakov",
+          "to": "Viktor Tsygankov",
+          "count": 2
+        },
+        {
+          "from": "Illia Zabarnyi",
+          "to": "Georgiy Sudakov",
+          "count": 2
+        },
+        {
+          "from": "Georgiy Sudakov",
+          "to": "Illia Zabarnyi",
+          "count": 2
+        },
+        {
+          "from": "Mykhailo Mudryk",
+          "to": "Viktor Tsygankov",
+          "count": 2
+        },
+        {
+          "from": "Taras Stepanenko",
+          "to": "Viktor Tsygankov",
+          "count": 2
+        },
+        {
+          "from": "Artem Dovbyk",
+          "to": "Taras Stepanenko",
+          "count": 1
+        },
+        {
+          "from": "Georgiy Sudakov",
+          "to": "Artem Dovbyk",
+          "count": 1
+        },
+        {
+          "from": "Andriy Lunin",
+          "to": "Oleksandr Zinchenko",
+          "count": 1
+        },
+        {
+          "from": "Illia Zabarnyi",
+          "to": "Artem Dovbyk",
+          "count": 1
+        },
+        {
+          "from": "Mykola Matvienko",
+          "to": "Artem Dovbyk",
+          "count": 1
+        },
+        {
+          "from": "Mykola Shaparenko",
+          "to": "Oleksandr Zinchenko",
+          "count": 1
+        },
+        {
+          "from": "Illia Zabarnyi",
+          "to": "Taras Stepanenko",
+          "count": 1
+        },
+        {
+          "from": "Andriy Lunin",
+          "to": "Georgiy Sudakov",
+          "count": 1
+        },
+        {
+          "from": "Artem Dovbyk",
+          "to": "Oleksandr Zinchenko",
+          "count": 1
+        },
+        {
+          "from": "Mykola Shaparenko",
+          "to": "Artem Dovbyk",
+          "count": 1
+        },
+        {
+          "from": "Andriy Lunin",
+          "to": "Yukhym Konoplya",
+          "count": 1
+        },
+        {
+          "from": "Yukhym Konoplya",
+          "to": "Georgiy Sudakov",
+          "count": 1
+        },
+        {
+          "from": "Mykhailo Mudryk",
+          "to": "Artem Dovbyk",
+          "count": 1
+        },
+        {
+          "from": "Mykhailo Mudryk",
+          "to": "Mykola Shaparenko",
+          "count": 1
+        },
+        {
+          "from": "Andriy Lunin",
+          "to": "Taras Stepanenko",
+          "count": 1
+        },
+        {
+          "from": "Artem Dovbyk",
+          "to": "Mykola Shaparenko",
+          "count": 1
+        },
+        {
+          "from": "Taras Stepanenko",
+          "to": "Mykhailo Mudryk",
+          "count": 1
+        },
+        {
+          "from": "Illia Zabarnyi",
+          "to": "Oleksandr Zinchenko",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "label": "62'\u201371'",
+      "nodes": [
+        {
+          "player": "Andriy Lunin",
+          "display_name": "Andriy Lunin",
+          "x": 8.05,
+          "y": 39.5,
+          "passes": 2
+        },
+        {
+          "player": "Andriy Yarmolenko",
+          "display_name": "Andriy Yarmolenko",
+          "x": 81.33,
+          "y": 56.77,
+          "passes": 3
+        },
+        {
+          "player": "Artem Dovbyk",
+          "display_name": "Artem Dovbyk",
+          "x": 97.9,
+          "y": 42.5,
+          "passes": 1
+        },
+        {
+          "player": "Georgiy Sudakov",
+          "display_name": "Georgiy Sudakov",
+          "x": 57.6,
+          "y": 30.58,
+          "passes": 6
+        },
+        {
+          "player": "Illia Zabarnyi",
+          "display_name": "Ilya Zabarnyi",
+          "x": 53.16,
+          "y": 56.92,
+          "passes": 5
+        },
+        {
+          "player": "Mykhailo Mudryk",
+          "display_name": "Mykhailo Mudryk",
+          "x": 89.2,
+          "y": 22.9,
+          "passes": 2
+        },
+        {
+          "player": "Mykola Matvienko",
+          "display_name": "Mykola Matvienko",
+          "x": 42.38,
+          "y": 20.68,
+          "passes": 5
+        },
+        {
+          "player": "Oleksandr Zinchenko",
+          "display_name": "Oleksandr Zinchenko",
+          "x": 55.96,
+          "y": 11.7,
+          "passes": 8
+        },
+        {
+          "player": "Roman Yaremchuk",
+          "display_name": "Roman Yaremchuk",
+          "x": 96.9,
+          "y": 6.2,
+          "passes": 1
+        },
+        {
+          "player": "Volodymyr Brazhko",
+          "display_name": "Volodymyr Brazhko",
+          "x": 72.78,
+          "y": 48.2,
+          "passes": 4
+        },
+        {
+          "player": "Yukhym Konoplya",
+          "display_name": "Yukhym Konoplya",
+          "x": 57.1,
+          "y": 67.85,
+          "passes": 2
+        }
+      ],
+      "edges": [
+        {
+          "from": "Oleksandr Zinchenko",
+          "to": "Georgiy Sudakov",
+          "count": 3
+        },
+        {
+          "from": "Oleksandr Zinchenko",
+          "to": "Mykola Matvienko",
+          "count": 3
+        },
+        {
+          "from": "Yukhym Konoplya",
+          "to": "Andriy Yarmolenko",
+          "count": 2
+        },
+        {
+          "from": "Mykola Matvienko",
+          "to": "Oleksandr Zinchenko",
+          "count": 2
+        },
+        {
+          "from": "Volodymyr Brazhko",
+          "to": "Illia Zabarnyi",
+          "count": 2
+        },
+        {
+          "from": "Illia Zabarnyi",
+          "to": "Oleksandr Zinchenko",
+          "count": 1
+        },
+        {
+          "from": "Georgiy Sudakov",
+          "to": "Mykola Matvienko",
+          "count": 1
+        },
+        {
+          "from": "Mykola Matvienko",
+          "to": "Yukhym Konoplya",
+          "count": 1
+        },
+        {
+          "from": "Volodymyr Brazhko",
+          "to": "Andriy Yarmolenko",
+          "count": 1
+        },
+        {
+          "from": "Andriy Yarmolenko",
+          "to": "Mykola Matvienko",
+          "count": 1
+        },
+        {
+          "from": "Mykola Matvienko",
+          "to": "Georgiy Sudakov",
+          "count": 1
+        },
+        {
+          "from": "Georgiy Sudakov",
+          "to": "Illia Zabarnyi",
+          "count": 1
+        },
+        {
+          "from": "Georgiy Sudakov",
+          "to": "Mykhailo Mudryk",
+          "count": 1
+        },
+        {
+          "from": "Mykhailo Mudryk",
+          "to": "Roman Yaremchuk",
+          "count": 1
+        },
+        {
+          "from": "Roman Yaremchuk",
+          "to": "Oleksandr Zinchenko",
+          "count": 1
+        },
+        {
+          "from": "Georgiy Sudakov",
+          "to": "Volodymyr Brazhko",
+          "count": 1
+        },
+        {
+          "from": "Illia Zabarnyi",
+          "to": "Andriy Yarmolenko",
+          "count": 1
+        },
+        {
+          "from": "Andriy Yarmolenko",
+          "to": "Roman Yaremchuk",
+          "count": 1
+        },
+        {
+          "from": "Andriy Lunin",
+          "to": "Oleksandr Zinchenko",
+          "count": 1
+        },
+        {
+          "from": "Mykola Matvienko",
+          "to": "Andriy Lunin",
+          "count": 1
+        },
+        {
+          "from": "Andriy Lunin",
+          "to": "Illia Zabarnyi",
+          "count": 1
+        },
+        {
+          "from": "Illia Zabarnyi",
+          "to": "Volodymyr Brazhko",
+          "count": 1
+        },
+        {
+          "from": "Illia Zabarnyi",
+          "to": "Yukhym Konoplya",
+          "count": 1
+        },
+        {
+          "from": "Georgiy Sudakov",
+          "to": "Andriy Yarmolenko",
+          "count": 1
+        },
+        {
+          "from": "Andriy Yarmolenko",
+          "to": "Illia Zabarnyi",
+          "count": 1
+        },
+        {
+          "from": "Illia Zabarnyi",
+          "to": "Georgiy Sudakov",
+          "count": 1
+        },
+        {
+          "from": "Georgiy Sudakov",
+          "to": "Artem Dovbyk",
+          "count": 1
+        },
+        {
+          "from": "Artem Dovbyk",
+          "to": "Georgiy Sudakov",
+          "count": 1
+        },
+        {
+          "from": "Oleksandr Zinchenko",
+          "to": "Mykhailo Mudryk",
+          "count": 1
+        },
+        {
+          "from": "Mykhailo Mudryk",
+          "to": "Oleksandr Zinchenko",
+          "count": 1
+        },
+        {
+          "from": "Oleksandr Zinchenko",
+          "to": "Volodymyr Brazhko",
+          "count": 1
+        },
+        {
+          "from": "Volodymyr Brazhko",
+          "to": "Mykhailo Mudryk",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "label": "71'\u201382'",
+      "nodes": [
+        {
+          "player": "Andriy Lunin",
+          "display_name": "Andriy Lunin",
+          "x": 15.3,
+          "y": 34.9,
+          "passes": 1
+        },
+        {
+          "player": "Andriy Yarmolenko",
+          "display_name": "Andriy Yarmolenko",
+          "x": 103.2,
+          "y": 74.7,
+          "passes": 2
+        },
+        {
+          "player": "Georgiy Sudakov",
+          "display_name": "Georgiy Sudakov",
+          "x": 61.75,
+          "y": 33.76,
+          "passes": 8
+        },
+        {
+          "player": "Illia Zabarnyi",
+          "display_name": "Ilya Zabarnyi",
+          "x": 47.9,
+          "y": 53.13,
+          "passes": 6
+        },
+        {
+          "player": "Mykhailo Mudryk",
+          "display_name": "Mykhailo Mudryk",
+          "x": 105.9,
+          "y": 7.0,
+          "passes": 1
+        },
+        {
+          "player": "Mykola Matvienko",
+          "display_name": "Mykola Matvienko",
+          "x": 56.2,
+          "y": 36.27,
+          "passes": 4
+        },
+        {
+          "player": "Oleksandr Tymchyk",
+          "display_name": "Oleksandr Tymchyk",
+          "x": 81.23,
+          "y": 77.62,
+          "passes": 4
+        },
+        {
+          "player": "Oleksandr Zinchenko",
+          "display_name": "Oleksandr Zinchenko",
+          "x": 49.75,
+          "y": 17.52,
+          "passes": 4
+        },
+        {
+          "player": "Roman Yaremchuk",
+          "display_name": "Roman Yaremchuk",
+          "x": 98.6,
+          "y": 27.1,
+          "passes": 1
+        },
+        {
+          "player": "Volodymyr Brazhko",
+          "display_name": "Volodymyr Brazhko",
+          "x": 57.11,
+          "y": 52.48,
+          "passes": 8
+        }
+      ],
+      "edges": [
+        {
+          "from": "Oleksandr Zinchenko",
+          "to": "Georgiy Sudakov",
+          "count": 3
+        },
+        {
+          "from": "Illia Zabarnyi",
+          "to": "Volodymyr Brazhko",
+          "count": 3
+        },
+        {
+          "from": "Mykola Matvienko",
+          "to": "Georgiy Sudakov",
+          "count": 3
+        },
+        {
+          "from": "Volodymyr Brazhko",
+          "to": "Georgiy Sudakov",
+          "count": 3
+        },
+        {
+          "from": "Oleksandr Tymchyk",
+          "to": "Andriy Yarmolenko",
+          "count": 2
+        },
+        {
+          "from": "Georgiy Sudakov",
+          "to": "Roman Yaremchuk",
+          "count": 2
+        },
+        {
+          "from": "Volodymyr Brazhko",
+          "to": "Illia Zabarnyi",
+          "count": 2
+        },
+        {
+          "from": "Illia Zabarnyi",
+          "to": "Mykola Matvienko",
+          "count": 2
+        },
+        {
+          "from": "Andriy Lunin",
+          "to": "Oleksandr Zinchenko",
+          "count": 1
+        },
+        {
+          "from": "Oleksandr Zinchenko",
+          "to": "Volodymyr Brazhko",
+          "count": 1
+        },
+        {
+          "from": "Volodymyr Brazhko",
+          "to": "Oleksandr Zinchenko",
+          "count": 1
+        },
+        {
+          "from": "Georgiy Sudakov",
+          "to": "Andriy Yarmolenko",
+          "count": 1
+        },
+        {
+          "from": "Volodymyr Brazhko",
+          "to": "Mykhailo Mudryk",
+          "count": 1
+        },
+        {
+          "from": "Georgiy Sudakov",
+          "to": "Illia Zabarnyi",
+          "count": 1
+        },
+        {
+          "from": "Andriy Yarmolenko",
+          "to": "Illia Zabarnyi",
+          "count": 1
+        },
+        {
+          "from": "Volodymyr Brazhko",
+          "to": "Mykola Matvienko",
+          "count": 1
+        },
+        {
+          "from": "Roman Yaremchuk",
+          "to": "Mykhailo Mudryk",
+          "count": 1
+        },
+        {
+          "from": "Georgiy Sudakov",
+          "to": "Mykola Matvienko",
+          "count": 1
+        },
+        {
+          "from": "Georgiy Sudakov",
+          "to": "Oleksandr Tymchyk",
+          "count": 1
+        },
+        {
+          "from": "Andriy Yarmolenko",
+          "to": "Volodymyr Brazhko",
+          "count": 1
+        },
+        {
+          "from": "Georgiy Sudakov",
+          "to": "Mykhailo Mudryk",
+          "count": 1
+        },
+        {
+          "from": "Mykhailo Mudryk",
+          "to": "Oleksandr Zinchenko",
+          "count": 1
+        },
+        {
+          "from": "Georgiy Sudakov",
+          "to": "Volodymyr Brazhko",
+          "count": 1
+        },
+        {
+          "from": "Oleksandr Tymchyk",
+          "to": "Volodymyr Brazhko",
+          "count": 1
+        },
+        {
+          "from": "Mykola Matvienko",
+          "to": "Illia Zabarnyi",
+          "count": 1
+        },
+        {
+          "from": "Illia Zabarnyi",
+          "to": "Oleksandr Tymchyk",
+          "count": 1
+        },
+        {
+          "from": "Oleksandr Tymchyk",
+          "to": "Roman Yaremchuk",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "label": "82'\u2013FT",
+      "nodes": [
+        {
+          "player": "Andriy Lunin",
+          "display_name": "Andriy Lunin",
+          "x": 23.1,
+          "y": 46.3,
+          "passes": 2
+        },
+        {
+          "player": "Andriy Yarmolenko",
+          "display_name": "Andriy Yarmolenko",
+          "x": 74.9,
+          "y": 64.7,
+          "passes": 4
+        },
+        {
+          "player": "Artem Dovbyk",
+          "display_name": "Artem Dovbyk",
+          "x": 97.25,
+          "y": 55.75,
+          "passes": 2
+        },
+        {
+          "player": "Illia Zabarnyi",
+          "display_name": "Ilya Zabarnyi",
+          "x": 66.12,
+          "y": 60.25,
+          "passes": 6
+        },
+        {
+          "player": "Mykhailo Mudryk",
+          "display_name": "Mykhailo Mudryk",
+          "x": 37.8,
+          "y": 22.1,
+          "passes": 2
+        },
+        {
+          "player": "Mykola Matvienko",
+          "display_name": "Mykola Matvienko",
+          "x": 52.58,
+          "y": 27.68,
+          "passes": 5
+        },
+        {
+          "player": "Oleksandr Tymchyk",
+          "display_name": "Oleksandr Tymchyk",
+          "x": 65.44,
+          "y": 72.54,
+          "passes": 5
+        },
+        {
+          "player": "Oleksandr Zinchenko",
+          "display_name": "Oleksandr Zinchenko",
+          "x": 64.28,
+          "y": 29.41,
+          "passes": 11
+        },
+        {
+          "player": "Roman Yaremchuk",
+          "display_name": "Roman Yaremchuk",
+          "x": 80.27,
+          "y": 45.53,
+          "passes": 3
+        },
+        {
+          "player": "Ruslan Malinovskiy",
+          "display_name": "Ruslan Malinovskiy",
+          "x": 65.29,
+          "y": 35.27,
+          "passes": 15
+        },
+        {
+          "player": "Volodymyr Brazhko",
+          "display_name": "Volodymyr Brazhko",
+          "x": 66.93,
+          "y": 41.53,
+          "passes": 6
+        }
+      ],
+      "edges": [
+        {
+          "from": "Oleksandr Zinchenko",
+          "to": "Ruslan Malinovskiy",
+          "count": 6
+        },
+        {
+          "from": "Ruslan Malinovskiy",
+          "to": "Mykola Matvienko",
+          "count": 3
+        },
+        {
+          "from": "Illia Zabarnyi",
+          "to": "Andriy Yarmolenko",
+          "count": 3
+        },
+        {
+          "from": "Volodymyr Brazhko",
+          "to": "Oleksandr Zinchenko",
+          "count": 3
+        },
+        {
+          "from": "Ruslan Malinovskiy",
+          "to": "Artem Dovbyk",
+          "count": 2
+        },
+        {
+          "from": "Oleksandr Tymchyk",
+          "to": "Andriy Yarmolenko",
+          "count": 2
+        },
+        {
+          "from": "Ruslan Malinovskiy",
+          "to": "Mykhailo Mudryk",
+          "count": 2
+        },
+        {
+          "from": "Ruslan Malinovskiy",
+          "to": "Illia Zabarnyi",
+          "count": 2
+        },
+        {
+          "from": "Andriy Yarmolenko",
+          "to": "Volodymyr Brazhko",
+          "count": 2
+        },
+        {
+          "from": "Roman Yaremchuk",
+          "to": "Ruslan Malinovskiy",
+          "count": 2
+        },
+        {
+          "from": "Ruslan Malinovskiy",
+          "to": "Oleksandr Zinchenko",
+          "count": 2
+        },
+        {
+          "from": "Mykhailo Mudryk",
+          "to": "Ruslan Malinovskiy",
+          "count": 1
+        },
+        {
+          "from": "Mykola Matvienko",
+          "to": "Illia Zabarnyi",
+          "count": 1
+        },
+        {
+          "from": "Andriy Yarmolenko",
+          "to": "Illia Zabarnyi",
+          "count": 1
+        },
+        {
+          "from": "Ruslan Malinovskiy",
+          "to": "Roman Yaremchuk",
+          "count": 1
+        },
+        {
+          "from": "Artem Dovbyk",
+          "to": "Mykhailo Mudryk",
+          "count": 1
+        },
+        {
+          "from": "Oleksandr Zinchenko",
+          "to": "Illia Zabarnyi",
+          "count": 1
+        },
+        {
+          "from": "Illia Zabarnyi",
+          "to": "Mykola Matvienko",
+          "count": 1
+        },
+        {
+          "from": "Mykola Matvienko",
+          "to": "Oleksandr Tymchyk",
+          "count": 1
+        },
+        {
+          "from": "Mykola Matvienko",
+          "to": "Ruslan Malinovskiy",
+          "count": 1
+        },
+        {
+          "from": "Mykhailo Mudryk",
+          "to": "Oleksandr Zinchenko",
+          "count": 1
+        },
+        {
+          "from": "Volodymyr Brazhko",
+          "to": "Mykola Matvienko",
+          "count": 1
+        },
+        {
+          "from": "Mykola Matvienko",
+          "to": "Oleksandr Zinchenko",
+          "count": 1
+        },
+        {
+          "from": "Oleksandr Zinchenko",
+          "to": "Andriy Lunin",
+          "count": 1
+        },
+        {
+          "from": "Andriy Lunin",
+          "to": "Oleksandr Zinchenko",
+          "count": 1
+        },
+        {
+          "from": "Oleksandr Zinchenko",
+          "to": "Oleksandr Tymchyk",
+          "count": 1
+        },
+        {
+          "from": "Oleksandr Zinchenko",
+          "to": "Roman Yaremchuk",
+          "count": 1
+        },
+        {
+          "from": "Oleksandr Tymchyk",
+          "to": "Artem Dovbyk",
+          "count": 1
+        },
+        {
+          "from": "Artem Dovbyk",
+          "to": "Andriy Yarmolenko",
+          "count": 1
+        },
+        {
+          "from": "Oleksandr Tymchyk",
+          "to": "Illia Zabarnyi",
+          "count": 1
+        },
+        {
+          "from": "Illia Zabarnyi",
+          "to": "Ruslan Malinovskiy",
+          "count": 1
+        },
+        {
+          "from": "Illia Zabarnyi",
+          "to": "Roman Yaremchuk",
+          "count": 1
+        },
+        {
+          "from": "Oleksandr Tymchyk",
+          "to": "Volodymyr Brazhko",
+          "count": 1
+        },
+        {
+          "from": "Volodymyr Brazhko",
+          "to": "Roman Yaremchuk",
+          "count": 1
+        },
+        {
+          "from": "Roman Yaremchuk",
+          "to": "Oleksandr Tymchyk",
+          "count": 1
+        },
+        {
+          "from": "Andriy Yarmolenko",
+          "to": "Roman Yaremchuk",
+          "count": 1
+        },
+        {
+          "from": "Ruslan Malinovskiy",
+          "to": "Volodymyr Brazhko",
+          "count": 1
+        },
+        {
+          "from": "Oleksandr Zinchenko",
+          "to": "Volodymyr Brazhko",
+          "count": 1
+        },
+        {
+          "from": "Volodymyr Brazhko",
+          "to": "Illia Zabarnyi",
+          "count": 1
+        },
+        {
+          "from": "Ruslan Malinovskiy",
+          "to": "Andriy Yarmolenko",
+          "count": 1
+        },
+        {
+          "from": "Mykola Matvienko",
+          "to": "Mykhailo Mudryk",
+          "count": 1
+        },
+        {
+          "from": "Ruslan Malinovskiy",
+          "to": "Andriy Lunin",
+          "count": 1
+        },
+        {
+          "from": "Andriy Lunin",
+          "to": "Illia Zabarnyi",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "substitutions": [
+    {
+      "minute": 61,
+      "player_off": "Taras Stepanenko",
+      "player_on": "Volodymyr Brazhko"
+    },
+    {
+      "minute": 62,
+      "player_off": "Viktor Tsygankov",
+      "player_on": "Andriy Yarmolenko"
+    },
+    {
+      "minute": 62,
+      "player_off": "Mykola Shaparenko",
+      "player_on": "Roman Yaremchuk"
+    },
+    {
+      "minute": 71,
+      "player_off": "Yukhym Konoplya",
+      "player_on": "Oleksandr Tymchyk"
+    },
+    {
+      "minute": 82,
+      "player_off": "Georgiy Sudakov",
+      "player_on": "Ruslan Malinovskiy"
+    }
+  ],
+  "metadata": {
+    "match_id": 3938638,
+    "team": "Ukraine",
+    "filter": "completed passes, per substitution window",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Romania vs Ukraine"
+  }
+}

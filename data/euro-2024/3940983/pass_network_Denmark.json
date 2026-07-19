@@ -1,0 +1,1123 @@
+{
+  "windows": [
+    {
+      "index": 0,
+      "label": "0'\u201368' (Starting XI)",
+      "nodes": [
+        {
+          "player": "Alexander Hartmann Bah",
+          "display_name": "Alexander Bah",
+          "x": 56.34,
+          "y": 73.77,
+          "passes": 14
+        },
+        {
+          "player": "Andreas Christensen",
+          "display_name": "Andreas Christensen",
+          "x": 46.28,
+          "y": 16.37,
+          "passes": 32
+        },
+        {
+          "player": "Andreas Skov Olsen",
+          "display_name": "Andreas Skov Olsen",
+          "x": 72.25,
+          "y": 66.81,
+          "passes": 13
+        },
+        {
+          "player": "Christian Dannemann Eriksen",
+          "display_name": "Christian Eriksen",
+          "x": 67.98,
+          "y": 23.84,
+          "passes": 25
+        },
+        {
+          "player": "Jannik Vestergaard",
+          "display_name": "Jannik Vestergaard",
+          "x": 39.94,
+          "y": 38.18,
+          "passes": 35
+        },
+        {
+          "player": "Joachim Andersen",
+          "display_name": "Joachim Andersen",
+          "x": 46.15,
+          "y": 60.16,
+          "passes": 22
+        },
+        {
+          "player": "Joakim M\u00e6hle",
+          "display_name": "Joakim Maehle",
+          "x": 61.68,
+          "y": 8.11,
+          "passes": 32
+        },
+        {
+          "player": "Kasper Schmeichel",
+          "display_name": "Kasper Schmeichel",
+          "x": 10.28,
+          "y": 36.89,
+          "passes": 17
+        },
+        {
+          "player": "Pierre-Emile H\u00f8jbjerg",
+          "display_name": "Pierre-Emile H\u00f8jbjerg",
+          "x": 57.96,
+          "y": 30.36,
+          "passes": 40
+        },
+        {
+          "player": "Rasmus Winther H\u00f8jlund",
+          "display_name": "Rasmus H\u00f6jlund",
+          "x": 73.5,
+          "y": 41.15,
+          "passes": 10
+        },
+        {
+          "player": "Thomas Delaney",
+          "display_name": "Thomas Delaney",
+          "x": 53.46,
+          "y": 39.15,
+          "passes": 19
+        }
+      ],
+      "edges": [
+        {
+          "from": "Joakim M\u00e6hle",
+          "to": "Christian Dannemann Eriksen",
+          "count": 10
+        },
+        {
+          "from": "Jannik Vestergaard",
+          "to": "Pierre-Emile H\u00f8jbjerg",
+          "count": 9
+        },
+        {
+          "from": "Andreas Christensen",
+          "to": "Jannik Vestergaard",
+          "count": 8
+        },
+        {
+          "from": "Jannik Vestergaard",
+          "to": "Joachim Andersen",
+          "count": 8
+        },
+        {
+          "from": "Joachim Andersen",
+          "to": "Jannik Vestergaard",
+          "count": 8
+        },
+        {
+          "from": "Pierre-Emile H\u00f8jbjerg",
+          "to": "Andreas Christensen",
+          "count": 8
+        },
+        {
+          "from": "Joakim M\u00e6hle",
+          "to": "Pierre-Emile H\u00f8jbjerg",
+          "count": 8
+        },
+        {
+          "from": "Christian Dannemann Eriksen",
+          "to": "Joakim M\u00e6hle",
+          "count": 7
+        },
+        {
+          "from": "Jannik Vestergaard",
+          "to": "Andreas Christensen",
+          "count": 7
+        },
+        {
+          "from": "Andreas Christensen",
+          "to": "Joakim M\u00e6hle",
+          "count": 7
+        },
+        {
+          "from": "Pierre-Emile H\u00f8jbjerg",
+          "to": "Christian Dannemann Eriksen",
+          "count": 7
+        },
+        {
+          "from": "Pierre-Emile H\u00f8jbjerg",
+          "to": "Rasmus Winther H\u00f8jlund",
+          "count": 7
+        },
+        {
+          "from": "Pierre-Emile H\u00f8jbjerg",
+          "to": "Joakim M\u00e6hle",
+          "count": 6
+        },
+        {
+          "from": "Joakim M\u00e6hle",
+          "to": "Jannik Vestergaard",
+          "count": 5
+        },
+        {
+          "from": "Andreas Christensen",
+          "to": "Christian Dannemann Eriksen",
+          "count": 5
+        },
+        {
+          "from": "Christian Dannemann Eriksen",
+          "to": "Andreas Christensen",
+          "count": 5
+        },
+        {
+          "from": "Alexander Hartmann Bah",
+          "to": "Joachim Andersen",
+          "count": 5
+        },
+        {
+          "from": "Thomas Delaney",
+          "to": "Joakim M\u00e6hle",
+          "count": 5
+        },
+        {
+          "from": "Kasper Schmeichel",
+          "to": "Andreas Christensen",
+          "count": 4
+        },
+        {
+          "from": "Joachim Andersen",
+          "to": "Alexander Hartmann Bah",
+          "count": 4
+        },
+        {
+          "from": "Andreas Christensen",
+          "to": "Pierre-Emile H\u00f8jbjerg",
+          "count": 4
+        },
+        {
+          "from": "Christian Dannemann Eriksen",
+          "to": "Pierre-Emile H\u00f8jbjerg",
+          "count": 4
+        },
+        {
+          "from": "Andreas Skov Olsen",
+          "to": "Alexander Hartmann Bah",
+          "count": 4
+        },
+        {
+          "from": "Joakim M\u00e6hle",
+          "to": "Thomas Delaney",
+          "count": 4
+        },
+        {
+          "from": "Kasper Schmeichel",
+          "to": "Jannik Vestergaard",
+          "count": 4
+        },
+        {
+          "from": "Thomas Delaney",
+          "to": "Pierre-Emile H\u00f8jbjerg",
+          "count": 3
+        },
+        {
+          "from": "Pierre-Emile H\u00f8jbjerg",
+          "to": "Andreas Skov Olsen",
+          "count": 3
+        },
+        {
+          "from": "Andreas Skov Olsen",
+          "to": "Christian Dannemann Eriksen",
+          "count": 3
+        },
+        {
+          "from": "Thomas Delaney",
+          "to": "Andreas Skov Olsen",
+          "count": 3
+        },
+        {
+          "from": "Kasper Schmeichel",
+          "to": "Joakim M\u00e6hle",
+          "count": 3
+        },
+        {
+          "from": "Joachim Andersen",
+          "to": "Andreas Skov Olsen",
+          "count": 3
+        },
+        {
+          "from": "Rasmus Winther H\u00f8jlund",
+          "to": "Christian Dannemann Eriksen",
+          "count": 3
+        },
+        {
+          "from": "Andreas Christensen",
+          "to": "Kasper Schmeichel",
+          "count": 3
+        },
+        {
+          "from": "Pierre-Emile H\u00f8jbjerg",
+          "to": "Thomas Delaney",
+          "count": 3
+        },
+        {
+          "from": "Jannik Vestergaard",
+          "to": "Andreas Skov Olsen",
+          "count": 3
+        },
+        {
+          "from": "Alexander Hartmann Bah",
+          "to": "Andreas Skov Olsen",
+          "count": 3
+        },
+        {
+          "from": "Jannik Vestergaard",
+          "to": "Joakim M\u00e6hle",
+          "count": 3
+        },
+        {
+          "from": "Joakim M\u00e6hle",
+          "to": "Andreas Christensen",
+          "count": 2
+        },
+        {
+          "from": "Joachim Andersen",
+          "to": "Joakim M\u00e6hle",
+          "count": 2
+        },
+        {
+          "from": "Andreas Skov Olsen",
+          "to": "Pierre-Emile H\u00f8jbjerg",
+          "count": 2
+        },
+        {
+          "from": "Pierre-Emile H\u00f8jbjerg",
+          "to": "Alexander Hartmann Bah",
+          "count": 2
+        },
+        {
+          "from": "Kasper Schmeichel",
+          "to": "Joachim Andersen",
+          "count": 2
+        },
+        {
+          "from": "Jannik Vestergaard",
+          "to": "Thomas Delaney",
+          "count": 2
+        },
+        {
+          "from": "Pierre-Emile H\u00f8jbjerg",
+          "to": "Joachim Andersen",
+          "count": 2
+        },
+        {
+          "from": "Andreas Christensen",
+          "to": "Joachim Andersen",
+          "count": 2
+        },
+        {
+          "from": "Joachim Andersen",
+          "to": "Christian Dannemann Eriksen",
+          "count": 2
+        },
+        {
+          "from": "Andreas Christensen",
+          "to": "Rasmus Winther H\u00f8jlund",
+          "count": 2
+        },
+        {
+          "from": "Jannik Vestergaard",
+          "to": "Rasmus Winther H\u00f8jlund",
+          "count": 2
+        },
+        {
+          "from": "Rasmus Winther H\u00f8jlund",
+          "to": "Thomas Delaney",
+          "count": 2
+        },
+        {
+          "from": "Joakim M\u00e6hle",
+          "to": "Rasmus Winther H\u00f8jlund",
+          "count": 2
+        },
+        {
+          "from": "Thomas Delaney",
+          "to": "Alexander Hartmann Bah",
+          "count": 2
+        },
+        {
+          "from": "Alexander Hartmann Bah",
+          "to": "Rasmus Winther H\u00f8jlund",
+          "count": 2
+        },
+        {
+          "from": "Thomas Delaney",
+          "to": "Christian Dannemann Eriksen",
+          "count": 2
+        },
+        {
+          "from": "Christian Dannemann Eriksen",
+          "to": "Rasmus Winther H\u00f8jlund",
+          "count": 2
+        },
+        {
+          "from": "Andreas Skov Olsen",
+          "to": "Joachim Andersen",
+          "count": 2
+        },
+        {
+          "from": "Joachim Andersen",
+          "to": "Pierre-Emile H\u00f8jbjerg",
+          "count": 2
+        },
+        {
+          "from": "Christian Dannemann Eriksen",
+          "to": "Thomas Delaney",
+          "count": 2
+        },
+        {
+          "from": "Thomas Delaney",
+          "to": "Kasper Schmeichel",
+          "count": 2
+        },
+        {
+          "from": "Kasper Schmeichel",
+          "to": "Pierre-Emile H\u00f8jbjerg",
+          "count": 2
+        },
+        {
+          "from": "Christian Dannemann Eriksen",
+          "to": "Jannik Vestergaard",
+          "count": 2
+        },
+        {
+          "from": "Alexander Hartmann Bah",
+          "to": "Thomas Delaney",
+          "count": 1
+        },
+        {
+          "from": "Thomas Delaney",
+          "to": "Andreas Christensen",
+          "count": 1
+        },
+        {
+          "from": "Alexander Hartmann Bah",
+          "to": "Pierre-Emile H\u00f8jbjerg",
+          "count": 1
+        },
+        {
+          "from": "Joachim Andersen",
+          "to": "Kasper Schmeichel",
+          "count": 1
+        },
+        {
+          "from": "Rasmus Winther H\u00f8jlund",
+          "to": "Joachim Andersen",
+          "count": 1
+        },
+        {
+          "from": "Andreas Skov Olsen",
+          "to": "Rasmus Winther H\u00f8jlund",
+          "count": 1
+        },
+        {
+          "from": "Christian Dannemann Eriksen",
+          "to": "Andreas Skov Olsen",
+          "count": 1
+        },
+        {
+          "from": "Andreas Skov Olsen",
+          "to": "Kasper Schmeichel",
+          "count": 1
+        },
+        {
+          "from": "Rasmus Winther H\u00f8jlund",
+          "to": "Alexander Hartmann Bah",
+          "count": 1
+        },
+        {
+          "from": "Alexander Hartmann Bah",
+          "to": "Joakim M\u00e6hle",
+          "count": 1
+        },
+        {
+          "from": "Alexander Hartmann Bah",
+          "to": "Kasper Schmeichel",
+          "count": 1
+        },
+        {
+          "from": "Kasper Schmeichel",
+          "to": "Rasmus Winther H\u00f8jlund",
+          "count": 1
+        },
+        {
+          "from": "Rasmus Winther H\u00f8jlund",
+          "to": "Joakim M\u00e6hle",
+          "count": 1
+        },
+        {
+          "from": "Rasmus Winther H\u00f8jlund",
+          "to": "Andreas Skov Olsen",
+          "count": 1
+        },
+        {
+          "from": "Thomas Delaney",
+          "to": "Rasmus Winther H\u00f8jlund",
+          "count": 1
+        },
+        {
+          "from": "Christian Dannemann Eriksen",
+          "to": "Joachim Andersen",
+          "count": 1
+        },
+        {
+          "from": "Kasper Schmeichel",
+          "to": "Christian Dannemann Eriksen",
+          "count": 1
+        },
+        {
+          "from": "Jannik Vestergaard",
+          "to": "Alexander Hartmann Bah",
+          "count": 1
+        },
+        {
+          "from": "Christian Dannemann Eriksen",
+          "to": "Alexander Hartmann Bah",
+          "count": 1
+        },
+        {
+          "from": "Joakim M\u00e6hle",
+          "to": "Alexander Hartmann Bah",
+          "count": 1
+        },
+        {
+          "from": "Rasmus Winther H\u00f8jlund",
+          "to": "Pierre-Emile H\u00f8jbjerg",
+          "count": 1
+        },
+        {
+          "from": "Pierre-Emile H\u00f8jbjerg",
+          "to": "Jannik Vestergaard",
+          "count": 1
+        },
+        {
+          "from": "Pierre-Emile H\u00f8jbjerg",
+          "to": "Kasper Schmeichel",
+          "count": 1
+        },
+        {
+          "from": "Andreas Christensen",
+          "to": "Thomas Delaney",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "label": "68'\u201380'",
+      "nodes": [
+        {
+          "player": "Alexander Hartmann Bah",
+          "display_name": "Alexander Bah",
+          "x": 69.58,
+          "y": 66.02,
+          "passes": 6
+        },
+        {
+          "player": "Andreas Christensen",
+          "display_name": "Andreas Christensen",
+          "x": 55.7,
+          "y": 16.6,
+          "passes": 2
+        },
+        {
+          "player": "Christian Dannemann Eriksen",
+          "display_name": "Christian Eriksen",
+          "x": 82.34,
+          "y": 34.14,
+          "passes": 5
+        },
+        {
+          "player": "Christian N\u00f8rgaard",
+          "display_name": "Christian N\u00f8rgaard",
+          "x": 60.86,
+          "y": 48.76,
+          "passes": 7
+        },
+        {
+          "player": "Jannik Vestergaard",
+          "display_name": "Jannik Vestergaard",
+          "x": 53.7,
+          "y": 39.08,
+          "passes": 6
+        },
+        {
+          "player": "Joachim Andersen",
+          "display_name": "Joachim Andersen",
+          "x": 45.88,
+          "y": 57.78,
+          "passes": 5
+        },
+        {
+          "player": "Joakim M\u00e6hle",
+          "display_name": "Joakim Maehle",
+          "x": 68.07,
+          "y": 11.13,
+          "passes": 6
+        },
+        {
+          "player": "Kasper Schmeichel",
+          "display_name": "Kasper Schmeichel",
+          "x": 19.03,
+          "y": 39.83,
+          "passes": 4
+        },
+        {
+          "player": "Pierre-Emile H\u00f8jbjerg",
+          "display_name": "Pierre-Emile H\u00f8jbjerg",
+          "x": 72.6,
+          "y": 33.58,
+          "passes": 6
+        },
+        {
+          "player": "Rasmus Winther H\u00f8jlund",
+          "display_name": "Rasmus H\u00f6jlund",
+          "x": 61.0,
+          "y": 40.1,
+          "passes": 1
+        },
+        {
+          "player": "Yussuf Yurary Poulsen",
+          "display_name": "Yussuf Poulsen",
+          "x": 80.25,
+          "y": 64.65,
+          "passes": 2
+        }
+      ],
+      "edges": [
+        {
+          "from": "Joakim M\u00e6hle",
+          "to": "Pierre-Emile H\u00f8jbjerg",
+          "count": 3
+        },
+        {
+          "from": "Christian Dannemann Eriksen",
+          "to": "Joakim M\u00e6hle",
+          "count": 2
+        },
+        {
+          "from": "Christian Dannemann Eriksen",
+          "to": "Pierre-Emile H\u00f8jbjerg",
+          "count": 2
+        },
+        {
+          "from": "Alexander Hartmann Bah",
+          "to": "Christian N\u00f8rgaard",
+          "count": 2
+        },
+        {
+          "from": "Christian N\u00f8rgaard",
+          "to": "Christian Dannemann Eriksen",
+          "count": 2
+        },
+        {
+          "from": "Pierre-Emile H\u00f8jbjerg",
+          "to": "Christian Dannemann Eriksen",
+          "count": 2
+        },
+        {
+          "from": "Pierre-Emile H\u00f8jbjerg",
+          "to": "Christian N\u00f8rgaard",
+          "count": 2
+        },
+        {
+          "from": "Christian N\u00f8rgaard",
+          "to": "Jannik Vestergaard",
+          "count": 2
+        },
+        {
+          "from": "Jannik Vestergaard",
+          "to": "Christian N\u00f8rgaard",
+          "count": 2
+        },
+        {
+          "from": "Kasper Schmeichel",
+          "to": "Jannik Vestergaard",
+          "count": 2
+        },
+        {
+          "from": "Jannik Vestergaard",
+          "to": "Andreas Christensen",
+          "count": 2
+        },
+        {
+          "from": "Christian N\u00f8rgaard",
+          "to": "Yussuf Yurary Poulsen",
+          "count": 2
+        },
+        {
+          "from": "Alexander Hartmann Bah",
+          "to": "Joachim Andersen",
+          "count": 2
+        },
+        {
+          "from": "Joachim Andersen",
+          "to": "Jannik Vestergaard",
+          "count": 2
+        },
+        {
+          "from": "Rasmus Winther H\u00f8jlund",
+          "to": "Christian Dannemann Eriksen",
+          "count": 1
+        },
+        {
+          "from": "Joakim M\u00e6hle",
+          "to": "Andreas Christensen",
+          "count": 1
+        },
+        {
+          "from": "Andreas Christensen",
+          "to": "Jannik Vestergaard",
+          "count": 1
+        },
+        {
+          "from": "Pierre-Emile H\u00f8jbjerg",
+          "to": "Alexander Hartmann Bah",
+          "count": 1
+        },
+        {
+          "from": "Kasper Schmeichel",
+          "to": "Yussuf Yurary Poulsen",
+          "count": 1
+        },
+        {
+          "from": "Yussuf Yurary Poulsen",
+          "to": "Pierre-Emile H\u00f8jbjerg",
+          "count": 1
+        },
+        {
+          "from": "Joachim Andersen",
+          "to": "Christian N\u00f8rgaard",
+          "count": 1
+        },
+        {
+          "from": "Alexander Hartmann Bah",
+          "to": "Christian Dannemann Eriksen",
+          "count": 1
+        },
+        {
+          "from": "Christian Dannemann Eriksen",
+          "to": "Joachim Andersen",
+          "count": 1
+        },
+        {
+          "from": "Pierre-Emile H\u00f8jbjerg",
+          "to": "Kasper Schmeichel",
+          "count": 1
+        },
+        {
+          "from": "Kasper Schmeichel",
+          "to": "Alexander Hartmann Bah",
+          "count": 1
+        },
+        {
+          "from": "Alexander Hartmann Bah",
+          "to": "Joakim M\u00e6hle",
+          "count": 1
+        },
+        {
+          "from": "Joachim Andersen",
+          "to": "Joakim M\u00e6hle",
+          "count": 1
+        },
+        {
+          "from": "Joakim M\u00e6hle",
+          "to": "Joachim Andersen",
+          "count": 1
+        },
+        {
+          "from": "Jannik Vestergaard",
+          "to": "Joachim Andersen",
+          "count": 1
+        },
+        {
+          "from": "Joachim Andersen",
+          "to": "Alexander Hartmann Bah",
+          "count": 1
+        },
+        {
+          "from": "Yussuf Yurary Poulsen",
+          "to": "Christian N\u00f8rgaard",
+          "count": 1
+        },
+        {
+          "from": "Christian N\u00f8rgaard",
+          "to": "Alexander Hartmann Bah",
+          "count": 1
+        },
+        {
+          "from": "Andreas Christensen",
+          "to": "Joakim M\u00e6hle",
+          "count": 1
+        },
+        {
+          "from": "Joakim M\u00e6hle",
+          "to": "Rasmus Winther H\u00f8jlund",
+          "count": 1
+        },
+        {
+          "from": "Jannik Vestergaard",
+          "to": "Pierre-Emile H\u00f8jbjerg",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "label": "80'\u2013FT",
+      "nodes": [
+        {
+          "player": "Christian Dannemann Eriksen",
+          "display_name": "Christian Eriksen",
+          "x": 83.74,
+          "y": 33.98,
+          "passes": 9
+        },
+        {
+          "player": "Christian N\u00f8rgaard",
+          "display_name": "Christian N\u00f8rgaard",
+          "x": 59.76,
+          "y": 32.72,
+          "passes": 15
+        },
+        {
+          "player": "Jacob Bruun Larsen",
+          "display_name": "Jacob Bruun Larsen",
+          "x": 81.67,
+          "y": 49.5,
+          "passes": 3
+        },
+        {
+          "player": "Jannik Vestergaard",
+          "display_name": "Jannik Vestergaard",
+          "x": 48.98,
+          "y": 35.58,
+          "passes": 8
+        },
+        {
+          "player": "Joachim Andersen",
+          "display_name": "Joachim Andersen",
+          "x": 48.8,
+          "y": 57.34,
+          "passes": 11
+        },
+        {
+          "player": "Joakim M\u00e6hle",
+          "display_name": "Joakim Maehle",
+          "x": 52.24,
+          "y": 54.53,
+          "passes": 7
+        },
+        {
+          "player": "Jonas Older Wind",
+          "display_name": "Jonas Wind",
+          "x": 64.65,
+          "y": 32.75,
+          "passes": 2
+        },
+        {
+          "player": "Kasper Schmeichel",
+          "display_name": "Kasper Schmeichel",
+          "x": 11.53,
+          "y": 45.83,
+          "passes": 3
+        },
+        {
+          "player": "Pierre-Emile H\u00f8jbjerg",
+          "display_name": "Pierre-Emile H\u00f8jbjerg",
+          "x": 65.33,
+          "y": 37.65,
+          "passes": 10
+        },
+        {
+          "player": "Victor Bernth Kristansen",
+          "display_name": "Victor Kristiansen",
+          "x": 75.09,
+          "y": 12.94,
+          "passes": 8
+        },
+        {
+          "player": "Yussuf Yurary Poulsen",
+          "display_name": "Yussuf Poulsen",
+          "x": 78.75,
+          "y": 24.5,
+          "passes": 2
+        }
+      ],
+      "edges": [
+        {
+          "from": "Christian N\u00f8rgaard",
+          "to": "Joachim Andersen",
+          "count": 4
+        },
+        {
+          "from": "Pierre-Emile H\u00f8jbjerg",
+          "to": "Victor Bernth Kristansen",
+          "count": 4
+        },
+        {
+          "from": "Joachim Andersen",
+          "to": "Joakim M\u00e6hle",
+          "count": 3
+        },
+        {
+          "from": "Jannik Vestergaard",
+          "to": "Pierre-Emile H\u00f8jbjerg",
+          "count": 3
+        },
+        {
+          "from": "Victor Bernth Kristansen",
+          "to": "Christian N\u00f8rgaard",
+          "count": 3
+        },
+        {
+          "from": "Christian N\u00f8rgaard",
+          "to": "Victor Bernth Kristansen",
+          "count": 3
+        },
+        {
+          "from": "Pierre-Emile H\u00f8jbjerg",
+          "to": "Christian Dannemann Eriksen",
+          "count": 3
+        },
+        {
+          "from": "Joakim M\u00e6hle",
+          "to": "Christian N\u00f8rgaard",
+          "count": 3
+        },
+        {
+          "from": "Jannik Vestergaard",
+          "to": "Christian N\u00f8rgaard",
+          "count": 3
+        },
+        {
+          "from": "Joachim Andersen",
+          "to": "Jacob Bruun Larsen",
+          "count": 3
+        },
+        {
+          "from": "Victor Bernth Kristansen",
+          "to": "Christian Dannemann Eriksen",
+          "count": 2
+        },
+        {
+          "from": "Christian Dannemann Eriksen",
+          "to": "Victor Bernth Kristansen",
+          "count": 2
+        },
+        {
+          "from": "Christian N\u00f8rgaard",
+          "to": "Pierre-Emile H\u00f8jbjerg",
+          "count": 2
+        },
+        {
+          "from": "Joachim Andersen",
+          "to": "Jannik Vestergaard",
+          "count": 2
+        },
+        {
+          "from": "Christian N\u00f8rgaard",
+          "to": "Jannik Vestergaard",
+          "count": 2
+        },
+        {
+          "from": "Christian Dannemann Eriksen",
+          "to": "Christian N\u00f8rgaard",
+          "count": 2
+        },
+        {
+          "from": "Christian Dannemann Eriksen",
+          "to": "Joakim M\u00e6hle",
+          "count": 2
+        },
+        {
+          "from": "Joakim M\u00e6hle",
+          "to": "Joachim Andersen",
+          "count": 2
+        },
+        {
+          "from": "Christian N\u00f8rgaard",
+          "to": "Jacob Bruun Larsen",
+          "count": 2
+        },
+        {
+          "from": "Pierre-Emile H\u00f8jbjerg",
+          "to": "Yussuf Yurary Poulsen",
+          "count": 1
+        },
+        {
+          "from": "Yussuf Yurary Poulsen",
+          "to": "Christian Dannemann Eriksen",
+          "count": 1
+        },
+        {
+          "from": "Joakim M\u00e6hle",
+          "to": "Jannik Vestergaard",
+          "count": 1
+        },
+        {
+          "from": "Christian Dannemann Eriksen",
+          "to": "Pierre-Emile H\u00f8jbjerg",
+          "count": 1
+        },
+        {
+          "from": "Christian Dannemann Eriksen",
+          "to": "Joachim Andersen",
+          "count": 1
+        },
+        {
+          "from": "Pierre-Emile H\u00f8jbjerg",
+          "to": "Christian N\u00f8rgaard",
+          "count": 1
+        },
+        {
+          "from": "Christian N\u00f8rgaard",
+          "to": "Jonas Older Wind",
+          "count": 1
+        },
+        {
+          "from": "Jannik Vestergaard",
+          "to": "Joachim Andersen",
+          "count": 1
+        },
+        {
+          "from": "Joachim Andersen",
+          "to": "Christian Dannemann Eriksen",
+          "count": 1
+        },
+        {
+          "from": "Jannik Vestergaard",
+          "to": "Christian Dannemann Eriksen",
+          "count": 1
+        },
+        {
+          "from": "Joachim Andersen",
+          "to": "Christian N\u00f8rgaard",
+          "count": 1
+        },
+        {
+          "from": "Kasper Schmeichel",
+          "to": "Pierre-Emile H\u00f8jbjerg",
+          "count": 1
+        },
+        {
+          "from": "Victor Bernth Kristansen",
+          "to": "Yussuf Yurary Poulsen",
+          "count": 1
+        },
+        {
+          "from": "Yussuf Yurary Poulsen",
+          "to": "Pierre-Emile H\u00f8jbjerg",
+          "count": 1
+        },
+        {
+          "from": "Jacob Bruun Larsen",
+          "to": "Joachim Andersen",
+          "count": 1
+        },
+        {
+          "from": "Jacob Bruun Larsen",
+          "to": "Jannik Vestergaard",
+          "count": 1
+        },
+        {
+          "from": "Victor Bernth Kristansen",
+          "to": "Jacob Bruun Larsen",
+          "count": 1
+        },
+        {
+          "from": "Kasper Schmeichel",
+          "to": "Victor Bernth Kristansen",
+          "count": 1
+        },
+        {
+          "from": "Kasper Schmeichel",
+          "to": "Yussuf Yurary Poulsen",
+          "count": 1
+        },
+        {
+          "from": "Christian N\u00f8rgaard",
+          "to": "Joakim M\u00e6hle",
+          "count": 1
+        },
+        {
+          "from": "Joachim Andersen",
+          "to": "Kasper Schmeichel",
+          "count": 1
+        },
+        {
+          "from": "Christian Dannemann Eriksen",
+          "to": "Jannik Vestergaard",
+          "count": 1
+        },
+        {
+          "from": "Pierre-Emile H\u00f8jbjerg",
+          "to": "Jonas Older Wind",
+          "count": 1
+        },
+        {
+          "from": "Jonas Older Wind",
+          "to": "Christian N\u00f8rgaard",
+          "count": 1
+        },
+        {
+          "from": "Jacob Bruun Larsen",
+          "to": "Joakim M\u00e6hle",
+          "count": 1
+        },
+        {
+          "from": "Victor Bernth Kristansen",
+          "to": "Jonas Older Wind",
+          "count": 1
+        },
+        {
+          "from": "Jonas Older Wind",
+          "to": "Christian Dannemann Eriksen",
+          "count": 1
+        },
+        {
+          "from": "Joakim M\u00e6hle",
+          "to": "Jacob Bruun Larsen",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "substitutions": [
+    {
+      "minute": 68,
+      "player_off": "Thomas Delaney",
+      "player_on": "Christian N\u00f8rgaard"
+    },
+    {
+      "minute": 68,
+      "player_off": "Andreas Skov Olsen",
+      "player_on": "Yussuf Yurary Poulsen"
+    },
+    {
+      "minute": 80,
+      "player_off": "Rasmus Winther H\u00f8jlund",
+      "player_on": "Jonas Older Wind"
+    },
+    {
+      "minute": 80,
+      "player_off": "Andreas Christensen",
+      "player_on": "Jacob Bruun Larsen"
+    },
+    {
+      "minute": 80,
+      "player_off": "Alexander Hartmann Bah",
+      "player_on": "Victor Bernth Kristansen"
+    }
+  ],
+  "metadata": {
+    "match_id": 3940983,
+    "team": "Denmark",
+    "filter": "completed passes, per substitution window",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Germany vs Denmark"
+  }
+}

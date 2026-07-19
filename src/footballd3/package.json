@@ -1,0 +1,27 @@
+{
+  "name": "footballd3",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "d3": "^7.9.0"
+  },
+  "exports": {
+    "./pitch": "./components/pitch/pitch.js",
+    "./shotMap": "./components/shotMap/shotMap.js",
+    "./passNetwork": "./components/passNetwork/passNetwork.js",
+    "./freezeFrame": "./components/freezeFrame/freezeFrame.js",
+    "./convexHull": "./components/convexHull/convexHull.js",
+    "./heatmap": "./components/heatmap/heatmap.js",
+    "./matchStats": "./components/matchStats/matchStats.js",
+    "./comparisonBars": "./components/comparisonBars/comparisonBars.js",
+    "./formation": "./components/formation/formation.js",
+    "./teamShape": "./components/teamShape/teamShape.js",
+    "./progressiveMap": "./components/progressiveMap/progressiveMap.js",
+    "./eventScatter": "./components/eventScatter/eventScatter.js",
+    "./timelineStrip": "./components/timelineStrip/timelineStrip.js",
+    "./xtSurface": "./components/xtSurface/xtSurface.js",
+    "./playAnimation": "./components/playAnimation/playAnimation.js",
+    "./momentumChart": "./components/momentumChart/momentumChart.js"
+  }
+}

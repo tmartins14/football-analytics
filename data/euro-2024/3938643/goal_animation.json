@@ -1,0 +1,85 @@
+{
+  "goals": [
+    {
+      "window": {
+        "anchor_event_id": "00633ba6-692b-40d1-ba13-535406bf78a1",
+        "start_event_id": "00633ba6-692b-40d1-ba13-535406bf78a1",
+        "end_event_id": "00633ba6-692b-40d1-ba13-535406bf78a1",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 75.493
+      },
+      "frames": [
+        {
+          "event_id": "00633ba6-692b-40d1-ba13-535406bf78a1",
+          "t_seconds": 75.493,
+          "team": "France",
+          "event_type": "Shot",
+          "ball_x": 108.1,
+          "ball_y": 40.1,
+          "ball_end_x": 120.0,
+          "ball_end_y": 43.0,
+          "actor": "Kylian Mbapp\u00e9",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "00633ba6-692b-40d1-ba13-535406bf78a1",
+          "minute": 55,
+          "second": 37,
+          "scorer": "Kylian Mbapp\u00e9",
+          "team": "France"
+        }
+      },
+      "metadata": {
+        "match_id": 3938643,
+        "competition": "UEFA Euro 2024",
+        "match_label": "France vs Poland"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "03afed8a-fcf7-4c46-9316-9ec3e99b6795",
+        "start_event_id": "03afed8a-fcf7-4c46-9316-9ec3e99b6795",
+        "end_event_id": "03afed8a-fcf7-4c46-9316-9ec3e99b6795",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 263.106
+      },
+      "frames": [
+        {
+          "event_id": "03afed8a-fcf7-4c46-9316-9ec3e99b6795",
+          "t_seconds": 263.106,
+          "team": "Poland",
+          "event_type": "Shot",
+          "ball_x": 108.0,
+          "ball_y": 40.0,
+          "ball_end_x": 120.0,
+          "ball_end_y": 36.1,
+          "actor": "Robert Lewandowski",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "03afed8a-fcf7-4c46-9316-9ec3e99b6795",
+          "minute": 78,
+          "second": 13,
+          "scorer": "Robert Lewandowski",
+          "team": "Poland"
+        }
+      },
+      "metadata": {
+        "match_id": 3938643,
+        "competition": "UEFA Euro 2024",
+        "match_label": "France vs Poland"
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3938643,
+    "competition": "UEFA Euro 2024",
+    "match_label": "France vs Poland"
+  }
+}

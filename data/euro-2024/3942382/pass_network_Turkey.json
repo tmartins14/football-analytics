@@ -1,0 +1,977 @@
+{
+  "windows": [
+    {
+      "index": 0,
+      "label": "0'\u201376' (Starting XI)",
+      "nodes": [
+        {
+          "player": "Abd\u00fclkerim Bardakc\u0131",
+          "display_name": "Abd\u00fclkerim Bardakc\u0131",
+          "x": 37.67,
+          "y": 16.36,
+          "passes": 20
+        },
+        {
+          "player": "Arda G\u00fcler",
+          "display_name": "Arda G\u00fcler",
+          "x": 60.62,
+          "y": 58.37,
+          "passes": 33
+        },
+        {
+          "player": "Bar\u0131\u015f Alper Y\u0131lmaz",
+          "display_name": "Bar\u0131\u015f Alper Y\u0131lmaz",
+          "x": 71.45,
+          "y": 46.42,
+          "passes": 12
+        },
+        {
+          "player": "Fehmi Mert G\u00fcnok",
+          "display_name": "Mert G\u00fcnok",
+          "x": 11.91,
+          "y": 36.85,
+          "passes": 15
+        },
+        {
+          "player": "Ferdi Erenay Kad\u0131o\u011flu",
+          "display_name": "Ferdi Kadioglu",
+          "x": 57.43,
+          "y": 10.83,
+          "passes": 19
+        },
+        {
+          "player": "Hakan \u00c7alhano\u011flu",
+          "display_name": "Hakan \u00c7alhano\u011flu",
+          "x": 55.45,
+          "y": 28.93,
+          "passes": 39
+        },
+        {
+          "player": "Kaan Ayhan",
+          "display_name": "Kaan Ayhan",
+          "x": 36.7,
+          "y": 62.5,
+          "passes": 28
+        },
+        {
+          "player": "Kenan Yildiz",
+          "display_name": "Kenan Yildiz",
+          "x": 64.61,
+          "y": 19.16,
+          "passes": 13
+        },
+        {
+          "player": "Mert M\u00fcld\u00fcr",
+          "display_name": "Mert M\u00fcld\u00fcr",
+          "x": 58.31,
+          "y": 75.12,
+          "passes": 18
+        },
+        {
+          "player": "Salih \u00d6zcan",
+          "display_name": "Salih \u00d6zcan",
+          "x": 57.37,
+          "y": 49.48,
+          "passes": 17
+        },
+        {
+          "player": "Samet Akaydin",
+          "display_name": "Samet Akaydin",
+          "x": 34.82,
+          "y": 41.52,
+          "passes": 33
+        }
+      ],
+      "edges": [
+        {
+          "from": "Samet Akaydin",
+          "to": "Abd\u00fclkerim Bardakc\u0131",
+          "count": 9
+        },
+        {
+          "from": "Abd\u00fclkerim Bardakc\u0131",
+          "to": "Hakan \u00c7alhano\u011flu",
+          "count": 7
+        },
+        {
+          "from": "Samet Akaydin",
+          "to": "Kaan Ayhan",
+          "count": 7
+        },
+        {
+          "from": "Kaan Ayhan",
+          "to": "Samet Akaydin",
+          "count": 7
+        },
+        {
+          "from": "Arda G\u00fcler",
+          "to": "Hakan \u00c7alhano\u011flu",
+          "count": 7
+        },
+        {
+          "from": "Hakan \u00c7alhano\u011flu",
+          "to": "Arda G\u00fcler",
+          "count": 7
+        },
+        {
+          "from": "Hakan \u00c7alhano\u011flu",
+          "to": "Ferdi Erenay Kad\u0131o\u011flu",
+          "count": 6
+        },
+        {
+          "from": "Kenan Yildiz",
+          "to": "Hakan \u00c7alhano\u011flu",
+          "count": 6
+        },
+        {
+          "from": "Arda G\u00fcler",
+          "to": "Mert M\u00fcld\u00fcr",
+          "count": 6
+        },
+        {
+          "from": "Fehmi Mert G\u00fcnok",
+          "to": "Kaan Ayhan",
+          "count": 6
+        },
+        {
+          "from": "Hakan \u00c7alhano\u011flu",
+          "to": "Kaan Ayhan",
+          "count": 5
+        },
+        {
+          "from": "Mert M\u00fcld\u00fcr",
+          "to": "Arda G\u00fcler",
+          "count": 5
+        },
+        {
+          "from": "Ferdi Erenay Kad\u0131o\u011flu",
+          "to": "Hakan \u00c7alhano\u011flu",
+          "count": 5
+        },
+        {
+          "from": "Hakan \u00c7alhano\u011flu",
+          "to": "Samet Akaydin",
+          "count": 5
+        },
+        {
+          "from": "Hakan \u00c7alhano\u011flu",
+          "to": "Kenan Yildiz",
+          "count": 5
+        },
+        {
+          "from": "Fehmi Mert G\u00fcnok",
+          "to": "Samet Akaydin",
+          "count": 5
+        },
+        {
+          "from": "Mert M\u00fcld\u00fcr",
+          "to": "Kaan Ayhan",
+          "count": 5
+        },
+        {
+          "from": "Bar\u0131\u015f Alper Y\u0131lmaz",
+          "to": "Arda G\u00fcler",
+          "count": 5
+        },
+        {
+          "from": "Arda G\u00fcler",
+          "to": "Kaan Ayhan",
+          "count": 4
+        },
+        {
+          "from": "Kaan Ayhan",
+          "to": "Abd\u00fclkerim Bardakc\u0131",
+          "count": 4
+        },
+        {
+          "from": "Hakan \u00c7alhano\u011flu",
+          "to": "Abd\u00fclkerim Bardakc\u0131",
+          "count": 4
+        },
+        {
+          "from": "Abd\u00fclkerim Bardakc\u0131",
+          "to": "Samet Akaydin",
+          "count": 4
+        },
+        {
+          "from": "Ferdi Erenay Kad\u0131o\u011flu",
+          "to": "Kenan Yildiz",
+          "count": 4
+        },
+        {
+          "from": "Kenan Yildiz",
+          "to": "Ferdi Erenay Kad\u0131o\u011flu",
+          "count": 4
+        },
+        {
+          "from": "Salih \u00d6zcan",
+          "to": "Hakan \u00c7alhano\u011flu",
+          "count": 4
+        },
+        {
+          "from": "Samet Akaydin",
+          "to": "Mert M\u00fcld\u00fcr",
+          "count": 4
+        },
+        {
+          "from": "Arda G\u00fcler",
+          "to": "Samet Akaydin",
+          "count": 4
+        },
+        {
+          "from": "Samet Akaydin",
+          "to": "Arda G\u00fcler",
+          "count": 4
+        },
+        {
+          "from": "Samet Akaydin",
+          "to": "Fehmi Mert G\u00fcnok",
+          "count": 4
+        },
+        {
+          "from": "Mert M\u00fcld\u00fcr",
+          "to": "Bar\u0131\u015f Alper Y\u0131lmaz",
+          "count": 4
+        },
+        {
+          "from": "Kaan Ayhan",
+          "to": "Arda G\u00fcler",
+          "count": 4
+        },
+        {
+          "from": "Salih \u00d6zcan",
+          "to": "Arda G\u00fcler",
+          "count": 4
+        },
+        {
+          "from": "Mert M\u00fcld\u00fcr",
+          "to": "Salih \u00d6zcan",
+          "count": 4
+        },
+        {
+          "from": "Samet Akaydin",
+          "to": "Hakan \u00c7alhano\u011flu",
+          "count": 3
+        },
+        {
+          "from": "Salih \u00d6zcan",
+          "to": "Mert M\u00fcld\u00fcr",
+          "count": 3
+        },
+        {
+          "from": "Kaan Ayhan",
+          "to": "Bar\u0131\u015f Alper Y\u0131lmaz",
+          "count": 3
+        },
+        {
+          "from": "Ferdi Erenay Kad\u0131o\u011flu",
+          "to": "Abd\u00fclkerim Bardakc\u0131",
+          "count": 3
+        },
+        {
+          "from": "Kaan Ayhan",
+          "to": "Hakan \u00c7alhano\u011flu",
+          "count": 3
+        },
+        {
+          "from": "Hakan \u00c7alhano\u011flu",
+          "to": "Mert M\u00fcld\u00fcr",
+          "count": 3
+        },
+        {
+          "from": "Arda G\u00fcler",
+          "to": "Ferdi Erenay Kad\u0131o\u011flu",
+          "count": 3
+        },
+        {
+          "from": "Arda G\u00fcler",
+          "to": "Kenan Yildiz",
+          "count": 2
+        },
+        {
+          "from": "Ferdi Erenay Kad\u0131o\u011flu",
+          "to": "Salih \u00d6zcan",
+          "count": 2
+        },
+        {
+          "from": "Arda G\u00fcler",
+          "to": "Fehmi Mert G\u00fcnok",
+          "count": 2
+        },
+        {
+          "from": "Hakan \u00c7alhano\u011flu",
+          "to": "Fehmi Mert G\u00fcnok",
+          "count": 2
+        },
+        {
+          "from": "Arda G\u00fcler",
+          "to": "Abd\u00fclkerim Bardakc\u0131",
+          "count": 2
+        },
+        {
+          "from": "Abd\u00fclkerim Bardakc\u0131",
+          "to": "Fehmi Mert G\u00fcnok",
+          "count": 2
+        },
+        {
+          "from": "Kaan Ayhan",
+          "to": "Ferdi Erenay Kad\u0131o\u011flu",
+          "count": 2
+        },
+        {
+          "from": "Arda G\u00fcler",
+          "to": "Salih \u00d6zcan",
+          "count": 2
+        },
+        {
+          "from": "Kaan Ayhan",
+          "to": "Salih \u00d6zcan",
+          "count": 2
+        },
+        {
+          "from": "Salih \u00d6zcan",
+          "to": "Samet Akaydin",
+          "count": 2
+        },
+        {
+          "from": "Bar\u0131\u015f Alper Y\u0131lmaz",
+          "to": "Salih \u00d6zcan",
+          "count": 2
+        },
+        {
+          "from": "Abd\u00fclkerim Bardakc\u0131",
+          "to": "Ferdi Erenay Kad\u0131o\u011flu",
+          "count": 2
+        },
+        {
+          "from": "Abd\u00fclkerim Bardakc\u0131",
+          "to": "Salih \u00d6zcan",
+          "count": 2
+        },
+        {
+          "from": "Ferdi Erenay Kad\u0131o\u011flu",
+          "to": "Kaan Ayhan",
+          "count": 2
+        },
+        {
+          "from": "Bar\u0131\u015f Alper Y\u0131lmaz",
+          "to": "Kenan Yildiz",
+          "count": 2
+        },
+        {
+          "from": "Ferdi Erenay Kad\u0131o\u011flu",
+          "to": "Samet Akaydin",
+          "count": 2
+        },
+        {
+          "from": "Kaan Ayhan",
+          "to": "Fehmi Mert G\u00fcnok",
+          "count": 2
+        },
+        {
+          "from": "Fehmi Mert G\u00fcnok",
+          "to": "Bar\u0131\u015f Alper Y\u0131lmaz",
+          "count": 2
+        },
+        {
+          "from": "Salih \u00d6zcan",
+          "to": "Bar\u0131\u015f Alper Y\u0131lmaz",
+          "count": 2
+        },
+        {
+          "from": "Samet Akaydin",
+          "to": "Salih \u00d6zcan",
+          "count": 1
+        },
+        {
+          "from": "Kenan Yildiz",
+          "to": "Arda G\u00fcler",
+          "count": 1
+        },
+        {
+          "from": "Kaan Ayhan",
+          "to": "Kenan Yildiz",
+          "count": 1
+        },
+        {
+          "from": "Kenan Yildiz",
+          "to": "Abd\u00fclkerim Bardakc\u0131",
+          "count": 1
+        },
+        {
+          "from": "Abd\u00fclkerim Bardakc\u0131",
+          "to": "Bar\u0131\u015f Alper Y\u0131lmaz",
+          "count": 1
+        },
+        {
+          "from": "Kenan Yildiz",
+          "to": "Samet Akaydin",
+          "count": 1
+        },
+        {
+          "from": "Bar\u0131\u015f Alper Y\u0131lmaz",
+          "to": "Kaan Ayhan",
+          "count": 1
+        },
+        {
+          "from": "Abd\u00fclkerim Bardakc\u0131",
+          "to": "Mert M\u00fcld\u00fcr",
+          "count": 1
+        },
+        {
+          "from": "Samet Akaydin",
+          "to": "Kenan Yildiz",
+          "count": 1
+        },
+        {
+          "from": "Abd\u00fclkerim Bardakc\u0131",
+          "to": "Arda G\u00fcler",
+          "count": 1
+        },
+        {
+          "from": "Salih \u00d6zcan",
+          "to": "Fehmi Mert G\u00fcnok",
+          "count": 1
+        },
+        {
+          "from": "Arda G\u00fcler",
+          "to": "Bar\u0131\u015f Alper Y\u0131lmaz",
+          "count": 1
+        },
+        {
+          "from": "Hakan \u00c7alhano\u011flu",
+          "to": "Bar\u0131\u015f Alper Y\u0131lmaz",
+          "count": 1
+        },
+        {
+          "from": "Bar\u0131\u015f Alper Y\u0131lmaz",
+          "to": "Hakan \u00c7alhano\u011flu",
+          "count": 1
+        },
+        {
+          "from": "Ferdi Erenay Kad\u0131o\u011flu",
+          "to": "Bar\u0131\u015f Alper Y\u0131lmaz",
+          "count": 1
+        },
+        {
+          "from": "Fehmi Mert G\u00fcnok",
+          "to": "Kenan Yildiz",
+          "count": 1
+        },
+        {
+          "from": "Fehmi Mert G\u00fcnok",
+          "to": "Abd\u00fclkerim Bardakc\u0131",
+          "count": 1
+        },
+        {
+          "from": "Bar\u0131\u015f Alper Y\u0131lmaz",
+          "to": "Mert M\u00fcld\u00fcr",
+          "count": 1
+        },
+        {
+          "from": "Hakan \u00c7alhano\u011flu",
+          "to": "Salih \u00d6zcan",
+          "count": 1
+        },
+        {
+          "from": "Salih \u00d6zcan",
+          "to": "Ferdi Erenay Kad\u0131o\u011flu",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "label": "76'\u201381'",
+      "nodes": [
+        {
+          "player": "Abd\u00fclkerim Bardakc\u0131",
+          "display_name": "Abd\u00fclkerim Bardakc\u0131",
+          "x": 48.8,
+          "y": 24.6,
+          "passes": 1
+        },
+        {
+          "player": "Arda G\u00fcler",
+          "display_name": "Arda G\u00fcler",
+          "x": 61.0,
+          "y": 40.1,
+          "passes": 1
+        },
+        {
+          "player": "Bar\u0131\u015f Alper Y\u0131lmaz",
+          "display_name": "Bar\u0131\u015f Alper Y\u0131lmaz",
+          "x": 79.6,
+          "y": 22.4,
+          "passes": 1
+        },
+        {
+          "player": "Ferdi Erenay Kad\u0131o\u011flu",
+          "display_name": "Ferdi Kadioglu",
+          "x": 58.55,
+          "y": 9.9,
+          "passes": 2
+        },
+        {
+          "player": "Hakan \u00c7alhano\u011flu",
+          "display_name": "Hakan \u00c7alhano\u011flu",
+          "x": 59.87,
+          "y": 30.03,
+          "passes": 3
+        },
+        {
+          "player": "Kaan Ayhan",
+          "display_name": "Kaan Ayhan",
+          "x": 34.5,
+          "y": 49.6,
+          "passes": 1
+        },
+        {
+          "player": "Samet Akaydin",
+          "display_name": "Samet Akaydin",
+          "x": 37.0,
+          "y": 37.6,
+          "passes": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "Arda G\u00fcler",
+          "to": "Hakan \u00c7alhano\u011flu",
+          "count": 1
+        },
+        {
+          "from": "Hakan \u00c7alhano\u011flu",
+          "to": "Abd\u00fclkerim Bardakc\u0131",
+          "count": 1
+        },
+        {
+          "from": "Abd\u00fclkerim Bardakc\u0131",
+          "to": "Samet Akaydin",
+          "count": 1
+        },
+        {
+          "from": "Samet Akaydin",
+          "to": "Kaan Ayhan",
+          "count": 1
+        },
+        {
+          "from": "Kaan Ayhan",
+          "to": "Ferdi Erenay Kad\u0131o\u011flu",
+          "count": 1
+        },
+        {
+          "from": "Ferdi Erenay Kad\u0131o\u011flu",
+          "to": "Hakan \u00c7alhano\u011flu",
+          "count": 1
+        },
+        {
+          "from": "Hakan \u00c7alhano\u011flu",
+          "to": "Ferdi Erenay Kad\u0131o\u011flu",
+          "count": 1
+        },
+        {
+          "from": "Ferdi Erenay Kad\u0131o\u011flu",
+          "to": "Bar\u0131\u015f Alper Y\u0131lmaz",
+          "count": 1
+        },
+        {
+          "from": "Bar\u0131\u015f Alper Y\u0131lmaz",
+          "to": "Hakan \u00c7alhano\u011flu",
+          "count": 1
+        },
+        {
+          "from": "Hakan \u00c7alhano\u011flu",
+          "to": "Mert M\u00fcld\u00fcr",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "label": "81'\u201388'",
+      "nodes": [
+        {
+          "player": "Abd\u00fclkerim Bardakc\u0131",
+          "display_name": "Abd\u00fclkerim Bardakc\u0131",
+          "x": 54.84,
+          "y": 20.9,
+          "passes": 10
+        },
+        {
+          "player": "Arda G\u00fcler",
+          "display_name": "Arda G\u00fcler",
+          "x": 76.38,
+          "y": 56.1,
+          "passes": 6
+        },
+        {
+          "player": "Bar\u0131\u015f Alper Y\u0131lmaz",
+          "display_name": "Bar\u0131\u015f Alper Y\u0131lmaz",
+          "x": 85.8,
+          "y": 54.7,
+          "passes": 1
+        },
+        {
+          "player": "Ferdi Erenay Kad\u0131o\u011flu",
+          "display_name": "Ferdi Kadioglu",
+          "x": 56.46,
+          "y": 10.68,
+          "passes": 5
+        },
+        {
+          "player": "Hakan \u00c7alhano\u011flu",
+          "display_name": "Hakan \u00c7alhano\u011flu",
+          "x": 64.97,
+          "y": 22.0,
+          "passes": 4
+        },
+        {
+          "player": "Kaan Ayhan",
+          "display_name": "Kaan Ayhan",
+          "x": 50.42,
+          "y": 54.45,
+          "passes": 6
+        },
+        {
+          "player": "Mehmet Zeki \u00c7elik",
+          "display_name": "Zeki Celik",
+          "x": 102.4,
+          "y": 78.6,
+          "passes": 2
+        },
+        {
+          "player": "Muhammed Kerem Akt\u00fcrko\u011flu",
+          "display_name": "Kerem Akt\u00fcrkoglu",
+          "x": 80.05,
+          "y": 8.85,
+          "passes": 2
+        },
+        {
+          "player": "Okay Yoku\u015flu",
+          "display_name": "Okay Yoku\u015flu",
+          "x": 68.86,
+          "y": 38.08,
+          "passes": 5
+        }
+      ],
+      "edges": [
+        {
+          "from": "Kaan Ayhan",
+          "to": "Abd\u00fclkerim Bardakc\u0131",
+          "count": 4
+        },
+        {
+          "from": "Abd\u00fclkerim Bardakc\u0131",
+          "to": "Ferdi Erenay Kad\u0131o\u011flu",
+          "count": 4
+        },
+        {
+          "from": "Ferdi Erenay Kad\u0131o\u011flu",
+          "to": "Abd\u00fclkerim Bardakc\u0131",
+          "count": 3
+        },
+        {
+          "from": "Abd\u00fclkerim Bardakc\u0131",
+          "to": "Muhammed Kerem Akt\u00fcrko\u011flu",
+          "count": 3
+        },
+        {
+          "from": "Abd\u00fclkerim Bardakc\u0131",
+          "to": "Kaan Ayhan",
+          "count": 2
+        },
+        {
+          "from": "Hakan \u00c7alhano\u011flu",
+          "to": "Arda G\u00fcler",
+          "count": 2
+        },
+        {
+          "from": "Hakan \u00c7alhano\u011flu",
+          "to": "Okay Yoku\u015flu",
+          "count": 2
+        },
+        {
+          "from": "Arda G\u00fcler",
+          "to": "Mehmet Zeki \u00c7elik",
+          "count": 2
+        },
+        {
+          "from": "Muhammed Kerem Akt\u00fcrko\u011flu",
+          "to": "Hakan \u00c7alhano\u011flu",
+          "count": 2
+        },
+        {
+          "from": "Okay Yoku\u015flu",
+          "to": "Arda G\u00fcler",
+          "count": 2
+        },
+        {
+          "from": "Kaan Ayhan",
+          "to": "Hakan \u00c7alhano\u011flu",
+          "count": 1
+        },
+        {
+          "from": "Arda G\u00fcler",
+          "to": "Bar\u0131\u015f Alper Y\u0131lmaz",
+          "count": 1
+        },
+        {
+          "from": "Ferdi Erenay Kad\u0131o\u011flu",
+          "to": "Hakan \u00c7alhano\u011flu",
+          "count": 1
+        },
+        {
+          "from": "Okay Yoku\u015flu",
+          "to": "Kaan Ayhan",
+          "count": 1
+        },
+        {
+          "from": "Kaan Ayhan",
+          "to": "Arda G\u00fcler",
+          "count": 1
+        },
+        {
+          "from": "Mehmet Zeki \u00c7elik",
+          "to": "Cenk Tosun",
+          "count": 1
+        },
+        {
+          "from": "Ferdi Erenay Kad\u0131o\u011flu",
+          "to": "Muhammed Kerem Akt\u00fcrko\u011flu",
+          "count": 1
+        },
+        {
+          "from": "Okay Yoku\u015flu",
+          "to": "Bar\u0131\u015f Alper Y\u0131lmaz",
+          "count": 1
+        },
+        {
+          "from": "Bar\u0131\u015f Alper Y\u0131lmaz",
+          "to": "Kaan Ayhan",
+          "count": 1
+        },
+        {
+          "from": "Abd\u00fclkerim Bardakc\u0131",
+          "to": "Okay Yoku\u015flu",
+          "count": 1
+        },
+        {
+          "from": "Arda G\u00fcler",
+          "to": "Okay Yoku\u015flu",
+          "count": 1
+        },
+        {
+          "from": "Arda G\u00fcler",
+          "to": "Abd\u00fclkerim Bardakc\u0131",
+          "count": 1
+        },
+        {
+          "from": "Okay Yoku\u015flu",
+          "to": "Ferdi Erenay Kad\u0131o\u011flu",
+          "count": 1
+        },
+        {
+          "from": "Mehmet Zeki \u00c7elik",
+          "to": "Arda G\u00fcler",
+          "count": 1
+        },
+        {
+          "from": "Arda G\u00fcler",
+          "to": "Cenk Tosun",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "label": "88'\u2013FT",
+      "nodes": [
+        {
+          "player": "Abd\u00fclkerim Bardakc\u0131",
+          "display_name": "Abd\u00fclkerim Bardakc\u0131",
+          "x": 70.3,
+          "y": 24.8,
+          "passes": 2
+        },
+        {
+          "player": "Arda G\u00fcler",
+          "display_name": "Arda G\u00fcler",
+          "x": 52.12,
+          "y": 50.02,
+          "passes": 4
+        },
+        {
+          "player": "Fehmi Mert G\u00fcnok",
+          "display_name": "Mert G\u00fcnok",
+          "x": 14.37,
+          "y": 44.43,
+          "passes": 3
+        },
+        {
+          "player": "Ferdi Erenay Kad\u0131o\u011flu",
+          "display_name": "Ferdi Kadioglu",
+          "x": 14.6,
+          "y": 18.6,
+          "passes": 1
+        },
+        {
+          "player": "Hakan \u00c7alhano\u011flu",
+          "display_name": "Hakan \u00c7alhano\u011flu",
+          "x": 75.8,
+          "y": 21.6,
+          "passes": 1
+        },
+        {
+          "player": "Mehmet Zeki \u00c7elik",
+          "display_name": "Zeki Celik",
+          "x": 61.9,
+          "y": 65.4,
+          "passes": 1
+        },
+        {
+          "player": "Muhammed Kerem Akt\u00fcrko\u011flu",
+          "display_name": "Kerem Akt\u00fcrkoglu",
+          "x": 81.55,
+          "y": 63.05,
+          "passes": 2
+        },
+        {
+          "player": "Okay Yoku\u015flu",
+          "display_name": "Okay Yoku\u015flu",
+          "x": 36.13,
+          "y": 68.07,
+          "passes": 3
+        },
+        {
+          "player": "Semih K\u0131l\u0131\u00e7soy",
+          "display_name": "Semih K\u0131l\u0131\u00e7soy",
+          "x": 58.7,
+          "y": 65.4,
+          "passes": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "Okay Yoku\u015flu",
+          "to": "Arda G\u00fcler",
+          "count": 2
+        },
+        {
+          "from": "Okay Yoku\u015flu",
+          "to": "Cenk Tosun",
+          "count": 1
+        },
+        {
+          "from": "Ferdi Erenay Kad\u0131o\u011flu",
+          "to": "Fehmi Mert G\u00fcnok",
+          "count": 1
+        },
+        {
+          "from": "Fehmi Mert G\u00fcnok",
+          "to": "Okay Yoku\u015flu",
+          "count": 1
+        },
+        {
+          "from": "Arda G\u00fcler",
+          "to": "Fehmi Mert G\u00fcnok",
+          "count": 1
+        },
+        {
+          "from": "Fehmi Mert G\u00fcnok",
+          "to": "Arda G\u00fcler",
+          "count": 1
+        },
+        {
+          "from": "Arda G\u00fcler",
+          "to": "Abd\u00fclkerim Bardakc\u0131",
+          "count": 1
+        },
+        {
+          "from": "Abd\u00fclkerim Bardakc\u0131",
+          "to": "Semih K\u0131l\u0131\u00e7soy",
+          "count": 1
+        },
+        {
+          "from": "Arda G\u00fcler",
+          "to": "Hakan \u00c7alhano\u011flu",
+          "count": 1
+        },
+        {
+          "from": "Hakan \u00c7alhano\u011flu",
+          "to": "Mehmet Zeki \u00c7elik",
+          "count": 1
+        },
+        {
+          "from": "Muhammed Kerem Akt\u00fcrko\u011flu",
+          "to": "Mehmet Zeki \u00c7elik",
+          "count": 1
+        },
+        {
+          "from": "Arda G\u00fcler",
+          "to": "Semih K\u0131l\u0131\u00e7soy",
+          "count": 1
+        },
+        {
+          "from": "Semih K\u0131l\u0131\u00e7soy",
+          "to": "Muhammed Kerem Akt\u00fcrko\u011flu",
+          "count": 1
+        },
+        {
+          "from": "Muhammed Kerem Akt\u00fcrko\u011flu",
+          "to": "Hakan \u00c7alhano\u011flu",
+          "count": 1
+        },
+        {
+          "from": "Fehmi Mert G\u00fcnok",
+          "to": "Cenk Tosun",
+          "count": 1
+        },
+        {
+          "from": "Abd\u00fclkerim Bardakc\u0131",
+          "to": "Mehmet Zeki \u00c7elik",
+          "count": 1
+        },
+        {
+          "from": "Mehmet Zeki \u00c7elik",
+          "to": "Bar\u0131\u015f Alper Y\u0131lmaz",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "substitutions": [
+    {
+      "minute": 76,
+      "player_off": "Kenan Yildiz",
+      "player_on": "Muhammed Kerem Akt\u00fcrko\u011flu"
+    },
+    {
+      "minute": 76,
+      "player_off": "Salih \u00d6zcan",
+      "player_on": "Okay Yoku\u015flu"
+    },
+    {
+      "minute": 81,
+      "player_off": "Mert M\u00fcld\u00fcr",
+      "player_on": "Mehmet Zeki \u00c7elik"
+    },
+    {
+      "minute": 81,
+      "player_off": "Samet Akaydin",
+      "player_on": "Cenk Tosun"
+    },
+    {
+      "minute": 88,
+      "player_off": "Kaan Ayhan",
+      "player_on": "Semih K\u0131l\u0131\u00e7soy"
+    }
+  ],
+  "metadata": {
+    "match_id": 3942382,
+    "team": "Turkey",
+    "filter": "completed passes, per substitution window",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Netherlands vs Turkey"
+  }
+}

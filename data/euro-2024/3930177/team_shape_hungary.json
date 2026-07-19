@@ -1,0 +1,934 @@
+{
+  "on_ball": {
+    "periods": [
+      {
+        "from_minute": 0,
+        "to_minute": 60,
+        "players_in": [
+          "P\u00e9ter Gul\u00e1csi",
+          "Endre Botka",
+          "Willi Orban",
+          "M\u00e1rton D\u00e1rdai",
+          "Bendeg\u00faz Bolla",
+          "Milos Kerkez",
+          "Andr\u00e1s Sch\u00e4fer",
+          "Callum Styles",
+          "Dominik Szoboszlai",
+          "Roland Sallai",
+          "Barnab\u00e1s Varga"
+        ],
+        "players_out": [],
+        "nodes": [
+          {
+            "player_id": 42822,
+            "player": "Andr\u00e1s Sch\u00e4fer",
+            "display_name": "Andr\u00e1s Sch\u00e4fer",
+            "x": 48.31,
+            "y": 61.93,
+            "event_count": 33
+          },
+          {
+            "player_id": 21209,
+            "player": "Dominik Szoboszlai",
+            "display_name": "Dominik Szoboszlai",
+            "x": 49.07,
+            "y": 53.81,
+            "event_count": 29
+          },
+          {
+            "player_id": 19316,
+            "player": "Roland Sallai",
+            "display_name": "Roland Sallai",
+            "x": 66.71,
+            "y": 19.13,
+            "event_count": 25
+          },
+          {
+            "player_id": 8509,
+            "player": "Willi Orban",
+            "display_name": "Willi Orban",
+            "x": 34.48,
+            "y": 57.87,
+            "event_count": 22
+          },
+          {
+            "player_id": 40920,
+            "player": "M\u00e1rton D\u00e1rdai",
+            "display_name": "M\u00e1rton D\u00e1rdai",
+            "x": 21.4,
+            "y": 26.82,
+            "event_count": 22
+          },
+          {
+            "player_id": 8524,
+            "player": "P\u00e9ter Gul\u00e1csi",
+            "display_name": "P\u00e9ter Gul\u00e1csi",
+            "x": 8.79,
+            "y": 40.02,
+            "event_count": 19
+          },
+          {
+            "player_id": 31887,
+            "player": "Endre Botka",
+            "display_name": "Endre Botka",
+            "x": 42.79,
+            "y": 68.71,
+            "event_count": 18
+          },
+          {
+            "player_id": 12921,
+            "player": "Barnab\u00e1s Varga",
+            "display_name": "Barnab\u00e1s Varga",
+            "x": 54.78,
+            "y": 47.42,
+            "event_count": 16
+          },
+          {
+            "player_id": 46789,
+            "player": "Bendeg\u00faz Bolla",
+            "display_name": "Bendeg\u00faz Bolla",
+            "x": 51.05,
+            "y": 68.26,
+            "event_count": 16
+          },
+          {
+            "player_id": 4286,
+            "player": "Callum Styles",
+            "display_name": "Callum Styles",
+            "x": 45.52,
+            "y": 36.97,
+            "event_count": 15
+          },
+          {
+            "player_id": 89635,
+            "player": "Milos Kerkez",
+            "display_name": "Milos Kerkez",
+            "x": 48.51,
+            "y": 6.72,
+            "event_count": 13
+          }
+        ],
+        "hull": [
+          [
+            42.79,
+            68.71
+          ],
+          [
+            8.79,
+            40.02
+          ],
+          [
+            21.4,
+            26.82
+          ],
+          [
+            48.51,
+            6.72
+          ],
+          [
+            66.71,
+            19.13
+          ],
+          [
+            51.05,
+            68.26
+          ]
+        ]
+      },
+      {
+        "from_minute": 60,
+        "to_minute": 73,
+        "players_in": [
+          "\u00c1d\u00e1m Nagy"
+        ],
+        "players_out": [
+          "Callum Styles"
+        ],
+        "nodes": [
+          {
+            "player_id": 21209,
+            "player": "Dominik Szoboszlai",
+            "display_name": "Dominik Szoboszlai",
+            "x": 88.85,
+            "y": 48.51,
+            "event_count": 10
+          },
+          {
+            "player_id": 42822,
+            "player": "Andr\u00e1s Sch\u00e4fer",
+            "display_name": "Andr\u00e1s Sch\u00e4fer",
+            "x": 78.88,
+            "y": 22.48,
+            "event_count": 9
+          },
+          {
+            "player_id": 19316,
+            "player": "Roland Sallai",
+            "display_name": "Roland Sallai",
+            "x": 83.12,
+            "y": 23.99,
+            "event_count": 8
+          },
+          {
+            "player_id": 46789,
+            "player": "Bendeg\u00faz Bolla",
+            "display_name": "Bendeg\u00faz Bolla",
+            "x": 93.75,
+            "y": 75.3,
+            "event_count": 4
+          },
+          {
+            "player_id": 8509,
+            "player": "Willi Orban",
+            "display_name": "Willi Orban",
+            "x": 21.37,
+            "y": 24.77,
+            "event_count": 3
+          },
+          {
+            "player_id": 31887,
+            "player": "Endre Botka",
+            "display_name": "Endre Botka",
+            "x": 83.33,
+            "y": 58.53,
+            "event_count": 3
+          },
+          {
+            "player_id": 12921,
+            "player": "Barnab\u00e1s Varga",
+            "display_name": "Barnab\u00e1s Varga",
+            "x": 104.1,
+            "y": 35.2,
+            "event_count": 1
+          }
+        ],
+        "hull": [
+          [
+            93.75,
+            75.3
+          ],
+          [
+            21.37,
+            24.77
+          ],
+          [
+            78.88,
+            22.48
+          ],
+          [
+            83.12,
+            23.99
+          ],
+          [
+            104.1,
+            35.2
+          ]
+        ]
+      },
+      {
+        "from_minute": 73,
+        "to_minute": 85,
+        "players_in": [
+          "Martin \u00c1d\u00e1m",
+          "Attila Szalai"
+        ],
+        "players_out": [
+          "Barnab\u00e1s Varga",
+          "M\u00e1rton D\u00e1rdai"
+        ],
+        "nodes": [
+          {
+            "player_id": 21209,
+            "player": "Dominik Szoboszlai",
+            "display_name": "Dominik Szoboszlai",
+            "x": 70.83,
+            "y": 60.18,
+            "event_count": 21
+          },
+          {
+            "player_id": 46789,
+            "player": "Bendeg\u00faz Bolla",
+            "display_name": "Bendeg\u00faz Bolla",
+            "x": 86.24,
+            "y": 68.05,
+            "event_count": 18
+          },
+          {
+            "player_id": 42822,
+            "player": "Andr\u00e1s Sch\u00e4fer",
+            "display_name": "Andr\u00e1s Sch\u00e4fer",
+            "x": 46.75,
+            "y": 51.47,
+            "event_count": 15
+          },
+          {
+            "player_id": 31887,
+            "player": "Endre Botka",
+            "display_name": "Endre Botka",
+            "x": 34.57,
+            "y": 51.47,
+            "event_count": 9
+          },
+          {
+            "player_id": 19316,
+            "player": "Roland Sallai",
+            "display_name": "Roland Sallai",
+            "x": 85.68,
+            "y": 23.05,
+            "event_count": 6
+          },
+          {
+            "player_id": 264277,
+            "player": "Martin \u00c1d\u00e1m",
+            "display_name": "Martin \u00c1d\u00e1m",
+            "x": 74.15,
+            "y": 39.8,
+            "event_count": 6
+          },
+          {
+            "player_id": 8524,
+            "player": "P\u00e9ter Gul\u00e1csi",
+            "display_name": "P\u00e9ter Gul\u00e1csi",
+            "x": 11.78,
+            "y": 36.26,
+            "event_count": 5
+          },
+          {
+            "player_id": 8509,
+            "player": "Willi Orban",
+            "display_name": "Willi Orban",
+            "x": 40.05,
+            "y": 39.33,
+            "event_count": 4
+          },
+          {
+            "player_id": 46376,
+            "player": "Attila Szalai",
+            "display_name": "Attila Szalai",
+            "x": 21.93,
+            "y": 4.13,
+            "event_count": 3
+          },
+          {
+            "player_id": 7162,
+            "player": "\u00c1d\u00e1m Nagy",
+            "display_name": "\u00c1d\u00e1m Nagy",
+            "x": 64.87,
+            "y": 37.17,
+            "event_count": 3
+          },
+          {
+            "player_id": 89635,
+            "player": "Milos Kerkez",
+            "display_name": "Milos Kerkez",
+            "x": 68.23,
+            "y": 20.27,
+            "event_count": 3
+          }
+        ],
+        "hull": [
+          [
+            11.78,
+            36.26
+          ],
+          [
+            21.93,
+            4.13
+          ],
+          [
+            85.68,
+            23.05
+          ],
+          [
+            86.24,
+            68.05
+          ],
+          [
+            34.57,
+            51.47
+          ]
+        ]
+      },
+      {
+        "from_minute": 85,
+        "to_minute": 102,
+        "players_in": [
+          "Zsolt Nagy",
+          "Kevin Csoboth"
+        ],
+        "players_out": [
+          "Milos Kerkez",
+          "Bendeg\u00faz Bolla"
+        ],
+        "nodes": [
+          {
+            "player_id": 21209,
+            "player": "Dominik Szoboszlai",
+            "display_name": "Dominik Szoboszlai",
+            "x": 73.53,
+            "y": 56.21,
+            "event_count": 15
+          },
+          {
+            "player_id": 389882,
+            "player": "Kevin Csoboth",
+            "display_name": "Kevin Csoboth",
+            "x": 73.2,
+            "y": 52.52,
+            "event_count": 13
+          },
+          {
+            "player_id": 42822,
+            "player": "Andr\u00e1s Sch\u00e4fer",
+            "display_name": "Andr\u00e1s Sch\u00e4fer",
+            "x": 52.48,
+            "y": 48.33,
+            "event_count": 10
+          },
+          {
+            "player_id": 19316,
+            "player": "Roland Sallai",
+            "display_name": "Roland Sallai",
+            "x": 75.95,
+            "y": 45.63,
+            "event_count": 10
+          },
+          {
+            "player_id": 264277,
+            "player": "Martin \u00c1d\u00e1m",
+            "display_name": "Martin \u00c1d\u00e1m",
+            "x": 66.26,
+            "y": 49.48,
+            "event_count": 8
+          },
+          {
+            "player_id": 8509,
+            "player": "Willi Orban",
+            "display_name": "Willi Orban",
+            "x": 23.27,
+            "y": 50.35,
+            "event_count": 4
+          },
+          {
+            "player_id": 31887,
+            "player": "Endre Botka",
+            "display_name": "Endre Botka",
+            "x": 17.68,
+            "y": 66.15,
+            "event_count": 4
+          },
+          {
+            "player_id": 8524,
+            "player": "P\u00e9ter Gul\u00e1csi",
+            "display_name": "P\u00e9ter Gul\u00e1csi",
+            "x": 3.8,
+            "y": 48.1,
+            "event_count": 3
+          },
+          {
+            "player_id": 7162,
+            "player": "\u00c1d\u00e1m Nagy",
+            "display_name": "\u00c1d\u00e1m Nagy",
+            "x": 46.63,
+            "y": 35.5,
+            "event_count": 3
+          }
+        ],
+        "hull": [
+          [
+            17.68,
+            66.15
+          ],
+          [
+            3.8,
+            48.1
+          ],
+          [
+            46.63,
+            35.5
+          ],
+          [
+            75.95,
+            45.63
+          ],
+          [
+            73.53,
+            56.21
+          ]
+        ]
+      }
+    ]
+  },
+  "off_ball": {
+    "density_grid": {
+      "cols": 24,
+      "rows": 16,
+      "values": [
+        [
+          0.0532,
+          0.0698,
+          0.089,
+          0.1107,
+          0.1341,
+          0.1587,
+          0.1836,
+          0.2077,
+          0.2301,
+          0.2498,
+          0.2657,
+          0.277,
+          0.2829,
+          0.2829,
+          0.2767,
+          0.2645,
+          0.2468,
+          0.2244,
+          0.1985,
+          0.1707,
+          0.1425,
+          0.1153,
+          0.0903,
+          0.0685
+        ],
+        [
+          0.0735,
+          0.0964,
+          0.123,
+          0.1529,
+          0.1855,
+          0.2197,
+          0.2545,
+          0.2884,
+          0.3202,
+          0.3483,
+          0.3714,
+          0.3881,
+          0.3974,
+          0.3983,
+          0.3906,
+          0.3742,
+          0.3499,
+          0.3189,
+          0.2829,
+          0.244,
+          0.2043,
+          0.1658,
+          0.1304,
+          0.0993
+        ],
+        [
+          0.0965,
+          0.1263,
+          0.161,
+          0.2001,
+          0.2427,
+          0.2876,
+          0.3334,
+          0.3784,
+          0.4207,
+          0.4585,
+          0.4898,
+          0.5129,
+          0.5261,
+          0.5284,
+          0.5191,
+          0.4983,
+          0.4669,
+          0.4264,
+          0.3792,
+          0.3278,
+          0.2753,
+          0.2243,
+          0.1771,
+          0.1355
+        ],
+        [
+          0.1205,
+          0.1575,
+          0.2004,
+          0.2487,
+          0.3015,
+          0.3573,
+          0.4144,
+          0.4707,
+          0.524,
+          0.5718,
+          0.6117,
+          0.6414,
+          0.659,
+          0.6628,
+          0.652,
+          0.6269,
+          0.5883,
+          0.5383,
+          0.4797,
+          0.4158,
+          0.3503,
+          0.2864,
+          0.2271,
+          0.1745
+        ],
+        [
+          0.1436,
+          0.1871,
+          0.2377,
+          0.2946,
+          0.3568,
+          0.4227,
+          0.4902,
+          0.5571,
+          0.6206,
+          0.6778,
+          0.7259,
+          0.7619,
+          0.7835,
+          0.7888,
+          0.7769,
+          0.7478,
+          0.7027,
+          0.644,
+          0.575,
+          0.4996,
+          0.4221,
+          0.3463,
+          0.2757,
+          0.2129
+        ],
+        [
+          0.1634,
+          0.2124,
+          0.2692,
+          0.3332,
+          0.4031,
+          0.4773,
+          0.5535,
+          0.6291,
+          0.7011,
+          0.7662,
+          0.821,
+          0.8623,
+          0.8872,
+          0.8938,
+          0.8809,
+          0.8486,
+          0.7982,
+          0.7325,
+          0.6551,
+          0.5705,
+          0.4832,
+          0.3977,
+          0.3179,
+          0.2466
+        ],
+        [
+          0.1775,
+          0.2303,
+          0.2915,
+          0.3603,
+          0.4355,
+          0.5154,
+          0.5976,
+          0.6793,
+          0.7571,
+          0.8277,
+          0.8871,
+          0.9321,
+          0.9593,
+          0.9667,
+          0.9531,
+          0.9185,
+          0.8646,
+          0.7942,
+          0.7113,
+          0.6205,
+          0.5268,
+          0.4349,
+          0.3488,
+          0.2716
+        ],
+        [
+          0.1841,
+          0.2386,
+          0.3016,
+          0.3725,
+          0.4502,
+          0.5326,
+          0.6176,
+          0.7021,
+          0.7828,
+          0.8559,
+          0.9175,
+          0.9641,
+          0.9923,
+          1.0,
+          0.9859,
+          0.9504,
+          0.8949,
+          0.8226,
+          0.7374,
+          0.6442,
+          0.5479,
+          0.4533,
+          0.3646,
+          0.2848
+        ],
+        [
+          0.1821,
+          0.2359,
+          0.2982,
+          0.3683,
+          0.4451,
+          0.5269,
+          0.6111,
+          0.695,
+          0.7751,
+          0.8477,
+          0.9089,
+          0.955,
+          0.9829,
+          0.9904,
+          0.9764,
+          0.9411,
+          0.8863,
+          0.815,
+          0.731,
+          0.6392,
+          0.5444,
+          0.4512,
+          0.3636,
+          0.2847
+        ],
+        [
+          0.1715,
+          0.2223,
+          0.2813,
+          0.3478,
+          0.4207,
+          0.4984,
+          0.5786,
+          0.6585,
+          0.7348,
+          0.8039,
+          0.8621,
+          0.9059,
+          0.9323,
+          0.9393,
+          0.9259,
+          0.8924,
+          0.8404,
+          0.7729,
+          0.6936,
+          0.6068,
+          0.5172,
+          0.4291,
+          0.3463,
+          0.2715
+        ],
+        [
+          0.1535,
+          0.1994,
+          0.2528,
+          0.3132,
+          0.3795,
+          0.4502,
+          0.5234,
+          0.5963,
+          0.666,
+          0.7291,
+          0.7822,
+          0.8221,
+          0.8462,
+          0.8526,
+          0.8403,
+          0.8099,
+          0.7628,
+          0.7017,
+          0.6298,
+          0.5513,
+          0.4701,
+          0.3903,
+          0.3151,
+          0.2473
+        ],
+        [
+          0.1305,
+          0.1701,
+          0.2162,
+          0.2685,
+          0.3261,
+          0.3876,
+          0.4514,
+          0.515,
+          0.5759,
+          0.631,
+          0.6775,
+          0.7125,
+          0.7337,
+          0.7394,
+          0.729,
+          0.7028,
+          0.6621,
+          0.6092,
+          0.5471,
+          0.4791,
+          0.4088,
+          0.3395,
+          0.2742,
+          0.2152
+        ],
+        [
+          0.1052,
+          0.1376,
+          0.1755,
+          0.2186,
+          0.2662,
+          0.3173,
+          0.3702,
+          0.4232,
+          0.4739,
+          0.52,
+          0.5589,
+          0.5883,
+          0.6062,
+          0.6114,
+          0.6032,
+          0.5819,
+          0.5486,
+          0.5051,
+          0.4539,
+          0.3978,
+          0.3396,
+          0.2823,
+          0.2281,
+          0.1791
+        ],
+        [
+          0.0802,
+          0.1053,
+          0.1349,
+          0.1686,
+          0.206,
+          0.2461,
+          0.2879,
+          0.3298,
+          0.37,
+          0.4066,
+          0.4377,
+          0.4613,
+          0.476,
+          0.4806,
+          0.4747,
+          0.4585,
+          0.4328,
+          0.3989,
+          0.3589,
+          0.3149,
+          0.2691,
+          0.2239,
+          0.181,
+          0.1422
+        ],
+        [
+          0.0578,
+          0.0762,
+          0.0979,
+          0.1229,
+          0.1506,
+          0.1805,
+          0.2117,
+          0.243,
+          0.2732,
+          0.3009,
+          0.3245,
+          0.3426,
+          0.3541,
+          0.3581,
+          0.3543,
+          0.3428,
+          0.324,
+          0.2992,
+          0.2696,
+          0.2369,
+          0.2028,
+          0.1689,
+          0.1368,
+          0.1075
+        ],
+        [
+          0.0392,
+          0.0519,
+          0.0669,
+          0.0843,
+          0.1037,
+          0.1246,
+          0.1466,
+          0.1687,
+          0.1902,
+          0.2099,
+          0.2269,
+          0.2401,
+          0.2487,
+          0.252,
+          0.2499,
+          0.2423,
+          0.2295,
+          0.2123,
+          0.1917,
+          0.1688,
+          0.1447,
+          0.1208,
+          0.098,
+          0.0771
+        ]
+      ]
+    },
+    "centroid": {
+      "x": 64.45,
+      "y": 39.25
+    },
+    "thirds_spine": [
+      {
+        "third": "defensive",
+        "x": 27.89,
+        "y": 38.63
+      },
+      {
+        "third": "middle",
+        "x": 61.36,
+        "y": 39.27
+      },
+      {
+        "third": "attacking",
+        "x": 91.55,
+        "y": 39.59
+      }
+    ],
+    "ellipse": {
+      "cx": 64.45,
+      "cy": 39.25,
+      "rx": 23.07,
+      "ry": 15.78,
+      "angle_deg": -177.6
+    },
+    "depth_line": {
+      "x": 78.6,
+      "percentile": 70
+    }
+  },
+  "metadata": {
+    "match_id": 3930177,
+    "team": "Hungary",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Scotland vs Hungary",
+    "on_ball_event_count": 429,
+    "on_ball_period_count": 4,
+    "off_ball_bandwidth_yards": 8.0,
+    "off_ball_depth_percentile": 70,
+    "off_ball_grid_cols": 24,
+    "off_ball_grid_rows": 16,
+    "phase_filter": "open_play_only",
+    "coordinate_system": "statsbomb_120x80_normalised_attack_right",
+    "coordinate_note": "Coordinates are normalised so the team always attacks right (increasing x). Raw StatsBomb events are flipped (x\u2192120-x, y\u219280-y) in periods where the team attacks left.",
+    "camera_caveat": "360 frames follow the ball; the visible subset of out-of-possession positions is biased toward areas near the ball. The camera artifact and the real defensive shape point the same direction \u2014 they cannot be cleanly separated."
+  }
+}

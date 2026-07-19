@@ -1,0 +1,69 @@
+{
+  "hulls": [
+    {
+      "sides": [
+        {
+          "side": "offense",
+          "team_name": "England",
+          "hull_vertices": [
+            [
+              108.09408525914819,
+              48.49367104227174
+            ],
+            [
+              108.04614006189829,
+              31.301306382610818
+            ],
+            [
+              113.4000015258789,
+              39.5
+            ],
+            [
+              115.3706971933407,
+              45.38278070539032
+            ],
+            [
+              120.32672254314244,
+              60.23228782834543
+            ]
+          ],
+          "area": 132.03,
+          "player_count": 5
+        },
+        {
+          "side": "defense",
+          "team_name": "opponent",
+          "hull_vertices": [
+            [
+              119.4448524393263,
+              62.372668052285704
+            ],
+            [
+              104.21898922871013,
+              44.76631097656061
+            ],
+            [
+              114.00115476599704,
+              39.14312061218788
+            ]
+          ],
+          "area": 128.92,
+          "player_count": 6
+        }
+      ],
+      "metadata": {
+        "match_id": 3930163,
+        "event_id": "68dfccce-11da-4fef-b838-b01c4f973567",
+        "minute": 12,
+        "possession_team_name": "England",
+        "actor_team_name": "England",
+        "include_keeper": false
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3930163,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Serbia vs England"
+  }
+}

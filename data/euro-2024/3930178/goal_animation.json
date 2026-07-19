@@ -1,0 +1,253 @@
+{
+  "goals": [
+    {
+      "window": {
+        "anchor_event_id": "33fa8e71-7b92-4916-8271-1f24566337d4",
+        "start_event_id": "0f057043-5904-4bc4-a971-2402b2757f3d",
+        "end_event_id": "33fa8e71-7b92-4916-8271-1f24566337d4",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 10.509
+      },
+      "frames": [
+        {
+          "event_id": "0f057043-5904-4bc4-a971-2402b2757f3d",
+          "t_seconds": 0.0,
+          "team": "Croatia",
+          "event_type": "Pass",
+          "ball_x": 82.1,
+          "ball_y": 56.2,
+          "ball_end_x": 90.4,
+          "ball_end_y": 71.5,
+          "actor": "Josip Stani\u0161i\u0107",
+          "outcome": null
+        },
+        {
+          "event_id": "d6260f6e-b236-408e-b566-7867d5444de4",
+          "t_seconds": 1.768,
+          "team": "Croatia",
+          "event_type": "Carry",
+          "ball_x": 90.4,
+          "ball_y": 71.5,
+          "ball_end_x": 86.2,
+          "ball_end_y": 62.0,
+          "actor": "Luka Su\u010di\u0107",
+          "outcome": null
+        },
+        {
+          "event_id": "b4db9000-143f-43ee-bc0c-91815da75544",
+          "t_seconds": 6.571,
+          "team": "Croatia",
+          "event_type": "Pass",
+          "ball_x": 86.2,
+          "ball_y": 62.0,
+          "ball_end_x": 111.3,
+          "ball_end_y": 40.9,
+          "actor": "Luka Su\u010di\u0107",
+          "outcome": null
+        },
+        {
+          "event_id": "4c367c5f-756a-4269-80b3-c348f42a963d",
+          "t_seconds": 8.034,
+          "team": "Italy",
+          "event_type": "Pressure",
+          "ball_x": 8.1,
+          "ball_y": 42.5,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Matteo Darmian",
+          "outcome": null
+        },
+        {
+          "event_id": "3ccff8f4-1fea-4225-a649-7d22c77313cf",
+          "t_seconds": 8.262,
+          "team": "Croatia",
+          "event_type": "Shot",
+          "ball_x": 111.3,
+          "ball_y": 40.9,
+          "ball_end_x": 117.7,
+          "ball_end_y": 40.6,
+          "actor": "Ante Budimir",
+          "outcome": null
+        },
+        {
+          "event_id": "b35b0de8-442e-4436-b016-59bdeafd6092",
+          "t_seconds": 10.256,
+          "team": "Croatia",
+          "event_type": "Ball Recovery",
+          "ball_x": 114.4,
+          "ball_y": 36.1,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Luka Modri\u0107",
+          "outcome": null
+        },
+        {
+          "event_id": "33fa8e71-7b92-4916-8271-1f24566337d4",
+          "t_seconds": 10.509,
+          "team": "Croatia",
+          "event_type": "Shot",
+          "ball_x": 114.9,
+          "ball_y": 35.5,
+          "ball_end_x": 120.0,
+          "ball_end_y": 37.1,
+          "actor": "Luka Modri\u0107",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "33fa8e71-7b92-4916-8271-1f24566337d4",
+          "minute": 54,
+          "second": 17,
+          "scorer": "Luka Modri\u0107",
+          "team": "Croatia"
+        }
+      },
+      "metadata": {
+        "match_id": 3930178,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Croatia vs Italy"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "14576e0e-8f0b-4978-9821-a591ac751e73",
+        "start_event_id": "5b7e0118-a5c5-4d21-89db-9412ea090c14",
+        "end_event_id": "14576e0e-8f0b-4978-9821-a591ac751e73",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 10.903
+      },
+      "frames": [
+        {
+          "event_id": "5b7e0118-a5c5-4d21-89db-9412ea090c14",
+          "t_seconds": 4.124,
+          "team": "Italy",
+          "event_type": "Pass",
+          "ball_x": 58.5,
+          "ball_y": 54.3,
+          "ball_end_x": 71.3,
+          "ball_end_y": 55.2,
+          "actor": "Riccardo Calafiori",
+          "outcome": null
+        },
+        {
+          "event_id": "ce2665d2-8b60-4be3-994f-6674989b37ef",
+          "t_seconds": 4.851,
+          "team": "Italy",
+          "event_type": "Carry",
+          "ball_x": 71.3,
+          "ball_y": 55.2,
+          "ball_end_x": 74.2,
+          "ball_end_y": 54.2,
+          "actor": "Nicol\u00f2 Barella",
+          "outcome": null
+        },
+        {
+          "event_id": "d8fc79d2-f1d0-492d-8e1d-eb9b84004193",
+          "t_seconds": 5.705,
+          "team": "Croatia",
+          "event_type": "Pressure",
+          "ball_x": 44.9,
+          "ball_y": 24.3,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Jo\u0161ko Gvardiol",
+          "outcome": null
+        },
+        {
+          "event_id": "ef04765f-053c-4262-87fe-e3d90dd1dd20",
+          "t_seconds": 5.818,
+          "team": "Italy",
+          "event_type": "Carry",
+          "ball_x": 74.2,
+          "ball_y": 54.2,
+          "ball_end_x": 72.6,
+          "ball_end_y": 52.2,
+          "actor": "Nicol\u00f2 Barella",
+          "outcome": null
+        },
+        {
+          "event_id": "b643213c-1f4d-4306-8432-57397f96df4d",
+          "t_seconds": 5.898,
+          "team": "Italy",
+          "event_type": "Pass",
+          "ball_x": 72.6,
+          "ball_y": 52.2,
+          "ball_end_x": 72.6,
+          "ball_end_y": 45.4,
+          "actor": "Nicol\u00f2 Barella",
+          "outcome": null
+        },
+        {
+          "event_id": "f0613489-643c-4e77-af02-5bfddb3a97ee",
+          "t_seconds": 6.76,
+          "team": "Italy",
+          "event_type": "Carry",
+          "ball_x": 72.6,
+          "ball_y": 45.4,
+          "ball_end_x": 95.7,
+          "ball_end_y": 41.5,
+          "actor": "Riccardo Calafiori",
+          "outcome": null
+        },
+        {
+          "event_id": "29a134e6-9b29-4e75-bbb1-cbd823b5f260",
+          "t_seconds": 9.235,
+          "team": "Croatia",
+          "event_type": "Pressure",
+          "ball_x": 21.7,
+          "ball_y": 39.9,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Josip \u0160utalo",
+          "outcome": null
+        },
+        {
+          "event_id": "e71f6d1f-8dfc-4414-bc1a-f737c1e098ad",
+          "t_seconds": 9.448,
+          "team": "Italy",
+          "event_type": "Pass",
+          "ball_x": 95.7,
+          "ball_y": 41.5,
+          "ball_end_x": 104.1,
+          "ball_end_y": 28.2,
+          "actor": "Riccardo Calafiori",
+          "outcome": null
+        },
+        {
+          "event_id": "14576e0e-8f0b-4978-9821-a591ac751e73",
+          "t_seconds": 10.903,
+          "team": "Italy",
+          "event_type": "Shot",
+          "ball_x": 103.4,
+          "ball_y": 28.0,
+          "ball_end_x": 120.0,
+          "ball_end_y": 43.0,
+          "actor": "Mattia Zaccagni",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "14576e0e-8f0b-4978-9821-a591ac751e73",
+          "minute": 97,
+          "second": 21,
+          "scorer": "Mattia Zaccagni",
+          "team": "Italy"
+        }
+      },
+      "metadata": {
+        "match_id": 3930178,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Croatia vs Italy"
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3930178,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Croatia vs Italy"
+  }
+}

@@ -1,0 +1,790 @@
+{
+  "on_ball": {
+    "periods": [
+      {
+        "from_minute": 0,
+        "to_minute": 62,
+        "players_in": [
+          "Jan Oblak",
+          "\u017dan Karni\u010dnik",
+          "Vanja Drku\u0161i\u0107",
+          "Jaka Bijol",
+          "Erik Jan\u017ea",
+          "Adam Gnezda \u010cerin",
+          "Timi El\u0161nik",
+          "Petar Stojanovi\u0107",
+          "Jan Mlakar",
+          "Andra\u017e \u0160porar",
+          "Benjamin \u0160e\u0161ko"
+        ],
+        "players_out": [],
+        "nodes": [
+          {
+            "player_id": 31968,
+            "player": "Adam Gnezda \u010cerin",
+            "display_name": "Adam Gnezda \u010cerin",
+            "x": 63.88,
+            "y": 58.15,
+            "event_count": 62
+          },
+          {
+            "player_id": 16528,
+            "player": "Petar Stojanovi\u0107",
+            "display_name": "Petar Stojanovi\u0107",
+            "x": 63.04,
+            "y": 65.1,
+            "event_count": 56
+          },
+          {
+            "player_id": 137487,
+            "player": "\u017dan Karni\u010dnik",
+            "display_name": "\u017dan Karni\u010dnik",
+            "x": 62.3,
+            "y": 74.28,
+            "event_count": 51
+          },
+          {
+            "player_id": 15896,
+            "player": "Timi El\u0161nik",
+            "display_name": "Timi El\u0161nik",
+            "x": 64.75,
+            "y": 40.22,
+            "event_count": 44
+          },
+          {
+            "player_id": 31089,
+            "player": "Jan Mlakar",
+            "display_name": "Jan Mlakar",
+            "x": 75.93,
+            "y": 29.9,
+            "event_count": 39
+          },
+          {
+            "player_id": 38759,
+            "player": "Benjamin \u0160e\u0161ko",
+            "display_name": "Benjamin \u0160e\u0161ko",
+            "x": 74.19,
+            "y": 31.95,
+            "event_count": 33
+          },
+          {
+            "player_id": 16047,
+            "player": "Jaka Bijol",
+            "display_name": "Jaka Bijol",
+            "x": 46.63,
+            "y": 37.24,
+            "event_count": 32
+          },
+          {
+            "player_id": 205932,
+            "player": "Vanja Drku\u0161i\u0107",
+            "display_name": "Vanja Drku\u0161i\u0107",
+            "x": 40.94,
+            "y": 61.9,
+            "event_count": 30
+          },
+          {
+            "player_id": 28211,
+            "player": "Erik Jan\u017ea",
+            "display_name": "Erik Jan\u017ea",
+            "x": 60.24,
+            "y": 13.19,
+            "event_count": 30
+          },
+          {
+            "player_id": 31866,
+            "player": "Andra\u017e \u0160porar",
+            "display_name": "Andra\u017e \u0160porar",
+            "x": 97.49,
+            "y": 43.74,
+            "event_count": 16
+          },
+          {
+            "player_id": 6378,
+            "player": "Jan Oblak",
+            "display_name": "Jan Oblak",
+            "x": 6.88,
+            "y": 40.43,
+            "event_count": 13
+          }
+        ],
+        "hull": [
+          [
+            97.49,
+            43.74
+          ],
+          [
+            62.3,
+            74.28
+          ],
+          [
+            40.94,
+            61.9
+          ],
+          [
+            6.88,
+            40.43
+          ],
+          [
+            60.24,
+            13.19
+          ]
+        ]
+      },
+      {
+        "from_minute": 62,
+        "to_minute": 75,
+        "players_in": [
+          "Jon Gorenc Stankovi\u010d"
+        ],
+        "players_out": [
+          "Jan Mlakar"
+        ],
+        "nodes": [
+          {
+            "player_id": 28211,
+            "player": "Erik Jan\u017ea",
+            "display_name": "Erik Jan\u017ea",
+            "x": 33.98,
+            "y": 7.52,
+            "event_count": 9
+          },
+          {
+            "player_id": 137487,
+            "player": "\u017dan Karni\u010dnik",
+            "display_name": "\u017dan Karni\u010dnik",
+            "x": 53.71,
+            "y": 61.67,
+            "event_count": 9
+          },
+          {
+            "player_id": 15896,
+            "player": "Timi El\u0161nik",
+            "display_name": "Timi El\u0161nik",
+            "x": 62.67,
+            "y": 12.6,
+            "event_count": 6
+          },
+          {
+            "player_id": 38759,
+            "player": "Benjamin \u0160e\u0161ko",
+            "display_name": "Benjamin \u0160e\u0161ko",
+            "x": 48.17,
+            "y": 10.18,
+            "event_count": 4
+          },
+          {
+            "player_id": 31866,
+            "player": "Andra\u017e \u0160porar",
+            "display_name": "Andra\u017e \u0160porar",
+            "x": 74.8,
+            "y": 19.33,
+            "event_count": 3
+          },
+          {
+            "player_id": 16528,
+            "player": "Petar Stojanovi\u0107",
+            "display_name": "Petar Stojanovi\u0107",
+            "x": 89.7,
+            "y": 25.47,
+            "event_count": 3
+          }
+        ],
+        "hull": [
+          [
+            53.71,
+            61.67
+          ],
+          [
+            33.98,
+            7.52
+          ],
+          [
+            62.67,
+            12.6
+          ],
+          [
+            89.7,
+            25.47
+          ]
+        ]
+      },
+      {
+        "from_minute": 75,
+        "to_minute": 90,
+        "players_in": [
+          "\u017dan Vipotnik",
+          "Benjamin Verbi\u010d"
+        ],
+        "players_out": [
+          "Benjamin \u0160e\u0161ko",
+          "Petar Stojanovi\u0107"
+        ],
+        "nodes": [
+          {
+            "player_id": 6378,
+            "player": "Jan Oblak",
+            "display_name": "Jan Oblak",
+            "x": 9.35,
+            "y": 38.08,
+            "event_count": 4
+          },
+          {
+            "player_id": 15896,
+            "player": "Timi El\u0161nik",
+            "display_name": "Timi El\u0161nik",
+            "x": 87.1,
+            "y": 3.8,
+            "event_count": 3
+          },
+          {
+            "player_id": 137487,
+            "player": "\u017dan Karni\u010dnik",
+            "display_name": "\u017dan Karni\u010dnik",
+            "x": 28.27,
+            "y": 58.3,
+            "event_count": 3
+          },
+          {
+            "player_id": 290289,
+            "player": "\u017dan Vipotnik",
+            "display_name": "\u017dan Vipotnik",
+            "x": 89.3,
+            "y": 23.53,
+            "event_count": 3
+          },
+          {
+            "player_id": 31866,
+            "player": "Andra\u017e \u0160porar",
+            "display_name": "Andra\u017e \u0160porar",
+            "x": 51.0,
+            "y": 56.75,
+            "event_count": 2
+          },
+          {
+            "player_id": 11416,
+            "player": "Jon Gorenc Stankovi\u010d",
+            "display_name": "Jon Gorenc-Stankovic",
+            "x": 65.7,
+            "y": 21.4,
+            "event_count": 1
+          },
+          {
+            "player_id": 16510,
+            "player": "Benjamin Verbi\u010d",
+            "display_name": "Benjamin Verbi\u010d",
+            "x": 75.0,
+            "y": 75.0,
+            "event_count": 1
+          }
+        ],
+        "hull": [
+          [
+            89.3,
+            23.53
+          ],
+          [
+            75.0,
+            75.0
+          ],
+          [
+            28.27,
+            58.3
+          ],
+          [
+            9.35,
+            38.08
+          ],
+          [
+            87.1,
+            3.8
+          ]
+        ]
+      },
+      {
+        "from_minute": 90,
+        "to_minute": 97,
+        "players_in": [
+          "David Brekalo"
+        ],
+        "players_out": [
+          "Timi El\u0161nik"
+        ],
+        "nodes": [],
+        "hull": []
+      }
+    ]
+  },
+  "off_ball": {
+    "density_grid": {
+      "cols": 24,
+      "rows": 16,
+      "values": [
+        [
+          0.0652,
+          0.0809,
+          0.0983,
+          0.1172,
+          0.1369,
+          0.157,
+          0.1768,
+          0.1953,
+          0.2119,
+          0.2258,
+          0.2363,
+          0.2429,
+          0.2453,
+          0.2433,
+          0.2369,
+          0.2266,
+          0.2128,
+          0.1961,
+          0.1772,
+          0.157,
+          0.1362,
+          0.1157,
+          0.0961,
+          0.078
+        ],
+        [
+          0.0918,
+          0.1135,
+          0.1374,
+          0.1632,
+          0.1903,
+          0.2179,
+          0.245,
+          0.2705,
+          0.2936,
+          0.313,
+          0.3279,
+          0.3376,
+          0.3415,
+          0.3394,
+          0.3313,
+          0.3178,
+          0.2992,
+          0.2766,
+          0.2509,
+          0.2231,
+          0.1944,
+          0.1658,
+          0.1384,
+          0.1129
+        ],
+        [
+          0.1235,
+          0.1519,
+          0.1832,
+          0.2169,
+          0.2523,
+          0.2882,
+          0.3236,
+          0.3572,
+          0.3876,
+          0.4135,
+          0.4336,
+          0.4469,
+          0.4528,
+          0.4509,
+          0.4413,
+          0.4243,
+          0.4007,
+          0.3716,
+          0.3383,
+          0.302,
+          0.2643,
+          0.2265,
+          0.19,
+          0.1559
+        ],
+        [
+          0.1584,
+          0.194,
+          0.2333,
+          0.2754,
+          0.3195,
+          0.3644,
+          0.4086,
+          0.4507,
+          0.489,
+          0.5218,
+          0.5476,
+          0.5652,
+          0.5735,
+          0.5722,
+          0.5613,
+          0.541,
+          0.5125,
+          0.4768,
+          0.4355,
+          0.3904,
+          0.3431,
+          0.2954,
+          0.249,
+          0.2053
+        ],
+        [
+          0.1938,
+          0.2367,
+          0.2838,
+          0.3342,
+          0.3869,
+          0.4407,
+          0.4937,
+          0.5444,
+          0.5906,
+          0.6306,
+          0.6623,
+          0.6844,
+          0.6956,
+          0.6952,
+          0.6833,
+          0.6603,
+          0.6271,
+          0.5851,
+          0.5362,
+          0.4823,
+          0.4256,
+          0.368,
+          0.3116,
+          0.2581
+        ],
+        [
+          0.2262,
+          0.2757,
+          0.3298,
+          0.3878,
+          0.4485,
+          0.5103,
+          0.5715,
+          0.6301,
+          0.6839,
+          0.7306,
+          0.7681,
+          0.7947,
+          0.8088,
+          0.8098,
+          0.7974,
+          0.7722,
+          0.735,
+          0.6876,
+          0.6319,
+          0.5701,
+          0.5046,
+          0.4378,
+          0.3721,
+          0.3094
+        ],
+        [
+          0.2517,
+          0.3064,
+          0.3663,
+          0.4304,
+          0.4976,
+          0.5661,
+          0.6342,
+          0.6995,
+          0.7597,
+          0.8124,
+          0.855,
+          0.8857,
+          0.9027,
+          0.9052,
+          0.8928,
+          0.8659,
+          0.8258,
+          0.7741,
+          0.7128,
+          0.6445,
+          0.5717,
+          0.4973,
+          0.4237,
+          0.3532
+        ],
+        [
+          0.267,
+          0.3251,
+          0.3887,
+          0.457,
+          0.5286,
+          0.6018,
+          0.6748,
+          0.745,
+          0.81,
+          0.8672,
+          0.9138,
+          0.9478,
+          0.9673,
+          0.9711,
+          0.9591,
+          0.9314,
+          0.8894,
+          0.8346,
+          0.7695,
+          0.6966,
+          0.6187,
+          0.5388,
+          0.4597,
+          0.3837
+        ],
+        [
+          0.2702,
+          0.3294,
+          0.3945,
+          0.4644,
+          0.5379,
+          0.6133,
+          0.6886,
+          0.7614,
+          0.829,
+          0.8887,
+          0.9378,
+          0.9738,
+          0.995,
+          1.0,
+          0.9884,
+          0.9607,
+          0.9179,
+          0.8618,
+          0.7948,
+          0.7196,
+          0.6392,
+          0.5566,
+          0.4748,
+          0.3963
+        ],
+        [
+          0.261,
+          0.3191,
+          0.383,
+          0.4519,
+          0.5245,
+          0.5993,
+          0.6741,
+          0.7467,
+          0.8143,
+          0.8743,
+          0.9237,
+          0.9604,
+          0.9821,
+          0.9878,
+          0.9768,
+          0.9496,
+          0.9072,
+          0.8515,
+          0.7848,
+          0.71,
+          0.63,
+          0.5479,
+          0.4667,
+          0.3889
+        ],
+        [
+          0.2411,
+          0.2956,
+          0.3559,
+          0.4212,
+          0.4901,
+          0.5613,
+          0.6328,
+          0.7023,
+          0.7673,
+          0.8249,
+          0.8727,
+          0.9082,
+          0.9294,
+          0.9352,
+          0.9249,
+          0.8988,
+          0.8582,
+          0.8046,
+          0.7406,
+          0.6688,
+          0.5922,
+          0.5138,
+          0.4364,
+          0.3627
+        ],
+        [
+          0.213,
+          0.2622,
+          0.3167,
+          0.3759,
+          0.4387,
+          0.5037,
+          0.5692,
+          0.6329,
+          0.6926,
+          0.7457,
+          0.7898,
+          0.8225,
+          0.8422,
+          0.8474,
+          0.8378,
+          0.8137,
+          0.776,
+          0.7264,
+          0.6672,
+          0.601,
+          0.5306,
+          0.4589,
+          0.3884,
+          0.3215
+        ],
+        [
+          0.18,
+          0.2223,
+          0.2695,
+          0.321,
+          0.3757,
+          0.4325,
+          0.4897,
+          0.5456,
+          0.598,
+          0.6447,
+          0.6834,
+          0.7122,
+          0.7293,
+          0.7337,
+          0.725,
+          0.7033,
+          0.6697,
+          0.6257,
+          0.5732,
+          0.5148,
+          0.4529,
+          0.3902,
+          0.3288,
+          0.2709
+        ],
+        [
+          0.1452,
+          0.1801,
+          0.219,
+          0.2616,
+          0.3071,
+          0.3544,
+          0.4021,
+          0.4488,
+          0.4927,
+          0.5317,
+          0.5641,
+          0.5881,
+          0.6022,
+          0.6057,
+          0.598,
+          0.5794,
+          0.5507,
+          0.5133,
+          0.469,
+          0.4198,
+          0.368,
+          0.3156,
+          0.2647,
+          0.217
+        ],
+        [
+          0.1116,
+          0.1389,
+          0.1694,
+          0.203,
+          0.2389,
+          0.2763,
+          0.3142,
+          0.3512,
+          0.3861,
+          0.4171,
+          0.4428,
+          0.4618,
+          0.4729,
+          0.4754,
+          0.469,
+          0.4538,
+          0.4306,
+          0.4004,
+          0.3647,
+          0.3254,
+          0.2841,
+          0.2426,
+          0.2025,
+          0.1651
+        ],
+        [
+          0.0814,
+          0.1016,
+          0.1244,
+          0.1494,
+          0.1762,
+          0.2043,
+          0.2327,
+          0.2606,
+          0.2868,
+          0.3102,
+          0.3296,
+          0.3439,
+          0.3522,
+          0.3539,
+          0.3488,
+          0.3371,
+          0.3192,
+          0.2961,
+          0.269,
+          0.2392,
+          0.208,
+          0.1769,
+          0.1469,
+          0.1192
+        ]
+      ]
+    },
+    "centroid": {
+      "x": 64.02,
+      "y": 42.45
+    },
+    "thirds_spine": [
+      {
+        "third": "defensive",
+        "x": 24.71,
+        "y": 41.53
+      },
+      {
+        "third": "middle",
+        "x": 60.87,
+        "y": 42.9
+      },
+      {
+        "third": "attacking",
+        "x": 94.61,
+        "y": 42.22
+      }
+    ],
+    "ellipse": {
+      "cx": 64.02,
+      "cy": 42.45,
+      "rx": 25.94,
+      "ry": 16.28,
+      "angle_deg": -178.8
+    },
+    "depth_line": {
+      "x": 79.11,
+      "percentile": 70
+    }
+  },
+  "metadata": {
+    "match_id": 3930170,
+    "team": "Slovenia",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Slovenia vs Serbia",
+    "on_ball_event_count": 457,
+    "on_ball_period_count": 4,
+    "off_ball_bandwidth_yards": 8.0,
+    "off_ball_depth_percentile": 70,
+    "off_ball_grid_cols": 24,
+    "off_ball_grid_rows": 16,
+    "phase_filter": "open_play_only",
+    "coordinate_system": "statsbomb_120x80_normalised_attack_right",
+    "coordinate_note": "Coordinates are normalised so the team always attacks right (increasing x). Raw StatsBomb events are flipped (x\u2192120-x, y\u219280-y) in periods where the team attacks left.",
+    "camera_caveat": "360 frames follow the ball; the visible subset of out-of-possession positions is biased toward areas near the ball. The camera artifact and the real defensive shape point the same direction \u2014 they cannot be cleanly separated."
+  }
+}

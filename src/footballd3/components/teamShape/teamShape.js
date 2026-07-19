@@ -20,26 +20,36 @@
 //   const { update } = createTeamShape(pitch, data, { view: "on-ball" });
 //   update("off-ball");
 
+import * as d3 from "d3";
+
 const SPINE_POINT_R = 4;
 const NODE_R        = 7;
 const DEPTH_LABEL_OFFSET = 8;
 
-const _tooltip = document.createElement("div");
-Object.assign(_tooltip.style, {
-  position:      "fixed",
-  pointerEvents: "none",
-  display:       "none",
-  background:    "#FAF7F0",
-  border:        "1px solid #E5E5E5",
-  borderRadius:  "2px",
-  padding:       "8px 10px",
-  fontFamily:    "Geist Mono, monospace",
-  fontSize:      "12px",
-  lineHeight:    "1.6",
-  color:         "#171717",
-  whiteSpace:    "nowrap",
-});
-document.body.appendChild(_tooltip);
+// Created lazily (not at module scope) so this file can be imported in a
+// server-rendering context without touching `document` on the server.
+let _tooltip;
+function getTooltip() {
+  if (!_tooltip) {
+    _tooltip = document.createElement("div");
+    Object.assign(_tooltip.style, {
+      position:      "fixed",
+      pointerEvents: "none",
+      display:       "none",
+      background:    "#FAF7F0",
+      border:        "1px solid #E5E5E5",
+      borderRadius:  "2px",
+      padding:       "8px 10px",
+      fontFamily:    "Geist Mono, monospace",
+      fontSize:      "12px",
+      lineHeight:    "1.6",
+      color:         "#171717",
+      whiteSpace:    "nowrap",
+    });
+    document.body.appendChild(_tooltip);
+  }
+  return _tooltip;
+}
 
 /**
  * Bilinearly interpolate a normalized density value at fractional grid position (gx, gy).
@@ -92,7 +102,8 @@ function hexToRgb(hex) {
  * @param {Function}     px         - Pixel conversion: (sbX, sbY) => [screenX, screenY].
  * @param {number}       padding    - Pitch padding from createPitch().config.
  * @param {number}       pxPerYard  - Pixels per StatsBomb yard.
- * @param {string}       colorLow   - CSS hex color at zero density.
+ * @param {string}       colorLow   - Resolved hex color at zero density (baked into raw
+ *   canvas pixel RGBA data — must be a real hex, not a CSS var() string).
  * @param {string}       colorHigh  - CSS hex color at peak density.
  * @param {number}       maxOpacity - Opacity multiplier at peak density (0–1).
  * @returns {d3.Selection} The appended <image> element (class "ts-density").
@@ -161,8 +172,9 @@ function renderDensity(g, grid, px, padding, pxPerYard, colorLow, colorHigh, max
  *                                    { nodes, hull, from_minute, to_minute, ... }.
  * @param {string}       nodeColor  - Fill color for player circles.
  * @param {boolean}      showLabels - Render player surname labels if true.
+ * @param {string}       backgroundColor - Stroke color separating nodes from the pitch surface.
  */
-function drawOnBall(g, px, period, nodeColor, showLabels) {
+function drawOnBall(g, px, period, nodeColor, showLabels, backgroundColor) {
   if (!period || !period.nodes || period.nodes.length === 0) return;
 
   // Convex hull polygon.
@@ -191,7 +203,7 @@ function drawOnBall(g, px, period, nodeColor, showLabels) {
       .attr("r", NODE_R)
       .attr("fill", nodeColor)
       .attr("fill-opacity", 0.85)
-      .attr("stroke", "#FAF7F0")
+      .attr("stroke", backgroundColor)
       .attr("stroke-width", 1.2);
 
     if (showLabels) {
@@ -207,16 +219,18 @@ function drawOnBall(g, px, period, nodeColor, showLabels) {
 
     grp
       .on("mouseover", () => {
-        _tooltip.innerHTML =
+        const tooltip = getTooltip();
+        tooltip.innerHTML =
           `<span style="font-weight:600">${node.display_name}</span><br>` +
           `<span style="color:#525252">${node.event_count} on-ball events</span>`;
-        _tooltip.style.display = "block";
+        tooltip.style.display = "block";
       })
       .on("mousemove", event => {
-        _tooltip.style.left = (event.clientX + 14) + "px";
-        _tooltip.style.top  = (event.clientY - 28) + "px";
+        const tooltip = getTooltip();
+        tooltip.style.left = (event.clientX + 14) + "px";
+        tooltip.style.top  = (event.clientY - 28) + "px";
       })
-      .on("mouseout", () => { _tooltip.style.display = "none"; });
+      .on("mouseout", () => { getTooltip().style.display = "none"; });
   });
 }
 
@@ -234,8 +248,10 @@ function drawOnBall(g, px, period, nodeColor, showLabels) {
  * @param {number}       pxPerYard  - Pixels per StatsBomb yard (from pitch config).
  * @param {number}       padding    - Pitch padding in pixels (from pitch config).
  * @param {string}       accentColor - Fill/stroke color for markers.
+ * @param {string}       backgroundColor - Resolved hex for the density surface's zero-value
+ *   color and node-stroke separators — pass the current theme's page background.
  */
-function drawOffBall(g, px, offBall, pxPerYard, padding, accentColor) {
+function drawOffBall(g, px, offBall, pxPerYard, padding, accentColor, backgroundColor) {
   // Density surface (inserted before existing pitch markings).
   renderDensity(
     g,
@@ -243,7 +259,7 @@ function drawOffBall(g, px, offBall, pxPerYard, padding, accentColor) {
     px,
     padding,
     pxPerYard,
-    "#FAF7F0",
+    backgroundColor,
     accentColor,
     0.75,
   );
@@ -281,19 +297,21 @@ function drawOffBall(g, px, offBall, pxPerYard, padding, accentColor) {
       .attr("r", SPINE_POINT_R)
       .attr("fill", accentColor)
       .attr("fill-opacity", 0.8)
-      .attr("stroke", "#FAF7F0")
+      .attr("stroke", backgroundColor)
       .attr("stroke-width", 1)
       .on("mouseover", () => {
-        _tooltip.innerHTML =
+        const tooltip = getTooltip();
+        tooltip.innerHTML =
           `<span style="font-weight:600">${s.third} third</span><br>` +
           `<span style="color:#525252">cloud centre of mass</span>`;
-        _tooltip.style.display = "block";
+        tooltip.style.display = "block";
       })
       .on("mousemove", event => {
-        _tooltip.style.left = (event.clientX + 14) + "px";
-        _tooltip.style.top  = (event.clientY - 28) + "px";
+        const tooltip = getTooltip();
+        tooltip.style.left = (event.clientX + 14) + "px";
+        tooltip.style.top  = (event.clientY - 28) + "px";
       })
-      .on("mouseout", () => { _tooltip.style.display = "none"; });
+      .on("mouseout", () => { getTooltip().style.display = "none"; });
   });
 
   // Centroid marker — mean position of all pooled dots.
@@ -303,19 +321,21 @@ function drawOffBall(g, px, offBall, pxPerYard, padding, accentColor) {
     .attr("cx", ccx).attr("cy", ccy)
     .attr("r", 5)
     .attr("fill", accentColor)
-    .attr("stroke", "#FAF7F0")
+    .attr("stroke", backgroundColor)
     .attr("stroke-width", 2)
     .on("mouseover", () => {
-      _tooltip.innerHTML =
+      const tooltip = getTooltip();
+      tooltip.innerHTML =
         `<span style="font-weight:600">off-ball centroid</span><br>` +
         `<span style="color:#525252">mean out-of-possession position<br>of the cloud (not a player)</span>`;
-      _tooltip.style.display = "block";
+      tooltip.style.display = "block";
     })
     .on("mousemove", event => {
-      _tooltip.style.left = (event.clientX + 14) + "px";
-      _tooltip.style.top  = (event.clientY - 28) + "px";
+      const tooltip = getTooltip();
+      tooltip.style.left = (event.clientX + 14) + "px";
+      tooltip.style.top  = (event.clientY - 28) + "px";
     })
-    .on("mouseout", () => { _tooltip.style.display = "none"; });
+    .on("mouseout", () => { getTooltip().style.display = "none"; });
 
   // Percentile depth line — how deep the team sits out of possession.
   const [dlx] = px(offBall.depth_line.x, 40);
@@ -374,7 +394,10 @@ function drawOffBall(g, px, offBall, pxPerYard, padding, accentColor) {
  * @param {string}  [config.nodeColor="#1E3A5F"] - Node fill color (on-ball view).
  * @param {string}  [config.accentColor="#9F1239"] - Accent color for off-ball markers.
  * @param {boolean} [config.showLabels=false]    - Show player surname labels on nodes.
- * @returns {{ g: d3.Selection, px: Function, update: Function, updatePeriod: Function }}
+ * @param {string}  [config.backgroundColor="#FAF7F0"] - Resolved hex for the off-ball
+ *   density surface's zero-value color and node-stroke separators — pass the current
+ *   theme's page background so both recolor correctly in light and dark themes.
+ * @returns {{ g: d3.Selection, px: Function, update: function(string):void, updatePeriod: function(number):void }}
  *   g             — pitch.g (append further overlays here).
  *   px            — pitch.px (sbX, sbY) => [screenX, screenY].
  *   update(view)  — switch to "on-ball" or "off-ball" view.
@@ -382,10 +405,11 @@ function drawOffBall(g, px, offBall, pxPerYard, padding, accentColor) {
  */
 export function createTeamShape(pitch, data, config = {}) {
   const {
-    view        = "on-ball",
-    nodeColor   = "#1E3A5F",
-    accentColor = "#9F1239",
-    showLabels  = false,
+    view            = "on-ball",
+    nodeColor       = "#1E3A5F",
+    accentColor     = "#9F1239",
+    showLabels      = false,
+    backgroundColor = "#FAF7F0",
   } = config;
 
   const { g, px } = pitch;
@@ -411,9 +435,9 @@ export function createTeamShape(pitch, data, config = {}) {
     g.selectAll(".ts-on-ball, .ts-off-ball, .ts-density").remove();
 
     if (newView === "on-ball") {
-      drawOnBall(g, px, data.on_ball.periods[_currentPeriodIdx], nodeColor, showLabels);
+      drawOnBall(g, px, data.on_ball.periods[_currentPeriodIdx], nodeColor, showLabels, backgroundColor);
     } else {
-      drawOffBall(g, px, data.off_ball, pxPerYard, padding, accentColor);
+      drawOffBall(g, px, data.off_ball, pxPerYard, padding, accentColor, backgroundColor);
     }
   }
 
@@ -430,7 +454,7 @@ export function createTeamShape(pitch, data, config = {}) {
     _currentPeriodIdx = Math.max(0, Math.min(max, idx));
     if (_currentView === "on-ball") {
       g.selectAll(".ts-on-ball").remove();
-      drawOnBall(g, px, data.on_ball.periods[_currentPeriodIdx], nodeColor, showLabels);
+      drawOnBall(g, px, data.on_ball.periods[_currentPeriodIdx], nodeColor, showLabels, backgroundColor);
     }
   }
 

@@ -1,0 +1,1618 @@
+{
+  "windows": [
+    {
+      "index": 0,
+      "label": "0'\u201366' (Starting XI)",
+      "nodes": [
+        {
+          "player": "Antoine Griezmann",
+          "display_name": "Antoine Griezmann",
+          "x": 78.22,
+          "y": 42.19,
+          "passes": 33
+        },
+        {
+          "player": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "display_name": "Aur\u00e9lien Tchouam\u00e9ni",
+          "x": 63.94,
+          "y": 27.26,
+          "passes": 49
+        },
+        {
+          "player": "Dayotchanculle Upamecano",
+          "display_name": "Dayotchanculle Upamecano",
+          "x": 51.58,
+          "y": 53.87,
+          "passes": 27
+        },
+        {
+          "player": "Eduardo Camavinga",
+          "display_name": "Eduardo Camavinga",
+          "x": 68.2,
+          "y": 42.33,
+          "passes": 40
+        },
+        {
+          "player": "Jules Kound\u00e9",
+          "display_name": "Jules Kound\u00e9",
+          "x": 76.07,
+          "y": 72.68,
+          "passes": 31
+        },
+        {
+          "player": "Kylian Mbapp\u00e9 Lottin",
+          "display_name": "Kylian Mbapp\u00e9",
+          "x": 88.73,
+          "y": 21.77,
+          "passes": 23
+        },
+        {
+          "player": "Mike Maignan",
+          "display_name": "Mike Maignan",
+          "x": 11.83,
+          "y": 41.25,
+          "passes": 12
+        },
+        {
+          "player": "N'Golo Kant\u00e9",
+          "display_name": "N'Golo Kant\u00e9",
+          "x": 69.43,
+          "y": 33.06,
+          "passes": 41
+        },
+        {
+          "player": "Randal Kolo Muani",
+          "display_name": "Randal Kolo",
+          "x": 61.99,
+          "y": 60.65,
+          "passes": 13
+        },
+        {
+          "player": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+          "display_name": "Theo Hern\u00e1ndez",
+          "x": 71.69,
+          "y": 9.12,
+          "passes": 34
+        },
+        {
+          "player": "William Saliba",
+          "display_name": "William Saliba",
+          "x": 34.55,
+          "y": 31.41,
+          "passes": 27
+        }
+      ],
+      "edges": [
+        {
+          "from": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "to": "Eduardo Camavinga",
+          "count": 11
+        },
+        {
+          "from": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "to": "N'Golo Kant\u00e9",
+          "count": 11
+        },
+        {
+          "from": "N'Golo Kant\u00e9",
+          "to": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "count": 11
+        },
+        {
+          "from": "Jules Kound\u00e9",
+          "to": "Eduardo Camavinga",
+          "count": 11
+        },
+        {
+          "from": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+          "to": "Kylian Mbapp\u00e9 Lottin",
+          "count": 10
+        },
+        {
+          "from": "Eduardo Camavinga",
+          "to": "Antoine Griezmann",
+          "count": 9
+        },
+        {
+          "from": "William Saliba",
+          "to": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "count": 8
+        },
+        {
+          "from": "Eduardo Camavinga",
+          "to": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+          "count": 8
+        },
+        {
+          "from": "Antoine Griezmann",
+          "to": "Jules Kound\u00e9",
+          "count": 8
+        },
+        {
+          "from": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "to": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+          "count": 8
+        },
+        {
+          "from": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+          "to": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "count": 8
+        },
+        {
+          "from": "N'Golo Kant\u00e9",
+          "to": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+          "count": 8
+        },
+        {
+          "from": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+          "to": "N'Golo Kant\u00e9",
+          "count": 8
+        },
+        {
+          "from": "William Saliba",
+          "to": "Dayotchanculle Upamecano",
+          "count": 7
+        },
+        {
+          "from": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "to": "Jules Kound\u00e9",
+          "count": 7
+        },
+        {
+          "from": "Jules Kound\u00e9",
+          "to": "Dayotchanculle Upamecano",
+          "count": 7
+        },
+        {
+          "from": "Antoine Griezmann",
+          "to": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "count": 6
+        },
+        {
+          "from": "Dayotchanculle Upamecano",
+          "to": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "count": 6
+        },
+        {
+          "from": "Antoine Griezmann",
+          "to": "Randal Kolo Muani",
+          "count": 6
+        },
+        {
+          "from": "Kylian Mbapp\u00e9 Lottin",
+          "to": "N'Golo Kant\u00e9",
+          "count": 6
+        },
+        {
+          "from": "Eduardo Camavinga",
+          "to": "Dayotchanculle Upamecano",
+          "count": 5
+        },
+        {
+          "from": "Dayotchanculle Upamecano",
+          "to": "N'Golo Kant\u00e9",
+          "count": 5
+        },
+        {
+          "from": "N'Golo Kant\u00e9",
+          "to": "Antoine Griezmann",
+          "count": 5
+        },
+        {
+          "from": "Antoine Griezmann",
+          "to": "Kylian Mbapp\u00e9 Lottin",
+          "count": 5
+        },
+        {
+          "from": "Mike Maignan",
+          "to": "William Saliba",
+          "count": 5
+        },
+        {
+          "from": "N'Golo Kant\u00e9",
+          "to": "William Saliba",
+          "count": 4
+        },
+        {
+          "from": "Kylian Mbapp\u00e9 Lottin",
+          "to": "Antoine Griezmann",
+          "count": 4
+        },
+        {
+          "from": "Jules Kound\u00e9",
+          "to": "N'Golo Kant\u00e9",
+          "count": 4
+        },
+        {
+          "from": "Dayotchanculle Upamecano",
+          "to": "Jules Kound\u00e9",
+          "count": 4
+        },
+        {
+          "from": "Randal Kolo Muani",
+          "to": "Antoine Griezmann",
+          "count": 4
+        },
+        {
+          "from": "Randal Kolo Muani",
+          "to": "Jules Kound\u00e9",
+          "count": 4
+        },
+        {
+          "from": "Jules Kound\u00e9",
+          "to": "Antoine Griezmann",
+          "count": 4
+        },
+        {
+          "from": "Kylian Mbapp\u00e9 Lottin",
+          "to": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+          "count": 4
+        },
+        {
+          "from": "Jules Kound\u00e9",
+          "to": "Randal Kolo Muani",
+          "count": 4
+        },
+        {
+          "from": "Eduardo Camavinga",
+          "to": "William Saliba",
+          "count": 4
+        },
+        {
+          "from": "N'Golo Kant\u00e9",
+          "to": "Kylian Mbapp\u00e9 Lottin",
+          "count": 4
+        },
+        {
+          "from": "Kylian Mbapp\u00e9 Lottin",
+          "to": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "count": 4
+        },
+        {
+          "from": "Dayotchanculle Upamecano",
+          "to": "Eduardo Camavinga",
+          "count": 4
+        },
+        {
+          "from": "Eduardo Camavinga",
+          "to": "Jules Kound\u00e9",
+          "count": 4
+        },
+        {
+          "from": "Antoine Griezmann",
+          "to": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+          "count": 3
+        },
+        {
+          "from": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+          "to": "William Saliba",
+          "count": 3
+        },
+        {
+          "from": "William Saliba",
+          "to": "Eduardo Camavinga",
+          "count": 3
+        },
+        {
+          "from": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "to": "Kylian Mbapp\u00e9 Lottin",
+          "count": 3
+        },
+        {
+          "from": "Dayotchanculle Upamecano",
+          "to": "Mike Maignan",
+          "count": 3
+        },
+        {
+          "from": "Eduardo Camavinga",
+          "to": "N'Golo Kant\u00e9",
+          "count": 3
+        },
+        {
+          "from": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "to": "Dayotchanculle Upamecano",
+          "count": 3
+        },
+        {
+          "from": "William Saliba",
+          "to": "N'Golo Kant\u00e9",
+          "count": 3
+        },
+        {
+          "from": "William Saliba",
+          "to": "Mike Maignan",
+          "count": 3
+        },
+        {
+          "from": "Eduardo Camavinga",
+          "to": "Kylian Mbapp\u00e9 Lottin",
+          "count": 3
+        },
+        {
+          "from": "N'Golo Kant\u00e9",
+          "to": "Eduardo Camavinga",
+          "count": 3
+        },
+        {
+          "from": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "to": "Antoine Griezmann",
+          "count": 3
+        },
+        {
+          "from": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "to": "William Saliba",
+          "count": 2
+        },
+        {
+          "from": "N'Golo Kant\u00e9",
+          "to": "Randal Kolo Muani",
+          "count": 2
+        },
+        {
+          "from": "Randal Kolo Muani",
+          "to": "N'Golo Kant\u00e9",
+          "count": 2
+        },
+        {
+          "from": "Kylian Mbapp\u00e9 Lottin",
+          "to": "Eduardo Camavinga",
+          "count": 2
+        },
+        {
+          "from": "Antoine Griezmann",
+          "to": "Eduardo Camavinga",
+          "count": 2
+        },
+        {
+          "from": "Eduardo Camavinga",
+          "to": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "count": 2
+        },
+        {
+          "from": "N'Golo Kant\u00e9",
+          "to": "Jules Kound\u00e9",
+          "count": 2
+        },
+        {
+          "from": "Antoine Griezmann",
+          "to": "N'Golo Kant\u00e9",
+          "count": 2
+        },
+        {
+          "from": "Dayotchanculle Upamecano",
+          "to": "William Saliba",
+          "count": 2
+        },
+        {
+          "from": "Mike Maignan",
+          "to": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+          "count": 2
+        },
+        {
+          "from": "N'Golo Kant\u00e9",
+          "to": "Dayotchanculle Upamecano",
+          "count": 2
+        },
+        {
+          "from": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+          "to": "Antoine Griezmann",
+          "count": 2
+        },
+        {
+          "from": "Eduardo Camavinga",
+          "to": "Randal Kolo Muani",
+          "count": 2
+        },
+        {
+          "from": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+          "to": "Eduardo Camavinga",
+          "count": 1
+        },
+        {
+          "from": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "to": "Randal Kolo Muani",
+          "count": 1
+        },
+        {
+          "from": "Dayotchanculle Upamecano",
+          "to": "Randal Kolo Muani",
+          "count": 1
+        },
+        {
+          "from": "Mike Maignan",
+          "to": "Jules Kound\u00e9",
+          "count": 1
+        },
+        {
+          "from": "William Saliba",
+          "to": "Antoine Griezmann",
+          "count": 1
+        },
+        {
+          "from": "Randal Kolo Muani",
+          "to": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+          "count": 1
+        },
+        {
+          "from": "William Saliba",
+          "to": "Jules Kound\u00e9",
+          "count": 1
+        },
+        {
+          "from": "Kylian Mbapp\u00e9 Lottin",
+          "to": "Jules Kound\u00e9",
+          "count": 1
+        },
+        {
+          "from": "Mike Maignan",
+          "to": "Dayotchanculle Upamecano",
+          "count": 1
+        },
+        {
+          "from": "Randal Kolo Muani",
+          "to": "Kylian Mbapp\u00e9 Lottin",
+          "count": 1
+        },
+        {
+          "from": "Kylian Mbapp\u00e9 Lottin",
+          "to": "Randal Kolo Muani",
+          "count": 1
+        },
+        {
+          "from": "Antoine Griezmann",
+          "to": "Dayotchanculle Upamecano",
+          "count": 1
+        },
+        {
+          "from": "Dayotchanculle Upamecano",
+          "to": "Kylian Mbapp\u00e9 Lottin",
+          "count": 1
+        },
+        {
+          "from": "Kylian Mbapp\u00e9 Lottin",
+          "to": "Dayotchanculle Upamecano",
+          "count": 1
+        },
+        {
+          "from": "Dayotchanculle Upamecano",
+          "to": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+          "count": 1
+        },
+        {
+          "from": "Jules Kound\u00e9",
+          "to": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "count": 1
+        },
+        {
+          "from": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+          "to": "Mike Maignan",
+          "count": 1
+        },
+        {
+          "from": "Mike Maignan",
+          "to": "Eduardo Camavinga",
+          "count": 1
+        },
+        {
+          "from": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+          "to": "Jules Kound\u00e9",
+          "count": 1
+        },
+        {
+          "from": "Mike Maignan",
+          "to": "N'Golo Kant\u00e9",
+          "count": 1
+        },
+        {
+          "from": "Randal Kolo Muani",
+          "to": "Eduardo Camavinga",
+          "count": 1
+        },
+        {
+          "from": "Mike Maignan",
+          "to": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "count": 1
+        },
+        {
+          "from": "William Saliba",
+          "to": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "label": "66'\u201385'",
+      "nodes": [
+        {
+          "player": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "display_name": "Aur\u00e9lien Tchouam\u00e9ni",
+          "x": 64.42,
+          "y": 40.77,
+          "passes": 10
+        },
+        {
+          "player": "Dayotchanculle Upamecano",
+          "display_name": "Dayotchanculle Upamecano",
+          "x": 65.98,
+          "y": 58.18,
+          "passes": 5
+        },
+        {
+          "player": "Eduardo Camavinga",
+          "display_name": "Eduardo Camavinga",
+          "x": 74.59,
+          "y": 25.31,
+          "passes": 9
+        },
+        {
+          "player": "Jules Kound\u00e9",
+          "display_name": "Jules Kound\u00e9",
+          "x": 70.8,
+          "y": 68.64,
+          "passes": 9
+        },
+        {
+          "player": "Kylian Mbapp\u00e9 Lottin",
+          "display_name": "Kylian Mbapp\u00e9",
+          "x": 41.0,
+          "y": 8.05,
+          "passes": 2
+        },
+        {
+          "player": "Mike Maignan",
+          "display_name": "Mike Maignan",
+          "x": 21.25,
+          "y": 39.1,
+          "passes": 2
+        },
+        {
+          "player": "N'Golo Kant\u00e9",
+          "display_name": "N'Golo Kant\u00e9",
+          "x": 59.88,
+          "y": 55.83,
+          "passes": 9
+        },
+        {
+          "player": "Ousmane Demb\u00e9l\u00e9",
+          "display_name": "Ousmane Demb\u00e9l\u00e9",
+          "x": 82.52,
+          "y": 49.87,
+          "passes": 6
+        },
+        {
+          "player": "Randal Kolo Muani",
+          "display_name": "Randal Kolo",
+          "x": 91.1,
+          "y": 41.6,
+          "passes": 1
+        },
+        {
+          "player": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+          "display_name": "Theo Hern\u00e1ndez",
+          "x": 65.78,
+          "y": 14.62,
+          "passes": 10
+        },
+        {
+          "player": "William Saliba",
+          "display_name": "William Saliba",
+          "x": 50.54,
+          "y": 33.68,
+          "passes": 9
+        }
+      ],
+      "edges": [
+        {
+          "from": "Jules Kound\u00e9",
+          "to": "Ousmane Demb\u00e9l\u00e9",
+          "count": 4
+        },
+        {
+          "from": "William Saliba",
+          "to": "Eduardo Camavinga",
+          "count": 4
+        },
+        {
+          "from": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+          "to": "Eduardo Camavinga",
+          "count": 4
+        },
+        {
+          "from": "Eduardo Camavinga",
+          "to": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+          "count": 3
+        },
+        {
+          "from": "N'Golo Kant\u00e9",
+          "to": "Jules Kound\u00e9",
+          "count": 3
+        },
+        {
+          "from": "N'Golo Kant\u00e9",
+          "to": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "count": 3
+        },
+        {
+          "from": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "to": "Ousmane Demb\u00e9l\u00e9",
+          "count": 3
+        },
+        {
+          "from": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+          "to": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "count": 3
+        },
+        {
+          "from": "Ousmane Demb\u00e9l\u00e9",
+          "to": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+          "count": 2
+        },
+        {
+          "from": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "to": "N'Golo Kant\u00e9",
+          "count": 2
+        },
+        {
+          "from": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "to": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+          "count": 2
+        },
+        {
+          "from": "Jules Kound\u00e9",
+          "to": "N'Golo Kant\u00e9",
+          "count": 2
+        },
+        {
+          "from": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+          "to": "William Saliba",
+          "count": 2
+        },
+        {
+          "from": "William Saliba",
+          "to": "Dayotchanculle Upamecano",
+          "count": 2
+        },
+        {
+          "from": "Ousmane Demb\u00e9l\u00e9",
+          "to": "William Saliba",
+          "count": 1
+        },
+        {
+          "from": "Eduardo Camavinga",
+          "to": "Dayotchanculle Upamecano",
+          "count": 1
+        },
+        {
+          "from": "Dayotchanculle Upamecano",
+          "to": "Ousmane Demb\u00e9l\u00e9",
+          "count": 1
+        },
+        {
+          "from": "Eduardo Camavinga",
+          "to": "Ousmane Demb\u00e9l\u00e9",
+          "count": 1
+        },
+        {
+          "from": "Ousmane Demb\u00e9l\u00e9",
+          "to": "Kylian Mbapp\u00e9 Lottin",
+          "count": 1
+        },
+        {
+          "from": "Jules Kound\u00e9",
+          "to": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+          "count": 1
+        },
+        {
+          "from": "Eduardo Camavinga",
+          "to": "Randal Kolo Muani",
+          "count": 1
+        },
+        {
+          "from": "Randal Kolo Muani",
+          "to": "Ousmane Demb\u00e9l\u00e9",
+          "count": 1
+        },
+        {
+          "from": "Eduardo Camavinga",
+          "to": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "count": 1
+        },
+        {
+          "from": "N'Golo Kant\u00e9",
+          "to": "Dayotchanculle Upamecano",
+          "count": 1
+        },
+        {
+          "from": "Dayotchanculle Upamecano",
+          "to": "Jules Kound\u00e9",
+          "count": 1
+        },
+        {
+          "from": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "to": "William Saliba",
+          "count": 1
+        },
+        {
+          "from": "Jules Kound\u00e9",
+          "to": "Dayotchanculle Upamecano",
+          "count": 1
+        },
+        {
+          "from": "Dayotchanculle Upamecano",
+          "to": "William Saliba",
+          "count": 1
+        },
+        {
+          "from": "William Saliba",
+          "to": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+          "count": 1
+        },
+        {
+          "from": "William Saliba",
+          "to": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "count": 1
+        },
+        {
+          "from": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "to": "Jules Kound\u00e9",
+          "count": 1
+        },
+        {
+          "from": "Dayotchanculle Upamecano",
+          "to": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "count": 1
+        },
+        {
+          "from": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+          "to": "Kylian Mbapp\u00e9 Lottin",
+          "count": 1
+        },
+        {
+          "from": "Kylian Mbapp\u00e9 Lottin",
+          "to": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+          "count": 1
+        },
+        {
+          "from": "N'Golo Kant\u00e9",
+          "to": "Randal Kolo Muani",
+          "count": 1
+        },
+        {
+          "from": "Jules Kound\u00e9",
+          "to": "Kylian Mbapp\u00e9 Lottin",
+          "count": 1
+        },
+        {
+          "from": "Dayotchanculle Upamecano",
+          "to": "N'Golo Kant\u00e9",
+          "count": 1
+        },
+        {
+          "from": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "to": "Mike Maignan",
+          "count": 1
+        },
+        {
+          "from": "Mike Maignan",
+          "to": "William Saliba",
+          "count": 1
+        },
+        {
+          "from": "Eduardo Camavinga",
+          "to": "William Saliba",
+          "count": 1
+        },
+        {
+          "from": "William Saliba",
+          "to": "Mike Maignan",
+          "count": 1
+        },
+        {
+          "from": "Mike Maignan",
+          "to": "N'Golo Kant\u00e9",
+          "count": 1
+        },
+        {
+          "from": "N'Golo Kant\u00e9",
+          "to": "Ousmane Demb\u00e9l\u00e9",
+          "count": 1
+        },
+        {
+          "from": "Ousmane Demb\u00e9l\u00e9",
+          "to": "Jules Kound\u00e9",
+          "count": 1
+        },
+        {
+          "from": "Ousmane Demb\u00e9l\u00e9",
+          "to": "N'Golo Kant\u00e9",
+          "count": 1
+        },
+        {
+          "from": "Eduardo Camavinga",
+          "to": "Kylian Mbapp\u00e9 Lottin",
+          "count": 1
+        },
+        {
+          "from": "Kylian Mbapp\u00e9 Lottin",
+          "to": "Eduardo Camavinga",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "label": "85'\u201390'",
+      "nodes": [
+        {
+          "player": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "display_name": "Aur\u00e9lien Tchouam\u00e9ni",
+          "x": 43.55,
+          "y": 37.1,
+          "passes": 2
+        },
+        {
+          "player": "Eduardo Camavinga",
+          "display_name": "Eduardo Camavinga",
+          "x": 41.3,
+          "y": 52.9,
+          "passes": 1
+        },
+        {
+          "player": "Kylian Mbapp\u00e9 Lottin",
+          "display_name": "Kylian Mbapp\u00e9",
+          "x": 31.4,
+          "y": 34.2,
+          "passes": 2
+        },
+        {
+          "player": "N'Golo Kant\u00e9",
+          "display_name": "N'Golo Kant\u00e9",
+          "x": 66.3,
+          "y": 39.8,
+          "passes": 1
+        },
+        {
+          "player": "Ousmane Demb\u00e9l\u00e9",
+          "display_name": "Ousmane Demb\u00e9l\u00e9",
+          "x": 95.45,
+          "y": 40.25,
+          "passes": 2
+        },
+        {
+          "player": "William Saliba",
+          "display_name": "William Saliba",
+          "x": 55.4,
+          "y": 49.8,
+          "passes": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "Kylian Mbapp\u00e9 Lottin",
+          "to": "N'Golo Kant\u00e9",
+          "count": 2
+        },
+        {
+          "from": "N'Golo Kant\u00e9",
+          "to": "Ousmane Demb\u00e9l\u00e9",
+          "count": 1
+        },
+        {
+          "from": "Ousmane Demb\u00e9l\u00e9",
+          "to": "N'Golo Kant\u00e9",
+          "count": 1
+        },
+        {
+          "from": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "to": "Eduardo Camavinga",
+          "count": 1
+        },
+        {
+          "from": "Eduardo Camavinga",
+          "to": "Ousmane Demb\u00e9l\u00e9",
+          "count": 1
+        },
+        {
+          "from": "Ousmane Demb\u00e9l\u00e9",
+          "to": "Marcus Thuram",
+          "count": 1
+        },
+        {
+          "from": "William Saliba",
+          "to": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "count": 1
+        },
+        {
+          "from": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "to": "N'Golo Kant\u00e9",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "label": "90'\u2013105'",
+      "nodes": [
+        {
+          "player": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "display_name": "Aur\u00e9lien Tchouam\u00e9ni",
+          "x": 52.68,
+          "y": 26.23,
+          "passes": 6
+        },
+        {
+          "player": "Dayotchanculle Upamecano",
+          "display_name": "Dayotchanculle Upamecano",
+          "x": 22.42,
+          "y": 65.96,
+          "passes": 5
+        },
+        {
+          "player": "Jules Kound\u00e9",
+          "display_name": "Jules Kound\u00e9",
+          "x": 46.65,
+          "y": 64.65,
+          "passes": 4
+        },
+        {
+          "player": "Kylian Mbapp\u00e9 Lottin",
+          "display_name": "Kylian Mbapp\u00e9",
+          "x": 70.4,
+          "y": 18.18,
+          "passes": 5
+        },
+        {
+          "player": "Marcus Thuram",
+          "display_name": "Marcus Thuram",
+          "x": 57.96,
+          "y": 42.31,
+          "passes": 7
+        },
+        {
+          "player": "Mike Maignan",
+          "display_name": "Mike Maignan",
+          "x": 9.87,
+          "y": 40.81,
+          "passes": 7
+        },
+        {
+          "player": "N'Golo Kant\u00e9",
+          "display_name": "N'Golo Kant\u00e9",
+          "x": 50.03,
+          "y": 28.09,
+          "passes": 7
+        },
+        {
+          "player": "Ousmane Demb\u00e9l\u00e9",
+          "display_name": "Ousmane Demb\u00e9l\u00e9",
+          "x": 96.85,
+          "y": 59.0,
+          "passes": 4
+        },
+        {
+          "player": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+          "display_name": "Theo Hern\u00e1ndez",
+          "x": 47.22,
+          "y": 13.16,
+          "passes": 5
+        },
+        {
+          "player": "William Saliba",
+          "display_name": "William Saliba",
+          "x": 35.48,
+          "y": 23.15,
+          "passes": 6
+        },
+        {
+          "player": "Youssouf Fofana",
+          "display_name": "Youssouf Fofana",
+          "x": 61.26,
+          "y": 51.06,
+          "passes": 5
+        }
+      ],
+      "edges": [
+        {
+          "from": "Ousmane Demb\u00e9l\u00e9",
+          "to": "Kylian Mbapp\u00e9 Lottin",
+          "count": 3
+        },
+        {
+          "from": "Mike Maignan",
+          "to": "Dayotchanculle Upamecano",
+          "count": 3
+        },
+        {
+          "from": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "to": "William Saliba",
+          "count": 2
+        },
+        {
+          "from": "Dayotchanculle Upamecano",
+          "to": "Mike Maignan",
+          "count": 2
+        },
+        {
+          "from": "William Saliba",
+          "to": "Mike Maignan",
+          "count": 2
+        },
+        {
+          "from": "N'Golo Kant\u00e9",
+          "to": "William Saliba",
+          "count": 2
+        },
+        {
+          "from": "William Saliba",
+          "to": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "count": 2
+        },
+        {
+          "from": "Dayotchanculle Upamecano",
+          "to": "Marcus Thuram",
+          "count": 2
+        },
+        {
+          "from": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+          "to": "Kylian Mbapp\u00e9 Lottin",
+          "count": 2
+        },
+        {
+          "from": "Kylian Mbapp\u00e9 Lottin",
+          "to": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+          "count": 2
+        },
+        {
+          "from": "Youssouf Fofana",
+          "to": "Marcus Thuram",
+          "count": 2
+        },
+        {
+          "from": "N'Golo Kant\u00e9",
+          "to": "Kylian Mbapp\u00e9 Lottin",
+          "count": 2
+        },
+        {
+          "from": "Marcus Thuram",
+          "to": "Kylian Mbapp\u00e9 Lottin",
+          "count": 2
+        },
+        {
+          "from": "Jules Kound\u00e9",
+          "to": "Marcus Thuram",
+          "count": 1
+        },
+        {
+          "from": "Marcus Thuram",
+          "to": "Jules Kound\u00e9",
+          "count": 1
+        },
+        {
+          "from": "Jules Kound\u00e9",
+          "to": "Ousmane Demb\u00e9l\u00e9",
+          "count": 1
+        },
+        {
+          "from": "Marcus Thuram",
+          "to": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "count": 1
+        },
+        {
+          "from": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "to": "N'Golo Kant\u00e9",
+          "count": 1
+        },
+        {
+          "from": "N'Golo Kant\u00e9",
+          "to": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "count": 1
+        },
+        {
+          "from": "William Saliba",
+          "to": "Jules Kound\u00e9",
+          "count": 1
+        },
+        {
+          "from": "Jules Kound\u00e9",
+          "to": "Youssouf Fofana",
+          "count": 1
+        },
+        {
+          "from": "Youssouf Fofana",
+          "to": "Jules Kound\u00e9",
+          "count": 1
+        },
+        {
+          "from": "Jules Kound\u00e9",
+          "to": "Dayotchanculle Upamecano",
+          "count": 1
+        },
+        {
+          "from": "Mike Maignan",
+          "to": "William Saliba",
+          "count": 1
+        },
+        {
+          "from": "Mike Maignan",
+          "to": "N'Golo Kant\u00e9",
+          "count": 1
+        },
+        {
+          "from": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "to": "Mike Maignan",
+          "count": 1
+        },
+        {
+          "from": "Marcus Thuram",
+          "to": "N'Golo Kant\u00e9",
+          "count": 1
+        },
+        {
+          "from": "William Saliba",
+          "to": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+          "count": 1
+        },
+        {
+          "from": "Mike Maignan",
+          "to": "Kylian Mbapp\u00e9 Lottin",
+          "count": 1
+        },
+        {
+          "from": "Kylian Mbapp\u00e9 Lottin",
+          "to": "N'Golo Kant\u00e9",
+          "count": 1
+        },
+        {
+          "from": "N'Golo Kant\u00e9",
+          "to": "Ousmane Demb\u00e9l\u00e9",
+          "count": 1
+        },
+        {
+          "from": "Ousmane Demb\u00e9l\u00e9",
+          "to": "Youssouf Fofana",
+          "count": 1
+        },
+        {
+          "from": "Marcus Thuram",
+          "to": "Youssouf Fofana",
+          "count": 1
+        },
+        {
+          "from": "Youssouf Fofana",
+          "to": "N'Golo Kant\u00e9",
+          "count": 1
+        },
+        {
+          "from": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+          "to": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "count": 1
+        },
+        {
+          "from": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "to": "Marcus Thuram",
+          "count": 1
+        },
+        {
+          "from": "Kylian Mbapp\u00e9 Lottin",
+          "to": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "count": 1
+        },
+        {
+          "from": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+          "to": "N'Golo Kant\u00e9",
+          "count": 1
+        },
+        {
+          "from": "N'Golo Kant\u00e9",
+          "to": "Marcus Thuram",
+          "count": 1
+        },
+        {
+          "from": "Marcus Thuram",
+          "to": "Ousmane Demb\u00e9l\u00e9",
+          "count": 1
+        },
+        {
+          "from": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+          "to": "William Saliba",
+          "count": 1
+        },
+        {
+          "from": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "to": "Youssouf Fofana",
+          "count": 1
+        },
+        {
+          "from": "Kylian Mbapp\u00e9 Lottin",
+          "to": "Marcus Thuram",
+          "count": 1
+        },
+        {
+          "from": "Dayotchanculle Upamecano",
+          "to": "Youssouf Fofana",
+          "count": 1
+        },
+        {
+          "from": "Youssouf Fofana",
+          "to": "Ousmane Demb\u00e9l\u00e9",
+          "count": 1
+        },
+        {
+          "from": "Mike Maignan",
+          "to": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "label": "105'\u2013FT",
+      "nodes": [
+        {
+          "player": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "display_name": "Aur\u00e9lien Tchouam\u00e9ni",
+          "x": 58.79,
+          "y": 53.37,
+          "passes": 16
+        },
+        {
+          "player": "Bradley Barcola",
+          "display_name": "Bradley Barcola",
+          "x": 66.8,
+          "y": 6.5,
+          "passes": 2
+        },
+        {
+          "player": "Dayotchanculle Upamecano",
+          "display_name": "Dayotchanculle Upamecano",
+          "x": 40.35,
+          "y": 63.74,
+          "passes": 12
+        },
+        {
+          "player": "Jules Kound\u00e9",
+          "display_name": "Jules Kound\u00e9",
+          "x": 58.27,
+          "y": 70.15,
+          "passes": 13
+        },
+        {
+          "player": "Marcus Thuram",
+          "display_name": "Marcus Thuram",
+          "x": 63.1,
+          "y": 48.37,
+          "passes": 3
+        },
+        {
+          "player": "Mike Maignan",
+          "display_name": "Mike Maignan",
+          "x": 11.45,
+          "y": 45.86,
+          "passes": 8
+        },
+        {
+          "player": "N'Golo Kant\u00e9",
+          "display_name": "N'Golo Kant\u00e9",
+          "x": 61.16,
+          "y": 26.82,
+          "passes": 8
+        },
+        {
+          "player": "Ousmane Demb\u00e9l\u00e9",
+          "display_name": "Ousmane Demb\u00e9l\u00e9",
+          "x": 81.27,
+          "y": 71.54,
+          "passes": 7
+        },
+        {
+          "player": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+          "display_name": "Theo Hern\u00e1ndez",
+          "x": 72.53,
+          "y": 13.17,
+          "passes": 6
+        },
+        {
+          "player": "William Saliba",
+          "display_name": "William Saliba",
+          "x": 40.65,
+          "y": 29.07,
+          "passes": 4
+        },
+        {
+          "player": "Youssouf Fofana",
+          "display_name": "Youssouf Fofana",
+          "x": 58.36,
+          "y": 54.63,
+          "passes": 10
+        }
+      ],
+      "edges": [
+        {
+          "from": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "to": "Ousmane Demb\u00e9l\u00e9",
+          "count": 4
+        },
+        {
+          "from": "Mike Maignan",
+          "to": "Dayotchanculle Upamecano",
+          "count": 4
+        },
+        {
+          "from": "N'Golo Kant\u00e9",
+          "to": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "count": 4
+        },
+        {
+          "from": "Jules Kound\u00e9",
+          "to": "Ousmane Demb\u00e9l\u00e9",
+          "count": 3
+        },
+        {
+          "from": "Jules Kound\u00e9",
+          "to": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "count": 3
+        },
+        {
+          "from": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "to": "Dayotchanculle Upamecano",
+          "count": 3
+        },
+        {
+          "from": "Youssouf Fofana",
+          "to": "Dayotchanculle Upamecano",
+          "count": 3
+        },
+        {
+          "from": "Youssouf Fofana",
+          "to": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "count": 3
+        },
+        {
+          "from": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+          "to": "Bradley Barcola",
+          "count": 3
+        },
+        {
+          "from": "Jules Kound\u00e9",
+          "to": "Youssouf Fofana",
+          "count": 3
+        },
+        {
+          "from": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "to": "N'Golo Kant\u00e9",
+          "count": 3
+        },
+        {
+          "from": "William Saliba",
+          "to": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "count": 2
+        },
+        {
+          "from": "Ousmane Demb\u00e9l\u00e9",
+          "to": "Jules Kound\u00e9",
+          "count": 2
+        },
+        {
+          "from": "Ousmane Demb\u00e9l\u00e9",
+          "to": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "count": 2
+        },
+        {
+          "from": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "to": "Youssouf Fofana",
+          "count": 2
+        },
+        {
+          "from": "Dayotchanculle Upamecano",
+          "to": "Mike Maignan",
+          "count": 2
+        },
+        {
+          "from": "Dayotchanculle Upamecano",
+          "to": "Youssouf Fofana",
+          "count": 2
+        },
+        {
+          "from": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "to": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+          "count": 2
+        },
+        {
+          "from": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+          "to": "N'Golo Kant\u00e9",
+          "count": 2
+        },
+        {
+          "from": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "to": "Jules Kound\u00e9",
+          "count": 2
+        },
+        {
+          "from": "Jules Kound\u00e9",
+          "to": "Dayotchanculle Upamecano",
+          "count": 2
+        },
+        {
+          "from": "N'Golo Kant\u00e9",
+          "to": "Bradley Barcola",
+          "count": 2
+        },
+        {
+          "from": "Jules Kound\u00e9",
+          "to": "Mike Maignan",
+          "count": 2
+        },
+        {
+          "from": "Dayotchanculle Upamecano",
+          "to": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "count": 2
+        },
+        {
+          "from": "Mike Maignan",
+          "to": "Jules Kound\u00e9",
+          "count": 1
+        },
+        {
+          "from": "Dayotchanculle Upamecano",
+          "to": "Jules Kound\u00e9",
+          "count": 1
+        },
+        {
+          "from": "Bradley Barcola",
+          "to": "Marcus Thuram",
+          "count": 1
+        },
+        {
+          "from": "N'Golo Kant\u00e9",
+          "to": "William Saliba",
+          "count": 1
+        },
+        {
+          "from": "Dayotchanculle Upamecano",
+          "to": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+          "count": 1
+        },
+        {
+          "from": "Youssouf Fofana",
+          "to": "Ousmane Demb\u00e9l\u00e9",
+          "count": 1
+        },
+        {
+          "from": "Dayotchanculle Upamecano",
+          "to": "Marcus Thuram",
+          "count": 1
+        },
+        {
+          "from": "Marcus Thuram",
+          "to": "William Saliba",
+          "count": 1
+        },
+        {
+          "from": "William Saliba",
+          "to": "N'Golo Kant\u00e9",
+          "count": 1
+        },
+        {
+          "from": "Marcus Thuram",
+          "to": "Youssouf Fofana",
+          "count": 1
+        },
+        {
+          "from": "Youssouf Fofana",
+          "to": "Jules Kound\u00e9",
+          "count": 1
+        },
+        {
+          "from": "Ousmane Demb\u00e9l\u00e9",
+          "to": "Marcus Thuram",
+          "count": 1
+        },
+        {
+          "from": "Marcus Thuram",
+          "to": "Jules Kound\u00e9",
+          "count": 1
+        },
+        {
+          "from": "N'Golo Kant\u00e9",
+          "to": "Youssouf Fofana",
+          "count": 1
+        },
+        {
+          "from": "Dayotchanculle Upamecano",
+          "to": "Ousmane Demb\u00e9l\u00e9",
+          "count": 1
+        },
+        {
+          "from": "Ousmane Demb\u00e9l\u00e9",
+          "to": "Youssouf Fofana",
+          "count": 1
+        },
+        {
+          "from": "Youssouf Fofana",
+          "to": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+          "count": 1
+        },
+        {
+          "from": "Dayotchanculle Upamecano",
+          "to": "N'Golo Kant\u00e9",
+          "count": 1
+        },
+        {
+          "from": "Mike Maignan",
+          "to": "Aur\u00e9lien Djani Tchouam\u00e9ni",
+          "count": 1
+        },
+        {
+          "from": "Ousmane Demb\u00e9l\u00e9",
+          "to": "Dayotchanculle Upamecano",
+          "count": 1
+        },
+        {
+          "from": "Mike Maignan",
+          "to": "William Saliba",
+          "count": 1
+        },
+        {
+          "from": "Dayotchanculle Upamecano",
+          "to": "William Saliba",
+          "count": 1
+        },
+        {
+          "from": "William Saliba",
+          "to": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+          "count": 1
+        },
+        {
+          "from": "Bradley Barcola",
+          "to": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+          "count": 1
+        },
+        {
+          "from": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+          "to": "Youssouf Fofana",
+          "count": 1
+        },
+        {
+          "from": "Mike Maignan",
+          "to": "Youssouf Fofana",
+          "count": 1
+        },
+        {
+          "from": "Youssouf Fofana",
+          "to": "Marcus Thuram",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "substitutions": [
+    {
+      "minute": 66,
+      "player_off": "Antoine Griezmann",
+      "player_on": "Ousmane Demb\u00e9l\u00e9"
+    },
+    {
+      "minute": 85,
+      "player_off": "Randal Kolo Muani",
+      "player_on": "Marcus Thuram"
+    },
+    {
+      "minute": 90,
+      "player_off": "Eduardo Camavinga",
+      "player_on": "Youssouf Fofana"
+    },
+    {
+      "minute": 105,
+      "player_off": "Kylian Mbapp\u00e9 Lottin",
+      "player_on": "Bradley Barcola"
+    }
+  ],
+  "metadata": {
+    "match_id": 3942349,
+    "team": "France",
+    "filter": "completed passes, per substitution window",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Portugal vs France"
+  }
+}

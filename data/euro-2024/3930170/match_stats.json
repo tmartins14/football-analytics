@@ -1,0 +1,83 @@
+{
+  "home": {
+    "team": "Slovenia",
+    "color": "#003DA5",
+    "score": 1
+  },
+  "away": {
+    "team": "Serbia",
+    "color": "#C6363C",
+    "score": 1
+  },
+  "rows": [
+    {
+      "label": "Shots",
+      "home_value": 12.0,
+      "away_value": 15.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Shots on Target",
+      "home_value": 4.0,
+      "away_value": 4.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Possession",
+      "home_value": 39.0,
+      "away_value": 61.0,
+      "scale_type": "fixed100",
+      "format": "pct",
+      "tier": "basic"
+    },
+    {
+      "label": "Corners",
+      "home_value": 4.0,
+      "away_value": 9.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Fouls",
+      "home_value": 14.0,
+      "away_value": 9.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Yellow Cards",
+      "home_value": 2.0,
+      "away_value": 4.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Red Cards",
+      "home_value": 0.0,
+      "away_value": 0.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "xG",
+      "home_value": 1.55,
+      "away_value": 1.46,
+      "scale_type": "sum",
+      "format": "float1",
+      "tier": "advanced"
+    }
+  ],
+  "metadata": {
+    "match_id": 3930170,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Slovenia vs Serbia"
+  }
+}

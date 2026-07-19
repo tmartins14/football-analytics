@@ -1,0 +1,1481 @@
+{
+  "windows": [
+    {
+      "index": 0,
+      "label": "0'\u201345' (Starting XI)",
+      "nodes": [
+        {
+          "player": "Ant\u00f3nio Jo\u00e3o Pereira Albuquerque Tavares Silva",
+          "display_name": "Ant\u00f3nio Silva",
+          "x": 69.73,
+          "y": 65.74,
+          "passes": 45
+        },
+        {
+          "player": "Cristiano Ronaldo dos Santos Aveiro",
+          "display_name": "Cristiano Ronaldo",
+          "x": 81.65,
+          "y": 29.55,
+          "passes": 4
+        },
+        {
+          "player": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "display_name": "Danilo Pereira",
+          "x": 58.45,
+          "y": 38.57,
+          "passes": 47
+        },
+        {
+          "player": "Diogo Meireles Costa",
+          "display_name": "Diogo Costa",
+          "x": 15.4,
+          "y": 36.61,
+          "passes": 7
+        },
+        {
+          "player": "Francisco Fernandes Concei\u00e7\u00e3o",
+          "display_name": "Francisco Concei\u00e7\u00e3o",
+          "x": 85.49,
+          "y": 72.38,
+          "passes": 29
+        },
+        {
+          "player": "Gon\u00e7alo Bernardo In\u00e1cio",
+          "display_name": "Gon\u00e7alo In\u00e1cio",
+          "x": 70.13,
+          "y": 14.56,
+          "passes": 62
+        },
+        {
+          "player": "Jos\u00e9 Diogo Dalot Teixeira",
+          "display_name": "Diogo Dalot",
+          "x": 75.01,
+          "y": 69.88,
+          "passes": 18
+        },
+        {
+          "player": "Jo\u00e3o F\u00e9lix Sequeira",
+          "display_name": "Jo\u00e3o F\u00e9lix",
+          "x": 87.76,
+          "y": 23.26,
+          "passes": 35
+        },
+        {
+          "player": "Jo\u00e3o Maria Lobo Alves Palhinha Gon\u00e7alves",
+          "display_name": "Jo\u00e3o Palhinha",
+          "x": 74.78,
+          "y": 39.1,
+          "passes": 29
+        },
+        {
+          "player": "Jo\u00e3o Neves",
+          "display_name": "Jo\u00e3o Neves",
+          "x": 67.22,
+          "y": 50.12,
+          "passes": 46
+        },
+        {
+          "player": "Pedro Lomba Neto",
+          "display_name": "Pedro Neto",
+          "x": 76.63,
+          "y": 11.34,
+          "passes": 38
+        }
+      ],
+      "edges": [
+        {
+          "from": "Gon\u00e7alo Bernardo In\u00e1cio",
+          "to": "Pedro Lomba Neto",
+          "count": 27
+        },
+        {
+          "from": "Ant\u00f3nio Jo\u00e3o Pereira Albuquerque Tavares Silva",
+          "to": "Francisco Fernandes Concei\u00e7\u00e3o",
+          "count": 18
+        },
+        {
+          "from": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "to": "Gon\u00e7alo Bernardo In\u00e1cio",
+          "count": 17
+        },
+        {
+          "from": "Pedro Lomba Neto",
+          "to": "Gon\u00e7alo Bernardo In\u00e1cio",
+          "count": 16
+        },
+        {
+          "from": "Gon\u00e7alo Bernardo In\u00e1cio",
+          "to": "Jo\u00e3o F\u00e9lix Sequeira",
+          "count": 15
+        },
+        {
+          "from": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "to": "Ant\u00f3nio Jo\u00e3o Pereira Albuquerque Tavares Silva",
+          "count": 14
+        },
+        {
+          "from": "Gon\u00e7alo Bernardo In\u00e1cio",
+          "to": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "count": 11
+        },
+        {
+          "from": "Francisco Fernandes Concei\u00e7\u00e3o",
+          "to": "Jo\u00e3o Neves",
+          "count": 11
+        },
+        {
+          "from": "Jo\u00e3o Neves",
+          "to": "Gon\u00e7alo Bernardo In\u00e1cio",
+          "count": 10
+        },
+        {
+          "from": "Pedro Lomba Neto",
+          "to": "Jo\u00e3o F\u00e9lix Sequeira",
+          "count": 9
+        },
+        {
+          "from": "Jo\u00e3o Neves",
+          "to": "Ant\u00f3nio Jo\u00e3o Pereira Albuquerque Tavares Silva",
+          "count": 9
+        },
+        {
+          "from": "Jo\u00e3o Neves",
+          "to": "Jos\u00e9 Diogo Dalot Teixeira",
+          "count": 9
+        },
+        {
+          "from": "Jo\u00e3o F\u00e9lix Sequeira",
+          "to": "Pedro Lomba Neto",
+          "count": 9
+        },
+        {
+          "from": "Ant\u00f3nio Jo\u00e3o Pereira Albuquerque Tavares Silva",
+          "to": "Jo\u00e3o Neves",
+          "count": 8
+        },
+        {
+          "from": "Jos\u00e9 Diogo Dalot Teixeira",
+          "to": "Francisco Fernandes Concei\u00e7\u00e3o",
+          "count": 8
+        },
+        {
+          "from": "Ant\u00f3nio Jo\u00e3o Pereira Albuquerque Tavares Silva",
+          "to": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "count": 8
+        },
+        {
+          "from": "Jo\u00e3o F\u00e9lix Sequeira",
+          "to": "Jo\u00e3o Maria Lobo Alves Palhinha Gon\u00e7alves",
+          "count": 7
+        },
+        {
+          "from": "Jo\u00e3o Maria Lobo Alves Palhinha Gon\u00e7alves",
+          "to": "Gon\u00e7alo Bernardo In\u00e1cio",
+          "count": 7
+        },
+        {
+          "from": "Francisco Fernandes Concei\u00e7\u00e3o",
+          "to": "Ant\u00f3nio Jo\u00e3o Pereira Albuquerque Tavares Silva",
+          "count": 7
+        },
+        {
+          "from": "Jo\u00e3o Neves",
+          "to": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "count": 7
+        },
+        {
+          "from": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "to": "Jo\u00e3o Neves",
+          "count": 6
+        },
+        {
+          "from": "Jo\u00e3o F\u00e9lix Sequeira",
+          "to": "Gon\u00e7alo Bernardo In\u00e1cio",
+          "count": 6
+        },
+        {
+          "from": "Pedro Lomba Neto",
+          "to": "Jo\u00e3o Maria Lobo Alves Palhinha Gon\u00e7alves",
+          "count": 5
+        },
+        {
+          "from": "Jo\u00e3o Neves",
+          "to": "Francisco Fernandes Concei\u00e7\u00e3o",
+          "count": 5
+        },
+        {
+          "from": "Jo\u00e3o F\u00e9lix Sequeira",
+          "to": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "count": 4
+        },
+        {
+          "from": "Francisco Fernandes Concei\u00e7\u00e3o",
+          "to": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "count": 4
+        },
+        {
+          "from": "Jo\u00e3o Maria Lobo Alves Palhinha Gon\u00e7alves",
+          "to": "Francisco Fernandes Concei\u00e7\u00e3o",
+          "count": 4
+        },
+        {
+          "from": "Ant\u00f3nio Jo\u00e3o Pereira Albuquerque Tavares Silva",
+          "to": "Jos\u00e9 Diogo Dalot Teixeira",
+          "count": 4
+        },
+        {
+          "from": "Diogo Meireles Costa",
+          "to": "Gon\u00e7alo Bernardo In\u00e1cio",
+          "count": 3
+        },
+        {
+          "from": "Jo\u00e3o Maria Lobo Alves Palhinha Gon\u00e7alves",
+          "to": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "count": 3
+        },
+        {
+          "from": "Jo\u00e3o Maria Lobo Alves Palhinha Gon\u00e7alves",
+          "to": "Jo\u00e3o F\u00e9lix Sequeira",
+          "count": 3
+        },
+        {
+          "from": "Ant\u00f3nio Jo\u00e3o Pereira Albuquerque Tavares Silva",
+          "to": "Jo\u00e3o Maria Lobo Alves Palhinha Gon\u00e7alves",
+          "count": 3
+        },
+        {
+          "from": "Jo\u00e3o Neves",
+          "to": "Jo\u00e3o Maria Lobo Alves Palhinha Gon\u00e7alves",
+          "count": 3
+        },
+        {
+          "from": "Jo\u00e3o Maria Lobo Alves Palhinha Gon\u00e7alves",
+          "to": "Jo\u00e3o Neves",
+          "count": 3
+        },
+        {
+          "from": "Jos\u00e9 Diogo Dalot Teixeira",
+          "to": "Ant\u00f3nio Jo\u00e3o Pereira Albuquerque Tavares Silva",
+          "count": 3
+        },
+        {
+          "from": "Gon\u00e7alo Bernardo In\u00e1cio",
+          "to": "Jo\u00e3o Neves",
+          "count": 3
+        },
+        {
+          "from": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "to": "Jo\u00e3o Maria Lobo Alves Palhinha Gon\u00e7alves",
+          "count": 3
+        },
+        {
+          "from": "Jo\u00e3o Maria Lobo Alves Palhinha Gon\u00e7alves",
+          "to": "Ant\u00f3nio Jo\u00e3o Pereira Albuquerque Tavares Silva",
+          "count": 3
+        },
+        {
+          "from": "Pedro Lomba Neto",
+          "to": "Jo\u00e3o Neves",
+          "count": 3
+        },
+        {
+          "from": "Jos\u00e9 Diogo Dalot Teixeira",
+          "to": "Jo\u00e3o Neves",
+          "count": 3
+        },
+        {
+          "from": "Gon\u00e7alo Bernardo In\u00e1cio",
+          "to": "Jo\u00e3o Maria Lobo Alves Palhinha Gon\u00e7alves",
+          "count": 3
+        },
+        {
+          "from": "Ant\u00f3nio Jo\u00e3o Pereira Albuquerque Tavares Silva",
+          "to": "Gon\u00e7alo Bernardo In\u00e1cio",
+          "count": 3
+        },
+        {
+          "from": "Jo\u00e3o F\u00e9lix Sequeira",
+          "to": "Francisco Fernandes Concei\u00e7\u00e3o",
+          "count": 3
+        },
+        {
+          "from": "Jo\u00e3o Maria Lobo Alves Palhinha Gon\u00e7alves",
+          "to": "Pedro Lomba Neto",
+          "count": 2
+        },
+        {
+          "from": "Francisco Fernandes Concei\u00e7\u00e3o",
+          "to": "Jo\u00e3o Maria Lobo Alves Palhinha Gon\u00e7alves",
+          "count": 2
+        },
+        {
+          "from": "Jo\u00e3o Maria Lobo Alves Palhinha Gon\u00e7alves",
+          "to": "Jos\u00e9 Diogo Dalot Teixeira",
+          "count": 2
+        },
+        {
+          "from": "Jo\u00e3o Neves",
+          "to": "Jo\u00e3o F\u00e9lix Sequeira",
+          "count": 2
+        },
+        {
+          "from": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "to": "Francisco Fernandes Concei\u00e7\u00e3o",
+          "count": 2
+        },
+        {
+          "from": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "to": "Jo\u00e3o F\u00e9lix Sequeira",
+          "count": 2
+        },
+        {
+          "from": "Jo\u00e3o F\u00e9lix Sequeira",
+          "to": "Jo\u00e3o Neves",
+          "count": 2
+        },
+        {
+          "from": "Gon\u00e7alo Bernardo In\u00e1cio",
+          "to": "Cristiano Ronaldo dos Santos Aveiro",
+          "count": 2
+        },
+        {
+          "from": "Diogo Meireles Costa",
+          "to": "Jo\u00e3o Neves",
+          "count": 2
+        },
+        {
+          "from": "Pedro Lomba Neto",
+          "to": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "count": 2
+        },
+        {
+          "from": "Francisco Fernandes Concei\u00e7\u00e3o",
+          "to": "Jos\u00e9 Diogo Dalot Teixeira",
+          "count": 2
+        },
+        {
+          "from": "Jos\u00e9 Diogo Dalot Teixeira",
+          "to": "Jo\u00e3o F\u00e9lix Sequeira",
+          "count": 2
+        },
+        {
+          "from": "Diogo Meireles Costa",
+          "to": "Ant\u00f3nio Jo\u00e3o Pereira Albuquerque Tavares Silva",
+          "count": 2
+        },
+        {
+          "from": "Jo\u00e3o F\u00e9lix Sequeira",
+          "to": "Cristiano Ronaldo dos Santos Aveiro",
+          "count": 2
+        },
+        {
+          "from": "Francisco Fernandes Concei\u00e7\u00e3o",
+          "to": "Jo\u00e3o F\u00e9lix Sequeira",
+          "count": 2
+        },
+        {
+          "from": "Ant\u00f3nio Jo\u00e3o Pereira Albuquerque Tavares Silva",
+          "to": "Diogo Meireles Costa",
+          "count": 1
+        },
+        {
+          "from": "Cristiano Ronaldo dos Santos Aveiro",
+          "to": "Jo\u00e3o Neves",
+          "count": 1
+        },
+        {
+          "from": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "to": "Cristiano Ronaldo dos Santos Aveiro",
+          "count": 1
+        },
+        {
+          "from": "Cristiano Ronaldo dos Santos Aveiro",
+          "to": "Jo\u00e3o Maria Lobo Alves Palhinha Gon\u00e7alves",
+          "count": 1
+        },
+        {
+          "from": "Francisco Fernandes Concei\u00e7\u00e3o",
+          "to": "Cristiano Ronaldo dos Santos Aveiro",
+          "count": 1
+        },
+        {
+          "from": "Pedro Lomba Neto",
+          "to": "Cristiano Ronaldo dos Santos Aveiro",
+          "count": 1
+        },
+        {
+          "from": "Pedro Lomba Neto",
+          "to": "Ant\u00f3nio Jo\u00e3o Pereira Albuquerque Tavares Silva",
+          "count": 1
+        },
+        {
+          "from": "Pedro Lomba Neto",
+          "to": "Jos\u00e9 Diogo Dalot Teixeira",
+          "count": 1
+        },
+        {
+          "from": "Gon\u00e7alo Bernardo In\u00e1cio",
+          "to": "Ant\u00f3nio Jo\u00e3o Pereira Albuquerque Tavares Silva",
+          "count": 1
+        },
+        {
+          "from": "Jos\u00e9 Diogo Dalot Teixeira",
+          "to": "Cristiano Ronaldo dos Santos Aveiro",
+          "count": 1
+        },
+        {
+          "from": "Jos\u00e9 Diogo Dalot Teixeira",
+          "to": "Jo\u00e3o Maria Lobo Alves Palhinha Gon\u00e7alves",
+          "count": 1
+        },
+        {
+          "from": "Jo\u00e3o F\u00e9lix Sequeira",
+          "to": "Jos\u00e9 Diogo Dalot Teixeira",
+          "count": 1
+        },
+        {
+          "from": "Jo\u00e3o F\u00e9lix Sequeira",
+          "to": "Ant\u00f3nio Jo\u00e3o Pereira Albuquerque Tavares Silva",
+          "count": 1
+        },
+        {
+          "from": "Cristiano Ronaldo dos Santos Aveiro",
+          "to": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "count": 1
+        },
+        {
+          "from": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "to": "Pedro Lomba Neto",
+          "count": 1
+        },
+        {
+          "from": "Jo\u00e3o Neves",
+          "to": "Diogo Meireles Costa",
+          "count": 1
+        },
+        {
+          "from": "Jo\u00e3o Maria Lobo Alves Palhinha Gon\u00e7alves",
+          "to": "Diogo Meireles Costa",
+          "count": 1
+        },
+        {
+          "from": "Cristiano Ronaldo dos Santos Aveiro",
+          "to": "Pedro Lomba Neto",
+          "count": 1
+        },
+        {
+          "from": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "to": "Diogo Meireles Costa",
+          "count": 1
+        },
+        {
+          "from": "Jo\u00e3o Maria Lobo Alves Palhinha Gon\u00e7alves",
+          "to": "Cristiano Ronaldo dos Santos Aveiro",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "label": "45'\u201365'",
+      "nodes": [
+        {
+          "player": "Ant\u00f3nio Jo\u00e3o Pereira Albuquerque Tavares Silva",
+          "display_name": "Ant\u00f3nio Silva",
+          "x": 63.06,
+          "y": 61.08,
+          "passes": 10
+        },
+        {
+          "player": "Cristiano Ronaldo dos Santos Aveiro",
+          "display_name": "Cristiano Ronaldo",
+          "x": 84.83,
+          "y": 46.13,
+          "passes": 3
+        },
+        {
+          "player": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "display_name": "Danilo Pereira",
+          "x": 58.91,
+          "y": 34.35,
+          "passes": 17
+        },
+        {
+          "player": "Diogo Meireles Costa",
+          "display_name": "Diogo Costa",
+          "x": 19.97,
+          "y": 32.27,
+          "passes": 4
+        },
+        {
+          "player": "Francisco Fernandes Concei\u00e7\u00e3o",
+          "display_name": "Francisco Concei\u00e7\u00e3o",
+          "x": 92.67,
+          "y": 72.6,
+          "passes": 7
+        },
+        {
+          "player": "Gon\u00e7alo Bernardo In\u00e1cio",
+          "display_name": "Gon\u00e7alo In\u00e1cio",
+          "x": 70.15,
+          "y": 12.64,
+          "passes": 22
+        },
+        {
+          "player": "Jos\u00e9 Diogo Dalot Teixeira",
+          "display_name": "Diogo Dalot",
+          "x": 50.78,
+          "y": 68.82,
+          "passes": 5
+        },
+        {
+          "player": "Jo\u00e3o F\u00e9lix Sequeira",
+          "display_name": "Jo\u00e3o F\u00e9lix",
+          "x": 86.46,
+          "y": 21.16,
+          "passes": 9
+        },
+        {
+          "player": "Jo\u00e3o Neves",
+          "display_name": "Jo\u00e3o Neves",
+          "x": 69.88,
+          "y": 31.61,
+          "passes": 12
+        },
+        {
+          "player": "Pedro Lomba Neto",
+          "display_name": "Pedro Neto",
+          "x": 86.65,
+          "y": 12.12,
+          "passes": 13
+        },
+        {
+          "player": "R\u00faben Diogo Da Silva Neves",
+          "display_name": "R\u00faben Neves",
+          "x": 85.47,
+          "y": 14.62,
+          "passes": 8
+        }
+      ],
+      "edges": [
+        {
+          "from": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "to": "Gon\u00e7alo Bernardo In\u00e1cio",
+          "count": 10
+        },
+        {
+          "from": "Gon\u00e7alo Bernardo In\u00e1cio",
+          "to": "Pedro Lomba Neto",
+          "count": 8
+        },
+        {
+          "from": "Pedro Lomba Neto",
+          "to": "Jo\u00e3o F\u00e9lix Sequeira",
+          "count": 5
+        },
+        {
+          "from": "Gon\u00e7alo Bernardo In\u00e1cio",
+          "to": "Jo\u00e3o F\u00e9lix Sequeira",
+          "count": 5
+        },
+        {
+          "from": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "to": "Ant\u00f3nio Jo\u00e3o Pereira Albuquerque Tavares Silva",
+          "count": 5
+        },
+        {
+          "from": "Ant\u00f3nio Jo\u00e3o Pereira Albuquerque Tavares Silva",
+          "to": "Francisco Fernandes Concei\u00e7\u00e3o",
+          "count": 5
+        },
+        {
+          "from": "Pedro Lomba Neto",
+          "to": "Gon\u00e7alo Bernardo In\u00e1cio",
+          "count": 4
+        },
+        {
+          "from": "Gon\u00e7alo Bernardo In\u00e1cio",
+          "to": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "count": 4
+        },
+        {
+          "from": "Gon\u00e7alo Bernardo In\u00e1cio",
+          "to": "R\u00faben Diogo Da Silva Neves",
+          "count": 4
+        },
+        {
+          "from": "Jo\u00e3o F\u00e9lix Sequeira",
+          "to": "Cristiano Ronaldo dos Santos Aveiro",
+          "count": 3
+        },
+        {
+          "from": "R\u00faben Diogo Da Silva Neves",
+          "to": "Pedro Lomba Neto",
+          "count": 3
+        },
+        {
+          "from": "Jo\u00e3o Neves",
+          "to": "R\u00faben Diogo Da Silva Neves",
+          "count": 3
+        },
+        {
+          "from": "Jo\u00e3o Neves",
+          "to": "Gon\u00e7alo Bernardo In\u00e1cio",
+          "count": 3
+        },
+        {
+          "from": "Cristiano Ronaldo dos Santos Aveiro",
+          "to": "Francisco Fernandes Concei\u00e7\u00e3o",
+          "count": 2
+        },
+        {
+          "from": "Francisco Fernandes Concei\u00e7\u00e3o",
+          "to": "Jo\u00e3o Neves",
+          "count": 2
+        },
+        {
+          "from": "Jo\u00e3o Neves",
+          "to": "Jo\u00e3o F\u00e9lix Sequeira",
+          "count": 2
+        },
+        {
+          "from": "Jo\u00e3o F\u00e9lix Sequeira",
+          "to": "R\u00faben Diogo Da Silva Neves",
+          "count": 2
+        },
+        {
+          "from": "R\u00faben Diogo Da Silva Neves",
+          "to": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "count": 2
+        },
+        {
+          "from": "Diogo Meireles Costa",
+          "to": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "count": 2
+        },
+        {
+          "from": "Jo\u00e3o F\u00e9lix Sequeira",
+          "to": "Jo\u00e3o Neves",
+          "count": 2
+        },
+        {
+          "from": "Jos\u00e9 Diogo Dalot Teixeira",
+          "to": "Ant\u00f3nio Jo\u00e3o Pereira Albuquerque Tavares Silva",
+          "count": 2
+        },
+        {
+          "from": "Ant\u00f3nio Jo\u00e3o Pereira Albuquerque Tavares Silva",
+          "to": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "count": 2
+        },
+        {
+          "from": "Pedro Lomba Neto",
+          "to": "R\u00faben Diogo Da Silva Neves",
+          "count": 2
+        },
+        {
+          "from": "Jo\u00e3o Neves",
+          "to": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "count": 2
+        },
+        {
+          "from": "R\u00faben Diogo Da Silva Neves",
+          "to": "Gon\u00e7alo Bernardo In\u00e1cio",
+          "count": 2
+        },
+        {
+          "from": "Jos\u00e9 Diogo Dalot Teixeira",
+          "to": "Jo\u00e3o F\u00e9lix Sequeira",
+          "count": 1
+        },
+        {
+          "from": "Francisco Fernandes Concei\u00e7\u00e3o",
+          "to": "Jo\u00e3o F\u00e9lix Sequeira",
+          "count": 1
+        },
+        {
+          "from": "Pedro Lomba Neto",
+          "to": "Francisco Fernandes Concei\u00e7\u00e3o",
+          "count": 1
+        },
+        {
+          "from": "Jo\u00e3o Neves",
+          "to": "Francisco Fernandes Concei\u00e7\u00e3o",
+          "count": 1
+        },
+        {
+          "from": "Francisco Fernandes Concei\u00e7\u00e3o",
+          "to": "Ant\u00f3nio Jo\u00e3o Pereira Albuquerque Tavares Silva",
+          "count": 1
+        },
+        {
+          "from": "Ant\u00f3nio Jo\u00e3o Pereira Albuquerque Tavares Silva",
+          "to": "Jo\u00e3o Maria Lobo Alves Palhinha Gon\u00e7alves",
+          "count": 1
+        },
+        {
+          "from": "Diogo Meireles Costa",
+          "to": "Jo\u00e3o Neves",
+          "count": 1
+        },
+        {
+          "from": "Gon\u00e7alo Bernardo In\u00e1cio",
+          "to": "Diogo Meireles Costa",
+          "count": 1
+        },
+        {
+          "from": "Diogo Meireles Costa",
+          "to": "Ant\u00f3nio Jo\u00e3o Pereira Albuquerque Tavares Silva",
+          "count": 1
+        },
+        {
+          "from": "Ant\u00f3nio Jo\u00e3o Pereira Albuquerque Tavares Silva",
+          "to": "Jos\u00e9 Diogo Dalot Teixeira",
+          "count": 1
+        },
+        {
+          "from": "Francisco Fernandes Concei\u00e7\u00e3o",
+          "to": "Jos\u00e9 Diogo Dalot Teixeira",
+          "count": 1
+        },
+        {
+          "from": "Jo\u00e3o Neves",
+          "to": "Pedro Lomba Neto",
+          "count": 1
+        },
+        {
+          "from": "Jo\u00e3o F\u00e9lix Sequeira",
+          "to": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "count": 1
+        },
+        {
+          "from": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "to": "Jo\u00e3o F\u00e9lix Sequeira",
+          "count": 1
+        },
+        {
+          "from": "Cristiano Ronaldo dos Santos Aveiro",
+          "to": "Jo\u00e3o Neves",
+          "count": 1
+        },
+        {
+          "from": "Francisco Fernandes Concei\u00e7\u00e3o",
+          "to": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "count": 1
+        },
+        {
+          "from": "Pedro Lomba Neto",
+          "to": "Jo\u00e3o Neves",
+          "count": 1
+        },
+        {
+          "from": "Ant\u00f3nio Jo\u00e3o Pereira Albuquerque Tavares Silva",
+          "to": "Gon\u00e7alo Bernardo In\u00e1cio",
+          "count": 1
+        },
+        {
+          "from": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "to": "Jo\u00e3o Neves",
+          "count": 1
+        },
+        {
+          "from": "Jos\u00e9 Diogo Dalot Teixeira",
+          "to": "Francisco Fernandes Concei\u00e7\u00e3o",
+          "count": 1
+        },
+        {
+          "from": "Jos\u00e9 Diogo Dalot Teixeira",
+          "to": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "count": 1
+        },
+        {
+          "from": "Jo\u00e3o F\u00e9lix Sequeira",
+          "to": "Ant\u00f3nio Jo\u00e3o Pereira Albuquerque Tavares Silva",
+          "count": 1
+        },
+        {
+          "from": "R\u00faben Diogo Da Silva Neves",
+          "to": "Jo\u00e3o Neves",
+          "count": 1
+        },
+        {
+          "from": "Francisco Fernandes Concei\u00e7\u00e3o",
+          "to": "R\u00faben Diogo Da Silva Neves",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "label": "65'\u201374'",
+      "nodes": [
+        {
+          "player": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "display_name": "Danilo Pereira",
+          "x": 57.75,
+          "y": 51.99,
+          "passes": 12
+        },
+        {
+          "player": "Diogo Meireles Costa",
+          "display_name": "Diogo Costa",
+          "x": 20.4,
+          "y": 45.35,
+          "passes": 2
+        },
+        {
+          "player": "Francisco Fernandes Concei\u00e7\u00e3o",
+          "display_name": "Francisco Concei\u00e7\u00e3o",
+          "x": 83.78,
+          "y": 68.1,
+          "passes": 5
+        },
+        {
+          "player": "Gon\u00e7alo Bernardo In\u00e1cio",
+          "display_name": "Gon\u00e7alo In\u00e1cio",
+          "x": 69.93,
+          "y": 17.31,
+          "passes": 7
+        },
+        {
+          "player": "Jos\u00e9 Diogo Dalot Teixeira",
+          "display_name": "Diogo Dalot",
+          "x": 78.63,
+          "y": 62.65,
+          "passes": 14
+        },
+        {
+          "player": "Jo\u00e3o F\u00e9lix Sequeira",
+          "display_name": "Jo\u00e3o F\u00e9lix",
+          "x": 85.47,
+          "y": 56.7,
+          "passes": 3
+        },
+        {
+          "player": "Jo\u00e3o Neves",
+          "display_name": "Jo\u00e3o Neves",
+          "x": 84.49,
+          "y": 59.8,
+          "passes": 8
+        },
+        {
+          "player": "N\u00e9lson Cabral Semedo",
+          "display_name": "N\u00e9lson Semedo",
+          "x": 77.92,
+          "y": 67.28,
+          "passes": 6
+        },
+        {
+          "player": "Pedro Lomba Neto",
+          "display_name": "Pedro Neto",
+          "x": 86.95,
+          "y": 5.81,
+          "passes": 8
+        },
+        {
+          "player": "R\u00faben Diogo Da Silva Neves",
+          "display_name": "R\u00faben Neves",
+          "x": 73.57,
+          "y": 30.39,
+          "passes": 7
+        }
+      ],
+      "edges": [
+        {
+          "from": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "to": "Jos\u00e9 Diogo Dalot Teixeira",
+          "count": 7
+        },
+        {
+          "from": "Jos\u00e9 Diogo Dalot Teixeira",
+          "to": "Francisco Fernandes Concei\u00e7\u00e3o",
+          "count": 6
+        },
+        {
+          "from": "Pedro Lomba Neto",
+          "to": "Gon\u00e7alo Bernardo In\u00e1cio",
+          "count": 5
+        },
+        {
+          "from": "Jos\u00e9 Diogo Dalot Teixeira",
+          "to": "N\u00e9lson Cabral Semedo",
+          "count": 4
+        },
+        {
+          "from": "Gon\u00e7alo Bernardo In\u00e1cio",
+          "to": "Pedro Lomba Neto",
+          "count": 4
+        },
+        {
+          "from": "R\u00faben Diogo Da Silva Neves",
+          "to": "Pedro Lomba Neto",
+          "count": 2
+        },
+        {
+          "from": "Gon\u00e7alo Bernardo In\u00e1cio",
+          "to": "R\u00faben Diogo Da Silva Neves",
+          "count": 2
+        },
+        {
+          "from": "N\u00e9lson Cabral Semedo",
+          "to": "Jos\u00e9 Diogo Dalot Teixeira",
+          "count": 2
+        },
+        {
+          "from": "Jos\u00e9 Diogo Dalot Teixeira",
+          "to": "Jo\u00e3o F\u00e9lix Sequeira",
+          "count": 2
+        },
+        {
+          "from": "Jo\u00e3o F\u00e9lix Sequeira",
+          "to": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "count": 2
+        },
+        {
+          "from": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "to": "R\u00faben Diogo Da Silva Neves",
+          "count": 2
+        },
+        {
+          "from": "R\u00faben Diogo Da Silva Neves",
+          "to": "Jos\u00e9 Diogo Dalot Teixeira",
+          "count": 2
+        },
+        {
+          "from": "Diogo Meireles Costa",
+          "to": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "count": 2
+        },
+        {
+          "from": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "to": "Jo\u00e3o Neves",
+          "count": 2
+        },
+        {
+          "from": "Jo\u00e3o Neves",
+          "to": "N\u00e9lson Cabral Semedo",
+          "count": 2
+        },
+        {
+          "from": "N\u00e9lson Cabral Semedo",
+          "to": "Jo\u00e3o Neves",
+          "count": 2
+        },
+        {
+          "from": "Jo\u00e3o Neves",
+          "to": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "count": 2
+        },
+        {
+          "from": "R\u00faben Diogo Da Silva Neves",
+          "to": "Jo\u00e3o Neves",
+          "count": 1
+        },
+        {
+          "from": "Jo\u00e3o Neves",
+          "to": "Pedro Lomba Neto",
+          "count": 1
+        },
+        {
+          "from": "Pedro Lomba Neto",
+          "to": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "count": 1
+        },
+        {
+          "from": "Francisco Fernandes Concei\u00e7\u00e3o",
+          "to": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "count": 1
+        },
+        {
+          "from": "Francisco Fernandes Concei\u00e7\u00e3o",
+          "to": "N\u00e9lson Cabral Semedo",
+          "count": 1
+        },
+        {
+          "from": "R\u00faben Diogo Da Silva Neves",
+          "to": "Francisco Fernandes Concei\u00e7\u00e3o",
+          "count": 1
+        },
+        {
+          "from": "N\u00e9lson Cabral Semedo",
+          "to": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "count": 1
+        },
+        {
+          "from": "Francisco Fernandes Concei\u00e7\u00e3o",
+          "to": "Gon\u00e7alo Bernardo In\u00e1cio",
+          "count": 1
+        },
+        {
+          "from": "Pedro Lomba Neto",
+          "to": "R\u00faben Diogo Da Silva Neves",
+          "count": 1
+        },
+        {
+          "from": "Jo\u00e3o F\u00e9lix Sequeira",
+          "to": "Jo\u00e3o Neves",
+          "count": 1
+        },
+        {
+          "from": "Jo\u00e3o Neves",
+          "to": "Jo\u00e3o F\u00e9lix Sequeira",
+          "count": 1
+        },
+        {
+          "from": "Jo\u00e3o Neves",
+          "to": "Jos\u00e9 Diogo Dalot Teixeira",
+          "count": 1
+        },
+        {
+          "from": "Jo\u00e3o Neves",
+          "to": "Francisco Fernandes Concei\u00e7\u00e3o",
+          "count": 1
+        },
+        {
+          "from": "Francisco Fernandes Concei\u00e7\u00e3o",
+          "to": "Jo\u00e3o Neves",
+          "count": 1
+        },
+        {
+          "from": "N\u00e9lson Cabral Semedo",
+          "to": "Francisco Fernandes Concei\u00e7\u00e3o",
+          "count": 1
+        },
+        {
+          "from": "Francisco Fernandes Concei\u00e7\u00e3o",
+          "to": "Jos\u00e9 Diogo Dalot Teixeira",
+          "count": 1
+        },
+        {
+          "from": "Jos\u00e9 Diogo Dalot Teixeira",
+          "to": "Jo\u00e3o Neves",
+          "count": 1
+        },
+        {
+          "from": "R\u00faben Diogo Da Silva Neves",
+          "to": "Gon\u00e7alo Bernardo In\u00e1cio",
+          "count": 1
+        },
+        {
+          "from": "Gon\u00e7alo Bernardo In\u00e1cio",
+          "to": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "count": 1
+        },
+        {
+          "from": "Jos\u00e9 Diogo Dalot Teixeira",
+          "to": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "count": 1
+        },
+        {
+          "from": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "to": "Gon\u00e7alo Bernardo In\u00e1cio",
+          "count": 1
+        },
+        {
+          "from": "Pedro Lomba Neto",
+          "to": "Francisco Fernandes Concei\u00e7\u00e3o",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "label": "74'\u2013FT",
+      "nodes": [
+        {
+          "player": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "display_name": "Danilo Pereira",
+          "x": 49.7,
+          "y": 39.29,
+          "passes": 9
+        },
+        {
+          "player": "Diogo Jos\u00e9 Teixeira da Silva",
+          "display_name": "Diogo Jota",
+          "x": 84.81,
+          "y": 60.84,
+          "passes": 9
+        },
+        {
+          "player": "Diogo Meireles Costa",
+          "display_name": "Diogo Costa",
+          "x": 13.74,
+          "y": 45.78,
+          "passes": 5
+        },
+        {
+          "player": "Francisco Fernandes Concei\u00e7\u00e3o",
+          "display_name": "Francisco Concei\u00e7\u00e3o",
+          "x": 90.14,
+          "y": 9.58,
+          "passes": 12
+        },
+        {
+          "player": "Gon\u00e7alo Bernardo In\u00e1cio",
+          "display_name": "Gon\u00e7alo In\u00e1cio",
+          "x": 72.04,
+          "y": 11.12,
+          "passes": 17
+        },
+        {
+          "player": "Gon\u00e7alo Matias Ramos",
+          "display_name": "Gon\u00e7alo Ramos",
+          "x": 29.6,
+          "y": 5.7,
+          "passes": 1
+        },
+        {
+          "player": "Jos\u00e9 Diogo Dalot Teixeira",
+          "display_name": "Diogo Dalot",
+          "x": 72.14,
+          "y": 60.93,
+          "passes": 18
+        },
+        {
+          "player": "Jo\u00e3o F\u00e9lix Sequeira",
+          "display_name": "Jo\u00e3o F\u00e9lix",
+          "x": 84.56,
+          "y": 31.55,
+          "passes": 13
+        },
+        {
+          "player": "Matheus Luiz Nunes",
+          "display_name": "Matheus Nunes",
+          "x": 82.51,
+          "y": 40.29,
+          "passes": 15
+        },
+        {
+          "player": "N\u00e9lson Cabral Semedo",
+          "display_name": "N\u00e9lson Semedo",
+          "x": 86.13,
+          "y": 64.98,
+          "passes": 10
+        },
+        {
+          "player": "R\u00faben Diogo Da Silva Neves",
+          "display_name": "R\u00faben Neves",
+          "x": 75.93,
+          "y": 28.18,
+          "passes": 10
+        }
+      ],
+      "edges": [
+        {
+          "from": "Jos\u00e9 Diogo Dalot Teixeira",
+          "to": "N\u00e9lson Cabral Semedo",
+          "count": 6
+        },
+        {
+          "from": "Matheus Luiz Nunes",
+          "to": "Jos\u00e9 Diogo Dalot Teixeira",
+          "count": 6
+        },
+        {
+          "from": "Gon\u00e7alo Bernardo In\u00e1cio",
+          "to": "Francisco Fernandes Concei\u00e7\u00e3o",
+          "count": 6
+        },
+        {
+          "from": "Diogo Jos\u00e9 Teixeira da Silva",
+          "to": "Jos\u00e9 Diogo Dalot Teixeira",
+          "count": 5
+        },
+        {
+          "from": "Gon\u00e7alo Bernardo In\u00e1cio",
+          "to": "Jo\u00e3o F\u00e9lix Sequeira",
+          "count": 4
+        },
+        {
+          "from": "Francisco Fernandes Concei\u00e7\u00e3o",
+          "to": "Gon\u00e7alo Bernardo In\u00e1cio",
+          "count": 4
+        },
+        {
+          "from": "Jos\u00e9 Diogo Dalot Teixeira",
+          "to": "Matheus Luiz Nunes",
+          "count": 3
+        },
+        {
+          "from": "N\u00e9lson Cabral Semedo",
+          "to": "Diogo Jos\u00e9 Teixeira da Silva",
+          "count": 3
+        },
+        {
+          "from": "Francisco Fernandes Concei\u00e7\u00e3o",
+          "to": "R\u00faben Diogo Da Silva Neves",
+          "count": 3
+        },
+        {
+          "from": "Jos\u00e9 Diogo Dalot Teixeira",
+          "to": "Diogo Jos\u00e9 Teixeira da Silva",
+          "count": 3
+        },
+        {
+          "from": "Jos\u00e9 Diogo Dalot Teixeira",
+          "to": "Jo\u00e3o F\u00e9lix Sequeira",
+          "count": 3
+        },
+        {
+          "from": "Francisco Fernandes Concei\u00e7\u00e3o",
+          "to": "Matheus Luiz Nunes",
+          "count": 3
+        },
+        {
+          "from": "Gon\u00e7alo Bernardo In\u00e1cio",
+          "to": "Matheus Luiz Nunes",
+          "count": 3
+        },
+        {
+          "from": "Matheus Luiz Nunes",
+          "to": "Francisco Fernandes Concei\u00e7\u00e3o",
+          "count": 3
+        },
+        {
+          "from": "R\u00faben Diogo Da Silva Neves",
+          "to": "Gon\u00e7alo Bernardo In\u00e1cio",
+          "count": 2
+        },
+        {
+          "from": "Jo\u00e3o F\u00e9lix Sequeira",
+          "to": "Gon\u00e7alo Bernardo In\u00e1cio",
+          "count": 2
+        },
+        {
+          "from": "Gon\u00e7alo Bernardo In\u00e1cio",
+          "to": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "count": 2
+        },
+        {
+          "from": "Diogo Jos\u00e9 Teixeira da Silva",
+          "to": "Matheus Luiz Nunes",
+          "count": 2
+        },
+        {
+          "from": "Jo\u00e3o F\u00e9lix Sequeira",
+          "to": "R\u00faben Diogo Da Silva Neves",
+          "count": 2
+        },
+        {
+          "from": "Diogo Meireles Costa",
+          "to": "R\u00faben Diogo Da Silva Neves",
+          "count": 2
+        },
+        {
+          "from": "R\u00faben Diogo Da Silva Neves",
+          "to": "Francisco Fernandes Concei\u00e7\u00e3o",
+          "count": 2
+        },
+        {
+          "from": "R\u00faben Diogo Da Silva Neves",
+          "to": "Jo\u00e3o F\u00e9lix Sequeira",
+          "count": 2
+        },
+        {
+          "from": "Matheus Luiz Nunes",
+          "to": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "count": 2
+        },
+        {
+          "from": "N\u00e9lson Cabral Semedo",
+          "to": "Matheus Luiz Nunes",
+          "count": 2
+        },
+        {
+          "from": "Jo\u00e3o F\u00e9lix Sequeira",
+          "to": "Diogo Jos\u00e9 Teixeira da Silva",
+          "count": 2
+        },
+        {
+          "from": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "to": "Gon\u00e7alo Bernardo In\u00e1cio",
+          "count": 2
+        },
+        {
+          "from": "Diogo Meireles Costa",
+          "to": "Gon\u00e7alo Bernardo In\u00e1cio",
+          "count": 2
+        },
+        {
+          "from": "Diogo Jos\u00e9 Teixeira da Silva",
+          "to": "Jo\u00e3o F\u00e9lix Sequeira",
+          "count": 2
+        },
+        {
+          "from": "Jo\u00e3o F\u00e9lix Sequeira",
+          "to": "Jos\u00e9 Diogo Dalot Teixeira",
+          "count": 2
+        },
+        {
+          "from": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "to": "R\u00faben Diogo Da Silva Neves",
+          "count": 2
+        },
+        {
+          "from": "Jo\u00e3o F\u00e9lix Sequeira",
+          "to": "Francisco Fernandes Concei\u00e7\u00e3o",
+          "count": 2
+        },
+        {
+          "from": "R\u00faben Diogo Da Silva Neves",
+          "to": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "count": 2
+        },
+        {
+          "from": "N\u00e9lson Cabral Semedo",
+          "to": "Jo\u00e3o F\u00e9lix Sequeira",
+          "count": 2
+        },
+        {
+          "from": "Matheus Luiz Nunes",
+          "to": "Jo\u00e3o F\u00e9lix Sequeira",
+          "count": 2
+        },
+        {
+          "from": "Jo\u00e3o F\u00e9lix Sequeira",
+          "to": "N\u00e9lson Cabral Semedo",
+          "count": 2
+        },
+        {
+          "from": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "to": "Matheus Luiz Nunes",
+          "count": 2
+        },
+        {
+          "from": "Matheus Luiz Nunes",
+          "to": "R\u00faben Diogo Da Silva Neves",
+          "count": 1
+        },
+        {
+          "from": "Gon\u00e7alo Bernardo In\u00e1cio",
+          "to": "R\u00faben Diogo Da Silva Neves",
+          "count": 1
+        },
+        {
+          "from": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "to": "Diogo Jos\u00e9 Teixeira da Silva",
+          "count": 1
+        },
+        {
+          "from": "Jos\u00e9 Diogo Dalot Teixeira",
+          "to": "Gon\u00e7alo Bernardo In\u00e1cio",
+          "count": 1
+        },
+        {
+          "from": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "to": "N\u00e9lson Cabral Semedo",
+          "count": 1
+        },
+        {
+          "from": "Jos\u00e9 Diogo Dalot Teixeira",
+          "to": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "count": 1
+        },
+        {
+          "from": "N\u00e9lson Cabral Semedo",
+          "to": "Jos\u00e9 Diogo Dalot Teixeira",
+          "count": 1
+        },
+        {
+          "from": "N\u00e9lson Cabral Semedo",
+          "to": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "count": 1
+        },
+        {
+          "from": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "to": "Jos\u00e9 Diogo Dalot Teixeira",
+          "count": 1
+        },
+        {
+          "from": "Gon\u00e7alo Bernardo In\u00e1cio",
+          "to": "Gon\u00e7alo Matias Ramos",
+          "count": 1
+        },
+        {
+          "from": "Gon\u00e7alo Matias Ramos",
+          "to": "Jo\u00e3o F\u00e9lix Sequeira",
+          "count": 1
+        },
+        {
+          "from": "R\u00faben Diogo Da Silva Neves",
+          "to": "N\u00e9lson Cabral Semedo",
+          "count": 1
+        },
+        {
+          "from": "Jos\u00e9 Diogo Dalot Teixeira",
+          "to": "R\u00faben Diogo Da Silva Neves",
+          "count": 1
+        },
+        {
+          "from": "Matheus Luiz Nunes",
+          "to": "Gon\u00e7alo Bernardo In\u00e1cio",
+          "count": 1
+        },
+        {
+          "from": "Francisco Fernandes Concei\u00e7\u00e3o",
+          "to": "Diogo Jos\u00e9 Teixeira da Silva",
+          "count": 1
+        },
+        {
+          "from": "Francisco Fernandes Concei\u00e7\u00e3o",
+          "to": "Diogo Meireles Costa",
+          "count": 1
+        },
+        {
+          "from": "Diogo Meireles Costa",
+          "to": "Danilo Lu\u00eds H\u00e9lio Pereira",
+          "count": 1
+        },
+        {
+          "from": "Jo\u00e3o F\u00e9lix Sequeira",
+          "to": "Matheus Luiz Nunes",
+          "count": 1
+        },
+        {
+          "from": "R\u00faben Diogo Da Silva Neves",
+          "to": "Gon\u00e7alo Matias Ramos",
+          "count": 1
+        },
+        {
+          "from": "N\u00e9lson Cabral Semedo",
+          "to": "R\u00faben Diogo Da Silva Neves",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "substitutions": [
+    {
+      "minute": 45,
+      "player_off": "Jo\u00e3o Maria Lobo Alves Palhinha Gon\u00e7alves",
+      "player_on": "R\u00faben Diogo Da Silva Neves"
+    },
+    {
+      "minute": 65,
+      "player_off": "Cristiano Ronaldo dos Santos Aveiro",
+      "player_on": "Gon\u00e7alo Matias Ramos"
+    },
+    {
+      "minute": 65,
+      "player_off": "Ant\u00f3nio Jo\u00e3o Pereira Albuquerque Tavares Silva",
+      "player_on": "N\u00e9lson Cabral Semedo"
+    },
+    {
+      "minute": 74,
+      "player_off": "Pedro Lomba Neto",
+      "player_on": "Diogo Jos\u00e9 Teixeira da Silva"
+    },
+    {
+      "minute": 74,
+      "player_off": "Jo\u00e3o Neves",
+      "player_on": "Matheus Luiz Nunes"
+    }
+  ],
+  "metadata": {
+    "match_id": 3938644,
+    "team": "Portugal",
+    "filter": "completed passes, per substitution window",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Georgia vs Portugal"
+  }
+}

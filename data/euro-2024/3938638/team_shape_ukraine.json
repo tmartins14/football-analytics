@@ -1,0 +1,996 @@
+{
+  "on_ball": {
+    "periods": [
+      {
+        "from_minute": 0,
+        "to_minute": 61,
+        "players_in": [
+          "Andriy Lunin",
+          "Yukhym Konoplya",
+          "Illia Zabarnyi",
+          "Mykola Matvienko",
+          "Oleksandr Zinchenko",
+          "Mykola Shaparenko",
+          "Taras Stepanenko",
+          "Viktor Tsygankov",
+          "Georgiy Sudakov",
+          "Mykhailo Mudryk",
+          "Artem Dovbyk"
+        ],
+        "players_out": [],
+        "nodes": [
+          {
+            "player_id": 18617,
+            "player": "Mykola Matvienko",
+            "display_name": "Mykola Matvienko",
+            "x": 47.58,
+            "y": 30.56,
+            "event_count": 111
+          },
+          {
+            "player_id": 21294,
+            "player": "Mykola Shaparenko",
+            "display_name": "Mykola Shaparenko",
+            "x": 61.2,
+            "y": 49.39,
+            "event_count": 99
+          },
+          {
+            "player_id": 39136,
+            "player": "Illia Zabarnyi",
+            "display_name": "Ilya Zabarnyi",
+            "x": 46.94,
+            "y": 48.16,
+            "event_count": 94
+          },
+          {
+            "player_id": 38975,
+            "player": "Georgiy Sudakov",
+            "display_name": "Georgiy Sudakov",
+            "x": 67.73,
+            "y": 26.14,
+            "event_count": 89
+          },
+          {
+            "player_id": 11000,
+            "player": "Taras Stepanenko",
+            "display_name": "Taras Stepanenko",
+            "x": 60.39,
+            "y": 30.77,
+            "event_count": 82
+          },
+          {
+            "player_id": 3575,
+            "player": "Oleksandr Zinchenko",
+            "display_name": "Oleksandr Zinchenko",
+            "x": 55.3,
+            "y": 13.42,
+            "event_count": 81
+          },
+          {
+            "player_id": 16509,
+            "player": "Viktor Tsygankov",
+            "display_name": "Viktor Tsygankov",
+            "x": 80.93,
+            "y": 58.71,
+            "event_count": 54
+          },
+          {
+            "player_id": 39483,
+            "player": "Mykhailo Mudryk",
+            "display_name": "Mykhailo Mudryk",
+            "x": 73.01,
+            "y": 15.11,
+            "event_count": 47
+          },
+          {
+            "player_id": 45785,
+            "player": "Yukhym Konoplya",
+            "display_name": "Yukhym Konoplya",
+            "x": 58.54,
+            "y": 67.41,
+            "event_count": 41
+          },
+          {
+            "player_id": 21390,
+            "player": "Andriy Lunin",
+            "display_name": "Andriy Lunin",
+            "x": 9.38,
+            "y": 39.26,
+            "event_count": 26
+          },
+          {
+            "player_id": 25079,
+            "player": "Artem Dovbyk",
+            "display_name": "Artem Dovbyk",
+            "x": 109.01,
+            "y": 42.03,
+            "event_count": 14
+          }
+        ],
+        "hull": [
+          [
+            9.38,
+            39.26
+          ],
+          [
+            55.3,
+            13.42
+          ],
+          [
+            73.01,
+            15.11
+          ],
+          [
+            109.01,
+            42.03
+          ],
+          [
+            80.93,
+            58.71
+          ],
+          [
+            58.54,
+            67.41
+          ]
+        ]
+      },
+      {
+        "from_minute": 61,
+        "to_minute": 62,
+        "players_in": [
+          "Volodymyr Brazhko"
+        ],
+        "players_out": [
+          "Taras Stepanenko"
+        ],
+        "nodes": [],
+        "hull": []
+      },
+      {
+        "from_minute": 62,
+        "to_minute": 71,
+        "players_in": [
+          "Andriy Yarmolenko",
+          "Roman Yaremchuk"
+        ],
+        "players_out": [
+          "Viktor Tsygankov",
+          "Mykola Shaparenko"
+        ],
+        "nodes": [
+          {
+            "player_id": 38975,
+            "player": "Georgiy Sudakov",
+            "display_name": "Georgiy Sudakov",
+            "x": 73.25,
+            "y": 36.86,
+            "event_count": 13
+          },
+          {
+            "player_id": 3575,
+            "player": "Oleksandr Zinchenko",
+            "display_name": "Oleksandr Zinchenko",
+            "x": 79.59,
+            "y": 18.77,
+            "event_count": 12
+          },
+          {
+            "player_id": 8830,
+            "player": "Andriy Yarmolenko",
+            "display_name": "Andriy Yarmolenko",
+            "x": 65.97,
+            "y": 58.67,
+            "event_count": 12
+          },
+          {
+            "player_id": 18617,
+            "player": "Mykola Matvienko",
+            "display_name": "Mykola Matvienko",
+            "x": 58.2,
+            "y": 28.66,
+            "event_count": 9
+          },
+          {
+            "player_id": 144127,
+            "player": "Volodymyr Brazhko",
+            "display_name": "Volodymyr Brazhko",
+            "x": 70.97,
+            "y": 35.51,
+            "event_count": 7
+          },
+          {
+            "player_id": 39136,
+            "player": "Illia Zabarnyi",
+            "display_name": "Ilya Zabarnyi",
+            "x": 44.02,
+            "y": 48.92,
+            "event_count": 6
+          },
+          {
+            "player_id": 39483,
+            "player": "Mykhailo Mudryk",
+            "display_name": "Mykhailo Mudryk",
+            "x": 97.42,
+            "y": 28.78,
+            "event_count": 6
+          },
+          {
+            "player_id": 45785,
+            "player": "Yukhym Konoplya",
+            "display_name": "Yukhym Konoplya",
+            "x": 79.6,
+            "y": 75.63,
+            "event_count": 3
+          },
+          {
+            "player_id": 25079,
+            "player": "Artem Dovbyk",
+            "display_name": "Artem Dovbyk",
+            "x": 98.03,
+            "y": 43.57,
+            "event_count": 3
+          },
+          {
+            "player_id": 23649,
+            "player": "Roman Yaremchuk",
+            "display_name": "Roman Yaremchuk",
+            "x": 98.6,
+            "y": 59.6,
+            "event_count": 1
+          }
+        ],
+        "hull": [
+          [
+            79.6,
+            75.63
+          ],
+          [
+            44.02,
+            48.92
+          ],
+          [
+            58.2,
+            28.66
+          ],
+          [
+            79.59,
+            18.77
+          ],
+          [
+            97.42,
+            28.78
+          ],
+          [
+            98.03,
+            43.57
+          ],
+          [
+            98.6,
+            59.6
+          ]
+        ]
+      },
+      {
+        "from_minute": 71,
+        "to_minute": 82,
+        "players_in": [
+          "Oleksandr Tymchyk"
+        ],
+        "players_out": [
+          "Yukhym Konoplya"
+        ],
+        "nodes": [
+          {
+            "player_id": 38975,
+            "player": "Georgiy Sudakov",
+            "display_name": "Georgiy Sudakov",
+            "x": 55.48,
+            "y": 30.99,
+            "event_count": 17
+          },
+          {
+            "player_id": 3575,
+            "player": "Oleksandr Zinchenko",
+            "display_name": "Oleksandr Zinchenko",
+            "x": 34.92,
+            "y": 19.49,
+            "event_count": 10
+          },
+          {
+            "player_id": 144127,
+            "player": "Volodymyr Brazhko",
+            "display_name": "Volodymyr Brazhko",
+            "x": 43.53,
+            "y": 42.03,
+            "event_count": 9
+          },
+          {
+            "player_id": 8830,
+            "player": "Andriy Yarmolenko",
+            "display_name": "Andriy Yarmolenko",
+            "x": 101.87,
+            "y": 70.3,
+            "event_count": 7
+          },
+          {
+            "player_id": 39483,
+            "player": "Mykhailo Mudryk",
+            "display_name": "Mykhailo Mudryk",
+            "x": 77.3,
+            "y": 15.24,
+            "event_count": 5
+          },
+          {
+            "player_id": 21390,
+            "player": "Andriy Lunin",
+            "display_name": "Andriy Lunin",
+            "x": 10.3,
+            "y": 37.3,
+            "event_count": 3
+          },
+          {
+            "player_id": 45863,
+            "player": "Oleksandr Tymchyk",
+            "display_name": "Oleksandr Tymchyk",
+            "x": 116.27,
+            "y": 79.13,
+            "event_count": 3
+          },
+          {
+            "player_id": 39136,
+            "player": "Illia Zabarnyi",
+            "display_name": "Ilya Zabarnyi",
+            "x": 81.1,
+            "y": 59.03,
+            "event_count": 3
+          },
+          {
+            "player_id": 18617,
+            "player": "Mykola Matvienko",
+            "display_name": "Mykola Matvienko",
+            "x": 74.5,
+            "y": 42.0,
+            "event_count": 3
+          },
+          {
+            "player_id": 23649,
+            "player": "Roman Yaremchuk",
+            "display_name": "Roman Yaremchuk",
+            "x": 96.73,
+            "y": 32.57,
+            "event_count": 3
+          },
+          {
+            "player_id": 25079,
+            "player": "Artem Dovbyk",
+            "display_name": "Artem Dovbyk",
+            "x": 112.95,
+            "y": 44.9,
+            "event_count": 2
+          }
+        ],
+        "hull": [
+          [
+            116.27,
+            79.13
+          ],
+          [
+            10.3,
+            37.3
+          ],
+          [
+            34.92,
+            19.49
+          ],
+          [
+            77.3,
+            15.24
+          ],
+          [
+            112.95,
+            44.9
+          ]
+        ]
+      },
+      {
+        "from_minute": 82,
+        "to_minute": 95,
+        "players_in": [
+          "Ruslan Malinovskiy"
+        ],
+        "players_out": [
+          "Georgiy Sudakov"
+        ],
+        "nodes": [
+          {
+            "player_id": 16557,
+            "player": "Ruslan Malinovskiy",
+            "display_name": "Ruslan Malinovskiy",
+            "x": 64.97,
+            "y": 36.54,
+            "event_count": 34
+          },
+          {
+            "player_id": 3575,
+            "player": "Oleksandr Zinchenko",
+            "display_name": "Oleksandr Zinchenko",
+            "x": 70.34,
+            "y": 32.86,
+            "event_count": 21
+          },
+          {
+            "player_id": 144127,
+            "player": "Volodymyr Brazhko",
+            "display_name": "Volodymyr Brazhko",
+            "x": 67.38,
+            "y": 43.39,
+            "event_count": 16
+          },
+          {
+            "player_id": 8830,
+            "player": "Andriy Yarmolenko",
+            "display_name": "Andriy Yarmolenko",
+            "x": 79.02,
+            "y": 68.76,
+            "event_count": 14
+          },
+          {
+            "player_id": 23649,
+            "player": "Roman Yaremchuk",
+            "display_name": "Roman Yaremchuk",
+            "x": 77.95,
+            "y": 54.23,
+            "event_count": 14
+          },
+          {
+            "player_id": 39136,
+            "player": "Illia Zabarnyi",
+            "display_name": "Ilya Zabarnyi",
+            "x": 48.59,
+            "y": 58.99,
+            "event_count": 13
+          },
+          {
+            "player_id": 39483,
+            "player": "Mykhailo Mudryk",
+            "display_name": "Mykhailo Mudryk",
+            "x": 83.12,
+            "y": 21.6,
+            "event_count": 12
+          },
+          {
+            "player_id": 18617,
+            "player": "Mykola Matvienko",
+            "display_name": "Mykola Matvienko",
+            "x": 39.17,
+            "y": 30.76,
+            "event_count": 12
+          },
+          {
+            "player_id": 25079,
+            "player": "Artem Dovbyk",
+            "display_name": "Artem Dovbyk",
+            "x": 95.34,
+            "y": 46.0,
+            "event_count": 10
+          },
+          {
+            "player_id": 45863,
+            "player": "Oleksandr Tymchyk",
+            "display_name": "Oleksandr Tymchyk",
+            "x": 54.08,
+            "y": 68.21,
+            "event_count": 10
+          },
+          {
+            "player_id": 21390,
+            "player": "Andriy Lunin",
+            "display_name": "Andriy Lunin",
+            "x": 21.4,
+            "y": 48.13,
+            "event_count": 3
+          }
+        ],
+        "hull": [
+          [
+            83.12,
+            21.6
+          ],
+          [
+            95.34,
+            46.0
+          ],
+          [
+            79.02,
+            68.76
+          ],
+          [
+            54.08,
+            68.21
+          ],
+          [
+            21.4,
+            48.13
+          ],
+          [
+            39.17,
+            30.76
+          ]
+        ]
+      }
+    ]
+  },
+  "off_ball": {
+    "density_grid": {
+      "cols": 24,
+      "rows": 16,
+      "values": [
+        [
+          0.1344,
+          0.1603,
+          0.1869,
+          0.2133,
+          0.2384,
+          0.2611,
+          0.2803,
+          0.295,
+          0.3045,
+          0.3083,
+          0.3063,
+          0.2984,
+          0.2852,
+          0.2674,
+          0.2459,
+          0.2218,
+          0.1962,
+          0.1702,
+          0.1446,
+          0.1204,
+          0.0982,
+          0.0783,
+          0.0611,
+          0.0465
+        ],
+        [
+          0.1724,
+          0.2059,
+          0.2405,
+          0.275,
+          0.3081,
+          0.3384,
+          0.3643,
+          0.3849,
+          0.3989,
+          0.4057,
+          0.4049,
+          0.3967,
+          0.3815,
+          0.3601,
+          0.3336,
+          0.3033,
+          0.2706,
+          0.2368,
+          0.2033,
+          0.171,
+          0.141,
+          0.1138,
+          0.0899,
+          0.0694
+        ],
+        [
+          0.2129,
+          0.2546,
+          0.2978,
+          0.3411,
+          0.3829,
+          0.4214,
+          0.4549,
+          0.482,
+          0.5013,
+          0.5119,
+          0.5132,
+          0.5054,
+          0.4887,
+          0.4642,
+          0.433,
+          0.3967,
+          0.3569,
+          0.3151,
+          0.2731,
+          0.2322,
+          0.1935,
+          0.158,
+          0.1263,
+          0.0987
+        ],
+        [
+          0.2531,
+          0.303,
+          0.355,
+          0.4073,
+          0.458,
+          0.5052,
+          0.5467,
+          0.5808,
+          0.6059,
+          0.6209,
+          0.6252,
+          0.6185,
+          0.6013,
+          0.5744,
+          0.5394,
+          0.4977,
+          0.4512,
+          0.4019,
+          0.3515,
+          0.3018,
+          0.2542,
+          0.2098,
+          0.1697,
+          0.1343
+        ],
+        [
+          0.2895,
+          0.3473,
+          0.4076,
+          0.4686,
+          0.528,
+          0.5837,
+          0.6332,
+          0.6745,
+          0.7058,
+          0.7258,
+          0.7336,
+          0.7289,
+          0.7121,
+          0.684,
+          0.6461,
+          0.6001,
+          0.5481,
+          0.492,
+          0.4341,
+          0.3761,
+          0.3199,
+          0.2668,
+          0.2181,
+          0.1745
+        ],
+        [
+          0.3182,
+          0.3828,
+          0.4506,
+          0.5194,
+          0.5868,
+          0.6504,
+          0.7076,
+          0.756,
+          0.7936,
+          0.819,
+          0.8309,
+          0.829,
+          0.8136,
+          0.7855,
+          0.7461,
+          0.6972,
+          0.641,
+          0.5796,
+          0.5152,
+          0.4501,
+          0.3862,
+          0.3251,
+          0.2683,
+          0.2168
+        ],
+        [
+          0.3357,
+          0.4055,
+          0.4792,
+          0.5544,
+          0.6286,
+          0.6992,
+          0.7633,
+          0.8185,
+          0.8624,
+          0.8933,
+          0.9099,
+          0.9116,
+          0.8987,
+          0.8717,
+          0.8322,
+          0.782,
+          0.7231,
+          0.6579,
+          0.5888,
+          0.5181,
+          0.4478,
+          0.38,
+          0.3162,
+          0.2577
+        ],
+        [
+          0.3399,
+          0.4126,
+          0.49,
+          0.5697,
+          0.649,
+          0.7251,
+          0.7951,
+          0.8563,
+          0.9061,
+          0.9426,
+          0.9642,
+          0.9703,
+          0.9607,
+          0.9362,
+          0.898,
+          0.8479,
+          0.788,
+          0.7208,
+          0.6487,
+          0.5741,
+          0.4993,
+          0.4264,
+          0.3571,
+          0.2931
+        ],
+        [
+          0.3299,
+          0.4031,
+          0.4816,
+          0.5633,
+          0.6454,
+          0.7252,
+          0.7996,
+          0.8656,
+          0.9206,
+          0.9623,
+          0.9891,
+          1.0,
+          0.9947,
+          0.9736,
+          0.938,
+          0.8896,
+          0.8304,
+          0.7629,
+          0.6896,
+          0.6131,
+          0.5357,
+          0.4597,
+          0.387,
+          0.3193
+        ],
+        [
+          0.3069,
+          0.3778,
+          0.4547,
+          0.5356,
+          0.618,
+          0.699,
+          0.7756,
+          0.8448,
+          0.9038,
+          0.95,
+          0.9817,
+          0.9975,
+          0.9969,
+          0.9802,
+          0.9483,
+          0.9029,
+          0.8461,
+          0.7801,
+          0.7076,
+          0.6312,
+          0.5534,
+          0.4765,
+          0.4025,
+          0.3333
+        ],
+        [
+          0.2738,
+          0.3398,
+          0.4123,
+          0.4895,
+          0.5692,
+          0.6487,
+          0.725,
+          0.7951,
+          0.8562,
+          0.9056,
+          0.9412,
+          0.9615,
+          0.9657,
+          0.9539,
+          0.9268,
+          0.8857,
+          0.8327,
+          0.7701,
+          0.7004,
+          0.6263,
+          0.5503,
+          0.4748,
+          0.402,
+          0.3336
+        ],
+        [
+          0.2341,
+          0.2931,
+          0.3588,
+          0.4296,
+          0.5038,
+          0.5788,
+          0.6519,
+          0.7204,
+          0.7812,
+          0.8318,
+          0.8698,
+          0.8937,
+          0.9023,
+          0.8954,
+          0.8735,
+          0.8379,
+          0.7902,
+          0.7327,
+          0.6678,
+          0.5982,
+          0.5264,
+          0.4547,
+          0.3853,
+          0.3201
+        ],
+        [
+          0.1918,
+          0.2423,
+          0.2993,
+          0.3616,
+          0.4277,
+          0.4956,
+          0.5628,
+          0.6267,
+          0.6847,
+          0.734,
+          0.7726,
+          0.7984,
+          0.8105,
+          0.8082,
+          0.7918,
+          0.7622,
+          0.721,
+          0.6702,
+          0.612,
+          0.549,
+          0.4835,
+          0.418,
+          0.3543,
+          0.2944
+        ],
+        [
+          0.1505,
+          0.1919,
+          0.2391,
+          0.2915,
+          0.3478,
+          0.4064,
+          0.4653,
+          0.5222,
+          0.5747,
+          0.6205,
+          0.6573,
+          0.6834,
+          0.6975,
+          0.699,
+          0.6877,
+          0.6645,
+          0.6306,
+          0.5876,
+          0.5376,
+          0.4829,
+          0.4257,
+          0.3681,
+          0.312,
+          0.2591
+        ],
+        [
+          0.1129,
+          0.1452,
+          0.1826,
+          0.2245,
+          0.2701,
+          0.3183,
+          0.3673,
+          0.4154,
+          0.4605,
+          0.5007,
+          0.5338,
+          0.5584,
+          0.5731,
+          0.5771,
+          0.5704,
+          0.5533,
+          0.5267,
+          0.4921,
+          0.4512,
+          0.4059,
+          0.3581,
+          0.3098,
+          0.2626,
+          0.2181
+        ],
+        [
+          0.0808,
+          0.1048,
+          0.1329,
+          0.1648,
+          0.1999,
+          0.2374,
+          0.2761,
+          0.3145,
+          0.3512,
+          0.3844,
+          0.4124,
+          0.434,
+          0.4478,
+          0.4533,
+          0.4501,
+          0.4383,
+          0.4188,
+          0.3924,
+          0.3607,
+          0.325,
+          0.2871,
+          0.2486,
+          0.2108,
+          0.175
+        ]
+      ]
+    },
+    "centroid": {
+      "x": 59.53,
+      "y": 43.06
+    },
+    "thirds_spine": [
+      {
+        "third": "defensive",
+        "x": 25.89,
+        "y": 38.69
+      },
+      {
+        "third": "middle",
+        "x": 59.86,
+        "y": 43.29
+      },
+      {
+        "third": "attacking",
+        "x": 95.03,
+        "y": 47.22
+      }
+    ],
+    "ellipse": {
+      "cx": 59.53,
+      "cy": 43.06,
+      "rx": 26.27,
+      "ry": 17.18,
+      "angle_deg": -167.8
+    },
+    "depth_line": {
+      "x": 73.82,
+      "percentile": 70
+    }
+  },
+  "metadata": {
+    "match_id": 3938638,
+    "team": "Ukraine",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Romania vs Ukraine",
+    "on_ball_event_count": 1034,
+    "on_ball_period_count": 5,
+    "off_ball_bandwidth_yards": 8.0,
+    "off_ball_depth_percentile": 70,
+    "off_ball_grid_cols": 24,
+    "off_ball_grid_rows": 16,
+    "phase_filter": "open_play_only",
+    "coordinate_system": "statsbomb_120x80_normalised_attack_right",
+    "coordinate_note": "Coordinates are normalised so the team always attacks right (increasing x). Raw StatsBomb events are flipped (x\u2192120-x, y\u219280-y) in periods where the team attacks left.",
+    "camera_caveat": "360 frames follow the ball; the visible subset of out-of-possession positions is biased toward areas near the ball. The camera artifact and the real defensive shape point the same direction \u2014 they cannot be cleanly separated."
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "goals": [
+    {
+      "window": {
+        "anchor_event_id": "a7cb804f-25ac-47f8-9feb-95332e946561",
+        "start_event_id": "826c8267-5738-4feb-b5ae-bdee8d1da230",
+        "end_event_id": "a7cb804f-25ac-47f8-9feb-95332e946561",
+        "period": 1,
+        "window_seconds": 10.0,
+        "t_span_seconds": 44.04
+      },
+      "frames": [
+        {
+          "event_id": "826c8267-5738-4feb-b5ae-bdee8d1da230",
+          "t_seconds": 36.76,
+          "team": "Turkey",
+          "event_type": "Pass",
+          "ball_x": 120.0,
+          "ball_y": 0.1,
+          "ball_end_x": 112.6,
+          "ball_end_y": 41.7,
+          "actor": "Hakan \u00c7alhano\u011flu",
+          "outcome": "Incomplete"
+        },
+        {
+          "event_id": "3a7c7c0b-a89d-4563-9baa-6652f762a00f",
+          "t_seconds": 39.259,
+          "team": "Turkey",
+          "event_type": "Ball Recovery",
+          "ball_x": 98.6,
+          "ball_y": 57.0,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Arda G\u00fcler",
+          "outcome": null
+        },
+        {
+          "event_id": "b8aee52e-73c7-47db-aa04-fe522c19a960",
+          "t_seconds": 39.259,
+          "team": "Turkey",
+          "event_type": "Carry",
+          "ball_x": 98.6,
+          "ball_y": 57.0,
+          "ball_end_x": 104.8,
+          "ball_end_y": 62.5,
+          "actor": "Arda G\u00fcler",
+          "outcome": null
+        },
+        {
+          "event_id": "89a36633-887d-439c-abaa-4ff92c457614",
+          "t_seconds": 42.27,
+          "team": "Turkey",
+          "event_type": "Pass",
+          "ball_x": 104.8,
+          "ball_y": 62.5,
+          "ball_end_x": 117.9,
+          "ball_end_y": 35.1,
+          "actor": "Arda G\u00fcler",
+          "outcome": null
+        },
+        {
+          "event_id": "5c274ccd-69d7-4ea2-9611-b7d447d25f07",
+          "t_seconds": 44.04,
+          "team": "Netherlands",
+          "event_type": "Duel",
+          "ball_x": 2.2,
+          "ball_y": 45.0,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Tijjani Reijnders",
+          "outcome": null
+        },
+        {
+          "event_id": "a7cb804f-25ac-47f8-9feb-95332e946561",
+          "t_seconds": 44.04,
+          "team": "Turkey",
+          "event_type": "Shot",
+          "ball_x": 117.9,
+          "ball_y": 35.1,
+          "ball_end_x": 120.0,
+          "ball_end_y": 41.2,
+          "actor": "Samet Akaydin",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "a7cb804f-25ac-47f8-9feb-95332e946561",
+          "minute": 34,
+          "second": 47,
+          "scorer": "Samet Akaydin",
+          "team": "Turkey"
+        }
+      },
+      "metadata": {
+        "match_id": 3942382,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Netherlands vs Turkey"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "962246b0-535e-4819-a7a5-18613a717d6e",
+        "start_event_id": "2ae0a6bd-fd7b-404e-afae-dd45043b48df",
+        "end_event_id": "962246b0-535e-4819-a7a5-18613a717d6e",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 32.571
+      },
+      "frames": [
+        {
+          "event_id": "2ae0a6bd-fd7b-404e-afae-dd45043b48df",
+          "t_seconds": 26.214,
+          "team": "Netherlands",
+          "event_type": "Pass",
+          "ball_x": 120.0,
+          "ball_y": 80.0,
+          "ball_end_x": 104.9,
+          "ball_end_y": 57.9,
+          "actor": "Memphis Depay",
+          "outcome": null
+        },
+        {
+          "event_id": "365e2b85-7fad-444a-86bf-2f74a0ebe893",
+          "t_seconds": 28.796,
+          "team": "Netherlands",
+          "event_type": "Pass",
+          "ball_x": 104.7,
+          "ball_y": 57.0,
+          "ball_end_x": 108.7,
+          "ball_end_y": 72.7,
+          "actor": "Jerdy Schouten",
+          "outcome": null
+        },
+        {
+          "event_id": "eacfd037-e6c0-46a9-a8ef-a19fbd4d75fd",
+          "t_seconds": 29.909,
+          "team": "Netherlands",
+          "event_type": "Carry",
+          "ball_x": 108.7,
+          "ball_y": 72.7,
+          "ball_end_x": 109.6,
+          "ball_end_y": 73.7,
+          "actor": "Memphis Depay",
+          "outcome": null
+        },
+        {
+          "event_id": "19abced8-5b5d-40a0-abca-65b9c55eee83",
+          "t_seconds": 30.956,
+          "team": "Netherlands",
+          "event_type": "Pass",
+          "ball_x": 109.6,
+          "ball_y": 73.7,
+          "ball_end_x": 110.1,
+          "ball_end_y": 39.1,
+          "actor": "Memphis Depay",
+          "outcome": null
+        },
+        {
+          "event_id": "962246b0-535e-4819-a7a5-18613a717d6e",
+          "t_seconds": 32.571,
+          "team": "Netherlands",
+          "event_type": "Shot",
+          "ball_x": 110.1,
+          "ball_y": 39.1,
+          "ball_end_x": 120.0,
+          "ball_end_y": 41.7,
+          "actor": "Stefan de Vrij",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "962246b0-535e-4819-a7a5-18613a717d6e",
+          "minute": 69,
+          "second": 54,
+          "scorer": "Stefan de Vrij",
+          "team": "Netherlands"
+        }
+      },
+      "metadata": {
+        "match_id": 3942382,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Netherlands vs Turkey"
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3942382,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Netherlands vs Turkey"
+  }
+}

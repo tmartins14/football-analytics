@@ -1,0 +1,423 @@
+{
+  "goals": [
+    {
+      "window": {
+        "anchor_event_id": "68290076-ddc8-42bd-8231-c5f6cf5550be",
+        "start_event_id": "7ab97958-9652-4a4d-90e3-850f1b066cbf",
+        "end_event_id": "68290076-ddc8-42bd-8231-c5f6cf5550be",
+        "period": 1,
+        "window_seconds": 10.0,
+        "t_span_seconds": 12.07
+      },
+      "frames": [
+        {
+          "event_id": "7ab97958-9652-4a4d-90e3-850f1b066cbf",
+          "t_seconds": 0.0,
+          "team": "Croatia",
+          "event_type": "Pass",
+          "ball_x": 36.0,
+          "ball_y": 6.7,
+          "ball_end_x": 80.7,
+          "ball_end_y": 37.8,
+          "actor": "Marin Pongracic",
+          "outcome": "Incomplete"
+        },
+        {
+          "event_id": "09f5f658-05d5-4a1b-9aae-2f206e6352d3",
+          "t_seconds": 2.863,
+          "team": "Croatia",
+          "event_type": "Duel",
+          "ball_x": 80.7,
+          "ball_y": 37.8,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Ante Budimir",
+          "outcome": null
+        },
+        {
+          "event_id": "b37c001f-3d7d-4eea-b31a-45dd4c3d80fa",
+          "t_seconds": 4.203,
+          "team": "Croatia",
+          "event_type": "Pressure",
+          "ball_x": 83.2,
+          "ball_y": 50.5,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Lovro Majer",
+          "outcome": null
+        },
+        {
+          "event_id": "75468e86-abba-47ce-9749-f6e8d3565cc8",
+          "t_seconds": 4.412,
+          "team": "Spain",
+          "event_type": "Pass",
+          "ball_x": 35.6,
+          "ball_y": 30.3,
+          "ball_end_x": 55.6,
+          "ball_end_y": 52.3,
+          "actor": "Marc Cucurella",
+          "outcome": null
+        },
+        {
+          "event_id": "e6da4e28-12b1-45be-a167-783e58a96ae7",
+          "t_seconds": 5.938,
+          "team": "Spain",
+          "event_type": "Carry",
+          "ball_x": 55.6,
+          "ball_y": 52.3,
+          "ball_end_x": 55.6,
+          "ball_end_y": 52.3,
+          "actor": "Rodri",
+          "outcome": null
+        },
+        {
+          "event_id": "cf445282-a2c8-4b60-88ed-e3eb8b03a799",
+          "t_seconds": 6.01,
+          "team": "Spain",
+          "event_type": "Pass",
+          "ball_x": 55.6,
+          "ball_y": 52.3,
+          "ball_end_x": 51.9,
+          "ball_end_y": 38.1,
+          "actor": "Rodri",
+          "outcome": null
+        },
+        {
+          "event_id": "beb58eb8-883e-4b95-b418-d5b052c9297e",
+          "t_seconds": 7.259,
+          "team": "Spain",
+          "event_type": "Carry",
+          "ball_x": 51.9,
+          "ball_y": 38.1,
+          "ball_end_x": 56.3,
+          "ball_end_y": 34.7,
+          "actor": "Fabi\u00e1n Ruiz",
+          "outcome": null
+        },
+        {
+          "event_id": "b953bd5d-3a8e-4867-936a-3305c67bdb8a",
+          "t_seconds": 8.195,
+          "team": "Spain",
+          "event_type": "Pass",
+          "ball_x": 56.3,
+          "ball_y": 34.7,
+          "ball_end_x": 91.0,
+          "ball_end_y": 37.7,
+          "actor": "Fabi\u00e1n Ruiz",
+          "outcome": null
+        },
+        {
+          "event_id": "1f229e3c-acd1-45e9-9d9a-9112220e7c4c",
+          "t_seconds": 10.136,
+          "team": "Croatia",
+          "event_type": "Pressure",
+          "ball_x": 29.1,
+          "ball_y": 42.4,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Marin Pongracic",
+          "outcome": null
+        },
+        {
+          "event_id": "45695bcb-5175-428e-b4ef-d30273ef4fef",
+          "t_seconds": 10.528,
+          "team": "Spain",
+          "event_type": "Carry",
+          "ball_x": 91.0,
+          "ball_y": 37.7,
+          "ball_end_x": 104.1,
+          "ball_end_y": 39.9,
+          "actor": "\u00c1lvaro Morata",
+          "outcome": null
+        },
+        {
+          "event_id": "68290076-ddc8-42bd-8231-c5f6cf5550be",
+          "t_seconds": 12.07,
+          "team": "Spain",
+          "event_type": "Shot",
+          "ball_x": 104.1,
+          "ball_y": 39.9,
+          "ball_end_x": 120.0,
+          "ball_end_y": 39.4,
+          "actor": "\u00c1lvaro Morata",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "68290076-ddc8-42bd-8231-c5f6cf5550be",
+          "minute": 28,
+          "second": 8,
+          "scorer": "\u00c1lvaro Morata",
+          "team": "Spain"
+        }
+      },
+      "metadata": {
+        "match_id": 3930160,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Spain vs Croatia"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "c609a012-b29c-4af1-b7ee-a9d4934162e5",
+        "start_event_id": "447b5d6b-7d5b-41ea-893c-08d1b806b9d2",
+        "end_event_id": "c609a012-b29c-4af1-b7ee-a9d4934162e5",
+        "period": 1,
+        "window_seconds": 10.0,
+        "t_span_seconds": 10.287
+      },
+      "frames": [
+        {
+          "event_id": "447b5d6b-7d5b-41ea-893c-08d1b806b9d2",
+          "t_seconds": 0.0,
+          "team": "Spain",
+          "event_type": "Ball Recovery",
+          "ball_x": 106.8,
+          "ball_y": 65.2,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Lamine Yamal",
+          "outcome": null
+        },
+        {
+          "event_id": "6e9a9817-4be2-4727-97e0-f6e6e38ffac8",
+          "t_seconds": 0.0,
+          "team": "Spain",
+          "event_type": "Carry",
+          "ball_x": 106.8,
+          "ball_y": 65.2,
+          "ball_end_x": 105.0,
+          "ball_end_y": 67.4,
+          "actor": "Lamine Yamal",
+          "outcome": null
+        },
+        {
+          "event_id": "e1d549ff-c53d-475b-97ef-41f69bcb7c9c",
+          "t_seconds": 4.341,
+          "team": "Spain",
+          "event_type": "Pass",
+          "ball_x": 105.0,
+          "ball_y": 67.4,
+          "ball_end_x": 99.0,
+          "ball_end_y": 55.8,
+          "actor": "Lamine Yamal",
+          "outcome": null
+        },
+        {
+          "event_id": "61351539-1261-4593-b710-e4d7d496067d",
+          "t_seconds": 5.107,
+          "team": "Spain",
+          "event_type": "Carry",
+          "ball_x": 99.0,
+          "ball_y": 55.8,
+          "ball_end_x": 99.0,
+          "ball_end_y": 55.8,
+          "actor": "Pedri",
+          "outcome": null
+        },
+        {
+          "event_id": "d0a43541-2d1a-4252-b7aa-cc99d9e7fb9b",
+          "t_seconds": 6.838,
+          "team": "Spain",
+          "event_type": "Pass",
+          "ball_x": 99.0,
+          "ball_y": 55.8,
+          "ball_end_x": 99.5,
+          "ball_end_y": 40.9,
+          "actor": "Pedri",
+          "outcome": null
+        },
+        {
+          "event_id": "305a0d84-0306-4d83-af11-423fcd034df7",
+          "t_seconds": 7.678,
+          "team": "Spain",
+          "event_type": "Carry",
+          "ball_x": 99.5,
+          "ball_y": 40.9,
+          "ball_end_x": 100.5,
+          "ball_end_y": 40.3,
+          "actor": "Fabi\u00e1n Ruiz",
+          "outcome": null
+        },
+        {
+          "event_id": "4dca6de1-2c9d-4a29-9a9f-af5274c70be0",
+          "t_seconds": 8.037,
+          "team": "Croatia",
+          "event_type": "Pressure",
+          "ball_x": 20.2,
+          "ball_y": 39.8,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Luka Modri\u0107",
+          "outcome": null
+        },
+        {
+          "event_id": "6db256f3-0ed4-4219-88b3-a125a43e87a8",
+          "t_seconds": 8.706,
+          "team": "Spain",
+          "event_type": "Carry",
+          "ball_x": 100.5,
+          "ball_y": 40.3,
+          "ball_end_x": 103.9,
+          "ball_end_y": 38.7,
+          "actor": "Fabi\u00e1n Ruiz",
+          "outcome": null
+        },
+        {
+          "event_id": "d5664163-02ae-45bd-806c-b5cedc770df6",
+          "t_seconds": 9.68,
+          "team": "Croatia",
+          "event_type": "Pressure",
+          "ball_x": 16.1,
+          "ball_y": 41.3,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Marcelo Brozovi\u0107",
+          "outcome": null
+        },
+        {
+          "event_id": "c609a012-b29c-4af1-b7ee-a9d4934162e5",
+          "t_seconds": 10.287,
+          "team": "Spain",
+          "event_type": "Shot",
+          "ball_x": 103.9,
+          "ball_y": 38.7,
+          "ball_end_x": 120.0,
+          "ball_end_y": 43.1,
+          "actor": "Fabi\u00e1n Ruiz",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "c609a012-b29c-4af1-b7ee-a9d4934162e5",
+          "minute": 31,
+          "second": 24,
+          "scorer": "Fabi\u00e1n Ruiz",
+          "team": "Spain"
+        }
+      },
+      "metadata": {
+        "match_id": 3930160,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Spain vs Croatia"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "4be42733-9a13-4f3b-b782-cec536bb3594",
+        "start_event_id": "7180048b-ea3c-4b67-9088-b08069e0336e",
+        "end_event_id": "4be42733-9a13-4f3b-b782-cec536bb3594",
+        "period": 1,
+        "window_seconds": 10.0,
+        "t_span_seconds": 31.833
+      },
+      "frames": [
+        {
+          "event_id": "7180048b-ea3c-4b67-9088-b08069e0336e",
+          "t_seconds": 23.886,
+          "team": "Spain",
+          "event_type": "Pass",
+          "ball_x": 120.0,
+          "ball_y": 80.0,
+          "ball_end_x": 114.9,
+          "ball_end_y": 76.5,
+          "actor": "Lamine Yamal",
+          "outcome": null
+        },
+        {
+          "event_id": "02e6b474-2fbd-4f96-98c0-20d78dd06449",
+          "t_seconds": 24.797,
+          "team": "Spain",
+          "event_type": "Carry",
+          "ball_x": 114.9,
+          "ball_y": 76.5,
+          "ball_end_x": 111.8,
+          "ball_end_y": 73.6,
+          "actor": "Nico Williams",
+          "outcome": null
+        },
+        {
+          "event_id": "09c1c121-922a-440e-a324-804230064f2e",
+          "t_seconds": 26.739,
+          "team": "Spain",
+          "event_type": "Pass",
+          "ball_x": 111.8,
+          "ball_y": 73.6,
+          "ball_end_x": 92.1,
+          "ball_end_y": 59.9,
+          "actor": "Nico Williams",
+          "outcome": null
+        },
+        {
+          "event_id": "54060fb6-eef8-44e3-bad1-27c5b5162163",
+          "t_seconds": 27.934,
+          "team": "Spain",
+          "event_type": "Pass",
+          "ball_x": 92.3,
+          "ball_y": 59.3,
+          "ball_end_x": 99.9,
+          "ball_end_y": 72.3,
+          "actor": "Fabi\u00e1n Ruiz",
+          "outcome": null
+        },
+        {
+          "event_id": "671f73d7-7a09-49bf-a6fd-b435d97d4ba1",
+          "t_seconds": 29.118,
+          "team": "Spain",
+          "event_type": "Carry",
+          "ball_x": 99.9,
+          "ball_y": 72.3,
+          "ball_end_x": 99.4,
+          "ball_end_y": 71.0,
+          "actor": "Lamine Yamal",
+          "outcome": null
+        },
+        {
+          "event_id": "a9ae42f9-ebdf-45b3-9c37-a7dd75e81c32",
+          "t_seconds": 30.547,
+          "team": "Spain",
+          "event_type": "Pass",
+          "ball_x": 99.4,
+          "ball_y": 71.0,
+          "ball_end_x": 112.7,
+          "ball_end_y": 42.4,
+          "actor": "Lamine Yamal",
+          "outcome": null
+        },
+        {
+          "event_id": "4be42733-9a13-4f3b-b782-cec536bb3594",
+          "t_seconds": 31.833,
+          "team": "Spain",
+          "event_type": "Shot",
+          "ball_x": 112.7,
+          "ball_y": 42.4,
+          "ball_end_x": 120.0,
+          "ball_end_y": 41.7,
+          "actor": "Daniel Carvajal",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "4be42733-9a13-4f3b-b782-cec536bb3594",
+          "minute": 46,
+          "second": 54,
+          "scorer": "Daniel Carvajal",
+          "team": "Spain"
+        }
+      },
+      "metadata": {
+        "match_id": 3930160,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Spain vs Croatia"
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3930160,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Spain vs Croatia"
+  }
+}

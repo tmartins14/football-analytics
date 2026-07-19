@@ -1,0 +1,1547 @@
+{
+  "windows": [
+    {
+      "index": 0,
+      "label": "0'\u201343' (Starting XI)",
+      "nodes": [
+        {
+          "player": "Aleksandar Mitrovi\u0107",
+          "display_name": "Aleksandar Mitrovi\u0107",
+          "x": 66.09,
+          "y": 36.4,
+          "passes": 7
+        },
+        {
+          "player": "Andrija \u017divkovi\u0107",
+          "display_name": "Andrija \u017divkovi\u0107",
+          "x": 61.97,
+          "y": 70.02,
+          "passes": 18
+        },
+        {
+          "player": "Du\u0161an Vlahovi\u0107",
+          "display_name": "Du\u0161an Vlahovi\u0107",
+          "x": 39.1,
+          "y": 63.25,
+          "passes": 2
+        },
+        {
+          "player": "Filip Kosti\u0107",
+          "display_name": "Filip Kosti\u0107",
+          "x": 70.03,
+          "y": 3.34,
+          "passes": 8
+        },
+        {
+          "player": "Milos Veljkovic",
+          "display_name": "Milos Veljkovic",
+          "x": 46.27,
+          "y": 64.2,
+          "passes": 31
+        },
+        {
+          "player": "Nemanja Gudelj",
+          "display_name": "Nemanja Gudelj",
+          "x": 49.65,
+          "y": 35.04,
+          "passes": 21
+        },
+        {
+          "player": "Nikola Milenkovi\u0107",
+          "display_name": "Nikola Milenkovi\u0107",
+          "x": 32.18,
+          "y": 34.33,
+          "passes": 35
+        },
+        {
+          "player": "Predrag Rajkovi\u0107",
+          "display_name": "Predrag Rajkovi\u0107",
+          "x": 10.46,
+          "y": 42.53,
+          "passes": 9
+        },
+        {
+          "player": "Sa\u0161a Luki\u0107",
+          "display_name": "Sa\u0161a Luki\u0107",
+          "x": 53.78,
+          "y": 45.18,
+          "passes": 34
+        },
+        {
+          "player": "Sergej Milinkovi\u0107-Savi\u0107",
+          "display_name": "Sergej Milinkovi\u0107-Savi\u0107",
+          "x": 54.98,
+          "y": 47.83,
+          "passes": 12
+        },
+        {
+          "player": "Strahinja Pavlovi\u0107",
+          "display_name": "Strahinja Pavlovi\u0107",
+          "x": 58.25,
+          "y": 8.86,
+          "passes": 14
+        }
+      ],
+      "edges": [
+        {
+          "from": "Sa\u0161a Luki\u0107",
+          "to": "Milos Veljkovic",
+          "count": 11
+        },
+        {
+          "from": "Nikola Milenkovi\u0107",
+          "to": "Sa\u0161a Luki\u0107",
+          "count": 9
+        },
+        {
+          "from": "Milos Veljkovic",
+          "to": "Andrija \u017divkovi\u0107",
+          "count": 9
+        },
+        {
+          "from": "Nikola Milenkovi\u0107",
+          "to": "Milos Veljkovic",
+          "count": 7
+        },
+        {
+          "from": "Milos Veljkovic",
+          "to": "Nikola Milenkovi\u0107",
+          "count": 7
+        },
+        {
+          "from": "Sa\u0161a Luki\u0107",
+          "to": "Nikola Milenkovi\u0107",
+          "count": 6
+        },
+        {
+          "from": "Nikola Milenkovi\u0107",
+          "to": "Predrag Rajkovi\u0107",
+          "count": 6
+        },
+        {
+          "from": "Nikola Milenkovi\u0107",
+          "to": "Nemanja Gudelj",
+          "count": 6
+        },
+        {
+          "from": "Nemanja Gudelj",
+          "to": "Nikola Milenkovi\u0107",
+          "count": 6
+        },
+        {
+          "from": "Milos Veljkovic",
+          "to": "Sa\u0161a Luki\u0107",
+          "count": 6
+        },
+        {
+          "from": "Andrija \u017divkovi\u0107",
+          "to": "Sa\u0161a Luki\u0107",
+          "count": 5
+        },
+        {
+          "from": "Nikola Milenkovi\u0107",
+          "to": "Strahinja Pavlovi\u0107",
+          "count": 5
+        },
+        {
+          "from": "Predrag Rajkovi\u0107",
+          "to": "Nikola Milenkovi\u0107",
+          "count": 5
+        },
+        {
+          "from": "Andrija \u017divkovi\u0107",
+          "to": "Milos Veljkovic",
+          "count": 5
+        },
+        {
+          "from": "Sa\u0161a Luki\u0107",
+          "to": "Strahinja Pavlovi\u0107",
+          "count": 4
+        },
+        {
+          "from": "Strahinja Pavlovi\u0107",
+          "to": "Filip Kosti\u0107",
+          "count": 4
+        },
+        {
+          "from": "Nemanja Gudelj",
+          "to": "Milos Veljkovic",
+          "count": 4
+        },
+        {
+          "from": "Sa\u0161a Luki\u0107",
+          "to": "Sergej Milinkovi\u0107-Savi\u0107",
+          "count": 4
+        },
+        {
+          "from": "Strahinja Pavlovi\u0107",
+          "to": "Nikola Milenkovi\u0107",
+          "count": 3
+        },
+        {
+          "from": "Nemanja Gudelj",
+          "to": "Filip Kosti\u0107",
+          "count": 3
+        },
+        {
+          "from": "Sergej Milinkovi\u0107-Savi\u0107",
+          "to": "Andrija \u017divkovi\u0107",
+          "count": 3
+        },
+        {
+          "from": "Milos Veljkovic",
+          "to": "Nemanja Gudelj",
+          "count": 3
+        },
+        {
+          "from": "Nemanja Gudelj",
+          "to": "Sa\u0161a Luki\u0107",
+          "count": 3
+        },
+        {
+          "from": "Strahinja Pavlovi\u0107",
+          "to": "Nemanja Gudelj",
+          "count": 3
+        },
+        {
+          "from": "Filip Kosti\u0107",
+          "to": "Strahinja Pavlovi\u0107",
+          "count": 3
+        },
+        {
+          "from": "Sa\u0161a Luki\u0107",
+          "to": "Nemanja Gudelj",
+          "count": 3
+        },
+        {
+          "from": "Strahinja Pavlovi\u0107",
+          "to": "Sergej Milinkovi\u0107-Savi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Aleksandar Mitrovi\u0107",
+          "to": "Nemanja Gudelj",
+          "count": 2
+        },
+        {
+          "from": "Milos Veljkovic",
+          "to": "Predrag Rajkovi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Sa\u0161a Luki\u0107",
+          "to": "Du\u0161an Vlahovi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Predrag Rajkovi\u0107",
+          "to": "Aleksandar Mitrovi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Aleksandar Mitrovi\u0107",
+          "to": "Filip Kosti\u0107",
+          "count": 2
+        },
+        {
+          "from": "Filip Kosti\u0107",
+          "to": "Sa\u0161a Luki\u0107",
+          "count": 2
+        },
+        {
+          "from": "Andrija \u017divkovi\u0107",
+          "to": "Aleksandar Mitrovi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Du\u0161an Vlahovi\u0107",
+          "to": "Andrija \u017divkovi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Andrija \u017divkovi\u0107",
+          "to": "Nikola Milenkovi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Strahinja Pavlovi\u0107",
+          "to": "Sa\u0161a Luki\u0107",
+          "count": 2
+        },
+        {
+          "from": "Sa\u0161a Luki\u0107",
+          "to": "Aleksandar Mitrovi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Nemanja Gudelj",
+          "to": "Sergej Milinkovi\u0107-Savi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Sergej Milinkovi\u0107-Savi\u0107",
+          "to": "Nemanja Gudelj",
+          "count": 2
+        },
+        {
+          "from": "Andrija \u017divkovi\u0107",
+          "to": "Sergej Milinkovi\u0107-Savi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Sergej Milinkovi\u0107-Savi\u0107",
+          "to": "Sa\u0161a Luki\u0107",
+          "count": 2
+        },
+        {
+          "from": "Milos Veljkovic",
+          "to": "Aleksandar Mitrovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Nemanja Gudelj",
+          "to": "Andrija \u017divkovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Sergej Milinkovi\u0107-Savi\u0107",
+          "to": "Strahinja Pavlovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Milos Veljkovic",
+          "to": "Filip Kosti\u0107",
+          "count": 1
+        },
+        {
+          "from": "Filip Kosti\u0107",
+          "to": "Aleksandar Mitrovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Sergej Milinkovi\u0107-Savi\u0107",
+          "to": "Nikola Milenkovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Filip Kosti\u0107",
+          "to": "Nemanja Gudelj",
+          "count": 1
+        },
+        {
+          "from": "Sa\u0161a Luki\u0107",
+          "to": "Predrag Rajkovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Milos Veljkovic",
+          "to": "Du\u0161an Vlahovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Nikola Milenkovi\u0107",
+          "to": "Sergej Milinkovi\u0107-Savi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Aleksandar Mitrovi\u0107",
+          "to": "Sergej Milinkovi\u0107-Savi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Sergej Milinkovi\u0107-Savi\u0107",
+          "to": "Du\u0161an Vlahovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Predrag Rajkovi\u0107",
+          "to": "Milos Veljkovic",
+          "count": 1
+        },
+        {
+          "from": "Nikola Milenkovi\u0107",
+          "to": "Andrija \u017divkovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Sergej Milinkovi\u0107-Savi\u0107",
+          "to": "Aleksandar Mitrovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Aleksandar Mitrovi\u0107",
+          "to": "Andrija \u017divkovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Nemanja Gudelj",
+          "to": "Aleksandar Mitrovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Aleksandar Mitrovi\u0107",
+          "to": "Sa\u0161a Luki\u0107",
+          "count": 1
+        },
+        {
+          "from": "Filip Kosti\u0107",
+          "to": "Nikola Milenkovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Andrija \u017divkovi\u0107",
+          "to": "Nemanja Gudelj",
+          "count": 1
+        },
+        {
+          "from": "Andrija \u017divkovi\u0107",
+          "to": "Du\u0161an Vlahovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Milos Veljkovic",
+          "to": "Sergej Milinkovi\u0107-Savi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Sergej Milinkovi\u0107-Savi\u0107",
+          "to": "Milos Veljkovic",
+          "count": 1
+        },
+        {
+          "from": "Nemanja Gudelj",
+          "to": "Strahinja Pavlovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Sa\u0161a Luki\u0107",
+          "to": "Andrija \u017divkovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Predrag Rajkovi\u0107",
+          "to": "Sergej Milinkovi\u0107-Savi\u0107",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "label": "43'\u201345'",
+      "nodes": [
+        {
+          "player": "Aleksandar Mitrovi\u0107",
+          "display_name": "Aleksandar Mitrovi\u0107",
+          "x": 77.55,
+          "y": 15.65,
+          "passes": 2
+        },
+        {
+          "player": "Andrija \u017divkovi\u0107",
+          "display_name": "Andrija \u017divkovi\u0107",
+          "x": 48.5,
+          "y": 68.6,
+          "passes": 1
+        },
+        {
+          "player": "Filip Mladenovi\u0107",
+          "display_name": "Filip Mladenovi\u0107",
+          "x": 92.97,
+          "y": 3.4,
+          "passes": 3
+        },
+        {
+          "player": "Milos Veljkovic",
+          "display_name": "Milos Veljkovic",
+          "x": 48.73,
+          "y": 52.27,
+          "passes": 3
+        },
+        {
+          "player": "Nemanja Gudelj",
+          "display_name": "Nemanja Gudelj",
+          "x": 48.92,
+          "y": 16.83,
+          "passes": 10
+        },
+        {
+          "player": "Nikola Milenkovi\u0107",
+          "display_name": "Nikola Milenkovi\u0107",
+          "x": 45.6,
+          "y": 30.73,
+          "passes": 3
+        },
+        {
+          "player": "Predrag Rajkovi\u0107",
+          "display_name": "Predrag Rajkovi\u0107",
+          "x": 16.65,
+          "y": 35.7,
+          "passes": 2
+        },
+        {
+          "player": "Sergej Milinkovi\u0107-Savi\u0107",
+          "display_name": "Sergej Milinkovi\u0107-Savi\u0107",
+          "x": 60.85,
+          "y": 15.85,
+          "passes": 4
+        },
+        {
+          "player": "Strahinja Pavlovi\u0107",
+          "display_name": "Strahinja Pavlovi\u0107",
+          "x": 75.4,
+          "y": 6.65,
+          "passes": 2
+        }
+      ],
+      "edges": [
+        {
+          "from": "Nemanja Gudelj",
+          "to": "Sergej Milinkovi\u0107-Savi\u0107",
+          "count": 3
+        },
+        {
+          "from": "Sergej Milinkovi\u0107-Savi\u0107",
+          "to": "Nemanja Gudelj",
+          "count": 3
+        },
+        {
+          "from": "Nikola Milenkovi\u0107",
+          "to": "Nemanja Gudelj",
+          "count": 2
+        },
+        {
+          "from": "Strahinja Pavlovi\u0107",
+          "to": "Nemanja Gudelj",
+          "count": 2
+        },
+        {
+          "from": "Nemanja Gudelj",
+          "to": "Milos Veljkovic",
+          "count": 2
+        },
+        {
+          "from": "Filip Mladenovi\u0107",
+          "to": "Sergej Milinkovi\u0107-Savi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Sergej Milinkovi\u0107-Savi\u0107",
+          "to": "Filip Mladenovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Filip Mladenovi\u0107",
+          "to": "Nikola Milenkovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Nemanja Gudelj",
+          "to": "Filip Mladenovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Filip Mladenovi\u0107",
+          "to": "Aleksandar Mitrovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Aleksandar Mitrovi\u0107",
+          "to": "Strahinja Pavlovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Milos Veljkovic",
+          "to": "Nikola Milenkovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Nikola Milenkovi\u0107",
+          "to": "Milos Veljkovic",
+          "count": 1
+        },
+        {
+          "from": "Milos Veljkovic",
+          "to": "Predrag Rajkovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Predrag Rajkovi\u0107",
+          "to": "Aleksandar Mitrovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Nemanja Gudelj",
+          "to": "Strahinja Pavlovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Nemanja Gudelj",
+          "to": "Predrag Rajkovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Predrag Rajkovi\u0107",
+          "to": "Nemanja Gudelj",
+          "count": 1
+        },
+        {
+          "from": "Nemanja Gudelj",
+          "to": "Nikola Milenkovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Milos Veljkovic",
+          "to": "Andrija \u017divkovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Andrija \u017divkovi\u0107",
+          "to": "Nemanja Gudelj",
+          "count": 1
+        },
+        {
+          "from": "Nemanja Gudelj",
+          "to": "Aleksandar Mitrovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Aleksandar Mitrovi\u0107",
+          "to": "Filip Mladenovi\u0107",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "label": "45'\u201360'",
+      "nodes": [
+        {
+          "player": "Aleksandar Mitrovi\u0107",
+          "display_name": "Aleksandar Mitrovi\u0107",
+          "x": 66.28,
+          "y": 38.52,
+          "passes": 5
+        },
+        {
+          "player": "Andrija \u017divkovi\u0107",
+          "display_name": "Andrija \u017divkovi\u0107",
+          "x": 65.56,
+          "y": 74.88,
+          "passes": 10
+        },
+        {
+          "player": "Filip Mladenovi\u0107",
+          "display_name": "Filip Mladenovi\u0107",
+          "x": 80.07,
+          "y": 8.65,
+          "passes": 6
+        },
+        {
+          "player": "Ivan Ili\u0107",
+          "display_name": "Ivan Ili\u0107",
+          "x": 58.34,
+          "y": 51.66,
+          "passes": 13
+        },
+        {
+          "player": "Milos Veljkovic",
+          "display_name": "Milos Veljkovic",
+          "x": 45.88,
+          "y": 57.53,
+          "passes": 13
+        },
+        {
+          "player": "Nemanja Gudelj",
+          "display_name": "Nemanja Gudelj",
+          "x": 80.95,
+          "y": 19.95,
+          "passes": 2
+        },
+        {
+          "player": "Nikola Milenkovi\u0107",
+          "display_name": "Nikola Milenkovi\u0107",
+          "x": 45.04,
+          "y": 37.7,
+          "passes": 15
+        },
+        {
+          "player": "Predrag Rajkovi\u0107",
+          "display_name": "Predrag Rajkovi\u0107",
+          "x": 14.96,
+          "y": 45.7,
+          "passes": 5
+        },
+        {
+          "player": "Sa\u0161a Luki\u0107",
+          "display_name": "Sa\u0161a Luki\u0107",
+          "x": 63.52,
+          "y": 37.17,
+          "passes": 14
+        },
+        {
+          "player": "Sergej Milinkovi\u0107-Savi\u0107",
+          "display_name": "Sergej Milinkovi\u0107-Savi\u0107",
+          "x": 70.86,
+          "y": 30.02,
+          "passes": 17
+        },
+        {
+          "player": "Strahinja Pavlovi\u0107",
+          "display_name": "Strahinja Pavlovi\u0107",
+          "x": 65.74,
+          "y": 11.7,
+          "passes": 11
+        }
+      ],
+      "edges": [
+        {
+          "from": "Strahinja Pavlovi\u0107",
+          "to": "Sergej Milinkovi\u0107-Savi\u0107",
+          "count": 5
+        },
+        {
+          "from": "Sergej Milinkovi\u0107-Savi\u0107",
+          "to": "Sa\u0161a Luki\u0107",
+          "count": 5
+        },
+        {
+          "from": "Andrija \u017divkovi\u0107",
+          "to": "Ivan Ili\u0107",
+          "count": 5
+        },
+        {
+          "from": "Nikola Milenkovi\u0107",
+          "to": "Sa\u0161a Luki\u0107",
+          "count": 4
+        },
+        {
+          "from": "Sa\u0161a Luki\u0107",
+          "to": "Sergej Milinkovi\u0107-Savi\u0107",
+          "count": 4
+        },
+        {
+          "from": "Ivan Ili\u0107",
+          "to": "Sergej Milinkovi\u0107-Savi\u0107",
+          "count": 4
+        },
+        {
+          "from": "Milos Veljkovic",
+          "to": "Andrija \u017divkovi\u0107",
+          "count": 4
+        },
+        {
+          "from": "Milos Veljkovic",
+          "to": "Ivan Ili\u0107",
+          "count": 4
+        },
+        {
+          "from": "Sergej Milinkovi\u0107-Savi\u0107",
+          "to": "Filip Mladenovi\u0107",
+          "count": 3
+        },
+        {
+          "from": "Nikola Milenkovi\u0107",
+          "to": "Sergej Milinkovi\u0107-Savi\u0107",
+          "count": 3
+        },
+        {
+          "from": "Nikola Milenkovi\u0107",
+          "to": "Milos Veljkovic",
+          "count": 3
+        },
+        {
+          "from": "Milos Veljkovic",
+          "to": "Predrag Rajkovi\u0107",
+          "count": 3
+        },
+        {
+          "from": "Ivan Ili\u0107",
+          "to": "Nikola Milenkovi\u0107",
+          "count": 3
+        },
+        {
+          "from": "Andrija \u017divkovi\u0107",
+          "to": "Milos Veljkovic",
+          "count": 3
+        },
+        {
+          "from": "Sergej Milinkovi\u0107-Savi\u0107",
+          "to": "Andrija \u017divkovi\u0107",
+          "count": 3
+        },
+        {
+          "from": "Filip Mladenovi\u0107",
+          "to": "Strahinja Pavlovi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Filip Mladenovi\u0107",
+          "to": "Sergej Milinkovi\u0107-Savi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Sa\u0161a Luki\u0107",
+          "to": "Nikola Milenkovi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Sa\u0161a Luki\u0107",
+          "to": "Andrija \u017divkovi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Aleksandar Mitrovi\u0107",
+          "to": "Andrija \u017divkovi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Ivan Ili\u0107",
+          "to": "Sa\u0161a Luki\u0107",
+          "count": 2
+        },
+        {
+          "from": "Sergej Milinkovi\u0107-Savi\u0107",
+          "to": "Ivan Ili\u0107",
+          "count": 2
+        },
+        {
+          "from": "Nikola Milenkovi\u0107",
+          "to": "Predrag Rajkovi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Nikola Milenkovi\u0107",
+          "to": "Aleksandar Mitrovi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Milos Veljkovic",
+          "to": "Nikola Milenkovi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Sergej Milinkovi\u0107-Savi\u0107",
+          "to": "Strahinja Pavlovi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Strahinja Pavlovi\u0107",
+          "to": "Filip Mladenovi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Sa\u0161a Luki\u0107",
+          "to": "Strahinja Pavlovi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Ivan Ili\u0107",
+          "to": "Milos Veljkovic",
+          "count": 2
+        },
+        {
+          "from": "Predrag Rajkovi\u0107",
+          "to": "Nikola Milenkovi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Sa\u0161a Luki\u0107",
+          "to": "Milos Veljkovic",
+          "count": 2
+        },
+        {
+          "from": "Filip Mladenovi\u0107",
+          "to": "Aleksandar Mitrovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Aleksandar Mitrovi\u0107",
+          "to": "Strahinja Pavlovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Sa\u0161a Luki\u0107",
+          "to": "Nemanja Gudelj",
+          "count": 1
+        },
+        {
+          "from": "Nemanja Gudelj",
+          "to": "Aleksandar Mitrovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Aleksandar Mitrovi\u0107",
+          "to": "Nemanja Gudelj",
+          "count": 1
+        },
+        {
+          "from": "Nemanja Gudelj",
+          "to": "Sa\u0161a Luki\u0107",
+          "count": 1
+        },
+        {
+          "from": "Andrija \u017divkovi\u0107",
+          "to": "Sa\u0161a Luki\u0107",
+          "count": 1
+        },
+        {
+          "from": "Aleksandar Mitrovi\u0107",
+          "to": "Ivan Ili\u0107",
+          "count": 1
+        },
+        {
+          "from": "Ivan Ili\u0107",
+          "to": "Strahinja Pavlovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Strahinja Pavlovi\u0107",
+          "to": "Nikola Milenkovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Predrag Rajkovi\u0107",
+          "to": "Aleksandar Mitrovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Predrag Rajkovi\u0107",
+          "to": "Milos Veljkovic",
+          "count": 1
+        },
+        {
+          "from": "Ivan Ili\u0107",
+          "to": "Aleksandar Mitrovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Sa\u0161a Luki\u0107",
+          "to": "Ivan Ili\u0107",
+          "count": 1
+        },
+        {
+          "from": "Strahinja Pavlovi\u0107",
+          "to": "Predrag Rajkovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Sergej Milinkovi\u0107-Savi\u0107",
+          "to": "Predrag Rajkovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Filip Mladenovi\u0107",
+          "to": "Sa\u0161a Luki\u0107",
+          "count": 1
+        },
+        {
+          "from": "Andrija \u017divkovi\u0107",
+          "to": "Sergej Milinkovi\u0107-Savi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Sergej Milinkovi\u0107-Savi\u0107",
+          "to": "Du\u0161an Vlahovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Strahinja Pavlovi\u0107",
+          "to": "Aleksandar Mitrovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Predrag Rajkovi\u0107",
+          "to": "Andrija \u017divkovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Strahinja Pavlovi\u0107",
+          "to": "Sa\u0161a Luki\u0107",
+          "count": 1
+        },
+        {
+          "from": "Nikola Milenkovi\u0107",
+          "to": "Strahinja Pavlovi\u0107",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "label": "60'\u201373'",
+      "nodes": [
+        {
+          "player": "Andrija \u017divkovi\u0107",
+          "display_name": "Andrija \u017divkovi\u0107",
+          "x": 91.8,
+          "y": 77.1,
+          "passes": 3
+        },
+        {
+          "player": "Du\u0161an Tadi\u0107",
+          "display_name": "Du\u0161an Tadi\u0107",
+          "x": 84.73,
+          "y": 58.37,
+          "passes": 3
+        },
+        {
+          "player": "Filip Mladenovi\u0107",
+          "display_name": "Filip Mladenovi\u0107",
+          "x": 110.63,
+          "y": 9.97,
+          "passes": 3
+        },
+        {
+          "player": "Ivan Ili\u0107",
+          "display_name": "Ivan Ili\u0107",
+          "x": 72.92,
+          "y": 50.81,
+          "passes": 10
+        },
+        {
+          "player": "Luka Jovi\u0107",
+          "display_name": "Luka Jovi\u0107",
+          "x": 60.6,
+          "y": 20.4,
+          "passes": 1
+        },
+        {
+          "player": "Milos Veljkovic",
+          "display_name": "Milos Veljkovic",
+          "x": 65.23,
+          "y": 59.07,
+          "passes": 11
+        },
+        {
+          "player": "Nikola Milenkovi\u0107",
+          "display_name": "Nikola Milenkovi\u0107",
+          "x": 59.3,
+          "y": 29.59,
+          "passes": 11
+        },
+        {
+          "player": "Predrag Rajkovi\u0107",
+          "display_name": "Predrag Rajkovi\u0107",
+          "x": 20.83,
+          "y": 38.6,
+          "passes": 3
+        },
+        {
+          "player": "Sergej Milinkovi\u0107-Savi\u0107",
+          "display_name": "Sergej Milinkovi\u0107-Savi\u0107",
+          "x": 78.2,
+          "y": 31.44,
+          "passes": 8
+        },
+        {
+          "player": "Strahinja Pavlovi\u0107",
+          "display_name": "Strahinja Pavlovi\u0107",
+          "x": 77.85,
+          "y": 12.0,
+          "passes": 4
+        }
+      ],
+      "edges": [
+        {
+          "from": "Ivan Ili\u0107",
+          "to": "Nikola Milenkovi\u0107",
+          "count": 4
+        },
+        {
+          "from": "Milos Veljkovic",
+          "to": "Nikola Milenkovi\u0107",
+          "count": 3
+        },
+        {
+          "from": "Ivan Ili\u0107",
+          "to": "Sergej Milinkovi\u0107-Savi\u0107",
+          "count": 3
+        },
+        {
+          "from": "Sergej Milinkovi\u0107-Savi\u0107",
+          "to": "Milos Veljkovic",
+          "count": 3
+        },
+        {
+          "from": "Nikola Milenkovi\u0107",
+          "to": "Strahinja Pavlovi\u0107",
+          "count": 3
+        },
+        {
+          "from": "Nikola Milenkovi\u0107",
+          "to": "Ivan Ili\u0107",
+          "count": 3
+        },
+        {
+          "from": "Milos Veljkovic",
+          "to": "Andrija \u017divkovi\u0107",
+          "count": 3
+        },
+        {
+          "from": "Strahinja Pavlovi\u0107",
+          "to": "Sergej Milinkovi\u0107-Savi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Milos Veljkovic",
+          "to": "Du\u0161an Tadi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Milos Veljkovic",
+          "to": "Ivan Ili\u0107",
+          "count": 2
+        },
+        {
+          "from": "Sergej Milinkovi\u0107-Savi\u0107",
+          "to": "Ivan Ili\u0107",
+          "count": 2
+        },
+        {
+          "from": "Ivan Ili\u0107",
+          "to": "Milos Veljkovic",
+          "count": 2
+        },
+        {
+          "from": "Predrag Rajkovi\u0107",
+          "to": "Nikola Milenkovi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Andrija \u017divkovi\u0107",
+          "to": "Milos Veljkovic",
+          "count": 2
+        },
+        {
+          "from": "Sergej Milinkovi\u0107-Savi\u0107",
+          "to": "Nikola Milenkovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Nikola Milenkovi\u0107",
+          "to": "Milos Veljkovic",
+          "count": 1
+        },
+        {
+          "from": "Nikola Milenkovi\u0107",
+          "to": "Luka Jovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Luka Jovi\u0107",
+          "to": "Milos Veljkovic",
+          "count": 1
+        },
+        {
+          "from": "Du\u0161an Tadi\u0107",
+          "to": "Milos Veljkovic",
+          "count": 1
+        },
+        {
+          "from": "Nikola Milenkovi\u0107",
+          "to": "Sergej Milinkovi\u0107-Savi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Ivan Ili\u0107",
+          "to": "Du\u0161an Tadi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Du\u0161an Tadi\u0107",
+          "to": "Ivan Ili\u0107",
+          "count": 1
+        },
+        {
+          "from": "Strahinja Pavlovi\u0107",
+          "to": "Nikola Milenkovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Sergej Milinkovi\u0107-Savi\u0107",
+          "to": "Filip Mladenovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Filip Mladenovi\u0107",
+          "to": "Sergej Milinkovi\u0107-Savi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Sergej Milinkovi\u0107-Savi\u0107",
+          "to": "Andrija \u017divkovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Strahinja Pavlovi\u0107",
+          "to": "Filip Mladenovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Du\u0161an Tadi\u0107",
+          "to": "Luka Jovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Predrag Rajkovi\u0107",
+          "to": "Sergej Milinkovi\u0107-Savi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Milos Veljkovic",
+          "to": "Sergej Milinkovi\u0107-Savi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Filip Mladenovi\u0107",
+          "to": "Strahinja Pavlovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Filip Mladenovi\u0107",
+          "to": "Ivan Ili\u0107",
+          "count": 1
+        },
+        {
+          "from": "Nikola Milenkovi\u0107",
+          "to": "Andrija \u017divkovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Andrija \u017divkovi\u0107",
+          "to": "Sergej Milinkovi\u0107-Savi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Nikola Milenkovi\u0107",
+          "to": "Du\u0161an Tadi\u0107",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "label": "73'\u2013FT",
+      "nodes": [
+        {
+          "player": "Du\u0161an Tadi\u0107",
+          "display_name": "Du\u0161an Tadi\u0107",
+          "x": 82.37,
+          "y": 37.87,
+          "passes": 6
+        },
+        {
+          "player": "Du\u0161an Vlahovi\u0107",
+          "display_name": "Du\u0161an Vlahovi\u0107",
+          "x": 72.2,
+          "y": 80.0,
+          "passes": 1
+        },
+        {
+          "player": "Filip Mladenovi\u0107",
+          "display_name": "Filip Mladenovi\u0107",
+          "x": 71.13,
+          "y": 8.3,
+          "passes": 11
+        },
+        {
+          "player": "Ivan Ili\u0107",
+          "display_name": "Ivan Ili\u0107",
+          "x": 66.05,
+          "y": 48.15,
+          "passes": 15
+        },
+        {
+          "player": "Luka Jovi\u0107",
+          "display_name": "Luka Jovi\u0107",
+          "x": 55.3,
+          "y": 15.4,
+          "passes": 1
+        },
+        {
+          "player": "Milos Veljkovic",
+          "display_name": "Milos Veljkovic",
+          "x": 67.06,
+          "y": 68.14,
+          "passes": 8
+        },
+        {
+          "player": "Nikola Milenkovi\u0107",
+          "display_name": "Nikola Milenkovi\u0107",
+          "x": 61.79,
+          "y": 30.18,
+          "passes": 13
+        },
+        {
+          "player": "Predrag Rajkovi\u0107",
+          "display_name": "Predrag Rajkovi\u0107",
+          "x": 5.9,
+          "y": 36.7,
+          "passes": 1
+        },
+        {
+          "player": "Sergej Milinkovi\u0107-Savi\u0107",
+          "display_name": "Sergej Milinkovi\u0107-Savi\u0107",
+          "x": 67.53,
+          "y": 36.06,
+          "passes": 7
+        },
+        {
+          "player": "Strahinja Pavlovi\u0107",
+          "display_name": "Strahinja Pavlovi\u0107",
+          "x": 60.63,
+          "y": 17.0,
+          "passes": 7
+        },
+        {
+          "player": "Veljko Birman\u010devi\u0107",
+          "display_name": "Veljko Birman\u010devi\u0107",
+          "x": 83.53,
+          "y": 66.77,
+          "passes": 3
+        }
+      ],
+      "edges": [
+        {
+          "from": "Nikola Milenkovi\u0107",
+          "to": "Ivan Ili\u0107",
+          "count": 7
+        },
+        {
+          "from": "Milos Veljkovic",
+          "to": "Ivan Ili\u0107",
+          "count": 5
+        },
+        {
+          "from": "Ivan Ili\u0107",
+          "to": "Milos Veljkovic",
+          "count": 4
+        },
+        {
+          "from": "Ivan Ili\u0107",
+          "to": "Nikola Milenkovi\u0107",
+          "count": 4
+        },
+        {
+          "from": "Filip Mladenovi\u0107",
+          "to": "Sergej Milinkovi\u0107-Savi\u0107",
+          "count": 3
+        },
+        {
+          "from": "Filip Mladenovi\u0107",
+          "to": "Nikola Milenkovi\u0107",
+          "count": 3
+        },
+        {
+          "from": "Strahinja Pavlovi\u0107",
+          "to": "Ivan Ili\u0107",
+          "count": 2
+        },
+        {
+          "from": "Ivan Ili\u0107",
+          "to": "Sergej Milinkovi\u0107-Savi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Filip Mladenovi\u0107",
+          "to": "Luka Jovi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Veljko Birman\u010devi\u0107",
+          "to": "Du\u0161an Tadi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Du\u0161an Tadi\u0107",
+          "to": "Sergej Milinkovi\u0107-Savi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Sergej Milinkovi\u0107-Savi\u0107",
+          "to": "Strahinja Pavlovi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Ivan Ili\u0107",
+          "to": "Du\u0161an Tadi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Nikola Milenkovi\u0107",
+          "to": "Sergej Milinkovi\u0107-Savi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Strahinja Pavlovi\u0107",
+          "to": "Filip Mladenovi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Filip Mladenovi\u0107",
+          "to": "Du\u0161an Tadi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Du\u0161an Tadi\u0107",
+          "to": "Strahinja Pavlovi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Ivan Ili\u0107",
+          "to": "Strahinja Pavlovi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Milos Veljkovic",
+          "to": "Du\u0161an Tadi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Predrag Rajkovi\u0107",
+          "to": "Strahinja Pavlovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Sergej Milinkovi\u0107-Savi\u0107",
+          "to": "Milos Veljkovic",
+          "count": 1
+        },
+        {
+          "from": "Nikola Milenkovi\u0107",
+          "to": "Filip Mladenovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Nikola Milenkovi\u0107",
+          "to": "Milos Veljkovic",
+          "count": 1
+        },
+        {
+          "from": "Sergej Milinkovi\u0107-Savi\u0107",
+          "to": "Veljko Birman\u010devi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Filip Mladenovi\u0107",
+          "to": "Strahinja Pavlovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Nikola Milenkovi\u0107",
+          "to": "Strahinja Pavlovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Strahinja Pavlovi\u0107",
+          "to": "Nikola Milenkovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Milos Veljkovic",
+          "to": "Veljko Birman\u010devi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Nikola Milenkovi\u0107",
+          "to": "Luka Jovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Luka Jovi\u0107",
+          "to": "Filip Mladenovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Du\u0161an Vlahovi\u0107",
+          "to": "Veljko Birman\u010devi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Veljko Birman\u010devi\u0107",
+          "to": "Filip Mladenovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Sergej Milinkovi\u0107-Savi\u0107",
+          "to": "Du\u0161an Tadi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Strahinja Pavlovi\u0107",
+          "to": "Du\u0161an Tadi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Sergej Milinkovi\u0107-Savi\u0107",
+          "to": "Ivan Ili\u0107",
+          "count": 1
+        },
+        {
+          "from": "Sergej Milinkovi\u0107-Savi\u0107",
+          "to": "Filip Mladenovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Strahinja Pavlovi\u0107",
+          "to": "Predrag Rajkovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Du\u0161an Tadi\u0107",
+          "to": "Veljko Birman\u010devi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Du\u0161an Tadi\u0107",
+          "to": "Milos Veljkovic",
+          "count": 1
+        },
+        {
+          "from": "Ivan Ili\u0107",
+          "to": "Filip Mladenovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Milos Veljkovic",
+          "to": "Sergej Milinkovi\u0107-Savi\u0107",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "substitutions": [
+    {
+      "minute": 43,
+      "player_off": "Filip Kosti\u0107",
+      "player_on": "Filip Mladenovi\u0107"
+    },
+    {
+      "minute": 45,
+      "player_off": "Nemanja Gudelj",
+      "player_on": "Ivan Ili\u0107"
+    },
+    {
+      "minute": 60,
+      "player_off": "Aleksandar Mitrovi\u0107",
+      "player_on": "Du\u0161an Tadi\u0107"
+    },
+    {
+      "minute": 60,
+      "player_off": "Sa\u0161a Luki\u0107",
+      "player_on": "Luka Jovi\u0107"
+    },
+    {
+      "minute": 73,
+      "player_off": "Andrija \u017divkovi\u0107",
+      "player_on": "Veljko Birman\u010devi\u0107"
+    }
+  ],
+  "metadata": {
+    "match_id": 3930163,
+    "team": "Serbia",
+    "filter": "completed passes, per substitution window",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Serbia vs England"
+  }
+}

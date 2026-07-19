@@ -1,0 +1,557 @@
+{
+  "goals": [
+    {
+      "window": {
+        "anchor_event_id": "c34c87b2-0e8e-443c-81fa-6b9c03317ead",
+        "start_event_id": "c9bf74f0-c6a0-41b7-9988-0d82195c7ec5",
+        "end_event_id": "c34c87b2-0e8e-443c-81fa-6b9c03317ead",
+        "period": 1,
+        "window_seconds": 10.0,
+        "t_span_seconds": 11.197
+      },
+      "frames": [
+        {
+          "event_id": "c9bf74f0-c6a0-41b7-9988-0d82195c7ec5",
+          "t_seconds": 0.0,
+          "team": "Spain",
+          "event_type": "Carry",
+          "ball_x": 98.6,
+          "ball_y": 59.0,
+          "ball_end_x": 99.4,
+          "ball_end_y": 59.0,
+          "actor": "Pedri",
+          "outcome": null
+        },
+        {
+          "event_id": "1a2d4ba4-c24f-4607-be87-2c4713792bae",
+          "t_seconds": 3.287,
+          "team": "Spain",
+          "event_type": "Pass",
+          "ball_x": 99.4,
+          "ball_y": 59.0,
+          "ball_end_x": 92.9,
+          "ball_end_y": 41.4,
+          "actor": "Pedri",
+          "outcome": null
+        },
+        {
+          "event_id": "b695c029-9a28-48e8-8807-f2df1ffabc6d",
+          "t_seconds": 4.14,
+          "team": "Spain",
+          "event_type": "Carry",
+          "ball_x": 92.9,
+          "ball_y": 41.4,
+          "ball_end_x": 95.2,
+          "ball_end_y": 38.4,
+          "actor": "Rodri",
+          "outcome": null
+        },
+        {
+          "event_id": "a235ea33-2e72-4980-ab14-b5070b3a5c6c",
+          "t_seconds": 4.809,
+          "team": "Georgia",
+          "event_type": "Pressure",
+          "ball_x": 19.5,
+          "ball_y": 38.7,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Giorgi Kochorashvili",
+          "outcome": null
+        },
+        {
+          "event_id": "ea023002-0085-4860-83b5-26f991935636",
+          "t_seconds": 5.132,
+          "team": "Spain",
+          "event_type": "Pass",
+          "ball_x": 95.2,
+          "ball_y": 38.4,
+          "ball_end_x": 107.4,
+          "ball_end_y": 24.4,
+          "actor": "Rodri",
+          "outcome": null
+        },
+        {
+          "event_id": "e795b2ac-4b5c-45a7-9f35-ba4b7fba14d6",
+          "t_seconds": 6.652,
+          "team": "Spain",
+          "event_type": "Carry",
+          "ball_x": 107.4,
+          "ball_y": 24.4,
+          "ball_end_x": 106.9,
+          "ball_end_y": 24.4,
+          "actor": "Nico Williams",
+          "outcome": null
+        },
+        {
+          "event_id": "ed3996ba-6784-4f28-9c77-02477fbb20a8",
+          "t_seconds": 9.043,
+          "team": "Spain",
+          "event_type": "Pass",
+          "ball_x": 106.9,
+          "ball_y": 24.4,
+          "ball_end_x": 99.4,
+          "ball_end_y": 40.6,
+          "actor": "Nico Williams",
+          "outcome": null
+        },
+        {
+          "event_id": "140b2a7c-34d1-4f8b-8fd3-e399914fae72",
+          "t_seconds": 10.148,
+          "team": "Spain",
+          "event_type": "Carry",
+          "ball_x": 99.4,
+          "ball_y": 40.6,
+          "ball_end_x": 102.1,
+          "ball_end_y": 36.2,
+          "actor": "Rodri",
+          "outcome": null
+        },
+        {
+          "event_id": "c34c87b2-0e8e-443c-81fa-6b9c03317ead",
+          "t_seconds": 11.197,
+          "team": "Spain",
+          "event_type": "Shot",
+          "ball_x": 102.1,
+          "ball_y": 36.2,
+          "ball_end_x": 120.0,
+          "ball_end_y": 43.5,
+          "actor": "Rodri",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "c34c87b2-0e8e-443c-81fa-6b9c03317ead",
+          "minute": 38,
+          "second": 10,
+          "scorer": "Rodri",
+          "team": "Spain"
+        }
+      },
+      "metadata": {
+        "match_id": 3941018,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Spain vs Georgia"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "26d7f7c4-0b06-4166-81f1-2727e479afd6",
+        "start_event_id": "289bc199-d1af-4a2f-9677-7dbbe21054ab",
+        "end_event_id": "26d7f7c4-0b06-4166-81f1-2727e479afd6",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 10.396
+      },
+      "frames": [
+        {
+          "event_id": "289bc199-d1af-4a2f-9677-7dbbe21054ab",
+          "t_seconds": 0.0,
+          "team": "Spain",
+          "event_type": "Ball Recovery",
+          "ball_x": 110.7,
+          "ball_y": 8.6,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "\u00c1lvaro Morata",
+          "outcome": null
+        },
+        {
+          "event_id": "b557ca5a-7031-42e9-b661-f1c3e4ffe132",
+          "t_seconds": 0.0,
+          "team": "Spain",
+          "event_type": "Carry",
+          "ball_x": 110.7,
+          "ball_y": 8.6,
+          "ball_end_x": 108.3,
+          "ball_end_y": 3.0,
+          "actor": "\u00c1lvaro Morata",
+          "outcome": null
+        },
+        {
+          "event_id": "45b572c3-32d4-40ab-b65b-6bc43bfaf807",
+          "t_seconds": 0.874,
+          "team": "Spain",
+          "event_type": "Pass",
+          "ball_x": 108.3,
+          "ball_y": 3.0,
+          "ball_end_x": 94.9,
+          "ball_end_y": 7.9,
+          "actor": "\u00c1lvaro Morata",
+          "outcome": null
+        },
+        {
+          "event_id": "bfddaf0d-2590-4247-96b6-e6226d53a2f9",
+          "t_seconds": 1.889,
+          "team": "Spain",
+          "event_type": "Carry",
+          "ball_x": 94.9,
+          "ball_y": 7.9,
+          "ball_end_x": 92.0,
+          "ball_end_y": 12.3,
+          "actor": "Rodri",
+          "outcome": null
+        },
+        {
+          "event_id": "8773dca8-6f8c-4ae8-86fe-1a909a31f84f",
+          "t_seconds": 3.391,
+          "team": "Spain",
+          "event_type": "Pass",
+          "ball_x": 92.0,
+          "ball_y": 12.3,
+          "ball_end_x": 84.3,
+          "ball_end_y": 35.3,
+          "actor": "Rodri",
+          "outcome": null
+        },
+        {
+          "event_id": "77927f70-01a3-4478-8f5d-b5413123841f",
+          "t_seconds": 4.702,
+          "team": "Spain",
+          "event_type": "Carry",
+          "ball_x": 84.3,
+          "ball_y": 35.3,
+          "ball_end_x": 86.5,
+          "ball_end_y": 37.5,
+          "actor": "Pedri",
+          "outcome": null
+        },
+        {
+          "event_id": "8bbc41ff-3fe2-41b5-a469-9f9d2de48929",
+          "t_seconds": 6.204,
+          "team": "Spain",
+          "event_type": "Pass",
+          "ball_x": 86.5,
+          "ball_y": 37.5,
+          "ball_end_x": 95.4,
+          "ball_end_y": 61.9,
+          "actor": "Pedri",
+          "outcome": null
+        },
+        {
+          "event_id": "4cbdbdbe-8bd1-47a3-ae1d-2cd7ff429067",
+          "t_seconds": 7.847,
+          "team": "Spain",
+          "event_type": "Carry",
+          "ball_x": 95.4,
+          "ball_y": 61.9,
+          "ball_end_x": 96.8,
+          "ball_end_y": 60.7,
+          "actor": "Lamine Yamal",
+          "outcome": null
+        },
+        {
+          "event_id": "825945ce-9323-43e4-9f44-122fe3092ca4",
+          "t_seconds": 8.838,
+          "team": "Spain",
+          "event_type": "Pass",
+          "ball_x": 96.8,
+          "ball_y": 60.7,
+          "ball_end_x": 115.6,
+          "ball_end_y": 35.6,
+          "actor": "Lamine Yamal",
+          "outcome": null
+        },
+        {
+          "event_id": "26d7f7c4-0b06-4166-81f1-2727e479afd6",
+          "t_seconds": 10.396,
+          "team": "Spain",
+          "event_type": "Shot",
+          "ball_x": 115.6,
+          "ball_y": 35.6,
+          "ball_end_x": 120.0,
+          "ball_end_y": 37.6,
+          "actor": "Fabi\u00e1n Ruiz",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "26d7f7c4-0b06-4166-81f1-2727e479afd6",
+          "minute": 50,
+          "second": 40,
+          "scorer": "Fabi\u00e1n Ruiz",
+          "team": "Spain"
+        }
+      },
+      "metadata": {
+        "match_id": 3941018,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Spain vs Georgia"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "4153fd8f-c75c-486c-93e3-61e57ffd3963",
+        "start_event_id": "4edc8fae-44e5-4c30-a9fd-8d30555d5a47",
+        "end_event_id": "4153fd8f-c75c-486c-93e3-61e57ffd3963",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 11.067
+      },
+      "frames": [
+        {
+          "event_id": "4edc8fae-44e5-4c30-a9fd-8d30555d5a47",
+          "t_seconds": 0.0,
+          "team": "Spain",
+          "event_type": "Carry",
+          "ball_x": 26.7,
+          "ball_y": 42.6,
+          "ball_end_x": 30.0,
+          "ball_end_y": 39.8,
+          "actor": "Fabi\u00e1n Ruiz",
+          "outcome": null
+        },
+        {
+          "event_id": "ae8595db-678f-44c6-b905-91a60f63d41a",
+          "t_seconds": 2.298,
+          "team": "Spain",
+          "event_type": "Pass",
+          "ball_x": 30.0,
+          "ball_y": 39.8,
+          "ball_end_x": 78.9,
+          "ball_end_y": 13.5,
+          "actor": "Fabi\u00e1n Ruiz",
+          "outcome": null
+        },
+        {
+          "event_id": "a266503c-7593-46a3-9d3d-eda910e9dfe2",
+          "t_seconds": 6.372,
+          "team": "Spain",
+          "event_type": "Carry",
+          "ball_x": 78.9,
+          "ball_y": 13.5,
+          "ball_end_x": 101.4,
+          "ball_end_y": 21.4,
+          "actor": "Nico Williams",
+          "outcome": null
+        },
+        {
+          "event_id": "32cd6257-4afb-4f3b-946a-0f6a533eba98",
+          "t_seconds": 8.681,
+          "team": "Georgia",
+          "event_type": "Pressure",
+          "ball_x": 20.2,
+          "ball_y": 57.4,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Giorgi Gvelesiani",
+          "outcome": null
+        },
+        {
+          "event_id": "14b2160d-bd14-4147-9ef8-404d7c17f84a",
+          "t_seconds": 9.322,
+          "team": "Spain",
+          "event_type": "Carry",
+          "ball_x": 101.4,
+          "ball_y": 21.4,
+          "ball_end_x": 111.2,
+          "ball_end_y": 29.5,
+          "actor": "Nico Williams",
+          "outcome": null
+        },
+        {
+          "event_id": "4153fd8f-c75c-486c-93e3-61e57ffd3963",
+          "t_seconds": 11.067,
+          "team": "Spain",
+          "event_type": "Shot",
+          "ball_x": 111.2,
+          "ball_y": 29.5,
+          "ball_end_x": 120.0,
+          "ball_end_y": 39.2,
+          "actor": "Nico Williams",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "4153fd8f-c75c-486c-93e3-61e57ffd3963",
+          "minute": 74,
+          "second": 40,
+          "scorer": "Nico Williams",
+          "team": "Spain"
+        }
+      },
+      "metadata": {
+        "match_id": 3941018,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Spain vs Georgia"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "f37aabea-1292-401e-8818-483cdcb1b534",
+        "start_event_id": "52eecd33-79ac-4f0b-9cc7-ad69c28f6718",
+        "end_event_id": "f37aabea-1292-401e-8818-483cdcb1b534",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 10.841
+      },
+      "frames": [
+        {
+          "event_id": "52eecd33-79ac-4f0b-9cc7-ad69c28f6718",
+          "t_seconds": 0.942,
+          "team": "Spain",
+          "event_type": "Pass",
+          "ball_x": 57.0,
+          "ball_y": 28.9,
+          "ball_end_x": 73.8,
+          "ball_end_y": 31.0,
+          "actor": "Robin Le Normand",
+          "outcome": null
+        },
+        {
+          "event_id": "6cb71310-a21d-4c89-b26e-76a9331057cf",
+          "t_seconds": 2.385,
+          "team": "Spain",
+          "event_type": "Pass",
+          "ball_x": 73.8,
+          "ball_y": 31.0,
+          "ball_end_x": 84.3,
+          "ball_end_y": 31.2,
+          "actor": "Mikel Merino",
+          "outcome": "Incomplete"
+        },
+        {
+          "event_id": "a888e14f-08dd-425c-8ddf-9e5338e44f70",
+          "t_seconds": 3.632,
+          "team": "Georgia",
+          "event_type": "Interception",
+          "ball_x": 35.8,
+          "ball_y": 48.9,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Nika Kvekveskiri",
+          "outcome": null
+        },
+        {
+          "event_id": "b2e59647-c08e-4ebd-872a-716d0bc3556f",
+          "t_seconds": 4.922,
+          "team": "Georgia",
+          "event_type": "Pass",
+          "ball_x": 26.5,
+          "ball_y": 42.0,
+          "ball_end_x": 28.8,
+          "ball_end_y": 45.8,
+          "actor": "Lasha Dvali",
+          "outcome": "Incomplete"
+        },
+        {
+          "event_id": "b337a436-325c-42f9-9133-5dec2ff4d2de",
+          "t_seconds": 6.932,
+          "team": "Georgia",
+          "event_type": "Duel",
+          "ball_x": 30.3,
+          "ball_y": 53.0,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Nika Kvekveskiri",
+          "outcome": null
+        },
+        {
+          "event_id": "eb2bdee1-a99f-4277-8e97-f3f8a2e81783",
+          "t_seconds": 6.932,
+          "team": "Spain",
+          "event_type": "Pass",
+          "ball_x": 89.8,
+          "ball_y": 27.1,
+          "ball_end_x": 99.5,
+          "ball_end_y": 21.3,
+          "actor": "Mikel Merino",
+          "outcome": null
+        },
+        {
+          "event_id": "ae503493-0f94-4641-a7b7-54ff769dccda",
+          "t_seconds": 7.787,
+          "team": "Spain",
+          "event_type": "Carry",
+          "ball_x": 99.5,
+          "ball_y": 21.3,
+          "ball_end_x": 97.3,
+          "ball_end_y": 22.4,
+          "actor": "Mikel Oyarzabal",
+          "outcome": null
+        },
+        {
+          "event_id": "7df12682-3ec1-4618-98e4-e142608831b2",
+          "t_seconds": 8.235,
+          "team": "Georgia",
+          "event_type": "Pressure",
+          "ball_x": 20.6,
+          "ball_y": 60.1,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Otar Kakabadze",
+          "outcome": null
+        },
+        {
+          "event_id": "222c68d1-22df-46a1-959e-0cb3545b4210",
+          "t_seconds": 8.891,
+          "team": "Spain",
+          "event_type": "Pass",
+          "ball_x": 97.3,
+          "ball_y": 22.4,
+          "ball_end_x": 100.1,
+          "ball_end_y": 41.2,
+          "actor": "Mikel Oyarzabal",
+          "outcome": null
+        },
+        {
+          "event_id": "771ec56f-3e99-488f-8b5e-048b7fdb75c3",
+          "t_seconds": 9.747,
+          "team": "Spain",
+          "event_type": "Carry",
+          "ball_x": 100.1,
+          "ball_y": 41.2,
+          "ball_end_x": 100.9,
+          "ball_end_y": 38.9,
+          "actor": "Daniel Olmo",
+          "outcome": null
+        },
+        {
+          "event_id": "78da9afd-4b79-4e11-a876-1d8cbdab359d",
+          "t_seconds": 10.341,
+          "team": "Spain",
+          "event_type": "Carry",
+          "ball_x": 100.9,
+          "ball_y": 38.9,
+          "ball_end_x": 102.3,
+          "ball_end_y": 38.5,
+          "actor": "Daniel Olmo",
+          "outcome": null
+        },
+        {
+          "event_id": "f37aabea-1292-401e-8818-483cdcb1b534",
+          "t_seconds": 10.841,
+          "team": "Spain",
+          "event_type": "Shot",
+          "ball_x": 102.3,
+          "ball_y": 38.5,
+          "ball_end_x": 120.0,
+          "ball_end_y": 36.5,
+          "actor": "Daniel Olmo",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "f37aabea-1292-401e-8818-483cdcb1b534",
+          "minute": 82,
+          "second": 35,
+          "scorer": "Daniel Olmo",
+          "team": "Spain"
+        }
+      },
+      "metadata": {
+        "match_id": 3941018,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Spain vs Georgia"
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3941018,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Spain vs Georgia"
+  }
+}

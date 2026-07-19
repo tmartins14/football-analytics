@@ -1,0 +1,315 @@
+{
+  "goals": [
+    {
+      "window": {
+        "anchor_event_id": "32cac30e-8e80-477d-a1ea-e0b77d95e54b",
+        "start_event_id": "244c82ed-665a-46f0-b1f2-3d5fe7dc45ac",
+        "end_event_id": "32cac30e-8e80-477d-a1ea-e0b77d95e54b",
+        "period": 1,
+        "window_seconds": 10.0,
+        "t_span_seconds": 11.785
+      },
+      "frames": [
+        {
+          "event_id": "244c82ed-665a-46f0-b1f2-3d5fe7dc45ac",
+          "t_seconds": 0.0,
+          "team": "Netherlands",
+          "event_type": "Pass",
+          "ball_x": 33.6,
+          "ball_y": 43.8,
+          "ball_end_x": 45.1,
+          "ball_end_y": 77.5,
+          "actor": "Virgil van Dijk",
+          "outcome": null
+        },
+        {
+          "event_id": "0a8cb4f6-3921-4d15-a722-2eceb0662939",
+          "t_seconds": 1.935,
+          "team": "Netherlands",
+          "event_type": "Carry",
+          "ball_x": 45.1,
+          "ball_y": 77.5,
+          "ball_end_x": 54.1,
+          "ball_end_y": 74.9,
+          "actor": "Denzel Dumfries",
+          "outcome": null
+        },
+        {
+          "event_id": "a28439c0-3258-4352-ab26-af80ddc0b48e",
+          "t_seconds": 4.766,
+          "team": "Netherlands",
+          "event_type": "Pass",
+          "ball_x": 54.1,
+          "ball_y": 74.9,
+          "ball_end_x": 85.1,
+          "ball_end_y": 65.2,
+          "actor": "Denzel Dumfries",
+          "outcome": "Incomplete"
+        },
+        {
+          "event_id": "74dddc0c-b14e-418d-8e46-9e2f6b26a79f",
+          "t_seconds": 6.051,
+          "team": "England",
+          "event_type": "Pass",
+          "ball_x": 35.0,
+          "ball_y": 14.9,
+          "ball_end_x": 42.4,
+          "ball_end_y": 12.4,
+          "actor": "Marc Guehi",
+          "outcome": null
+        },
+        {
+          "event_id": "2d5e7ed3-7084-4337-af75-c3d100e1b94b",
+          "t_seconds": 7.203,
+          "team": "England",
+          "event_type": "Carry",
+          "ball_x": 42.4,
+          "ball_y": 12.4,
+          "ball_end_x": 35.8,
+          "ball_end_y": 11.1,
+          "actor": "Declan Rice",
+          "outcome": null
+        },
+        {
+          "event_id": "f24d0b14-8728-40a2-880f-b50f67bff5ad",
+          "t_seconds": 7.324,
+          "team": "Netherlands",
+          "event_type": "Pressure",
+          "ball_x": 78.3,
+          "ball_y": 67.1,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Xavi Simons",
+          "outcome": null
+        },
+        {
+          "event_id": "46c3c3c6-89ad-47c7-b626-ca6840a3dc80",
+          "t_seconds": 8.2,
+          "team": "Netherlands",
+          "event_type": "Duel",
+          "ball_x": 84.3,
+          "ball_y": 69.0,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Xavi Simons",
+          "outcome": null
+        },
+        {
+          "event_id": "261d5d3d-c44d-4197-8ca1-776474f30acf",
+          "t_seconds": 8.2,
+          "team": "Netherlands",
+          "event_type": "Carry",
+          "ball_x": 84.3,
+          "ball_y": 69.0,
+          "ball_end_x": 99.6,
+          "ball_end_y": 51.2,
+          "actor": "Xavi Simons",
+          "outcome": null
+        },
+        {
+          "event_id": "32cac30e-8e80-477d-a1ea-e0b77d95e54b",
+          "t_seconds": 11.785,
+          "team": "Netherlands",
+          "event_type": "Shot",
+          "ball_x": 99.6,
+          "ball_y": 51.2,
+          "ball_end_x": 120.0,
+          "ball_end_y": 37.4,
+          "actor": "Xavi Simons",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "32cac30e-8e80-477d-a1ea-e0b77d95e54b",
+          "minute": 6,
+          "second": 41,
+          "scorer": "Xavi Simons",
+          "team": "Netherlands"
+        }
+      },
+      "metadata": {
+        "match_id": 3942819,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Netherlands vs England"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "53d019c8-0b54-4e54-a4f7-48a15b6a50ce",
+        "start_event_id": "53d019c8-0b54-4e54-a4f7-48a15b6a50ce",
+        "end_event_id": "53d019c8-0b54-4e54-a4f7-48a15b6a50ce",
+        "period": 1,
+        "window_seconds": 10.0,
+        "t_span_seconds": 231.073
+      },
+      "frames": [
+        {
+          "event_id": "53d019c8-0b54-4e54-a4f7-48a15b6a50ce",
+          "t_seconds": 231.073,
+          "team": "England",
+          "event_type": "Shot",
+          "ball_x": 108.1,
+          "ball_y": 40.0,
+          "ball_end_x": 120.0,
+          "ball_end_y": 36.5,
+          "actor": "Harry Kane",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "53d019c8-0b54-4e54-a4f7-48a15b6a50ce",
+          "minute": 17,
+          "second": 34,
+          "scorer": "Harry Kane",
+          "team": "England"
+        }
+      },
+      "metadata": {
+        "match_id": 3942819,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Netherlands vs England"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "dc16ea8a-eab7-403d-ad54-778ba19a16b5",
+        "start_event_id": "2271fb34-485d-4887-a4d7-02438eee82ee",
+        "end_event_id": "dc16ea8a-eab7-403d-ad54-778ba19a16b5",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 10.766
+      },
+      "frames": [
+        {
+          "event_id": "2271fb34-485d-4887-a4d7-02438eee82ee",
+          "t_seconds": 0.0,
+          "team": "England",
+          "event_type": "Carry",
+          "ball_x": 51.1,
+          "ball_y": 37.9,
+          "ball_end_x": 55.7,
+          "ball_end_y": 48.9,
+          "actor": "Declan Rice",
+          "outcome": null
+        },
+        {
+          "event_id": "bd522ffe-84c6-494f-8943-8e70cc89c36c",
+          "t_seconds": 3.476,
+          "team": "England",
+          "event_type": "Pass",
+          "ball_x": 55.7,
+          "ball_y": 48.9,
+          "ball_end_x": 68.6,
+          "ball_end_y": 63.2,
+          "actor": "Declan Rice",
+          "outcome": null
+        },
+        {
+          "event_id": "86a86092-2244-4cdb-bf7b-1380fb0b1e91",
+          "t_seconds": 4.314,
+          "team": "England",
+          "event_type": "Carry",
+          "ball_x": 68.6,
+          "ball_y": 63.2,
+          "ball_end_x": 68.6,
+          "ball_end_y": 63.2,
+          "actor": "Kobbie Mainoo",
+          "outcome": null
+        },
+        {
+          "event_id": "f7d69f7e-e363-4ccb-be0c-2f5dcba8ee8b",
+          "t_seconds": 5.625,
+          "team": "England",
+          "event_type": "Ball Recovery",
+          "ball_x": 80.3,
+          "ball_y": 68.8,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Cole Palmer",
+          "outcome": null
+        },
+        {
+          "event_id": "cdf3be5a-69e6-449b-856c-463ae23082dc",
+          "t_seconds": 5.625,
+          "team": "England",
+          "event_type": "Carry",
+          "ball_x": 80.3,
+          "ball_y": 68.8,
+          "ball_end_x": 86.5,
+          "ball_end_y": 69.2,
+          "actor": "Cole Palmer",
+          "outcome": null
+        },
+        {
+          "event_id": "da7a0540-e07b-4044-b94f-546fbcba09cb",
+          "t_seconds": 8.09,
+          "team": "England",
+          "event_type": "Pass",
+          "ball_x": 86.5,
+          "ball_y": 69.2,
+          "ball_end_x": 107.4,
+          "ball_end_y": 54.8,
+          "actor": "Cole Palmer",
+          "outcome": null
+        },
+        {
+          "event_id": "b7e805a7-5238-484a-b9d4-cfd059dc96c1",
+          "t_seconds": 9.647,
+          "team": "Netherlands",
+          "event_type": "Pressure",
+          "ball_x": 11.9,
+          "ball_y": 27.9,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Stefan de Vrij",
+          "outcome": null
+        },
+        {
+          "event_id": "79664022-9ee6-4a95-8187-30fd5490c6ce",
+          "t_seconds": 9.793,
+          "team": "England",
+          "event_type": "Carry",
+          "ball_x": 107.4,
+          "ball_y": 54.8,
+          "ball_end_x": 110.4,
+          "ball_end_y": 53.5,
+          "actor": "Ollie Watkins",
+          "outcome": null
+        },
+        {
+          "event_id": "dc16ea8a-eab7-403d-ad54-778ba19a16b5",
+          "t_seconds": 10.766,
+          "team": "England",
+          "event_type": "Shot",
+          "ball_x": 110.4,
+          "ball_y": 53.5,
+          "ball_end_x": 120.0,
+          "ball_end_y": 36.7,
+          "actor": "Ollie Watkins",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "dc16ea8a-eab7-403d-ad54-778ba19a16b5",
+          "minute": 90,
+          "second": 0,
+          "scorer": "Ollie Watkins",
+          "team": "England"
+        }
+      },
+      "metadata": {
+        "match_id": 3942819,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Netherlands vs England"
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3942819,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Netherlands vs England"
+  }
+}

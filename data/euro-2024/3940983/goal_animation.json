@@ -1,0 +1,145 @@
+{
+  "goals": [
+    {
+      "window": {
+        "anchor_event_id": "b8618f78-ecfd-479d-8e22-6b10a899a256",
+        "start_event_id": "b8618f78-ecfd-479d-8e22-6b10a899a256",
+        "end_event_id": "b8618f78-ecfd-479d-8e22-6b10a899a256",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 167.827
+      },
+      "frames": [
+        {
+          "event_id": "b8618f78-ecfd-479d-8e22-6b10a899a256",
+          "t_seconds": 167.827,
+          "team": "Germany",
+          "event_type": "Shot",
+          "ball_x": 108.0,
+          "ball_y": 40.0,
+          "ball_end_x": 120.0,
+          "ball_end_y": 43.7,
+          "actor": "Kai Havertz",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "b8618f78-ecfd-479d-8e22-6b10a899a256",
+          "minute": 52,
+          "second": 58,
+          "scorer": "Kai Havertz",
+          "team": "Germany"
+        }
+      },
+      "metadata": {
+        "match_id": 3940983,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Germany vs Denmark"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "fb2a3700-38db-44d9-9c84-b7420fa27075",
+        "start_event_id": "2023ef9a-0cd5-4309-b644-83ec77ded82e",
+        "end_event_id": "fb2a3700-38db-44d9-9c84-b7420fa27075",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 11.728
+      },
+      "frames": [
+        {
+          "event_id": "2023ef9a-0cd5-4309-b644-83ec77ded82e",
+          "t_seconds": 0.0,
+          "team": "Germany",
+          "event_type": "Carry",
+          "ball_x": 26.6,
+          "ball_y": 47.8,
+          "ball_end_x": 27.4,
+          "ball_end_y": 41.8,
+          "actor": "Manuel Neuer",
+          "outcome": null
+        },
+        {
+          "event_id": "d2858e2e-5ec7-4ae8-b408-3b02bf8838c3",
+          "t_seconds": 2.469,
+          "team": "Germany",
+          "event_type": "Pass",
+          "ball_x": 27.4,
+          "ball_y": 41.8,
+          "ball_end_x": 26.7,
+          "ball_end_y": 23.1,
+          "actor": "Manuel Neuer",
+          "outcome": null
+        },
+        {
+          "event_id": "66ac8179-b040-4962-bf62-fe0bafb9a7fc",
+          "t_seconds": 4.182,
+          "team": "Germany",
+          "event_type": "Carry",
+          "ball_x": 26.7,
+          "ball_y": 23.1,
+          "ball_end_x": 26.2,
+          "ball_end_y": 20.9,
+          "actor": "Nico Schlotterbeck",
+          "outcome": null
+        },
+        {
+          "event_id": "b81e4931-e23f-4393-840e-99b130599c6f",
+          "t_seconds": 5.182,
+          "team": "Germany",
+          "event_type": "Pass",
+          "ball_x": 26.2,
+          "ball_y": 20.9,
+          "ball_end_x": 99.2,
+          "ball_end_y": 23.1,
+          "actor": "Nico Schlotterbeck",
+          "outcome": null
+        },
+        {
+          "event_id": "b0be3b34-7bc1-4038-b89f-ec641e62d0aa",
+          "t_seconds": 9.917,
+          "team": "Germany",
+          "event_type": "Carry",
+          "ball_x": 99.2,
+          "ball_y": 23.1,
+          "ball_end_x": 110.2,
+          "ball_end_y": 28.9,
+          "actor": "Jamal Musiala",
+          "outcome": null
+        },
+        {
+          "event_id": "fb2a3700-38db-44d9-9c84-b7420fa27075",
+          "t_seconds": 11.728,
+          "team": "Germany",
+          "event_type": "Shot",
+          "ball_x": 110.2,
+          "ball_y": 28.9,
+          "ball_end_x": 120.0,
+          "ball_end_y": 43.7,
+          "actor": "Jamal Musiala",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "fb2a3700-38db-44d9-9c84-b7420fa27075",
+          "minute": 67,
+          "second": 48,
+          "scorer": "Jamal Musiala",
+          "team": "Germany"
+        }
+      },
+      "metadata": {
+        "match_id": 3940983,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Germany vs Denmark"
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3940983,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Germany vs Denmark"
+  }
+}

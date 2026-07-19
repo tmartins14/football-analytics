@@ -1,0 +1,178 @@
+{
+  "goals": [
+    {
+      "ball": {
+        "x": 108.1,
+        "y": 40.1
+      },
+      "frame": [
+        {
+          "x": 97.39747311498994,
+          "y": 36.925067272148766,
+          "teammate": false,
+          "actor": false,
+          "keeper": false
+        },
+        {
+          "x": 100.79523718294028,
+          "y": 32.389735197904216,
+          "teammate": false,
+          "actor": false,
+          "keeper": false
+        },
+        {
+          "x": 101.53441271198568,
+          "y": 31.13687130362341,
+          "teammate": false,
+          "actor": false,
+          "keeper": false
+        },
+        {
+          "x": 102.14753111510105,
+          "y": 30.62273302960432,
+          "teammate": true,
+          "actor": false,
+          "keeper": false
+        },
+        {
+          "x": 102.64034559465688,
+          "y": 49.492471639655214,
+          "teammate": false,
+          "actor": false,
+          "keeper": false
+        },
+        {
+          "x": 108.0999984741211,
+          "y": 40.099998474121094,
+          "teammate": true,
+          "actor": true,
+          "keeper": false
+        },
+        {
+          "x": 119.56477879226564,
+          "y": 40.75298789450635,
+          "teammate": false,
+          "actor": false,
+          "keeper": true
+        }
+      ],
+      "visible_area": [
+        115.47027369068422,
+        80.0,
+        91.4642593445827,
+        27.10005330832719,
+        109.08852192493151,
+        15.998633099190446,
+        120.0,
+        29.362280664408935,
+        120.0,
+        80.0,
+        115.47027369068422,
+        80.0
+      ],
+      "metadata": {
+        "match_id": 3938643,
+        "event_id": "00633ba6-692b-40d1-ba13-535406bf78a1",
+        "display_name": "Kylian Mbapp\u00e9",
+        "team": "France",
+        "action_type": "Shot",
+        "minute": 55,
+        "competition": "UEFA Euro 2024",
+        "match_label": "France vs Poland"
+      }
+    },
+    {
+      "ball": {
+        "x": 108.0,
+        "y": 40.0
+      },
+      "frame": [
+        {
+          "x": 96.49847198965355,
+          "y": 46.62506656834017,
+          "teammate": true,
+          "actor": false,
+          "keeper": false
+        },
+        {
+          "x": 98.99321700776851,
+          "y": 45.96526194656634,
+          "teammate": true,
+          "actor": false,
+          "keeper": false
+        },
+        {
+          "x": 99.71201662334754,
+          "y": 42.6832958227621,
+          "teammate": false,
+          "actor": false,
+          "keeper": false
+        },
+        {
+          "x": 101.60900017231798,
+          "y": 49.10116977638918,
+          "teammate": false,
+          "actor": false,
+          "keeper": false
+        },
+        {
+          "x": 101.66693556035882,
+          "y": 52.642232322064,
+          "teammate": true,
+          "actor": false,
+          "keeper": false
+        },
+        {
+          "x": 102.0481346255125,
+          "y": 50.09751973263192,
+          "teammate": false,
+          "actor": false,
+          "keeper": false
+        },
+        {
+          "x": 108.0,
+          "y": 40.0,
+          "teammate": true,
+          "actor": true,
+          "keeper": false
+        },
+        {
+          "x": 119.5541431671294,
+          "y": 40.80757535074038,
+          "teammate": false,
+          "actor": false,
+          "keeper": true
+        }
+      ],
+      "visible_area": [
+        108.00028978525938,
+        63.49321522199172,
+        91.40447703632582,
+        53.648841681133675,
+        115.72400980157873,
+        0.0,
+        120.0,
+        0.0,
+        120.0,
+        48.76724592064173,
+        108.00028978525938,
+        63.49321522199172
+      ],
+      "metadata": {
+        "match_id": 3938643,
+        "event_id": "03afed8a-fcf7-4c46-9316-9ec3e99b6795",
+        "display_name": "Robert Lewandowski",
+        "team": "Poland",
+        "action_type": "Shot",
+        "minute": 78,
+        "competition": "UEFA Euro 2024",
+        "match_label": "France vs Poland"
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3938643,
+    "competition": "UEFA Euro 2024",
+    "match_label": "France vs Poland"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "goals": [
+    {
+      "ball": {
+        "x": 108.1,
+        "y": 40.1
+      },
+      "frame": [
+        {
+          "x": 108.0999984741211,
+          "y": 40.099998474121094,
+          "teammate": true,
+          "actor": true,
+          "keeper": false
+        },
+        {
+          "x": 117.32753327325621,
+          "y": 40.8092307520701,
+          "teammate": false,
+          "actor": false,
+          "keeper": true
+        }
+      ],
+      "visible_area": [
+        76.25005212780475,
+        80.0,
+        68.85776750081357,
+        22.580576988581505,
+        76.96465936939641,
+        19.73196518011939,
+        120.0,
+        70.07333968534654,
+        120.0,
+        80.0,
+        76.25005212780475,
+        80.0
+      ],
+      "metadata": {
+        "match_id": 3941020,
+        "event_id": "174dda5d-71f1-4499-abae-196b6bdae6d5",
+        "display_name": "Cristiano Ronaldo",
+        "team": "Portugal",
+        "action_type": "Shot",
+        "minute": 120,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Portugal vs Slovenia"
+      }
+    },
+    {
+      "ball": {
+        "x": 108.2,
+        "y": 40.1
+      },
+      "frame": [
+        {
+          "x": 108.19999694824219,
+          "y": 40.099998474121094,
+          "teammate": true,
+          "actor": true,
+          "keeper": false
+        },
+        {
+          "x": 119.41939466639025,
+          "y": 39.94374383265368,
+          "teammate": false,
+          "actor": false,
+          "keeper": true
+        }
+      ],
+      "visible_area": [
+        118.08706273215279,
+        80.0,
+        94.6571812670135,
+        27.133659662378193,
+        112.92007623769669,
+        16.349071113008762,
+        120.0,
+        25.08419351337973,
+        120.0,
+        80.0,
+        118.08706273215279,
+        80.0
+      ],
+      "metadata": {
+        "match_id": 3941020,
+        "event_id": "7fc8af2f-bd95-404a-bc9d-1bfa7ca48c75",
+        "display_name": "Bruno Fernandes",
+        "team": "Portugal",
+        "action_type": "Shot",
+        "minute": 122,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Portugal vs Slovenia"
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3941020,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Portugal vs Slovenia"
+  }
+}

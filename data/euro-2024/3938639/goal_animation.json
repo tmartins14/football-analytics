@@ -1,0 +1,545 @@
+{
+  "goals": [
+    {
+      "window": {
+        "anchor_event_id": "4ed4c7c2-db61-4c4b-a287-dd9c6604a166",
+        "start_event_id": "2fc77fb7-187a-4775-bdba-3452fd9d5dc1",
+        "end_event_id": "4ed4c7c2-db61-4c4b-a287-dd9c6604a166",
+        "period": 1,
+        "window_seconds": 10.0,
+        "t_span_seconds": 10.811
+      },
+      "frames": [
+        {
+          "event_id": "2fc77fb7-187a-4775-bdba-3452fd9d5dc1",
+          "t_seconds": 0.0,
+          "team": "Turkey",
+          "event_type": "Pass",
+          "ball_x": 81.0,
+          "ball_y": 22.4,
+          "ball_end_x": 91.8,
+          "ball_end_y": 15.7,
+          "actor": "Kaan Ayhan",
+          "outcome": null
+        },
+        {
+          "event_id": "5eb323af-bc96-4e9b-9c2b-25e7c8d978a7",
+          "t_seconds": 1.139,
+          "team": "Turkey",
+          "event_type": "Carry",
+          "ball_x": 91.8,
+          "ball_y": 15.7,
+          "ball_end_x": 91.8,
+          "ball_end_y": 15.7,
+          "actor": "Orkun K\u00f6k\u00e7\u00fc",
+          "outcome": null
+        },
+        {
+          "event_id": "ae735bbe-2975-4da2-9383-a1f308344015",
+          "t_seconds": 1.464,
+          "team": "Turkey",
+          "event_type": "Pass",
+          "ball_x": 91.8,
+          "ball_y": 15.7,
+          "ball_end_x": 99.6,
+          "ball_end_y": 21.6,
+          "actor": "Orkun K\u00f6k\u00e7\u00fc",
+          "outcome": null
+        },
+        {
+          "event_id": "4790517e-2498-41c9-ad48-776becfd2705",
+          "t_seconds": 2.164,
+          "team": "Turkey",
+          "event_type": "Pass",
+          "ball_x": 99.6,
+          "ball_y": 21.6,
+          "ball_end_x": 104.2,
+          "ball_end_y": 7.6,
+          "actor": "Ferdi Kadioglu",
+          "outcome": null
+        },
+        {
+          "event_id": "a34d7b64-b25e-465f-b209-e0af6a4076e4",
+          "t_seconds": 3.272,
+          "team": "Turkey",
+          "event_type": "Carry",
+          "ball_x": 104.2,
+          "ball_y": 7.6,
+          "ball_end_x": 104.2,
+          "ball_end_y": 7.6,
+          "actor": "Kenan Yildiz",
+          "outcome": null
+        },
+        {
+          "event_id": "236dd782-e6e6-44b3-8544-692d299aad4d",
+          "t_seconds": 4.702,
+          "team": "Turkey",
+          "event_type": "Pass",
+          "ball_x": 104.2,
+          "ball_y": 7.6,
+          "ball_end_x": 97.1,
+          "ball_end_y": 22.1,
+          "actor": "Kenan Yildiz",
+          "outcome": null
+        },
+        {
+          "event_id": "8d67c3d8-1c98-40bd-85e6-fedd306d57a7",
+          "t_seconds": 5.405,
+          "team": "Turkey",
+          "event_type": "Pass",
+          "ball_x": 97.6,
+          "ball_y": 22.4,
+          "ball_end_x": 118.5,
+          "ball_end_y": 20.9,
+          "actor": "Orkun K\u00f6k\u00e7\u00fc",
+          "outcome": null
+        },
+        {
+          "event_id": "de178c43-87a6-4110-989a-779ef7def42a",
+          "t_seconds": 7.887,
+          "team": "Turkey",
+          "event_type": "Carry",
+          "ball_x": 118.5,
+          "ball_y": 20.9,
+          "ball_end_x": 118.5,
+          "ball_end_y": 22.2,
+          "actor": "Ferdi Kadioglu",
+          "outcome": null
+        },
+        {
+          "event_id": "99953be5-8315-4871-a9ba-9d0eb5960b6e",
+          "t_seconds": 8.027,
+          "team": "Turkey",
+          "event_type": "Pass",
+          "ball_x": 118.5,
+          "ball_y": 22.2,
+          "ball_end_x": 111.7,
+          "ball_end_y": 42.1,
+          "actor": "Ferdi Kadioglu",
+          "outcome": "Incomplete"
+        },
+        {
+          "event_id": "db9756f3-a4ac-4fdd-9439-e00214d647a1",
+          "t_seconds": 10.752,
+          "team": "Turkey",
+          "event_type": "Ball Recovery",
+          "ball_x": 102.3,
+          "ball_y": 51.9,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Mert M\u00fcld\u00fcr",
+          "outcome": null
+        },
+        {
+          "event_id": "4ed4c7c2-db61-4c4b-a287-dd9c6604a166",
+          "t_seconds": 10.811,
+          "team": "Turkey",
+          "event_type": "Shot",
+          "ball_x": 102.6,
+          "ball_y": 48.7,
+          "ball_end_x": 120.0,
+          "ball_end_y": 43.7,
+          "actor": "Mert M\u00fcld\u00fcr",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "4ed4c7c2-db61-4c4b-a287-dd9c6604a166",
+          "minute": 24,
+          "second": 57,
+          "scorer": "Mert M\u00fcld\u00fcr",
+          "team": "Turkey"
+        }
+      },
+      "metadata": {
+        "match_id": 3938639,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Turkey vs Georgia"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "4f631343-e674-4df8-aa7c-3c961fbf7beb",
+        "start_event_id": "407b837d-33f2-4947-b04d-3771fd95b124",
+        "end_event_id": "4f631343-e674-4df8-aa7c-3c961fbf7beb",
+        "period": 1,
+        "window_seconds": 10.0,
+        "t_span_seconds": 11.265
+      },
+      "frames": [
+        {
+          "event_id": "407b837d-33f2-4947-b04d-3771fd95b124",
+          "t_seconds": 0.0,
+          "team": "Georgia",
+          "event_type": "Pass",
+          "ball_x": 94.4,
+          "ball_y": 55.6,
+          "ball_end_x": 108.8,
+          "ball_end_y": 76.0,
+          "actor": "Georges Mikautadze",
+          "outcome": null
+        },
+        {
+          "event_id": "c4954338-cd39-4f7f-8b42-fe919021d029",
+          "t_seconds": 1.951,
+          "team": "Georgia",
+          "event_type": "Carry",
+          "ball_x": 108.8,
+          "ball_y": 76.0,
+          "ball_end_x": 103.9,
+          "ball_end_y": 70.8,
+          "actor": "Otar Kakabadze",
+          "outcome": null
+        },
+        {
+          "event_id": "ca1ea890-015b-4923-ab79-313c78a797f3",
+          "t_seconds": 4.015,
+          "team": "Georgia",
+          "event_type": "Pass",
+          "ball_x": 103.9,
+          "ball_y": 70.8,
+          "ball_end_x": 98.8,
+          "ball_end_y": 61.1,
+          "actor": "Otar Kakabadze",
+          "outcome": null
+        },
+        {
+          "event_id": "c1cf2d8d-9e32-47fb-a77a-4e836ffe54c0",
+          "t_seconds": 5.192,
+          "team": "Georgia",
+          "event_type": "Carry",
+          "ball_x": 98.8,
+          "ball_y": 61.1,
+          "ball_end_x": 118.0,
+          "ball_end_y": 59.7,
+          "actor": "Giorgi Kochorashvili",
+          "outcome": null
+        },
+        {
+          "event_id": "67db1c72-07f5-4313-b19e-28823cfb98a6",
+          "t_seconds": 10.8,
+          "team": "Georgia",
+          "event_type": "Pass",
+          "ball_x": 118.0,
+          "ball_y": 59.7,
+          "ball_end_x": 111.2,
+          "ball_end_y": 49.7,
+          "actor": "Giorgi Kochorashvili",
+          "outcome": null
+        },
+        {
+          "event_id": "4f631343-e674-4df8-aa7c-3c961fbf7beb",
+          "t_seconds": 11.265,
+          "team": "Georgia",
+          "event_type": "Shot",
+          "ball_x": 111.2,
+          "ball_y": 49.7,
+          "ball_end_x": 120.0,
+          "ball_end_y": 43.6,
+          "actor": "Georges Mikautadze",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "4f631343-e674-4df8-aa7c-3c961fbf7beb",
+          "minute": 31,
+          "second": 44,
+          "scorer": "Georges Mikautadze",
+          "team": "Georgia"
+        }
+      },
+      "metadata": {
+        "match_id": 3938639,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Turkey vs Georgia"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "32b4bd54-0cae-4af6-9472-505729fb183d",
+        "start_event_id": "70613103-7c98-4042-b103-53f8935b30d7",
+        "end_event_id": "32b4bd54-0cae-4af6-9472-505729fb183d",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 12.171
+      },
+      "frames": [
+        {
+          "event_id": "70613103-7c98-4042-b103-53f8935b30d7",
+          "t_seconds": 0.0,
+          "team": "Georgia",
+          "event_type": "Ball Recovery",
+          "ball_x": 10.2,
+          "ball_y": 34.4,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Giorgi Kochorashvili",
+          "outcome": null
+        },
+        {
+          "event_id": "8eb22210-5338-4c5c-a4e0-51214daa1672",
+          "t_seconds": 0.0,
+          "team": "Georgia",
+          "event_type": "Carry",
+          "ball_x": 10.2,
+          "ball_y": 34.4,
+          "ball_end_x": 14.4,
+          "ball_end_y": 17.7,
+          "actor": "Giorgi Kochorashvili",
+          "outcome": null
+        },
+        {
+          "event_id": "e9f92d07-696a-48ad-97ab-c2b8742ff2f8",
+          "t_seconds": 3.307,
+          "team": "Georgia",
+          "event_type": "Pass",
+          "ball_x": 14.4,
+          "ball_y": 17.7,
+          "ball_end_x": 13.9,
+          "ball_end_y": 5.4,
+          "actor": "Giorgi Kochorashvili",
+          "outcome": null
+        },
+        {
+          "event_id": "efd28d92-a7c2-4e1c-a2a4-ef060a46b177",
+          "t_seconds": 4.413,
+          "team": "Georgia",
+          "event_type": "Carry",
+          "ball_x": 13.9,
+          "ball_y": 5.4,
+          "ball_end_x": 15.1,
+          "ball_end_y": 4.9,
+          "actor": "Georgiy Tsitaishvili",
+          "outcome": null
+        },
+        {
+          "event_id": "711d048a-d06a-4496-b02d-08b6c8419dfb",
+          "t_seconds": 5.064,
+          "team": "Georgia",
+          "event_type": "Pass",
+          "ball_x": 15.1,
+          "ball_y": 4.9,
+          "ball_end_x": 17.5,
+          "ball_end_y": 14.1,
+          "actor": "Georgiy Tsitaishvili",
+          "outcome": null
+        },
+        {
+          "event_id": "747d01d0-8685-420e-84d8-89e397cd16e7",
+          "t_seconds": 5.719,
+          "team": "Georgia",
+          "event_type": "Carry",
+          "ball_x": 17.5,
+          "ball_y": 14.1,
+          "ball_end_x": 17.5,
+          "ball_end_y": 13.6,
+          "actor": "Giorgi Kochorashvili",
+          "outcome": null
+        },
+        {
+          "event_id": "e7ac7025-2acf-4ece-85ca-5abf0e2f984f",
+          "t_seconds": 5.793,
+          "team": "Turkey",
+          "event_type": "Pressure",
+          "ball_x": 102.6,
+          "ball_y": 66.4,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Bar\u0131\u015f Alper Y\u0131lmaz",
+          "outcome": null
+        },
+        {
+          "event_id": "155ae595-5724-4da5-83b2-58f2df1ce1d7",
+          "t_seconds": 6.355,
+          "team": "Georgia",
+          "event_type": "Pass",
+          "ball_x": 17.5,
+          "ball_y": 13.6,
+          "ball_end_x": 28.4,
+          "ball_end_y": 4.2,
+          "actor": "Giorgi Kochorashvili",
+          "outcome": null
+        },
+        {
+          "event_id": "fd093d84-aa67-4e83-881a-91c7674aa667",
+          "t_seconds": 8.447,
+          "team": "Georgia",
+          "event_type": "Pressure",
+          "ball_x": 34.0,
+          "ball_y": 9.1,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Georgiy Tsitaishvili",
+          "outcome": null
+        },
+        {
+          "event_id": "c8cd4f7d-a2cf-426b-a20e-b0e260ebc05a",
+          "t_seconds": 8.72,
+          "team": "Turkey",
+          "event_type": "Pass",
+          "ball_x": 85.6,
+          "ball_y": 71.6,
+          "ball_end_x": 91.5,
+          "ball_end_y": 66.9,
+          "actor": "Kaan Ayhan",
+          "outcome": null
+        },
+        {
+          "event_id": "aa4a4ae9-4a11-457f-bc36-e89fa8f8c601",
+          "t_seconds": 9.44,
+          "team": "Turkey",
+          "event_type": "Carry",
+          "ball_x": 91.5,
+          "ball_y": 66.9,
+          "ball_end_x": 95.5,
+          "ball_end_y": 53.4,
+          "actor": "Arda G\u00fcler",
+          "outcome": null
+        },
+        {
+          "event_id": "32b4bd54-0cae-4af6-9472-505729fb183d",
+          "t_seconds": 12.171,
+          "team": "Turkey",
+          "event_type": "Shot",
+          "ball_x": 95.5,
+          "ball_y": 53.4,
+          "ball_end_x": 120.0,
+          "ball_end_y": 36.5,
+          "actor": "Arda G\u00fcler",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "32b4bd54-0cae-4af6-9472-505729fb183d",
+          "minute": 64,
+          "second": 54,
+          "scorer": "Arda G\u00fcler",
+          "team": "Turkey"
+        }
+      },
+      "metadata": {
+        "match_id": 3938639,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Turkey vs Georgia"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "959fe6a6-e76e-4a2a-aa2a-a4c07ef00af9",
+        "start_event_id": "e9d98e8a-e9b8-45d6-89f8-944e80771ba1",
+        "end_event_id": "959fe6a6-e76e-4a2a-aa2a-a4c07ef00af9",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 10.495
+      },
+      "frames": [
+        {
+          "event_id": "e9d98e8a-e9b8-45d6-89f8-944e80771ba1",
+          "t_seconds": 2.079,
+          "team": "Georgia",
+          "event_type": "Ball Recovery",
+          "ball_x": 91.0,
+          "ball_y": 32.4,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Sandro Altunashvili",
+          "outcome": null
+        },
+        {
+          "event_id": "ef0053aa-7be9-4a2c-985b-6cb2f04ab70b",
+          "t_seconds": 2.079,
+          "team": "Georgia",
+          "event_type": "Carry",
+          "ball_x": 91.0,
+          "ball_y": 32.4,
+          "ball_end_x": 91.8,
+          "ball_end_y": 31.9,
+          "actor": "Sandro Altunashvili",
+          "outcome": null
+        },
+        {
+          "event_id": "f9ff8736-7ee7-45d7-a9d7-0c753da849a3",
+          "t_seconds": 2.647,
+          "team": "Turkey",
+          "event_type": "Pressure",
+          "ball_x": 27.9,
+          "ball_y": 45.7,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Orkun K\u00f6k\u00e7\u00fc",
+          "outcome": null
+        },
+        {
+          "event_id": "70966c8f-67ef-4ffd-8aea-7e49fc6eb1f6",
+          "t_seconds": 3.126,
+          "team": "Turkey",
+          "event_type": "Duel",
+          "ball_x": 28.3,
+          "ball_y": 48.2,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Orkun K\u00f6k\u00e7\u00fc",
+          "outcome": null
+        },
+        {
+          "event_id": "260b3a43-98f3-4e5a-8808-bbb1de9cdbea",
+          "t_seconds": 3.526,
+          "team": "Turkey",
+          "event_type": "Ball Recovery",
+          "ball_x": 30.0,
+          "ball_y": 52.8,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Kerem Akt\u00fcrkoglu",
+          "outcome": null
+        },
+        {
+          "event_id": "1fd44154-50f1-4e86-83b1-58c9552eb287",
+          "t_seconds": 3.526,
+          "team": "Turkey",
+          "event_type": "Carry",
+          "ball_x": 30.0,
+          "ball_y": 52.8,
+          "ball_end_x": 96.1,
+          "ball_end_y": 52.9,
+          "actor": "Kerem Akt\u00fcrkoglu",
+          "outcome": null
+        },
+        {
+          "event_id": "959fe6a6-e76e-4a2a-aa2a-a4c07ef00af9",
+          "t_seconds": 10.495,
+          "team": "Turkey",
+          "event_type": "Shot",
+          "ball_x": 96.1,
+          "ball_y": 52.9,
+          "ball_end_x": 120.0,
+          "ball_end_y": 38.0,
+          "actor": "Kerem Akt\u00fcrkoglu",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "959fe6a6-e76e-4a2a-aa2a-a4c07ef00af9",
+          "minute": 96,
+          "second": 29,
+          "scorer": "Kerem Akt\u00fcrkoglu",
+          "team": "Turkey"
+        }
+      },
+      "metadata": {
+        "match_id": 3938639,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Turkey vs Georgia"
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3938639,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Turkey vs Georgia"
+  }
+}

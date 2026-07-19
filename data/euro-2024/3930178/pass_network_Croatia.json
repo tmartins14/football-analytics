@@ -1,0 +1,1309 @@
+{
+  "windows": [
+    {
+      "index": 0,
+      "label": "0'\u201345' (Starting XI)",
+      "nodes": [
+        {
+          "player": "Andrej Kramari\u0107",
+          "display_name": "Andrej Kramari\u0107",
+          "x": 75.05,
+          "y": 36.94,
+          "passes": 13
+        },
+        {
+          "player": "Dominik Livakovi\u0107",
+          "display_name": "Dominik Livakovi\u0107",
+          "x": 14.17,
+          "y": 39.65,
+          "passes": 13
+        },
+        {
+          "player": "Josip Stani\u0161i\u0107",
+          "display_name": "Josip Stani\u0161i\u0107",
+          "x": 59.82,
+          "y": 71.85,
+          "passes": 41
+        },
+        {
+          "player": "Josip \u0160utalo",
+          "display_name": "Josip \u0160utalo",
+          "x": 41.25,
+          "y": 57.88,
+          "passes": 48
+        },
+        {
+          "player": "Jo\u0161ko Gvardiol",
+          "display_name": "Jo\u0161ko Gvardiol",
+          "x": 59.73,
+          "y": 16.39,
+          "passes": 35
+        },
+        {
+          "player": "Luka Modri\u0107",
+          "display_name": "Luka Modri\u0107",
+          "x": 66.96,
+          "y": 56.01,
+          "passes": 38
+        },
+        {
+          "player": "Luka Su\u010di\u0107",
+          "display_name": "Luka Su\u010di\u0107",
+          "x": 74.29,
+          "y": 61.48,
+          "passes": 29
+        },
+        {
+          "player": "Marcelo Brozovi\u0107",
+          "display_name": "Marcelo Brozovi\u0107",
+          "x": 50.63,
+          "y": 48.17,
+          "passes": 31
+        },
+        {
+          "player": "Marin Pongracic",
+          "display_name": "Marin Pongracic",
+          "x": 45.7,
+          "y": 29.08,
+          "passes": 45
+        },
+        {
+          "player": "Mario Pa\u0161ali\u0107",
+          "display_name": "Mario Pa\u0161ali\u0107",
+          "x": 81.23,
+          "y": 24.17,
+          "passes": 7
+        },
+        {
+          "player": "Mateo Kova\u010di\u0107",
+          "display_name": "Mateo Kova\u010di\u0107",
+          "x": 63.03,
+          "y": 24.16,
+          "passes": 29
+        }
+      ],
+      "edges": [
+        {
+          "from": "Josip \u0160utalo",
+          "to": "Marin Pongracic",
+          "count": 18
+        },
+        {
+          "from": "Josip \u0160utalo",
+          "to": "Josip Stani\u0161i\u0107",
+          "count": 16
+        },
+        {
+          "from": "Josip Stani\u0161i\u0107",
+          "to": "Josip \u0160utalo",
+          "count": 15
+        },
+        {
+          "from": "Marin Pongracic",
+          "to": "Jo\u0161ko Gvardiol",
+          "count": 15
+        },
+        {
+          "from": "Luka Modri\u0107",
+          "to": "Luka Su\u010di\u0107",
+          "count": 14
+        },
+        {
+          "from": "Luka Modri\u0107",
+          "to": "Josip Stani\u0161i\u0107",
+          "count": 10
+        },
+        {
+          "from": "Josip Stani\u0161i\u0107",
+          "to": "Luka Su\u010di\u0107",
+          "count": 9
+        },
+        {
+          "from": "Jo\u0161ko Gvardiol",
+          "to": "Mateo Kova\u010di\u0107",
+          "count": 9
+        },
+        {
+          "from": "Luka Su\u010di\u0107",
+          "to": "Luka Modri\u0107",
+          "count": 9
+        },
+        {
+          "from": "Josip Stani\u0161i\u0107",
+          "to": "Marcelo Brozovi\u0107",
+          "count": 9
+        },
+        {
+          "from": "Marin Pongracic",
+          "to": "Josip \u0160utalo",
+          "count": 8
+        },
+        {
+          "from": "Josip Stani\u0161i\u0107",
+          "to": "Luka Modri\u0107",
+          "count": 7
+        },
+        {
+          "from": "Jo\u0161ko Gvardiol",
+          "to": "Marin Pongracic",
+          "count": 6
+        },
+        {
+          "from": "Marcelo Brozovi\u0107",
+          "to": "Josip Stani\u0161i\u0107",
+          "count": 6
+        },
+        {
+          "from": "Jo\u0161ko Gvardiol",
+          "to": "Josip \u0160utalo",
+          "count": 5
+        },
+        {
+          "from": "Marcelo Brozovi\u0107",
+          "to": "Mateo Kova\u010di\u0107",
+          "count": 5
+        },
+        {
+          "from": "Jo\u0161ko Gvardiol",
+          "to": "Marcelo Brozovi\u0107",
+          "count": 5
+        },
+        {
+          "from": "Marcelo Brozovi\u0107",
+          "to": "Marin Pongracic",
+          "count": 5
+        },
+        {
+          "from": "Marin Pongracic",
+          "to": "Luka Modri\u0107",
+          "count": 5
+        },
+        {
+          "from": "Luka Modri\u0107",
+          "to": "Jo\u0161ko Gvardiol",
+          "count": 5
+        },
+        {
+          "from": "Mateo Kova\u010di\u0107",
+          "to": "Luka Modri\u0107",
+          "count": 5
+        },
+        {
+          "from": "Mateo Kova\u010di\u0107",
+          "to": "Marcelo Brozovi\u0107",
+          "count": 5
+        },
+        {
+          "from": "Mateo Kova\u010di\u0107",
+          "to": "Mario Pa\u0161ali\u0107",
+          "count": 4
+        },
+        {
+          "from": "Mateo Kova\u010di\u0107",
+          "to": "Jo\u0161ko Gvardiol",
+          "count": 4
+        },
+        {
+          "from": "Marin Pongracic",
+          "to": "Andrej Kramari\u0107",
+          "count": 4
+        },
+        {
+          "from": "Marcelo Brozovi\u0107",
+          "to": "Josip \u0160utalo",
+          "count": 4
+        },
+        {
+          "from": "Mateo Kova\u010di\u0107",
+          "to": "Josip \u0160utalo",
+          "count": 4
+        },
+        {
+          "from": "Luka Su\u010di\u0107",
+          "to": "Josip \u0160utalo",
+          "count": 4
+        },
+        {
+          "from": "Josip \u0160utalo",
+          "to": "Marcelo Brozovi\u0107",
+          "count": 4
+        },
+        {
+          "from": "Marin Pongracic",
+          "to": "Mateo Kova\u010di\u0107",
+          "count": 4
+        },
+        {
+          "from": "Dominik Livakovi\u0107",
+          "to": "Marcelo Brozovi\u0107",
+          "count": 4
+        },
+        {
+          "from": "Andrej Kramari\u0107",
+          "to": "Luka Modri\u0107",
+          "count": 3
+        },
+        {
+          "from": "Luka Modri\u0107",
+          "to": "Josip \u0160utalo",
+          "count": 3
+        },
+        {
+          "from": "Marcelo Brozovi\u0107",
+          "to": "Dominik Livakovi\u0107",
+          "count": 3
+        },
+        {
+          "from": "Dominik Livakovi\u0107",
+          "to": "Josip \u0160utalo",
+          "count": 3
+        },
+        {
+          "from": "Josip \u0160utalo",
+          "to": "Luka Modri\u0107",
+          "count": 3
+        },
+        {
+          "from": "Andrej Kramari\u0107",
+          "to": "Mateo Kova\u010di\u0107",
+          "count": 3
+        },
+        {
+          "from": "Mateo Kova\u010di\u0107",
+          "to": "Marin Pongracic",
+          "count": 3
+        },
+        {
+          "from": "Josip \u0160utalo",
+          "to": "Dominik Livakovi\u0107",
+          "count": 3
+        },
+        {
+          "from": "Dominik Livakovi\u0107",
+          "to": "Marin Pongracic",
+          "count": 3
+        },
+        {
+          "from": "Andrej Kramari\u0107",
+          "to": "Marcelo Brozovi\u0107",
+          "count": 3
+        },
+        {
+          "from": "Josip \u0160utalo",
+          "to": "Luka Su\u010di\u0107",
+          "count": 3
+        },
+        {
+          "from": "Marcelo Brozovi\u0107",
+          "to": "Andrej Kramari\u0107",
+          "count": 3
+        },
+        {
+          "from": "Andrej Kramari\u0107",
+          "to": "Jo\u0161ko Gvardiol",
+          "count": 3
+        },
+        {
+          "from": "Luka Su\u010di\u0107",
+          "to": "Josip Stani\u0161i\u0107",
+          "count": 3
+        },
+        {
+          "from": "Jo\u0161ko Gvardiol",
+          "to": "Dominik Livakovi\u0107",
+          "count": 3
+        },
+        {
+          "from": "Luka Su\u010di\u0107",
+          "to": "Andrej Kramari\u0107",
+          "count": 3
+        },
+        {
+          "from": "Marcelo Brozovi\u0107",
+          "to": "Luka Modri\u0107",
+          "count": 3
+        },
+        {
+          "from": "Luka Su\u010di\u0107",
+          "to": "Marcelo Brozovi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Mario Pa\u0161ali\u0107",
+          "to": "Mateo Kova\u010di\u0107",
+          "count": 2
+        },
+        {
+          "from": "Luka Su\u010di\u0107",
+          "to": "Marin Pongracic",
+          "count": 2
+        },
+        {
+          "from": "Marin Pongracic",
+          "to": "Mario Pa\u0161ali\u0107",
+          "count": 2
+        },
+        {
+          "from": "Marcelo Brozovi\u0107",
+          "to": "Jo\u0161ko Gvardiol",
+          "count": 2
+        },
+        {
+          "from": "Jo\u0161ko Gvardiol",
+          "to": "Josip Stani\u0161i\u0107",
+          "count": 2
+        },
+        {
+          "from": "Marin Pongracic",
+          "to": "Josip Stani\u0161i\u0107",
+          "count": 2
+        },
+        {
+          "from": "Mario Pa\u0161ali\u0107",
+          "to": "Jo\u0161ko Gvardiol",
+          "count": 2
+        },
+        {
+          "from": "Jo\u0161ko Gvardiol",
+          "to": "Luka Modri\u0107",
+          "count": 2
+        },
+        {
+          "from": "Jo\u0161ko Gvardiol",
+          "to": "Luka Su\u010di\u0107",
+          "count": 2
+        },
+        {
+          "from": "Luka Su\u010di\u0107",
+          "to": "Mateo Kova\u010di\u0107",
+          "count": 2
+        },
+        {
+          "from": "Luka Modri\u0107",
+          "to": "Marcelo Brozovi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Luka Su\u010di\u0107",
+          "to": "Jo\u0161ko Gvardiol",
+          "count": 2
+        },
+        {
+          "from": "Mateo Kova\u010di\u0107",
+          "to": "Luka Su\u010di\u0107",
+          "count": 2
+        },
+        {
+          "from": "Luka Modri\u0107",
+          "to": "Mateo Kova\u010di\u0107",
+          "count": 2
+        },
+        {
+          "from": "Luka Su\u010di\u0107",
+          "to": "Mario Pa\u0161ali\u0107",
+          "count": 2
+        },
+        {
+          "from": "Marin Pongracic",
+          "to": "Dominik Livakovi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Marin Pongracic",
+          "to": "Luka Su\u010di\u0107",
+          "count": 2
+        },
+        {
+          "from": "Mario Pa\u0161ali\u0107",
+          "to": "Andrej Kramari\u0107",
+          "count": 1
+        },
+        {
+          "from": "Mario Pa\u0161ali\u0107",
+          "to": "Marin Pongracic",
+          "count": 1
+        },
+        {
+          "from": "Dominik Livakovi\u0107",
+          "to": "Luka Modri\u0107",
+          "count": 1
+        },
+        {
+          "from": "Mateo Kova\u010di\u0107",
+          "to": "Andrej Kramari\u0107",
+          "count": 1
+        },
+        {
+          "from": "Josip Stani\u0161i\u0107",
+          "to": "Dominik Livakovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Dominik Livakovi\u0107",
+          "to": "Jo\u0161ko Gvardiol",
+          "count": 1
+        },
+        {
+          "from": "Mario Pa\u0161ali\u0107",
+          "to": "Josip Stani\u0161i\u0107",
+          "count": 1
+        },
+        {
+          "from": "Dominik Livakovi\u0107",
+          "to": "Josip Stani\u0161i\u0107",
+          "count": 1
+        },
+        {
+          "from": "Mateo Kova\u010di\u0107",
+          "to": "Josip Stani\u0161i\u0107",
+          "count": 1
+        },
+        {
+          "from": "Andrej Kramari\u0107",
+          "to": "Josip Stani\u0161i\u0107",
+          "count": 1
+        },
+        {
+          "from": "Jo\u0161ko Gvardiol",
+          "to": "Andrej Kramari\u0107",
+          "count": 1
+        },
+        {
+          "from": "Josip \u0160utalo",
+          "to": "Mateo Kova\u010di\u0107",
+          "count": 1
+        },
+        {
+          "from": "Luka Modri\u0107",
+          "to": "Mario Pa\u0161ali\u0107",
+          "count": 1
+        },
+        {
+          "from": "Marin Pongracic",
+          "to": "Marcelo Brozovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Luka Modri\u0107",
+          "to": "Andrej Kramari\u0107",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "label": "45'\u201369'",
+      "nodes": [
+        {
+          "player": "Andrej Kramari\u0107",
+          "display_name": "Andrej Kramari\u0107",
+          "x": 67.62,
+          "y": 14.4,
+          "passes": 5
+        },
+        {
+          "player": "Ante Budimir",
+          "display_name": "Ante Budimir",
+          "x": 107.8,
+          "y": 55.2,
+          "passes": 1
+        },
+        {
+          "player": "Dominik Livakovi\u0107",
+          "display_name": "Dominik Livakovi\u0107",
+          "x": 10.12,
+          "y": 40.28,
+          "passes": 5
+        },
+        {
+          "player": "Josip Stani\u0161i\u0107",
+          "display_name": "Josip Stani\u0161i\u0107",
+          "x": 59.4,
+          "y": 69.25,
+          "passes": 12
+        },
+        {
+          "player": "Josip \u0160utalo",
+          "display_name": "Josip \u0160utalo",
+          "x": 37.89,
+          "y": 52.45,
+          "passes": 15
+        },
+        {
+          "player": "Jo\u0161ko Gvardiol",
+          "display_name": "Jo\u0161ko Gvardiol",
+          "x": 51.11,
+          "y": 12.06,
+          "passes": 7
+        },
+        {
+          "player": "Luka Modri\u0107",
+          "display_name": "Luka Modri\u0107",
+          "x": 81.41,
+          "y": 47.05,
+          "passes": 8
+        },
+        {
+          "player": "Luka Su\u010di\u0107",
+          "display_name": "Luka Su\u010di\u0107",
+          "x": 78.88,
+          "y": 64.4,
+          "passes": 5
+        },
+        {
+          "player": "Marcelo Brozovi\u0107",
+          "display_name": "Marcelo Brozovi\u0107",
+          "x": 54.73,
+          "y": 60.79,
+          "passes": 8
+        },
+        {
+          "player": "Marin Pongracic",
+          "display_name": "Marin Pongracic",
+          "x": 47.93,
+          "y": 27.26,
+          "passes": 12
+        },
+        {
+          "player": "Mateo Kova\u010di\u0107",
+          "display_name": "Mateo Kova\u010di\u0107",
+          "x": 51.25,
+          "y": 34.3,
+          "passes": 2
+        }
+      ],
+      "edges": [
+        {
+          "from": "Josip \u0160utalo",
+          "to": "Marin Pongracic",
+          "count": 6
+        },
+        {
+          "from": "Josip \u0160utalo",
+          "to": "Josip Stani\u0161i\u0107",
+          "count": 5
+        },
+        {
+          "from": "Josip Stani\u0161i\u0107",
+          "to": "Luka Su\u010di\u0107",
+          "count": 4
+        },
+        {
+          "from": "Jo\u0161ko Gvardiol",
+          "to": "Marin Pongracic",
+          "count": 3
+        },
+        {
+          "from": "Josip Stani\u0161i\u0107",
+          "to": "Marcelo Brozovi\u0107",
+          "count": 3
+        },
+        {
+          "from": "Luka Modri\u0107",
+          "to": "Josip Stani\u0161i\u0107",
+          "count": 3
+        },
+        {
+          "from": "Marcelo Brozovi\u0107",
+          "to": "Josip \u0160utalo",
+          "count": 3
+        },
+        {
+          "from": "Josip Stani\u0161i\u0107",
+          "to": "Josip \u0160utalo",
+          "count": 2
+        },
+        {
+          "from": "Marin Pongracic",
+          "to": "Jo\u0161ko Gvardiol",
+          "count": 2
+        },
+        {
+          "from": "Andrej Kramari\u0107",
+          "to": "Marin Pongracic",
+          "count": 2
+        },
+        {
+          "from": "Josip \u0160utalo",
+          "to": "Dominik Livakovi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Marcelo Brozovi\u0107",
+          "to": "Josip Stani\u0161i\u0107",
+          "count": 2
+        },
+        {
+          "from": "Jo\u0161ko Gvardiol",
+          "to": "Ante Budimir",
+          "count": 2
+        },
+        {
+          "from": "Luka Su\u010di\u0107",
+          "to": "Luka Modri\u0107",
+          "count": 2
+        },
+        {
+          "from": "Luka Modri\u0107",
+          "to": "Andrej Kramari\u0107",
+          "count": 2
+        },
+        {
+          "from": "Marin Pongracic",
+          "to": "Josip Stani\u0161i\u0107",
+          "count": 2
+        },
+        {
+          "from": "Marin Pongracic",
+          "to": "Mateo Kova\u010di\u0107",
+          "count": 2
+        },
+        {
+          "from": "Josip \u0160utalo",
+          "to": "Marcelo Brozovi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Marin Pongracic",
+          "to": "Andrej Kramari\u0107",
+          "count": 2
+        },
+        {
+          "from": "Josip Stani\u0161i\u0107",
+          "to": "Luka Modri\u0107",
+          "count": 2
+        },
+        {
+          "from": "Jo\u0161ko Gvardiol",
+          "to": "Andrej Kramari\u0107",
+          "count": 1
+        },
+        {
+          "from": "Marin Pongracic",
+          "to": "Mario Pa\u0161ali\u0107",
+          "count": 1
+        },
+        {
+          "from": "Dominik Livakovi\u0107",
+          "to": "Andrej Kramari\u0107",
+          "count": 1
+        },
+        {
+          "from": "Andrej Kramari\u0107",
+          "to": "Jo\u0161ko Gvardiol",
+          "count": 1
+        },
+        {
+          "from": "Marin Pongracic",
+          "to": "Josip \u0160utalo",
+          "count": 1
+        },
+        {
+          "from": "Ante Budimir",
+          "to": "Luka Su\u010di\u0107",
+          "count": 1
+        },
+        {
+          "from": "Luka Modri\u0107",
+          "to": "Jo\u0161ko Gvardiol",
+          "count": 1
+        },
+        {
+          "from": "Luka Su\u010di\u0107",
+          "to": "Marin Pongracic",
+          "count": 1
+        },
+        {
+          "from": "Mateo Kova\u010di\u0107",
+          "to": "Josip \u0160utalo",
+          "count": 1
+        },
+        {
+          "from": "Andrej Kramari\u0107",
+          "to": "Josip \u0160utalo",
+          "count": 1
+        },
+        {
+          "from": "Marcelo Brozovi\u0107",
+          "to": "Luka Modri\u0107",
+          "count": 1
+        },
+        {
+          "from": "Luka Modri\u0107",
+          "to": "Marcelo Brozovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Marcelo Brozovi\u0107",
+          "to": "Mateo Kova\u010di\u0107",
+          "count": 1
+        },
+        {
+          "from": "Mateo Kova\u010di\u0107",
+          "to": "Marin Pongracic",
+          "count": 1
+        },
+        {
+          "from": "Marin Pongracic",
+          "to": "Luka Modri\u0107",
+          "count": 1
+        },
+        {
+          "from": "Luka Modri\u0107",
+          "to": "Josip \u0160utalo",
+          "count": 1
+        },
+        {
+          "from": "Jo\u0161ko Gvardiol",
+          "to": "Luka Modri\u0107",
+          "count": 1
+        },
+        {
+          "from": "Marin Pongracic",
+          "to": "Marcelo Brozovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Marcelo Brozovi\u0107",
+          "to": "Andrej Kramari\u0107",
+          "count": 1
+        },
+        {
+          "from": "Andrej Kramari\u0107",
+          "to": "Josip Stani\u0161i\u0107",
+          "count": 1
+        },
+        {
+          "from": "Luka Su\u010di\u0107",
+          "to": "Ante Budimir",
+          "count": 1
+        },
+        {
+          "from": "Dominik Livakovi\u0107",
+          "to": "Josip \u0160utalo",
+          "count": 1
+        },
+        {
+          "from": "Dominik Livakovi\u0107",
+          "to": "Marcelo Brozovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Luka Su\u010di\u0107",
+          "to": "Josip \u0160utalo",
+          "count": 1
+        },
+        {
+          "from": "Josip Stani\u0161i\u0107",
+          "to": "Dominik Livakovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Dominik Livakovi\u0107",
+          "to": "Luka Modri\u0107",
+          "count": 1
+        },
+        {
+          "from": "Dominik Livakovi\u0107",
+          "to": "Josip Stani\u0161i\u0107",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "label": "69'\u201380'",
+      "nodes": [
+        {
+          "player": "Dominik Livakovi\u0107",
+          "display_name": "Dominik Livakovi\u0107",
+          "x": 11.4,
+          "y": 20.9,
+          "passes": 1
+        },
+        {
+          "player": "Ivan Peri\u0161i\u0107",
+          "display_name": "Ivan Peri\u0161i\u0107",
+          "x": 84.8,
+          "y": 28.4,
+          "passes": 1
+        },
+        {
+          "player": "Josip Stani\u0161i\u0107",
+          "display_name": "Josip Stani\u0161i\u0107",
+          "x": 70.15,
+          "y": 68.1,
+          "passes": 2
+        },
+        {
+          "player": "Josip \u0160utalo",
+          "display_name": "Josip \u0160utalo",
+          "x": 60.8,
+          "y": 45.3,
+          "passes": 1
+        },
+        {
+          "player": "Jo\u0161ko Gvardiol",
+          "display_name": "Jo\u0161ko Gvardiol",
+          "x": 68.55,
+          "y": 12.15,
+          "passes": 2
+        },
+        {
+          "player": "Luka Ivanu\u0161ec",
+          "display_name": "Luka Ivanu\u0161ec",
+          "x": 43.7,
+          "y": 36.85,
+          "passes": 2
+        },
+        {
+          "player": "Luka Modri\u0107",
+          "display_name": "Luka Modri\u0107",
+          "x": 77.25,
+          "y": 44.35,
+          "passes": 2
+        },
+        {
+          "player": "Marcelo Brozovi\u0107",
+          "display_name": "Marcelo Brozovi\u0107",
+          "x": 63.25,
+          "y": 39.85,
+          "passes": 2
+        }
+      ],
+      "edges": [
+        {
+          "from": "Luka Ivanu\u0161ec",
+          "to": "Andrej Kramari\u0107",
+          "count": 1
+        },
+        {
+          "from": "Luka Modri\u0107",
+          "to": "Andrej Kramari\u0107",
+          "count": 1
+        },
+        {
+          "from": "Dominik Livakovi\u0107",
+          "to": "Ante Budimir",
+          "count": 1
+        },
+        {
+          "from": "Josip Stani\u0161i\u0107",
+          "to": "Luka Ivanu\u0161ec",
+          "count": 1
+        },
+        {
+          "from": "Ivan Peri\u0161i\u0107",
+          "to": "Jo\u0161ko Gvardiol",
+          "count": 1
+        },
+        {
+          "from": "Jo\u0161ko Gvardiol",
+          "to": "Marcelo Brozovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Marcelo Brozovi\u0107",
+          "to": "Jo\u0161ko Gvardiol",
+          "count": 1
+        },
+        {
+          "from": "Jo\u0161ko Gvardiol",
+          "to": "Luka Ivanu\u0161ec",
+          "count": 1
+        },
+        {
+          "from": "Luka Ivanu\u0161ec",
+          "to": "Josip \u0160utalo",
+          "count": 1
+        },
+        {
+          "from": "Josip \u0160utalo",
+          "to": "Josip Stani\u0161i\u0107",
+          "count": 1
+        },
+        {
+          "from": "Josip Stani\u0161i\u0107",
+          "to": "Marcelo Brozovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Marcelo Brozovi\u0107",
+          "to": "Luka Modri\u0107",
+          "count": 1
+        },
+        {
+          "from": "Luka Modri\u0107",
+          "to": "Marcelo Brozovi\u0107",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "label": "80'\u201389'",
+      "nodes": [
+        {
+          "player": "Andrej Kramari\u0107",
+          "display_name": "Andrej Kramari\u0107",
+          "x": 95.05,
+          "y": 72.55,
+          "passes": 2
+        },
+        {
+          "player": "Josip Stani\u0161i\u0107",
+          "display_name": "Josip Stani\u0161i\u0107",
+          "x": 92.58,
+          "y": 75.5,
+          "passes": 4
+        },
+        {
+          "player": "Josip \u0160utalo",
+          "display_name": "Josip \u0160utalo",
+          "x": 41.4,
+          "y": 54.8,
+          "passes": 1
+        },
+        {
+          "player": "Jo\u0161ko Gvardiol",
+          "display_name": "Jo\u0161ko Gvardiol",
+          "x": 87.7,
+          "y": 0.7,
+          "passes": 3
+        },
+        {
+          "player": "Lovro Majer",
+          "display_name": "Lovro Majer",
+          "x": 84.14,
+          "y": 41.64,
+          "passes": 5
+        },
+        {
+          "player": "Luka Ivanu\u0161ec",
+          "display_name": "Luka Ivanu\u0161ec",
+          "x": 62.9,
+          "y": 31.37,
+          "passes": 3
+        },
+        {
+          "player": "Marcelo Brozovi\u0107",
+          "display_name": "Marcelo Brozovi\u0107",
+          "x": 70.2,
+          "y": 45.33,
+          "passes": 4
+        },
+        {
+          "player": "Marin Pongracic",
+          "display_name": "Marin Pongracic",
+          "x": 39.7,
+          "y": 25.8,
+          "passes": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "Jo\u0161ko Gvardiol",
+          "to": "Lovro Majer",
+          "count": 2
+        },
+        {
+          "from": "Andrej Kramari\u0107",
+          "to": "Josip Stani\u0161i\u0107",
+          "count": 2
+        },
+        {
+          "from": "Josip Stani\u0161i\u0107",
+          "to": "Lovro Majer",
+          "count": 2
+        },
+        {
+          "from": "Lovro Majer",
+          "to": "Josip Stani\u0161i\u0107",
+          "count": 2
+        },
+        {
+          "from": "Josip Stani\u0161i\u0107",
+          "to": "Marcelo Brozovi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Lovro Majer",
+          "to": "Marcelo Brozovi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Luka Ivanu\u0161ec",
+          "to": "Marcelo Brozovi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Lovro Majer",
+          "to": "Jo\u0161ko Gvardiol",
+          "count": 1
+        },
+        {
+          "from": "Marcelo Brozovi\u0107",
+          "to": "Josip \u0160utalo",
+          "count": 1
+        },
+        {
+          "from": "Josip \u0160utalo",
+          "to": "Dominik Livakovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Luka Ivanu\u0161ec",
+          "to": "Lovro Majer",
+          "count": 1
+        },
+        {
+          "from": "Marcelo Brozovi\u0107",
+          "to": "Ivan Peri\u0161i\u0107",
+          "count": 1
+        },
+        {
+          "from": "Jo\u0161ko Gvardiol",
+          "to": "Ante Budimir",
+          "count": 1
+        },
+        {
+          "from": "Marin Pongracic",
+          "to": "Luka Ivanu\u0161ec",
+          "count": 1
+        },
+        {
+          "from": "Marcelo Brozovi\u0107",
+          "to": "Andrej Kramari\u0107",
+          "count": 1
+        },
+        {
+          "from": "Marcelo Brozovi\u0107",
+          "to": "Josip Stani\u0161i\u0107",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "label": "89'\u2013FT",
+      "nodes": [
+        {
+          "player": "Ante Budimir",
+          "display_name": "Ante Budimir",
+          "x": 94.95,
+          "y": 26.25,
+          "passes": 2
+        },
+        {
+          "player": "Ivan Peri\u0161i\u0107",
+          "display_name": "Ivan Peri\u0161i\u0107",
+          "x": 75.8,
+          "y": 4.7,
+          "passes": 1
+        },
+        {
+          "player": "Josip Juranovi\u0107",
+          "display_name": "Josip Juranovi\u0107",
+          "x": 94.87,
+          "y": 53.5,
+          "passes": 3
+        },
+        {
+          "player": "Josip Stani\u0161i\u0107",
+          "display_name": "Josip Stani\u0161i\u0107",
+          "x": 66.4,
+          "y": 66.8,
+          "passes": 2
+        },
+        {
+          "player": "Josip \u0160utalo",
+          "display_name": "Josip \u0160utalo",
+          "x": 15.9,
+          "y": 52.9,
+          "passes": 1
+        },
+        {
+          "player": "Jo\u0161ko Gvardiol",
+          "display_name": "Jo\u0161ko Gvardiol",
+          "x": 49.5,
+          "y": 27.3,
+          "passes": 3
+        },
+        {
+          "player": "Lovro Majer",
+          "display_name": "Lovro Majer",
+          "x": 89.12,
+          "y": 18.43,
+          "passes": 4
+        },
+        {
+          "player": "Luka Ivanu\u0161ec",
+          "display_name": "Luka Ivanu\u0161ec",
+          "x": 92.07,
+          "y": 7.43,
+          "passes": 3
+        },
+        {
+          "player": "Marcelo Brozovi\u0107",
+          "display_name": "Marcelo Brozovi\u0107",
+          "x": 70.53,
+          "y": 21.27,
+          "passes": 4
+        },
+        {
+          "player": "Marin Pongracic",
+          "display_name": "Marin Pongracic",
+          "x": 55.95,
+          "y": 9.0,
+          "passes": 2
+        }
+      ],
+      "edges": [
+        {
+          "from": "Marcelo Brozovi\u0107",
+          "to": "Luka Ivanu\u0161ec",
+          "count": 2
+        },
+        {
+          "from": "Jo\u0161ko Gvardiol",
+          "to": "Josip Juranovi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Luka Ivanu\u0161ec",
+          "to": "Lovro Majer",
+          "count": 2
+        },
+        {
+          "from": "Josip Stani\u0161i\u0107",
+          "to": "Josip \u0160utalo",
+          "count": 1
+        },
+        {
+          "from": "Josip \u0160utalo",
+          "to": "Josip Stani\u0161i\u0107",
+          "count": 1
+        },
+        {
+          "from": "Marin Pongracic",
+          "to": "Dominik Livakovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Marin Pongracic",
+          "to": "Marcelo Brozovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Marcelo Brozovi\u0107",
+          "to": "Lovro Majer",
+          "count": 1
+        },
+        {
+          "from": "Lovro Majer",
+          "to": "Ivan Peri\u0161i\u0107",
+          "count": 1
+        },
+        {
+          "from": "Ivan Peri\u0161i\u0107",
+          "to": "Luka Ivanu\u0161ec",
+          "count": 1
+        },
+        {
+          "from": "Ante Budimir",
+          "to": "Luka Ivanu\u0161ec",
+          "count": 1
+        },
+        {
+          "from": "Luka Ivanu\u0161ec",
+          "to": "Ante Budimir",
+          "count": 1
+        },
+        {
+          "from": "Lovro Majer",
+          "to": "Jo\u0161ko Gvardiol",
+          "count": 1
+        },
+        {
+          "from": "Jo\u0161ko Gvardiol",
+          "to": "Lovro Majer",
+          "count": 1
+        },
+        {
+          "from": "Lovro Majer",
+          "to": "Josip Juranovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Josip Juranovi\u0107",
+          "to": "Lovro Majer",
+          "count": 1
+        },
+        {
+          "from": "Lovro Majer",
+          "to": "Josip Stani\u0161i\u0107",
+          "count": 1
+        },
+        {
+          "from": "Josip Stani\u0161i\u0107",
+          "to": "Josip Juranovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Josip Juranovi\u0107",
+          "to": "Josip Stani\u0161i\u0107",
+          "count": 1
+        },
+        {
+          "from": "Ante Budimir",
+          "to": "Ivan Peri\u0161i\u0107",
+          "count": 1
+        },
+        {
+          "from": "Josip Juranovi\u0107",
+          "to": "Luka Ivanu\u0161ec",
+          "count": 1
+        },
+        {
+          "from": "Marcelo Brozovi\u0107",
+          "to": "Ivan Peri\u0161i\u0107",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "substitutions": [
+    {
+      "minute": 45,
+      "player_off": "Mario Pa\u0161ali\u0107",
+      "player_on": "Ante Budimir"
+    },
+    {
+      "minute": 69,
+      "player_off": "Luka Su\u010di\u0107",
+      "player_on": "Ivan Peri\u0161i\u0107"
+    },
+    {
+      "minute": 69,
+      "player_off": "Mateo Kova\u010di\u0107",
+      "player_on": "Luka Ivanu\u0161ec"
+    },
+    {
+      "minute": 80,
+      "player_off": "Luka Modri\u0107",
+      "player_on": "Lovro Majer"
+    },
+    {
+      "minute": 89,
+      "player_off": "Andrej Kramari\u0107",
+      "player_on": "Josip Juranovi\u0107"
+    }
+  ],
+  "metadata": {
+    "match_id": 3930178,
+    "team": "Croatia",
+    "filter": "completed passes, per substitution window",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Croatia vs Italy"
+  }
+}

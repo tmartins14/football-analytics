@@ -1,0 +1,373 @@
+{
+  "goals": [
+    {
+      "window": {
+        "anchor_event_id": "8f51a327-7a86-40ab-802d-5e5ba7f74caa",
+        "start_event_id": "f052b3ef-3de8-42f2-ae0b-9db39cd6fd69",
+        "end_event_id": "8f51a327-7a86-40ab-802d-5e5ba7f74caa",
+        "period": 1,
+        "window_seconds": 10.0,
+        "t_span_seconds": 11.232
+      },
+      "frames": [
+        {
+          "event_id": "f052b3ef-3de8-42f2-ae0b-9db39cd6fd69",
+          "t_seconds": 0.0,
+          "team": "Switzerland",
+          "event_type": "Duel",
+          "ball_x": 67.3,
+          "ball_y": 52.8,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Fabian Rieder",
+          "outcome": null
+        },
+        {
+          "event_id": "5f5d1891-96f6-40c4-9083-d7d8efaf1b84",
+          "t_seconds": 0.0,
+          "team": "Switzerland",
+          "event_type": "Carry",
+          "ball_x": 67.3,
+          "ball_y": 52.8,
+          "ball_end_x": 82.3,
+          "ball_end_y": 37.0,
+          "actor": "Fabian Rieder",
+          "outcome": null
+        },
+        {
+          "event_id": "01ebaf5a-a998-4e90-b7ab-368afed42f3a",
+          "t_seconds": 3.249,
+          "team": "Switzerland",
+          "event_type": "Pass",
+          "ball_x": 82.3,
+          "ball_y": 37.0,
+          "ball_end_x": 90.7,
+          "ball_end_y": 24.7,
+          "actor": "Fabian Rieder",
+          "outcome": null
+        },
+        {
+          "event_id": "cfe2df83-9e89-4b39-aeb8-6a418f66d4be",
+          "t_seconds": 4.967,
+          "team": "Switzerland",
+          "event_type": "Carry",
+          "ball_x": 90.7,
+          "ball_y": 24.7,
+          "ball_end_x": 90.7,
+          "ball_end_y": 24.7,
+          "actor": "Dan Ndoye",
+          "outcome": null
+        },
+        {
+          "event_id": "1c03b923-18f2-4801-86e9-72784a85f430",
+          "t_seconds": 5.474,
+          "team": "Switzerland",
+          "event_type": "Pass",
+          "ball_x": 90.7,
+          "ball_y": 24.7,
+          "ball_end_x": 90.4,
+          "ball_end_y": 21.4,
+          "actor": "Dan Ndoye",
+          "outcome": "Incomplete"
+        },
+        {
+          "event_id": "d1500a05-5fdc-4e99-aa63-80991b885b81",
+          "t_seconds": 5.732,
+          "team": "Germany",
+          "event_type": "Interception",
+          "ball_x": 29.7,
+          "ball_y": 58.7,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Joshua Kimmich",
+          "outcome": null
+        },
+        {
+          "event_id": "ef2d5fac-a411-49c4-b9f4-b4056ffc1568",
+          "t_seconds": 8.141,
+          "team": "Switzerland",
+          "event_type": "Ball Recovery",
+          "ball_x": 92.8,
+          "ball_y": 16.6,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Fabian Rieder",
+          "outcome": null
+        },
+        {
+          "event_id": "42063b2b-c4ec-4b98-9fac-c15180807bef",
+          "t_seconds": 8.141,
+          "team": "Switzerland",
+          "event_type": "Carry",
+          "ball_x": 92.8,
+          "ball_y": 16.6,
+          "ball_end_x": 94.0,
+          "ball_end_y": 16.6,
+          "actor": "Fabian Rieder",
+          "outcome": null
+        },
+        {
+          "event_id": "87d80c6d-b222-49f0-aa6d-dc4522902d2c",
+          "t_seconds": 8.39,
+          "team": "Germany",
+          "event_type": "Pressure",
+          "ball_x": 30.0,
+          "ball_y": 63.5,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Florian Wirtz",
+          "outcome": null
+        },
+        {
+          "event_id": "811c22a2-f737-40ec-8f88-efdd03373b9c",
+          "t_seconds": 8.853,
+          "team": "Switzerland",
+          "event_type": "Pass",
+          "ball_x": 94.0,
+          "ball_y": 16.6,
+          "ball_end_x": 105.9,
+          "ball_end_y": 20.6,
+          "actor": "Fabian Rieder",
+          "outcome": null
+        },
+        {
+          "event_id": "c02507ff-7d41-4b71-9be2-ef7c24466ead",
+          "t_seconds": 9.805,
+          "team": "Switzerland",
+          "event_type": "Carry",
+          "ball_x": 105.9,
+          "ball_y": 20.6,
+          "ball_end_x": 106.5,
+          "ball_end_y": 20.8,
+          "actor": "Remo Freuler",
+          "outcome": null
+        },
+        {
+          "event_id": "5b650107-742a-4c0b-86ce-6715599dbc27",
+          "t_seconds": 10.511,
+          "team": "Switzerland",
+          "event_type": "Pass",
+          "ball_x": 106.5,
+          "ball_y": 20.8,
+          "ball_end_x": 113.7,
+          "ball_end_y": 35.0,
+          "actor": "Remo Freuler",
+          "outcome": null
+        },
+        {
+          "event_id": "b1c1a949-bc90-42d7-a0da-a78216902a4f",
+          "t_seconds": 10.792,
+          "team": "Germany",
+          "event_type": "Pressure",
+          "ball_x": 9.4,
+          "ball_y": 44.9,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Jonathan Tah",
+          "outcome": null
+        },
+        {
+          "event_id": "8f51a327-7a86-40ab-802d-5e5ba7f74caa",
+          "t_seconds": 11.232,
+          "team": "Switzerland",
+          "event_type": "Shot",
+          "ball_x": 113.7,
+          "ball_y": 35.0,
+          "ball_end_x": 120.0,
+          "ball_end_y": 37.1,
+          "actor": "Dan Ndoye",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "8f51a327-7a86-40ab-802d-5e5ba7f74caa",
+          "minute": 27,
+          "second": 52,
+          "scorer": "Dan Ndoye",
+          "team": "Switzerland"
+        }
+      },
+      "metadata": {
+        "match_id": 3930176,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Switzerland vs Germany"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "3e2f7464-3fab-4224-8946-3999d09e0769",
+        "start_event_id": "48ca8f87-ee82-4f69-9f35-b54a3e058c07",
+        "end_event_id": "3e2f7464-3fab-4224-8946-3999d09e0769",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 11.558
+      },
+      "frames": [
+        {
+          "event_id": "48ca8f87-ee82-4f69-9f35-b54a3e058c07",
+          "t_seconds": 0.0,
+          "team": "Germany",
+          "event_type": "Pass",
+          "ball_x": 92.3,
+          "ball_y": 56.2,
+          "ball_end_x": 86.3,
+          "ball_end_y": 61.6,
+          "actor": "Leroy San\u00e9",
+          "outcome": null
+        },
+        {
+          "event_id": "a82981a0-fc83-454c-bd89-e65bf0d57540",
+          "t_seconds": 1.912,
+          "team": "Germany",
+          "event_type": "Carry",
+          "ball_x": 86.3,
+          "ball_y": 61.6,
+          "ball_end_x": 86.3,
+          "ball_end_y": 61.6,
+          "actor": "Toni Kroos",
+          "outcome": null
+        },
+        {
+          "event_id": "42bc3128-89c1-4f4a-8560-7987417c7347",
+          "t_seconds": 2.492,
+          "team": "Germany",
+          "event_type": "Pass",
+          "ball_x": 86.3,
+          "ball_y": 61.6,
+          "ball_end_x": 86.0,
+          "ball_end_y": 47.2,
+          "actor": "Toni Kroos",
+          "outcome": null
+        },
+        {
+          "event_id": "b7bc364d-414c-4199-956a-8bce4fbdd6cf",
+          "t_seconds": 3.966,
+          "team": "Switzerland",
+          "event_type": "Pressure",
+          "ball_x": 31.0,
+          "ball_y": 32.4,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Michel Aebischer",
+          "outcome": null
+        },
+        {
+          "event_id": "1a2e4141-206e-4f54-bfe5-e78cf6a7e5a4",
+          "t_seconds": 3.975,
+          "team": "Germany",
+          "event_type": "Carry",
+          "ball_x": 86.0,
+          "ball_y": 47.2,
+          "ball_end_x": 87.7,
+          "ball_end_y": 46.6,
+          "actor": "Leroy San\u00e9",
+          "outcome": null
+        },
+        {
+          "event_id": "72f86a8b-156a-4298-80eb-0d23bc6dc5e8",
+          "t_seconds": 4.334,
+          "team": "Germany",
+          "event_type": "Pass",
+          "ball_x": 87.7,
+          "ball_y": 46.6,
+          "ball_end_x": 82.5,
+          "ball_end_y": 26.7,
+          "actor": "Leroy San\u00e9",
+          "outcome": null
+        },
+        {
+          "event_id": "d82fdbfa-5adb-47b1-a0bf-908743e38e59",
+          "t_seconds": 5.431,
+          "team": "Germany",
+          "event_type": "Carry",
+          "ball_x": 82.5,
+          "ball_y": 26.7,
+          "ball_end_x": 85.3,
+          "ball_end_y": 29.5,
+          "actor": "\u0130lkay G\u00fcndo\u011fan",
+          "outcome": null
+        },
+        {
+          "event_id": "887b10fa-5f19-4669-9ce3-e01cfabb6297",
+          "t_seconds": 6.66,
+          "team": "Germany",
+          "event_type": "Pass",
+          "ball_x": 85.3,
+          "ball_y": 29.5,
+          "ball_end_x": 96.4,
+          "ball_end_y": 7.3,
+          "actor": "\u0130lkay G\u00fcndo\u011fan",
+          "outcome": null
+        },
+        {
+          "event_id": "5981eb78-0193-4afc-b78f-0186d4f275c3",
+          "t_seconds": 8.026,
+          "team": "Germany",
+          "event_type": "Carry",
+          "ball_x": 96.4,
+          "ball_y": 7.3,
+          "ball_end_x": 101.3,
+          "ball_end_y": 8.3,
+          "actor": "David Raum",
+          "outcome": null
+        },
+        {
+          "event_id": "e0fcdcfe-d045-444c-b929-cd19e2f715de",
+          "t_seconds": 9.928,
+          "team": "Germany",
+          "event_type": "Pass",
+          "ball_x": 101.3,
+          "ball_y": 8.3,
+          "ball_end_x": 113.6,
+          "ball_end_y": 41.4,
+          "actor": "David Raum",
+          "outcome": null
+        },
+        {
+          "event_id": "bd73cb8f-203e-40e5-9262-789ccd8a0f81",
+          "t_seconds": 11.558,
+          "team": "Switzerland",
+          "event_type": "Duel",
+          "ball_x": 6.5,
+          "ball_y": 38.7,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Ricardo Rodr\u00edguez",
+          "outcome": null
+        },
+        {
+          "event_id": "3e2f7464-3fab-4224-8946-3999d09e0769",
+          "t_seconds": 11.558,
+          "team": "Germany",
+          "event_type": "Shot",
+          "ball_x": 113.6,
+          "ball_y": 41.4,
+          "ball_end_x": 120.0,
+          "ball_end_y": 36.6,
+          "actor": "Niclas F\u00fcllkrug",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "3e2f7464-3fab-4224-8946-3999d09e0769",
+          "minute": 91,
+          "second": 6,
+          "scorer": "Niclas F\u00fcllkrug",
+          "team": "Germany"
+        }
+      },
+      "metadata": {
+        "match_id": 3930176,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Switzerland vs Germany"
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3930176,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Switzerland vs Germany"
+  }
+}

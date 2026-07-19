@@ -1,0 +1,423 @@
+{
+  "goals": [
+    {
+      "window": {
+        "anchor_event_id": "cc32f902-7e4b-4df8-981b-0c7fbe4b7681",
+        "start_event_id": "2e729340-50e4-4bce-ba3c-66e83af71bcd",
+        "end_event_id": "cc32f902-7e4b-4df8-981b-0c7fbe4b7681",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 12.278
+      },
+      "frames": [
+        {
+          "event_id": "2e729340-50e4-4bce-ba3c-66e83af71bcd",
+          "t_seconds": 2.761,
+          "team": "Spain",
+          "event_type": "Pass",
+          "ball_x": 48.6,
+          "ball_y": 32.5,
+          "ball_end_x": 69.8,
+          "ball_end_y": 53.0,
+          "actor": "Aymeric Laporte",
+          "outcome": null
+        },
+        {
+          "event_id": "8b8d3d29-e64a-4209-92ae-194389a74619",
+          "t_seconds": 4.314,
+          "team": "Spain",
+          "event_type": "Carry",
+          "ball_x": 69.8,
+          "ball_y": 53.0,
+          "ball_end_x": 69.6,
+          "ball_end_y": 54.7,
+          "actor": "\u00c1lvaro Morata",
+          "outcome": null
+        },
+        {
+          "event_id": "3c9cfa42-f210-4904-a850-16a97cb48866",
+          "t_seconds": 5.155,
+          "team": "Spain",
+          "event_type": "Pass",
+          "ball_x": 69.6,
+          "ball_y": 54.7,
+          "ball_end_x": 90.8,
+          "ball_end_y": 70.0,
+          "actor": "\u00c1lvaro Morata",
+          "outcome": null
+        },
+        {
+          "event_id": "8404d957-5d26-4b67-8760-95ef4f47fd8a",
+          "t_seconds": 7.392,
+          "team": "Spain",
+          "event_type": "Carry",
+          "ball_x": 90.8,
+          "ball_y": 70.0,
+          "ball_end_x": 103.9,
+          "ball_end_y": 57.7,
+          "actor": "Lamine Yamal",
+          "outcome": null
+        },
+        {
+          "event_id": "2b839e6a-5c58-4a2d-a123-d1b0fb73b341",
+          "t_seconds": 11.296,
+          "team": "Spain",
+          "event_type": "Pass",
+          "ball_x": 103.9,
+          "ball_y": 57.7,
+          "ball_end_x": 103.6,
+          "ball_end_y": 42.7,
+          "actor": "Lamine Yamal",
+          "outcome": null
+        },
+        {
+          "event_id": "cc32f902-7e4b-4df8-981b-0c7fbe4b7681",
+          "t_seconds": 12.278,
+          "team": "Spain",
+          "event_type": "Shot",
+          "ball_x": 103.6,
+          "ball_y": 42.7,
+          "ball_end_x": 120.0,
+          "ball_end_y": 37.2,
+          "actor": "Daniel Olmo",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "cc32f902-7e4b-4df8-981b-0c7fbe4b7681",
+          "minute": 51,
+          "second": 0,
+          "scorer": "Daniel Olmo",
+          "team": "Spain"
+        }
+      },
+      "metadata": {
+        "match_id": 3942226,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Spain vs Germany"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "316e5d5c-eb20-40cc-b9b8-898dd288dc78",
+        "start_event_id": "21738f2f-06de-41f1-a15b-0f58ad60b65a",
+        "end_event_id": "316e5d5c-eb20-40cc-b9b8-898dd288dc78",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 10.277
+      },
+      "frames": [
+        {
+          "event_id": "21738f2f-06de-41f1-a15b-0f58ad60b65a",
+          "t_seconds": 0.0,
+          "team": "Germany",
+          "event_type": "Pass",
+          "ball_x": 91.1,
+          "ball_y": 72.8,
+          "ball_end_x": 105.7,
+          "ball_end_y": 41.9,
+          "actor": "Antonio R\u00fcdiger",
+          "outcome": null
+        },
+        {
+          "event_id": "c6b0f1e3-817a-49ad-8942-2fd0c1bdad56",
+          "t_seconds": 1.409,
+          "team": "Germany",
+          "event_type": "Carry",
+          "ball_x": 105.7,
+          "ball_y": 41.9,
+          "ball_end_x": 105.9,
+          "ball_end_y": 42.7,
+          "actor": "Kai Havertz",
+          "outcome": null
+        },
+        {
+          "event_id": "5d9820ab-3344-4575-a43f-8a7c4d6f981e",
+          "t_seconds": 2.602,
+          "team": "Spain",
+          "event_type": "Pressure",
+          "ball_x": 13.3,
+          "ball_y": 31.9,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Rodri",
+          "outcome": null
+        },
+        {
+          "event_id": "8af31227-89b6-4c0c-9f41-6b00d631a8a6",
+          "t_seconds": 2.736,
+          "team": "Germany",
+          "event_type": "Ball Recovery",
+          "ball_x": 104.3,
+          "ball_y": 47.5,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Florian Wirtz",
+          "outcome": null
+        },
+        {
+          "event_id": "894b7a53-0e26-448f-9f11-6f1a225a8e78",
+          "t_seconds": 2.736,
+          "team": "Germany",
+          "event_type": "Carry",
+          "ball_x": 104.3,
+          "ball_y": 47.5,
+          "ball_end_x": 99.9,
+          "ball_end_y": 49.8,
+          "actor": "Florian Wirtz",
+          "outcome": null
+        },
+        {
+          "event_id": "2b2a8f22-bb61-4100-989a-fc2ced1609bb",
+          "t_seconds": 3.878,
+          "team": "Germany",
+          "event_type": "Pass",
+          "ball_x": 99.9,
+          "ball_y": 49.8,
+          "ball_end_x": 92.2,
+          "ball_end_y": 45.3,
+          "actor": "Florian Wirtz",
+          "outcome": null
+        },
+        {
+          "event_id": "23613326-e351-490e-ad44-76e4408ce9a9",
+          "t_seconds": 4.766,
+          "team": "Germany",
+          "event_type": "Carry",
+          "ball_x": 92.2,
+          "ball_y": 45.3,
+          "ball_end_x": 92.2,
+          "ball_end_y": 45.7,
+          "actor": "Toni Kroos",
+          "outcome": null
+        },
+        {
+          "event_id": "980b535f-4abb-414b-b522-5c5e824413f7",
+          "t_seconds": 4.829,
+          "team": "Germany",
+          "event_type": "Pass",
+          "ball_x": 92.2,
+          "ball_y": 45.7,
+          "ball_end_x": 97.7,
+          "ball_end_y": 23.9,
+          "actor": "Toni Kroos",
+          "outcome": null
+        },
+        {
+          "event_id": "5ad8dac7-f239-4821-a94d-46230bae7cf4",
+          "t_seconds": 6.284,
+          "team": "Germany",
+          "event_type": "Carry",
+          "ball_x": 97.7,
+          "ball_y": 23.9,
+          "ball_end_x": 99.0,
+          "ball_end_y": 21.7,
+          "actor": "Maximilian Mittelst\u00e4dt",
+          "outcome": null
+        },
+        {
+          "event_id": "d64bdfa5-0a37-4728-ab1f-528b78636e72",
+          "t_seconds": 7.102,
+          "team": "Germany",
+          "event_type": "Pass",
+          "ball_x": 99.0,
+          "ball_y": 21.7,
+          "ball_end_x": 116.3,
+          "ball_end_y": 48.2,
+          "actor": "Maximilian Mittelst\u00e4dt",
+          "outcome": null
+        },
+        {
+          "event_id": "d47604ce-f53c-4d7b-a295-e710c6b7cd7e",
+          "t_seconds": 9.374,
+          "team": "Spain",
+          "event_type": "Duel",
+          "ball_x": 3.8,
+          "ball_y": 31.9,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Marc Cucurella",
+          "outcome": null
+        },
+        {
+          "event_id": "e296f9a8-0157-435d-9f03-9cd88d3f444d",
+          "t_seconds": 9.374,
+          "team": "Germany",
+          "event_type": "Pass",
+          "ball_x": 116.3,
+          "ball_y": 48.2,
+          "ball_end_x": 111.8,
+          "ball_end_y": 45.5,
+          "actor": "Joshua Kimmich",
+          "outcome": null
+        },
+        {
+          "event_id": "316e5d5c-eb20-40cc-b9b8-898dd288dc78",
+          "t_seconds": 10.277,
+          "team": "Germany",
+          "event_type": "Shot",
+          "ball_x": 111.8,
+          "ball_y": 45.5,
+          "ball_end_x": 120.0,
+          "ball_end_y": 36.0,
+          "actor": "Florian Wirtz",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "316e5d5c-eb20-40cc-b9b8-898dd288dc78",
+          "minute": 88,
+          "second": 21,
+          "scorer": "Florian Wirtz",
+          "team": "Germany"
+        }
+      },
+      "metadata": {
+        "match_id": 3942226,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Spain vs Germany"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "f3b86342-f07d-4c2a-a293-262587ed15fd",
+        "start_event_id": "17f8b6b7-0390-4b1c-97e5-9fbbf3662718",
+        "end_event_id": "f3b86342-f07d-4c2a-a293-262587ed15fd",
+        "period": 4,
+        "window_seconds": 10.0,
+        "t_span_seconds": 11.216
+      },
+      "frames": [
+        {
+          "event_id": "17f8b6b7-0390-4b1c-97e5-9fbbf3662718",
+          "t_seconds": 0.0,
+          "team": "Germany",
+          "event_type": "Duel",
+          "ball_x": 19.3,
+          "ball_y": 7.5,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Maximilian Mittelst\u00e4dt",
+          "outcome": null
+        },
+        {
+          "event_id": "28b3bb88-b9e2-43c7-a969-6b0f6ebce9b2",
+          "t_seconds": 2.134,
+          "team": "Spain",
+          "event_type": "Ball Recovery",
+          "ball_x": 86.6,
+          "ball_y": 77.5,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Daniel Carvajal",
+          "outcome": null
+        },
+        {
+          "event_id": "634fc1b3-3d11-44ed-9879-9601a80eb2b6",
+          "t_seconds": 2.134,
+          "team": "Spain",
+          "event_type": "Carry",
+          "ball_x": 86.6,
+          "ball_y": 77.5,
+          "ball_end_x": 89.1,
+          "ball_end_y": 77.5,
+          "actor": "Daniel Carvajal",
+          "outcome": null
+        },
+        {
+          "event_id": "3a633cc0-1281-4f7c-b68b-7a28add368b6",
+          "t_seconds": 2.987,
+          "team": "Spain",
+          "event_type": "Pass",
+          "ball_x": 89.1,
+          "ball_y": 77.5,
+          "ball_end_x": 79.2,
+          "ball_end_y": 30.8,
+          "actor": "Daniel Carvajal",
+          "outcome": null
+        },
+        {
+          "event_id": "021c6438-8580-4f75-8713-a4336d09e86b",
+          "t_seconds": 5.715,
+          "team": "Spain",
+          "event_type": "Carry",
+          "ball_x": 79.2,
+          "ball_y": 30.8,
+          "ball_end_x": 86.0,
+          "ball_end_y": 29.8,
+          "actor": "Marc Cucurella",
+          "outcome": null
+        },
+        {
+          "event_id": "c0ecf5c8-1acc-43be-ab94-6ce368e24079",
+          "t_seconds": 7.584,
+          "team": "Spain",
+          "event_type": "Pass",
+          "ball_x": 86.0,
+          "ball_y": 29.8,
+          "ball_end_x": 98.2,
+          "ball_end_y": 14.2,
+          "actor": "Marc Cucurella",
+          "outcome": null
+        },
+        {
+          "event_id": "ab2b2e7a-521a-4ac6-99bd-dd5b79d10ab6",
+          "t_seconds": 8.807,
+          "team": "Spain",
+          "event_type": "Carry",
+          "ball_x": 98.2,
+          "ball_y": 14.2,
+          "ball_end_x": 97.7,
+          "ball_end_y": 16.2,
+          "actor": "Daniel Olmo",
+          "outcome": null
+        },
+        {
+          "event_id": "9fbaf98a-959b-4333-9acc-12856fc13a5e",
+          "t_seconds": 9.94,
+          "team": "Spain",
+          "event_type": "Pass",
+          "ball_x": 97.7,
+          "ball_y": 16.2,
+          "ball_end_x": 112.6,
+          "ball_end_y": 39.2,
+          "actor": "Daniel Olmo",
+          "outcome": null
+        },
+        {
+          "event_id": "f3b86342-f07d-4c2a-a293-262587ed15fd",
+          "t_seconds": 11.216,
+          "team": "Spain",
+          "event_type": "Shot",
+          "ball_x": 112.6,
+          "ball_y": 39.2,
+          "ball_end_x": 120.0,
+          "ball_end_y": 36.8,
+          "actor": "Mikel Merino",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "f3b86342-f07d-4c2a-a293-262587ed15fd",
+          "minute": 118,
+          "second": 53,
+          "scorer": "Mikel Merino",
+          "team": "Spain"
+        }
+      },
+      "metadata": {
+        "match_id": 3942226,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Spain vs Germany"
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3942226,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Spain vs Germany"
+  }
+}

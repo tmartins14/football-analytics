@@ -12,6 +12,8 @@
 //   g.append("circle").attr("cx", px(60, 40)[0]).attr("cy", px(60, 40)[1]).attr("r", 5);
 // ============================================================
 
+import * as d3 from "d3";
+
 // Themes — canonical color sets for the pitch surface.
 // "whiteboard" is the signature default. Use "green" sparingly,
 // only when the brief specifically calls for a broadcast-style look.
@@ -53,7 +55,7 @@ const SB = {
  * @param {number}  [config.pxPerYard=8]          - Pixels per StatsBomb yard.
  * @param {number}  [config.padding=24]            - Padding around the pitch in pixels.
  * @param {boolean} [config.showGoals=true]        - Render goal nets.
- * @param {string}  [config.theme="whiteboard"]    - "whiteboard", "green", or a token object.
+ * @param {string|Object} [config.theme="whiteboard"] - "whiteboard", "green", or a token object.
  * @param {boolean} [config.flipAttack=false]      - Vertical orientation only. When true, the
  *   attacking direction (high x) maps to the top of the screen and the defending end (low x)
  *   maps to the bottom. Useful for formation diagrams drawn with forwards at the top.

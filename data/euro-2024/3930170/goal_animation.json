@@ -1,0 +1,169 @@
+{
+  "goals": [
+    {
+      "window": {
+        "anchor_event_id": "ca3462cd-8ee8-4efe-8e3b-0d6374acbe06",
+        "start_event_id": "a071b476-df04-431b-9708-bf3119cf2be1",
+        "end_event_id": "ca3462cd-8ee8-4efe-8e3b-0d6374acbe06",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 12.818
+      },
+      "frames": [
+        {
+          "event_id": "a071b476-df04-431b-9708-bf3119cf2be1",
+          "t_seconds": 0.0,
+          "team": "Slovenia",
+          "event_type": "Carry",
+          "ball_x": 38.8,
+          "ball_y": 72.8,
+          "ball_end_x": 69.8,
+          "ball_end_y": 53.4,
+          "actor": "\u017dan Karni\u010dnik",
+          "outcome": null
+        },
+        {
+          "event_id": "20c35b93-97b4-4ddf-a5df-5936dbcd09ff",
+          "t_seconds": 4.786,
+          "team": "Slovenia",
+          "event_type": "Pass",
+          "ball_x": 69.8,
+          "ball_y": 53.4,
+          "ball_end_x": 83.0,
+          "ball_end_y": 7.2,
+          "actor": "\u017dan Karni\u010dnik",
+          "outcome": null
+        },
+        {
+          "event_id": "97a864e2-d041-4dd3-9a75-70f236cac82a",
+          "t_seconds": 7.08,
+          "team": "Slovenia",
+          "event_type": "Carry",
+          "ball_x": 83.0,
+          "ball_y": 7.2,
+          "ball_end_x": 106.8,
+          "ball_end_y": 20.4,
+          "actor": "Timi El\u0161nik",
+          "outcome": null
+        },
+        {
+          "event_id": "98998505-bb4d-4383-8abf-67a06d1a8c8e",
+          "t_seconds": 11.776,
+          "team": "Slovenia",
+          "event_type": "Pass",
+          "ball_x": 106.8,
+          "ball_y": 20.4,
+          "ball_end_x": 114.1,
+          "ball_end_y": 44.7,
+          "actor": "Timi El\u0161nik",
+          "outcome": null
+        },
+        {
+          "event_id": "0ba4ad1d-ba10-4d51-bce0-6aa97db827b3",
+          "t_seconds": 12.744,
+          "team": "Serbia",
+          "event_type": "Pressure",
+          "ball_x": 7.1,
+          "ball_y": 36.6,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Sergej Milinkovi\u0107-Savi\u0107",
+          "outcome": null
+        },
+        {
+          "event_id": "ca3462cd-8ee8-4efe-8e3b-0d6374acbe06",
+          "t_seconds": 12.818,
+          "team": "Slovenia",
+          "event_type": "Shot",
+          "ball_x": 114.1,
+          "ball_y": 44.7,
+          "ball_end_x": 120.0,
+          "ball_end_y": 42.9,
+          "actor": "\u017dan Karni\u010dnik",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "ca3462cd-8ee8-4efe-8e3b-0d6374acbe06",
+          "minute": 68,
+          "second": 6,
+          "scorer": "\u017dan Karni\u010dnik",
+          "team": "Slovenia"
+        }
+      },
+      "metadata": {
+        "match_id": 3930170,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Slovenia vs Serbia"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "8bb56acc-ad21-4c73-bc6c-6b3082bcffc5",
+        "start_event_id": "7f073da6-c3c2-4962-b4cd-f3f4c4d2f9f1",
+        "end_event_id": "8bb56acc-ad21-4c73-bc6c-6b3082bcffc5",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 21.232
+      },
+      "frames": [
+        {
+          "event_id": "7f073da6-c3c2-4962-b4cd-f3f4c4d2f9f1",
+          "t_seconds": 19.712,
+          "team": "Serbia",
+          "event_type": "Pass",
+          "ball_x": 120.0,
+          "ball_y": 80.0,
+          "ball_end_x": 114.6,
+          "ball_end_y": 40.3,
+          "actor": "Ivan Ili\u0107",
+          "outcome": null
+        },
+        {
+          "event_id": "1599873f-9c57-40ec-a6b2-ffe6c2a99016",
+          "t_seconds": 21.232,
+          "team": "Slovenia",
+          "event_type": "Duel",
+          "ball_x": 5.5,
+          "ball_y": 39.8,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "\u017dan Karni\u010dnik",
+          "outcome": null
+        },
+        {
+          "event_id": "8bb56acc-ad21-4c73-bc6c-6b3082bcffc5",
+          "t_seconds": 21.232,
+          "team": "Serbia",
+          "event_type": "Shot",
+          "ball_x": 114.6,
+          "ball_y": 40.3,
+          "ball_end_x": 120.0,
+          "ball_end_y": 37.6,
+          "actor": "Luka Jovi\u0107",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "8bb56acc-ad21-4c73-bc6c-6b3082bcffc5",
+          "minute": 94,
+          "second": 59,
+          "scorer": "Luka Jovi\u0107",
+          "team": "Serbia"
+        }
+      },
+      "metadata": {
+        "match_id": 3930170,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Slovenia vs Serbia"
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3930170,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Slovenia vs Serbia"
+  }
+}

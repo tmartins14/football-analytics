@@ -1,0 +1,881 @@
+{
+  "windows": [
+    {
+      "index": 0,
+      "label": "0'\u201374' (Starting XI)",
+      "nodes": [
+        {
+          "player": "Adam Gnezda \u010cerin",
+          "display_name": "Adam Gnezda \u010cerin",
+          "x": 65.22,
+          "y": 48.61,
+          "passes": 25
+        },
+        {
+          "player": "Andra\u017e \u0160porar",
+          "display_name": "Andra\u017e \u0160porar",
+          "x": 82.4,
+          "y": 62.99,
+          "passes": 10
+        },
+        {
+          "player": "Benjamin \u0160e\u0161ko",
+          "display_name": "Benjamin \u0160e\u0161ko",
+          "x": 70.04,
+          "y": 40.59,
+          "passes": 9
+        },
+        {
+          "player": "Erik Jan\u017ea",
+          "display_name": "Erik Jan\u017ea",
+          "x": 48.46,
+          "y": 8.29,
+          "passes": 14
+        },
+        {
+          "player": "Jaka Bijol",
+          "display_name": "Jaka Bijol",
+          "x": 38.96,
+          "y": 29.3,
+          "passes": 25
+        },
+        {
+          "player": "Jan Mlakar",
+          "display_name": "Jan Mlakar",
+          "x": 72.87,
+          "y": 11.73,
+          "passes": 6
+        },
+        {
+          "player": "Jan Oblak",
+          "display_name": "Jan Oblak",
+          "x": 9.84,
+          "y": 45.17,
+          "passes": 11
+        },
+        {
+          "player": "Petar Stojanovi\u0107",
+          "display_name": "Petar Stojanovi\u0107",
+          "x": 83.16,
+          "y": 66.87,
+          "passes": 18
+        },
+        {
+          "player": "Timi El\u0161nik",
+          "display_name": "Timi El\u0161nik",
+          "x": 66.82,
+          "y": 41.18,
+          "passes": 16
+        },
+        {
+          "player": "Vanja Drku\u0161i\u0107",
+          "display_name": "Vanja Drku\u0161i\u0107",
+          "x": 40.35,
+          "y": 56.53,
+          "passes": 12
+        },
+        {
+          "player": "\u017dan Karni\u010dnik",
+          "display_name": "\u017dan Karni\u010dnik",
+          "x": 67.79,
+          "y": 71.69,
+          "passes": 28
+        }
+      ],
+      "edges": [
+        {
+          "from": "\u017dan Karni\u010dnik",
+          "to": "Adam Gnezda \u010cerin",
+          "count": 9
+        },
+        {
+          "from": "Petar Stojanovi\u0107",
+          "to": "\u017dan Karni\u010dnik",
+          "count": 8
+        },
+        {
+          "from": "Vanja Drku\u0161i\u0107",
+          "to": "Jaka Bijol",
+          "count": 6
+        },
+        {
+          "from": "Adam Gnezda \u010cerin",
+          "to": "\u017dan Karni\u010dnik",
+          "count": 6
+        },
+        {
+          "from": "Jaka Bijol",
+          "to": "Erik Jan\u017ea",
+          "count": 5
+        },
+        {
+          "from": "Erik Jan\u017ea",
+          "to": "Jan Mlakar",
+          "count": 5
+        },
+        {
+          "from": "Petar Stojanovi\u0107",
+          "to": "Andra\u017e \u0160porar",
+          "count": 5
+        },
+        {
+          "from": "\u017dan Karni\u010dnik",
+          "to": "Petar Stojanovi\u0107",
+          "count": 5
+        },
+        {
+          "from": "Jaka Bijol",
+          "to": "Adam Gnezda \u010cerin",
+          "count": 4
+        },
+        {
+          "from": "Erik Jan\u017ea",
+          "to": "Jaka Bijol",
+          "count": 4
+        },
+        {
+          "from": "\u017dan Karni\u010dnik",
+          "to": "Timi El\u0161nik",
+          "count": 4
+        },
+        {
+          "from": "Adam Gnezda \u010cerin",
+          "to": "Petar Stojanovi\u0107",
+          "count": 4
+        },
+        {
+          "from": "Timi El\u0161nik",
+          "to": "Jaka Bijol",
+          "count": 3
+        },
+        {
+          "from": "Jaka Bijol",
+          "to": "Jan Oblak",
+          "count": 3
+        },
+        {
+          "from": "Jan Oblak",
+          "to": "\u017dan Karni\u010dnik",
+          "count": 3
+        },
+        {
+          "from": "Erik Jan\u017ea",
+          "to": "Adam Gnezda \u010cerin",
+          "count": 3
+        },
+        {
+          "from": "Jaka Bijol",
+          "to": "\u017dan Karni\u010dnik",
+          "count": 3
+        },
+        {
+          "from": "Adam Gnezda \u010cerin",
+          "to": "Vanja Drku\u0161i\u0107",
+          "count": 3
+        },
+        {
+          "from": "Timi El\u0161nik",
+          "to": "Petar Stojanovi\u0107",
+          "count": 3
+        },
+        {
+          "from": "Adam Gnezda \u010cerin",
+          "to": "Timi El\u0161nik",
+          "count": 3
+        },
+        {
+          "from": "\u017dan Karni\u010dnik",
+          "to": "Vanja Drku\u0161i\u0107",
+          "count": 3
+        },
+        {
+          "from": "Adam Gnezda \u010cerin",
+          "to": "Andra\u017e \u0160porar",
+          "count": 3
+        },
+        {
+          "from": "Jaka Bijol",
+          "to": "Benjamin \u0160e\u0161ko",
+          "count": 3
+        },
+        {
+          "from": "Andra\u017e \u0160porar",
+          "to": "\u017dan Karni\u010dnik",
+          "count": 3
+        },
+        {
+          "from": "Benjamin \u0160e\u0161ko",
+          "to": "Andra\u017e \u0160porar",
+          "count": 2
+        },
+        {
+          "from": "Andra\u017e \u0160porar",
+          "to": "Petar Stojanovi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Adam Gnezda \u010cerin",
+          "to": "Jaka Bijol",
+          "count": 2
+        },
+        {
+          "from": "Adam Gnezda \u010cerin",
+          "to": "Erik Jan\u017ea",
+          "count": 2
+        },
+        {
+          "from": "Timi El\u0161nik",
+          "to": "Jan Mlakar",
+          "count": 2
+        },
+        {
+          "from": "Petar Stojanovi\u0107",
+          "to": "Benjamin \u0160e\u0161ko",
+          "count": 2
+        },
+        {
+          "from": "Adam Gnezda \u010cerin",
+          "to": "Benjamin \u0160e\u0161ko",
+          "count": 2
+        },
+        {
+          "from": "Jan Mlakar",
+          "to": "Erik Jan\u017ea",
+          "count": 2
+        },
+        {
+          "from": "Vanja Drku\u0161i\u0107",
+          "to": "Jan Oblak",
+          "count": 2
+        },
+        {
+          "from": "Petar Stojanovi\u0107",
+          "to": "Adam Gnezda \u010cerin",
+          "count": 2
+        },
+        {
+          "from": "Vanja Drku\u0161i\u0107",
+          "to": "Adam Gnezda \u010cerin",
+          "count": 2
+        },
+        {
+          "from": "Timi El\u0161nik",
+          "to": "Vanja Drku\u0161i\u0107",
+          "count": 2
+        },
+        {
+          "from": "\u017dan Karni\u010dnik",
+          "to": "Andra\u017e \u0160porar",
+          "count": 2
+        },
+        {
+          "from": "Andra\u017e \u0160porar",
+          "to": "Timi El\u0161nik",
+          "count": 2
+        },
+        {
+          "from": "Benjamin \u0160e\u0161ko",
+          "to": "Petar Stojanovi\u0107",
+          "count": 2
+        },
+        {
+          "from": "Jaka Bijol",
+          "to": "Jan Mlakar",
+          "count": 2
+        },
+        {
+          "from": "Jaka Bijol",
+          "to": "Andra\u017e \u0160porar",
+          "count": 2
+        },
+        {
+          "from": "Timi El\u0161nik",
+          "to": "Benjamin \u0160e\u0161ko",
+          "count": 2
+        },
+        {
+          "from": "Benjamin \u0160e\u0161ko",
+          "to": "Jan Mlakar",
+          "count": 2
+        },
+        {
+          "from": "\u017dan Karni\u010dnik",
+          "to": "Jan Mlakar",
+          "count": 2
+        },
+        {
+          "from": "\u017dan Karni\u010dnik",
+          "to": "Jan Oblak",
+          "count": 2
+        },
+        {
+          "from": "Jan Oblak",
+          "to": "Jaka Bijol",
+          "count": 2
+        },
+        {
+          "from": "Jaka Bijol",
+          "to": "Timi El\u0161nik",
+          "count": 2
+        },
+        {
+          "from": "Vanja Drku\u0161i\u0107",
+          "to": "\u017dan Karni\u010dnik",
+          "count": 2
+        },
+        {
+          "from": "Jan Oblak",
+          "to": "Vanja Drku\u0161i\u0107",
+          "count": 2
+        },
+        {
+          "from": "Jan Oblak",
+          "to": "Benjamin \u0160e\u0161ko",
+          "count": 1
+        },
+        {
+          "from": "Jan Mlakar",
+          "to": "Petar Stojanovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Jan Mlakar",
+          "to": "Adam Gnezda \u010cerin",
+          "count": 1
+        },
+        {
+          "from": "Erik Jan\u017ea",
+          "to": "Benjamin \u0160e\u0161ko",
+          "count": 1
+        },
+        {
+          "from": "Benjamin \u0160e\u0161ko",
+          "to": "Timi El\u0161nik",
+          "count": 1
+        },
+        {
+          "from": "Jan Mlakar",
+          "to": "Andra\u017e \u0160porar",
+          "count": 1
+        },
+        {
+          "from": "Andra\u017e \u0160porar",
+          "to": "Benjamin \u0160e\u0161ko",
+          "count": 1
+        },
+        {
+          "from": "Jaka Bijol",
+          "to": "Vanja Drku\u0161i\u0107",
+          "count": 1
+        },
+        {
+          "from": "Jan Mlakar",
+          "to": "Jaka Bijol",
+          "count": 1
+        },
+        {
+          "from": "Timi El\u0161nik",
+          "to": "Adam Gnezda \u010cerin",
+          "count": 1
+        },
+        {
+          "from": "Petar Stojanovi\u0107",
+          "to": "Timi El\u0161nik",
+          "count": 1
+        },
+        {
+          "from": "Timi El\u0161nik",
+          "to": "Andra\u017e \u0160porar",
+          "count": 1
+        },
+        {
+          "from": "Benjamin \u0160e\u0161ko",
+          "to": "\u017dan Karni\u010dnik",
+          "count": 1
+        },
+        {
+          "from": "Jan Oblak",
+          "to": "Andra\u017e \u0160porar",
+          "count": 1
+        },
+        {
+          "from": "Andra\u017e \u0160porar",
+          "to": "Jaka Bijol",
+          "count": 1
+        },
+        {
+          "from": "Erik Jan\u017ea",
+          "to": "Andra\u017e \u0160porar",
+          "count": 1
+        },
+        {
+          "from": "Benjamin \u0160e\u0161ko",
+          "to": "Adam Gnezda \u010cerin",
+          "count": 1
+        },
+        {
+          "from": "Timi El\u0161nik",
+          "to": "Erik Jan\u017ea",
+          "count": 1
+        },
+        {
+          "from": "Jan Oblak",
+          "to": "Adam Gnezda \u010cerin",
+          "count": 1
+        },
+        {
+          "from": "Timi El\u0161nik",
+          "to": "\u017dan Karni\u010dnik",
+          "count": 1
+        },
+        {
+          "from": "Jan Oblak",
+          "to": "Petar Stojanovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Andra\u017e \u0160porar",
+          "to": "Adam Gnezda \u010cerin",
+          "count": 1
+        },
+        {
+          "from": "\u017dan Karni\u010dnik",
+          "to": "Jaka Bijol",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "label": "74'\u201384'",
+      "nodes": [
+        {
+          "player": "Adam Gnezda \u010cerin",
+          "display_name": "Adam Gnezda \u010cerin",
+          "x": 42.75,
+          "y": 38.0,
+          "passes": 2
+        },
+        {
+          "player": "Andra\u017e \u0160porar",
+          "display_name": "Andra\u017e \u0160porar",
+          "x": 62.4,
+          "y": 57.2,
+          "passes": 1
+        },
+        {
+          "player": "Erik Jan\u017ea",
+          "display_name": "Erik Jan\u017ea",
+          "x": 30.15,
+          "y": 11.65,
+          "passes": 2
+        },
+        {
+          "player": "Jaka Bijol",
+          "display_name": "Jaka Bijol",
+          "x": 37.3,
+          "y": 30.27,
+          "passes": 3
+        },
+        {
+          "player": "Jan Mlakar",
+          "display_name": "Jan Mlakar",
+          "x": 36.6,
+          "y": 24.7,
+          "passes": 3
+        },
+        {
+          "player": "Jan Oblak",
+          "display_name": "Jan Oblak",
+          "x": 3.8,
+          "y": 47.85,
+          "passes": 2
+        },
+        {
+          "player": "Josip Ili\u010di\u0107",
+          "display_name": "Josip Ili\u010di\u0107",
+          "x": 77.6,
+          "y": 43.6,
+          "passes": 1
+        },
+        {
+          "player": "Petar Stojanovi\u0107",
+          "display_name": "Petar Stojanovi\u0107",
+          "x": 61.2,
+          "y": 78.3,
+          "passes": 1
+        },
+        {
+          "player": "Timi El\u0161nik",
+          "display_name": "Timi El\u0161nik",
+          "x": 54.9,
+          "y": 35.83,
+          "passes": 3
+        },
+        {
+          "player": "Vanja Drku\u0161i\u0107",
+          "display_name": "Vanja Drku\u0161i\u0107",
+          "x": 35.5,
+          "y": 62.02,
+          "passes": 4
+        },
+        {
+          "player": "\u017dan Karni\u010dnik",
+          "display_name": "\u017dan Karni\u010dnik",
+          "x": 46.62,
+          "y": 69.65,
+          "passes": 4
+        }
+      ],
+      "edges": [
+        {
+          "from": "Jaka Bijol",
+          "to": "Vanja Drku\u0161i\u0107",
+          "count": 2
+        },
+        {
+          "from": "Jan Oblak",
+          "to": "Timi El\u0161nik",
+          "count": 1
+        },
+        {
+          "from": "Timi El\u0161nik",
+          "to": "Jaka Bijol",
+          "count": 1
+        },
+        {
+          "from": "Vanja Drku\u0161i\u0107",
+          "to": "\u017dan Karni\u010dnik",
+          "count": 1
+        },
+        {
+          "from": "\u017dan Karni\u010dnik",
+          "to": "Jan Oblak",
+          "count": 1
+        },
+        {
+          "from": "Jan Oblak",
+          "to": "Andra\u017e \u0160porar",
+          "count": 1
+        },
+        {
+          "from": "Andra\u017e \u0160porar",
+          "to": "Jan Mlakar",
+          "count": 1
+        },
+        {
+          "from": "Jan Mlakar",
+          "to": "Timi El\u0161nik",
+          "count": 1
+        },
+        {
+          "from": "Timi El\u0161nik",
+          "to": "\u017dan Karni\u010dnik",
+          "count": 1
+        },
+        {
+          "from": "\u017dan Karni\u010dnik",
+          "to": "Timi El\u0161nik",
+          "count": 1
+        },
+        {
+          "from": "Timi El\u0161nik",
+          "to": "Josip Ili\u010di\u0107",
+          "count": 1
+        },
+        {
+          "from": "Josip Ili\u010di\u0107",
+          "to": "Adam Gnezda \u010cerin",
+          "count": 1
+        },
+        {
+          "from": "Adam Gnezda \u010cerin",
+          "to": "Vanja Drku\u0161i\u0107",
+          "count": 1
+        },
+        {
+          "from": "Vanja Drku\u0161i\u0107",
+          "to": "Jaka Bijol",
+          "count": 1
+        },
+        {
+          "from": "Petar Stojanovi\u0107",
+          "to": "Vanja Drku\u0161i\u0107",
+          "count": 1
+        },
+        {
+          "from": "Vanja Drku\u0161i\u0107",
+          "to": "Jan Oblak",
+          "count": 1
+        },
+        {
+          "from": "\u017dan Karni\u010dnik",
+          "to": "Josip Ili\u010di\u0107",
+          "count": 1
+        },
+        {
+          "from": "Jaka Bijol",
+          "to": "Erik Jan\u017ea",
+          "count": 1
+        },
+        {
+          "from": "Erik Jan\u017ea",
+          "to": "Vanja Drku\u0161i\u0107",
+          "count": 1
+        },
+        {
+          "from": "Vanja Drku\u0161i\u0107",
+          "to": "Adam Gnezda \u010cerin",
+          "count": 1
+        },
+        {
+          "from": "\u017dan Karni\u010dnik",
+          "to": "Petar Stojanovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Adam Gnezda \u010cerin",
+          "to": "Jan Mlakar",
+          "count": 1
+        },
+        {
+          "from": "Jan Mlakar",
+          "to": "Josip Ili\u010di\u0107",
+          "count": 1
+        },
+        {
+          "from": "Erik Jan\u017ea",
+          "to": "Jan Mlakar",
+          "count": 1
+        },
+        {
+          "from": "Jan Mlakar",
+          "to": "Vanja Drku\u0161i\u0107",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "label": "84'\u201385'",
+      "nodes": [
+        {
+          "player": "Adam Gnezda \u010cerin",
+          "display_name": "Adam Gnezda \u010cerin",
+          "x": 36.1,
+          "y": 50.4,
+          "passes": 1
+        },
+        {
+          "player": "Jaka Bijol",
+          "display_name": "Jaka Bijol",
+          "x": 44.3,
+          "y": 14.3,
+          "passes": 1
+        },
+        {
+          "player": "Timi El\u0161nik",
+          "display_name": "Timi El\u0161nik",
+          "x": 57.2,
+          "y": 6.3,
+          "passes": 1
+        },
+        {
+          "player": "Vanja Drku\u0161i\u0107",
+          "display_name": "Vanja Drku\u0161i\u0107",
+          "x": 26.7,
+          "y": 46.8,
+          "passes": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "Timi El\u0161nik",
+          "to": "Jaka Bijol",
+          "count": 1
+        },
+        {
+          "from": "Jaka Bijol",
+          "to": "Jan Oblak",
+          "count": 1
+        },
+        {
+          "from": "Vanja Drku\u0161i\u0107",
+          "to": "Adam Gnezda \u010cerin",
+          "count": 1
+        },
+        {
+          "from": "Adam Gnezda \u010cerin",
+          "to": "Petar Stojanovi\u0107",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "label": "85'\u201389'",
+      "nodes": [
+        {
+          "player": "Erik Jan\u017ea",
+          "display_name": "Erik Jan\u017ea",
+          "x": 80.83,
+          "y": 5.3,
+          "passes": 3
+        },
+        {
+          "player": "Jon Gorenc Stankovi\u010d",
+          "display_name": "Jon Gorenc-Stankovic",
+          "x": 82.45,
+          "y": 12.9,
+          "passes": 2
+        },
+        {
+          "player": "Josip Ili\u010di\u0107",
+          "display_name": "Josip Ili\u010di\u0107",
+          "x": 54.03,
+          "y": 27.63,
+          "passes": 3
+        },
+        {
+          "player": "Petar Stojanovi\u0107",
+          "display_name": "Petar Stojanovi\u0107",
+          "x": 68.1,
+          "y": 72.7,
+          "passes": 1
+        },
+        {
+          "player": "Timi El\u0161nik",
+          "display_name": "Timi El\u0161nik",
+          "x": 65.2,
+          "y": 9.5,
+          "passes": 2
+        },
+        {
+          "player": "\u017dan Karni\u010dnik",
+          "display_name": "\u017dan Karni\u010dnik",
+          "x": 62.4,
+          "y": 80.0,
+          "passes": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "Josip Ili\u010di\u0107",
+          "to": "Erik Jan\u017ea",
+          "count": 2
+        },
+        {
+          "from": "Erik Jan\u017ea",
+          "to": "Timi El\u0161nik",
+          "count": 2
+        },
+        {
+          "from": "\u017dan Karni\u010dnik",
+          "to": "Petar Stojanovi\u0107",
+          "count": 1
+        },
+        {
+          "from": "Petar Stojanovi\u0107",
+          "to": "\u017dan Karni\u010dnik",
+          "count": 1
+        },
+        {
+          "from": "Erik Jan\u017ea",
+          "to": "Jon Gorenc Stankovi\u010d",
+          "count": 1
+        },
+        {
+          "from": "Jon Gorenc Stankovi\u010d",
+          "to": "Erik Jan\u017ea",
+          "count": 1
+        },
+        {
+          "from": "Timi El\u0161nik",
+          "to": "Josip Ili\u010di\u0107",
+          "count": 1
+        },
+        {
+          "from": "Timi El\u0161nik",
+          "to": "Jon Gorenc Stankovi\u010d",
+          "count": 1
+        },
+        {
+          "from": "Jon Gorenc Stankovi\u010d",
+          "to": "Josip Ili\u010di\u0107",
+          "count": 1
+        },
+        {
+          "from": "Josip Ili\u010di\u0107",
+          "to": "Petar Stojanovi\u0107",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "label": "89'\u2013FT",
+      "nodes": [
+        {
+          "player": "Jan Oblak",
+          "display_name": "Jan Oblak",
+          "x": 28.7,
+          "y": 24.1,
+          "passes": 1
+        },
+        {
+          "player": "\u017dan Karni\u010dnik",
+          "display_name": "\u017dan Karni\u010dnik",
+          "x": 59.8,
+          "y": 80.0,
+          "passes": 2
+        }
+      ],
+      "edges": [
+        {
+          "from": "Jan Oblak",
+          "to": "\u017dan Celar",
+          "count": 1
+        },
+        {
+          "from": "\u017dan Karni\u010dnik",
+          "to": "Adam Gnezda \u010cerin",
+          "count": 1
+        },
+        {
+          "from": "\u017dan Karni\u010dnik",
+          "to": "Josip Ili\u010di\u0107",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "substitutions": [
+    {
+      "minute": 74,
+      "player_off": "Benjamin \u0160e\u0161ko",
+      "player_on": "Josip Ili\u010di\u0107"
+    },
+    {
+      "minute": 84,
+      "player_off": "Jan Mlakar",
+      "player_on": "Jon Gorenc Stankovi\u010d"
+    },
+    {
+      "minute": 85,
+      "player_off": "Andra\u017e \u0160porar",
+      "player_on": "\u017dan Celar"
+    },
+    {
+      "minute": 89,
+      "player_off": "Erik Jan\u017ea",
+      "player_on": "Jure Balkovec"
+    }
+  ],
+  "metadata": {
+    "match_id": 3930181,
+    "team": "Slovenia",
+    "filter": "completed passes, per substitution window",
+    "competition": "UEFA Euro 2024",
+    "match_label": "England vs Slovenia"
+  }
+}
