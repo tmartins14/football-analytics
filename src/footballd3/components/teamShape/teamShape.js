@@ -397,7 +397,7 @@ function drawOffBall(g, px, offBall, pxPerYard, padding, accentColor, background
  * @param {string}  [config.backgroundColor="#FAF7F0"] - Resolved hex for the off-ball
  *   density surface's zero-value color and node-stroke separators — pass the current
  *   theme's page background so both recolor correctly in light and dark themes.
- * @returns {{ g: d3.Selection, px: Function, update: function(string):void, updatePeriod: function(number):void }}
+ * @returns {{ g: d3.Selection, px: function(number,number):[number,number], update: function(string):void, updatePeriod: function(number):void }}
  *   g             — pitch.g (append further overlays here).
  *   px            — pitch.px (sbX, sbY) => [screenX, screenY].
  *   update(view)  — switch to "on-ball" or "off-ball" view.

@@ -59,8 +59,9 @@ function getTooltip() {
  * @param {number} bounds.minY - Minimum screen Y for node center.
  * @param {number} bounds.maxY - Maximum screen Y for node center.
  * @param {string} backgroundColor - Stroke color separating nodes from the pitch surface.
+ * @param {number} nodeRadius - Player circle radius in pixels.
  */
-function renderPeriod(g, px, period, nodeColor, labelColor, bounds, backgroundColor) {
+function renderPeriod(g, px, period, nodeColor, labelColor, bounds, backgroundColor, nodeRadius) {
   g.selectAll(".fm-player").remove();
 
   period.players.forEach(player => {
@@ -74,7 +75,7 @@ function renderPeriod(g, px, period, nodeColor, labelColor, bounds, backgroundCo
 
     playerG.append("circle")
       .attr("cx", cx).attr("cy", cy)
-      .attr("r", NODE_R)
+      .attr("r", nodeRadius)
       .attr("fill", nodeColor)
       .attr("stroke", backgroundColor)
       .attr("stroke-width", 1.5);
@@ -85,7 +86,7 @@ function renderPeriod(g, px, period, nodeColor, labelColor, bounds, backgroundCo
       .attr("dy", "0.36em")
       .attr("text-anchor", "middle")
       .attr("font-family", "Geist Mono, monospace")
-      .attr("font-size", "11px")
+      .attr("font-size", Math.max(9, nodeRadius * 0.8))
       .attr("font-weight", "600")
       .attr("fill", "#FAF7F0")
       .attr("pointer-events", "none")
@@ -93,7 +94,7 @@ function renderPeriod(g, px, period, nodeColor, labelColor, bounds, backgroundCo
 
     // Display name below the circle.
     playerG.append("text")
-      .attr("x", cx).attr("y", cy + NODE_R + 9)
+      .attr("x", cx).attr("y", cy + nodeRadius + 9)
       .attr("text-anchor", "middle")
       .attr("font-family", "Geist, sans-serif")
       .attr("font-size", "9px")
@@ -142,12 +143,14 @@ function renderPeriod(g, px, period, nodeColor, labelColor, bounds, backgroundCo
  *   canonical slots, not measured positions.
  * @param {Object} [config] - Optional visual configuration.
  * @param {number}  [config.pxPerYard=7]          - Pixels per StatsBomb yard.
+ * @param {number}  [config.padding=24]           - Padding around the pitch in pixels.
  * @param {string|Object} [config.theme="whiteboard"] - Pitch theme ("whiteboard", "green", or a token object).
  * @param {string}  [config.nodeColor="#1E3A5F"]   - Player circle fill color.
  * @param {string}  [config.labelColor="#171717"]  - Surname label fill color.
  * @param {string}  [config.backgroundColor="#FAF7F0"] - Stroke color separating player
  *   circles from the pitch surface — pass the current theme's page background so the
  *   separator matches in both light and dark themes.
+ * @param {number}  [config.nodeRadius=14]        - Player circle radius in pixels.
  * @returns {{ svg: d3.Selection, g: d3.Selection, px: Function, update: Function }}
  *   svg — the SVG element.
  *   g   — the pitch group; append further overlays here.
@@ -157,10 +160,12 @@ function renderPeriod(g, px, period, nodeColor, labelColor, bounds, backgroundCo
 export function createFormation(selection, data, config = {}) {
   const {
     pxPerYard       = 7,
+    padding,
     theme           = "whiteboard",
     nodeColor       = "#1E3A5F",
     labelColor      = "#171717",
     backgroundColor = "#FAF7F0",
+    nodeRadius      = NODE_R,
   } = config;
 
   const { svg, g, px, width, height, config: pitchCfg } = createPitch(selection, {
@@ -168,6 +173,7 @@ export function createFormation(selection, data, config = {}) {
     orientation: "vertical",
     flipAttack:  true,
     pxPerYard,
+    ...(padding !== undefined ? { padding } : {}),
     theme,
     showGoals:   true,
   });
@@ -175,13 +181,13 @@ export function createFormation(selection, data, config = {}) {
   // Keep node circles inside the pitch lines at all pxPerYard values.
   const pad = pitchCfg.padding;
   const bounds = {
-    minX: pad + NODE_R,
-    maxX: width  - pad - NODE_R,
-    minY: pad + NODE_R,
-    maxY: height - pad - NODE_R,
+    minX: pad + nodeRadius,
+    maxX: width  - pad - nodeRadius,
+    minY: pad + nodeRadius,
+    maxY: height - pad - nodeRadius,
   };
 
-  renderPeriod(g, px, data.periods[0], nodeColor, labelColor, bounds, backgroundColor);
+  renderPeriod(g, px, data.periods[0], nodeColor, labelColor, bounds, backgroundColor, nodeRadius);
 
   /**
    * Transition the diagram to a different formation period.
@@ -193,7 +199,7 @@ export function createFormation(selection, data, config = {}) {
   function update(periodIdx) {
     const period = data.periods[periodIdx];
     if (!period) return;
-    renderPeriod(g, px, period, nodeColor, labelColor, bounds, backgroundColor);
+    renderPeriod(g, px, period, nodeColor, labelColor, bounds, backgroundColor, nodeRadius);
   }
 
   return { svg, g, px, update };

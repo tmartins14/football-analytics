@@ -5,7 +5,8 @@ DataFrame in the home/away/metadata envelope consumed by the matchStats D3 compo
 
 Possession is computed as the share of all StatsBomb events attributed to each team
 via the possession_team column. Yellow/red cards are sourced from foul_committed_card
-and bad_behaviour_card columns.
+and bad_behaviour_card columns. Pass accuracy follows the same completion convention
+as utils.pass_outcome: a Pass event is complete when its pass_outcome is null.
 
 Public API:
     extract_match_stats(match_id) -> pd.DataFrame
@@ -147,6 +148,21 @@ def extract_match_stats(match_id: int) -> pd.DataFrame:
     home_corners = int((corners["team"] == home_team).sum())
     away_corners = int((corners["team"] == away_team).sum())
 
+    home_passes_df = passes[passes["team"] == home_team]
+    away_passes_df = passes[passes["team"] == away_team]
+    home_passes = int(len(home_passes_df))
+    away_passes = int(len(away_passes_df))
+    # A pass is complete when pass_outcome is null (StatsBomb convention — see
+    # utils.pass_outcome). Guard against zero passes to avoid a division by zero.
+    home_pass_acc = (
+        round(float(home_passes_df["pass_outcome"].isna().sum()) / home_passes * 100, 1)
+        if home_passes else 0.0
+    )
+    away_pass_acc = (
+        round(float(away_passes_df["pass_outcome"].isna().sum()) / away_passes * 100, 1)
+        if away_passes else 0.0
+    )
+
     fouls = events[events["type"] == "Foul Committed"]
     home_fouls = int((fouls["team"] == home_team).sum())
     away_fouls = int((fouls["team"] == away_team).sum())
@@ -176,6 +192,8 @@ def extract_match_stats(match_id: int) -> pd.DataFrame:
         {"label": "Yellow Cards",    "home_value": home_yellows, "away_value": away_yellows, "scale_type": "sum",      "format": "int",    "tier": "basic"},
         {"label": "Red Cards",       "home_value": home_reds,    "away_value": away_reds,    "scale_type": "sum",      "format": "int",    "tier": "basic"},
         {"label": "xG",              "home_value": home_xg,      "away_value": away_xg,      "scale_type": "sum",      "format": "float1", "tier": "advanced"},
+        {"label": "Passes",         "home_value": home_passes,  "away_value": away_passes,  "scale_type": "sum",      "format": "int",    "tier": "advanced"},
+        {"label": "Pass acc.",      "home_value": home_pass_acc,"away_value": away_pass_acc,"scale_type": "sum",      "format": "pct",     "tier": "advanced"},
     ]
 
     df = pd.DataFrame(rows)

@@ -73,6 +73,22 @@
       "scale_type": "sum",
       "format": "float1",
       "tier": "advanced"
+    },
+    {
+      "label": "Passes",
+      "home_value": 592.0,
+      "away_value": 323.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "advanced"
+    },
+    {
+      "label": "Pass acc.",
+      "home_value": 87.5,
+      "away_value": 78.6,
+      "scale_type": "sum",
+      "format": "pct",
+      "tier": "advanced"
     }
   ],
   "metadata": {

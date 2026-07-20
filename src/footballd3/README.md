@@ -69,6 +69,12 @@ src/footballd3/
     momentumChart/
       momentumChart.js               ← per-minute xT momentum curve (horizontal or vertical)
       README.md
+    cumulativeXgChart/
+      cumulativeXgChart.js           ← per-team cumulative xG step chart (race chart) with G-chip overlay
+      README.md
+    momentumBarChart/
+      momentumBarChart.js            ← 2-minute-binned diverging momentum bar chart
+      README.md
   sample_data/
     shots_3943043.json               ← UEFA Euro 2024 Final shots
     pass_network_3943043_Spain.json
@@ -85,6 +91,7 @@ src/footballd3/
     xt_grid.json
     xt_actions_3943043.json
     momentum_3943043.json
+    cumulative_xg_3943043.json
     goal_animation_3943043.json
 ```
 
@@ -108,6 +115,8 @@ src/footballd3/
 | **xtSurface** | `components/xtSurface/xtSurface.js` | Karun Singh open xT grid rendered as a heatmap beneath pitch markings. Reads `xt_grid.json`. |
 | **playAnimation** | `components/playAnimation/playAnimation.js` | Time-windowed ball-path animation with play/pause/scrub. Straight-line segments; both teams included. Composes on pitch.js. |
 | **momentumChart** | `components/momentumChart/momentumChart.js` | Per-minute xT-based attacking momentum curve. Horizontal or vertical orientation; secondary window overlay; goal/card markers. |
+| **cumulativeXgChart** | `components/cumulativeXgChart/cumulativeXgChart.js` | Per-team cumulative xG "race chart" — step-line per team from raw shot events, with actual-goal G-chip overlay. Horizontal or vertical orientation. |
+| **momentumBarChart** | `components/momentumBarChart/momentumBarChart.js` | 2-minute-binned diverging momentum bar chart — discrete per-window bars (vs. momentumChart's smoothed curve), driven by an `onHover` callback instead of an internal tooltip. |
 
 Full API docs, JSON contract, and usage examples in each component's `README.md`.
 

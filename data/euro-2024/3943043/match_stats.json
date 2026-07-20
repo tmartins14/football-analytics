@@ -1,7 +1,7 @@
 {
   "home": {
     "team": "Spain",
-    "color": "#9F1239",
+    "color": "#C60B1E",
     "score": 2
   },
   "away": {
@@ -72,6 +72,22 @@
       "away_value": 0.73,
       "scale_type": "sum",
       "format": "float1",
+      "tier": "advanced"
+    },
+    {
+      "label": "Passes",
+      "home_value": 592.0,
+      "away_value": 323.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "advanced"
+    },
+    {
+      "label": "Pass acc.",
+      "home_value": 87.5,
+      "away_value": 78.6,
+      "scale_type": "sum",
+      "format": "pct",
       "tier": "advanced"
     }
   ],

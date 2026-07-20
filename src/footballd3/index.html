@@ -1159,6 +1159,59 @@
 </section>
 
 <section class="component-section">
+  <h2 class="component-heading">Cumulative xG Chart — UEFA Euro 2024 Final</h2>
+  <p class="component-sub">Cumulative xG "race chart" · Spain vs England · step-line per team from raw shot events</p>
+  <p class="component-desc">
+    Each team's running total of expected goals (xG), rising only at the instant of a shot and
+    flat otherwise. Actual goals are overlaid as "G" chips directly on the scoring team's line
+    so you can compare expected scoring against what actually happened.
+    <br><br>
+    <strong>Limitation:</strong> xG measures shot quality, not finishing quality — the team ahead
+    on this chart can still lose. StatsBomb's xG model is provider-specific and not universally
+    calibrated, and cumulative xG is not a score prediction. See README.md for full caveats.
+  </p>
+
+  <div class="pm-controls">
+    <div class="control" style="flex-direction:row; align-items:center; gap:var(--space-2)">
+      <input type="checkbox" id="cxg-goals" checked />
+      <label for="cxg-goals">goals</label>
+    </div>
+    <div class="control" style="flex-direction:row; align-items:center; gap:var(--space-2)">
+      <input type="checkbox" id="cxg-totals" checked />
+      <label for="cxg-totals">totals</label>
+    </div>
+    <div class="control" style="flex-direction:row; align-items:center; gap:var(--space-2)">
+      <label for="cxg-orientation" style="white-space:nowrap">orientation</label>
+      <select id="cxg-orientation" style="font-family:var(--font-mono);font-size:12px;padding:2px 6px;border:1px solid var(--color-structure);border-radius:2px;background:var(--color-bg);color:var(--color-text);cursor:pointer">
+        <option value="horizontal" selected>horizontal</option>
+        <option value="vertical">vertical</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="stage stage--auto" id="cumulative-xg-chart-container"></div>
+
+  <div class="component-ref">
+    <div class="component-ref-row">
+      <span class="ref-label">function</span>
+      <code class="ref-value">createCumulativeXgChart(selection, data, config)</code>
+    </div>
+    <div class="component-ref-row">
+      <span class="ref-label">returns</span>
+      <code class="ref-value">{ svg, g, timeScale, xgScale, update({ data?, orientation?, showGoals?, showTotals? }) }</code>
+    </div>
+    <div class="component-ref-row">
+      <span class="ref-label">data</span>
+      <code class="ref-value">sample_data/cumulative_xg_{match_id}.json → { home_team, away_team, points[{minute, team, display_name, xg, cumulative_xg, outcome, is_goal}], final_minute, final_home_xg, final_away_xg, goals, metadata }</code>
+    </div>
+    <div class="component-ref-row">
+      <span class="ref-label">extract</span>
+      <code class="ref-value">extract_cumulative_xg(match_id)  ·  src/statsbomb/extract_cumulative_xg.py</code>
+    </div>
+  </div>
+</section>
+
+<section class="component-section">
   <h2 class="component-heading">Goal Animation — UEFA Euro 2024 Final</h2>
   <p class="component-sub">Ball path in the 10s before each goal · Spain vs England · event-based, not tracking data</p>
   <p class="component-desc">
@@ -1248,6 +1301,7 @@
   import { createTimelineStrip }   from "./components/timelineStrip/timelineStrip.js";
   import { createXtSurface }       from "./components/xtSurface/xtSurface.js";
   import { createMomentumChart }   from "./components/momentumChart/momentumChart.js";
+  import { createCumulativeXgChart } from "./components/cumulativeXgChart/cumulativeXgChart.js";
   import { createPlayAnimation }   from "./components/playAnimation/playAnimation.js";
 
   function render() {
@@ -1834,6 +1888,30 @@
   });
   document.getElementById("mc-orientation").addEventListener("change", function () {
     if (_mcUpdate) _mcUpdate({ orientation: this.value });
+  });
+
+  // ── Cumulative xG Chart ───────────────────────────────────────────────────────
+  let _cxgUpdate = null;
+
+  fetch("sample_data/cumulative_xg_3943043.json")
+    .then(r => r.json())
+    .then(data => {
+      const { update } = createCumulativeXgChart(
+        d3.select("#cumulative-xg-chart-container"),
+        data,
+        { width: 900, height: 240 }
+      );
+      _cxgUpdate = update;
+    });
+
+  document.getElementById("cxg-goals").addEventListener("change", function () {
+    if (_cxgUpdate) _cxgUpdate({ showGoals: this.checked });
+  });
+  document.getElementById("cxg-totals").addEventListener("change", function () {
+    if (_cxgUpdate) _cxgUpdate({ showTotals: this.checked });
+  });
+  document.getElementById("cxg-orientation").addEventListener("change", function () {
+    if (_cxgUpdate) _cxgUpdate({ orientation: this.value });
   });
 
   // ── Goal Animation ────────────────────────────────────────────────────────────

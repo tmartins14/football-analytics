@@ -153,18 +153,32 @@ function straightPath(ax, ay, bx, by, fromR, toR) {
  * @param {number}  [config.minEdgeCount=3]       - Hide edges with count below this threshold.
  * @param {string}  [config.nodeColor="#1E3A5F"]  - Fill for player nodes.
  * @param {string}  [config.edgeColor="#1E3A5F"]  - Stroke for arcs/lines and arrowheads.
- * @param {string}  [config.labelColor="#FAF7F0"] - Fill for player display_name labels.
+ * @param {string}  [config.labelColor="#FAF7F0"] - Fill for player display_name labels. Pick a
+ *   color that contrasts with whatever `labelPosition` places the label against (the node
+ *   fill for "onNode", the pitch surface for "below").
+ * @param {"onNode"|"below"} [config.labelPosition="onNode"] - Label placement. "onNode"
+ *   (default, unchanged): centered on the node — sized for a name shorter than the node
+ *   diameter, or a caller-supplied halo/stroke; a name wider than the node will overflow
+ *   onto the pitch surface. "below": positioned under the node like formation.js's surname
+ *   labels, clear of the node entirely — use this when names are wider than the nodes.
+ * @param {[number,number]} [config.nodeRadius=[5,18]] - Node circle radius range in pixels,
+ *   scaled by pass volume (sqrt scale).
+ * @param {[number,number]} [config.edgeWidth=[0.8,5]] - Edge stroke-width range in pixels,
+ *   scaled by pass count (linear scale, clamped).
  * @returns {{ g: d3.Selection, px: Function, update: Function }}
  *   g is pitch.g (append further overlays there). update(idx) transitions to window idx.
  */
 export function createPassNetwork(pitch, data, config = {}) {
   const {
     window: initialWindow = 0,
-    directed     = true,
-    minEdgeCount = 3,
-    nodeColor    = "#1E3A5F",
-    edgeColor    = "#1E3A5F",
-    labelColor   = "#FAF7F0",
+    directed      = true,
+    minEdgeCount  = 3,
+    nodeColor     = "#1E3A5F",
+    edgeColor     = "#1E3A5F",
+    labelColor    = "#FAF7F0",
+    labelPosition = "onNode",
+    nodeRadius    = [5, 18],
+    edgeWidth     = [0.8, 5],
   } = config;
 
   const { svg, g, px } = pitch;
@@ -194,11 +208,11 @@ export function createPassNetwork(pitch, data, config = {}) {
 
   const rScale = d3.scaleSqrt()
     .domain([0, globalMaxPasses])
-    .range([5, 18]);
+    .range(nodeRadius);
 
   const wScale = d3.scaleLinear()
     .domain([0, globalMaxCount])
-    .range([0.8, 5])
+    .range(edgeWidth)
     .clamp(true);
 
   // Layering: edges first so nodes render on top, then labels topmost.
@@ -329,6 +343,13 @@ export function createPassNetwork(pitch, data, config = {}) {
       .attr("cy", d => px(d.x, d.y)[1]);
 
     // ── Labels ───────────────────────────────────────────────────────────────
+    // "below": clear of the node entirely (mirrors formation.js's surname labels) —
+    // use when names are wider than the node. "onNode": centered on the node itself.
+    const labelY = d => {
+      const [, cy] = px(d.x, d.y);
+      return labelPosition === "below" ? cy + rScale(d.passes) + 9 : cy;
+    };
+
     const labelSel = labelsG.selectAll(".pn-label")
       .data(win.nodes, d => d.player);
 
@@ -340,7 +361,7 @@ export function createPassNetwork(pitch, data, config = {}) {
     const labelEnter = labelSel.enter().append("text")
       .attr("class", "pn-label")
       .attr("text-anchor", "middle")
-      .attr("dominant-baseline", "middle")
+      .attr("dominant-baseline", labelPosition === "below" ? null : "middle")
       .attr("font-family", "Geist Mono, monospace")
       .attr("font-size", 9)
       .attr("font-weight", 600)
@@ -348,14 +369,14 @@ export function createPassNetwork(pitch, data, config = {}) {
       .attr("pointer-events", "none")
       .style("opacity", 0)
       .attr("x", d => px(d.x, d.y)[0])
-      .attr("y", d => px(d.x, d.y)[1])
+      .attr("y", labelY)
       .text(d => d.display_name);
 
     labelEnter.merge(labelSel)
       .transition().duration(dur)
       .style("opacity", 1)
       .attr("x", d => px(d.x, d.y)[0])
-      .attr("y", d => px(d.x, d.y)[1]);
+      .attr("y", labelY);
   }
 
   renderWindow(initialWindow, false);

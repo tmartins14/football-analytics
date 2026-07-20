@@ -65,14 +65,26 @@ const pitch = createPitch(d3.select("#my-svg"), {
 
 // 2. Overlay the pass network on top.
 const { update } = createPassNetwork(pitch, data, {
-  window:       0,          // initial substitution window (0-indexed)
-  directed:     true,       // true = curved arcs + arrows; false = straight undirected lines
-  minEdgeCount: 3,          // hide edges with count below this threshold
-  nodeColor:    "#1E3A5F",
-  edgeColor:    "#1E3A5F",
-  labelColor:   "#FAF7F0",
+  window:        0,          // initial substitution window (0-indexed)
+  directed:      true,       // true = curved arcs + arrows; false = straight undirected lines
+  minEdgeCount:  3,          // hide edges with count below this threshold
+  nodeColor:     "#1E3A5F",
+  edgeColor:     "#1E3A5F",
+  labelColor:    "#FAF7F0",  // pick a color that contrasts with whatever labelPosition targets
+  labelPosition: "onNode",   // "onNode" (default) or "below" (clear of the node, for wide names)
+  nodeRadius:    [5, 18],    // node radius range in px, scaled by pass volume
+  edgeWidth:     [0.8, 5],   // edge stroke-width range in px, scaled by pass count
 });
 
 // 3. Animate to the next substitution window.
 update(1);
 ```
+
+## Label placement
+
+`labelPosition: "onNode"` (default) centers each player's name directly on their node —
+matches the original design, but a name wider than the node's diameter will overflow onto
+the pitch surface, so `labelColor` needs to contrast with the *node* fill, not the pitch.
+`labelPosition: "below"` places the label under the node instead (mirroring `formation.js`'s
+surname labels), clear of the node circle entirely — use this whenever names are likely
+wider than the nodes, and set `labelColor` to contrast with the *pitch surface* instead.
