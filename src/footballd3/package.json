@@ -1,8 +1,17 @@
 {
   "name": "footballd3",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.1",
   "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tmartins14/football-analytics.git",
+    "directory": "src/footballd3"
+  },
+  "files": [
+    "components",
+    "README.md"
+  ],
   "dependencies": {
     "d3": "^7.9.0"
   },
