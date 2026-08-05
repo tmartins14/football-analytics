@@ -60,8 +60,11 @@ function getTooltip() {
  * @param {number} bounds.maxY - Maximum screen Y for node center.
  * @param {string} backgroundColor - Stroke color separating nodes from the pitch surface.
  * @param {number} nodeRadius - Player circle radius in pixels.
+ * @param {Function|null} onPlayerClick - Called with the player record on marker
+ *   click. Suppressed for the Goalkeeper marker (cursor stays default, no
+ *   handler attached) — a goalkeeper is not a selectable outfield player.
  */
-function renderPeriod(g, px, period, nodeColor, labelColor, bounds, backgroundColor, nodeRadius) {
+function renderPeriod(g, px, period, nodeColor, labelColor, bounds, backgroundColor, nodeRadius, onPlayerClick) {
   g.selectAll(".fm-player").remove();
 
   period.players.forEach(player => {
@@ -69,9 +72,16 @@ function renderPeriod(g, px, period, nodeColor, labelColor, bounds, backgroundCo
     const cx = Math.max(bounds.minX, Math.min(bounds.maxX, rawCx));
     const cy = Math.max(bounds.minY, Math.min(bounds.maxY, rawCy));
 
+    const isGoalkeeper = player.position === "Goalkeeper";
+    const clickable = onPlayerClick && !isGoalkeeper;
+
     const playerG = g.append("g")
       .attr("class", "fm-player")
-      .style("cursor", "pointer");
+      .style("cursor", clickable ? "pointer" : "default");
+
+    if (clickable) {
+      playerG.on("click", () => onPlayerClick(player));
+    }
 
     playerG.append("circle")
       .attr("cx", cx).attr("cy", cy)
@@ -151,6 +161,11 @@ function renderPeriod(g, px, period, nodeColor, labelColor, bounds, backgroundCo
  *   circles from the pitch surface — pass the current theme's page background so the
  *   separator matches in both light and dark themes.
  * @param {number}  [config.nodeRadius=14]        - Player circle radius in pixels.
+ * @param {Function|null} [config.onPlayerClick=null] - Called with the player
+ *   record ({ player_id, player, display_name, jersey_number, position,
+ *   template_x, template_y }) on marker click. Suppressed for the Goalkeeper
+ *   marker — a goalkeeper is not a selectable outfield player, so it gets
+ *   cursor: default and no click handler instead of cursor: pointer.
  * @returns {{ svg: d3.Selection, g: d3.Selection, px: Function, update: Function }}
  *   svg — the SVG element.
  *   g   — the pitch group; append further overlays here.
@@ -166,6 +181,7 @@ export function createFormation(selection, data, config = {}) {
     labelColor      = "#171717",
     backgroundColor = "#FAF7F0",
     nodeRadius      = NODE_R,
+    onPlayerClick   = null,
   } = config;
 
   const { svg, g, px, width, height, config: pitchCfg } = createPitch(selection, {
@@ -187,7 +203,7 @@ export function createFormation(selection, data, config = {}) {
     maxY: height - pad - nodeRadius,
   };
 
-  renderPeriod(g, px, data.periods[0], nodeColor, labelColor, bounds, backgroundColor, nodeRadius);
+  renderPeriod(g, px, data.periods[0], nodeColor, labelColor, bounds, backgroundColor, nodeRadius, onPlayerClick);
 
   /**
    * Transition the diagram to a different formation period.
@@ -199,7 +215,7 @@ export function createFormation(selection, data, config = {}) {
   function update(periodIdx) {
     const period = data.periods[periodIdx];
     if (!period) return;
-    renderPeriod(g, px, period, nodeColor, labelColor, bounds, backgroundColor, nodeRadius);
+    renderPeriod(g, px, period, nodeColor, labelColor, bounds, backgroundColor, nodeRadius, onPlayerClick);
   }
 
   return { svg, g, px, update };

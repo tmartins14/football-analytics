@@ -102,6 +102,35 @@ The top-level file structure:
 
 ---
 
+## Points mode — single hull from a flat point list
+
+As an alternative to the `{ sides }` shape above, `createConvexHull` also accepts
+`{ points: [[x,y], ...] }` — a flat list of StatsBomb-space points with no
+freeze-frame/offense-defense structure, e.g. one player's accumulated touch
+locations over a match. The hull is computed **client-side** via `d3.polygonHull`
+and rendered as a single polygon in `pointsColor`. This is pure geometry over an
+already-filtered point set (not a statistical or analytical judgment), so it
+doesn't cross the "Python owns analysis, D3 only renders" line the way something
+like KDE bandwidth selection would.
+
+Degenerates gracefully for fewer than 3 points — renders nothing
+(`d3.polygonHull` returns `null` there). For 3+ **collinear** points,
+`d3.polygonHull` does **not** return `null` — it returns a degenerate 2-point
+"hull" (the two extreme points), which renders as a thin line rather than
+disappearing. That's `d3.polygonHull`'s own documented behavior, not a bug in
+this component; verified empirically, not assumed.
+
+```javascript
+const ch = createConvexHull(pitch, { points: [[71.1, 72.4], [77.0, 69.9], [93.7, 61.8]] }, {
+  pointsColor: "#9F1239",
+});
+
+// Later, e.g. as more of a player's events are revealed by a scrubber:
+ch.update({ points: moreAccumulatedTouches });
+```
+
+---
+
 ## Offense / defense resolution
 
 Python determines offense and defense from the event's `possession_team`:
@@ -160,6 +189,7 @@ its `<g class="ch">` before the `<g class="ff">` group so hulls always render be
 | `toggle` | string | `"both"` | Which hull(s) to render: `"offense"`, `"defense"`, or `"both"` |
 | `offenseColor` | string | `"#9F1239"` | Fill and stroke color for the offense hull |
 | `defenseColor` | string | `"#1E3A5F"` | Fill and stroke color for the defense hull |
+| `pointsColor` | string | `"#9F1239"` | Fill and stroke color for the single hull rendered in `points` mode |
 | `fillOpacity` | number | `0.18` | Hull fill opacity |
 | `strokeOpacity` | number | `0.55` | Hull stroke opacity |
 | `strokeWidth` | number | `1.5` | Hull stroke width in px |
@@ -168,9 +198,10 @@ its `<g class="ch">` before the `<g class="ff">` group so hulls always render be
 ### Return value
 
 ```js
-{ g: d3.Selection, px: Function }
-// g  — the <g class="ch"> group in pitch.g
-// px — the coordinate mapper (pitch.px, with optional mirrorX wrapping)
+{ g: d3.Selection, px: Function, update: Function }
+// g      — the <g class="ch"> group in pitch.g
+// px     — the coordinate mapper (pitch.px, with optional mirrorX wrapping)
+// update — update(newData): replace the data (either `{ sides }` or `{ points }`) and re-render
 ```
 
 ---

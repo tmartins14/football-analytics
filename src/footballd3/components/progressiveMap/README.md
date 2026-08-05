@@ -128,6 +128,11 @@ fetch("sample_data/progressive_map_3943043_spain.json")
 
     // Back to all players, both types, all actions:
     update({ toggle: "both", player: null, progressiveOnly: false });
+
+    // Replace the underlying action array entirely — e.g. a scrub-filtered
+    // subset for a single player's match-progress view. Re-renders in place,
+    // no destroy/recreate needed. Mirrors eventScatter.js's opts.events.
+    update({ actions: scrubbedActions });
   });
 ```
 

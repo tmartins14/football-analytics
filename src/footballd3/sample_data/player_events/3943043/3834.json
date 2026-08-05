@@ -1,0 +1,37 @@
+{
+  "events": [
+    {
+      "event_id": "e89b4a99-4667-428b-b4b6-a73860bf11cd",
+      "minute": 92,
+      "second": 43,
+      "type": "Duel",
+      "location": [
+        105.8,
+        59.0
+      ],
+      "end_location": null,
+      "outcome": null,
+      "under_pressure": true,
+      "possession": 146,
+      "possession_team": "England",
+      "duel_type": "Aerial Lost",
+      "is_progressive": null,
+      "xt_delta": null,
+      "distance_gained": null,
+      "pressure_regain": null
+    }
+  ],
+  "metadata": {
+    "match_id": 3943043,
+    "player_id": 3834,
+    "display_name": "Ivan Toney",
+    "team": "England",
+    "competition": "UEFA Euro 2024",
+    "season": "2024",
+    "match_label": "Spain vs England",
+    "n_events": 1,
+    "xt_grid_source": "Karun Singh open_xt_12x8_v1",
+    "progressive_threshold": 0.25,
+    "pressure_regain_window_seconds": 5
+  }
+}

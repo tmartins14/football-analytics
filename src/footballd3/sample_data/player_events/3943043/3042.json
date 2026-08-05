@@ -1,0 +1,57 @@
+{
+  "events": [
+    {
+      "event_id": "2a71b51b-4c71-4a25-8590-1a18be8b9131",
+      "minute": 92,
+      "second": 15,
+      "type": "Pressure",
+      "location": [
+        57.2,
+        38.5
+      ],
+      "end_location": null,
+      "outcome": null,
+      "under_pressure": false,
+      "possession": 145,
+      "possession_team": "England",
+      "duel_type": null,
+      "is_progressive": null,
+      "xt_delta": null,
+      "distance_gained": null,
+      "pressure_regain": false
+    },
+    {
+      "event_id": "3e38f7a4-5eee-4cec-ab6a-5bb49273c7f9",
+      "minute": 91,
+      "second": 59,
+      "type": "Duel",
+      "location": [
+        81.1,
+        32.0
+      ],
+      "end_location": null,
+      "outcome": null,
+      "under_pressure": true,
+      "possession": 143,
+      "possession_team": "Spain",
+      "duel_type": "Aerial Lost",
+      "is_progressive": null,
+      "xt_delta": null,
+      "distance_gained": null,
+      "pressure_regain": null
+    }
+  ],
+  "metadata": {
+    "match_id": 3943043,
+    "player_id": 3042,
+    "display_name": "Mikel Merino",
+    "team": "Spain",
+    "competition": "UEFA Euro 2024",
+    "season": "2024",
+    "match_label": "Spain vs England",
+    "n_events": 2,
+    "xt_grid_source": "Karun Singh open_xt_12x8_v1",
+    "progressive_threshold": 0.25,
+    "pressure_regain_window_seconds": 5
+  }
+}

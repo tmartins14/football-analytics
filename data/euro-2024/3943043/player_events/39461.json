@@ -1,0 +1,645 @@
+{
+  "events": [
+    {
+      "event_id": "4bc8e388-5b90-4936-a29c-68cf97d3de47",
+      "minute": 70,
+      "second": 21,
+      "type": "Pass",
+      "location": [
+        77.0,
+        69.9
+      ],
+      "end_location": [
+        93.7,
+        61.8
+      ],
+      "outcome": "Incomplete",
+      "under_pressure": false,
+      "possession": 112,
+      "possession_team": "England",
+      "duel_type": null,
+      "is_progressive": true,
+      "xt_delta": 0.01082925,
+      "distance_gained": 18.21,
+      "pressure_regain": null
+    },
+    {
+      "event_id": "98c9b75c-282f-41b9-98c3-e46f2e661c22",
+      "minute": 71,
+      "second": 58,
+      "type": "Pass",
+      "location": [
+        46.2,
+        67.7
+      ],
+      "end_location": [
+        70.3,
+        76.5
+      ],
+      "outcome": null,
+      "under_pressure": false,
+      "possession": 117,
+      "possession_team": "England",
+      "duel_type": null,
+      "is_progressive": false,
+      "xt_delta": 0.00530341,
+      "distance_gained": 17.16,
+      "pressure_regain": null
+    },
+    {
+      "event_id": "8e78af9c-5112-4f22-b52c-90f0b2ac64ff",
+      "minute": 74,
+      "second": 8,
+      "type": "Pass",
+      "location": [
+        81.4,
+        49.6
+      ],
+      "end_location": [
+        99.0,
+        67.4
+      ],
+      "outcome": null,
+      "under_pressure": false,
+      "possession": 120,
+      "possession_team": "England",
+      "duel_type": null,
+      "is_progressive": false,
+      "xt_delta": 0.00568123,
+      "distance_gained": 5.25,
+      "pressure_regain": null
+    },
+    {
+      "event_id": "c3670665-8168-4505-8d52-8e921904f57d",
+      "minute": 74,
+      "second": 38,
+      "type": "Pass",
+      "location": [
+        79.7,
+        71.2
+      ],
+      "end_location": [
+        99.0,
+        76.5
+      ],
+      "outcome": null,
+      "under_pressure": false,
+      "possession": 121,
+      "possession_team": "England",
+      "duel_type": null,
+      "is_progressive": false,
+      "xt_delta": 0.01011252,
+      "distance_gained": 8.86,
+      "pressure_regain": null
+    },
+    {
+      "event_id": "e092cbab-b668-48f3-bd25-97858c9ac1e7",
+      "minute": 87,
+      "second": 52,
+      "type": "Pass",
+      "location": [
+        85.3,
+        27.3
+      ],
+      "end_location": [
+        79.7,
+        40.4
+      ],
+      "outcome": null,
+      "under_pressure": false,
+      "possession": 137,
+      "possession_team": "England",
+      "duel_type": null,
+      "is_progressive": false,
+      "xt_delta": -0.0041517,
+      "distance_gained": -3.35,
+      "pressure_regain": null
+    },
+    {
+      "event_id": "589d832b-9a31-4782-b22c-f257043d7d05",
+      "minute": 89,
+      "second": 12,
+      "type": "Pass",
+      "location": [
+        120.0,
+        0.1
+      ],
+      "end_location": [
+        109.5,
+        44.1
+      ],
+      "outcome": null,
+      "under_pressure": false,
+      "possession": 138,
+      "possession_team": "England",
+      "duel_type": null,
+      "is_progressive": true,
+      "xt_delta": 0.07012512,
+      "distance_gained": 28.63,
+      "pressure_regain": null
+    },
+    {
+      "event_id": "bb7f5c5b-cc7b-43fc-8295-7afd9eea3b3a",
+      "minute": 92,
+      "second": 12,
+      "type": "Pass",
+      "location": [
+        40.9,
+        66.3
+      ],
+      "end_location": [
+        63.1,
+        37.4
+      ],
+      "outcome": null,
+      "under_pressure": false,
+      "possession": 145,
+      "possession_team": "England",
+      "duel_type": null,
+      "is_progressive": true,
+      "xt_delta": 0.00474809,
+      "distance_gained": 26.4,
+      "pressure_regain": null
+    },
+    {
+      "event_id": "4940d96f-8858-4cb8-b333-f365708b445b",
+      "minute": 70,
+      "second": 18,
+      "type": "Carry",
+      "location": [
+        71.1,
+        72.4
+      ],
+      "end_location": [
+        77.0,
+        69.9
+      ],
+      "outcome": null,
+      "under_pressure": false,
+      "possession": 112,
+      "possession_team": "England",
+      "duel_type": null,
+      "is_progressive": false,
+      "xt_delta": 0.00125287,
+      "distance_gained": 6.29,
+      "pressure_regain": null
+    },
+    {
+      "event_id": "bbed3805-eef4-44e3-805b-3c59ff926612",
+      "minute": 71,
+      "second": 57,
+      "type": "Carry",
+      "location": [
+        45.6,
+        67.4
+      ],
+      "end_location": [
+        46.2,
+        67.7
+      ],
+      "outcome": null,
+      "under_pressure": false,
+      "possession": 117,
+      "possession_team": "England",
+      "duel_type": null,
+      "is_progressive": false,
+      "xt_delta": 0.0,
+      "distance_gained": 0.46,
+      "pressure_regain": null
+    },
+    {
+      "event_id": "d2555d69-daa4-47dc-88c3-c0ba71226e4a",
+      "minute": 74,
+      "second": 7,
+      "type": "Carry",
+      "location": [
+        77.6,
+        44.5
+      ],
+      "end_location": [
+        81.4,
+        49.6
+      ],
+      "outcome": null,
+      "under_pressure": false,
+      "possession": 120,
+      "possession_team": "England",
+      "duel_type": null,
+      "is_progressive": false,
+      "xt_delta": 0.00388079,
+      "distance_gained": 2.86,
+      "pressure_regain": null
+    },
+    {
+      "event_id": "cd2bb7da-2b24-479c-b85d-11910f9ea45c",
+      "minute": 74,
+      "second": 33,
+      "type": "Carry",
+      "location": [
+        77.0,
+        77.3
+      ],
+      "end_location": [
+        79.7,
+        71.2
+      ],
+      "outcome": null,
+      "under_pressure": false,
+      "possession": 121,
+      "possession_team": "England",
+      "duel_type": null,
+      "is_progressive": false,
+      "xt_delta": 0.0,
+      "distance_gained": 5.96,
+      "pressure_regain": null
+    },
+    {
+      "event_id": "51576996-1a21-48e3-9d8c-5fb92d543a14",
+      "minute": 74,
+      "second": 47,
+      "type": "Carry",
+      "location": [
+        103.7,
+        69.8
+      ],
+      "end_location": [
+        107.6,
+        71.6
+      ],
+      "outcome": null,
+      "under_pressure": true,
+      "possession": 121,
+      "possession_team": "England",
+      "duel_type": null,
+      "is_progressive": false,
+      "xt_delta": -0.0058192,
+      "distance_gained": 0.02,
+      "pressure_regain": null
+    },
+    {
+      "event_id": "a259a246-9a14-4c0c-a13f-a5d0c1f74983",
+      "minute": 81,
+      "second": 0,
+      "type": "Carry",
+      "location": [
+        55.9,
+        45.2
+      ],
+      "end_location": [
+        57.2,
+        52.9
+      ],
+      "outcome": null,
+      "under_pressure": true,
+      "possession": 128,
+      "possession_team": "England",
+      "duel_type": null,
+      "is_progressive": false,
+      "xt_delta": -0.0005547,
+      "distance_gained": 0.2,
+      "pressure_regain": null
+    },
+    {
+      "event_id": "5d09fe7c-dbce-4663-a5bf-96af6b604261",
+      "minute": 87,
+      "second": 47,
+      "type": "Carry",
+      "location": [
+        81.4,
+        53.4
+      ],
+      "end_location": [
+        85.3,
+        27.3
+      ],
+      "outcome": null,
+      "under_pressure": true,
+      "possession": 137,
+      "possession_team": "England",
+      "duel_type": null,
+      "is_progressive": false,
+      "xt_delta": 0.0,
+      "distance_gained": 3.91,
+      "pressure_regain": null
+    },
+    {
+      "event_id": "16ba73e3-7585-4562-99dc-4f6442ccac44",
+      "minute": 92,
+      "second": 4,
+      "type": "Carry",
+      "location": [
+        49.2,
+        56.0
+      ],
+      "end_location": [
+        40.7,
+        71.3
+      ],
+      "outcome": null,
+      "under_pressure": true,
+      "possession": 144,
+      "possession_team": "England",
+      "duel_type": null,
+      "is_progressive": false,
+      "xt_delta": -0.00142907,
+      "distance_gained": -12.67,
+      "pressure_regain": null
+    },
+    {
+      "event_id": "af71af95-78e4-4287-9d55-3140e5e55439",
+      "minute": 70,
+      "second": 25,
+      "type": "Pressure",
+      "location": [
+        92.9,
+        61.2
+      ],
+      "end_location": null,
+      "outcome": null,
+      "under_pressure": false,
+      "possession": 112,
+      "possession_team": "England",
+      "duel_type": null,
+      "is_progressive": null,
+      "xt_delta": null,
+      "distance_gained": null,
+      "pressure_regain": false
+    },
+    {
+      "event_id": "e1d229aa-d090-45ca-a25e-4b8d06536ffd",
+      "minute": 70,
+      "second": 58,
+      "type": "Pressure",
+      "location": [
+        83.3,
+        64.1
+      ],
+      "end_location": null,
+      "outcome": null,
+      "under_pressure": false,
+      "possession": 113,
+      "possession_team": "Spain",
+      "duel_type": null,
+      "is_progressive": null,
+      "xt_delta": null,
+      "distance_gained": null,
+      "pressure_regain": false
+    },
+    {
+      "event_id": "468ff4c6-215f-4f4b-9b67-34c266db34a0",
+      "minute": 71,
+      "second": 2,
+      "type": "Pressure",
+      "location": [
+        106.7,
+        51.3
+      ],
+      "end_location": null,
+      "outcome": null,
+      "under_pressure": false,
+      "possession": 113,
+      "possession_team": "Spain",
+      "duel_type": null,
+      "is_progressive": null,
+      "xt_delta": null,
+      "distance_gained": null,
+      "pressure_regain": false
+    },
+    {
+      "event_id": "e82265b7-2c88-43d9-aba4-8ecfdbcad2fd",
+      "minute": 80,
+      "second": 3,
+      "type": "Pressure",
+      "location": [
+        67.0,
+        54.6
+      ],
+      "end_location": null,
+      "outcome": null,
+      "under_pressure": false,
+      "possession": 127,
+      "possession_team": "Spain",
+      "duel_type": null,
+      "is_progressive": null,
+      "xt_delta": null,
+      "distance_gained": null,
+      "pressure_regain": false
+    },
+    {
+      "event_id": "ae5b845a-4479-4d96-80cd-b4edb49a4993",
+      "minute": 81,
+      "second": 44,
+      "type": "Pressure",
+      "location": [
+        33.8,
+        61.1
+      ],
+      "end_location": null,
+      "outcome": null,
+      "under_pressure": false,
+      "possession": 130,
+      "possession_team": "Spain",
+      "duel_type": null,
+      "is_progressive": null,
+      "xt_delta": null,
+      "distance_gained": null,
+      "pressure_regain": false
+    },
+    {
+      "event_id": "fe93aa81-d86d-45f5-8591-ad576659a9de",
+      "minute": 83,
+      "second": 29,
+      "type": "Pressure",
+      "location": [
+        68.6,
+        63.5
+      ],
+      "end_location": null,
+      "outcome": null,
+      "under_pressure": false,
+      "possession": 133,
+      "possession_team": "Spain",
+      "duel_type": null,
+      "is_progressive": null,
+      "xt_delta": null,
+      "distance_gained": null,
+      "pressure_regain": false
+    },
+    {
+      "event_id": "09729c9d-67fa-4bc1-b4b3-1d12c4e981aa",
+      "minute": 85,
+      "second": 48,
+      "type": "Pressure",
+      "location": [
+        69.6,
+        39.8
+      ],
+      "end_location": null,
+      "outcome": null,
+      "under_pressure": false,
+      "possession": 136,
+      "possession_team": "Spain",
+      "duel_type": null,
+      "is_progressive": null,
+      "xt_delta": null,
+      "distance_gained": null,
+      "pressure_regain": false
+    },
+    {
+      "event_id": "85c44841-d132-4572-8742-8c290828c7df",
+      "minute": 81,
+      "second": 1,
+      "type": "Dispossessed",
+      "location": [
+        57.2,
+        52.9
+      ],
+      "end_location": null,
+      "outcome": null,
+      "under_pressure": true,
+      "possession": 128,
+      "possession_team": "England",
+      "duel_type": null,
+      "is_progressive": null,
+      "xt_delta": null,
+      "distance_gained": null,
+      "pressure_regain": null
+    },
+    {
+      "event_id": "83eb27e6-eccf-4581-97eb-7269b29d855e",
+      "minute": 70,
+      "second": 26,
+      "type": "Duel",
+      "location": [
+        94.5,
+        64.8
+      ],
+      "end_location": null,
+      "outcome": "Success In Play",
+      "under_pressure": true,
+      "possession": 112,
+      "possession_team": "England",
+      "duel_type": "Tackle",
+      "is_progressive": null,
+      "xt_delta": null,
+      "distance_gained": null,
+      "pressure_regain": null
+    },
+    {
+      "event_id": "867c8253-6c31-4d09-8f29-d548328705fc",
+      "minute": 74,
+      "second": 49,
+      "type": "Dribble",
+      "location": [
+        107.6,
+        71.6
+      ],
+      "end_location": null,
+      "outcome": "Incomplete",
+      "under_pressure": true,
+      "possession": 121,
+      "possession_team": "England",
+      "duel_type": null,
+      "is_progressive": null,
+      "xt_delta": null,
+      "distance_gained": null,
+      "pressure_regain": null
+    },
+    {
+      "event_id": "9b20c822-30f6-4297-ab14-87382d0a1961",
+      "minute": 87,
+      "second": 47,
+      "type": "Ball Recovery",
+      "location": [
+        81.4,
+        53.4
+      ],
+      "end_location": null,
+      "outcome": null,
+      "under_pressure": false,
+      "possession": 137,
+      "possession_team": "England",
+      "duel_type": null,
+      "is_progressive": null,
+      "xt_delta": null,
+      "distance_gained": null,
+      "pressure_regain": null
+    },
+    {
+      "event_id": "43d6b0d9-1072-486b-ad57-1b03620c2202",
+      "minute": 92,
+      "second": 4,
+      "type": "Ball Recovery",
+      "location": [
+        49.2,
+        56.0
+      ],
+      "end_location": null,
+      "outcome": null,
+      "under_pressure": false,
+      "possession": 144,
+      "possession_team": "England",
+      "duel_type": null,
+      "is_progressive": null,
+      "xt_delta": null,
+      "distance_gained": null,
+      "pressure_regain": null
+    },
+    {
+      "event_id": "45715361-ca3b-41fb-a78d-f957291193e1",
+      "minute": 78,
+      "second": 23,
+      "type": "Clearance",
+      "location": [
+        15.3,
+        34.5
+      ],
+      "end_location": null,
+      "outcome": null,
+      "under_pressure": true,
+      "possession": 124,
+      "possession_team": "Spain",
+      "duel_type": null,
+      "is_progressive": null,
+      "xt_delta": null,
+      "distance_gained": null,
+      "pressure_regain": null
+    },
+    {
+      "event_id": "b4249c3f-4c32-4d2c-bb40-102b5334b3ad",
+      "minute": 72,
+      "second": 8,
+      "type": "Shot",
+      "location": [
+        98.4,
+        49.0
+      ],
+      "end_location": [
+        120.0,
+        37.1
+      ],
+      "outcome": "Goal",
+      "under_pressure": false,
+      "possession": 117,
+      "possession_team": "England",
+      "duel_type": null,
+      "is_progressive": null,
+      "xt_delta": null,
+      "distance_gained": null,
+      "pressure_regain": null
+    }
+  ],
+  "metadata": {
+    "match_id": 3943043,
+    "player_id": 39461,
+    "display_name": "Cole Palmer",
+    "team": "England",
+    "competition": "UEFA Euro 2024",
+    "season": "2024",
+    "match_label": "Spain vs England",
+    "n_events": 29,
+    "xt_grid_source": "Karun Singh open_xt_12x8_v1",
+    "progressive_threshold": 0.25,
+    "pressure_regain_window_seconds": 5
+  }
+}
