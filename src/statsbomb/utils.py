@@ -14,9 +14,11 @@ Public API:
     parse_timestamp(ts) -> float
     end_location(row) -> tuple[float | None, float | None]
     pass_outcome(row) -> str | None
+    clean_nan(value) -> Any
 """
 
 import json
+import math
 from datetime import datetime
 
 import requests
@@ -287,3 +289,23 @@ def pass_outcome(row: pd.Series) -> str | None:
             return str(outcome)
         return None
     return None
+
+
+def clean_nan(value):
+    """Replace a float NaN with None; pass every other value through unchanged.
+
+    Guards against pandas' NaN-coercion of columns that mix real values with
+    None across rows (pandas.DataFrame(list_of_dicts) silently turns a per-row
+    None into a float NaN for numeric columns, and — less obviously — can do
+    the same even in an object/string column). json.dump would otherwise emit
+    a literal NaN token for that field, which is not valid JSON.
+
+    Args:
+        value: Any single value from a DataFrame row or a record dict.
+
+    Returns:
+        The original value, or None if it was a float NaN.
+    """
+    if isinstance(value, float) and math.isnan(value):
+        return None
+    return value

@@ -7,6 +7,9 @@ Renders a declared formation diagram on a full pitch. Player markers are placed 
 - One formation period at a time: Starting XI or any subsequent Tactical Shift.
 - Each player marker: filled circle with jersey number + display name label.
 - Step through periods via the `update(periodIdx)` method.
+- Optionally clickable: pass `onPlayerClick` to make non-goalkeeper markers act as
+  selection targets (e.g. a player-selector UI). The Goalkeeper marker is never
+  clickable — it gets `cursor: default` and no click handler.
 
 ## What it does NOT show
 
@@ -26,6 +29,7 @@ File: `sample_data/formation_{match_id}_{team_slug}.json`
       "to_minute": 69,
       "players": [
         {
+          "player_id": 3468,
           "player": "Jordan Pickford",
           "display_name": "Jordan Pickford",
           "jersey_number": 1,
@@ -62,6 +66,11 @@ const { update } = createFormation(d3.select("#formation-svg"), data, {
 
 // Step through formation periods (e.g. wired to a <select>).
 update(1); // Tactical Shift at 69'
+
+// Clickable selector: fires for any non-Goalkeeper marker.
+createFormation(d3.select("#formation-svg"), data, {
+  onPlayerClick: (player) => selectPlayer(player.player_id, player.display_name),
+});
 ```
 
 ## Return value

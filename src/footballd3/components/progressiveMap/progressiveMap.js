@@ -82,8 +82,9 @@ const DASH_INCOMPLETE = "5,3";
  *   of progressive arrows linearly by distance_gained. Off by default.
  * @returns {{ g: d3.Selection, update: function }}
  *   g:      The D3 selection of the arrow group (appended to pitch.g).
- *   update: function({ toggle?, player?, progressiveOnly? }) — re-renders with
- *           new filter state. Any omitted keys keep their previous value.
+ *   update: function({ toggle?, player?, progressiveOnly?, actions? }) —
+ *           re-renders with new filter state. Any omitted keys keep their
+ *           previous value.
  */
 export function createProgressiveMap(pitch, data, config = {}) {
   const {
@@ -109,38 +110,45 @@ export function createProgressiveMap(pitch, data, config = {}) {
 
   const arrowsG = g.append("g").attr("class", "pm-arrows");
 
-  // Distance-weight scale for progressive arrows: distance_gained → stroke multiplier.
-  const distMax = data.actions
-    .filter(a => a.progressive)
-    .reduce((m, a) => Math.max(m, a.distance_gained), 1);
-  const wScale = d3.scaleLinear().domain([0, distMax]).range([0.8, 2.5]).clamp(true);
-
-  let _toggle         = toggle;
-  let _player         = player;
-  let _progressiveOnly = progressiveOnly;
+  let _actions         = data.actions;
+  let _toggle           = toggle;
+  let _player           = player;
+  let _progressiveOnly  = progressiveOnly;
 
   render();
 
   /**
-   * Re-render arrows with new filter options.
+   * Re-render arrows with new filter options or a replacement action array.
    *
    * @param {Object} [opts={}]
    * @param {string}      [opts.toggle]           - "passes" | "carries" | "both"
    * @param {string|null} [opts.player]            - display_name filter, or null for all
    * @param {boolean}     [opts.progressiveOnly]   - true = progressive only; false = all
+   * @param {Array}       [opts.actions]           - Replace the underlying action
+   *   array entirely (e.g. a scrub-filtered subset), mirroring eventScatter.js's
+   *   opts.events. Re-renders in place instead of requiring destroy/recreate.
    */
   function update(opts = {}) {
     if (opts.toggle          !== undefined) _toggle          = opts.toggle;
     if (opts.player          !== undefined) _player          = opts.player;
     if (opts.progressiveOnly !== undefined) _progressiveOnly = opts.progressiveOnly;
+    if (opts.actions         !== undefined) _actions         = opts.actions;
     render();
   }
 
   function render() {
     arrowsG.selectAll("*").remove();
 
+    // Distance-weight scale for progressive arrows: distance_gained → stroke
+    // multiplier. Recomputed per render so it stays correct against whichever
+    // action array is currently active.
+    const distMax = _actions
+      .filter(a => a.progressive)
+      .reduce((m, a) => Math.max(m, a.distance_gained), 1);
+    const wScale = d3.scaleLinear().domain([0, distMax]).range([0.8, 2.5]).clamp(true);
+
     // Apply type and player filters to everything first.
-    const filtered = data.actions.filter(a => {
+    const filtered = _actions.filter(a => {
       if (_toggle === "passes"  && a.action_type !== "pass")  return false;
       if (_toggle === "carries" && a.action_type !== "carry") return false;
       if (_player !== null && a.display_name !== _player)     return false;

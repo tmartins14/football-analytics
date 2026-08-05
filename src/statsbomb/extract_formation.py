@@ -12,8 +12,8 @@ Public API:
     load_formation_templates() -> dict
     main()
 
-DataFrame columns: formation, from_minute, to_minute, player, display_name,
-    jersey_number, position, template_x, template_y
+DataFrame columns: formation, from_minute, to_minute, player_id, player,
+    display_name, jersey_number, position, template_x, template_y
 
 JSON output shape:
     {
@@ -24,6 +24,7 @@ JSON output shape:
           "to_minute": 55,
           "players": [
             {
+              "player_id": int,
               "player": str,
               "display_name": str,
               "jersey_number": int,
@@ -104,8 +105,9 @@ def _build_player_list(lineup: list, templates: dict, nicknames: dict) -> list[d
 
     Returns:
         list[dict]: One record per player with keys:
-            player (str), display_name (str), jersey_number (int), position (str),
-            template_x (float), template_y (float). Sorted by jersey_number.
+            player_id (int), player (str), display_name (str), jersey_number (int),
+            position (str), template_x (float), template_y (float). Sorted by
+            jersey_number.
     """
     records = []
     for entry in lineup:
@@ -123,6 +125,7 @@ def _build_player_list(lineup: list, templates: dict, nicknames: dict) -> list[d
         display_name = raw_nick if raw_nick else player_name
 
         records.append({
+            "player_id":     player_id,
             "player":        player_name,
             "display_name":  display_name,
             "jersey_number": jersey,
@@ -150,6 +153,7 @@ def extract_formation(match_id: int, team: str) -> pd.DataFrame:
             formation (str): Hyphen-separated formation string (e.g. "4-3-3").
             from_minute (int): Period start minute (inclusive).
             to_minute (int): Period end minute (exclusive; last period = match end).
+            player_id (int): StatsBomb's stable numeric player ID.
             player (str): Full player name.
             display_name (str): Resolved display name (nickname or full name).
             jersey_number (int): Jersey number.

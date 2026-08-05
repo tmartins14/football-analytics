@@ -18,10 +18,17 @@ dependencies = [
 dev = [
     "interrogate>=1.7.0",
     "nbstripout>=0.7",
+    "pytest>=8.0",
 ]
 
 [tool.uv]
 default-groups = ["dev"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "integration: hits the live StatsBomb open-data API (cached in-process; slow on a cold run)",
+]
 
 [build-system]
 requires = ["hatchling"]
