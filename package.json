@@ -1,7 +1,12 @@
 {
   "type": "module",
+  "scripts": {
+    "test": "vitest run"
+  },
   "devDependencies": {
     "eslint": "^10.5.0",
-    "eslint-plugin-jsdoc": "^63.0.7"
+    "eslint-plugin-jsdoc": "^63.0.7",
+    "jsdom": "^25.0.0",
+    "vitest": "^3.0.0"
   }
 }
