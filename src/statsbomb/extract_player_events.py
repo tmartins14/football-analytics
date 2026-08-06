@@ -14,7 +14,15 @@ type, location, end_location (Pass/Carry/Shot only), outcome (semantics vary by
 type — see _event_outcome), under_pressure, possession, possession_team,
 duel_type (Duel only), is_progressive/distance_gained (Pass/Carry only, via the
 imported progressive-map helpers), xt_delta (Pass/Carry only, via the imported xT
-grid), pressure_regain (Pressure only, via _pressure_regain).
+grid), pressure_regain (Pressure only, via _pressure_regain), shot_xg/
+shot_end_location/is_goal (Shot only), key_pass (Pass only).
+
+shot_end_location is the raw StatsBomb end-location for a Shot — 2 elements
+([x, y]) for an on-target/blocked shot at the goal line, 3 elements
+([x, y, z]) when StatsBomb records shot height — unlike the generic
+end_location field, which is truncated to 2D for every type via utils.end_location.
+key_pass is True when the pass is the shot- or goal-assist for a later shot
+(StatsBomb's pass_shot_assist / pass_goal_assist), False otherwise.
 
 One JSON file is written per eligible player — not one combined file — because
 consumers only ever need one player's data at a time (fetched on selection rather
@@ -30,7 +38,8 @@ Public API:
 
 DataFrame columns: player_id, event_id, minute, second, type, location,
     end_location, outcome, under_pressure, possession, possession_team,
-    duel_type, is_progressive, xt_delta, distance_gained, pressure_regain
+    duel_type, is_progressive, xt_delta, distance_gained, pressure_regain,
+    shot_xg, shot_end_location, is_goal, key_pass
 
 JSON output shape (one file per player):
     {
@@ -38,7 +47,8 @@ JSON output shape (one file per player):
             { "event_id", "minute", "second", "type", "location", "end_location",
               "outcome", "under_pressure", "possession", "possession_team",
               "duel_type", "is_progressive", "xt_delta", "distance_gained",
-              "pressure_regain" }
+              "pressure_regain", "shot_xg", "shot_end_location", "is_goal",
+              "key_pass" }
         ],
         "metadata": {"match_id", "player_id", "display_name", "team",
                      "competition", "season", "match_label", "n_events",
@@ -142,6 +152,59 @@ def _pressure_regain(
     return bool(flipped_to_presser.any())
 
 
+def _shot_fields(row: pd.Series) -> tuple[float | None, list[float] | None, bool | None]:
+    """Extract (shot_xg, shot_end_location, is_goal) for a Shot event, else all None.
+
+    shot_end_location is the raw StatsBomb end-location list — 2 elements
+    ([x, y]) or 3 ([x, y, z]) when shot height is recorded — unlike the
+    generic end_location field (utils.end_location), which is truncated to
+    2D for every event type.
+
+    Args:
+        row (pd.Series): A single StatsBomb events row.
+
+    Returns:
+        tuple[float | None, list[float] | None, bool | None]: (shot_xg,
+            shot_end_location, is_goal). All None when row is not a Shot.
+    """
+    if str(row.get("type", "")) != "Shot":
+        return None, None, None
+
+    xg = row.get("shot_statsbomb_xg")
+    shot_xg = round(float(xg), 6) if pd.notna(xg) else None
+
+    raw_end = row.get("shot_end_location")
+    shot_end_location = [float(v) for v in raw_end] if isinstance(raw_end, list) else None
+
+    is_goal = str(row.get("shot_outcome", "")) == "Goal"
+
+    return shot_xg, shot_end_location, is_goal
+
+
+def _key_pass(row: pd.Series) -> bool | None:
+    """True when a Pass event is the shot- or goal-assist for a later shot.
+
+    Sourced from StatsBomb's pass_shot_assist / pass_goal_assist booleans —
+    either one being true means the pass created a shot (a goal-assist pass
+    is, by definition, also a shot-assist pass, but both columns are checked
+    since StatsBomb does not guarantee that redundancy).
+
+    Args:
+        row (pd.Series): A single StatsBomb events row.
+
+    Returns:
+        bool | None: True/False for Pass events, None for every other type.
+    """
+    if str(row.get("type", "")) != "Pass":
+        return None
+
+    shot_assist = row.get("pass_shot_assist")
+    goal_assist = row.get("pass_goal_assist")
+    return bool(pd.notna(shot_assist) and shot_assist) or bool(
+        pd.notna(goal_assist) and goal_assist
+    )
+
+
 def extract_player_events(match_id: int, player_id: int | None = None) -> pd.DataFrame:
     """Extract the credited event stream for eligible players in a match.
 
@@ -155,7 +218,8 @@ def extract_player_events(match_id: int, player_id: int | None = None) -> pd.Dat
         pd.DataFrame: One row per credited event with columns: player_id,
             event_id, minute, second, type, location, end_location, outcome,
             under_pressure, possession, possession_team, duel_type,
-            is_progressive, xt_delta, distance_gained, pressure_regain.
+            is_progressive, xt_delta, distance_gained, pressure_regain,
+            shot_xg, shot_end_location, is_goal, key_pass.
 
     Raises:
         ValueError: If player_id is given but is not an eligible player in
@@ -206,26 +270,33 @@ def extract_player_events(match_id: int, player_id: int | None = None) -> pd.Dat
             v = row.get("duel_type")
             duel_type = str(v) if pd.notna(v) else None
 
+        shot_xg, shot_end_location, is_goal = _shot_fields(row)
+        key_pass = _key_pass(row)
+
         under_pressure = row.get("under_pressure")
         under_pressure = bool(under_pressure) if pd.notna(under_pressure) else False
 
         records.append({
-            "player_id":       int(row["player_id"]),
-            "event_id":        str(row["id"]),
-            "minute":          int(row["minute"]),
-            "second":          int(row["second"]),
-            "type":            event_type,
-            "location":        [float(loc[0]), float(loc[1])],
-            "end_location":    end_loc,
-            "outcome":         _event_outcome(row),
-            "under_pressure":  under_pressure,
-            "possession":      int(row["possession"]),
-            "possession_team": str(row["possession_team"]),
-            "duel_type":       duel_type,
-            "is_progressive":  is_progressive,
-            "xt_delta":        xt_delta,
-            "distance_gained": distance_gained,
-            "pressure_regain": pressure_regain,
+            "player_id":         int(row["player_id"]),
+            "event_id":          str(row["id"]),
+            "minute":            int(row["minute"]),
+            "second":            int(row["second"]),
+            "type":              event_type,
+            "location":          [float(loc[0]), float(loc[1])],
+            "end_location":      end_loc,
+            "outcome":           _event_outcome(row),
+            "under_pressure":    under_pressure,
+            "possession":        int(row["possession"]),
+            "possession_team":   str(row["possession_team"]),
+            "duel_type":         duel_type,
+            "is_progressive":    is_progressive,
+            "xt_delta":          xt_delta,
+            "distance_gained":   distance_gained,
+            "pressure_regain":   pressure_regain,
+            "shot_xg":           shot_xg,
+            "shot_end_location": shot_end_location,
+            "is_goal":           is_goal,
+            "key_pass":          key_pass,
         })
 
     return pd.DataFrame(records)

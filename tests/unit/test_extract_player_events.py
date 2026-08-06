@@ -2,7 +2,7 @@
 
 import pandas as pd
 
-from statsbomb.extract_player_events import _event_outcome, _pressure_regain
+from statsbomb.extract_player_events import _event_outcome, _key_pass, _pressure_regain, _shot_fields
 
 
 class TestEventOutcome:
@@ -98,3 +98,59 @@ class TestPressureRegain:
         ])
         assert _pressure_regain(row, all_events, window_seconds=5) is False
         assert _pressure_regain(row, all_events, window_seconds=10) is True
+
+
+class TestShotFields:
+    def test_goal_has_xg_end_location_and_is_goal_true(self):
+        row = pd.Series({
+            "type": "Shot",
+            "shot_statsbomb_xg": 0.32145,
+            "shot_end_location": [120.0, 40.0, 2.1],
+            "shot_outcome": "Goal",
+        })
+        xg, end_loc, is_goal = _shot_fields(row)
+        assert xg == 0.32145
+        assert end_loc == [120.0, 40.0, 2.1]
+        assert is_goal is True
+
+    def test_off_target_shot_is_not_a_goal(self):
+        row = pd.Series({
+            "type": "Shot",
+            "shot_statsbomb_xg": 0.05,
+            "shot_end_location": [121.0, 38.0, 3.4],
+            "shot_outcome": "Off T",
+        })
+        _, _, is_goal = _shot_fields(row)
+        assert is_goal is False
+
+    def test_non_shot_returns_all_none(self):
+        row = pd.Series({"type": "Pass", "shot_statsbomb_xg": 0.9})
+        assert _shot_fields(row) == (None, None, None)
+
+    def test_missing_xg_is_none_not_nan(self):
+        row = pd.Series({
+            "type": "Shot",
+            "shot_statsbomb_xg": float("nan"),
+            "shot_end_location": [120.0, 40.0],
+            "shot_outcome": "Saved",
+        })
+        xg, _, _ = _shot_fields(row)
+        assert xg is None
+
+
+class TestKeyPass:
+    def test_shot_assist_is_key_pass(self):
+        row = pd.Series({"type": "Pass", "pass_shot_assist": True, "pass_goal_assist": float("nan")})
+        assert _key_pass(row) is True
+
+    def test_goal_assist_is_key_pass(self):
+        row = pd.Series({"type": "Pass", "pass_shot_assist": float("nan"), "pass_goal_assist": True})
+        assert _key_pass(row) is True
+
+    def test_ordinary_pass_is_not_key_pass(self):
+        row = pd.Series({"type": "Pass", "pass_shot_assist": float("nan"), "pass_goal_assist": float("nan")})
+        assert _key_pass(row) is False
+
+    def test_non_pass_returns_none(self):
+        row = pd.Series({"type": "Carry"})
+        assert _key_pass(row) is None

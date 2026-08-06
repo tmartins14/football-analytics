@@ -43,6 +43,27 @@ def test_palmer_scored_exactly_one_goal(match_id):
     assert len(goals) == 1
 
 
+def test_palmer_goal_has_xg_and_is_goal_and_end_location(match_id):
+    df = extract_player_events(match_id, player_id=PALMER_ID)
+    goal = df[(df["type"] == "Shot") & (df["outcome"] == "Goal")].iloc[0]
+    assert goal["is_goal"] is True
+    assert goal["shot_xg"] is not None and goal["shot_xg"] > 0
+    assert isinstance(goal["shot_end_location"], list) and len(goal["shot_end_location"]) >= 2
+
+
+def test_non_shot_rows_have_no_shot_fields(match_id):
+    df = extract_player_events(match_id, player_id=PALMER_ID)
+    non_shots = df[df["type"] != "Shot"]
+    assert non_shots["shot_xg"].isna().all()
+    assert non_shots["is_goal"].isna().all()
+
+
+def test_non_pass_rows_have_no_key_pass_field(match_id):
+    df = extract_player_events(match_id, player_id=PALMER_ID)
+    non_passes = df[df["type"] != "Pass"]
+    assert non_passes["key_pass"].isna().all()
+
+
 def test_every_pass_and_carry_has_an_xt_delta(match_id):
     df = extract_player_events(match_id, player_id=PALMER_ID)
     pass_carry = df[df["type"].isin(["Pass", "Carry"])]
