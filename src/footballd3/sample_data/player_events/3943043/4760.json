@@ -21,7 +21,13 @@
       "is_progressive": false,
       "xt_delta": -0.00557152,
       "distance_gained": -26.5,
-      "pressure_regain": null
+      "pressure_regain": null,
+      "shot_xg": null,
+      "shot_end_location": null,
+      "is_goal": null,
+      "key_pass": false,
+      "assisted_shot_xg": null,
+      "possession_shot_xg": 0.0
     },
     {
       "event_id": "285f0d90-9578-4b2b-aa98-3d0271672b01",
@@ -44,7 +50,13 @@
       "is_progressive": false,
       "xt_delta": 0.0,
       "distance_gained": 0.0,
-      "pressure_regain": null
+      "pressure_regain": null,
+      "shot_xg": null,
+      "shot_end_location": null,
+      "is_goal": null,
+      "key_pass": null,
+      "assisted_shot_xg": null,
+      "possession_shot_xg": 0.0
     },
     {
       "event_id": "dafce6d8-3448-4371-948e-fef0d84e34be",
@@ -64,7 +76,13 @@
       "is_progressive": null,
       "xt_delta": null,
       "distance_gained": null,
-      "pressure_regain": true
+      "pressure_regain": true,
+      "shot_xg": null,
+      "shot_end_location": null,
+      "is_goal": null,
+      "key_pass": null,
+      "assisted_shot_xg": null,
+      "possession_shot_xg": 0.0
     },
     {
       "event_id": "7632b9fe-9eb7-4192-bf27-426c5883fee2",
@@ -84,7 +102,13 @@
       "is_progressive": null,
       "xt_delta": null,
       "distance_gained": null,
-      "pressure_regain": true
+      "pressure_regain": true,
+      "shot_xg": null,
+      "shot_end_location": null,
+      "is_goal": null,
+      "key_pass": null,
+      "assisted_shot_xg": null,
+      "possession_shot_xg": 0.0
     },
     {
       "event_id": "99161368-defd-4a49-86c0-52f8f0edc148",
@@ -104,7 +128,13 @@
       "is_progressive": null,
       "xt_delta": null,
       "distance_gained": null,
-      "pressure_regain": true
+      "pressure_regain": true,
+      "shot_xg": null,
+      "shot_end_location": null,
+      "is_goal": null,
+      "key_pass": null,
+      "assisted_shot_xg": null,
+      "possession_shot_xg": 0.0
     },
     {
       "event_id": "63679fff-3060-4cd6-8124-a4d99e7c78f3",
@@ -124,7 +154,13 @@
       "is_progressive": null,
       "xt_delta": null,
       "distance_gained": null,
-      "pressure_regain": false
+      "pressure_regain": false,
+      "shot_xg": null,
+      "shot_end_location": null,
+      "is_goal": null,
+      "key_pass": null,
+      "assisted_shot_xg": null,
+      "possession_shot_xg": 0.0
     },
     {
       "event_id": "89231484-1f42-4e59-a7c9-6ab3d08109e4",
@@ -144,7 +180,13 @@
       "is_progressive": null,
       "xt_delta": null,
       "distance_gained": null,
-      "pressure_regain": false
+      "pressure_regain": false,
+      "shot_xg": null,
+      "shot_end_location": null,
+      "is_goal": null,
+      "key_pass": null,
+      "assisted_shot_xg": null,
+      "possession_shot_xg": 0.0
     },
     {
       "event_id": "8983054f-b841-40fc-a8a5-26d326d10f02",
@@ -164,7 +206,13 @@
       "is_progressive": null,
       "xt_delta": null,
       "distance_gained": null,
-      "pressure_regain": null
+      "pressure_regain": null,
+      "shot_xg": null,
+      "shot_end_location": null,
+      "is_goal": null,
+      "key_pass": null,
+      "assisted_shot_xg": null,
+      "possession_shot_xg": 0.0
     },
     {
       "event_id": "a10c4a20-ebd0-45ca-bd03-abef925f1331",
@@ -184,7 +232,13 @@
       "is_progressive": null,
       "xt_delta": null,
       "distance_gained": null,
-      "pressure_regain": null
+      "pressure_regain": null,
+      "shot_xg": null,
+      "shot_end_location": null,
+      "is_goal": null,
+      "key_pass": null,
+      "assisted_shot_xg": null,
+      "possession_shot_xg": 0.074709
     },
     {
       "event_id": "1808011a-c29e-44d5-aab5-1e293182d085",
@@ -204,7 +258,13 @@
       "is_progressive": null,
       "xt_delta": null,
       "distance_gained": null,
-      "pressure_regain": null
+      "pressure_regain": null,
+      "shot_xg": null,
+      "shot_end_location": null,
+      "is_goal": null,
+      "key_pass": null,
+      "assisted_shot_xg": null,
+      "possession_shot_xg": 0.074709
     },
     {
       "event_id": "95e40e0a-02c0-4458-9168-e6e5ea45ba26",
@@ -227,7 +287,16 @@
       "is_progressive": null,
       "xt_delta": null,
       "distance_gained": null,
-      "pressure_regain": null
+      "pressure_regain": null,
+      "shot_xg": 0.074709,
+      "shot_end_location": [
+        92.2,
+        40.0
+      ],
+      "is_goal": false,
+      "key_pass": null,
+      "assisted_shot_xg": null,
+      "possession_shot_xg": 0.074709
     }
   ],
   "metadata": {

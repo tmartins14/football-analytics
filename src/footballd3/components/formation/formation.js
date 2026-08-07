@@ -9,12 +9,25 @@
 //   import { createFormation } from "../formation/formation.js";
 //   const pitch = createPitch(d3.select("#formation-svg"), { mode: "full" });
 //   const { update } = createFormation(pitch, data);
-//   update(1); // transition to formation period index 1
+//   update({ periodIdx: 1 }); // transition to formation period index 1
+//
+// SELECTION + BENCH (optional, additive)
+// selectedId/onPlayerClick turn starter nodes into a player selector (a ring
+// on the matching node); passing data.bench additionally renders a clickable
+// substitute list below the pitch, in the same selection. Both are opt-in —
+// omitting them renders exactly as before, so existing single-purpose
+// consumers (e.g. the match dashboard's read-only FormationPanel) are
+// unaffected. This is the "one team at a time" lineup selector: pass whichever
+// team's formation+bench data is currently toggled into view; a team switch
+// is the caller's concern (swap `data` and re-mount, or call createFormation
+// again), not something this component owns.
 
 import * as d3 from "d3";
 import { createPitch } from "../pitch/pitch.js?v=3";
 
 const NODE_R = 14;
+const BENCH_ROW_HEIGHT = 22;
+const BENCH_COLUMNS = 2;
 
 // Created lazily (not at module scope) so this file can be imported in a
 // server-rendering context without touching `document` on the server.
@@ -63,8 +76,11 @@ function getTooltip() {
  * @param {Function|null} onPlayerClick - Called with the player record on marker
  *   click. Suppressed for the Goalkeeper marker (cursor stays default, no
  *   handler attached) — a goalkeeper is not a selectable outfield player.
+ * @param {number|string|null} selectedId - player_id of the currently selected
+ *   player, or null. The matching node gets a highlight ring.
+ * @param {string} selectedColor - Stroke color for the selection ring.
  */
-function renderPeriod(g, px, period, nodeColor, labelColor, bounds, backgroundColor, nodeRadius, onPlayerClick) {
+function renderPeriod(g, px, period, nodeColor, labelColor, bounds, backgroundColor, nodeRadius, onPlayerClick, selectedId, selectedColor) {
   g.selectAll(".fm-player").remove();
 
   period.players.forEach(player => {
@@ -81,6 +97,16 @@ function renderPeriod(g, px, period, nodeColor, labelColor, bounds, backgroundCo
 
     if (clickable) {
       playerG.on("click", () => onPlayerClick(player));
+    }
+
+    if (player.player_id === selectedId) {
+      playerG.append("circle")
+        .attr("class", "fm-selected-ring")
+        .attr("cx", cx).attr("cy", cy)
+        .attr("r", nodeRadius + 4)
+        .attr("fill", "none")
+        .attr("stroke", selectedColor)
+        .attr("stroke-width", 2.5);
     }
 
     playerG.append("circle")
@@ -132,6 +158,89 @@ function renderPeriod(g, px, period, nodeColor, labelColor, bounds, backgroundCo
 }
 
 /**
+ * Render a clickable substitute bench list below the pitch.
+ *
+ * Wraps rows into BENCH_COLUMNS columns (left-to-right, top-to-bottom) rather
+ * than one long column, keeping a typical 5-9 player bench compact. Each row:
+ * jersey number, surname (last whitespace-separated token of display_name —
+ * the same simple heuristic used throughout this app, not a name-parsing
+ * library), and "on NN'". Goalkeeper substitutes are rendered but not
+ * clickable, for the same reason starter Goalkeeper markers aren't — no
+ * player-analysis data exists for a keeper.
+ *
+ * @param {d3.Selection} benchG - The `<g class="fm-bench">` group to render into.
+ * @param {Array<Object>} bench - Substitute records: { player_id, display_name,
+ *   jersey_number, position, on_minute }.
+ * @param {number} innerWidth - Available width in pixels (pitch width minus padding).
+ * @param {string} nodeColor - Jersey-number text color.
+ * @param {string} labelColor - Surname/minute text color.
+ * @param {number|string|null} selectedId - player_id of the currently selected
+ *   player, or null.
+ * @param {string} selectedColor - Highlight color for the selected row.
+ * @param {Function|null} onPlayerClick - Called with the player record on row click.
+ * @returns {number} Total bench height in pixels (for sizing the SVG).
+ */
+function renderBench(benchG, bench, innerWidth, nodeColor, labelColor, selectedId, selectedColor, onPlayerClick) {
+  benchG.selectAll("*").remove();
+  if (!bench || !bench.length) return 0;
+
+  const columnWidth = innerWidth / BENCH_COLUMNS;
+  const rows = Math.ceil(bench.length / BENCH_COLUMNS);
+
+  const rowGroups = benchG.selectAll(".fm-bench-row")
+    .data(bench)
+    .join("g")
+    .attr("class", "fm-bench-row")
+    .attr("transform", (d, i) => {
+      const col = Math.floor(i / rows);
+      const row = i % rows;
+      return `translate(${col * columnWidth}, ${row * BENCH_ROW_HEIGHT})`;
+    })
+    .style("cursor", d => (d.position === "Goalkeeper" ? "default" : "pointer"));
+
+  rowGroups.append("rect")
+    .attr("class", "fm-bench-ring")
+    .attr("x", -4).attr("y", -14).attr("width", columnWidth - 10).attr("height", 20)
+    .attr("rx", 4)
+    .attr("fill", "none").attr("stroke", selectedColor).attr("stroke-width", 2)
+    .style("display", d => (d.player_id === selectedId ? null : "none"));
+
+  rowGroups.append("text")
+    .attr("font-family", "Geist Mono, monospace").attr("font-size", "11px")
+    .attr("fill", nodeColor).attr("font-weight", "600")
+    .text(d => `#${d.jersey_number}`);
+
+  rowGroups.append("text")
+    .attr("x", 32)
+    .attr("font-family", "Geist, sans-serif").attr("font-size", "11px")
+    .attr("fill", labelColor)
+    .text(d => surname(d.display_name));
+
+  rowGroups.append("text")
+    .attr("x", columnWidth - 16).attr("text-anchor", "end")
+    .attr("font-family", "Geist Mono, monospace").attr("font-size", "10px")
+    .attr("fill", "#8A8578")
+    .text(d => `on ${d.on_minute}'`);
+
+  rowGroups
+    .filter(d => d.position !== "Goalkeeper" && onPlayerClick)
+    .on("click", (event, d) => onPlayerClick(d));
+
+  return rows * BENCH_ROW_HEIGHT;
+}
+
+/**
+ * Last whitespace-separated token of a display name.
+ *
+ * @param {string} displayName - Full/nickname display name.
+ * @returns {string} The surname heuristic used in the bench list.
+ */
+function surname(displayName) {
+  const parts = String(displayName).trim().split(/\s+/);
+  return parts[parts.length - 1];
+}
+
+/**
  * Creates a formation diagram on a full pitch.
  *
  * Renders the declared tactical formation for one team, using canonical
@@ -151,6 +260,11 @@ function renderPeriod(g, px, period, nodeColor, labelColor, bounds, backgroundCo
  * @param {Object} data.metadata - Match and coordinate metadata.
  * @param {string} data.metadata.coordinate_note - States that template_x/y are
  *   canonical slots, not measured positions.
+ * @param {Array<Object>} [data.bench] - Optional substitute list (the
+ *   substitutes_{match_id}.json contract's one-team array): { player_id,
+ *   display_name, jersey_number, position, on_minute }. Omit for a
+ *   bench-less diagram (e.g. the match dashboard's read-only view) — the SVG
+ *   is only sized taller than the pitch when this is provided.
  * @param {Object} [config] - Optional visual configuration.
  * @param {number}  [config.pxPerYard=7]          - Pixels per StatsBomb yard.
  * @param {number}  [config.padding=24]           - Padding around the pitch in pixels.
@@ -163,14 +277,22 @@ function renderPeriod(g, px, period, nodeColor, labelColor, bounds, backgroundCo
  * @param {number}  [config.nodeRadius=14]        - Player circle radius in pixels.
  * @param {Function|null} [config.onPlayerClick=null] - Called with the player
  *   record ({ player_id, player, display_name, jersey_number, position,
- *   template_x, template_y }) on marker click. Suppressed for the Goalkeeper
- *   marker — a goalkeeper is not a selectable outfield player, so it gets
+ *   template_x, template_y } for a starter, or the bench record shape for a
+ *   substitute) on marker/bench-row click. Suppressed for any Goalkeeper —
+ *   a goalkeeper is not a selectable outfield player, so it gets
  *   cursor: default and no click handler instead of cursor: pointer.
+ * @param {number|string|null} [config.selectedId=null] - player_id of the
+ *   currently selected player (starter or bench), or null. The matching node/
+ *   row gets a highlight ring — this is what turns the diagram into a
+ *   selector rather than a read-only view.
+ * @param {string}  [config.selectedColor="#F59E0B"] - Selection ring color.
  * @returns {{ svg: d3.Selection, g: d3.Selection, px: Function, update: Function }}
  *   svg — the SVG element.
  *   g   — the pitch group; append further overlays here.
  *   px  — pixel conversion fn: (sbX, sbY) => [screenX, screenY].
- *   update(periodIdx) — transition to a different formation period.
+ *   update({ periodIdx?, selectedId? }) — transition to a different formation
+ *     period and/or move the selection ring. Any omitted key retains its
+ *     current value.
  */
 export function createFormation(selection, data, config = {}) {
   const {
@@ -182,7 +304,9 @@ export function createFormation(selection, data, config = {}) {
     backgroundColor = "#FAF7F0",
     nodeRadius      = NODE_R,
     onPlayerClick   = null,
+    selectedColor   = "#F59E0B",
   } = config;
+  let { selectedId = null } = config;
 
   const { svg, g, px, width, height, config: pitchCfg } = createPitch(selection, {
     mode:        "full",
@@ -203,19 +327,47 @@ export function createFormation(selection, data, config = {}) {
     maxY: height - pad - nodeRadius,
   };
 
-  renderPeriod(g, px, data.periods[0], nodeColor, labelColor, bounds, backgroundColor, nodeRadius, onPlayerClick);
+  const benchG = svg.append("g")
+    .attr("class", "fm-bench")
+    .attr("transform", `translate(${pad}, ${height + 16})`);
+
+  let currentPeriodIdx = 0;
+
+  function render() {
+    renderPeriod(
+      g, px, data.periods[currentPeriodIdx], nodeColor, labelColor, bounds,
+      backgroundColor, nodeRadius, onPlayerClick, selectedId, selectedColor
+    );
+
+    const benchHeight = renderBench(
+      benchG, data.bench, width - pad * 2, nodeColor, labelColor,
+      selectedId, selectedColor, onPlayerClick
+    );
+
+    // The pitch SVG is created at a fixed (pitch-only) height by pitch.js —
+    // grow both the height attribute AND the viewBox together when a bench
+    // is present, so the added space renders at true 1-unit-per-pixel scale
+    // instead of vertically stretching the whole diagram to fill a taller
+    // box with an unchanged viewBox.
+    const totalHeight = height + (benchHeight ? benchHeight + 16 : 0);
+    svg.attr("height", totalHeight).attr("viewBox", `0 0 ${width} ${totalHeight}`);
+  }
+
+  render();
 
   /**
-   * Transition the diagram to a different formation period.
+   * Transition to a different formation period and/or move the selection ring.
    *
-   * Removes existing player markers and re-renders for the new period.
-   *
-   * @param {number} periodIdx - Zero-based index into data.periods.
+   * @param {Object} [opts={}] - Partial update.
+   * @param {number} [opts.periodIdx] - Zero-based index into data.periods.
+   * @param {number|string|null} [opts.selectedId] - New selected player_id.
    */
-  function update(periodIdx) {
-    const period = data.periods[periodIdx];
-    if (!period) return;
-    renderPeriod(g, px, period, nodeColor, labelColor, bounds, backgroundColor, nodeRadius, onPlayerClick);
+  function update(opts = {}) {
+    if (opts.periodIdx !== undefined && data.periods[opts.periodIdx]) {
+      currentPeriodIdx = opts.periodIdx;
+    }
+    if (opts.selectedId !== undefined) selectedId = opts.selectedId;
+    render();
   }
 
   return { svg, g, px, update };

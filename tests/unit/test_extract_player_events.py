@@ -1,8 +1,18 @@
 """Unit tests for extract_player_events's pure per-event helpers. No network calls."""
 
 import pandas as pd
+import pytest
 
-from statsbomb.extract_player_events import _event_outcome, _key_pass, _pressure_regain, _shot_fields
+from statsbomb.extract_player_events import (
+    _assisted_shot_xg,
+    _event_outcome,
+    _key_pass,
+    _possession_shot_xg,
+    _possession_shot_xg_map,
+    _pressure_regain,
+    _shot_fields,
+    _shots_by_id,
+)
 
 
 class TestEventOutcome:
@@ -154,3 +164,51 @@ class TestKeyPass:
     def test_non_pass_returns_none(self):
         row = pd.Series({"type": "Carry"})
         assert _key_pass(row) is None
+
+
+class TestPossessionShotXg:
+    def test_map_sums_multiple_shots_in_the_same_possession(self):
+        all_events = pd.DataFrame([
+            {"type": "Shot", "possession": 5, "shot_statsbomb_xg": 0.1},
+            {"type": "Shot", "possession": 5, "shot_statsbomb_xg": 0.2},  # rebound
+            {"type": "Shot", "possession": 9, "shot_statsbomb_xg": 0.4},
+            {"type": "Pass", "possession": 5, "shot_statsbomb_xg": float("nan")},
+        ])
+        possession_xg = _possession_shot_xg_map(all_events)
+        assert possession_xg[5] == pytest.approx(0.3)
+        assert possession_xg[9] == pytest.approx(0.4)
+
+    def test_event_in_a_scoring_possession_gets_that_possessions_total(self):
+        possession_xg = pd.Series({5: 0.3, 9: 0.4})
+        row = pd.Series({"possession": 5})
+        assert _possession_shot_xg(row, possession_xg) == pytest.approx(0.3)
+
+    def test_event_in_a_possession_with_no_shot_returns_zero(self):
+        possession_xg = pd.Series({5: 0.3})
+        row = pd.Series({"possession": 999})
+        assert _possession_shot_xg(row, possession_xg) == 0.0
+
+
+class TestAssistedShotXg:
+    def test_pass_with_a_matching_assisted_shot_id_returns_its_xg(self):
+        all_events = pd.DataFrame([
+            {"id": "shot-1", "type": "Shot", "shot_statsbomb_xg": 0.42},
+        ])
+        shots_by_id = _shots_by_id(all_events)
+        row = pd.Series({"type": "Pass", "pass_assisted_shot_id": "shot-1"})
+        assert _assisted_shot_xg(row, shots_by_id) == pytest.approx(0.42)
+
+    def test_pass_with_no_assisted_shot_id_returns_none(self):
+        shots_by_id = _shots_by_id(pd.DataFrame([{"id": "shot-1", "type": "Shot", "shot_statsbomb_xg": 0.42}]))
+        row = pd.Series({"type": "Pass", "pass_assisted_shot_id": float("nan")})
+        assert _assisted_shot_xg(row, shots_by_id) is None
+
+    def test_non_pass_returns_none(self):
+        shots_by_id = _shots_by_id(pd.DataFrame([{"id": "shot-1", "type": "Shot", "shot_statsbomb_xg": 0.42}]))
+        row = pd.Series({"type": "Carry", "pass_assisted_shot_id": "shot-1"})
+        assert _assisted_shot_xg(row, shots_by_id) is None
+
+    def test_assisted_shot_id_not_found_in_shots_returns_none(self):
+        shots_by_id = _shots_by_id(pd.DataFrame([{"id": "shot-1", "type": "Shot", "shot_statsbomb_xg": 0.42}]))
+        row = pd.Series({"type": "Pass", "pass_assisted_shot_id": "shot-does-not-exist"})
+        assert _assisted_shot_xg(row, shots_by_id) is None
