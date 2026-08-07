@@ -30,6 +30,20 @@
  * above the crossbar, horizontally positioned by shot_end_location's y
  * (clamped to the strip's width) — "this shot missed, roughly to this side"
  * is the honest claim being made, not "the ball crossed exactly here."
+ *
+ * shot_end_location INDEXING — [x, y, z], NOT [y, z]
+ * Verified against real data (three actual goals in match 3943043, e.g.
+ * `[120.0, 42.4, 0.2]`): StatsBomb's shot_end_location is a full-pitch
+ * [x, y, z] triple like every other end_location field (x≈120 at the goal
+ * line for on-target shots, y the goal-mouth lateral position, z height) —
+ * it is NOT pre-collapsed to goal-mouth [y, z]. This component reads index
+ * [1] for goal-mouth y and index [2] for height z; x (index 0) is unused
+ * here since on-target shots all cluster near x=120 by definition. An
+ * earlier draft read indices [0]/[1] directly as [y, z], which plotted every
+ * shot at a wildly out-of-frame position (yScale extrapolated y≈113 against
+ * a 36-44 domain) — caught by manual browser verification against real
+ * player data, not by unit tests, since the test fixtures encoded the same
+ * wrong assumption. z defaults to 0 (ground level) when only [x, y] is present.
  */
 
 import * as d3 from "d3";
@@ -67,6 +81,27 @@ function getTooltip() {
  */
 function isOnTarget(shot) {
   return ON_TARGET_OUTCOMES.has(shot.outcome);
+}
+
+/**
+ * Goal-mouth lateral position (StatsBomb y) from a shot's [x, y, z] shot_end_location.
+ *
+ * @param {Object} shot - One Shot event from the player_events contract.
+ * @returns {number} shot_end_location[1].
+ */
+function endY(shot) {
+  return shot.shot_end_location[1];
+}
+
+/**
+ * Shot end height (StatsBomb z) from a shot's [x, y, z] shot_end_location.
+ *
+ * @param {Object} shot - One Shot event from the player_events contract.
+ * @returns {number} shot_end_location[2], or 0 when only [x, y] is present
+ *   (StatsBomb omits z for a ground-level end point).
+ */
+function endZ(shot) {
+  return shot.shot_end_location[2] ?? 0;
 }
 
 /**
@@ -190,8 +225,8 @@ export function createGoalMouthShotPanel(selection, data, config = {}) {
       .data(onTarget, (d) => d.event_id)
       .join("circle")
       .attr("class", "gmsp-on")
-      .attr("cx", (d) => yScale(d.shot_end_location[0]))
-      .attr("cy", (d) => zScale(Math.min(d.shot_end_location[1] ?? 0, CROSSBAR_HEIGHT_YARDS)))
+      .attr("cx", (d) => yScale(endY(d)))
+      .attr("cy", (d) => zScale(Math.min(endZ(d), CROSSBAR_HEIGHT_YARDS)))
       .attr("r", (d) => radiusScale(d.shot_xg ?? 0))
       .attr("fill", (d) => (d.is_goal ? goalColor : "none"))
       .attr("fill-opacity", 0.85)
@@ -202,7 +237,7 @@ export function createGoalMouthShotPanel(selection, data, config = {}) {
       .data(offTarget, (d) => d.event_id)
       .join("circle")
       .attr("class", "gmsp-off")
-      .attr("cx", (d) => offTargetXScale(d.shot_end_location[0]))
+      .attr("cx", (d) => offTargetXScale(endY(d)))
       .attr("cy", legendHeight + stripHeight / 2 - 3)
       .attr("r", (d) => radiusScale(d.shot_xg ?? 0))
       .attr("fill", "none")
@@ -217,10 +252,10 @@ export function createGoalMouthShotPanel(selection, data, config = {}) {
       .join("circle")
       .attr("class", "gmsp-highlight")
       .attr("cx", (d) => (isOnTarget(d)
-        ? yScale(d.shot_end_location[0])
-        : offTargetXScale(d.shot_end_location[0])))
+        ? yScale(endY(d))
+        : offTargetXScale(endY(d))))
       .attr("cy", (d) => (isOnTarget(d)
-        ? zScale(Math.min(d.shot_end_location[1] ?? 0, CROSSBAR_HEIGHT_YARDS))
+        ? zScale(Math.min(endZ(d), CROSSBAR_HEIGHT_YARDS))
         : legendHeight + stripHeight / 2 - 3))
       .attr("r", (d) => radiusScale(d.shot_xg ?? 0) + 4)
       .attr("fill", "none")

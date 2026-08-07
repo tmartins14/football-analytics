@@ -17,10 +17,14 @@ Renders a declared formation diagram on a full pitch. Player markers are placed 
   `createFormation` again), not something this component owns.
 - Optionally a **bench**: pass `data.bench` (that team's
   `substitutes_{match_id}.json` array) to render a clickable substitute list
-  below the pitch, wrapped into two columns. Same click/selection/goalkeeper
-  rules as starter nodes. Omitting it renders exactly as before — the SVG is
-  only sized taller than the pitch when a bench is present, so existing
-  read-only consumers (the match dashboard's `FormationPanel`) are unaffected.
+  below the pitch, wrapped into `config.benchColumns` columns (default 1 — at
+  the narrow pitch widths this actually renders at, e.g. a ~300px lineup-
+  selector column, 2+ columns leave too little room for a surname before it
+  collides with the right-aligned "on NN'" text; raise it if your container
+  is wider). Same click/selection/goalkeeper rules as starter nodes. Omitting
+  `data.bench` renders exactly as before — the SVG is only sized taller than
+  the pitch when a bench is present, so existing read-only consumers (the
+  match dashboard's `FormationPanel`) are unaffected.
 
 ## What it does NOT show
 

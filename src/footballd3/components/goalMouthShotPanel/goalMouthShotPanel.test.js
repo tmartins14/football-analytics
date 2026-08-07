@@ -8,17 +8,23 @@ function mount(events, config = {}) {
   return createGoalMouthShotPanel(d3.select("#test-container"), { events }, config);
 }
 
+// shot_end_location is StatsBomb's full-pitch [x, y, z] — NOT [y, z] — verified
+// against real match data (e.g. an actual goal's end_location is
+// [120.0, 42.4, 0.2]): x sits at the goal line, y is goal-mouth position, z is
+// height. These fixtures deliberately use a realistic x (≈120) rather than a
+// bare [y, z] pair, so a regression back to reading index [0] as y would fail
+// the "correct goal-mouth position" test below instead of silently passing.
 const GOAL = {
   event_id: "s-goal", type: "Shot", minute: 72, outcome: "Goal",
-  shot_xg: 0.32, shot_end_location: [40, 1.8], is_goal: true,
+  shot_xg: 0.32, shot_end_location: [120, 40, 1.8], is_goal: true,
 };
 const SAVED = {
   event_id: "s-saved", type: "Shot", minute: 40, outcome: "Saved",
-  shot_xg: 0.1, shot_end_location: [38, 0.5], is_goal: false,
+  shot_xg: 0.1, shot_end_location: [120, 38, 0.5], is_goal: false,
 };
 const OFF_TARGET = {
   event_id: "s-off", type: "Shot", minute: 55, outcome: "Off T",
-  shot_xg: 0.05, shot_end_location: [47, 3.1], is_goal: false,
+  shot_xg: 0.05, shot_end_location: [121, 47, 3.1], is_goal: false,
 };
 const NON_SHOT = { event_id: "p-1", type: "Pass" };
 
@@ -79,5 +85,26 @@ describe("createGoalMouthShotPanel", () => {
     const goalR = +g.select(".gmsp-on").attr("r");
     const offR = +g.select(".gmsp-off").attr("r");
     expect(goalR).toBeGreaterThan(offR);
+  });
+
+  it("positions an on-target shot inside the drawn goal frame (regression: index [1]/[2], not [0]/[1])", () => {
+    const { g } = mount([GOAL], { width: 320, height: 220 });
+    const frame = g.select(".gmsp-frame");
+    const frameX = +frame.attr("x");
+    const frameY = +frame.attr("y");
+    const frameWidth = +frame.attr("width");
+    const frameHeight = +frame.attr("height");
+
+    const mark = g.select(".gmsp-on");
+    const cx = +mark.attr("cx");
+    const cy = +mark.attr("cy");
+
+    // A center-of-goal shot (y=40, the domain midpoint) must land inside the
+    // frame's horizontal span — reading shot_end_location[0] (≈120, the pitch
+    // x) as the goal-mouth y here would place it far outside frameX..frameX+frameWidth.
+    expect(cx).toBeGreaterThanOrEqual(frameX);
+    expect(cx).toBeLessThanOrEqual(frameX + frameWidth);
+    expect(cy).toBeGreaterThanOrEqual(frameY);
+    expect(cy).toBeLessThanOrEqual(frameY + frameHeight);
   });
 });

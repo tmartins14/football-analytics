@@ -27,7 +27,6 @@ import { createPitch } from "../pitch/pitch.js?v=3";
 
 const NODE_R = 14;
 const BENCH_ROW_HEIGHT = 22;
-const BENCH_COLUMNS = 2;
 
 // Created lazily (not at module scope) so this file can be imported in a
 // server-rendering context without touching `document` on the server.
@@ -160,18 +159,24 @@ function renderPeriod(g, px, period, nodeColor, labelColor, bounds, backgroundCo
 /**
  * Render a clickable substitute bench list below the pitch.
  *
- * Wraps rows into BENCH_COLUMNS columns (left-to-right, top-to-bottom) rather
- * than one long column, keeping a typical 5-9 player bench compact. Each row:
- * jersey number, surname (last whitespace-separated token of display_name —
- * the same simple heuristic used throughout this app, not a name-parsing
- * library), and "on NN'". Goalkeeper substitutes are rendered but not
- * clickable, for the same reason starter Goalkeeper markers aren't — no
- * player-analysis data exists for a keeper.
+ * Wraps rows into `columns` columns (left-to-right, top-to-bottom) rather
+ * than always one long column. Default 1: at the pitch widths this component
+ * actually renders at (a ~300px lineup-selector column, narrower than the
+ * original two-teams-side-by-side design this bench was drawn for), 2+
+ * columns leave too little width for a surname before it collides with the
+ * right-aligned "on NN'" text — verified visually, not just in theory, with
+ * "Oyarzabal" overlapping "67'" at 2 columns in the actual page. Callers with
+ * more horizontal room can raise it. Each row: jersey number, surname (last
+ * whitespace-separated token of display_name — the same simple heuristic
+ * used throughout this app, not a name-parsing library), and "on NN'".
+ * Goalkeeper substitutes are rendered but not clickable, for the same reason
+ * starter Goalkeeper markers aren't — no player-analysis data exists for one.
  *
  * @param {d3.Selection} benchG - The `<g class="fm-bench">` group to render into.
  * @param {Array<Object>} bench - Substitute records: { player_id, display_name,
  *   jersey_number, position, on_minute }.
  * @param {number} innerWidth - Available width in pixels (pitch width minus padding).
+ * @param {number} columns - Number of bench columns.
  * @param {string} nodeColor - Jersey-number text color.
  * @param {string} labelColor - Surname/minute text color.
  * @param {number|string|null} selectedId - player_id of the currently selected
@@ -180,12 +185,12 @@ function renderPeriod(g, px, period, nodeColor, labelColor, bounds, backgroundCo
  * @param {Function|null} onPlayerClick - Called with the player record on row click.
  * @returns {number} Total bench height in pixels (for sizing the SVG).
  */
-function renderBench(benchG, bench, innerWidth, nodeColor, labelColor, selectedId, selectedColor, onPlayerClick) {
+function renderBench(benchG, bench, innerWidth, columns, nodeColor, labelColor, selectedId, selectedColor, onPlayerClick) {
   benchG.selectAll("*").remove();
   if (!bench || !bench.length) return 0;
 
-  const columnWidth = innerWidth / BENCH_COLUMNS;
-  const rows = Math.ceil(bench.length / BENCH_COLUMNS);
+  const columnWidth = innerWidth / columns;
+  const rows = Math.ceil(bench.length / columns);
 
   const rowGroups = benchG.selectAll(".fm-bench-row")
     .data(bench)
@@ -286,6 +291,8 @@ function surname(displayName) {
  *   row gets a highlight ring — this is what turns the diagram into a
  *   selector rather than a read-only view.
  * @param {string}  [config.selectedColor="#F59E0B"] - Selection ring color.
+ * @param {number}  [config.benchColumns=1]        - Bench columns — see
+ *   renderBench()'s docstring for why 1 is the default.
  * @returns {{ svg: d3.Selection, g: d3.Selection, px: Function, update: Function }}
  *   svg — the SVG element.
  *   g   — the pitch group; append further overlays here.
@@ -305,6 +312,7 @@ export function createFormation(selection, data, config = {}) {
     nodeRadius      = NODE_R,
     onPlayerClick   = null,
     selectedColor   = "#F59E0B",
+    benchColumns    = 1,
   } = config;
   let { selectedId = null } = config;
 
@@ -340,7 +348,7 @@ export function createFormation(selection, data, config = {}) {
     );
 
     const benchHeight = renderBench(
-      benchG, data.bench, width - pad * 2, nodeColor, labelColor,
+      benchG, data.bench, width - pad * 2, benchColumns, nodeColor, labelColor,
       selectedId, selectedColor, onPlayerClick
     );
 
