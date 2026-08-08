@@ -117,9 +117,10 @@ export function createHighlightReel(selection, data, config = {}) {
     .attr("class", "highlight-reel")
     .style("display", "flex")
     .style("align-items", "center")
-    .style("gap", "10px")
+    .style("gap", "12px")
     .style("font-family", "Geist Mono, monospace")
-    .style("font-size", "12px");
+    .style("font-size", "12px")
+    .style("color", "#171717");
 
   let moments = selectMoments(data.events ?? [], maxMoments);
   let currentIndex = 0;
@@ -180,39 +181,92 @@ export function createHighlightReel(selection, data, config = {}) {
     goTo(currentIndex + delta);
   }
 
+  /**
+   * Style one control button (prev/play/next) to match the app's segmented-
+   * control visual language (bordered, rounded, monospace) — see ToggleGroup
+   * in tylermartins.com for the reference this mirrors.
+   *
+   * @param {d3.Selection} button   - The <button> selection to style.
+   * @param {boolean}      [accent=false] - Use the focal accent (playing state).
+   * @param {boolean}      [disabled=false] - Dim + disable pointer events.
+   */
+  function styleControlButton(button, accent = false, disabled = false) {
+    button
+      .style("width", "26px")
+      .style("height", "26px")
+      .style("display", "flex")
+      .style("align-items", "center")
+      .style("justify-content", "center")
+      .style("border", `1px solid ${accent ? "#9F1239" : "#E5E5E5"}`)
+      .style("border-radius", "3px")
+      .style("background", accent ? "rgba(159,18,57,0.08)" : "#FFFDF8")
+      .style("color", accent ? "#9F1239" : "#171717")
+      .style("font-size", "12px")
+      .style("line-height", "1")
+      .style("cursor", disabled ? "default" : "pointer")
+      .style("opacity", disabled ? 0.35 : 1)
+      .style("pointer-events", disabled ? "none" : "auto")
+      .attr("disabled", disabled ? true : null);
+  }
+
   function render() {
     container.selectAll("*").remove();
 
     const controls = container.append("div").style("display", "flex").style("gap", "4px");
-    controls.append("button")
-      .attr("class", "reel-prev")
-      .text("‹")
-      .on("click", () => step(-1));
-    controls.append("button")
-      .attr("class", "reel-play")
-      .text(playing ? "⏸" : "▶")
-      .on("click", () => (playing ? pause() : play()));
-    controls.append("button")
-      .attr("class", "reel-next")
-      .text("›")
-      .on("click", () => step(1));
+    styleControlButton(
+      controls.append("button").attr("class", "reel-prev").text("‹").on("click", () => step(-1)),
+      false,
+      currentIndex === 0
+    );
+    styleControlButton(
+      controls.append("button").attr("class", "reel-play")
+        .text(playing ? "⏸" : "▶")
+        .on("click", () => (playing ? pause() : play())),
+      playing,
+      moments.length === 0
+    );
+    styleControlButton(
+      controls.append("button").attr("class", "reel-next").text("›").on("click", () => step(1)),
+      false,
+      currentIndex >= moments.length - 1
+    );
 
     const current = moments[currentIndex];
-    container.append("div")
+    const momentEl = container.append("div")
       .attr("class", "reel-moment")
       .style("flex", "1 1 auto")
-      .text(current ? `${current.minute}' ${current.annotation}` : "No standout moments");
+      .style("overflow", "hidden")
+      .style("text-overflow", "ellipsis")
+      .style("white-space", "nowrap");
 
-    const dots = container.append("div").attr("class", "reel-dots").style("display", "flex").style("gap", "5px");
+    if (current) {
+      momentEl.append("span")
+        .style("font-weight", "600")
+        .style("color", "#171717")
+        .text(`${current.minute}' `);
+      momentEl.append("span")
+        .style("color", "#525252")
+        .text(current.annotation);
+    } else {
+      momentEl.style("color", "#8A8578").text("No standout moments");
+    }
+
+    const dots = container.append("div")
+      .attr("class", "reel-dots")
+      .style("display", "flex")
+      .style("align-items", "center")
+      .style("gap", "6px")
+      .style("flex", "0 0 auto");
     dots.selectAll(".reel-dot")
       .data(moments, (d) => d.eventId)
       .join("span")
       .attr("class", "reel-dot")
-      .style("width", "6px")
-      .style("height", "6px")
+      .style("width", (d, i) => (i === currentIndex ? "8px" : "6px"))
+      .style("height", (d, i) => (i === currentIndex ? "8px" : "6px"))
       .style("border-radius", "50%")
       .style("display", "inline-block")
       .style("cursor", "pointer")
+      .style("transition", "background 0.15s, width 0.15s, height 0.15s")
       .style("background", (d, i) => (i === currentIndex ? "#9F1239" : "#E5E5E5"))
       .on("click", (event, d) => {
         pause();

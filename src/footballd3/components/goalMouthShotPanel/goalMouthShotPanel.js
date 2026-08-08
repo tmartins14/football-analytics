@@ -58,6 +58,32 @@ const OFF_TARGET_Y_MAX = 50;
 
 const ON_TARGET_OUTCOMES = new Set(["Goal", "Saved"]);
 
+// Each instance gets a unique pattern ID — SVG url(#id) resolves document-wide,
+// so two mounted panels sharing one ID would corrupt each other's fill.
+let _nextInstanceId = 0;
+
+/**
+ * Append a diagonal-crosshatch net-mesh <pattern> to a <defs> selection.
+ *
+ * Two line families ("/" and "\") tiled on a small square cell produce a
+ * diamond mesh, the same visual grammar as a real goal net, at low opacity
+ * so shot markers stay legible on top of it.
+ *
+ * @param {d3.Selection} defs  - D3 selection of the <defs> element.
+ * @param {string}       id    - Pattern element id attribute.
+ * @param {string}       color - Mesh line color.
+ */
+function _addNetMeshPattern(defs, id, color) {
+  const pattern = defs.append("pattern")
+    .attr("id", id)
+    .attr("width", 7).attr("height", 7)
+    .attr("patternUnits", "userSpaceOnUse");
+  pattern.append("path").attr("d", "M0,7 L7,0")
+    .attr("stroke", color).attr("stroke-width", 0.6).attr("stroke-opacity", 0.3);
+  pattern.append("path").attr("d", "M0,0 L7,7")
+    .attr("stroke", color).attr("stroke-width", 0.6).attr("stroke-opacity", 0.3);
+}
+
 let _tooltip;
 function getTooltip() {
   if (!_tooltip) {
@@ -167,6 +193,10 @@ export function createGoalMouthShotPanel(selection, data, config = {}) {
   const svg = selection.append("svg").attr("width", width).attr("height", height);
   const g = svg.append("g");
 
+  const netPatternId = `gmsp-net-${++_nextInstanceId}`;
+  const defs = svg.append("defs");
+  _addNetMeshPattern(defs, netPatternId, frameColor);
+
   let currentData = data;
 
   function shotsFrom(rawData) {
@@ -211,12 +241,72 @@ export function createGoalMouthShotPanel(selection, data, config = {}) {
       .attr("font-size", "9px").attr("font-family", "Geist Mono, monospace")
       .attr("fill", "#8A8578").text("OFF TARGET");
 
-    // Goal frame (posts + crossbar).
+    // Ground line + shadow — read as the goal line the frame sits on.
+    const groundY = frameTop + frameHeight;
+    g.append("ellipse")
+      .attr("class", "gmsp-ground-shadow")
+      .attr("cx", frameLeft + frameWidth / 2).attr("cy", groundY + 3)
+      .attr("rx", frameWidth / 2 + 14).attr("ry", 4)
+      .attr("fill", "#8A8578").attr("fill-opacity", 0.15);
+    g.append("line")
+      .attr("class", "gmsp-ground-line")
+      .attr("x1", frameLeft - 18).attr("x2", frameLeft + frameWidth + 18)
+      .attr("y1", groundY).attr("y2", groundY)
+      .attr("stroke", "#8A8578").attr("stroke-width", 1.5);
+
+    // Side net panels — receding wedges from each front post back to an
+    // inset, raised back corner, giving the frame visual depth instead of
+    // reading as a flat box. Bottom back corners stay ground-level (a net
+    // sags to the floor both front and back); only the back-top edge lifts.
+    const depth = Math.min(18, frameWidth * 0.08);
+    // The off-target strip's dashed border sits 6px above frameTop (see its
+    // "height", stripHeight - 6, above) — cap the lift well under that so
+    // the receding top edge never rises into it.
+    const liftY  = Math.min(depth * 0.4, 4);
+    const backTL = [frameLeft + depth, frameTop - liftY];
+    const backTR = [frameLeft + frameWidth - depth, frameTop - liftY];
+    const backBL = [frameLeft + depth, groundY];
+    const backBR = [frameLeft + frameWidth - depth, groundY];
+    const frameTL = [frameLeft, frameTop];
+    const frameTR = [frameLeft + frameWidth, frameTop];
+    const frameBL = [frameLeft, groundY];
+    const frameBR = [frameLeft + frameWidth, groundY];
+
+    [
+      [frameTL, backTL, backBL, frameBL],
+      [frameTR, backTR, backBR, frameBR],
+    ].forEach((pts) => {
+      g.append("polygon")
+        .attr("class", "gmsp-side-net")
+        .attr("points", pts.map((p) => p.join(",")).join(" "))
+        .attr("fill", `url(#${netPatternId})`)
+        .attr("stroke", frameColor).attr("stroke-width", 1).attr("stroke-opacity", 0.5);
+    });
+    // Back-top edge, connecting the two receding top corners.
+    g.append("line")
+      .attr("x1", backTL[0]).attr("y1", backTL[1])
+      .attr("x2", backTR[0]).attr("y2", backTR[1])
+      .attr("stroke", frameColor).attr("stroke-width", 1).attr("stroke-opacity", 0.5);
+
+    // Front net mesh — the face the shot markers plot against.
+    g.append("rect")
+      .attr("class", "gmsp-frame-bg")
+      .attr("x", frameLeft).attr("y", frameTop)
+      .attr("width", frameWidth).attr("height", frameHeight)
+      .attr("fill", "#FAF7F0");
+    g.append("rect")
+      .attr("class", "gmsp-frame-mesh")
+      .attr("x", frameLeft).attr("y", frameTop)
+      .attr("width", frameWidth).attr("height", frameHeight)
+      .attr("fill", `url(#${netPatternId})`);
+
+    // Goal frame (posts + crossbar) — drawn last so it sits on top of the mesh.
     g.append("rect")
       .attr("class", "gmsp-frame")
       .attr("x", frameLeft).attr("y", frameTop)
       .attr("width", frameWidth).attr("height", frameHeight)
-      .attr("fill", "#FAF7F0").attr("stroke", frameColor).attr("stroke-width", 2);
+      .attr("fill", "none").attr("stroke", frameColor)
+      .attr("stroke-width", 3.5).attr("stroke-linejoin", "round");
 
     const onTarget = shots.filter(isOnTarget);
     const offTarget = shots.filter((s) => !isOnTarget(s));

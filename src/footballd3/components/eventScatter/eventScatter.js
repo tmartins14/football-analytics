@@ -71,42 +71,57 @@ function _typeColor(eventType) {
 }
 
 // ── Shared tooltip ────────────────────────────────────────────────────────────
+// Created lazily (not at module scope) so this file can be imported in a
+// server-rendering context without touching `document` on the server — a
+// module-top-level document.createElement() here previously crashed Next.js
+// SSR the first time this component was actually used inside a Next.js app
+// (ReferenceError: document is not defined). Every other footballd3
+// component already uses this lazy pattern; this brings eventScatter.js
+// into line with it.
 
-const _tooltip = document.createElement("div");
-Object.assign(_tooltip.style, {
-  position:      "fixed",
-  pointerEvents: "none",
-  display:       "none",
-  background:    "#FAF7F0",
-  border:        "1px solid #E5E5E5",
-  borderRadius:  "2px",
-  padding:       "8px 10px",
-  fontFamily:    "Geist Mono, monospace",
-  fontSize:      "12px",
-  lineHeight:    "1.6",
-  color:         "#171717",
-  whiteSpace:    "nowrap",
-  zIndex:        "100",
-});
-document.body.appendChild(_tooltip);
+let _tooltip;
+function getTooltip() {
+  if (!_tooltip) {
+    _tooltip = document.createElement("div");
+    Object.assign(_tooltip.style, {
+      position:      "fixed",
+      pointerEvents: "none",
+      display:       "none",
+      background:    "#FAF7F0",
+      border:        "1px solid #E5E5E5",
+      borderRadius:  "2px",
+      padding:       "8px 10px",
+      fontFamily:    "Geist Mono, monospace",
+      fontSize:      "12px",
+      lineHeight:    "1.6",
+      color:         "#171717",
+      whiteSpace:    "nowrap",
+      zIndex:        "100",
+    });
+    document.body.appendChild(_tooltip);
+  }
+  return _tooltip;
+}
 
 function _showTooltip(event, d) {
   const sec = d.seconds.toFixed(1);
   const outcome = d.outcome ? ` · ${d.outcome}` : "";
-  _tooltip.innerHTML =
+  const tooltip = getTooltip();
+  tooltip.innerHTML =
     `<span style="font-weight:600">${d.player}</span><br>` +
     `${d.event_type}${outcome}<br>` +
     `<span style="color:#525252">+${sec}s</span>`;
-  _tooltip.style.display = "block";
+  tooltip.style.display = "block";
 }
 
 function _moveTooltip(event) {
-  _tooltip.style.left = (event.clientX + 14) + "px";
-  _tooltip.style.top  = (event.clientY - 28) + "px";
+  const tooltip = getTooltip();
+  tooltip.style.left = (event.clientX + 14) + "px";
+  tooltip.style.top  = (event.clientY - 28) + "px";
 }
 
 function _hideTooltip() {
-  _tooltip.style.display = "none";
+  getTooltip().style.display = "none";
 }
 
 // ── Marker helpers ────────────────────────────────────────────────────────────

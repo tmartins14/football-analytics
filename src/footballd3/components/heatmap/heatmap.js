@@ -41,6 +41,33 @@ function bilinear(values, cols, rows, gx, gy) {
 }
 
 /**
+ * Invert a screen pixel back to StatsBomb (sbX, sbY) space, respecting
+ * pitch.js's orientation swap.
+ *
+ * pitch.js's own px(sbX, sbY) is `orientation === "horizontal" ?
+ * [xScale(sbX), yScale(sbY)] : [xScale(sbY), yScale(sbX)]` — i.e. vertical
+ * orientation swaps which StatsBomb axis lands on which screen axis. This
+ * mirrors that exact branching in reverse via xScale.invert/yScale.invert,
+ * so a caller never has to assume screen-x directly corresponds to sbX (the
+ * bug this function replaces: _renderSmooth previously scanned canvas pixels
+ * straight into grid columns/rows, which only happened to be correct for
+ * "horizontal" — the only orientation every consumer used until
+ * TerritoryPanel.tsx's vertical pitch produced a visibly transposed heatmap).
+ *
+ * @param {number} screenX - Absolute screen-space x (not offset from pitch padding).
+ * @param {number} screenY - Absolute screen-space y.
+ * @param {d3.ScaleLinear} xScale - From createPitch().
+ * @param {d3.ScaleLinear} yScale - From createPitch().
+ * @param {string} orientation - "horizontal" or "vertical", from pitch.config.
+ * @returns {[number, number]} [sbX, sbY] in StatsBomb 120×80 yard space.
+ */
+export function invertPx(screenX, screenY, xScale, yScale, orientation) {
+  return orientation === "horizontal"
+    ? [xScale.invert(screenX), yScale.invert(screenY)]
+    : [yScale.invert(screenY), xScale.invert(screenX)];
+}
+
+/**
  * Parse a CSS hex color string into [r, g, b] components (0–255 each).
  *
  * @param {string} hex - Six-digit hex color, e.g. "#9F1239".
@@ -72,7 +99,7 @@ function hexToRgb(hex) {
  * The heatmap layer is inserted before the third child of pitch.g (i.e. after
  * the two background rects but before all pitch markings) so lines stay on top.
  *
- * @param {Object} pitch - Return value of createPitch(): { svg, g, px, width, height, config }.
+ * @param {Object} pitch - Return value of createPitch(): { svg, g, px, xScale, yScale, width, height, config }.
  * @param {Object} data  - Parsed heatmap JSON: { grid: { cols, rows, values }, metadata }.
  * @param {Object} [config] - Optional visual configuration.
  * @param {string}  [config.renderStyle="smooth"] - "smooth" or "raster".
@@ -93,8 +120,8 @@ export function createHeatmap(pitch, data, config = {}) {
     maxOpacity  = 0.85,
   } = config;
 
-  const { g, px, width, height, config: pitchConfig } = pitch;
-  const { padding, pxPerYard } = pitchConfig;
+  const { g, px, xScale, yScale, config: pitchConfig } = pitch;
+  const { orientation } = pitchConfig;
 
   // Insert the heatmap group before the third child of pitch.g so it renders
   // under pitch lines (which are children 3+ of g).
@@ -106,7 +133,7 @@ export function createHeatmap(pitch, data, config = {}) {
     const { cols, rows, values } = gridData;
 
     if (renderStyle === "smooth") {
-      _renderSmooth(hmGroup, values, cols, rows, px, padding, pxPerYard, colorLow, colorHigh, maxOpacity);
+      _renderSmooth(hmGroup, values, cols, rows, px, xScale, yScale, orientation, colorLow, colorHigh, maxOpacity);
     } else {
       _renderRaster(hmGroup, values, cols, rows, px, colorLow, colorHigh, maxOpacity);
     }
@@ -143,13 +170,14 @@ export function createHeatmap(pitch, data, config = {}) {
  * @param {number}       cols      - Grid column count.
  * @param {number}       rows      - Grid row count.
  * @param {Function}     px        - createPitch px() converting SB yards → [screenX, screenY].
- * @param {number}       padding   - Pitch padding in pixels (from pitchConfig).
- * @param {number}       pxPerYard - Pixels per yard (from pitchConfig).
+ * @param {Function}     xScale    - createPitch xScale (SB x or y axis, per orientation).
+ * @param {Function}     yScale    - createPitch yScale (SB y or x axis, per orientation).
+ * @param {string}       orientation - "horizontal" or "vertical", from pitchConfig.
  * @param {string}       colorLow  - Zero-density CSS hex color.
  * @param {string}       colorHigh - Peak-density CSS hex color.
  * @param {number}       maxOpacity - Opacity multiplier at peak density.
  */
-function _renderSmooth(group, values, cols, rows, px, padding, pxPerYard, colorLow, colorHigh, maxOpacity) {
+function _renderSmooth(group, values, cols, rows, px, xScale, yScale, orientation, colorLow, colorHigh, maxOpacity) {
   // Determine the pixel bounds of the inner pitch area via px().
   const [x0px, y0px] = px(0, 0);
   const [x1px, y1px] = px(120, 80);
@@ -174,9 +202,12 @@ function _renderSmooth(group, values, cols, rows, px, padding, pxPerYard, colorL
 
   for (let py = 0; py < canvasH; py++) {
     for (let px_ = 0; px_ < canvasW; px_++) {
-      // Map canvas pixel to fractional grid position (cell-centre space).
-      const gx = (px_ / canvasW) * cols;
-      const gy = (py / canvasH) * rows;
+      // Invert this canvas pixel back to StatsBomb (sbX, sbY) space, then map
+      // to fractional grid position — required because canvas-x only maps
+      // directly to the grid's column axis under orientation: "horizontal".
+      const [sbX, sbY] = invertPx(leftPx + px_, topPx + py, xScale, yScale, orientation);
+      const gx = (sbX / 120) * cols;
+      const gy = (sbY / 80) * rows;
       const v = bilinear(values, cols, rows, gx, gy);
 
       const r = Math.round(rL + (rH - rL) * v);

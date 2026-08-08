@@ -107,4 +107,33 @@ describe("createGoalMouthShotPanel", () => {
     expect(cy).toBeGreaterThanOrEqual(frameY);
     expect(cy).toBeLessThanOrEqual(frameY + frameHeight);
   });
+
+  it("renders a net-mesh pattern and references it from the frame's mesh fill (regression: D5 net redesign)", () => {
+    const { svg, g } = mount([GOAL]);
+    const pattern = svg.select("defs pattern");
+    expect(pattern.empty()).toBe(false);
+
+    const patternId = pattern.attr("id");
+    const meshFill = g.select(".gmsp-frame-mesh").attr("fill");
+    expect(meshFill).toBe(`url(#${patternId})`);
+  });
+
+  it("gives each mounted instance its own net-mesh pattern id (no cross-instance collision)", () => {
+    document.body.innerHTML = '<div id="a"></div><div id="b"></div>';
+    const { svg: svgA } = createGoalMouthShotPanel(d3.select("#a"), { events: [GOAL] });
+    const { svg: svgB } = createGoalMouthShotPanel(d3.select("#b"), { events: [GOAL] });
+    const idA = svgA.select("defs pattern").attr("id");
+    const idB = svgB.select("defs pattern").attr("id");
+    expect(idA).not.toBe(idB);
+  });
+
+  it("renders side net panels and a ground line beneath the frame", () => {
+    const { g } = mount([GOAL], { width: 320, height: 220 });
+    expect(g.selectAll(".gmsp-side-net").size()).toBe(2);
+    expect(g.select(".gmsp-ground-line").empty()).toBe(false);
+
+    const frame = g.select(".gmsp-frame");
+    const groundY = +frame.attr("y") + +frame.attr("height");
+    expect(+g.select(".gmsp-ground-line").attr("y1")).toBeCloseTo(groundY, 5);
+  });
 });

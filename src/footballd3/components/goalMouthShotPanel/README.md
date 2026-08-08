@@ -32,6 +32,17 @@ the crossbar, horizontally positioned by `shot_end_location`'s y (clamped to
 the strip's width) — the honest claim is "this shot missed, roughly to this
 side," not "the ball crossed exactly here."
 
+## Net visual
+
+The frame is drawn to read as an actual goal net, not a bordered box:
+a diagonal-crosshatch `<pattern>` mesh fills the frame interior (and two
+receding side wedges, for depth) behind the posts/crossbar, which are drawn
+last with a thicker rounded stroke on top; a ground line + soft shadow sit
+beneath. Purely visual — shot placement/classification logic is untouched.
+Each mounted instance gets its own `<pattern>` id (`gmsp-net-{n}`) so two
+panels on the same page never collide via SVG's document-wide `url(#id)`
+resolution.
+
 ## JSON contract (consumed)
 
 Same `player_events/{match_id}/{player_id}.json` shape every other panel
@@ -42,15 +53,19 @@ so callers may pass the full unfiltered file.
 {
   "events": [
     { "event_id": "...", "type": "Shot", "minute": 72, "outcome": "Goal",
-      "shot_xg": 0.32, "shot_end_location": [40.1, 1.8], "is_goal": true },
+      "shot_xg": 0.32, "shot_end_location": [120.0, 40.1, 1.8], "is_goal": true },
     { "event_id": "...", "type": "Shot", "minute": 55, "outcome": "Off T",
-      "shot_xg": 0.05, "shot_end_location": [46.5, 3.1], "is_goal": false }
+      "shot_xg": 0.05, "shot_end_location": [121.0, 46.5, 3.1], "is_goal": false }
   ]
 }
 ```
 
-`shot_end_location` is `[y, z]` or `[y, z, ...]` in StatsBomb's raw shape —
-only the first two elements (y, height) are read.
+`shot_end_location` is StatsBomb's full-pitch `[x, y, z]` triple, the same
+shape as every other `end_location` field — **not** pre-collapsed to
+goal-mouth `[y, z]`. This panel reads index `[1]` for goal-mouth y and index
+`[2]` for height z; index `[0]` (pitch x) is unused here since on-target
+shots cluster near x=120 by definition. `z` defaults to 0 when only `[x, y]`
+is present.
 
 ## Usage
 

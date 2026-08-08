@@ -203,6 +203,16 @@ function renderBench(benchG, bench, innerWidth, columns, nodeColor, labelColor, 
     })
     .style("cursor", d => (d.position === "Goalkeeper" ? "default" : "pointer"));
 
+  // Invisible full-row hit target — without it, only the individual text
+  // glyphs (number/surname/minute) are clickable, since SVG <g> elements
+  // don't hit-test on their own and the gaps between the three text nodes
+  // have no shape underneath them. fill="transparent" (not "none") keeps it
+  // hit-testable while invisible.
+  rowGroups.append("rect")
+    .attr("class", "fm-bench-hit")
+    .attr("x", -4).attr("y", -14).attr("width", columnWidth - 10).attr("height", 20)
+    .attr("fill", "transparent");
+
   rowGroups.append("rect")
     .attr("class", "fm-bench-ring")
     .attr("x", -4).attr("y", -14).attr("width", columnWidth - 10).attr("height", 20)
