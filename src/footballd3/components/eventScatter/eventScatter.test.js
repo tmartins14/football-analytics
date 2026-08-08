@@ -61,4 +61,38 @@ describe("createEventScatter", () => {
     update({ events: [PASS, { ...PASS, event_id: "e3", x: 10, y: 10, end_x: null, end_y: null } ] });
     expect(pitch.g.selectAll("g.es circle").size()).toBe(2);
   });
+
+  describe("tooltip player/time fields are optional (regression: I3 'undefined' tooltip)", () => {
+    it("shows the minute (not 'undefined') for an event with no player, only minute", () => {
+      const pitch = makePitch();
+      const noPlayer = { event_id: "e4", event_type: "Pass", minute: 23, x: 40, y: 30, end_x: null, end_y: null, outcome: null };
+      createEventScatter(pitch, { events: [noPlayer] });
+      const circle = pitch.g.select("g.es circle").node();
+      circle.dispatchEvent(new window.MouseEvent("mouseover", { bubbles: true }));
+      const tooltip = document.body.lastElementChild;
+      expect(tooltip.innerHTML).not.toContain("undefined");
+      expect(tooltip.innerHTML).toContain("23'");
+    });
+
+    it("falls back to possession-relative seconds when minute is absent (unchanged, other real consumer)", () => {
+      const pitch = makePitch();
+      createEventScatter(pitch, { events: [PASS] }); // PASS has seconds, no minute
+      const circle = pitch.g.select("g.es circle").node();
+      circle.dispatchEvent(new window.MouseEvent("mouseover", { bubbles: true }));
+      const tooltip = document.body.lastElementChild;
+      expect(tooltip.innerHTML).toContain("+1.2s");
+      expect(tooltip.innerHTML).toContain("Test Player");
+    });
+
+    it("prefers minute over seconds when both are present", () => {
+      const pitch = makePitch();
+      const both = { event_id: "e5", event_type: "Pass", minute: 10, seconds: 42.0, x: 40, y: 30, end_x: null, end_y: null, outcome: null };
+      createEventScatter(pitch, { events: [both] });
+      const circle = pitch.g.select("g.es circle").node();
+      circle.dispatchEvent(new window.MouseEvent("mouseover", { bubbles: true }));
+      const tooltip = document.body.lastElementChild;
+      expect(tooltip.innerHTML).toContain("10'");
+      expect(tooltip.innerHTML).not.toContain("42.0s");
+    });
+  });
 });

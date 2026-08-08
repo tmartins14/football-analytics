@@ -13,8 +13,12 @@ arrows) is driven by `event_type` and is fully configurable via `colorScale`.
 - **Circle at (x, y)**: every event's origin position, color-coded by semantic category.
 - **Arrow to (end_x, end_y)**: drawn for events that carry a destination (Pass, Carry, Shot).
   Failed passes get an outer ring around the origin dot to distinguish them from completions.
-- **Tooltip on hover**: player name, event type, outcome (if any), and elapsed seconds within
-  the possession.
+- **Tooltip on hover**: player name (if given — omit `player` when every event
+  already belongs to one known player, e.g. a single-player whole-match view;
+  the line is skipped rather than showing "undefined"), event type, outcome
+  (if any), and a timestamp — `{minute}'` if `minute` is present (a
+  whole-match/single-player view), else `+X.Xs` elapsed within the possession
+  (the possession-scoped shape below).
 
 ## Event type color encoding
 
@@ -58,6 +62,11 @@ Reads from `src/footballd3/sample_data/possession_{match_id}_{possession}.json`
 ```
 
 `end_x`/`end_y` are non-null for Pass, Carry, and Shot events; `null` for all others.
+
+`player` and `seconds` are only needed for this possession-scoped shape (see
+tooltip behavior above). A whole-match/single-player consumer — e.g.
+`TerritoryPanel.tsx` on the Player Match Analysis page — passes `minute`
+instead of `seconds`, and omits `player` entirely.
 `outcome` is non-null only for failed passes; `null` means the pass was completed.
 
 Extracted by `src/statsbomb/extract_possession.py`.

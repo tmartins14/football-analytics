@@ -96,14 +96,14 @@ function _moment(event, kind, note) {
  */
 function _styleTransportButton(button, { borderColor, buttonBackground, textColor }) {
   button
-    .style("min-width", "34px")
-    .style("padding", "6px 10px")
+    .style("min-width", "38px")
+    .style("padding", "7px 12px")
     .style("border-radius", "6px")
     .style("border", `1px solid ${borderColor}`)
     .style("background", buttonBackground)
     .style("color", textColor)
     .style("font-family", "Geist Mono, monospace")
-    .style("font-size", "13px")
+    .style("font-size", "14px")
     .style("cursor", "pointer");
 }
 
@@ -164,7 +164,7 @@ export function createHighlightReel(selection, data, config = {}) {
     .attr("class", "highlight-reel")
     .style("display", "flex")
     .style("align-items", "center")
-    .style("gap", "12px")
+    .style("gap", "14px")
     .style("flex-wrap", "wrap");
 
   let moments = selectMoments(data.events ?? []);
@@ -262,7 +262,7 @@ export function createHighlightReel(selection, data, config = {}) {
       .style("background", focalColor)
       .style("border", `1px solid ${focalColor}`)
       .style("color", focalTextColor)
-      .style("min-width", "70px");
+      .style("min-width", "78px");
 
     _styleTransportButton(
       controls.append("button").attr("class", "reel-next").text("›").on("click", () => step(1)),
@@ -275,9 +275,9 @@ export function createHighlightReel(selection, data, config = {}) {
       .attr("class", "reel-minute")
       .style("font-family", "Fraunces, serif")
       .style("font-weight", "900")
-      .style("font-size", "24px")
+      .style("font-size", "28px")
       .style("color", focalColor)
-      .style("min-width", "44px")
+      .style("min-width", "50px")
       .text(`${current.minute}'`);
 
     const desc = container.append("div")
@@ -291,27 +291,27 @@ export function createHighlightReel(selection, data, config = {}) {
     desc.append("div")
       .attr("class", "reel-moment-label")
       .style("font-family", "Geist Mono, monospace")
-      .style("font-size", "10px")
+      .style("font-size", "11px")
       .style("letter-spacing", "0.08em")
       .style("text-transform", "uppercase")
       .style("color", faintColor)
-      .style("margin-bottom", "2px")
+      .style("margin-bottom", "3px")
       .text(`Moment ${currentIndex + 1} / ${moments.length} · ${current.kind}`);
 
     desc.append("div")
       .attr("class", "reel-moment-note")
       .style("font-family", "Geist, sans-serif")
-      .style("font-size", "13px")
+      .style("font-size", "14px")
       .style("color", textColor)
       .text(current.note);
 
-    const dots = container.append("div").attr("class", "reel-dots").style("display", "flex").style("gap", "5px");
+    const dots = container.append("div").attr("class", "reel-dots").style("display", "flex").style("gap", "6px");
     dots.selectAll(".reel-dot")
       .data(moments, (d) => d.event_id)
       .join("span")
       .attr("class", "reel-dot")
-      .style("width", (d, i) => (i === currentIndex ? "18px" : "7px"))
-      .style("height", "7px")
+      .style("width", (d, i) => (i === currentIndex ? "20px" : "8px"))
+      .style("height", "8px")
       .style("border-radius", "999px")
       .style("display", "inline-block")
       .style("cursor", "pointer")

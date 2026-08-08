@@ -81,7 +81,10 @@ function _typeColor(eventType) {
 
 let _tooltip;
 function getTooltip() {
-  if (!_tooltip) {
+  // isConnected (not just truthiness) so the tooltip gets re-appended if its
+  // old parent was ever removed from the document — real apps never nuke
+  // document.body wholesale, but this keeps the singleton correct if they did.
+  if (!_tooltip || !_tooltip.isConnected) {
     _tooltip = document.createElement("div");
     Object.assign(_tooltip.style, {
       position:      "fixed",
@@ -104,13 +107,19 @@ function getTooltip() {
 }
 
 function _showTooltip(event, d) {
-  const sec = d.seconds.toFixed(1);
   const outcome = d.outcome ? ` · ${d.outcome}` : "";
+  // Prefer an absolute match minute (whole-match/single-player consumers,
+  // e.g. TerritoryPanel.tsx) over the possession-relative elapsed-seconds
+  // format (the showcase gallery's per-possession consumer, where multiple
+  // players' events share one possession and "+X.Xs since it started" is
+  // the meaningful timestamp) — a caller supplies whichever fits its data.
+  const time = typeof d.minute === "number" ? `${d.minute}'` : `+${d.seconds.toFixed(1)}s`;
+  const playerLine = d.player ? `<span style="font-weight:600">${d.player}</span><br>` : "";
   const tooltip = getTooltip();
   tooltip.innerHTML =
-    `<span style="font-weight:600">${d.player}</span><br>` +
+    playerLine +
     `${d.event_type}${outcome}<br>` +
-    `<span style="color:#525252">+${sec}s</span>`;
+    `<span style="color:#525252">${time}</span>`;
   tooltip.style.display = "block";
 }
 
@@ -161,8 +170,14 @@ function _addMarker(defs, id, color) {
  *
  * @param {Object} pitch - Return value of createPitch(). Must expose { svg, g, px }.
  * @param {Object} data  - Possession JSON contract (possession_{match_id}_{possession}.json)
- *   or any object with an `events` array of { event_type, seconds, x, y,
- *   end_x, end_y, player, outcome }.
+ *   or any object with an `events` array of { event_type, x, y, end_x, end_y,
+ *   outcome }, plus EITHER `minute` (an absolute match minute, shown as
+ *   `{minute}'` in the tooltip — for whole-match/single-player consumers) OR
+ *   `seconds` (possession-relative elapsed seconds, shown as `+X.Xs` — for
+ *   per-possession consumers where `minute` isn't meaningful per event).
+ *   `player` is optional — omit it when every event already belongs to one
+ *   known player (the tooltip's player-name line is skipped entirely rather
+ *   than rendering "undefined").
  * @param {Object} [config={}] - Rendering options.
  * @param {number}   [config.markerRadius=5]          - Circle radius in pixels.
  * @param {boolean}  [config.showArrows=true]          - Draw arrow lines for events
