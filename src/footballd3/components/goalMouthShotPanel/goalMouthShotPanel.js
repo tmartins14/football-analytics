@@ -144,9 +144,13 @@ function endZ(shot) {
  *   (GOAL_WIDTH_YARDS / CROSSBAR_HEIGHT_YARDS, ~3:1), not independently
  *   configurable — a fixed height paired with a narrower-than-expected
  *   container previously squashed the frame toward square.
- * @param {number}   [config.minRadius=4]  - Smallest shot-marker radius in pixels.
- * @param {number}   [config.maxRadius=22] - Largest shot-marker radius in pixels
- *   (at the highest shot_xg in the data).
+ * @param {number|null} [config.minRadius=null] - Smallest shot-marker radius
+ *   in pixels. Defaults to a size proportionate to the (width-derived) frame
+ *   height rather than a fixed pixel value, so markers look the same
+ *   relative size at any container width.
+ * @param {number|null} [config.maxRadius=null] - Largest shot-marker radius
+ *   in pixels (at the highest shot_xg in the data) — same proportional
+ *   default behavior as minRadius.
  * @param {string}   [config.frameColor="#1E3A5F"]     - Goal-frame stroke color.
  * @param {string}   [config.onTargetColor="#525252"]  - On-target shot fill/stroke color.
  * @param {string}   [config.goalColor="#9F1239"]      - Goal fill + ring color.
@@ -166,8 +170,8 @@ function endZ(shot) {
 export function createGoalMouthShotPanel(selection, data, config = {}) {
   let {
     width            = 320,
-    minRadius        = 4,
-    maxRadius        = 22,
+    minRadius        = null,
+    maxRadius        = null,
     frameColor       = "#1E3A5F",
     onTargetColor    = "#525252",
     goalColor        = "#9F1239",
@@ -189,6 +193,14 @@ export function createGoalMouthShotPanel(selection, data, config = {}) {
   const frameHeight = frameWidth / (GOAL_WIDTH_YARDS / CROSSBAR_HEIGHT_YARDS);
   const frameLeft = (width - frameWidth) / 2;
   const height = frameTop + frameHeight + 16;
+
+  // Defaults derive from frameHeight (not fixed pixels) — frameHeight is now
+  // fully width-dependent, so a fixed pixel radius looked proportionate only
+  // at the one width it was tuned against (140px, from the old width=320/
+  // height=220 defaults) and oversized at any narrower width. These ratios
+  // (4/140, 22/140) preserve exactly that original visual proportion at any size.
+  minRadius = minRadius ?? frameHeight * (4 / 140);
+  maxRadius = maxRadius ?? frameHeight * (22 / 140);
 
   const yScale = d3.scaleLinear().domain([GOAL_Y_MIN, GOAL_Y_MAX]).range([frameLeft, frameLeft + frameWidth]);
   const zScale = d3.scaleLinear().domain([0, CROSSBAR_HEIGHT_YARDS]).range([frameTop + frameHeight, frameTop]);

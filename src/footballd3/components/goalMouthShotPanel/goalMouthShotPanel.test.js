@@ -150,4 +150,24 @@ describe("createGoalMouthShotPanel", () => {
       expect(ratio).toBeCloseTo(expectedRatio, 1);
     }
   });
+
+  it("scales the default shot-marker radius with frame height instead of a fixed pixel value (regression: F5 oversized markers)", () => {
+    const narrow = mount([GOAL], { width: 140 });
+    const wide = mount([GOAL], { width: 480 });
+
+    const narrowFrame = narrow.g.select(".gmsp-frame");
+    const wideFrame = wide.g.select(".gmsp-frame");
+    const narrowFrameHeight = +narrowFrame.attr("height");
+    const wideFrameHeight = +wideFrame.attr("height");
+    expect(wideFrameHeight).toBeGreaterThan(narrowFrameHeight);
+
+    const narrowR = +narrow.g.select(".gmsp-on").attr("r");
+    const wideR = +wide.g.select(".gmsp-on").attr("r");
+
+    // A fixed pixel default would render an identical radius at both widths;
+    // scaling with frame height means the wider frame's marker is larger,
+    // and both stay proportionate to their own frame (same ratio).
+    expect(wideR).toBeGreaterThan(narrowR);
+    expect(narrowR / narrowFrameHeight).toBeCloseTo(wideR / wideFrameHeight, 5);
+  });
 });

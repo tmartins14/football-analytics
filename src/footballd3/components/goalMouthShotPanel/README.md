@@ -99,7 +99,7 @@ update({
 | Option | Default | Description |
 |--------|---------|-------------|
 | `width` | `320` | SVG width in pixels. Height is always derived from this at the regulation goal ratio (`GOAL_WIDTH_YARDS / CROSSBAR_HEIGHT_YARDS`, ~3:1) — not independently configurable, so the frame never gets squashed toward square at a narrow container width. |
-| `minRadius` / `maxRadius` | `4` / `22` | Shot-marker radius range (sqrt-scaled by `shot_xg` for area-fair sizing) |
+| `minRadius` / `maxRadius` | proportionate to frame height | Shot-marker radius range (sqrt-scaled by `shot_xg` for area-fair sizing). Defaults to `frameHeight * (4/140)` / `frameHeight * (22/140)` — proportionate to the (width-derived) frame rather than fixed pixels, so markers stay the same relative size at any container width. Pass explicit numbers to override. |
 | `frameColor` | `"#1E3A5F"` | Goal-frame stroke color |
 | `onTargetColor` | `"#525252"` | On-target shot fill/stroke color |
 | `goalColor` | `"#9F1239"` | Goal fill + ring color |
