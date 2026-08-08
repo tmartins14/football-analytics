@@ -103,6 +103,18 @@ describe("createFormation selection ring", () => {
     update({ selectedId: 2 });
     expect(svg.selectAll(".fm-selected-ring").size()).toBe(1);
   });
+
+  it("selected node's own circle stroke switches to selectedColor (regression: G3)", () => {
+    const { svg } = mount({ selectedId: 2, selectedColor: "#9F1239", backgroundColor: "#FAF7F0" });
+    const nodes = svg.selectAll("g.fm-player").nodes();
+    const selectedCircle = d3.select(nodes[1]).select("circle:not(.fm-selected-ring)");
+    const unselectedCircle = d3.select(nodes[0]).select("circle:not(.fm-selected-ring)");
+
+    expect(selectedCircle.attr("stroke")).toBe("#9F1239");
+    expect(+selectedCircle.attr("stroke-width")).toBe(2);
+    expect(unselectedCircle.attr("stroke")).toBe("#FAF7F0");
+    expect(+unselectedCircle.attr("stroke-width")).toBe(1.5);
+  });
 });
 
 describe("createFormation bench (optional)", () => {
@@ -148,6 +160,42 @@ describe("createFormation bench (optional)", () => {
       return d3.select(this).style("display") !== "none";
     });
     expect(visibleRings.size()).toBe(1);
+  });
+
+  it("fills the selected bench row's background and recolors its text (regression: G4)", () => {
+    const data = { ...makeData(), bench: makeBench() };
+    const { svg } = mount({ selectedId: 11, selectedColor: "#9F1239", nodeColor: "#1E3A5F", labelColor: "#171717" }, data);
+
+    const selectedRow = svg.selectAll(".fm-bench-row").filter(d => d.player_id === 11);
+    const ring = selectedRow.select(".fm-bench-ring");
+    expect(ring.style("display")).not.toBe("none");
+    expect(ring.attr("fill")).toBe("#9F1239");
+    expect(+ring.attr("fill-opacity")).toBeCloseTo(0.13, 5);
+
+    const texts = selectedRow.selectAll("text").nodes();
+    texts.forEach((node) => expect(node.getAttribute("fill")).toBe("#9F1239"));
+
+    const unselectedRow = svg.selectAll(".fm-bench-row").filter(d => d.player_id === 10);
+    expect(unselectedRow.select(".fm-bench-ring").style("display")).toBe("none");
+  });
+
+  it("shows the hover fill on mouseenter and hides it on mouseleave, except for the selected row", () => {
+    const data = { ...makeData(), bench: makeBench() };
+    const { svg } = mount({ selectedId: 11 }, data);
+
+    const unselectedRow = svg.selectAll(".fm-bench-row").filter(d => d.player_id === 10);
+    const hover = unselectedRow.select(".fm-bench-hover");
+    expect(hover.style("display")).toBe("none");
+    unselectedRow.dispatch("mouseenter");
+    expect(hover.style("display")).not.toBe("none");
+    unselectedRow.dispatch("mouseleave");
+    expect(hover.style("display")).toBe("none");
+
+    // The already-selected row's hover rect never shows — its permanent
+    // .fm-bench-ring fill already communicates the same state.
+    const selectedRow = svg.selectAll(".fm-bench-row").filter(d => d.player_id === 11);
+    selectedRow.dispatch("mouseenter");
+    expect(selectedRow.select(".fm-bench-hover").style("display")).toBe("none");
   });
 
   it("grows the SVG height to fit the bench, and shrinks back when bench is removed", () => {

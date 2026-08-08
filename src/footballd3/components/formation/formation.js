@@ -76,8 +76,13 @@ function getTooltip() {
  *   click. Suppressed for the Goalkeeper marker (cursor stays default, no
  *   handler attached) — a goalkeeper is not a selectable outfield player.
  * @param {number|string|null} selectedId - player_id of the currently selected
- *   player, or null. The matching node gets a highlight ring.
- * @param {string} selectedColor - Stroke color for the selection ring.
+ *   player, or null. The matching node gets a highlight ring (radius +5,
+ *   stroke-width 2) and its own circle's stroke also switches to
+ *   selectedColor/2px (instead of backgroundColor/1.5px) — the same node
+ *   reads as selected even where the outer ring alone might be visually lost
+ *   (e.g. two nearby selected-adjacent nodes).
+ * @param {string} selectedColor - Stroke color for the selection ring and the
+ *   selected node's own circle stroke.
  */
 function renderPeriod(g, px, period, nodeColor, labelColor, bounds, backgroundColor, nodeRadius, onPlayerClick, selectedId, selectedColor) {
   g.selectAll(".fm-player").remove();
@@ -98,22 +103,24 @@ function renderPeriod(g, px, period, nodeColor, labelColor, bounds, backgroundCo
       playerG.on("click", () => onPlayerClick(player));
     }
 
-    if (player.player_id === selectedId) {
+    const isSelected = player.player_id === selectedId;
+
+    if (isSelected) {
       playerG.append("circle")
         .attr("class", "fm-selected-ring")
         .attr("cx", cx).attr("cy", cy)
-        .attr("r", nodeRadius + 4)
+        .attr("r", nodeRadius + 5)
         .attr("fill", "none")
         .attr("stroke", selectedColor)
-        .attr("stroke-width", 2.5);
+        .attr("stroke-width", 2);
     }
 
     playerG.append("circle")
       .attr("cx", cx).attr("cy", cy)
       .attr("r", nodeRadius)
       .attr("fill", nodeColor)
-      .attr("stroke", backgroundColor)
-      .attr("stroke-width", 1.5);
+      .attr("stroke", isSelected ? selectedColor : backgroundColor)
+      .attr("stroke-width", isSelected ? 2 : 1.5);
 
     // Jersey number inside the circle.
     playerG.append("text")
@@ -180,8 +187,11 @@ function renderPeriod(g, px, period, nodeColor, labelColor, bounds, backgroundCo
  * @param {string} nodeColor - Jersey-number text color.
  * @param {string} labelColor - Surname/minute text color.
  * @param {number|string|null} selectedId - player_id of the currently selected
- *   player, or null.
- * @param {string} selectedColor - Highlight color for the selected row.
+ *   player, or null. The matching row gets a filled background
+ *   (selectedColor at 0.13 fill-opacity) + border, and its text recolors to
+ *   selectedColor. Unselected rows show the same fill (no border) on hover.
+ * @param {string} selectedColor - Highlight color for the selected row's
+ *   fill/border and text, and for the hover-only fill on other rows.
  * @param {Function|null} onPlayerClick - Called with the player record on row click.
  * @returns {number} Total bench height in pixels (for sizing the SVG).
  */
@@ -213,33 +223,57 @@ function renderBench(benchG, bench, innerWidth, columns, nodeColor, labelColor, 
     .attr("x", -4).attr("y", -14).attr("width", columnWidth - 10).attr("height", 20)
     .attr("fill", "transparent");
 
+  // Selected-row background + border — permanent while selected, filled
+  // (not just outlined) so the row reads as clearly active, not just ringed.
   rowGroups.append("rect")
     .attr("class", "fm-bench-ring")
     .attr("x", -4).attr("y", -14).attr("width", columnWidth - 10).attr("height", 20)
     .attr("rx", 4)
-    .attr("fill", "none").attr("stroke", selectedColor).attr("stroke-width", 2)
+    .attr("fill", selectedColor).attr("fill-opacity", 0.13)
+    .attr("stroke", selectedColor).attr("stroke-width", 2)
     .style("display", d => (d.player_id === selectedId ? null : "none"));
+
+  // Hover-only background (fill, no border) — shown on mouseenter/hidden on
+  // mouseleave for any row that isn't already the permanently-selected one.
+  // A separate rect (rather than mutating .fm-bench-ring's own attrs on
+  // hover) so mouseleave never has to remember/restore a prior style.
+  rowGroups.append("rect")
+    .attr("class", "fm-bench-hover")
+    .attr("x", -4).attr("y", -14).attr("width", columnWidth - 10).attr("height", 20)
+    .attr("rx", 4)
+    .attr("fill", selectedColor).attr("fill-opacity", 0.13)
+    .style("display", "none");
 
   rowGroups.append("text")
     .attr("font-family", "Geist Mono, monospace").attr("font-size", "11px")
-    .attr("fill", nodeColor).attr("font-weight", "600")
+    .attr("fill", d => (d.player_id === selectedId ? selectedColor : nodeColor)).attr("font-weight", "600")
     .text(d => `#${d.jersey_number}`);
 
   rowGroups.append("text")
     .attr("x", 32)
     .attr("font-family", "Geist, sans-serif").attr("font-size", "11px")
-    .attr("fill", labelColor)
+    .attr("fill", d => (d.player_id === selectedId ? selectedColor : labelColor))
     .text(d => surname(d.display_name));
 
   rowGroups.append("text")
     .attr("x", columnWidth - 16).attr("text-anchor", "end")
     .attr("font-family", "Geist Mono, monospace").attr("font-size", "10px")
-    .attr("fill", "#8A8578")
+    .attr("fill", d => (d.player_id === selectedId ? selectedColor : "#8A8578"))
     .text(d => `on ${d.on_minute}'`);
 
   rowGroups
     .filter(d => d.position !== "Goalkeeper" && onPlayerClick)
     .on("click", (event, d) => onPlayerClick(d));
+
+  rowGroups
+    .on("mouseenter", function (event, d) {
+      if (d.player_id === selectedId) return;
+      d3.select(this).select(".fm-bench-hover").style("display", null);
+    })
+    .on("mouseleave", function (event, d) {
+      if (d.player_id === selectedId) return;
+      d3.select(this).select(".fm-bench-hover").style("display", "none");
+    });
 
   return rows * BENCH_ROW_HEIGHT;
 }

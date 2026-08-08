@@ -11,9 +11,12 @@ Renders a declared formation diagram on a full pitch. Player markers are placed 
   selection targets (e.g. a player-selector UI). The Goalkeeper marker is never
   clickable — it gets `cursor: default` and no click handler.
 - Optionally a **selector**: pass `selectedId` (+ `update({ selectedId })`) to
-  ring the currently selected player's marker. Combined with `onPlayerClick`,
-  this is the app's one-team-at-a-time player-selector UI — team switching is
-  the caller's concern (pass a different team's `data` and re-mount, or call
+  ring the currently selected player's marker (radius +5, stroke-width 2) —
+  the selected node's own circle stroke also switches to `selectedColor`/2px
+  (instead of `backgroundColor`/1.5px), so the node itself reads as selected,
+  not just its outer ring. Combined with `onPlayerClick`, this is the app's
+  one-team-at-a-time player-selector UI — team switching is the caller's
+  concern (pass a different team's `data` and re-mount, or call
   `createFormation` again), not something this component owns.
 - Optionally a **bench**: pass `data.bench` (that team's
   `substitutes_{match_id}.json` array) to render a clickable substitute list
@@ -21,7 +24,10 @@ Renders a declared formation diagram on a full pitch. Player markers are placed 
   the narrow pitch widths this actually renders at, e.g. a ~300px lineup-
   selector column, 2+ columns leave too little room for a surname before it
   collides with the right-aligned "on NN'" text; raise it if your container
-  is wider). Same click/selection/goalkeeper rules as starter nodes. Omitting
+  is wider). Same click/selection/goalkeeper rules as starter nodes. The
+  selected row gets a filled background (`selectedColor` at 0.13
+  fill-opacity) + border, and its text recolors to `selectedColor`;
+  unselected rows show the same fill (no border) on hover. Omitting
   `data.bench` renders exactly as before — the SVG is only sized taller than
   the pitch when a bench is present, so existing read-only consumers (the
   match dashboard's `FormationPanel`) are unaffected.
