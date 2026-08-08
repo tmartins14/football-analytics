@@ -1,9 +1,9 @@
 # actionFeed.js
 
 Scrollable, sortable chronological log of one player's actions. Each row:
-minute, action type, outcome, and a signed xT-swing bar from a centered zero
-baseline. Rows are color-coded to the app's shared layer taxonomy; shots are
-visually distinct via that same coding.
+minute, action type, outcome, a formatted xT/xG value, and a signed xT-swing
+bar from a centered zero baseline. Rows are color-coded to the app's shared
+layer taxonomy; shots are visually distinct via that same coding.
 
 ## HTML, not SVG
 
@@ -32,7 +32,7 @@ re-deriving the classification:
 | `turnover` | `type === "Dispossessed" \|\| type === "Miscontrol"` |
 | `other` | everything else |
 
-## Signed xT-swing bar
+## Signed xT-swing value + bar
 
 Pass/Carry rows use their own `xt_delta` (can be negative — a backward safety
 pass draws on the loss side). Shot rows have no `xt_delta` (only Pass/Carry
@@ -40,6 +40,11 @@ are credited toward cumulative xT, per `extract_player_events.py`) but still
 need a bar, so they use `shot_xg` instead, always drawn on the gain side — a
 shot is inherently threat-positive. Every other event type has no threat
 value and renders a zero-width bar (a thin center tick, not a hidden row).
+
+Next to the bar, a formatted text value (`formatSwing()`): signed 3-decimal
+`+0.220 xT` / `-0.045 xT` for Pass/Carry, unsigned 2-decimal `xG 0.32` for
+Shot, and blank for every other event type — a literal `0.000 xT` on every
+zero-tick row would be noise, not information.
 
 ## JSON contract (consumed)
 

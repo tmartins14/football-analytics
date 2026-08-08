@@ -89,4 +89,38 @@ describe("createActionFeed", () => {
     update({ data: { events: [events[0]] } });
     expect(container.selectAll(".action-feed-row").size()).toBe(1);
   });
+
+  describe("xT/xG value text (regression: H2)", () => {
+    function valueFor(container, eventId) {
+      const row = container.selectAll(".action-feed-row").filter((d) => d.event_id === eventId);
+      return row.select(".action-feed-value");
+    }
+
+    it("shows a signed xT value for a positive-swing Pass/Carry, colored navy", () => {
+      const { container } = mount(events);
+      const value = valueFor(container, "e-30"); // xt_delta: 0.02
+      expect(value.text()).toBe("+0.020 xT");
+      expect(value.style("color")).toBe("rgb(30, 58, 95)"); // #1E3A5F
+    });
+
+    it("shows a signed xT value for a negative-swing Pass/Carry, colored focal", () => {
+      const { container } = mount(events);
+      const value = valueFor(container, "e-10"); // xt_delta: -0.01
+      expect(value.text()).toBe("-0.010 xT");
+      expect(value.style("color")).toBe("rgb(159, 18, 57)"); // #9F1239
+    });
+
+    it("shows an unsigned xG value for a Shot", () => {
+      const { container } = mount(events);
+      const value = valueFor(container, "e-70"); // shot_xg: 0.4
+      expect(value.text()).toBe("xG 0.40");
+    });
+
+    it("shows no value for an event type with no swing (e.g. Pressure)", () => {
+      const pressureEvent = { event_id: "e-50", minute: 50, second: 0, type: "Pressure", outcome: null };
+      const { container } = mount([...events, pressureEvent]);
+      const value = valueFor(container, "e-50");
+      expect(value.text()).toBe("");
+    });
+  });
 });

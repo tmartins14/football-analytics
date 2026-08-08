@@ -17,7 +17,7 @@
  * "key pass" event actually is. Import it wherever activeLayers filtering
  * happens, rather than re-deriving the classification.
  *
- * SIGNED xT-SWING BAR
+ * SIGNED xT-SWING BAR + VALUE TEXT
  * Pass/Carry events use their own xt_delta (can be negative — a backward
  * safety pass). Shot events have no xt_delta (only Pass/Carry are credited,
  * per extract_player_events.py/extract_xt.py) but the design still wants a
@@ -25,7 +25,10 @@
  * positive (gain) side, since a shot is inherently threat-positive. Every
  * other event type (Pressure, Duel, Interception, etc.) has no threat value
  * and renders a zero-width bar (a thin center tick, not an empty row) rather
- * than being hidden.
+ * than being hidden. The bar is paired with a formatted text value
+ * (formatSwing()) — signed 3-decimal "+0.220 xT" for Pass/Carry, unsigned
+ * 2-decimal "xG 0.32" for Shot, blank for everything else (a literal
+ * "0.000 xT" on every zero-tick row would be noise, not information).
  */
 
 import * as d3 from "d3";
@@ -75,6 +78,25 @@ function swingValue(event) {
   if (event.type === "Shot") return event.shot_xg ?? 0;
   if (event.type === "Pass" || event.type === "Carry") return event.xt_delta ?? 0;
   return 0;
+}
+
+/**
+ * Human-readable label for one row's swing value, matching the app's
+ * existing xT/xG copy conventions elsewhere (highlightReel.js's "+0.220 xT",
+ * goal-mouth's "xG 0.32"). Blank for event types with no real swing value
+ * (Pressure, Duel, etc.) — a literal "0.000 xT" on every such row would be
+ * noise, not information, matching the zero-width tick bar's own treatment.
+ *
+ * @param {Object} event - One event from the player_events contract.
+ * @returns {string} e.g. "+0.220 xT", "-0.045 xT", "xG 0.32", or "".
+ */
+function formatSwing(event) {
+  if (event.type === "Shot") return `xG ${(event.shot_xg ?? 0).toFixed(2)}`;
+  if (event.type === "Pass" || event.type === "Carry") {
+    const v = event.xt_delta ?? 0;
+    return `${v >= 0 ? "+" : ""}${v.toFixed(3)} xT`;
+  }
+  return "";
 }
 
 const SORT_KEYS = {
@@ -166,6 +188,18 @@ export function createActionFeed(selection, data, config = {}) {
       .style("text-overflow", "ellipsis")
       .style("white-space", "nowrap")
       .text((d) => d.outcome ?? (d.type === "Pass" || d.type === "Carry" ? "Complete" : ""));
+
+    rows.append("span")
+      .attr("class", "action-feed-value")
+      .style("flex", "0 0 62px")
+      .style("text-align", "right")
+      .style("font-size", "10.5px")
+      .style("white-space", "nowrap")
+      .style("color", (d) => {
+        const v = swingValue(d);
+        return v > 0 ? "#1E3A5F" : v < 0 ? "#9F1239" : "#8A8578";
+      })
+      .text((d) => formatSwing(d));
 
     const barCells = rows.append("span").style("flex", "0 0 60px");
     const barSvg = barCells.append("svg").attr("width", 60).attr("height", 14);
