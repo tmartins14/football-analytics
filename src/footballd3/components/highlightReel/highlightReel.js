@@ -1,81 +1,110 @@
 /**
  * highlightReel.js — compact play/step reel of one player's standout moments.
  *
- * A single row: play/step controls, the current moment's minute + a short
- * annotation, and progress dots (one per moment, clickable). Moment selection
- * is entirely client-side for v1 (no dedicated extractor) — see selectMoments().
+ * A single row: play/step controls, a big minute readout, the current
+ * moment's kind/description, and progress dots (one per moment, clickable).
+ * Moment selection is entirely client-side (no dedicated extractor) — see
+ * selectMoments() — and computed once per player, not reactive to the
+ * current scrub position (the reel always considers the whole match).
  *
  * THIS COMPONENT DOES NOT OWN THE SCRUBBER
  * Per the app's state model, `scrubbedMinute` has exactly one writer: the
  * master scrubber (scrubber.js). highlightReel.js never calls a scrubber
- * directly — it only reports "move to this moment" via onMoment(moment,
- * index) and "reset to the start" via onReset(). The consuming panel is
- * responsible for calling the scrubber's own seek()/onScrub() in response,
- * exactly as it would for a direct drag. This keeps the single-writer
- * invariant intact even though playback is driven from a second component.
+ * directly — it only reports "move to this minute" via onScrubTo(minute).
+ * The consuming panel is responsible for calling the scrubber's own
+ * seek()/onScrub() in response, exactly as it would for a direct drag. This
+ * keeps the single-writer invariant intact even though playback is driven
+ * from a second component.
  *
  * PLAY VS STEP
- * Play (config.onReset(), then onMoment for index 0, 1, 2, ... at
- * config.stepDurationMs intervals, stopping after the last moment — it does
- * not loop) is a full replay from kickoff. The step buttons (prev/next) do
- * NOT reset anything — they just move the current index by one and fire
- * onMoment immediately, for scrubbing through moments without replaying the
- * whole build-up each time.
+ * Play jumps straight to the first moment's minute, then advances through
+ * the rest on a config.stepDurationMs interval, stopping (not looping) once
+ * the last moment is reached. The step buttons (prev/next) stop any running
+ * playback and move the current index by one immediately.
  */
 
-const DEFAULT_MAX_MOMENTS = 5;
-const MIN_MOMENTS = 3;
 const DEFAULT_STEP_MS = 1800;
 
 /**
- * Auto-select 3-5 standout moments from a player's events: every goal first
- * (chronological), then the highest-|xt_delta| Pass/Carry actions filling
- * any remaining slots up to maxMoments, all re-sorted chronologically for
- * display.
+ * Auto-select up to 5 standout moments from a player's full-match events:
+ * every goal, then the single highest-xG non-goal shot, then the top 3
+ * positive-xt_delta Pass/Carry actions — combined and sorted chronologically,
+ * then truncated to 5. This is a plain chronological truncation with no
+ * goal-priority protection: with more than 5 combined candidates, the
+ * latest-occurring ones are dropped even if one is a goal.
  *
- * @param {Array<Object>} events - Full player_events array.
- * @param {number} maxMoments - Upper bound on selected moments.
- * @returns {Array<{ eventId: string, minute: number, second: number,
- *   annotation: string, event: Object }>} Chronologically ordered moments,
- *   min(events.length, maxMoments) long (fewer than MIN_MOMENTS only when
- *   the player has fewer than MIN_MOMENTS events at all).
+ * @param {Array<Object>} events - Full player_events array (not scrub-filtered).
+ * @returns {Array<{ minute: number, location: [number, number],
+ *   end_location: [number, number]|null, kind: string, note: string,
+ *   event_id: string }>} Chronologically ordered moments, at most 5.
  */
-export function selectMoments(events, maxMoments = DEFAULT_MAX_MOMENTS) {
-  const goals = events
-    .filter((e) => e.type === "Shot" && e.is_goal)
-    .slice(0, maxMoments);
-  const goalIds = new Set(goals.map((e) => e.event_id));
+export function selectMoments(events) {
+  const moments = [];
 
-  const remainingSlots = Math.max(0, maxMoments - goals.length);
-  const topActions = events
-    .filter((e) => (e.type === "Pass" || e.type === "Carry") && typeof e.xt_delta === "number")
-    .filter((e) => !goalIds.has(e.event_id))
-    .sort((a, b) => Math.abs(b.xt_delta) - Math.abs(a.xt_delta))
-    .slice(0, remainingSlots);
+  events
+    .filter((e) => e.is_goal)
+    .forEach((e) => moments.push(_moment(e, "Goal", `Goal · xG ${(e.shot_xg ?? 0).toFixed(2)}`)));
 
-  const selected = [...goals, ...topActions]
-    .sort((a, b) => (a.minute * 60 + a.second) - (b.minute * 60 + b.second));
+  events
+    .filter((e) => e.type === "Shot" && !e.is_goal)
+    .sort((a, b) => (b.shot_xg ?? 0) - (a.shot_xg ?? 0))
+    .slice(0, 1)
+    .forEach((e) => moments.push(_moment(e, "Shot", `Shot · xG ${(e.shot_xg ?? 0).toFixed(2)} · ${e.outcome ?? "—"}`)));
 
-  return selected.map((event) => ({
-    eventId: event.event_id,
-    minute: event.minute,
-    second: event.second,
-    annotation: annotate(event),
-    event,
-  }));
+  events
+    .filter((e) => (e.type === "Pass" || e.type === "Carry") && (e.xt_delta ?? 0) > 0)
+    .sort((a, b) => b.xt_delta - a.xt_delta)
+    .slice(0, 3)
+    .forEach((e) => {
+      const typeLower = e.type.toLowerCase();
+      const kind = e.is_progressive ? `Prog. ${typeLower}` : e.type;
+      const note = `${e.is_progressive ? "Progressive " : ""}${typeLower} · +${e.xt_delta.toFixed(3)} xT`;
+      moments.push(_moment(e, kind, note));
+    });
+
+  moments.sort((a, b) => a.minute - b.minute);
+  return moments.slice(0, 5);
 }
 
 /**
- * Short human-readable annotation for one moment.
+ * Build one moment record from a source event.
  *
  * @param {Object} event - One player_events event.
- * @returns {string} e.g. "Goal", "Progressive pass +0.08 xT", "Carry -0.02 xT".
+ * @param {string} kind  - Short category label (e.g. "Goal", "Prog. pass").
+ * @param {string} note  - Full description line.
+ * @returns {Object} { minute, location, end_location, kind, note, event_id }
  */
-function annotate(event) {
-  if (event.type === "Shot" && event.is_goal) return "Goal";
-  const sign = (event.xt_delta ?? 0) >= 0 ? "+" : "";
-  const label = event.type === "Pass" ? "Pass" : "Carry";
-  return `${label} ${sign}${(event.xt_delta ?? 0).toFixed(2)} xT`;
+function _moment(event, kind, note) {
+  return {
+    minute: event.minute,
+    location: event.location,
+    end_location: event.end_location ?? null,
+    kind,
+    note,
+    event_id: event.event_id,
+  };
+}
+
+/**
+ * Style one transport button (prev/play/next) — bordered, rounded, monospace.
+ *
+ * @param {d3.Selection} button - The <button> selection to style.
+ * @param {Object} colors - Color tokens.
+ * @param {string} colors.borderColor - Button border color.
+ * @param {string} colors.buttonBackground - Button fill color.
+ * @param {string} colors.textColor - Button label color.
+ */
+function _styleTransportButton(button, { borderColor, buttonBackground, textColor }) {
+  button
+    .style("min-width", "34px")
+    .style("padding", "6px 10px")
+    .style("border-radius", "6px")
+    .style("border", `1px solid ${borderColor}`)
+    .style("background", buttonBackground)
+    .style("color", textColor)
+    .style("font-family", "Geist Mono, monospace")
+    .style("font-size", "13px")
+    .style("cursor", "pointer");
 }
 
 /**
@@ -88,13 +117,25 @@ function annotate(event) {
  *   scrub-filtered — the reel always selects from every credited event
  *   regardless of the current scrub position).
  * @param {Object} [config={}] - Rendering and behavior options.
- * @param {number}   [config.maxMoments=5]     - Upper bound on selected moments.
  * @param {number}   [config.stepDurationMs=1800] - Milliseconds between
  *   moments during Play.
- * @param {Function|null} [config.onReset=null]  - onReset() fires once when
- *   Play begins, before the first moment.
- * @param {Function|null} [config.onMoment=null] - onMoment(moment, index)
- *   fires on every step (Play advancing, or a manual prev/next/dot click).
+ * @param {string}   [config.teamColor] - Accepted for API-shape parity with
+ *   the design spec, but intentionally unused — the reference implementation
+ *   this component is built against never reads it either; every reel color
+ *   comes from the focal/text/faint/border tokens below.
+ * @param {Function|null} [config.onScrubTo=null] - onScrubTo(minute) fires
+ *   on every step (Play advancing, or a manual prev/next/dot click/click).
+ * @param {Function|null} [config.onHoverEvent=null] - onHoverEvent(eventId | null)
+ *   fires on hover/unhover of the current moment's description.
+ * @param {string} [config.borderColor="#E5E5E5"] - Transport button border.
+ * @param {string} [config.buttonBackground="#FFFFFF"] - Prev/next button fill.
+ * @param {string} [config.textColor="#171717"] - Body text color.
+ * @param {string} [config.faintColor="#8A8578"] - Label/empty-state text color.
+ * @param {string} [config.focalColor="#9F1239"] - Accent color (minute, Play
+ *   button fill, active dot).
+ * @param {string} [config.focalTextColor="#FAF7F0"] - Text color on the
+ *   (always-filled) Play button — the theme's own background color.
+ * @param {string} [config.inactiveDotColor="#D6D3CC"] - Inactive progress dot fill.
  * @returns {{ container: d3.Selection, update: Function, play: Function,
  *   pause: Function, step: Function }}
  *   container — the reel's root D3 selection.
@@ -103,14 +144,20 @@ function annotate(event) {
  *   play() — begin playback from the start.
  *   pause() — stop playback without changing the current index.
  *   step(delta) — move the current index by delta (e.g. 1 or -1), clamped to
- *     the moment list, firing onMoment immediately.
+ *     the moment list, firing onScrubTo immediately.
  */
 export function createHighlightReel(selection, data, config = {}) {
   const {
-    maxMoments = DEFAULT_MAX_MOMENTS,
-    stepDurationMs = DEFAULT_STEP_MS,
-    onReset = null,
-    onMoment = null,
+    stepDurationMs   = DEFAULT_STEP_MS,
+    onScrubTo        = null,
+    onHoverEvent     = null,
+    borderColor      = "#E5E5E5",
+    buttonBackground = "#FFFFFF",
+    textColor        = "#171717",
+    faintColor       = "#8A8578",
+    focalColor       = "#9F1239",
+    focalTextColor   = "#FAF7F0",
+    inactiveDotColor = "#D6D3CC",
   } = config;
 
   const container = selection.append("div")
@@ -118,160 +165,159 @@ export function createHighlightReel(selection, data, config = {}) {
     .style("display", "flex")
     .style("align-items", "center")
     .style("gap", "12px")
-    .style("font-family", "Geist Mono, monospace")
-    .style("font-size", "12px")
-    .style("color", "#171717");
+    .style("flex-wrap", "wrap");
 
-  let moments = selectMoments(data.events ?? [], maxMoments);
+  let moments = selectMoments(data.events ?? []);
   let currentIndex = 0;
   let playing = false;
   let timerId = null;
 
-  function goTo(index, { fireCallback = true } = {}) {
-    currentIndex = Math.max(0, Math.min(moments.length - 1, index));
-    if (fireCallback && onMoment && moments[currentIndex]) {
-      onMoment(moments[currentIndex], currentIndex);
-    }
-    render();
-  }
-
   function stopTimer() {
     if (timerId !== null) {
-      clearTimeout(timerId);
+      clearInterval(timerId);
       timerId = null;
     }
   }
 
-  function advance() {
-    if (currentIndex >= moments.length - 1) {
-      playing = false;
-      stopTimer();
-      render();
+  /** Begin playback: jump to the first moment, then advance every stepDurationMs. */
+  function play() {
+    if (playing) {
+      pause();
       return;
     }
-    timerId = setTimeout(() => {
-      goTo(currentIndex + 1);
-      if (playing) advance();
-    }, stepDurationMs);
-  }
-
-  /** Begin playback from the start: reset, then advance through every moment. */
-  function play() {
     if (!moments.length) return;
     playing = true;
-    if (onReset) onReset();
-    goTo(0);
-    advance();
+    currentIndex = 0;
+    if (onScrubTo) onScrubTo(moments[0].minute);
+    render();
+    timerId = setInterval(() => {
+      const next = currentIndex + 1;
+      if (next >= moments.length) {
+        stopTimer();
+        playing = false;
+        render();
+        return;
+      }
+      currentIndex = next;
+      if (onScrubTo) onScrubTo(moments[currentIndex].minute);
+      render();
+    }, stepDurationMs);
   }
 
   /** Stop playback without changing the current index. */
   function pause() {
-    playing = false;
     stopTimer();
+    playing = false;
     render();
   }
 
   /**
-   * Move the current index by delta, clamped to the moment list.
+   * Stop any playback and move to a specific moment index, firing onScrubTo.
+   *
+   * @param {number} index - Target index, clamped to [0, moments.length - 1].
+   */
+  function seekIndex(index) {
+    pause();
+    if (!moments.length) return;
+    currentIndex = Math.max(0, Math.min(moments.length - 1, index));
+    if (onScrubTo) onScrubTo(moments[currentIndex].minute);
+    render();
+  }
+
+  /**
+   * Stop any playback and move the current index by delta, firing onScrubTo.
    *
    * @param {number} delta - e.g. 1 (next) or -1 (previous).
    */
   function step(delta) {
-    pause();
-    goTo(currentIndex + delta);
-  }
-
-  /**
-   * Style one control button (prev/play/next) to match the app's segmented-
-   * control visual language (bordered, rounded, monospace) — see ToggleGroup
-   * in tylermartins.com for the reference this mirrors.
-   *
-   * @param {d3.Selection} button   - The <button> selection to style.
-   * @param {boolean}      [accent=false] - Use the focal accent (playing state).
-   * @param {boolean}      [disabled=false] - Dim + disable pointer events.
-   */
-  function styleControlButton(button, accent = false, disabled = false) {
-    button
-      .style("width", "26px")
-      .style("height", "26px")
-      .style("display", "flex")
-      .style("align-items", "center")
-      .style("justify-content", "center")
-      .style("border", `1px solid ${accent ? "#9F1239" : "#E5E5E5"}`)
-      .style("border-radius", "3px")
-      .style("background", accent ? "rgba(159,18,57,0.08)" : "#FFFDF8")
-      .style("color", accent ? "#9F1239" : "#171717")
-      .style("font-size", "12px")
-      .style("line-height", "1")
-      .style("cursor", disabled ? "default" : "pointer")
-      .style("opacity", disabled ? 0.35 : 1)
-      .style("pointer-events", disabled ? "none" : "auto")
-      .attr("disabled", disabled ? true : null);
+    seekIndex(currentIndex + delta);
   }
 
   function render() {
     container.selectAll("*").remove();
 
-    const controls = container.append("div").style("display", "flex").style("gap", "4px");
-    styleControlButton(
+    if (!moments.length) {
+      container.append("div")
+        .attr("class", "reel-empty")
+        .style("font-family", "Geist Mono, monospace")
+        .style("font-size", "11px")
+        .style("color", faintColor)
+        .text("No standout moments in the revealed window.");
+      return;
+    }
+
+    const controls = container.append("div").style("display", "flex").style("gap", "6px");
+
+    _styleTransportButton(
       controls.append("button").attr("class", "reel-prev").text("‹").on("click", () => step(-1)),
-      false,
-      currentIndex === 0
+      { borderColor, buttonBackground, textColor }
     );
-    styleControlButton(
-      controls.append("button").attr("class", "reel-play")
-        .text(playing ? "⏸" : "▶")
-        .on("click", () => (playing ? pause() : play())),
-      playing,
-      moments.length === 0
-    );
-    styleControlButton(
+
+    const playButton = controls.append("button")
+      .attr("class", "reel-play")
+      .text(playing ? "❚❚ Stop" : "▶ Play")
+      .on("click", () => (playing ? pause() : play()));
+    _styleTransportButton(playButton, { borderColor, buttonBackground, textColor });
+    playButton
+      .style("background", focalColor)
+      .style("border", `1px solid ${focalColor}`)
+      .style("color", focalTextColor)
+      .style("min-width", "70px");
+
+    _styleTransportButton(
       controls.append("button").attr("class", "reel-next").text("›").on("click", () => step(1)),
-      false,
-      currentIndex >= moments.length - 1
+      { borderColor, buttonBackground, textColor }
     );
 
     const current = moments[currentIndex];
-    const momentEl = container.append("div")
+
+    container.append("div")
+      .attr("class", "reel-minute")
+      .style("font-family", "Fraunces, serif")
+      .style("font-weight", "900")
+      .style("font-size", "24px")
+      .style("color", focalColor)
+      .style("min-width", "44px")
+      .text(`${current.minute}'`);
+
+    const desc = container.append("div")
       .attr("class", "reel-moment")
       .style("flex", "1 1 auto")
-      .style("overflow", "hidden")
-      .style("text-overflow", "ellipsis")
-      .style("white-space", "nowrap");
+      .style("min-width", "180px")
+      .style("cursor", "default")
+      .on("mouseenter", () => onHoverEvent && onHoverEvent(current.event_id))
+      .on("mouseleave", () => onHoverEvent && onHoverEvent(null));
 
-    if (current) {
-      momentEl.append("span")
-        .style("font-weight", "600")
-        .style("color", "#171717")
-        .text(`${current.minute}' `);
-      momentEl.append("span")
-        .style("color", "#525252")
-        .text(current.annotation);
-    } else {
-      momentEl.style("color", "#8A8578").text("No standout moments");
-    }
+    desc.append("div")
+      .attr("class", "reel-moment-label")
+      .style("font-family", "Geist Mono, monospace")
+      .style("font-size", "10px")
+      .style("letter-spacing", "0.08em")
+      .style("text-transform", "uppercase")
+      .style("color", faintColor)
+      .style("margin-bottom", "2px")
+      .text(`Moment ${currentIndex + 1} / ${moments.length} · ${current.kind}`);
 
-    const dots = container.append("div")
-      .attr("class", "reel-dots")
-      .style("display", "flex")
-      .style("align-items", "center")
-      .style("gap", "6px")
-      .style("flex", "0 0 auto");
+    desc.append("div")
+      .attr("class", "reel-moment-note")
+      .style("font-family", "Geist, sans-serif")
+      .style("font-size", "13px")
+      .style("color", textColor)
+      .text(current.note);
+
+    const dots = container.append("div").attr("class", "reel-dots").style("display", "flex").style("gap", "5px");
     dots.selectAll(".reel-dot")
-      .data(moments, (d) => d.eventId)
+      .data(moments, (d) => d.event_id)
       .join("span")
       .attr("class", "reel-dot")
-      .style("width", (d, i) => (i === currentIndex ? "8px" : "6px"))
-      .style("height", (d, i) => (i === currentIndex ? "8px" : "6px"))
-      .style("border-radius", "50%")
+      .style("width", (d, i) => (i === currentIndex ? "18px" : "7px"))
+      .style("height", "7px")
+      .style("border-radius", "999px")
       .style("display", "inline-block")
       .style("cursor", "pointer")
-      .style("transition", "background 0.15s, width 0.15s, height 0.15s")
-      .style("background", (d, i) => (i === currentIndex ? "#9F1239" : "#E5E5E5"))
-      .on("click", (event, d) => {
-        pause();
-        goTo(moments.indexOf(d));
-      });
+      .style("transition", "width 0.2s")
+      .style("background", (d, i) => (i === currentIndex ? focalColor : inactiveDotColor))
+      .on("click", (event, d) => seekIndex(moments.indexOf(d)));
   }
 
   render();
@@ -287,7 +333,7 @@ export function createHighlightReel(selection, data, config = {}) {
     if (next.data !== undefined) {
       stopTimer();
       playing = false;
-      moments = selectMoments(next.data.events ?? [], maxMoments);
+      moments = selectMoments(next.data.events ?? []);
       currentIndex = 0;
     }
     render();

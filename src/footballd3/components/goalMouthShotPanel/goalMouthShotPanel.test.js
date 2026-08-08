@@ -88,7 +88,7 @@ describe("createGoalMouthShotPanel", () => {
   });
 
   it("positions an on-target shot inside the drawn goal frame (regression: index [1]/[2], not [0]/[1])", () => {
-    const { g } = mount([GOAL], { width: 320, height: 220 });
+    const { g } = mount([GOAL], { width: 320 });
     const frame = g.select(".gmsp-frame");
     const frameX = +frame.attr("x");
     const frameY = +frame.attr("y");
@@ -128,12 +128,26 @@ describe("createGoalMouthShotPanel", () => {
   });
 
   it("renders side net panels and a ground line beneath the frame", () => {
-    const { g } = mount([GOAL], { width: 320, height: 220 });
+    const { g } = mount([GOAL], { width: 320 });
     expect(g.selectAll(".gmsp-side-net").size()).toBe(2);
     expect(g.select(".gmsp-ground-line").empty()).toBe(false);
 
     const frame = g.select(".gmsp-frame");
     const groundY = +frame.attr("y") + +frame.attr("height");
     expect(+g.select(".gmsp-ground-line").attr("y1")).toBeCloseTo(groundY, 5);
+  });
+
+  it("always renders the frame at regulation goal proportions, regardless of container width (regression: E2 aspect ratio)", () => {
+    // GOAL_WIDTH_YARDS / CROSSBAR_HEIGHT_YARDS = 8 / 2.67 ≈ 2.996 (~3:1) — a
+    // narrow container previously squashed the frame toward square because
+    // frameHeight was pinned to a fixed config.height instead of following
+    // the measured width.
+    const expectedRatio = 8 / 2.67;
+    for (const width of [140, 220, 320, 480]) {
+      const { g } = mount([GOAL], { width });
+      const frame = g.select(".gmsp-frame");
+      const ratio = +frame.attr("width") / +frame.attr("height");
+      expect(ratio).toBeCloseTo(expectedRatio, 1);
+    }
   });
 });

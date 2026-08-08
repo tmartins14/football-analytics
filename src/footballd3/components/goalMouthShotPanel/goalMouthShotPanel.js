@@ -139,8 +139,11 @@ function endZ(shot) {
  *   it). Non-Shot events and shots without a shot_end_location are ignored,
  *   so callers may pass the full unfiltered file.
  * @param {Object} [config={}] - Rendering and behavior options.
- * @param {number}   [config.width=320]  - SVG width in pixels.
- * @param {number}   [config.height=220] - SVG height in pixels.
+ * @param {number}   [config.width=320]  - SVG width in pixels. SVG height is
+ *   always derived from this at the regulation goal ratio
+ *   (GOAL_WIDTH_YARDS / CROSSBAR_HEIGHT_YARDS, ~3:1), not independently
+ *   configurable — a fixed height paired with a narrower-than-expected
+ *   container previously squashed the frame toward square.
  * @param {number}   [config.minRadius=4]  - Smallest shot-marker radius in pixels.
  * @param {number}   [config.maxRadius=22] - Largest shot-marker radius in pixels
  *   (at the highest shot_xg in the data).
@@ -163,7 +166,6 @@ function endZ(shot) {
 export function createGoalMouthShotPanel(selection, data, config = {}) {
   let {
     width            = 320,
-    height           = 220,
     minRadius        = 4,
     maxRadius        = 22,
     frameColor       = "#1E3A5F",
@@ -179,9 +181,14 @@ export function createGoalMouthShotPanel(selection, data, config = {}) {
   const legendHeight = showLegend ? 24 : 0;
   const stripHeight = 40;
   const frameTop = legendHeight + stripHeight;
-  const frameHeight = height - frameTop - 16;
-  const frameWidth = Math.min(width - 32, frameHeight * (GOAL_WIDTH_YARDS / CROSSBAR_HEIGHT_YARDS));
+  // Width drives the frame — it's the one dimension actually constrained by
+  // the real container (via useContainerWidth). Height always follows it at
+  // the regulation ratio, rather than the frame being squashed toward square
+  // whenever the container is narrower than a fixed height would imply.
+  const frameWidth = width - 32;
+  const frameHeight = frameWidth / (GOAL_WIDTH_YARDS / CROSSBAR_HEIGHT_YARDS);
   const frameLeft = (width - frameWidth) / 2;
+  const height = frameTop + frameHeight + 16;
 
   const yScale = d3.scaleLinear().domain([GOAL_Y_MIN, GOAL_Y_MAX]).range([frameLeft, frameLeft + frameWidth]);
   const zScale = d3.scaleLinear().domain([0, CROSSBAR_HEIGHT_YARDS]).range([frameTop + frameHeight, frameTop]);

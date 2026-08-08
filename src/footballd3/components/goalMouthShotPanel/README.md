@@ -74,7 +74,6 @@ import { createGoalMouthShotPanel } from "./goalMouthShotPanel.js";
 
 const { update } = createGoalMouthShotPanel(d3.select("#shots-container"), data, {
   width: 320,
-  height: 220,
   onHover: (eventId) => {
     // eventId or null — cross-highlight the matching pitch marker/xT point/feed row.
   },
@@ -99,8 +98,7 @@ update({
 
 | Option | Default | Description |
 |--------|---------|-------------|
-| `width` | `320` | SVG width in pixels |
-| `height` | `220` | SVG height in pixels |
+| `width` | `320` | SVG width in pixels. Height is always derived from this at the regulation goal ratio (`GOAL_WIDTH_YARDS / CROSSBAR_HEIGHT_YARDS`, ~3:1) — not independently configurable, so the frame never gets squashed toward square at a narrow container width. |
 | `minRadius` / `maxRadius` | `4` / `22` | Shot-marker radius range (sqrt-scaled by `shot_xg` for area-fair sizing) |
 | `frameColor` | `"#1E3A5F"` | Goal-frame stroke color |
 | `onTargetColor` | `"#525252"` | On-target shot fill/stroke color |

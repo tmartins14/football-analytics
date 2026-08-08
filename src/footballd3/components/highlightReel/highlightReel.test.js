@@ -9,51 +9,81 @@ function mount(events, config = {}) {
 }
 
 describe("selectMoments", () => {
-  it("puts every goal first, chronologically, then re-sorts the whole set by time", () => {
+  it("includes every goal, formatted with its xG", () => {
     const events = [
-      { event_id: "g1", type: "Shot", is_goal: true, minute: 72, second: 0 },
-      { event_id: "p1", type: "Pass", xt_delta: 0.3, minute: 10, second: 0 },
-      { event_id: "p2", type: "Pass", xt_delta: 0.1, minute: 40, second: 0 },
+      { event_id: "g1", type: "Shot", is_goal: true, shot_xg: 0.42, minute: 72, location: [110, 40] },
     ];
-    const moments = selectMoments(events, 5);
-    expect(moments.map((m) => m.eventId)).toEqual(["p1", "p2", "g1"]);
+    const moments = selectMoments(events);
+    expect(moments).toHaveLength(1);
+    expect(moments[0]).toMatchObject({ minute: 72, kind: "Goal", note: "Goal · xG 0.42", event_id: "g1" });
   });
 
-  it("fills remaining slots with the highest |xt_delta| actions, excluding goals", () => {
+  it("includes only the single highest-xG non-goal shot, not every shot", () => {
     const events = [
-      { event_id: "g1", type: "Shot", is_goal: true, minute: 72, second: 0 },
-      { event_id: "p-big", type: "Pass", xt_delta: 0.5, minute: 10, second: 0 },
-      { event_id: "p-neg", type: "Carry", xt_delta: -0.4, minute: 20, second: 0 },
-      { event_id: "p-small", type: "Pass", xt_delta: 0.05, minute: 30, second: 0 },
+      { event_id: "s-low", type: "Shot", is_goal: false, shot_xg: 0.05, outcome: "Off T", minute: 10, location: [100, 30] },
+      { event_id: "s-high", type: "Shot", is_goal: false, shot_xg: 0.31, outcome: "Saved", minute: 20, location: [110, 40] },
     ];
-    const moments = selectMoments(events, 3);
-    const ids = moments.map((m) => m.eventId);
-    expect(ids).toContain("g1");
-    expect(ids).toContain("p-big");
-    expect(ids).toContain("p-neg"); // |−0.4| beats |0.05|
-    expect(ids).not.toContain("p-small");
+    const moments = selectMoments(events);
+    expect(moments).toHaveLength(1);
+    expect(moments[0]).toMatchObject({ kind: "Shot", note: "Shot · xG 0.31 · Saved", event_id: "s-high" });
   });
 
-  it("caps at maxMoments even with more goals than that", () => {
-    const events = Array.from({ length: 6 }, (_, i) => ({
-      event_id: `g${i}`, type: "Shot", is_goal: true, minute: i * 10, second: 0,
-    }));
-    expect(selectMoments(events, 5)).toHaveLength(5);
-  });
-
-  it("returns fewer than the minimum when the player has few events", () => {
-    const events = [{ event_id: "p1", type: "Pass", xt_delta: 0.1, minute: 10, second: 0 }];
-    expect(selectMoments(events, 5)).toHaveLength(1);
-  });
-
-  it("annotates a goal as 'Goal' and an action with its signed xT", () => {
+  it("takes the top 3 positive-xt_delta pass/carry events, excluding non-positive ones", () => {
     const events = [
-      { event_id: "g1", type: "Shot", is_goal: true, minute: 72, second: 0 },
-      { event_id: "p1", type: "Pass", xt_delta: 0.08, minute: 10, second: 0 },
+      { event_id: "p1", type: "Pass", xt_delta: 0.05, is_progressive: false, minute: 5, location: [40, 40], end_location: [50, 40] },
+      { event_id: "p2", type: "Carry", xt_delta: 0.12, is_progressive: true, minute: 15, location: [50, 40], end_location: [65, 40] },
+      { event_id: "p3", type: "Pass", xt_delta: 0.08, is_progressive: false, minute: 25, location: [60, 40], end_location: [75, 40] },
+      { event_id: "p4", type: "Pass", xt_delta: -0.2, is_progressive: false, minute: 30, location: [30, 40], end_location: [20, 40] },
+      { event_id: "p5", type: "Pass", xt_delta: 0.01, is_progressive: false, minute: 35, location: [45, 40], end_location: [46, 40] },
     ];
-    const moments = selectMoments(events, 5);
-    expect(moments.find((m) => m.eventId === "g1").annotation).toBe("Goal");
-    expect(moments.find((m) => m.eventId === "p1").annotation).toBe("Pass +0.08 xT");
+    const moments = selectMoments(events);
+    const ids = moments.map((m) => m.event_id);
+    // Top 3 by xt_delta: p2 (0.12), p3 (0.08), p1 (0.05) — p4 excluded (negative), p5 excluded (lowest of the positives).
+    expect(ids.sort()).toEqual(["p1", "p2", "p3"]);
+  });
+
+  it("labels progressive vs non-progressive pass/carry moments distinctly", () => {
+    const events = [
+      { event_id: "prog", type: "Pass", xt_delta: 0.1, is_progressive: true, minute: 10, location: [40, 40], end_location: [60, 40] },
+      { event_id: "plain", type: "Carry", xt_delta: 0.08, is_progressive: false, minute: 20, location: [40, 40], end_location: [50, 40] },
+    ];
+    const moments = selectMoments(events);
+    const prog = moments.find((m) => m.event_id === "prog");
+    const plain = moments.find((m) => m.event_id === "plain");
+    expect(prog).toMatchObject({ kind: "Prog. pass", note: "Progressive pass · +0.100 xT" });
+    expect(plain).toMatchObject({ kind: "Carry", note: "carry · +0.080 xT" });
+  });
+
+  it("combines all three tiers, sorted chronologically, capped at 5", () => {
+    const events = [
+      { event_id: "g1", type: "Shot", is_goal: true, shot_xg: 0.5, minute: 80, location: [110, 40] },
+      { event_id: "g2", type: "Shot", is_goal: true, shot_xg: 0.3, minute: 10, location: [110, 40] },
+      { event_id: "s1", type: "Shot", is_goal: false, shot_xg: 0.2, outcome: "Off T", minute: 50, location: [100, 40] },
+      { event_id: "a1", type: "Pass", xt_delta: 0.3, is_progressive: true, minute: 5, location: [40, 40], end_location: [60, 40] },
+      { event_id: "a2", type: "Carry", xt_delta: 0.2, is_progressive: false, minute: 60, location: [50, 40], end_location: [65, 40] },
+      { event_id: "a3", type: "Pass", xt_delta: 0.15, is_progressive: false, minute: 90, location: [55, 40], end_location: [70, 40] },
+    ];
+    const moments = selectMoments(events);
+    // 6 candidates total (2 goals + 1 shot + 3 actions) — capped to 5,
+    // chronological truncation drops the latest-occurring one (a3, minute 90).
+    expect(moments).toHaveLength(5);
+    expect(moments.map((m) => m.event_id)).not.toContain("a3");
+    expect(moments.map((m) => m.minute)).toEqual([5, 10, 50, 60, 80]);
+  });
+
+  it("keeps location/end_location and event_id on each moment", () => {
+    const events = [
+      { event_id: "p1", type: "Pass", xt_delta: 0.1, is_progressive: false, minute: 10, location: [40, 40], end_location: [55, 42] },
+    ];
+    const [moment] = selectMoments(events);
+    expect(moment.location).toEqual([40, 40]);
+    expect(moment.end_location).toEqual([55, 42]);
+    expect(moment.event_id).toBe("p1");
+  });
+
+  it("returns an empty array when there are no qualifying moments", () => {
+    const events = [{ event_id: "p1", type: "Pressure", minute: 10, location: [40, 40] }];
+    expect(selectMoments(events)).toEqual([]);
   });
 });
 
@@ -62,83 +92,98 @@ describe("createHighlightReel", () => {
   afterEach(() => vi.useRealTimers());
 
   const events = [
-    { event_id: "p1", type: "Pass", xt_delta: 0.3, minute: 10, second: 0 },
-    { event_id: "p2", type: "Pass", xt_delta: 0.2, minute: 20, second: 0 },
-    { event_id: "g1", type: "Shot", is_goal: true, minute: 72, second: 0 },
+    { event_id: "p1", type: "Pass", xt_delta: 0.3, is_progressive: false, minute: 10, location: [40, 40], end_location: [55, 40] },
+    { event_id: "p2", type: "Pass", xt_delta: 0.2, is_progressive: false, minute: 20, location: [50, 40], end_location: [65, 40] },
+    { event_id: "g1", type: "Shot", is_goal: true, shot_xg: 0.4, minute: 72, location: [110, 40] },
   ];
 
-  it("shows the first moment initially without firing onMoment", () => {
-    const onMoment = vi.fn();
-    const { container } = mount(events, { onMoment });
-    expect(container.select(".reel-moment").text()).toContain("10'");
-    expect(onMoment).not.toHaveBeenCalled();
+  it("shows the first moment initially without firing onScrubTo", () => {
+    const onScrubTo = vi.fn();
+    const { container } = mount(events, { onScrubTo });
+    expect(container.select(".reel-minute").text()).toBe("10'");
+    expect(onScrubTo).not.toHaveBeenCalled();
   });
 
-  it("step(1) advances to the next moment and fires onMoment", () => {
-    const onMoment = vi.fn();
-    const { container, step } = mount(events, { onMoment });
+  it("step(1) advances to the next moment and fires onScrubTo with its minute", () => {
+    const onScrubTo = vi.fn();
+    const { container, step } = mount(events, { onScrubTo });
     step(1);
-    expect(onMoment).toHaveBeenCalledWith(expect.objectContaining({ eventId: "p2" }), 1);
-    expect(container.select(".reel-moment").text()).toContain("20'");
+    expect(onScrubTo).toHaveBeenCalledWith(20);
+    expect(container.select(".reel-minute").text()).toBe("20'");
   });
 
   it("step() clamps at the list boundaries", () => {
     const { step, container } = mount(events);
     step(-1);
-    expect(container.select(".reel-moment").text()).toContain("10'"); // stays at index 0
+    expect(container.select(".reel-minute").text()).toBe("10'"); // stays at index 0
   });
 
-  it("play() calls onReset then steps through every moment on a timer, and stops at the end", () => {
-    const onReset = vi.fn();
-    const onMoment = vi.fn();
-    const { play } = mount(events, { onReset, onMoment, stepDurationMs: 1000 });
+  it("play() jumps straight to the first moment (no separate reset step), then steps every interval, stopping at the end", () => {
+    const onScrubTo = vi.fn();
+    const { play } = mount(events, { onScrubTo, stepDurationMs: 1000 });
 
     play();
-    expect(onReset).toHaveBeenCalledTimes(1);
-    expect(onMoment).toHaveBeenCalledWith(expect.objectContaining({ eventId: "p1" }), 0);
+    expect(onScrubTo).toHaveBeenCalledTimes(1);
+    expect(onScrubTo).toHaveBeenCalledWith(10);
 
     vi.advanceTimersByTime(1000);
-    expect(onMoment).toHaveBeenCalledWith(expect.objectContaining({ eventId: "p2" }), 1);
+    expect(onScrubTo).toHaveBeenCalledWith(20);
 
     vi.advanceTimersByTime(1000);
-    expect(onMoment).toHaveBeenCalledWith(expect.objectContaining({ eventId: "g1" }), 2);
+    expect(onScrubTo).toHaveBeenCalledWith(72);
 
     // No further timer scheduled past the last moment.
     vi.advanceTimersByTime(5000);
-    expect(onMoment).toHaveBeenCalledTimes(3);
+    expect(onScrubTo).toHaveBeenCalledTimes(3);
   });
 
-  it("pause() stops playback without resetting the current index", () => {
-    const onMoment = vi.fn();
-    const { play, pause } = mount(events, { onMoment, stepDurationMs: 1000 });
+  it("clicking Play again while playing stops it (same button toggles both)", () => {
+    const onScrubTo = vi.fn();
+    const { container, play } = mount(events, { onScrubTo, stepDurationMs: 1000 });
     play();
-    vi.advanceTimersByTime(1000); // now at index 1
-    pause();
+    expect(container.select(".reel-play").text()).toBe("❚❚ Stop");
+
+    container.select(".reel-play").dispatch("click");
+    expect(container.select(".reel-play").text()).toBe("▶ Play");
+
     vi.advanceTimersByTime(5000);
-    expect(onMoment).toHaveBeenCalledTimes(2); // index 0 (play) + index 1 (one tick), no more
+    expect(onScrubTo).toHaveBeenCalledTimes(1); // only the initial jump-to-first-moment call
   });
 
-  it("clicking a dot pauses playback and jumps straight to that moment", () => {
-    const onMoment = vi.fn();
-    const { container, play } = mount(events, { onMoment, stepDurationMs: 1000 });
+  it("clicking a dot stops playback and jumps straight to that moment", () => {
+    const onScrubTo = vi.fn();
+    const { container, play } = mount(events, { onScrubTo, stepDurationMs: 1000 });
     play();
     const dots = container.selectAll(".reel-dot");
     d3.select(dots.nodes()[2]).dispatch("click");
-    expect(onMoment).toHaveBeenLastCalledWith(expect.objectContaining({ eventId: "g1" }), 2);
+    expect(onScrubTo).toHaveBeenLastCalledWith(72);
 
     vi.advanceTimersByTime(5000);
-    expect(onMoment).toHaveBeenCalledTimes(2); // play's index 0 + the dot click, no timer firing after
+    expect(onScrubTo).toHaveBeenCalledTimes(2); // play's initial jump + the dot click, no timer firing after
+  });
+
+  it("hovering the moment description fires onHoverEvent with the current event_id, unhover fires null", () => {
+    const onHoverEvent = vi.fn();
+    const { container } = mount(events, { onHoverEvent });
+    const desc = container.select(".reel-moment");
+    desc.dispatch("mouseenter");
+    expect(onHoverEvent).toHaveBeenCalledWith("p1");
+    desc.dispatch("mouseleave");
+    expect(onHoverEvent).toHaveBeenLastCalledWith(null);
   });
 
   it("update({data}) re-selects moments and resets to index 0", () => {
     const { container, update } = mount(events);
-    const newEvents = [{ event_id: "p9", type: "Pass", xt_delta: 0.9, minute: 5, second: 0 }];
+    const newEvents = [
+      { event_id: "p9", type: "Pass", xt_delta: 0.9, is_progressive: false, minute: 5, location: [40, 40], end_location: [60, 40] },
+    ];
     update({ data: { events: newEvents } });
-    expect(container.select(".reel-moment").text()).toContain("5'");
+    expect(container.select(".reel-minute").text()).toBe("5'");
   });
 
-  it("renders a fallback message with no moments", () => {
+  it("renders the empty-state message and no controls when there are no moments", () => {
     const { container } = mount([]);
-    expect(container.select(".reel-moment").text()).toBe("No standout moments");
+    expect(container.select(".reel-empty").text()).toBe("No standout moments in the revealed window.");
+    expect(container.select(".reel-play").empty()).toBe(true);
   });
 });
