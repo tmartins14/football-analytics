@@ -1,15 +1,21 @@
 # highlightReel.js
 
-Compact play/step reel of one player's standout moments: play/step controls,
-a big minute readout, the current moment's kind + description, and clickable
-progress dots. Moment selection is entirely client-side — no dedicated
-extractor.
+Compact play/step reel of one player's moments — either a curated top-5
+("highlights" mode) or every one of their events ("all" mode, see
+`config.mode`): play/step controls, a big minute readout, the current
+moment's kind + description, and (in "highlights" mode) clickable progress
+dots. Moment selection is entirely client-side — no dedicated extractor.
+
+Both modes render through the exact same play/pause/step/render code — only
+which moment list is being stepped through differs. This is what lets the
+combined Timeline card offer "play the highlights or all events" as one
+control rather than two separate playback UIs.
 
 ## Moment selection
 
-`selectMoments(events)` (a named export, independently testable/reusable) —
-computed once per player, not reactive to the current scrub position (the
-reel always considers the whole match):
+`selectMoments(events)` ("highlights" mode, a named export, independently
+testable/reusable) — computed once per player, not reactive to the current
+scrub position (the reel always considers the whole match):
 
 1. Every goal (`is_goal`) — `"Goal · xG {shot_xg}"`.
 2. The single highest-`shot_xg` non-goal Shot, if any — `"Shot · xG {shot_xg} · {outcome}"`.
@@ -20,6 +26,14 @@ The combined set is sorted by minute ascending and capped at 5. This is a
 plain chronological truncation with **no goal-priority protection**: with
 more than 5 combined candidates, the latest-occurring ones are dropped even
 if one of them is a goal.
+
+`allEventsMoments(events)` ("all" mode, also a named export) — every event in
+the array, chronologically, each with its own kind/note text. Reuses
+`selectMoments`'s exact Goal/Shot/Pass/Carry copy (including negative-xT
+passes/carries, which `selectMoments` excludes but this mode still needs to
+describe) and falls back to a generic `"{type}"` (or `"{type} · {outcome}"`
+when there's an outcome) for every other event type — Pressure, Duel, Ball
+Recovery, etc. — that `selectMoments` never needs to describe.
 
 ## This component does not own the scrubber
 
@@ -68,8 +82,10 @@ const { play, pause, step } = createHighlightReel(d3.select("#reel-container"), 
 `{ container, update, play, pause, step }`:
 
 - `container` — the reel's root D3 selection.
-- `update({ data? })` — re-renders with a new events array (re-selects
-  moments, resets to index 0, stops any active playback).
+- `update({ data?, mode?, stepDurationMs? })` — re-renders; a new `data` or
+  `mode` re-selects moments, resets to index 0, and stops any active
+  playback; `stepDurationMs` alone just changes the cadence future `play()`
+  calls use.
 - `play()` — begin playback (or stop it, if already playing).
 - `pause()` — stop playback without changing the current index.
 - `step(delta)` — stop any playback and move the current index by `delta`
@@ -80,6 +96,7 @@ const { play, pause, step } = createHighlightReel(d3.select("#reel-container"), 
 
 | Option | Default | Description |
 |--------|---------|-------------|
+| `mode` | `"highlights"` | `"highlights"` (curated top-5, `selectMoments`) or `"all"` (every event, `allEventsMoments`, no progress dots) |
 | `stepDurationMs` | `1800` | Milliseconds between moments during Play |
 | `teamColor` | — | Accepted for API-shape parity with the design spec, but intentionally unused — every reel color comes from the tokens below, not the player's team color |
 | `onScrubTo` | `null` | `onScrubTo(minute)` — fires on every step (Play advancing, or a manual prev/next/dot click) |

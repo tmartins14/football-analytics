@@ -1,7 +1,7 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import * as d3 from "d3";
 
-import { createHighlightReel, selectMoments } from "./highlightReel.js";
+import { allEventsMoments, createHighlightReel, selectMoments } from "./highlightReel.js";
 
 function mount(events, config = {}) {
   document.body.innerHTML = '<div id="test-container"></div>';
@@ -84,6 +84,38 @@ describe("selectMoments", () => {
   it("returns an empty array when there are no qualifying moments", () => {
     const events = [{ event_id: "p1", type: "Pressure", minute: 10, location: [40, 40] }];
     expect(selectMoments(events)).toEqual([]);
+  });
+});
+
+describe("allEventsMoments (J1: 'all events' mode)", () => {
+  it("includes every event, not just curated ones, in chronological order", () => {
+    const events = [
+      { event_id: "pr1", type: "Pressure", minute: 30, location: [40, 40] },
+      { event_id: "p1", type: "Pass", xt_delta: -0.05, is_progressive: false, minute: 5, location: [40, 40], end_location: [50, 40] },
+      { event_id: "g1", type: "Shot", is_goal: true, shot_xg: 0.42, minute: 72, location: [110, 40] },
+    ];
+    const moments = allEventsMoments(events);
+    expect(moments.map((m) => m.event_id)).toEqual(["p1", "pr1", "g1"]);
+  });
+
+  it("describes a negative-xT pass (unlike selectMoments, which excludes these)", () => {
+    const events = [
+      { event_id: "p1", type: "Pass", xt_delta: -0.045, is_progressive: false, minute: 5, location: [40, 40], end_location: [30, 40] },
+    ];
+    const [moment] = allEventsMoments(events);
+    expect(moment).toMatchObject({ kind: "Pass", note: "pass · -0.045 xT" });
+  });
+
+  it("describes a type with an outcome using a generic '{type} · {outcome}' fallback", () => {
+    const events = [{ event_id: "d1", type: "Duel", outcome: "Lost In Play", minute: 40, location: [40, 40] }];
+    const [moment] = allEventsMoments(events);
+    expect(moment).toMatchObject({ kind: "Duel", note: "Duel · Lost In Play" });
+  });
+
+  it("describes a type with no outcome using the bare type name", () => {
+    const events = [{ event_id: "pr1", type: "Pressure", minute: 30, location: [40, 40] }];
+    const [moment] = allEventsMoments(events);
+    expect(moment).toMatchObject({ kind: "Pressure", note: "Pressure" });
   });
 });
 
@@ -185,5 +217,38 @@ describe("createHighlightReel", () => {
     const { container } = mount([]);
     expect(container.select(".reel-empty").text()).toBe("No standout moments in the revealed window.");
     expect(container.select(".reel-play").empty()).toBe(true);
+  });
+
+  describe("mode (J1: combined Timeline card)", () => {
+    const allEvents = [
+      { event_id: "pr1", type: "Pressure", minute: 3, location: [40, 40] },
+      { event_id: "p1", type: "Pass", xt_delta: 0.3, is_progressive: false, minute: 10, location: [40, 40], end_location: [55, 40] },
+      { event_id: "g1", type: "Shot", is_goal: true, shot_xg: 0.4, minute: 72, location: [110, 40] },
+    ];
+
+    it("mode: 'all' plays through every event, including ones selectMoments would drop", () => {
+      const { container } = mount(allEvents, { mode: "all" });
+      expect(container.select(".reel-minute").text()).toBe("3'");
+      expect(container.select(".reel-moment-label").text()).toContain("Moment 1 / 3");
+    });
+
+    it("mode: 'all' renders no progress dots", () => {
+      const { container } = mount(allEvents, { mode: "all" });
+      expect(container.selectAll(".reel-dot").size()).toBe(0);
+    });
+
+    it("mode: 'highlights' (default) still renders dots", () => {
+      const { container } = mount(allEvents);
+      expect(container.selectAll(".reel-dot").size()).toBeGreaterThan(0);
+    });
+
+    it("update({mode}) switches moment lists and resets to index 0", () => {
+      const { container, update } = mount(allEvents, { mode: "highlights" });
+      expect(container.select(".reel-minute").text()).toBe("10'"); // Pressure isn't a curated moment
+
+      update({ mode: "all" });
+      expect(container.select(".reel-minute").text()).toBe("3'");
+      expect(container.selectAll(".reel-dot").size()).toBe(0);
+    });
   });
 });

@@ -1,7 +1,7 @@
 import { describe, expect, it, vi } from "vitest";
 import * as d3 from "d3";
 
-import { classifyLayer, createActionFeed } from "./actionFeed.js";
+import { CATEGORY_SHAPE, classifyLayer, createActionFeed, isSuccessfulEvent } from "./actionFeed.js";
 
 function mount(events, config = {}) {
   document.body.innerHTML = '<div id="test-container"></div>';
@@ -33,6 +33,32 @@ describe("classifyLayer", () => {
 
   it("classifies Shot", () => {
     expect(classifyLayer({ type: "Shot" })).toBe("shot");
+  });
+});
+
+describe("isSuccessfulEvent", () => {
+  it("a Shot succeeds only if is_goal", () => {
+    expect(isSuccessfulEvent({ type: "Shot", is_goal: true })).toBe(true);
+    expect(isSuccessfulEvent({ type: "Shot", is_goal: false })).toBe(false);
+    expect(isSuccessfulEvent({ type: "Shot" })).toBe(false);
+  });
+
+  it("a Duel succeeds unless its outcome names a loss", () => {
+    expect(isSuccessfulEvent({ type: "Duel", outcome: "Success In Play" })).toBe(true);
+    expect(isSuccessfulEvent({ type: "Duel", outcome: "Won" })).toBe(true);
+    expect(isSuccessfulEvent({ type: "Duel", outcome: "Lost In Play" })).toBe(false);
+    expect(isSuccessfulEvent({ type: "Duel", outcome: "Lost Out" })).toBe(false);
+  });
+
+  it("a Pass/Carry succeeds when it has no outcome (StatsBomb convention: null outcome = complete)", () => {
+    expect(isSuccessfulEvent({ type: "Pass", outcome: null })).toBe(true);
+    expect(isSuccessfulEvent({ type: "Pass", outcome: "Incomplete" })).toBe(false);
+    expect(isSuccessfulEvent({ type: "Carry", outcome: null })).toBe(true);
+  });
+
+  it("defaults to successful for types with no real outcome concept", () => {
+    expect(isSuccessfulEvent({ type: "Pressure" })).toBe(true);
+    expect(isSuccessfulEvent({ type: "Ball Recovery" })).toBe(true);
   });
 });
 
@@ -77,6 +103,12 @@ describe("createActionFeed", () => {
     expect(rowTexts(container).length).toBe(3);
   });
 
+  it("minute cell has a fixed flex-basis so it can't shrink on a long outcome string (regression: J6)", () => {
+    const { container } = mount(events);
+    const minuteSpan = container.select(".action-feed-row").select(".action-feed-minute");
+    expect(minuteSpan.style("flex")).toBe("0 0 34px");
+  });
+
   it("update({sortBy}) re-sorts without needing new data", () => {
     const { container, update } = mount(events);
     update({ sortBy: "xt", sortDir: "desc" });
@@ -88,6 +120,34 @@ describe("createActionFeed", () => {
     const { container, update } = mount(events);
     update({ data: { events: [events[0]] } });
     expect(container.selectAll(".action-feed-row").size()).toBe(1);
+  });
+
+  describe("shape+fill category glyph (regression: J4, replaces the old color-coded border)", () => {
+    function iconPath(container, eventId) {
+      const row = container.selectAll(".action-feed-row").filter((d) => d.event_id === eventId);
+      return row.select(".action-feed-icon path");
+    }
+
+    it("renders a filled glyph for a successful Pass (no outcome)", () => {
+      const { container } = mount(events);
+      const path = iconPath(container, "e-30"); // outcome: null
+      expect(path.attr("fill")).toBe("#525252");
+      expect(Number(path.attr("stroke-width"))).toBe(0);
+    });
+
+    it("renders a hollow glyph for a failed Pass (Incomplete)", () => {
+      const { container } = mount(events);
+      const path = iconPath(container, "e-10"); // outcome: "Incomplete"
+      expect(path.attr("fill")).toBe("none");
+      expect(Number(path.attr("stroke-width"))).toBeGreaterThan(0);
+    });
+
+    it("uses CATEGORY_SHAPE's shot symbol for a Shot row", () => {
+      const { container } = mount(events);
+      const path = iconPath(container, "e-70"); // Shot, is_goal not set -> hollow, but shape is what's under test
+      const expected = d3.symbol().type(CATEGORY_SHAPE.shot).size(50)();
+      expect(path.attr("d")).toBe(expected);
+    });
   });
 
   describe("xT/xG value text (regression: H2)", () => {

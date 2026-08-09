@@ -1,9 +1,8 @@
 # actionFeed.js
 
 Scrollable, sortable chronological log of one player's actions. Each row:
-minute, action type, outcome, a formatted xT/xG value, and a signed xT-swing
-bar from a centered zero baseline. Rows are color-coded to the app's shared
-layer taxonomy; shots are visually distinct via that same coding.
+a shape+fill category glyph, minute, action type, outcome, a formatted
+xT/xG value, and a signed xT-swing bar from a centered zero baseline.
 
 ## HTML, not SVG
 
@@ -31,6 +30,26 @@ re-deriving the classification:
 | `duel` | `type === "Duel"` |
 | `turnover` | `type === "Dispossessed" \|\| type === "Miscontrol"` |
 | `other` | everything else |
+
+## Shape + fill category glyph
+
+Each row's leading glyph replaces the old per-category color scheme with two
+independent visual channels — shared with `eventScatter.js`'s pitch markers
+via the exported `CATEGORY_SHAPE` map, so both consumers speak the same
+visual language:
+
+- **Shape** encodes the layer category (`CATEGORY_SHAPE`, a d3-symbol type
+  per category): `shot` → circle, `progressive_pass` → triangle, `key_pass`
+  → diamond, `pressure` → square, `duel` → cross, `turnover` → star, `other`
+  → wye.
+- **Filled vs. hollow** encodes whether the event succeeded
+  (`isSuccessfulEvent(event)`, also exported): filled means it succeeded,
+  hollow means it didn't. Shot succeeds iff `is_goal`; Duel succeeds unless
+  its `outcome` names a loss (StatsBomb's real vocabulary is "Success In
+  Play"/"Won" vs. "Lost In Play"/"Lost Out" — matched by substring, not an
+  exact list); Pass/Carry succeed when `outcome` is `null` (StatsBomb's own
+  convention: a populated outcome on those types names the failure); every
+  other type has no real success/fail concept and defaults to filled.
 
 ## Signed xT-swing value + bar
 

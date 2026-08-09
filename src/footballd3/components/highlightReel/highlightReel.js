@@ -1,11 +1,24 @@
 /**
- * highlightReel.js — compact play/step reel of one player's standout moments.
+ * highlightReel.js — compact play/step reel of one player's standout moments,
+ * or, in "all" mode, every one of their events.
  *
  * A single row: play/step controls, a big minute readout, the current
- * moment's kind/description, and progress dots (one per moment, clickable).
- * Moment selection is entirely client-side (no dedicated extractor) — see
- * selectMoments() — and computed once per player, not reactive to the
- * current scrub position (the reel always considers the whole match).
+ * moment's kind/description, and progress dots (one per moment, clickable —
+ * suppressed in "all" mode, where a dot per event would be noise). Moment
+ * selection is entirely client-side (no dedicated extractor) — see
+ * selectMoments()/allEventsMoments() — and computed once per player, not
+ * reactive to the current scrub position (the reel always considers the
+ * whole match).
+ *
+ * TWO MODES, ONE DISPLAY
+ * config.mode selects which list of moments is being played/stepped through,
+ * but both render identically through the same play/pause/step/render code
+ * below — this is what lets the combined Timeline card offer "play the
+ * highlights or all events" without two separate playback UIs:
+ *   - "highlights" (default) — selectMoments(): up to 5 curated standout
+ *     moments (goals, best shot, top progressive actions).
+ *   - "all" — allEventsMoments(): every one of the player's events, in
+ *     chronological order, each with its own kind/note text.
  *
  * THIS COMPONENT DOES NOT OWN THE SCRUBBER
  * Per the app's state model, `scrubbedMinute` has exactly one writer: the
@@ -86,6 +99,40 @@ function _moment(event, kind, note) {
 }
 
 /**
+ * Build every event's own moment record, in chronological order — the "all
+ * events" mode's moment list, one step per event rather than a curated
+ * top-5. Reuses selectMoments()'s exact copy for Goal/Shot/Pass/Carry so the
+ * two modes read consistently, and adds a generic fallback (`"{type}"`, or
+ * `"{type} · {outcome}"` when there's an outcome) for every other event type
+ * (Pressure, Duel, Ball Recovery, etc.), which selectMoments() never needs to
+ * describe since it only ever selects goals/shots/positive-xT passes-carries.
+ *
+ * @param {Array<Object>} events - Full player_events array (not scrub-filtered).
+ * @returns {Array<Object>} Every event as a moment record (see _moment),
+ *   sorted chronologically by minute.
+ */
+export function allEventsMoments(events) {
+  return events
+    .map((e) => {
+      if (e.is_goal) {
+        return _moment(e, "Goal", `Goal · xG ${(e.shot_xg ?? 0).toFixed(2)}`);
+      }
+      if (e.type === "Shot") {
+        return _moment(e, "Shot", `Shot · xG ${(e.shot_xg ?? 0).toFixed(2)} · ${e.outcome ?? "—"}`);
+      }
+      if (e.type === "Pass" || e.type === "Carry") {
+        const typeLower = e.type.toLowerCase();
+        const kind = e.is_progressive ? `Prog. ${typeLower}` : e.type;
+        const v = e.xt_delta ?? 0;
+        const note = `${e.is_progressive ? "Progressive " : ""}${typeLower} · ${v >= 0 ? "+" : ""}${v.toFixed(3)} xT`;
+        return _moment(e, kind, note);
+      }
+      return _moment(e, e.type, e.outcome ? `${e.type} · ${e.outcome}` : e.type);
+    })
+    .sort((a, b) => a.minute - b.minute);
+}
+
+/**
  * Style one transport button (prev/play/next) — bordered, rounded, monospace.
  *
  * @param {d3.Selection} button - The <button> selection to style.
@@ -117,6 +164,9 @@ function _styleTransportButton(button, { borderColor, buttonBackground, textColo
  *   scrub-filtered — the reel always selects from every credited event
  *   regardless of the current scrub position).
  * @param {Object} [config={}] - Rendering and behavior options.
+ * @param {string}   [config.mode="highlights"] - "highlights" (up to 5
+ *   curated moments via selectMoments()) or "all" (every event via
+ *   allEventsMoments(), chronological, no progress dots).
  * @param {number}   [config.stepDurationMs=1800] - Milliseconds between
  *   moments during Play.
  * @param {string}   [config.teamColor] - Accepted for API-shape parity with
@@ -139,15 +189,17 @@ function _styleTransportButton(button, { borderColor, buttonBackground, textColo
  * @returns {{ container: d3.Selection, update: Function, play: Function,
  *   pause: Function, step: Function }}
  *   container — the reel's root D3 selection.
- *   update({ data? }) — re-render with a new events array (re-selects moments,
- *     resets to index 0, stops any active playback).
+ *   update({ data?, mode?, stepDurationMs? }) — re-render, optionally with a
+ *     new events array and/or mode (re-selects moments, resets to index 0,
+ *     stops any active playback) and/or a new step cadence.
  *   play() — begin playback from the start.
  *   pause() — stop playback without changing the current index.
  *   step(delta) — move the current index by delta (e.g. 1 or -1), clamped to
  *     the moment list, firing onScrubTo immediately.
  */
 export function createHighlightReel(selection, data, config = {}) {
-  const {
+  let {
+    mode             = "highlights",
     stepDurationMs   = DEFAULT_STEP_MS,
     onScrubTo        = null,
     onHoverEvent     = null,
@@ -167,7 +219,8 @@ export function createHighlightReel(selection, data, config = {}) {
     .style("gap", "14px")
     .style("flex-wrap", "wrap");
 
-  let moments = selectMoments(data.events ?? []);
+  let currentData = data;
+  let moments = mode === "all" ? allEventsMoments(currentData.events ?? []) : selectMoments(currentData.events ?? []);
   let currentIndex = 0;
   let playing = false;
   let timerId = null;
@@ -305,35 +358,44 @@ export function createHighlightReel(selection, data, config = {}) {
       .style("color", textColor)
       .text(current.note);
 
-    const dots = container.append("div").attr("class", "reel-dots").style("display", "flex").style("gap", "6px");
-    dots.selectAll(".reel-dot")
-      .data(moments, (d) => d.event_id)
-      .join("span")
-      .attr("class", "reel-dot")
-      .style("width", (d, i) => (i === currentIndex ? "20px" : "8px"))
-      .style("height", "8px")
-      .style("border-radius", "999px")
-      .style("display", "inline-block")
-      .style("cursor", "pointer")
-      .style("transition", "width 0.2s")
-      .style("background", (d, i) => (i === currentIndex ? focalColor : inactiveDotColor))
-      .on("click", (event, d) => seekIndex(moments.indexOf(d)));
+    // Suppressed in "all" mode — a dot per event (often 100+) is noise, and
+    // the "Moment i / n" label line above already conveys position.
+    if (mode !== "all") {
+      const dots = container.append("div").attr("class", "reel-dots").style("display", "flex").style("gap", "6px");
+      dots.selectAll(".reel-dot")
+        .data(moments, (d) => d.event_id)
+        .join("span")
+        .attr("class", "reel-dot")
+        .style("width", (d, i) => (i === currentIndex ? "20px" : "8px"))
+        .style("height", "8px")
+        .style("border-radius", "999px")
+        .style("display", "inline-block")
+        .style("cursor", "pointer")
+        .style("transition", "width 0.2s")
+        .style("background", (d, i) => (i === currentIndex ? focalColor : inactiveDotColor))
+        .on("click", (event, d) => seekIndex(moments.indexOf(d)));
+    }
   }
 
   render();
 
   /**
-   * Re-render with a new events array — re-selects moments, resets to index
-   * 0, and stops any active playback.
+   * Re-render, optionally with a new events array and/or mode — either one
+   * re-selects moments, resets to index 0, and stops any active playback.
    *
    * @param {Object} [next={}] - Partial update.
    * @param {Object} [next.data] - Replacement `{ events: [...] }` object.
+   * @param {string} [next.mode] - "highlights" | "all".
+   * @param {number} [next.stepDurationMs] - New cadence for future Play calls.
    */
   function update(next = {}) {
-    if (next.data !== undefined) {
+    if (next.stepDurationMs !== undefined) stepDurationMs = next.stepDurationMs;
+    if (next.data !== undefined || next.mode !== undefined) {
       stopTimer();
       playing = false;
-      moments = selectMoments(next.data.events ?? []);
+      if (next.data !== undefined) currentData = next.data;
+      if (next.mode !== undefined) mode = next.mode;
+      moments = mode === "all" ? allEventsMoments(currentData.events ?? []) : selectMoments(currentData.events ?? []);
       currentIndex = 0;
     }
     render();

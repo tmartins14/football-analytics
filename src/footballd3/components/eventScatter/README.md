@@ -1,18 +1,18 @@
 # eventScatter.js
 
 General-purpose event scatter overlay for a StatsBomb 120×80 pitch. Renders any flat
-events array as color-coded markers on the pitch; events with end coordinates (Pass, Carry,
+events array as shape-coded markers on the pitch; events with end coordinates (Pass, Carry,
 Shot) also draw an arrow from origin to destination.
 
 This component is not possession-specific. A possession is one filtered event set; you can
-pass match-level events, player-filtered events, or any other subset. The encoding (colors,
-arrows) is driven by `event_type` and is fully configurable via `colorScale`.
+pass match-level events, player-filtered events, or any other subset.
 
 ## What it shows
 
-- **Circle at (x, y)**: every event's origin position, color-coded by semantic category.
+- **Shaped marker at (x, y)**: every event's origin position. Shape encodes the event's
+  layer category, fill vs. hollow encodes whether it succeeded — see "Shape + outcome
+  encoding" below.
 - **Arrow to (end_x, end_y)**: drawn for events that carry a destination (Pass, Carry, Shot).
-  Failed passes get an outer ring around the origin dot to distinguish them from completions.
 - **Tooltip on hover**: player name (if given — omit `player` when every event
   already belongs to one known player, e.g. a single-player whole-match view;
   the line is skipped rather than showing "undefined"), event type, outcome
@@ -20,16 +20,34 @@ arrows) is driven by `event_type` and is fully configurable via `colorScale`.
   whole-match/single-player view), else `+X.Xs` elapsed within the possession
   (the possession-scoped shape below).
 
-## Event type color encoding
+## Shape + outcome encoding
 
-| Category   | Types                                                    | Color                |
-|------------|----------------------------------------------------------|----------------------|
-| Movement   | Pass, Carry, Dribble                                     | `#9F1239` red        |
-| Defensive  | Pressure, Duel, Interception, Block, Ball Recovery, Clearance | `#1E3A5F` navy |
-| Terminal   | Shot, Foul Won, Foul Committed                           | `#525252` gray       |
-| Other      | everything else                                          | `#E5E5E5` light gray |
+Shape and color no longer both encode category — shape does, and every marker/arrow
+renders in one ink color (`config.markerColor`, themable). This mirrors
+`actionFeed.js`'s own row glyphs exactly (both import the same `CATEGORY_SHAPE` map)
+so the Territory pitch and the Action Feed speak one consistent visual language:
 
-Override the color function via `config.colorScale` to use a custom scheme.
+| Category           | Shape (`CATEGORY_SHAPE`) |
+|---------------------|--------------------------|
+| `shot`              | circle                   |
+| `progressive_pass`  | triangle                 |
+| `key_pass`          | diamond                  |
+| `pressure`          | square                   |
+| `duel`              | cross                    |
+| `turnover`          | star                     |
+| `other`             | wye                      |
+
+Category is derived locally (`_classify`, mirroring `actionFeed.js`'s `classifyLayer`,
+adapted to this component's `event_type` field name) rather than imported directly — this
+component's general possession contract doesn't carry `is_progressive`/`key_pass` at all,
+so importing the player-events-specific classifier as-is would silently misclassify events
+for that consumer. A caller with those fields (e.g. `TerritoryPanel.tsx`) can pass them
+through per-event for classification that agrees exactly with the Action Feed's.
+
+Fill vs. hollow (`_isSuccessful`, same adaptation) encodes outcome: filled means the event
+succeeded, hollow means it didn't. Shot succeeds iff `outcome === "Goal"`; Duel succeeds
+unless `outcome` names a loss; Pass/Carry succeed when `outcome` is `null`; everything else
+has no real success/fail concept and defaults to filled.
 
 **Ball Receipt\***: excluded by default — they cluster on top of Pass end-points with no
 additional spatial information. Set `includeBallReceipt: true` to include them.

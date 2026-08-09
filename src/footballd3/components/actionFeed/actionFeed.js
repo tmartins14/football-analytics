@@ -33,15 +33,42 @@
 
 import * as d3 from "d3";
 
-const LAYER_COLORS = {
-  shot:              "#525252",
-  progressive_pass:  "#9F1239",
-  key_pass:          "#F59E0B",
-  pressure:          "#1E3A5F",
-  duel:              "#1E3A5F",
-  turnover:          "#78716C",
-  other:             "#A39E95",
+/**
+ * Shared shape encoding for the app's layer taxonomy — one d3-symbol type per
+ * category, reused by both this file's own row glyph and eventScatter.js's
+ * pitch markers so the two consumers speak the same visual language (shape =
+ * category, replacing the old per-category color scheme entirely). d3's 7
+ * built-in symbol types map onto the 7 categories exactly.
+ */
+export const CATEGORY_SHAPE = {
+  shot:             d3.symbolCircle,
+  progressive_pass: d3.symbolTriangle,
+  key_pass:         d3.symbolDiamond,
+  pressure:         d3.symbolSquare,
+  duel:             d3.symbolCross,
+  turnover:         d3.symbolStar,
+  other:            d3.symbolWye,
 };
+
+/**
+ * Whether an event succeeded — the second half of the shape+fill encoding
+ * (shape = category, fill = outcome: filled means succeeded, hollow means
+ * failed). Types with no real success/fail concept (Pressure, Ball Recovery,
+ * Clearance, etc.) default to filled.
+ *
+ * @param {Object} event - One event from the player_events contract.
+ * @returns {boolean} true if the event should render filled.
+ */
+export function isSuccessfulEvent(event) {
+  if (event.type === "Shot") return !!event.is_goal;
+  // StatsBomb's real duel_outcome vocabulary is "Success In Play"/"Success
+  // Out"/"Won" vs "Lost In Play"/"Lost Out" — substring match on "lost"
+  // rather than an exact-match list, since a bare "Won" is only one of
+  // several success-shaped strings.
+  if (event.type === "Duel") return !(event.outcome && /lost/i.test(event.outcome));
+  if (event.type === "Pass" || event.type === "Carry") return event.outcome == null;
+  return true;
+}
 
 /**
  * Classify one player_events event into the app's shared layer taxonomy.
@@ -166,13 +193,32 @@ export function createActionFeed(selection, data, config = {}) {
       .style("cursor", "pointer")
       .style("background", (d) =>
         d.event_id === highlightEventId ? "rgba(245,158,11,0.15)" : "transparent"
-      )
-      .style("border-left", (d) =>
-        `3px solid ${LAYER_COLORS[classifyLayer(d)] ?? LAYER_COLORS.other}`
       );
 
+    // Shape+fill glyph, replacing the old color-coded left border: shape
+    // encodes the event's layer category (shared with eventScatter.js's
+    // pitch markers via CATEGORY_SHAPE), fill/hollow encodes whether it
+    // succeeded (isSuccessfulEvent).
     rows.append("span")
-      .style("width", "34px")
+      .attr("class", "action-feed-icon")
+      .style("flex", "0 0 18px")
+      .style("display", "flex")
+      .style("align-items", "center")
+      .style("justify-content", "center")
+      .append("svg")
+      .attr("width", 14)
+      .attr("height", 14)
+      .attr("viewBox", "-7 -7 14 14")
+      .append("path")
+      .attr("d", (d) => d3.symbol().type(CATEGORY_SHAPE[classifyLayer(d)] ?? CATEGORY_SHAPE.other).size(50)())
+      .attr("fill", (d) => (isSuccessfulEvent(d) ? "#525252" : "none"))
+      .attr("fill-opacity", 0.85)
+      .attr("stroke", "#525252")
+      .attr("stroke-width", (d) => (isSuccessfulEvent(d) ? 0 : 1.4));
+
+    rows.append("span")
+      .attr("class", "action-feed-minute")
+      .style("flex", "0 0 34px")
       .style("color", "#8A8578")
       .text((d) => `${d.minute}'`);
 
