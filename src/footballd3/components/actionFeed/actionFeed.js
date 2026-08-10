@@ -144,6 +144,9 @@ const SORT_KEYS = {
  * @param {number}   [config.height=320]        - Scroll container height in pixels.
  * @param {string}   [config.sortBy="minute"]    - "minute" | "xt".
  * @param {string}   [config.sortDir="asc"]      - "asc" | "desc".
+ * @param {string}   [config.iconColor="#525252"] - Ink color for each row's
+ *   shape+fill/hollow category glyph (see CATEGORY_SHAPE/isSuccessfulEvent) —
+ *   a caller with a team/player color scheme overrides this per player.
  * @param {string|null} [config.highlightEventId=null] - Inbound cross-link:
  *   rings/tints the row with this event_id.
  * @param {Function|null} [config.onHoverRow=null] - onHoverRow(eventId | null)
@@ -159,6 +162,7 @@ export function createActionFeed(selection, data, config = {}) {
     height           = 320,
     sortBy           = "minute",
     sortDir          = "asc",
+    iconColor        = "#525252",
     highlightEventId = null,
     onHoverRow       = null,
   } = config;
@@ -211,9 +215,9 @@ export function createActionFeed(selection, data, config = {}) {
       .attr("viewBox", "-7 -7 14 14")
       .append("path")
       .attr("d", (d) => d3.symbol().type(CATEGORY_SHAPE[classifyLayer(d)] ?? CATEGORY_SHAPE.other).size(50)())
-      .attr("fill", (d) => (isSuccessfulEvent(d) ? "#525252" : "none"))
+      .attr("fill", (d) => (isSuccessfulEvent(d) ? iconColor : "none"))
       .attr("fill-opacity", 0.85)
-      .attr("stroke", "#525252")
+      .attr("stroke", iconColor)
       .attr("stroke-width", (d) => (isSuccessfulEvent(d) ? 0 : 1.4));
 
     rows.append("span")
@@ -275,12 +279,14 @@ export function createActionFeed(selection, data, config = {}) {
    * @param {Object} [next.data] - Replacement `{ events: [...] }` object.
    * @param {string} [next.sortBy] - "minute" | "xt".
    * @param {string} [next.sortDir] - "asc" | "desc".
+   * @param {string} [next.iconColor] - New row-glyph ink color.
    * @param {string|null} [next.highlightEventId] - New inbound-highlight event_id.
    */
   function update(next = {}) {
     if (next.data !== undefined) currentData = next.data;
     if (next.sortBy !== undefined) sortBy = next.sortBy;
     if (next.sortDir !== undefined) sortDir = next.sortDir;
+    if (next.iconColor !== undefined) iconColor = next.iconColor;
     if (next.highlightEventId !== undefined) highlightEventId = next.highlightEventId;
     render();
   }

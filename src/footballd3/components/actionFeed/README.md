@@ -42,6 +42,11 @@ visual language:
   per category): `shot` → circle, `progressive_pass` → triangle, `key_pass`
   → diamond, `pressure` → square, `duel` → cross, `turnover` → star, `other`
   → wye.
+- **Ink color** (`config.iconColor`, default `#525252`) is a single flat
+  color for every glyph — a caller with a team/player color scheme (e.g.
+  the Player Match Analysis page) passes the selected player's team color
+  instead, so a Spain player's feed renders in Spain red and an England
+  player's in England blue.
 - **Filled vs. hollow** encodes whether the event succeeded
   (`isSuccessfulEvent(event)`, also exported): filled means it succeeded,
   hollow means it didn't. Shot succeeds iff `is_goal`; Duel succeeds unless
@@ -112,6 +117,7 @@ update({
 | `height` | `320` | Scroll container height in pixels |
 | `sortBy` | `"minute"` | `"minute"` \| `"xt"` |
 | `sortDir` | `"asc"` | `"asc"` \| `"desc"` |
+| `iconColor` | `"#525252"` | Ink color for each row's shape+fill/hollow category glyph — a caller with a team/player color scheme overrides this per player |
 | `highlightEventId` | `null` | Inbound cross-link — tints/rings the row with this `event_id` |
 | `onHoverRow` | `null` | `onHoverRow(eventId \| null)` on row hover/unhover |
 

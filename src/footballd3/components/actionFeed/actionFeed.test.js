@@ -148,6 +148,20 @@ describe("createActionFeed", () => {
       const expected = d3.symbol().type(CATEGORY_SHAPE.shot).size(50)();
       expect(path.attr("d")).toBe(expected);
     });
+
+    it("config.iconColor overrides the default ink color (regression: L1, team-colored charts)", () => {
+      const { container } = mount(events, { iconColor: "#C60B1E" });
+      const path = iconPath(container, "e-30"); // successful -> filled
+      expect(path.attr("fill")).toBe("#C60B1E");
+      expect(path.attr("stroke")).toBe("#C60B1E");
+    });
+
+    it("update({iconColor}) re-renders with the new ink color", () => {
+      const { container, update } = mount(events);
+      update({ iconColor: "#1E3A5F" });
+      const path = iconPath(container, "e-30");
+      expect(path.attr("fill")).toBe("#1E3A5F");
+    });
   });
 
   describe("xT/xG value text (regression: H2)", () => {
