@@ -76,8 +76,9 @@ function getTooltip() {
  *
  * @param {Array}  events      - Player event array (player_events.json's `events`).
  * @param {number} finalMinute - Minute the chart's time axis extends to.
- * @returns {Array} Ordered points: { minute, second, cumulative_xt }, anchored
- *   at both ends.
+ * @returns {Array} Ordered points: { minute, second, cumulative_xt, event_id },
+ *   anchored at both ends. The two anchor points carry event_id: null — they
+ *   are not real events, so an inbound highlightEventId can never match one.
  */
 function _buildSeries(events, finalMinute) {
   const credited = events
@@ -88,13 +89,13 @@ function _buildSeries(events, finalMinute) {
   let running = 0;
   const points = credited.map(e => {
     running += e.xt_delta;
-    return { minute: e.minute, second: e.second, cumulative_xt: running };
+    return { minute: e.minute, second: e.second, cumulative_xt: running, event_id: e.event_id };
   });
 
   return [
-    { minute: 0, cumulative_xt: 0 },
+    { minute: 0, cumulative_xt: 0, event_id: null },
     ...points,
-    { minute: finalMinute, cumulative_xt: running },
+    { minute: finalMinute, cumulative_xt: running, event_id: null },
   ];
 }
 
@@ -141,9 +142,15 @@ function _cumulativeAt(minute, series) {
  * @param {boolean} [config.showShots=true]      - Render shot chip markers.
  * @param {boolean} [config.showTotal=true]      - Render the end-of-line total label.
  * @param {Function} [config.onHover]            - onHover(point|null): called with
- *   the nearest series point on mousemove, and `null` on mouseleave. Fires
- *   alongside the built-in tooltip (not a replacement) unless showTooltip is false.
+ *   the nearest series point on mousemove, and `null` on mouseleave. The point
+ *   carries `event_id` (null for the two synthetic domain-anchor points) so a
+ *   sibling panel can cross-link the exact hovered action. Fires alongside the
+ *   built-in tooltip (not a replacement) unless showTooltip is false.
  * @param {boolean} [config.showTooltip=true]    - Render the built-in floating tooltip.
+ * @param {string}  [config.highlightColor="#F59E0B"] - Inbound cross-link ring color.
+ * @param {string|null} [config.highlightEventId=null] - Inbound cross-link: rings
+ *   whichever point (a line point or a shot chip) carries this event_id — set
+ *   this from a hover fired elsewhere (a pitch marker, feed row, sonar wedge, ...).
  * @returns {{
  *   svg:       d3.Selection,
  *   g:         d3.Selection,
@@ -171,6 +178,8 @@ export function createCumulativeXtChart(selection, data, config = {}) {
     showTotal     = true,
     onHover,
     showTooltip   = true,
+    highlightColor = "#F59E0B",
+    highlightEventId = null,
   } = config;
 
   const svg = selection.append("svg").attr("width", width).attr("height", height);
@@ -182,6 +191,7 @@ export function createCumulativeXtChart(selection, data, config = {}) {
   let _data      = data;
   let _showShots = showShots;
   let _showTotal = showTotal;
+  let _highlightEventId = highlightEventId;
 
   let timeScale = d3.scaleLinear();
   let xtScale   = d3.scaleLinear();
@@ -255,7 +265,31 @@ export function createCumulativeXtChart(selection, data, config = {}) {
     if (_showShots) _renderShotMarkers(d, series, fm);
     _renderAxes(fm, extentLow, extentHigh);
     if (_showTotal) _renderTotalLabel(finalTotal, fm);
+    _renderHighlight(d, series);
     _renderTooltipOverlay(series, fm);
+  }
+
+  /**
+   * Ring whichever point (a line point or a shot chip) carries
+   * _highlightEventId — the inbound half of the event-scope cross-link.
+   *
+   * @param {Object} d      - Full data object.
+   * @param {Array}  series - The built cumulative series (for line-point lookup).
+   */
+  function _renderHighlight(d, series) {
+    if (_highlightEventId == null) return;
+
+    const linePoint = series.find(p => p.event_id === _highlightEventId);
+    const shot = !linePoint && d.events.find(e => e.event_id === _highlightEventId);
+    if (!linePoint && !shot) return;
+
+    const cx = timeScale(linePoint ? linePoint.minute : shot.minute);
+    const cy = xtScale(linePoint ? linePoint.cumulative_xt : _cumulativeAt(shot.minute, series));
+
+    g.append("circle").attr("class", "cxt-highlight")
+      .attr("cx", cx).attr("cy", cy).attr("r", shot ? 14 : 9)
+      .attr("fill", "none").attr("stroke", highlightColor).attr("stroke-width", 2.5)
+      .attr("pointer-events", "none");
   }
 
   /**
@@ -427,11 +461,13 @@ export function createCumulativeXtChart(selection, data, config = {}) {
    * @param {Object}  [opts.data]      - Replace the full data object.
    * @param {boolean} [opts.showShots] - Toggle shot chip markers.
    * @param {boolean} [opts.showTotal] - Toggle the end-of-line total label.
+   * @param {string|null} [opts.highlightEventId] - Move the inbound cross-link ring.
    */
   function update(opts = {}) {
     if (opts.data      !== undefined) _data      = opts.data;
     if (opts.showShots !== undefined) _showShots = opts.showShots;
     if (opts.showTotal !== undefined) _showTotal = opts.showTotal;
+    if (opts.highlightEventId !== undefined) _highlightEventId = opts.highlightEventId;
     _render();
   }
 

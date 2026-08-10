@@ -1,0 +1,149 @@
+{
+  "buckets": [
+    {
+      "upto_minute": 5,
+      "team_possession_pct": {
+        "England": 33.33,
+        "Spain": 66.67
+      }
+    },
+    {
+      "upto_minute": 10,
+      "team_possession_pct": {
+        "England": 47.62,
+        "Spain": 52.38
+      }
+    },
+    {
+      "upto_minute": 15,
+      "team_possession_pct": {
+        "England": 51.85,
+        "Spain": 48.15
+      }
+    },
+    {
+      "upto_minute": 20,
+      "team_possession_pct": {
+        "England": 48.48,
+        "Spain": 51.52
+      }
+    },
+    {
+      "upto_minute": 25,
+      "team_possession_pct": {
+        "England": 47.62,
+        "Spain": 52.38
+      }
+    },
+    {
+      "upto_minute": 30,
+      "team_possession_pct": {
+        "England": 47.06,
+        "Spain": 52.94
+      }
+    },
+    {
+      "upto_minute": 35,
+      "team_possession_pct": {
+        "England": 46.55,
+        "Spain": 53.45
+      }
+    },
+    {
+      "upto_minute": 40,
+      "team_possession_pct": {
+        "England": 46.97,
+        "Spain": 53.03
+      }
+    },
+    {
+      "upto_minute": 45,
+      "team_possession_pct": {
+        "England": 45.57,
+        "Spain": 54.43
+      }
+    },
+    {
+      "upto_minute": 50,
+      "team_possession_pct": {
+        "England": 47.19,
+        "Spain": 52.81
+      }
+    },
+    {
+      "upto_minute": 55,
+      "team_possession_pct": {
+        "England": 46.81,
+        "Spain": 53.19
+      }
+    },
+    {
+      "upto_minute": 60,
+      "team_possession_pct": {
+        "England": 47.47,
+        "Spain": 52.53
+      }
+    },
+    {
+      "upto_minute": 65,
+      "team_possession_pct": {
+        "England": 47.62,
+        "Spain": 52.38
+      }
+    },
+    {
+      "upto_minute": 70,
+      "team_possession_pct": {
+        "England": 46.9,
+        "Spain": 53.1
+      }
+    },
+    {
+      "upto_minute": 75,
+      "team_possession_pct": {
+        "England": 47.97,
+        "Spain": 52.03
+      }
+    },
+    {
+      "upto_minute": 80,
+      "team_possession_pct": {
+        "England": 47.66,
+        "Spain": 52.34
+      }
+    },
+    {
+      "upto_minute": 85,
+      "team_possession_pct": {
+        "England": 47.06,
+        "Spain": 52.94
+      }
+    },
+    {
+      "upto_minute": 90,
+      "team_possession_pct": {
+        "England": 47.89,
+        "Spain": 52.11
+      }
+    },
+    {
+      "upto_minute": 94,
+      "team_possession_pct": {
+        "England": 48.3,
+        "Spain": 51.7
+      }
+    }
+  ],
+  "metadata": {
+    "match_id": 3943043,
+    "teams": [
+      "England",
+      "Spain"
+    ],
+    "competition": "UEFA Euro 2024",
+    "season": "2024",
+    "match_label": "Spain vs England",
+    "bucket_size_minutes": 5,
+    "possession_share_method": "distinct_possession_id_count"
+  }
+}

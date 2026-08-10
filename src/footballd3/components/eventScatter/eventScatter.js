@@ -5,15 +5,23 @@
  * onto pitch.g using pitch.px() for coordinate conversion. Does not create or
  * re-render the pitch.
  *
- * Events are rendered as colored circles at their (x, y) origin. Events that carry
+ * Events are rendered as shaped markers at their (x, y) origin. Events that carry
  * end coordinates (Pass, Carry, Shot) also draw an arrow from origin to destination.
- * Arrows are rendered first (behind circles), so the origin dot sits on top.
+ * Arrows are rendered first (behind markers), so the origin marker sits on top.
  *
- * EVENT TYPE ENCODING — color encodes semantic category:
- *   Ball movement (Pass, Carry, Dribble):                    #9F1239  red
- *   Defensive   (Pressure, Duel, Interception, Block, etc.): #1E3A5F  navy
- *   Terminal    (Shot, Foul Won, Foul Committed):             #525252  gray
- *   Other / unmapped:                                         #E5E5E5  light gray
+ * EVENT TYPE ENCODING — shape encodes category, fill/hollow encodes outcome:
+ * markers use CATEGORY_SHAPE (imported from actionFeed.js — the same shared
+ * taxonomy/shape table its own row glyphs use, so the Territory pitch and the
+ * Action Feed speak one consistent visual language) and render filled when
+ * the event succeeded, hollow when it didn't. Classification and success are
+ * re-derived locally (_classify/_isSuccessful below) rather than importing
+ * classifyLayer/isSuccessfulEvent directly — this component's general
+ * possession contract uses `event_type` (not `type`) and, for its other real
+ * consumer (a possession-scoped showcase demo), doesn't carry
+ * is_progressive/key_pass/is_goal at all. The category *keys* still match
+ * classifyLayer's output exactly, so a caller that does have those fields
+ * (e.g. TerritoryPanel.tsx, passing them through per-event) gets markers
+ * that agree with the Action Feed's own classification.
  *
  * Ball Receipt* events are excluded by default (they cluster on top of Pass
  * end-points with no additional spatial information). Set includeBallReceipt: true
@@ -29,84 +37,116 @@
  */
 
 import * as d3 from "d3";
+import { CATEGORY_SHAPE } from "../actionFeed/actionFeed.js";
 
-// ── Color encoding ────────────────────────────────────────────────────────────
+// ── Shape + outcome encoding ──────────────────────────────────────────────────
 
-const _TYPE_CATEGORY = {
-  // Ball movement
-  Pass:    "movement",
-  Carry:   "movement",
-  Dribble: "movement",
-  // Defensive
-  Pressure:       "defense",
-  Duel:           "defense",
-  Interception:   "defense",
-  "Ball Recovery": "defense",
-  Clearance:      "defense",
-  Block:          "defense",
-  // Terminal
-  Shot:             "terminal",
-  "Foul Won":       "terminal",
-  "Foul Committed": "terminal",
-};
+const _TURNOVER_TYPES = new Set(["Dispossessed", "Miscontrol"]);
 
-const _CATEGORY_COLOR = {
-  movement: "#9F1239",
-  defense:  "#1E3A5F",
-  terminal: "#525252",
-  other:    "#E5E5E5",
-};
-
-// Marker IDs are prefixed "es-" to avoid collisions with progressiveMap's markers.
-const _MARKER_IDS = {
-  "#9F1239": "es-arrow-red",
-  "#1E3A5F": "es-arrow-navy",
-  "#525252": "es-arrow-gray",
-  "#E5E5E5": "es-arrow-light",
-};
-
-function _typeColor(eventType) {
-  const cat = _TYPE_CATEGORY[eventType] ?? "other";
-  return _CATEGORY_COLOR[cat];
+/**
+ * Classify one event into the app's shared layer taxonomy — mirrors
+ * actionFeed.js's classifyLayer() exactly, adapted to this component's own
+ * `event_type` field naming and to fields (`is_progressive`, `key_pass`)
+ * that may simply be absent on this component's other, more general
+ * consumer (see module comment).
+ *
+ * @param {Object} event - One event in this component's contract.
+ * @returns {string} One of "shot", "progressive_pass", "key_pass",
+ *   "pressure", "duel", "turnover", "other".
+ */
+function _classify(event) {
+  const type = event.event_type;
+  if (type === "Shot") return "shot";
+  if (type === "Pass" && event.key_pass) return "key_pass";
+  if ((type === "Pass" || type === "Carry") && event.is_progressive) return "progressive_pass";
+  if (type === "Pressure") return "pressure";
+  if (type === "Duel") return "duel";
+  if (_TURNOVER_TYPES.has(type)) return "turnover";
+  return "other";
 }
 
-// ── Shared tooltip ────────────────────────────────────────────────────────────
+/**
+ * Whether an event succeeded — mirrors actionFeed.js's isSuccessfulEvent()
+ * exactly, adapted to this component's `event_type`/`outcome` fields (no
+ * `is_goal` field exists in the general possession contract, so a Shot's
+ * success is read off `outcome === "Goal"` instead).
+ *
+ * @param {Object} event - One event in this component's contract.
+ * @returns {boolean} true if the marker should render filled.
+ */
+function _isSuccessful(event) {
+  const type = event.event_type;
+  if (type === "Shot") return event.outcome === "Goal";
+  if (type === "Duel") return !(event.outcome && /lost/i.test(event.outcome));
+  if (type === "Pass" || type === "Carry") return event.outcome == null;
+  return true;
+}
 
-const _tooltip = document.createElement("div");
-Object.assign(_tooltip.style, {
-  position:      "fixed",
-  pointerEvents: "none",
-  display:       "none",
-  background:    "#FAF7F0",
-  border:        "1px solid #E5E5E5",
-  borderRadius:  "2px",
-  padding:       "8px 10px",
-  fontFamily:    "Geist Mono, monospace",
-  fontSize:      "12px",
-  lineHeight:    "1.6",
-  color:         "#171717",
-  whiteSpace:    "nowrap",
-  zIndex:        "100",
-});
-document.body.appendChild(_tooltip);
+// Single ink color for every marker now that shape (not color) encodes
+// category — override via config.markerColor for theme integration.
+const _MARKER_ID = "es-arrow";
+
+// ── Shared tooltip ────────────────────────────────────────────────────────────
+// Created lazily (not at module scope) so this file can be imported in a
+// server-rendering context without touching `document` on the server — a
+// module-top-level document.createElement() here previously crashed Next.js
+// SSR the first time this component was actually used inside a Next.js app
+// (ReferenceError: document is not defined). Every other footballd3
+// component already uses this lazy pattern; this brings eventScatter.js
+// into line with it.
+
+let _tooltip;
+function getTooltip() {
+  // isConnected (not just truthiness) so the tooltip gets re-appended if its
+  // old parent was ever removed from the document — real apps never nuke
+  // document.body wholesale, but this keeps the singleton correct if they did.
+  if (!_tooltip || !_tooltip.isConnected) {
+    _tooltip = document.createElement("div");
+    Object.assign(_tooltip.style, {
+      position:      "fixed",
+      pointerEvents: "none",
+      display:       "none",
+      background:    "#FAF7F0",
+      border:        "1px solid #E5E5E5",
+      borderRadius:  "2px",
+      padding:       "8px 10px",
+      fontFamily:    "Geist Mono, monospace",
+      fontSize:      "12px",
+      lineHeight:    "1.6",
+      color:         "#171717",
+      whiteSpace:    "nowrap",
+      zIndex:        "100",
+    });
+    document.body.appendChild(_tooltip);
+  }
+  return _tooltip;
+}
 
 function _showTooltip(event, d) {
-  const sec = d.seconds.toFixed(1);
   const outcome = d.outcome ? ` · ${d.outcome}` : "";
-  _tooltip.innerHTML =
-    `<span style="font-weight:600">${d.player}</span><br>` +
+  // Prefer an absolute match minute (whole-match/single-player consumers,
+  // e.g. TerritoryPanel.tsx) over the possession-relative elapsed-seconds
+  // format (the showcase gallery's per-possession consumer, where multiple
+  // players' events share one possession and "+X.Xs since it started" is
+  // the meaningful timestamp) — a caller supplies whichever fits its data.
+  const time = typeof d.minute === "number" ? `${d.minute}'` : `+${d.seconds.toFixed(1)}s`;
+  const playerLine = d.player ? `<span style="font-weight:600">${d.player}</span><br>` : "";
+  const tooltip = getTooltip();
+  tooltip.innerHTML =
+    playerLine +
     `${d.event_type}${outcome}<br>` +
-    `<span style="color:#525252">+${sec}s</span>`;
-  _tooltip.style.display = "block";
+    `<span style="color:#525252">${time}</span>`;
+  tooltip.style.display = "block";
 }
 
 function _moveTooltip(event) {
-  _tooltip.style.left = (event.clientX + 14) + "px";
-  _tooltip.style.top  = (event.clientY - 28) + "px";
+  const tooltip = getTooltip();
+  tooltip.style.left = (event.clientX + 14) + "px";
+  tooltip.style.top  = (event.clientY - 28) + "px";
 }
 
 function _hideTooltip() {
-  _tooltip.style.display = "none";
+  getTooltip().style.display = "none";
 }
 
 // ── Marker helpers ────────────────────────────────────────────────────────────
@@ -140,22 +180,32 @@ function _addMarker(defs, id, color) {
  * Appends a <g class="es"> group to pitch.g. Does not touch the pitch background
  * or markings. Call createPitch() first and pass its return value as `pitch`.
  *
- * Events are color-coded by semantic category (see module comment). Events with
- * end_x/end_y (Pass, Carry, Shot) render an arrow from origin to destination;
- * all events render a filled circle at their origin (x, y).
+ * Events are shape-coded by semantic category and filled/hollow by outcome
+ * (see module comment). Events with end_x/end_y (Pass, Carry, Shot) render
+ * an arrow from origin to destination; all events render a shaped marker at
+ * their origin (x, y).
  *
  * @param {Object} pitch - Return value of createPitch(). Must expose { svg, g, px }.
  * @param {Object} data  - Possession JSON contract (possession_{match_id}_{possession}.json)
- *   or any object with an `events` array of { event_type, seconds, x, y,
- *   end_x, end_y, player, outcome }.
+ *   or any object with an `events` array of { event_type, x, y, end_x, end_y,
+ *   outcome }, plus EITHER `minute` (an absolute match minute, shown as
+ *   `{minute}'` in the tooltip — for whole-match/single-player consumers) OR
+ *   `seconds` (possession-relative elapsed seconds, shown as `+X.Xs` — for
+ *   per-possession consumers where `minute` isn't meaningful per event).
+ *   `player` is optional — omit it when every event already belongs to one
+ *   known player (the tooltip's player-name line is skipped entirely rather
+ *   than rendering "undefined"). `is_progressive`/`key_pass` are optional —
+ *   when present, they let shape-classification agree exactly with
+ *   actionFeed.js's classifyLayer() for the same events (see module comment).
  * @param {Object} [config={}] - Rendering options.
- * @param {number}   [config.markerRadius=5]          - Circle radius in pixels.
+ * @param {number}   [config.markerRadius=5]          - Marker size scale in pixels
+ *   (roughly the equivalent radius of the old circle marker).
+ * @param {string}   [config.markerColor="#171717"]    - Single ink color for every
+ *   marker/arrow — shape and fill/hollow now carry the encoding, not color.
  * @param {boolean}  [config.showArrows=true]          - Draw arrow lines for events
  *   that have end_x/end_y.
  * @param {boolean}  [config.includeBallReceipt=false] - Include "Ball Receipt*" events.
  *   Excluded by default because they cluster on top of Pass end-points.
- * @param {Function} [config.colorScale]               - Override the default event_type
- *   → color function. Receives event_type string, returns a CSS color string.
  * @returns {{ g: d3.Selection, update: function }}
  *   g:      The <g class="es"> group appended to pitch.g.
  *   update: function({ events?, filter? }) — re-renders with a new event array
@@ -165,9 +215,9 @@ function _addMarker(defs, id, color) {
 export function createEventScatter(pitch, data, config = {}) {
   const {
     markerRadius       = 5,
+    markerColor        = "#171717",
     showArrows         = true,
     includeBallReceipt = false,
-    colorScale         = _typeColor,
   } = config;
 
   const { svg, g, px } = pitch;
@@ -176,12 +226,10 @@ export function createEventScatter(pitch, data, config = {}) {
   let defs = svg.select("defs");
   if (defs.empty()) defs = svg.append("defs");
 
-  // Register arrow markers for each category color (guard against duplicates).
-  Object.entries(_MARKER_IDS).forEach(([color, id]) => {
-    if (defs.select(`#${id}`).empty()) {
-      _addMarker(defs, id, color);
-    }
-  });
+  // A single arrow marker now that there's one ink color (guard against duplicates).
+  if (defs.select(`#${_MARKER_ID}`).empty()) {
+    _addMarker(defs, _MARKER_ID, markerColor);
+  }
 
   const scatterG = g.append("g").attr("class", "es");
 
@@ -218,48 +266,41 @@ export function createEventScatter(pitch, data, config = {}) {
     const withArrows    = visible.filter(e => showArrows && e.end_x != null && e.end_y != null);
     const withoutArrows = visible.filter(e => !showArrows || e.end_x == null || e.end_y == null);
 
-    // ── Arrow lines (rendered behind origin dots) ─────────────────────────────
+    // ── Arrow lines (rendered behind origin markers) ──────────────────────────
     withArrows.forEach(e => {
       const [x0, y0] = px(e.x,     e.y);
       const [x1, y1] = px(e.end_x, e.end_y);
-      const color    = colorScale(e.event_type);
-      const markerId = _MARKER_IDS[color] ?? "es-arrow-gray";
 
       scatterG.append("line")
         .attr("x1", x0).attr("y1", y0)
         .attr("x2", x1).attr("y2", y1)
-        .attr("stroke",       color)
+        .attr("stroke",       markerColor)
         .attr("stroke-width", 1.5)
         .attr("stroke-opacity", 0.6)
         .attr("stroke-linecap", "round")
-        .attr("marker-end",   `url(#${markerId})`)
+        .attr("marker-end",   `url(#${_MARKER_ID})`)
         .on("mouseover", (ev) => _showTooltip(ev, e))
         .on("mousemove", _moveTooltip)
         .on("mouseout",  _hideTooltip);
     });
 
-    // ── Origin dots (all events, rendered on top of arrows) ───────────────────
+    // ── Origin markers (all events, rendered on top of arrows) ───────────────
+    // Shape encodes category (CATEGORY_SHAPE via _classify); fill vs. hollow
+    // encodes outcome (_isSuccessful) — see module comment.
+    const symbolSize = 4 * markerRadius * markerRadius;
     [...withArrows, ...withoutArrows].forEach(e => {
       const [cx, cy] = px(e.x, e.y);
-      const color    = colorScale(e.event_type);
+      const shape = CATEGORY_SHAPE[_classify(e)] ?? CATEGORY_SHAPE.other;
+      const filled = _isSuccessful(e);
 
-      // Outer ring for events with an outcome (completed pass = no ring, failure = ring).
-      const isFailedPass = e.event_type === "Pass" && e.outcome != null;
-      if (isFailedPass) {
-        scatterG.append("circle")
-          .attr("cx", cx).attr("cy", cy)
-          .attr("r",  markerRadius + 3)
-          .attr("fill", "none")
-          .attr("stroke", color)
-          .attr("stroke-width", 1)
-          .attr("stroke-opacity", 0.5);
-      }
-
-      scatterG.append("circle")
-        .attr("cx", cx).attr("cy", cy)
-        .attr("r",  markerRadius)
-        .attr("fill", color)
+      scatterG.append("path")
+        .attr("class", "es-marker")
+        .attr("transform", `translate(${cx},${cy})`)
+        .attr("d", d3.symbol().type(shape).size(symbolSize)())
+        .attr("fill", filled ? markerColor : "none")
         .attr("fill-opacity", 0.85)
+        .attr("stroke", markerColor)
+        .attr("stroke-width", filled ? 0 : 1.5)
         .style("cursor", "default")
         .on("mouseover", (ev) => _showTooltip(ev, e))
         .on("mousemove", _moveTooltip)

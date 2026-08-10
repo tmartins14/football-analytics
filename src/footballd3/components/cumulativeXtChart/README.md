@@ -92,6 +92,10 @@ fetch("../../sample_data/player_events/3943043/39461.json")
 
     // Later: swap in a scrub-filtered subset of the same player's events.
     update({ data: { events: data.events.filter(e => e.minute <= scrubbedMinute) } });
+
+    // A pitch marker/feed row/sonar wedge elsewhere was hovered — ring the
+    // matching point on this line (or shot chip) too.
+    update({ highlightEventId: hoveredEventId });
   });
 ```
 
@@ -105,8 +109,19 @@ fetch("../../sample_data/player_events/3943043/39461.json")
 - `g` — the main `<g>` group (use for custom overlays).
 - `timeScale` — `d3.scaleLinear` mapping match minutes → pixels (X axis).
 - `xtScale` — `d3.scaleLinear` mapping cumulative xT values → pixels (Y axis, inverted).
-- `update({ data?, showShots?, showTotal? })` — re-renders with updated options.
-  Any omitted key retains its current value.
+- `update({ data?, showShots?, showTotal?, highlightEventId? })` — re-renders
+  with updated options. Any omitted key retains its current value.
+
+## Event-scope cross-linking
+
+`onHover(point)` fires on mousemove with the nearest series point, which now
+carries `event_id` (the two synthetic domain-anchor points carry `event_id:
+null`, since they aren't real events). Going the other direction,
+`config.highlightEventId` / `update({ highlightEventId })` rings whichever
+point — a line point *or* a shot chip — carries that `event_id`, so a hover
+fired by the Territory pitch, the action feed, the pass sonar, or the
+goal-mouth panel can highlight the matching spot on this chart too. Ring
+color: `config.highlightColor` (default `"#F59E0B"`).
 
 ---
 

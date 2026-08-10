@@ -1,0 +1,295 @@
+/**
+ * actionFeed.js — scrollable, sortable chronological log of one player's actions.
+ *
+ * Unlike every other footballd3 component, this one renders HTML rows (not
+ * SVG) inside a fixed-height, scrollable container — a chronological log
+ * reads and scrolls more naturally as DOM text than as SVG text nodes, and a
+ * scroll container is native HTML behavior. Each row still gets a small
+ * inline SVG for its signed xT-swing bar, matching the rest of the library's
+ * visual language.
+ *
+ * LAYER CLASSIFICATION IS SHARED, NOT LOCAL
+ * classifyLayer() is a named export (not a private helper) because the design
+ * spec's layer-toggle chips ("Progressive pass | Key pass | Pressure | Duel |
+ * Turnover | Shot") must filter BOTH the Territory pitch markers and this
+ * feed identically — "Each chip isolates a marker class and filters the
+ * Action feed" only holds if both consumers agree on what a "turnover" or
+ * "key pass" event actually is. Import it wherever activeLayers filtering
+ * happens, rather than re-deriving the classification.
+ *
+ * SIGNED xT-SWING BAR + VALUE TEXT
+ * Pass/Carry events use their own xt_delta (can be negative — a backward
+ * safety pass). Shot events have no xt_delta (only Pass/Carry are credited,
+ * per extract_player_events.py/extract_xt.py) but the design still wants a
+ * bar for them, so Shot rows use shot_xg instead — always drawn on the
+ * positive (gain) side, since a shot is inherently threat-positive. Every
+ * other event type (Pressure, Duel, Interception, etc.) has no threat value
+ * and renders a zero-width bar (a thin center tick, not an empty row) rather
+ * than being hidden. The bar is paired with a formatted text value
+ * (formatSwing()) — signed 3-decimal "+0.220 xT" for Pass/Carry, unsigned
+ * 2-decimal "xG 0.32" for Shot, blank for everything else (a literal
+ * "0.000 xT" on every zero-tick row would be noise, not information).
+ */
+
+import * as d3 from "d3";
+
+/**
+ * Shared shape encoding for the app's layer taxonomy — one d3-symbol type per
+ * category, reused by both this file's own row glyph and eventScatter.js's
+ * pitch markers so the two consumers speak the same visual language (shape =
+ * category, replacing the old per-category color scheme entirely). d3's 7
+ * built-in symbol types map onto the 7 categories exactly.
+ */
+export const CATEGORY_SHAPE = {
+  shot:             d3.symbolCircle,
+  progressive_pass: d3.symbolTriangle,
+  key_pass:         d3.symbolDiamond,
+  pressure:         d3.symbolSquare,
+  duel:             d3.symbolCross,
+  turnover:         d3.symbolStar,
+  other:            d3.symbolWye,
+};
+
+/**
+ * Whether an event succeeded — the second half of the shape+fill encoding
+ * (shape = category, fill = outcome: filled means succeeded, hollow means
+ * failed). Types with no real success/fail concept (Pressure, Ball Recovery,
+ * Clearance, etc.) default to filled.
+ *
+ * @param {Object} event - One event from the player_events contract.
+ * @returns {boolean} true if the event should render filled.
+ */
+export function isSuccessfulEvent(event) {
+  if (event.type === "Shot") return !!event.is_goal;
+  // StatsBomb's real duel_outcome vocabulary is "Success In Play"/"Success
+  // Out"/"Won" vs "Lost In Play"/"Lost Out" — substring match on "lost"
+  // rather than an exact-match list, since a bare "Won" is only one of
+  // several success-shaped strings.
+  if (event.type === "Duel") return !(event.outcome && /lost/i.test(event.outcome));
+  if (event.type === "Pass" || event.type === "Carry") return event.outcome == null;
+  return true;
+}
+
+/**
+ * Classify one player_events event into the app's shared layer taxonomy.
+ *
+ * Mirrors the Territory panel's marker categories exactly: progressive
+ * passes/carries, key passes, pressures, duels, turnovers (Dispossessed/
+ * Miscontrol), and shots. Anything else (Interception, Ball Recovery,
+ * Clearance, Block, plain non-progressive Pass/Carry) is "other".
+ *
+ * @param {Object} event - One event from the player_events contract.
+ * @returns {string} One of "shot", "progressive_pass", "key_pass",
+ *   "pressure", "duel", "turnover", "other".
+ */
+export function classifyLayer(event) {
+  if (event.type === "Shot") return "shot";
+  if (event.type === "Pass" && event.key_pass) return "key_pass";
+  if ((event.type === "Pass" || event.type === "Carry") && event.is_progressive) {
+    return "progressive_pass";
+  }
+  if (event.type === "Pressure") return "pressure";
+  if (event.type === "Duel") return "duel";
+  if (event.type === "Dispossessed" || event.type === "Miscontrol") return "turnover";
+  return "other";
+}
+
+/**
+ * The signed threat-swing value for one row's bar.
+ *
+ * @param {Object} event - One event from the player_events contract.
+ * @returns {number} xt_delta for Pass/Carry, shot_xg (always >= 0) for Shot,
+ *   0 for every other type.
+ */
+function swingValue(event) {
+  if (event.type === "Shot") return event.shot_xg ?? 0;
+  if (event.type === "Pass" || event.type === "Carry") return event.xt_delta ?? 0;
+  return 0;
+}
+
+/**
+ * Human-readable label for one row's swing value, matching the app's
+ * existing xT/xG copy conventions elsewhere (highlightReel.js's "+0.220 xT",
+ * goal-mouth's "xG 0.32"). Blank for event types with no real swing value
+ * (Pressure, Duel, etc.) — a literal "0.000 xT" on every such row would be
+ * noise, not information, matching the zero-width tick bar's own treatment.
+ *
+ * @param {Object} event - One event from the player_events contract.
+ * @returns {string} e.g. "+0.220 xT", "-0.045 xT", "xG 0.32", or "".
+ */
+function formatSwing(event) {
+  if (event.type === "Shot") return `xG ${(event.shot_xg ?? 0).toFixed(2)}`;
+  if (event.type === "Pass" || event.type === "Carry") {
+    const v = event.xt_delta ?? 0;
+    return `${v >= 0 ? "+" : ""}${v.toFixed(3)} xT`;
+  }
+  return "";
+}
+
+const SORT_KEYS = {
+  minute: (e) => e.minute * 60 + e.second,
+  xt:     (e) => swingValue(e),
+};
+
+/**
+ * Render a scrollable, sortable action feed for one player.
+ *
+ * @param {d3.Selection} selection - D3 selection of the container element
+ *   (an HTML element — this component renders div/svg children, not an SVG root).
+ * @param {Object} data - Object with an `events` array — the
+ *   player_events/{match_id}/{player_id}.json contract, already filtered by
+ *   the caller to `minute <= scrubbedMinute` (this component does not filter
+ *   by minute itself, matching cumulativeXtChart.js's convention).
+ * @param {Object} [config={}] - Rendering and behavior options.
+ * @param {number}   [config.height=320]        - Scroll container height in pixels.
+ * @param {string}   [config.sortBy="minute"]    - "minute" | "xt".
+ * @param {string}   [config.sortDir="asc"]      - "asc" | "desc".
+ * @param {string}   [config.iconColor="#525252"] - Ink color for each row's
+ *   shape+fill/hollow category glyph (see CATEGORY_SHAPE/isSuccessfulEvent) —
+ *   a caller with a team/player color scheme overrides this per player.
+ * @param {string|null} [config.highlightEventId=null] - Inbound cross-link:
+ *   rings/tints the row with this event_id.
+ * @param {Function|null} [config.onHoverRow=null] - onHoverRow(eventId | null)
+ *   fires on row hover/unhover.
+ * @returns {{ container: d3.Selection, update: Function }}
+ *   container — the scroll-container D3 selection.
+ *   update({ data?, sortBy?, sortDir?, highlightEventId? }) — re-render with
+ *     new events, a new sort, and/or a new inbound highlight. Any omitted key
+ *     retains its current value.
+ */
+export function createActionFeed(selection, data, config = {}) {
+  let {
+    height           = 320,
+    sortBy           = "minute",
+    sortDir          = "asc",
+    iconColor        = "#525252",
+    highlightEventId = null,
+    onHoverRow       = null,
+  } = config;
+
+  const container = selection.append("div")
+    .attr("class", "action-feed")
+    .style("height", `${height}px`)
+    .style("overflow-y", "auto")
+    .style("font-family", "Geist Mono, monospace")
+    .style("font-size", "12px");
+
+  let currentData = data;
+
+  function render() {
+    container.selectAll("*").remove();
+
+    const events = [...(currentData.events ?? [])];
+    const keyFn = SORT_KEYS[sortBy] ?? SORT_KEYS.minute;
+    events.sort((a, b) => (sortDir === "desc" ? keyFn(b) - keyFn(a) : keyFn(a) - keyFn(b)));
+
+    const maxAbsSwing = d3.max(events, (e) => Math.abs(swingValue(e))) || 1;
+    const barScale = d3.scaleLinear().domain([0, maxAbsSwing]).range([0, 28]);
+
+    const rows = container.selectAll(".action-feed-row")
+      .data(events, (d) => d.event_id)
+      .join("div")
+      .attr("class", "action-feed-row")
+      .style("display", "flex")
+      .style("align-items", "center")
+      .style("gap", "8px")
+      .style("padding", "4px 8px")
+      .style("cursor", "pointer")
+      .style("background", (d) =>
+        d.event_id === highlightEventId ? "rgba(245,158,11,0.15)" : "transparent"
+      );
+
+    // Shape+fill glyph, replacing the old color-coded left border: shape
+    // encodes the event's layer category (shared with eventScatter.js's
+    // pitch markers via CATEGORY_SHAPE), fill/hollow encodes whether it
+    // succeeded (isSuccessfulEvent).
+    rows.append("span")
+      .attr("class", "action-feed-icon")
+      .style("flex", "0 0 18px")
+      .style("display", "flex")
+      .style("align-items", "center")
+      .style("justify-content", "center")
+      .append("svg")
+      .attr("width", 14)
+      .attr("height", 14)
+      .attr("viewBox", "-7 -7 14 14")
+      .append("path")
+      .attr("d", (d) => d3.symbol().type(CATEGORY_SHAPE[classifyLayer(d)] ?? CATEGORY_SHAPE.other).size(50)())
+      .attr("fill", (d) => (isSuccessfulEvent(d) ? iconColor : "none"))
+      .attr("fill-opacity", 0.85)
+      .attr("stroke", iconColor)
+      .attr("stroke-width", (d) => (isSuccessfulEvent(d) ? 0 : 1.4));
+
+    rows.append("span")
+      .attr("class", "action-feed-minute")
+      .style("flex", "0 0 34px")
+      .style("color", "#8A8578")
+      .text((d) => `${d.minute}'`);
+
+    rows.append("span")
+      .style("flex", "0 0 90px")
+      .style("color", "#171717")
+      .text((d) => d.type);
+
+    rows.append("span")
+      .style("flex", "1 1 auto")
+      .style("color", "#525252")
+      .style("overflow", "hidden")
+      .style("text-overflow", "ellipsis")
+      .style("white-space", "nowrap")
+      .text((d) => d.outcome ?? (d.type === "Pass" || d.type === "Carry" ? "Complete" : ""));
+
+    rows.append("span")
+      .attr("class", "action-feed-value")
+      .style("flex", "0 0 62px")
+      .style("text-align", "right")
+      .style("font-size", "10.5px")
+      .style("white-space", "nowrap")
+      .style("color", (d) => {
+        const v = swingValue(d);
+        return v > 0 ? "#1E3A5F" : v < 0 ? "#9F1239" : "#8A8578";
+      })
+      .text((d) => formatSwing(d));
+
+    const barCells = rows.append("span").style("flex", "0 0 60px");
+    const barSvg = barCells.append("svg").attr("width", 60).attr("height", 14);
+    const barCenter = 30;
+
+    barSvg.append("line")
+      .attr("x1", barCenter).attr("x2", barCenter).attr("y1", 0).attr("y2", 14)
+      .attr("stroke", "#E5E5E5").attr("stroke-width", 1);
+
+    barSvg.append("rect")
+      .attr("y", 3).attr("height", 8)
+      .attr("x", (d) => (swingValue(d) >= 0 ? barCenter : barCenter - barScale(-swingValue(d))))
+      .attr("width", (d) => barScale(Math.abs(swingValue(d))))
+      .attr("fill", (d) => (swingValue(d) >= 0 ? "#1E3A5F" : "#9F1239"));
+
+    rows
+      .on("mouseover", (event, d) => onHoverRow && onHoverRow(d.event_id))
+      .on("mouseout", () => onHoverRow && onHoverRow(null));
+  }
+
+  render();
+
+  /**
+   * Re-render with new events, a new sort, and/or a new inbound highlight.
+   *
+   * @param {Object} [next={}] - Partial update.
+   * @param {Object} [next.data] - Replacement `{ events: [...] }` object.
+   * @param {string} [next.sortBy] - "minute" | "xt".
+   * @param {string} [next.sortDir] - "asc" | "desc".
+   * @param {string} [next.iconColor] - New row-glyph ink color.
+   * @param {string|null} [next.highlightEventId] - New inbound-highlight event_id.
+   */
+  function update(next = {}) {
+    if (next.data !== undefined) currentData = next.data;
+    if (next.sortBy !== undefined) sortBy = next.sortBy;
+    if (next.sortDir !== undefined) sortDir = next.sortDir;
+    if (next.iconColor !== undefined) iconColor = next.iconColor;
+    if (next.highlightEventId !== undefined) highlightEventId = next.highlightEventId;
+    render();
+  }
+
+  return { container, update };
+}
