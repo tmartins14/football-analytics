@@ -232,17 +232,15 @@ export function createHighlightReel(selection, data, config = {}) {
     }
   }
 
-  /** Begin playback: jump to the first moment, then advance every stepDurationMs. */
-  function play() {
-    if (playing) {
-      pause();
-      return;
-    }
-    if (!moments.length) return;
-    playing = true;
-    currentIndex = 0;
-    if (onScrubTo) onScrubTo(moments[0].minute);
-    render();
+  /**
+   * (Re)start the advance-on-interval timer at the current stepDurationMs.
+   * Shared by play() (fresh start) and update({stepDurationMs}) while
+   * already playing (reschedule at the new cadence) — a plain JS
+   * setInterval doesn't retroactively change its own delay, so speeding up
+   * mid-playback means clearing and recreating it, not just reassigning the
+   * variable it reads.
+   */
+  function startTimer() {
     timerId = setInterval(() => {
       const next = currentIndex + 1;
       if (next >= moments.length) {
@@ -255,6 +253,20 @@ export function createHighlightReel(selection, data, config = {}) {
       if (onScrubTo) onScrubTo(moments[currentIndex].minute);
       render();
     }, stepDurationMs);
+  }
+
+  /** Begin playback: jump to the first moment, then advance every stepDurationMs. */
+  function play() {
+    if (playing) {
+      pause();
+      return;
+    }
+    if (!moments.length) return;
+    playing = true;
+    currentIndex = 0;
+    if (onScrubTo) onScrubTo(moments[0].minute);
+    render();
+    startTimer();
   }
 
   /** Stop playback without changing the current index. */
@@ -386,10 +398,19 @@ export function createHighlightReel(selection, data, config = {}) {
    * @param {Object} [next={}] - Partial update.
    * @param {Object} [next.data] - Replacement `{ events: [...] }` object.
    * @param {string} [next.mode] - "highlights" | "all".
-   * @param {number} [next.stepDurationMs] - New cadence for future Play calls.
+   * @param {number} [next.stepDurationMs] - New cadence — if playback is
+   *   currently running, takes effect immediately (the running timer is
+   *   rescheduled, not just the variable it reads); otherwise applies to
+   *   the next play() call. Index/playing state are untouched either way.
    */
   function update(next = {}) {
-    if (next.stepDurationMs !== undefined) stepDurationMs = next.stepDurationMs;
+    if (next.stepDurationMs !== undefined) {
+      stepDurationMs = next.stepDurationMs;
+      if (playing) {
+        stopTimer();
+        startTimer();
+      }
+    }
     if (next.data !== undefined || next.mode !== undefined) {
       stopTimer();
       playing = false;

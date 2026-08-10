@@ -213,6 +213,40 @@ describe("createHighlightReel", () => {
     expect(container.select(".reel-minute").text()).toBe("5'");
   });
 
+  describe("update({stepDurationMs}) (regression: M1, live pace changes)", () => {
+    it("reschedules the already-running timer immediately, not just future play() calls", () => {
+      const onScrubTo = vi.fn();
+      const { play, update } = mount(events, { onScrubTo, stepDurationMs: 1000 });
+      play();
+      onScrubTo.mockClear();
+
+      update({ stepDurationMs: 100 });
+      // If the original 1000ms interval were still ticking (unrescheduled),
+      // nothing would fire within 100ms.
+      vi.advanceTimersByTime(100);
+      expect(onScrubTo).toHaveBeenCalledTimes(1);
+    });
+
+    it("does not start playback when not currently playing", () => {
+      const onScrubTo = vi.fn();
+      const { update } = mount(events, { onScrubTo, stepDurationMs: 1000 });
+      update({ stepDurationMs: 100 });
+      vi.advanceTimersByTime(500);
+      expect(onScrubTo).not.toHaveBeenCalled();
+    });
+
+    it("does not reset the current index or moment selection", () => {
+      const onScrubTo = vi.fn();
+      const { container, play, update } = mount(events, { onScrubTo, stepDurationMs: 1000 });
+      play();
+      vi.advanceTimersByTime(1000); // advance to moment index 1 (minute 20)
+      expect(container.select(".reel-minute").text()).toBe("20'");
+
+      update({ stepDurationMs: 100 });
+      expect(container.select(".reel-minute").text()).toBe("20'");
+    });
+  });
+
   it("renders the empty-state message and no controls when there are no moments", () => {
     const { container } = mount([]);
     expect(container.select(".reel-empty").text()).toBe("No standout moments in the revealed window.");

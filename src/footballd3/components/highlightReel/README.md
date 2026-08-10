@@ -84,8 +84,11 @@ const { play, pause, step } = createHighlightReel(d3.select("#reel-container"), 
 - `container` — the reel's root D3 selection.
 - `update({ data?, mode?, stepDurationMs? })` — re-renders; a new `data` or
   `mode` re-selects moments, resets to index 0, and stops any active
-  playback; `stepDurationMs` alone just changes the cadence future `play()`
-  calls use.
+  playback. `stepDurationMs` alone doesn't touch index/playing state — if
+  playback is currently running it reschedules the running timer to the new
+  cadence immediately (a plain `setInterval` can't retroactively change its
+  own delay, so this clears and restarts it rather than just reassigning
+  the variable it reads); otherwise it applies to the next `play()` call.
 - `play()` — begin playback (or stop it, if already playing).
 - `pause()` — stop playback without changing the current index.
 - `step(delta)` — stop any playback and move the current index by `delta`
