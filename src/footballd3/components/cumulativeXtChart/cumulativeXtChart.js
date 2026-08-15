@@ -46,14 +46,14 @@ function getTooltip() {
       position:      "fixed",
       pointerEvents: "none",
       display:       "none",
-      background:    "#FAF7F0",
-      border:        "1px solid #E5E5E5",
+      background:    "var(--elevated, #FAF7F0)",
+      border:        "1px solid var(--border, #E5E5E5)",
       borderRadius:  "2px",
       padding:       "8px 10px",
       fontFamily:    "Geist Mono, monospace",
       fontSize:      "12px",
       lineHeight:    "1.6",
-      color:         "#171717",
+      color:         "var(--text, #171717)",
       whiteSpace:    "nowrap",
       zIndex:        "100",
     });
@@ -229,7 +229,7 @@ export function createCumulativeXtChart(selection, data, config = {}) {
     // ── Background ───────────────────────────────────────────────────────────
     g.append("rect")
       .attr("width", innerW).attr("height", innerH)
-      .attr("fill", "#FAF7F0").attr("rx", 2);
+      .attr("fill", "var(--elevated, #FAF7F0)").attr("rx", 2);
 
     // Zero line, when the domain dips negative (a player can have net-negative
     // cumulative xT if their actions moved play backward more than forward).
@@ -237,7 +237,7 @@ export function createCumulativeXtChart(selection, data, config = {}) {
       g.append("line")
         .attr("x1", 0).attr("y1", xtScale(0))
         .attr("x2", innerW).attr("y2", xtScale(0))
-        .attr("stroke", "#E5E5E5").attr("stroke-width", 1);
+        .attr("stroke", "var(--border, #E5E5E5)").attr("stroke-width", 1);
     }
 
     // Half-time divider at minute 45.
@@ -245,11 +245,11 @@ export function createCumulativeXtChart(selection, data, config = {}) {
       const htX = timeScale(45);
       g.append("line")
         .attr("x1", htX).attr("y1", 0).attr("x2", htX).attr("y2", innerH)
-        .attr("stroke", "#D4D4D4").attr("stroke-width", 1).attr("stroke-dasharray", "4,4");
+        .attr("stroke", "var(--faint, #D4D4D4)").attr("stroke-width", 1).attr("stroke-dasharray", "4,4");
       g.append("text")
         .attr("x", htX + 3).attr("y", innerH - 4)
         .attr("font-family", "Geist Mono, monospace").attr("font-size", "9px")
-        .attr("fill", "#A3A3A3").text("HT");
+        .attr("fill", "var(--faint, #A3A3A3)").text("HT");
     }
 
     // ── Step line ────────────────────────────────────────────────────────────
@@ -316,7 +316,7 @@ export function createCumulativeXtChart(selection, data, config = {}) {
       g.append("circle").attr("class", "cxt-shot-chip")
         .attr("cx", cx).attr("cy", cy).attr("r", 8)
         .attr("fill", shotColor).attr("fill-opacity", 0.9)
-        .attr("stroke", "#FAF7F0").attr("stroke-width", 1.5)
+        .attr("stroke", "var(--elevated, #FAF7F0)").attr("stroke-width", 1.5)
         .on("mouseover", () => {
           const tooltip = getTooltip();
           tooltip.innerHTML =
@@ -356,35 +356,35 @@ export function createCumulativeXtChart(selection, data, config = {}) {
       const x = timeScale(t);
       g.append("line")
         .attr("x1", x).attr("y1", innerH).attr("x2", x).attr("y2", innerH + 5)
-        .attr("stroke", "#D4D4D4").attr("stroke-width", 1);
+        .attr("stroke", "var(--faint, #D4D4D4)").attr("stroke-width", 1);
       g.append("text")
         .attr("x", x).attr("y", innerH + 16)
         .attr("text-anchor", "middle")
         .attr("font-family", "Geist Mono, monospace").attr("font-size", "10px")
-        .attr("fill", "#525252").text(`${t}'`);
+        .attr("fill", "var(--muted, #525252)").text(`${t}'`);
     });
 
     g.append("line")
       .attr("x1", 0).attr("y1", innerH).attr("x2", innerW).attr("y2", innerH)
-      .attr("stroke", "#E5E5E5").attr("stroke-width", 1);
+      .attr("stroke", "var(--border, #E5E5E5)").attr("stroke-width", 1);
     g.append("line")
       .attr("x1", 0).attr("y1", 0).attr("x2", 0).attr("y2", innerH)
-      .attr("stroke", "#E5E5E5").attr("stroke-width", 1);
+      .attr("stroke", "var(--border, #E5E5E5)").attr("stroke-width", 1);
 
     const xtTicks = xtScale.ticks(4).filter(v => v !== 0 && v >= extentLow && v <= extentHigh);
     xtTicks.forEach(v => {
       const y = xtScale(v);
       g.append("line")
         .attr("x1", -4).attr("y1", y).attr("x2", 0).attr("y2", y)
-        .attr("stroke", "#D4D4D4").attr("stroke-width", 1);
+        .attr("stroke", "var(--faint, #D4D4D4)").attr("stroke-width", 1);
       g.append("text")
         .attr("x", -7).attr("y", y + 1)
         .attr("text-anchor", "end").attr("dominant-baseline", "middle")
         .attr("font-family", "Geist Mono, monospace").attr("font-size", "9px")
-        .attr("fill", "#A3A3A3").text(v.toFixed(2));
+        .attr("fill", "var(--faint, #A3A3A3)").text(v.toFixed(2));
       g.append("line")
         .attr("x1", 0).attr("y1", y).attr("x2", innerW).attr("y2", y)
-        .attr("stroke", "#E5E5E5").attr("stroke-width", 0.75).attr("stroke-dasharray", "3,4");
+        .attr("stroke", "var(--border, #E5E5E5)").attr("stroke-width", 0.75).attr("stroke-dasharray", "3,4");
     });
   }
 
@@ -416,7 +416,7 @@ export function createCumulativeXtChart(selection, data, config = {}) {
 
     const crosshair = g.append("line").attr("class", "cxt-crosshair")
       .attr("y1", 0).attr("y2", innerH)
-      .attr("stroke", "#525252").attr("stroke-width", 1)
+      .attr("stroke", "var(--muted, #525252)").attr("stroke-width", 1)
       .attr("stroke-dasharray", "3,3").attr("stroke-opacity", 0.5)
       .attr("pointer-events", "none").attr("display", "none");
 

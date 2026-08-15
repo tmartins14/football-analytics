@@ -90,9 +90,9 @@ function getTooltip() {
     _tooltip = document.createElement("div");
     Object.assign(_tooltip.style, {
       position: "fixed", pointerEvents: "none", display: "none",
-      background: "#FAF7F0", border: "1px solid #E5E5E5", borderRadius: "2px",
+      background: "var(--elevated, #FAF7F0)", border: "1px solid var(--border, #E5E5E5)", borderRadius: "2px",
       padding: "8px 10px", fontFamily: "Geist Mono, monospace", fontSize: "12px",
-      lineHeight: "1.6", color: "#171717", whiteSpace: "nowrap", zIndex: "1000",
+      lineHeight: "1.6", color: "var(--text, #171717)", whiteSpace: "nowrap", zIndex: "1000",
     });
     document.body.appendChild(_tooltip);
   }
@@ -236,29 +236,29 @@ export function createGoalMouthShotPanel(selection, data, config = {}) {
       legend.append("circle").attr("cx", 6).attr("cy", 6).attr("r", 5)
         .attr("fill", "none").attr("stroke", onTargetColor).attr("stroke-width", 1.5);
       legend.append("text").attr("x", 16).attr("y", 10).attr("font-size", "10px")
-        .attr("font-family", "Geist Mono, monospace").attr("fill", "#525252").text("on target");
+        .attr("font-family", "Geist Mono, monospace").attr("fill", "var(--muted, #525252)").text("on target");
 
       legend.append("circle").attr("cx", 88).attr("cy", 6).attr("r", 5)
         .attr("fill", "none").attr("stroke", onTargetColor).attr("stroke-width", 1.5)
         .attr("stroke-dasharray", "2,2");
       legend.append("text").attr("x", 98).attr("y", 10).attr("font-size", "10px")
-        .attr("font-family", "Geist Mono, monospace").attr("fill", "#525252").text("off target");
+        .attr("font-family", "Geist Mono, monospace").attr("fill", "var(--muted, #525252)").text("off target");
 
       legend.append("circle").attr("cx", 190).attr("cy", 6).attr("r", 5)
-        .attr("fill", "none").attr("stroke", "#8A8578").attr("stroke-width", 1);
+        .attr("fill", "none").attr("stroke", "var(--faint, #6B6656)").attr("stroke-width", 1);
       legend.append("text").attr("x", 200).attr("y", 10).attr("font-size", "10px")
-        .attr("font-family", "Geist Mono, monospace").attr("fill", "#525252").text("○ = xG");
+        .attr("font-family", "Geist Mono, monospace").attr("fill", "var(--muted, #525252)").text("○ = xG");
     }
 
     // Off-target strip.
     g.append("rect")
       .attr("x", frameLeft - 20).attr("width", frameWidth + 40)
       .attr("y", legendHeight).attr("height", stripHeight - 6)
-      .attr("fill", "none").attr("stroke", "#E5E5E5").attr("stroke-dasharray", "3,3");
+      .attr("fill", "none").attr("stroke", "var(--border, #E5E5E5)").attr("stroke-dasharray", "3,3");
     g.append("text")
       .attr("x", frameLeft - 16).attr("y", legendHeight + 14)
       .attr("font-size", "9px").attr("font-family", "Geist Mono, monospace")
-      .attr("fill", "#8A8578").text("OFF TARGET");
+      .attr("fill", "var(--faint, #6B6656)").text("OFF TARGET");
 
     // Ground line + shadow — read as the goal line the frame sits on.
     const groundY = frameTop + frameHeight;
@@ -266,12 +266,12 @@ export function createGoalMouthShotPanel(selection, data, config = {}) {
       .attr("class", "gmsp-ground-shadow")
       .attr("cx", frameLeft + frameWidth / 2).attr("cy", groundY + 3)
       .attr("rx", frameWidth / 2 + 14).attr("ry", 4)
-      .attr("fill", "#8A8578").attr("fill-opacity", 0.15);
+      .attr("fill", "var(--faint, #6B6656)").attr("fill-opacity", 0.15);
     g.append("line")
       .attr("class", "gmsp-ground-line")
       .attr("x1", frameLeft - 18).attr("x2", frameLeft + frameWidth + 18)
       .attr("y1", groundY).attr("y2", groundY)
-      .attr("stroke", "#8A8578").attr("stroke-width", 1.5);
+      .attr("stroke", "var(--faint, #6B6656)").attr("stroke-width", 1.5);
 
     // Side net panels — receding wedges from each front post back to an
     // inset, raised back corner, giving the frame visual depth instead of
@@ -312,7 +312,7 @@ export function createGoalMouthShotPanel(selection, data, config = {}) {
       .attr("class", "gmsp-frame-bg")
       .attr("x", frameLeft).attr("y", frameTop)
       .attr("width", frameWidth).attr("height", frameHeight)
-      .attr("fill", "#FAF7F0");
+      .attr("fill", "var(--elevated, #FAF7F0)");
     g.append("rect")
       .attr("class", "gmsp-frame-mesh")
       .attr("x", frameLeft).attr("y", frameTop)
