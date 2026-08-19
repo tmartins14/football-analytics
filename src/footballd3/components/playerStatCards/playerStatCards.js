@@ -230,23 +230,32 @@ export function createPlayerStatCards(selection, data, config = {}) {
       .data(CARD_DEFS, (d) => d.key)
       .join("div")
       .attr("class", "stat-card")
-      .style("border", "1px solid #E5E5E5")
+      .style("border", "1px solid var(--border, #E5E5E5)")
       .style("border-radius", "8px")
       .style("padding", "10px 12px")
+      .style("text-align", "center")
       .style("cursor", "pointer");
 
     cards.append("div")
       .attr("class", "stat-card-label")
       .style("font-size", "9px")
       .style("letter-spacing", "0.04em")
-      .style("color", "#8A8578")
+      // Was #8A8578 — the pre-contrast-fix faint value (tylermartins.com's
+      // own Ticket 3c moved off this exact hex sitewide for failing WCAG AA;
+      // this vendored file just never got the memo). Also var()-ified like
+      // the border/value colors below, same reasoning as goalMouthShotPanel.js
+      // / cumulativeXtChart.js's dark-mode fix: this file has no theme
+      // awareness of its own, so a hardcoded light-only hex reads wrong (and,
+      // for this specific value, low-contrast even in light mode) regardless
+      // of the page's actual theme.
+      .style("color", "var(--faint, #6B6656)")
       .text((d) => d.label);
 
     cards.append("div")
       .attr("class", "stat-card-value")
       .style("font-size", "20px")
       .style("font-weight", "600")
-      .style("color", "#171717")
+      .style("color", "var(--text, #171717)")
       .text((d) => d.render(metrics));
 
     cards
