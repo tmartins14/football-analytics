@@ -1,13 +1,13 @@
 import * as d3 from "d3";
 
-import { createPitch }         from "../../src/footballd3/components/pitch/pitch.js";
-import { createFormation }     from "../../src/footballd3/components/formation/formation.js";
-import { createPassNetwork }   from "../../src/footballd3/components/passNetwork/passNetwork.js";
-import { createTeamShape }     from "../../src/footballd3/components/teamShape/teamShape.js";
-import { createMatchStats }    from "../../src/footballd3/components/matchStats/matchStats.js";
-import { createMomentumChart } from "../../src/footballd3/components/momentumChart/momentumChart.js";
-import { createPlayAnimation } from "../../src/footballd3/components/playAnimation/playAnimation.js";
-import { createShotMap }       from "../../src/footballd3/components/shotMap/shotMap.js";
+import { createPitch }         from "../../libs/footballd3/components/pitch/pitch.js";
+import { createFormation }     from "../../libs/footballd3/components/formation/formation.js";
+import { createPassNetwork }   from "../../libs/footballd3/components/passNetwork/passNetwork.js";
+import { createTeamShape }     from "../../libs/footballd3/components/teamShape/teamShape.js";
+import { createMatchStats }    from "../../libs/footballd3/components/matchStats/matchStats.js";
+import { createMomentumChart } from "../../libs/footballd3/components/momentumChart/momentumChart.js";
+import { createPlayAnimation } from "../../libs/footballd3/components/playAnimation/playAnimation.js";
+import { createShotMap }       from "../../libs/footballd3/components/shotMap/shotMap.js";
 
 const DATA = "/data/euro-2024/3943043";
 const PITCH_PX = 4; // pxPerYard for team-column pitches
@@ -30,7 +30,7 @@ async function loadAll() {
     fetch(`${DATA}/team_shape_england.json`).then(r => r.json()),
     fetch(`${DATA}/momentum.json`).then(r => r.json()),
     fetch(`${DATA}/goal_animation.json`).then(r => r.json()),
-    fetch("/src/footballd3/sample_data/team_colors.json").then(r => r.json()),
+    fetch("/libs/footballd3/sample_data/team_colors.json").then(r => r.json()),
   ]);
   return { shots, spainPN, englandPN, matchStats, spainForm, englandForm, spainTS, englandTS, momentum, goalAnim, teamColors };
 }

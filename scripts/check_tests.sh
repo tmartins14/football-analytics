@@ -33,7 +33,7 @@ else
   fail=1
 fi
 
-# 2. JS/D3 tests (vitest) — co-located *.test.js under src/footballd3/components/.
+# 2. JS/D3 tests (vitest) — co-located *.test.js under libs/footballd3/components/.
 if command -v npx >/dev/null 2>&1; then
   if ! npx vitest run 1>&2; then
     err "✗ JS/D3 tests failed  (detail: npx vitest run --reporter=verbose)"

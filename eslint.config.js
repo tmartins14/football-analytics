@@ -2,7 +2,7 @@ import jsdoc from "eslint-plugin-jsdoc";
 
 export default [
   {
-    files: ["src/footballd3/**/*.js"],
+    files: ["libs/footballd3/**/*.js"],
     languageOptions: { ecmaVersion: "latest", sourceType: "module" },
     plugins: { jsdoc },
     rules: {
