@@ -22,8 +22,15 @@ Written and maintained by Tyler Martins, data engineer based in Ontario.
 - **`research/`** — open research questions, methodology notes, and
   early-stage research ideas.
 
-- **`football_analytics/`** — a small Python package with shared utilities
-  (data loaders, pitch plotting).
+- **`libs/statsbomb/`** — the Python data layer: extracts StatsBomb open
+  data into the JSON the visualizations consume.
+
+- **`libs/footballd3/`** — a custom D3 component library for the
+  visualizations (shot maps, pass networks, formations, and more).
+
+- **`apps/`** — consumers of the libraries above that are their own
+  runnable/deployable unit, rather than library code or analysis.
+  Currently empty.
 
 - **`data/`** — documentation of data sources used in this repo. Raw and
   processed data are not committed; see `data/README.md` for retrieval
