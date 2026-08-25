@@ -75,7 +75,7 @@ python3 -m http.server 8000
 Then open:
 
 ```
-http://localhost:8000/src/footballd3/dashboards/match-analysis/index.html
+http://localhost:8000/libs/footballd3/dashboards/match-analysis/index.html
 ```
 
 To extract data for additional matches, use the batch script:

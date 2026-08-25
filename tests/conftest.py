@@ -1,6 +1,6 @@
 """Shared pytest fixtures for the statsbomb test suite.
 
-Adds src/ to sys.path (mirrors scripts/extract_euro2024.py's own approach) so
+Adds libs/ to sys.path (mirrors scripts/extract_euro2024.py's own approach) so
 tests can `import statsbomb` without the package being pip-installed.
 
 raw_events/raw_lineups are session-scoped: statsbombpy already wraps sb.* calls in
@@ -14,7 +14,7 @@ run, not once per test that needs match data.
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).parents[1] / "src"))
+sys.path.insert(0, str(Path(__file__).parents[1] / "libs"))
 
 import pytest
 from statsbombpy import sb

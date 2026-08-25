@@ -29,7 +29,7 @@ not "documented well."
   a docstring. `__init__.py` package-marker files are exempt by policy (see below).
 - **JS / D3:** every exported function or component has a JSDoc block with a
   description, `@param` for each parameter, and `@returns`.
-- **Each component directory** under `src/footballd3/components/` has a `README.md`.
+- **Each component directory** under `libs/footballd3/components/` has a `README.md`.
 
 ## The moving parts
 
@@ -50,7 +50,7 @@ The script itself checks nothing — it runs three real tools and collects their
    should have a docstring vs. how many do, and fails below the configured threshold
    (100%). Policy lives in `pyproject.toml`.
 2. **eslint + eslint-plugin-jsdoc (JS).** eslint is a linter; the plugin teaches it
-   JSDoc rules; `eslint.config.js` switches those rules on for `src/footballd3/**`.
+   JSDoc rules; `eslint.config.js` switches those rules on for `libs/footballd3/**`.
    Note: the plugin is inert until a rule references it — installing it does nothing
    on its own.
 3. **README presence.** A shell loop asserting each component directory contains a
@@ -88,15 +88,16 @@ PATH yet — reopen the terminal or restart the editor before assuming it failed
 variables at the top of the script:
 
 ```
-PY_PKG="src"                              # Python package to check
-JS_DIR="src/footballd3"                   # JS components directory
-COMPONENT_DIRS=( "src/footballd3/components/"* )   # dirs that must each have a README
+PY_PKG="libs/statsbomb"                   # Python package to check
+JS_DIR="libs/footballd3"                   # JS components directory
+COMPONENT_DIRS=( "libs/footballd3/components/"* )   # dirs that must each have a README
 ```
 
 If you relocate the Python source or the D3 library, update these — and the
-`files` glob in `eslint.config.js` (`src/footballd3/**/*.js`). A future cleanup worth
-doing is moving the JS library out of `src/` (which is the Python root) to its own
-top-level directory, so the two languages stop bleeding into each other.
+`files` glob in `eslint.config.js` (`libs/footballd3/**/*.js`). The Python and JS
+libraries used to share one `src/` directory (the Python root doubling as the JS
+library's parent); they now live side by side under `libs/` instead, so the two
+languages no longer bleed into each other.
 
 ## Configuration policy — one place, not two
 
@@ -155,7 +156,7 @@ tool failed to find it." The object was found; it just isn't documented.
   missing. Linters are literal; "close enough" fails.
 - **`/**` vs `/*`.** Only a block opening with `/**` (two asterisks) counts as JSDoc.
 - **"Document it" vs. "delete it."** A tool flagging a missing docstring has no
-  judgment about whether the file should exist. The stray `src/footballd3/__init__.py`
+  judgment about whether the file should exist. The stray `libs/footballd3/__init__.py`
   (a Python marker inside a JS library) was flagged as undocumented; the right fix was
   deleting it, not documenting it. You supply the judgment.
 - **`"type": "module"`.** The ESM `eslint.config.js` only loads if `package.json`

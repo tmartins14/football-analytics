@@ -40,11 +40,11 @@ tests/
 ```
 
 **Why a mirrored `tests/` tree, not co-located `test_*.py` next to each module?**
-This repo's Python package (`src/statsbomb/`) is flat — one module per extractor,
+This repo's Python package (`libs/statsbomb/`) is flat — one module per extractor,
 no per-module subfolders — so there's no natural "component folder" to co-locate
 into the way footballd3 has. A top-level `tests/` tree is the standard pytest
 convention for a flat package, and it's also excluded from `interrogate`'s
-docstring gate (`PY_PKG="src"` in `check_docs.sh` doesn't walk `tests/`), which is
+docstring gate (`PY_PKG="libs/statsbomb"` in `check_docs.sh` doesn't walk `tests/`), which is
 correct — test files document intent through their assertions and names, not
 module docstrings.
 
@@ -78,26 +78,26 @@ across modules this way (`extract_player_events.py` imports `_map_to_zone` from
 Tests follow the same established pattern rather than only testing through public
 entry points.
 
-## JS: co-located `*.test.js` under `src/footballd3/components/`
+## JS: co-located `*.test.js` under `libs/footballd3/components/`
 
 ```
-src/footballd3/components/formation/
+libs/footballd3/components/formation/
   formation.js
   formation.d.ts
   formation.test.js   <- new
   README.md
 ```
 
-**Why co-located, the opposite choice from Python.** `src/footballd3/components/`
+**Why co-located, the opposite choice from Python.** `libs/footballd3/components/`
 is already organized one-folder-per-component (the same folder `check_docs.sh`'s
 README-presence check walks). A test file is one more file in that same folder,
 matching the existing convention, rather than a parallel mirror tree the way
 Python's flat package needed.
 
 **Tooling: vitest + jsdom.** `vitest.config.js` (repo root, alongside
-`eslint.config.js`) points at `src/footballd3/components/**/*.test.js` with
+`eslint.config.js`) points at `libs/footballd3/components/**/*.test.js` with
 `environment: "jsdom"`. `vitest`/`jsdom` are devDependencies of the **root**
-`package.json` (not `src/footballd3/package.json`) — matching where
+`package.json` (not `libs/footballd3/package.json`) — matching where
 `eslint`/`eslint-plugin-jsdoc` already live, deliberately keeping the *published*
 npm package's own `package.json` free of dev-only tooling.
 

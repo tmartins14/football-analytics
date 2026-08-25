@@ -16,12 +16,12 @@ set -uo pipefail
 shopt -s nullglob
 
 # --- set these to your ACTUAL layout ----------------------------------------
-PY_PKG="src"                         # Python package to check docstring coverage on
-JS_DIR="src/footballd3"                  # <-- set to your real D3 components directory
+PY_PKG="libs/statsbomb"              # Python package to check docstring coverage on
+JS_DIR="libs/footballd3"                  # <-- set to your real D3 components directory
 PY_RUNNER="uv run"                   # how to invoke Python tools (uv, per stack)
 # Directories that must each contain a README.md. Point these at real component
 # directories — not every subpackage. Adjust the globs to your structure:
-COMPONENT_DIRS=( "src/footballd3/components/"* )
+COMPONENT_DIRS=( "libs/footballd3/components/"* )
 # ----------------------------------------------------------------------------
 
 fail=0

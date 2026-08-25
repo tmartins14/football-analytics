@@ -32,7 +32,7 @@ import traceback
 from pathlib import Path
 
 # Allow running from the repo root without installing the package.
-sys.path.insert(0, str(Path(__file__).parents[1] / "src"))
+sys.path.insert(0, str(Path(__file__).parents[1] / "libs"))
 
 from statsbombpy import sb
 
