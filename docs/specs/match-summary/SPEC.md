@@ -13,7 +13,7 @@ formations, shape).
 
 ## Scope
 
-- New module under `src/statsbomb/` (name TBD, e.g. `generate_match_summary.py`)
+- New module under `libs/statsbomb/` (name TBD, e.g. `generate_match_summary.py`)
   that calls a model to produce both sections for a given `match_id`.
 - Exact StatsBomb data feeding each section (team-level stats, player-level
   events, formation, shape, etc.) is **out of scope for this SPEC**. It gets
