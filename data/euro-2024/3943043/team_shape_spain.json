@@ -979,6 +979,8 @@
     "off_ball_grid_cols": 24,
     "off_ball_grid_rows": 16,
     "phase_filter": "open_play_only",
-    "coordinate_system": "statsbomb_120x80_normalised_attack_right"
+    "coordinate_system": "statsbomb_120x80_normalised_attack_right",
+    "coordinate_note": "Coordinates are normalised so the team always attacks right (increasing x). Raw StatsBomb events are flipped (x\u2192120-x, y\u219280-y) in periods where the team attacks left.",
+    "camera_caveat": "360 frames follow the ball; the visible subset of out-of-possession positions is biased toward areas near the ball. The camera artifact and the real defensive shape point the same direction \u2014 they cannot be cleanly separated."
   }
 }

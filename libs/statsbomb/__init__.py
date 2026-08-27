@@ -25,6 +25,7 @@ from .extract_xt import extract_xt
 from .extract_momentum import extract_momentum
 from .extract_goal_animation import extract_goal_animation, extract_play_animation
 from .extract_match_stats import extract_match_stats
+from .generate_match_summary import generate_match_summary
 
 __all__ = [
     "extract_shots",
@@ -42,4 +43,5 @@ __all__ = [
     "extract_goal_animation",
     "extract_play_animation",
     "extract_match_stats",
+    "generate_match_summary",
 ]
