@@ -1,0 +1,105 @@
+{
+  "outcome": {
+    "headline": "Spain edged England 2-1 in the Euro 2024 final, dominating possession and shot volume behind a dynamic front line that carried the game to a late winner.",
+    "key_stats": [
+      {
+        "label": "Final Score",
+        "value": "Spain 2 - 1 England",
+        "source_field": "match_stats.home.score & match_stats.away.score"
+      },
+      {
+        "label": "Shots",
+        "value": "Spain 16 - England 9",
+        "source_field": "match_stats.rows[0].home_value / away_value"
+      },
+      {
+        "label": "Possession",
+        "value": "Spain 62.2% - England 37.8%",
+        "source_field": "match_stats.rows[2].home_value / away_value"
+      },
+      {
+        "label": "xG",
+        "value": "Spain 1.79 - England 0.73",
+        "source_field": "match_stats.rows[7].home_value / away_value"
+      },
+      {
+        "label": "Passes",
+        "value": "Spain 592 - England 323",
+        "source_field": "match_stats.rows[8].home_value / away_value"
+      },
+      {
+        "label": "Pass Accuracy",
+        "value": "Spain 87.5% - England 78.6%",
+        "source_field": "match_stats.rows[9].home_value / away_value"
+      },
+      {
+        "label": "Corners",
+        "value": "Spain 10 - England 2",
+        "source_field": "match_stats.rows[3].home_value / away_value"
+      }
+    ],
+    "standout_performers": [
+      {
+        "player": "Aymeric Laporte",
+        "team": "Spain",
+        "reason": "Led Spain's buildup with 48 completed passes in the first half alone and repeatedly launched progressive line-breaking passes and carries from left centre-back, including a 56-yard progressive pass in the 46th minute.",
+        "source_field": "pass_network.home.windows[0].nodes[0].passes"
+      },
+      {
+        "player": "Robin Le Normand",
+        "team": "Spain",
+        "reason": "Tied for most passes on the pitch in the opening half (48) and produced several progressive passes advancing play, including a 55.96-yard progressive ball in the 48th minute.",
+        "source_field": "pass_network.home.windows[0].nodes[7].passes"
+      },
+      {
+        "player": "Daniel Carvajal",
+        "team": "Spain",
+        "reason": "Heavily involved down the right, completing 36 passes in the first 45 minutes and combining repeatedly with Lamine Yamal.",
+        "source_field": "pass_network.home.windows[0].nodes[1].passes"
+      },
+      {
+        "player": "Jude Bellingham",
+        "team": "England",
+        "reason": "England's most heavily involved attacking midfielder, completing 18 passes in the starting XI window and linking defense to attack, including a progressive pass to Harry Kane.",
+        "source_field": "pass_network.away.windows[0].nodes[5].passes"
+      },
+      {
+        "player": "Ollie Watkins",
+        "team": "England",
+        "reason": "Introduced as a 60th-minute substitute for Harry Kane, changing England's attacking focal point for the remainder of the match.",
+        "source_field": "substitutes.teams.England[1]"
+      }
+    ]
+  },
+  "tactics": {
+    "prose": "Both sides set up in a 4-2-3-1, with Spain building around Rodri and Fabi\u00e1n Ruiz as the double pivot behind Dani Olmo, and England mirroring the shape with Declan Rice and Kobbie Mainoo screening in front of the back four and Foden operating centrally behind Kane. Spain's on-ball centroid (62.2, 41.4) sat marginally deeper and more central than England's (69.8, 39.2), whose average shape pushed further up the pitch, consistent with England's higher defensive block and deeper territorial occupation into Spain's half. Spain's first-half hull stretched from Unai Sim\u00f3n in the defensive third out to a front line featuring Cucurella, Morata and Lamine Yamal high and wide, showing a possession structure built through the back three of Le Normand, Laporte and the full-backs before progressing into the front four. England's own hull in the opening period ran from Pickford through Stones and Guehi out to Kane and the front line, with Walker pushed high and central as an auxiliary presence alongside Mainoo and Foden.\n\nSpain's passing network in the first period was dominated by the central defensive axis: Le Normand and Laporte combined 31 times between them, and Rodri and Carvajal both featured as heavy-volume nodes (29 and 36 passes respectively), indicating build-up circulated through the back line and the right side before reaching Fabi\u00e1n Ruiz, Nico Williams and Morata further forward. England's opening-period hub was similarly centred on their back three plus Rice, with Stones-Pickford (8), Rice-Bellingham (8) and Walker-Stones (7) the busiest connections, while Saka and Foden linked repeatedly with Walker and Mainoo down the right, showing England's progression skewed toward that side.\n\nSpain made four changes across the second half and stoppage time \u2014 Zubimendi for Rodri at the interval, Oyarzabal for Morata just after the hour, Nacho for Le Normand late on, and Merino for Lamine Yamal in the closing minutes \u2014 while retaining the 4-2-3-1 shape throughout until a brief 89th-minute window. England altered personnel three times (Watkins for Kane, Palmer for Mainoo, Toney for Foden) and shifted formation late, moving from 4-2-3-1 to a 4-1-2-1-2 in the 89th minute with Rice as the lone holding midfielder and Bellingham and Saka pushed into a flat central midfield two alongside Toney and Watkins up front. In the 69'\u201389' window, England's passing hub shifted toward Bellingham and the newly introduced Cole Palmer, who combined four times, with Saka and Walker still prominent down the right; Spain's late-window network became sparser and more fragmented, with Fabi\u00e1n Ruiz, Nacho and Daniel Olmo forming a reduced central relay as the side management-heavy closing periods produced fewer sustained combinations for either team."
+  },
+  "metadata": {
+    "match_id": 3943043,
+    "home_team": "Spain",
+    "away_team": "England",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Spain vs England",
+    "model": "claude-sonnet-5",
+    "source_files": {
+      "match_stats": "match_stats.json",
+      "substitutes": "substitutes.json",
+      "formation": {
+        "home": "formation_spain.json",
+        "away": "formation_england.json"
+      },
+      "team_shape": {
+        "home": "team_shape_spain.json",
+        "away": "team_shape_england.json"
+      },
+      "progressive_map": {
+        "home": "progressive_map_spain.json",
+        "away": "progressive_map_england.json"
+      },
+      "pass_network": {
+        "home": "pass_network_Spain.json",
+        "away": "pass_network_England.json"
+      }
+    }
+  }
+}
