@@ -15,8 +15,8 @@ Three kinds of thing, one repo:
 2. **`apps/`** — things that consume the libs and are their own
    deployable/runnable unit. Currently empty; this is where AI-engineering
    features go.
-3. **Everything else** — analysis work, content, and one legacy app that
-   predates the `apps/` convention.
+3. **Everything else** — analysis work, content, docs, and one legacy app
+   that predates the `apps/` convention.
 
 ## Top-level map
 
@@ -28,10 +28,14 @@ Three kinds of thing, one repo:
 | `pages/match-analysis/` | Legacy static HTML/JS dashboard. Predates `apps/`; not being migrated. |
 | `analyses/` | 25 sequenced practice questions + a couple of standalone mini-projects (notebook + writeup each). Consumes `libs/statsbomb`. |
 | `analyses/statsbomb/` | Two **exploratory notebooks**, not the library. Name collision with `libs/statsbomb/` is intentional-ish (predates the library extraction) — don't confuse the two. |
+| `analyses/sandbox/` | Ad hoc, throwaway notebook work. Not sequenced, not a mini-project. |
 | `data/euro-2024/{match_id}/` | Committed **extractor output** (not raw data), produced by `scripts/extract_euro2024.py`. See "Data flow" below. |
 | `scripts/extract_euro2024.py` | The one script that populates `data/euro-2024/`. |
 | `scripts/check_docs.sh`, `scripts/check_tests.sh` | The docs/test gates — see `docs/tooling.md` / `docs/testing.md`. |
+| `docs/tooling.md`, `docs/testing.md` | Rationale for the docs gate and the test gate, respectively. |
+| `docs/specs/` | Feature specs (e.g. `match-summary/`), written before the code that implements them. |
 | `research/`, `literature_notes/`, `match_reactions/` | Pure content (notes, writeups). No code. |
+| `football-analytics-notes/` | Obsidian vault — personal working notes. Separate from `research/`/`literature_notes/`, which are repo-tracked writeups; this is scratch thinking. |
 | `set_piece_analytics/` | Scaffold — every README in it is empty. Not built out yet. |
 | `scratch/` | Early precursor notebooks, superseded by `analyses/practice_questions/`. |
 | `tests/` | pytest, for `libs/statsbomb` only (mirrored `unit`/`integration` tree — see `docs/testing.md`). `libs/footballd3` tests are co-located `*.test.js` files instead. |
@@ -110,7 +114,7 @@ here.
 
 ## Cross-repo context
 
-This repo sits inside a local-only npm-workspace superdirectory
+This repo sits inside a local-only directory of portfolio projects
 (`portfolio/`, not itself a git repo) alongside the separate
 `tylermartins.com` repo. `tylermartins.com` depends on `libs/footballd3`
 two ways: a local workspace symlink in dev, and the published npm package
