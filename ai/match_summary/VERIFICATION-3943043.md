@@ -2,8 +2,8 @@
 
 Manual read-through per SPEC.md's pass/fail signal: read the generated summary
 next to the source JSON and confirm nothing is invented. Generated with
-`uv run python -m statsbomb.generate_match_summary` (model: `claude-sonnet-5`).
-Full output: `data/euro-2024/3943043/match_summary.json`.
+`uv run python -m ai.match_summary.generate_match_summary` (model: `claude-sonnet-5`).
+Full output: `ai/match_summary/output/3943043/match_summary.json`.
 
 ## Structured-outcome-section check
 

@@ -44,7 +44,7 @@ This repo's Python package (`libs/statsbomb/`) is flat — one module per extrac
 no per-module subfolders — so there's no natural "component folder" to co-locate
 into the way footballd3 has. A top-level `tests/` tree is the standard pytest
 convention for a flat package, and it's also excluded from `interrogate`'s
-docstring gate (`PY_PKG="libs/statsbomb"` in `check_docs.sh` doesn't walk `tests/`), which is
+docstring gate (`PY_PKGS=("libs/statsbomb" "ai")` in `check_docs.sh` doesn't walk `tests/`), which is
 correct — test files document intent through their assertions and names, not
 module docstrings.
 

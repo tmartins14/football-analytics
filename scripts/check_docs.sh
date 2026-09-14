@@ -16,7 +16,7 @@ set -uo pipefail
 shopt -s nullglob
 
 # --- set these to your ACTUAL layout ----------------------------------------
-PY_PKG="libs/statsbomb"              # Python package to check docstring coverage on
+PY_PKGS=("libs/statsbomb" "ai")       # Python packages to check docstring coverage on
 JS_DIR="libs/footballd3"                  # <-- set to your real D3 components directory
 PY_RUNNER="uv run"                   # how to invoke Python tools (uv, per stack)
 # Directories that must each contain a README.md. Point these at real component
@@ -29,8 +29,8 @@ err() { printf '%s\n' "$*" >&2; }
 
 # 1. Python docstrings — modules + public functions/classes, required at 100%.
 if command -v "${PY_RUNNER%% *}" >/dev/null 2>&1; then
-  if ! $PY_RUNNER interrogate -q --fail-under 100 "$PY_PKG"; then
-    err "✗ Python docstrings below 100% in ${PY_PKG}/  (detail: ${PY_RUNNER} interrogate -v ${PY_PKG})"
+  if ! $PY_RUNNER interrogate -q --fail-under 100 "${PY_PKGS[@]}"; then
+    err "✗ Python docstrings below 100% in one of: ${PY_PKGS[*]}  (detail: ${PY_RUNNER} interrogate -v <dir>)"
     fail=1
   fi
 else

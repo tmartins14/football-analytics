@@ -11,11 +11,13 @@ silently works, it just edits the wrong copy.
 Three kinds of thing, one repo:
 
 1. **`libs/`** — reusable libraries. Nothing here should import from
-   `apps/`, `analyses/`, or `pages/`.
-2. **`apps/`** — things that consume the libs and are their own
-   deployable/runnable unit. Currently empty; this is where AI-engineering
-   features go.
-3. **Everything else** — analysis work, content, docs, and one legacy app
+   `apps/`, `ai/`, `analyses/`, or `pages/`.
+2. **`ai/`** — AI-engineering projects that consume the libs. One
+   self-contained subdirectory per project (code, spec, verification,
+   generated output).
+3. **`apps/`** — non-AI things that consume the libs and are their own
+   deployable/runnable unit. Currently empty.
+4. **Everything else** — analysis work, content, docs, and one legacy app
    that predates the `apps/` convention.
 
 ## Top-level map
@@ -24,7 +26,9 @@ Three kinds of thing, one repo:
 |---|---|
 | `libs/statsbomb/` | Python data layer — StatsBomb open-data extraction. |
 | `libs/footballd3/` | JS/D3 viz component library. |
-| `apps/` | Home for AI features and other new consumers. Empty today. |
+| `ai/` | Home for AI-engineering projects. One subdirectory per project. |
+| `ai/match_summary/` | Auto-written match summaries — code, SPEC, and generated output, self-contained. |
+| `apps/` | Home for non-AI deployable consumers of `libs/`. Empty today. |
 | `pages/match-analysis/` | Legacy static HTML/JS dashboard. Predates `apps/`; not being migrated. |
 | `analyses/` | 25 sequenced practice questions + a couple of standalone mini-projects (notebook + writeup each). Consumes `libs/statsbomb`. |
 | `analyses/statsbomb/` | Two **exploratory notebooks**, not the library. Name collision with `libs/statsbomb/` is intentional-ish (predates the library extraction) — don't confuse the two. |
@@ -33,7 +37,7 @@ Three kinds of thing, one repo:
 | `scripts/extract_euro2024.py` | The one script that populates `data/euro-2024/`. |
 | `scripts/check_docs.sh`, `scripts/check_tests.sh` | The docs/test gates — see `docs/tooling.md` / `docs/testing.md`. |
 | `docs/tooling.md`, `docs/testing.md` | Rationale for the docs gate and the test gate, respectively. |
-| `docs/specs/` | Feature specs (e.g. `match-summary/`), written before the code that implements them. |
+| `docs/specs/` | Feature specs, written before the code that implements them. AI-project specs live inside `ai/<project>/` instead — see below. |
 | `research/`, `literature_notes/`, `match_reactions/` | Pure content (notes, writeups). No code. |
 | `football-analytics-notes/` | Obsidian vault — personal working notes. Separate from `research/`/`literature_notes/`, which are repo-tracked writeups; this is scratch thinking. |
 | `set_piece_analytics/` | Scaffold — every README in it is empty. Not built out yet. |
@@ -71,10 +75,23 @@ Per-component API/JSON-contract docs: see each `libs/footballd3/components/*/REA
 
 ## `apps/`
 
-Empty. Reserved for AI-engineering features and any future consumer that's
-its own deployable unit rather than library code or analysis. The legacy
-dashboard (`pages/match-analysis/`) is *not* being folded in here — it
-stays where it is.
+Empty. Reserved for future non-AI deployable consumers of `libs/` — AI-
+engineering features go in `ai/` instead (see below). The legacy dashboard
+(`pages/match-analysis/`) is *not* being folded in here — it stays where it
+is.
+
+## `ai/`
+
+Home for AI-engineering projects. One self-contained subdirectory per
+project: code, its own SPEC (and DATA-SPEC, VERIFICATION, etc. as needed),
+and any generated output the project produces — co-located rather than
+split across `libs/`, `docs/specs/`, and `data/` the way `generate_match_summary`
+originally was. Consumes `libs/` (`libs/statsbomb`, `libs/footballd3`) via
+normal package imports, same direction as `apps/` — never the reverse.
+
+- `ai/match_summary/` — auto-written match summaries (structured outcome +
+  free-prose tactics), generated from `libs/statsbomb` extractor JSON via
+  `generate_match_summary.py`. See `ai/match_summary/SPEC.md`.
 
 ## Data flow — and the known seam gap
 
@@ -85,6 +102,10 @@ libs/statsbomb/extract_*.py  →  scripts/extract_euro2024.py  →  data/euro-20
 That's the one real seam: `scripts/extract_euro2024.py` is the single
 producer of `data/euro-2024/`. No raw StatsBomb data is committed
 (`data/raw/`, `data/processed/` are gitignored) — only derived extracts.
+AI-generated output (e.g. `ai/match_summary/output/{match_id}/match_summary.json`)
+lives under `ai/<project>/output/` instead, so it doesn't muddy that
+single-producer claim — it's a downstream consumer of `data/euro-2024/`,
+not part of it.
 
 **Known gap, not yet fixed:** the same match's JSON (currently match
 `3943043`, the Euro 2024 Final) is also hand-copied into

@@ -88,7 +88,7 @@ PATH yet — reopen the terminal or restart the editor before assuming it failed
 variables at the top of the script:
 
 ```
-PY_PKG="libs/statsbomb"                   # Python package to check
+PY_PKGS=("libs/statsbomb" "ai")            # Python packages to check
 JS_DIR="libs/footballd3"                   # JS components directory
 COMPONENT_DIRS=( "libs/footballd3/components/"* )   # dirs that must each have a README
 ```
