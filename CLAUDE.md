@@ -10,7 +10,8 @@ right folder.
 |---|---|
 | StatsBomb Python extraction (`extract_*` functions) | `libs/statsbomb/` |
 | D3/JS visualization components | `libs/footballd3/` |
-| AI-engineering features, new deployable apps | `apps/` (empty scaffold) |
+| AI-engineering features | `ai/` |
+| New deployable apps (non-AI) | `apps/` (empty scaffold) |
 | Legacy match-analysis dashboard | `pages/match-analysis/` |
 | Sequenced practice questions / mini-project notebooks | `analyses/practice_questions/`, `analyses/corners_euro_2024/`, `analyses/world_cup_2026/` |
 | Exploratory StatsBomb notebooks (not the library) | `analyses/statsbomb/` |

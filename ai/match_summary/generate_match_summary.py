@@ -59,7 +59,7 @@ JSON output shape (match_summary.json):
         }
       }
     }
-Written to: data/euro-2024/{match_id}/match_summary.json
+Written to: ai/match_summary/output/{match_id}/match_summary.json
 """
 
 import json
@@ -70,7 +70,7 @@ import anthropic
 from dotenv import load_dotenv
 from pydantic import BaseModel
 
-from .utils import fetch_match_info, resolve_match
+from statsbomb.utils import fetch_match_info, resolve_match
 
 MODEL = "claude-sonnet-5"
 
@@ -431,14 +431,15 @@ def main(match_id: int | None = None, out_dir: Path | None = None) -> None:
 
     Args:
         match_id (int | None): StatsBomb match ID; defaults to Euro 2024 Final.
-        out_dir (Path | None): Output directory; defaults to data/euro-2024/{match_id}/.
+        out_dir (Path | None): Output directory; defaults to
+            ai/match_summary/output/{match_id}/.
 
     Output: {out_dir}/match_summary.json
     """
     if match_id is None:
         match_id = resolve_match("UEFA Euro", "2024", "Spain", "England")
     if out_dir is None:
-        out_dir = Path(__file__).parents[2] / "data" / "euro-2024" / str(match_id)
+        out_dir = Path(__file__).parent / "output" / str(match_id)
     out_dir.mkdir(parents=True, exist_ok=True)
 
     summary = generate_match_summary(match_id)
