@@ -76,3 +76,37 @@ out-of-possession shape, never label it on-ball" and "only claim a player is
 part of the hull if their coordinates exactly match a hull vertex") is a
 reasonable follow-up, but per SPEC.md, prompt-quality iteration is explicitly
 Module 3's job, not this one's.
+
+## Module 2 — Effort settings verification
+
+Per SPEC.md's 2026-09-15 decision (sampling controls unavailable on Claude
+5-family models — `output_config.effort` used instead: `"low"` for the
+outcome section, `"high"` for the tactics section). Re-ran
+`generate_match_summary(3943043)` with these settings.
+
+**No `BadRequestError`.** Confirms Claude 5-family models accept
+`output_config.effort` where they reject non-default
+`temperature`/`top_p`/`top_k` — the core acceptance criterion for this
+decision.
+
+**Outcome section — spot-check.** All values from Module 1's already-verified
+set reproduced identically (Final Score 2-1, Possession 62.2%, xG 1.79 vs
+0.73, Shots 16 vs 9, Passes 592 vs 323, Pass Accuracy 87.5% vs 78.6%, Corners
+10 vs 2). Two new claims introduced at `effort="low"`, checked fresh:
+
+| Claim | Source field | Source value | Match? |
+|---|---|---|---|
+| Shots on Target: 6 vs 3 | `match_stats.rows[1]` | home 6.0, away 3.0 | ✅ |
+| Bukayo Saka — 14 completed passes in the starting-XI window | `pass_network.away.windows[0].nodes[0]` | Saka, passes=14 | ✅ |
+
+No invented or misattributed values at `effort="low"` — grounding held.
+
+**Tactics section — no event claims.** Re-read the full prose for goals,
+cards, shots, fouls: none present, matching the existing (unchanged) system
+prompt constraint. The Module 1 off-ball/on-ball centroid mislabeling defect
+(claims 4/5 above) recurs verbatim in this run — a pre-existing prompt-quality
+gap, not a regression introduced by switching from temperature to effort.
+
+**Result: acceptance criteria met.** No 400 from sending effort instead of
+sampling parameters; outcome section still parses and grounds; tactics
+section still avoids event claims.
