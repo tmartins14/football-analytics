@@ -89,24 +89,57 @@ outcome section, `"high"` for the tactics section). Re-ran
 `temperature`/`top_p`/`top_k` — the core acceptance criterion for this
 decision.
 
-**Outcome section — spot-check.** All values from Module 1's already-verified
-set reproduced identically (Final Score 2-1, Possession 62.2%, xG 1.79 vs
-0.73, Shots 16 vs 9, Passes 592 vs 323, Pass Accuracy 87.5% vs 78.6%, Corners
-10 vs 2). Two new claims introduced at `effort="low"`, checked fresh:
+**Correction (2026-09-15, later the same day):** the spot-checks originally
+recorded in this section were run against a throwaway scratchpad call to
+`generate_match_summary()`, not the `main()` run that was actually written to
+and committed as `ai/match_summary/output/3943043/match_summary.json`. Unlike
+the superseded `temperature=0` decision, `output_config.effort` carries no
+determinism guarantee — separate runs produced different `key_stats`/
+`standout_performers`. The scratchpad run's "Shots on Target" stat and Saka
+"14 completed passes" claim do not appear in the committed file. Replaced
+below with evidence checked directly against what's actually committed.
 
-| Claim | Source field | Source value | Match? |
+**Outcome section — spot-check (against the actually-committed file).** All 7
+`key_stats` reproduce Module 1's already-verified set identically (Final
+Score 2-1, Shots 16 vs 9, Possession 62.2% vs 37.8%, xG 1.79 vs 0.73, Passes
+592 vs 323, Pass Accuracy 87.5% vs 78.6%, Corners 10 vs 2). `standout_performers`
+are five new claims this run, checked fresh against source data:
+
+| Performer | Claim | Source field | Verdict |
 |---|---|---|---|
-| Shots on Target: 6 vs 3 | `match_stats.rows[1]` | home 6.0, away 3.0 | ✅ |
-| Bukayo Saka — 14 completed passes in the starting-XI window | `pass_network.away.windows[0].nodes[0]` | Saka, passes=14 | ✅ |
+| Mikel Oyarzabal | 67th-minute sub for Morata | `substitutes.teams.Spain[2]` | ✅ exact (`on_minute=67`, `replaced_player="Álvaro Borja Morata Martín"`) |
+| Aymeric Laporte | High passing volume, key build-up figure "across all four on-ball periods" | `pass_network.home.windows[0].nodes[0]` | ✅ 48 passes in window 0 (high-volume framing; the "all four periods" part wasn't independently re-checked against windows 1–3) |
+| Jude Bellingham | "21.5-yard progressive pass and multiple progressive carries" | `progressive_map.away.actions` | ⚠️ pass distance matches exactly (`distance_gained=21.54`); "carries" is plural but he has exactly 1 progressive carry among his 3 progressive actions — minor overstatement, not fabrication |
+| Bukayo Saka | "38.6-yard progressive carry and several progressive passes" | `progressive_map.away.actions` | ✅ carry matches exactly (`distance_gained=38.63`); 3 progressive passes recorded, "several" holds |
+| Daniel Carvajal | "36 in the first window" | `pass_network.home.windows[0].nodes[1]` | ✅ exact (`passes=36`) |
 
-No invented or misattributed values at `effort="low"` — grounding held.
+No invented or misattributed values — grounding held, with one minor phrasing
+overstatement (Bellingham's "carries").
 
-**Tactics section — no event claims.** Re-read the full prose for goals,
-cards, shots, fouls: none present, matching the existing (unchanged) system
-prompt constraint. The Module 1 off-ball/on-ball centroid mislabeling defect
-(claims 4/5 above) recurs verbatim in this run — a pre-existing prompt-quality
-gap, not a regression introduced by switching from temperature to effort.
+**Tactics section — re-checked against the actually-committed prose.** No
+goals/cards/shots/fouls mentioned — the unchanged system-prompt constraint
+holds. Re-checked Module 1's three known tactics-section defects specifically
+against this run's text (a targeted re-check, not a fresh full 15-claim
+trace like Module 1's original):
 
-**Result: acceptance criteria met.** No 400 from sending effort instead of
-sampling parameters; outcome section still parses and grounds; tactics
-section still avoids event claims.
+- **Off-ball/on-ball centroid mislabel — still present.** Both teams'
+  centroid citations are still labeled "on-ball" while sourced from
+  `off_ball.centroid` (Spain 62.2/41.4, England 69.8/39.2 — matches
+  `team_shape_*.json`'s `off_ball.centroid` exactly). Same defect as
+  Module 1, unchanged by the switch from temperature to effort.
+- **"England more central than Spain" (backwards) — does not recur.** This
+  run's prose instead claims Spain's centroid is more central than England's.
+  Checked directly: Euclidean distance from pitch center (60, 40) is 2.60 for
+  Spain's off-ball centroid vs. 9.87 for England's — the new claim's
+  direction is actually consistent with the data (dominated by England's
+  x=69.84 sitting far into the attacking third). No longer a defect as
+  written.
+- **Stones falsely claimed as a hull vertex — does not recur.** This run's
+  prose makes no England-hull claim at all (it only describes Spain's
+  attacking hull). Nothing to verify or refute here.
+
+**Result: acceptance criteria met**, with the correction above superseding
+the original (mismatched) spot-check evidence. No 400 from sending effort
+instead of sampling parameters; outcome section parses and grounds (5/5
+performers checked, one minor phrasing note); tactics section avoids event
+claims and reproduces exactly one of the three previously known defects.
