@@ -30,6 +30,11 @@ follow-up work, not a blocker for this gate existing. `check_tests.sh` gates on
 "the tests that exist pass," not on a coverage percentage — see "Extending the
 gate" below for why that's deliberate too.
 
+One `ai/` test file exists too: `tests/unit/test_match_summary_comparison.py`
+covers the model/effort comparison harness offline, against a fake client — cost
+computed from `usage` × the rate table, the failed-call rules, and that no
+sampling parameters are ever sent. It makes no API calls.
+
 ## Python: `tests/` — unit vs. integration
 
 ```

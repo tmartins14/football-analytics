@@ -244,27 +244,44 @@ def _build_client() -> anthropic.Anthropic:
     return anthropic.Anthropic()
 
 
-def generate_outcome_section(context: dict, match_label: str, competition: str) -> OutcomeSection:
-    """Generate the structured outcome section via the Messages API's structured-output mode.
+def _effort_kwargs(effort: str | None) -> dict:
+    """Build the optional ``output_config`` kwarg for a Messages API call.
 
-    Uses client.messages.parse() against the OutcomeSection Pydantic schema so
-    the response shape is guaranteed — not a plain completion parsed as JSON.
-    The model sees all six source files and selects which stats/performers to
-    surface (an editorial call); every value it emits must be copied from a
-    field in that data, and source_field records which one. Runs at
-    OUTCOME_EFFORT ("low"): verbatim extraction plus light editorial
-    selection doesn't need deep reasoning.
+    Args:
+        effort (str | None): Effort level, or None for models that don't
+            support the ``effort`` parameter (Haiku 4.5 rejects it).
+
+    Returns:
+        dict: ``{"output_config": {"effort": effort}}``, or ``{}`` when effort is None.
+    """
+    return {"output_config": {"effort": effort}} if effort is not None else {}
+
+
+def _request_outcome(
+    context: dict,
+    match_label: str,
+    competition: str,
+    model: str,
+    effort: str | None,
+    max_tokens: int,
+):
+    """Send the outcome-section request and return the raw parsed response.
+
+    Shared by generate_outcome_section() (which unwraps it) and the model/effort
+    comparison harness (which needs ``usage`` and ``stop_reason`` too). Does no
+    refusal handling — callers decide how to treat a non-"end_turn" stop.
 
     Args:
         context (dict): Output of load_match_context().
         match_label (str): e.g. "Spain vs England".
         competition (str): e.g. "UEFA Euro 2024".
+        model (str): Model ID to call.
+        effort (str | None): ``output_config.effort`` value, or None to omit it.
+        max_tokens (int): Response token ceiling (thinking counts toward it).
 
     Returns:
-        OutcomeSection: Parsed, schema-validated outcome section.
-
-    Raises:
-        RuntimeError: If the model declines to answer (stop_reason == "refusal").
+        anthropic.types.ParsedMessage: The full response; ``parsed_output`` is
+            the OutcomeSection.
     """
     client = _build_client()
     system = (
@@ -294,14 +311,39 @@ def generate_outcome_section(context: dict, match_label: str, competition: str) 
         + json.dumps(context, indent=2)
     )
 
-    response = client.messages.parse(
-        model=MODEL,
-        max_tokens=4096,
-        output_config={"effort": OUTCOME_EFFORT},
+    return client.messages.parse(
+        model=model,
+        max_tokens=max_tokens,
         system=system,
         messages=[{"role": "user", "content": user_content}],
         output_format=OutcomeSection,
+        **_effort_kwargs(effort),
     )
+
+
+def generate_outcome_section(context: dict, match_label: str, competition: str) -> OutcomeSection:
+    """Generate the structured outcome section via the Messages API's structured-output mode.
+
+    Uses client.messages.parse() against the OutcomeSection Pydantic schema so
+    the response shape is guaranteed — not a plain completion parsed as JSON.
+    The model sees all six source files and selects which stats/performers to
+    surface (an editorial call); every value it emits must be copied from a
+    field in that data, and source_field records which one. Runs at
+    OUTCOME_EFFORT ("low"): verbatim extraction plus light editorial
+    selection doesn't need deep reasoning.
+
+    Args:
+        context (dict): Output of load_match_context().
+        match_label (str): e.g. "Spain vs England".
+        competition (str): e.g. "UEFA Euro 2024".
+
+    Returns:
+        OutcomeSection: Parsed, schema-validated outcome section.
+
+    Raises:
+        RuntimeError: If the model declines to answer (stop_reason == "refusal").
+    """
+    response = _request_outcome(context, match_label, competition, MODEL, OUTCOME_EFFORT, 4096)
     if response.stop_reason == "refusal":
         raise RuntimeError(
             "Model declined to generate the outcome section "
@@ -310,29 +352,31 @@ def generate_outcome_section(context: dict, match_label: str, competition: str) 
     return response.parsed_output
 
 
-def generate_tactics_section(context: dict, match_label: str, competition: str) -> str:
-    """Generate the free-prose tactics section, constrained to a narrower data slice.
+def _request_tactics(
+    context: dict,
+    match_label: str,
+    competition: str,
+    model: str,
+    effort: str | None,
+    max_tokens: int,
+):
+    """Send the tactics-section request and return the raw response.
 
-    Unlike generate_outcome_section(), this call receives only formation,
-    team_shape, and pass_network for both teams (TACTICS_SOURCE_KEYS) — no
-    match_stats, no substitutes, no progressive_map. The system prompt
-    explicitly forbids claims not grounded in that data: no goals/cards/fouls,
-    no inferred motivation, no tactical role label that isn't a literal
-    StatsBomb position string in the data (e.g. no "false 9"). Runs at
-    TACTICS_EFFORT ("high"): synthesizing three JSON sources into coherent,
-    grounded prose benefits from deeper reasoning.
+    Shared by generate_tactics_section() (which unwraps it) and the model/effort
+    comparison harness (which needs ``usage`` and ``stop_reason`` too). Does no
+    refusal handling — callers decide how to treat a non-"end_turn" stop.
 
     Args:
         context (dict): Output of load_match_context(). Only the keys in
             TACTICS_SOURCE_KEYS are sent to the model.
         match_label (str): e.g. "Spain vs England".
         competition (str): e.g. "UEFA Euro 2024".
+        model (str): Model ID to call.
+        effort (str | None): ``output_config.effort`` value, or None to omit it.
+        max_tokens (int): Response token ceiling (thinking counts toward it).
 
     Returns:
-        str: 2-4 paragraphs of free prose, no headers or bullet lists.
-
-    Raises:
-        RuntimeError: If the model declines to answer (stop_reason == "refusal").
+        anthropic.types.Message: The full response.
     """
     client = _build_client()
     tactics_context = {key: context[key] for key in TACTICS_SOURCE_KEYS}
@@ -364,13 +408,40 @@ def generate_tactics_section(context: dict, match_label: str, competition: str) 
         + json.dumps(tactics_context, indent=2)
     )
 
-    response = client.messages.create(
-        model=MODEL,
-        max_tokens=1500,
-        output_config={"effort": TACTICS_EFFORT},
+    return client.messages.create(
+        model=model,
+        max_tokens=max_tokens,
         system=system,
         messages=[{"role": "user", "content": user_content}],
+        **_effort_kwargs(effort),
     )
+
+
+def generate_tactics_section(context: dict, match_label: str, competition: str) -> str:
+    """Generate the free-prose tactics section, constrained to a narrower data slice.
+
+    Unlike generate_outcome_section(), this call receives only formation,
+    team_shape, and pass_network for both teams (TACTICS_SOURCE_KEYS) — no
+    match_stats, no substitutes, no progressive_map. The system prompt
+    explicitly forbids claims not grounded in that data: no goals/cards/fouls,
+    no inferred motivation, no tactical role label that isn't a literal
+    StatsBomb position string in the data (e.g. no "false 9"). Runs at
+    TACTICS_EFFORT ("high"): synthesizing three JSON sources into coherent,
+    grounded prose benefits from deeper reasoning.
+
+    Args:
+        context (dict): Output of load_match_context(). Only the keys in
+            TACTICS_SOURCE_KEYS are sent to the model.
+        match_label (str): e.g. "Spain vs England".
+        competition (str): e.g. "UEFA Euro 2024".
+
+    Returns:
+        str: 2-4 paragraphs of free prose, no headers or bullet lists.
+
+    Raises:
+        RuntimeError: If the model declines to answer (stop_reason == "refusal").
+    """
+    response = _request_tactics(context, match_label, competition, MODEL, TACTICS_EFFORT, 1500)
     if response.stop_reason == "refusal":
         raise RuntimeError(
             f"Model declined to generate the tactics section (stop_details={response.stop_details})."

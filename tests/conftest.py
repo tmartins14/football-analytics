@@ -15,6 +15,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parents[1] / "libs"))
+sys.path.insert(0, str(Path(__file__).parents[1]))  # repo root, so `ai.match_summary` imports
 
 import pytest
 from statsbombpy import sb
