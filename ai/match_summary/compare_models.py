@@ -306,9 +306,10 @@ def renderMarkdown(record: dict) -> str:
                   record["decision_log_text"], ""]
     lines += [
         "## Results", "",
-        "Cost and tokens from each response's `usage` × the rate table; grading columns are a "
-        "manual read (automated scoring is Module 3). n = 1 per cell and `effort` output is "
-        "non-deterministic, so small differences are within noise.", "",
+        "Cost and tokens from each response's `usage` × the rate table. Grading columns are a "
+        "manual read that **calls out errors rather than gating on pass/fail**: no eval system "
+        "exists yet (Module 3), so a wrong claim is recorded, not disqualifying. n = 1 per cell "
+        "and `effort` output is non-deterministic, so small differences are within noise.", "",
         "| # | model | effort | input_tok | output_tok | total_tok | input_$ | output_$ | total_$ "
         "| latency_s | outcome_grounding | motm | tactics_grounding |",
         "|---|---|---|---|---|---|---|---|---|---|---|---|---|",
@@ -326,6 +327,8 @@ def renderMarkdown(record: dict) -> str:
         )
     lines += ["", f"Total recorded spend (failed attempts included): "
                   f"${record['spent_usd']:.4f} (ceiling ${record['spend_ceiling_usd']:.2f}).", ""]
+    if record.get("motm"):
+        lines += [f"**MOTM ({record['motm']['player']}):** {record['motm']['note']}", ""]
     lines += ["## Per-section breakdown", "",
               "Outcome and tactics are separate calls, so routing can differ per section.", "",
               "| # | section | input_tok | output_tok | total_$ | latency_s |", "|---|---|---|---|---|---|"]

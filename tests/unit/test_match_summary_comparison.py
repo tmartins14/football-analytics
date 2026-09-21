@@ -232,6 +232,12 @@ class TestRenderMarkdown:
         assert "### Cell 4 — claude-sonnet-5, low" in md
         assert "- Walker claim is contradicted by the data" in md
 
+    def test_motm_note_is_rendered_when_present(self):
+        record = self.record([])
+        record["motm"] = {"player": "Nico Williams", "note": "not in the source data"}
+        assert "**MOTM (Nico Williams):** not in the source data" in cmp.renderMarkdown(record)
+        assert "MOTM (" not in cmp.renderMarkdown(self.record([]))
+
     def test_failed_cells_are_listed(self):
         outcome = cmp.makeCall("outcome", "claude-haiku-4-5", None, fakeResponse(stop="max_tokens"), 1.0)
         tactics = cmp.makeCall("tactics", "claude-haiku-4-5", None, fakeResponse(), 1.0)

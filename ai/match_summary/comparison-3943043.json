@@ -164,16 +164,17 @@
         "latency_s": 31.35
       },
       "grading": {
-        "outcome_grounding": "FAIL (2)",
-        "motm": "pending",
-        "tactics_grounding": "FAIL (6+)",
+        "outcome_grounding": "2 errors",
+        "motm": "hit",
+        "tactics_grounding": "7 errors",
         "notes": [
           "Outcome: all 7 key_stats match their source fields. Performers surfaced: Rodri, Le Normand, N. Williams, Walker.",
-          "Outcome defect: Walker \"40.6-yard carry in the 39th minute\" does not exist. His minute-39 carries are all under 2 yards and none is progressive; his longest progressive actions are passes (41.46 at 29', incomplete).",
-          "Outcome defect: N. Williams \"5 progressive passes in the 67-82 window\" cites windows[2].nodes[8].passes, which is his total pass count (5). His progressive passes were at 4', 7', 13', 48' and 65'.",
+          "Outcome error: Walker \"40.6-yard carry in the 39th minute\" does not exist. His minute-39 carries are all under 2 yards and none is progressive; his longest progressive actions are passes (41.46 at 29', incomplete).",
+          "Outcome error: N. Williams \"5 progressive passes in the 67-82 window\" cites windows[2].nodes[8].passes, which is his total pass count (5). His progressive passes were at 4', 7', 13', 48' and 65'.",
           "Tactics: opens with a Markdown H1 header (system prompt says no headers) and cites \"fatigue\" (prompt forbids inferring it).",
           "Tactics: England's off-ball centroid \"sat deeper\" than Spain's, but x=69.84 vs 62.21 is further forward; the depth-line comparison is reversed the same way (Spain 82.05 \"further forward\" than England 86.73).",
-          "Tactics: Foden called a left winger; he is the centre attacking midfielder until 69'. \"Narrower attacking posture\" and \"fullbacks driving distribution\" have no source."
+          "Tactics: Foden called a left winger; he is the centre attacking midfielder until 69'. \"Narrower attacking posture\" and \"fullbacks driving distribution\" have no source.",
+          "MOTM (Nico Williams): hit. The pick is defensible (8 progressive actions, tied for the most on Spain), but its supporting figure is one of the outcome errors above."
         ]
       }
     },
@@ -325,17 +326,18 @@
         "latency_s": 31.53
       },
       "grading": {
-        "outcome_grounding": "FAIL (1)",
-        "motm": "pending",
-        "tactics_grounding": "FAIL (3)",
+        "outcome_grounding": "1 error, 2 minor",
+        "motm": "miss",
+        "tactics_grounding": "3 errors, 2 minor",
         "notes": [
           "Outcome: all 7 key_stats match. Performers surfaced: Laporte, Le Normand, Palmer, Saka.",
-          "Outcome defect: Palmer \"progressive pass to Bukayo Saka\" is unsupported. All 6 of Palmer's recorded actions have progressive=false, and the cited field is substitutes only.",
+          "Outcome error: Palmer \"progressive pass to Bukayo Saka\" is unsupported. All 6 of Palmer's recorded actions have progressive=false, and the cited field is substitutes only.",
           "Outcome minor: Laporte \"led\" progressive passing (tied with N. Williams at 8 progressive actions); Le Normand \"top passer\" (joint with Laporte at 48).",
-          "Tactics defect: the (62.2, 41.4) and (69.8, 39.2) centroids are labelled \"on-ball\" but are the off-ball centroids (the known Module 1 defect recurs).",
-          "Tactics defect: Spain \"more central\" than England is reversed. Pitch centre is y=40, so England (39.17) is closer than Spain (41.37).",
-          "Tactics defect: \"the tournament's most frequent combination\" is a claim about the whole tournament; the data covers one match.",
-          "Tactics minor: Rodri's 29 passes called a \"progressive outlet\" (pass count is not progression); Spain \"brief switch in the final period\" (the formation label stays 4-2-3-1, only positions change)."
+          "Tactics error: the (62.2, 41.4) and (69.8, 39.2) centroids are labelled \"on-ball\" but are the off-ball centroids (the known Module 1 defect recurs).",
+          "Tactics error: Spain \"more central\" than England is reversed. Pitch centre is y=40, so England (39.17) is closer than Spain (41.37).",
+          "Tactics error: \"the tournament's most frequent combination\" is a claim about the whole tournament; the data covers one match.",
+          "Tactics minor: Rodri's 29 passes called a \"progressive outlet\" (pass count is not progression); Spain \"brief switch in the final period\" (the formation label stays 4-2-3-1, only positions change).",
+          "MOTM (Nico Williams): miss. Not a grounding error; see the MOTM note under the results table."
         ]
       }
     },
@@ -498,16 +500,17 @@
         "latency_s": 55.32
       },
       "grading": {
-        "outcome_grounding": "PASS (2 minor)",
-        "motm": "pending",
-        "tactics_grounding": "FAIL (1)",
+        "outcome_grounding": "0 errors, 2 minor",
+        "motm": "hit",
+        "tactics_grounding": "1 error, 1 minor",
         "notes": [
           "Outcome: all 8 key_stats are correct but oddly split (\"Shots (Spain-England)\" = \"16.0\" omits England's 9; \"Spain passes at 87.5% accuracy\" = \"592.0\", where the real 87.5 sits in the label and is not cited). Performers surfaced: Le Normand, Laporte, N. Williams, Saka, Palmer.",
           "Outcome verified: Laporte 35.09 carry at 42', N. Williams 30.17 at 81', Saka 38.63 at 72', Palmer on at 69:53 (on_second=53), Le Normand team-high 75 events before the break.",
           "Outcome minor: Palmer \"four times with Bellingham in the final window\" is windows[2] (69'-89'); the final window is 89'-FT.",
-          "Tactics defect: Walker \"most advanced of England's back four\" is contradicted; Shaw's on-ball node (x=59.38) is further forward than Walker's (55.99).",
+          "Tactics error: Walker \"most advanced of England's back four\" is contradicted; Shaw's on-ball node (x=59.38) is further forward than Walker's (55.99).",
           "Tactics verified: 715 vs 483 open-play events (team_shape metadata), camera caveat, both teams' thirds spines, Carvajal/Yamal/Cucurella/Saka positions, window-by-window node moves, all cited pass counts and edges, Spain's 89' Merino/Olmo positions, England's 4-1-2-1-2 at 89'.",
-          "Tactics minor: Le Normand-Carvajal (17) called the \"single strongest link\"; Laporte-to-Le Normand is also 17, and Laporte-Le Normand combined is 31."
+          "Tactics minor: Le Normand-Carvajal (17) called the \"single strongest link\"; Laporte-to-Le Normand is also 17, and Laporte-Le Normand combined is 31.",
+          "MOTM (Nico Williams): hit. Supported by data the model had: the 30.17 carry at 81' is verified."
         ]
       }
     },
@@ -670,16 +673,17 @@
         "latency_s": 30.72
       },
       "grading": {
-        "outcome_grounding": "PASS (1 minor)",
-        "motm": "pending",
-        "tactics_grounding": "FAIL (2)",
+        "outcome_grounding": "0 errors, 1 minor",
+        "motm": "miss",
+        "tactics_grounding": "2 errors, 2 soft",
         "notes": [
           "Outcome: all 8 key_stats are correct (source_field uses shorthand \"rows[n].home_value / away_value\" rather than two full paths). Performers surfaced: Laporte, Le Normand, Saka, Palmer, Oyarzabal.",
           "Outcome verified: Laporte 56.14 and 30.95 both exist (the 56.14 pass was incomplete; not claimed otherwise); Saka 14 passes and the 38.63 carry at 72' (inside 69'-89'); Oyarzabal on at 67' for Morata; Palmer on at 69'.",
           "Outcome minor: Le Normand \"top\" node, joint with Laporte at 48.",
-          "Tactics defect: Spain's \"build-up centroid (62, 41)\" in an on-ball paragraph is the off-ball centroid (mislabel).",
-          "Tactics defect: \"only in stoppage time did England shift ... after introducing Toney, Watkins and Palmer together\" is wrong. Watkins came on at 60', Palmer at 69', Toney at 89'12\" (not stoppage time).",
-          "Tactics soft: \"suggestive of a team pressing higher\" and \"Rice and Mainoo/Stones dropping deep on-ball\" are not derivable from the given data."
+          "Tactics error: Spain's \"build-up centroid (62, 41)\" in an on-ball paragraph is the off-ball centroid (mislabel).",
+          "Tactics error: \"only in stoppage time did England shift ... after introducing Toney, Watkins and Palmer together\" is wrong. Watkins came on at 60', Palmer at 69', Toney at 89'12\" (not stoppage time).",
+          "Tactics minor: \"suggestive of a team pressing higher\" and \"Rice and Mainoo/Stones dropping deep on-ball\" are not derivable from the given data.",
+          "MOTM (Nico Williams): miss. Not a grounding error; see the MOTM note under the results table."
         ]
       }
     },
@@ -832,19 +836,24 @@
         "latency_s": 83.8
       },
       "grading": {
-        "outcome_grounding": "FAIL (1)",
-        "motm": "pending",
-        "tactics_grounding": "FAIL (2)",
+        "outcome_grounding": "1 error, 2 soft",
+        "motm": "hit",
+        "tactics_grounding": "2 errors, 3 minor",
         "notes": [
           "Outcome: all 6 key_stats are correct. Performers surfaced: Le Normand, Laporte, N. Williams, Saka, Watkins.",
-          "Outcome defect: Le Normand \"repeatedly launched long, line-breaking diagonals to switch play\" is contradicted. He has 3 progressive passes, one long (55.96 at 48', y 57.8 to 56.6: a straight ball, not a switch), and the cited field is only his pass count.",
-          "Outcome soft: Watkins as \"central attacking focal point\" and Saka's \"counter-attacking threat\" have no source. N. Williams 23 passes and Saka 14 passes verified.",
-          "Tactics defect: \"Spain made three changes across the second half\"; Spain made four (45', 67', 82', 88').",
-          "Tactics defect: Merino's entry \"in stoppage time\"; it was 88'40\".",
+          "Outcome error: Le Normand \"repeatedly launched long, line-breaking diagonals to switch play\" is contradicted. He has 3 progressive passes, one long (55.96 at 48', y 57.8 to 56.6: a straight ball, not a switch), and the cited field is only his pass count.",
+          "Outcome minor: Watkins as \"central attacking focal point\" and Saka's \"counter-attacking threat\" have no source. N. Williams 23 passes and Saka 14 passes verified.",
+          "Tactics error: \"Spain made three changes across the second half\"; Spain made four (45', 67', 82', 88').",
+          "Tactics error: Merino's entry \"in stoppage time\"; it was 88'40\".",
           "Tactics minor: Rice (23) and Stones (24) as \"top progressors\" (pass counts; Walker also has 24); a stray \"双\" character mid-sentence; Spain's hubs shifting \"leftward\" is unsupported.",
-          "Tactics verified: shape coordinates, both centroids on the attacking half, 4-1-2-1-2 at 89', Carvajal x=108 at 82'-88', pass volumes tailing off in the final windows."
+          "Tactics verified: shape coordinates, both centroids on the attacking half, 4-1-2-1-2 at 89', Carvajal x=108 at 82'-88', pass volumes tailing off in the final windows.",
+          "MOTM (Nico Williams): hit. Supported by data the model had: 23 passes in the opening window (verified) and 8 progressive actions."
         ]
       }
     }
-  ]
+  ],
+  "motm": {
+    "player": "Nico Williams",
+    "note": "Named by Tyler as the match's man of the match. None of the six source files carries a man-of-the-match field, so the model cannot know it: a miss is not a grounding error, and the prompt must not be tuned, or outside data added, to make it hit, because that would use information the model would not have in production. Hits (cells 1, 3, 5) are picks the data it did have supports (8 progressive actions, tied for the most on Spain), though cell 1's supporting figure is wrong. Recorded as an observation only, not a selection criterion."
+  }
 }
