@@ -18,7 +18,7 @@
   "max_tokens": 16000,
   "spend_ceiling_usd": 7.0,
   "spent_usd": 2.3438489999999996,
-  "decision_log_text": null,
+  "decision_log_text": "### 2026-09-21 — Module 2 (Task 2) — Model & effort routing\nChosen from the 5-cell comparison on match 3943043 (`ai/match_summary/comparison-3943043.md`). Each cell is n = 1 and errors were called out by manual read, not a scored eval, so this is a **default to revisit once the eval system (Module 3) exists**, not a conclusion.\n- **Outcome: Sonnet 5 / low.** 0 errors (+1 minor) at $0.28 and 14s for the call — the cheapest cell without an error, and the config already shipped. (Sonnet 5 medium and high each made one performer error; with n = 1 that looks like noise, not an effort effect.)\n- **Tactics: Opus 5 / medium.** 1 error (+1 minor) against 2-7 for the other cells, and it did not repeat the off-ball-centroid-labelled-on-ball mislabel that cells 2 and 4 did. It costs $0.29 and 39s for the call, against about $0.10 and 16-30s for Sonnet 5 — a small absolute gap for a summary generated once per match.\n- **MOTM (Nico Williams)** is not in the source data. It is recorded per cell as an observation only, is not a selection criterion, and the prompt is not tuned to it.\n- **Chose not to build:** the full model x effort grid.\n- Because the sections now use different models, `metadata.model` became `metadata.models: {outcome, tactics}`.",
   "cells": [
     {
       "n": 1,

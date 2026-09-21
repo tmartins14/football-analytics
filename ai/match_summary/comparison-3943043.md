@@ -1,5 +1,15 @@
 # Model & effort comparison — match 3943043
 
+## Routing decision (ready to paste into the SPEC Decision log)
+
+### 2026-09-21 — Module 2 (Task 2) — Model & effort routing
+Chosen from the 5-cell comparison on match 3943043 (`ai/match_summary/comparison-3943043.md`). Each cell is n = 1 and errors were called out by manual read, not a scored eval, so this is a **default to revisit once the eval system (Module 3) exists**, not a conclusion.
+- **Outcome: Sonnet 5 / low.** 0 errors (+1 minor) at $0.28 and 14s for the call — the cheapest cell without an error, and the config already shipped. (Sonnet 5 medium and high each made one performer error; with n = 1 that looks like noise, not an effort effect.)
+- **Tactics: Opus 5 / medium.** 1 error (+1 minor) against 2-7 for the other cells, and it did not repeat the off-ball-centroid-labelled-on-ball mislabel that cells 2 and 4 did. It costs $0.29 and 39s for the call, against about $0.10 and 16-30s for Sonnet 5 — a small absolute gap for a summary generated once per match.
+- **MOTM (Nico Williams)** is not in the source data. It is recorded per cell as an observation only, is not a selection criterion, and the prompt is not tuned to it.
+- **Chose not to build:** the full model x effort grid.
+- Because the sections now use different models, `metadata.model` became `metadata.models: {outcome, tactics}`.
+
 ## Results
 
 Cost and tokens from each response's `usage` × the rate table. Grading columns are a manual read that **calls out errors rather than gating on pass/fail**: no eval system exists yet (Module 3), so a wrong claim is recorded, not disqualifying. n = 1 per cell and `effort` output is non-deterministic, so small differences are within noise.

@@ -48,7 +48,7 @@ JSON output shape (match_summary.json):
         "away_team": str,
         "competition": str,
         "match_label": str,
-        "model": str,
+        "models": {"outcome": str, "tactics": str},
         "source_files": {
           "match_stats": str,
           "substitutes": str,
@@ -72,19 +72,28 @@ from pydantic import BaseModel
 
 from statsbomb.utils import fetch_match_info, resolve_match
 
-MODEL = "claude-sonnet-5"
-
 # Tactics-section grounding is deliberately narrower than the outcome section's —
 # see SPEC.md: "the prompt must constrain the model to the formation /
 # team-shape / pass-network JSON it's given".
 TACTICS_SOURCE_KEYS = ("formation", "team_shape", "pass_network")
 
-# Explicit per-section effort — see SPEC.md decision log,
-# "2026-09-15 — Sampling controls unavailable on Claude 5-family."
-# Claude 5-family models reject non-default temperature/top_p/top_k (400),
-# so effort is the sampling-adjacent knob instead.
-OUTCOME_EFFORT = "low"  # verbatim extraction + light editorial selection
-TACTICS_EFFORT = "high"  # SDK default, made explicit — synthesis across 3 sources
+# Per-section model + effort. Claude 5-family models reject non-default
+# temperature/top_p/top_k (400), so effort is the sampling-adjacent knob instead —
+# see SPEC.md decision log, "2026-09-15 — Sampling controls unavailable on
+# Claude 5-family."
+#
+# Routing chosen from ai/match_summary/comparison-3943043.md (5 measured cells on
+# match 3943043, n = 1 each). It is a DEFAULT, to be revisited once the eval system
+# (Module 3) exists: the comparison recorded errors by manual read, not a scored eval.
+OUTCOME_MODEL = "claude-sonnet-5"
+OUTCOME_EFFORT = "low"  # verbatim extraction + light editorial selection; 0 errors in the comparison
+TACTICS_MODEL = "claude-opus-5"
+TACTICS_EFFORT = "medium"  # synthesis across 3 sources; fewest errors in the comparison
+
+# Thinking tokens count toward max_tokens. The comparison ran both sections at
+# 16000; the tactics call alone used up to ~2.4k output tokens on Opus, so the
+# old 1500 cap would truncate it.
+MAX_TOKENS = 16000
 
 
 class KeyStat(BaseModel):
@@ -343,7 +352,9 @@ def generate_outcome_section(context: dict, match_label: str, competition: str) 
     Raises:
         RuntimeError: If the model declines to answer (stop_reason == "refusal").
     """
-    response = _request_outcome(context, match_label, competition, MODEL, OUTCOME_EFFORT, 4096)
+    response = _request_outcome(
+        context, match_label, competition, OUTCOME_MODEL, OUTCOME_EFFORT, MAX_TOKENS
+    )
     if response.stop_reason == "refusal":
         raise RuntimeError(
             "Model declined to generate the outcome section "
@@ -425,9 +436,9 @@ def generate_tactics_section(context: dict, match_label: str, competition: str) 
     match_stats, no substitutes, no progressive_map. The system prompt
     explicitly forbids claims not grounded in that data: no goals/cards/fouls,
     no inferred motivation, no tactical role label that isn't a literal
-    StatsBomb position string in the data (e.g. no "false 9"). Runs at
-    TACTICS_EFFORT ("high"): synthesizing three JSON sources into coherent,
-    grounded prose benefits from deeper reasoning.
+    StatsBomb position string in the data (e.g. no "false 9"). Runs on
+    TACTICS_MODEL at TACTICS_EFFORT: synthesizing three JSON sources into
+    coherent, grounded prose benefits from a stronger model and deeper reasoning.
 
     Args:
         context (dict): Output of load_match_context(). Only the keys in
@@ -441,7 +452,9 @@ def generate_tactics_section(context: dict, match_label: str, competition: str) 
     Raises:
         RuntimeError: If the model declines to answer (stop_reason == "refusal").
     """
-    response = _request_tactics(context, match_label, competition, MODEL, TACTICS_EFFORT, 1500)
+    response = _request_tactics(
+        context, match_label, competition, TACTICS_MODEL, TACTICS_EFFORT, MAX_TOKENS
+    )
     if response.stop_reason == "refusal":
         raise RuntimeError(
             f"Model declined to generate the tactics section (stop_details={response.stop_details})."
@@ -485,7 +498,7 @@ def generate_match_summary(match_id: int) -> dict:
             "away_team": away_team,
             "competition": competition,
             "match_label": match_label,
-            "model": MODEL,
+            "models": {"outcome": OUTCOME_MODEL, "tactics": TACTICS_MODEL},
             "source_files": {
                 "match_stats": "match_stats.json",
                 "substitutes": "substitutes.json",

@@ -203,9 +203,26 @@ class TestRequestKwargs:
         gen.generate_tactics_section(self.context, "A vs B", "Comp")
         outcome, tactics = sent
         assert (outcome["model"], outcome["max_tokens"], outcome["output_config"]) == (
-            gen.MODEL, 4096, {"effort": gen.OUTCOME_EFFORT})
+            gen.OUTCOME_MODEL, gen.MAX_TOKENS, {"effort": gen.OUTCOME_EFFORT})
         assert (tactics["model"], tactics["max_tokens"], tactics["output_config"]) == (
-            gen.MODEL, 1500, {"effort": gen.TACTICS_EFFORT})
+            gen.TACTICS_MODEL, gen.MAX_TOKENS, {"effort": gen.TACTICS_EFFORT})
+
+    def test_shipped_routing_is_the_chosen_one(self):
+        """Pins the decision so a change to it is deliberate (revisit after the eval system exists)."""
+        assert (gen.OUTCOME_MODEL, gen.OUTCOME_EFFORT) == ("claude-sonnet-5", "low")
+        assert (gen.TACTICS_MODEL, gen.TACTICS_EFFORT) == ("claude-opus-5", "medium")
+        assert gen.OUTCOME_MODEL in cmp.RATES and gen.TACTICS_MODEL in cmp.RATES
+
+
+class TestSummaryMetadata:
+    def test_metadata_records_the_model_per_section(self, monkeypatch):
+        fake_outcome = gen.OutcomeSection(headline="h", key_stats=[], standout_performers=[])
+        monkeypatch.setattr(gen, "generate_outcome_section", lambda *a: fake_outcome)
+        monkeypatch.setattr(gen, "generate_tactics_section", lambda *a: "prose")
+        monkeypatch.setattr(gen, "fetch_match_info", lambda match_id: ("UEFA Euro 2024", None, "Spain vs England"))
+        metadata = gen.generate_match_summary(3943043)["metadata"]
+        assert metadata["models"] == {"outcome": gen.OUTCOME_MODEL, "tactics": gen.TACTICS_MODEL}
+        assert "model" not in metadata  # a single string would be wrong once sections differ
 
 
 class TestRenderMarkdown:
