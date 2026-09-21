@@ -326,6 +326,23 @@ def renderMarkdown(record: dict) -> str:
         )
     lines += ["", f"Total recorded spend (failed attempts included): "
                   f"${record['spent_usd']:.4f} (ceiling ${record['spend_ceiling_usd']:.2f}).", ""]
+    lines += ["## Per-section breakdown", "",
+              "Outcome and tactics are separate calls, so routing can differ per section.", "",
+              "| # | section | input_tok | output_tok | total_$ | latency_s |", "|---|---|---|---|---|---|"]
+    for cell in record["cells"]:
+        for section, call in cell["calls"].items():
+            usage, cost = call["usage"] or {}, call["cost"] or {}
+            lines.append(f"| {cell['n']} | {section} | {fmt(usage.get('input_tokens'), ',')} "
+                         f"| {fmt(usage.get('output_tokens'), ',')} | {fmt(cost.get('total_usd'), '.4f')} "
+                         f"| {fmt(call['latency_s'], '.1f')} |")
+    lines.append("")
+    graded = [c for c in record["cells"] if c["grading"].get("notes")]
+    if graded:
+        lines += ["## Grading notes", ""]
+        for cell in graded:
+            lines.append(f"### Cell {cell['n']} — {cell['model']}, {cell['effort'] or 'none'}")
+            lines += [f"- {note}" for note in cell["grading"]["notes"]]
+            lines.append("")
     failed = [c for c in record["cells"] if c["status"] == "failed"]
     if failed:
         lines += ["## Failed cells", ""]

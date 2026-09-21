@@ -218,7 +218,19 @@ class TestRenderMarkdown:
         tactics = cmp.makeCall("tactics", "claude-sonnet-5", "low", fakeResponse(), 2.0)
         md = cmp.renderMarkdown(self.record([cmp.summarizeCell(cmp.CELLS[3], outcome, tactics)]))
         assert "| 4 | claude-sonnet-5 | low | 2,000 | 400 | 2,400 |" in md
-        assert "| — | — | — |" in md.splitlines()[-3]
+        row = next(line for line in md.splitlines() if line.startswith("| 4 | claude-sonnet-5 | low"))
+        assert row.endswith("| — | — | — |")
+
+    def test_per_section_breakdown_and_grading_notes_are_rendered(self):
+        outcome = cmp.makeCall("outcome", "claude-sonnet-5", "low", fakeResponse(), 1.0)
+        tactics = cmp.makeCall("tactics", "claude-sonnet-5", "low", fakeResponse(), 2.0)
+        summary = cmp.summarizeCell(cmp.CELLS[3], outcome, tactics)
+        summary["grading"]["notes"] = ["Walker claim is contradicted by the data"]
+        md = cmp.renderMarkdown(self.record([summary]))
+        assert "| 4 | outcome | 1,000 | 200 |" in md
+        assert "| 4 | tactics | 1,000 | 200 |" in md
+        assert "### Cell 4 — claude-sonnet-5, low" in md
+        assert "- Walker claim is contradicted by the data" in md
 
     def test_failed_cells_are_listed(self):
         outcome = cmp.makeCall("outcome", "claude-haiku-4-5", None, fakeResponse(stop="max_tokens"), 1.0)
