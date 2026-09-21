@@ -82,7 +82,7 @@ TACTICS_SOURCE_KEYS = ("formation", "team_shape", "pass_network")
 # see SPEC.md decision log, "2026-09-15 — Sampling controls unavailable on
 # Claude 5-family."
 #
-# Routing chosen from ai/match_summary/comparison-3943043.md (5 measured cells on
+# Routing chosen from ai/match_summary/output/3943043/comparison-3943043.md (5 measured cells on
 # match 3943043, n = 1 each). It is a DEFAULT, to be revisited once the eval system
 # (Module 3) exists: the comparison recorded errors by manual read, not a scored eval.
 OUTCOME_MODEL = "claude-sonnet-5"

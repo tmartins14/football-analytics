@@ -24,9 +24,12 @@ Usage:
     uv run python -m ai.match_summary.compare_models --dry-run
     uv run python -m ai.match_summary.compare_models --confirm-spend [--cells 1,2]
     uv run python -m ai.match_summary.compare_models --render-only
+    uv run python -m ai.match_summary.compare_models --export-site PATH
 
-Writes: ai/match_summary/comparison-3943043.json (record) and
-        ai/match_summary/comparison-3943043.md (results table).
+Writes: ai/match_summary/output/3943043/comparison-3943043.json (record) and
+        ai/match_summary/output/3943043/comparison-3943043.md (results table).
+--export-site writes a slim copy of the record (no raw model outputs) for
+tylermartins.com's data/football/ — a manual copy, like the summary JSON itself.
 """
 
 import argparse
@@ -69,8 +72,9 @@ OUTCOME_INPUT_TOKENS_DEFAULT = 164_000  # Claude 5-family tokenizer
 OUTPUT_TOKEN_RANGE = {1: (1_200, 1_800), 2: (3_000, 10_000), 3: (3_000, 10_000),
                       4: (2_000, 6_000), 5: (5_000, 25_000)}
 
-RESULTS_JSON = Path(__file__).parent / f"comparison-{MATCH_ID}.json"
-RESULTS_MD = Path(__file__).parent / f"comparison-{MATCH_ID}.md"
+OUTPUT_DIR = Path(__file__).parent / "output" / str(MATCH_ID)
+RESULTS_JSON = OUTPUT_DIR / f"comparison-{MATCH_ID}.json"
+RESULTS_MD = OUTPUT_DIR / f"comparison-{MATCH_ID}.md"
 
 
 class Cell(NamedTuple):
@@ -327,6 +331,10 @@ def renderMarkdown(record: dict) -> str:
         )
     lines += ["", f"Total recorded spend (failed attempts included): "
                   f"${record['spent_usd']:.4f} (ceiling ${record['spend_ceiling_usd']:.2f}).", ""]
+    if record.get("routing"):
+        lines += [f"**Chosen routing:** outcome → cell {record['routing']['outcome']}, "
+                  f"tactics → cell {record['routing']['tactics']} (a default, to revisit once the eval "
+                  "system exists).", ""]
     if record.get("motm"):
         lines += [f"**MOTM ({record['motm']['player']}):** {record['motm']['note']}", ""]
     lines += ["## Per-section breakdown", "",
@@ -382,8 +390,41 @@ def saveRecord(record: dict) -> None:
         record (dict): The comparison record.
     """
     record["cells"].sort(key=lambda c: c["n"])
+    RESULTS_JSON.parent.mkdir(parents=True, exist_ok=True)
     RESULTS_JSON.write_text(json.dumps(record, indent=2, ensure_ascii=False) + "\n")
     RESULTS_MD.write_text(renderMarkdown(record))
+
+
+def slimRecord(record: dict) -> dict:
+    """Reduce the results record to what a results page needs (no raw model outputs).
+
+    Args:
+        record (dict): The comparison JSON record.
+
+    Returns:
+        dict: Record-level fields plus, per cell, config, totals, grading, and per-call
+            tokens/cost/latency. The raw outputs and full ``usage`` dicts are dropped.
+    """
+    def slimCall(call: dict) -> dict:
+        usage, cost = call["usage"] or {}, call["cost"] or {}
+        return {
+            "section": call["section"], "model_served": call.get("model_served"),
+            "stop_reason": call.get("stop_reason"), "latency_s": call["latency_s"],
+            "input_tokens": usage.get("input_tokens"), "output_tokens": usage.get("output_tokens"),
+            "cost_usd": cost.get("total_usd"),
+        }
+
+    cells = [
+        {**{key: cell[key] for key in ("n", "model", "effort", "sweep", "status", "failures", "totals", "grading")},
+         "calls": {section: slimCall(call) for section, call in cell["calls"].items()}}
+        for cell in record["cells"]
+    ]
+    return {
+        "match_id": record["match_id"], "created": record["created"], "max_tokens": record["max_tokens"],
+        "rates_usd_per_mtok": record["rates_usd_per_mtok"], "spent_usd": record["spent_usd"],
+        "routing": record.get("routing"), "motm": record.get("motm"),
+        "decision_log_text": record.get("decision_log_text"), "cells": cells,
+    }
 
 
 def printEstimate(context: dict, cells: list[Cell]) -> float:
@@ -419,6 +460,7 @@ def main(argv: list[str] | None = None) -> None:
     parser.add_argument("--dry-run", action="store_true", help="print the spend estimate; no API calls")
     parser.add_argument("--confirm-spend", action="store_true", help="required to make live, billed calls")
     parser.add_argument("--render-only", action="store_true", help="re-render the Markdown from the JSON")
+    parser.add_argument("--export-site", metavar="PATH", help="write a slim copy of the record to PATH; no API calls")
     parser.add_argument("--cells", default="", help="comma-separated cell numbers to run (default: all)")
     parser.add_argument("--rerun", action="store_true", help="re-run cells that already have a record")
     args = parser.parse_args(argv)
@@ -426,6 +468,10 @@ def main(argv: list[str] | None = None) -> None:
     if args.render_only:
         RESULTS_MD.write_text(renderMarkdown(loadRecord()))
         print(f"Rendered → {RESULTS_MD}")
+        return
+    if args.export_site:
+        Path(args.export_site).write_text(json.dumps(slimRecord(loadRecord()), indent=2, ensure_ascii=False) + "\n")
+        print(f"Exported slim record → {args.export_site}")
         return
 
     wanted = {int(n) for n in args.cells.split(",") if n} or {c.n for c in CELLS}

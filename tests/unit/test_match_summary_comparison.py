@@ -214,6 +214,30 @@ class TestRequestKwargs:
         assert gen.OUTCOME_MODEL in cmp.RATES and gen.TACTICS_MODEL in cmp.RATES
 
 
+class TestSlimRecord:
+    def record(self):
+        outcome = cmp.makeCall("outcome", "claude-sonnet-5", "low", fakeResponse(), 1.0)
+        tactics = cmp.makeCall("tactics", "claude-sonnet-5", "low", fakeResponse(), 2.0)
+        return {"match_id": 3943043, "created": "2026-09-21", "max_tokens": 16000, "spent_usd": 0.5,
+                "rates_usd_per_mtok": {}, "routing": {"outcome": 4, "tactics": 3},
+                "motm": {"player": "X", "note": "n"}, "decision_log_text": "d",
+                "cells": [cmp.summarizeCell(cmp.CELLS[3], outcome, tactics)]}
+
+    def test_drops_raw_outputs_and_full_usage(self):
+        slim = cmp.slimRecord(self.record())
+        call = slim["cells"][0]["calls"]["outcome"]
+        assert "output" not in call and "usage" not in call
+        assert (call["input_tokens"], call["output_tokens"]) == (1000, 200)
+        assert call["cost_usd"] == pytest.approx(1000 * 2 / 1e6 + 200 * 10 / 1e6)
+
+    def test_keeps_config_totals_grading_and_routing(self):
+        slim = cmp.slimRecord(self.record())
+        cell = slim["cells"][0]
+        assert (cell["n"], cell["model"], cell["effort"]) == (4, "claude-sonnet-5", "low")
+        assert cell["totals"]["total_tokens"] == 2400 and "grading" in cell
+        assert slim["routing"] == {"outcome": 4, "tactics": 3} and slim["motm"]["player"] == "X"
+
+
 class TestSummaryMetadata:
     def test_metadata_records_the_model_per_section(self, monkeypatch):
         fake_outcome = gen.OutcomeSection(headline="h", key_stats=[], standout_performers=[])
@@ -248,6 +272,12 @@ class TestRenderMarkdown:
         assert "| 4 | tactics | 1,000 | 200 |" in md
         assert "### Cell 4 — claude-sonnet-5, low" in md
         assert "- Walker claim is contradicted by the data" in md
+
+    def test_chosen_routing_is_rendered_when_present(self):
+        record = self.record([])
+        record["routing"] = {"outcome": 4, "tactics": 3}
+        assert "**Chosen routing:** outcome → cell 4, tactics → cell 3" in cmp.renderMarkdown(record)
+        assert "Chosen routing" not in cmp.renderMarkdown(self.record([]))
 
     def test_motm_note_is_rendered_when_present(self):
         record = self.record([])
