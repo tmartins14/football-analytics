@@ -223,12 +223,17 @@ class TestSlimRecord:
                 "motm": {"player": "X", "note": "n"}, "decision_log_text": "d",
                 "cells": [cmp.summarizeCell(cmp.CELLS[3], outcome, tactics)]}
 
-    def test_drops_raw_outputs_and_full_usage(self):
+    def test_keeps_generated_output_but_drops_full_usage_and_stop_reason(self):
         slim = cmp.slimRecord(self.record())
         call = slim["cells"][0]["calls"]["outcome"]
-        assert "output" not in call and "usage" not in call
+        assert "usage" not in call and "stop_reason" not in call
+        assert call["output"] == {"headline": "h", "key_stats": [], "standout_performers": []}
         assert (call["input_tokens"], call["output_tokens"]) == (1000, 200)
         assert call["cost_usd"] == pytest.approx(1000 * 2 / 1e6 + 200 * 10 / 1e6)
+
+    def test_tactics_output_is_the_prose_string(self):
+        slim = cmp.slimRecord(self.record())
+        assert slim["cells"][0]["calls"]["tactics"]["output"] == "prose"
 
     def test_keeps_config_totals_grading_and_routing(self):
         slim = cmp.slimRecord(self.record())

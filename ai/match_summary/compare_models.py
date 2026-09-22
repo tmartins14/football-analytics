@@ -28,8 +28,10 @@ Usage:
 
 Writes: ai/match_summary/output/3943043/comparison-3943043.json (record) and
         ai/match_summary/output/3943043/comparison-3943043.md (results table).
---export-site writes a slim copy of the record (no raw model outputs) for
-tylermartins.com's data/football/ — a manual copy, like the summary JSON itself.
+--export-site writes a slim copy of the record — keeps each call's generated
+output (for a run-by-run showcase) and drops only the full usage/stop_reason
+detail — for tylermartins.com's data/football/, a manual copy like the summary
+JSON itself.
 """
 
 import argparse
@@ -396,22 +398,24 @@ def saveRecord(record: dict) -> None:
 
 
 def slimRecord(record: dict) -> dict:
-    """Reduce the results record to what a results page needs (no raw model outputs).
+    """Reduce the results record to what a results page needs, output included.
 
     Args:
         record (dict): The comparison JSON record.
 
     Returns:
-        dict: Record-level fields plus, per cell, config, totals, grading, and per-call
-            tokens/cost/latency. The raw outputs and full ``usage`` dicts are dropped.
+        dict: Record-level fields plus, per cell, config, totals, grading, and
+            per-call tokens/cost/latency/output. Only the full ``usage`` dict and
+            ``stop_reason`` are dropped — everything a run-by-run showcase (headline,
+            key stats, performers, tactics prose) needs is kept.
     """
     def slimCall(call: dict) -> dict:
         usage, cost = call["usage"] or {}, call["cost"] or {}
         return {
             "section": call["section"], "model_served": call.get("model_served"),
-            "stop_reason": call.get("stop_reason"), "latency_s": call["latency_s"],
+            "latency_s": call["latency_s"],
             "input_tokens": usage.get("input_tokens"), "output_tokens": usage.get("output_tokens"),
-            "cost_usd": cost.get("total_usd"),
+            "cost_usd": cost.get("total_usd"), "output": call["output"],
         }
 
     cells = [
