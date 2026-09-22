@@ -6,6 +6,8 @@ and the acceptance criteria that no sampling parameters are sent and that
 ``effort`` is omitted for models that don't support it.
 """
 
+import json
+from pathlib import Path
 from types import SimpleNamespace
 
 import pytest
@@ -251,7 +253,15 @@ class TestSummaryMetadata:
         monkeypatch.setattr(gen, "fetch_match_info", lambda match_id: ("UEFA Euro 2024", None, "Spain vs England"))
         metadata = gen.generate_match_summary(3943043)["metadata"]
         assert metadata["models"] == {"outcome": gen.OUTCOME_MODEL, "tactics": gen.TACTICS_MODEL}
+        assert metadata["effort"] == {"outcome": gen.OUTCOME_EFFORT, "tactics": gen.TACTICS_EFFORT}
         assert "model" not in metadata  # a single string would be wrong once sections differ
+
+    def test_committed_output_has_effort_recorded(self):
+        """The committed match_summary.json was hand-patched with the effort field the
+        generator originally omitted — config unchanged, so this pins the patch stuck."""
+        path = Path(__file__).parents[2] / "ai" / "match_summary" / "output" / "3943043" / "match_summary.json"
+        metadata = json.loads(path.read_text())["metadata"]
+        assert metadata["effort"] == {"outcome": "low", "tactics": "medium"}
 
 
 class TestRenderMarkdown:

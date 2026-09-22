@@ -49,6 +49,7 @@ JSON output shape (match_summary.json):
         "competition": str,
         "match_label": str,
         "models": {"outcome": str, "tactics": str},
+        "effort": {"outcome": str, "tactics": str},
         "source_files": {
           "match_stats": str,
           "substitutes": str,
@@ -499,6 +500,7 @@ def generate_match_summary(match_id: int) -> dict:
             "competition": competition,
             "match_label": match_label,
             "models": {"outcome": OUTCOME_MODEL, "tactics": TACTICS_MODEL},
+            "effort": {"outcome": OUTCOME_EFFORT, "tactics": TACTICS_EFFORT},
             "source_files": {
                 "match_stats": "match_stats.json",
                 "substitutes": "substitutes.json",
