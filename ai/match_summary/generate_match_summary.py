@@ -79,6 +79,13 @@ MODEL = "claude-sonnet-5"
 # team-shape / pass-network JSON it's given".
 TACTICS_SOURCE_KEYS = ("formation", "team_shape", "pass_network")
 
+# Explicit per-section effort — see SPEC.md decision log,
+# "2026-09-15 — Sampling controls unavailable on Claude 5-family."
+# Claude 5-family models reject non-default temperature/top_p/top_k (400),
+# so effort is the sampling-adjacent knob instead.
+OUTCOME_EFFORT = "low"  # verbatim extraction + light editorial selection
+TACTICS_EFFORT = "high"  # SDK default, made explicit — synthesis across 3 sources
+
 
 class KeyStat(BaseModel):
     """One stat surfaced in the structured outcome section.
@@ -244,7 +251,9 @@ def generate_outcome_section(context: dict, match_label: str, competition: str) 
     the response shape is guaranteed — not a plain completion parsed as JSON.
     The model sees all six source files and selects which stats/performers to
     surface (an editorial call); every value it emits must be copied from a
-    field in that data, and source_field records which one.
+    field in that data, and source_field records which one. Runs at
+    OUTCOME_EFFORT ("low"): verbatim extraction plus light editorial
+    selection doesn't need deep reasoning.
 
     Args:
         context (dict): Output of load_match_context().
@@ -288,6 +297,7 @@ def generate_outcome_section(context: dict, match_label: str, competition: str) 
     response = client.messages.parse(
         model=MODEL,
         max_tokens=4096,
+        output_config={"effort": OUTCOME_EFFORT},
         system=system,
         messages=[{"role": "user", "content": user_content}],
         output_format=OutcomeSection,
@@ -308,7 +318,9 @@ def generate_tactics_section(context: dict, match_label: str, competition: str) 
     match_stats, no substitutes, no progressive_map. The system prompt
     explicitly forbids claims not grounded in that data: no goals/cards/fouls,
     no inferred motivation, no tactical role label that isn't a literal
-    StatsBomb position string in the data (e.g. no "false 9").
+    StatsBomb position string in the data (e.g. no "false 9"). Runs at
+    TACTICS_EFFORT ("high"): synthesizing three JSON sources into coherent,
+    grounded prose benefits from deeper reasoning.
 
     Args:
         context (dict): Output of load_match_context(). Only the keys in
@@ -355,6 +367,7 @@ def generate_tactics_section(context: dict, match_label: str, competition: str) 
     response = client.messages.create(
         model=MODEL,
         max_tokens=1500,
+        output_config={"effort": TACTICS_EFFORT},
         system=system,
         messages=[{"role": "user", "content": user_content}],
     )
