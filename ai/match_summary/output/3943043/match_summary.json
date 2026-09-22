@@ -1,78 +1,72 @@
 {
   "outcome": {
-    "headline": "Spain outclassed England 2-1, dominating possession and chances despite a nervy finish sealed by substitute Mikel Oyarzabal.",
+    "headline": "Spain edged England 2-1 at Euro 2024, dominating possession and shot volume to complete their sweep of the group's heavyweights.",
     "key_stats": [
       {
         "label": "Final Score",
         "value": "Spain 2-1 England",
-        "source_field": "match_stats.home.score, match_stats.away.score"
+        "source_field": "match_stats.home.score / match_stats.away.score"
+      },
+      {
+        "label": "Possession",
+        "value": "62.2%",
+        "source_field": "match_stats.rows[2].home_value"
       },
       {
         "label": "Shots",
         "value": "16 vs 9",
-        "source_field": "match_stats.rows[0].home_value, match_stats.rows[0].away_value"
-      },
-      {
-        "label": "Possession",
-        "value": "62.2% vs 37.8%",
-        "source_field": "match_stats.rows[2].home_value, match_stats.rows[2].away_value"
+        "source_field": "match_stats.rows[0].home_value / away_value"
       },
       {
         "label": "xG",
         "value": "1.79 vs 0.73",
-        "source_field": "match_stats.rows[7].home_value, match_stats.rows[7].away_value"
+        "source_field": "match_stats.rows[7].home_value / away_value"
       },
       {
         "label": "Passes",
         "value": "592 vs 323",
-        "source_field": "match_stats.rows[8].home_value, match_stats.rows[8].away_value"
+        "source_field": "match_stats.rows[8].home_value / away_value"
       },
       {
         "label": "Pass Accuracy",
         "value": "87.5% vs 78.6%",
-        "source_field": "match_stats.rows[9].home_value, match_stats.rows[9].away_value"
+        "source_field": "match_stats.rows[9].home_value / away_value"
       },
       {
         "label": "Corners",
         "value": "10 vs 2",
-        "source_field": "match_stats.rows[3].home_value, match_stats.rows[3].away_value"
+        "source_field": "match_stats.rows[3].home_value / away_value"
       }
     ],
     "standout_performers": [
       {
-        "player": "Mikel Oyarzabal",
-        "team": "Spain",
-        "reason": "Came on as a 67th-minute substitute for Morata and was involved in Spain's attacking play late in the match, contributing to the winning effort.",
-        "source_field": "substitutes.teams.Spain[2]"
-      },
-      {
         "player": "Aymeric Laporte",
         "team": "Spain",
-        "reason": "High passing volume from center-back including multiple progressive passes, a key build-up figure across all four on-ball periods recorded.",
-        "source_field": "pass_network.home.windows[0].nodes[0]"
+        "reason": "Led Spain's progression from the back, involved in numerous long progressive passes and carries pushing the ball into the final third.",
+        "source_field": "progressive_map.home.actions (multiple entries for Aymeric Laporte)"
       },
       {
-        "player": "Jude Bellingham",
+        "player": "Robin Le Normand",
+        "team": "Spain",
+        "reason": "Most heavily used passer for Spain in the starting window with 48 completed passes and a central role progressing play.",
+        "source_field": "pass_network.home.windows[0].nodes (Robin Aime Robert Le Normand, passes:48)"
+      },
+      {
+        "player": "Ollie Watkins",
         "team": "England",
-        "reason": "Led England's progressive passing and carrying involvement, including a 21.5-yard progressive pass and multiple progressive carries.",
-        "source_field": "progressive_map.away.actions"
+        "reason": "Introduced as a 60th-minute substitute for Harry Kane, tasked with reviving England's attack.",
+        "source_field": "substitutes.teams.England[1]"
       },
       {
         "player": "Bukayo Saka",
         "team": "England",
-        "reason": "Recorded a 38.6-yard progressive carry and several progressive passes, England's most dangerous outlet on the right.",
-        "source_field": "progressive_map.away.actions"
-      },
-      {
-        "player": "Daniel Carvajal",
-        "team": "Spain",
-        "reason": "Second-highest pass count among Spain starters (36 in the first window) and a constant outlet down the right flank.",
-        "source_field": "pass_network.home.windows[0].nodes[1]"
+        "reason": "England's most active attacking outlet with 14 completed passes in the starting window and multiple progressive carries/passes into the final third.",
+        "source_field": "pass_network.away.windows[0].nodes (Bukayo Saka, passes:14)"
       }
     ]
   },
   "tactics": {
-    "prose": "Both sides lined up in a 4-2-3-1, with Spain's declared shape holding until the 89th minute, when Nacho, Mikel Merino and Mikel Oyarzabal came on for Robin Le Normand, Rodri (via Zubimendi at half-time) and Morata respectively, keeping the same broad structure through to full time. England mirrored that setup for an hour before Ollie Watkins replaced Harry Kane, Cole Palmer came on for Kobbie Mainoo at 69', and Jude Bellingham dropped into the right-sided base-midfield slot alongside Declan Rice \u2014 a rearrangement that culminated in a late switch to a 4-1-2-1-2 after 89 minutes, with Rice as the deepest midfielder behind Palmer, Saka and Bellingham, and Ivan Toney and Watkins paired up front alongside Toney's introduction for Foden.\n\nIn possession, Spain's on-ball centroid (62.2, 41.4) sat further forward and more central than England's underlying off-ball density would suggest was comfortable, with Robin Le Normand and Aymeric Laporte the busiest first-half nodes (75 and 70 involvements) both operating from deep, central positions to progress play, while Rodri linked between them and the advanced trio. Their attacking hull in the first 45 stretched from the byline out to Nico Williams and Lamine Yamal high and wide, indicating a team happy to commit both wide forwards high and let the back three carry the ball forward underneath them. England's on-ball shape by contrast centred further upfield (69.8, 39.2) with Declan Rice (45 events) and Kyle Walker (50) forming the busiest circulation points, and John Stones stepping into a more advanced, central passing role alongside Rice and Mainoo \u2014 reflecting a back-to-front build via the center-backs and Walker rather than a single deep pivot.\n\nPassing-network hubs reinforce this: Spain's first-half network shows Le Normand and Laporte as by far the highest-volume nodes (48 passes each) exchanging heavily with each other and Carvajal, with Rodri as a clear tertiary connector into Fabi\u00e1n Ruiz and the front line \u2014 a hub structure that persisted with Zubimendi and later Nacho stepping into similar deep-central roles after changes. England's network was more evenly spread across Rice (23), Stones (24) and Walker (24), with Stones-Pickford, Walker-Stones and Rice-Bellingham as the heaviest single connections, before the ball progressively found Bellingham and, after the 69th-minute change, Cole Palmer as the central attacking link \u2014 Palmer immediately becoming a frequent outlet for Bellingham, Walker and Saka in the final third once introduced."
+    "prose": "Both sides declared a 4‑2‑3‑1 and held it for the bulk of the game, and the early passing structure shows two very different routes into the final third. Spain's build ran through the centre‑back pair: Le Normand and Laporte each completed 48 passes in the opening window, with Laporte–Le Normand exchanges (17 and 14 either way) and Unai Simón feeding both (eight apiece) forming the base of the network. From there the ball went out rather than through — Le Normand→Carvajal was the single heaviest link (17), Carvajal→Lamine Yamal the most frequent forward pass (nine), while on the other flank Laporte→Cucurella (nine) and Cucurella→Nico Williams (seven) mirrored it. The on‑ball shape backs that up: Carvajal sat at x=67.4, y=70.9 and Cucurella at y=10.0, both effectively pinned to the touchlines and both ahead of their centre‑backs, while Rodri anchored the middle at 56.8/41.2 with Fabián Ruiz pushed left and higher (69.9/23.4). The two nominally central attackers were the least involved of the outfielders — Olmo 11 completed passes, Morata eight — so Spain's structure loaded the wide slots and largely bypassed the centre‑attacking‑midfield node.\n\nEngland's first‑hour network was flatter and more symmetrical, hubbed on Walker and Stones (24 passes each) and Rice (23), with Pickford a genuine participant on 20 and Stones↔Pickford the most repeated pairing. Rice→Bellingham (eight) was the primary progression, and Bellingham's on‑ball average of 67.2/20.1 — well left and high of the double pivot — matched his Left Wing listing while still receiving as an outlet. Saka held the widest, highest station of any England player (82.6/68.4 in the network, 75.5/70.4 on‑ball) and fed back inside to Walker and Foden. Kane, like Morata, was a low‑volume node: five completed passes, on‑ball position 77.7/33.4. Across the match England registered 483 recorded on‑ball events to Spain's 715, though England's off‑ball centroid (69.8) and 70th‑percentile depth line (86.7) both sat higher up the pitch than Spain's (62.2 and 82.1) — a caveat being that the 360 frames follow the ball.\n\nThe substitution windows reshaped both teams. Spain replaced Rodri with Zubimendi at half time, and the 45'–67' network shows the whole structure drop: Laporte's passing position fell from 53.8 to 35.2, Le Normand's from 47.2 to 37.1, and Zubimendi settled at 55.8/39.5 with Zubimendi↔Fabián Ruiz the busiest central link. Oyarzabal replaced Morata on 67, and in the 67'–82' window Spain's positions pushed forward again — Carvajal to 81.2, Olmo to 87.1, Nico Williams to 94.1 — with Le Normand and Laporte still the highest‑volume passers (16 and 15) but now swapping at halfway. Nacho came on for Le Normand at 82, and in that short window Spain's on‑ball hull stretched from Simón at x=24.9 out to Carvajal at x=108.0, the most advanced average position any Spaniard recorded.\n\nEngland's changes went the other way in structure. Watkins replaced Kane on 60 and Palmer replaced Mainoo on 69, at which point the declared shape kept its 4‑2‑3‑1 outline but rotated personnel inside it: Bellingham moved to Right Defensive Midfield, Foden to Left Wing and Palmer into the central attacking slot. Palmer immediately became the connective node in that window — Bellingham→Palmer (four) was England's top edge, and Palmer→Saka (three) recreated the right‑sided route, with Walker on eight passes still the busiest. Foden, by contrast, dropped to one completed pass and an on‑ball position of 51.9/19.0. At 89 England abandoned the 4‑2‑3‑1 altogether for a 4‑1‑2‑1‑2: Rice alone at Center Defensive Midfield, Saka and Bellingham as the two central midfielders, Palmer behind Toney and Watkins as paired forwards. Spain's own 89th‑minute shape moved Olmo out to Right Wing with Merino taking the central attacking slot and Oyarzabal leading the line; neither closing structure generated enough completed passes to register more than a handful of links."
   },
   "metadata": {
     "match_id": 3943043,
@@ -80,7 +74,14 @@
     "away_team": "England",
     "competition": "UEFA Euro 2024",
     "match_label": "Spain vs England",
-    "model": "claude-sonnet-5",
+    "models": {
+      "outcome": "claude-sonnet-5",
+      "tactics": "claude-opus-5"
+    },
+    "effort": {
+      "outcome": "low",
+      "tactics": "medium"
+    },
     "source_files": {
       "match_stats": "match_stats.json",
       "substitutes": "substitutes.json",

@@ -143,3 +143,63 @@ the original (mismatched) spot-check evidence. No 400 from sending effort
 instead of sampling parameters; outcome section parses and grounds (5/5
 performers checked, one minor phrasing note); tactics section avoids event
 claims and reproduces exactly one of the three previously known defects.
+
+## Module 2 (Task 2) — regenerated output on the chosen routing (2026-09-21)
+
+`match_summary.json` was regenerated with the routing chosen from
+`comparison-3943043.md`: outcome on Sonnet 5 / low, tactics on Opus 5 / medium
+(`metadata.models` records both). This supersedes every earlier check above for
+the committed file. Errors are **called out, not gated** — no eval system exists
+yet (Module 3), and the routing is a default to revisit once it does. This is a
+targeted trace of the checkable claims (numbers, comparisons, named players,
+formations, substitutions), not an exhaustive claim-by-claim pass, on one run.
+
+### Outcome section
+
+All 7 `key_stats` match their cited fields (Final Score 2-1, Possession 62.2%,
+Shots 16 vs 9, xG 1.79 vs 0.73, Passes 592 vs 323, Pass Accuracy 87.5% vs 78.6%,
+Corners 10 vs 2). `source_field` uses the shorthand `rows[n].home_value / away_value`.
+
+| Claim | Verdict |
+|---|---|
+| Headline: "…to complete their sweep of the group's heavyweights" | **Error** — nothing in the source data covers Spain's earlier matches; outside knowledge the prompt forbids. |
+| Le Normand: 48 completed passes in the starting window | Correct (`windows[0]`); "most heavily used passer" is joint with Laporte (48). |
+| Laporte: "led Spain's progression from the back… long progressive passes and carries" | Supported (8 progressive actions), but tied with N. Williams; "led" overstates. |
+| Watkins: 60th-minute sub for Kane | Correct (`on_minute` 60). "Tasked with reviving England's attack" infers intent the data doesn't hold. |
+| Saka: 14 completed passes in the starting window; multiple progressive carries/passes | Correct (14; 6 progressive actions). "Most active attacking outlet" is a loose comparison. |
+
+**MOTM (Nico Williams): miss.** Not a grounding error — the source data has no
+man-of-the-match field, so the model can't know it. Recorded as an observation
+only; the prompt is not to be tuned, and no outside data added, to make it hit.
+
+### Tactics section
+
+Verified against source: 4-2-3-1 for both sides; Le Normand and Laporte 48 passes
+each with 17/14 exchanges, Simón feeding both (8 each); Carvajal→Yamal 9,
+Laporte→Cucurella 9, Cucurella→N. Williams 7; Carvajal (67.4, 70.9), Cucurella
+y=10.0, Rodri (56.8, 41.2), Ruiz (69.9, 23.4); Olmo 11 and Morata 8 passes;
+England Walker/Stones 24, Rice 23, Pickford 20, Stones–Pickford the top pairing
+(13); Bellingham (67.2, 20.1) on the Left Wing; Kane 5 passes at (77.7, 33.4);
+483 vs 715 open-play on-ball events with the camera caveat; England's higher
+off-ball centroid and depth line; Zubimendi for Rodri at the interval and the
+45'–67' drop (Laporte 53.8→35.2, Le Normand 47.2→37.1); the 67'–82' push
+(Carvajal 81.2, Olmo 87.1, N. Williams 94.1); Carvajal at x=108.0 as a hull vertex
+in the 82'–88' window; Watkins 60', Palmer 69', Bellingham/Foden/Palmer
+reshuffle; the 89' 4-1-2-1-2 and Spain's Merino/Olmo/Oyarzabal shape; Bellingham→Palmer
+(4) and Palmer→Saka (3); Foden on one pass at (51.9, 19.0).
+
+| Claim | Verdict |
+|---|---|
+| Saka "held the widest, highest station of any England player (82.6/68.4 in the network, 75.5/70.4 on-ball)" | **Error** — true of the pass-network position (x=82.6) but not on-ball: Kane's on-ball x is 77.7, ahead of Saka's 75.5. The sentence cites both. |
+| Le Normand→Carvajal "the single heaviest link (17)" | Minor — tied with Laporte→Le Normand (17); Laporte–Le Normand combined is 31. |
+| Carvajal→Yamal "the most frequent forward pass (nine)" | Minor — tied with Laporte→Cucurella (9), which the same sentence cites. |
+| Le Normand and Laporte "swapping at halfway" (67'–82') | Minor — their positions there are x=49.2 and 45.1, not halfway (60). |
+| Rice→Bellingham (8) "the primary progression" | Minor — a pass count, not a progression measure. |
+
+Style note: the prose uses non-breaking hyphens (U+2011) in "4‑2‑3‑1" and compounds
+like "centre‑back"; harmless when rendered, but copy/search won't match a plain hyphen.
+
+No goals, cards, fouls or shots are mentioned in the tactics section, and no
+tactical role labels beyond literal position strings.
+
+The two errors above are the current known issues shown on tylermartins.com.

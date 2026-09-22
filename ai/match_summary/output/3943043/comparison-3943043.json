@@ -1,0 +1,863 @@
+{
+  "match_id": 3943043,
+  "created": "2026-09-21",
+  "rates_usd_per_mtok": {
+    "claude-haiku-4-5": {
+      "input": 1.0,
+      "output": 5.0
+    },
+    "claude-sonnet-5": {
+      "input": 2.0,
+      "output": 10.0
+    },
+    "claude-opus-5": {
+      "input": 5.0,
+      "output": 25.0
+    }
+  },
+  "max_tokens": 16000,
+  "spend_ceiling_usd": 7.0,
+  "spent_usd": 2.3438489999999996,
+  "decision_log_text": "### 2026-09-21 — Module 2 (Task 2) — Model & effort routing\nChosen from the 5-cell comparison on match 3943043 (`ai/match_summary/output/3943043/comparison-3943043.md`). Each cell is n = 1 and errors were called out by manual read, not a scored eval, so this is a **default to revisit once the eval system (Module 3) exists**, not a conclusion.\n- **Outcome: Sonnet 5 / low.** 0 errors (+1 minor) at $0.28 and 14s for the call — the cheapest cell without an error, and the config already shipped. (Sonnet 5 medium and high each made one performer error; with n = 1 that looks like noise, not an effort effect.)\n- **Tactics: Opus 5 / medium.** 1 error (+1 minor) against 2-7 for the other cells, and it did not repeat the off-ball-centroid-labelled-on-ball mislabel that cells 2 and 4 did. It costs $0.29 and 39s for the call, against about $0.10 and 16-30s for Sonnet 5 — a small absolute gap for a summary generated once per match.\n- **MOTM (Nico Williams)** is not in the source data. It is recorded per cell as an observation only, is not a selection criterion, and the prompt is not tuned to it.\n- **Chose not to build:** the full model x effort grid.\n- Because the sections now use different models, `metadata.model` became `metadata.models: {outcome, tactics}`.",
+  "cells": [
+    {
+      "n": 1,
+      "model": "claude-haiku-4-5",
+      "effort": null,
+      "sweep": "model",
+      "status": "ok",
+      "failures": [],
+      "calls": {
+        "outcome": {
+          "section": "outcome",
+          "model_requested": "claude-haiku-4-5",
+          "model_served": "claude-haiku-4-5-20251001",
+          "effort": null,
+          "max_tokens": 16000,
+          "stop_reason": "end_turn",
+          "latency_s": 15.22,
+          "usage": {
+            "cache_creation": {
+              "ephemeral_1h_input_tokens": 0,
+              "ephemeral_5m_input_tokens": 0
+            },
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "inference_geo": "not_available",
+            "input_tokens": 122799,
+            "output_tokens": 603,
+            "output_tokens_details": null,
+            "server_tool_use": null,
+            "service_tier": "standard"
+          },
+          "cost": {
+            "input_usd": 0.122799,
+            "output_usd": 0.003015,
+            "total_usd": 0.125814
+          },
+          "output": {
+            "headline": "Spain defeated England 2-1 to advance in Euro 2024, dominating possession and chances while England offered stubborn resistance.",
+            "key_stats": [
+              {
+                "label": "Score",
+                "value": "2-1",
+                "source_field": "match_stats.home.score, match_stats.away.score"
+              },
+              {
+                "label": "Possession",
+                "value": "62.2%",
+                "source_field": "match_stats.rows[2].home_value"
+              },
+              {
+                "label": "Shots",
+                "value": "16-9",
+                "source_field": "match_stats.rows[0].home_value, match_stats.rows[0].away_value"
+              },
+              {
+                "label": "Shots on Target",
+                "value": "6-3",
+                "source_field": "match_stats.rows[1].home_value, match_stats.rows[1].away_value"
+              },
+              {
+                "label": "xG",
+                "value": "1.79-0.73",
+                "source_field": "match_stats.rows[7].home_value, match_stats.rows[7].away_value"
+              },
+              {
+                "label": "Passes",
+                "value": "592-323",
+                "source_field": "match_stats.rows[8].home_value, match_stats.rows[8].away_value"
+              },
+              {
+                "label": "Corners",
+                "value": "10-2",
+                "source_field": "match_stats.rows[3].home_value, match_stats.rows[3].away_value"
+              }
+            ],
+            "standout_performers": [
+              {
+                "player": "Rodri",
+                "team": "Spain",
+                "reason": "Central midfielder made 29 passes in the first half while controlling the tempo, and remained influential throughout as Spain's midfield orchestrator.",
+                "source_field": "pass_network.home.windows[0].nodes[8]"
+              },
+              {
+                "player": "Robin Le Normand",
+                "team": "Spain",
+                "reason": "Defender completed 48 passes in the opening period and remained a constant presence in Spain's build-up play, registering highest pass activity from defence across multiple windows.",
+                "source_field": "pass_network.home.windows[0].nodes[7]"
+              },
+              {
+                "player": "Nico Williams",
+                "team": "Spain",
+                "reason": "Winger made several progressive actions including carries and passes, with 5 progressive passes in the 67–82 minute window, providing attacking width.",
+                "source_field": "progressive_map.home.actions, pass_network.home.windows[2].nodes[8]"
+              },
+              {
+                "player": "Kyle Walker",
+                "team": "England",
+                "reason": "Right back completed 24 passes in the opening 60 minutes and made a crucial carry advancing possession 40.6 yards upfield in the 39th minute to create attacking opportunities.",
+                "source_field": "pass_network.away.windows[0].nodes[7], progressive_map.away.actions"
+              }
+            ]
+          },
+          "failures": []
+        },
+        "tactics": {
+          "section": "tactics",
+          "model_requested": "claude-haiku-4-5",
+          "model_served": "claude-haiku-4-5-20251001",
+          "effort": null,
+          "max_tokens": 16000,
+          "stop_reason": "end_turn",
+          "latency_s": 16.13,
+          "usage": {
+            "cache_creation": {
+              "ephemeral_1h_input_tokens": 0,
+              "ephemeral_5m_input_tokens": 0
+            },
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "inference_geo": "not_available",
+            "input_tokens": 41349,
+            "output_tokens": 1116,
+            "output_tokens_details": null,
+            "server_tool_use": null,
+            "service_tier": "standard"
+          },
+          "cost": {
+            "input_usd": 0.041349,
+            "output_usd": 0.00558,
+            "total_usd": 0.046929
+          },
+          "output": "# Spain vs England – UEFA Euro 2024 Tactical Summary\n\nSpain operated in a consistent 4-2-3-1 shape throughout, with Aymeric Laporte and Robin Le Normand anchoring the centre-back pairing and Daniel Carvajal and Marc Cucurella deployed as fullbacks. The midfield paired Rodri and Fabián Ruiz as a two-man defensive unit in the first half, with Rodri replaced by Martín Zubimendi at the interval. Daniel Olmo occupied the attacking midfield zone, whilst Nico Williams and Lamine Yamal operated as left and right wingers respectively, with Álvaro Morata leading the line until his 67th-minute substitution for Mikel Oyarzabal. In the closing stages, with Zubimendi remaining in the right defensive midfield role and Yama removed for Mikel Merino in the 88th minute, Spain shifted to a narrower attacking posture, though the 4-2-3-1 declaration persisted.\n\nEngland maintained a 4-2-3-1 structure for the opening 69 minutes before tactical adjustments began. Declan Rice and Kobbie Mainoo formed the defensive pivot initially, with Phil Foden operating as a left winger and Jude Bellingham as a left-sided attacking presence, allowing Bukayo Saka to function on the right wing. Harry Kane led the line until his 60th-minute departure for Ollie Watkins. Following Mainoo's substitution for Cole Palmer at 69 minutes, England repositioned into a less rigid setup; Bellingham shifted to a right defensive midfield role (template position 40.0, 62.0), and Foden moved to the left wing, freeing Palmer to act as attacking midfielder. By the 89th minute, England had formally declared a 4-1-2-1-2 formation, centralizing Rice as a lone defensive midfielder (template 40.0, 40.0) with Bellingham and Saka redeployed as central midfielders flanking Palmer in the number ten slot, whilst Ivan Toney and Watkins formed a two-striker pairing.\n\nIn possession, Spain's empirical positioning reflected progressive build-play from deep. During the opening 45 minutes, Laporte (54.7, 26.2) and Le Normand (50.3, 54.5) operated as deep playmakers, with Rodri centrally positioned (56.8, 41.2) and Carvajal pushing high on the right (67.4, 70.9). The wider attacking players—Nico Williams (78.1, 30.4) and Lamine Yamal (81.1, 68.6)—advanced significantly into the attacking third. As the match progressed through substitutions and fatigue, this shape fractured; by the 82–88 minute window, Carvajal had drifted even further upfield (108.0, 62.6), indicative of Spain's attacking intent in the latter stages. England's on-ball positioning showed a more compact midfield structure. Declan Rice (48.7, 39.9) remained central and lower, whilst Jude Bellingham (67.2, 20.1) operated in an advanced, wide role on the left. Following Palmer's entry at 69 minutes, the passing network widened: Bellingham (64.8, 37.6) shifted inward, Cole Palmer (67.3, 53.2) occupied the right-central attacking space, and Kyle Walker (33.1, 62.2) began driving from deep, indicating a fluid, possession-based approach.\n\nDefensively, Spain's off-ball density centroid (62.21, 41.37) revealed a mid-block shape concentrated in the middle third, with peak density between the half-way line and the attacking third—a posture suited to controlled pressing. England's centroid (69.84, 39.17) sat deeper and slightly more to the right, consistent with a narrower, more compact defensive shape designed to shield the centre. Spain's depth line (70th percentile: 82.05) extended further forward than England's (86.73), reflecting greater willingness to squeeze space in the attacking half. In the pass network, Spain cycled possession through the centre-backs and Rodri/Zubimendi early on—Laporte and Le Normand each recording 48 passes in the first 45 minutes—before gradually introducing the wingers and attacking midfielders as Spain pressed forward. England's pass network was more lateralized, with fullbacks Kyle Walker and Luke Shaw driving distribution to wings and attacking midfielders, and Rice (23 passes, 0–60') filtering play through Bellingham and Foden, though the entry of Cole Palmer elevated central attacking circulation and reduced reliance on wide sequences.",
+          "failures": []
+        }
+      },
+      "totals": {
+        "input_tokens": 164148,
+        "output_tokens": 1719,
+        "total_tokens": 165867,
+        "input_usd": 0.16414800000000002,
+        "output_usd": 0.008595,
+        "total_usd": 0.172743,
+        "latency_s": 31.35
+      },
+      "grading": {
+        "outcome_grounding": "2 errors",
+        "motm": "hit",
+        "tactics_grounding": "7 errors",
+        "notes": [
+          "Outcome: all 7 key_stats match their source fields. Performers surfaced: Rodri, Le Normand, N. Williams, Walker.",
+          "Outcome error: Walker \"40.6-yard carry in the 39th minute\" does not exist. His minute-39 carries are all under 2 yards and none is progressive; his longest progressive actions are passes (41.46 at 29', incomplete).",
+          "Outcome error: N. Williams \"5 progressive passes in the 67-82 window\" cites windows[2].nodes[8].passes, which is his total pass count (5). His progressive passes were at 4', 7', 13', 48' and 65'.",
+          "Tactics: opens with a Markdown H1 header (system prompt says no headers) and cites \"fatigue\" (prompt forbids inferring it).",
+          "Tactics: England's off-ball centroid \"sat deeper\" than Spain's, but x=69.84 vs 62.21 is further forward; the depth-line comparison is reversed the same way (Spain 82.05 \"further forward\" than England 86.73).",
+          "Tactics: Foden called a left winger; he is the centre attacking midfielder until 69'. \"Narrower attacking posture\" and \"fullbacks driving distribution\" have no source.",
+          "MOTM (Nico Williams): hit. The pick is defensible (8 progressive actions, tied for the most on Spain), but its supporting figure is one of the outcome errors above."
+        ]
+      }
+    },
+    {
+      "n": 2,
+      "model": "claude-sonnet-5",
+      "effort": "medium",
+      "sweep": "model + effort",
+      "status": "ok",
+      "failures": [],
+      "calls": {
+        "outcome": {
+          "section": "outcome",
+          "model_requested": "claude-sonnet-5",
+          "model_served": "claude-sonnet-5",
+          "effort": "medium",
+          "max_tokens": 16000,
+          "stop_reason": "end_turn",
+          "latency_s": 15.66,
+          "usage": {
+            "cache_creation": {
+              "ephemeral_1h_input_tokens": 0,
+              "ephemeral_5m_input_tokens": 0
+            },
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "inference_geo": "global",
+            "input_tokens": 135456,
+            "output_tokens": 863,
+            "output_tokens_details": {
+              "thinking_tokens": 0
+            },
+            "server_tool_use": null,
+            "service_tier": "standard"
+          },
+          "cost": {
+            "input_usd": 0.270912,
+            "output_usd": 0.00863,
+            "total_usd": 0.279542
+          },
+          "output": {
+            "headline": "Spain defeated England 2-1 in the Euro 2024 final, dominating possession and shot volume before withstanding a late England rally.",
+            "key_stats": [
+              {
+                "label": "Final Score",
+                "value": "Spain 2 - England 1",
+                "source_field": "match_stats.home.score, match_stats.away.score"
+              },
+              {
+                "label": "Shots",
+                "value": "Spain 16 - England 9",
+                "source_field": "match_stats.rows[0].home_value, match_stats.rows[0].away_value"
+              },
+              {
+                "label": "xG",
+                "value": "Spain 1.79 - England 0.73",
+                "source_field": "match_stats.rows[7].home_value, match_stats.rows[7].away_value"
+              },
+              {
+                "label": "Possession",
+                "value": "Spain 62.2% - England 37.8%",
+                "source_field": "match_stats.rows[2].home_value, match_stats.rows[2].away_value"
+              },
+              {
+                "label": "Passes",
+                "value": "Spain 592 - England 323",
+                "source_field": "match_stats.rows[8].home_value, match_stats.rows[8].away_value"
+              },
+              {
+                "label": "Pass Accuracy",
+                "value": "Spain 87.5% - England 78.6%",
+                "source_field": "match_stats.rows[9].home_value, match_stats.rows[9].away_value"
+              },
+              {
+                "label": "Corners",
+                "value": "Spain 10 - England 2",
+                "source_field": "match_stats.rows[3].home_value, match_stats.rows[3].away_value"
+              }
+            ],
+            "standout_performers": [
+              {
+                "player": "Aymeric Laporte",
+                "team": "Spain",
+                "reason": "Led Spain's progressive passing map with numerous long progressive passes and carries out of defense, including a 56.14-yard progressive pass and multiple key line-breaking balls.",
+                "source_field": "progressive_map.home.actions"
+              },
+              {
+                "player": "Robin Le Normand",
+                "team": "Spain",
+                "reason": "Top passer in Spain's opening pass network window with 48 completed passes and central hub role linking defense to attack.",
+                "source_field": "pass_network.home.windows[0].nodes[7]"
+              },
+              {
+                "player": "Cole Palmer",
+                "team": "England",
+                "reason": "Introduced as a substitute in the 69th minute for Kobbie Mainoo and became a creative outlet in England's late pressing spells, including a progressive pass to Bukayo Saka.",
+                "source_field": "substitutes.teams.England[2]"
+              },
+              {
+                "player": "Bukayo Saka",
+                "team": "England",
+                "reason": "Made multiple progressive carries and passes late in the match, including a 38.63-yard progressive carry in the 72nd minute as England pushed for an equalizer.",
+                "source_field": "progressive_map.away.actions"
+              }
+            ]
+          },
+          "failures": []
+        },
+        "tactics": {
+          "section": "tactics",
+          "model_requested": "claude-sonnet-5",
+          "model_served": "claude-sonnet-5",
+          "effort": "medium",
+          "max_tokens": 16000,
+          "stop_reason": "end_turn",
+          "latency_s": 15.87,
+          "usage": {
+            "cache_creation": {
+              "ephemeral_1h_input_tokens": 0,
+              "ephemeral_5m_input_tokens": 0
+            },
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "inference_geo": "global",
+            "input_tokens": 46505,
+            "output_tokens": 902,
+            "output_tokens_details": {
+              "thinking_tokens": 0
+            },
+            "server_tool_use": null,
+            "service_tier": "standard"
+          },
+          "cost": {
+            "input_usd": 0.09301,
+            "output_usd": 0.00902,
+            "total_usd": 0.10203
+          },
+          "output": "Both sides began in a declared 4-2-3-1, and both largely stayed loyal to that base structure for long stretches. Spain's on-ball centroid (62.2, 41.4) sat marginally deeper and more central than England's (69.8, 39.2), whose shape pushed further towards the attacking third, reflected in England's higher depth line (86.7 vs Spain's 82.1). Spain made staggered changes across the second half — Zubimendi for Rodri at the interval, Oyarzabal for Morata just after the hour, Nacho for Le Normand late on, and Merino for Lamine Yamal in the closing minutes — while formally holding 4-2-3-1 throughout until a brief switch in the final period. England's front line rotated too, with Watkins replacing Kane just after the hour and Palmer coming on for Mainoo, before a late reshuffle into a 4-1-2-1-2 in the final minutes that pushed Toney and Watkins together up front with Rice dropping into a single deep midfield role.\n\nIn Spain's passing network, Le Normand and Laporte formed the heaviest early hub, exchanging the tournament's most frequent combination (17 and 14 completions) with Carvajal and Rodri feeding around them; Rodri's 29 passes in the opening window made him a clear progressive outlet before his withdrawal. After the restructuring, Zubimendi and Fabián Ruiz took on more central circulation duties, while Cucurella-Nico Williams became the busiest left-side combination (6-7 completions) as Spain's shape shifted defensive personnel but kept ball circulation anchored through the back line. England's network centred on Rice, who linked repeatedly with Bellingham (8), John Stones (5), and Walker, with Stones-Pickford (8) and Walker-Stones (7) forming the base-building spine; Kane's involvement was comparatively light (5 passes) before his substitution. After Palmer's introduction, the England network reorganised around Bellingham-Palmer (4) and Palmer-Saka (3) as central axes, with Walker also becoming a frequent connector into Palmer and Stones on the right side in the closing exchanges.\n\nEngland's off-ball density placed heaviest concentration in the 66-88 x-range on the near side of Spain's defensive third, consistent with their higher average positioning, while Spain's off-ball density peaked in a similarly advanced band but skewed slightly more central. Both teams' ellipses were angled almost identically flat (-175° to -176°), indicating broadly horizontal team shapes typical of settled defensive blocks rather than compact or diagonal orientations, with Spain's shape (rx 27.7) marginally wider than England's (rx 25.9).",
+          "failures": []
+        }
+      },
+      "totals": {
+        "input_tokens": 181961,
+        "output_tokens": 1765,
+        "total_tokens": 183726,
+        "input_usd": 0.36392199999999997,
+        "output_usd": 0.01765,
+        "total_usd": 0.381572,
+        "latency_s": 31.53
+      },
+      "grading": {
+        "outcome_grounding": "1 error, 2 minor",
+        "motm": "miss",
+        "tactics_grounding": "3 errors, 2 minor",
+        "notes": [
+          "Outcome: all 7 key_stats match. Performers surfaced: Laporte, Le Normand, Palmer, Saka.",
+          "Outcome error: Palmer \"progressive pass to Bukayo Saka\" is unsupported. All 6 of Palmer's recorded actions have progressive=false, and the cited field is substitutes only.",
+          "Outcome minor: Laporte \"led\" progressive passing (tied with N. Williams at 8 progressive actions); Le Normand \"top passer\" (joint with Laporte at 48).",
+          "Tactics error: the (62.2, 41.4) and (69.8, 39.2) centroids are labelled \"on-ball\" but are the off-ball centroids (the known Module 1 defect recurs).",
+          "Tactics error: Spain \"more central\" than England is reversed. Pitch centre is y=40, so England (39.17) is closer than Spain (41.37).",
+          "Tactics error: \"the tournament's most frequent combination\" is a claim about the whole tournament; the data covers one match.",
+          "Tactics minor: Rodri's 29 passes called a \"progressive outlet\" (pass count is not progression); Spain \"brief switch in the final period\" (the formation label stays 4-2-3-1, only positions change).",
+          "MOTM (Nico Williams): miss. Not a grounding error; see the MOTM note under the results table."
+        ]
+      }
+    },
+    {
+      "n": 3,
+      "model": "claude-opus-5",
+      "effort": "medium",
+      "sweep": "model",
+      "status": "ok",
+      "failures": [],
+      "calls": {
+        "outcome": {
+          "section": "outcome",
+          "model_requested": "claude-opus-5",
+          "model_served": "claude-opus-5",
+          "effort": "medium",
+          "max_tokens": 16000,
+          "stop_reason": "end_turn",
+          "latency_s": 16.38,
+          "usage": {
+            "cache_creation": {
+              "ephemeral_1h_input_tokens": 0,
+              "ephemeral_5m_input_tokens": 0
+            },
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "inference_geo": "global",
+            "input_tokens": 135456,
+            "output_tokens": 967,
+            "output_tokens_details": {
+              "thinking_tokens": 0
+            },
+            "server_tool_use": null,
+            "service_tier": "standard"
+          },
+          "cost": {
+            "input_usd": 0.67728,
+            "output_usd": 0.024175,
+            "total_usd": 0.7014549999999999
+          },
+          "output": {
+            "headline": "Spain edged England 2-1 in the Euro 2024 final, controlling the ball with 62.2% possession and nearly doubling England's shot count.",
+            "key_stats": [
+              {
+                "label": "Final score (Spain)",
+                "value": "2",
+                "source_field": "match_stats.home.score"
+              },
+              {
+                "label": "Final score (England)",
+                "value": "1",
+                "source_field": "match_stats.away.score"
+              },
+              {
+                "label": "Spain xG",
+                "value": "1.79",
+                "source_field": "match_stats.rows[7].home_value"
+              },
+              {
+                "label": "England xG",
+                "value": "0.73",
+                "source_field": "match_stats.rows[7].away_value"
+              },
+              {
+                "label": "Spain possession",
+                "value": "62.2",
+                "source_field": "match_stats.rows[2].home_value"
+              },
+              {
+                "label": "Shots (Spain–England)",
+                "value": "16.0",
+                "source_field": "match_stats.rows[0].home_value"
+              },
+              {
+                "label": "Spain corners",
+                "value": "10.0",
+                "source_field": "match_stats.rows[3].home_value"
+              },
+              {
+                "label": "Spain passes at 87.5% accuracy",
+                "value": "592.0",
+                "source_field": "match_stats.rows[8].home_value"
+              }
+            ],
+            "standout_performers": [
+              {
+                "player": "Robin Le Normand",
+                "team": "Spain",
+                "reason": "Hub of Spain's first-half build-up, the joint-highest passer in the opening window and the team's most involved on-ball player before the break.",
+                "source_field": "pass_network.home.windows[0].nodes[7].passes; team_shape.home.on_ball.periods[0].nodes[0].event_count"
+              },
+              {
+                "player": "Aymeric Laporte",
+                "team": "Spain",
+                "reason": "Matched Le Normand for first-half pass volume and repeatedly carried the ball forward, including a 35-yard progressive carry in the 42nd minute.",
+                "source_field": "pass_network.home.windows[0].nodes[0].passes; progressive_map.home.actions (carry, Aymeric Laporte, minute 42, distance_gained 35.09)"
+              },
+              {
+                "player": "Nico Williams",
+                "team": "Spain",
+                "reason": "Constant left-side threat, with progressive carries including a 30-yard surge in the 81st minute.",
+                "source_field": "progressive_map.home.actions (carry, Nico Williams, minute 81, distance_gained 30.17)"
+              },
+              {
+                "player": "Bukayo Saka",
+                "team": "England",
+                "reason": "England's most direct attacker, producing a 38-yard progressive carry in the 72nd minute as they chased the game.",
+                "source_field": "progressive_map.away.actions (carry, Bukayo Saka, minute 72, distance_gained 38.63)"
+              },
+              {
+                "player": "Cole Palmer",
+                "team": "England",
+                "reason": "Introduced at 69:53 for Kobbie Mainoo and immediately became a link man, connecting four times with Bellingham in the final window.",
+                "source_field": "substitutes.teams.England[2].on_minute; pass_network.away.windows[2].edges[0].count"
+              }
+            ]
+          },
+          "failures": []
+        },
+        "tactics": {
+          "section": "tactics",
+          "model_requested": "claude-opus-5",
+          "model_served": "claude-opus-5",
+          "effort": "medium",
+          "max_tokens": 16000,
+          "stop_reason": "end_turn",
+          "latency_s": 38.94,
+          "usage": {
+            "cache_creation": {
+              "ephemeral_1h_input_tokens": 0,
+              "ephemeral_5m_input_tokens": 0
+            },
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "inference_geo": "global",
+            "input_tokens": 46505,
+            "output_tokens": 2384,
+            "output_tokens_details": {
+              "thinking_tokens": 906
+            },
+            "server_tool_use": null,
+            "service_tier": "standard"
+          },
+          "cost": {
+            "input_usd": 0.232525,
+            "output_usd": 0.0596,
+            "total_usd": 0.292125
+          },
+          "output": "Both sides set up in mirrored 4-2-3-1s, and the declared shapes held for the bulk of the game: Spain kept theirs from kick-off right through to the 89th minute, England only abandoning the structure in the final window. Spain's version leaned on a Rodri–Fabián Ruiz double pivot behind Olmo, with Nico Williams and Lamine Yamal pinned to the touchlines in the template and Morata alone up top; England's had Rice and Mainoo screening, Foden at centre attacking midfield and Bellingham nominally on the left wing outside Kane. The empirical on-ball positions largely confirm the declared widths — Cucurella sat at y=10.0 in the opening period, Yamal at y=68.6, Saka at y=70.4 — but with one clear asymmetry each: Carvajal operated at x=67.4 in the first half, further upfield than either Spanish centre-back, while Walker's on-ball node (x=56.0, y=69.0) was the most advanced of England's back four.\n\nThe passing structures diverged sharply in where they concentrated volume. Spain's first-half network was built on the centre-backs: Le Normand and Laporte each completed 48 passes, connected to each other 17 and 14 times, with Le Normand–Carvajal (17) the single strongest link and Rodri (29 passes) feeding back into both. From there the ball went wide rather than through the middle — Carvajal→Yamal nine times, Laporte→Cucurella nine, Cucurella→Nico Williams seven — while Olmo (11 passes) and Morata (8) were the least-involved outfielders in the network, a front pairing served rather than used as a relay. England's structure was flatter and more evenly spread across Stones (24), Walker (24) and Rice (23), with Stones–Pickford (8) and Rice–Bellingham (8) the heaviest edges and a recognisable right-side chain of Walker→Stones, Walker→Saka and Saka→Walker. Kane's node was notably deep and low-volume (x=51.3, five completed passes), with Saka (x=82.6) the only England player consistently holding advanced territory. Across the match Spain registered 715 open-play on-ball events to England's 483.\n\nThe changes came in waves. Spain replaced Rodri with Zubimendi at half-time, and in the 45'–67' window the build-up node positions dropped sharply — Laporte from x=53.8 to x=35.2, Le Normand from 47.2 to 37.1 — with Fabián Ruiz becoming the busiest passer (17) and Zubimendi's main link running back to him (five passes). England responded with Watkins for Kane on 60 and Palmer for Mainoo on 69, the latter triggering a genuine reshuffle within the 4-2-3-1: Bellingham dropped into right defensive midfield, Foden moved to left wing and Palmer took the No. 10 slot. Palmer immediately became a hub, receiving four times from Bellingham and feeding Saka three times, with Walker (eight passes) the highest-volume node of that window. Spain, meanwhile, pushed forward between 67' and 82' — Carvajal's on-ball node rose to x=81.2, Olmo to 82.5, Nico Williams to 91.2 — and by the 82'–88' window Carvajal was averaging x=108.0.\n\nThe territorial picture matches those networks. Spain's off-ball density peaked around the middle third with a centroid at x=62.2 and a 70th-percentile depth line at x=82.1; England's density sat higher still, centroid x=69.8 and depth line x=86.7, though the metadata's camera caveat means ball-following 360 frames inflate positions near the action and cannot be cleanly separated from genuine shape. Both teams' thirds spines were close to symmetrical in the channel sense (Spain 41.0/39.8/43.8 across defensive, middle and attacking thirds; England 37.8/38.6/40.2), so neither side's average positioning was skewed to one flank even where individual nodes clearly were. England's last act was structural: from the 89th minute they abandoned the 4-2-3-1 for a 4-1-2-1-2, Rice alone at centre defensive midfield, Saka and Bellingham as central midfielders and Toney alongside Watkins in a two-man front line, while Spain simply slotted Merino into the attacking midfield role and shifted Olmo to the right wing.",
+          "failures": []
+        }
+      },
+      "totals": {
+        "input_tokens": 181961,
+        "output_tokens": 3351,
+        "total_tokens": 185312,
+        "input_usd": 0.909805,
+        "output_usd": 0.083775,
+        "total_usd": 0.9935799999999999,
+        "latency_s": 55.32
+      },
+      "grading": {
+        "outcome_grounding": "0 errors, 2 minor",
+        "motm": "hit",
+        "tactics_grounding": "1 error, 1 minor",
+        "notes": [
+          "Outcome: all 8 key_stats are correct but oddly split (\"Shots (Spain-England)\" = \"16.0\" omits England's 9; \"Spain passes at 87.5% accuracy\" = \"592.0\", where the real 87.5 sits in the label and is not cited). Performers surfaced: Le Normand, Laporte, N. Williams, Saka, Palmer.",
+          "Outcome verified: Laporte 35.09 carry at 42', N. Williams 30.17 at 81', Saka 38.63 at 72', Palmer on at 69:53 (on_second=53), Le Normand team-high 75 events before the break.",
+          "Outcome minor: Palmer \"four times with Bellingham in the final window\" is windows[2] (69'-89'); the final window is 89'-FT.",
+          "Tactics error: Walker \"most advanced of England's back four\" is contradicted; Shaw's on-ball node (x=59.38) is further forward than Walker's (55.99).",
+          "Tactics verified: 715 vs 483 open-play events (team_shape metadata), camera caveat, both teams' thirds spines, Carvajal/Yamal/Cucurella/Saka positions, window-by-window node moves, all cited pass counts and edges, Spain's 89' Merino/Olmo positions, England's 4-1-2-1-2 at 89'.",
+          "Tactics minor: Le Normand-Carvajal (17) called the \"single strongest link\"; Laporte-to-Le Normand is also 17, and Laporte-Le Normand combined is 31.",
+          "MOTM (Nico Williams): hit. Supported by data the model had: the 30.17 carry at 81' is verified."
+        ]
+      }
+    },
+    {
+      "n": 4,
+      "model": "claude-sonnet-5",
+      "effort": "low",
+      "sweep": "effort",
+      "status": "ok",
+      "failures": [],
+      "calls": {
+        "outcome": {
+          "section": "outcome",
+          "model_requested": "claude-sonnet-5",
+          "model_served": "claude-sonnet-5",
+          "effort": "low",
+          "max_tokens": 16000,
+          "stop_reason": "end_turn",
+          "latency_s": 13.62,
+          "usage": {
+            "cache_creation": {
+              "ephemeral_1h_input_tokens": 0,
+              "ephemeral_5m_input_tokens": 0
+            },
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "inference_geo": "global",
+            "input_tokens": 135456,
+            "output_tokens": 872,
+            "output_tokens_details": {
+              "thinking_tokens": 0
+            },
+            "server_tool_use": null,
+            "service_tier": "standard"
+          },
+          "cost": {
+            "input_usd": 0.270912,
+            "output_usd": 0.00872,
+            "total_usd": 0.279632
+          },
+          "output": {
+            "headline": "Spain outclassed England 2-1, dominating possession and chances to seal the Euro 2024 final win.",
+            "key_stats": [
+              {
+                "label": "Final Score",
+                "value": "Spain 2 - England 1",
+                "source_field": "match_stats.home.score / match_stats.away.score"
+              },
+              {
+                "label": "Possession",
+                "value": "62.2% - 37.8%",
+                "source_field": "match_stats.rows[2].home_value / away_value"
+              },
+              {
+                "label": "xG",
+                "value": "1.79 - 0.73",
+                "source_field": "match_stats.rows[7].home_value / away_value"
+              },
+              {
+                "label": "Shots",
+                "value": "16 - 9",
+                "source_field": "match_stats.rows[0].home_value / away_value"
+              },
+              {
+                "label": "Shots on Target",
+                "value": "6 - 3",
+                "source_field": "match_stats.rows[1].home_value / away_value"
+              },
+              {
+                "label": "Passes",
+                "value": "592 - 323",
+                "source_field": "match_stats.rows[8].home_value / away_value"
+              },
+              {
+                "label": "Pass Accuracy",
+                "value": "87.5% - 78.6%",
+                "source_field": "match_stats.rows[9].home_value / away_value"
+              },
+              {
+                "label": "Corners",
+                "value": "10 - 2",
+                "source_field": "match_stats.rows[3].home_value / away_value"
+              }
+            ],
+            "standout_performers": [
+              {
+                "player": "Aymeric Laporte",
+                "team": "Spain",
+                "reason": "Led Spain's progressive passing with multiple long progressive balls (e.g. 56.14 and 30.95 distance gained), driving buildup from the back.",
+                "source_field": "progressive_map.home.actions"
+              },
+              {
+                "player": "Robin Le Normand",
+                "team": "Spain",
+                "reason": "Top pass-network node in the starting XI window with 48 passes, central to Spain's circulation.",
+                "source_field": "pass_network.home.windows[0].nodes"
+              },
+              {
+                "player": "Bukayo Saka",
+                "team": "England",
+                "reason": "England's most active attacking outlet with 14 passes in the starting window and a progressive carry of 38.63 in the 69'-89' window.",
+                "source_field": "pass_network.away.windows[0].nodes; progressive_map.away.actions"
+              },
+              {
+                "player": "Cole Palmer",
+                "team": "England",
+                "reason": "Introduced as a substitute in the 69th minute for Kobbie Mainoo, becoming a key passing link late in the match.",
+                "source_field": "substitutes.teams.England[2]"
+              },
+              {
+                "player": "Mikel Oyarzabal",
+                "team": "Spain",
+                "reason": "Brought on in the 67th minute for Álvaro Morata, contributing to Spain's attacking rotation late in the game.",
+                "source_field": "substitutes.teams.Spain[2]"
+              }
+            ]
+          },
+          "failures": []
+        },
+        "tactics": {
+          "section": "tactics",
+          "model_requested": "claude-sonnet-5",
+          "model_served": "claude-sonnet-5",
+          "effort": "low",
+          "max_tokens": 16000,
+          "stop_reason": "end_turn",
+          "latency_s": 17.1,
+          "usage": {
+            "cache_creation": {
+              "ephemeral_1h_input_tokens": 0,
+              "ephemeral_5m_input_tokens": 0
+            },
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "inference_geo": "global",
+            "input_tokens": 46505,
+            "output_tokens": 975,
+            "output_tokens_details": {
+              "thinking_tokens": 0
+            },
+            "server_tool_use": null,
+            "service_tier": "standard"
+          },
+          "cost": {
+            "input_usd": 0.09301,
+            "output_usd": 0.00975,
+            "total_usd": 0.10275999999999999
+          },
+          "output": "Both sides set up in a declared 4-2-3-1, and both largely stayed loyal to that base shape for most of the match. Spain's structure ran through Rodri and Fabián Ruiz as the double pivot behind Dani Olmo, with Nico Williams and Lamine Yamal providing the width off Morata as the central striker. England mirrored that with Declan Rice and Kobbie Mainoo screening in front of the back four, Foden central behind Kane, and Bellingham and Saka stretching the play from the flanks. Spain made staggered changes across the second half — Zubimendi for Rodri at the interval, Oyarzabal for Morata just after the hour, Nacho for Le Normand late on, and Merino on in the closing minutes — while retaining the 4-2-3-1 label throughout; only in stoppage time did England shift to a 4-1-2-1-2 after introducing Toney, Watkins and Palmer together up top, with Rice pushed into a lone deeper midfield role and Bellingham/Saka pushed higher as a front two supported Palmer centrally.\n\nIn terms of on-ball territory, Spain's shape data shows their build-up centroid sitting around the halfway line (62, 41) with the widest, most advanced hulls coming through Carvajal and Yamal down the right and Cucurella/Williams down the left, reflecting a team happy to circulate through both back-line center-backs (Le Normand and Laporte) before working it wide. England's off-ball density and centroid (69.8, 39.2) sat notably higher up the pitch than Spain's (62.2, 41.4), with their attacking-third spine point close to the byline (93.7, 40.2) — suggestive of a team pressing higher and compressing the space in behind, consistent with Rice and Mainoo/Stones dropping deep on-ball to progress possession from the back while Saka and Bellingham held the widest touchline positions in the England shape hulls.\n\nThe passing network reinforces this contrast in structural hubs. For Spain, the opening-window network is anchored by the Le Normand–Laporte central defensive axis (17 and 14 combinations respectively) with Carvajal a heavy right-side outlet (36 passes, strong link to Yamal), while Rodri and Fabián Ruiz circulated the ball into the front line; after the Zubimendi and Oyarzabal changes the network shifted to funnel more through Zubimendi and Fabián Ruiz centrally. England's opening network shows Rice (23 passes) and Stones (24) as the busiest circulators, with a strong Rice–Bellingham connection (8) and Stones–Pickford axis (8) underpinning restarts from deep, while Walker and Saka formed a consistent right-side combination; after Palmer's introduction in the 69th minute, the ball moved increasingly through the Bellingham–Palmer and Palmer–Saka connections as England's hub shifted higher and further into the right channel.",
+          "failures": []
+        }
+      },
+      "totals": {
+        "input_tokens": 181961,
+        "output_tokens": 1847,
+        "total_tokens": 183808,
+        "input_usd": 0.36392199999999997,
+        "output_usd": 0.01847,
+        "total_usd": 0.38239199999999995,
+        "latency_s": 30.72
+      },
+      "grading": {
+        "outcome_grounding": "0 errors, 1 minor",
+        "motm": "miss",
+        "tactics_grounding": "2 errors, 2 soft",
+        "notes": [
+          "Outcome: all 8 key_stats are correct (source_field uses shorthand \"rows[n].home_value / away_value\" rather than two full paths). Performers surfaced: Laporte, Le Normand, Saka, Palmer, Oyarzabal.",
+          "Outcome verified: Laporte 56.14 and 30.95 both exist (the 56.14 pass was incomplete; not claimed otherwise); Saka 14 passes and the 38.63 carry at 72' (inside 69'-89'); Oyarzabal on at 67' for Morata; Palmer on at 69'.",
+          "Outcome minor: Le Normand \"top\" node, joint with Laporte at 48.",
+          "Tactics error: Spain's \"build-up centroid (62, 41)\" in an on-ball paragraph is the off-ball centroid (mislabel).",
+          "Tactics error: \"only in stoppage time did England shift ... after introducing Toney, Watkins and Palmer together\" is wrong. Watkins came on at 60', Palmer at 69', Toney at 89'12\" (not stoppage time).",
+          "Tactics minor: \"suggestive of a team pressing higher\" and \"Rice and Mainoo/Stones dropping deep on-ball\" are not derivable from the given data.",
+          "MOTM (Nico Williams): miss. Not a grounding error; see the MOTM note under the results table."
+        ]
+      }
+    },
+    {
+      "n": 5,
+      "model": "claude-sonnet-5",
+      "effort": "high",
+      "sweep": "effort",
+      "status": "ok",
+      "failures": [],
+      "calls": {
+        "outcome": {
+          "section": "outcome",
+          "model_requested": "claude-sonnet-5",
+          "model_served": "claude-sonnet-5",
+          "effort": "high",
+          "max_tokens": 16000,
+          "stop_reason": "end_turn",
+          "latency_s": 53.9,
+          "usage": {
+            "cache_creation": {
+              "ephemeral_1h_input_tokens": 0,
+              "ephemeral_5m_input_tokens": 0
+            },
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "inference_geo": "global",
+            "input_tokens": 135456,
+            "output_tokens": 3885,
+            "output_tokens_details": {
+              "thinking_tokens": 3063
+            },
+            "server_tool_use": null,
+            "service_tier": "standard"
+          },
+          "cost": {
+            "input_usd": 0.270912,
+            "output_usd": 0.03885,
+            "total_usd": 0.309762
+          },
+          "output": {
+            "headline": "Spain edged out England 2-1 at Euro 2024, dominating possession and chance creation despite a nervy finish.",
+            "key_stats": [
+              {
+                "label": "Possession (Spain)",
+                "value": "62.2",
+                "source_field": "match_stats.rows[2].home_value"
+              },
+              {
+                "label": "Shots (Spain)",
+                "value": "16",
+                "source_field": "match_stats.rows[0].home_value"
+              },
+              {
+                "label": "Shots on Target (Spain)",
+                "value": "6",
+                "source_field": "match_stats.rows[1].home_value"
+              },
+              {
+                "label": "xG (Spain)",
+                "value": "1.79",
+                "source_field": "match_stats.rows[7].home_value"
+              },
+              {
+                "label": "xG (England)",
+                "value": "0.73",
+                "source_field": "match_stats.rows[7].away_value"
+              },
+              {
+                "label": "Passes Completed (Spain)",
+                "value": "592",
+                "source_field": "match_stats.rows[8].home_value"
+              }
+            ],
+            "standout_performers": [
+              {
+                "player": "Robin Le Normand",
+                "team": "Spain",
+                "reason": "Tied for the most completed passes (48) in the opening 45 minutes and repeatedly launched long, line-breaking diagonals to switch play, anchoring Spain's build-up from centre-back.",
+                "source_field": "pass_network.home.windows[0].nodes[7].passes"
+              },
+              {
+                "player": "Aymeric Laporte",
+                "team": "Spain",
+                "reason": "Matched Le Normand for passing volume (48) in the first half and was Spain's chief progressor, driving the ball forward with several long progressive passes and carries.",
+                "source_field": "pass_network.home.windows[0].nodes[0].passes"
+              },
+              {
+                "player": "Nico Williams",
+                "team": "Spain",
+                "reason": "A constant outlet on the left, completing 23 passes in the opening period while repeatedly carrying and passing the ball into advanced areas to stretch England's defence.",
+                "source_field": "pass_network.home.windows[0].nodes[6].passes"
+              },
+              {
+                "player": "Bukayo Saka",
+                "team": "England",
+                "reason": "England's most involved attacker in the first hour with 14 completed passes, and a key carrier on the right flank as England tried to build counter-attacking threat.",
+                "source_field": "pass_network.away.windows[0].nodes[0].passes"
+              },
+              {
+                "player": "Ollie Watkins",
+                "team": "England",
+                "reason": "Brought on at the 60th minute to replace Harry Kane, becoming England's central attacking focal point for the remainder of the match as they chased the game.",
+                "source_field": "substitutes.teams.England[1]"
+              }
+            ]
+          },
+          "failures": []
+        },
+        "tactics": {
+          "section": "tactics",
+          "model_requested": "claude-sonnet-5",
+          "model_served": "claude-sonnet-5",
+          "effort": "high",
+          "max_tokens": 16000,
+          "stop_reason": "end_turn",
+          "latency_s": 29.9,
+          "usage": {
+            "cache_creation": {
+              "ephemeral_1h_input_tokens": 0,
+              "ephemeral_5m_input_tokens": 0
+            },
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "inference_geo": "global",
+            "input_tokens": 46505,
+            "output_tokens": 1079,
+            "output_tokens_details": {
+              "thinking_tokens": 0
+            },
+            "server_tool_use": null,
+            "service_tier": "standard"
+          },
+          "cost": {
+            "input_usd": 0.09301,
+            "output_usd": 0.01079,
+            "total_usd": 0.10379999999999999
+          },
+          "output": "Both sides began in a declared 4-2-3-1, and the structural difference between them showed up more in on-ball geography than in labels. Spain's starting shape had Rodri and Fabián Ruiz screening a back four of Carvajal, Le Normand, Laporte and Cucurella, with Lamine Yamal and Nico Williams pushed high and wide (event-mean positions around x=81/y=69 and x=78/y=30) either side of Dani Olmo underneath Morata. England mirrored the 4-2-3-1 with Rice and Mainoo as the double pivot behind Foden, flanked by Saka and Bellingham nominally on the right and left respectively, though Bellingham's average on-ball position (x=67, y=20) sat much narrower and higher than a orthodox wide role, drifting inside alongside Kane. Spain's centroid (62.2, 41.4) and England's (69.8, 39.2) both sat on the attacking half of the pitch, but England's ellipse was skewed slightly further forward, consistent with a team happier to commit numbers beyond the ball.\n\nIn the pass network, Spain's build-up ran through the back three-plus-pivot: Le Normand and Laporte were the busiest nodes (48 completed passes apiece in the opening window), combining heavily with each other and funnelling possession out to Carvajal on the right and Cucurella on the left, who in turn fed Nico Williams and Lamine Yamal in the final third. Rodri (29 passes) linked the centre-backs to Fabián Ruiz and the front line, giving Spain a clear circulate-then-release pattern down both flanks. England's early network was more evenly distributed but still centred on Rice (23) and Stones (24) as the top progressors, with Walker (24) a key right-side outlet; the Rice–Bellingham (8) and Stones–Pickford (8) connections were the heaviest single links, showing England building patiently from the back before finding Bellingham centrally or working the ball wide to Walker and Saka.\n\nSpain made three changes across the second half — Zubimendi for Rodri at the break, Oyarzabal for Morata just after the hour, and Nacho for Le Normand late on — while retaining the 4-2-3-1 label throughout until a final switch to accommodate Merino in stoppage time; their hull and passing hubs shifted leftward and narrower in the 45'-67' window as Laporte and Le Normand dropped to around x=28-37, before pushing forward again once Zubimendi and Oyarzabal settled in. England's own reshuffle — Watkins for Kane at 60', Palmer for Mainoo at 69' — preceded a more substantial change at the 89th minute, when England moved to a 4-1-2-1-2 with Rice as the deepest midfielder behind Saka and Bellingham as双 central midfielders and Toney and Watkins paired up front alongside Palmer; Spain's late reshaping saw Carvajal pushed to an advanced, almost auxiliary-forward position (x=108) in the 82'-88' window, reflecting a squeeze of both sides' shapes as the game reached its closing stages, with passing volumes tailing off sharply for both teams (down to single-figure exchanges) in the final substitution windows.",
+          "failures": []
+        }
+      },
+      "totals": {
+        "input_tokens": 181961,
+        "output_tokens": 4964,
+        "total_tokens": 186925,
+        "input_usd": 0.36392199999999997,
+        "output_usd": 0.049640000000000004,
+        "total_usd": 0.413562,
+        "latency_s": 83.8
+      },
+      "grading": {
+        "outcome_grounding": "1 error, 2 soft",
+        "motm": "hit",
+        "tactics_grounding": "2 errors, 3 minor",
+        "notes": [
+          "Outcome: all 6 key_stats are correct. Performers surfaced: Le Normand, Laporte, N. Williams, Saka, Watkins.",
+          "Outcome error: Le Normand \"repeatedly launched long, line-breaking diagonals to switch play\" is contradicted. He has 3 progressive passes, one long (55.96 at 48', y 57.8 to 56.6: a straight ball, not a switch), and the cited field is only his pass count.",
+          "Outcome minor: Watkins as \"central attacking focal point\" and Saka's \"counter-attacking threat\" have no source. N. Williams 23 passes and Saka 14 passes verified.",
+          "Tactics error: \"Spain made three changes across the second half\"; Spain made four (45', 67', 82', 88').",
+          "Tactics error: Merino's entry \"in stoppage time\"; it was 88'40\".",
+          "Tactics minor: Rice (23) and Stones (24) as \"top progressors\" (pass counts; Walker also has 24); a stray \"双\" character mid-sentence; Spain's hubs shifting \"leftward\" is unsupported.",
+          "Tactics verified: shape coordinates, both centroids on the attacking half, 4-1-2-1-2 at 89', Carvajal x=108 at 82'-88', pass volumes tailing off in the final windows.",
+          "MOTM (Nico Williams): hit. Supported by data the model had: 23 passes in the opening window (verified) and 8 progressive actions."
+        ]
+      }
+    }
+  ],
+  "motm": {
+    "player": "Nico Williams",
+    "note": "Named by Tyler as the match's man of the match. None of the six source files carries a man-of-the-match field, so the model cannot know it: a miss is not a grounding error, and the prompt must not be tuned, or outside data added, to make it hit, because that would use information the model would not have in production. Hits (cells 1, 3, 5) are picks the data it did have supports (8 progressive actions, tied for the most on Spain), though cell 1's supporting figure is wrong. Recorded as an observation only, not a selection criterion."
+  },
+  "routing": {
+    "outcome": 4,
+    "tactics": 3
+  }
+}
