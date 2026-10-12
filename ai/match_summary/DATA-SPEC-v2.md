@@ -121,6 +121,7 @@ Notes:
 - Pitch 120 × 80 yards, analysed team attacks toward x = 120. y = 0 is the team's left touchline (Left Back template y = 12).
 - **Lanes (y):** `left_wing` 0–18, `left_half_space` 18–30, `centre` 30–50, `right_half_space` 50–62, `right_wing` 62–80. Edges are the penalty-area and six-yard-box lines. `LANE_DISPLAY` maps each to prose ("left wing", "left half-space", "centre", ...).
 - **Bands (x):** `own_third` 0–40, `own_half` 40–60, `opposition_half` 60–80, `final_third` 80–120. `BAND_DISPLAY` maps each to prose.
+- **Interval convention.** Lane and band buckets are half-open `[lo, hi)`, except the last bucket on each axis, which is closed: `right_wing` is `[62, 80]` and `final_third` is `[80, 120]`. So `y = 18` is `left_half_space` and `x = 120` is `final_third`. A coordinate outside `0 ≤ x ≤ 120`, `0 ≤ y ≤ 80` raises.
 - **Minutes.** StatsBomb `minute` is elapsed minutes and keeps counting through stoppage time. `display_minute(minute, period)` returns a string:
   - period 1, minute ≥ 45 → `45+{minute − 44}'` (minute 45 → `45+1'`)
   - period 2, minute ≥ 90 → `90+{minute − 89}'` (minute 90 → `90+1'`)
@@ -497,6 +498,13 @@ transitions, set pieces. Each PR follows the same steps:
   - Marked thresholds provisional and labelled integration values as regression fixtures.
   - Moved the defect table into `FAILURE-TAXONOMY.md`.
   - Moved Part 6 after the Module 3 judge, with chance creation first.
+- **2026-10-12 (Part 0 clarifications):** answers to six open questions from Part 0 planning, accepted.
+  1. The opponent-actor mirror and the period-based flip are both point reflections, so they commute — order isn't the issue. The period flip rests on a false premise: StatsBomb event and 360 coordinates are already in the actor's attack-right frame (§A), so if it ever fired it would undo the opponent mirror. Fix: mirror opponent-actor dots on the raw coordinate; stop flipping by period. `_attack_direction_by_period` becomes an assertion that raises if it ever returns `"left"`, since that would mean the frame assumption has broken.
+  2. `libs/statsbomb/tactical_definitions.py` is created in Part 0, not Part 1, with only `DEFINITIONS_VERSION` and the lane/band edges. The extractor imports from it. Part 1 extends this file rather than creating it. No hardcoded copies, not even temporarily.
+  3. Lane and band buckets are half-open, with the last bucket on each axis closed (see "Coordinate and display conventions"). A coordinate outside the pitch raises.
+  4. The stale "Written to" path in `extract_team_shape.py`'s module docstring is fixed in the same docstring pass as the coordinate-normalisation fix (step 4) — a wrong docstring is how D1 started.
+  5. `tests/integration/test_team_shape_3943043.py` is added in Part 0, asserting the regenerated `off_ball.centroid.x` is 55.05 ± 0.1 (Spain) and 45.98 ± 0.1 (England), so this acceptance criterion is checked by a test, not only by hand. Part 3 absorbs this test later.
+  6. Run `--force` on the full per-match pipeline, then diff `data/euro-2024/3943043/`. Only `team_shape_*.json` may change. If anything else changes, stop and report the diff rather than committing it — no temporary narrowing of the run.
 
 ## Ships
 
