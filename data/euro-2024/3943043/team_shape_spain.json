@@ -25,7 +25,20 @@
             "display_name": "Robin Le Normand",
             "x": 50.33,
             "y": 54.49,
-            "event_count": 75
+            "event_count": 75,
+            "lane_counts": {
+              "left_wing": 1,
+              "left_half_space": 0,
+              "centre": 23,
+              "right_half_space": 28,
+              "right_wing": 23
+            },
+            "band_counts": {
+              "own_third": 21,
+              "own_half": 23,
+              "opposition_half": 30,
+              "final_third": 1
+            }
           },
           {
             "player_id": 4353,
@@ -33,7 +46,20 @@
             "display_name": "Aymeric Laporte",
             "x": 54.68,
             "y": 26.22,
-            "event_count": 70
+            "event_count": 70,
+            "lane_counts": {
+              "left_wing": 16,
+              "left_half_space": 37,
+              "centre": 16,
+              "right_half_space": 0,
+              "right_wing": 1
+            },
+            "band_counts": {
+              "own_third": 12,
+              "own_half": 26,
+              "opposition_half": 29,
+              "final_third": 3
+            }
           },
           {
             "player_id": 5721,
@@ -41,7 +67,20 @@
             "display_name": "Daniel Carvajal",
             "x": 67.44,
             "y": 70.85,
-            "event_count": 60
+            "event_count": 60,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 3,
+              "right_half_space": 1,
+              "right_wing": 56
+            },
+            "band_counts": {
+              "own_third": 9,
+              "own_half": 8,
+              "opposition_half": 23,
+              "final_third": 20
+            }
           },
           {
             "player_id": 68574,
@@ -49,7 +88,20 @@
             "display_name": "Nico Williams",
             "x": 78.06,
             "y": 30.44,
-            "event_count": 51
+            "event_count": 51,
+            "lane_counts": {
+              "left_wing": 20,
+              "left_half_space": 15,
+              "centre": 4,
+              "right_half_space": 3,
+              "right_wing": 9
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 10,
+              "opposition_half": 11,
+              "final_third": 27
+            }
           },
           {
             "player_id": 6765,
@@ -57,7 +109,20 @@
             "display_name": "Rodri",
             "x": 56.78,
             "y": 41.15,
-            "event_count": 48
+            "event_count": 48,
+            "lane_counts": {
+              "left_wing": 2,
+              "left_half_space": 12,
+              "centre": 15,
+              "right_half_space": 12,
+              "right_wing": 7
+            },
+            "band_counts": {
+              "own_third": 9,
+              "own_half": 16,
+              "opposition_half": 17,
+              "final_third": 6
+            }
           },
           {
             "player_id": 316046,
@@ -65,7 +130,20 @@
             "display_name": "Lamine Yamal",
             "x": 81.07,
             "y": 68.58,
-            "event_count": 40
+            "event_count": 40,
+            "lane_counts": {
+              "left_wing": 1,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 10,
+              "right_wing": 29
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 0,
+              "opposition_half": 15,
+              "final_third": 22
+            }
           },
           {
             "player_id": 6655,
@@ -73,7 +151,20 @@
             "display_name": "Fabi\u00e1n Ruiz",
             "x": 69.9,
             "y": 23.4,
-            "event_count": 38
+            "event_count": 38,
+            "lane_counts": {
+              "left_wing": 16,
+              "left_half_space": 11,
+              "centre": 6,
+              "right_half_space": 5,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 6,
+              "own_half": 5,
+              "opposition_half": 10,
+              "final_third": 17
+            }
           },
           {
             "player_id": 17620,
@@ -81,7 +172,20 @@
             "display_name": "Marc Cucurella",
             "x": 76.74,
             "y": 10.0,
-            "event_count": 31
+            "event_count": 31,
+            "lane_counts": {
+              "left_wing": 28,
+              "left_half_space": 3,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 1,
+              "own_half": 9,
+              "opposition_half": 6,
+              "final_third": 15
+            }
           },
           {
             "player_id": 3477,
@@ -89,7 +193,20 @@
             "display_name": "\u00c1lvaro Morata",
             "x": 79.8,
             "y": 28.78,
-            "event_count": 25
+            "event_count": 25,
+            "lane_counts": {
+              "left_wing": 5,
+              "left_half_space": 10,
+              "centre": 8,
+              "right_half_space": 2,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 8,
+              "opposition_half": 7,
+              "final_third": 10
+            }
           },
           {
             "player_id": 16532,
@@ -97,7 +214,20 @@
             "display_name": "Daniel Olmo",
             "x": 78.33,
             "y": 44.09,
-            "event_count": 19
+            "event_count": 19,
+            "lane_counts": {
+              "left_wing": 2,
+              "left_half_space": 2,
+              "centre": 7,
+              "right_half_space": 4,
+              "right_wing": 4
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 0,
+              "opposition_half": 3,
+              "final_third": 13
+            }
           },
           {
             "player_id": 11748,
@@ -105,7 +235,20 @@
             "display_name": "Unai Sim\u00f3n",
             "x": 9.77,
             "y": 43.01,
-            "event_count": 17
+            "event_count": 17,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 2,
+              "centre": 13,
+              "right_half_space": 2,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 17,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
           }
         ],
         "hull": [
@@ -147,7 +290,20 @@
             "display_name": "Nico Williams",
             "x": 55.68,
             "y": 13.17,
-            "event_count": 12
+            "event_count": 12,
+            "lane_counts": {
+              "left_wing": 8,
+              "left_half_space": 4,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 6,
+              "opposition_half": 0,
+              "final_third": 3
+            }
           },
           {
             "player_id": 5721,
@@ -155,7 +311,20 @@
             "display_name": "Daniel Carvajal",
             "x": 64.83,
             "y": 68.74,
-            "event_count": 10
+            "event_count": 10,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 10
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 7,
+              "opposition_half": 0,
+              "final_third": 3
+            }
           },
           {
             "player_id": 4353,
@@ -163,7 +332,20 @@
             "display_name": "Aymeric Laporte",
             "x": 28.17,
             "y": 16.04,
-            "event_count": 9
+            "event_count": 9,
+            "lane_counts": {
+              "left_wing": 6,
+              "left_half_space": 3,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 9,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
           },
           {
             "player_id": 11748,
@@ -171,7 +353,20 @@
             "display_name": "Unai Sim\u00f3n",
             "x": 7.2,
             "y": 36.35,
-            "event_count": 8
+            "event_count": 8,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 2,
+              "centre": 6,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 8,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
           },
           {
             "player_id": 6655,
@@ -179,7 +374,20 @@
             "display_name": "Fabi\u00e1n Ruiz",
             "x": 57.42,
             "y": 41.82,
-            "event_count": 8
+            "event_count": 8,
+            "lane_counts": {
+              "left_wing": 3,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 1,
+              "right_wing": 4
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 6,
+              "opposition_half": 2,
+              "final_third": 0
+            }
           },
           {
             "player_id": 16532,
@@ -187,7 +395,20 @@
             "display_name": "Daniel Olmo",
             "x": 91.46,
             "y": 36.09,
-            "event_count": 8
+            "event_count": 8,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 8,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 3,
+              "final_third": 5
+            }
           },
           {
             "player_id": 316046,
@@ -195,7 +416,20 @@
             "display_name": "Lamine Yamal",
             "x": 70.66,
             "y": 49.67,
-            "event_count": 7
+            "event_count": 7,
+            "lane_counts": {
+              "left_wing": 1,
+              "left_half_space": 0,
+              "centre": 1,
+              "right_half_space": 2,
+              "right_wing": 3
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 3,
+              "opposition_half": 1,
+              "final_third": 3
+            }
           },
           {
             "player_id": 22128,
@@ -203,7 +437,20 @@
             "display_name": "Robin Le Normand",
             "x": 27.56,
             "y": 47.36,
-            "event_count": 7
+            "event_count": 7,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 3,
+              "right_half_space": 4,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 6,
+              "own_half": 1,
+              "opposition_half": 0,
+              "final_third": 0
+            }
           },
           {
             "player_id": 3477,
@@ -211,7 +458,20 @@
             "display_name": "\u00c1lvaro Morata",
             "x": 76.4,
             "y": 44.5,
-            "event_count": 4
+            "event_count": 4,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 2,
+              "right_half_space": 2,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 2,
+              "final_third": 2
+            }
           },
           {
             "player_id": 24921,
@@ -219,7 +479,20 @@
             "display_name": "Mart\u00edn Zubimendi",
             "x": 61.8,
             "y": 46.9,
-            "event_count": 3
+            "event_count": 3,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 3,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 3,
+              "final_third": 0
+            }
           },
           {
             "player_id": 17620,
@@ -227,7 +500,20 @@
             "display_name": "Marc Cucurella",
             "x": 37.35,
             "y": 10.9,
-            "event_count": 2
+            "event_count": 2,
+            "lane_counts": {
+              "left_wing": 2,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 1,
+              "own_half": 1,
+              "opposition_half": 0,
+              "final_third": 0
+            }
           }
         ],
         "hull": [
@@ -273,7 +559,20 @@
             "display_name": "Mart\u00edn Zubimendi",
             "x": 51.91,
             "y": 30.95,
-            "event_count": 16
+            "event_count": 16,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 10,
+              "centre": 6,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 4,
+              "own_half": 8,
+              "opposition_half": 3,
+              "final_third": 1
+            }
           },
           {
             "player_id": 4353,
@@ -281,7 +580,20 @@
             "display_name": "Aymeric Laporte",
             "x": 46.79,
             "y": 20.17,
-            "event_count": 16
+            "event_count": 16,
+            "lane_counts": {
+              "left_wing": 7,
+              "left_half_space": 8,
+              "centre": 1,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 12,
+              "opposition_half": 1,
+              "final_third": 0
+            }
           },
           {
             "player_id": 16532,
@@ -289,7 +601,20 @@
             "display_name": "Daniel Olmo",
             "x": 82.47,
             "y": 43.99,
-            "event_count": 15
+            "event_count": 15,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 2,
+              "centre": 10,
+              "right_half_space": 3,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 3,
+              "opposition_half": 3,
+              "final_third": 9
+            }
           },
           {
             "player_id": 6655,
@@ -297,7 +622,20 @@
             "display_name": "Fabi\u00e1n Ruiz",
             "x": 63.9,
             "y": 36.66,
-            "event_count": 12
+            "event_count": 12,
+            "lane_counts": {
+              "left_wing": 4,
+              "left_half_space": 2,
+              "centre": 1,
+              "right_half_space": 4,
+              "right_wing": 1
+            },
+            "band_counts": {
+              "own_third": 1,
+              "own_half": 4,
+              "opposition_half": 4,
+              "final_third": 3
+            }
           },
           {
             "player_id": 316046,
@@ -305,7 +643,20 @@
             "display_name": "Lamine Yamal",
             "x": 83.99,
             "y": 55.71,
-            "event_count": 9
+            "event_count": 9,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 3,
+              "right_half_space": 3,
+              "right_wing": 3
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 4,
+              "final_third": 5
+            }
           },
           {
             "player_id": 22128,
@@ -313,7 +664,20 @@
             "display_name": "Robin Le Normand",
             "x": 46.84,
             "y": 45.58,
-            "event_count": 9
+            "event_count": 9,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 5,
+              "right_half_space": 4,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 2,
+              "own_half": 6,
+              "opposition_half": 1,
+              "final_third": 0
+            }
           },
           {
             "player_id": 11748,
@@ -321,7 +685,20 @@
             "display_name": "Unai Sim\u00f3n",
             "x": 11.0,
             "y": 36.84,
-            "event_count": 7
+            "event_count": 7,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 7,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 7,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
           },
           {
             "player_id": 68574,
@@ -329,7 +706,20 @@
             "display_name": "Nico Williams",
             "x": 91.19,
             "y": 33.03,
-            "event_count": 7
+            "event_count": 7,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 2,
+              "centre": 5,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 2,
+              "final_third": 5
+            }
           },
           {
             "player_id": 6685,
@@ -337,7 +727,20 @@
             "display_name": "Mikel Oyarzabal",
             "x": 73.02,
             "y": 21.2,
-            "event_count": 6
+            "event_count": 6,
+            "lane_counts": {
+              "left_wing": 1,
+              "left_half_space": 5,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 3,
+              "opposition_half": 0,
+              "final_third": 3
+            }
           },
           {
             "player_id": 5721,
@@ -345,7 +748,20 @@
             "display_name": "Daniel Carvajal",
             "x": 61.8,
             "y": 60.8,
-            "event_count": 4
+            "event_count": 4,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 3,
+              "right_wing": 1
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 2,
+              "opposition_half": 2,
+              "final_third": 0
+            }
           },
           {
             "player_id": 17620,
@@ -353,7 +769,20 @@
             "display_name": "Marc Cucurella",
             "x": 56.73,
             "y": 4.23,
-            "event_count": 3
+            "event_count": 3,
+            "lane_counts": {
+              "left_wing": 3,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 3,
+              "opposition_half": 0,
+              "final_third": 0
+            }
           }
         ],
         "hull": [
@@ -395,7 +824,20 @@
             "display_name": "Nacho",
             "x": 40.46,
             "y": 43.07,
-            "event_count": 9
+            "event_count": 9,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 6,
+              "right_half_space": 3,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 6,
+              "own_half": 2,
+              "opposition_half": 1,
+              "final_third": 0
+            }
           },
           {
             "player_id": 6655,
@@ -403,7 +845,20 @@
             "display_name": "Fabi\u00e1n Ruiz",
             "x": 64.37,
             "y": 55.48,
-            "event_count": 9
+            "event_count": 9,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 2,
+              "right_half_space": 4,
+              "right_wing": 3
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 6,
+              "opposition_half": 0,
+              "final_third": 3
+            }
           },
           {
             "player_id": 68574,
@@ -411,7 +866,20 @@
             "display_name": "Nico Williams",
             "x": 94.96,
             "y": 39.22,
-            "event_count": 9
+            "event_count": 9,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 3,
+              "centre": 5,
+              "right_half_space": 1,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 9
+            }
           },
           {
             "player_id": 5721,
@@ -419,7 +887,20 @@
             "display_name": "Daniel Carvajal",
             "x": 108.01,
             "y": 62.61,
-            "event_count": 9
+            "event_count": 9,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 4,
+              "right_wing": 5
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 9
+            }
           },
           {
             "player_id": 16532,
@@ -427,7 +908,20 @@
             "display_name": "Daniel Olmo",
             "x": 82.33,
             "y": 26.7,
-            "event_count": 8
+            "event_count": 8,
+            "lane_counts": {
+              "left_wing": 5,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 3,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 4,
+              "final_third": 4
+            }
           },
           {
             "player_id": 316046,
@@ -435,7 +929,20 @@
             "display_name": "Lamine Yamal",
             "x": 90.1,
             "y": 53.8,
-            "event_count": 6
+            "event_count": 6,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 3,
+              "right_half_space": 1,
+              "right_wing": 2
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 6
+            }
           },
           {
             "player_id": 11748,
@@ -443,7 +950,20 @@
             "display_name": "Unai Sim\u00f3n",
             "x": 24.93,
             "y": 31.3,
-            "event_count": 3
+            "event_count": 3,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 3,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
           },
           {
             "player_id": 4353,
@@ -451,7 +971,20 @@
             "display_name": "Aymeric Laporte",
             "x": 38.73,
             "y": 17.1,
-            "event_count": 3
+            "event_count": 3,
+            "lane_counts": {
+              "left_wing": 1,
+              "left_half_space": 2,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 2,
+              "own_half": 1,
+              "opposition_half": 0,
+              "final_third": 0
+            }
           },
           {
             "player_id": 24921,
@@ -459,7 +992,20 @@
             "display_name": "Mart\u00edn Zubimendi",
             "x": 48.97,
             "y": 17.1,
-            "event_count": 3
+            "event_count": 3,
+            "lane_counts": {
+              "left_wing": 3,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 3,
+              "opposition_half": 0,
+              "final_third": 0
+            }
           }
         ],
         "hull": [
@@ -517,453 +1063,453 @@
       "rows": 16,
       "values": [
         [
-          0.1097,
-          0.1308,
-          0.153,
-          0.1758,
-          0.1987,
-          0.2208,
-          0.2416,
-          0.2602,
-          0.2762,
-          0.2888,
-          0.2975,
-          0.3018,
-          0.3014,
-          0.2963,
-          0.2864,
-          0.272,
-          0.2538,
-          0.2323,
-          0.2084,
-          0.1833,
-          0.1577,
-          0.1328,
-          0.1093,
-          0.0879
+          0.1828,
+          0.2135,
+          0.2433,
+          0.2707,
+          0.2946,
+          0.3141,
+          0.3287,
+          0.3381,
+          0.3425,
+          0.3423,
+          0.338,
+          0.3299,
+          0.3186,
+          0.3044,
+          0.2876,
+          0.2685,
+          0.2474,
+          0.2247,
+          0.2007,
+          0.1762,
+          0.1518,
+          0.128,
+          0.1056,
+          0.0851
         ],
         [
-          0.1513,
-          0.18,
-          0.2101,
-          0.2409,
-          0.2715,
-          0.3011,
-          0.3288,
-          0.3536,
-          0.3748,
-          0.3916,
-          0.4032,
-          0.4092,
-          0.4091,
-          0.4027,
-          0.3901,
-          0.3717,
-          0.3479,
-          0.3198,
-          0.2883,
-          0.2548,
-          0.2206,
-          0.1868,
-          0.1548,
-          0.1253
+          0.2434,
+          0.2848,
+          0.325,
+          0.3623,
+          0.395,
+          0.4219,
+          0.4424,
+          0.456,
+          0.463,
+          0.4638,
+          0.4588,
+          0.4488,
+          0.4343,
+          0.4158,
+          0.3937,
+          0.3683,
+          0.34,
+          0.3095,
+          0.2772,
+          0.244,
+          0.2107,
+          0.1783,
+          0.1476,
+          0.1194
         ],
         [
-          0.1982,
-          0.2353,
-          0.274,
-          0.3134,
-          0.3524,
-          0.39,
-          0.425,
-          0.4563,
-          0.4831,
-          0.5043,
-          0.5192,
-          0.5271,
-          0.5275,
-          0.5203,
-          0.5053,
-          0.4829,
-          0.4539,
-          0.4191,
-          0.3798,
-          0.3376,
-          0.294,
-          0.2507,
-          0.2091,
-          0.1705
-        ],
-        [
-          0.2473,
-          0.2929,
-          0.3404,
-          0.3886,
-          0.436,
-          0.4815,
-          0.5237,
-          0.5614,
-          0.5935,
-          0.6191,
-          0.6373,
-          0.6474,
-          0.6488,
-          0.6411,
-          0.6244,
-          0.5989,
-          0.5653,
-          0.5245,
-          0.478,
-          0.4274,
-          0.3747,
-          0.3217,
-          0.2702,
-          0.222
-        ],
-        [
-          0.2944,
-          0.3483,
-          0.4041,
-          0.4604,
-          0.5157,
-          0.5684,
-          0.6172,
-          0.6607,
-          0.6978,
-          0.7274,
-          0.7488,
-          0.7611,
-          0.7638,
-          0.7564,
-          0.7389,
-          0.7113,
-          0.6743,
-          0.6288,
-          0.5762,
-          0.5184,
-          0.4574,
-          0.3954,
-          0.3346,
-          0.2769
-        ],
-        [
-          0.335,
-          0.3959,
-          0.459,
-          0.5224,
-          0.5844,
-          0.6433,
-          0.6977,
-          0.7461,
-          0.7873,
-          0.8205,
-          0.8447,
-          0.8593,
-          0.8635,
-          0.8571,
-          0.8397,
-          0.8113,
-          0.7724,
-          0.7239,
-          0.667,
-          0.6036,
-          0.536,
-          0.4664,
-          0.3973,
-          0.3311
-        ],
-        [
-          0.3643,
-          0.4308,
-          0.4993,
-          0.5682,
-          0.6354,
-          0.6991,
-          0.7578,
-          0.81,
-          0.8546,
-          0.8906,
-          0.9173,
-          0.934,
-          0.9401,
-          0.9351,
-          0.9187,
-          0.8908,
-          0.8515,
-          0.8017,
-          0.7424,
-          0.6756,
-          0.6033,
-          0.5281,
-          0.4526,
-          0.3795
-        ],
-        [
-          0.3788,
-          0.4484,
-          0.5204,
-          0.5926,
-          0.6631,
-          0.73,
-          0.7916,
-          0.8464,
-          0.8934,
-          0.9316,
-          0.9604,
-          0.9791,
-          0.9871,
-          0.984,
-          0.9693,
-          0.9428,
-          0.9045,
-          0.8551,
-          0.7954,
-          0.7272,
-          0.6526,
-          0.5742,
-          0.4947,
-          0.417
-        ],
-        [
-          0.3761,
-          0.4463,
-          0.5191,
-          0.5924,
-          0.664,
-          0.7322,
-          0.795,
-          0.8512,
-          0.8995,
-          0.9392,
-          0.9696,
-          0.99,
-          1.0,
-          0.999,
-          0.9865,
-          0.9623,
-          0.9262,
-          0.8785,
-          0.8203,
-          0.7529,
-          0.6784,
-          0.5993,
-          0.5186,
-          0.439
-        ],
-        [
-          0.3564,
-          0.4244,
-          0.4953,
-          0.5669,
-          0.6373,
-          0.7046,
-          0.7669,
-          0.8229,
-          0.8715,
-          0.9117,
-          0.943,
-          0.9648,
-          0.9766,
-          0.9777,
-          0.9678,
-          0.9464,
-          0.9133,
-          0.8688,
-          0.8137,
-          0.7491,
-          0.6771,
-          0.6002,
-          0.521,
-          0.4424
-        ],
-        [
-          0.322,
-          0.3852,
-          0.4514,
-          0.5188,
-          0.5855,
-          0.6495,
-          0.7093,
-          0.7634,
-          0.8108,
-          0.8505,
-          0.8819,
-          0.9044,
-          0.9175,
-          0.9206,
-          0.9133,
-          0.8952,
-          0.8659,
-          0.8257,
-          0.7751,
-          0.7153,
-          0.6482,
-          0.5759,
-          0.5011,
-          0.4265
-        ],
-        [
-          0.2771,
-          0.3333,
-          0.3926,
-          0.4533,
-          0.5139,
-          0.5726,
-          0.6278,
-          0.6781,
-          0.7226,
-          0.7604,
-          0.7907,
-          0.813,
-          0.8269,
-          0.8316,
-          0.8269,
-          0.8121,
-          0.7872,
-          0.7521,
-          0.7074,
-          0.6541,
-          0.5938,
-          0.5285,
-          0.4607,
-          0.3928
-        ],
-        [
-          0.2272,
-          0.2748,
-          0.3254,
-          0.3777,
-          0.4303,
-          0.4817,
-          0.5304,
-          0.5753,
-          0.6154,
-          0.6497,
-          0.6777,
-          0.6988,
-          0.7125,
-          0.7183,
-          0.7157,
-          0.7044,
-          0.6841,
-          0.6548,
-          0.6169,
-          0.5713,
-          0.5194,
-          0.4629,
-          0.404,
-          0.3449
-        ],
-        [
-          0.1772,
-          0.2156,
-          0.2568,
-          0.2997,
-          0.3432,
-          0.386,
-          0.427,
-          0.465,
-          0.4993,
-          0.529,
-          0.5535,
-          0.5723,
-          0.585,
-          0.5911,
-          0.5903,
-          0.582,
-          0.5662,
-          0.5429,
-          0.5122,
-          0.4751,
-          0.4325,
-          0.3859,
-          0.3372,
-          0.2881
-        ],
-        [
-          0.1315,
-          0.1609,
-          0.1927,
-          0.2262,
-          0.2603,
-          0.2941,
-          0.3267,
-          0.3573,
-          0.385,
-          0.4092,
-          0.4294,
-          0.4452,
-          0.4561,
-          0.4619,
-          0.4622,
-          0.4565,
-          0.4449,
-          0.4272,
+          0.3064,
+          0.3591,
+          0.4105,
+          0.4583,
+          0.5007,
+          0.5359,
+          0.5631,
+          0.5817,
+          0.5918,
+          0.5941,
+          0.589,
+          0.5775,
+          0.56,
+          0.5373,
+          0.5099,
+          0.4781,
+          0.4425,
           0.4037,
-          0.3749,
-          0.3417,
-          0.3053,
-          0.2671,
-          0.2284
+          0.3625,
+          0.32,
+          0.2772,
+          0.2353,
+          0.1954,
+          0.1587
         ],
         [
-          0.0927,
-          0.1141,
-          0.1374,
-          0.162,
-          0.1874,
-          0.2126,
-          0.2372,
-          0.2602,
-          0.2813,
-          0.2999,
-          0.3155,
-          0.3279,
-          0.3367,
+          0.3656,
+          0.4292,
+          0.4915,
+          0.5499,
+          0.6019,
+          0.6456,
+          0.6798,
+          0.7038,
+          0.7177,
+          0.722,
+          0.7175,
+          0.705,
+          0.6852,
+          0.6589,
+          0.6266,
+          0.5889,
+          0.5464,
+          0.4997,
+          0.45,
+          0.3983,
+          0.3461,
+          0.2947,
+          0.2456,
+          0.2002
+        ],
+        [
+          0.4145,
+          0.4877,
+          0.5597,
+          0.6276,
+          0.6885,
+          0.7401,
+          0.781,
+          0.8105,
+          0.8284,
+          0.8353,
+          0.8319,
+          0.8192,
+          0.798,
+          0.7691,
+          0.733,
+          0.6904,
+          0.642,
+          0.5886,
+          0.5314,
+          0.4716,
+          0.4109,
+          0.3509,
+          0.2935,
+          0.2399
+        ],
+        [
+          0.4478,
+          0.5282,
+          0.6078,
+          0.6832,
+          0.7514,
+          0.8099,
+          0.8569,
+          0.8914,
+          0.9134,
+          0.9232,
+          0.9216,
+          0.9095,
+          0.8879,
+          0.8574,
+          0.8188,
+          0.7727,
+          0.7199,
+          0.6614,
+          0.5983,
+          0.5322,
+          0.4648,
+          0.398,
+          0.3338,
+          0.2737
+        ],
+        [
+          0.4617,
+          0.5463,
+          0.6307,
+          0.7113,
+          0.7848,
+          0.8485,
+          0.9005,
+          0.9395,
+          0.9654,
+          0.9783,
+          0.9789,
+          0.9682,
+          0.9469,
+          0.916,
+          0.8762,
+          0.8281,
+          0.7727,
+          0.7109,
+          0.6441,
+          0.5739,
+          0.5021,
+          0.4308,
+          0.362,
+          0.2975
+        ],
+        [
+          0.4553,
+          0.5408,
+          0.6268,
+          0.7097,
+          0.7862,
+          0.8533,
+          0.9089,
+          0.9516,
+          0.9809,
+          0.9968,
+          1.0,
+          0.9912,
+          0.9712,
+          0.9408,
+          0.901,
+          0.8523,
+          0.7959,
+          0.7328,
+          0.6644,
+          0.5924,
+          0.5188,
+          0.4456,
+          0.3749,
+          0.3085
+        ],
+        [
+          0.4297,
+          0.513,
+          0.5975,
+          0.6799,
+          0.7567,
+          0.8251,
+          0.8827,
+          0.928,
+          0.9602,
+          0.979,
+          0.9849,
+          0.9783,
+          0.9602,
+          0.9313,
+          0.8924,
+          0.8445,
+          0.7887,
+          0.7261,
+          0.6582,
+          0.5868,
+          0.5138,
+          0.4413,
+          0.3714,
+          0.3058
+        ],
+        [
+          0.3887,
+          0.4667,
+          0.5468,
+          0.6258,
+          0.7005,
+          0.7681,
+          0.826,
+          0.8726,
+          0.9067,
+          0.9279,
+          0.9363,
+          0.9322,
+          0.9164,
+          0.8896,
+          0.8528,
+          0.8068,
+          0.753,
+          0.6926,
+          0.6271,
+          0.5584,
+          0.4884,
+          0.4191,
+          0.3524,
+          0.29
+        ],
+        [
+          0.3371,
+          0.4075,
+          0.4807,
+          0.5538,
+          0.624,
+          0.6885,
+          0.7448,
+          0.7911,
+          0.826,
+          0.8488,
+          0.8593,
+          0.8577,
+          0.8444,
+          0.8203,
+          0.7863,
+          0.7434,
+          0.693,
+          0.6363,
+          0.5751,
+          0.5111,
+          0.4461,
+          0.382,
+          0.3206,
+          0.2635
+        ],
+        [
+          0.2804,
           0.3416,
-          0.3424,
-          0.3389,
-          0.3307,
-          0.3181,
-          0.301,
-          0.2799,
-          0.2555,
-          0.2286,
-          0.2001,
-          0.1714
+          0.406,
+          0.4712,
+          0.5347,
+          0.594,
+          0.6468,
+          0.691,
+          0.7252,
+          0.7485,
+          0.7604,
+          0.7608,
+          0.7503,
+          0.7293,
+          0.6989,
+          0.6601,
+          0.6143,
+          0.5628,
+          0.5074,
+          0.4497,
+          0.3914,
+          0.3343,
+          0.2798,
+          0.2293
+        ],
+        [
+          0.2238,
+          0.2749,
+          0.3293,
+          0.3852,
+          0.4404,
+          0.4928,
+          0.5401,
+          0.5805,
+          0.6125,
+          0.6349,
+          0.6472,
+          0.6493,
+          0.6412,
+          0.6236,
+          0.5974,
+          0.5636,
+          0.5234,
+          0.4784,
+          0.43,
+          0.3799,
+          0.3296,
+          0.2805,
+          0.2341,
+          0.1913
+        ],
+        [
+          0.1714,
+          0.2122,
+          0.2563,
+          0.3022,
+          0.3481,
+          0.3923,
+          0.4328,
+          0.4679,
+          0.4962,
+          0.5166,
+          0.5284,
+          0.5313,
+          0.5254,
+          0.5113,
+          0.4895,
+          0.4612,
+          0.4275,
+          0.3897,
+          0.3492,
+          0.3075,
+          0.2658,
+          0.2254,
+          0.1874,
+          0.1526
+        ],
+        [
+          0.1258,
+          0.157,
+          0.1911,
+          0.2271,
+          0.2635,
+          0.299,
+          0.3319,
+          0.3608,
+          0.3845,
+          0.4019,
+          0.4123,
+          0.4154,
+          0.4113,
+          0.4003,
+          0.3831,
+          0.3604,
+          0.3334,
+          0.3031,
+          0.2708,
+          0.2376,
+          0.2047,
+          0.1729,
+          0.1432,
+          0.1162
+        ],
+        [
+          0.0883,
+          0.1111,
+          0.1363,
+          0.1631,
+          0.1906,
+          0.2176,
+          0.2429,
+          0.2653,
+          0.2839,
+          0.2978,
+          0.3063,
+          0.3092,
+          0.3064,
+          0.2982,
+          0.2852,
+          0.2679,
+          0.2473,
+          0.2243,
+          0.1998,
+          0.1747,
+          0.1499,
+          0.1262,
+          0.1041,
+          0.0842
         ]
       ]
     },
     "centroid": {
-      "x": 62.21,
-      "y": 41.37
+      "x": 55.05,
+      "y": 38.36
     },
     "thirds_spine": [
       {
         "third": "defensive",
-        "x": 25.65,
-        "y": 41.03
+        "x": 25.79,
+        "y": 35.69
       },
       {
         "third": "middle",
-        "x": 60.28,
-        "y": 39.78
+        "x": 59.81,
+        "y": 41.01
       },
       {
         "third": "attacking",
-        "x": 94.16,
-        "y": 43.8
+        "x": 92.88,
+        "y": 37.35
       }
     ],
     "ellipse": {
-      "cx": 62.21,
-      "cy": 41.37,
-      "rx": 27.68,
-      "ry": 16.5,
-      "angle_deg": -175.5
+      "cx": 55.05,
+      "cy": 38.36,
+      "rx": 26.69,
+      "ry": 16.6,
+      "angle_deg": -175.6
     },
     "depth_line": {
-      "x": 82.05,
+      "x": 71.24,
       "percentile": 70
     }
   },
@@ -980,7 +1526,7 @@
     "off_ball_grid_rows": 16,
     "phase_filter": "open_play_only",
     "coordinate_system": "statsbomb_120x80_normalised_attack_right",
-    "coordinate_note": "Coordinates are normalised so the team always attacks right (increasing x). Raw StatsBomb events are flipped (x\u2192120-x, y\u219280-y) in periods where the team attacks left.",
+    "coordinate_note": "StatsBomb event and 360 freeze-frame coordinates are already in each team's own attack-right frame across both halves; no period-based flip is applied. Off-ball 360 dots from opponent-actor frames are mirrored (x\u2192120-x, y\u219280-y) into the analysed team's frame before pooling; own-actor dots are used as-is, and the goalkeeper is excluded.",
     "camera_caveat": "360 frames follow the ball; the visible subset of out-of-possession positions is biased toward areas near the ball. The camera artifact and the real defensive shape point the same direction \u2014 they cannot be cleanly separated."
   }
 }
