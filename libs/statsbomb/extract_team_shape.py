@@ -14,17 +14,26 @@ a percentile-depth line. No player identities are assigned to the cloud.
 OPEN-PLAY FILTER: play_pattern not in (From Corner, From Free Kick, From Goal
     Kick, From Kick Off, From Throw In). Transitions included.
 
-COORDINATE NORMALIZATION: raw StatsBomb events use the physical pitch
-    coordinate system without standardizing attack direction. This extractor
-    normalizes so the analyzed team always attacks right (increasing x). It
-    detects each period's attack direction from the team's mean event position:
-    if mean x > 60 in period 1, team attacks right in H1 and normalization
-    flips H2; otherwise H1 is flipped. Flip: x → 120-x, y → 80-y.
+COORDINATE FRAME: StatsBomb event and 360 freeze-frame coordinates are
+    already consistently attack-right for both teams across both halves —
+    mean shot x and mean goalkeeper event x cluster at the same end of the
+    pitch in both periods (see DATA-SPEC-v2 §A). No period-based flip is
+    applied. `_attack_direction_by_period` is kept only as a sanity check
+    (`_assert_attacks_right`): if it ever detects "left" for this match, that
+    assumption has broken and the output should not be trusted.
 
 TEAMMATE-BOOLEAN INVERSION: in a 360 frame, `teammate` is relative to the
     actor (the player who performed the event), not the analyzed team. For
     out-of-possession frames the actor belongs to the opponent, so teammate=True
     marks OPPONENT players and teammate=False marks OUR players.
+
+OPPONENT-ACTOR MIRRORING: a 360 freeze frame is in the frame of the event's
+    actor. When the actor is the opponent, our players' dots arrive in the
+    opponent's frame, where high x means near our own goal — pooling them
+    with our own-actor dots unmirrored would average two different frames
+    (DATA-SPEC-v2 §A). Off-ball dots from opponent-actor frames are mirrored
+    (x → 120-x, y → 80-y) before pooling; own-actor dots are used as-is.
+    Keeper dots are excluded from the off-ball pool entirely.
 
 Public API:
     extract_team_shape_on_ball(match_id, team) -> pd.DataFrame
@@ -44,7 +53,8 @@ JSON output shape (team_shape_{match_id}_{team_slug}.json):
             "players_in": [str],
             "players_out": [str],
             "nodes": [{"player_id": int, "player": str, "display_name": str,
-                       "x": float, "y": float, "event_count": int}],
+                       "x": float, "y": float, "event_count": int,
+                       "lane_counts": {str: int}, "band_counts": {str: int}}],
             "hull": [[x, y], ...]
           }
         ]
@@ -60,7 +70,7 @@ JSON output shape (team_shape_{match_id}_{team_slug}.json):
       "metadata": {...}
     }
 
-Written to: libs/footballd3/sample_data/team_shape_{match_id}_{team_slug}.json
+Written to: data/euro-2024/{match_id}/team_shape_{team_slug}.json
 """
 
 import json
@@ -73,6 +83,7 @@ from scipy.spatial import ConvexHull
 from scipy.stats import gaussian_kde
 from statsbombpy import sb
 
+from .tactical_definitions import BAND_EDGES, LANE_EDGES, band_for_x, lane_for_y
 from .utils import (
     SET_PIECE_PLAY_PATTERNS,
     build_nickname_lookup,
@@ -128,24 +139,80 @@ def _attack_direction_by_period(events: pd.DataFrame, team: str) -> dict[int, st
     return direction_by_period
 
 
-def _normalize_xy(x: float, y: float, direction: str) -> tuple[float, float]:
-    """Normalize a StatsBomb coordinate so the team always attacks right.
+def _assert_attacks_right(attack_dir_by_period: dict[int, str], match_id: int, team: str) -> None:
+    """Raise if any period's detected attack direction is not "right".
 
-    When direction == "left", the team attacks toward decreasing x, so we
-    mirror both axes: x → 120-x, y → 80-y. This maps the defensive end to
-    low x and the attacking end to high x, consistent across both halves.
+    StatsBomb event and 360 coordinates are already consistently in each
+    team's own attack-right frame across both halves (see DATA-SPEC-v2 §A),
+    so this extractor applies no period-based flip. This is a sanity check on
+    that assumption, not a normalization step — a "left" result means the
+    assumption has broken for this match and the output should not be
+    trusted until that's investigated.
+
+    Args:
+        attack_dir_by_period (dict[int, str]): Period → "right"/"left", from
+            `_attack_direction_by_period`.
+        match_id (int): StatsBomb match ID, for the error message.
+        team (str): Team name, for the error message.
+
+    Raises:
+        ValueError: If any period's direction is not "right".
+    """
+    bad = {period: direction for period, direction in attack_dir_by_period.items() if direction != "right"}
+    if bad:
+        raise ValueError(
+            f"match {match_id}, team '{team}': _attack_direction_by_period returned "
+            f"non-'right' for period(s) {bad} — the assumption that StatsBomb "
+            "coordinates are already attack-right has broken for this match; "
+            "investigate before trusting team_shape output."
+        )
+
+
+def _mirror_xy(x: float, y: float) -> tuple[float, float]:
+    """Point-reflect a StatsBomb coordinate: x → 120-x, y → 80-y.
+
+    Used to remap a 360 freeze-frame dot that arrived in an opponent actor's
+    frame into the analysed team's own attack-right frame (DATA-SPEC-v2 §A).
+    Not a period-based normalization — see the module docstring.
 
     Args:
         x (float): StatsBomb x coordinate (0–120).
         y (float): StatsBomb y coordinate (0–80).
-        direction (str): "right" (no change) or "left" (flip both axes).
 
     Returns:
-        tuple[float, float]: Normalized (x, y).
+        tuple[float, float]: The mirrored (x, y).
     """
-    if direction == "left":
-        return SB_PITCH_WIDTH - x, SB_PITCH_HEIGHT - y
-    return x, y
+    return SB_PITCH_WIDTH - x, SB_PITCH_HEIGHT - y
+
+
+def _off_ball_dot_xy(dot: dict, actor_is_opponent: bool) -> tuple[float, float] | None:
+    """Decide whether one 360 freeze-frame dot belongs in the off-ball pool.
+
+    Excludes the goalkeeper and the opposing side's dots (teammate-boolean
+    inversion applies — see the module docstring). Mirrors opponent-actor
+    dots into the analysed team's own attack-right frame; own-actor dots are
+    used as-is.
+
+    Args:
+        dot (dict): One `freeze_frame` entry: `location`, `teammate`,
+            `actor`, `keeper`.
+        actor_is_opponent (bool): Whether the event's actor belongs to the
+            opposing team (so `teammate` is relative to them, not us).
+
+    Returns:
+        tuple[float, float] | None: The (x, y) to pool, or None if this dot
+            is excluded (not our player, or the goalkeeper).
+    """
+    if dot.get("keeper", False):
+        return None
+    is_our_dot = (not dot["teammate"]) if actor_is_opponent else dot["teammate"]
+    if not is_our_dot:
+        return None
+    raw_x = float(dot["location"][0])
+    raw_y = float(dot["location"][1])
+    if actor_is_opponent:
+        return _mirror_xy(raw_x, raw_y)
+    return raw_x, raw_y
 
 
 def _compute_kde_grid(
@@ -379,26 +446,28 @@ def _build_lineup_periods(events: pd.DataFrame, team: str) -> list[dict]:
 def _on_ball_periods(
     events: pd.DataFrame,
     team: str,
-    attack_dir_by_period: dict[int, str],
     nicknames: dict[int, str],
 ) -> list[dict]:
     """Compute on-ball player mean positions for each lineup period.
 
     Shared logic called by extract_team_shape_on_ball. Filters to open-play
-    in-possession events for the team, normalizes coordinates, and computes
-    mean (x, y) per player per lineup window along with a convex hull of nodes.
+    in-possession events for the team and computes, per player per lineup
+    window: the mean (x, y), a per-touch lane/band bucket tally, and a convex
+    hull of the window's nodes. Coordinates are used as-is — see the module
+    docstring's COORDINATE FRAME note; the caller is responsible for calling
+    `_assert_attacks_right` first.
 
     Args:
         events (pd.DataFrame): Full match event DataFrame.
         team (str): Team name to analyze.
-        attack_dir_by_period (dict[int, str]): Period → "right"/"left".
         nicknames (dict[int, str]): player_id → display_name.
 
     Returns:
         list[dict]: One entry per lineup window with keys:
             from_minute, to_minute (int),
             players_in, players_out (list[str]),
-            nodes (list[dict]): player_id, player, display_name, x, y, event_count,
+            nodes (list[dict]): player_id, player, display_name, x, y,
+                event_count, lane_counts (dict[str, int]), band_counts (dict[str, int]),
             hull  (list[[float, float]]).
     """
     lineup_periods = _build_lineup_periods(events, team)
@@ -426,10 +495,7 @@ def _on_ball_periods(
 
         for _, row in subset.iterrows():
             pid = str(row["player"])
-            period_half = int(row.get("period", 1))
-            direction   = attack_dir_by_period.get(period_half, "right")
             raw_x, raw_y = float(row["location"][0]), float(row["location"][1])
-            nx, ny = _normalize_xy(raw_x, raw_y, direction)
 
             if pid not in player_records:
                 pid_val = row.get("player_id")
@@ -442,9 +508,13 @@ def _on_ball_periods(
                     "display_name": display_name,
                     "xs": [],
                     "ys": [],
+                    "lane_counts": {label: 0 for label, _, _ in LANE_EDGES},
+                    "band_counts": {label: 0 for label, _, _ in BAND_EDGES},
                 }
-            player_records[pid]["xs"].append(nx)
-            player_records[pid]["ys"].append(ny)
+            player_records[pid]["xs"].append(raw_x)
+            player_records[pid]["ys"].append(raw_y)
+            player_records[pid]["lane_counts"][lane_for_y(raw_y)] += 1
+            player_records[pid]["band_counts"][band_for_x(raw_x)] += 1
 
         nodes = []
         for rec in player_records.values():
@@ -457,6 +527,8 @@ def _on_ball_periods(
                 "x":            round(float(xs_arr.mean()), 2),
                 "y":            round(float(ys_arr.mean()), 2),
                 "event_count":  len(xs_arr),
+                "lane_counts":  rec["lane_counts"],
+                "band_counts":  rec["band_counts"],
             })
 
         nodes.sort(key=lambda n: n["event_count"], reverse=True)
@@ -479,11 +551,13 @@ def extract_team_shape_on_ball(match_id: int, team: str) -> pd.DataFrame:
 
     Builds lineup windows from Starting XI + Substitution events. For each
     window, filters to open-play in-possession events where the player is on
-    the pitch, normalizes coordinates (team always attacks right), and computes
-    the mean (x, y) per player. Returns one row per player per lineup period.
+    the pitch and computes the mean (x, y) and lane/band touch counts per
+    player. Returns one row per player per lineup period.
 
-    Coordinate normalization: mean shot x > 60 in period 1 → team attacks right
-    in H1 and flips H2. Flip is x → 120-x, y → 80-y.
+    Coordinates are used as-is — StatsBomb event coordinates are already
+    consistently attack-right for both teams (see the module docstring's
+    COORDINATE FRAME note). `_attack_direction_by_period` is used only as a
+    sanity check that this still holds for this match.
 
     Args:
         match_id (int): StatsBomb match ID.
@@ -496,21 +570,26 @@ def extract_team_shape_on_ball(match_id: int, team: str) -> pd.DataFrame:
             player_id (int | None): StatsBomb player ID.
             player (str): Full player name.
             display_name (str): Resolved display name (nickname or full name).
-            x, y (float): Mean normalised position in StatsBomb 120×80 yards.
+            x, y (float): Mean position in StatsBomb 120×80 yards.
             event_count (int): Number of open-play in-possession events.
+            lane_counts (dict[str, int]): Touch count per lane (5 keys).
+            band_counts (dict[str, int]): Touch count per band (4 keys).
         Also sets df.attrs:
             periods_meta (list[dict]): Per-period hull + players_in/out for JSON reconstruction.
             competition, match_label (str).
 
     Raises:
-        ValueError: If no Starting XI event is found for the given team.
+        ValueError: If no Starting XI event is found for the given team, or
+            if `_attack_direction_by_period` detects a direction other than
+            "right" for any period (see `_assert_attacks_right`).
     """
     nicknames = build_nickname_lookup(match_id)
     events = sb.events(match_id=match_id)
     competition, _, match_label = fetch_match_info(match_id)
 
     attack_dir = _attack_direction_by_period(events, team)
-    periods = _on_ball_periods(events, team, attack_dir, nicknames)
+    _assert_attacks_right(attack_dir, match_id, team)
+    periods = _on_ball_periods(events, team, nicknames)
 
     records: list[dict] = []
     periods_meta: list[dict] = []
@@ -526,6 +605,8 @@ def extract_team_shape_on_ball(match_id: int, team: str) -> pd.DataFrame:
                 "x":                  node["x"],
                 "y":                  node["y"],
                 "event_count":        node["event_count"],
+                "lane_counts":        node["lane_counts"],
+                "band_counts":        node["band_counts"],
             })
         periods_meta.append({
             "from_minute": p["from_minute"],
@@ -555,11 +636,13 @@ def extract_team_shape_off_ball(
     Collects every 360 frame dot belonging to the analyzed team while the team
     is OUT of possession (open-play events only). Applies teammate-boolean
     inversion: when the actor is an opponent, teammate=True marks opponents and
-    teammate=False marks the analyzed team.
+    teammate=False marks the analyzed team. Excludes the goalkeeper, and
+    mirrors dots from opponent-actor frames into the team's own attack-right
+    frame before pooling (see `_off_ball_dot_xy` and the module docstring's
+    OPPONENT-ACTOR MIRRORING note).
 
-    Coordinates are normalised so the team always attacks right. Computes:
-    density grid (Gaussian KDE), centroid, thirds-spine, covariance ellipse,
-    and a percentile depth line.
+    Computes: density grid (Gaussian KDE), centroid, thirds-spine, covariance
+    ellipse, and a percentile depth line.
 
     Args:
         match_id (int): StatsBomb match ID.
@@ -579,11 +662,14 @@ def extract_team_shape_off_ball(
         }
 
     Raises:
-        ValueError: If fewer than 2 frame dots are found for the team.
+        ValueError: If fewer than 2 frame dots are found for the team, or if
+            `_attack_direction_by_period` detects a direction other than
+            "right" for any period (see `_assert_attacks_right`).
     """
     events = sb.events(match_id=match_id)
     frame_lookup = load_360_frames(match_id)
     attack_dir = _attack_direction_by_period(events, team)
+    _assert_attacks_right(attack_dir, match_id, team)
 
     op_mask    = open_play_mask(events)
     out_of_poss = events["possession_team"] != team
@@ -599,22 +685,17 @@ def extract_team_shape_off_ball(
 
         frame_data  = frame_lookup[event_uuid]
         actor_team  = str(row["team"])
-        period      = int(row.get("period", 1))
-        direction   = attack_dir.get(period, "right")
 
         # Teammate-boolean inversion: actor is opponent when actor_team != team.
         # When actor is opponent: teammate=True → opponent, teammate=False → our team.
         actor_is_opponent = (actor_team != team)
 
         for dot in frame_data["freeze_frame"]:
-            is_our_dot = (not dot["teammate"]) if actor_is_opponent else dot["teammate"]
-            if not is_our_dot:
+            xy = _off_ball_dot_xy(dot, actor_is_opponent)
+            if xy is None:
                 continue
-            raw_x = float(dot["location"][0])
-            raw_y = float(dot["location"][1])
-            nx, ny = _normalize_xy(raw_x, raw_y, direction)
-            all_xs.append(nx)
-            all_ys.append(ny)
+            all_xs.append(xy[0])
+            all_ys.append(xy[1])
 
     xs = np.array(all_xs)
     ys = np.array(all_ys)
@@ -734,9 +815,12 @@ def main(
                 "phase_filter":              "open_play_only",
                 "coordinate_system":         "statsbomb_120x80_normalised_attack_right",
                 "coordinate_note": (
-                    "Coordinates are normalised so the team always attacks right "
-                    "(increasing x). Raw StatsBomb events are flipped (x→120-x, "
-                    "y→80-y) in periods where the team attacks left."
+                    "StatsBomb event and 360 freeze-frame coordinates are already "
+                    "in each team's own attack-right frame across both halves; no "
+                    "period-based flip is applied. Off-ball 360 dots from "
+                    "opponent-actor frames are mirrored (x→120-x, y→80-y) into "
+                    "the analysed team's frame before pooling; own-actor dots are "
+                    "used as-is, and the goalkeeper is excluded."
                 ),
                 "camera_caveat": (
                     "360 frames follow the ball; the visible subset of "
