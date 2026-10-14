@@ -1,5 +1,9 @@
 # Tooling — the documentation gate
 
+> **Task history:** see
+> [`specs/2026-06-footballd3-statsbomb-libraries.md`](specs/2026-06-footballd3-statsbomb-libraries.md)
+> for when and why this gate was added.
+
 This document explains the documentation enforcement setup in this repo: what it is,
 why it exists, how it works, and how to maintain it. If you're changing the repo
 layout or wondering why a check is failing, start here.
