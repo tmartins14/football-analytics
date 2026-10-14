@@ -5,7 +5,7 @@ started: 2026-10-12
 completed: ongoing
 repo: football-analytics
 area: libs/statsbomb, ai/match_summary
-related_prs: [12, 13, 14, 15, 16, 17, 18]
+related_prs: [12, 13, 14, 15, 16, 17, 18, 21]
 related_docs: [ai/match_summary/DATA-SPEC-v2.md, ai/match_summary/FAILURE-TAXONOMY.md, ai/match_summary/SPEC.md, ../../../tylermartins.com/docs/task-history/2026-09-ai-section.md]
 tags: [ai-engineering, data-spec-v2, tactical-findings, statsbomb, llm, grounding]
 ---
@@ -19,10 +19,9 @@ system-prompt instruction, and the source of every defect
 `VERIFICATION-3943043.md` found (Module 1) — with a deterministic Python
 findings layer: every label, comparison, and claim is computed in code
 and handed to the model as a pre-written clause it must state word for
-word. Six PRs so far (Parts 0–4 of six planned), each its own merged PR
-off `main`; Part 5 (re-running the real baseline against the live API)
-and Part 6 (new finding categories, gated on a Module 3 judge that doesn't
-exist yet) are still ahead.
+word. Seven PRs so far (Parts 0–5 of six planned), each its own merged PR off
+`main`; Part 6 (new finding categories, gated on a Module 3 judge that
+doesn't exist yet) is still ahead.
 
 ## Context
 
@@ -91,6 +90,24 @@ which player to name first was non-deterministic across repeated runs
 (Python's string-hash randomization affecting a `frozenset`'s iteration
 order) — fixed with an explicit secondary sort key.
 
+### 2026-10-14 — Part 5 (re-run the baseline against the live API)
+
+PR #21 ran `generate_match_summary` three times against the live API on
+top of the Part 4 findings layer. All three passed `check_grounding`
+clean (0 failed sentences, `publishable: true`), and a manual read of all
+three (not just the one the spec asks for) plus a textual signature scan
+found none of D1–D8 and no new failure class — consistent with every
+defect's root cause (a raw field, a label with no threshold, model
+arithmetic, an unrounded minute, a too-small window) having been fixed in
+the findings layer itself in Parts 0–4, not by prompting harder. Added
+`write_verification_v2.py` to render `VERIFICATION-3943043-v2.md` from
+each run's `grounding_report.json` by script rather than by hand, per the
+spec; appended the D6/D7 note to `VERIFICATION-3943043.md`; recorded the
+result in `FAILURE-TAXONOMY.md`. Regenerated the committed
+`match_summary.json` and committed its `grounding_report.json`. Tyler's
+own manual read of one run (the spec's actual acceptance criterion) is
+still outstanding — called out explicitly in the new file, not gated on.
+
 ### 2026-10-14 — Parts 3 and 4
 
 Part 3 (PR #17) added the tests Part 2 deliberately didn't ship with (the
@@ -140,14 +157,12 @@ to that branch rather than going into the Part 4 PR.
 
 ## Outcome
 
-Parts 0–4 shipped and merged to `main`. Still ahead: **Part 5** (generate
-the real tactics section three times against the live API, confirm none
-of D1–D8 recur, write `VERIFICATION-3943043-v2.md`) and **Part 6** (new
+Parts 0–5 shipped and merged to `main`. Still ahead: **Part 6** (new
 finding categories — chance creation, progression, pressing, transitions,
 set pieces — gated on the Module 3 eval judge, which doesn't exist yet).
 `tylermartins.com`'s AI section (see that repo's
 `docs/task-history/2026-09-ai-section.md`) displays this project's generated
-output and will need updating once Part 5 regenerates it.
+output and will need updating now that Part 5 has regenerated it.
 
 ## Where to look for more
 
@@ -159,4 +174,5 @@ output and will need updating once Part 5 regenerates it.
 - `libs/statsbomb/tactical_definitions.py`,
   `libs/statsbomb/derive_tactical_findings.py`,
   `libs/statsbomb/extract_team_shape.py` — the code.
-- PRs #12–#18 on GitHub — the six merged PRs, in order.
+- PRs #12–#18 and #21 on GitHub — the seven merged PRs, in order
+  (#19/#20 in between were the docs-only PRs, unrelated to this spec).
