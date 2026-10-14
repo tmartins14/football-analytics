@@ -29,3 +29,5 @@ right folder.
 Not sure which folder owns something? Check `docs/ARCHITECTURE.md` first —
 it covers naming collisions (e.g. two things named `statsbomb`) and known
 gaps between folders.
+
+**Note**: Do not touch any SPEC files. Those are to be managed by the human in the loop and not the agent.
