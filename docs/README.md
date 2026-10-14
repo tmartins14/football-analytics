@@ -17,6 +17,12 @@ Three kinds of document live here, for three different questions:
   dated subheadings get appended to the existing one; see
   `task-history/2026-10-data-spec-v2-tactical-findings.md` for an example).
 
+**Every task done in this repo gets a `task-history/` entry — no
+exceptions.** A `specs/` doc is optional (Tyler provides one when a task
+warrants planning it out first; plenty of tasks don't get one), but the
+record of what actually happened is not: write the `task-history/` doc as
+part of finishing the task, not as a follow-up to remember later.
+
 ## Where to start
 
 - **Human, wants the lay of the land:** `task-history/README.md`'s index
