@@ -23,7 +23,7 @@ Public API:
     CONNECTIVES (dict[str, frozenset[str]])
     CAUSAL_TERMS, BANNED_TERMS (frozenset[str])
     Thresholds: HUB_SHARE, MIN_WINDOW_PASSES, MIN_NODE_EVENTS,
-        MIN_ELIGIBLE_OUTFIELD, MODAL_SHARE, MIN_PAIR_COUNT,
+        MIN_ELIGIBLE_OUTFIELD, HALFWAY_LINE, MODAL_SHARE, MIN_PAIR_COUNT,
         COMPARE_MIN_YARDS, COMPARE_MIN_POINTS, CHANGE_MIN_SHARE
 """
 
@@ -166,6 +166,7 @@ def display_minute(minute: int, period: int) -> str:
 MODAL_SHARE = 0.50           # player_zone: modal lane/band share needed to avoid "mixed".
 MIN_NODE_EVENTS = 10          # player_zone: suppressed below this many touches.
 MIN_ELIGIBLE_OUTFIELD = 8     # team_height/team_width: suppressed below this many eligible nodes.
+HALFWAY_LINE = 60             # team_height: own_half/opposition_half label boundary (matches BAND_EDGES).
 
 # Passing structure.
 HUB_SHARE = 0.15              # hub: involvement share needed to be a hub.

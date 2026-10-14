@@ -1,0 +1,4783 @@
+{
+  "findings": [
+    {
+      "id": "context.final_score",
+      "category": "context",
+      "type": "final_score",
+      "team": null,
+      "window": null,
+      "game_states": [],
+      "subject": null,
+      "label": null,
+      "value": {
+        "home_score": 2,
+        "away_score": 1
+      },
+      "claim": "Spain beat England 2\u20131",
+      "evidence": {
+        "home_team": "Spain",
+        "home_score": 2,
+        "away_team": "England",
+        "away_score": 1,
+        "source": "match_stats.json#home.score,away.score"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "context.goal.ESP.nico_williams",
+      "category": "context",
+      "type": "goal",
+      "team": "Spain",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "display_name": "Nico Williams"
+      },
+      "label": null,
+      "value": "Nico Williams",
+      "claim": "Nico Williams scored for Spain (47')",
+      "evidence": {
+        "minute": 46,
+        "period": 2,
+        "display_minute": "47'",
+        "source": "shots.json"
+      },
+      "threshold": null,
+      "notability": 3.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "context.goal.ENG.cole_palmer",
+      "category": "context",
+      "type": "goal",
+      "team": "England",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "display_name": "Cole Palmer"
+      },
+      "label": null,
+      "value": "Cole Palmer",
+      "claim": "Cole Palmer scored for England (73')",
+      "evidence": {
+        "minute": 72,
+        "period": 2,
+        "display_minute": "73'",
+        "source": "shots.json"
+      },
+      "threshold": null,
+      "notability": 3.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "context.goal.ESP.mikel_oyarzabal",
+      "category": "context",
+      "type": "goal",
+      "team": "Spain",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "display_name": "Mikel Oyarzabal"
+      },
+      "label": null,
+      "value": "Mikel Oyarzabal",
+      "claim": "Mikel Oyarzabal scored for Spain (86')",
+      "evidence": {
+        "minute": 85,
+        "period": 2,
+        "display_minute": "86'",
+        "source": "shots.json"
+      },
+      "threshold": null,
+      "notability": 3.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "context.game_state.level.s0",
+      "category": "context",
+      "type": "game_state",
+      "team": null,
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 46,
+        "source": "game_state_segment",
+        "text": "kick-off to 47'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": null,
+      "label": "level",
+      "value": "0-0",
+      "claim": "the score was level at 0-0 from kick-off to 47'",
+      "evidence": {
+        "from_minute": 0,
+        "from_period": 1,
+        "to_minute": 46,
+        "to_period": 2,
+        "home_score": 0,
+        "away_score": 0,
+        "source": "derived from shots.json goals + match_stats.json final score"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "context.game_state.ESP.s1",
+      "category": "context",
+      "type": "game_state",
+      "team": "Spain",
+      "window": {
+        "index": 1,
+        "from_minute": 46,
+        "to_minute": 72,
+        "source": "game_state_segment",
+        "text": "47' to 73'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": null,
+      "label": "leading",
+      "value": "1-0",
+      "claim": "Spain led 1-0 from 47' to 73'",
+      "evidence": {
+        "from_minute": 46,
+        "from_period": 2,
+        "to_minute": 72,
+        "to_period": 2,
+        "home_score": 1,
+        "away_score": 0,
+        "source": "derived from shots.json goals + match_stats.json final score"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "context.game_state.level.s2",
+      "category": "context",
+      "type": "game_state",
+      "team": null,
+      "window": {
+        "index": 2,
+        "from_minute": 72,
+        "to_minute": 85,
+        "source": "game_state_segment",
+        "text": "73' to 86'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": null,
+      "label": "level",
+      "value": "1-1",
+      "claim": "the score was level at 1-1 from 73' to 86'",
+      "evidence": {
+        "from_minute": 72,
+        "from_period": 2,
+        "to_minute": 85,
+        "to_period": 2,
+        "home_score": 1,
+        "away_score": 1,
+        "source": "derived from shots.json goals + match_stats.json final score"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "context.game_state.ESP.s3",
+      "category": "context",
+      "type": "game_state",
+      "team": "Spain",
+      "window": {
+        "index": 3,
+        "from_minute": 85,
+        "to_minute": null,
+        "source": "game_state_segment",
+        "text": "86' to full time"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": null,
+      "label": "leading",
+      "value": "2-1",
+      "claim": "Spain led 2-1 from 86' to full time",
+      "evidence": {
+        "from_minute": 85,
+        "from_period": 2,
+        "to_minute": null,
+        "to_period": null,
+        "home_score": 2,
+        "away_score": 1,
+        "source": "derived from shots.json goals + match_stats.json final score"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.formation.ESP.p0",
+      "category": "structure",
+      "type": "formation",
+      "team": "Spain",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 89,
+        "source": "formation_period",
+        "text": "kick-off to 90'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": null,
+      "label": null,
+      "value": "4-2-3-1",
+      "claim": "Spain played a 4-2-3-1 from kick-off to 90'",
+      "evidence": {
+        "from_minute": 0,
+        "from_period": 1,
+        "to_minute": 89,
+        "to_period": 2,
+        "source": "formation_spain.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.formation.ESP.p1",
+      "category": "structure",
+      "type": "formation",
+      "team": "Spain",
+      "window": {
+        "index": 1,
+        "from_minute": 89,
+        "to_minute": 94,
+        "source": "formation_period",
+        "text": "90' to full time"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": null,
+      "label": null,
+      "value": "4-2-3-1",
+      "claim": "Spain played a 4-2-3-1 from 90' to full time",
+      "evidence": {
+        "from_minute": 89,
+        "from_period": 2,
+        "to_minute": 94,
+        "to_period": 2,
+        "source": "formation_spain.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.ESP.daniel_olmo.p1",
+      "category": "structure",
+      "type": "role_change",
+      "team": "Spain",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Daniel Olmo Carvajal",
+        "display_name": "Daniel Olmo"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Center Attacking Midfield",
+        "new_position": "Right Wing"
+      },
+      "claim": "Daniel Olmo moved from Center Attacking Midfield to Right Wing (90')",
+      "evidence": {
+        "minute": 89,
+        "period": 2,
+        "display_minute": "90'",
+        "source": "formation_spain.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.formation.ENG.p0",
+      "category": "structure",
+      "type": "formation",
+      "team": "England",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 69,
+        "source": "formation_period",
+        "text": "kick-off to 70'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": "4-2-3-1",
+      "claim": "England played a 4-2-3-1 from kick-off to 70'",
+      "evidence": {
+        "from_minute": 0,
+        "from_period": 1,
+        "to_minute": 69,
+        "to_period": 2,
+        "source": "formation_england.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.formation.ENG.p1",
+      "category": "structure",
+      "type": "formation",
+      "team": "England",
+      "window": {
+        "index": 1,
+        "from_minute": 69,
+        "to_minute": 89,
+        "source": "formation_period",
+        "text": "70' to 90'"
+      },
+      "game_states": [
+        "trailing",
+        "level"
+      ],
+      "subject": null,
+      "label": null,
+      "value": "4-2-3-1",
+      "claim": "England played a 4-2-3-1 from 70' to 90'",
+      "evidence": {
+        "from_minute": 69,
+        "from_period": 2,
+        "to_minute": 89,
+        "to_period": 2,
+        "source": "formation_england.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.ENG.jude_bellingham.p1",
+      "category": "structure",
+      "type": "role_change",
+      "team": "England",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Jude Bellingham",
+        "display_name": "Jude Bellingham"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Left Wing",
+        "new_position": "Right Defensive Midfield"
+      },
+      "claim": "Jude Bellingham moved from Left Wing to Right Defensive Midfield (70')",
+      "evidence": {
+        "minute": 69,
+        "period": 2,
+        "display_minute": "70'",
+        "source": "formation_england.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.ENG.phil_foden.p1",
+      "category": "structure",
+      "type": "role_change",
+      "team": "England",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Phil Foden",
+        "display_name": "Phil Foden"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Center Attacking Midfield",
+        "new_position": "Left Wing"
+      },
+      "claim": "Phil Foden moved from Center Attacking Midfield to Left Wing (70')",
+      "evidence": {
+        "minute": 69,
+        "period": 2,
+        "display_minute": "70'",
+        "source": "formation_england.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.formation.ENG.p2",
+      "category": "structure",
+      "type": "formation",
+      "team": "England",
+      "window": {
+        "index": 2,
+        "from_minute": 89,
+        "to_minute": 94,
+        "source": "formation_period",
+        "text": "90' to full time"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": "4-1-2-1-2",
+      "claim": "England played a 4-1-2-1-2 from 90' to full time",
+      "evidence": {
+        "from_minute": 89,
+        "from_period": 2,
+        "to_minute": 94,
+        "to_period": 2,
+        "source": "formation_england.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.formation_change.ENG.p2",
+      "category": "structure",
+      "type": "formation_change",
+      "team": "England",
+      "window": null,
+      "game_states": [],
+      "subject": null,
+      "label": null,
+      "value": {
+        "old": "4-2-3-1",
+        "new": "4-1-2-1-2"
+      },
+      "claim": "England changed from a 4-2-3-1 to a 4-1-2-1-2 (90')",
+      "evidence": {
+        "minute": 89,
+        "period": 2,
+        "display_minute": "90'",
+        "source": "formation_england.json"
+      },
+      "threshold": null,
+      "notability": 3.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.ENG.declan_rice.p2",
+      "category": "structure",
+      "type": "role_change",
+      "team": "England",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Declan Rice",
+        "display_name": "Declan Rice"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Left Defensive Midfield",
+        "new_position": "Center Defensive Midfield"
+      },
+      "claim": "Declan Rice moved from Left Defensive Midfield to Center Defensive Midfield (90')",
+      "evidence": {
+        "minute": 89,
+        "period": 2,
+        "display_minute": "90'",
+        "source": "formation_england.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.ENG.bukayo_saka.p2",
+      "category": "structure",
+      "type": "role_change",
+      "team": "England",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Bukayo Saka",
+        "display_name": "Bukayo Saka"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Right Wing",
+        "new_position": "Right Center Midfield"
+      },
+      "claim": "Bukayo Saka moved from Right Wing to Right Center Midfield (90')",
+      "evidence": {
+        "minute": 89,
+        "period": 2,
+        "display_minute": "90'",
+        "source": "formation_england.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.ENG.jude_bellingham.p2",
+      "category": "structure",
+      "type": "role_change",
+      "team": "England",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Jude Bellingham",
+        "display_name": "Jude Bellingham"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Right Defensive Midfield",
+        "new_position": "Left Center Midfield"
+      },
+      "claim": "Jude Bellingham moved from Right Defensive Midfield to Left Center Midfield (90')",
+      "evidence": {
+        "minute": 89,
+        "period": 2,
+        "display_minute": "90'",
+        "source": "formation_england.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.ENG.ollie_watkins.p2",
+      "category": "structure",
+      "type": "role_change",
+      "team": "England",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Ollie Watkins",
+        "display_name": "Ollie Watkins"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Center Forward",
+        "new_position": "Right Center Forward"
+      },
+      "claim": "Ollie Watkins moved from Center Forward to Right Center Forward (90')",
+      "evidence": {
+        "minute": 89,
+        "period": 2,
+        "display_minute": "90'",
+        "source": "formation_england.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.ENG.ivan_toney",
+      "category": "structure",
+      "type": "substitution",
+      "team": "England",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Ivan Toney",
+        "display_name": "Ivan Toney"
+      },
+      "label": null,
+      "value": {
+        "on": "Ivan Toney",
+        "off": "Phil Foden"
+      },
+      "claim": "Ivan Toney replaced Phil Foden for England (90')",
+      "evidence": {
+        "minute": 89,
+        "period": 2,
+        "display_minute": "90'",
+        "on_player": "Ivan Toney",
+        "off_player": "Phil Foden",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.ENG.ollie_watkins",
+      "category": "structure",
+      "type": "substitution",
+      "team": "England",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Ollie Watkins",
+        "display_name": "Ollie Watkins"
+      },
+      "label": null,
+      "value": {
+        "on": "Ollie Watkins",
+        "off": "Harry Kane"
+      },
+      "claim": "Ollie Watkins replaced Harry Kane for England (61')",
+      "evidence": {
+        "minute": 60,
+        "period": 2,
+        "display_minute": "61'",
+        "on_player": "Ollie Watkins",
+        "off_player": "Harry Kane",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.ENG.cole_palmer",
+      "category": "structure",
+      "type": "substitution",
+      "team": "England",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Cole Palmer",
+        "display_name": "Cole Palmer"
+      },
+      "label": null,
+      "value": {
+        "on": "Cole Palmer",
+        "off": "Kobbie Mainoo"
+      },
+      "claim": "Cole Palmer replaced Kobbie Mainoo for England (70')",
+      "evidence": {
+        "minute": 69,
+        "period": 2,
+        "display_minute": "70'",
+        "on_player": "Cole Palmer",
+        "off_player": "Kobbie Mainoo",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.ESP.mikel_merino",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Spain",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Mikel Merino Zaz\u00f3n",
+        "display_name": "Mikel Merino"
+      },
+      "label": null,
+      "value": {
+        "on": "Mikel Merino",
+        "off": "Lamine Yamal"
+      },
+      "claim": "Mikel Merino replaced Lamine Yamal for Spain (89')",
+      "evidence": {
+        "minute": 88,
+        "period": 2,
+        "display_minute": "89'",
+        "on_player": "Mikel Merino Zaz\u00f3n",
+        "off_player": "Lamine Yamal Nasraoui Ebana",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.ESP.nacho",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Spain",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+        "display_name": "Nacho"
+      },
+      "label": null,
+      "value": {
+        "on": "Nacho",
+        "off": "Robin Le Normand"
+      },
+      "claim": "Nacho replaced Robin Le Normand for Spain (83')",
+      "evidence": {
+        "minute": 82,
+        "period": 2,
+        "display_minute": "83'",
+        "on_player": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias",
+        "off_player": "Robin Aime Robert Le Normand",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.ESP.mikel_oyarzabal",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Spain",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Mikel Oyarzabal Ugarte",
+        "display_name": "Mikel Oyarzabal"
+      },
+      "label": null,
+      "value": {
+        "on": "Mikel Oyarzabal",
+        "off": "\u00c1lvaro Morata"
+      },
+      "claim": "Mikel Oyarzabal replaced \u00c1lvaro Morata for Spain (68')",
+      "evidence": {
+        "minute": 67,
+        "period": 2,
+        "display_minute": "68'",
+        "on_player": "Mikel Oyarzabal Ugarte",
+        "off_player": "\u00c1lvaro Borja Morata Mart\u00edn",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.ESP.mart_n_zubimendi",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Spain",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+        "display_name": "Mart\u00edn Zubimendi"
+      },
+      "label": null,
+      "value": {
+        "on": "Mart\u00edn Zubimendi",
+        "off": "Rodri"
+      },
+      "claim": "Mart\u00edn Zubimendi replaced Rodri for Spain (46')",
+      "evidence": {
+        "minute": 45,
+        "period": 2,
+        "display_minute": "46'",
+        "on_player": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+        "off_player": "Rodrigo Hern\u00e1ndez Cascante",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ESP.w0.robin_le_normand",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Spain",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 45,
+        "source": "on_ball_period",
+        "text": "kick-off to 46'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Robin Aime Robert Le Normand",
+        "display_name": "Robin Le Normand"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Robin Le Normand split touches between the right half-space (28) and the centre (23) (kick-off to 46')",
+      "evidence": {
+        "event_count": 75,
+        "lane_counts": {
+          "left_wing": 1,
+          "left_half_space": 0,
+          "centre": 23,
+          "right_half_space": 28,
+          "right_wing": 23
+        },
+        "band_counts": {
+          "own_third": 21,
+          "own_half": 23,
+          "opposition_half": 30,
+          "final_third": 1
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_spain.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ESP.w0.aymeric_laporte",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Spain",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 45,
+        "source": "on_ball_period",
+        "text": "kick-off to 46'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Aymeric Laporte",
+        "display_name": "Aymeric Laporte"
+      },
+      "label": "left_half_space",
+      "value": "left_half_space",
+      "claim": "Aymeric Laporte took 37 of 70 touches on the left half-space (kick-off to 46')",
+      "evidence": {
+        "event_count": 70,
+        "lane_counts": {
+          "left_wing": 16,
+          "left_half_space": 37,
+          "centre": 16,
+          "right_half_space": 0,
+          "right_wing": 1
+        },
+        "band_counts": {
+          "own_third": 12,
+          "own_half": 26,
+          "opposition_half": 29,
+          "final_third": 3
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_spain.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ESP.w0.daniel_carvajal",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Spain",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 45,
+        "source": "on_ball_period",
+        "text": "kick-off to 46'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Daniel Carvajal Ramos",
+        "display_name": "Daniel Carvajal"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Daniel Carvajal took 56 of 60 touches on the right wing (kick-off to 46')",
+      "evidence": {
+        "event_count": 60,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 3,
+          "right_half_space": 1,
+          "right_wing": 56
+        },
+        "band_counts": {
+          "own_third": 9,
+          "own_half": 8,
+          "opposition_half": 23,
+          "final_third": 20
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_spain.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ESP.w0.nico_williams",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Spain",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 45,
+        "source": "on_ball_period",
+        "text": "kick-off to 46'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Nicholas Williams Arthuer",
+        "display_name": "Nico Williams"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Nico Williams split touches between the left wing (20) and the left half-space (15) (kick-off to 46')",
+      "evidence": {
+        "event_count": 51,
+        "lane_counts": {
+          "left_wing": 20,
+          "left_half_space": 15,
+          "centre": 4,
+          "right_half_space": 3,
+          "right_wing": 9
+        },
+        "band_counts": {
+          "own_third": 3,
+          "own_half": 10,
+          "opposition_half": 11,
+          "final_third": 27
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_spain.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ESP.w0.rodri",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Spain",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 45,
+        "source": "on_ball_period",
+        "text": "kick-off to 46'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Rodrigo Hern\u00e1ndez Cascante",
+        "display_name": "Rodri"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Rodri split touches between the centre (15) and the left half-space (12) (kick-off to 46')",
+      "evidence": {
+        "event_count": 48,
+        "lane_counts": {
+          "left_wing": 2,
+          "left_half_space": 12,
+          "centre": 15,
+          "right_half_space": 12,
+          "right_wing": 7
+        },
+        "band_counts": {
+          "own_third": 9,
+          "own_half": 16,
+          "opposition_half": 17,
+          "final_third": 6
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "right",
+        "observed_side": "centre",
+        "source": "team_shape_spain.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ESP.w0.lamine_yamal",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Spain",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 45,
+        "source": "on_ball_period",
+        "text": "kick-off to 46'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Lamine Yamal Nasraoui Ebana",
+        "display_name": "Lamine Yamal"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Lamine Yamal took 29 of 40 touches on the right wing (kick-off to 46')",
+      "evidence": {
+        "event_count": 40,
+        "lane_counts": {
+          "left_wing": 1,
+          "left_half_space": 0,
+          "centre": 0,
+          "right_half_space": 10,
+          "right_wing": 29
+        },
+        "band_counts": {
+          "own_third": 3,
+          "own_half": 0,
+          "opposition_half": 15,
+          "final_third": 22
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_spain.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ESP.w0.fabi_n_ruiz",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Spain",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 45,
+        "source": "on_ball_period",
+        "text": "kick-off to 46'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Fabi\u00e1n Ruiz Pe\u00f1a",
+        "display_name": "Fabi\u00e1n Ruiz"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Fabi\u00e1n Ruiz split touches between the left wing (16) and the left half-space (11) (kick-off to 46')",
+      "evidence": {
+        "event_count": 38,
+        "lane_counts": {
+          "left_wing": 16,
+          "left_half_space": 11,
+          "centre": 6,
+          "right_half_space": 5,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 6,
+          "own_half": 5,
+          "opposition_half": 10,
+          "final_third": 17
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_spain.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ESP.w0.marc_cucurella",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Spain",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 45,
+        "source": "on_ball_period",
+        "text": "kick-off to 46'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Marc Cucurella Saseta",
+        "display_name": "Marc Cucurella"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "Marc Cucurella took 28 of 31 touches on the left wing (kick-off to 46')",
+      "evidence": {
+        "event_count": 31,
+        "lane_counts": {
+          "left_wing": 28,
+          "left_half_space": 3,
+          "centre": 0,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 1,
+          "own_half": 9,
+          "opposition_half": 6,
+          "final_third": 15
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_spain.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ESP.w0.lvaro_morata",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Spain",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 45,
+        "source": "on_ball_period",
+        "text": "kick-off to 46'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "\u00c1lvaro Borja Morata Mart\u00edn",
+        "display_name": "\u00c1lvaro Morata"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "\u00c1lvaro Morata split touches between the left half-space (10) and the centre (8) (kick-off to 46')",
+      "evidence": {
+        "event_count": 25,
+        "lane_counts": {
+          "left_wing": 5,
+          "left_half_space": 10,
+          "centre": 8,
+          "right_half_space": 2,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 0,
+          "own_half": 8,
+          "opposition_half": 7,
+          "final_third": 10
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "centre",
+        "observed_side": "left",
+        "source": "team_shape_spain.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ESP.w0.daniel_olmo",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Spain",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 45,
+        "source": "on_ball_period",
+        "text": "kick-off to 46'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Daniel Olmo Carvajal",
+        "display_name": "Daniel Olmo"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Daniel Olmo split touches between the centre (7) and the right half-space (4) (kick-off to 46')",
+      "evidence": {
+        "event_count": 19,
+        "lane_counts": {
+          "left_wing": 2,
+          "left_half_space": 2,
+          "centre": 7,
+          "right_half_space": 4,
+          "right_wing": 4
+        },
+        "band_counts": {
+          "own_third": 3,
+          "own_half": 0,
+          "opposition_half": 3,
+          "final_third": 13
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": "centre",
+        "observed_side": "centre",
+        "source": "team_shape_spain.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ESP.w0.unai_sim_n",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Spain",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 45,
+        "source": "on_ball_period",
+        "text": "kick-off to 46'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Unai Sim\u00f3n Mendibil",
+        "display_name": "Unai Sim\u00f3n"
+      },
+      "label": "centre",
+      "value": "centre",
+      "claim": "Unai Sim\u00f3n took 13 of 17 touches on the centre (kick-off to 46')",
+      "evidence": {
+        "event_count": 17,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 2,
+          "centre": 13,
+          "right_half_space": 2,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 17,
+          "own_half": 0,
+          "opposition_half": 0,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": null,
+        "observed_side": "centre",
+        "source": "team_shape_spain.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.team_height.ESP.w0",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Spain",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 45,
+        "source": "on_ball_period",
+        "text": "kick-off to 46'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": null,
+      "label": "opposition_half",
+      "value": 65.9,
+      "claim": "Spain's average position in possession was in the opposition half (kick-off to 46')",
+      "evidence": {
+        "mean_x": 65.9,
+        "eligible_outfield_count": 10,
+        "event_count_total": 457,
+        "source": "team_shape_spain.json#on_ball"
+      },
+      "threshold": {
+        "constant": "HALFWAY_LINE",
+        "value": 60
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.team_width.ESP.w0",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Spain",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 45,
+        "source": "on_ball_period",
+        "text": "kick-off to 46'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 60.85,
+      "claim": null,
+      "evidence": {
+        "width": 60.85,
+        "eligible_outfield_count": 10,
+        "source": "team_shape_spain.json#on_ball"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ESP.w1.nico_williams",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Spain",
+      "window": {
+        "index": 1,
+        "from_minute": 45,
+        "to_minute": 67,
+        "source": "on_ball_period",
+        "text": "46' to 68'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Nicholas Williams Arthuer",
+        "display_name": "Nico Williams"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "Nico Williams took 8 of 12 touches on the left wing (46' to 68')",
+      "evidence": {
+        "event_count": 12,
+        "lane_counts": {
+          "left_wing": 8,
+          "left_half_space": 4,
+          "centre": 0,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 3,
+          "own_half": 6,
+          "opposition_half": 0,
+          "final_third": 3
+        },
+        "band_label": "own_half",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_spain.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ESP.w1.daniel_carvajal",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Spain",
+      "window": {
+        "index": 1,
+        "from_minute": 45,
+        "to_minute": 67,
+        "source": "on_ball_period",
+        "text": "46' to 68'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Daniel Carvajal Ramos",
+        "display_name": "Daniel Carvajal"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Daniel Carvajal took 10 of 10 touches on the right wing (46' to 68')",
+      "evidence": {
+        "event_count": 10,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 0,
+          "right_half_space": 0,
+          "right_wing": 10
+        },
+        "band_counts": {
+          "own_third": 0,
+          "own_half": 7,
+          "opposition_half": 0,
+          "final_third": 3
+        },
+        "band_label": "own_half",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_spain.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ESP.w2.mart_n_zubimendi",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Spain",
+      "window": {
+        "index": 2,
+        "from_minute": 67,
+        "to_minute": 82,
+        "source": "on_ball_period",
+        "text": "68' to 83'"
+      },
+      "game_states": [
+        "leading",
+        "level"
+      ],
+      "subject": {
+        "player": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez",
+        "display_name": "Mart\u00edn Zubimendi"
+      },
+      "label": "left_half_space",
+      "value": "left_half_space",
+      "claim": "Mart\u00edn Zubimendi took 10 of 16 touches on the left half-space (68' to 83')",
+      "evidence": {
+        "event_count": 16,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 10,
+          "centre": 6,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 4,
+          "own_half": 8,
+          "opposition_half": 3,
+          "final_third": 1
+        },
+        "band_label": "own_half",
+        "band_mixed": false,
+        "declared_side": null,
+        "observed_side": "left",
+        "source": "team_shape_spain.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ESP.w2.aymeric_laporte",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Spain",
+      "window": {
+        "index": 2,
+        "from_minute": 67,
+        "to_minute": 82,
+        "source": "on_ball_period",
+        "text": "68' to 83'"
+      },
+      "game_states": [
+        "leading",
+        "level"
+      ],
+      "subject": {
+        "player": "Aymeric Laporte",
+        "display_name": "Aymeric Laporte"
+      },
+      "label": "left_half_space",
+      "value": "left_half_space",
+      "claim": "Aymeric Laporte took 8 of 16 touches on the left half-space (68' to 83')",
+      "evidence": {
+        "event_count": 16,
+        "lane_counts": {
+          "left_wing": 7,
+          "left_half_space": 8,
+          "centre": 1,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 3,
+          "own_half": 12,
+          "opposition_half": 1,
+          "final_third": 0
+        },
+        "band_label": "own_half",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_spain.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ESP.w2.daniel_olmo",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Spain",
+      "window": {
+        "index": 2,
+        "from_minute": 67,
+        "to_minute": 82,
+        "source": "on_ball_period",
+        "text": "68' to 83'"
+      },
+      "game_states": [
+        "leading",
+        "level"
+      ],
+      "subject": {
+        "player": "Daniel Olmo Carvajal",
+        "display_name": "Daniel Olmo"
+      },
+      "label": "centre",
+      "value": "centre",
+      "claim": "Daniel Olmo took 10 of 15 touches on the centre (68' to 83')",
+      "evidence": {
+        "event_count": 15,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 2,
+          "centre": 10,
+          "right_half_space": 3,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 0,
+          "own_half": 3,
+          "opposition_half": 3,
+          "final_third": 9
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": "centre",
+        "observed_side": "centre",
+        "source": "team_shape_spain.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ESP.w2.fabi_n_ruiz",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Spain",
+      "window": {
+        "index": 2,
+        "from_minute": 67,
+        "to_minute": 82,
+        "source": "on_ball_period",
+        "text": "68' to 83'"
+      },
+      "game_states": [
+        "leading",
+        "level"
+      ],
+      "subject": {
+        "player": "Fabi\u00e1n Ruiz Pe\u00f1a",
+        "display_name": "Fabi\u00e1n Ruiz"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Fabi\u00e1n Ruiz split touches between the left wing (4) and the right half-space (4) (68' to 83')",
+      "evidence": {
+        "event_count": 12,
+        "lane_counts": {
+          "left_wing": 4,
+          "left_half_space": 2,
+          "centre": 1,
+          "right_half_space": 4,
+          "right_wing": 1
+        },
+        "band_counts": {
+          "own_third": 1,
+          "own_half": 4,
+          "opposition_half": 4,
+          "final_third": 3
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_spain.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ENG.w0.kyle_walker",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "England",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 60,
+        "source": "on_ball_period",
+        "text": "kick-off to 61'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Kyle Walker",
+        "display_name": "Kyle Walker"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Kyle Walker took 44 of 50 touches on the right wing (kick-off to 61')",
+      "evidence": {
+        "event_count": 50,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 0,
+          "right_half_space": 6,
+          "right_wing": 44
+        },
+        "band_counts": {
+          "own_third": 12,
+          "own_half": 13,
+          "opposition_half": 15,
+          "final_third": 10
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_england.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ENG.w0.declan_rice",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "England",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 60,
+        "source": "on_ball_period",
+        "text": "kick-off to 61'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Declan Rice",
+        "display_name": "Declan Rice"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Declan Rice split touches between the left half-space (13) and the centre (13) (kick-off to 61')",
+      "evidence": {
+        "event_count": 45,
+        "lane_counts": {
+          "left_wing": 3,
+          "left_half_space": 13,
+          "centre": 13,
+          "right_half_space": 12,
+          "right_wing": 4
+        },
+        "band_counts": {
+          "own_third": 16,
+          "own_half": 14,
+          "opposition_half": 9,
+          "final_third": 6
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_england.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ENG.w0.jude_bellingham",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "England",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 60,
+        "source": "on_ball_period",
+        "text": "kick-off to 61'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Jude Bellingham",
+        "display_name": "Jude Bellingham"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "Jude Bellingham took 21 of 42 touches on the left wing (kick-off to 61')",
+      "evidence": {
+        "event_count": 42,
+        "lane_counts": {
+          "left_wing": 21,
+          "left_half_space": 13,
+          "centre": 5,
+          "right_half_space": 3,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 10,
+          "own_half": 6,
+          "opposition_half": 10,
+          "final_third": 16
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_england.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ENG.w0.bukayo_saka",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "England",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 60,
+        "source": "on_ball_period",
+        "text": "kick-off to 61'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Bukayo Saka",
+        "display_name": "Bukayo Saka"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Bukayo Saka took 33 of 41 touches on the right wing (kick-off to 61')",
+      "evidence": {
+        "event_count": 41,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 0,
+          "right_half_space": 8,
+          "right_wing": 33
+        },
+        "band_counts": {
+          "own_third": 9,
+          "own_half": 2,
+          "opposition_half": 7,
+          "final_third": 23
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_england.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ENG.w0.kobbie_mainoo",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "England",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 60,
+        "source": "on_ball_period",
+        "text": "kick-off to 61'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Kobbie Mainoo",
+        "display_name": "Kobbie Mainoo"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Kobbie Mainoo split touches between the right half-space (12) and the right wing (11) (kick-off to 61')",
+      "evidence": {
+        "event_count": 37,
+        "lane_counts": {
+          "left_wing": 4,
+          "left_half_space": 6,
+          "centre": 4,
+          "right_half_space": 12,
+          "right_wing": 11
+        },
+        "band_counts": {
+          "own_third": 9,
+          "own_half": 9,
+          "opposition_half": 7,
+          "final_third": 12
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_england.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ENG.w0.phil_foden",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "England",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 60,
+        "source": "on_ball_period",
+        "text": "kick-off to 61'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Phil Foden",
+        "display_name": "Phil Foden"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Phil Foden split touches between the right wing (11) and the right half-space (9) (kick-off to 61')",
+      "evidence": {
+        "event_count": 32,
+        "lane_counts": {
+          "left_wing": 1,
+          "left_half_space": 3,
+          "centre": 8,
+          "right_half_space": 9,
+          "right_wing": 11
+        },
+        "band_counts": {
+          "own_third": 11,
+          "own_half": 6,
+          "opposition_half": 8,
+          "final_third": 7
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "centre",
+        "observed_side": "right",
+        "source": "team_shape_england.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ENG.w0.john_stones",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "England",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 60,
+        "source": "on_ball_period",
+        "text": "kick-off to 61'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "John Stones",
+        "display_name": "John Stones"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "John Stones split touches between the right half-space (14) and the centre (9) (kick-off to 61')",
+      "evidence": {
+        "event_count": 30,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 4,
+          "centre": 9,
+          "right_half_space": 14,
+          "right_wing": 3
+        },
+        "band_counts": {
+          "own_third": 13,
+          "own_half": 4,
+          "opposition_half": 12,
+          "final_third": 1
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_england.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ENG.w0.jordan_pickford",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "England",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 60,
+        "source": "on_ball_period",
+        "text": "kick-off to 61'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Jordan Pickford",
+        "display_name": "Jordan Pickford"
+      },
+      "label": "centre",
+      "value": "centre",
+      "claim": "Jordan Pickford took 27 of 28 touches on the centre (kick-off to 61')",
+      "evidence": {
+        "event_count": 28,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 1,
+          "centre": 27,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 28,
+          "own_half": 0,
+          "opposition_half": 0,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": null,
+        "observed_side": "centre",
+        "source": "team_shape_england.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ENG.w0.harry_kane",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "England",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 60,
+        "source": "on_ball_period",
+        "text": "kick-off to 61'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Harry Kane",
+        "display_name": "Harry Kane"
+      },
+      "label": "centre",
+      "value": "centre",
+      "claim": "Harry Kane took 13 of 26 touches on the centre (kick-off to 61')",
+      "evidence": {
+        "event_count": 26,
+        "lane_counts": {
+          "left_wing": 8,
+          "left_half_space": 0,
+          "centre": 13,
+          "right_half_space": 5,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 1,
+          "own_half": 6,
+          "opposition_half": 6,
+          "final_third": 13
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": "centre",
+        "observed_side": "centre",
+        "source": "team_shape_england.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ENG.w0.luke_shaw",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "England",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 60,
+        "source": "on_ball_period",
+        "text": "kick-off to 61'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Luke Shaw",
+        "display_name": "Luke Shaw"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "Luke Shaw took 13 of 17 touches on the left wing (kick-off to 61')",
+      "evidence": {
+        "event_count": 17,
+        "lane_counts": {
+          "left_wing": 13,
+          "left_half_space": 4,
+          "centre": 0,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 2,
+          "own_half": 9,
+          "opposition_half": 1,
+          "final_third": 5
+        },
+        "band_label": "own_half",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_england.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ENG.w0.marc_guehi",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "England",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 60,
+        "source": "on_ball_period",
+        "text": "kick-off to 61'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Marc Guehi",
+        "display_name": "Marc Guehi"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "Marc Guehi took 9 of 14 touches on the left wing (kick-off to 61')",
+      "evidence": {
+        "event_count": 14,
+        "lane_counts": {
+          "left_wing": 9,
+          "left_half_space": 2,
+          "centre": 3,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 7,
+          "own_half": 4,
+          "opposition_half": 3,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_england.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.team_height.ENG.w0",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "England",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 60,
+        "source": "on_ball_period",
+        "text": "kick-off to 61'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": null,
+      "label": "own_half",
+      "value": 59.47,
+      "claim": "England's average position in possession was in their own half (kick-off to 61')",
+      "evidence": {
+        "mean_x": 59.47,
+        "eligible_outfield_count": 10,
+        "event_count_total": 334,
+        "source": "team_shape_england.json#on_ball"
+      },
+      "threshold": {
+        "constant": "HALFWAY_LINE",
+        "value": 60
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.team_width.ENG.w0",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "England",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 60,
+        "source": "on_ball_period",
+        "text": "kick-off to 61'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 59.75,
+      "claim": null,
+      "evidence": {
+        "width": 59.75,
+        "eligible_outfield_count": 10,
+        "source": "team_shape_england.json#on_ball"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ENG.w2.jude_bellingham",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "England",
+      "window": {
+        "index": 2,
+        "from_minute": 69,
+        "to_minute": 89,
+        "source": "on_ball_period",
+        "text": "70' to 90'"
+      },
+      "game_states": [
+        "trailing",
+        "level"
+      ],
+      "subject": {
+        "player": "Jude Bellingham",
+        "display_name": "Jude Bellingham"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Jude Bellingham split touches between the centre (6) and the right half-space (5) (70' to 90')",
+      "evidence": {
+        "event_count": 15,
+        "lane_counts": {
+          "left_wing": 4,
+          "left_half_space": 0,
+          "centre": 6,
+          "right_half_space": 5,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 0,
+          "own_half": 8,
+          "opposition_half": 4,
+          "final_third": 3
+        },
+        "band_label": "own_half",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "centre",
+        "source": "team_shape_england.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ENG.w2.bukayo_saka",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "England",
+      "window": {
+        "index": 2,
+        "from_minute": 69,
+        "to_minute": 89,
+        "source": "on_ball_period",
+        "text": "70' to 90'"
+      },
+      "game_states": [
+        "trailing",
+        "level"
+      ],
+      "subject": {
+        "player": "Bukayo Saka",
+        "display_name": "Bukayo Saka"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Bukayo Saka took 7 of 12 touches on the right wing (70' to 90')",
+      "evidence": {
+        "event_count": 12,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 3,
+          "right_half_space": 2,
+          "right_wing": 7
+        },
+        "band_counts": {
+          "own_third": 3,
+          "own_half": 0,
+          "opposition_half": 5,
+          "final_third": 4
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_england.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ENG.w2.jordan_pickford",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "England",
+      "window": {
+        "index": 2,
+        "from_minute": 69,
+        "to_minute": 89,
+        "source": "on_ball_period",
+        "text": "70' to 90'"
+      },
+      "game_states": [
+        "trailing",
+        "level"
+      ],
+      "subject": {
+        "player": "Jordan Pickford",
+        "display_name": "Jordan Pickford"
+      },
+      "label": "centre",
+      "value": "centre",
+      "claim": "Jordan Pickford took 8 of 11 touches on the centre (70' to 90')",
+      "evidence": {
+        "event_count": 11,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 3,
+          "centre": 8,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 11,
+          "own_half": 0,
+          "opposition_half": 0,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": null,
+        "observed_side": "centre",
+        "source": "team_shape_england.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ENG.w2.cole_palmer",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "England",
+      "window": {
+        "index": 2,
+        "from_minute": 69,
+        "to_minute": 89,
+        "source": "on_ball_period",
+        "text": "70' to 90'"
+      },
+      "game_states": [
+        "trailing",
+        "level"
+      ],
+      "subject": {
+        "player": "Cole Palmer",
+        "display_name": "Cole Palmer"
+      },
+      "label": "centre",
+      "value": "centre",
+      "claim": "Cole Palmer took 6 of 11 touches on the centre (70' to 90')",
+      "evidence": {
+        "event_count": 11,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 6,
+          "right_half_space": 2,
+          "right_wing": 3
+        },
+        "band_counts": {
+          "own_third": 0,
+          "own_half": 6,
+          "opposition_half": 2,
+          "final_third": 3
+        },
+        "band_label": "own_half",
+        "band_mixed": false,
+        "declared_side": "centre",
+        "observed_side": "centre",
+        "source": "team_shape_england.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ENG.w2.kyle_walker",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "England",
+      "window": {
+        "index": 2,
+        "from_minute": 69,
+        "to_minute": 89,
+        "source": "on_ball_period",
+        "text": "70' to 90'"
+      },
+      "game_states": [
+        "trailing",
+        "level"
+      ],
+      "subject": {
+        "player": "Kyle Walker",
+        "display_name": "Kyle Walker"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Kyle Walker took 7 of 11 touches on the right wing (70' to 90')",
+      "evidence": {
+        "event_count": 11,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 0,
+          "right_half_space": 4,
+          "right_wing": 7
+        },
+        "band_counts": {
+          "own_third": 8,
+          "own_half": 3,
+          "opposition_half": 0,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_england.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "out_of_possession.block_height.ESP.whole_match",
+      "category": "out_of_possession",
+      "type": "block_height",
+      "team": "Spain",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": null,
+        "source": "whole_match",
+        "text": "kick-off to full time"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 55.05,
+      "claim": null,
+      "evidence": {
+        "centroid_x": 55.05,
+        "camera_caveat": "360 frames follow the ball; the visible subset of out-of-possession positions is biased toward areas near the ball. The camera artifact and the real defensive shape point the same direction \u2014 they cannot be cleanly separated.",
+        "source": "team_shape_spain.json#off_ball.centroid"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "out_of_possession.block_height.ENG.whole_match",
+      "category": "out_of_possession",
+      "type": "block_height",
+      "team": "England",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": null,
+        "source": "whole_match",
+        "text": "kick-off to full time"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 45.98,
+      "claim": null,
+      "evidence": {
+        "centroid_x": 45.98,
+        "camera_caveat": "360 frames follow the ball; the visible subset of out-of-possession positions is biased toward areas near the ball. The camera artifact and the real defensive shape point the same direction \u2014 they cannot be cleanly separated.",
+        "source": "team_shape_england.json#off_ball.centroid"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.ESP.w0.aymeric_laporte",
+      "category": "passing",
+      "type": "hub",
+      "team": "Spain",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 45,
+        "source": "pass_network_window",
+        "text": "kick-off to 46'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Aymeric Laporte",
+        "display_name": "Aymeric Laporte"
+      },
+      "label": null,
+      "value": 0.1637,
+      "claim": "Aymeric Laporte was a hub for Spain, involved in 16.4% of passes (kick-off to 46')",
+      "evidence": {
+        "passes_made": 48,
+        "passes_received": 43,
+        "share": 0.1637,
+        "source": "pass_network_Spain.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.091127098321343,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.ESP.w0.robin_le_normand",
+      "category": "passing",
+      "type": "hub",
+      "team": "Spain",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 45,
+        "source": "pass_network_window",
+        "text": "kick-off to 46'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Robin Aime Robert Le Normand",
+        "display_name": "Robin Le Normand"
+      },
+      "label": null,
+      "value": 0.1655,
+      "claim": "Robin Le Normand was a hub for Spain, involved in 16.5% of passes (kick-off to 46')",
+      "evidence": {
+        "passes_made": 48,
+        "passes_received": 44,
+        "share": 0.1655,
+        "source": "pass_network_Spain.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.1031175059952039,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.ESP.w0.aymeric_laporte_robin_le_normand",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Spain",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 45,
+        "source": "pass_network_window",
+        "text": "kick-off to 46'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "pair": [
+          "Aymeric Laporte",
+          "Robin Le Normand"
+        ]
+      },
+      "label": null,
+      "value": 31,
+      "claim": "Aymeric Laporte and Robin Le Normand combined 31 times (kick-off to 46')",
+      "evidence": {
+        "bidirectional_total": 31,
+        "source": "pass_network_Spain.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 2.2302158273381294,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.ESP.w0.robin_le_normand_daniel_carvajal",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Spain",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 45,
+        "source": "pass_network_window",
+        "text": "kick-off to 46'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "pair": [
+          "Robin Le Normand",
+          "Daniel Carvajal"
+        ]
+      },
+      "label": null,
+      "value": 23,
+      "claim": "Robin Le Normand and Daniel Carvajal combined 23 times (kick-off to 46')",
+      "evidence": {
+        "bidirectional_total": 23,
+        "source": "pass_network_Spain.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.6546762589928057,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.ESP.w0.aymeric_laporte_marc_cucurella",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Spain",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 45,
+        "source": "pass_network_window",
+        "text": "kick-off to 46'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "pair": [
+          "Aymeric Laporte",
+          "Marc Cucurella"
+        ]
+      },
+      "label": null,
+      "value": 16,
+      "claim": "Aymeric Laporte and Marc Cucurella combined 16 times (kick-off to 46')",
+      "evidence": {
+        "bidirectional_total": 16,
+        "source": "pass_network_Spain.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.1510791366906474,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.ESP.w0.aymeric_laporte_rodri",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Spain",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 45,
+        "source": "pass_network_window",
+        "text": "kick-off to 46'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "pair": [
+          "Aymeric Laporte",
+          "Rodri"
+        ]
+      },
+      "label": null,
+      "value": 16,
+      "claim": "Aymeric Laporte and Rodri combined 16 times (kick-off to 46')",
+      "evidence": {
+        "bidirectional_total": 16,
+        "source": "pass_network_Spain.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.1510791366906474,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.concentration.ESP.w0",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Spain",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 45,
+        "source": "pass_network_window",
+        "text": "kick-off to 46'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 0.4478,
+      "claim": null,
+      "evidence": {
+        "top3_share": 0.4478,
+        "window_passes": 278,
+        "source": "pass_network_Spain.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.no_hub.ESP.w1",
+      "category": "passing",
+      "type": "no_hub",
+      "team": "Spain",
+      "window": {
+        "index": 1,
+        "from_minute": 45,
+        "to_minute": 67,
+        "source": "pass_network_window",
+        "text": "46' to 68'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 0.1435,
+      "claim": "Spain's passing had no single hub; the most involved player, Fabi\u00e1n Ruiz, had 14.3% (46' to 68')",
+      "evidence": {
+        "most_involved_player": "Fabi\u00e1n Ruiz",
+        "share": 0.1435,
+        "source": "pass_network_Spain.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.ESP.w1.robin_le_normand_unai_sim_n",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Spain",
+      "window": {
+        "index": 1,
+        "from_minute": 45,
+        "to_minute": 67,
+        "source": "pass_network_window",
+        "text": "46' to 68'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "pair": [
+          "Robin Le Normand",
+          "Unai Sim\u00f3n"
+        ]
+      },
+      "label": null,
+      "value": 9,
+      "claim": "Robin Le Normand and Unai Sim\u00f3n combined 9 times (46' to 68')",
+      "evidence": {
+        "bidirectional_total": 9,
+        "source": "pass_network_Spain.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.565217391304348,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.ESP.w1.fabi_n_ruiz_mart_n_zubimendi",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Spain",
+      "window": {
+        "index": 1,
+        "from_minute": 45,
+        "to_minute": 67,
+        "source": "pass_network_window",
+        "text": "46' to 68'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "pair": [
+          "Fabi\u00e1n Ruiz",
+          "Mart\u00edn Zubimendi"
+        ]
+      },
+      "label": null,
+      "value": 8,
+      "claim": "Fabi\u00e1n Ruiz and Mart\u00edn Zubimendi combined 8 times (46' to 68')",
+      "evidence": {
+        "bidirectional_total": 8,
+        "source": "pass_network_Spain.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.391304347826087,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.concentration.ESP.w1",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Spain",
+      "window": {
+        "index": 1,
+        "from_minute": 45,
+        "to_minute": 67,
+        "source": "pass_network_window",
+        "text": "46' to 68'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 0.4043,
+      "claim": null,
+      "evidence": {
+        "top3_share": 0.4043,
+        "window_passes": 115,
+        "source": "pass_network_Spain.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.ESP.w2.aymeric_laporte",
+      "category": "passing",
+      "type": "hub",
+      "team": "Spain",
+      "window": {
+        "index": 2,
+        "from_minute": 67,
+        "to_minute": 82,
+        "source": "pass_network_window",
+        "text": "68' to 83'"
+      },
+      "game_states": [
+        "leading",
+        "level"
+      ],
+      "subject": {
+        "player": "Aymeric Laporte",
+        "display_name": "Aymeric Laporte"
+      },
+      "label": null,
+      "value": 0.1543,
+      "claim": "Aymeric Laporte was a hub for Spain, involved in 15.4% of passes (68' to 83')",
+      "evidence": {
+        "passes_made": 15,
+        "passes_received": 14,
+        "share": 0.1543,
+        "source": "pass_network_Spain.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.0283687943262412,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.ESP.w2.robin_le_normand",
+      "category": "passing",
+      "type": "hub",
+      "team": "Spain",
+      "window": {
+        "index": 2,
+        "from_minute": 67,
+        "to_minute": 82,
+        "source": "pass_network_window",
+        "text": "68' to 83'"
+      },
+      "game_states": [
+        "leading",
+        "level"
+      ],
+      "subject": {
+        "player": "Robin Aime Robert Le Normand",
+        "display_name": "Robin Le Normand"
+      },
+      "label": null,
+      "value": 0.1702,
+      "claim": "Robin Le Normand was a hub for Spain, involved in 17.0% of passes (68' to 83')",
+      "evidence": {
+        "passes_made": 16,
+        "passes_received": 16,
+        "share": 0.1702,
+        "source": "pass_network_Spain.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.1347517730496455,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.ESP.w2.robin_le_normand_aymeric_laporte",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Spain",
+      "window": {
+        "index": 2,
+        "from_minute": 67,
+        "to_minute": 82,
+        "source": "pass_network_window",
+        "text": "68' to 83'"
+      },
+      "game_states": [
+        "leading",
+        "level"
+      ],
+      "subject": {
+        "pair": [
+          "Robin Le Normand",
+          "Aymeric Laporte"
+        ]
+      },
+      "label": null,
+      "value": 14,
+      "claim": "Robin Le Normand and Aymeric Laporte combined 14 times (68' to 83')",
+      "evidence": {
+        "bidirectional_total": 14,
+        "source": "pass_network_Spain.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 2.978723404255319,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.concentration.ESP.w2",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Spain",
+      "window": {
+        "index": 2,
+        "from_minute": 67,
+        "to_minute": 82,
+        "source": "pass_network_window",
+        "text": "68' to 83'"
+      },
+      "game_states": [
+        "leading",
+        "level"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 0.4468,
+      "claim": null,
+      "evidence": {
+        "top3_share": 0.4468,
+        "window_passes": 94,
+        "source": "pass_network_Spain.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.no_hub.ENG.w0",
+      "category": "passing",
+      "type": "no_hub",
+      "team": "England",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 60,
+        "source": "pass_network_window",
+        "text": "kick-off to 61'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 0.1277,
+      "claim": "England's passing had no single hub; the most involved player, John Stones, had 12.8% (kick-off to 61')",
+      "evidence": {
+        "most_involved_player": "John Stones",
+        "share": 0.1277,
+        "source": "pass_network_England.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.ENG.w0.john_stones_jordan_pickford",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "England",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 60,
+        "source": "pass_network_window",
+        "text": "kick-off to 61'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "pair": [
+          "John Stones",
+          "Jordan Pickford"
+        ]
+      },
+      "label": null,
+      "value": 13,
+      "claim": "John Stones and Jordan Pickford combined 13 times (kick-off to 61')",
+      "evidence": {
+        "bidirectional_total": 13,
+        "source": "pass_network_England.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.4130434782608694,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.ENG.w0.declan_rice_jude_bellingham",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "England",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 60,
+        "source": "pass_network_window",
+        "text": "kick-off to 61'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "pair": [
+          "Declan Rice",
+          "Jude Bellingham"
+        ]
+      },
+      "label": null,
+      "value": 11,
+      "claim": "Declan Rice and Jude Bellingham combined 11 times (kick-off to 61')",
+      "evidence": {
+        "bidirectional_total": 11,
+        "source": "pass_network_England.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.1956521739130435,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.ENG.w0.john_stones_kyle_walker",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "England",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 60,
+        "source": "pass_network_window",
+        "text": "kick-off to 61'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "pair": [
+          "John Stones",
+          "Kyle Walker"
+        ]
+      },
+      "label": null,
+      "value": 10,
+      "claim": "John Stones and Kyle Walker combined 10 times (kick-off to 61')",
+      "evidence": {
+        "bidirectional_total": 10,
+        "source": "pass_network_England.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.0869565217391304,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.concentration.ENG.w0",
+      "category": "passing",
+      "type": "concentration",
+      "team": "England",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 60,
+        "source": "pass_network_window",
+        "text": "kick-off to 61'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 0.3696,
+      "claim": null,
+      "evidence": {
+        "top3_share": 0.3696,
+        "window_passes": 184,
+        "source": "pass_network_England.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "cross.comparison.block_height.ENG",
+      "category": "cross_cutting",
+      "type": "comparison",
+      "team": "England",
+      "window": null,
+      "game_states": [],
+      "subject": null,
+      "label": "deeper",
+      "value": 9.07,
+      "claim": "England's average out-of-possession position was 9.1 yards deeper than Spain's",
+      "evidence": {
+        "deeper_x": 45.98,
+        "other_x": 55.05,
+        "gap": 9.07
+      },
+      "threshold": {
+        "constant": "COMPARE_MIN_YARDS",
+        "value": 5
+      },
+      "notability": 1.814,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "cross.comparison.team_height.ESP",
+      "category": "cross_cutting",
+      "type": "comparison",
+      "team": "Spain",
+      "window": null,
+      "game_states": [],
+      "subject": null,
+      "label": "higher",
+      "value": 6.43,
+      "claim": "Spain's average position in possession was 6.4 yards higher than England's (Spain kick-off to 46', England kick-off to 61')",
+      "evidence": {
+        "higher_value": 65.9,
+        "other_value": 59.47,
+        "gap": 6.43
+      },
+      "threshold": {
+        "constant": "COMPARE_MIN_YARDS",
+        "value": 5
+      },
+      "notability": 1.2860000000000014,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "cross.comparison.concentration.ESP",
+      "category": "cross_cutting",
+      "type": "comparison",
+      "team": "Spain",
+      "window": null,
+      "game_states": [],
+      "subject": null,
+      "label": "more_concentrated",
+      "value": 7.82,
+      "claim": "Spain's passing was more concentrated than England's: the top three players had 44.8% of involvement against 37.0% (kick-off to 46')",
+      "evidence": {
+        "higher_value": 0.4478,
+        "other_value": 0.3696,
+        "gap": 7.82
+      },
+      "threshold": {
+        "constant": "COMPARE_MIN_POINTS",
+        "value": 5
+      },
+      "notability": 1.5639999999999998,
+      "definitions_version": "0.1.0"
+    }
+  ],
+  "suppressed": [
+    {
+      "id": "in_possession.player_zone.ESP.w1.aymeric_laporte",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Spain",
+      "window": {
+        "index": 1,
+        "from_minute": 45,
+        "to_minute": 67,
+        "source": "on_ball_period",
+        "text": "46' to 68'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 9,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ESP.w1.unai_sim_n",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Spain",
+      "window": {
+        "index": 1,
+        "from_minute": 45,
+        "to_minute": 67,
+        "source": "on_ball_period",
+        "text": "46' to 68'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 8,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ESP.w1.fabi_n_ruiz",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Spain",
+      "window": {
+        "index": 1,
+        "from_minute": 45,
+        "to_minute": 67,
+        "source": "on_ball_period",
+        "text": "46' to 68'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 8,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ESP.w1.daniel_olmo",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Spain",
+      "window": {
+        "index": 1,
+        "from_minute": 45,
+        "to_minute": 67,
+        "source": "on_ball_period",
+        "text": "46' to 68'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 8,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ESP.w1.lamine_yamal",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Spain",
+      "window": {
+        "index": 1,
+        "from_minute": 45,
+        "to_minute": 67,
+        "source": "on_ball_period",
+        "text": "46' to 68'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 7,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ESP.w1.robin_le_normand",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Spain",
+      "window": {
+        "index": 1,
+        "from_minute": 45,
+        "to_minute": 67,
+        "source": "on_ball_period",
+        "text": "46' to 68'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 7,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ESP.w1.lvaro_morata",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Spain",
+      "window": {
+        "index": 1,
+        "from_minute": 45,
+        "to_minute": 67,
+        "source": "on_ball_period",
+        "text": "46' to 68'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 4,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ESP.w1.mart_n_zubimendi",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Spain",
+      "window": {
+        "index": 1,
+        "from_minute": 45,
+        "to_minute": 67,
+        "source": "on_ball_period",
+        "text": "46' to 68'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ESP.w1.marc_cucurella",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Spain",
+      "window": {
+        "index": 1,
+        "from_minute": 45,
+        "to_minute": 67,
+        "source": "on_ball_period",
+        "text": "46' to 68'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 2,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.team_height.ESP.w1",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Spain",
+      "window": {
+        "index": 1,
+        "from_minute": 45,
+        "to_minute": 67,
+        "source": "on_ball_period",
+        "text": "46' to 68'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 2,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_width.ESP.w1",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Spain",
+      "window": {
+        "index": 1,
+        "from_minute": 45,
+        "to_minute": 67,
+        "source": "on_ball_period",
+        "text": "46' to 68'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 2,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ESP.w2.lamine_yamal",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Spain",
+      "window": {
+        "index": 2,
+        "from_minute": 67,
+        "to_minute": 82,
+        "source": "on_ball_period",
+        "text": "68' to 83'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 9,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ESP.w2.robin_le_normand",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Spain",
+      "window": {
+        "index": 2,
+        "from_minute": 67,
+        "to_minute": 82,
+        "source": "on_ball_period",
+        "text": "68' to 83'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 9,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ESP.w2.unai_sim_n",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Spain",
+      "window": {
+        "index": 2,
+        "from_minute": 67,
+        "to_minute": 82,
+        "source": "on_ball_period",
+        "text": "68' to 83'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 7,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ESP.w2.nico_williams",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Spain",
+      "window": {
+        "index": 2,
+        "from_minute": 67,
+        "to_minute": 82,
+        "source": "on_ball_period",
+        "text": "68' to 83'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 7,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ESP.w2.mikel_oyarzabal",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Spain",
+      "window": {
+        "index": 2,
+        "from_minute": 67,
+        "to_minute": 82,
+        "source": "on_ball_period",
+        "text": "68' to 83'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 6,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ESP.w2.daniel_carvajal",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Spain",
+      "window": {
+        "index": 2,
+        "from_minute": 67,
+        "to_minute": 82,
+        "source": "on_ball_period",
+        "text": "68' to 83'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 4,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ESP.w2.marc_cucurella",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Spain",
+      "window": {
+        "index": 2,
+        "from_minute": 67,
+        "to_minute": 82,
+        "source": "on_ball_period",
+        "text": "68' to 83'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.team_height.ESP.w2",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Spain",
+      "window": {
+        "index": 2,
+        "from_minute": 67,
+        "to_minute": 82,
+        "source": "on_ball_period",
+        "text": "68' to 83'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 4,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_width.ESP.w2",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Spain",
+      "window": {
+        "index": 2,
+        "from_minute": 67,
+        "to_minute": 82,
+        "source": "on_ball_period",
+        "text": "68' to 83'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 4,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ESP.w3.nacho",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Spain",
+      "window": {
+        "index": 3,
+        "from_minute": 82,
+        "to_minute": 88,
+        "source": "on_ball_period",
+        "text": "83' to 89'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 9,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ESP.w3.fabi_n_ruiz",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Spain",
+      "window": {
+        "index": 3,
+        "from_minute": 82,
+        "to_minute": 88,
+        "source": "on_ball_period",
+        "text": "83' to 89'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 9,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ESP.w3.nico_williams",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Spain",
+      "window": {
+        "index": 3,
+        "from_minute": 82,
+        "to_minute": 88,
+        "source": "on_ball_period",
+        "text": "83' to 89'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 9,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ESP.w3.daniel_carvajal",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Spain",
+      "window": {
+        "index": 3,
+        "from_minute": 82,
+        "to_minute": 88,
+        "source": "on_ball_period",
+        "text": "83' to 89'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 9,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ESP.w3.daniel_olmo",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Spain",
+      "window": {
+        "index": 3,
+        "from_minute": 82,
+        "to_minute": 88,
+        "source": "on_ball_period",
+        "text": "83' to 89'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 8,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ESP.w3.lamine_yamal",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Spain",
+      "window": {
+        "index": 3,
+        "from_minute": 82,
+        "to_minute": 88,
+        "source": "on_ball_period",
+        "text": "83' to 89'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 6,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ESP.w3.unai_sim_n",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Spain",
+      "window": {
+        "index": 3,
+        "from_minute": 82,
+        "to_minute": 88,
+        "source": "on_ball_period",
+        "text": "83' to 89'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ESP.w3.aymeric_laporte",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Spain",
+      "window": {
+        "index": 3,
+        "from_minute": 82,
+        "to_minute": 88,
+        "source": "on_ball_period",
+        "text": "83' to 89'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ESP.w3.mart_n_zubimendi",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Spain",
+      "window": {
+        "index": 3,
+        "from_minute": 82,
+        "to_minute": 88,
+        "source": "on_ball_period",
+        "text": "83' to 89'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.team_height.ESP.w3",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Spain",
+      "window": {
+        "index": 3,
+        "from_minute": 82,
+        "to_minute": 88,
+        "source": "on_ball_period",
+        "text": "83' to 89'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_width.ESP.w3",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Spain",
+      "window": {
+        "index": 3,
+        "from_minute": 82,
+        "to_minute": 88,
+        "source": "on_ball_period",
+        "text": "83' to 89'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_height.ESP.w4",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Spain",
+      "window": {
+        "index": 4,
+        "from_minute": 88,
+        "to_minute": 95,
+        "source": "on_ball_period",
+        "text": "89' to full time"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_width.ESP.w4",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Spain",
+      "window": {
+        "index": 4,
+        "from_minute": 88,
+        "to_minute": 95,
+        "source": "on_ball_period",
+        "text": "89' to full time"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ENG.w1.declan_rice",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "England",
+      "window": {
+        "index": 1,
+        "from_minute": 60,
+        "to_minute": 69,
+        "source": "on_ball_period",
+        "text": "61' to 70'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 6,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ENG.w1.john_stones",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "England",
+      "window": {
+        "index": 1,
+        "from_minute": 60,
+        "to_minute": 69,
+        "source": "on_ball_period",
+        "text": "61' to 70'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 5,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ENG.w1.luke_shaw",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "England",
+      "window": {
+        "index": 1,
+        "from_minute": 60,
+        "to_minute": 69,
+        "source": "on_ball_period",
+        "text": "61' to 70'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 4,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ENG.w1.jude_bellingham",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "England",
+      "window": {
+        "index": 1,
+        "from_minute": 60,
+        "to_minute": 69,
+        "source": "on_ball_period",
+        "text": "61' to 70'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ENG.w1.kyle_walker",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "England",
+      "window": {
+        "index": 1,
+        "from_minute": 60,
+        "to_minute": 69,
+        "source": "on_ball_period",
+        "text": "61' to 70'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ENG.w1.jordan_pickford",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "England",
+      "window": {
+        "index": 1,
+        "from_minute": 60,
+        "to_minute": 69,
+        "source": "on_ball_period",
+        "text": "61' to 70'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ENG.w1.ollie_watkins",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "England",
+      "window": {
+        "index": 1,
+        "from_minute": 60,
+        "to_minute": 69,
+        "source": "on_ball_period",
+        "text": "61' to 70'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 1,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.team_height.ENG.w1",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "England",
+      "window": {
+        "index": 1,
+        "from_minute": 60,
+        "to_minute": 69,
+        "source": "on_ball_period",
+        "text": "61' to 70'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_width.ENG.w1",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "England",
+      "window": {
+        "index": 1,
+        "from_minute": 60,
+        "to_minute": 69,
+        "source": "on_ball_period",
+        "text": "61' to 70'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ENG.w2.declan_rice",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "England",
+      "window": {
+        "index": 2,
+        "from_minute": 69,
+        "to_minute": 89,
+        "source": "on_ball_period",
+        "text": "70' to 90'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 9,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ENG.w2.marc_guehi",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "England",
+      "window": {
+        "index": 2,
+        "from_minute": 69,
+        "to_minute": 89,
+        "source": "on_ball_period",
+        "text": "70' to 90'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 9,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ENG.w2.phil_foden",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "England",
+      "window": {
+        "index": 2,
+        "from_minute": 69,
+        "to_minute": 89,
+        "source": "on_ball_period",
+        "text": "70' to 90'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 5,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ENG.w2.john_stones",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "England",
+      "window": {
+        "index": 2,
+        "from_minute": 69,
+        "to_minute": 89,
+        "source": "on_ball_period",
+        "text": "70' to 90'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ENG.w2.luke_shaw",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "England",
+      "window": {
+        "index": 2,
+        "from_minute": 69,
+        "to_minute": 89,
+        "source": "on_ball_period",
+        "text": "70' to 90'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 1,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ENG.w2.ollie_watkins",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "England",
+      "window": {
+        "index": 2,
+        "from_minute": 69,
+        "to_minute": 89,
+        "source": "on_ball_period",
+        "text": "70' to 90'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 1,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.team_height.ENG.w2",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "England",
+      "window": {
+        "index": 2,
+        "from_minute": 69,
+        "to_minute": 89,
+        "source": "on_ball_period",
+        "text": "70' to 90'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 4,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_width.ENG.w2",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "England",
+      "window": {
+        "index": 2,
+        "from_minute": 69,
+        "to_minute": 89,
+        "source": "on_ball_period",
+        "text": "70' to 90'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 4,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ENG.w3.declan_rice",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "England",
+      "window": {
+        "index": 3,
+        "from_minute": 89,
+        "to_minute": 95,
+        "source": "on_ball_period",
+        "text": "90' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ENG.w3.cole_palmer",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "England",
+      "window": {
+        "index": 3,
+        "from_minute": 89,
+        "to_minute": 95,
+        "source": "on_ball_period",
+        "text": "90' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ENG.w3.marc_guehi",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "England",
+      "window": {
+        "index": 3,
+        "from_minute": 89,
+        "to_minute": 95,
+        "source": "on_ball_period",
+        "text": "90' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 1,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ENG.w3.ivan_toney",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "England",
+      "window": {
+        "index": 3,
+        "from_minute": 89,
+        "to_minute": 95,
+        "source": "on_ball_period",
+        "text": "90' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 1,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.team_height.ENG.w3",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "England",
+      "window": {
+        "index": 3,
+        "from_minute": 89,
+        "to_minute": 95,
+        "source": "on_ball_period",
+        "text": "90' to full time"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_width.ENG.w3",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "England",
+      "window": {
+        "index": 3,
+        "from_minute": 89,
+        "to_minute": 95,
+        "source": "on_ball_period",
+        "text": "90' to full time"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "passing.hub.ESP.w3",
+      "category": "passing",
+      "type": "hub",
+      "team": "Spain",
+      "window": {
+        "index": 3,
+        "from_minute": 82,
+        "to_minute": 88,
+        "source": "pass_network_window",
+        "text": "83' to 89'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 30,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.no_hub.ESP.w3",
+      "category": "passing",
+      "type": "no_hub",
+      "team": "Spain",
+      "window": {
+        "index": 3,
+        "from_minute": 82,
+        "to_minute": 88,
+        "source": "pass_network_window",
+        "text": "83' to 89'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 30,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.top_pair.ESP.w3",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Spain",
+      "window": {
+        "index": 3,
+        "from_minute": 82,
+        "to_minute": 88,
+        "source": "pass_network_window",
+        "text": "83' to 89'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 30,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.concentration.ESP.w3",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Spain",
+      "window": {
+        "index": 3,
+        "from_minute": 82,
+        "to_minute": 88,
+        "source": "pass_network_window",
+        "text": "83' to 89'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 30,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.hub.ESP.w4",
+      "category": "passing",
+      "type": "hub",
+      "team": "Spain",
+      "window": {
+        "index": 4,
+        "from_minute": 88,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "89' to full time"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 1,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.no_hub.ESP.w4",
+      "category": "passing",
+      "type": "no_hub",
+      "team": "Spain",
+      "window": {
+        "index": 4,
+        "from_minute": 88,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "89' to full time"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 1,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.top_pair.ESP.w4",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Spain",
+      "window": {
+        "index": 4,
+        "from_minute": 88,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "89' to full time"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 1,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.concentration.ESP.w4",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Spain",
+      "window": {
+        "index": 4,
+        "from_minute": 88,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "89' to full time"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 1,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.hub.ENG.w1",
+      "category": "passing",
+      "type": "hub",
+      "team": "England",
+      "window": {
+        "index": 1,
+        "from_minute": 60,
+        "to_minute": 69,
+        "source": "pass_network_window",
+        "text": "61' to 70'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 28,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.no_hub.ENG.w1",
+      "category": "passing",
+      "type": "no_hub",
+      "team": "England",
+      "window": {
+        "index": 1,
+        "from_minute": 60,
+        "to_minute": 69,
+        "source": "pass_network_window",
+        "text": "61' to 70'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 28,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.top_pair.ENG.w1",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "England",
+      "window": {
+        "index": 1,
+        "from_minute": 60,
+        "to_minute": 69,
+        "source": "pass_network_window",
+        "text": "61' to 70'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 28,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.concentration.ENG.w1",
+      "category": "passing",
+      "type": "concentration",
+      "team": "England",
+      "window": {
+        "index": 1,
+        "from_minute": 60,
+        "to_minute": 69,
+        "source": "pass_network_window",
+        "text": "61' to 70'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 28,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.hub.ENG.w2",
+      "category": "passing",
+      "type": "hub",
+      "team": "England",
+      "window": {
+        "index": 2,
+        "from_minute": 69,
+        "to_minute": 89,
+        "source": "pass_network_window",
+        "text": "70' to 90'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 38,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.no_hub.ENG.w2",
+      "category": "passing",
+      "type": "no_hub",
+      "team": "England",
+      "window": {
+        "index": 2,
+        "from_minute": 69,
+        "to_minute": 89,
+        "source": "pass_network_window",
+        "text": "70' to 90'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 38,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.top_pair.ENG.w2",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "England",
+      "window": {
+        "index": 2,
+        "from_minute": 69,
+        "to_minute": 89,
+        "source": "pass_network_window",
+        "text": "70' to 90'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 38,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.concentration.ENG.w2",
+      "category": "passing",
+      "type": "concentration",
+      "team": "England",
+      "window": {
+        "index": 2,
+        "from_minute": 69,
+        "to_minute": 89,
+        "source": "pass_network_window",
+        "text": "70' to 90'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 38,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.hub.ENG.w3",
+      "category": "passing",
+      "type": "hub",
+      "team": "England",
+      "window": {
+        "index": 3,
+        "from_minute": 89,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "90' to full time"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 4,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.no_hub.ENG.w3",
+      "category": "passing",
+      "type": "no_hub",
+      "team": "England",
+      "window": {
+        "index": 3,
+        "from_minute": 89,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "90' to full time"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 4,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.top_pair.ENG.w3",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "England",
+      "window": {
+        "index": 3,
+        "from_minute": 89,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "90' to full time"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 4,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.concentration.ENG.w3",
+      "category": "passing",
+      "type": "concentration",
+      "team": "England",
+      "window": {
+        "index": 3,
+        "from_minute": 89,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "90' to full time"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 4,
+        "required": 40
+      }
+    },
+    {
+      "id": "cross.comparison.team_width",
+      "category": "cross_cutting",
+      "type": "comparison",
+      "team": null,
+      "window": null,
+      "reason": "COMPARE_MIN_YARDS",
+      "detail": {
+        "gap": 1.1,
+        "required": 5
+      }
+    }
+  ],
+  "metadata": {
+    "match_id": 3943043,
+    "definitions_version": "0.1.0",
+    "teams": [
+      "Spain",
+      "England"
+    ]
+  }
+}
