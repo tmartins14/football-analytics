@@ -23,7 +23,8 @@ right folder.
 | Superseded precursor notebooks | `scratch/` |
 | pytest suite (`libs/statsbomb` only) | `tests/` |
 | Docs/testing gate rationale | `docs/tooling.md`, `docs/testing.md` |
-| Feature specs | `docs/specs/` |
+| A written spec, before execution (not every task gets one) | `docs/specs/` |
+| Record of what was done, after the fact (every task gets one) | `docs/task-history/` |
 | Obsidian vault / personal notes | `football-analytics-notes/` |
 
 Not sure which folder owns something? Check `docs/ARCHITECTURE.md` first —
@@ -31,3 +32,12 @@ it covers naming collisions (e.g. two things named `statsbomb`) and known
 gaps between folders.
 
 **Note**: Do not touch any SPEC files. Those are to be managed by the human in the loop and not the agent.
+
+## Task documentation
+
+Every task done in this repo gets a task doc in `docs/task-history/`,
+following `docs/task-history/TEMPLATE.md` — written as part of finishing
+the task, not as an afterthought. If Tyler provides a written spec for the
+task, it goes in `docs/specs/` first; not every task starts with one, but
+every task ends with a `docs/task-history/` entry regardless. See
+`docs/README.md` for the full split.
