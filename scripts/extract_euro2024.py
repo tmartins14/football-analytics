@@ -14,6 +14,8 @@ the following files into data/euro-2024/{match_id}/ for each match:
     team_shape_{team_slug}.json (both teams)
     freeze_frames_goals.json
     convex_hull_goals.json
+    tactical_findings.json (requires shots/match_stats/substitutes/pass_network/
+        formation/team_shape — runs last)
 
 The shared xt_grid.json is written to data/ once (first match only).
 
@@ -48,6 +50,7 @@ from statsbomb.extract_formation import main as formation_main
 from statsbomb.extract_team_shape import main as team_shape_main
 from statsbomb.extract_freeze_frame import main as freeze_frame_main
 from statsbomb.extract_convex_hull import main as convex_hull_main
+from statsbomb.derive_tactical_findings import main as tactical_findings_main
 
 COMPETITION_ID = 55   # UEFA Euro
 SEASON_ID = 282       # 2024
@@ -86,6 +89,7 @@ def _extract_match(match_id: int, home_team: str, away_team: str, force: bool) -
         ("team_shape",     lambda: team_shape_main(match_id, out_dir, teams)),
         ("freeze_frames",  lambda: freeze_frame_main(match_id, out_dir)),
         ("convex_hull",    lambda: convex_hull_main(match_id, out_dir)),
+        ("tactical_findings", lambda: tactical_findings_main(match_id, out_dir)),
     ]
 
     for name, fn in steps:
