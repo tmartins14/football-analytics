@@ -1,5 +1,9 @@
 # Testing — the test gate
 
+> **Task history:** see
+> [`task-history/2026-08-player-match-analysis.md`](task-history/2026-08-player-match-analysis.md)
+> for the task (and the specific bugs) that established this gate.
+
 This document explains the test suite in this repo: what it covers, why it's
 structured the way it is, and how to maintain it. Companion to `docs/tooling.md`
 (the documentation gate) — read that first if you haven't; this one assumes the
@@ -29,6 +33,11 @@ code now. Extending coverage to the rest of both libraries is incremental
 follow-up work, not a blocker for this gate existing. `check_tests.sh` gates on
 "the tests that exist pass," not on a coverage percentage — see "Extending the
 gate" below for why that's deliberate too.
+
+One `ai/` test file exists too: `tests/unit/test_match_summary_comparison.py`
+covers the model/effort comparison harness offline, against a fake client — cost
+computed from `usage` × the rate table, the failed-call rules, and that no
+sampling parameters are ever sent. It makes no API calls.
 
 ## Python: `tests/` — unit vs. integration
 
