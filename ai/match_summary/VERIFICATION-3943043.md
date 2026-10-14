@@ -143,3 +143,15 @@ the original (mismatched) spot-check evidence. No 400 from sending effort
 instead of sampling parameters; outcome section parses and grounds (5/5
 performers checked, one minor phrasing note); tactics section avoids event
 claims and reproduces exactly one of the three previously known defects.
+
+## Note (2026-10-14, DATA-SPEC-v2 Part 5) — D6 and D7
+
+`FAILURE-TAXONOMY.md` records two defects against "the committed run"
+(pre-v2, free-prose tactics) that this file's checks above didn't cover:
+**D6** (substitutions placed at 89' when the real minutes were 82', 88', and
+67') and **D7** (Spain's shape described as a "back three" inside a
+4-2-3-1). Both belong to that same free-prose era as the defects already
+listed here, and both are superseded, along with D1-D5 and D8, by
+`VERIFICATION-3943043-v2.md`, written after the tactics section moved onto
+the tactical findings layer (Parts 0-4). See that file for the current
+before/after status of all eight defects.
