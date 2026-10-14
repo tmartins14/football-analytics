@@ -19,7 +19,7 @@ completed: YYYY-MM-DD | ongoing
 repo: football-analytics | tylermartins.com
 area: <primary path this touched, e.g. libs/statsbomb, ai/match_summary, app/football>
 related_prs: [12, 13]
-related_docs: [path/to/doc.md relative to this repo's root, or ../../other-repo/docs/specs/foo.md]
+related_docs: [path/to/doc.md relative to this repo's root, or ../../other-repo/docs/task-history/foo.md]
 tags: [short, lowercase, tags]
 ---
 
