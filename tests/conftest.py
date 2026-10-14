@@ -1,7 +1,8 @@
 """Shared pytest fixtures for the statsbomb test suite.
 
 Adds libs/ to sys.path (mirrors scripts/extract_euro2024.py's own approach) so
-tests can `import statsbomb` without the package being pip-installed.
+tests can `import statsbomb` without the package being pip-installed. Also
+adds the repo root, so tests can `import ai.match_summary...` the same way.
 
 raw_events/raw_lineups are session-scoped: statsbombpy already wraps sb.* calls in
 a requests_cache session (see statsbombpy.api_client, expire_after=600s), but that
@@ -15,6 +16,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parents[1] / "libs"))
+sys.path.insert(0, str(Path(__file__).parents[1]))  # repo root, so `ai.match_summary` imports
 
 import pytest
 from statsbombpy import sb
