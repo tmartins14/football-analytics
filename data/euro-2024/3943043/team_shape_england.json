@@ -3,7 +3,9 @@
     "periods": [
       {
         "from_minute": 0,
+        "from_period": 1,
         "to_minute": 60,
+        "to_period": 2,
         "players_in": [
           "Jordan Pickford",
           "Kyle Walker",
@@ -284,7 +286,9 @@
       },
       {
         "from_minute": 60,
+        "from_period": 2,
         "to_minute": 69,
+        "to_period": 2,
         "players_in": [
           "Ollie Watkins"
         ],
@@ -465,7 +469,9 @@
       },
       {
         "from_minute": 69,
+        "from_period": 2,
         "to_minute": 89,
+        "to_period": 2,
         "players_in": [
           "Cole Palmer"
         ],
@@ -738,7 +744,9 @@
       },
       {
         "from_minute": 89,
+        "from_period": 2,
         "to_minute": 95,
+        "to_period": 2,
         "players_in": [
           "Ivan Toney"
         ],

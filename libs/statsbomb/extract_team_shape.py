@@ -49,7 +49,9 @@ JSON output shape (team_shape_{match_id}_{team_slug}.json):
         "periods": [
           {
             "from_minute": int,
+            "from_period": int,
             "to_minute": int,
+            "to_period": int,
             "players_in": [str],
             "players_out": [str],
             "nodes": [{"player_id": int, "player": str, "display_name": str,
@@ -368,7 +370,9 @@ def _build_lineup_periods(events: pd.DataFrame, team: str) -> list[dict]:
     Substitution events in chronological order and groups simultaneous subs
     (same minute) to avoid zero-width windows. Each returned entry covers the
     time between two lineup changes and carries the exact set of 11 players on
-    the pitch during that window.
+    the pitch during that window. A window can span both halves (windowing is
+    substitution-based, not half-based), so from_period/to_period are each the
+    period of their own boundary minute, not necessarily the same value.
 
     Args:
         events (pd.DataFrame): Full match event DataFrame from sb.events().
@@ -377,7 +381,10 @@ def _build_lineup_periods(events: pd.DataFrame, team: str) -> list[dict]:
     Returns:
         list[dict]: Ordered list of windows, each with:
             from_minute (int): First minute of the window (inclusive).
+            from_period (int): Match period (1 or 2) of from_minute. 1 for the
+                opening window (kick-off).
             to_minute   (int): First minute after the window (exclusive).
+            to_period   (int): Match period (1 or 2) of to_minute.
             players     (set[str]): Player names on the pitch in this window.
             players_in  (list[str]): Who joined at from_minute (all 11 for window 0).
             players_out (list[str]): Who left at from_minute (empty for window 0).
@@ -407,13 +414,17 @@ def _build_lineup_periods(events: pd.DataFrame, team: str) -> list[dict]:
     periods: list[dict] = []
     current: list[str] = list(starters)
     prev_minute: int = 0
+    prev_period: int = 1  # kick-off is always period 1
     players_in: list[str] = list(starters)
     players_out: list[str] = []
 
     for sub_minute, rows in sub_groups:
+        sub_period = int(rows[0]["period"])
         periods.append({
             "from_minute": prev_minute,
+            "from_period": prev_period,
             "to_minute":   sub_minute,
+            "to_period":   sub_period,
             "players":     set(current),
             "players_in":  players_in,
             "players_out": players_out,
@@ -430,11 +441,15 @@ def _build_lineup_periods(events: pd.DataFrame, team: str) -> list[dict]:
         players_in  = new_in
         players_out = new_out
         prev_minute = sub_minute
+        prev_period = sub_period
 
     match_end = int(events["minute"].max()) + 1
+    match_end_period = int(events["period"].max())
     periods.append({
         "from_minute": prev_minute,
+        "from_period": prev_period,
         "to_minute":   match_end,
+        "to_period":   match_end_period,
         "players":     set(current),
         "players_in":  players_in,
         "players_out": players_out,
@@ -464,7 +479,7 @@ def _on_ball_periods(
 
     Returns:
         list[dict]: One entry per lineup window with keys:
-            from_minute, to_minute (int),
+            from_minute, from_period, to_minute, to_period (int),
             players_in, players_out (list[str]),
             nodes (list[dict]): player_id, player, display_name, x, y,
                 event_count, lane_counts (dict[str, int]), band_counts (dict[str, int]),
@@ -536,7 +551,9 @@ def _on_ball_periods(
 
         result_periods.append({
             "from_minute": from_min,
+            "from_period": lp["from_period"],
             "to_minute":   to_min,
+            "to_period":   lp["to_period"],
             "players_in":  lp["players_in"],
             "players_out": lp["players_out"],
             "nodes":       nodes,
@@ -566,7 +583,9 @@ def extract_team_shape_on_ball(match_id: int, team: str) -> pd.DataFrame:
     Returns:
         pd.DataFrame: One row per player per lineup period with columns:
             period_from_minute (int): Period start minute (inclusive).
+            period_from_period (int): Match period (1 or 2) of period_from_minute.
             period_to_minute (int): Period end minute (exclusive).
+            period_to_period (int): Match period (1 or 2) of period_to_minute.
             player_id (int | None): StatsBomb player ID.
             player (str): Full player name.
             display_name (str): Resolved display name (nickname or full name).
@@ -598,7 +617,9 @@ def extract_team_shape_on_ball(match_id: int, team: str) -> pd.DataFrame:
         for node in p["nodes"]:
             records.append({
                 "period_from_minute": p["from_minute"],
+                "period_from_period": p["from_period"],
                 "period_to_minute":   p["to_minute"],
+                "period_to_period":   p["to_period"],
                 "player_id":          node["player_id"],
                 "player":             node["player"],
                 "display_name":       node["display_name"],
@@ -610,7 +631,9 @@ def extract_team_shape_on_ball(match_id: int, team: str) -> pd.DataFrame:
             })
         periods_meta.append({
             "from_minute": p["from_minute"],
+            "from_period": p["from_period"],
             "to_minute":   p["to_minute"],
+            "to_period":   p["to_period"],
             "players_in":  p["players_in"],
             "players_out": p["players_out"],
             "hull":        p["hull"],
@@ -774,12 +797,13 @@ def main(
                 (on_df["period_from_minute"] == pm["from_minute"])
                 & (on_df["period_to_minute"] == pm["to_minute"])
             ]
-            nodes = group.drop(columns=["period_from_minute", "period_to_minute"]).to_dict(
-                orient="records"
-            )
+            drop_cols = ["period_from_minute", "period_from_period", "period_to_minute", "period_to_period"]
+            nodes = group.drop(columns=drop_cols).to_dict(orient="records")
             on_ball_periods.append({
                 "from_minute": pm["from_minute"],
+                "from_period": pm["from_period"],
                 "to_minute":   pm["to_minute"],
+                "to_period":   pm["to_period"],
                 "players_in":  pm["players_in"],
                 "players_out": pm["players_out"],
                 "nodes":       nodes,

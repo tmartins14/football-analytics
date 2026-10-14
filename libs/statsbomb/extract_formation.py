@@ -12,8 +12,8 @@ Public API:
     load_formation_templates() -> dict
     main()
 
-DataFrame columns: formation, from_minute, to_minute, player_id, player,
-    display_name, jersey_number, position, template_x, template_y
+DataFrame columns: formation, from_minute, from_period, to_minute, to_period,
+    player_id, player, display_name, jersey_number, position, template_x, template_y
 
 JSON output shape:
     {
@@ -21,7 +21,9 @@ JSON output shape:
         {
           "formation": "4-3-3",
           "from_minute": 0,
+          "from_period": 1,
           "to_minute": 55,
+          "to_period": 2,
           "players": [
             {
               "player_id": int,
@@ -143,6 +145,9 @@ def extract_formation(match_id: int, team: str) -> pd.DataFrame:
     Reads the Starting XI event and every Tactical Shift for the given team.
     Returns one row per player per formation period. The to_minute of one period
     equals the from_minute of the next; the last period runs to the final event minute.
+    A period can span both halves (Tactical-Shift periods don't line up with
+    half-time — see DATA-SPEC-v2 D6), so from_period/to_period are each the
+    period of their own boundary minute, not necessarily the same value.
 
     Args:
         match_id (int): StatsBomb match ID.
@@ -152,7 +157,10 @@ def extract_formation(match_id: int, team: str) -> pd.DataFrame:
         pd.DataFrame: One row per player per period with columns:
             formation (str): Hyphen-separated formation string (e.g. "4-3-3").
             from_minute (int): Period start minute (inclusive).
+            from_period (int): Match period (1 or 2) of from_minute. 1 for the
+                opening period (kick-off).
             to_minute (int): Period end minute (exclusive; last period = match end).
+            to_period (int): Match period (1 or 2) of to_minute.
             player_id (int): StatsBomb's stable numeric player ID.
             player (str): Full player name.
             display_name (str): Resolved display name (nickname or full name).
@@ -177,21 +185,27 @@ def extract_formation(match_id: int, team: str) -> pd.DataFrame:
     tactics = xi_row["tactics"]
     shift_rows = team_events[team_events["type"] == "Tactical Shift"].sort_values("minute")
     match_end = int(events["minute"].max())
+    match_end_period = int(events["period"].max())
 
-    anchors = [(tactics["formation"], tactics["lineup"], 0)]
+    anchors = [(tactics["formation"], tactics["lineup"], 0, 1)]  # kick-off is always period 1
     for _, row in shift_rows.iterrows():
         t = row["tactics"]
-        anchors.append((t["formation"], t["lineup"], int(row["minute"])))
+        anchors.append((t["formation"], t["lineup"], int(row["minute"]), int(row["period"])))
 
     records = []
-    for i, (formation_int, lineup, from_min) in enumerate(anchors):
-        to_min = anchors[i + 1][2] if i + 1 < len(anchors) else match_end
+    for i, (formation_int, lineup, from_min, from_period) in enumerate(anchors):
+        if i + 1 < len(anchors):
+            to_min, to_period = anchors[i + 1][2], anchors[i + 1][3]
+        else:
+            to_min, to_period = match_end, match_end_period
         formation_str = _format_formation(formation_int)
         for player_rec in _build_player_list(lineup, templates, nicknames):
             records.append({
                 "formation":   formation_str,
                 "from_minute": from_min,
+                "from_period": from_period,
                 "to_minute":   to_min,
+                "to_period":   to_period,
                 **player_rec,
             })
 
@@ -242,16 +256,17 @@ def main(
 
         # Reconstruct nested periods for the JSON contract.
         periods = []
-        for (formation, from_min, to_min), group in df.groupby(
-            ["formation", "from_minute", "to_minute"], sort=False
+        group_cols = ["formation", "from_minute", "from_period", "to_minute", "to_period"]
+        for (formation, from_min, from_period, to_min, to_period), group in df.groupby(
+            group_cols, sort=False
         ):
-            players = group.drop(columns=["formation", "from_minute", "to_minute"]).to_dict(
-                orient="records"
-            )
+            players = group.drop(columns=group_cols).to_dict(orient="records")
             periods.append({
                 "formation":   formation,
                 "from_minute": int(from_min),
+                "from_period": int(from_period),
                 "to_minute":   int(to_min),
+                "to_period":   int(to_period),
                 "players":     players,
             })
             print(f"  {formation}  {from_min}'–{to_min}'  ({len(players)} players)")
