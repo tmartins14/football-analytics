@@ -6,7 +6,7 @@ completed: ongoing
 repo: football-analytics
 area: libs/statsbomb, ai/match_summary
 related_prs: [12, 13, 14, 15, 16, 17, 18]
-related_docs: [ai/match_summary/DATA-SPEC-v2.md, ai/match_summary/FAILURE-TAXONOMY.md, ai/match_summary/SPEC.md, ../../../tylermartins.com/docs/specs/2026-09-ai-section.md]
+related_docs: [ai/match_summary/DATA-SPEC-v2.md, ai/match_summary/FAILURE-TAXONOMY.md, ai/match_summary/SPEC.md, ../../../tylermartins.com/docs/task-history/2026-09-ai-section.md]
 tags: [ai-engineering, data-spec-v2, tactical-findings, statsbomb, llm, grounding]
 ---
 
@@ -146,7 +146,7 @@ of D1–D8 recur, write `VERIFICATION-3943043-v2.md`) and **Part 6** (new
 finding categories — chance creation, progression, pressing, transitions,
 set pieces — gated on the Module 3 eval judge, which doesn't exist yet).
 `tylermartins.com`'s AI section (see that repo's
-`docs/specs/2026-09-ai-section.md`) displays this project's generated
+`docs/task-history/2026-09-ai-section.md`) displays this project's generated
 output and will need updating once Part 5 regenerates it.
 
 ## Where to look for more

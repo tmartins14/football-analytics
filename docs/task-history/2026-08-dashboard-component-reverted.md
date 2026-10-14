@@ -36,7 +36,7 @@ don't record *why* it was reverted.
 
 Superseded — `tylermartins.com` later rebuilt the equivalent as native
 React instead of a footballd3 component (see that repo's
-`docs/specs/2026-09-ai-section.md`), which is the version actually in use
+`docs/task-history/2026-09-ai-section.md`), which is the version actually in use
 today.
 
 ## Where to look for more

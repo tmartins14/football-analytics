@@ -1,7 +1,7 @@
 # Testing — the test gate
 
 > **Task history:** see
-> [`specs/2026-08-player-match-analysis.md`](specs/2026-08-player-match-analysis.md)
+> [`task-history/2026-08-player-match-analysis.md`](task-history/2026-08-player-match-analysis.md)
 > for the task (and the specific bugs) that established this gate.
 
 This document explains the test suite in this repo: what it covers, why it's

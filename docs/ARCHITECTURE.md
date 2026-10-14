@@ -1,8 +1,8 @@
 # Architecture
 
 > **Task history:** see
-> [`specs/2026-08-libs-apps-and-ai-directory-restructure.md`](specs/2026-08-libs-apps-and-ai-directory-restructure.md)
-> and [`specs/2026-09-spec-kit-scaffolding.md`](specs/2026-09-spec-kit-scaffolding.md)
+> [`task-history/2026-08-libs-apps-and-ai-directory-restructure.md`](task-history/2026-08-libs-apps-and-ai-directory-restructure.md)
+> and [`task-history/2026-09-spec-kit-scaffolding.md`](task-history/2026-09-spec-kit-scaffolding.md)
 > for why the repo is organized this way, and why this doc lives here.
 
 How this repo is organized and how the pieces connect. Read this before

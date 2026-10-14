@@ -1,7 +1,7 @@
 # Tooling — the documentation gate
 
 > **Task history:** see
-> [`specs/2026-06-footballd3-statsbomb-libraries.md`](specs/2026-06-footballd3-statsbomb-libraries.md)
+> [`task-history/2026-06-footballd3-statsbomb-libraries.md`](task-history/2026-06-footballd3-statsbomb-libraries.md)
 > for when and why this gate was added.
 
 This document explains the documentation enforcement setup in this repo: what it is,

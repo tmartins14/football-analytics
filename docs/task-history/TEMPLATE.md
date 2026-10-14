@@ -1,7 +1,7 @@
 <!--
 TEMPLATE.md — the task-doc template for docs/specs/.
 
-Mirrored byte-for-byte in tylermartins.com's docs/specs/TEMPLATE.md. If you
+Mirrored byte-for-byte in tylermartins.com's docs/task-history/TEMPLATE.md. If you
 change this file, change that one the same way in the same commit (same
 convention this project already uses for DESIGN.md <-> ~/dev/context/style.md).
 

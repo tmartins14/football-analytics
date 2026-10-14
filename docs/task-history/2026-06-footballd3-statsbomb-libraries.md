@@ -55,7 +55,7 @@ components by relative path instead of through the package's public
 entry points (see `docs/ARCHITECTURE.md`). Cumulative xG chart added
 (07-20), then `deploying footballd3` (07-20) — footballd3's first publish,
 which is what `tylermartins.com` started consuming the same week (see that
-repo's `docs/specs/2026-07-component-library-gallery.md`).
+repo's `docs/task-history/2026-07-component-library-gallery.md`).
 
 ## Outcome
 

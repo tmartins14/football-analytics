@@ -51,7 +51,7 @@ Single commit, three changes:
    deliberately left behind. The template's own worked example is a real
    task from the sibling repo (the `tylermartins.com` dashboard-
    responsiveness fix — see that repo's
-   `docs/specs/2026-08-player-match-analysis-site.md`), left in place
+   `docs/task-history/2026-08-player-match-analysis-site.md`), left in place
    rather than blanked out.
 3. **`docs/ARCHITECTURE.md`'s move.** Renamed from `.claude/ARCHITECTURE.md`
    (written during the `restructure-libs-apps` task — see
