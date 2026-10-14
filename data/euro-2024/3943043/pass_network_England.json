@@ -3,6 +3,10 @@
     {
       "index": 0,
       "label": "0'\u201360' (Starting XI)",
+      "from_minute": 0,
+      "from_period": 1,
+      "to_minute": 60,
+      "to_period": 2,
       "nodes": [
         {
           "player": "Bukayo Saka",
@@ -463,6 +467,10 @@
     {
       "index": 1,
       "label": "60'\u201369'",
+      "from_minute": 60,
+      "from_period": 2,
+      "to_minute": 69,
+      "to_period": 2,
       "nodes": [
         {
           "player": "Bukayo Saka",
@@ -659,6 +667,10 @@
     {
       "index": 2,
       "label": "69'\u201389'",
+      "from_minute": 69,
+      "from_period": 2,
+      "to_minute": 89,
+      "to_period": 2,
       "nodes": [
         {
           "player": "Bukayo Saka",
@@ -872,6 +884,10 @@
     {
       "index": 3,
       "label": "89'\u2013FT",
+      "from_minute": 89,
+      "from_period": 2,
+      "to_minute": null,
+      "to_period": null,
       "nodes": [
         {
           "player": "Cole Palmer",
@@ -915,16 +931,19 @@
   "substitutions": [
     {
       "minute": 60,
+      "period": 2,
       "player_off": "Harry Kane",
       "player_on": "Ollie Watkins"
     },
     {
       "minute": 69,
+      "period": 2,
       "player_off": "Kobbie Mainoo",
       "player_on": "Cole Palmer"
     },
     {
       "minute": 89,
+      "period": 2,
       "player_off": "Phil Foden",
       "player_on": "Ivan Toney"
     }

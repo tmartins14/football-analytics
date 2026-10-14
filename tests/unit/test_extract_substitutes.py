@@ -76,7 +76,7 @@ def synthetic_roster(monkeypatch):
     events = pd.DataFrame([
         {
             "type": "Substitution", "team": "TeamA", "player": "Test Departing Player",
-            "substitution_replacement": "Test Sub", "minute": 70, "second": 12,
+            "substitution_replacement": "Test Sub", "minute": 70, "second": 12, "period": 2,
         },
         # No Tactical Shift row at all, and no Substitution row for "Test Ghost Sub".
     ])
@@ -124,6 +124,7 @@ class TestGetEligiblePlayers:
         assert not row["is_starter"]
         assert row["on_minute"] == 70
         assert row["on_second"] == 12
+        assert row["on_period"] == 2
         assert row["replaced_player"] == "Test Departing Player"
 
     def test_substitute_with_no_matching_event_row_does_not_crash(self, synthetic_roster):
@@ -131,6 +132,7 @@ class TestGetEligiblePlayers:
         assert not row["is_starter"]
         assert pd.isna(row["on_minute"])
         assert pd.isna(row["on_second"])
+        assert pd.isna(row["on_period"])
         # Surprising but real pandas behavior, verified empirically while writing
         # this test: None mixed with real strings in an object column can ALSO
         # come back as NaN, not just numeric columns — this is exactly why
@@ -176,9 +178,12 @@ class TestMainWritesCleanJson:
         assert ghost["replaced_player"] is None
         assert ghost["on_minute"] is None
         assert ghost["on_second"] is None
+        assert ghost["on_period"] is None
 
         matched = next(
             p for p in payload["teams"]["TeamA"] if p["display_name"] == "Test Sub"
         )
         assert matched["on_minute"] == 70
         assert isinstance(matched["on_minute"], int)
+        assert matched["on_period"] == 2
+        assert isinstance(matched["on_period"], int)

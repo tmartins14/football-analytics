@@ -17,13 +17,20 @@ JSON output shape:
         {
           "index": 0,
           "label": "0'–63' (Starting XI)",
+          "from_minute": 0,
+          "from_period": 1,
+          "to_minute": 63,
+          "to_period": 2,
           "nodes": [{"player", "display_name", "x", "y", "passes"}],
           "edges": [{"from", "to", "count"}]
         }
       ],
-      "substitutions": [{"minute", "player_off", "player_on"}],
+      "substitutions": [{"minute", "period", "player_off", "player_on"}],
       "metadata": {"match_id", "team", "filter", "competition", "match_label"}
     }
+Note: the last window's "to_minute"/"to_period" are null (open-ended — runs to
+whichever minute the last completed pass fell on); findings code renders its
+right boundary as "full time" rather than via display_minute.
 Written to: libs/footballd3/sample_data/pass_network_{match_id}_{team}.json
 """
 
@@ -55,9 +62,11 @@ def _build_windows(
 
     Returns:
         tuple[list[dict], list[dict]]: (windows, substitutions).
-            windows: list of dicts with keys index, label, nodes, edges.
+            windows: list of dicts with keys index, label, from_minute,
+                from_period, to_minute, to_period (the last window's
+                to_minute/to_period are None — open-ended), nodes, edges.
                 Each node has keys: player, display_name, x, y, passes.
-            substitutions: list of {minute, player_off, player_on} dicts.
+            substitutions: list of {minute, period, player_off, player_on} dicts.
     """
     sub_mask = (events["type"] == "Substitution") & (events["team"] == team)
     sub_rows = events[sub_mask].sort_values("minute")
@@ -66,13 +75,17 @@ def _build_windows(
     for _, row in sub_rows.iterrows():
         substitutions.append({
             "minute":     int(row["minute"]),
+            "period":     int(row["period"]),
             "player_off": str(row["player"]),
             "player_on":  str(row.get("substitution_replacement", "")),
         })
 
     sub_minutes = [s["minute"] for s in substitutions]
+    sub_periods = [s["period"] for s in substitutions]
     starts = [0] + sub_minutes
+    start_periods = [1] + sub_periods  # kick-off is always period 1
     ends = sub_minutes + [None]
+    end_periods = sub_periods + [None]
 
     pass_mask = (
         (events["type"] == "Pass")
@@ -123,7 +136,16 @@ def _build_windows(
 
         end_str = f"{end}'" if end is not None else "FT"
         label = f"0'–{end_str} (Starting XI)" if i == 0 else f"{start}'–{end_str}"
-        windows.append({"index": i, "label": label, "nodes": nodes, "edges": edges})
+        windows.append({
+            "index":       i,
+            "label":       label,
+            "from_minute": start,
+            "from_period": start_periods[i],
+            "to_minute":   end,
+            "to_period":   end_periods[i],
+            "nodes":       nodes,
+            "edges":       edges,
+        })
 
     return windows, substitutions
 
