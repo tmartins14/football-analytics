@@ -19,7 +19,7 @@ Public API:
     main()
 
 DataFrame columns (get_eligible_players): player_id, player, display_name, team,
-    jersey_number, position, is_starter, on_minute, on_second, replaced_player
+    jersey_number, position, is_starter, on_minute, on_second, on_period, replaced_player
 
 DataFrame columns (extract_substitutes): same, filtered to is_starter == False
 
@@ -28,7 +28,7 @@ JSON output shape (substitutes_{match_id}.json):
         "teams": {
             "<team name>": [
                 { "player_id", "player", "display_name", "jersey_number",
-                  "position", "on_minute", "on_second", "replaced_player" }
+                  "position", "on_minute", "on_second", "on_period", "replaced_player" }
             ]
         },
         "metadata": {"match_id", "competition", "season", "match_label"}
@@ -71,6 +71,10 @@ def get_eligible_players(match_id: int) -> pd.DataFrame:
             is_starter (bool): True if the player started the match.
             on_minute (int | None): Substitution-on minute; None for starters.
             on_second (int | None): Substitution-on second; None for starters.
+            on_period (int | None): Match period (1 or 2) the substitution
+                happened in; None for starters. Needed to render on_minute via
+                `tactical_definitions.display_minute`, which disambiguates
+                first-half stoppage time from second-half regular time.
             replaced_player (str | None): Full name of the player replaced;
                 None for starters.
     """
@@ -95,7 +99,7 @@ def get_eligible_players(match_id: int) -> pd.DataFrame:
             first = positions[0]
             is_starter = first.get("start_reason") == "Starting XI"
 
-            on_minute = on_second = None
+            on_minute = on_second = on_period = None
             replaced_player = None
             if not is_starter:
                 sub_rows = subs[subs["substitution_replacement"] == player_name]
@@ -103,6 +107,7 @@ def get_eligible_players(match_id: int) -> pd.DataFrame:
                     sub_row = sub_rows.iloc[0]
                     on_minute = int(sub_row["minute"])
                     on_second = int(sub_row["second"])
+                    on_period = int(sub_row["period"])
                     replaced_player = str(sub_row["player"])
 
             records.append({
@@ -115,6 +120,7 @@ def get_eligible_players(match_id: int) -> pd.DataFrame:
                 "is_starter":      is_starter,
                 "on_minute":       on_minute,
                 "on_second":       on_second,
+                "on_period":       on_period,
                 "replaced_player": replaced_player,
             })
 
@@ -161,15 +167,16 @@ def main(match_id: int | None = None, out_dir: Path | None = None) -> None:
         # Every field can carry a pandas-coerced NaN in place of a per-row None
         # (get_eligible_players' columns mix real values with None across rows —
         # e.g. a substitute with no matching Substitution event leaves
-        # on_minute/on_second/replaced_player all None — and pandas' NaN
-        # coercion applies even to object/string columns, not just numeric
+        # on_minute/on_second/on_period/replaced_player all None — and pandas'
+        # NaN coercion applies even to object/string columns, not just numeric
         # ones). clean_nan() restores real None so json.dump never emits a
-        # literal NaN token. on_minute/on_second additionally need int() to
-        # undo the float64 widening NaN-coercion causes on those two columns.
+        # literal NaN token. on_minute/on_second/on_period additionally need
+        # int() to undo the float64 widening NaN-coercion causes on those
+        # columns.
         cleaned = []
         for record in records:
             record = {k: clean_nan(v) for k, v in record.items()}
-            for key in ("on_minute", "on_second"):
+            for key in ("on_minute", "on_second", "on_period"):
                 if record[key] is not None:
                     record[key] = int(record[key])
             cleaned.append(record)

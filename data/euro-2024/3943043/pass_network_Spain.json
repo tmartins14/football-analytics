@@ -3,6 +3,10 @@
     {
       "index": 0,
       "label": "0'\u201345' (Starting XI)",
+      "from_minute": 0,
+      "from_period": 1,
+      "to_minute": 45,
+      "to_period": 2,
       "nodes": [
         {
           "player": "Aymeric Laporte",
@@ -463,6 +467,10 @@
     {
       "index": 1,
       "label": "45'\u201367'",
+      "from_minute": 45,
+      "from_period": 2,
+      "to_minute": 67,
+      "to_period": 2,
       "nodes": [
         {
           "player": "Aymeric Laporte",
@@ -828,6 +836,10 @@
     {
       "index": 2,
       "label": "67'\u201382'",
+      "from_minute": 67,
+      "from_period": 2,
+      "to_minute": 82,
+      "to_period": 2,
       "nodes": [
         {
           "player": "Aymeric Laporte",
@@ -1148,6 +1160,10 @@
     {
       "index": 3,
       "label": "82'\u201388'",
+      "from_minute": 82,
+      "from_period": 2,
+      "to_minute": 88,
+      "to_period": 2,
       "nodes": [
         {
           "player": "Aymeric Laporte",
@@ -1385,6 +1401,10 @@
     {
       "index": 4,
       "label": "88'\u2013FT",
+      "from_minute": 88,
+      "from_period": 2,
+      "to_minute": null,
+      "to_period": null,
       "nodes": [
         {
           "player": "Daniel Carvajal Ramos",
@@ -1406,21 +1426,25 @@
   "substitutions": [
     {
       "minute": 45,
+      "period": 2,
       "player_off": "Rodrigo Hern\u00e1ndez Cascante",
       "player_on": "Mart\u00edn Zubimendi Ib\u00e1\u00f1ez"
     },
     {
       "minute": 67,
+      "period": 2,
       "player_off": "\u00c1lvaro Borja Morata Mart\u00edn",
       "player_on": "Mikel Oyarzabal Ugarte"
     },
     {
       "minute": 82,
+      "period": 2,
       "player_off": "Robin Aime Robert Le Normand",
       "player_on": "Jos\u00e9 Ignacio Fern\u00e1ndez Iglesias"
     },
     {
       "minute": 88,
+      "period": 2,
       "player_off": "Lamine Yamal Nasraoui Ebana",
       "player_on": "Mikel Merino Zaz\u00f3n"
     }

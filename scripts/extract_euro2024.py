@@ -8,6 +8,7 @@ the following files into data/euro-2024/{match_id}/ for each match:
     momentum.json          (requires xt_actions.json — xt runs first)
     goal_animation.json
     xt_actions.json
+    substitutes.json
     pass_network_{team}.json   (both teams)
     formation_{team_slug}.json (both teams)
     team_shape_{team_slug}.json (both teams)
@@ -41,6 +42,7 @@ from statsbomb.extract_match_stats import main as match_stats_main
 from statsbomb.extract_xt import main as xt_main
 from statsbomb.extract_momentum import main as momentum_main
 from statsbomb.extract_goal_animation import main as goal_anim_main
+from statsbomb.extract_substitutes import main as substitutes_main
 from statsbomb.extract_pass_network import main as pass_network_main
 from statsbomb.extract_formation import main as formation_main
 from statsbomb.extract_team_shape import main as team_shape_main
@@ -78,6 +80,7 @@ def _extract_match(match_id: int, home_team: str, away_team: str, force: bool) -
         ("momentum",       lambda: momentum_main(match_id, out_dir)),
         ("goal_animation", lambda: goal_anim_main(match_id, out_dir)),
         ("match_stats",    lambda: match_stats_main(match_id, out_dir)),
+        ("substitutes",    lambda: substitutes_main(match_id, out_dir)),
         ("pass_network",   lambda: pass_network_main(match_id, out_dir, teams)),
         ("formation",      lambda: formation_main(match_id, out_dir, teams)),
         ("team_shape",     lambda: team_shape_main(match_id, out_dir, teams)),

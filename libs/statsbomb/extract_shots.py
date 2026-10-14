@@ -4,9 +4,9 @@ Public API:
     extract_shots(match_id) -> pd.DataFrame
     main()
 
-DataFrame columns: event_id, x, y, xg, outcome, is_goal, team, display_name, minute
+DataFrame columns: event_id, x, y, xg, outcome, is_goal, team, display_name, minute, period
 
-JSON output shape (written by main): [{ x, y, xg, outcome, is_goal, team, display_name, minute }]
+JSON output shape (written by main): [{ x, y, xg, outcome, is_goal, team, display_name, minute, period }]
 Written to: libs/footballd3/sample_data/shots_{match_id}.json
 """
 
@@ -41,6 +41,9 @@ def extract_shots(match_id: int) -> pd.DataFrame:
             team (str): Team name.
             display_name (str): Player nickname or full name, resolved Python-side.
             minute (int): Match minute.
+            period (int): Match period (1 or 2 — needed to render `minute` via
+                `tactical_definitions.display_minute`, which disambiguates
+                first-half stoppage time from second-half regular time).
     """
     nicknames = build_nickname_lookup(match_id)
     events = sb.events(match_id=match_id)
@@ -65,6 +68,7 @@ def extract_shots(match_id: int) -> pd.DataFrame:
                 "team":        row["team"],
                 "display_name": display_name,
                 "minute":      int(row["minute"]),
+                "period":      int(row["period"]),
             }
         )
     return pd.DataFrame(records)
