@@ -203,3 +203,21 @@ No goals, cards, fouls or shots are mentioned in the tactics section, and no
 tactical role labels beyond literal position strings.
 
 The two errors above are the current known issues shown on tylermartins.com.
+
+## Note (2026-10-14, DATA-SPEC-v2 Part 5) — D6, D7, and this file's status
+
+`FAILURE-TAXONOMY.md` records two defects against "the committed run"
+(pre-v2, free-prose tactics) that this file's checks above didn't cover:
+**D6** (substitutions placed at 89' when the real minutes were 82', 88', and
+67') and **D7** (Spain's shape described as a "back three" inside a
+4-2-3-1). Both belong to that same free-prose era as the defects already
+listed here, and both are superseded, along with D1-D5 and D8, by
+`VERIFICATION-3943043-v2.md`, written after the tactics section moved onto
+the tactical findings layer (Parts 0-4). See that file for the current
+before/after status of all eight defects.
+
+This also means the "Module 2 (Task 2)" section above no longer describes
+the committed file: Part 5 regenerated `match_summary.json` again (free
+prose → findings-layer tactics), so every spot-check above — Module 1,
+Module 2, and Module 2 (Task 2) alike — is now a historical record of a
+superseded run, not a check against what's currently committed.
