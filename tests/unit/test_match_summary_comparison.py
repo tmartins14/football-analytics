@@ -19,18 +19,38 @@ SAMPLING_PARAMS = {"temperature", "top_p", "top_k"}
 
 
 def fakeResponse(usage="default", stop="end_turn", parsed="default", content=None, model="claude-sonnet-5"):
-    """Build a stand-in for an Anthropic response with just the fields the harness reads."""
+    """Build a stand-in for an Anthropic response with just the fields the harness reads.
+
+    When ``parsed`` has a "sentences" key (the tactics shape), parsed_output
+    also exposes a real ``.sentences`` attribute (list of fake Sentence
+    objects with ``.text``/``.finding_ids``/``.model_dump()``), since
+    generate_tactics_section() reads that directly, not just ``.model_dump()``.
+    """
     if usage == "default":
         usage = {"input_tokens": 1000, "output_tokens": 200}
     if parsed == "default":
         parsed = {"headline": "h", "key_stats": [], "standout_performers": []}
+    parsed_output = None
+    if parsed is not None:
+        extra_attrs = {}
+        if "sentences" in parsed:
+            extra_attrs["sentences"] = [
+                SimpleNamespace(text=s["text"], finding_ids=s["finding_ids"], model_dump=lambda s=s: dict(s))
+                for s in parsed["sentences"]
+            ]
+        parsed_output = SimpleNamespace(model_dump=lambda: parsed, **extra_attrs)
     return SimpleNamespace(
         usage=None if usage is None else SimpleNamespace(model_dump=lambda: dict(usage)),
         stop_reason=stop,
-        parsed_output=None if parsed is None else SimpleNamespace(model_dump=lambda: parsed),
+        parsed_output=parsed_output,
         content=content if content is not None else [SimpleNamespace(type="text", text="prose")],
         model=model,
     )
+
+
+def fakeTacticsResponse(**kwargs):
+    """fakeResponse() shortcut for the tactics (Sentences) shape."""
+    return fakeResponse(parsed={"sentences": [{"text": "prose", "finding_ids": []}]}, **kwargs)
 
 
 class TestComputeCost:
@@ -74,10 +94,12 @@ class TestMakeCall:
         assert call["latency_s"] == 1.23
         assert call["output"]["headline"] == "h"
 
-    def test_tactics_text_joins_text_blocks_and_ignores_thinking(self):
-        content = [SimpleNamespace(type="thinking", thinking=""), SimpleNamespace(type="text", text="para")]
-        call = cmp.makeCall("tactics", "claude-opus-5", "medium", fakeResponse(content=content), 2.0)
-        assert call["output"] == "para"
+    def test_tactics_call_records_the_parsed_sentences(self):
+        # DATA-SPEC-v2 Part 4: tactics is structured output (Sentences) now,
+        # extracted via parsed_output exactly like outcome -- not a free-text
+        # join over .content blocks.
+        call = cmp.makeCall("tactics", "claude-opus-5", "medium", fakeTacticsResponse(), 2.0)
+        assert call["output"] == {"sentences": [{"text": "prose", "finding_ids": []}]}
         assert call["failures"] == []
 
     def test_missing_usage_is_a_failed_call_with_no_cost(self):
@@ -157,7 +179,7 @@ class TestRequestKwargs:
     """What actually goes on the wire — the SPEC's 'no sampling params, effort only where supported'."""
 
     context = {key: {} for key in ("match_stats", "substitutes", "formation", "team_shape",
-                                   "progressive_map", "pass_network")}
+                                   "progressive_map", "pass_network")} | {"tactical_findings": {"findings": []}}
 
     @pytest.fixture
     def sent(self, monkeypatch):
@@ -166,6 +188,9 @@ class TestRequestKwargs:
         class FakeMessages:
             def parse(self, **kwargs):
                 calls.append(kwargs)
+                # _request_tactics asks for Sentences; _request_outcome for OutcomeSection.
+                if kwargs.get("output_format") is gen.Sentences:
+                    return fakeTacticsResponse()
                 return fakeResponse()
 
             def create(self, **kwargs):
@@ -219,7 +244,7 @@ class TestRequestKwargs:
 class TestSlimRecord:
     def record(self):
         outcome = cmp.makeCall("outcome", "claude-sonnet-5", "low", fakeResponse(), 1.0)
-        tactics = cmp.makeCall("tactics", "claude-sonnet-5", "low", fakeResponse(), 2.0)
+        tactics = cmp.makeCall("tactics", "claude-sonnet-5", "low", fakeTacticsResponse(), 2.0)
         return {"match_id": 3943043, "created": "2026-09-21", "max_tokens": 16000, "spent_usd": 0.5,
                 "rates_usd_per_mtok": {}, "routing": {"outcome": 4, "tactics": 3},
                 "motm": {"player": "X", "note": "n"}, "decision_log_text": "d",
@@ -233,9 +258,11 @@ class TestSlimRecord:
         assert (call["input_tokens"], call["output_tokens"]) == (1000, 200)
         assert call["cost_usd"] == pytest.approx(1000 * 2 / 1e6 + 200 * 10 / 1e6)
 
-    def test_tactics_output_is_the_prose_string(self):
+    def test_tactics_output_is_the_parsed_sentences(self):
+        # DATA-SPEC-v2 Part 4: tactics is structured output (Sentences) now,
+        # not a free-prose string.
         slim = cmp.slimRecord(self.record())
-        assert slim["cells"][0]["calls"]["tactics"]["output"] == "prose"
+        assert slim["cells"][0]["calls"]["tactics"]["output"] == {"sentences": [{"text": "prose", "finding_ids": []}]}
 
     def test_keeps_config_totals_grading_and_routing(self):
         slim = cmp.slimRecord(self.record())

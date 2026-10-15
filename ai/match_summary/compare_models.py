@@ -166,12 +166,10 @@ def makeCall(section: str, model: str, effort: str | None, response, latency_s: 
     if response.stop_reason != "end_turn":
         failures.append(f"stop_reason={response.stop_reason}")
 
-    if section == "outcome":
-        parsed = response.parsed_output
-        output = parsed.model_dump() if parsed is not None else None
-    else:
-        text = "".join(b.text for b in response.content if b.type == "text")
-        output = text or None
+    # Both sections are structured output now (client.messages.parse) — DATA-SPEC-v2
+    # Part 4 switched tactics from a free-prose .create() call to Sentences.
+    parsed = response.parsed_output
+    output = parsed.model_dump() if parsed is not None else None
     if output is None:
         failures.append("no output")
 
@@ -265,7 +263,9 @@ def estimateCell(cell: Cell, context: dict) -> dict:
         dict: ``{n, input_tokens, output_tokens: (lo, hi), usd: (lo, hi)}``.
     """
     outcome_chars = len(json.dumps(context, indent=2))
-    tactics_chars = len(json.dumps({k: context[k] for k in gen.TACTICS_SOURCE_KEYS}, indent=2))
+    # DATA-SPEC-v2 Part 4: the tactics call now sends only tactical_findings.json's
+    # non-null-claim findings, not a slice of the six extractors' raw JSON.
+    tactics_chars = len(json.dumps(gen._claimed_findings(context), indent=2))
     outcome_tokens = OUTCOME_INPUT_TOKENS.get(cell.model, OUTCOME_INPUT_TOKENS_DEFAULT)
     input_tokens = round(outcome_tokens * (1 + tactics_chars / outcome_chars))
     rate_in, rate_out = RATES[cell.model]
@@ -407,7 +407,7 @@ def slimRecord(record: dict) -> dict:
         dict: Record-level fields plus, per cell, config, totals, grading, and
             per-call tokens/cost/latency/output. Only the full ``usage`` dict and
             ``stop_reason`` are dropped — everything a run-by-run showcase (headline,
-            key stats, performers, tactics prose) needs is kept.
+            key stats, performers, tactics sentences) needs is kept.
     """
     def slimCall(call: dict) -> dict:
         usage, cost = call["usage"] or {}, call["cost"] or {}
