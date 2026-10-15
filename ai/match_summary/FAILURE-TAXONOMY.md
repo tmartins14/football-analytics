@@ -42,6 +42,16 @@ Listed so they are watched for, not counted as failures until a real trace shows
 
 - **Swapped numbers across cited findings:** two findings in one sentence with their values exchanged (e.g. two hubs in one window). Covered by the leftover check and the `check_grounding` test suite.
 
+## Part 5 update (2026-10-14)
+
+Three live-API runs on the tactical-findings-layer tactics section (Parts
+0-4), plus a full manual read of all three (not just one), found none of
+D1-D8 and no new failure class. See `VERIFICATION-3943043-v2.md` for the
+per-defect before/after table and the per-run `check_grounding` results
+(0 failed sentences, `publishable: true` on all three). No new rows added
+below — this is the "ran it and nothing new showed up" outcome the update
+rule also expects to be recorded, not just new failures.
+
 ## Update rule
 
 After every Part 5 run and every Part 6 category, add new failures as rows with

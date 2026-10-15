@@ -1,0 +1,312 @@
+{
+  "publishable": true,
+  "sentences": [
+    {
+      "text": "Spain played a 4-2-3-1 from kick-off to 90' while England played a 4-2-3-1 from kick-off to 70'.",
+      "finding_ids": [
+        "structure.formation.ESP.p0",
+        "structure.formation.ENG.p0"
+      ],
+      "passed": true,
+      "checks": {
+        "cites_valid_ids": true,
+        "claims_present": true,
+        "leftover_clean": true,
+        "sequence_requires_minute_bearing": true,
+        "no_banned_terms": true
+      },
+      "unknown_ids": [],
+      "missing_claim_ids": [],
+      "leftover_text": "  ."
+    },
+    {
+      "text": "Spain's average position in possession was 6.4 yards higher than England's (Spain kick-off to 46', England kick-off to 61') and England's average out-of-possession position was 9.1 yards deeper than Spain's.",
+      "finding_ids": [
+        "cross.comparison.team_height.ESP",
+        "cross.comparison.block_height.ENG"
+      ],
+      "passed": true,
+      "checks": {
+        "cites_valid_ids": true,
+        "claims_present": true,
+        "leftover_clean": true,
+        "sequence_requires_minute_bearing": true,
+        "no_banned_terms": true
+      },
+      "unknown_ids": [],
+      "missing_claim_ids": [],
+      "leftover_text": "  ."
+    },
+    {
+      "text": "Spain's passing was more concentrated than England's: the top three players had 44.8% of involvement against 37.0% (kick-off to 46') and Aymeric Laporte and Robin Le Normand combined 31 times (kick-off to 46').",
+      "finding_ids": [
+        "cross.comparison.concentration.ESP",
+        "passing.top_pair.ESP.w0.aymeric_laporte_robin_le_normand"
+      ],
+      "passed": true,
+      "checks": {
+        "cites_valid_ids": true,
+        "claims_present": true,
+        "leftover_clean": true,
+        "sequence_requires_minute_bearing": true,
+        "no_banned_terms": true
+      },
+      "unknown_ids": [],
+      "missing_claim_ids": [],
+      "leftover_text": "  ."
+    },
+    {
+      "text": "Daniel Carvajal took 56 of 60 touches on the right wing (kick-off to 46') while Lamine Yamal took 29 of 40 touches on the right wing (kick-off to 46').",
+      "finding_ids": [
+        "in_possession.player_zone.ESP.w0.daniel_carvajal",
+        "in_possession.player_zone.ESP.w0.lamine_yamal"
+      ],
+      "passed": true,
+      "checks": {
+        "cites_valid_ids": true,
+        "claims_present": true,
+        "leftover_clean": true,
+        "sequence_requires_minute_bearing": true,
+        "no_banned_terms": true
+      },
+      "unknown_ids": [],
+      "missing_claim_ids": [],
+      "leftover_text": "  ."
+    },
+    {
+      "text": "England's passing had no single hub; the most involved player, John Stones, had 12.8% (kick-off to 61') while England's average position in possession was in their own half (kick-off to 61').",
+      "finding_ids": [
+        "passing.no_hub.ENG.w0",
+        "in_possession.team_height.ENG.w0"
+      ],
+      "passed": true,
+      "checks": {
+        "cites_valid_ids": true,
+        "claims_present": true,
+        "leftover_clean": true,
+        "sequence_requires_minute_bearing": true,
+        "no_banned_terms": true
+      },
+      "unknown_ids": [],
+      "missing_claim_ids": [],
+      "leftover_text": "  ."
+    },
+    {
+      "text": "The score was level at 0-0 from kick-off to 47' and Mart\u00edn Zubimendi replaced Rodri for Spain (46').",
+      "finding_ids": [
+        "context.game_state.level.s0",
+        "structure.substitution.ESP.mart_n_zubimendi"
+      ],
+      "passed": true,
+      "checks": {
+        "cites_valid_ids": true,
+        "claims_present": true,
+        "leftover_clean": true,
+        "sequence_requires_minute_bearing": true,
+        "no_banned_terms": true
+      },
+      "unknown_ids": [],
+      "missing_claim_ids": [],
+      "leftover_text": "  ."
+    },
+    {
+      "text": "Nico Williams scored for Spain (47') and Spain led 1-0 from 47' to 73'.",
+      "finding_ids": [
+        "context.goal.ESP.nico_williams",
+        "context.game_state.ESP.s1"
+      ],
+      "passed": true,
+      "checks": {
+        "cites_valid_ids": true,
+        "claims_present": true,
+        "leftover_clean": true,
+        "sequence_requires_minute_bearing": true,
+        "no_banned_terms": true
+      },
+      "unknown_ids": [],
+      "missing_claim_ids": [],
+      "leftover_text": "  ."
+    },
+    {
+      "text": "Spain's passing had no single hub; the most involved player, Fabi\u00e1n Ruiz, had 14.3% (46' to 68') while Nico Williams took 8 of 12 touches on the left wing (46' to 68').",
+      "finding_ids": [
+        "passing.no_hub.ESP.w1",
+        "in_possession.player_zone.ESP.w1.nico_williams"
+      ],
+      "passed": true,
+      "checks": {
+        "cites_valid_ids": true,
+        "claims_present": true,
+        "leftover_clean": true,
+        "sequence_requires_minute_bearing": true,
+        "no_banned_terms": true
+      },
+      "unknown_ids": [],
+      "missing_claim_ids": [],
+      "leftover_text": "  ."
+    },
+    {
+      "text": "Ollie Watkins replaced Harry Kane for England (61') then Mikel Oyarzabal replaced \u00c1lvaro Morata for Spain (68').",
+      "finding_ids": [
+        "structure.substitution.ENG.ollie_watkins",
+        "structure.substitution.ESP.mikel_oyarzabal"
+      ],
+      "passed": true,
+      "checks": {
+        "cites_valid_ids": true,
+        "claims_present": true,
+        "leftover_clean": true,
+        "sequence_requires_minute_bearing": true,
+        "no_banned_terms": true
+      },
+      "unknown_ids": [],
+      "missing_claim_ids": [],
+      "leftover_text": "  ."
+    },
+    {
+      "text": "Cole Palmer replaced Kobbie Mainoo for England (70') then Jude Bellingham moved from Left Wing to Right Defensive Midfield (70') and Phil Foden moved from Center Attacking Midfield to Left Wing (70').",
+      "finding_ids": [
+        "structure.substitution.ENG.cole_palmer",
+        "structure.role_change.ENG.jude_bellingham.p1",
+        "structure.role_change.ENG.phil_foden.p1"
+      ],
+      "passed": true,
+      "checks": {
+        "cites_valid_ids": true,
+        "claims_present": true,
+        "leftover_clean": true,
+        "sequence_requires_minute_bearing": true,
+        "no_banned_terms": true
+      },
+      "unknown_ids": [],
+      "missing_claim_ids": [],
+      "leftover_text": "    ."
+    },
+    {
+      "text": "Cole Palmer scored for England (73') and the score was level at 1-1 from 73' to 86'.",
+      "finding_ids": [
+        "context.goal.ENG.cole_palmer",
+        "context.game_state.level.s2"
+      ],
+      "passed": true,
+      "checks": {
+        "cites_valid_ids": true,
+        "claims_present": true,
+        "leftover_clean": true,
+        "sequence_requires_minute_bearing": true,
+        "no_banned_terms": true
+      },
+      "unknown_ids": [],
+      "missing_claim_ids": [],
+      "leftover_text": "  ."
+    },
+    {
+      "text": "Nacho replaced Robin Le Normand for Spain (83') then Mikel Oyarzabal scored for Spain (86').",
+      "finding_ids": [
+        "structure.substitution.ESP.nacho",
+        "context.goal.ESP.mikel_oyarzabal"
+      ],
+      "passed": true,
+      "checks": {
+        "cites_valid_ids": true,
+        "claims_present": true,
+        "leftover_clean": true,
+        "sequence_requires_minute_bearing": true,
+        "no_banned_terms": true
+      },
+      "unknown_ids": [],
+      "missing_claim_ids": [],
+      "leftover_text": "  ."
+    },
+    {
+      "text": "Spain led 2-1 from 86' to full time and Mikel Merino replaced Lamine Yamal for Spain (89').",
+      "finding_ids": [
+        "context.game_state.ESP.s3",
+        "structure.substitution.ESP.mikel_merino"
+      ],
+      "passed": true,
+      "checks": {
+        "cites_valid_ids": true,
+        "claims_present": true,
+        "leftover_clean": true,
+        "sequence_requires_minute_bearing": true,
+        "no_banned_terms": true
+      },
+      "unknown_ids": [],
+      "missing_claim_ids": [],
+      "leftover_text": "  ."
+    },
+    {
+      "text": "Ivan Toney replaced Phil Foden for England (90') then England changed from a 4-2-3-1 to a 4-1-2-1-2 (90').",
+      "finding_ids": [
+        "structure.substitution.ENG.ivan_toney",
+        "structure.formation_change.ENG.p2"
+      ],
+      "passed": true,
+      "checks": {
+        "cites_valid_ids": true,
+        "claims_present": true,
+        "leftover_clean": true,
+        "sequence_requires_minute_bearing": true,
+        "no_banned_terms": true
+      },
+      "unknown_ids": [],
+      "missing_claim_ids": [],
+      "leftover_text": "  ."
+    },
+    {
+      "text": "Bukayo Saka moved from Right Wing to Right Center Midfield (90') and Jude Bellingham moved from Right Defensive Midfield to Left Center Midfield (90') and Declan Rice moved from Left Defensive Midfield to Center Defensive Midfield (90').",
+      "finding_ids": [
+        "structure.role_change.ENG.bukayo_saka.p2",
+        "structure.role_change.ENG.jude_bellingham.p2",
+        "structure.role_change.ENG.declan_rice.p2"
+      ],
+      "passed": true,
+      "checks": {
+        "cites_valid_ids": true,
+        "claims_present": true,
+        "leftover_clean": true,
+        "sequence_requires_minute_bearing": true,
+        "no_banned_terms": true
+      },
+      "unknown_ids": [],
+      "missing_claim_ids": [],
+      "leftover_text": "    ."
+    },
+    {
+      "text": "Ollie Watkins moved from Center Forward to Right Center Forward (90') while Daniel Olmo moved from Center Attacking Midfield to Right Wing (90').",
+      "finding_ids": [
+        "structure.role_change.ENG.ollie_watkins.p2",
+        "structure.role_change.ESP.daniel_olmo.p1"
+      ],
+      "passed": true,
+      "checks": {
+        "cites_valid_ids": true,
+        "claims_present": true,
+        "leftover_clean": true,
+        "sequence_requires_minute_bearing": true,
+        "no_banned_terms": true
+      },
+      "unknown_ids": [],
+      "missing_claim_ids": [],
+      "leftover_text": "  ."
+    },
+    {
+      "text": "Spain beat England 2\u20131.",
+      "finding_ids": [
+        "context.final_score"
+      ],
+      "passed": true,
+      "checks": {
+        "cites_valid_ids": true,
+        "claims_present": true,
+        "leftover_clean": true,
+        "sequence_requires_minute_bearing": true,
+        "no_banned_terms": true
+      },
+      "unknown_ids": [],
+      "missing_claim_ids": [],
+      "leftover_text": "."
+    }
+  ]
+}
