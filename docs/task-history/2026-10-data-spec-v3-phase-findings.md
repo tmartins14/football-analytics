@@ -5,7 +5,7 @@ started: 2026-10-16
 completed: ongoing
 repo: football-analytics
 area: ai/match_summary
-related_prs: [22, 23]
+related_prs: [22, 23, 24]
 related_docs: [ai/match_summary/DATA-SPEC-v3.md, ai/match_summary/DATA-SPEC-v2.md, ai/match_summary/FAILURE-TAXONOMY.md, ai/match_summary/AUDIT-v3.md]
 tags: [ai-engineering, data-spec-v3, tactical-findings, player-contribution, statsbomb, llm]
 ---
@@ -57,10 +57,33 @@ outcome field at all; minutes-played is computable from existing
 stored anywhere yet. Four items flagged to Tyler as open questions rather
 than resolved in the audit doc itself (see `AUDIT-v3.md`'s closing summary).
 
+### 2026-10-16 — Tyler's audit decisions, and the socceraction dependency
+
+Tyler resolved all four open questions from `AUDIT-v3.md`: use
+`extract_progressive_map.py`'s existing definition for Q3 (drop v3's drafted
+fallback); backfill the missing Euro 2024 matches before Part 2 rather than
+relying on live fetches alone; add `socceraction` now rather than deferring
+to Part 3; both `"Won"` and `"Success In Play"` count as a successful
+Tackle/Interception for Q5.
+
+Added `socceraction` as a dependency. Installing it surfaced a real,
+unrelated-to-this-repo version conflict: `pandera` 0.17.2 (socceraction's
+own transitive dependency, via its Opta loader) declares no upper bound on
+`multimethod`, and `multimethod>=2.0` removed the `overload` API pandera
+needs — so `uv`'s resolver silently picked an incompatible combination that
+fails at import time, not at resolve time. Fixed by pinning
+`multimethod<2.0` directly in `pyproject.toml`. Confirmed
+`socceraction.data.statsbomb.StatsBombLoader(getter="local", root=...)`
+exists for loading a local StatsBomb JSON tree without the network-backed
+`statsbombpy` API path (settling audit item 8's open half). Full test suite
+(223 tests, unit + integration) still passes after the dependency bump and
+the `numpy`/`pandas`/`scipy` downgrades socceraction's own constraints
+pulled in.
+
 ## Outcome
 
-Part 0 complete and up for review. Parts 1+ (tier 1 extractors onward) wait
-on Tyler's decisions from the audit before starting.
+Part 0 complete, reviewed, and all four open questions resolved by Tyler.
+`socceraction` added as a dependency. Part 1 (tier 1 extractors) is next.
 
 ## Where to look for more
 
