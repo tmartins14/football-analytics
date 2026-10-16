@@ -1,0 +1,265 @@
+{
+  "teams": {
+    "England": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 134,
+        "defensive_actions_advanced": 17,
+        "value": 7.8824
+      },
+      "pressures_high": {
+        "count": 72,
+        "opponent_open_play_passes": 220,
+        "per_100": 32.73
+      },
+      "pressure_side": {
+        "left": 74,
+        "centre": 30,
+        "right": 61
+      }
+    },
+    "Spain": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 77,
+        "defensive_actions_advanced": 20,
+        "value": 3.85
+      },
+      "pressures_high": {
+        "count": 85,
+        "opponent_open_play_passes": 116,
+        "per_100": 73.28
+      },
+      "pressure_side": {
+        "left": 59,
+        "centre": 42,
+        "right": 61
+      }
+    }
+  },
+  "pressure_received": [
+    {
+      "player_id": 3834,
+      "display_name": "Ivan Toney",
+      "team": "England",
+      "on_ball_events": 1,
+      "under_pressure_events": 1,
+      "share": 1.0
+    },
+    {
+      "player_id": 3042,
+      "display_name": "Mikel Merino",
+      "team": "Spain",
+      "on_ball_events": 2,
+      "under_pressure_events": 1,
+      "share": 0.5
+    },
+    {
+      "player_id": 30714,
+      "display_name": "Jude Bellingham",
+      "team": "England",
+      "on_ball_events": 124,
+      "under_pressure_events": 56,
+      "share": 0.4516
+    },
+    {
+      "player_id": 3382,
+      "display_name": "Luke Shaw",
+      "team": "England",
+      "on_ball_events": 63,
+      "under_pressure_events": 27,
+      "share": 0.4286
+    },
+    {
+      "player_id": 10955,
+      "display_name": "Harry Kane",
+      "team": "England",
+      "on_ball_events": 34,
+      "under_pressure_events": 14,
+      "share": 0.4118
+    },
+    {
+      "player_id": 99174,
+      "display_name": "Kobbie Mainoo",
+      "team": "England",
+      "on_ball_events": 64,
+      "under_pressure_events": 26,
+      "share": 0.4062
+    },
+    {
+      "player_id": 34526,
+      "display_name": "Marc Guehi",
+      "team": "England",
+      "on_ball_events": 68,
+      "under_pressure_events": 26,
+      "share": 0.3824
+    },
+    {
+      "player_id": 22084,
+      "display_name": "Bukayo Saka",
+      "team": "England",
+      "on_ball_events": 81,
+      "under_pressure_events": 30,
+      "share": 0.3704
+    },
+    {
+      "player_id": 3477,
+      "display_name": "\u00c1lvaro Morata",
+      "team": "Spain",
+      "on_ball_events": 74,
+      "under_pressure_events": 26,
+      "share": 0.3514
+    },
+    {
+      "player_id": 3943,
+      "display_name": "Declan Rice",
+      "team": "England",
+      "on_ball_events": 108,
+      "under_pressure_events": 34,
+      "share": 0.3148
+    },
+    {
+      "player_id": 4354,
+      "display_name": "Phil Foden",
+      "team": "England",
+      "on_ball_events": 78,
+      "under_pressure_events": 24,
+      "share": 0.3077
+    },
+    {
+      "player_id": 68574,
+      "display_name": "Nico Williams",
+      "team": "Spain",
+      "on_ball_events": 133,
+      "under_pressure_events": 40,
+      "share": 0.3008
+    },
+    {
+      "player_id": 16532,
+      "display_name": "Daniel Olmo",
+      "team": "Spain",
+      "on_ball_events": 108,
+      "under_pressure_events": 30,
+      "share": 0.2778
+    },
+    {
+      "player_id": 39461,
+      "display_name": "Cole Palmer",
+      "team": "England",
+      "on_ball_events": 29,
+      "under_pressure_events": 8,
+      "share": 0.2759
+    },
+    {
+      "player_id": 6655,
+      "display_name": "Fabi\u00e1n Ruiz",
+      "team": "Spain",
+      "on_ball_events": 161,
+      "under_pressure_events": 42,
+      "share": 0.2609
+    },
+    {
+      "player_id": 24921,
+      "display_name": "Mart\u00edn Zubimendi",
+      "team": "Spain",
+      "on_ball_events": 62,
+      "under_pressure_events": 16,
+      "share": 0.2581
+    },
+    {
+      "player_id": 5721,
+      "display_name": "Daniel Carvajal",
+      "team": "Spain",
+      "on_ball_events": 157,
+      "under_pressure_events": 38,
+      "share": 0.242
+    },
+    {
+      "player_id": 316046,
+      "display_name": "Lamine Yamal",
+      "team": "Spain",
+      "on_ball_events": 103,
+      "under_pressure_events": 24,
+      "share": 0.233
+    },
+    {
+      "player_id": 3244,
+      "display_name": "John Stones",
+      "team": "England",
+      "on_ball_events": 83,
+      "under_pressure_events": 19,
+      "share": 0.2289
+    },
+    {
+      "player_id": 17620,
+      "display_name": "Marc Cucurella",
+      "team": "Spain",
+      "on_ball_events": 95,
+      "under_pressure_events": 21,
+      "share": 0.2211
+    },
+    {
+      "player_id": 3205,
+      "display_name": "Kyle Walker",
+      "team": "England",
+      "on_ball_events": 100,
+      "under_pressure_events": 17,
+      "share": 0.17
+    },
+    {
+      "player_id": 6685,
+      "display_name": "Mikel Oyarzabal",
+      "team": "Spain",
+      "on_ball_events": 18,
+      "under_pressure_events": 3,
+      "share": 0.1667
+    },
+    {
+      "player_id": 6765,
+      "display_name": "Rodri",
+      "team": "Spain",
+      "on_ball_events": 71,
+      "under_pressure_events": 11,
+      "share": 0.1549
+    },
+    {
+      "player_id": 5202,
+      "display_name": "Nacho",
+      "team": "Spain",
+      "on_ball_events": 7,
+      "under_pressure_events": 1,
+      "share": 0.1429
+    },
+    {
+      "player_id": 4353,
+      "display_name": "Aymeric Laporte",
+      "team": "Spain",
+      "on_ball_events": 167,
+      "under_pressure_events": 23,
+      "share": 0.1377
+    },
+    {
+      "player_id": 22128,
+      "display_name": "Robin Le Normand",
+      "team": "Spain",
+      "on_ball_events": 168,
+      "under_pressure_events": 21,
+      "share": 0.125
+    },
+    {
+      "player_id": 4760,
+      "display_name": "Ollie Watkins",
+      "team": "England",
+      "on_ball_events": 11,
+      "under_pressure_events": 1,
+      "share": 0.0909
+    }
+  ],
+  "metadata": {
+    "match_id": 3943043,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Spain vs England",
+    "open_play_filter": "play_pattern + pass_type",
+    "ppda_zone": "opponent's own 60% (x < 72 in the opponent's own frame)",
+    "defensive_action_zone": "pressing team's own half+ (x >= 48 in its own frame)",
+    "pressures_high_zone": "opponent half (x >= 60 in the pressing team's own frame)"
+  }
+}

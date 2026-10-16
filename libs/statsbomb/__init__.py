@@ -21,6 +21,10 @@ from .extract_heatmap import extract_heatmap
 from .extract_pass_network import extract_pass_network
 from .extract_formation import extract_formation
 from .extract_team_shape import extract_team_shape_on_ball, extract_team_shape_off_ball
+from .extract_chance_creation import extract_chance_creation
+from .extract_progression import extract_progression
+from .extract_pressing import extract_pressing
+from .extract_defending import extract_defending
 from .derive_tactical_findings import derive_tactical_findings
 from .extract_xt import extract_xt
 from .extract_momentum import extract_momentum
@@ -38,6 +42,10 @@ __all__ = [
     "extract_formation",
     "extract_team_shape_on_ball",
     "extract_team_shape_off_ball",
+    "extract_chance_creation",
+    "extract_progression",
+    "extract_pressing",
+    "extract_defending",
     "derive_tactical_findings",
     "extract_xt",
     "extract_momentum",

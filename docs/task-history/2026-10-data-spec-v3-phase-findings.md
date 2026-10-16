@@ -5,7 +5,7 @@ started: 2026-10-16
 completed: ongoing
 repo: football-analytics
 area: ai/match_summary
-related_prs: [22, 23]
+related_prs: [22, 23, <PR_NUMBER>]
 related_docs: [ai/match_summary/DATA-SPEC-v3.md, ai/match_summary/DATA-SPEC-v2.md, ai/match_summary/FAILURE-TAXONOMY.md, ai/match_summary/AUDIT-v3.md]
 tags: [ai-engineering, data-spec-v3, tactical-findings, player-contribution, statsbomb, llm]
 ---
@@ -57,10 +57,42 @@ outcome field at all; minutes-played is computable from existing
 stored anywhere yet. Four items flagged to Tyler as open questions rather
 than resolved in the audit doc itself (see `AUDIT-v3.md`'s closing summary).
 
+### 2026-10-16 — Part 1 (tier 1 extractors)
+
+Four new `libs/statsbomb/` modules, one per Q1-Q6 group, each emitting raw
+values only (no suppression thresholds, no modal-share/tercile labeling, no
+claim rendering — that split stays `derive_tactical_findings.py`'s job in
+Part 4, same as the existing v2 extractors): `extract_chance_creation.py`
+(Q1 shot zone/source mix, Q2 per-player xA/key-pass creators),
+`extract_progression.py` (Q3 side bias, pass/carry mode mix, per-player
+volume — reusing `extract_progressive_map`'s existing 25%-closer-to-goal
+rule outright, per Tyler's audit decision, not the spec's originally-drafted
+fallback), `extract_pressing.py` (Q4 PPDA/high-pressure counts, Q6 per-player
+pressure received — one combined file, since both need cross-team
+bookkeeping), and `extract_defending.py` (Q5 defensive action height, high
+turnovers, ball-winning zone by band; `block_height` itself needed no new
+work — it's already v2's `team_shape` centroid, only the tercile label is
+new and that's Part 4's). Added a small `side_group()` coordinate helper to
+`utils.py` (v3's left/centre/right team-level grouping, built on the
+existing `lane_for_y`).
+
+Every non-trivial value was independently hand-recomputed against raw
+`sb.events()` with ad hoc pandas filters written separately from the
+extractor code (the bar DATA-SPEC.md sets) — PPDA for both teams, Spain's
+win-zone and defensive-action-height totals, both teams' shot/npxG counts —
+and Spain's and England's progressive-action totals were additionally
+cross-checked against the pre-existing `extract_progressive_map` extractor's
+own count, a second independent source agreeing exactly. Wired into
+`libs/statsbomb/__init__.py` and `scripts/extract_euro2024.py`'s batch
+pipeline (ran end-to-end for match 3943043, output committed). Full test
+suite (295 tests after this PR's additions) and the docs gate both pass.
+
 ## Outcome
 
-Part 0 complete and up for review. Parts 1+ (tier 1 extractors onward) wait
-on Tyler's decisions from the audit before starting.
+Parts 0 and 1 complete. Part 2 (reference data: `reference_distributions.json`,
+`xt_grid_v1.json`, built from these same four extractors run across all 51
+Euro 2024 matches) is next — Tyler's audit decision was to backfill the 7
+missing match directories first rather than rely on live fetches alone.
 
 ## Where to look for more
 
