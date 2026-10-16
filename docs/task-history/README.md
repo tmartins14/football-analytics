@@ -17,6 +17,7 @@ to find what you need without opening every doc.
 | Spec Kit scaffolding, SPEC_TEMPLATE.md, and docs/ARCHITECTURE.md's move | done | 2026-09-12 | `docs/`, `.specify/` | [2026-09-spec-kit-scaffolding.md](2026-09-spec-kit-scaffolding.md) |
 | Module 2: sampling decision and the model/effort comparison harness | done | 2026-09-15 → 2026-09-22 | `ai/match_summary` | [2026-09-module2-sampling-and-comparison.md](2026-09-module2-sampling-and-comparison.md) |
 | DATA-SPEC-v2: the tactical findings layer | in-progress | 2026-10-12 → ongoing | `libs/statsbomb`, `ai/match_summary` | [2026-10-data-spec-v2-tactical-findings.md](2026-10-data-spec-v2-tactical-findings.md) |
+| DATA-SPEC-v3: phase findings and player contribution | in-progress | 2026-10-16 → ongoing | `ai/match_summary` | [2026-10-data-spec-v3-phase-findings.md](2026-10-data-spec-v3-phase-findings.md) |
 
 ## For an agent landing here cold
 
