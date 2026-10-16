@@ -412,20 +412,7 @@ Unit tests for `display_minute`: (0, 1) → `1'`; (44, 1) → `45'`; (45, 1) →
 - Write `VERIFICATION-3943043-v2.md` from `grounding_report.json` by script, with the before/after defect table. Append the D6/D7 note to the v1 file.
 - Update `FAILURE-TAXONOMY.md` with anything new the three runs or the manual read turn up, including failures that pass `check_grounding` (those are the Module 3 judge's job).
 
-### Part 6 — New categories, one PR each
-
-**Starts only after the Module 3 judge exists**, so each category's before/after
-measures whether the summary got better, not just that nothing broke.
-
-Order: **chance creation** first (it is the raw material for explaining how
-goals happened), then progression (side bias lands here), pressing,
-transitions, set pieces. Each PR follows the same steps:
-
-1. Definitions, thresholds and claim templates added to this spec, accepted by Tyler.
-2. Extractor built or extended, with unit tests against a hand-checked sample (the bar in DATA-SPEC.md).
-3. Findings, claim templates and vocabulary rows added.
-4. Integration test values and claims for 3943043.
-5. Part 5 re-run plus the Module 3 judge, so each category has its own before/after on both facts and quality.
+### Part 6 — superseded by [DATA-SPEC-v3.md](./DATA-SPEC-v3.md)
 
 ## Conventions
 
