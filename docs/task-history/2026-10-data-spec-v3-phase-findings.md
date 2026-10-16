@@ -5,8 +5,8 @@ started: 2026-10-16
 completed: ongoing
 repo: football-analytics
 area: ai/match_summary
-related_prs: [22]
-related_docs: [ai/match_summary/DATA-SPEC-v3.md, ai/match_summary/DATA-SPEC-v2.md, ai/match_summary/FAILURE-TAXONOMY.md]
+related_prs: [22, 23]
+related_docs: [ai/match_summary/DATA-SPEC-v3.md, ai/match_summary/DATA-SPEC-v2.md, ai/match_summary/FAILURE-TAXONOMY.md, ai/match_summary/AUDIT-v3.md]
 tags: [ai-engineering, data-spec-v3, tactical-findings, player-contribution, statsbomb, llm]
 ---
 
@@ -40,14 +40,33 @@ Player Contribution rating (Q7) to replace model-chosen "key performers."
 section replaced with a one-line pointer to it — the new spec fully owns the
 "new finding categories" scope v2's Part 6 used to describe.
 
+### 2026-10-16 — Part 0 (data audit)
+
+`AUDIT-v3.md` added, answering all eight of v3's Part 0 questions read-only
+against this repo's code and committed match data (no raw-events network
+call made). Confirmed: `obv_*` fields are categorically absent from open
+data (paid-tier only); `progressive_map` already exists in
+`extract_progressive_map.py` with a definition that conflicts with v3's own
+drafted fallback; only 44 of 51 Euro 2024 matches are extracted locally (one
+empty) and nothing is cached raw, so reference-data building depends on live
+network fetches; `socceraction` isn't installed or declared anywhere in this
+project; successful-Tackle/Interception outcome values are two
+non-overlapping strings each, not one clean value, and Ball Recovery has no
+outcome field at all; minutes-played is computable from existing
+`substitutes.json` plus `extract_formation.py`'s match-end minute but isn't
+stored anywhere yet. Four items flagged to Tyler as open questions rather
+than resolved in the audit doc itself (see `AUDIT-v3.md`'s closing summary).
+
 ## Outcome
 
-Docs landed; Part 0 (data audit) is next, not yet started as of this PR.
+Part 0 complete and up for review. Parts 1+ (tier 1 extractors onward) wait
+on Tyler's decisions from the audit before starting.
 
 ## Where to look for more
 
 - `ai/match_summary/DATA-SPEC-v3.md` — the authoritative spec (do not edit
   this as an agent — see this repo's `CLAUDE.md`).
+- `ai/match_summary/AUDIT-v3.md` — the Part 0 audit and its open questions.
 - `ai/match_summary/DATA-SPEC-v2.md` — the superseded Part 6 and everything
   v3 still inherits (seam rules, finding schema, `check_grounding`, etc).
 - `ai/match_summary/FAILURE-TAXONOMY.md` — D10/D11, the failures this spec
