@@ -5,7 +5,7 @@ started: 2026-10-16
 completed: ongoing
 repo: football-analytics
 area: ai/match_summary
-related_prs: [22, 23, <PR_NUMBER>]
+related_prs: [22, 23, 24]
 related_docs: [ai/match_summary/DATA-SPEC-v3.md, ai/match_summary/DATA-SPEC-v2.md, ai/match_summary/FAILURE-TAXONOMY.md, ai/match_summary/AUDIT-v3.md]
 tags: [ai-engineering, data-spec-v3, tactical-findings, player-contribution, statsbomb, llm]
 ---
