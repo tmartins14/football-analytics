@@ -1,0 +1,619 @@
+{
+  "goals": [
+    {
+      "window": {
+        "anchor_event_id": "4da8ff2f-a37c-46e3-8088-c7923ec938d6",
+        "start_event_id": "6f0b6feb-4d91-457a-8b17-4c43088e6234",
+        "end_event_id": "4da8ff2f-a37c-46e3-8088-c7923ec938d6",
+        "period": 1,
+        "window_seconds": 10.0,
+        "t_span_seconds": 10.467
+      },
+      "frames": [
+        {
+          "event_id": "6f0b6feb-4d91-457a-8b17-4c43088e6234",
+          "t_seconds": 0.0,
+          "team": "Germany",
+          "event_type": "Pass",
+          "ball_x": 55.4,
+          "ball_y": 9.7,
+          "ball_end_x": 61.9,
+          "ball_end_y": 17.8,
+          "actor": "Jonathan Tah",
+          "outcome": null
+        },
+        {
+          "event_id": "26ab700b-93b9-4911-ad36-b92869d63b02",
+          "t_seconds": 0.807,
+          "team": "Germany",
+          "event_type": "Carry",
+          "ball_x": 61.9,
+          "ball_y": 17.8,
+          "ball_end_x": 62.6,
+          "ball_end_y": 19.5,
+          "actor": "Toni Kroos",
+          "outcome": null
+        },
+        {
+          "event_id": "b9a3a3e3-e50e-45e8-b68e-41a29cde2a8b",
+          "t_seconds": 3.733,
+          "team": "Germany",
+          "event_type": "Pass",
+          "ball_x": 62.6,
+          "ball_y": 19.5,
+          "ball_end_x": 90.9,
+          "ball_end_y": 73.2,
+          "actor": "Toni Kroos",
+          "outcome": null
+        },
+        {
+          "event_id": "cd500913-5af5-4559-a29e-e94857328b1e",
+          "t_seconds": 6.822,
+          "team": "Germany",
+          "event_type": "Carry",
+          "ball_x": 90.9,
+          "ball_y": 73.2,
+          "ball_end_x": 98.2,
+          "ball_end_y": 61.1,
+          "actor": "Joshua Kimmich",
+          "outcome": null
+        },
+        {
+          "event_id": "4e613799-ca71-4728-ad04-f021a56cb018",
+          "t_seconds": 9.362,
+          "team": "Germany",
+          "event_type": "Pass",
+          "ball_x": 98.2,
+          "ball_y": 61.1,
+          "ball_end_x": 101.1,
+          "ball_end_y": 42.0,
+          "actor": "Joshua Kimmich",
+          "outcome": null
+        },
+        {
+          "event_id": "4da8ff2f-a37c-46e3-8088-c7923ec938d6",
+          "t_seconds": 10.467,
+          "team": "Germany",
+          "event_type": "Shot",
+          "ball_x": 101.1,
+          "ball_y": 42.0,
+          "ball_end_x": 120.0,
+          "ball_end_y": 36.9,
+          "actor": "Florian Wirtz",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "4da8ff2f-a37c-46e3-8088-c7923ec938d6",
+          "minute": 9,
+          "second": 55,
+          "scorer": "Florian Wirtz",
+          "team": "Germany"
+        }
+      },
+      "metadata": {
+        "match_id": 3930158,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Germany vs Scotland"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "61d6d669-74c5-4297-a211-eb540edfdfec",
+        "start_event_id": "80d532be-9be1-4f89-a6e3-2590e382b65e",
+        "end_event_id": "61d6d669-74c5-4297-a211-eb540edfdfec",
+        "period": 1,
+        "window_seconds": 10.0,
+        "t_span_seconds": 13.959
+      },
+      "frames": [
+        {
+          "event_id": "80d532be-9be1-4f89-a6e3-2590e382b65e",
+          "t_seconds": 0.0,
+          "team": "Germany",
+          "event_type": "Carry",
+          "ball_x": 44.3,
+          "ball_y": 32.7,
+          "ball_end_x": 53.8,
+          "ball_end_y": 38.2,
+          "actor": "Toni Kroos",
+          "outcome": null
+        },
+        {
+          "event_id": "73d8201b-9967-41df-bf69-021827bba575",
+          "t_seconds": 4.56,
+          "team": "Germany",
+          "event_type": "Pass",
+          "ball_x": 53.8,
+          "ball_y": 38.2,
+          "ball_end_x": 67.6,
+          "ball_end_y": 40.4,
+          "actor": "Toni Kroos",
+          "outcome": null
+        },
+        {
+          "event_id": "8d7b8194-0d0c-4d75-8338-0cbb8e994529",
+          "t_seconds": 5.141,
+          "team": "Scotland",
+          "event_type": "Pressure",
+          "ball_x": 56.5,
+          "ball_y": 36.4,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Callum McGregor",
+          "outcome": null
+        },
+        {
+          "event_id": "740461e0-327e-42c9-a16e-580243eb03b9",
+          "t_seconds": 5.41,
+          "team": "Germany",
+          "event_type": "Carry",
+          "ball_x": 67.6,
+          "ball_y": 40.4,
+          "ball_end_x": 79.4,
+          "ball_end_y": 50.1,
+          "actor": "\u0130lkay G\u00fcndo\u011fan",
+          "outcome": null
+        },
+        {
+          "event_id": "c208c541-7ba3-45de-81c7-031c89215e51",
+          "t_seconds": 8.046,
+          "team": "Germany",
+          "event_type": "Pass",
+          "ball_x": 79.4,
+          "ball_y": 50.1,
+          "ball_end_x": 107.5,
+          "ball_end_y": 31.1,
+          "actor": "\u0130lkay G\u00fcndo\u011fan",
+          "outcome": null
+        },
+        {
+          "event_id": "4afe5f0d-33ba-45a4-bb28-70c470422624",
+          "t_seconds": 10.135,
+          "team": "Germany",
+          "event_type": "Carry",
+          "ball_x": 107.5,
+          "ball_y": 31.1,
+          "ball_end_x": 110.7,
+          "ball_end_y": 33.4,
+          "actor": "Kai Havertz",
+          "outcome": null
+        },
+        {
+          "event_id": "39ecbfb3-2f2b-481b-ac37-541b547853e5",
+          "t_seconds": 11.802,
+          "team": "Scotland",
+          "event_type": "Pressure",
+          "ball_x": 10.7,
+          "ball_y": 46.3,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Ryan Porteous",
+          "outcome": null
+        },
+        {
+          "event_id": "0947d6e2-d41d-4424-97e7-be4c874e22ac",
+          "t_seconds": 11.966,
+          "team": "Germany",
+          "event_type": "Pass",
+          "ball_x": 110.7,
+          "ball_y": 33.4,
+          "ball_end_x": 106.2,
+          "ball_end_y": 35.3,
+          "actor": "Kai Havertz",
+          "outcome": null
+        },
+        {
+          "event_id": "41b1afeb-6b58-49a4-be78-1eadb5913f59",
+          "t_seconds": 12.464,
+          "team": "Scotland",
+          "event_type": "Pressure",
+          "ball_x": 13.9,
+          "ball_y": 44.8,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Callum McGregor",
+          "outcome": null
+        },
+        {
+          "event_id": "8a45dac4-ae07-4651-8945-8a78c7f536b9",
+          "t_seconds": 12.665,
+          "team": "Germany",
+          "event_type": "Carry",
+          "ball_x": 106.2,
+          "ball_y": 35.3,
+          "ball_end_x": 106.2,
+          "ball_end_y": 35.3,
+          "actor": "Jamal Musiala",
+          "outcome": null
+        },
+        {
+          "event_id": "381193fa-54fb-44ad-8db9-1aff8b090395",
+          "t_seconds": 12.785,
+          "team": "Germany",
+          "event_type": "Carry",
+          "ball_x": 106.2,
+          "ball_y": 35.3,
+          "ball_end_x": 106.4,
+          "ball_end_y": 35.4,
+          "actor": "Jamal Musiala",
+          "outcome": null
+        },
+        {
+          "event_id": "61d6d669-74c5-4297-a211-eb540edfdfec",
+          "t_seconds": 13.959,
+          "team": "Germany",
+          "event_type": "Shot",
+          "ball_x": 106.4,
+          "ball_y": 35.4,
+          "ball_end_x": 120.0,
+          "ball_end_y": 38.8,
+          "actor": "Jamal Musiala",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "61d6d669-74c5-4297-a211-eb540edfdfec",
+          "minute": 18,
+          "second": 43,
+          "scorer": "Jamal Musiala",
+          "team": "Germany"
+        }
+      },
+      "metadata": {
+        "match_id": 3930158,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Germany vs Scotland"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "23d46e0f-ada5-4380-9484-eb5c9b315986",
+        "start_event_id": "23d46e0f-ada5-4380-9484-eb5c9b315986",
+        "end_event_id": "23d46e0f-ada5-4380-9484-eb5c9b315986",
+        "period": 1,
+        "window_seconds": 10.0,
+        "t_span_seconds": 267.711
+      },
+      "frames": [
+        {
+          "event_id": "23d46e0f-ada5-4380-9484-eb5c9b315986",
+          "t_seconds": 267.711,
+          "team": "Germany",
+          "event_type": "Shot",
+          "ball_x": 108.1,
+          "ball_y": 40.1,
+          "ball_end_x": 120.0,
+          "ball_end_y": 38.3,
+          "actor": "Kai Havertz",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "23d46e0f-ada5-4380-9484-eb5c9b315986",
+          "minute": 45,
+          "second": 35,
+          "scorer": "Kai Havertz",
+          "team": "Germany"
+        }
+      },
+      "metadata": {
+        "match_id": 3930158,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Germany vs Scotland"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "3ef71cbe-1513-4041-8c7f-4aff916c636e",
+        "start_event_id": "36f03c30-2b0f-4d6e-b7ea-ef9d318ba943",
+        "end_event_id": "3ef71cbe-1513-4041-8c7f-4aff916c636e",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 10.203
+      },
+      "frames": [
+        {
+          "event_id": "36f03c30-2b0f-4d6e-b7ea-ef9d318ba943",
+          "t_seconds": 0.0,
+          "team": "Germany",
+          "event_type": "Pass",
+          "ball_x": 49.1,
+          "ball_y": 11.1,
+          "ball_end_x": 63.0,
+          "ball_end_y": 1.6,
+          "actor": "Maximilian Mittelst\u00e4dt",
+          "outcome": null
+        },
+        {
+          "event_id": "6a1f1ae3-e879-4082-b886-24c1da5eb1dc",
+          "t_seconds": 1.213,
+          "team": "Germany",
+          "event_type": "Carry",
+          "ball_x": 63.0,
+          "ball_y": 1.6,
+          "ball_end_x": 96.5,
+          "ball_end_y": 19.2,
+          "actor": "Jamal Musiala",
+          "outcome": null
+        },
+        {
+          "event_id": "1bc56061-c9d2-4f51-8330-318f517d028e",
+          "t_seconds": 7.597,
+          "team": "Germany",
+          "event_type": "Pass",
+          "ball_x": 96.5,
+          "ball_y": 19.2,
+          "ball_end_x": 105.5,
+          "ball_end_y": 34.1,
+          "actor": "Jamal Musiala",
+          "outcome": null
+        },
+        {
+          "event_id": "70a72a9e-6e11-4161-8712-8f8894285c5b",
+          "t_seconds": 8.47,
+          "team": "Germany",
+          "event_type": "Carry",
+          "ball_x": 105.5,
+          "ball_y": 34.1,
+          "ball_end_x": 105.5,
+          "ball_end_y": 34.1,
+          "actor": "\u0130lkay G\u00fcndo\u011fan",
+          "outcome": null
+        },
+        {
+          "event_id": "a03c8c9d-9652-42da-ba82-11733801c8e2",
+          "t_seconds": 8.806,
+          "team": "Scotland",
+          "event_type": "Ball Recovery",
+          "ball_x": 15.9,
+          "ball_y": 47.7,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Grant Campbell Hanley",
+          "outcome": null
+        },
+        {
+          "event_id": "06cb1433-c29f-4083-9b98-943a39f787a1",
+          "t_seconds": 9.646,
+          "team": "Germany",
+          "event_type": "Ball Recovery",
+          "ball_x": 104.2,
+          "ball_y": 36.6,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Niclas F\u00fcllkrug",
+          "outcome": null
+        },
+        {
+          "event_id": "291536db-6d10-4061-8003-4df98fca7e2a",
+          "t_seconds": 9.646,
+          "team": "Germany",
+          "event_type": "Carry",
+          "ball_x": 104.2,
+          "ball_y": 36.6,
+          "ball_end_x": 104.1,
+          "ball_end_y": 39.3,
+          "actor": "Niclas F\u00fcllkrug",
+          "outcome": null
+        },
+        {
+          "event_id": "3ef71cbe-1513-4041-8c7f-4aff916c636e",
+          "t_seconds": 10.203,
+          "team": "Germany",
+          "event_type": "Shot",
+          "ball_x": 104.1,
+          "ball_y": 39.3,
+          "ball_end_x": 120.0,
+          "ball_end_y": 43.6,
+          "actor": "Niclas F\u00fcllkrug",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "3ef71cbe-1513-4041-8c7f-4aff916c636e",
+          "minute": 67,
+          "second": 42,
+          "scorer": "Niclas F\u00fcllkrug",
+          "team": "Germany"
+        }
+      },
+      "metadata": {
+        "match_id": 3930158,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Germany vs Scotland"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "8143fdce-e50e-43ec-9231-f4110743d2b8",
+        "start_event_id": "3fc2c612-d098-44a5-9ee2-d819e3dd7192",
+        "end_event_id": "8143fdce-e50e-43ec-9231-f4110743d2b8",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 11.167
+      },
+      "frames": [
+        {
+          "event_id": "3fc2c612-d098-44a5-9ee2-d819e3dd7192",
+          "t_seconds": 0.0,
+          "team": "Germany",
+          "event_type": "Pass",
+          "ball_x": 99.2,
+          "ball_y": 22.2,
+          "ball_end_x": 118.3,
+          "ball_end_y": 2.2,
+          "actor": "Leroy San\u00e9",
+          "outcome": null
+        },
+        {
+          "event_id": "d180e1cd-9dc1-4aba-ab7e-78422b31e0af",
+          "t_seconds": 3.426,
+          "team": "Germany",
+          "event_type": "Carry",
+          "ball_x": 118.3,
+          "ball_y": 2.2,
+          "ball_end_x": 117.1,
+          "ball_end_y": 2.0,
+          "actor": "Maximilian Mittelst\u00e4dt",
+          "outcome": null
+        },
+        {
+          "event_id": "8147cfd0-2028-4d70-b31c-5872e7e17d59",
+          "t_seconds": 3.64,
+          "team": "Scotland",
+          "event_type": "Pressure",
+          "ball_x": 2.8,
+          "ball_y": 75.5,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Anthony Ralston",
+          "outcome": null
+        },
+        {
+          "event_id": "081e6af3-01fe-4303-961f-6c14c6c99827",
+          "t_seconds": 4.004,
+          "team": "Germany",
+          "event_type": "Pass",
+          "ball_x": 117.1,
+          "ball_y": 2.0,
+          "ball_end_x": 100.2,
+          "ball_end_y": 4.2,
+          "actor": "Maximilian Mittelst\u00e4dt",
+          "outcome": null
+        },
+        {
+          "event_id": "f36958aa-e540-4b7c-a392-8b136aa32ae9",
+          "t_seconds": 5.67,
+          "team": "Germany",
+          "event_type": "Carry",
+          "ball_x": 100.2,
+          "ball_y": 4.2,
+          "ball_end_x": 102.7,
+          "ball_end_y": 4.5,
+          "actor": "Pascal Gro\u00df",
+          "outcome": null
+        },
+        {
+          "event_id": "7cd2bc72-7deb-4ad0-905c-b02e2d0825bd",
+          "t_seconds": 6.87,
+          "team": "Germany",
+          "event_type": "Pass",
+          "ball_x": 102.7,
+          "ball_y": 4.5,
+          "ball_end_x": 99.2,
+          "ball_end_y": 19.2,
+          "actor": "Pascal Gro\u00df",
+          "outcome": null
+        },
+        {
+          "event_id": "537d25b5-479b-4590-ac43-ecb458d1ed72",
+          "t_seconds": 7.597,
+          "team": "Germany",
+          "event_type": "Carry",
+          "ball_x": 99.2,
+          "ball_y": 19.2,
+          "ball_end_x": 98.7,
+          "ball_end_y": 19.1,
+          "actor": "Leroy San\u00e9",
+          "outcome": null
+        },
+        {
+          "event_id": "a0f7528b-9bbe-4900-8fdb-87b09773ed29",
+          "t_seconds": 8.084,
+          "team": "Germany",
+          "event_type": "Pass",
+          "ball_x": 98.7,
+          "ball_y": 19.1,
+          "ball_end_x": 110.3,
+          "ball_end_y": 23.9,
+          "actor": "Leroy San\u00e9",
+          "outcome": null
+        },
+        {
+          "event_id": "c36d2933-7c7b-4c9d-9447-14f33084a2ad",
+          "t_seconds": 8.784,
+          "team": "Scotland",
+          "event_type": "Pressure",
+          "ball_x": 9.4,
+          "ball_y": 50.0,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Jack Hendry",
+          "outcome": null
+        },
+        {
+          "event_id": "3e7a8ecf-d30f-4c4f-880f-692600b2c5b5",
+          "t_seconds": 8.896,
+          "team": "Germany",
+          "event_type": "Pass",
+          "ball_x": 109.3,
+          "ball_y": 28.5,
+          "ball_end_x": 96.5,
+          "ball_end_y": 36.6,
+          "actor": "Thomas M\u00fcller",
+          "outcome": null
+        },
+        {
+          "event_id": "fa52990a-c921-4f44-bb05-b9c48c0a6146",
+          "t_seconds": 10.287,
+          "team": "Germany",
+          "event_type": "Carry",
+          "ball_x": 96.5,
+          "ball_y": 36.6,
+          "ball_end_x": 98.5,
+          "ball_end_y": 39.4,
+          "actor": "Emre Can",
+          "outcome": null
+        },
+        {
+          "event_id": "bf8b231d-1492-4b4e-8766-acf930835990",
+          "t_seconds": 10.921,
+          "team": "Scotland",
+          "event_type": "Pressure",
+          "ball_x": 15.5,
+          "ball_y": 43.0,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Grant Campbell Hanley",
+          "outcome": null
+        },
+        {
+          "event_id": "8143fdce-e50e-43ec-9231-f4110743d2b8",
+          "t_seconds": 11.167,
+          "team": "Germany",
+          "event_type": "Shot",
+          "ball_x": 98.5,
+          "ball_y": 39.4,
+          "ball_end_x": 120.0,
+          "ball_end_y": 43.5,
+          "actor": "Emre Can",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "8143fdce-e50e-43ec-9231-f4110743d2b8",
+          "minute": 92,
+          "second": 32,
+          "scorer": "Emre Can",
+          "team": "Germany"
+        }
+      },
+      "metadata": {
+        "match_id": 3930158,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Germany vs Scotland"
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3930158,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Germany vs Scotland"
+  }
+}

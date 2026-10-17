@@ -1,0 +1,289 @@
+{
+  "teams": {
+    "Germany": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 67,
+        "defensive_actions_advanced": 24,
+        "value": 2.7917
+      },
+      "pressures_high": {
+        "count": 77,
+        "opponent_open_play_passes": 69,
+        "per_100": 111.59
+      },
+      "pressure_side": {
+        "left": 34,
+        "centre": 22,
+        "right": 65
+      }
+    },
+    "Scotland": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 237,
+        "defensive_actions_advanced": 10,
+        "value": 23.7
+      },
+      "pressures_high": {
+        "count": 48,
+        "opponent_open_play_passes": 366,
+        "per_100": 13.11
+      },
+      "pressure_side": {
+        "left": 54,
+        "centre": 44,
+        "right": 41
+      }
+    }
+  },
+  "pressure_received": [
+    {
+      "player_id": 9974,
+      "display_name": "John McGinn",
+      "team": "Scotland",
+      "on_ball_events": 43,
+      "under_pressure_events": 22,
+      "share": 0.5116
+    },
+    {
+      "player_id": 9466,
+      "display_name": "Che Adams",
+      "team": "Scotland",
+      "on_ball_events": 30,
+      "under_pressure_events": 13,
+      "share": 0.4333
+    },
+    {
+      "player_id": 8966,
+      "display_name": "Kai Havertz",
+      "team": "Germany",
+      "on_ball_events": 46,
+      "under_pressure_events": 19,
+      "share": 0.413
+    },
+    {
+      "player_id": 22308,
+      "display_name": "Anthony Ralston",
+      "team": "Scotland",
+      "on_ball_events": 61,
+      "under_pressure_events": 25,
+      "share": 0.4098
+    },
+    {
+      "player_id": 39565,
+      "display_name": "Jamal Musiala",
+      "team": "Germany",
+      "on_ball_events": 113,
+      "under_pressure_events": 45,
+      "share": 0.3982
+    },
+    {
+      "player_id": 10002,
+      "display_name": "Scott McKenna",
+      "team": "Scotland",
+      "on_ball_events": 14,
+      "under_pressure_events": 5,
+      "share": 0.3571
+    },
+    {
+      "player_id": 9478,
+      "display_name": "Kenneth McLean",
+      "team": "Scotland",
+      "on_ball_events": 23,
+      "under_pressure_events": 8,
+      "share": 0.3478
+    },
+    {
+      "player_id": 3620,
+      "display_name": "Scott McTominay",
+      "team": "Scotland",
+      "on_ball_events": 58,
+      "under_pressure_events": 20,
+      "share": 0.3448
+    },
+    {
+      "player_id": 10540,
+      "display_name": "Kieran Tierney",
+      "team": "Scotland",
+      "on_ball_events": 89,
+      "under_pressure_events": 30,
+      "share": 0.3371
+    },
+    {
+      "player_id": 3053,
+      "display_name": "Leroy San\u00e9",
+      "team": "Germany",
+      "on_ball_events": 46,
+      "under_pressure_events": 15,
+      "share": 0.3261
+    },
+    {
+      "player_id": 12510,
+      "display_name": "Ryan Christie",
+      "team": "Scotland",
+      "on_ball_events": 73,
+      "under_pressure_events": 23,
+      "share": 0.3151
+    },
+    {
+      "player_id": 3655,
+      "display_name": "Andrew Robertson",
+      "team": "Scotland",
+      "on_ball_events": 83,
+      "under_pressure_events": 25,
+      "share": 0.3012
+    },
+    {
+      "player_id": 38169,
+      "display_name": "Lawrence Shankland",
+      "team": "Scotland",
+      "on_ball_events": 10,
+      "under_pressure_events": 3,
+      "share": 0.3
+    },
+    {
+      "player_id": 10534,
+      "display_name": "Callum McGregor",
+      "team": "Scotland",
+      "on_ball_events": 46,
+      "under_pressure_events": 13,
+      "share": 0.2826
+    },
+    {
+      "player_id": 3493,
+      "display_name": "Emre Can",
+      "team": "Germany",
+      "on_ball_events": 25,
+      "under_pressure_events": 7,
+      "share": 0.28
+    },
+    {
+      "player_id": 9481,
+      "display_name": "Grant Campbell Hanley",
+      "team": "Scotland",
+      "on_ball_events": 16,
+      "under_pressure_events": 4,
+      "share": 0.25
+    },
+    {
+      "player_id": 8546,
+      "display_name": "Niclas F\u00fcllkrug",
+      "team": "Germany",
+      "on_ball_events": 12,
+      "under_pressure_events": 3,
+      "share": 0.25
+    },
+    {
+      "player_id": 5562,
+      "display_name": "Thomas M\u00fcller",
+      "team": "Germany",
+      "on_ball_events": 20,
+      "under_pressure_events": 5,
+      "share": 0.25
+    },
+    {
+      "player_id": 18797,
+      "display_name": "Ryan Porteous",
+      "team": "Scotland",
+      "on_ball_events": 50,
+      "under_pressure_events": 12,
+      "share": 0.24
+    },
+    {
+      "player_id": 31067,
+      "display_name": "Billy Gilmour",
+      "team": "Scotland",
+      "on_ball_events": 21,
+      "under_pressure_events": 5,
+      "share": 0.2381
+    },
+    {
+      "player_id": 10287,
+      "display_name": "\u0130lkay G\u00fcndo\u011fan",
+      "team": "Germany",
+      "on_ball_events": 84,
+      "under_pressure_events": 20,
+      "share": 0.2381
+    },
+    {
+      "player_id": 11116,
+      "display_name": "Jack Hendry",
+      "team": "Scotland",
+      "on_ball_events": 64,
+      "under_pressure_events": 14,
+      "share": 0.2188
+    },
+    {
+      "player_id": 40724,
+      "display_name": "Florian Wirtz",
+      "team": "Germany",
+      "on_ball_events": 82,
+      "under_pressure_events": 16,
+      "share": 0.1951
+    },
+    {
+      "player_id": 5574,
+      "display_name": "Toni Kroos",
+      "team": "Germany",
+      "on_ball_events": 188,
+      "under_pressure_events": 27,
+      "share": 0.1436
+    },
+    {
+      "player_id": 12407,
+      "display_name": "Maximilian Mittelst\u00e4dt",
+      "team": "Germany",
+      "on_ball_events": 175,
+      "under_pressure_events": 24,
+      "share": 0.1371
+    },
+    {
+      "player_id": 5579,
+      "display_name": "Joshua Kimmich",
+      "team": "Germany",
+      "on_ball_events": 186,
+      "under_pressure_events": 22,
+      "share": 0.1183
+    },
+    {
+      "player_id": 3167,
+      "display_name": "Antonio R\u00fcdiger",
+      "team": "Germany",
+      "on_ball_events": 186,
+      "under_pressure_events": 21,
+      "share": 0.1129
+    },
+    {
+      "player_id": 3097,
+      "display_name": "Pascal Gro\u00df",
+      "team": "Germany",
+      "on_ball_events": 144,
+      "under_pressure_events": 13,
+      "share": 0.0903
+    },
+    {
+      "player_id": 9195,
+      "display_name": "Robert Andrich",
+      "team": "Germany",
+      "on_ball_events": 64,
+      "under_pressure_events": 4,
+      "share": 0.0625
+    },
+    {
+      "player_id": 8221,
+      "display_name": "Jonathan Tah",
+      "team": "Germany",
+      "on_ball_events": 176,
+      "under_pressure_events": 10,
+      "share": 0.0568
+    }
+  ],
+  "metadata": {
+    "match_id": 3930158,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Germany vs Scotland",
+    "open_play_filter": "play_pattern + pass_type",
+    "ppda_zone": "opponent's own 60% (x < 72 in the opponent's own frame)",
+    "defensive_action_zone": "pressing team's own half+ (x >= 48 in its own frame)",
+    "pressures_high_zone": "opponent half (x >= 60 in the pressing team's own frame)"
+  }
+}

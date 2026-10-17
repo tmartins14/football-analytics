@@ -1,0 +1,1137 @@
+{
+  "on_ball": {
+    "periods": [
+      {
+        "from_minute": 0,
+        "from_period": 1,
+        "to_minute": 69,
+        "to_period": 2,
+        "players_in": [
+          "Martin D\u00fabravka",
+          "Peter Pekar\u00edk",
+          "Denis Vavro",
+          "Milan \u0160kriniar",
+          "D\u00e1vid Hancko",
+          "Stanislav Lobotka",
+          "Juraj Kucka",
+          "Ondrej Duda",
+          "Ivan Schranz",
+          "Luk\u00e1\u0161 Harasl\u00edn",
+          "David Strelec"
+        ],
+        "players_out": [],
+        "nodes": [
+          {
+            "player_id": 6990,
+            "player": "Milan \u0160kriniar",
+            "display_name": "Milan \u0160kriniar",
+            "x": 39.21,
+            "y": 26.56,
+            "event_count": 78,
+            "lane_counts": {
+              "left_wing": 17,
+              "left_half_space": 42,
+              "centre": 13,
+              "right_half_space": 0,
+              "right_wing": 6
+            },
+            "band_counts": {
+              "own_third": 41,
+              "own_half": 27,
+              "opposition_half": 10,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 16298,
+            "player": "Denis Vavro",
+            "display_name": "Denis Vavro",
+            "x": 33.91,
+            "y": 53.4,
+            "event_count": 52,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 14,
+              "right_half_space": 35,
+              "right_wing": 3
+            },
+            "band_counts": {
+              "own_third": 34,
+              "own_half": 15,
+              "opposition_half": 3,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 16879,
+            "player": "D\u00e1vid Hancko",
+            "display_name": "D\u00e1vid Hancko",
+            "x": 42.16,
+            "y": 10.83,
+            "event_count": 50,
+            "lane_counts": {
+              "left_wing": 37,
+              "left_half_space": 10,
+              "centre": 3,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 23,
+              "own_half": 16,
+              "opposition_half": 8,
+              "final_third": 3
+            }
+          },
+          {
+            "player_id": 6798,
+            "player": "Stanislav Lobotka",
+            "display_name": "Stanislav Lobotka",
+            "x": 47.21,
+            "y": 34.87,
+            "event_count": 47,
+            "lane_counts": {
+              "left_wing": 1,
+              "left_half_space": 13,
+              "centre": 28,
+              "right_half_space": 5,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 14,
+              "own_half": 25,
+              "opposition_half": 8,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 8967,
+            "player": "Ondrej Duda",
+            "display_name": "Ondrej Duda",
+            "x": 59.22,
+            "y": 27.14,
+            "event_count": 40,
+            "lane_counts": {
+              "left_wing": 12,
+              "left_half_space": 14,
+              "centre": 8,
+              "right_half_space": 1,
+              "right_wing": 5
+            },
+            "band_counts": {
+              "own_third": 9,
+              "own_half": 11,
+              "opposition_half": 12,
+              "final_third": 8
+            }
+          },
+          {
+            "player_id": 3711,
+            "player": "Martin D\u00fabravka",
+            "display_name": "Martin D\u00fabravka",
+            "x": 8.3,
+            "y": 36.94,
+            "event_count": 32,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 1,
+              "centre": 31,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 32,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 7975,
+            "player": "Luk\u00e1\u0161 Harasl\u00edn",
+            "display_name": "Luk\u00e1\u0161 Harasl\u00edn",
+            "x": 62.79,
+            "y": 12.98,
+            "event_count": 30,
+            "lane_counts": {
+              "left_wing": 20,
+              "left_half_space": 10,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 6,
+              "own_half": 6,
+              "opposition_half": 9,
+              "final_third": 9
+            }
+          },
+          {
+            "player_id": 10919,
+            "player": "Juraj Kucka",
+            "display_name": "Juraj Kucka",
+            "x": 71.11,
+            "y": 61.11,
+            "event_count": 26,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 4,
+              "right_half_space": 8,
+              "right_wing": 14
+            },
+            "band_counts": {
+              "own_third": 2,
+              "own_half": 6,
+              "opposition_half": 9,
+              "final_third": 9
+            }
+          },
+          {
+            "player_id": 9722,
+            "player": "Peter Pekar\u00edk",
+            "display_name": "Peter Pekar\u00edk",
+            "x": 62.45,
+            "y": 71.32,
+            "event_count": 21,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 1,
+              "right_wing": 20
+            },
+            "band_counts": {
+              "own_third": 6,
+              "own_half": 4,
+              "opposition_half": 7,
+              "final_third": 4
+            }
+          },
+          {
+            "player_id": 43976,
+            "player": "David Strelec",
+            "display_name": "David Strelec",
+            "x": 58.96,
+            "y": 32.93,
+            "event_count": 18,
+            "lane_counts": {
+              "left_wing": 2,
+              "left_half_space": 8,
+              "centre": 6,
+              "right_half_space": 0,
+              "right_wing": 2
+            },
+            "band_counts": {
+              "own_third": 1,
+              "own_half": 9,
+              "opposition_half": 7,
+              "final_third": 1
+            }
+          },
+          {
+            "player_id": 28032,
+            "player": "Ivan Schranz",
+            "display_name": "Ivan Schranz",
+            "x": 77.82,
+            "y": 67.78,
+            "event_count": 16,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 6,
+              "right_wing": 10
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 5,
+              "opposition_half": 4,
+              "final_third": 7
+            }
+          }
+        ],
+        "hull": [
+          [
+            8.3,
+            36.94
+          ],
+          [
+            42.16,
+            10.83
+          ],
+          [
+            62.79,
+            12.98
+          ],
+          [
+            77.82,
+            67.78
+          ],
+          [
+            62.45,
+            71.32
+          ],
+          [
+            33.91,
+            53.4
+          ]
+        ]
+      },
+      {
+        "from_minute": 69,
+        "from_period": 2,
+        "to_minute": 76,
+        "to_period": 2,
+        "players_in": [
+          "Tom\u00e1\u0161 Suslov",
+          "R\u00f3bert Bo\u017een\u00edk"
+        ],
+        "players_out": [
+          "Luk\u00e1\u0161 Harasl\u00edn",
+          "David Strelec"
+        ],
+        "nodes": [
+          {
+            "player_id": 28032,
+            "player": "Ivan Schranz",
+            "display_name": "Ivan Schranz",
+            "x": 61.17,
+            "y": 65.56,
+            "event_count": 13,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 4,
+              "right_wing": 9
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 7,
+              "opposition_half": 5,
+              "final_third": 1
+            }
+          },
+          {
+            "player_id": 8967,
+            "player": "Ondrej Duda",
+            "display_name": "Ondrej Duda",
+            "x": 55.2,
+            "y": 34.93,
+            "event_count": 12,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 4,
+              "centre": 8,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 11,
+              "opposition_half": 1,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 6990,
+            "player": "Milan \u0160kriniar",
+            "display_name": "Milan \u0160kriniar",
+            "x": 31.17,
+            "y": 32.95,
+            "event_count": 12,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 2,
+              "centre": 10,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 10,
+              "own_half": 2,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 34904,
+            "player": "R\u00f3bert Bo\u017een\u00edk",
+            "display_name": "R\u00f3bert Bo\u017een\u00edk",
+            "x": 58.35,
+            "y": 51.3,
+            "event_count": 10,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 4,
+              "right_half_space": 3,
+              "right_wing": 3
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 6,
+              "opposition_half": 4,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 9722,
+            "player": "Peter Pekar\u00edk",
+            "display_name": "Peter Pekar\u00edk",
+            "x": 61.0,
+            "y": 77.2,
+            "event_count": 9,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 9
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 3,
+              "opposition_half": 6,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 10919,
+            "player": "Juraj Kucka",
+            "display_name": "Juraj Kucka",
+            "x": 45.32,
+            "y": 54.51,
+            "event_count": 9,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 5,
+              "right_half_space": 0,
+              "right_wing": 4
+            },
+            "band_counts": {
+              "own_third": 5,
+              "own_half": 4,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 16298,
+            "player": "Denis Vavro",
+            "display_name": "Denis Vavro",
+            "x": 34.01,
+            "y": 55.33,
+            "event_count": 9,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 3,
+              "right_half_space": 3,
+              "right_wing": 3
+            },
+            "band_counts": {
+              "own_third": 8,
+              "own_half": 1,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 6798,
+            "player": "Stanislav Lobotka",
+            "display_name": "Stanislav Lobotka",
+            "x": 29.27,
+            "y": 71.08,
+            "event_count": 8,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 8
+            },
+            "band_counts": {
+              "own_third": 6,
+              "own_half": 2,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 35653,
+            "player": "Tom\u00e1\u0161 Suslov",
+            "display_name": "Tom\u00e1\u0161 Suslov",
+            "x": 85.44,
+            "y": 21.9,
+            "event_count": 7,
+            "lane_counts": {
+              "left_wing": 4,
+              "left_half_space": 0,
+              "centre": 3,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 3,
+              "final_third": 4
+            }
+          },
+          {
+            "player_id": 3711,
+            "player": "Martin D\u00fabravka",
+            "display_name": "Martin D\u00fabravka",
+            "x": 8.88,
+            "y": 48.1,
+            "event_count": 6,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 5,
+              "right_half_space": 1,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 6,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 16879,
+            "player": "D\u00e1vid Hancko",
+            "display_name": "D\u00e1vid Hancko",
+            "x": 64.44,
+            "y": 10.58,
+            "event_count": 5,
+            "lane_counts": {
+              "left_wing": 3,
+              "left_half_space": 2,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 1,
+              "own_half": 1,
+              "opposition_half": 0,
+              "final_third": 3
+            }
+          }
+        ],
+        "hull": [
+          [
+            85.44,
+            21.9
+          ],
+          [
+            61.0,
+            77.2
+          ],
+          [
+            29.27,
+            71.08
+          ],
+          [
+            8.88,
+            48.1
+          ],
+          [
+            31.17,
+            32.95
+          ],
+          [
+            64.44,
+            10.58
+          ]
+        ]
+      },
+      {
+        "from_minute": 76,
+        "from_period": 2,
+        "to_minute": 91,
+        "to_period": 2,
+        "players_in": [
+          "D\u00e1vid \u010euri\u0161"
+        ],
+        "players_out": [
+          "Ivan Schranz"
+        ],
+        "nodes": [
+          {
+            "player_id": 35653,
+            "player": "Tom\u00e1\u0161 Suslov",
+            "display_name": "Tom\u00e1\u0161 Suslov",
+            "x": 55.5,
+            "y": 16.13,
+            "event_count": 3,
+            "lane_counts": {
+              "left_wing": 3,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 3,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 8967,
+            "player": "Ondrej Duda",
+            "display_name": "Ondrej Duda",
+            "x": 55.9,
+            "y": 26.05,
+            "event_count": 2,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 2,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 2,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 6990,
+            "player": "Milan \u0160kriniar",
+            "display_name": "Milan \u0160kriniar",
+            "x": 49.4,
+            "y": 26.8,
+            "event_count": 1,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 1,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 1,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          }
+        ],
+        "hull": [
+          [
+            55.9,
+            26.05
+          ],
+          [
+            49.4,
+            26.8
+          ],
+          [
+            55.5,
+            16.13
+          ]
+        ]
+      },
+      {
+        "from_minute": 91,
+        "from_period": 2,
+        "to_minute": 95,
+        "to_period": 2,
+        "players_in": [
+          "Norbert Gy\u00f6mb\u00e9r",
+          "Mat\u00fa\u0161 Bero"
+        ],
+        "players_out": [
+          "Peter Pekar\u00edk",
+          "Ondrej Duda"
+        ],
+        "nodes": [],
+        "hull": []
+      }
+    ]
+  },
+  "off_ball": {
+    "density_grid": {
+      "cols": 24,
+      "rows": 16,
+      "values": [
+        [
+          0.1923,
+          0.234,
+          0.2769,
+          0.3192,
+          0.3586,
+          0.3931,
+          0.421,
+          0.4408,
+          0.4519,
+          0.4542,
+          0.4479,
+          0.434,
+          0.4135,
+          0.3877,
+          0.3579,
+          0.3254,
+          0.2913,
+          0.2566,
+          0.2223,
+          0.1892,
+          0.158,
+          0.1292,
+          0.1035,
+          0.0809
+        ],
+        [
+          0.2478,
+          0.2998,
+          0.3529,
+          0.4047,
+          0.4524,
+          0.4938,
+          0.5267,
+          0.5497,
+          0.5621,
+          0.5638,
+          0.5553,
+          0.5376,
+          0.5122,
+          0.4805,
+          0.444,
+          0.4041,
+          0.3623,
+          0.3198,
+          0.2776,
+          0.2368,
+          0.1982,
+          0.1626,
+          0.1306,
+          0.1024
+        ],
+        [
+          0.3073,
+          0.3698,
+          0.4329,
+          0.4939,
+          0.5495,
+          0.5971,
+          0.6343,
+          0.6597,
+          0.6726,
+          0.6731,
+          0.6619,
+          0.6402,
+          0.6097,
+          0.572,
+          0.5289,
+          0.4819,
+          0.4326,
+          0.3825,
+          0.3327,
+          0.2844,
+          0.2386,
+          0.1963,
+          0.1581,
+          0.1245
+        ],
+        [
+          0.367,
+          0.4393,
+          0.5119,
+          0.5811,
+          0.6436,
+          0.6962,
+          0.7367,
+          0.7636,
+          0.7763,
+          0.775,
+          0.7607,
+          0.735,
+          0.6995,
+          0.6562,
+          0.6069,
+          0.5534,
+          0.4974,
+          0.4403,
+          0.3837,
+          0.3287,
+          0.2765,
+          0.2281,
+          0.1843,
+          0.1456
+        ],
+        [
+          0.4221,
+          0.5031,
+          0.5836,
+          0.6598,
+          0.7277,
+          0.7842,
+          0.8269,
+          0.8543,
+          0.8661,
+          0.8628,
+          0.8454,
+          0.8158,
+          0.7759,
+          0.7276,
+          0.6731,
+          0.6141,
+          0.5524,
+          0.4896,
+          0.4273,
+          0.3667,
+          0.3092,
+          0.2557,
+          0.2072,
+          0.1643
+        ],
+        [
+          0.4675,
+          0.5553,
+          0.642,
+          0.7233,
+          0.7952,
+          0.8543,
+          0.8982,
+          0.9255,
+          0.9362,
+          0.9308,
+          0.9108,
+          0.8779,
+          0.8343,
+          0.7822,
+          0.7235,
+          0.6603,
+          0.5943,
+          0.5273,
+          0.4608,
+          0.3961,
+          0.3346,
+          0.2775,
+          0.2255,
+          0.1793
+        ],
+        [
+          0.4985,
+          0.5908,
+          0.6814,
+          0.7659,
+          0.8401,
+          0.9006,
+          0.945,
+          0.9721,
+          0.9818,
+          0.9749,
+          0.953,
+          0.9179,
+          0.8719,
+          0.8172,
+          0.7558,
+          0.6899,
+          0.6212,
+          0.5515,
+          0.4824,
+          0.4152,
+          0.3514,
+          0.2919,
+          0.2378,
+          0.1896
+        ],
+        [
+          0.5115,
+          0.6055,
+          0.6976,
+          0.7832,
+          0.8582,
+          0.9192,
+          0.9637,
+          0.9907,
+          1.0,
+          0.9926,
+          0.9699,
+          0.934,
+          0.887,
+          0.8312,
+          0.7688,
+          0.7018,
+          0.632,
+          0.5613,
+          0.4912,
+          0.4232,
+          0.3585,
+          0.2983,
+          0.2435,
+          0.1946
+        ],
+        [
+          0.5048,
+          0.5976,
+          0.6886,
+          0.7733,
+          0.8476,
+          0.9082,
+          0.9526,
+          0.9798,
+          0.9896,
+          0.9827,
+          0.9608,
+          0.9256,
+          0.8793,
+          0.8241,
+          0.7622,
+          0.6958,
+          0.6266,
+          0.5565,
+          0.4871,
+          0.4198,
+          0.3559,
+          0.2964,
+          0.2422,
+          0.1938
+        ],
+        [
+          0.4789,
+          0.5677,
+          0.6551,
+          0.7369,
+          0.8091,
+          0.8684,
+          0.9125,
+          0.9402,
+          0.9512,
+          0.9461,
+          0.9261,
+          0.8932,
+          0.8491,
+          0.7963,
+          0.7366,
+          0.6724,
+          0.6054,
+          0.5376,
+          0.4704,
+          0.4054,
+          0.3437,
+          0.2863,
+          0.2341,
+          0.1875
+        ],
+        [
+          0.4366,
+          0.5189,
+          0.6004,
+          0.6773,
+          0.7458,
+          0.803,
+          0.8463,
+          0.8746,
+          0.8872,
+          0.8847,
+          0.8679,
+          0.8384,
+          0.7981,
+          0.749,
+          0.6932,
+          0.6327,
+          0.5695,
+          0.5054,
+          0.4421,
+          0.3808,
+          0.3227,
+          0.2688,
+          0.2197,
+          0.1761
+        ],
+        [
+          0.3823,
+          0.4561,
+          0.5298,
+          0.6,
+          0.6635,
+          0.7173,
+          0.7592,
+          0.7876,
+          0.802,
+          0.8023,
+          0.7893,
+          0.7642,
+          0.7287,
+          0.6846,
+          0.6339,
+          0.5786,
+          0.5207,
+          0.4618,
+          0.4036,
+          0.3474,
+          0.2942,
+          0.2449,
+          0.2002,
+          0.1604
+        ],
+        [
+          0.3214,
+          0.3852,
+          0.4497,
+          0.5119,
+          0.569,
+          0.6183,
+          0.6576,
+          0.6856,
+          0.7011,
+          0.7042,
+          0.6951,
+          0.6748,
+          0.6447,
+          0.6065,
+          0.562,
+          0.513,
+          0.4615,
+          0.409,
+          0.3572,
+          0.3071,
+          0.2599,
+          0.2162,
+          0.1766,
+          0.1415
+        ],
+        [
+          0.2593,
+          0.3125,
+          0.3669,
+          0.4201,
+          0.4697,
+          0.5135,
+          0.5493,
+          0.5756,
+          0.5916,
+          0.5967,
+          0.5912,
+          0.5756,
+          0.5512,
+          0.5192,
+          0.4815,
+          0.4396,
+          0.3953,
+          0.3502,
+          0.3055,
+          0.2625,
+          0.2219,
+          0.1845,
+          0.1506,
+          0.1206
+        ],
+        [
+          0.2006,
+          0.2433,
+          0.2875,
+          0.3313,
+          0.3729,
+          0.4101,
+          0.4414,
+          0.4653,
+          0.4806,
+          0.487,
+          0.4843,
+          0.473,
+          0.454,
+          0.4283,
+          0.3975,
+          0.363,
+          0.3264,
+          0.289,
+          0.2519,
+          0.2162,
+          0.1827,
+          0.1518,
+          0.1239,
+          0.0992
+        ],
+        [
+          0.1487,
+          0.1816,
+          0.216,
+          0.2507,
+          0.2841,
+          0.3146,
+          0.3407,
+          0.3612,
+          0.3751,
+          0.3818,
+          0.3811,
+          0.3734,
+          0.3591,
+          0.3394,
+          0.3153,
+          0.288,
+          0.2589,
+          0.2291,
+          0.1996,
+          0.1712,
+          0.1446,
+          0.1201,
+          0.098,
+          0.0785
+        ]
+      ]
+    },
+    "centroid": {
+      "x": 50.04,
+      "y": 38.44
+    },
+    "thirds_spine": [
+      {
+        "third": "defensive",
+        "x": 24.91,
+        "y": 37.94
+      },
+      {
+        "third": "middle",
+        "x": 57.71,
+        "y": 39.05
+      },
+      {
+        "third": "attacking",
+        "x": 93.23,
+        "y": 37.82
+      }
+    ],
+    "ellipse": {
+      "cx": 50.04,
+      "cy": 38.44,
+      "rx": 25.36,
+      "ry": 18.7,
+      "angle_deg": -178.0
+    },
+    "depth_line": {
+      "x": 63.16,
+      "percentile": 70
+    }
+  },
+  "metadata": {
+    "match_id": 3930183,
+    "team": "Slovakia",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Slovakia vs Romania",
+    "on_ball_event_count": 516,
+    "on_ball_period_count": 4,
+    "off_ball_bandwidth_yards": 8.0,
+    "off_ball_depth_percentile": 70,
+    "off_ball_grid_cols": 24,
+    "off_ball_grid_rows": 16,
+    "phase_filter": "open_play_only",
+    "coordinate_system": "statsbomb_120x80_normalised_attack_right",
+    "coordinate_note": "StatsBomb event and 360 freeze-frame coordinates are already in each team's own attack-right frame across both halves; no period-based flip is applied. Off-ball 360 dots from opponent-actor frames are mirrored (x\u2192120-x, y\u219280-y) into the analysed team's frame before pooling; own-actor dots are used as-is, and the goalkeeper is excluded.",
+    "camera_caveat": "360 frames follow the ball; the visible subset of out-of-possession positions is biased toward areas near the ball. The camera artifact and the real defensive shape point the same direction \u2014 they cannot be cleanly separated."
+  }
+}

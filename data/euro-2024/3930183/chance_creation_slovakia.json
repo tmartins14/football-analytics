@@ -1,0 +1,124 @@
+{
+  "team": "Slovakia",
+  "shots": {
+    "non_penalty_count": 13,
+    "total_npxg": 0.844743,
+    "by_zone": {
+      "six_yard_box": {
+        "npxg": 0.0,
+        "count": 0
+      },
+      "box_central": {
+        "npxg": 0.711786,
+        "count": 7
+      },
+      "box_wide": {
+        "npxg": 0.049023,
+        "count": 2
+      },
+      "outside_box": {
+        "npxg": 0.083934,
+        "count": 4
+      }
+    },
+    "by_source": {
+      "open_play": {
+        "npxg": 0.012604,
+        "count": 1
+      },
+      "counter": {
+        "npxg": 0.0,
+        "count": 0
+      },
+      "set_piece": {
+        "npxg": 0.478984,
+        "count": 7
+      },
+      "other": {
+        "npxg": 0.353155,
+        "count": 5
+      }
+    }
+  },
+  "shot_assists": {
+    "total_count": 8,
+    "by_side_and_type": {
+      "left": {
+        "cross": 1,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 1
+      },
+      "centre": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 1
+      },
+      "right": {
+        "cross": 2,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 3
+      }
+    }
+  },
+  "creators": [
+    {
+      "player_id": 7975,
+      "display_name": "Luk\u00e1\u0161 Harasl\u00edn",
+      "xa": 0.23361,
+      "key_passes": 3,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 9722,
+      "display_name": "Peter Pekar\u00edk",
+      "xa": 0.202437,
+      "key_passes": 2,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 10919,
+      "display_name": "Juraj Kucka",
+      "xa": 0.109447,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 8967,
+      "display_name": "Ondrej Duda",
+      "xa": 0.036418,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 6798,
+      "display_name": "Stanislav Lobotka",
+      "xa": 0.006519,
+      "key_passes": 1,
+      "passes_into_box": 0
+    }
+  ],
+  "metadata": {
+    "match_id": 3930183,
+    "team": "Slovakia",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Slovakia vs Romania",
+    "zone_filter": "statsbomb_120x80_own_attack_right_frame",
+    "source_grouping": {
+      "open_play": [
+        "Regular Play"
+      ],
+      "counter": [
+        "From Counter"
+      ],
+      "set_piece": [
+        "From Corner",
+        "From Free Kick",
+        "From Throw In"
+      ],
+      "other": "every other play_pattern (From Goal Kick, From Kick Off, From Keeper, Other)"
+    }
+  }
+}

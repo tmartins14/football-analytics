@@ -1,0 +1,1446 @@
+{
+  "on_ball": {
+    "periods": [
+      {
+        "from_minute": 0,
+        "from_period": 1,
+        "to_minute": 55,
+        "to_period": 2,
+        "players_in": [
+          "Koen Casteels",
+          "Timothy Castagne",
+          "Wout Faes",
+          "Jan Vertonghen",
+          "Arthur Theate",
+          "Youri Tielemans",
+          "Amadou Onana",
+          "Dodi Lukebakio",
+          "Kevin De Bruyne",
+          "Jeremy Doku",
+          "Romelu Lukaku Menama"
+        ],
+        "players_out": [],
+        "nodes": [
+          {
+            "player_id": 12306,
+            "player": "Dodi Lukebakio",
+            "display_name": "Dodi Lukebakio",
+            "x": 77.67,
+            "y": 62.45,
+            "event_count": 62,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 4,
+              "right_half_space": 25,
+              "right_wing": 33
+            },
+            "band_counts": {
+              "own_third": 8,
+              "own_half": 10,
+              "opposition_half": 4,
+              "final_third": 40
+            }
+          },
+          {
+            "player_id": 2954,
+            "player": "Youri Tielemans",
+            "display_name": "Youri Tielemans",
+            "x": 62.07,
+            "y": 51.78,
+            "event_count": 60,
+            "lane_counts": {
+              "left_wing": 3,
+              "left_half_space": 1,
+              "centre": 23,
+              "right_half_space": 20,
+              "right_wing": 13
+            },
+            "band_counts": {
+              "own_third": 13,
+              "own_half": 15,
+              "opposition_half": 17,
+              "final_third": 15
+            }
+          },
+          {
+            "player_id": 8854,
+            "player": "Wout Faes",
+            "display_name": "Wout Faes",
+            "x": 38.63,
+            "y": 56.21,
+            "event_count": 58,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 2,
+              "centre": 7,
+              "right_half_space": 35,
+              "right_wing": 14
+            },
+            "band_counts": {
+              "own_third": 35,
+              "own_half": 16,
+              "opposition_half": 5,
+              "final_third": 2
+            }
+          },
+          {
+            "player_id": 3077,
+            "player": "Jan Vertonghen",
+            "display_name": "Jan Vertonghen",
+            "x": 33.97,
+            "y": 27.83,
+            "event_count": 47,
+            "lane_counts": {
+              "left_wing": 3,
+              "left_half_space": 30,
+              "centre": 12,
+              "right_half_space": 2,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 32,
+              "own_half": 12,
+              "opposition_half": 3,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 3089,
+            "player": "Kevin De Bruyne",
+            "display_name": "Kevin De Bruyne",
+            "x": 79.3,
+            "y": 41.47,
+            "event_count": 46,
+            "lane_counts": {
+              "left_wing": 7,
+              "left_half_space": 9,
+              "centre": 13,
+              "right_half_space": 8,
+              "right_wing": 9
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 9,
+              "opposition_half": 10,
+              "final_third": 27
+            }
+          },
+          {
+            "player_id": 23650,
+            "player": "Jeremy Doku",
+            "display_name": "J\u00e9r\u00e9my Doku",
+            "x": 82.34,
+            "y": 9.71,
+            "event_count": 40,
+            "lane_counts": {
+              "left_wing": 33,
+              "left_half_space": 7,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 7,
+              "opposition_half": 8,
+              "final_third": 25
+            }
+          },
+          {
+            "player_id": 43913,
+            "player": "Arthur Theate",
+            "display_name": "Arthur Theate",
+            "x": 51.59,
+            "y": 12.42,
+            "event_count": 40,
+            "lane_counts": {
+              "left_wing": 28,
+              "left_half_space": 9,
+              "centre": 3,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 7,
+              "own_half": 20,
+              "opposition_half": 11,
+              "final_third": 2
+            }
+          },
+          {
+            "player_id": 48347,
+            "player": "Amadou Onana",
+            "display_name": "Amadou Onana",
+            "x": 59.73,
+            "y": 37.32,
+            "event_count": 33,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 11,
+              "centre": 14,
+              "right_half_space": 8,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 6,
+              "own_half": 10,
+              "opposition_half": 13,
+              "final_third": 4
+            }
+          },
+          {
+            "player_id": 6989,
+            "player": "Timothy Castagne",
+            "display_name": "Timothy Castagne",
+            "x": 68.9,
+            "y": 69.7,
+            "event_count": 30,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 4,
+              "right_wing": 26
+            },
+            "band_counts": {
+              "own_third": 4,
+              "own_half": 6,
+              "opposition_half": 8,
+              "final_third": 12
+            }
+          },
+          {
+            "player_id": 8240,
+            "player": "Koen Casteels",
+            "display_name": "Koen Casteels",
+            "x": 8.55,
+            "y": 39.92,
+            "event_count": 25,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 25,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 25,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 3289,
+            "player": "Romelu Lukaku Menama",
+            "display_name": "Romelu Lukaku",
+            "x": 87.39,
+            "y": 41.76,
+            "event_count": 22,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 9,
+              "centre": 9,
+              "right_half_space": 0,
+              "right_wing": 4
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 8,
+              "final_third": 14
+            }
+          }
+        ],
+        "hull": [
+          [
+            82.34,
+            9.71
+          ],
+          [
+            87.39,
+            41.76
+          ],
+          [
+            77.67,
+            62.45
+          ],
+          [
+            68.9,
+            69.7
+          ],
+          [
+            38.63,
+            56.21
+          ],
+          [
+            8.55,
+            39.92
+          ],
+          [
+            51.59,
+            12.42
+          ]
+        ]
+      },
+      {
+        "from_minute": 55,
+        "from_period": 2,
+        "to_minute": 71,
+        "to_period": 2,
+        "players_in": [
+          "Leandro Trossard"
+        ],
+        "players_out": [
+          "Dodi Lukebakio"
+        ],
+        "nodes": [
+          {
+            "player_id": 3089,
+            "player": "Kevin De Bruyne",
+            "display_name": "Kevin De Bruyne",
+            "x": 49.57,
+            "y": 29.17,
+            "event_count": 18,
+            "lane_counts": {
+              "left_wing": 6,
+              "left_half_space": 3,
+              "centre": 9,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 5,
+              "own_half": 10,
+              "opposition_half": 0,
+              "final_third": 3
+            }
+          },
+          {
+            "player_id": 23650,
+            "player": "Jeremy Doku",
+            "display_name": "J\u00e9r\u00e9my Doku",
+            "x": 66.35,
+            "y": 14.35,
+            "event_count": 13,
+            "lane_counts": {
+              "left_wing": 9,
+              "left_half_space": 2,
+              "centre": 2,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 5,
+              "own_half": 0,
+              "opposition_half": 2,
+              "final_third": 6
+            }
+          },
+          {
+            "player_id": 2954,
+            "player": "Youri Tielemans",
+            "display_name": "Youri Tielemans",
+            "x": 36.87,
+            "y": 55.81,
+            "event_count": 10,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 2,
+              "right_half_space": 8,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 4,
+              "own_half": 6,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 16559,
+            "player": "Leandro Trossard",
+            "display_name": "Leandro Trossard",
+            "x": 46.6,
+            "y": 61.54,
+            "event_count": 9,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 2,
+              "right_wing": 7
+            },
+            "band_counts": {
+              "own_third": 6,
+              "own_half": 0,
+              "opposition_half": 2,
+              "final_third": 1
+            }
+          },
+          {
+            "player_id": 6989,
+            "player": "Timothy Castagne",
+            "display_name": "Timothy Castagne",
+            "x": 14.45,
+            "y": 73.1,
+            "event_count": 6,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 6
+            },
+            "band_counts": {
+              "own_third": 6,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 3289,
+            "player": "Romelu Lukaku Menama",
+            "display_name": "Romelu Lukaku",
+            "x": 70.12,
+            "y": 25.74,
+            "event_count": 5,
+            "lane_counts": {
+              "left_wing": 2,
+              "left_half_space": 1,
+              "centre": 2,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 3,
+              "opposition_half": 0,
+              "final_third": 2
+            }
+          },
+          {
+            "player_id": 3077,
+            "player": "Jan Vertonghen",
+            "display_name": "Jan Vertonghen",
+            "x": 8.2,
+            "y": 35.27,
+            "event_count": 3,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 3,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 8854,
+            "player": "Wout Faes",
+            "display_name": "Wout Faes",
+            "x": 14.2,
+            "y": 56.6,
+            "event_count": 2,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 2,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 2,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 43913,
+            "player": "Arthur Theate",
+            "display_name": "Arthur Theate",
+            "x": 8.4,
+            "y": 32.0,
+            "event_count": 1,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 1,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 1,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 48347,
+            "player": "Amadou Onana",
+            "display_name": "Amadou Onana",
+            "x": 42.6,
+            "y": 50.0,
+            "event_count": 1,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 1,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 1,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          }
+        ],
+        "hull": [
+          [
+            14.45,
+            73.1
+          ],
+          [
+            8.2,
+            35.27
+          ],
+          [
+            8.4,
+            32.0
+          ],
+          [
+            66.35,
+            14.35
+          ],
+          [
+            70.12,
+            25.74
+          ],
+          [
+            46.6,
+            61.54
+          ]
+        ]
+      },
+      {
+        "from_minute": 71,
+        "from_period": 2,
+        "to_minute": 75,
+        "to_period": 2,
+        "players_in": [
+          "Orel Mangala",
+          "Yannick Ferreira Carrasco"
+        ],
+        "players_out": [
+          "Youri Tielemans",
+          "Jeremy Doku"
+        ],
+        "nodes": [
+          {
+            "player_id": 43913,
+            "player": "Arthur Theate",
+            "display_name": "Arthur Theate",
+            "x": 61.32,
+            "y": 14.25,
+            "event_count": 6,
+            "lane_counts": {
+              "left_wing": 6,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 3,
+              "opposition_half": 3,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 16559,
+            "player": "Leandro Trossard",
+            "display_name": "Leandro Trossard",
+            "x": 78.37,
+            "y": 66.53,
+            "event_count": 3,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 2,
+              "right_wing": 1
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 2,
+              "final_third": 1
+            }
+          },
+          {
+            "player_id": 8950,
+            "player": "Orel Mangala",
+            "display_name": "Orel Mangala",
+            "x": 88.8,
+            "y": 69.1,
+            "event_count": 3,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 1,
+              "right_wing": 2
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 3
+            }
+          },
+          {
+            "player_id": 48347,
+            "player": "Amadou Onana",
+            "display_name": "Amadou Onana",
+            "x": 77.5,
+            "y": 56.53,
+            "event_count": 3,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 3,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 3,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 3077,
+            "player": "Jan Vertonghen",
+            "display_name": "Jan Vertonghen",
+            "x": 57.7,
+            "y": 42.5,
+            "event_count": 3,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 3,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 3,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 5633,
+            "player": "Yannick Ferreira Carrasco",
+            "display_name": "Yannick Carrasco",
+            "x": 86.13,
+            "y": 4.87,
+            "event_count": 3,
+            "lane_counts": {
+              "left_wing": 3,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 3
+            }
+          },
+          {
+            "player_id": 8240,
+            "player": "Koen Casteels",
+            "display_name": "Koen Casteels",
+            "x": 22.1,
+            "y": 33.1,
+            "event_count": 3,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 3,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 8854,
+            "player": "Wout Faes",
+            "display_name": "Wout Faes",
+            "x": 35.97,
+            "y": 61.13,
+            "event_count": 3,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 2,
+              "right_wing": 1
+            },
+            "band_counts": {
+              "own_third": 2,
+              "own_half": 1,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          }
+        ],
+        "hull": [
+          [
+            86.13,
+            4.87
+          ],
+          [
+            88.8,
+            69.1
+          ],
+          [
+            35.97,
+            61.13
+          ],
+          [
+            22.1,
+            33.1
+          ],
+          [
+            61.32,
+            14.25
+          ]
+        ]
+      },
+      {
+        "from_minute": 75,
+        "from_period": 2,
+        "to_minute": 95,
+        "to_period": 2,
+        "players_in": [
+          "Zeno Debast"
+        ],
+        "players_out": [
+          "Arthur Theate"
+        ],
+        "nodes": [
+          {
+            "player_id": 16559,
+            "player": "Leandro Trossard",
+            "display_name": "Leandro Trossard",
+            "x": 87.27,
+            "y": 65.09,
+            "event_count": 11,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 1,
+              "right_half_space": 3,
+              "right_wing": 7
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 3,
+              "opposition_half": 0,
+              "final_third": 8
+            }
+          },
+          {
+            "player_id": 8240,
+            "player": "Koen Casteels",
+            "display_name": "Koen Casteels",
+            "x": 11.77,
+            "y": 39.4,
+            "event_count": 6,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 6,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 6,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 114832,
+            "player": "Zeno Debast",
+            "display_name": "Zeno Debast",
+            "x": 34.18,
+            "y": 73.12,
+            "event_count": 6,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 6
+            },
+            "band_counts": {
+              "own_third": 5,
+              "own_half": 1,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 5633,
+            "player": "Yannick Ferreira Carrasco",
+            "display_name": "Yannick Carrasco",
+            "x": 56.52,
+            "y": 16.78,
+            "event_count": 5,
+            "lane_counts": {
+              "left_wing": 4,
+              "left_half_space": 0,
+              "centre": 1,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 4,
+              "opposition_half": 1,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 3089,
+            "player": "Kevin De Bruyne",
+            "display_name": "Kevin De Bruyne",
+            "x": 35.18,
+            "y": 11.08,
+            "event_count": 5,
+            "lane_counts": {
+              "left_wing": 5,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 5,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 6989,
+            "player": "Timothy Castagne",
+            "display_name": "Timothy Castagne",
+            "x": 49.7,
+            "y": 13.0,
+            "event_count": 3,
+            "lane_counts": {
+              "left_wing": 3,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 3,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 8854,
+            "player": "Wout Faes",
+            "display_name": "Wout Faes",
+            "x": 39.4,
+            "y": 39.7,
+            "event_count": 3,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 3,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 48347,
+            "player": "Amadou Onana",
+            "display_name": "Amadou Onana",
+            "x": 62.7,
+            "y": 25.4,
+            "event_count": 1,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 1,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 1,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 3289,
+            "player": "Romelu Lukaku Menama",
+            "display_name": "Romelu Lukaku",
+            "x": 112.3,
+            "y": 35.2,
+            "event_count": 1,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 1,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 1
+            }
+          }
+        ],
+        "hull": [
+          [
+            34.18,
+            73.12
+          ],
+          [
+            11.77,
+            39.4
+          ],
+          [
+            35.18,
+            11.08
+          ],
+          [
+            49.7,
+            13.0
+          ],
+          [
+            112.3,
+            35.2
+          ],
+          [
+            87.27,
+            65.09
+          ]
+        ]
+      }
+    ]
+  },
+  "off_ball": {
+    "density_grid": {
+      "cols": 24,
+      "rows": 16,
+      "values": [
+        [
+          0.1449,
+          0.178,
+          0.2141,
+          0.2519,
+          0.2903,
+          0.3277,
+          0.3627,
+          0.3937,
+          0.4194,
+          0.4388,
+          0.451,
+          0.4558,
+          0.453,
+          0.443,
+          0.4263,
+          0.4037,
+          0.3762,
+          0.3449,
+          0.3109,
+          0.2754,
+          0.2396,
+          0.2046,
+          0.1712,
+          0.1404
+        ],
+        [
+          0.1858,
+          0.2275,
+          0.2726,
+          0.3197,
+          0.3672,
+          0.4134,
+          0.4563,
+          0.4943,
+          0.5257,
+          0.5493,
+          0.5642,
+          0.5701,
+          0.5668,
+          0.5547,
+          0.5345,
+          0.5071,
+          0.4736,
+          0.4352,
+          0.3933,
+          0.3494,
+          0.3049,
+          0.2611,
+          0.2193,
+          0.1804
+        ],
+        [
+          0.2287,
+          0.2791,
+          0.3332,
+          0.3894,
+          0.4458,
+          0.5004,
+          0.5509,
+          0.5954,
+          0.632,
+          0.6595,
+          0.6769,
+          0.6838,
+          0.68,
+          0.6661,
+          0.6427,
+          0.6108,
+          0.5717,
+          0.5268,
+          0.4775,
+          0.4256,
+          0.3726,
+          0.3202,
+          0.2698,
+          0.2228
+        ],
+        [
+          0.2706,
+          0.3291,
+          0.3916,
+          0.4562,
+          0.5207,
+          0.5827,
+          0.6399,
+          0.6899,
+          0.731,
+          0.7617,
+          0.7811,
+          0.7888,
+          0.7847,
+          0.7692,
+          0.7433,
+          0.7078,
+          0.6641,
+          0.6136,
+          0.558,
+          0.499,
+          0.4385,
+          0.3783,
+          0.32,
+          0.2653
+        ],
+        [
+          0.3082,
+          0.3738,
+          0.4435,
+          0.5152,
+          0.5864,
+          0.6544,
+          0.7168,
+          0.7711,
+          0.8156,
+          0.8487,
+          0.8695,
+          0.8777,
+          0.8734,
+          0.8569,
+          0.8292,
+          0.7912,
+          0.7443,
+          0.6897,
+          0.6293,
+          0.5649,
+          0.4983,
+          0.4316,
+          0.3666,
+          0.3052
+        ],
+        [
+          0.3383,
+          0.4094,
+          0.4847,
+          0.5618,
+          0.6379,
+          0.7102,
+          0.7762,
+          0.8334,
+          0.8799,
+          0.9144,
+          0.9361,
+          0.9447,
+          0.9404,
+          0.9236,
+          0.8951,
+          0.8558,
+          0.8071,
+          0.7503,
+          0.6869,
+          0.6188,
+          0.548,
+          0.4766,
+          0.4065,
+          0.3398
+        ],
+        [
+          0.3582,
+          0.433,
+          0.5119,
+          0.5923,
+          0.6713,
+          0.7461,
+          0.814,
+          0.8726,
+          0.92,
+          0.9552,
+          0.9772,
+          0.9861,
+          0.982,
+          0.9654,
+          0.9371,
+          0.8979,
+          0.849,
+          0.7916,
+          0.7272,
+          0.6575,
+          0.5844,
+          0.5102,
+          0.4369,
+          0.3666
+        ],
+        [
+          0.3661,
+          0.4424,
+          0.5227,
+          0.6042,
+          0.6842,
+          0.7596,
+          0.8278,
+          0.8864,
+          0.9338,
+          0.9688,
+          0.9909,
+          1.0,
+          0.9964,
+          0.9807,
+          0.9535,
+          0.9156,
+          0.8679,
+          0.8115,
+          0.7478,
+          0.6784,
+          0.6051,
+          0.5301,
+          0.4556,
+          0.3836
+        ],
+        [
+          0.3613,
+          0.4368,
+          0.5162,
+          0.5967,
+          0.6756,
+          0.7498,
+          0.8168,
+          0.8743,
+          0.9207,
+          0.9551,
+          0.9769,
+          0.9864,
+          0.9837,
+          0.9693,
+          0.944,
+          0.9083,
+          0.863,
+          0.8091,
+          0.7477,
+          0.6802,
+          0.6086,
+          0.5348,
+          0.4609,
+          0.3892
+        ],
+        [
+          0.3441,
+          0.4166,
+          0.4929,
+          0.5704,
+          0.6462,
+          0.7175,
+          0.7819,
+          0.8372,
+          0.8819,
+          0.9152,
+          0.9368,
+          0.9466,
+          0.945,
+          0.9325,
+          0.9096,
+          0.8769,
+          0.835,
+          0.7846,
+          0.7268,
+          0.6629,
+          0.5946,
+          0.5237,
+          0.4525,
+          0.3829
+        ],
+        [
+          0.3161,
+          0.3836,
+          0.4548,
+          0.5272,
+          0.5981,
+          0.665,
+          0.7255,
+          0.7777,
+          0.8201,
+          0.8519,
+          0.8728,
+          0.883,
+          0.8827,
+          0.8724,
+          0.8524,
+          0.8232,
+          0.7854,
+          0.7394,
+          0.6863,
+          0.6272,
+          0.5637,
+          0.4974,
+          0.4305,
+          0.365
+        ],
+        [
+          0.28,
+          0.3407,
+          0.405,
+          0.4706,
+          0.5351,
+          0.5962,
+          0.6517,
+          0.6997,
+          0.739,
+          0.7689,
+          0.789,
+          0.7995,
+          0.8005,
+          0.7924,
+          0.7755,
+          0.7502,
+          0.7169,
+          0.6761,
+          0.6286,
+          0.5753,
+          0.5178,
+          0.4575,
+          0.3965,
+          0.3365
+        ],
+        [
+          0.2387,
+          0.2914,
+          0.3475,
+          0.4051,
+          0.4619,
+          0.516,
+          0.5653,
+          0.6084,
+          0.644,
+          0.6714,
+          0.6904,
+          0.7008,
+          0.7029,
+          0.697,
+          0.6833,
+          0.6621,
+          0.6336,
+          0.5984,
+          0.557,
+          0.5104,
+          0.4598,
+          0.4067,
+          0.3527,
+          0.2996
+        ],
+        [
+          0.1956,
+          0.2397,
+          0.2869,
+          0.3355,
+          0.3838,
+          0.4301,
+          0.4726,
+          0.51,
+          0.5413,
+          0.5657,
+          0.583,
+          0.593,
+          0.596,
+          0.5921,
+          0.5814,
+          0.5641,
+          0.5406,
+          0.5111,
+          0.4763,
+          0.4368,
+          0.3938,
+          0.3485,
+          0.3024,
+          0.257
+        ],
+        [
+          0.1538,
+          0.1893,
+          0.2274,
+          0.2669,
+          0.3064,
+          0.3445,
+          0.3798,
+          0.4111,
+          0.4375,
+          0.4585,
+          0.4737,
+          0.483,
+          0.4864,
+          0.4841,
+          0.4761,
+          0.4626,
+          0.4438,
+          0.42,
+          0.3917,
+          0.3594,
+          0.3242,
+          0.2871,
+          0.2492,
+          0.2119
+        ],
+        [
+          0.1158,
+          0.1431,
+          0.1726,
+          0.2034,
+          0.2344,
+          0.2645,
+          0.2925,
+          0.3177,
+          0.3391,
+          0.3564,
+          0.3692,
+          0.3773,
+          0.3808,
+          0.3797,
+          0.374,
+          0.3639,
+          0.3494,
+          0.331,
+          0.3088,
+          0.2835,
+          0.2559,
+          0.2266,
+          0.1968,
+          0.1674
+        ]
+      ]
+    },
+    "centroid": {
+      "x": 61.34,
+      "y": 39.0
+    },
+    "thirds_spine": [
+      {
+        "third": "defensive",
+        "x": 27.63,
+        "y": 40.27
+      },
+      {
+        "third": "middle",
+        "x": 59.15,
+        "y": 36.92
+      },
+      {
+        "third": "attacking",
+        "x": 95.12,
+        "y": 41.23
+      }
+    ],
+    "ellipse": {
+      "cx": 61.34,
+      "cy": 39.0,
+      "rx": 26.99,
+      "ry": 18.57,
+      "angle_deg": -176.6
+    },
+    "depth_line": {
+      "x": 78.41,
+      "percentile": 70
+    }
+  },
+  "metadata": {
+    "match_id": 3930175,
+    "team": "Belgium",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Belgium vs Romania",
+    "on_ball_event_count": 599,
+    "on_ball_period_count": 4,
+    "off_ball_bandwidth_yards": 8.0,
+    "off_ball_depth_percentile": 70,
+    "off_ball_grid_cols": 24,
+    "off_ball_grid_rows": 16,
+    "phase_filter": "open_play_only",
+    "coordinate_system": "statsbomb_120x80_normalised_attack_right",
+    "coordinate_note": "StatsBomb event and 360 freeze-frame coordinates are already in each team's own attack-right frame across both halves; no period-based flip is applied. Off-ball 360 dots from opponent-actor frames are mirrored (x\u2192120-x, y\u219280-y) into the analysed team's frame before pooling; own-actor dots are used as-is, and the goalkeeper is excluded.",
+    "camera_caveat": "360 frames follow the ball; the visible subset of out-of-possession positions is biased toward areas near the ball. The camera artifact and the real defensive shape point the same direction \u2014 they cannot be cleanly separated."
+  }
+}

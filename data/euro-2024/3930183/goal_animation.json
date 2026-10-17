@@ -1,0 +1,133 @@
+{
+  "goals": [
+    {
+      "window": {
+        "anchor_event_id": "46149c68-2e4a-4150-b186-a0d0badde278",
+        "start_event_id": "20a8a614-e6e4-4d57-9c09-2d8c722d82ea",
+        "end_event_id": "46149c68-2e4a-4150-b186-a0d0badde278",
+        "period": 1,
+        "window_seconds": 10.0,
+        "t_span_seconds": 10.254
+      },
+      "frames": [
+        {
+          "event_id": "20a8a614-e6e4-4d57-9c09-2d8c722d82ea",
+          "t_seconds": 0.0,
+          "team": "Slovakia",
+          "event_type": "Pass",
+          "ball_x": 49.2,
+          "ball_y": 14.6,
+          "ball_end_x": 109.0,
+          "ball_end_y": 77.3,
+          "actor": "Milan \u0160kriniar",
+          "outcome": null
+        },
+        {
+          "event_id": "9d884934-17a6-430e-8644-a7cac03d3158",
+          "t_seconds": 5.075,
+          "team": "Slovakia",
+          "event_type": "Carry",
+          "ball_x": 109.0,
+          "ball_y": 77.3,
+          "ball_end_x": 109.9,
+          "ball_end_y": 76.1,
+          "actor": "Peter Pekar\u00edk",
+          "outcome": null
+        },
+        {
+          "event_id": "c10a0eab-909b-408e-b582-44fa2200557c",
+          "t_seconds": 7.209,
+          "team": "Slovakia",
+          "event_type": "Pass",
+          "ball_x": 109.9,
+          "ball_y": 76.1,
+          "ball_end_x": 93.2,
+          "ball_end_y": 74.0,
+          "actor": "Peter Pekar\u00edk",
+          "outcome": null
+        },
+        {
+          "event_id": "be0a6ad6-c387-46e7-a409-9e30b5a579b4",
+          "t_seconds": 8.397,
+          "team": "Slovakia",
+          "event_type": "Pass",
+          "ball_x": 92.7,
+          "ball_y": 73.9,
+          "ball_end_x": 111.2,
+          "ball_end_y": 35.7,
+          "actor": "Juraj Kucka",
+          "outcome": null
+        },
+        {
+          "event_id": "46149c68-2e4a-4150-b186-a0d0badde278",
+          "t_seconds": 10.254,
+          "team": "Slovakia",
+          "event_type": "Shot",
+          "ball_x": 111.2,
+          "ball_y": 35.7,
+          "ball_end_x": 120.0,
+          "ball_end_y": 43.2,
+          "actor": "Ondrej Duda",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "46149c68-2e4a-4150-b186-a0d0badde278",
+          "minute": 23,
+          "second": 43,
+          "scorer": "Ondrej Duda",
+          "team": "Slovakia"
+        }
+      },
+      "metadata": {
+        "match_id": 3930183,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Slovakia vs Romania"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "30c1019c-ca01-4c79-8612-6dbb8538fecb",
+        "start_event_id": "30c1019c-ca01-4c79-8612-6dbb8538fecb",
+        "end_event_id": "30c1019c-ca01-4c79-8612-6dbb8538fecb",
+        "period": 1,
+        "window_seconds": 10.0,
+        "t_span_seconds": 161.214
+      },
+      "frames": [
+        {
+          "event_id": "30c1019c-ca01-4c79-8612-6dbb8538fecb",
+          "t_seconds": 161.214,
+          "team": "Romania",
+          "event_type": "Shot",
+          "ball_x": 108.1,
+          "ball_y": 40.1,
+          "ball_end_x": 120.0,
+          "ball_end_y": 37.0,
+          "actor": "R\u0103zvan Marin",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "30c1019c-ca01-4c79-8612-6dbb8538fecb",
+          "minute": 36,
+          "second": 18,
+          "scorer": "R\u0103zvan Marin",
+          "team": "Romania"
+        }
+      },
+      "metadata": {
+        "match_id": 3930183,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Slovakia vs Romania"
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3930183,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Slovakia vs Romania"
+  }
+}

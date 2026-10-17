@@ -1,0 +1,273 @@
+{
+  "teams": {
+    "Belgium": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 132,
+        "defensive_actions_advanced": 23,
+        "value": 5.7391
+      },
+      "pressures_high": {
+        "count": 75,
+        "opponent_open_play_passes": 159,
+        "per_100": 47.17
+      },
+      "pressure_side": {
+        "left": 31,
+        "centre": 38,
+        "right": 64
+      }
+    },
+    "Slovakia": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 199,
+        "defensive_actions_advanced": 20,
+        "value": 9.95
+      },
+      "pressures_high": {
+        "count": 78,
+        "opponent_open_play_passes": 259,
+        "per_100": 30.12
+      },
+      "pressure_side": {
+        "left": 76,
+        "centre": 41,
+        "right": 65
+      }
+    }
+  },
+  "pressure_received": [
+    {
+      "player_id": 23650,
+      "display_name": "J\u00e9r\u00e9my Doku",
+      "team": "Belgium",
+      "on_ball_events": 80,
+      "under_pressure_events": 52,
+      "share": 0.65
+    },
+    {
+      "player_id": 12306,
+      "display_name": "Dodi Lukebakio",
+      "team": "Belgium",
+      "on_ball_events": 12,
+      "under_pressure_events": 5,
+      "share": 0.4167
+    },
+    {
+      "player_id": 3289,
+      "display_name": "Romelu Lukaku",
+      "team": "Belgium",
+      "on_ball_events": 54,
+      "under_pressure_events": 22,
+      "share": 0.4074
+    },
+    {
+      "player_id": 7975,
+      "display_name": "Luk\u00e1\u0161 Harasl\u00edn",
+      "team": "Slovakia",
+      "on_ball_events": 64,
+      "under_pressure_events": 26,
+      "share": 0.4062
+    },
+    {
+      "player_id": 34904,
+      "display_name": "R\u00f3bert Bo\u017een\u00edk",
+      "team": "Slovakia",
+      "on_ball_events": 82,
+      "under_pressure_events": 32,
+      "share": 0.3902
+    },
+    {
+      "player_id": 43976,
+      "display_name": "David Strelec",
+      "team": "Slovakia",
+      "on_ball_events": 35,
+      "under_pressure_events": 13,
+      "share": 0.3714
+    },
+    {
+      "player_id": 52218,
+      "display_name": "Johan Bakayoko",
+      "team": "Belgium",
+      "on_ball_events": 49,
+      "under_pressure_events": 16,
+      "share": 0.3265
+    },
+    {
+      "player_id": 16559,
+      "display_name": "Leandro Trossard",
+      "team": "Belgium",
+      "on_ball_events": 86,
+      "under_pressure_events": 26,
+      "share": 0.3023
+    },
+    {
+      "player_id": 48347,
+      "display_name": "Amadou Onana",
+      "team": "Belgium",
+      "on_ball_events": 143,
+      "under_pressure_events": 41,
+      "share": 0.2867
+    },
+    {
+      "player_id": 5633,
+      "display_name": "Yannick Carrasco",
+      "team": "Belgium",
+      "on_ball_events": 138,
+      "under_pressure_events": 31,
+      "share": 0.2246
+    },
+    {
+      "player_id": 3089,
+      "display_name": "Kevin De Bruyne",
+      "team": "Belgium",
+      "on_ball_events": 137,
+      "under_pressure_events": 30,
+      "share": 0.219
+    },
+    {
+      "player_id": 85063,
+      "display_name": "Adam Obert",
+      "team": "Slovakia",
+      "on_ball_events": 5,
+      "under_pressure_events": 1,
+      "share": 0.2
+    },
+    {
+      "player_id": 44167,
+      "display_name": "D\u00e1vid \u010euri\u0161",
+      "team": "Slovakia",
+      "on_ball_events": 10,
+      "under_pressure_events": 2,
+      "share": 0.2
+    },
+    {
+      "player_id": 35653,
+      "display_name": "Tom\u00e1\u0161 Suslov",
+      "team": "Slovakia",
+      "on_ball_events": 40,
+      "under_pressure_events": 8,
+      "share": 0.2
+    },
+    {
+      "player_id": 8967,
+      "display_name": "Ondrej Duda",
+      "team": "Slovakia",
+      "on_ball_events": 140,
+      "under_pressure_events": 27,
+      "share": 0.1929
+    },
+    {
+      "player_id": 6990,
+      "display_name": "Milan \u0160kriniar",
+      "team": "Slovakia",
+      "on_ball_events": 65,
+      "under_pressure_events": 12,
+      "share": 0.1846
+    },
+    {
+      "player_id": 16879,
+      "display_name": "D\u00e1vid Hancko",
+      "team": "Slovakia",
+      "on_ball_events": 110,
+      "under_pressure_events": 19,
+      "share": 0.1727
+    },
+    {
+      "player_id": 10919,
+      "display_name": "Juraj Kucka",
+      "team": "Slovakia",
+      "on_ball_events": 83,
+      "under_pressure_events": 14,
+      "share": 0.1687
+    },
+    {
+      "player_id": 16275,
+      "display_name": "Lo\u00efs Openda",
+      "team": "Belgium",
+      "on_ball_events": 6,
+      "under_pressure_events": 1,
+      "share": 0.1667
+    },
+    {
+      "player_id": 8854,
+      "display_name": "Wout Faes",
+      "team": "Belgium",
+      "on_ball_events": 179,
+      "under_pressure_events": 29,
+      "share": 0.162
+    },
+    {
+      "player_id": 2954,
+      "display_name": "Youri Tielemans",
+      "team": "Belgium",
+      "on_ball_events": 34,
+      "under_pressure_events": 5,
+      "share": 0.1471
+    },
+    {
+      "player_id": 6989,
+      "display_name": "Timothy Castagne",
+      "team": "Belgium",
+      "on_ball_events": 130,
+      "under_pressure_events": 19,
+      "share": 0.1462
+    },
+    {
+      "player_id": 28032,
+      "display_name": "Ivan Schranz",
+      "team": "Slovakia",
+      "on_ball_events": 62,
+      "under_pressure_events": 8,
+      "share": 0.129
+    },
+    {
+      "player_id": 6798,
+      "display_name": "Stanislav Lobotka",
+      "team": "Slovakia",
+      "on_ball_events": 111,
+      "under_pressure_events": 14,
+      "share": 0.1261
+    },
+    {
+      "player_id": 8950,
+      "display_name": "Orel Mangala",
+      "team": "Belgium",
+      "on_ball_events": 56,
+      "under_pressure_events": 7,
+      "share": 0.125
+    },
+    {
+      "player_id": 114832,
+      "display_name": "Zeno Debast",
+      "team": "Belgium",
+      "on_ball_events": 200,
+      "under_pressure_events": 17,
+      "share": 0.085
+    },
+    {
+      "player_id": 16298,
+      "display_name": "Denis Vavro",
+      "team": "Slovakia",
+      "on_ball_events": 107,
+      "under_pressure_events": 9,
+      "share": 0.0841
+    },
+    {
+      "player_id": 9722,
+      "display_name": "Peter Pekar\u00edk",
+      "team": "Slovakia",
+      "on_ball_events": 60,
+      "under_pressure_events": 5,
+      "share": 0.0833
+    }
+  ],
+  "metadata": {
+    "match_id": 3930164,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Belgium vs Slovakia",
+    "open_play_filter": "play_pattern + pass_type",
+    "ppda_zone": "opponent's own 60% (x < 72 in the opponent's own frame)",
+    "defensive_action_zone": "pressing team's own half+ (x >= 48 in its own frame)",
+    "pressures_high_zone": "opponent half (x >= 60 in the pressing team's own frame)"
+  }
+}

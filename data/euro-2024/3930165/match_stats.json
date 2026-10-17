@@ -1,0 +1,99 @@
+{
+  "home": {
+    "team": "Austria",
+    "color": "#ED2939",
+    "score": 0
+  },
+  "away": {
+    "team": "France",
+    "color": "#002395",
+    "score": 0
+  },
+  "rows": [
+    {
+      "label": "Shots",
+      "home_value": 5.0,
+      "away_value": 14.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Shots on Target",
+      "home_value": 3.0,
+      "away_value": 3.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Possession",
+      "home_value": 47.1,
+      "away_value": 52.9,
+      "scale_type": "fixed100",
+      "format": "pct",
+      "tier": "basic"
+    },
+    {
+      "label": "Corners",
+      "home_value": 6.0,
+      "away_value": 2.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Fouls",
+      "home_value": 23.0,
+      "away_value": 13.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Yellow Cards",
+      "home_value": 5.0,
+      "away_value": 2.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Red Cards",
+      "home_value": 0.0,
+      "away_value": 0.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "xG",
+      "home_value": 0.75,
+      "away_value": 1.9,
+      "scale_type": "sum",
+      "format": "float1",
+      "tier": "advanced"
+    },
+    {
+      "label": "Passes",
+      "home_value": 529.0,
+      "away_value": 499.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "advanced"
+    },
+    {
+      "label": "Pass acc.",
+      "home_value": 81.7,
+      "away_value": 84.4,
+      "scale_type": "sum",
+      "format": "pct",
+      "tier": "advanced"
+    }
+  ],
+  "metadata": {
+    "match_id": 3930165,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Austria vs France"
+  }
+}

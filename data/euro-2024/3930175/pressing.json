@@ -1,0 +1,273 @@
+{
+  "teams": {
+    "Belgium": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 92,
+        "defensive_actions_advanced": 23,
+        "value": 4.0
+      },
+      "pressures_high": {
+        "count": 60,
+        "opponent_open_play_passes": 113,
+        "per_100": 53.1
+      },
+      "pressure_side": {
+        "left": 45,
+        "centre": 18,
+        "right": 51
+      }
+    },
+    "Romania": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 94,
+        "defensive_actions_advanced": 22,
+        "value": 4.2727
+      },
+      "pressures_high": {
+        "count": 57,
+        "opponent_open_play_passes": 143,
+        "per_100": 39.86
+      },
+      "pressure_side": {
+        "left": 74,
+        "centre": 36,
+        "right": 65
+      }
+    }
+  },
+  "pressure_received": [
+    {
+      "player_id": 3289,
+      "display_name": "Romelu Lukaku",
+      "team": "Belgium",
+      "on_ball_events": 53,
+      "under_pressure_events": 29,
+      "share": 0.5472
+    },
+    {
+      "player_id": 23650,
+      "display_name": "J\u00e9r\u00e9my Doku",
+      "team": "Belgium",
+      "on_ball_events": 104,
+      "under_pressure_events": 54,
+      "share": 0.5192
+    },
+    {
+      "player_id": 10915,
+      "display_name": "Denis Alibec",
+      "team": "Romania",
+      "on_ball_events": 8,
+      "under_pressure_events": 4,
+      "share": 0.5
+    },
+    {
+      "player_id": 16559,
+      "display_name": "Leandro Trossard",
+      "team": "Belgium",
+      "on_ball_events": 35,
+      "under_pressure_events": 15,
+      "share": 0.4286
+    },
+    {
+      "player_id": 12306,
+      "display_name": "Dodi Lukebakio",
+      "team": "Belgium",
+      "on_ball_events": 88,
+      "under_pressure_events": 33,
+      "share": 0.375
+    },
+    {
+      "player_id": 31193,
+      "display_name": "Denis Dragus",
+      "team": "Romania",
+      "on_ball_events": 62,
+      "under_pressure_events": 23,
+      "share": 0.371
+    },
+    {
+      "player_id": 28565,
+      "display_name": "Ianis Hagi",
+      "team": "Romania",
+      "on_ball_events": 46,
+      "under_pressure_events": 16,
+      "share": 0.3478
+    },
+    {
+      "player_id": 72512,
+      "display_name": "Valentin Mihai Mih\u0103il\u0103",
+      "team": "Romania",
+      "on_ball_events": 75,
+      "under_pressure_events": 26,
+      "share": 0.3467
+    },
+    {
+      "player_id": 101821,
+      "display_name": "Darius Dumitru Olaru",
+      "team": "Romania",
+      "on_ball_events": 29,
+      "under_pressure_events": 10,
+      "share": 0.3448
+    },
+    {
+      "player_id": 5633,
+      "display_name": "Yannick Carrasco",
+      "team": "Belgium",
+      "on_ball_events": 19,
+      "under_pressure_events": 6,
+      "share": 0.3158
+    },
+    {
+      "player_id": 56905,
+      "display_name": "Dennis Man",
+      "team": "Romania",
+      "on_ball_events": 99,
+      "under_pressure_events": 28,
+      "share": 0.2828
+    },
+    {
+      "player_id": 24861,
+      "display_name": "Andrei Ratiu",
+      "team": "Romania",
+      "on_ball_events": 73,
+      "under_pressure_events": 20,
+      "share": 0.274
+    },
+    {
+      "player_id": 39615,
+      "display_name": "Radu Dragusin",
+      "team": "Romania",
+      "on_ball_events": 66,
+      "under_pressure_events": 17,
+      "share": 0.2576
+    },
+    {
+      "player_id": 6989,
+      "display_name": "Timothy Castagne",
+      "team": "Belgium",
+      "on_ball_events": 108,
+      "under_pressure_events": 27,
+      "share": 0.25
+    },
+    {
+      "player_id": 114832,
+      "display_name": "Zeno Debast",
+      "team": "Belgium",
+      "on_ball_events": 20,
+      "under_pressure_events": 5,
+      "share": 0.25
+    },
+    {
+      "player_id": 2954,
+      "display_name": "Youri Tielemans",
+      "team": "Belgium",
+      "on_ball_events": 110,
+      "under_pressure_events": 25,
+      "share": 0.2273
+    },
+    {
+      "player_id": 3089,
+      "display_name": "Kevin De Bruyne",
+      "team": "Belgium",
+      "on_ball_events": 141,
+      "under_pressure_events": 32,
+      "share": 0.227
+    },
+    {
+      "player_id": 30913,
+      "display_name": "Marius Marin",
+      "team": "Romania",
+      "on_ball_events": 82,
+      "under_pressure_events": 18,
+      "share": 0.2195
+    },
+    {
+      "player_id": 43913,
+      "display_name": "Arthur Theate",
+      "team": "Belgium",
+      "on_ball_events": 89,
+      "under_pressure_events": 18,
+      "share": 0.2022
+    },
+    {
+      "player_id": 16344,
+      "display_name": "R\u0103zvan Marin",
+      "team": "Romania",
+      "on_ball_events": 99,
+      "under_pressure_events": 19,
+      "share": 0.1919
+    },
+    {
+      "player_id": 31908,
+      "display_name": "Andrei Burc\u0103 Andonie",
+      "team": "Romania",
+      "on_ball_events": 107,
+      "under_pressure_events": 18,
+      "share": 0.1682
+    },
+    {
+      "player_id": 48347,
+      "display_name": "Amadou Onana",
+      "team": "Belgium",
+      "on_ball_events": 124,
+      "under_pressure_events": 20,
+      "share": 0.1613
+    },
+    {
+      "player_id": 10916,
+      "display_name": "Nicolae Stanciu",
+      "team": "Romania",
+      "on_ball_events": 93,
+      "under_pressure_events": 14,
+      "share": 0.1505
+    },
+    {
+      "player_id": 8854,
+      "display_name": "Wout Faes",
+      "team": "Belgium",
+      "on_ball_events": 149,
+      "under_pressure_events": 22,
+      "share": 0.1477
+    },
+    {
+      "player_id": 3077,
+      "display_name": "Jan Vertonghen",
+      "team": "Belgium",
+      "on_ball_events": 101,
+      "under_pressure_events": 14,
+      "share": 0.1386
+    },
+    {
+      "player_id": 34600,
+      "display_name": "Nicusor Bancu",
+      "team": "Romania",
+      "on_ball_events": 127,
+      "under_pressure_events": 15,
+      "share": 0.1181
+    },
+    {
+      "player_id": 130984,
+      "display_name": "Deian Cristian Sorescu",
+      "team": "Romania",
+      "on_ball_events": 12,
+      "under_pressure_events": 0,
+      "share": 0.0
+    },
+    {
+      "player_id": 8950,
+      "display_name": "Orel Mangala",
+      "team": "Belgium",
+      "on_ball_events": 8,
+      "under_pressure_events": 0,
+      "share": 0.0
+    }
+  ],
+  "metadata": {
+    "match_id": 3930175,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Belgium vs Romania",
+    "open_play_filter": "play_pattern + pass_type",
+    "ppda_zone": "opponent's own 60% (x < 72 in the opponent's own frame)",
+    "defensive_action_zone": "pressing team's own half+ (x >= 48 in its own frame)",
+    "pressures_high_zone": "opponent half (x >= 60 in the pressing team's own frame)"
+  }
+}

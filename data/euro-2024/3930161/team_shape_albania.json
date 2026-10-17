@@ -1,0 +1,1459 @@
+{
+  "on_ball": {
+    "periods": [
+      {
+        "from_minute": 0,
+        "from_period": 1,
+        "to_minute": 67,
+        "to_period": 2,
+        "players_in": [
+          "Thomas Strakosha",
+          "Elseid Hysaj",
+          "Arlind Afrim Ajeti",
+          "Berat Djimsiti",
+          "Mario Mitaj",
+          "Ylber Ramadani",
+          "Kristjan Asllani",
+          "Jasir Asani",
+          "Nedim Bajrami",
+          "Taulant Sulejmanov",
+          "Armando Broja"
+        ],
+        "players_out": [],
+        "nodes": [
+          {
+            "player_id": 24438,
+            "player": "Ylber Ramadani",
+            "display_name": "Ylber Ramadani",
+            "x": 53.37,
+            "y": 49.48,
+            "event_count": 44,
+            "lane_counts": {
+              "left_wing": 1,
+              "left_half_space": 2,
+              "centre": 18,
+              "right_half_space": 15,
+              "right_wing": 8
+            },
+            "band_counts": {
+              "own_third": 12,
+              "own_half": 11,
+              "opposition_half": 21,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 32030,
+            "player": "Nedim Bajrami",
+            "display_name": "Nedim Bajrami",
+            "x": 58.32,
+            "y": 31.82,
+            "event_count": 41,
+            "lane_counts": {
+              "left_wing": 5,
+              "left_half_space": 19,
+              "centre": 10,
+              "right_half_space": 4,
+              "right_wing": 3
+            },
+            "band_counts": {
+              "own_third": 9,
+              "own_half": 10,
+              "opposition_half": 21,
+              "final_third": 1
+            }
+          },
+          {
+            "player_id": 29531,
+            "player": "Taulant Sulejmanov",
+            "display_name": "Taulant Seferi",
+            "x": 54.01,
+            "y": 14.51,
+            "event_count": 27,
+            "lane_counts": {
+              "left_wing": 17,
+              "left_half_space": 9,
+              "centre": 1,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 9,
+              "own_half": 5,
+              "opposition_half": 11,
+              "final_third": 2
+            }
+          },
+          {
+            "player_id": 57303,
+            "player": "Kristjan Asllani",
+            "display_name": "Kristjan Asllani",
+            "x": 48.37,
+            "y": 45.65,
+            "event_count": 26,
+            "lane_counts": {
+              "left_wing": 2,
+              "left_half_space": 1,
+              "centre": 14,
+              "right_half_space": 6,
+              "right_wing": 3
+            },
+            "band_counts": {
+              "own_third": 10,
+              "own_half": 7,
+              "opposition_half": 9,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 8291,
+            "player": "Arlind Afrim Ajeti",
+            "display_name": "Arlind Afrim Ajeti",
+            "x": 37.77,
+            "y": 59.31,
+            "event_count": 26,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 3,
+              "right_half_space": 12,
+              "right_wing": 11
+            },
+            "band_counts": {
+              "own_third": 15,
+              "own_half": 8,
+              "opposition_half": 3,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 49097,
+            "player": "Mario Mitaj",
+            "display_name": "Mario Mitaj",
+            "x": 49.74,
+            "y": 11.08,
+            "event_count": 25,
+            "lane_counts": {
+              "left_wing": 23,
+              "left_half_space": 2,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 7,
+              "own_half": 8,
+              "opposition_half": 10,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 41186,
+            "player": "Jasir Asani",
+            "display_name": "Jasir Asani",
+            "x": 67.01,
+            "y": 65.7,
+            "event_count": 24,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 4,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 20
+            },
+            "band_counts": {
+              "own_third": 4,
+              "own_half": 8,
+              "opposition_half": 2,
+              "final_third": 10
+            }
+          },
+          {
+            "player_id": 7108,
+            "player": "Berat Djimsiti",
+            "display_name": "Berat Djimsiti",
+            "x": 43.52,
+            "y": 25.07,
+            "event_count": 24,
+            "lane_counts": {
+              "left_wing": 5,
+              "left_half_space": 14,
+              "centre": 5,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 12,
+              "own_half": 11,
+              "opposition_half": 1,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 7031,
+            "player": "Elseid Hysaj",
+            "display_name": "Elseid Hysaj",
+            "x": 73.28,
+            "y": 72.99,
+            "event_count": 17,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 1,
+              "right_wing": 16
+            },
+            "band_counts": {
+              "own_third": 1,
+              "own_half": 2,
+              "opposition_half": 8,
+              "final_third": 6
+            }
+          },
+          {
+            "player_id": 36885,
+            "player": "Armando Broja",
+            "display_name": "Armando Broja",
+            "x": 68.69,
+            "y": 32.94,
+            "event_count": 16,
+            "lane_counts": {
+              "left_wing": 5,
+              "left_half_space": 1,
+              "centre": 9,
+              "right_half_space": 0,
+              "right_wing": 1
+            },
+            "band_counts": {
+              "own_third": 2,
+              "own_half": 2,
+              "opposition_half": 6,
+              "final_third": 6
+            }
+          },
+          {
+            "player_id": 7789,
+            "player": "Thomas Strakosha",
+            "display_name": "Thomas Strakosha",
+            "x": 7.17,
+            "y": 38.23,
+            "event_count": 15,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 3,
+              "centre": 12,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 15,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          }
+        ],
+        "hull": [
+          [
+            7.17,
+            38.23
+          ],
+          [
+            49.74,
+            11.08
+          ],
+          [
+            54.01,
+            14.51
+          ],
+          [
+            68.69,
+            32.94
+          ],
+          [
+            73.28,
+            72.99
+          ],
+          [
+            37.77,
+            59.31
+          ]
+        ]
+      },
+      {
+        "from_minute": 67,
+        "from_period": 2,
+        "to_minute": 75,
+        "to_period": 2,
+        "players_in": [
+          "Arb\u00ebr Hoxha",
+          "Qazim La\u00e7i"
+        ],
+        "players_out": [
+          "Jasir Asani",
+          "Taulant Sulejmanov"
+        ],
+        "nodes": [
+          {
+            "player_id": 24438,
+            "player": "Ylber Ramadani",
+            "display_name": "Ylber Ramadani",
+            "x": 39.8,
+            "y": 25.33,
+            "event_count": 7,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 6,
+              "centre": 1,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 4,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 49097,
+            "player": "Mario Mitaj",
+            "display_name": "Mario Mitaj",
+            "x": 31.24,
+            "y": 12.91,
+            "event_count": 7,
+            "lane_counts": {
+              "left_wing": 7,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 7,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 133698,
+            "player": "Arb\u00ebr Hoxha",
+            "display_name": "Arb\u00ebr Hoxha",
+            "x": 36.52,
+            "y": 20.6,
+            "event_count": 4,
+            "lane_counts": {
+              "left_wing": 1,
+              "left_half_space": 3,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 1,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 57303,
+            "player": "Kristjan Asllani",
+            "display_name": "Kristjan Asllani",
+            "x": 49.6,
+            "y": 8.67,
+            "event_count": 3,
+            "lane_counts": {
+              "left_wing": 3,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 3,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 7789,
+            "player": "Thomas Strakosha",
+            "display_name": "Thomas Strakosha",
+            "x": 6.2,
+            "y": 31.03,
+            "event_count": 3,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 2,
+              "centre": 1,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 8291,
+            "player": "Arlind Afrim Ajeti",
+            "display_name": "Arlind Afrim Ajeti",
+            "x": 15.27,
+            "y": 58.9,
+            "event_count": 3,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 3,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          }
+        ],
+        "hull": [
+          [
+            15.27,
+            58.9
+          ],
+          [
+            6.2,
+            31.03
+          ],
+          [
+            31.24,
+            12.91
+          ],
+          [
+            49.6,
+            8.67
+          ],
+          [
+            39.8,
+            25.33
+          ]
+        ]
+      },
+      {
+        "from_minute": 75,
+        "from_period": 2,
+        "to_minute": 86,
+        "to_period": 2,
+        "players_in": [
+          "Rey Manaj"
+        ],
+        "players_out": [
+          "Armando Broja"
+        ],
+        "nodes": [
+          {
+            "player_id": 57303,
+            "player": "Kristjan Asllani",
+            "display_name": "Kristjan Asllani",
+            "x": 51.61,
+            "y": 39.3,
+            "event_count": 21,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 9,
+              "centre": 3,
+              "right_half_space": 9,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 4,
+              "own_half": 14,
+              "opposition_half": 3,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 7031,
+            "player": "Elseid Hysaj",
+            "display_name": "Elseid Hysaj",
+            "x": 41.84,
+            "y": 67.42,
+            "event_count": 12,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 3,
+              "right_wing": 9
+            },
+            "band_counts": {
+              "own_third": 6,
+              "own_half": 6,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 7108,
+            "player": "Berat Djimsiti",
+            "display_name": "Berat Djimsiti",
+            "x": 42.36,
+            "y": 25.67,
+            "event_count": 11,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 11,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 8,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 49097,
+            "player": "Mario Mitaj",
+            "display_name": "Mario Mitaj",
+            "x": 37.71,
+            "y": 11.35,
+            "event_count": 10,
+            "lane_counts": {
+              "left_wing": 10,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 4,
+              "own_half": 3,
+              "opposition_half": 3,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 32030,
+            "player": "Nedim Bajrami",
+            "display_name": "Nedim Bajrami",
+            "x": 60.55,
+            "y": 73.63,
+            "event_count": 6,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 6
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 3,
+              "opposition_half": 3,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 133698,
+            "player": "Arb\u00ebr Hoxha",
+            "display_name": "Arb\u00ebr Hoxha",
+            "x": 54.1,
+            "y": 6.57,
+            "event_count": 6,
+            "lane_counts": {
+              "left_wing": 6,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 0,
+              "opposition_half": 2,
+              "final_third": 1
+            }
+          },
+          {
+            "player_id": 8291,
+            "player": "Arlind Afrim Ajeti",
+            "display_name": "Arlind Afrim Ajeti",
+            "x": 49.48,
+            "y": 51.27,
+            "event_count": 6,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 2,
+              "right_half_space": 4,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 6,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 7789,
+            "player": "Thomas Strakosha",
+            "display_name": "Thomas Strakosha",
+            "x": 11.55,
+            "y": 44.35,
+            "event_count": 2,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 2,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 2,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 7531,
+            "player": "Qazim La\u00e7i",
+            "display_name": "Qazim La\u00e7i",
+            "x": 36.2,
+            "y": 71.35,
+            "event_count": 2,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 2
+            },
+            "band_counts": {
+              "own_third": 2,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 23987,
+            "player": "Rey Manaj",
+            "display_name": "Rey Manaj",
+            "x": 109.1,
+            "y": 48.9,
+            "event_count": 2,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 2,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 2
+            }
+          },
+          {
+            "player_id": 24438,
+            "player": "Ylber Ramadani",
+            "display_name": "Ylber Ramadani",
+            "x": 79.4,
+            "y": 30.9,
+            "event_count": 1,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 1,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 1,
+              "final_third": 0
+            }
+          }
+        ],
+        "hull": [
+          [
+            54.1,
+            6.57
+          ],
+          [
+            109.1,
+            48.9
+          ],
+          [
+            60.55,
+            73.63
+          ],
+          [
+            36.2,
+            71.35
+          ],
+          [
+            11.55,
+            44.35
+          ],
+          [
+            37.71,
+            11.35
+          ]
+        ]
+      },
+      {
+        "from_minute": 86,
+        "from_period": 2,
+        "to_minute": 96,
+        "to_period": 2,
+        "players_in": [
+          "Ernest Mu\u00e7i"
+        ],
+        "players_out": [
+          "Nedim Bajrami"
+        ],
+        "nodes": [
+          {
+            "player_id": 57303,
+            "player": "Kristjan Asllani",
+            "display_name": "Kristjan Asllani",
+            "x": 56.36,
+            "y": 34.98,
+            "event_count": 24,
+            "lane_counts": {
+              "left_wing": 3,
+              "left_half_space": 8,
+              "centre": 7,
+              "right_half_space": 4,
+              "right_wing": 2
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 12,
+              "opposition_half": 7,
+              "final_third": 2
+            }
+          },
+          {
+            "player_id": 8291,
+            "player": "Arlind Afrim Ajeti",
+            "display_name": "Arlind Afrim Ajeti",
+            "x": 49.69,
+            "y": 51.21,
+            "event_count": 18,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 5,
+              "right_half_space": 11,
+              "right_wing": 2
+            },
+            "band_counts": {
+              "own_third": 2,
+              "own_half": 16,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 49097,
+            "player": "Mario Mitaj",
+            "display_name": "Mario Mitaj",
+            "x": 54.54,
+            "y": 15.44,
+            "event_count": 16,
+            "lane_counts": {
+              "left_wing": 11,
+              "left_half_space": 5,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 6,
+              "own_half": 4,
+              "opposition_half": 3,
+              "final_third": 3
+            }
+          },
+          {
+            "player_id": 7108,
+            "player": "Berat Djimsiti",
+            "display_name": "Berat Djimsiti",
+            "x": 48.96,
+            "y": 25.02,
+            "event_count": 16,
+            "lane_counts": {
+              "left_wing": 1,
+              "left_half_space": 13,
+              "centre": 2,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 6,
+              "own_half": 5,
+              "opposition_half": 4,
+              "final_third": 1
+            }
+          },
+          {
+            "player_id": 7031,
+            "player": "Elseid Hysaj",
+            "display_name": "Elseid Hysaj",
+            "x": 58.85,
+            "y": 68.03,
+            "event_count": 13,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 1,
+              "right_half_space": 0,
+              "right_wing": 12
+            },
+            "band_counts": {
+              "own_third": 2,
+              "own_half": 6,
+              "opposition_half": 5,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 7531,
+            "player": "Qazim La\u00e7i",
+            "display_name": "Qazim La\u00e7i",
+            "x": 72.16,
+            "y": 71.7,
+            "event_count": 13,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 2,
+              "right_wing": 11
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 12,
+              "final_third": 1
+            }
+          },
+          {
+            "player_id": 92611,
+            "player": "Ernest Mu\u00e7i",
+            "display_name": "Ernest Mu\u00e7i",
+            "x": 74.99,
+            "y": 53.24,
+            "event_count": 11,
+            "lane_counts": {
+              "left_wing": 2,
+              "left_half_space": 0,
+              "centre": 2,
+              "right_half_space": 1,
+              "right_wing": 6
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 9,
+              "final_third": 2
+            }
+          },
+          {
+            "player_id": 23987,
+            "player": "Rey Manaj",
+            "display_name": "Rey Manaj",
+            "x": 93.79,
+            "y": 28.23,
+            "event_count": 9,
+            "lane_counts": {
+              "left_wing": 3,
+              "left_half_space": 3,
+              "centre": 0,
+              "right_half_space": 3,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 3,
+              "final_third": 6
+            }
+          },
+          {
+            "player_id": 24438,
+            "player": "Ylber Ramadani",
+            "display_name": "Ylber Ramadani",
+            "x": 54.69,
+            "y": 54.21,
+            "event_count": 7,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 3,
+              "right_half_space": 3,
+              "right_wing": 1
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 7,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 133698,
+            "player": "Arb\u00ebr Hoxha",
+            "display_name": "Arb\u00ebr Hoxha",
+            "x": 105.35,
+            "y": 23.48,
+            "event_count": 4,
+            "lane_counts": {
+              "left_wing": 1,
+              "left_half_space": 3,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 4
+            }
+          },
+          {
+            "player_id": 7789,
+            "player": "Thomas Strakosha",
+            "display_name": "Thomas Strakosha",
+            "x": 10.63,
+            "y": 45.67,
+            "event_count": 3,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 3,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          }
+        ],
+        "hull": [
+          [
+            105.35,
+            23.48
+          ],
+          [
+            72.16,
+            71.7
+          ],
+          [
+            58.85,
+            68.03
+          ],
+          [
+            10.63,
+            45.67
+          ],
+          [
+            54.54,
+            15.44
+          ]
+        ]
+      }
+    ]
+  },
+  "off_ball": {
+    "density_grid": {
+      "cols": 24,
+      "rows": 16,
+      "values": [
+        [
+          0.1053,
+          0.1332,
+          0.161,
+          0.1862,
+          0.2064,
+          0.2197,
+          0.2251,
+          0.2225,
+          0.2126,
+          0.1971,
+          0.1778,
+          0.1565,
+          0.1348,
+          0.1141,
+          0.0949,
+          0.0778,
+          0.0628,
+          0.0499,
+          0.0389,
+          0.0297,
+          0.022,
+          0.0159,
+          0.0111,
+          0.0075
+        ],
+        [
+          0.1536,
+          0.1949,
+          0.2363,
+          0.2741,
+          0.3047,
+          0.3253,
+          0.3342,
+          0.3311,
+          0.3172,
+          0.2947,
+          0.2662,
+          0.2346,
+          0.2023,
+          0.1712,
+          0.1425,
+          0.1168,
+          0.0943,
+          0.0749,
+          0.0584,
+          0.0446,
+          0.0332,
+          0.024,
+          0.0168,
+          0.0113
+        ],
+        [
+          0.2103,
+          0.2676,
+          0.3252,
+          0.3783,
+          0.4216,
+          0.4513,
+          0.4647,
+          0.4614,
+          0.4429,
+          0.4122,
+          0.3728,
+          0.3289,
+          0.2838,
+          0.2403,
+          0.2,
+          0.164,
+          0.1324,
+          0.1053,
+          0.0822,
+          0.0628,
+          0.0469,
+          0.034,
+          0.0239,
+          0.0162
+        ],
+        [
+          0.2711,
+          0.3457,
+          0.4212,
+          0.491,
+          0.5485,
+          0.5884,
+          0.6071,
+          0.604,
+          0.5808,
+          0.5412,
+          0.4902,
+          0.4327,
+          0.3736,
+          0.3164,
+          0.2634,
+          0.216,
+          0.1746,
+          0.1389,
+          0.1087,
+          0.0833,
+          0.0624,
+          0.0455,
+          0.0322,
+          0.022
+        ],
+        [
+          0.3295,
+          0.4212,
+          0.5143,
+          0.6009,
+          0.6728,
+          0.7231,
+          0.7476,
+          0.745,
+          0.7175,
+          0.6695,
+          0.607,
+          0.5363,
+          0.4633,
+          0.3924,
+          0.3268,
+          0.2681,
+          0.2169,
+          0.1729,
+          0.1356,
+          0.1044,
+          0.0786,
+          0.0576,
+          0.0411,
+          0.0283
+        ],
+        [
+          0.378,
+          0.4845,
+          0.5931,
+          0.6946,
+          0.7794,
+          0.8394,
+          0.8695,
+          0.8681,
+          0.8374,
+          0.7824,
+          0.7101,
+          0.628,
+          0.5428,
+          0.4601,
+          0.3834,
+          0.3148,
+          0.255,
+          0.2038,
+          0.1604,
+          0.124,
+          0.0939,
+          0.0694,
+          0.0498,
+          0.0347
+        ],
+        [
+          0.4096,
+          0.5265,
+          0.6464,
+          0.7591,
+          0.8539,
+          0.9218,
+          0.9569,
+          0.9573,
+          0.925,
+          0.8657,
+          0.7869,
+          0.6967,
+          0.6029,
+          0.5115,
+          0.4267,
+          0.3508,
+          0.2847,
+          0.2281,
+          0.1802,
+          0.1401,
+          0.1068,
+          0.0795,
+          0.0576,
+          0.0405
+        ],
+        [
+          0.4191,
+          0.5406,
+          0.6659,
+          0.7844,
+          0.885,
+          0.9581,
+          0.9972,
+          1.0,
+          0.9685,
+          0.9083,
+          0.8271,
+          0.7337,
+          0.6359,
+          0.5404,
+          0.4515,
+          0.372,
+          0.3026,
+          0.2432,
+          0.193,
+          0.1508,
+          0.1157,
+          0.0869,
+          0.0636,
+          0.0452
+        ],
+        [
+          0.4048,
+          0.5243,
+          0.6483,
+          0.7666,
+          0.868,
+          0.9428,
+          0.9844,
+          0.9901,
+          0.9616,
+          0.9043,
+          0.8256,
+          0.7341,
+          0.6378,
+          0.5433,
+          0.4551,
+          0.3759,
+          0.3067,
+          0.2475,
+          0.1972,
+          0.155,
+          0.1197,
+          0.0906,
+          0.0669,
+          0.048
+        ],
+        [
+          0.3689,
+          0.4801,
+          0.5964,
+          0.7082,
+          0.8052,
+          0.8781,
+          0.9203,
+          0.929,
+          0.9055,
+          0.8543,
+          0.7825,
+          0.698,
+          0.6084,
+          0.5198,
+          0.4368,
+          0.3621,
+          0.2966,
+          0.2403,
+          0.1924,
+          0.1521,
+          0.1183,
+          0.0902,
+          0.0672,
+          0.0487
+        ],
+        [
+          0.3173,
+          0.415,
+          0.5182,
+          0.6183,
+          0.7063,
+          0.7738,
+          0.8145,
+          0.8257,
+          0.808,
+          0.7654,
+          0.7038,
+          0.6303,
+          0.5514,
+          0.473,
+          0.399,
+          0.3321,
+          0.2732,
+          0.2224,
+          0.1791,
+          0.1424,
+          0.1115,
+          0.0856,
+          0.0643,
+          0.047
+        ],
+        [
+          0.2575,
+          0.3386,
+          0.4251,
+          0.5099,
+          0.5855,
+          0.6446,
+          0.6818,
+          0.6945,
+          0.6827,
+          0.6496,
+          0.6,
+          0.5396,
+          0.4742,
+          0.4085,
+          0.3462,
+          0.2895,
+          0.2393,
+          0.1958,
+          0.1586,
+          0.1269,
+          0.1001,
+          0.0774,
+          0.0586,
+          0.0432
+        ],
+        [
+          0.197,
+          0.2607,
+          0.3291,
+          0.397,
+          0.4583,
+          0.5072,
+          0.5393,
+          0.552,
+          0.5453,
+          0.5214,
+          0.4838,
+          0.4372,
+          0.386,
+          0.3341,
+          0.2845,
+          0.2391,
+          0.1988,
+          0.1636,
+          0.1334,
+          0.1074,
+          0.0854,
+          0.0666,
+          0.0509,
+          0.0378
+        ],
+        [
+          0.1421,
+          0.1891,
+          0.2402,
+          0.2913,
+          0.3382,
+          0.3764,
+          0.4023,
+          0.4139,
+          0.411,
+          0.3949,
+          0.3682,
+          0.3343,
+          0.2966,
+          0.258,
+          0.2208,
+          0.1866,
+          0.156,
+          0.1293,
+          0.1061,
+          0.0861,
+          0.069,
+          0.0543,
+          0.0419,
+          0.0315
+        ],
+        [
+          0.0965,
+          0.1291,
+          0.1649,
+          0.2012,
+          0.2349,
+          0.2629,
+          0.2825,
+          0.2921,
+          0.2915,
+          0.2815,
+          0.2637,
+          0.2406,
+          0.2145,
+          0.1875,
+          0.1613,
+          0.1371,
+          0.1153,
+          0.0962,
+          0.0796,
+          0.0652,
+          0.0527,
+          0.0419,
+          0.0326,
+          0.0248
+        ],
+        [
+          0.0615,
+          0.0828,
+          0.1063,
+          0.1305,
+          0.1532,
+          0.1723,
+          0.1861,
+          0.1935,
+          0.194,
+          0.1882,
+          0.1772,
+          0.1624,
+          0.1454,
+          0.1277,
+          0.1104,
+          0.0944,
+          0.0799,
+          0.0672,
+          0.056,
+          0.0463,
+          0.0378,
+          0.0304,
+          0.0239,
+          0.0184
+        ]
+      ]
+    },
+    "centroid": {
+      "x": 41.61,
+      "y": 39.37
+    },
+    "thirds_spine": [
+      {
+        "third": "defensive",
+        "x": 27.04,
+        "y": 38.78
+      },
+      {
+        "third": "middle",
+        "x": 54.37,
+        "y": 39.57
+      },
+      {
+        "third": "attacking",
+        "x": 91.25,
+        "y": 43.18
+      }
+    ],
+    "ellipse": {
+      "cx": 41.61,
+      "cy": 39.37,
+      "rx": 20.48,
+      "ry": 14.7,
+      "angle_deg": -172.7
+    },
+    "depth_line": {
+      "x": 48.9,
+      "percentile": 70
+    }
+  },
+  "metadata": {
+    "match_id": 3930161,
+    "team": "Albania",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Italy vs Albania",
+    "on_ball_event_count": 525,
+    "on_ball_period_count": 4,
+    "off_ball_bandwidth_yards": 8.0,
+    "off_ball_depth_percentile": 70,
+    "off_ball_grid_cols": 24,
+    "off_ball_grid_rows": 16,
+    "phase_filter": "open_play_only",
+    "coordinate_system": "statsbomb_120x80_normalised_attack_right",
+    "coordinate_note": "StatsBomb event and 360 freeze-frame coordinates are already in each team's own attack-right frame across both halves; no period-based flip is applied. Off-ball 360 dots from opponent-actor frames are mirrored (x\u2192120-x, y\u219280-y) into the analysed team's frame before pooling; own-actor dots are used as-is, and the goalkeeper is excluded.",
+    "camera_caveat": "360 frames follow the ball; the visible subset of out-of-possession positions is biased toward areas near the ball. The camera artifact and the real defensive shape point the same direction \u2014 they cannot be cleanly separated."
+  }
+}

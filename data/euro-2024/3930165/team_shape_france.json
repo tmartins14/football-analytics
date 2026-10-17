@@ -1,0 +1,1302 @@
+{
+  "on_ball": {
+    "periods": [
+      {
+        "from_minute": 0,
+        "from_period": 1,
+        "to_minute": 70,
+        "to_period": 2,
+        "players_in": [
+          "Mike Maignan",
+          "Jules Kound\u00e9",
+          "Dayotchanculle Upamecano",
+          "William Saliba",
+          "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+          "N'Golo Kant\u00e9",
+          "Adrien Rabiot",
+          "Ousmane Demb\u00e9l\u00e9",
+          "Antoine Griezmann",
+          "Marcus Thuram",
+          "Kylian Mbapp\u00e9 Lottin"
+        ],
+        "players_out": [],
+        "nodes": [
+          {
+            "player_id": 17592,
+            "player": "William Saliba",
+            "display_name": "William Saliba",
+            "x": 37.52,
+            "y": 24.27,
+            "event_count": 83,
+            "lane_counts": {
+              "left_wing": 21,
+              "left_half_space": 38,
+              "centre": 21,
+              "right_half_space": 3,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 50,
+              "own_half": 22,
+              "opposition_half": 11,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 3009,
+            "player": "Kylian Mbapp\u00e9 Lottin",
+            "display_name": "Kylian Mbapp\u00e9",
+            "x": 82.46,
+            "y": 24.63,
+            "event_count": 82,
+            "lane_counts": {
+              "left_wing": 46,
+              "left_half_space": 9,
+              "centre": 13,
+              "right_half_space": 9,
+              "right_wing": 5
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 12,
+              "opposition_half": 22,
+              "final_third": 48
+            }
+          },
+          {
+            "player_id": 6704,
+            "player": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+            "display_name": "Theo Hern\u00e1ndez",
+            "x": 64.6,
+            "y": 10.88,
+            "event_count": 79,
+            "lane_counts": {
+              "left_wing": 65,
+              "left_half_space": 14,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 16,
+              "own_half": 23,
+              "opposition_half": 15,
+              "final_third": 25
+            }
+          },
+          {
+            "player_id": 3026,
+            "player": "Adrien Rabiot",
+            "display_name": "Adrien Rabiot",
+            "x": 61.24,
+            "y": 36.67,
+            "event_count": 75,
+            "lane_counts": {
+              "left_wing": 21,
+              "left_half_space": 7,
+              "centre": 25,
+              "right_half_space": 10,
+              "right_wing": 12
+            },
+            "band_counts": {
+              "own_third": 17,
+              "own_half": 26,
+              "opposition_half": 10,
+              "final_third": 22
+            }
+          },
+          {
+            "player_id": 5477,
+            "player": "Ousmane Demb\u00e9l\u00e9",
+            "display_name": "Ousmane Demb\u00e9l\u00e9",
+            "x": 75.96,
+            "y": 65.6,
+            "event_count": 62,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 7,
+              "right_half_space": 11,
+              "right_wing": 44
+            },
+            "band_counts": {
+              "own_third": 11,
+              "own_half": 10,
+              "opposition_half": 12,
+              "final_third": 29
+            }
+          },
+          {
+            "player_id": 3961,
+            "player": "N'Golo Kant\u00e9",
+            "display_name": "N'Golo Kant\u00e9",
+            "x": 50.9,
+            "y": 37.43,
+            "event_count": 57,
+            "lane_counts": {
+              "left_wing": 12,
+              "left_half_space": 11,
+              "centre": 13,
+              "right_half_space": 17,
+              "right_wing": 4
+            },
+            "band_counts": {
+              "own_third": 22,
+              "own_half": 11,
+              "opposition_half": 12,
+              "final_third": 12
+            }
+          },
+          {
+            "player_id": 8519,
+            "player": "Dayotchanculle Upamecano",
+            "display_name": "Dayotchanculle Upamecano",
+            "x": 38.06,
+            "y": 52.13,
+            "event_count": 56,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 1,
+              "centre": 23,
+              "right_half_space": 25,
+              "right_wing": 7
+            },
+            "band_counts": {
+              "own_third": 32,
+              "own_half": 16,
+              "opposition_half": 8,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 5487,
+            "player": "Antoine Griezmann",
+            "display_name": "Antoine Griezmann",
+            "x": 66.36,
+            "y": 49.97,
+            "event_count": 56,
+            "lane_counts": {
+              "left_wing": 3,
+              "left_half_space": 3,
+              "centre": 14,
+              "right_half_space": 27,
+              "right_wing": 9
+            },
+            "band_counts": {
+              "own_third": 11,
+              "own_half": 17,
+              "opposition_half": 9,
+              "final_third": 19
+            }
+          },
+          {
+            "player_id": 4445,
+            "player": "Jules Kound\u00e9",
+            "display_name": "Jules Kound\u00e9",
+            "x": 52.69,
+            "y": 66.31,
+            "event_count": 51,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 5,
+              "right_half_space": 9,
+              "right_wing": 37
+            },
+            "band_counts": {
+              "own_third": 22,
+              "own_half": 12,
+              "opposition_half": 2,
+              "final_third": 15
+            }
+          },
+          {
+            "player_id": 2972,
+            "player": "Marcus Thuram",
+            "display_name": "Marcus Thuram",
+            "x": 73.12,
+            "y": 24.69,
+            "event_count": 42,
+            "lane_counts": {
+              "left_wing": 19,
+              "left_half_space": 8,
+              "centre": 9,
+              "right_half_space": 4,
+              "right_wing": 2
+            },
+            "band_counts": {
+              "own_third": 5,
+              "own_half": 10,
+              "opposition_half": 12,
+              "final_third": 15
+            }
+          },
+          {
+            "player_id": 3761,
+            "player": "Mike Maignan",
+            "display_name": "Mike Maignan",
+            "x": 10.67,
+            "y": 40.03,
+            "event_count": 36,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 2,
+              "centre": 32,
+              "right_half_space": 2,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 36,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          }
+        ],
+        "hull": [
+          [
+            52.69,
+            66.31
+          ],
+          [
+            10.67,
+            40.03
+          ],
+          [
+            37.52,
+            24.27
+          ],
+          [
+            64.6,
+            10.88
+          ],
+          [
+            82.46,
+            24.63
+          ],
+          [
+            75.96,
+            65.6
+          ]
+        ]
+      },
+      {
+        "from_minute": 70,
+        "from_period": 2,
+        "to_minute": 89,
+        "to_period": 2,
+        "players_in": [
+          "Randal Kolo Muani",
+          "Eduardo Camavinga"
+        ],
+        "players_out": [
+          "Ousmane Demb\u00e9l\u00e9",
+          "Adrien Rabiot"
+        ],
+        "nodes": [
+          {
+            "player_id": 24778,
+            "player": "Eduardo Camavinga",
+            "display_name": "Eduardo Camavinga",
+            "x": 76.5,
+            "y": 20.6,
+            "event_count": 8,
+            "lane_counts": {
+              "left_wing": 1,
+              "left_half_space": 7,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 4,
+              "opposition_half": 1,
+              "final_third": 3
+            }
+          },
+          {
+            "player_id": 17592,
+            "player": "William Saliba",
+            "display_name": "William Saliba",
+            "x": 39.33,
+            "y": 25.82,
+            "event_count": 6,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 6,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 3,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 3009,
+            "player": "Kylian Mbapp\u00e9 Lottin",
+            "display_name": "Kylian Mbapp\u00e9",
+            "x": 91.3,
+            "y": 7.35,
+            "event_count": 6,
+            "lane_counts": {
+              "left_wing": 6,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 2,
+              "final_third": 4
+            }
+          },
+          {
+            "player_id": 5487,
+            "player": "Antoine Griezmann",
+            "display_name": "Antoine Griezmann",
+            "x": 91.98,
+            "y": 42.44,
+            "event_count": 5,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 5,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 5
+            }
+          },
+          {
+            "player_id": 2972,
+            "player": "Marcus Thuram",
+            "display_name": "Marcus Thuram",
+            "x": 93.26,
+            "y": 22.44,
+            "event_count": 5,
+            "lane_counts": {
+              "left_wing": 2,
+              "left_half_space": 1,
+              "centre": 2,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 5
+            }
+          },
+          {
+            "player_id": 22097,
+            "player": "Randal Kolo Muani",
+            "display_name": "Randal Kolo",
+            "x": 72.08,
+            "y": 67.22,
+            "event_count": 5,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 2,
+              "right_wing": 3
+            },
+            "band_counts": {
+              "own_third": 2,
+              "own_half": 0,
+              "opposition_half": 1,
+              "final_third": 2
+            }
+          },
+          {
+            "player_id": 3761,
+            "player": "Mike Maignan",
+            "display_name": "Mike Maignan",
+            "x": 13.78,
+            "y": 35.65,
+            "event_count": 4,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 4,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 4,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 3961,
+            "player": "N'Golo Kant\u00e9",
+            "display_name": "N'Golo Kant\u00e9",
+            "x": 73.2,
+            "y": 48.6,
+            "event_count": 3,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 3,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 3,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 4445,
+            "player": "Jules Kound\u00e9",
+            "display_name": "Jules Kound\u00e9",
+            "x": 60.37,
+            "y": 72.27,
+            "event_count": 3,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 3
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 1,
+              "opposition_half": 2,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 6704,
+            "player": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+            "display_name": "Theo Hern\u00e1ndez",
+            "x": 40.73,
+            "y": 6.57,
+            "event_count": 3,
+            "lane_counts": {
+              "left_wing": 3,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 2,
+              "own_half": 1,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          }
+        ],
+        "hull": [
+          [
+            60.37,
+            72.27
+          ],
+          [
+            13.78,
+            35.65
+          ],
+          [
+            40.73,
+            6.57
+          ],
+          [
+            91.3,
+            7.35
+          ],
+          [
+            93.26,
+            22.44
+          ],
+          [
+            91.98,
+            42.44
+          ],
+          [
+            72.08,
+            67.22
+          ]
+        ]
+      },
+      {
+        "from_minute": 89,
+        "from_period": 2,
+        "to_minute": 90,
+        "to_period": 2,
+        "players_in": [
+          "Olivier Giroud"
+        ],
+        "players_out": [
+          "Kylian Mbapp\u00e9 Lottin"
+        ],
+        "nodes": [],
+        "hull": []
+      },
+      {
+        "from_minute": 90,
+        "from_period": 2,
+        "to_minute": 100,
+        "to_period": 2,
+        "players_in": [
+          "Youssouf Fofana"
+        ],
+        "players_out": [
+          "Antoine Griezmann"
+        ],
+        "nodes": [
+          {
+            "player_id": 6704,
+            "player": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+            "display_name": "Theo Hern\u00e1ndez",
+            "x": 40.92,
+            "y": 14.52,
+            "event_count": 16,
+            "lane_counts": {
+              "left_wing": 11,
+              "left_half_space": 5,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 7,
+              "own_half": 4,
+              "opposition_half": 5,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 2972,
+            "player": "Marcus Thuram",
+            "display_name": "Marcus Thuram",
+            "x": 77.22,
+            "y": 7.56,
+            "event_count": 12,
+            "lane_counts": {
+              "left_wing": 10,
+              "left_half_space": 2,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 2,
+              "opposition_half": 6,
+              "final_third": 4
+            }
+          },
+          {
+            "player_id": 24778,
+            "player": "Eduardo Camavinga",
+            "display_name": "Eduardo Camavinga",
+            "x": 53.84,
+            "y": 29.6,
+            "event_count": 9,
+            "lane_counts": {
+              "left_wing": 5,
+              "left_half_space": 0,
+              "centre": 2,
+              "right_half_space": 2,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 1,
+              "opposition_half": 5,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 3961,
+            "player": "N'Golo Kant\u00e9",
+            "display_name": "N'Golo Kant\u00e9",
+            "x": 94.36,
+            "y": 9.68,
+            "event_count": 9,
+            "lane_counts": {
+              "left_wing": 9,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 1,
+              "opposition_half": 0,
+              "final_third": 8
+            }
+          },
+          {
+            "player_id": 22097,
+            "player": "Randal Kolo Muani",
+            "display_name": "Randal Kolo",
+            "x": 83.53,
+            "y": 65.54,
+            "event_count": 7,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 1,
+              "right_half_space": 0,
+              "right_wing": 6
+            },
+            "band_counts": {
+              "own_third": 1,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 6
+            }
+          },
+          {
+            "player_id": 3604,
+            "player": "Olivier Giroud",
+            "display_name": "Olivier Giroud",
+            "x": 75.17,
+            "y": 25.08,
+            "event_count": 6,
+            "lane_counts": {
+              "left_wing": 2,
+              "left_half_space": 2,
+              "centre": 2,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 5,
+              "final_third": 1
+            }
+          },
+          {
+            "player_id": 11990,
+            "player": "Youssouf Fofana",
+            "display_name": "Youssouf Fofana",
+            "x": 74.04,
+            "y": 35.16,
+            "event_count": 5,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 2,
+              "centre": 3,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 4,
+              "final_third": 1
+            }
+          },
+          {
+            "player_id": 17592,
+            "player": "William Saliba",
+            "display_name": "William Saliba",
+            "x": 48.88,
+            "y": 41.05,
+            "event_count": 4,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 1,
+              "centre": 3,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 1,
+              "own_half": 3,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 3761,
+            "player": "Mike Maignan",
+            "display_name": "Mike Maignan",
+            "x": 15.35,
+            "y": 29.75,
+            "event_count": 2,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 1,
+              "centre": 1,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 2,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 8519,
+            "player": "Dayotchanculle Upamecano",
+            "display_name": "Dayotchanculle Upamecano",
+            "x": 32.7,
+            "y": 48.8,
+            "event_count": 1,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 1,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 1,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 4445,
+            "player": "Jules Kound\u00e9",
+            "display_name": "Jules Kound\u00e9",
+            "x": 116.9,
+            "y": 64.3,
+            "event_count": 1,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 1
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 1
+            }
+          }
+        ],
+        "hull": [
+          [
+            94.36,
+            9.68
+          ],
+          [
+            116.9,
+            64.3
+          ],
+          [
+            83.53,
+            65.54
+          ],
+          [
+            32.7,
+            48.8
+          ],
+          [
+            15.35,
+            29.75
+          ],
+          [
+            40.92,
+            14.52
+          ],
+          [
+            77.22,
+            7.56
+          ]
+        ]
+      }
+    ]
+  },
+  "off_ball": {
+    "density_grid": {
+      "cols": 24,
+      "rows": 16,
+      "values": [
+        [
+          0.0789,
+          0.0963,
+          0.1145,
+          0.1327,
+          0.1502,
+          0.1661,
+          0.1797,
+          0.1903,
+          0.1975,
+          0.2011,
+          0.2011,
+          0.1977,
+          0.1913,
+          0.1823,
+          0.1712,
+          0.1586,
+          0.145,
+          0.1308,
+          0.1163,
+          0.102,
+          0.0882,
+          0.075,
+          0.0626,
+          0.0514
+        ],
+        [
+          0.1215,
+          0.1478,
+          0.175,
+          0.2022,
+          0.2278,
+          0.2508,
+          0.27,
+          0.2846,
+          0.2939,
+          0.2979,
+          0.2965,
+          0.2902,
+          0.2795,
+          0.2653,
+          0.2482,
+          0.2291,
+          0.2086,
+          0.1876,
+          0.1664,
+          0.1455,
+          0.1254,
+          0.1063,
+          0.0886,
+          0.0725
+        ],
+        [
+          0.1764,
+          0.2138,
+          0.2522,
+          0.29,
+          0.3254,
+          0.3566,
+          0.3821,
+          0.4007,
+          0.4118,
+          0.4153,
+          0.4114,
+          0.4007,
+          0.3843,
+          0.3633,
+          0.3386,
+          0.3115,
+          0.283,
+          0.2537,
+          0.2246,
+          0.196,
+          0.1687,
+          0.1428,
+          0.1189,
+          0.0971
+        ],
+        [
+          0.2419,
+          0.292,
+          0.3431,
+          0.3929,
+          0.4388,
+          0.4786,
+          0.5103,
+          0.5325,
+          0.5445,
+          0.5463,
+          0.5386,
+          0.5222,
+          0.4987,
+          0.4696,
+          0.4362,
+          0.4002,
+          0.3626,
+          0.3245,
+          0.2868,
+          0.2501,
+          0.215,
+          0.1819,
+          0.1513,
+          0.1235
+        ],
+        [
+          0.3136,
+          0.377,
+          0.4413,
+          0.5032,
+          0.5595,
+          0.6074,
+          0.6445,
+          0.6692,
+          0.681,
+          0.68,
+          0.6671,
+          0.644,
+          0.6125,
+          0.5746,
+          0.5321,
+          0.4869,
+          0.4403,
+          0.3934,
+          0.3473,
+          0.3027,
+          0.26,
+          0.22,
+          0.183,
+          0.1493
+        ],
+        [
+          0.3846,
+          0.4608,
+          0.5372,
+          0.6101,
+          0.6756,
+          0.7302,
+          0.7714,
+          0.7973,
+          0.8076,
+          0.8027,
+          0.7841,
+          0.7538,
+          0.7142,
+          0.6677,
+          0.6166,
+          0.5628,
+          0.508,
+          0.4534,
+          0.3999,
+          0.3483,
+          0.2992,
+          0.2531,
+          0.2104,
+          0.1717
+        ],
+        [
+          0.4464,
+          0.5332,
+          0.6195,
+          0.7011,
+          0.7735,
+          0.8329,
+          0.8764,
+          0.9023,
+          0.9102,
+          0.9011,
+          0.8768,
+          0.8399,
+          0.7931,
+          0.7392,
+          0.6809,
+          0.6203,
+          0.559,
+          0.4982,
+          0.4391,
+          0.3822,
+          0.3281,
+          0.2774,
+          0.2306,
+          0.1882
+        ],
+        [
+          0.4906,
+          0.5844,
+          0.6773,
+          0.7643,
+          0.8408,
+          0.9025,
+          0.9466,
+          0.9715,
+          0.9769,
+          0.964,
+          0.9352,
+          0.8931,
+          0.8411,
+          0.7821,
+          0.7189,
+          0.6537,
+          0.5882,
+          0.5237,
+          0.4611,
+          0.401,
+          0.344,
+          0.2907,
+          0.2414,
+          0.1968
+        ],
+        [
+          0.5107,
+          0.6072,
+          0.7023,
+          0.791,
+          0.8683,
+          0.9301,
+          0.9734,
+          0.9967,
+          1.0,
+          0.9847,
+          0.9532,
+          0.9085,
+          0.854,
+          0.7928,
+          0.7276,
+          0.6608,
+          0.5939,
+          0.5282,
+          0.4645,
+          0.4035,
+          0.3458,
+          0.2917,
+          0.242,
+          0.1969
+        ],
+        [
+          0.5038,
+          0.5984,
+          0.6914,
+          0.7778,
+          0.8528,
+          0.9124,
+          0.9537,
+          0.9754,
+          0.9775,
+          0.9614,
+          0.9297,
+          0.8852,
+          0.8314,
+          0.7712,
+          0.7073,
+          0.6418,
+          0.5763,
+          0.5121,
+          0.4498,
+          0.3903,
+          0.3339,
+          0.2812,
+          0.2328,
+          0.189
+        ],
+        [
+          0.4714,
+          0.5597,
+          0.6465,
+          0.727,
+          0.7969,
+          0.8524,
+          0.8908,
+          0.9109,
+          0.9127,
+          0.8977,
+          0.868,
+          0.8266,
+          0.7764,
+          0.7202,
+          0.6605,
+          0.5992,
+          0.5379,
+          0.4776,
+          0.4191,
+          0.3631,
+          0.3101,
+          0.2606,
+          0.2152,
+          0.1743
+        ],
+        [
+          0.4185,
+          0.4971,
+          0.5744,
+          0.6462,
+          0.7086,
+          0.7584,
+          0.793,
+          0.8114,
+          0.8137,
+          0.801,
+          0.7753,
+          0.739,
+          0.6947,
+          0.645,
+          0.5919,
+          0.5372,
+          0.4822,
+          0.4279,
+          0.3752,
+          0.3245,
+          0.2766,
+          0.232,
+          0.1911,
+          0.1543
+        ],
+        [
+          0.3527,
+          0.4192,
+          0.4848,
+          0.5459,
+          0.5993,
+          0.642,
+          0.6722,
+          0.6888,
+          0.6917,
+          0.682,
+          0.6612,
+          0.6313,
+          0.5944,
+          0.5526,
+          0.5077,
+          0.4611,
+          0.414,
+          0.3673,
+          0.3218,
+          0.278,
+          0.2365,
+          0.1979,
+          0.1625,
+          0.1308
+        ],
+        [
+          0.2819,
+          0.3354,
+          0.3884,
+          0.4379,
+          0.4813,
+          0.5164,
+          0.5415,
+          0.5558,
+          0.5593,
+          0.5525,
+          0.5368,
+          0.5136,
+          0.4846,
+          0.4513,
+          0.4152,
+          0.3775,
+          0.3391,
+          0.3008,
+          0.2633,
+          0.2271,
+          0.1929,
+          0.161,
+          0.1318,
+          0.1058
+        ],
+        [
+          0.2134,
+          0.2542,
+          0.2947,
+          0.3327,
+          0.3662,
+          0.3936,
+          0.4134,
+          0.4252,
+          0.4287,
+          0.4245,
+          0.4134,
+          0.3964,
+          0.3748,
+          0.3497,
+          0.3223,
+          0.2933,
+          0.2635,
+          0.2337,
+          0.2044,
+          0.1761,
+          0.1493,
+          0.1243,
+          0.1015,
+          0.0812
+        ],
+        [
+          0.1527,
+          0.1821,
+          0.2113,
+          0.2388,
+          0.2632,
+          0.2833,
+          0.2981,
+          0.3072,
+          0.3105,
+          0.3081,
+          0.3007,
+          0.289,
+          0.2739,
+          0.256,
+          0.2362,
+          0.2152,
+          0.1934,
+          0.1715,
+          0.1499,
+          0.1289,
+          0.109,
+          0.0905,
+          0.0737,
+          0.0588
+        ]
+      ]
+    },
+    "centroid": {
+      "x": 49.56,
+      "y": 42.63
+    },
+    "thirds_spine": [
+      {
+        "third": "defensive",
+        "x": 26.34,
+        "y": 43.7
+      },
+      {
+        "third": "middle",
+        "x": 57.81,
+        "y": 41.91
+      },
+      {
+        "third": "attacking",
+        "x": 94.21,
+        "y": 41.47
+      }
+    ],
+    "ellipse": {
+      "cx": 49.56,
+      "cy": 42.63,
+      "rx": 25.93,
+      "ry": 15.62,
+      "angle_deg": 177.6
+    },
+    "depth_line": {
+      "x": 62.26,
+      "percentile": 70
+    }
+  },
+  "metadata": {
+    "match_id": 3930165,
+    "team": "France",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Austria vs France",
+    "on_ball_event_count": 799,
+    "on_ball_period_count": 4,
+    "off_ball_bandwidth_yards": 8.0,
+    "off_ball_depth_percentile": 70,
+    "off_ball_grid_cols": 24,
+    "off_ball_grid_rows": 16,
+    "phase_filter": "open_play_only",
+    "coordinate_system": "statsbomb_120x80_normalised_attack_right",
+    "coordinate_note": "StatsBomb event and 360 freeze-frame coordinates are already in each team's own attack-right frame across both halves; no period-based flip is applied. Off-ball 360 dots from opponent-actor frames are mirrored (x\u2192120-x, y\u219280-y) into the analysed team's frame before pooling; own-actor dots are used as-is, and the goalkeeper is excluded.",
+    "camera_caveat": "360 frames follow the ball; the visible subset of out-of-possession positions is biased toward areas near the ball. The camera artifact and the real defensive shape point the same direction \u2014 they cannot be cleanly separated."
+  }
+}

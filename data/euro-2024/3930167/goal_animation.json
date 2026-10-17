@@ -1,0 +1,459 @@
+{
+  "goals": [
+    {
+      "window": {
+        "anchor_event_id": "0e2e7728-1a90-4bbd-81a6-287c115cb7a5",
+        "start_event_id": "c71c52eb-8f5d-48b6-a554-14c5c5226ab6",
+        "end_event_id": "0e2e7728-1a90-4bbd-81a6-287c115cb7a5",
+        "period": 1,
+        "window_seconds": 10.0,
+        "t_span_seconds": 10.36
+      },
+      "frames": [
+        {
+          "event_id": "c71c52eb-8f5d-48b6-a554-14c5c5226ab6",
+          "t_seconds": 0.0,
+          "team": "Albania",
+          "event_type": "Pass",
+          "ball_x": 91.7,
+          "ball_y": 18.1,
+          "ball_end_x": 95.8,
+          "ball_end_y": 28.2,
+          "actor": "Mario Mitaj",
+          "outcome": null
+        },
+        {
+          "event_id": "1f61f26a-1bc1-4b92-abb1-39b08c69f8df",
+          "t_seconds": 0.842,
+          "team": "Albania",
+          "event_type": "Carry",
+          "ball_x": 95.8,
+          "ball_y": 28.2,
+          "ball_end_x": 89.7,
+          "ball_end_y": 24.9,
+          "actor": "Kristjan Asllani",
+          "outcome": null
+        },
+        {
+          "event_id": "fdcfea71-340c-403f-93a0-65ac71d17ff3",
+          "t_seconds": 1.417,
+          "team": "Croatia",
+          "event_type": "Pressure",
+          "ball_x": 28.4,
+          "ball_y": 51.6,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Marcelo Brozovi\u0107",
+          "outcome": null
+        },
+        {
+          "event_id": "5453e3c0-4b23-45f1-a48a-265b48a49ebf",
+          "t_seconds": 1.836,
+          "team": "Albania",
+          "event_type": "Pass",
+          "ball_x": 89.7,
+          "ball_y": 24.9,
+          "ball_end_x": 79.7,
+          "ball_end_y": 38.4,
+          "actor": "Kristjan Asllani",
+          "outcome": null
+        },
+        {
+          "event_id": "498da2f9-0077-498b-bfc9-20e638274680",
+          "t_seconds": 3.346,
+          "team": "Albania",
+          "event_type": "Carry",
+          "ball_x": 79.7,
+          "ball_y": 38.4,
+          "ball_end_x": 79.4,
+          "ball_end_y": 48.8,
+          "actor": "Ylber Ramadani",
+          "outcome": null
+        },
+        {
+          "event_id": "958638ff-3652-4305-b666-a49ce2dd6647",
+          "t_seconds": 4.308,
+          "team": "Albania",
+          "event_type": "Pass",
+          "ball_x": 79.4,
+          "ball_y": 48.8,
+          "ball_end_x": 92.3,
+          "ball_end_y": 73.8,
+          "actor": "Ylber Ramadani",
+          "outcome": null
+        },
+        {
+          "event_id": "94c97715-e751-48d6-83ae-8f3d3538ac7d",
+          "t_seconds": 6.121,
+          "team": "Albania",
+          "event_type": "Carry",
+          "ball_x": 92.3,
+          "ball_y": 73.8,
+          "ball_end_x": 93.1,
+          "ball_end_y": 71.2,
+          "actor": "Jasir Asani",
+          "outcome": null
+        },
+        {
+          "event_id": "1c71e50c-e7ed-4a51-8f24-d7c987329e97",
+          "t_seconds": 9.013,
+          "team": "Albania",
+          "event_type": "Pass",
+          "ball_x": 93.1,
+          "ball_y": 71.2,
+          "ball_end_x": 111.4,
+          "ball_end_y": 42.7,
+          "actor": "Jasir Asani",
+          "outcome": null
+        },
+        {
+          "event_id": "0e2e7728-1a90-4bbd-81a6-287c115cb7a5",
+          "t_seconds": 10.36,
+          "team": "Albania",
+          "event_type": "Shot",
+          "ball_x": 111.4,
+          "ball_y": 42.7,
+          "ball_end_x": 120.0,
+          "ball_end_y": 41.8,
+          "actor": "Qazim La\u00e7i",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "0e2e7728-1a90-4bbd-81a6-287c115cb7a5",
+          "minute": 10,
+          "second": 15,
+          "scorer": "Qazim La\u00e7i",
+          "team": "Albania"
+        }
+      },
+      "metadata": {
+        "match_id": 3930167,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Croatia vs Albania"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "c5bae188-0e33-4549-b050-d066ddf7b2a5",
+        "start_event_id": "357d9b99-2a8f-446f-9374-74a12c0351fb",
+        "end_event_id": "c5bae188-0e33-4549-b050-d066ddf7b2a5",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 16.957
+      },
+      "frames": [
+        {
+          "event_id": "357d9b99-2a8f-446f-9374-74a12c0351fb",
+          "t_seconds": 0.0,
+          "team": "Croatia",
+          "event_type": "Carry",
+          "ball_x": 48.3,
+          "ball_y": 61.4,
+          "ball_end_x": 83.3,
+          "ball_end_y": 66.3,
+          "actor": "Luka Modri\u0107",
+          "outcome": null
+        },
+        {
+          "event_id": "aab584c1-d641-4b5d-93bd-f42e0bffbb9b",
+          "t_seconds": 7.346,
+          "team": "Croatia",
+          "event_type": "Pass",
+          "ball_x": 83.3,
+          "ball_y": 66.3,
+          "ball_end_x": 87.0,
+          "ball_end_y": 76.0,
+          "actor": "Luka Modri\u0107",
+          "outcome": null
+        },
+        {
+          "event_id": "d355e310-94c4-4de2-9247-813369f3e759",
+          "t_seconds": 8.426,
+          "team": "Croatia",
+          "event_type": "Carry",
+          "ball_x": 87.0,
+          "ball_y": 76.0,
+          "ball_end_x": 86.6,
+          "ball_end_y": 74.8,
+          "actor": "Luka Su\u010di\u0107",
+          "outcome": null
+        },
+        {
+          "event_id": "4819880a-722a-4e39-9eb7-eb503652a61d",
+          "t_seconds": 9.815,
+          "team": "Albania",
+          "event_type": "Pressure",
+          "ball_x": 32.0,
+          "ball_y": 5.3,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Mario Mitaj",
+          "outcome": null
+        },
+        {
+          "event_id": "0935b079-ad4c-449f-899d-6903d10c5085",
+          "t_seconds": 9.967,
+          "team": "Croatia",
+          "event_type": "Pass",
+          "ball_x": 86.6,
+          "ball_y": 74.8,
+          "ball_end_x": 83.5,
+          "ball_end_y": 63.5,
+          "actor": "Luka Su\u010di\u0107",
+          "outcome": null
+        },
+        {
+          "event_id": "22087829-bddc-470c-8170-46cef4e86fc0",
+          "t_seconds": 11.047,
+          "team": "Croatia",
+          "event_type": "Carry",
+          "ball_x": 83.5,
+          "ball_y": 63.5,
+          "ball_end_x": 96.2,
+          "ball_end_y": 56.2,
+          "actor": "Mateo Kova\u010di\u0107",
+          "outcome": null
+        },
+        {
+          "event_id": "9562e092-6123-4033-b44d-d26f5c7d6055",
+          "t_seconds": 13.535,
+          "team": "Albania",
+          "event_type": "Pressure",
+          "ball_x": 20.9,
+          "ball_y": 23.4,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Kristjan Asllani",
+          "outcome": null
+        },
+        {
+          "event_id": "7c53360c-cacf-48a3-b9c1-85b3fbb23b95",
+          "t_seconds": 13.566,
+          "team": "Croatia",
+          "event_type": "Pass",
+          "ball_x": 96.2,
+          "ball_y": 56.2,
+          "ball_end_x": 100.9,
+          "ball_end_y": 40.8,
+          "actor": "Mateo Kova\u010di\u0107",
+          "outcome": null
+        },
+        {
+          "event_id": "17edf674-5007-4e4e-8f9c-a15d2425dc09",
+          "t_seconds": 14.684,
+          "team": "Albania",
+          "event_type": "Pressure",
+          "ball_x": 16.8,
+          "ball_y": 37.9,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Arlind Afrim Ajeti",
+          "outcome": null
+        },
+        {
+          "event_id": "343fd84b-b053-48dc-9c4e-205f5c54dc5b",
+          "t_seconds": 14.828,
+          "team": "Croatia",
+          "event_type": "Carry",
+          "ball_x": 100.9,
+          "ball_y": 40.8,
+          "ball_end_x": 100.9,
+          "ball_end_y": 40.8,
+          "actor": "Ante Budimir",
+          "outcome": null
+        },
+        {
+          "event_id": "8d47dca6-30f5-447d-84a2-600f53686e22",
+          "t_seconds": 14.972,
+          "team": "Croatia",
+          "event_type": "Pass",
+          "ball_x": 100.9,
+          "ball_y": 40.8,
+          "ball_end_x": 106.6,
+          "ball_end_y": 33.5,
+          "actor": "Ante Budimir",
+          "outcome": null
+        },
+        {
+          "event_id": "b2ee0b16-ec8c-4a58-b0af-19d090f4a382",
+          "t_seconds": 15.7,
+          "team": "Croatia",
+          "event_type": "Carry",
+          "ball_x": 106.6,
+          "ball_y": 33.5,
+          "ball_end_x": 107.3,
+          "ball_end_y": 33.5,
+          "actor": "Andrej Kramari\u0107",
+          "outcome": null
+        },
+        {
+          "event_id": "125c5831-a847-4cf6-8e63-32e23458dde1",
+          "t_seconds": 16.631,
+          "team": "Albania",
+          "event_type": "Pressure",
+          "ball_x": 13.5,
+          "ball_y": 43.4,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Arlind Afrim Ajeti",
+          "outcome": null
+        },
+        {
+          "event_id": "c5bae188-0e33-4549-b050-d066ddf7b2a5",
+          "t_seconds": 16.957,
+          "team": "Croatia",
+          "event_type": "Shot",
+          "ball_x": 107.3,
+          "ball_y": 33.5,
+          "ball_end_x": 120.0,
+          "ball_end_y": 37.7,
+          "actor": "Andrej Kramari\u0107",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "c5bae188-0e33-4549-b050-d066ddf7b2a5",
+          "minute": 73,
+          "second": 19,
+          "scorer": "Andrej Kramari\u0107",
+          "team": "Croatia"
+        }
+      },
+      "metadata": {
+        "match_id": 3930167,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Croatia vs Albania"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "c2ccef25-60f5-46a8-9948-0bdf266211f0",
+        "start_event_id": "cfc3a0be-d75f-4f49-a660-d494775bbeda",
+        "end_event_id": "c2ccef25-60f5-46a8-9948-0bdf266211f0",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 13.936
+      },
+      "frames": [
+        {
+          "event_id": "cfc3a0be-d75f-4f49-a660-d494775bbeda",
+          "t_seconds": 0.0,
+          "team": "Albania",
+          "event_type": "Carry",
+          "ball_x": 74.6,
+          "ball_y": 13.2,
+          "ball_end_x": 71.8,
+          "ball_end_y": 15.6,
+          "actor": "Kristjan Asllani",
+          "outcome": null
+        },
+        {
+          "event_id": "3be0eb44-e7eb-48dc-b863-22e7565c619c",
+          "t_seconds": 4.25,
+          "team": "Albania",
+          "event_type": "Pass",
+          "ball_x": 71.8,
+          "ball_y": 15.6,
+          "ball_end_x": 84.0,
+          "ball_end_y": 14.2,
+          "actor": "Kristjan Asllani",
+          "outcome": null
+        },
+        {
+          "event_id": "3a2ff580-b262-4692-8bc4-d2c76ddf4402",
+          "t_seconds": 5.28,
+          "team": "Albania",
+          "event_type": "Carry",
+          "ball_x": 84.0,
+          "ball_y": 14.2,
+          "ball_end_x": 106.2,
+          "ball_end_y": 3.4,
+          "actor": "Arb\u00ebr Hoxha",
+          "outcome": null
+        },
+        {
+          "event_id": "3bdfbd28-9c73-435b-b246-7a65fd32c6d6",
+          "t_seconds": 10.421,
+          "team": "Albania",
+          "event_type": "Pass",
+          "ball_x": 106.2,
+          "ball_y": 3.4,
+          "ball_end_x": 115.0,
+          "ball_end_y": 17.0,
+          "actor": "Arb\u00ebr Hoxha",
+          "outcome": null
+        },
+        {
+          "event_id": "046a481d-d0cc-426a-8e83-366b8a9b4b4c",
+          "t_seconds": 12.132,
+          "team": "Albania",
+          "event_type": "Carry",
+          "ball_x": 115.0,
+          "ball_y": 17.0,
+          "ball_end_x": 115.0,
+          "ball_end_y": 17.0,
+          "actor": "Mario Mitaj",
+          "outcome": null
+        },
+        {
+          "event_id": "993e7f93-f9dc-49eb-a7c0-40d993d29e1d",
+          "t_seconds": 12.167,
+          "team": "Albania",
+          "event_type": "Pass",
+          "ball_x": 115.0,
+          "ball_y": 17.0,
+          "ball_end_x": 111.5,
+          "ball_end_y": 30.0,
+          "actor": "Mario Mitaj",
+          "outcome": "Incomplete"
+        },
+        {
+          "event_id": "822a6d42-128c-45a0-b667-05d54b57ac04",
+          "t_seconds": 13.87,
+          "team": "Albania",
+          "event_type": "Ball Recovery",
+          "ball_x": 107.7,
+          "ball_y": 36.6,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Klaus Gjasula",
+          "outcome": null
+        },
+        {
+          "event_id": "c2ccef25-60f5-46a8-9948-0bdf266211f0",
+          "t_seconds": 13.936,
+          "team": "Albania",
+          "event_type": "Shot",
+          "ball_x": 108.0,
+          "ball_y": 40.2,
+          "ball_end_x": 120.0,
+          "ball_end_y": 37.6,
+          "actor": "Klaus Gjasula",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "c2ccef25-60f5-46a8-9948-0bdf266211f0",
+          "minute": 94,
+          "second": 23,
+          "scorer": "Klaus Gjasula",
+          "team": "Albania"
+        }
+      },
+      "metadata": {
+        "match_id": 3930167,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Croatia vs Albania"
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3930167,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Croatia vs Albania"
+  }
+}

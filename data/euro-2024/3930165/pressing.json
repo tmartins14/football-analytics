@@ -1,0 +1,281 @@
+{
+  "teams": {
+    "Austria": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 165,
+        "defensive_actions_advanced": 28,
+        "value": 5.8929
+      },
+      "pressures_high": {
+        "count": 122,
+        "opponent_open_play_passes": 237,
+        "per_100": 51.48
+      },
+      "pressure_side": {
+        "left": 78,
+        "centre": 50,
+        "right": 94
+      }
+    },
+    "France": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 148,
+        "defensive_actions_advanced": 15,
+        "value": 9.8667
+      },
+      "pressures_high": {
+        "count": 44,
+        "opponent_open_play_passes": 220,
+        "per_100": 20.0
+      },
+      "pressure_side": {
+        "left": 48,
+        "centre": 37,
+        "right": 49
+      }
+    }
+  },
+  "pressure_received": [
+    {
+      "player_id": 22097,
+      "display_name": "Randal Kolo",
+      "team": "France",
+      "on_ball_events": 36,
+      "under_pressure_events": 19,
+      "share": 0.5278
+    },
+    {
+      "player_id": 3009,
+      "display_name": "Kylian Mbapp\u00e9",
+      "team": "France",
+      "on_ball_events": 84,
+      "under_pressure_events": 43,
+      "share": 0.5119
+    },
+    {
+      "player_id": 2972,
+      "display_name": "Marcus Thuram",
+      "team": "France",
+      "on_ball_events": 81,
+      "under_pressure_events": 34,
+      "share": 0.4198
+    },
+    {
+      "player_id": 8309,
+      "display_name": "Michael Gregoritsch",
+      "team": "Austria",
+      "on_ball_events": 40,
+      "under_pressure_events": 16,
+      "share": 0.4
+    },
+    {
+      "player_id": 24977,
+      "display_name": "Christoph Baumgartner",
+      "team": "Austria",
+      "on_ball_events": 122,
+      "under_pressure_events": 48,
+      "share": 0.3934
+    },
+    {
+      "player_id": 33297,
+      "display_name": "Patrick Wimmer",
+      "team": "Austria",
+      "on_ball_events": 62,
+      "under_pressure_events": 24,
+      "share": 0.3871
+    },
+    {
+      "player_id": 3325,
+      "display_name": "Marko Arnautovi\u0107",
+      "team": "Austria",
+      "on_ball_events": 27,
+      "under_pressure_events": 10,
+      "share": 0.3704
+    },
+    {
+      "player_id": 5477,
+      "display_name": "Ousmane Demb\u00e9l\u00e9",
+      "team": "France",
+      "on_ball_events": 71,
+      "under_pressure_events": 25,
+      "share": 0.3521
+    },
+    {
+      "player_id": 6704,
+      "display_name": "Theo Hern\u00e1ndez",
+      "team": "France",
+      "on_ball_events": 115,
+      "under_pressure_events": 39,
+      "share": 0.3391
+    },
+    {
+      "player_id": 8519,
+      "display_name": "Dayotchanculle Upamecano",
+      "team": "France",
+      "on_ball_events": 118,
+      "under_pressure_events": 39,
+      "share": 0.3305
+    },
+    {
+      "player_id": 24778,
+      "display_name": "Eduardo Camavinga",
+      "team": "France",
+      "on_ball_events": 32,
+      "under_pressure_events": 10,
+      "share": 0.3125
+    },
+    {
+      "player_id": 5487,
+      "display_name": "Antoine Griezmann",
+      "team": "France",
+      "on_ball_events": 85,
+      "under_pressure_events": 25,
+      "share": 0.2941
+    },
+    {
+      "player_id": 3961,
+      "display_name": "N'Golo Kant\u00e9",
+      "team": "France",
+      "on_ball_events": 145,
+      "under_pressure_events": 42,
+      "share": 0.2897
+    },
+    {
+      "player_id": 8784,
+      "display_name": "Romano Schmid",
+      "team": "Austria",
+      "on_ball_events": 21,
+      "under_pressure_events": 6,
+      "share": 0.2857
+    },
+    {
+      "player_id": 3026,
+      "display_name": "Adrien Rabiot",
+      "team": "France",
+      "on_ball_events": 92,
+      "under_pressure_events": 25,
+      "share": 0.2717
+    },
+    {
+      "player_id": 39545,
+      "display_name": "Alexander Prass",
+      "team": "Austria",
+      "on_ball_events": 15,
+      "under_pressure_events": 4,
+      "share": 0.2667
+    },
+    {
+      "player_id": 3604,
+      "display_name": "Olivier Giroud",
+      "team": "France",
+      "on_ball_events": 8,
+      "under_pressure_events": 2,
+      "share": 0.25
+    },
+    {
+      "player_id": 11396,
+      "display_name": "Florian Grillitsch",
+      "team": "Austria",
+      "on_ball_events": 109,
+      "under_pressure_events": 27,
+      "share": 0.2477
+    },
+    {
+      "player_id": 17592,
+      "display_name": "William Saliba",
+      "team": "France",
+      "on_ball_events": 140,
+      "under_pressure_events": 33,
+      "share": 0.2357
+    },
+    {
+      "player_id": 8506,
+      "display_name": "Konrad Laimer",
+      "team": "Austria",
+      "on_ball_events": 104,
+      "under_pressure_events": 23,
+      "share": 0.2212
+    },
+    {
+      "player_id": 11990,
+      "display_name": "Youssouf Fofana",
+      "team": "France",
+      "on_ball_events": 10,
+      "under_pressure_events": 2,
+      "share": 0.2
+    },
+    {
+      "player_id": 11821,
+      "display_name": "Stefan Posch",
+      "team": "Austria",
+      "on_ball_events": 126,
+      "under_pressure_events": 25,
+      "share": 0.1984
+    },
+    {
+      "player_id": 8518,
+      "display_name": "Marcel Sabitzer",
+      "team": "Austria",
+      "on_ball_events": 72,
+      "under_pressure_events": 14,
+      "share": 0.1944
+    },
+    {
+      "player_id": 11820,
+      "display_name": "Kevin Danso",
+      "team": "Austria",
+      "on_ball_events": 141,
+      "under_pressure_events": 27,
+      "share": 0.1915
+    },
+    {
+      "player_id": 13315,
+      "display_name": "Philipp Mwene",
+      "team": "Austria",
+      "on_ball_events": 88,
+      "under_pressure_events": 16,
+      "share": 0.1818
+    },
+    {
+      "player_id": 39460,
+      "display_name": "Nicolas Seiwald",
+      "team": "Austria",
+      "on_ball_events": 165,
+      "under_pressure_events": 26,
+      "share": 0.1576
+    },
+    {
+      "player_id": 4445,
+      "display_name": "Jules Kound\u00e9",
+      "team": "France",
+      "on_ball_events": 119,
+      "under_pressure_events": 18,
+      "share": 0.1513
+    },
+    {
+      "player_id": 8068,
+      "display_name": "Maximilian W\u00f6ber",
+      "team": "Austria",
+      "on_ball_events": 113,
+      "under_pressure_events": 16,
+      "share": 0.1416
+    },
+    {
+      "player_id": 8778,
+      "display_name": "Gernot Trauner",
+      "team": "Austria",
+      "on_ball_events": 73,
+      "under_pressure_events": 10,
+      "share": 0.137
+    }
+  ],
+  "metadata": {
+    "match_id": 3930165,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Austria vs France",
+    "open_play_filter": "play_pattern + pass_type",
+    "ppda_zone": "opponent's own 60% (x < 72 in the opponent's own frame)",
+    "defensive_action_zone": "pressing team's own half+ (x >= 48 in its own frame)",
+    "pressures_high_zone": "opponent half (x >= 60 in the pressing team's own frame)"
+  }
+}

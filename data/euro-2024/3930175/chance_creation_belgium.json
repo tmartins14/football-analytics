@@ -1,0 +1,138 @@
+{
+  "team": "Belgium",
+  "shots": {
+    "non_penalty_count": 20,
+    "total_npxg": 1.645817,
+    "by_zone": {
+      "six_yard_box": {
+        "npxg": 0.0,
+        "count": 0
+      },
+      "box_central": {
+        "npxg": 0.856359,
+        "count": 6
+      },
+      "box_wide": {
+        "npxg": 0.487866,
+        "count": 8
+      },
+      "outside_box": {
+        "npxg": 0.301592,
+        "count": 6
+      }
+    },
+    "by_source": {
+      "open_play": {
+        "npxg": 0.580105,
+        "count": 8
+      },
+      "counter": {
+        "npxg": 0.0,
+        "count": 0
+      },
+      "set_piece": {
+        "npxg": 0.993559,
+        "count": 11
+      },
+      "other": {
+        "npxg": 0.072153,
+        "count": 1
+      }
+    }
+  },
+  "shot_assists": {
+    "total_count": 15,
+    "by_side_and_type": {
+      "left": {
+        "cross": 2,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 5
+      },
+      "centre": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 4
+      },
+      "right": {
+        "cross": 1,
+        "cut_back": 1,
+        "through_ball": 0,
+        "other": 2
+      }
+    }
+  },
+  "creators": [
+    {
+      "player_id": 23650,
+      "display_name": "J\u00e9r\u00e9my Doku",
+      "xa": 0.372131,
+      "key_passes": 5,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 3089,
+      "display_name": "Kevin De Bruyne",
+      "xa": 0.352865,
+      "key_passes": 3,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 3289,
+      "display_name": "Romelu Lukaku",
+      "xa": 0.186835,
+      "key_passes": 2,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 12306,
+      "display_name": "Dodi Lukebakio",
+      "xa": 0.119178,
+      "key_passes": 2,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 114832,
+      "display_name": "Zeno Debast",
+      "xa": 0.033713,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 2954,
+      "display_name": "Youri Tielemans",
+      "xa": 0.031616,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 43913,
+      "display_name": "Arthur Theate",
+      "xa": 0.025797,
+      "key_passes": 1,
+      "passes_into_box": 0
+    }
+  ],
+  "metadata": {
+    "match_id": 3930175,
+    "team": "Belgium",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Belgium vs Romania",
+    "zone_filter": "statsbomb_120x80_own_attack_right_frame",
+    "source_grouping": {
+      "open_play": [
+        "Regular Play"
+      ],
+      "counter": [
+        "From Counter"
+      ],
+      "set_piece": [
+        "From Corner",
+        "From Free Kick",
+        "From Throw In"
+      ],
+      "other": "every other play_pattern (From Goal Kick, From Kick Off, From Keeper, Other)"
+    }
+  }
+}

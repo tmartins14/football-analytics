@@ -1,0 +1,1055 @@
+{
+  "windows": [
+    {
+      "index": 0,
+      "label": "0'\u201363' (Starting XI)",
+      "from_minute": 0,
+      "from_period": 1,
+      "to_minute": 63,
+      "to_period": 2,
+      "nodes": [
+        {
+          "player": "Arlind Afrim Ajeti",
+          "display_name": "Arlind Afrim Ajeti",
+          "x": 43.69,
+          "y": 55.49,
+          "passes": 7
+        },
+        {
+          "player": "Berat Djimsiti",
+          "display_name": "Berat Djimsiti",
+          "x": 37.34,
+          "y": 24.06,
+          "passes": 22
+        },
+        {
+          "player": "Elseid Hysaj",
+          "display_name": "Elseid Hysaj",
+          "x": 50.8,
+          "y": 63.54,
+          "passes": 10
+        },
+        {
+          "player": "Jasir Asani",
+          "display_name": "Jasir Asani",
+          "x": 58.27,
+          "y": 67.57,
+          "passes": 6
+        },
+        {
+          "player": "Kristjan Asllani",
+          "display_name": "Kristjan Asllani",
+          "x": 57.24,
+          "y": 30.18,
+          "passes": 27
+        },
+        {
+          "player": "Mario Mitaj",
+          "display_name": "Mario Mitaj",
+          "x": 61.71,
+          "y": 9.6,
+          "passes": 22
+        },
+        {
+          "player": "Nedim Bajrami",
+          "display_name": "Nedim Bajrami",
+          "x": 62.88,
+          "y": 14.85,
+          "passes": 13
+        },
+        {
+          "player": "Qazim La\u00e7i",
+          "display_name": "Qazim La\u00e7i",
+          "x": 60.03,
+          "y": 41.89,
+          "passes": 15
+        },
+        {
+          "player": "Rey Manaj",
+          "display_name": "Rey Manaj",
+          "x": 64.87,
+          "y": 28.13,
+          "passes": 7
+        },
+        {
+          "player": "Thomas Strakosha",
+          "display_name": "Thomas Strakosha",
+          "x": 10.95,
+          "y": 42.24,
+          "passes": 17
+        },
+        {
+          "player": "Ylber Ramadani",
+          "display_name": "Ylber Ramadani",
+          "x": 52.12,
+          "y": 38.6,
+          "passes": 21
+        }
+      ],
+      "edges": [
+        {
+          "from": "Mario Mitaj",
+          "to": "Kristjan Asllani",
+          "count": 10
+        },
+        {
+          "from": "Thomas Strakosha",
+          "to": "Rey Manaj",
+          "count": 9
+        },
+        {
+          "from": "Berat Djimsiti",
+          "to": "Mario Mitaj",
+          "count": 8
+        },
+        {
+          "from": "Ylber Ramadani",
+          "to": "Kristjan Asllani",
+          "count": 7
+        },
+        {
+          "from": "Kristjan Asllani",
+          "to": "Ylber Ramadani",
+          "count": 7
+        },
+        {
+          "from": "Mario Mitaj",
+          "to": "Ylber Ramadani",
+          "count": 6
+        },
+        {
+          "from": "Nedim Bajrami",
+          "to": "Mario Mitaj",
+          "count": 6
+        },
+        {
+          "from": "Kristjan Asllani",
+          "to": "Qazim La\u00e7i",
+          "count": 4
+        },
+        {
+          "from": "Qazim La\u00e7i",
+          "to": "Nedim Bajrami",
+          "count": 4
+        },
+        {
+          "from": "Kristjan Asllani",
+          "to": "Berat Djimsiti",
+          "count": 4
+        },
+        {
+          "from": "Berat Djimsiti",
+          "to": "Thomas Strakosha",
+          "count": 4
+        },
+        {
+          "from": "Berat Djimsiti",
+          "to": "Kristjan Asllani",
+          "count": 4
+        },
+        {
+          "from": "Elseid Hysaj",
+          "to": "Jasir Asani",
+          "count": 4
+        },
+        {
+          "from": "Mario Mitaj",
+          "to": "Nedim Bajrami",
+          "count": 4
+        },
+        {
+          "from": "Qazim La\u00e7i",
+          "to": "Jasir Asani",
+          "count": 4
+        },
+        {
+          "from": "Qazim La\u00e7i",
+          "to": "Kristjan Asllani",
+          "count": 3
+        },
+        {
+          "from": "Kristjan Asllani",
+          "to": "Rey Manaj",
+          "count": 3
+        },
+        {
+          "from": "Nedim Bajrami",
+          "to": "Berat Djimsiti",
+          "count": 3
+        },
+        {
+          "from": "Thomas Strakosha",
+          "to": "Berat Djimsiti",
+          "count": 3
+        },
+        {
+          "from": "Ylber Ramadani",
+          "to": "Elseid Hysaj",
+          "count": 3
+        },
+        {
+          "from": "Kristjan Asllani",
+          "to": "Mario Mitaj",
+          "count": 3
+        },
+        {
+          "from": "Ylber Ramadani",
+          "to": "Berat Djimsiti",
+          "count": 3
+        },
+        {
+          "from": "Rey Manaj",
+          "to": "Berat Djimsiti",
+          "count": 2
+        },
+        {
+          "from": "Rey Manaj",
+          "to": "Mario Mitaj",
+          "count": 2
+        },
+        {
+          "from": "Kristjan Asllani",
+          "to": "Nedim Bajrami",
+          "count": 2
+        },
+        {
+          "from": "Arlind Afrim Ajeti",
+          "to": "Elseid Hysaj",
+          "count": 2
+        },
+        {
+          "from": "Thomas Strakosha",
+          "to": "Kristjan Asllani",
+          "count": 2
+        },
+        {
+          "from": "Kristjan Asllani",
+          "to": "Arlind Afrim Ajeti",
+          "count": 2
+        },
+        {
+          "from": "Ylber Ramadani",
+          "to": "Nedim Bajrami",
+          "count": 2
+        },
+        {
+          "from": "Jasir Asani",
+          "to": "Qazim La\u00e7i",
+          "count": 2
+        },
+        {
+          "from": "Ylber Ramadani",
+          "to": "Mario Mitaj",
+          "count": 2
+        },
+        {
+          "from": "Jasir Asani",
+          "to": "Elseid Hysaj",
+          "count": 2
+        },
+        {
+          "from": "Rey Manaj",
+          "to": "Qazim La\u00e7i",
+          "count": 2
+        },
+        {
+          "from": "Berat Djimsiti",
+          "to": "Ylber Ramadani",
+          "count": 2
+        },
+        {
+          "from": "Ylber Ramadani",
+          "to": "Qazim La\u00e7i",
+          "count": 2
+        },
+        {
+          "from": "Nedim Bajrami",
+          "to": "Rey Manaj",
+          "count": 2
+        },
+        {
+          "from": "Jasir Asani",
+          "to": "Ylber Ramadani",
+          "count": 2
+        },
+        {
+          "from": "Mario Mitaj",
+          "to": "Berat Djimsiti",
+          "count": 2
+        },
+        {
+          "from": "Berat Djimsiti",
+          "to": "Nedim Bajrami",
+          "count": 2
+        },
+        {
+          "from": "Thomas Strakosha",
+          "to": "Arlind Afrim Ajeti",
+          "count": 2
+        },
+        {
+          "from": "Berat Djimsiti",
+          "to": "Rey Manaj",
+          "count": 1
+        },
+        {
+          "from": "Ylber Ramadani",
+          "to": "Arlind Afrim Ajeti",
+          "count": 1
+        },
+        {
+          "from": "Arlind Afrim Ajeti",
+          "to": "Thomas Strakosha",
+          "count": 1
+        },
+        {
+          "from": "Elseid Hysaj",
+          "to": "Qazim La\u00e7i",
+          "count": 1
+        },
+        {
+          "from": "Rey Manaj",
+          "to": "Nedim Bajrami",
+          "count": 1
+        },
+        {
+          "from": "Ylber Ramadani",
+          "to": "Jasir Asani",
+          "count": 1
+        },
+        {
+          "from": "Qazim La\u00e7i",
+          "to": "Ylber Ramadani",
+          "count": 1
+        },
+        {
+          "from": "Elseid Hysaj",
+          "to": "Nedim Bajrami",
+          "count": 1
+        },
+        {
+          "from": "Arlind Afrim Ajeti",
+          "to": "Berat Djimsiti",
+          "count": 1
+        },
+        {
+          "from": "Nedim Bajrami",
+          "to": "Kristjan Asllani",
+          "count": 1
+        },
+        {
+          "from": "Kristjan Asllani",
+          "to": "Elseid Hysaj",
+          "count": 1
+        },
+        {
+          "from": "Elseid Hysaj",
+          "to": "Berat Djimsiti",
+          "count": 1
+        },
+        {
+          "from": "Elseid Hysaj",
+          "to": "Thomas Strakosha",
+          "count": 1
+        },
+        {
+          "from": "Kristjan Asllani",
+          "to": "Jasir Asani",
+          "count": 1
+        },
+        {
+          "from": "Elseid Hysaj",
+          "to": "Kristjan Asllani",
+          "count": 1
+        },
+        {
+          "from": "Arlind Afrim Ajeti",
+          "to": "Rey Manaj",
+          "count": 1
+        },
+        {
+          "from": "Berat Djimsiti",
+          "to": "Qazim La\u00e7i",
+          "count": 1
+        },
+        {
+          "from": "Qazim La\u00e7i",
+          "to": "Berat Djimsiti",
+          "count": 1
+        },
+        {
+          "from": "Qazim La\u00e7i",
+          "to": "Rey Manaj",
+          "count": 1
+        },
+        {
+          "from": "Thomas Strakosha",
+          "to": "Nedim Bajrami",
+          "count": 1
+        },
+        {
+          "from": "Arlind Afrim Ajeti",
+          "to": "Kristjan Asllani",
+          "count": 1
+        },
+        {
+          "from": "Arlind Afrim Ajeti",
+          "to": "Ylber Ramadani",
+          "count": 1
+        },
+        {
+          "from": "Elseid Hysaj",
+          "to": "Rey Manaj",
+          "count": 1
+        },
+        {
+          "from": "Qazim La\u00e7i",
+          "to": "Thomas Strakosha",
+          "count": 1
+        },
+        {
+          "from": "Nedim Bajrami",
+          "to": "Qazim La\u00e7i",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "label": "63'\u201371'",
+      "from_minute": 63,
+      "from_period": 2,
+      "to_minute": 71,
+      "to_period": 2,
+      "nodes": [
+        {
+          "player": "Arlind Afrim Ajeti",
+          "display_name": "Arlind Afrim Ajeti",
+          "x": 8.6,
+          "y": 42.2,
+          "passes": 1
+        },
+        {
+          "player": "Elseid Hysaj",
+          "display_name": "Elseid Hysaj",
+          "x": 30.4,
+          "y": 68.95,
+          "passes": 2
+        },
+        {
+          "player": "Kristjan Asllani",
+          "display_name": "Kristjan Asllani",
+          "x": 34.15,
+          "y": 39.95,
+          "passes": 2
+        },
+        {
+          "player": "Rey Manaj",
+          "display_name": "Rey Manaj",
+          "x": 76.0,
+          "y": 67.2,
+          "passes": 1
+        },
+        {
+          "player": "Taulant Sulejmanov",
+          "display_name": "Taulant Seferi",
+          "x": 71.7,
+          "y": 19.7,
+          "passes": 1
+        },
+        {
+          "player": "Thomas Strakosha",
+          "display_name": "Thomas Strakosha",
+          "x": 6.0,
+          "y": 39.5,
+          "passes": 1
+        },
+        {
+          "player": "Ylber Ramadani",
+          "display_name": "Ylber Ramadani",
+          "x": 31.7,
+          "y": 36.8,
+          "passes": 2
+        }
+      ],
+      "edges": [
+        {
+          "from": "Taulant Sulejmanov",
+          "to": "Kristjan Asllani",
+          "count": 1
+        },
+        {
+          "from": "Kristjan Asllani",
+          "to": "Ylber Ramadani",
+          "count": 1
+        },
+        {
+          "from": "Ylber Ramadani",
+          "to": "Elseid Hysaj",
+          "count": 1
+        },
+        {
+          "from": "Elseid Hysaj",
+          "to": "Rey Manaj",
+          "count": 1
+        },
+        {
+          "from": "Rey Manaj",
+          "to": "Nedim Bajrami",
+          "count": 1
+        },
+        {
+          "from": "Kristjan Asllani",
+          "to": "Nedim Bajrami",
+          "count": 1
+        },
+        {
+          "from": "Thomas Strakosha",
+          "to": "Rey Manaj",
+          "count": 1
+        },
+        {
+          "from": "Arlind Afrim Ajeti",
+          "to": "Qazim La\u00e7i",
+          "count": 1
+        },
+        {
+          "from": "Ylber Ramadani",
+          "to": "Qazim La\u00e7i",
+          "count": 1
+        },
+        {
+          "from": "Elseid Hysaj",
+          "to": "Nedim Bajrami",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "label": "71'\u201384'",
+      "from_minute": 71,
+      "from_period": 2,
+      "to_minute": 84,
+      "to_period": 2,
+      "nodes": [
+        {
+          "player": "Arlind Afrim Ajeti",
+          "display_name": "Arlind Afrim Ajeti",
+          "x": 34.43,
+          "y": 39.83,
+          "passes": 3
+        },
+        {
+          "player": "Berat Djimsiti",
+          "display_name": "Berat Djimsiti",
+          "x": 21.93,
+          "y": 17.68,
+          "passes": 6
+        },
+        {
+          "player": "Elseid Hysaj",
+          "display_name": "Elseid Hysaj",
+          "x": 35.4,
+          "y": 55.8,
+          "passes": 1
+        },
+        {
+          "player": "Klaus Gjasula",
+          "display_name": "Klaus Gjasula",
+          "x": 61.6,
+          "y": 24.53,
+          "passes": 3
+        },
+        {
+          "player": "Kristjan Asllani",
+          "display_name": "Kristjan Asllani",
+          "x": 27.17,
+          "y": 11.6,
+          "passes": 3
+        },
+        {
+          "player": "Mario Mitaj",
+          "display_name": "Mario Mitaj",
+          "x": 19.24,
+          "y": 5.5,
+          "passes": 5
+        },
+        {
+          "player": "Nedim Bajrami",
+          "display_name": "Nedim Bajrami",
+          "x": 28.75,
+          "y": 63.8,
+          "passes": 2
+        },
+        {
+          "player": "Rey Manaj",
+          "display_name": "Rey Manaj",
+          "x": 60.0,
+          "y": 40.0,
+          "passes": 2
+        },
+        {
+          "player": "Taulant Sulejmanov",
+          "display_name": "Taulant Seferi",
+          "x": 30.67,
+          "y": 8.67,
+          "passes": 3
+        },
+        {
+          "player": "Thomas Strakosha",
+          "display_name": "Thomas Strakosha",
+          "x": 14.1,
+          "y": 32.87,
+          "passes": 3
+        },
+        {
+          "player": "Ylber Ramadani",
+          "display_name": "Ylber Ramadani",
+          "x": 71.8,
+          "y": 23.4,
+          "passes": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "Berat Djimsiti",
+          "to": "Mario Mitaj",
+          "count": 3
+        },
+        {
+          "from": "Mario Mitaj",
+          "to": "Kristjan Asllani",
+          "count": 2
+        },
+        {
+          "from": "Thomas Strakosha",
+          "to": "Berat Djimsiti",
+          "count": 2
+        },
+        {
+          "from": "Berat Djimsiti",
+          "to": "Taulant Sulejmanov",
+          "count": 2
+        },
+        {
+          "from": "Taulant Sulejmanov",
+          "to": "Mario Mitaj",
+          "count": 2
+        },
+        {
+          "from": "Nedim Bajrami",
+          "to": "Elseid Hysaj",
+          "count": 1
+        },
+        {
+          "from": "Rey Manaj",
+          "to": "Berat Djimsiti",
+          "count": 1
+        },
+        {
+          "from": "Mario Mitaj",
+          "to": "Ylber Ramadani",
+          "count": 1
+        },
+        {
+          "from": "Thomas Strakosha",
+          "to": "Kristjan Asllani",
+          "count": 1
+        },
+        {
+          "from": "Kristjan Asllani",
+          "to": "Mario Mitaj",
+          "count": 1
+        },
+        {
+          "from": "Rey Manaj",
+          "to": "Klaus Gjasula",
+          "count": 1
+        },
+        {
+          "from": "Klaus Gjasula",
+          "to": "Arlind Afrim Ajeti",
+          "count": 1
+        },
+        {
+          "from": "Arlind Afrim Ajeti",
+          "to": "Berat Djimsiti",
+          "count": 1
+        },
+        {
+          "from": "Kristjan Asllani",
+          "to": "Klaus Gjasula",
+          "count": 1
+        },
+        {
+          "from": "Mario Mitaj",
+          "to": "Klaus Gjasula",
+          "count": 1
+        },
+        {
+          "from": "Kristjan Asllani",
+          "to": "Arlind Afrim Ajeti",
+          "count": 1
+        },
+        {
+          "from": "Arlind Afrim Ajeti",
+          "to": "Kristjan Asllani",
+          "count": 1
+        },
+        {
+          "from": "Berat Djimsiti",
+          "to": "Kristjan Asllani",
+          "count": 1
+        },
+        {
+          "from": "Klaus Gjasula",
+          "to": "Ylber Ramadani",
+          "count": 1
+        },
+        {
+          "from": "Ylber Ramadani",
+          "to": "Klaus Gjasula",
+          "count": 1
+        },
+        {
+          "from": "Klaus Gjasula",
+          "to": "Taulant Sulejmanov",
+          "count": 1
+        },
+        {
+          "from": "Elseid Hysaj",
+          "to": "Nedim Bajrami",
+          "count": 1
+        },
+        {
+          "from": "Nedim Bajrami",
+          "to": "Arlind Afrim Ajeti",
+          "count": 1
+        },
+        {
+          "from": "Arlind Afrim Ajeti",
+          "to": "Thomas Strakosha",
+          "count": 1
+        },
+        {
+          "from": "Mario Mitaj",
+          "to": "Berat Djimsiti",
+          "count": 1
+        },
+        {
+          "from": "Taulant Sulejmanov",
+          "to": "Kristjan Asllani",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "label": "84'\u2013FT",
+      "from_minute": 84,
+      "from_period": 2,
+      "to_minute": null,
+      "to_period": null,
+      "nodes": [
+        {
+          "player": "Arb\u00ebr Hoxha",
+          "display_name": "Arb\u00ebr Hoxha",
+          "x": 86.24,
+          "y": 11.07,
+          "passes": 7
+        },
+        {
+          "player": "Arlind Afrim Ajeti",
+          "display_name": "Arlind Afrim Ajeti",
+          "x": 18.3,
+          "y": 43.15,
+          "passes": 2
+        },
+        {
+          "player": "Berat Djimsiti",
+          "display_name": "Berat Djimsiti",
+          "x": 34.06,
+          "y": 20.83,
+          "passes": 11
+        },
+        {
+          "player": "Elseid Hysaj",
+          "display_name": "Elseid Hysaj",
+          "x": 64.07,
+          "y": 68.43,
+          "passes": 3
+        },
+        {
+          "player": "Klaus Gjasula",
+          "display_name": "Klaus Gjasula",
+          "x": 56.02,
+          "y": 32.88,
+          "passes": 4
+        },
+        {
+          "player": "Kristjan Asllani",
+          "display_name": "Kristjan Asllani",
+          "x": 62.93,
+          "y": 19.29,
+          "passes": 11
+        },
+        {
+          "player": "Mario Mitaj",
+          "display_name": "Mario Mitaj",
+          "x": 52.88,
+          "y": 9.12,
+          "passes": 6
+        },
+        {
+          "player": "Mirlind Daku",
+          "display_name": "Mirlind Daku",
+          "x": 83.17,
+          "y": 37.52,
+          "passes": 4
+        },
+        {
+          "player": "Nedim Bajrami",
+          "display_name": "Nedim Bajrami",
+          "x": 80.6,
+          "y": 39.1,
+          "passes": 1
+        },
+        {
+          "player": "Taulant Sulejmanov",
+          "display_name": "Taulant Seferi",
+          "x": 94.13,
+          "y": 24.1,
+          "passes": 3
+        },
+        {
+          "player": "Thomas Strakosha",
+          "display_name": "Thomas Strakosha",
+          "x": 10.63,
+          "y": 33.77,
+          "passes": 3
+        }
+      ],
+      "edges": [
+        {
+          "from": "Kristjan Asllani",
+          "to": "Berat Djimsiti",
+          "count": 4
+        },
+        {
+          "from": "Berat Djimsiti",
+          "to": "Mario Mitaj",
+          "count": 3
+        },
+        {
+          "from": "Berat Djimsiti",
+          "to": "Kristjan Asllani",
+          "count": 3
+        },
+        {
+          "from": "Arb\u00ebr Hoxha",
+          "to": "Kristjan Asllani",
+          "count": 3
+        },
+        {
+          "from": "Elseid Hysaj",
+          "to": "Mirlind Daku",
+          "count": 2
+        },
+        {
+          "from": "Mirlind Daku",
+          "to": "Klaus Gjasula",
+          "count": 2
+        },
+        {
+          "from": "Berat Djimsiti",
+          "to": "Arb\u00ebr Hoxha",
+          "count": 2
+        },
+        {
+          "from": "Mirlind Daku",
+          "to": "Arb\u00ebr Hoxha",
+          "count": 2
+        },
+        {
+          "from": "Taulant Sulejmanov",
+          "to": "Mirlind Daku",
+          "count": 2
+        },
+        {
+          "from": "Mario Mitaj",
+          "to": "Kristjan Asllani",
+          "count": 2
+        },
+        {
+          "from": "Kristjan Asllani",
+          "to": "Arb\u00ebr Hoxha",
+          "count": 2
+        },
+        {
+          "from": "Arb\u00ebr Hoxha",
+          "to": "Mario Mitaj",
+          "count": 2
+        },
+        {
+          "from": "Klaus Gjasula",
+          "to": "Mirlind Daku",
+          "count": 2
+        },
+        {
+          "from": "Berat Djimsiti",
+          "to": "Taulant Sulejmanov",
+          "count": 1
+        },
+        {
+          "from": "Mario Mitaj",
+          "to": "Klaus Gjasula",
+          "count": 1
+        },
+        {
+          "from": "Klaus Gjasula",
+          "to": "Taulant Sulejmanov",
+          "count": 1
+        },
+        {
+          "from": "Mario Mitaj",
+          "to": "Arb\u00ebr Hoxha",
+          "count": 1
+        },
+        {
+          "from": "Taulant Sulejmanov",
+          "to": "Arb\u00ebr Hoxha",
+          "count": 1
+        },
+        {
+          "from": "Nedim Bajrami",
+          "to": "Kristjan Asllani",
+          "count": 1
+        },
+        {
+          "from": "Kristjan Asllani",
+          "to": "Nedim Bajrami",
+          "count": 1
+        },
+        {
+          "from": "Arlind Afrim Ajeti",
+          "to": "Thomas Strakosha",
+          "count": 1
+        },
+        {
+          "from": "Thomas Strakosha",
+          "to": "Arb\u00ebr Hoxha",
+          "count": 1
+        },
+        {
+          "from": "Kristjan Asllani",
+          "to": "Elseid Hysaj",
+          "count": 1
+        },
+        {
+          "from": "Elseid Hysaj",
+          "to": "Nedim Bajrami",
+          "count": 1
+        },
+        {
+          "from": "Thomas Strakosha",
+          "to": "Kristjan Asllani",
+          "count": 1
+        },
+        {
+          "from": "Arb\u00ebr Hoxha",
+          "to": "Berat Djimsiti",
+          "count": 1
+        },
+        {
+          "from": "Mario Mitaj",
+          "to": "Berat Djimsiti",
+          "count": 1
+        },
+        {
+          "from": "Berat Djimsiti",
+          "to": "Mirlind Daku",
+          "count": 1
+        },
+        {
+          "from": "Berat Djimsiti",
+          "to": "Thomas Strakosha",
+          "count": 1
+        },
+        {
+          "from": "Thomas Strakosha",
+          "to": "Berat Djimsiti",
+          "count": 1
+        },
+        {
+          "from": "Kristjan Asllani",
+          "to": "Arlind Afrim Ajeti",
+          "count": 1
+        },
+        {
+          "from": "Arlind Afrim Ajeti",
+          "to": "Elseid Hysaj",
+          "count": 1
+        },
+        {
+          "from": "Arb\u00ebr Hoxha",
+          "to": "Taulant Sulejmanov",
+          "count": 1
+        },
+        {
+          "from": "Kristjan Asllani",
+          "to": "Mario Mitaj",
+          "count": 1
+        },
+        {
+          "from": "Kristjan Asllani",
+          "to": "Klaus Gjasula",
+          "count": 1
+        },
+        {
+          "from": "Mario Mitaj",
+          "to": "Taulant Sulejmanov",
+          "count": 1
+        },
+        {
+          "from": "Klaus Gjasula",
+          "to": "Kristjan Asllani",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "substitutions": [
+    {
+      "minute": 63,
+      "period": 2,
+      "player_off": "Jasir Asani",
+      "player_on": "Taulant Sulejmanov"
+    },
+    {
+      "minute": 71,
+      "period": 2,
+      "player_off": "Qazim La\u00e7i",
+      "player_on": "Klaus Gjasula"
+    },
+    {
+      "minute": 84,
+      "period": 2,
+      "player_off": "Rey Manaj",
+      "player_on": "Mirlind Daku"
+    },
+    {
+      "minute": 84,
+      "period": 2,
+      "player_off": "Ylber Ramadani",
+      "player_on": "Arb\u00ebr Hoxha"
+    }
+  ],
+  "metadata": {
+    "match_id": 3930167,
+    "team": "Albania",
+    "filter": "completed passes, per substitution window",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Croatia vs Albania"
+  }
+}

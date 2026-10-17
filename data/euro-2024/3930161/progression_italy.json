@@ -1,0 +1,104 @@
+{
+  "team": "Italy",
+  "progressive_actions": {
+    "total_count": 47,
+    "by_side": {
+      "left": 11,
+      "centre": 16,
+      "right": 20
+    },
+    "by_mode": {
+      "pass": 35,
+      "carry": 12
+    }
+  },
+  "progressors": [
+    {
+      "player_id": 7024,
+      "display_name": "Jorginho",
+      "count": 10,
+      "passes": 10,
+      "carries": 0
+    },
+    {
+      "player_id": 8181,
+      "display_name": "Nicol\u00f2 Barella",
+      "count": 8,
+      "passes": 5,
+      "carries": 3
+    },
+    {
+      "player_id": 7156,
+      "display_name": "Federico Chiesa",
+      "count": 5,
+      "passes": 2,
+      "carries": 3
+    },
+    {
+      "player_id": 12255,
+      "display_name": "Federico Dimarco",
+      "count": 5,
+      "passes": 2,
+      "carries": 3
+    },
+    {
+      "player_id": 30926,
+      "display_name": "Davide Frattesi",
+      "count": 4,
+      "passes": 4,
+      "carries": 0
+    },
+    {
+      "player_id": 11514,
+      "display_name": "Giovanni Di Lorenzo",
+      "count": 4,
+      "passes": 4,
+      "carries": 0
+    },
+    {
+      "player_id": 7480,
+      "display_name": "Alessandro Bastoni",
+      "count": 3,
+      "passes": 3,
+      "carries": 0
+    },
+    {
+      "player_id": 7036,
+      "display_name": "Gianluigi Donnarumma",
+      "count": 3,
+      "passes": 3,
+      "carries": 0
+    },
+    {
+      "player_id": 41768,
+      "display_name": "Riccardo Calafiori",
+      "count": 3,
+      "passes": 2,
+      "carries": 1
+    },
+    {
+      "player_id": 50729,
+      "display_name": "Andrea Cambiaso",
+      "count": 1,
+      "passes": 0,
+      "carries": 1
+    },
+    {
+      "player_id": 6963,
+      "display_name": "Lorenzo Pellegrini",
+      "count": 1,
+      "passes": 0,
+      "carries": 1
+    }
+  ],
+  "params": {
+    "progressive_threshold": 0.25
+  },
+  "metadata": {
+    "match_id": 3930161,
+    "team": "Italy",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Italy vs Albania",
+    "open_play_filter": "play_pattern"
+  }
+}

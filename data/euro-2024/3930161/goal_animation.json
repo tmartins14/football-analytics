@@ -1,0 +1,411 @@
+{
+  "goals": [
+    {
+      "window": {
+        "anchor_event_id": "eac41127-be22-464b-8635-56d11ae838c5",
+        "start_event_id": "58e790fc-9a89-4737-abff-e2948a767ab7",
+        "end_event_id": "eac41127-be22-464b-8635-56d11ae838c5",
+        "period": 1,
+        "window_seconds": 10.0,
+        "t_span_seconds": 13.916
+      },
+      "frames": [
+        {
+          "event_id": "58e790fc-9a89-4737-abff-e2948a767ab7",
+          "t_seconds": 10.947,
+          "team": "Italy",
+          "event_type": "Pass",
+          "ball_x": 16.3,
+          "ball_y": 0.1,
+          "ball_end_x": 10.0,
+          "ball_end_y": 28.7,
+          "actor": "Federico Dimarco",
+          "outcome": "Incomplete"
+        },
+        {
+          "event_id": "129f2113-6140-4c83-940a-128aaa8801f5",
+          "t_seconds": 13.026,
+          "team": "Albania",
+          "event_type": "Interception",
+          "ball_x": 110.1,
+          "ball_y": 51.4,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Nedim Bajrami",
+          "outcome": null
+        },
+        {
+          "event_id": "7bef7f2f-e391-4f1d-9653-4b2e7a462e37",
+          "t_seconds": 13.026,
+          "team": "Albania",
+          "event_type": "Carry",
+          "ball_x": 110.1,
+          "ball_y": 51.4,
+          "ball_end_x": 111.8,
+          "ball_end_y": 51.9,
+          "actor": "Nedim Bajrami",
+          "outcome": null
+        },
+        {
+          "event_id": "eac41127-be22-464b-8635-56d11ae838c5",
+          "t_seconds": 13.916,
+          "team": "Albania",
+          "event_type": "Shot",
+          "ball_x": 111.8,
+          "ball_y": 51.9,
+          "ball_end_x": 120.0,
+          "ball_end_y": 43.3,
+          "actor": "Nedim Bajrami",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "eac41127-be22-464b-8635-56d11ae838c5",
+          "minute": 0,
+          "second": 23,
+          "scorer": "Nedim Bajrami",
+          "team": "Albania"
+        }
+      },
+      "metadata": {
+        "match_id": 3930161,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Italy vs Albania"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "97306d58-11f5-4f7a-95c5-3089f7f95ef8",
+        "start_event_id": "4a48c92d-f5b4-4666-8a1e-6deed15913a3",
+        "end_event_id": "97306d58-11f5-4f7a-95c5-3089f7f95ef8",
+        "period": 1,
+        "window_seconds": 10.0,
+        "t_span_seconds": 35.709
+      },
+      "frames": [
+        {
+          "event_id": "4a48c92d-f5b4-4666-8a1e-6deed15913a3",
+          "t_seconds": 31.302,
+          "team": "Italy",
+          "event_type": "Pass",
+          "ball_x": 120.0,
+          "ball_y": 0.1,
+          "ball_end_x": 118.9,
+          "ball_end_y": 4.8,
+          "actor": "Lorenzo Pellegrini",
+          "outcome": null
+        },
+        {
+          "event_id": "8c875276-429b-4c0f-856e-e9ba5868140b",
+          "t_seconds": 32.391,
+          "team": "Italy",
+          "event_type": "Carry",
+          "ball_x": 118.9,
+          "ball_y": 4.8,
+          "ball_end_x": 114.8,
+          "ball_end_y": 9.4,
+          "actor": "Federico Dimarco",
+          "outcome": null
+        },
+        {
+          "event_id": "961ab644-3db6-430d-a7e1-0e71de006e91",
+          "t_seconds": 32.817,
+          "team": "Italy",
+          "event_type": "Pass",
+          "ball_x": 114.8,
+          "ball_y": 9.4,
+          "ball_end_x": 105.0,
+          "ball_end_y": 9.7,
+          "actor": "Federico Dimarco",
+          "outcome": null
+        },
+        {
+          "event_id": "18e34ec4-11dd-4028-bf8a-3d62818ff3cf",
+          "t_seconds": 33.925,
+          "team": "Italy",
+          "event_type": "Carry",
+          "ball_x": 105.0,
+          "ball_y": 9.7,
+          "ball_end_x": 105.0,
+          "ball_end_y": 9.7,
+          "actor": "Lorenzo Pellegrini",
+          "outcome": null
+        },
+        {
+          "event_id": "f4a34aeb-28b9-4ce4-9db0-9b993c1f8c27",
+          "t_seconds": 33.995,
+          "team": "Italy",
+          "event_type": "Pass",
+          "ball_x": 105.0,
+          "ball_y": 9.7,
+          "ball_end_x": 117.6,
+          "ball_end_y": 45.7,
+          "actor": "Lorenzo Pellegrini",
+          "outcome": null
+        },
+        {
+          "event_id": "97306d58-11f5-4f7a-95c5-3089f7f95ef8",
+          "t_seconds": 35.709,
+          "team": "Italy",
+          "event_type": "Shot",
+          "ball_x": 117.6,
+          "ball_y": 45.7,
+          "ball_end_x": 120.0,
+          "ball_end_y": 40.1,
+          "actor": "Alessandro Bastoni",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "97306d58-11f5-4f7a-95c5-3089f7f95ef8",
+          "minute": 10,
+          "second": 15,
+          "scorer": "Alessandro Bastoni",
+          "team": "Italy"
+        }
+      },
+      "metadata": {
+        "match_id": 3930161,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Italy vs Albania"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "c9afe417-f2eb-4e53-905a-77a209c5ff19",
+        "start_event_id": "1260660f-f6e7-4713-84ba-0096e61f9c28",
+        "end_event_id": "c9afe417-f2eb-4e53-905a-77a209c5ff19",
+        "period": 1,
+        "window_seconds": 10.0,
+        "t_span_seconds": 11.852
+      },
+      "frames": [
+        {
+          "event_id": "1260660f-f6e7-4713-84ba-0096e61f9c28",
+          "t_seconds": 0.0,
+          "team": "Italy",
+          "event_type": "Carry",
+          "ball_x": 80.0,
+          "ball_y": 12.4,
+          "ball_end_x": 85.3,
+          "ball_end_y": 17.0,
+          "actor": "Nicol\u00f2 Barella",
+          "outcome": null
+        },
+        {
+          "event_id": "3a0bbe96-d993-4b89-b141-9e5a740560df",
+          "t_seconds": 2.099,
+          "team": "Italy",
+          "event_type": "Pass",
+          "ball_x": 85.3,
+          "ball_y": 17.0,
+          "ball_end_x": 84.4,
+          "ball_end_y": 31.6,
+          "actor": "Nicol\u00f2 Barella",
+          "outcome": null
+        },
+        {
+          "event_id": "d459ca33-0055-4ceb-b09e-23695cf3e823",
+          "t_seconds": 3.022,
+          "team": "Italy",
+          "event_type": "Carry",
+          "ball_x": 84.4,
+          "ball_y": 31.6,
+          "ball_end_x": 84.8,
+          "ball_end_y": 32.3,
+          "actor": "Jorginho",
+          "outcome": null
+        },
+        {
+          "event_id": "4e8a5a2a-de07-4e49-bbdb-4c8c4c2d7ca4",
+          "t_seconds": 4.195,
+          "team": "Italy",
+          "event_type": "Pass",
+          "ball_x": 84.8,
+          "ball_y": 32.3,
+          "ball_end_x": 86.0,
+          "ball_end_y": 56.8,
+          "actor": "Jorginho",
+          "outcome": null
+        },
+        {
+          "event_id": "e1fb32ed-c50f-455d-966e-27ea025922a1",
+          "t_seconds": 6.008,
+          "team": "Italy",
+          "event_type": "Carry",
+          "ball_x": 86.0,
+          "ball_y": 56.8,
+          "ball_end_x": 93.7,
+          "ball_end_y": 60.2,
+          "actor": "Giovanni Di Lorenzo",
+          "outcome": null
+        },
+        {
+          "event_id": "0664f6a3-3efc-4976-9de2-7c2b41cd9246",
+          "t_seconds": 6.489,
+          "team": "Italy",
+          "event_type": "Pass",
+          "ball_x": 93.7,
+          "ball_y": 60.2,
+          "ball_end_x": 101.7,
+          "ball_end_y": 55.4,
+          "actor": "Giovanni Di Lorenzo",
+          "outcome": null
+        },
+        {
+          "event_id": "69da8331-aaf0-47b9-b6a0-36878dace315",
+          "t_seconds": 7.0,
+          "team": "Albania",
+          "event_type": "Pressure",
+          "ball_x": 15.4,
+          "ball_y": 22.4,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Mario Mitaj",
+          "outcome": null
+        },
+        {
+          "event_id": "cd1b786e-dc00-4a4a-8993-e7f107578414",
+          "t_seconds": 7.319,
+          "team": "Italy",
+          "event_type": "Carry",
+          "ball_x": 101.7,
+          "ball_y": 55.4,
+          "ball_end_x": 100.9,
+          "ball_end_y": 54.6,
+          "actor": "Davide Frattesi",
+          "outcome": null
+        },
+        {
+          "event_id": "b476f6f1-d7ec-4edb-b4bd-120d834579ef",
+          "t_seconds": 8.439,
+          "team": "Italy",
+          "event_type": "Ball Recovery",
+          "ball_x": 106.8,
+          "ball_y": 53.0,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Gianluca Scamacca",
+          "outcome": null
+        },
+        {
+          "event_id": "94deac80-52ab-4dce-a310-2794453d6545",
+          "t_seconds": 8.439,
+          "team": "Italy",
+          "event_type": "Carry",
+          "ball_x": 106.8,
+          "ball_y": 53.0,
+          "ball_end_x": 105.9,
+          "ball_end_y": 54.0,
+          "actor": "Gianluca Scamacca",
+          "outcome": null
+        },
+        {
+          "event_id": "6d26fafd-1532-437f-99ac-5929a82a6d96",
+          "t_seconds": 8.79,
+          "team": "Italy",
+          "event_type": "Pass",
+          "ball_x": 105.9,
+          "ball_y": 54.0,
+          "ball_end_x": 107.8,
+          "ball_end_y": 53.4,
+          "actor": "Gianluca Scamacca",
+          "outcome": "Incomplete"
+        },
+        {
+          "event_id": "cfa85178-fe71-4ec9-bad5-dcbf8fdc0280",
+          "t_seconds": 9.396,
+          "team": "Italy",
+          "event_type": "Ball Recovery",
+          "ball_x": 106.8,
+          "ball_y": 52.7,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Gianluca Scamacca",
+          "outcome": null
+        },
+        {
+          "event_id": "f93da623-3598-4fc6-b065-d4ba4c8eb112",
+          "t_seconds": 9.396,
+          "team": "Italy",
+          "event_type": "Carry",
+          "ball_x": 106.8,
+          "ball_y": 52.7,
+          "ball_end_x": 104.8,
+          "ball_end_y": 50.9,
+          "actor": "Gianluca Scamacca",
+          "outcome": null
+        },
+        {
+          "event_id": "89d02b85-8bd7-4b5c-b71f-2cee0560cf68",
+          "t_seconds": 9.873,
+          "team": "Italy",
+          "event_type": "Shot",
+          "ball_x": 104.8,
+          "ball_y": 50.9,
+          "ball_end_x": 106.7,
+          "ball_end_y": 49.8,
+          "actor": "Gianluca Scamacca",
+          "outcome": null
+        },
+        {
+          "event_id": "bc866819-fba8-4e76-9c99-a46d83e37032",
+          "t_seconds": 10.939,
+          "team": "Italy",
+          "event_type": "Pressure",
+          "ball_x": 111.6,
+          "ball_y": 27.3,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Federico Dimarco",
+          "outcome": null
+        },
+        {
+          "event_id": "0e094e93-1236-4799-befa-1d24465fd692",
+          "t_seconds": 11.79,
+          "team": "Italy",
+          "event_type": "Ball Recovery",
+          "ball_x": 101.4,
+          "ball_y": 37.1,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Nicol\u00f2 Barella",
+          "outcome": null
+        },
+        {
+          "event_id": "c9afe417-f2eb-4e53-905a-77a209c5ff19",
+          "t_seconds": 11.852,
+          "team": "Italy",
+          "event_type": "Shot",
+          "ball_x": 100.8,
+          "ball_y": 36.7,
+          "ball_end_x": 120.0,
+          "ball_end_y": 36.9,
+          "actor": "Nicol\u00f2 Barella",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "c9afe417-f2eb-4e53-905a-77a209c5ff19",
+          "minute": 15,
+          "second": 52,
+          "scorer": "Nicol\u00f2 Barella",
+          "team": "Italy"
+        }
+      },
+      "metadata": {
+        "match_id": 3930161,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Italy vs Albania"
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3930161,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Italy vs Albania"
+  }
+}

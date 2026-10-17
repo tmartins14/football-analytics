@@ -1,0 +1,3783 @@
+{
+  "findings": [
+    {
+      "id": "context.final_score",
+      "category": "context",
+      "type": "final_score",
+      "team": null,
+      "window": null,
+      "game_states": [],
+      "subject": null,
+      "label": null,
+      "value": {
+        "home_score": 1,
+        "away_score": 1
+      },
+      "claim": "Slovakia and Romania drew 1\u20131",
+      "evidence": {
+        "home_team": "Slovakia",
+        "home_score": 1,
+        "away_team": "Romania",
+        "away_score": 1,
+        "source": "match_stats.json#home.score,away.score"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "context.goal.SLO.ondrej_duda",
+      "category": "context",
+      "type": "goal",
+      "team": "Slovakia",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "display_name": "Ondrej Duda"
+      },
+      "label": null,
+      "value": "Ondrej Duda",
+      "claim": "Ondrej Duda scored for Slovakia (24')",
+      "evidence": {
+        "minute": 23,
+        "period": 1,
+        "display_minute": "24'",
+        "source": "shots.json"
+      },
+      "threshold": null,
+      "notability": 3.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "context.goal.ROM.r_zvan_marin",
+      "category": "context",
+      "type": "goal",
+      "team": "Romania",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "display_name": "R\u0103zvan Marin"
+      },
+      "label": null,
+      "value": "R\u0103zvan Marin",
+      "claim": "R\u0103zvan Marin scored for Romania (37')",
+      "evidence": {
+        "minute": 36,
+        "period": 1,
+        "display_minute": "37'",
+        "source": "shots.json"
+      },
+      "threshold": null,
+      "notability": 3.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "context.game_state.level.s0",
+      "category": "context",
+      "type": "game_state",
+      "team": null,
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 23,
+        "source": "game_state_segment",
+        "text": "kick-off to 24'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": null,
+      "label": "level",
+      "value": "0-0",
+      "claim": "the score was level at 0-0 from kick-off to 24'",
+      "evidence": {
+        "from_minute": 0,
+        "from_period": 1,
+        "to_minute": 23,
+        "to_period": 1,
+        "home_score": 0,
+        "away_score": 0,
+        "source": "derived from shots.json goals + match_stats.json final score"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "context.game_state.SLO.s1",
+      "category": "context",
+      "type": "game_state",
+      "team": "Slovakia",
+      "window": {
+        "index": 1,
+        "from_minute": 23,
+        "to_minute": 36,
+        "source": "game_state_segment",
+        "text": "24' to 37'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": null,
+      "label": "leading",
+      "value": "1-0",
+      "claim": "Slovakia led 1-0 from 24' to 37'",
+      "evidence": {
+        "from_minute": 23,
+        "from_period": 1,
+        "to_minute": 36,
+        "to_period": 1,
+        "home_score": 1,
+        "away_score": 0,
+        "source": "derived from shots.json goals + match_stats.json final score"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "context.game_state.level.s2",
+      "category": "context",
+      "type": "game_state",
+      "team": null,
+      "window": {
+        "index": 2,
+        "from_minute": 36,
+        "to_minute": null,
+        "source": "game_state_segment",
+        "text": "37' to full time"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": null,
+      "label": "level",
+      "value": "1-1",
+      "claim": "the score was level at 1-1 from 37' to full time",
+      "evidence": {
+        "from_minute": 36,
+        "from_period": 1,
+        "to_minute": null,
+        "to_period": null,
+        "home_score": 1,
+        "away_score": 1,
+        "source": "derived from shots.json goals + match_stats.json final score"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.formation.SLO.p0",
+      "category": "structure",
+      "type": "formation",
+      "team": "Slovakia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 94,
+        "source": "formation_period",
+        "text": "kick-off to full time"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": null,
+      "label": null,
+      "value": "4-3-3",
+      "claim": "Slovakia played a 4-3-3 from kick-off to full time",
+      "evidence": {
+        "from_minute": 0,
+        "from_period": 1,
+        "to_minute": 94,
+        "to_period": 2,
+        "source": "formation_slovakia.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.formation.ROM.p0",
+      "category": "structure",
+      "type": "formation",
+      "team": "Romania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 45,
+        "source": "formation_period",
+        "text": "kick-off to 46'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": "4-1-4-1",
+      "claim": "Romania played a 4-1-4-1 from kick-off to 46'",
+      "evidence": {
+        "from_minute": 0,
+        "from_period": 1,
+        "to_minute": 45,
+        "to_period": 2,
+        "source": "formation_romania.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.formation.ROM.p1",
+      "category": "structure",
+      "type": "formation",
+      "team": "Romania",
+      "window": {
+        "index": 1,
+        "from_minute": 45,
+        "to_minute": 94,
+        "source": "formation_period",
+        "text": "46' to full time"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": null,
+      "label": null,
+      "value": "4-4-1-1",
+      "claim": "Romania played a 4-4-1-1 from 46' to full time",
+      "evidence": {
+        "from_minute": 45,
+        "from_period": 2,
+        "to_minute": 94,
+        "to_period": 2,
+        "source": "formation_romania.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.formation_change.ROM.p1",
+      "category": "structure",
+      "type": "formation_change",
+      "team": "Romania",
+      "window": null,
+      "game_states": [],
+      "subject": null,
+      "label": null,
+      "value": {
+        "old": "4-1-4-1",
+        "new": "4-4-1-1"
+      },
+      "claim": "Romania changed from a 4-1-4-1 to a 4-4-1-1 (46')",
+      "evidence": {
+        "minute": 45,
+        "period": 2,
+        "display_minute": "46'",
+        "source": "formation_romania.json"
+      },
+      "threshold": null,
+      "notability": 3.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.ROM.marius_marin.p1",
+      "category": "structure",
+      "type": "role_change",
+      "team": "Romania",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Marius Mihai Marin",
+        "display_name": "Marius Marin"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Center Defensive Midfield",
+        "new_position": "Left Defensive Midfield"
+      },
+      "claim": "Marius Marin moved from Center Defensive Midfield to Left Defensive Midfield (46')",
+      "evidence": {
+        "minute": 45,
+        "period": 2,
+        "display_minute": "46'",
+        "source": "formation_romania.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.ROM.r_zvan_marin.p1",
+      "category": "structure",
+      "type": "role_change",
+      "team": "Romania",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "R\u0103zvan Gabriel Marin",
+        "display_name": "R\u0103zvan Marin"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Right Center Midfield",
+        "new_position": "Right Defensive Midfield"
+      },
+      "claim": "R\u0103zvan Marin moved from Right Center Midfield to Right Defensive Midfield (46')",
+      "evidence": {
+        "minute": 45,
+        "period": 2,
+        "display_minute": "46'",
+        "source": "formation_romania.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.ROM.nicolae_stanciu.p1",
+      "category": "structure",
+      "type": "role_change",
+      "team": "Romania",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Nicolae Claudiu Stanciu",
+        "display_name": "Nicolae Stanciu"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Left Center Midfield",
+        "new_position": "Center Attacking Midfield"
+      },
+      "claim": "Nicolae Stanciu moved from Left Center Midfield to Center Attacking Midfield (46')",
+      "evidence": {
+        "minute": 45,
+        "period": 2,
+        "display_minute": "46'",
+        "source": "formation_romania.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.ROM.george_puscas",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Romania",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "George Alexandru Pu\u015fca\u015f",
+        "display_name": "George Puscas"
+      },
+      "label": null,
+      "value": {
+        "on": "George Puscas",
+        "off": "Denis Dragus"
+      },
+      "claim": "George Puscas replaced Denis Dragus for Romania (67')",
+      "evidence": {
+        "minute": 66,
+        "period": 2,
+        "display_minute": "67'",
+        "on_player": "George Alexandru Pu\u015fca\u015f",
+        "off_player": "Denis Mihai Dr\u0103gu\u015f",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.ROM.adri_n_rus",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Romania",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Adri\u00e1n Rus",
+        "display_name": "Adri\u00e1n Rus"
+      },
+      "label": null,
+      "value": {
+        "on": "Adri\u00e1n Rus",
+        "off": "R\u0103zvan Marin"
+      },
+      "claim": "Adri\u00e1n Rus replaced R\u0103zvan Marin for Romania (86')",
+      "evidence": {
+        "minute": 85,
+        "period": 2,
+        "display_minute": "86'",
+        "on_player": "Adri\u00e1n Rus",
+        "off_player": "R\u0103zvan Gabriel Marin",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.ROM.dennis_man",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Romania",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Dennis Man",
+        "display_name": "Dennis Man"
+      },
+      "label": null,
+      "value": {
+        "on": "Dennis Man",
+        "off": "Ianis Hagi"
+      },
+      "claim": "Dennis Man replaced Ianis Hagi for Romania (66')",
+      "evidence": {
+        "minute": 65,
+        "period": 2,
+        "display_minute": "66'",
+        "on_player": "Dennis Man",
+        "off_player": "Ianis Hagi",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.ROM.deian_cristian_sorescu",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Romania",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Deian Cristian Sorescu",
+        "display_name": "Deian Cristian Sorescu"
+      },
+      "label": null,
+      "value": {
+        "on": "Deian Cristian Sorescu",
+        "off": "Florinel Coman"
+      },
+      "claim": "Deian Cristian Sorescu replaced Florinel Coman for Romania (58')",
+      "evidence": {
+        "minute": 57,
+        "period": 2,
+        "display_minute": "58'",
+        "on_player": "Deian Cristian Sorescu",
+        "off_player": "Florinel Teodor Coman",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.SLO.mat_bero",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Slovakia",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Mat\u00fa\u0161 Bero",
+        "display_name": "Mat\u00fa\u0161 Bero"
+      },
+      "label": null,
+      "value": {
+        "on": "Mat\u00fa\u0161 Bero",
+        "off": "Ondrej Duda"
+      },
+      "claim": "Mat\u00fa\u0161 Bero replaced Ondrej Duda for Slovakia (90+2')",
+      "evidence": {
+        "minute": 91,
+        "period": 2,
+        "display_minute": "90+2'",
+        "on_player": "Mat\u00fa\u0161 Bero",
+        "off_player": "Ondrej Duda",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.SLO.norbert_gy_mb_r",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Slovakia",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Norbert Gy\u00f6mb\u00e9r",
+        "display_name": "Norbert Gy\u00f6mb\u00e9r"
+      },
+      "label": null,
+      "value": {
+        "on": "Norbert Gy\u00f6mb\u00e9r",
+        "off": "Peter Pekar\u00edk"
+      },
+      "claim": "Norbert Gy\u00f6mb\u00e9r replaced Peter Pekar\u00edk for Slovakia (90+2')",
+      "evidence": {
+        "minute": 91,
+        "period": 2,
+        "display_minute": "90+2'",
+        "on_player": "Norbert Gy\u00f6mb\u00e9r",
+        "off_player": "Peter Pekar\u00edk",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.SLO.r_bert_bo_en_k",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Slovakia",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "R\u00f3bert Bo\u017een\u00edk",
+        "display_name": "R\u00f3bert Bo\u017een\u00edk"
+      },
+      "label": null,
+      "value": {
+        "on": "R\u00f3bert Bo\u017een\u00edk",
+        "off": "David Strelec"
+      },
+      "claim": "R\u00f3bert Bo\u017een\u00edk replaced David Strelec for Slovakia (70')",
+      "evidence": {
+        "minute": 69,
+        "period": 2,
+        "display_minute": "70'",
+        "on_player": "R\u00f3bert Bo\u017een\u00edk",
+        "off_player": "David Strelec",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.SLO.tom_suslov",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Slovakia",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Tom\u00e1\u0161 Suslov",
+        "display_name": "Tom\u00e1\u0161 Suslov"
+      },
+      "label": null,
+      "value": {
+        "on": "Tom\u00e1\u0161 Suslov",
+        "off": "Luk\u00e1\u0161 Harasl\u00edn"
+      },
+      "claim": "Tom\u00e1\u0161 Suslov replaced Luk\u00e1\u0161 Harasl\u00edn for Slovakia (70')",
+      "evidence": {
+        "minute": 69,
+        "period": 2,
+        "display_minute": "70'",
+        "on_player": "Tom\u00e1\u0161 Suslov",
+        "off_player": "Luk\u00e1\u0161 Harasl\u00edn",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.SLO.d_vid_uri",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Slovakia",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "D\u00e1vid \u010euri\u0161",
+        "display_name": "D\u00e1vid \u010euri\u0161"
+      },
+      "label": null,
+      "value": {
+        "on": "D\u00e1vid \u010euri\u0161",
+        "off": "Ivan Schranz"
+      },
+      "claim": "D\u00e1vid \u010euri\u0161 replaced Ivan Schranz for Slovakia (77')",
+      "evidence": {
+        "minute": 76,
+        "period": 2,
+        "display_minute": "77'",
+        "on_player": "D\u00e1vid \u010euri\u0161",
+        "off_player": "Ivan Schranz",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w0.milan_kriniar",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 69,
+        "source": "on_ball_period",
+        "text": "kick-off to 70'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Milan \u0160kriniar",
+        "display_name": "Milan \u0160kriniar"
+      },
+      "label": "left_half_space",
+      "value": "left_half_space",
+      "claim": "Milan \u0160kriniar took 42 of 78 touches on the left half-space (kick-off to 70')",
+      "evidence": {
+        "event_count": 78,
+        "lane_counts": {
+          "left_wing": 17,
+          "left_half_space": 42,
+          "centre": 13,
+          "right_half_space": 0,
+          "right_wing": 6
+        },
+        "band_counts": {
+          "own_third": 41,
+          "own_half": 27,
+          "opposition_half": 10,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_slovakia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w0.denis_vavro",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 69,
+        "source": "on_ball_period",
+        "text": "kick-off to 70'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Denis Vavro",
+        "display_name": "Denis Vavro"
+      },
+      "label": "right_half_space",
+      "value": "right_half_space",
+      "claim": "Denis Vavro took 35 of 52 touches on the right half-space (kick-off to 70')",
+      "evidence": {
+        "event_count": 52,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 14,
+          "right_half_space": 35,
+          "right_wing": 3
+        },
+        "band_counts": {
+          "own_third": 34,
+          "own_half": 15,
+          "opposition_half": 3,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_slovakia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w0.d_vid_hancko",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 69,
+        "source": "on_ball_period",
+        "text": "kick-off to 70'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "D\u00e1vid Hancko",
+        "display_name": "D\u00e1vid Hancko"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "D\u00e1vid Hancko took 37 of 50 touches on the left wing (kick-off to 70')",
+      "evidence": {
+        "event_count": 50,
+        "lane_counts": {
+          "left_wing": 37,
+          "left_half_space": 10,
+          "centre": 3,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 23,
+          "own_half": 16,
+          "opposition_half": 8,
+          "final_third": 3
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_slovakia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w0.stanislav_lobotka",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 69,
+        "source": "on_ball_period",
+        "text": "kick-off to 70'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Stanislav Lobotka",
+        "display_name": "Stanislav Lobotka"
+      },
+      "label": "centre",
+      "value": "centre",
+      "claim": "Stanislav Lobotka took 28 of 47 touches on the centre (kick-off to 70')",
+      "evidence": {
+        "event_count": 47,
+        "lane_counts": {
+          "left_wing": 1,
+          "left_half_space": 13,
+          "centre": 28,
+          "right_half_space": 5,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 14,
+          "own_half": 25,
+          "opposition_half": 8,
+          "final_third": 0
+        },
+        "band_label": "own_half",
+        "band_mixed": false,
+        "declared_side": "centre",
+        "observed_side": "centre",
+        "source": "team_shape_slovakia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w0.ondrej_duda",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 69,
+        "source": "on_ball_period",
+        "text": "kick-off to 70'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Ondrej Duda",
+        "display_name": "Ondrej Duda"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Ondrej Duda split touches between the left half-space (14) and the left wing (12) (kick-off to 70')",
+      "evidence": {
+        "event_count": 40,
+        "lane_counts": {
+          "left_wing": 12,
+          "left_half_space": 14,
+          "centre": 8,
+          "right_half_space": 1,
+          "right_wing": 5
+        },
+        "band_counts": {
+          "own_third": 9,
+          "own_half": 11,
+          "opposition_half": 12,
+          "final_third": 8
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_slovakia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w0.martin_d_bravka",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 69,
+        "source": "on_ball_period",
+        "text": "kick-off to 70'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Martin D\u00fabravka",
+        "display_name": "Martin D\u00fabravka"
+      },
+      "label": "centre",
+      "value": "centre",
+      "claim": "Martin D\u00fabravka took 31 of 32 touches on the centre (kick-off to 70')",
+      "evidence": {
+        "event_count": 32,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 1,
+          "centre": 31,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 32,
+          "own_half": 0,
+          "opposition_half": 0,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": null,
+        "observed_side": "centre",
+        "source": "team_shape_slovakia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w0.luk_harasl_n",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 69,
+        "source": "on_ball_period",
+        "text": "kick-off to 70'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Luk\u00e1\u0161 Harasl\u00edn",
+        "display_name": "Luk\u00e1\u0161 Harasl\u00edn"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "Luk\u00e1\u0161 Harasl\u00edn took 20 of 30 touches on the left wing (kick-off to 70')",
+      "evidence": {
+        "event_count": 30,
+        "lane_counts": {
+          "left_wing": 20,
+          "left_half_space": 10,
+          "centre": 0,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 6,
+          "own_half": 6,
+          "opposition_half": 9,
+          "final_third": 9
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_slovakia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w0.juraj_kucka",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 69,
+        "source": "on_ball_period",
+        "text": "kick-off to 70'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Juraj Kucka",
+        "display_name": "Juraj Kucka"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Juraj Kucka took 14 of 26 touches on the right wing (kick-off to 70')",
+      "evidence": {
+        "event_count": 26,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 4,
+          "right_half_space": 8,
+          "right_wing": 14
+        },
+        "band_counts": {
+          "own_third": 2,
+          "own_half": 6,
+          "opposition_half": 9,
+          "final_third": 9
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_slovakia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w0.peter_pekar_k",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 69,
+        "source": "on_ball_period",
+        "text": "kick-off to 70'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Peter Pekar\u00edk",
+        "display_name": "Peter Pekar\u00edk"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Peter Pekar\u00edk took 20 of 21 touches on the right wing (kick-off to 70')",
+      "evidence": {
+        "event_count": 21,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 0,
+          "right_half_space": 1,
+          "right_wing": 20
+        },
+        "band_counts": {
+          "own_third": 6,
+          "own_half": 4,
+          "opposition_half": 7,
+          "final_third": 4
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_slovakia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w0.david_strelec",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 69,
+        "source": "on_ball_period",
+        "text": "kick-off to 70'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "David Strelec",
+        "display_name": "David Strelec"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "David Strelec split touches between the left half-space (8) and the centre (6) (kick-off to 70')",
+      "evidence": {
+        "event_count": 18,
+        "lane_counts": {
+          "left_wing": 2,
+          "left_half_space": 8,
+          "centre": 6,
+          "right_half_space": 0,
+          "right_wing": 2
+        },
+        "band_counts": {
+          "own_third": 1,
+          "own_half": 9,
+          "opposition_half": 7,
+          "final_third": 1
+        },
+        "band_label": "own_half",
+        "band_mixed": false,
+        "declared_side": "centre",
+        "observed_side": "left",
+        "source": "team_shape_slovakia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w0.ivan_schranz",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 69,
+        "source": "on_ball_period",
+        "text": "kick-off to 70'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Ivan Schranz",
+        "display_name": "Ivan Schranz"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Ivan Schranz took 10 of 16 touches on the right wing (kick-off to 70')",
+      "evidence": {
+        "event_count": 16,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 0,
+          "right_half_space": 6,
+          "right_wing": 10
+        },
+        "band_counts": {
+          "own_third": 0,
+          "own_half": 5,
+          "opposition_half": 4,
+          "final_third": 7
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_slovakia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.team_height.SLO.w0",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Slovakia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 69,
+        "source": "on_ball_period",
+        "text": "kick-off to 70'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": null,
+      "label": "own_half",
+      "value": 49.91,
+      "claim": "Slovakia's average position in possession was in their own half (kick-off to 70')",
+      "evidence": {
+        "mean_x": 49.91,
+        "eligible_outfield_count": 10,
+        "event_count_total": 378,
+        "source": "team_shape_slovakia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "HALFWAY_LINE",
+        "value": 60
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.team_width.SLO.w0",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Slovakia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 69,
+        "source": "on_ball_period",
+        "text": "kick-off to 70'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 60.49,
+      "claim": null,
+      "evidence": {
+        "width": 60.49,
+        "eligible_outfield_count": 10,
+        "source": "team_shape_slovakia.json#on_ball"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w1.ivan_schranz",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 1,
+        "from_minute": 69,
+        "to_minute": 76,
+        "source": "on_ball_period",
+        "text": "70' to 77'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Ivan Schranz",
+        "display_name": "Ivan Schranz"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Ivan Schranz took 9 of 13 touches on the right wing (70' to 77')",
+      "evidence": {
+        "event_count": 13,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 0,
+          "right_half_space": 4,
+          "right_wing": 9
+        },
+        "band_counts": {
+          "own_third": 0,
+          "own_half": 7,
+          "opposition_half": 5,
+          "final_third": 1
+        },
+        "band_label": "own_half",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_slovakia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w1.ondrej_duda",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 1,
+        "from_minute": 69,
+        "to_minute": 76,
+        "source": "on_ball_period",
+        "text": "70' to 77'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Ondrej Duda",
+        "display_name": "Ondrej Duda"
+      },
+      "label": "centre",
+      "value": "centre",
+      "claim": "Ondrej Duda took 8 of 12 touches on the centre (70' to 77')",
+      "evidence": {
+        "event_count": 12,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 4,
+          "centre": 8,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 0,
+          "own_half": 11,
+          "opposition_half": 1,
+          "final_third": 0
+        },
+        "band_label": "own_half",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "centre",
+        "source": "team_shape_slovakia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w1.milan_kriniar",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 1,
+        "from_minute": 69,
+        "to_minute": 76,
+        "source": "on_ball_period",
+        "text": "70' to 77'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Milan \u0160kriniar",
+        "display_name": "Milan \u0160kriniar"
+      },
+      "label": "centre",
+      "value": "centre",
+      "claim": "Milan \u0160kriniar took 10 of 12 touches on the centre (70' to 77')",
+      "evidence": {
+        "event_count": 12,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 2,
+          "centre": 10,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 10,
+          "own_half": 2,
+          "opposition_half": 0,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "centre",
+        "source": "team_shape_slovakia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w1.r_bert_bo_en_k",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 1,
+        "from_minute": 69,
+        "to_minute": 76,
+        "source": "on_ball_period",
+        "text": "70' to 77'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "R\u00f3bert Bo\u017een\u00edk",
+        "display_name": "R\u00f3bert Bo\u017een\u00edk"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "R\u00f3bert Bo\u017een\u00edk split touches between the centre (4) and the right half-space (3) (70' to 77')",
+      "evidence": {
+        "event_count": 10,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 4,
+          "right_half_space": 3,
+          "right_wing": 3
+        },
+        "band_counts": {
+          "own_third": 0,
+          "own_half": 6,
+          "opposition_half": 4,
+          "final_third": 0
+        },
+        "band_label": "own_half",
+        "band_mixed": false,
+        "declared_side": null,
+        "observed_side": "centre",
+        "source": "team_shape_slovakia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w0.nicusor_bancu",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 57,
+        "source": "on_ball_period",
+        "text": "kick-off to 58'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Nicu\u0219or Silviu Bancu",
+        "display_name": "Nicusor Bancu"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "Nicusor Bancu took 32 of 41 touches on the left wing (kick-off to 58')",
+      "evidence": {
+        "event_count": 41,
+        "lane_counts": {
+          "left_wing": 32,
+          "left_half_space": 8,
+          "centre": 1,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 14,
+          "own_half": 8,
+          "opposition_half": 15,
+          "final_third": 4
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_romania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w0.ianis_hagi",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 57,
+        "source": "on_ball_period",
+        "text": "kick-off to 58'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Ianis Hagi",
+        "display_name": "Ianis Hagi"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Ianis Hagi took 29 of 40 touches on the right wing (kick-off to 58')",
+      "evidence": {
+        "event_count": 40,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 2,
+          "right_half_space": 9,
+          "right_wing": 29
+        },
+        "band_counts": {
+          "own_third": 6,
+          "own_half": 3,
+          "opposition_half": 13,
+          "final_third": 18
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_romania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w0.r_zvan_marin",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 57,
+        "source": "on_ball_period",
+        "text": "kick-off to 58'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "R\u0103zvan Gabriel Marin",
+        "display_name": "R\u0103zvan Marin"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "R\u0103zvan Marin split touches between the right wing (16) and the right half-space (9) (kick-off to 58')",
+      "evidence": {
+        "event_count": 36,
+        "lane_counts": {
+          "left_wing": 3,
+          "left_half_space": 2,
+          "centre": 6,
+          "right_half_space": 9,
+          "right_wing": 16
+        },
+        "band_counts": {
+          "own_third": 9,
+          "own_half": 2,
+          "opposition_half": 14,
+          "final_third": 11
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_romania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w0.radu_dragusin",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 57,
+        "source": "on_ball_period",
+        "text": "kick-off to 58'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Radu Dr\u0103gu\u0219in",
+        "display_name": "Radu Dragusin"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Radu Dragusin split touches between the right half-space (13) and the right wing (10) (kick-off to 58')",
+      "evidence": {
+        "event_count": 34,
+        "lane_counts": {
+          "left_wing": 3,
+          "left_half_space": 1,
+          "centre": 7,
+          "right_half_space": 13,
+          "right_wing": 10
+        },
+        "band_counts": {
+          "own_third": 20,
+          "own_half": 11,
+          "opposition_half": 3,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_romania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w0.andrei_ratiu",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 57,
+        "source": "on_ball_period",
+        "text": "kick-off to 58'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Andrei Florin Ratiu",
+        "display_name": "Andrei Ratiu"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Andrei Ratiu took 18 of 33 touches on the right wing (kick-off to 58')",
+      "evidence": {
+        "event_count": 33,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 4,
+          "centre": 4,
+          "right_half_space": 7,
+          "right_wing": 18
+        },
+        "band_counts": {
+          "own_third": 5,
+          "own_half": 8,
+          "opposition_half": 7,
+          "final_third": 13
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_romania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w0.andrei_burc_andonie",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 57,
+        "source": "on_ball_period",
+        "text": "kick-off to 58'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Andrei Burc\u0103 Andonie",
+        "display_name": "Andrei Burc\u0103 Andonie"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Andrei Burc\u0103 Andonie split touches between the left half-space (15) and the left wing (11) (kick-off to 58')",
+      "evidence": {
+        "event_count": 31,
+        "lane_counts": {
+          "left_wing": 11,
+          "left_half_space": 15,
+          "centre": 5,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 17,
+          "own_half": 12,
+          "opposition_half": 2,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_romania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w0.nicolae_stanciu",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 57,
+        "source": "on_ball_period",
+        "text": "kick-off to 58'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Nicolae Claudiu Stanciu",
+        "display_name": "Nicolae Stanciu"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Nicolae Stanciu split touches between the right wing (9) and the left half-space (7) (kick-off to 58')",
+      "evidence": {
+        "event_count": 25,
+        "lane_counts": {
+          "left_wing": 1,
+          "left_half_space": 7,
+          "centre": 4,
+          "right_half_space": 4,
+          "right_wing": 9
+        },
+        "band_counts": {
+          "own_third": 5,
+          "own_half": 0,
+          "opposition_half": 7,
+          "final_third": 13
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "right",
+        "source": "team_shape_romania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w0.marius_marin",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 57,
+        "source": "on_ball_period",
+        "text": "kick-off to 58'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Marius Mihai Marin",
+        "display_name": "Marius Marin"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Marius Marin split touches between the centre (8) and the left wing (6) (kick-off to 58')",
+      "evidence": {
+        "event_count": 23,
+        "lane_counts": {
+          "left_wing": 6,
+          "left_half_space": 5,
+          "centre": 8,
+          "right_half_space": 0,
+          "right_wing": 4
+        },
+        "band_counts": {
+          "own_third": 8,
+          "own_half": 4,
+          "opposition_half": 10,
+          "final_third": 1
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "centre",
+        "observed_side": "centre",
+        "source": "team_shape_romania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w0.florinel_coman",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 57,
+        "source": "on_ball_period",
+        "text": "kick-off to 58'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Florinel Teodor Coman",
+        "display_name": "Florinel Coman"
+      },
+      "label": "left_half_space",
+      "value": "left_half_space",
+      "claim": "Florinel Coman took 11 of 22 touches on the left half-space (kick-off to 58')",
+      "evidence": {
+        "event_count": 22,
+        "lane_counts": {
+          "left_wing": 7,
+          "left_half_space": 11,
+          "centre": 3,
+          "right_half_space": 1,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 3,
+          "own_half": 4,
+          "opposition_half": 2,
+          "final_third": 13
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_romania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w0.denis_dragus",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 57,
+        "source": "on_ball_period",
+        "text": "kick-off to 58'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Denis Mihai Dr\u0103gu\u015f",
+        "display_name": "Denis Dragus"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "Denis Dragus took 8 of 15 touches on the left wing (kick-off to 58')",
+      "evidence": {
+        "event_count": 15,
+        "lane_counts": {
+          "left_wing": 8,
+          "left_half_space": 1,
+          "centre": 3,
+          "right_half_space": 2,
+          "right_wing": 1
+        },
+        "band_counts": {
+          "own_third": 2,
+          "own_half": 3,
+          "opposition_half": 5,
+          "final_third": 5
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "centre",
+        "observed_side": "left",
+        "source": "team_shape_romania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w0.florin_nita",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 57,
+        "source": "on_ball_period",
+        "text": "kick-off to 58'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Florin Constantin Ni\u0163\u0103",
+        "display_name": "Florin Nita"
+      },
+      "label": "centre",
+      "value": "centre",
+      "claim": "Florin Nita took 5 of 10 touches on the centre (kick-off to 58')",
+      "evidence": {
+        "event_count": 10,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 5,
+          "right_half_space": 5,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 10,
+          "own_half": 0,
+          "opposition_half": 0,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": null,
+        "observed_side": "centre",
+        "source": "team_shape_romania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.team_height.ROM.w0",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Romania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 57,
+        "source": "on_ball_period",
+        "text": "kick-off to 58'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": null,
+      "label": "opposition_half",
+      "value": 60.07,
+      "claim": "Romania's average position in possession was in the opposition half (kick-off to 58')",
+      "evidence": {
+        "mean_x": 60.07,
+        "eligible_outfield_count": 10,
+        "event_count_total": 300,
+        "source": "team_shape_romania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "HALFWAY_LINE",
+        "value": 60
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.team_width.ROM.w0",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Romania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 57,
+        "source": "on_ball_period",
+        "text": "kick-off to 58'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 54.95,
+      "claim": null,
+      "evidence": {
+        "width": 54.95,
+        "eligible_outfield_count": 10,
+        "source": "team_shape_romania.json#on_ball"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "out_of_possession.block_height.SLO.whole_match",
+      "category": "out_of_possession",
+      "type": "block_height",
+      "team": "Slovakia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": null,
+        "source": "whole_match",
+        "text": "kick-off to full time"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 50.04,
+      "claim": null,
+      "evidence": {
+        "centroid_x": 50.04,
+        "camera_caveat": "360 frames follow the ball; the visible subset of out-of-possession positions is biased toward areas near the ball. The camera artifact and the real defensive shape point the same direction \u2014 they cannot be cleanly separated.",
+        "source": "team_shape_slovakia.json#off_ball.centroid"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "out_of_possession.block_height.ROM.whole_match",
+      "category": "out_of_possession",
+      "type": "block_height",
+      "team": "Romania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": null,
+        "source": "whole_match",
+        "text": "kick-off to full time"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 59.19,
+      "claim": null,
+      "evidence": {
+        "centroid_x": 59.19,
+        "camera_caveat": "360 frames follow the ball; the visible subset of out-of-possession positions is biased toward areas near the ball. The camera artifact and the real defensive shape point the same direction \u2014 they cannot be cleanly separated.",
+        "source": "team_shape_romania.json#off_ball.centroid"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.SLO.w0.denis_vavro",
+      "category": "passing",
+      "type": "hub",
+      "team": "Slovakia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 69,
+        "source": "pass_network_window",
+        "text": "kick-off to 70'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Denis Vavro",
+        "display_name": "Denis Vavro"
+      },
+      "label": null,
+      "value": 0.1641,
+      "claim": "Denis Vavro was a hub for Slovakia, involved in 16.4% of passes (kick-off to 70')",
+      "evidence": {
+        "passes_made": 51,
+        "passes_received": 55,
+        "share": 0.1641,
+        "source": "pass_network_Slovakia.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.0939112487100104,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.SLO.w0.milan_kriniar",
+      "category": "passing",
+      "type": "hub",
+      "team": "Slovakia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 69,
+        "source": "pass_network_window",
+        "text": "kick-off to 70'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Milan \u0160kriniar",
+        "display_name": "Milan \u0160kriniar"
+      },
+      "label": null,
+      "value": 0.2074,
+      "claim": "Milan \u0160kriniar was a hub for Slovakia, involved in 20.7% of passes (kick-off to 70')",
+      "evidence": {
+        "passes_made": 69,
+        "passes_received": 65,
+        "share": 0.2074,
+        "source": "pass_network_Slovakia.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.3828689370485037,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.SLO.w0.milan_kriniar_denis_vavro",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Slovakia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 69,
+        "source": "pass_network_window",
+        "text": "kick-off to 70'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "pair": [
+          "Milan \u0160kriniar",
+          "Denis Vavro"
+        ]
+      },
+      "label": null,
+      "value": 38,
+      "claim": "Milan \u0160kriniar and Denis Vavro combined 38 times (kick-off to 70')",
+      "evidence": {
+        "bidirectional_total": 38,
+        "source": "pass_network_Slovakia.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 2.352941176470588,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.SLO.w0.milan_kriniar_stanislav_lobotka",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Slovakia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 69,
+        "source": "pass_network_window",
+        "text": "kick-off to 70'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "pair": [
+          "Milan \u0160kriniar",
+          "Stanislav Lobotka"
+        ]
+      },
+      "label": null,
+      "value": 27,
+      "claim": "Milan \u0160kriniar and Stanislav Lobotka combined 27 times (kick-off to 70')",
+      "evidence": {
+        "bidirectional_total": 27,
+        "source": "pass_network_Slovakia.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.6718266253869967,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.SLO.w0.denis_vavro_stanislav_lobotka",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Slovakia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 69,
+        "source": "pass_network_window",
+        "text": "kick-off to 70'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "pair": [
+          "Denis Vavro",
+          "Stanislav Lobotka"
+        ]
+      },
+      "label": null,
+      "value": 21,
+      "claim": "Denis Vavro and Stanislav Lobotka combined 21 times (kick-off to 70')",
+      "evidence": {
+        "bidirectional_total": 21,
+        "source": "pass_network_Slovakia.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.3003095975232197,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.concentration.SLO.w0",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Slovakia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 69,
+        "source": "pass_network_window",
+        "text": "kick-off to 70'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 0.4969,
+      "claim": null,
+      "evidence": {
+        "top3_share": 0.4969,
+        "window_passes": 323,
+        "source": "pass_network_Slovakia.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.ROM.w0.andrei_burc_andonie",
+      "category": "passing",
+      "type": "hub",
+      "team": "Romania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 57,
+        "source": "pass_network_window",
+        "text": "kick-off to 58'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Andrei Burc\u0103 Andonie",
+        "display_name": "Andrei Burc\u0103 Andonie"
+      },
+      "label": null,
+      "value": 0.1927,
+      "claim": "Andrei Burc\u0103 Andonie was a hub for Romania, involved in 19.3% of passes (kick-off to 58')",
+      "evidence": {
+        "passes_made": 35,
+        "passes_received": 39,
+        "share": 0.1927,
+        "source": "pass_network_Romania.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.2847222222222223,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.ROM.w0.andrei_burc_andonie_radu_dragusin",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Romania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 57,
+        "source": "pass_network_window",
+        "text": "kick-off to 58'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "pair": [
+          "Andrei Burc\u0103 Andonie",
+          "Radu Dragusin"
+        ]
+      },
+      "label": null,
+      "value": 25,
+      "claim": "Andrei Burc\u0103 Andonie and Radu Dragusin combined 25 times (kick-off to 58')",
+      "evidence": {
+        "bidirectional_total": 25,
+        "source": "pass_network_Romania.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 2.6041666666666665,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.ROM.w0.andrei_burc_andonie_florin_nita",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Romania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 57,
+        "source": "pass_network_window",
+        "text": "kick-off to 58'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "pair": [
+          "Andrei Burc\u0103 Andonie",
+          "Florin Nita"
+        ]
+      },
+      "label": null,
+      "value": 16,
+      "claim": "Andrei Burc\u0103 Andonie and Florin Nita combined 16 times (kick-off to 58')",
+      "evidence": {
+        "bidirectional_total": 16,
+        "source": "pass_network_Romania.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.6666666666666665,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.ROM.w0.andrei_burc_andonie_nicusor_bancu",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Romania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 57,
+        "source": "pass_network_window",
+        "text": "kick-off to 58'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "pair": [
+          "Andrei Burc\u0103 Andonie",
+          "Nicusor Bancu"
+        ]
+      },
+      "label": null,
+      "value": 14,
+      "claim": "Andrei Burc\u0103 Andonie and Nicusor Bancu combined 14 times (kick-off to 58')",
+      "evidence": {
+        "bidirectional_total": 14,
+        "source": "pass_network_Romania.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.4583333333333333,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.concentration.ROM.w0",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Romania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 57,
+        "source": "pass_network_window",
+        "text": "kick-off to 58'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 0.4557,
+      "claim": null,
+      "evidence": {
+        "top3_share": 0.4557,
+        "window_passes": 192,
+        "source": "pass_network_Romania.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.ROM.w2.nicusor_bancu",
+      "category": "passing",
+      "type": "hub",
+      "team": "Romania",
+      "window": {
+        "index": 2,
+        "from_minute": 66,
+        "to_minute": 85,
+        "source": "pass_network_window",
+        "text": "67' to 86'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Nicu\u0219or Silviu Bancu",
+        "display_name": "Nicusor Bancu"
+      },
+      "label": null,
+      "value": 0.2065,
+      "claim": "Nicusor Bancu was a hub for Romania, involved in 20.7% of passes (67' to 86')",
+      "evidence": {
+        "passes_made": 10,
+        "passes_received": 9,
+        "share": 0.2065,
+        "source": "pass_network_Romania.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.3768115942028987,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.concentration.ROM.w2",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Romania",
+      "window": {
+        "index": 2,
+        "from_minute": 66,
+        "to_minute": 85,
+        "source": "pass_network_window",
+        "text": "67' to 86'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 0.4239,
+      "claim": null,
+      "evidence": {
+        "top3_share": 0.4239,
+        "window_passes": 46,
+        "source": "pass_network_Romania.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "cross.comparison.block_height.SLO",
+      "category": "cross_cutting",
+      "type": "comparison",
+      "team": "Slovakia",
+      "window": null,
+      "game_states": [],
+      "subject": null,
+      "label": "deeper",
+      "value": 9.15,
+      "claim": "Slovakia's average out-of-possession position was 9.1 yards deeper than Romania's",
+      "evidence": {
+        "deeper_x": 50.04,
+        "other_x": 59.19,
+        "gap": 9.15
+      },
+      "threshold": {
+        "constant": "COMPARE_MIN_YARDS",
+        "value": 5
+      },
+      "notability": 1.8299999999999996,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "cross.comparison.team_height.ROM",
+      "category": "cross_cutting",
+      "type": "comparison",
+      "team": "Romania",
+      "window": null,
+      "game_states": [],
+      "subject": null,
+      "label": "higher",
+      "value": 10.16,
+      "claim": "Romania's average position in possession was 10.2 yards higher than Slovakia's (Romania kick-off to 58', Slovakia kick-off to 70')",
+      "evidence": {
+        "higher_value": 60.07,
+        "other_value": 49.91,
+        "gap": 10.16
+      },
+      "threshold": {
+        "constant": "COMPARE_MIN_YARDS",
+        "value": 5
+      },
+      "notability": 2.032000000000001,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "cross.comparison.team_width.SLO",
+      "category": "cross_cutting",
+      "type": "comparison",
+      "team": "Slovakia",
+      "window": null,
+      "game_states": [],
+      "subject": null,
+      "label": "wider",
+      "value": 5.54,
+      "claim": null,
+      "evidence": {
+        "gap": 5.54
+      },
+      "threshold": {
+        "constant": "COMPARE_MIN_YARDS",
+        "value": 5
+      },
+      "notability": 1.1079999999999999,
+      "definitions_version": "0.1.0"
+    }
+  ],
+  "suppressed": [
+    {
+      "id": "in_possession.player_zone.SLO.w1.peter_pekar_k",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 1,
+        "from_minute": 69,
+        "to_minute": 76,
+        "source": "on_ball_period",
+        "text": "70' to 77'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 9,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w1.juraj_kucka",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 1,
+        "from_minute": 69,
+        "to_minute": 76,
+        "source": "on_ball_period",
+        "text": "70' to 77'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 9,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w1.denis_vavro",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 1,
+        "from_minute": 69,
+        "to_minute": 76,
+        "source": "on_ball_period",
+        "text": "70' to 77'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 9,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w1.stanislav_lobotka",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 1,
+        "from_minute": 69,
+        "to_minute": 76,
+        "source": "on_ball_period",
+        "text": "70' to 77'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 8,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w1.tom_suslov",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 1,
+        "from_minute": 69,
+        "to_minute": 76,
+        "source": "on_ball_period",
+        "text": "70' to 77'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 7,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w1.martin_d_bravka",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 1,
+        "from_minute": 69,
+        "to_minute": 76,
+        "source": "on_ball_period",
+        "text": "70' to 77'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 6,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w1.d_vid_hancko",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 1,
+        "from_minute": 69,
+        "to_minute": 76,
+        "source": "on_ball_period",
+        "text": "70' to 77'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 5,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.team_height.SLO.w1",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Slovakia",
+      "window": {
+        "index": 1,
+        "from_minute": 69,
+        "to_minute": 76,
+        "source": "on_ball_period",
+        "text": "70' to 77'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 4,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_width.SLO.w1",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Slovakia",
+      "window": {
+        "index": 1,
+        "from_minute": 69,
+        "to_minute": 76,
+        "source": "on_ball_period",
+        "text": "70' to 77'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 4,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w2.tom_suslov",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 2,
+        "from_minute": 76,
+        "to_minute": 91,
+        "source": "on_ball_period",
+        "text": "77' to 90+2'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w2.ondrej_duda",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 2,
+        "from_minute": 76,
+        "to_minute": 91,
+        "source": "on_ball_period",
+        "text": "77' to 90+2'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 2,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w2.milan_kriniar",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 2,
+        "from_minute": 76,
+        "to_minute": 91,
+        "source": "on_ball_period",
+        "text": "77' to 90+2'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 1,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.team_height.SLO.w2",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Slovakia",
+      "window": {
+        "index": 2,
+        "from_minute": 76,
+        "to_minute": 91,
+        "source": "on_ball_period",
+        "text": "77' to 90+2'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_width.SLO.w2",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Slovakia",
+      "window": {
+        "index": 2,
+        "from_minute": 76,
+        "to_minute": 91,
+        "source": "on_ball_period",
+        "text": "77' to 90+2'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_height.SLO.w3",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Slovakia",
+      "window": {
+        "index": 3,
+        "from_minute": 91,
+        "to_minute": 95,
+        "source": "on_ball_period",
+        "text": "90+2' to full time"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_width.SLO.w3",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Slovakia",
+      "window": {
+        "index": 3,
+        "from_minute": 91,
+        "to_minute": 95,
+        "source": "on_ball_period",
+        "text": "90+2' to full time"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w1.r_zvan_marin",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 1,
+        "from_minute": 57,
+        "to_minute": 65,
+        "source": "on_ball_period",
+        "text": "58' to 66'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 8,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w1.denis_dragus",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 1,
+        "from_minute": 57,
+        "to_minute": 65,
+        "source": "on_ball_period",
+        "text": "58' to 66'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 8,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w1.ianis_hagi",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 1,
+        "from_minute": 57,
+        "to_minute": 65,
+        "source": "on_ball_period",
+        "text": "58' to 66'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 6,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w1.marius_marin",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 1,
+        "from_minute": 57,
+        "to_minute": 65,
+        "source": "on_ball_period",
+        "text": "58' to 66'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 4,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w1.andrei_ratiu",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 1,
+        "from_minute": 57,
+        "to_minute": 65,
+        "source": "on_ball_period",
+        "text": "58' to 66'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w1.nicolae_stanciu",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 1,
+        "from_minute": 57,
+        "to_minute": 65,
+        "source": "on_ball_period",
+        "text": "58' to 66'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w1.nicusor_bancu",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 1,
+        "from_minute": 57,
+        "to_minute": 65,
+        "source": "on_ball_period",
+        "text": "58' to 66'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 2,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w1.andrei_burc_andonie",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 1,
+        "from_minute": 57,
+        "to_minute": 65,
+        "source": "on_ball_period",
+        "text": "58' to 66'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 1,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.team_height.ROM.w1",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Romania",
+      "window": {
+        "index": 1,
+        "from_minute": 57,
+        "to_minute": 65,
+        "source": "on_ball_period",
+        "text": "58' to 66'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_width.ROM.w1",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Romania",
+      "window": {
+        "index": 1,
+        "from_minute": 57,
+        "to_minute": 65,
+        "source": "on_ball_period",
+        "text": "58' to 66'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_height.ROM.w2",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Romania",
+      "window": {
+        "index": 2,
+        "from_minute": 65,
+        "to_minute": 66,
+        "source": "on_ball_period",
+        "text": "66' to 67'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_width.ROM.w2",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Romania",
+      "window": {
+        "index": 2,
+        "from_minute": 65,
+        "to_minute": 66,
+        "source": "on_ball_period",
+        "text": "66' to 67'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w3.florin_nita",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 3,
+        "from_minute": 66,
+        "to_minute": 85,
+        "source": "on_ball_period",
+        "text": "67' to 86'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 9,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w3.dennis_man",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 3,
+        "from_minute": 66,
+        "to_minute": 85,
+        "source": "on_ball_period",
+        "text": "67' to 86'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 9,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w3.deian_cristian_sorescu",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 3,
+        "from_minute": 66,
+        "to_minute": 85,
+        "source": "on_ball_period",
+        "text": "67' to 86'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 6,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w3.nicusor_bancu",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 3,
+        "from_minute": 66,
+        "to_minute": 85,
+        "source": "on_ball_period",
+        "text": "67' to 86'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 6,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w3.andrei_ratiu",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 3,
+        "from_minute": 66,
+        "to_minute": 85,
+        "source": "on_ball_period",
+        "text": "67' to 86'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 6,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w3.george_puscas",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 3,
+        "from_minute": 66,
+        "to_minute": 85,
+        "source": "on_ball_period",
+        "text": "67' to 86'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 5,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w3.andrei_burc_andonie",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 3,
+        "from_minute": 66,
+        "to_minute": 85,
+        "source": "on_ball_period",
+        "text": "67' to 86'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 4,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w3.radu_dragusin",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 3,
+        "from_minute": 66,
+        "to_minute": 85,
+        "source": "on_ball_period",
+        "text": "67' to 86'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w3.marius_marin",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 3,
+        "from_minute": 66,
+        "to_minute": 85,
+        "source": "on_ball_period",
+        "text": "67' to 86'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w3.nicolae_stanciu",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 3,
+        "from_minute": 66,
+        "to_minute": 85,
+        "source": "on_ball_period",
+        "text": "67' to 86'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 1,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.team_height.ROM.w3",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Romania",
+      "window": {
+        "index": 3,
+        "from_minute": 66,
+        "to_minute": 85,
+        "source": "on_ball_period",
+        "text": "67' to 86'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_width.ROM.w3",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Romania",
+      "window": {
+        "index": 3,
+        "from_minute": 66,
+        "to_minute": 85,
+        "source": "on_ball_period",
+        "text": "67' to 86'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_height.ROM.w4",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Romania",
+      "window": {
+        "index": 4,
+        "from_minute": 85,
+        "to_minute": 95,
+        "source": "on_ball_period",
+        "text": "86' to full time"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_width.ROM.w4",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Romania",
+      "window": {
+        "index": 4,
+        "from_minute": 85,
+        "to_minute": 95,
+        "source": "on_ball_period",
+        "text": "86' to full time"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "passing.hub.SLO.w1",
+      "category": "passing",
+      "type": "hub",
+      "team": "Slovakia",
+      "window": {
+        "index": 1,
+        "from_minute": 69,
+        "to_minute": 76,
+        "source": "pass_network_window",
+        "text": "70' to 77'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 31,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.no_hub.SLO.w1",
+      "category": "passing",
+      "type": "no_hub",
+      "team": "Slovakia",
+      "window": {
+        "index": 1,
+        "from_minute": 69,
+        "to_minute": 76,
+        "source": "pass_network_window",
+        "text": "70' to 77'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 31,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.top_pair.SLO.w1",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Slovakia",
+      "window": {
+        "index": 1,
+        "from_minute": 69,
+        "to_minute": 76,
+        "source": "pass_network_window",
+        "text": "70' to 77'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 31,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.concentration.SLO.w1",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Slovakia",
+      "window": {
+        "index": 1,
+        "from_minute": 69,
+        "to_minute": 76,
+        "source": "pass_network_window",
+        "text": "70' to 77'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 31,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.hub.SLO.w2",
+      "category": "passing",
+      "type": "hub",
+      "team": "Slovakia",
+      "window": {
+        "index": 2,
+        "from_minute": 76,
+        "to_minute": 91,
+        "source": "pass_network_window",
+        "text": "77' to 90+2'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 25,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.no_hub.SLO.w2",
+      "category": "passing",
+      "type": "no_hub",
+      "team": "Slovakia",
+      "window": {
+        "index": 2,
+        "from_minute": 76,
+        "to_minute": 91,
+        "source": "pass_network_window",
+        "text": "77' to 90+2'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 25,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.top_pair.SLO.w2",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Slovakia",
+      "window": {
+        "index": 2,
+        "from_minute": 76,
+        "to_minute": 91,
+        "source": "pass_network_window",
+        "text": "77' to 90+2'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 25,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.concentration.SLO.w2",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Slovakia",
+      "window": {
+        "index": 2,
+        "from_minute": 76,
+        "to_minute": 91,
+        "source": "pass_network_window",
+        "text": "77' to 90+2'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 25,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.hub.SLO.w3",
+      "category": "passing",
+      "type": "hub",
+      "team": "Slovakia",
+      "window": {
+        "index": 3,
+        "from_minute": 91,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "90+2' to full time"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 5,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.no_hub.SLO.w3",
+      "category": "passing",
+      "type": "no_hub",
+      "team": "Slovakia",
+      "window": {
+        "index": 3,
+        "from_minute": 91,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "90+2' to full time"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 5,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.top_pair.SLO.w3",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Slovakia",
+      "window": {
+        "index": 3,
+        "from_minute": 91,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "90+2' to full time"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 5,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.concentration.SLO.w3",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Slovakia",
+      "window": {
+        "index": 3,
+        "from_minute": 91,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "90+2' to full time"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 5,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.hub.ROM.w1",
+      "category": "passing",
+      "type": "hub",
+      "team": "Romania",
+      "window": {
+        "index": 1,
+        "from_minute": 57,
+        "to_minute": 65,
+        "source": "pass_network_window",
+        "text": "58' to 66'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 17,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.no_hub.ROM.w1",
+      "category": "passing",
+      "type": "no_hub",
+      "team": "Romania",
+      "window": {
+        "index": 1,
+        "from_minute": 57,
+        "to_minute": 65,
+        "source": "pass_network_window",
+        "text": "58' to 66'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 17,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.top_pair.ROM.w1",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Romania",
+      "window": {
+        "index": 1,
+        "from_minute": 57,
+        "to_minute": 65,
+        "source": "pass_network_window",
+        "text": "58' to 66'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 17,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.concentration.ROM.w1",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Romania",
+      "window": {
+        "index": 1,
+        "from_minute": 57,
+        "to_minute": 65,
+        "source": "pass_network_window",
+        "text": "58' to 66'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 17,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.hub.ROM.w3",
+      "category": "passing",
+      "type": "hub",
+      "team": "Romania",
+      "window": {
+        "index": 3,
+        "from_minute": 85,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "86' to full time"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 2,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.no_hub.ROM.w3",
+      "category": "passing",
+      "type": "no_hub",
+      "team": "Romania",
+      "window": {
+        "index": 3,
+        "from_minute": 85,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "86' to full time"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 2,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.top_pair.ROM.w3",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Romania",
+      "window": {
+        "index": 3,
+        "from_minute": 85,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "86' to full time"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 2,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.concentration.ROM.w3",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Romania",
+      "window": {
+        "index": 3,
+        "from_minute": 85,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "86' to full time"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 2,
+        "required": 40
+      }
+    },
+    {
+      "id": "cross.comparison.concentration",
+      "category": "cross_cutting",
+      "type": "comparison",
+      "team": null,
+      "window": null,
+      "reason": "COMPARE_MIN_POINTS",
+      "detail": {
+        "gap": 4.12,
+        "required": 5
+      }
+    }
+  ],
+  "metadata": {
+    "match_id": 3930183,
+    "definitions_version": "0.1.0",
+    "teams": [
+      "Slovakia",
+      "Romania"
+    ]
+  }
+}

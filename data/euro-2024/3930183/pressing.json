@@ -1,0 +1,281 @@
+{
+  "teams": {
+    "Romania": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 137,
+        "defensive_actions_advanced": 14,
+        "value": 9.7857
+      },
+      "pressures_high": {
+        "count": 46,
+        "opponent_open_play_passes": 155,
+        "per_100": 29.68
+      },
+      "pressure_side": {
+        "left": 38,
+        "centre": 16,
+        "right": 49
+      }
+    },
+    "Slovakia": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 65,
+        "defensive_actions_advanced": 16,
+        "value": 4.0625
+      },
+      "pressures_high": {
+        "count": 37,
+        "opponent_open_play_passes": 101,
+        "per_100": 36.63
+      },
+      "pressure_side": {
+        "left": 33,
+        "centre": 15,
+        "right": 24
+      }
+    }
+  },
+  "pressure_received": [
+    {
+      "player_id": 8660,
+      "display_name": "George Puscas",
+      "team": "Romania",
+      "on_ball_events": 22,
+      "under_pressure_events": 12,
+      "share": 0.5455
+    },
+    {
+      "player_id": 34904,
+      "display_name": "R\u00f3bert Bo\u017een\u00edk",
+      "team": "Slovakia",
+      "on_ball_events": 21,
+      "under_pressure_events": 11,
+      "share": 0.5238
+    },
+    {
+      "player_id": 56905,
+      "display_name": "Dennis Man",
+      "team": "Romania",
+      "on_ball_events": 21,
+      "under_pressure_events": 10,
+      "share": 0.4762
+    },
+    {
+      "player_id": 35653,
+      "display_name": "Tom\u00e1\u0161 Suslov",
+      "team": "Slovakia",
+      "on_ball_events": 14,
+      "under_pressure_events": 6,
+      "share": 0.4286
+    },
+    {
+      "player_id": 28565,
+      "display_name": "Ianis Hagi",
+      "team": "Romania",
+      "on_ball_events": 73,
+      "under_pressure_events": 31,
+      "share": 0.4247
+    },
+    {
+      "player_id": 43976,
+      "display_name": "David Strelec",
+      "team": "Slovakia",
+      "on_ball_events": 43,
+      "under_pressure_events": 17,
+      "share": 0.3953
+    },
+    {
+      "player_id": 16344,
+      "display_name": "R\u0103zvan Marin",
+      "team": "Romania",
+      "on_ball_events": 53,
+      "under_pressure_events": 19,
+      "share": 0.3585
+    },
+    {
+      "player_id": 31193,
+      "display_name": "Denis Dragus",
+      "team": "Romania",
+      "on_ball_events": 40,
+      "under_pressure_events": 13,
+      "share": 0.325
+    },
+    {
+      "player_id": 28032,
+      "display_name": "Ivan Schranz",
+      "team": "Slovakia",
+      "on_ball_events": 45,
+      "under_pressure_events": 14,
+      "share": 0.3111
+    },
+    {
+      "player_id": 7975,
+      "display_name": "Luk\u00e1\u0161 Harasl\u00edn",
+      "team": "Slovakia",
+      "on_ball_events": 46,
+      "under_pressure_events": 13,
+      "share": 0.2826
+    },
+    {
+      "player_id": 34602,
+      "display_name": "Adri\u00e1n Rus",
+      "team": "Romania",
+      "on_ball_events": 4,
+      "under_pressure_events": 1,
+      "share": 0.25
+    },
+    {
+      "player_id": 9722,
+      "display_name": "Peter Pekar\u00edk",
+      "team": "Slovakia",
+      "on_ball_events": 72,
+      "under_pressure_events": 17,
+      "share": 0.2361
+    },
+    {
+      "player_id": 16879,
+      "display_name": "D\u00e1vid Hancko",
+      "team": "Slovakia",
+      "on_ball_events": 110,
+      "under_pressure_events": 25,
+      "share": 0.2273
+    },
+    {
+      "player_id": 10919,
+      "display_name": "Juraj Kucka",
+      "team": "Slovakia",
+      "on_ball_events": 77,
+      "under_pressure_events": 16,
+      "share": 0.2078
+    },
+    {
+      "player_id": 24861,
+      "display_name": "Andrei Ratiu",
+      "team": "Romania",
+      "on_ball_events": 99,
+      "under_pressure_events": 20,
+      "share": 0.202
+    },
+    {
+      "player_id": 8967,
+      "display_name": "Ondrej Duda",
+      "team": "Slovakia",
+      "on_ball_events": 115,
+      "under_pressure_events": 23,
+      "share": 0.2
+    },
+    {
+      "player_id": 6798,
+      "display_name": "Stanislav Lobotka",
+      "team": "Slovakia",
+      "on_ball_events": 110,
+      "under_pressure_events": 20,
+      "share": 0.1818
+    },
+    {
+      "player_id": 30913,
+      "display_name": "Marius Marin",
+      "team": "Romania",
+      "on_ball_events": 69,
+      "under_pressure_events": 10,
+      "share": 0.1449
+    },
+    {
+      "player_id": 39615,
+      "display_name": "Radu Dragusin",
+      "team": "Romania",
+      "on_ball_events": 91,
+      "under_pressure_events": 12,
+      "share": 0.1319
+    },
+    {
+      "player_id": 31908,
+      "display_name": "Andrei Burc\u0103 Andonie",
+      "team": "Romania",
+      "on_ball_events": 116,
+      "under_pressure_events": 15,
+      "share": 0.1293
+    },
+    {
+      "player_id": 34600,
+      "display_name": "Nicusor Bancu",
+      "team": "Romania",
+      "on_ball_events": 113,
+      "under_pressure_events": 13,
+      "share": 0.115
+    },
+    {
+      "player_id": 10916,
+      "display_name": "Nicolae Stanciu",
+      "team": "Romania",
+      "on_ball_events": 70,
+      "under_pressure_events": 8,
+      "share": 0.1143
+    },
+    {
+      "player_id": 16298,
+      "display_name": "Denis Vavro",
+      "team": "Slovakia",
+      "on_ball_events": 141,
+      "under_pressure_events": 16,
+      "share": 0.1135
+    },
+    {
+      "player_id": 6990,
+      "display_name": "Milan \u0160kriniar",
+      "team": "Slovakia",
+      "on_ball_events": 170,
+      "under_pressure_events": 17,
+      "share": 0.1
+    },
+    {
+      "player_id": 34599,
+      "display_name": "Florinel Coman",
+      "team": "Romania",
+      "on_ball_events": 41,
+      "under_pressure_events": 4,
+      "share": 0.0976
+    },
+    {
+      "player_id": 130984,
+      "display_name": "Deian Cristian Sorescu",
+      "team": "Romania",
+      "on_ball_events": 25,
+      "under_pressure_events": 1,
+      "share": 0.04
+    },
+    {
+      "player_id": 44167,
+      "display_name": "D\u00e1vid \u010euri\u0161",
+      "team": "Slovakia",
+      "on_ball_events": 3,
+      "under_pressure_events": 0,
+      "share": 0.0
+    },
+    {
+      "player_id": 15546,
+      "display_name": "Mat\u00fa\u0161 Bero",
+      "team": "Slovakia",
+      "on_ball_events": 2,
+      "under_pressure_events": 0,
+      "share": 0.0
+    },
+    {
+      "player_id": 20043,
+      "display_name": "Norbert Gy\u00f6mb\u00e9r",
+      "team": "Slovakia",
+      "on_ball_events": 0,
+      "under_pressure_events": 0,
+      "share": 0.0
+    }
+  ],
+  "metadata": {
+    "match_id": 3930183,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Slovakia vs Romania",
+    "open_play_filter": "play_pattern + pass_type",
+    "ppda_zone": "opponent's own 60% (x < 72 in the opponent's own frame)",
+    "defensive_action_zone": "pressing team's own half+ (x >= 48 in its own frame)",
+    "pressures_high_zone": "opponent half (x >= 60 in the pressing team's own frame)"
+  }
+}

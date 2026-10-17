@@ -1,0 +1,5760 @@
+{
+  "findings": [
+    {
+      "id": "context.final_score",
+      "category": "context",
+      "type": "final_score",
+      "team": null,
+      "window": null,
+      "game_states": [],
+      "subject": null,
+      "label": null,
+      "value": {
+        "home_score": 1,
+        "away_score": 2
+      },
+      "claim": "Albania beat Croatia 2\u20131",
+      "evidence": {
+        "home_team": "Croatia",
+        "home_score": 1,
+        "away_team": "Albania",
+        "away_score": 2,
+        "source": "match_stats.json#home.score,away.score"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "context.goal.ALB.qazim_la_i",
+      "category": "context",
+      "type": "goal",
+      "team": "Albania",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "display_name": "Qazim La\u00e7i"
+      },
+      "label": null,
+      "value": "Qazim La\u00e7i",
+      "claim": "Qazim La\u00e7i scored for Albania (11')",
+      "evidence": {
+        "minute": 10,
+        "period": 1,
+        "display_minute": "11'",
+        "source": "shots.json"
+      },
+      "threshold": null,
+      "notability": 3.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "context.goal.CRO.andrej_kramari",
+      "category": "context",
+      "type": "goal",
+      "team": "Croatia",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "display_name": "Andrej Kramari\u0107"
+      },
+      "label": null,
+      "value": "Andrej Kramari\u0107",
+      "claim": "Andrej Kramari\u0107 scored for Croatia (74')",
+      "evidence": {
+        "minute": 73,
+        "period": 2,
+        "display_minute": "74'",
+        "source": "shots.json"
+      },
+      "threshold": null,
+      "notability": 3.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "context.goal.ALB.klaus_gjasula",
+      "category": "context",
+      "type": "goal",
+      "team": "Albania",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "display_name": "Klaus Gjasula"
+      },
+      "label": null,
+      "value": "Klaus Gjasula",
+      "claim": "Klaus Gjasula scored for Albania (90+5')",
+      "evidence": {
+        "minute": 94,
+        "period": 2,
+        "display_minute": "90+5'",
+        "source": "shots.json"
+      },
+      "threshold": null,
+      "notability": 3.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "context.game_state.level.s0",
+      "category": "context",
+      "type": "game_state",
+      "team": null,
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 10,
+        "source": "game_state_segment",
+        "text": "kick-off to 11'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": null,
+      "label": "level",
+      "value": "0-0",
+      "claim": "the score was level at 0-0 from kick-off to 11'",
+      "evidence": {
+        "from_minute": 0,
+        "from_period": 1,
+        "to_minute": 10,
+        "to_period": 1,
+        "home_score": 0,
+        "away_score": 0,
+        "source": "derived from shots.json goals + match_stats.json final score"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "context.game_state.ALB.s1",
+      "category": "context",
+      "type": "game_state",
+      "team": "Albania",
+      "window": {
+        "index": 1,
+        "from_minute": 10,
+        "to_minute": 73,
+        "source": "game_state_segment",
+        "text": "11' to 74'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": null,
+      "label": "leading",
+      "value": "0-1",
+      "claim": "Albania led 1-0 from 11' to 74'",
+      "evidence": {
+        "from_minute": 10,
+        "from_period": 1,
+        "to_minute": 73,
+        "to_period": 2,
+        "home_score": 0,
+        "away_score": 1,
+        "source": "derived from shots.json goals + match_stats.json final score"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "context.game_state.level.s2",
+      "category": "context",
+      "type": "game_state",
+      "team": null,
+      "window": {
+        "index": 2,
+        "from_minute": 73,
+        "to_minute": 94,
+        "source": "game_state_segment",
+        "text": "74' to 90+5'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": null,
+      "label": "level",
+      "value": "1-1",
+      "claim": "the score was level at 1-1 from 74' to 90+5'",
+      "evidence": {
+        "from_minute": 73,
+        "from_period": 2,
+        "to_minute": 94,
+        "to_period": 2,
+        "home_score": 1,
+        "away_score": 1,
+        "source": "derived from shots.json goals + match_stats.json final score"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "context.game_state.ALB.s3",
+      "category": "context",
+      "type": "game_state",
+      "team": "Albania",
+      "window": {
+        "index": 3,
+        "from_minute": 94,
+        "to_minute": null,
+        "source": "game_state_segment",
+        "text": "90+5' to full time"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": null,
+      "label": "leading",
+      "value": "1-2",
+      "claim": "Albania led 2-1 from 90+5' to full time",
+      "evidence": {
+        "from_minute": 94,
+        "from_period": 2,
+        "to_minute": null,
+        "to_period": null,
+        "home_score": 1,
+        "away_score": 2,
+        "source": "derived from shots.json goals + match_stats.json final score"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.formation.CRO.p0",
+      "category": "structure",
+      "type": "formation",
+      "team": "Croatia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 45,
+        "source": "formation_period",
+        "text": "kick-off to 46'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": "4-3-3",
+      "claim": "Croatia played a 4-3-3 from kick-off to 46'",
+      "evidence": {
+        "from_minute": 0,
+        "from_period": 1,
+        "to_minute": 45,
+        "to_period": 2,
+        "source": "formation_croatia.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.formation.CRO.p1",
+      "category": "structure",
+      "type": "formation",
+      "team": "Croatia",
+      "window": {
+        "index": 1,
+        "from_minute": 45,
+        "to_minute": 98,
+        "source": "formation_period",
+        "text": "46' to full time"
+      },
+      "game_states": [
+        "trailing",
+        "level"
+      ],
+      "subject": null,
+      "label": null,
+      "value": "4-2-3-1",
+      "claim": "Croatia played a 4-2-3-1 from 46' to full time",
+      "evidence": {
+        "from_minute": 45,
+        "from_period": 2,
+        "to_minute": 98,
+        "to_period": 2,
+        "source": "formation_croatia.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.formation_change.CRO.p1",
+      "category": "structure",
+      "type": "formation_change",
+      "team": "Croatia",
+      "window": null,
+      "game_states": [],
+      "subject": null,
+      "label": null,
+      "value": {
+        "old": "4-3-3",
+        "new": "4-2-3-1"
+      },
+      "claim": "Croatia changed from a 4-3-3 to a 4-2-3-1 (46')",
+      "evidence": {
+        "minute": 45,
+        "period": 2,
+        "display_minute": "46'",
+        "source": "formation_croatia.json"
+      },
+      "threshold": null,
+      "notability": 3.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.CRO.mateo_kova_i.p1",
+      "category": "structure",
+      "type": "role_change",
+      "team": "Croatia",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Mateo Kova\u010di\u0107",
+        "display_name": "Mateo Kova\u010di\u0107"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Left Center Midfield",
+        "new_position": "Left Defensive Midfield"
+      },
+      "claim": "Mateo Kova\u010di\u0107 moved from Left Center Midfield to Left Defensive Midfield (46')",
+      "evidence": {
+        "minute": 45,
+        "period": 2,
+        "display_minute": "46'",
+        "source": "formation_croatia.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.CRO.luka_modri.p1",
+      "category": "structure",
+      "type": "role_change",
+      "team": "Croatia",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Luka Modri\u0107",
+        "display_name": "Luka Modri\u0107"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Right Center Midfield",
+        "new_position": "Right Defensive Midfield"
+      },
+      "claim": "Luka Modri\u0107 moved from Right Center Midfield to Right Defensive Midfield (46')",
+      "evidence": {
+        "minute": 45,
+        "period": 2,
+        "display_minute": "46'",
+        "source": "formation_croatia.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.formation.ALB.p0",
+      "category": "structure",
+      "type": "formation",
+      "team": "Albania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 71,
+        "source": "formation_period",
+        "text": "kick-off to 72'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": null,
+      "label": null,
+      "value": "4-1-4-1",
+      "claim": "Albania played a 4-1-4-1 from kick-off to 72'",
+      "evidence": {
+        "from_minute": 0,
+        "from_period": 1,
+        "to_minute": 71,
+        "to_period": 2,
+        "source": "formation_albania.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.formation.ALB.p1",
+      "category": "structure",
+      "type": "formation",
+      "team": "Albania",
+      "window": {
+        "index": 1,
+        "from_minute": 71,
+        "to_minute": 84,
+        "source": "formation_period",
+        "text": "72' to 85'"
+      },
+      "game_states": [
+        "leading",
+        "level"
+      ],
+      "subject": null,
+      "label": null,
+      "value": "4-1-4-1",
+      "claim": "Albania played a 4-1-4-1 from 72' to 85'",
+      "evidence": {
+        "from_minute": 71,
+        "from_period": 2,
+        "to_minute": 84,
+        "to_period": 2,
+        "source": "formation_albania.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.ALB.nedim_bajrami.p1",
+      "category": "structure",
+      "type": "role_change",
+      "team": "Albania",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Nedim Bajrami",
+        "display_name": "Nedim Bajrami"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Left Midfield",
+        "new_position": "Right Midfield"
+      },
+      "claim": "Nedim Bajrami moved from Left Midfield to Right Midfield (72')",
+      "evidence": {
+        "minute": 71,
+        "period": 2,
+        "display_minute": "72'",
+        "source": "formation_albania.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.formation.ALB.p2",
+      "category": "structure",
+      "type": "formation",
+      "team": "Albania",
+      "window": {
+        "index": 2,
+        "from_minute": 84,
+        "to_minute": 98,
+        "source": "formation_period",
+        "text": "85' to full time"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": null,
+      "label": null,
+      "value": "4-4-1-1",
+      "claim": "Albania played a 4-4-1-1 from 85' to full time",
+      "evidence": {
+        "from_minute": 84,
+        "from_period": 2,
+        "to_minute": 98,
+        "to_period": 2,
+        "source": "formation_albania.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.formation_change.ALB.p2",
+      "category": "structure",
+      "type": "formation_change",
+      "team": "Albania",
+      "window": null,
+      "game_states": [],
+      "subject": null,
+      "label": null,
+      "value": {
+        "old": "4-1-4-1",
+        "new": "4-4-1-1"
+      },
+      "claim": "Albania changed from a 4-1-4-1 to a 4-4-1-1 (85')",
+      "evidence": {
+        "minute": 84,
+        "period": 2,
+        "display_minute": "85'",
+        "source": "formation_albania.json"
+      },
+      "threshold": null,
+      "notability": 3.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.ALB.klaus_gjasula.p2",
+      "category": "structure",
+      "type": "role_change",
+      "team": "Albania",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Klaus Gjasula",
+        "display_name": "Klaus Gjasula"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Right Center Midfield",
+        "new_position": "Right Defensive Midfield"
+      },
+      "claim": "Klaus Gjasula moved from Right Center Midfield to Right Defensive Midfield (85')",
+      "evidence": {
+        "minute": 84,
+        "period": 2,
+        "display_minute": "85'",
+        "source": "formation_albania.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.ALB.taulant_seferi.p2",
+      "category": "structure",
+      "type": "role_change",
+      "team": "Albania",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Taulant Sulejmanov",
+        "display_name": "Taulant Seferi"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Left Midfield",
+        "new_position": "Center Attacking Midfield"
+      },
+      "claim": "Taulant Seferi moved from Left Midfield to Center Attacking Midfield (85')",
+      "evidence": {
+        "minute": 84,
+        "period": 2,
+        "display_minute": "85'",
+        "source": "formation_albania.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.ALB.kristjan_asllani.p2",
+      "category": "structure",
+      "type": "role_change",
+      "team": "Albania",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Kristjan Asllani",
+        "display_name": "Kristjan Asllani"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Left Center Midfield",
+        "new_position": "Left Defensive Midfield"
+      },
+      "claim": "Kristjan Asllani moved from Left Center Midfield to Left Defensive Midfield (85')",
+      "evidence": {
+        "minute": 84,
+        "period": 2,
+        "display_minute": "85'",
+        "source": "formation_albania.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.ALB.klaus_gjasula",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Albania",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Klaus Gjasula",
+        "display_name": "Klaus Gjasula"
+      },
+      "label": null,
+      "value": {
+        "on": "Klaus Gjasula",
+        "off": "Qazim La\u00e7i"
+      },
+      "claim": "Klaus Gjasula replaced Qazim La\u00e7i for Albania (72')",
+      "evidence": {
+        "minute": 71,
+        "period": 2,
+        "display_minute": "72'",
+        "on_player": "Klaus Gjasula",
+        "off_player": "Qazim La\u00e7i",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.ALB.taulant_seferi",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Albania",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Taulant Sulejmanov",
+        "display_name": "Taulant Seferi"
+      },
+      "label": null,
+      "value": {
+        "on": "Taulant Seferi",
+        "off": "Jasir Asani"
+      },
+      "claim": "Taulant Seferi replaced Jasir Asani for Albania (64')",
+      "evidence": {
+        "minute": 63,
+        "period": 2,
+        "display_minute": "64'",
+        "on_player": "Taulant Sulejmanov",
+        "off_player": "Jasir Asani",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.ALB.mirlind_daku",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Albania",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Mirlind Daku",
+        "display_name": "Mirlind Daku"
+      },
+      "label": null,
+      "value": {
+        "on": "Mirlind Daku",
+        "off": "Rey Manaj"
+      },
+      "claim": "Mirlind Daku replaced Rey Manaj for Albania (85')",
+      "evidence": {
+        "minute": 84,
+        "period": 2,
+        "display_minute": "85'",
+        "on_player": "Mirlind Daku",
+        "off_player": "Rey Manaj",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.ALB.arb_r_hoxha",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Albania",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Arb\u00ebr Hoxha",
+        "display_name": "Arb\u00ebr Hoxha"
+      },
+      "label": null,
+      "value": {
+        "on": "Arb\u00ebr Hoxha",
+        "off": "Ylber Ramadani"
+      },
+      "claim": "Arb\u00ebr Hoxha replaced Ylber Ramadani for Albania (85')",
+      "evidence": {
+        "minute": 84,
+        "period": 2,
+        "display_minute": "85'",
+        "on_player": "Arb\u00ebr Hoxha",
+        "off_player": "Ylber Ramadani",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.CRO.ante_budimir",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Croatia",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Ante Budimir",
+        "display_name": "Ante Budimir"
+      },
+      "label": null,
+      "value": {
+        "on": "Ante Budimir",
+        "off": "Bruno Petkovi\u0107"
+      },
+      "claim": "Ante Budimir replaced Bruno Petkovi\u0107 for Croatia (69')",
+      "evidence": {
+        "minute": 68,
+        "period": 2,
+        "display_minute": "69'",
+        "on_player": "Ante Budimir",
+        "off_player": "Bruno Petkovi\u0107",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.CRO.mario_pa_ali",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Croatia",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Mario Pa\u0161ali\u0107",
+        "display_name": "Mario Pa\u0161ali\u0107"
+      },
+      "label": null,
+      "value": {
+        "on": "Mario Pa\u0161ali\u0107",
+        "off": "Marcelo Brozovi\u0107"
+      },
+      "claim": "Mario Pa\u0161ali\u0107 replaced Marcelo Brozovi\u0107 for Croatia (46')",
+      "evidence": {
+        "minute": 45,
+        "period": 2,
+        "display_minute": "46'",
+        "on_player": "Mario Pa\u0161ali\u0107",
+        "off_player": "Marcelo Brozovi\u0107",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.CRO.borna_sosa",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Croatia",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Borna Sosa",
+        "display_name": "Borna Sosa"
+      },
+      "label": null,
+      "value": {
+        "on": "Borna Sosa",
+        "off": "Ivan Peri\u0161i\u0107"
+      },
+      "claim": "Borna Sosa replaced Ivan Peri\u0161i\u0107 for Croatia (84')",
+      "evidence": {
+        "minute": 83,
+        "period": 2,
+        "display_minute": "84'",
+        "on_player": "Borna Sosa",
+        "off_player": "Ivan Peri\u0161i\u0107",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.CRO.luka_su_i",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Croatia",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Luka Su\u010di\u0107",
+        "display_name": "Luka Su\u010di\u0107"
+      },
+      "label": null,
+      "value": {
+        "on": "Luka Su\u010di\u0107",
+        "off": "Lovro Majer"
+      },
+      "claim": "Luka Su\u010di\u0107 replaced Lovro Majer for Croatia (46')",
+      "evidence": {
+        "minute": 45,
+        "period": 2,
+        "display_minute": "46'",
+        "on_player": "Luka Su\u010di\u0107",
+        "off_player": "Lovro Majer",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.CRO.martin_baturina",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Croatia",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Martin Baturina",
+        "display_name": "Martin Baturina"
+      },
+      "label": null,
+      "value": {
+        "on": "Martin Baturina",
+        "off": "Andrej Kramari\u0107"
+      },
+      "claim": "Martin Baturina replaced Andrej Kramari\u0107 for Croatia (84')",
+      "evidence": {
+        "minute": 83,
+        "period": 2,
+        "display_minute": "84'",
+        "on_player": "Martin Baturina",
+        "off_player": "Andrej Kramari\u0107",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.CRO.w0.mateo_kova_i",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Croatia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 45,
+        "source": "on_ball_period",
+        "text": "kick-off to 46'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Mateo Kova\u010di\u0107",
+        "display_name": "Mateo Kova\u010di\u0107"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Mateo Kova\u010di\u0107 split touches between the left half-space (24) and the left wing (23) (kick-off to 46')",
+      "evidence": {
+        "event_count": 62,
+        "lane_counts": {
+          "left_wing": 23,
+          "left_half_space": 24,
+          "centre": 15,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 6,
+          "own_half": 17,
+          "opposition_half": 14,
+          "final_third": 25
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_croatia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.CRO.w0.marcelo_brozovi",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Croatia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 45,
+        "source": "on_ball_period",
+        "text": "kick-off to 46'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Marcelo Brozovi\u0107",
+        "display_name": "Marcelo Brozovi\u0107"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Marcelo Brozovi\u0107 split touches between the centre (27) and the left half-space (11) (kick-off to 46')",
+      "evidence": {
+        "event_count": 55,
+        "lane_counts": {
+          "left_wing": 3,
+          "left_half_space": 11,
+          "centre": 27,
+          "right_half_space": 10,
+          "right_wing": 4
+        },
+        "band_counts": {
+          "own_third": 14,
+          "own_half": 12,
+          "opposition_half": 17,
+          "final_third": 12
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "centre",
+        "observed_side": "centre",
+        "source": "team_shape_croatia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.CRO.w0.luka_modri",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Croatia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 45,
+        "source": "on_ball_period",
+        "text": "kick-off to 46'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Luka Modri\u0107",
+        "display_name": "Luka Modri\u0107"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Luka Modri\u0107 split touches between the right wing (21) and the centre (14) (kick-off to 46')",
+      "evidence": {
+        "event_count": 54,
+        "lane_counts": {
+          "left_wing": 12,
+          "left_half_space": 5,
+          "centre": 14,
+          "right_half_space": 2,
+          "right_wing": 21
+        },
+        "band_counts": {
+          "own_third": 3,
+          "own_half": 13,
+          "opposition_half": 20,
+          "final_third": 18
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_croatia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.CRO.w0.lovro_majer",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Croatia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 45,
+        "source": "on_ball_period",
+        "text": "kick-off to 46'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Lovro Majer",
+        "display_name": "Lovro Majer"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Lovro Majer split touches between the centre (13) and the left wing (9) (kick-off to 46')",
+      "evidence": {
+        "event_count": 43,
+        "lane_counts": {
+          "left_wing": 9,
+          "left_half_space": 3,
+          "centre": 13,
+          "right_half_space": 9,
+          "right_wing": 9
+        },
+        "band_counts": {
+          "own_third": 6,
+          "own_half": 9,
+          "opposition_half": 7,
+          "final_third": 21
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "right",
+        "observed_side": "centre",
+        "source": "team_shape_croatia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.CRO.w0.andrej_kramari",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Croatia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 45,
+        "source": "on_ball_period",
+        "text": "kick-off to 46'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Andrej Kramari\u0107",
+        "display_name": "Andrej Kramari\u0107"
+      },
+      "label": "left_half_space",
+      "value": "left_half_space",
+      "claim": "Andrej Kramari\u0107 took 20 of 40 touches on the left half-space (kick-off to 46')",
+      "evidence": {
+        "event_count": 40,
+        "lane_counts": {
+          "left_wing": 14,
+          "left_half_space": 20,
+          "centre": 1,
+          "right_half_space": 5,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 3,
+          "own_half": 3,
+          "opposition_half": 5,
+          "final_third": 29
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_croatia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.CRO.w0.josip_utalo",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Croatia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 45,
+        "source": "on_ball_period",
+        "text": "kick-off to 46'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Josip \u0160utalo",
+        "display_name": "Josip \u0160utalo"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Josip \u0160utalo split touches between the centre (14) and the right half-space (9) (kick-off to 46')",
+      "evidence": {
+        "event_count": 30,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 14,
+          "right_half_space": 9,
+          "right_wing": 7
+        },
+        "band_counts": {
+          "own_third": 18,
+          "own_half": 6,
+          "opposition_half": 6,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "centre",
+        "source": "team_shape_croatia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.CRO.w0.ivan_peri_i",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Croatia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 45,
+        "source": "on_ball_period",
+        "text": "kick-off to 46'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Ivan Peri\u0161i\u0107",
+        "display_name": "Ivan Peri\u0161i\u0107"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "Ivan Peri\u0161i\u0107 took 16 of 24 touches on the left wing (kick-off to 46')",
+      "evidence": {
+        "event_count": 24,
+        "lane_counts": {
+          "left_wing": 16,
+          "left_half_space": 8,
+          "centre": 0,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 7,
+          "own_half": 0,
+          "opposition_half": 2,
+          "final_third": 15
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_croatia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.CRO.w0.bruno_petkovi",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Croatia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 45,
+        "source": "on_ball_period",
+        "text": "kick-off to 46'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Bruno Petkovi\u0107",
+        "display_name": "Bruno Petkovi\u0107"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Bruno Petkovi\u0107 split touches between the left half-space (10) and the centre (10) (kick-off to 46')",
+      "evidence": {
+        "event_count": 24,
+        "lane_counts": {
+          "left_wing": 1,
+          "left_half_space": 10,
+          "centre": 10,
+          "right_half_space": 3,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 0,
+          "own_half": 5,
+          "opposition_half": 2,
+          "final_third": 17
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": "centre",
+        "observed_side": "left",
+        "source": "team_shape_croatia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.CRO.w0.jo_ko_gvardiol",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Croatia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 45,
+        "source": "on_ball_period",
+        "text": "kick-off to 46'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Jo\u0161ko Gvardiol",
+        "display_name": "Jo\u0161ko Gvardiol"
+      },
+      "label": "left_half_space",
+      "value": "left_half_space",
+      "claim": "Jo\u0161ko Gvardiol took 14 of 21 touches on the left half-space (kick-off to 46')",
+      "evidence": {
+        "event_count": 21,
+        "lane_counts": {
+          "left_wing": 3,
+          "left_half_space": 14,
+          "centre": 4,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 11,
+          "own_half": 3,
+          "opposition_half": 1,
+          "final_third": 6
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_croatia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.CRO.w0.josip_juranovi",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Croatia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 45,
+        "source": "on_ball_period",
+        "text": "kick-off to 46'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Josip Juranovi\u0107",
+        "display_name": "Josip Juranovi\u0107"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Josip Juranovi\u0107 took 15 of 20 touches on the right wing (kick-off to 46')",
+      "evidence": {
+        "event_count": 20,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 5,
+          "right_half_space": 0,
+          "right_wing": 15
+        },
+        "band_counts": {
+          "own_third": 5,
+          "own_half": 0,
+          "opposition_half": 5,
+          "final_third": 10
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_croatia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.CRO.w0.dominik_livakovi",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Croatia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 45,
+        "source": "on_ball_period",
+        "text": "kick-off to 46'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Dominik Livakovi\u0107",
+        "display_name": "Dominik Livakovi\u0107"
+      },
+      "label": "centre",
+      "value": "centre",
+      "claim": "Dominik Livakovi\u0107 took 11 of 12 touches on the centre (kick-off to 46')",
+      "evidence": {
+        "event_count": 12,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 1,
+          "centre": 11,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 12,
+          "own_half": 0,
+          "opposition_half": 0,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": null,
+        "observed_side": "centre",
+        "source": "team_shape_croatia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.team_height.CRO.w0",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Croatia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 45,
+        "source": "on_ball_period",
+        "text": "kick-off to 46'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": null,
+      "label": "opposition_half",
+      "value": 67.48,
+      "claim": "Croatia's average position in possession was in the opposition half (kick-off to 46')",
+      "evidence": {
+        "mean_x": 67.48,
+        "eligible_outfield_count": 10,
+        "event_count_total": 373,
+        "source": "team_shape_croatia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "HALFWAY_LINE",
+        "value": 60
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.team_width.CRO.w0",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Croatia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 45,
+        "source": "on_ball_period",
+        "text": "kick-off to 46'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 54.08,
+      "claim": null,
+      "evidence": {
+        "width": 54.08,
+        "eligible_outfield_count": 10,
+        "source": "team_shape_croatia.json#on_ball"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.CRO.w1.mateo_kova_i",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Croatia",
+      "window": {
+        "index": 1,
+        "from_minute": 45,
+        "to_minute": 68,
+        "source": "on_ball_period",
+        "text": "46' to 69'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "Mateo Kova\u010di\u0107",
+        "display_name": "Mateo Kova\u010di\u0107"
+      },
+      "label": "centre",
+      "value": "centre",
+      "claim": "Mateo Kova\u010di\u0107 took 28 of 53 touches on the centre (46' to 69')",
+      "evidence": {
+        "event_count": 53,
+        "lane_counts": {
+          "left_wing": 4,
+          "left_half_space": 20,
+          "centre": 28,
+          "right_half_space": 1,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 3,
+          "own_half": 10,
+          "opposition_half": 15,
+          "final_third": 25
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "centre",
+        "source": "team_shape_croatia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.CRO.w1.andrej_kramari",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Croatia",
+      "window": {
+        "index": 1,
+        "from_minute": 45,
+        "to_minute": 68,
+        "source": "on_ball_period",
+        "text": "46' to 69'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "Andrej Kramari\u0107",
+        "display_name": "Andrej Kramari\u0107"
+      },
+      "label": "centre",
+      "value": "centre",
+      "claim": "Andrej Kramari\u0107 took 17 of 34 touches on the centre (46' to 69')",
+      "evidence": {
+        "event_count": 34,
+        "lane_counts": {
+          "left_wing": 8,
+          "left_half_space": 8,
+          "centre": 17,
+          "right_half_space": 1,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 0,
+          "own_half": 0,
+          "opposition_half": 11,
+          "final_third": 23
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "centre",
+        "source": "team_shape_croatia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.CRO.w1.luka_modri",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Croatia",
+      "window": {
+        "index": 1,
+        "from_minute": 45,
+        "to_minute": 68,
+        "source": "on_ball_period",
+        "text": "46' to 69'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "Luka Modri\u0107",
+        "display_name": "Luka Modri\u0107"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Luka Modri\u0107 split touches between the right half-space (10) and the centre (8) (46' to 69')",
+      "evidence": {
+        "event_count": 30,
+        "lane_counts": {
+          "left_wing": 3,
+          "left_half_space": 5,
+          "centre": 8,
+          "right_half_space": 10,
+          "right_wing": 4
+        },
+        "band_counts": {
+          "own_third": 1,
+          "own_half": 4,
+          "opposition_half": 9,
+          "final_third": 16
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_croatia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.CRO.w1.jo_ko_gvardiol",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Croatia",
+      "window": {
+        "index": 1,
+        "from_minute": 45,
+        "to_minute": 68,
+        "source": "on_ball_period",
+        "text": "46' to 69'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "Jo\u0161ko Gvardiol",
+        "display_name": "Jo\u0161ko Gvardiol"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Jo\u0161ko Gvardiol split touches between the centre (11) and the left wing (7) (46' to 69')",
+      "evidence": {
+        "event_count": 25,
+        "lane_counts": {
+          "left_wing": 7,
+          "left_half_space": 7,
+          "centre": 11,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 5,
+          "own_half": 9,
+          "opposition_half": 3,
+          "final_third": 8
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "centre",
+        "source": "team_shape_croatia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.CRO.w1.mario_pa_ali",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Croatia",
+      "window": {
+        "index": 1,
+        "from_minute": 45,
+        "to_minute": 68,
+        "source": "on_ball_period",
+        "text": "46' to 69'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "Mario Pa\u0161ali\u0107",
+        "display_name": "Mario Pa\u0161ali\u0107"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Mario Pa\u0161ali\u0107 split touches between the centre (9) and the right wing (8) (46' to 69')",
+      "evidence": {
+        "event_count": 24,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 9,
+          "right_half_space": 7,
+          "right_wing": 8
+        },
+        "band_counts": {
+          "own_third": 7,
+          "own_half": 7,
+          "opposition_half": 2,
+          "final_third": 8
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "right",
+        "observed_side": "centre",
+        "source": "team_shape_croatia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.CRO.w1.luka_su_i",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Croatia",
+      "window": {
+        "index": 1,
+        "from_minute": 45,
+        "to_minute": 68,
+        "source": "on_ball_period",
+        "text": "46' to 69'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "Luka Su\u010di\u0107",
+        "display_name": "Luka Su\u010di\u0107"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Luka Su\u010di\u0107 split touches between the right half-space (9) and the centre (5) (46' to 69')",
+      "evidence": {
+        "event_count": 20,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 1,
+          "centre": 5,
+          "right_half_space": 9,
+          "right_wing": 5
+        },
+        "band_counts": {
+          "own_third": 0,
+          "own_half": 5,
+          "opposition_half": 8,
+          "final_third": 7
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "centre",
+        "observed_side": "right",
+        "source": "team_shape_croatia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.CRO.w1.ivan_peri_i",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Croatia",
+      "window": {
+        "index": 1,
+        "from_minute": 45,
+        "to_minute": 68,
+        "source": "on_ball_period",
+        "text": "46' to 69'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "Ivan Peri\u0161i\u0107",
+        "display_name": "Ivan Peri\u0161i\u0107"
+      },
+      "label": "left_half_space",
+      "value": "left_half_space",
+      "claim": "Ivan Peri\u0161i\u0107 took 11 of 17 touches on the left half-space (46' to 69')",
+      "evidence": {
+        "event_count": 17,
+        "lane_counts": {
+          "left_wing": 5,
+          "left_half_space": 11,
+          "centre": 1,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 3,
+          "own_half": 0,
+          "opposition_half": 4,
+          "final_third": 10
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_croatia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.CRO.w1.josip_juranovi",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Croatia",
+      "window": {
+        "index": 1,
+        "from_minute": 45,
+        "to_minute": 68,
+        "source": "on_ball_period",
+        "text": "46' to 69'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "Josip Juranovi\u0107",
+        "display_name": "Josip Juranovi\u0107"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Josip Juranovi\u0107 took 13 of 17 touches on the right wing (46' to 69')",
+      "evidence": {
+        "event_count": 17,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 1,
+          "right_half_space": 3,
+          "right_wing": 13
+        },
+        "band_counts": {
+          "own_third": 5,
+          "own_half": 0,
+          "opposition_half": 3,
+          "final_third": 9
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_croatia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.CRO.w1.josip_utalo",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Croatia",
+      "window": {
+        "index": 1,
+        "from_minute": 45,
+        "to_minute": 68,
+        "source": "on_ball_period",
+        "text": "46' to 69'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "Josip \u0160utalo",
+        "display_name": "Josip \u0160utalo"
+      },
+      "label": "centre",
+      "value": "centre",
+      "claim": "Josip \u0160utalo took 6 of 10 touches on the centre (46' to 69')",
+      "evidence": {
+        "event_count": 10,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 6,
+          "right_half_space": 4,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 7,
+          "own_half": 0,
+          "opposition_half": 3,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "centre",
+        "source": "team_shape_croatia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.team_height.CRO.w1",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Croatia",
+      "window": {
+        "index": 1,
+        "from_minute": 45,
+        "to_minute": 68,
+        "source": "on_ball_period",
+        "text": "46' to 69'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": null,
+      "label": "opposition_half",
+      "value": 73.76,
+      "claim": "Croatia's average position in possession was in the opposition half (46' to 69')",
+      "evidence": {
+        "mean_x": 73.76,
+        "eligible_outfield_count": 9,
+        "event_count_total": 230,
+        "source": "team_shape_croatia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "HALFWAY_LINE",
+        "value": 60
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.team_width.CRO.w1",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Croatia",
+      "window": {
+        "index": 1,
+        "from_minute": 45,
+        "to_minute": 68,
+        "source": "on_ball_period",
+        "text": "46' to 69'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 46.27,
+      "claim": null,
+      "evidence": {
+        "width": 46.27,
+        "eligible_outfield_count": 9,
+        "source": "team_shape_croatia.json#on_ball"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.CRO.w2.luka_modri",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Croatia",
+      "window": {
+        "index": 2,
+        "from_minute": 68,
+        "to_minute": 83,
+        "source": "on_ball_period",
+        "text": "69' to 84'"
+      },
+      "game_states": [
+        "trailing",
+        "level"
+      ],
+      "subject": {
+        "player": "Luka Modri\u0107",
+        "display_name": "Luka Modri\u0107"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Luka Modri\u0107 took 36 of 68 touches on the right wing (69' to 84')",
+      "evidence": {
+        "event_count": 68,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 12,
+          "right_half_space": 20,
+          "right_wing": 36
+        },
+        "band_counts": {
+          "own_third": 0,
+          "own_half": 34,
+          "opposition_half": 28,
+          "final_third": 6
+        },
+        "band_label": "own_half",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_croatia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.CRO.w2.mateo_kova_i",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Croatia",
+      "window": {
+        "index": 2,
+        "from_minute": 68,
+        "to_minute": 83,
+        "source": "on_ball_period",
+        "text": "69' to 84'"
+      },
+      "game_states": [
+        "trailing",
+        "level"
+      ],
+      "subject": {
+        "player": "Mateo Kova\u010di\u0107",
+        "display_name": "Mateo Kova\u010di\u0107"
+      },
+      "label": "centre",
+      "value": "centre",
+      "claim": "Mateo Kova\u010di\u0107 took 35 of 54 touches on the centre (69' to 84')",
+      "evidence": {
+        "event_count": 54,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 35,
+          "right_half_space": 8,
+          "right_wing": 11
+        },
+        "band_counts": {
+          "own_third": 5,
+          "own_half": 15,
+          "opposition_half": 21,
+          "final_third": 13
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "centre",
+        "source": "team_shape_croatia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.CRO.w2.jo_ko_gvardiol",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Croatia",
+      "window": {
+        "index": 2,
+        "from_minute": 68,
+        "to_minute": 83,
+        "source": "on_ball_period",
+        "text": "69' to 84'"
+      },
+      "game_states": [
+        "trailing",
+        "level"
+      ],
+      "subject": {
+        "player": "Jo\u0161ko Gvardiol",
+        "display_name": "Jo\u0161ko Gvardiol"
+      },
+      "label": "left_half_space",
+      "value": "left_half_space",
+      "claim": "Jo\u0161ko Gvardiol took 23 of 46 touches on the left half-space (69' to 84')",
+      "evidence": {
+        "event_count": 46,
+        "lane_counts": {
+          "left_wing": 6,
+          "left_half_space": 23,
+          "centre": 17,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 7,
+          "own_half": 16,
+          "opposition_half": 20,
+          "final_third": 3
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_croatia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.CRO.w2.josip_utalo",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Croatia",
+      "window": {
+        "index": 2,
+        "from_minute": 68,
+        "to_minute": 83,
+        "source": "on_ball_period",
+        "text": "69' to 84'"
+      },
+      "game_states": [
+        "trailing",
+        "level"
+      ],
+      "subject": {
+        "player": "Josip \u0160utalo",
+        "display_name": "Josip \u0160utalo"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Josip \u0160utalo split touches between the right half-space (13) and the centre (9) (69' to 84')",
+      "evidence": {
+        "event_count": 27,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 3,
+          "centre": 9,
+          "right_half_space": 13,
+          "right_wing": 2
+        },
+        "band_counts": {
+          "own_third": 7,
+          "own_half": 9,
+          "opposition_half": 11,
+          "final_third": 0
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_croatia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.CRO.w2.mario_pa_ali",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Croatia",
+      "window": {
+        "index": 2,
+        "from_minute": 68,
+        "to_minute": 83,
+        "source": "on_ball_period",
+        "text": "69' to 84'"
+      },
+      "game_states": [
+        "trailing",
+        "level"
+      ],
+      "subject": {
+        "player": "Mario Pa\u0161ali\u0107",
+        "display_name": "Mario Pa\u0161ali\u0107"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Mario Pa\u0161ali\u0107 took 17 of 26 touches on the right wing (69' to 84')",
+      "evidence": {
+        "event_count": 26,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 8,
+          "right_half_space": 1,
+          "right_wing": 17
+        },
+        "band_counts": {
+          "own_third": 3,
+          "own_half": 3,
+          "opposition_half": 11,
+          "final_third": 9
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_croatia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.CRO.w2.ante_budimir",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Croatia",
+      "window": {
+        "index": 2,
+        "from_minute": 68,
+        "to_minute": 83,
+        "source": "on_ball_period",
+        "text": "69' to 84'"
+      },
+      "game_states": [
+        "trailing",
+        "level"
+      ],
+      "subject": {
+        "player": "Ante Budimir",
+        "display_name": "Ante Budimir"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Ante Budimir split touches between the centre (9) and the right half-space (8) (69' to 84')",
+      "evidence": {
+        "event_count": 25,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 7,
+          "centre": 9,
+          "right_half_space": 8,
+          "right_wing": 1
+        },
+        "band_counts": {
+          "own_third": 0,
+          "own_half": 0,
+          "opposition_half": 3,
+          "final_third": 22
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": null,
+        "observed_side": "centre",
+        "source": "team_shape_croatia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.CRO.w2.ivan_peri_i",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Croatia",
+      "window": {
+        "index": 2,
+        "from_minute": 68,
+        "to_minute": 83,
+        "source": "on_ball_period",
+        "text": "69' to 84'"
+      },
+      "game_states": [
+        "trailing",
+        "level"
+      ],
+      "subject": {
+        "player": "Ivan Peri\u0161i\u0107",
+        "display_name": "Ivan Peri\u0161i\u0107"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "Ivan Peri\u0161i\u0107 took 20 of 23 touches on the left wing (69' to 84')",
+      "evidence": {
+        "event_count": 23,
+        "lane_counts": {
+          "left_wing": 20,
+          "left_half_space": 2,
+          "centre": 1,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 1,
+          "own_half": 0,
+          "opposition_half": 11,
+          "final_third": 11
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_croatia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.CRO.w2.josip_juranovi",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Croatia",
+      "window": {
+        "index": 2,
+        "from_minute": 68,
+        "to_minute": 83,
+        "source": "on_ball_period",
+        "text": "69' to 84'"
+      },
+      "game_states": [
+        "trailing",
+        "level"
+      ],
+      "subject": {
+        "player": "Josip Juranovi\u0107",
+        "display_name": "Josip Juranovi\u0107"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Josip Juranovi\u0107 took 18 of 23 touches on the right wing (69' to 84')",
+      "evidence": {
+        "event_count": 23,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 1,
+          "right_half_space": 4,
+          "right_wing": 18
+        },
+        "band_counts": {
+          "own_third": 4,
+          "own_half": 13,
+          "opposition_half": 3,
+          "final_third": 3
+        },
+        "band_label": "own_half",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_croatia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.CRO.w2.luka_su_i",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Croatia",
+      "window": {
+        "index": 2,
+        "from_minute": 68,
+        "to_minute": 83,
+        "source": "on_ball_period",
+        "text": "69' to 84'"
+      },
+      "game_states": [
+        "trailing",
+        "level"
+      ],
+      "subject": {
+        "player": "Luka Su\u010di\u0107",
+        "display_name": "Luka Su\u010di\u0107"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Luka Su\u010di\u0107 split touches between the centre (9) and the right wing (9) (69' to 84')",
+      "evidence": {
+        "event_count": 21,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 9,
+          "right_half_space": 3,
+          "right_wing": 9
+        },
+        "band_counts": {
+          "own_third": 0,
+          "own_half": 3,
+          "opposition_half": 6,
+          "final_third": 12
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": "centre",
+        "observed_side": "centre",
+        "source": "team_shape_croatia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.CRO.w2.andrej_kramari",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Croatia",
+      "window": {
+        "index": 2,
+        "from_minute": 68,
+        "to_minute": 83,
+        "source": "on_ball_period",
+        "text": "69' to 84'"
+      },
+      "game_states": [
+        "trailing",
+        "level"
+      ],
+      "subject": {
+        "player": "Andrej Kramari\u0107",
+        "display_name": "Andrej Kramari\u0107"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Andrej Kramari\u0107 split touches between the left half-space (7) and the centre (5) (69' to 84')",
+      "evidence": {
+        "event_count": 17,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 7,
+          "centre": 5,
+          "right_half_space": 5,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 0,
+          "own_half": 0,
+          "opposition_half": 3,
+          "final_third": 14
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_croatia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.CRO.w2.dominik_livakovi",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Croatia",
+      "window": {
+        "index": 2,
+        "from_minute": 68,
+        "to_minute": 83,
+        "source": "on_ball_period",
+        "text": "69' to 84'"
+      },
+      "game_states": [
+        "trailing",
+        "level"
+      ],
+      "subject": {
+        "player": "Dominik Livakovi\u0107",
+        "display_name": "Dominik Livakovi\u0107"
+      },
+      "label": "centre",
+      "value": "centre",
+      "claim": "Dominik Livakovi\u0107 took 10 of 11 touches on the centre (69' to 84')",
+      "evidence": {
+        "event_count": 11,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 10,
+          "right_half_space": 1,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 11,
+          "own_half": 0,
+          "opposition_half": 0,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": null,
+        "observed_side": "centre",
+        "source": "team_shape_croatia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.team_height.CRO.w2",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Croatia",
+      "window": {
+        "index": 2,
+        "from_minute": 68,
+        "to_minute": 83,
+        "source": "on_ball_period",
+        "text": "69' to 84'"
+      },
+      "game_states": [
+        "trailing",
+        "level"
+      ],
+      "subject": null,
+      "label": "opposition_half",
+      "value": 69.3,
+      "claim": "Croatia's average position in possession was in the opposition half (69' to 84')",
+      "evidence": {
+        "mean_x": 69.3,
+        "eligible_outfield_count": 10,
+        "event_count_total": 330,
+        "source": "team_shape_croatia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "HALFWAY_LINE",
+        "value": 60
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.team_width.CRO.w2",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Croatia",
+      "window": {
+        "index": 2,
+        "from_minute": 68,
+        "to_minute": 83,
+        "source": "on_ball_period",
+        "text": "69' to 84'"
+      },
+      "game_states": [
+        "trailing",
+        "level"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 56.94,
+      "claim": null,
+      "evidence": {
+        "width": 56.94,
+        "eligible_outfield_count": 10,
+        "source": "team_shape_croatia.json#on_ball"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w0.kristjan_asllani",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 63,
+        "source": "on_ball_period",
+        "text": "kick-off to 64'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Kristjan Asllani",
+        "display_name": "Kristjan Asllani"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Kristjan Asllani split touches between the left wing (24) and the centre (15) (kick-off to 64')",
+      "evidence": {
+        "event_count": 68,
+        "lane_counts": {
+          "left_wing": 24,
+          "left_half_space": 10,
+          "centre": 15,
+          "right_half_space": 12,
+          "right_wing": 7
+        },
+        "band_counts": {
+          "own_third": 16,
+          "own_half": 27,
+          "opposition_half": 15,
+          "final_third": 10
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_albania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w0.ylber_ramadani",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 63,
+        "source": "on_ball_period",
+        "text": "kick-off to 64'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Ylber Ramadani",
+        "display_name": "Ylber Ramadani"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Ylber Ramadani split touches between the centre (19) and the left half-space (14) (kick-off to 64')",
+      "evidence": {
+        "event_count": 48,
+        "lane_counts": {
+          "left_wing": 2,
+          "left_half_space": 14,
+          "centre": 19,
+          "right_half_space": 10,
+          "right_wing": 3
+        },
+        "band_counts": {
+          "own_third": 16,
+          "own_half": 15,
+          "opposition_half": 14,
+          "final_third": 3
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "centre",
+        "observed_side": "centre",
+        "source": "team_shape_albania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w0.mario_mitaj",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 63,
+        "source": "on_ball_period",
+        "text": "kick-off to 64'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Mario Mitaj",
+        "display_name": "Mario Mitaj"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "Mario Mitaj took 34 of 45 touches on the left wing (kick-off to 64')",
+      "evidence": {
+        "event_count": 45,
+        "lane_counts": {
+          "left_wing": 34,
+          "left_half_space": 11,
+          "centre": 0,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 20,
+          "own_half": 7,
+          "opposition_half": 9,
+          "final_third": 9
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_albania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w0.berat_djimsiti",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 63,
+        "source": "on_ball_period",
+        "text": "kick-off to 64'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Berat Djimsiti",
+        "display_name": "Berat Djimsiti"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Berat Djimsiti split touches between the left half-space (16) and the left wing (14) (kick-off to 64')",
+      "evidence": {
+        "event_count": 40,
+        "lane_counts": {
+          "left_wing": 14,
+          "left_half_space": 16,
+          "centre": 8,
+          "right_half_space": 2,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 30,
+          "own_half": 7,
+          "opposition_half": 3,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_albania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w0.jasir_asani",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 63,
+        "source": "on_ball_period",
+        "text": "kick-off to 64'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Jasir Asani",
+        "display_name": "Jasir Asani"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Jasir Asani took 23 of 40 touches on the right wing (kick-off to 64')",
+      "evidence": {
+        "event_count": 40,
+        "lane_counts": {
+          "left_wing": 4,
+          "left_half_space": 0,
+          "centre": 2,
+          "right_half_space": 11,
+          "right_wing": 23
+        },
+        "band_counts": {
+          "own_third": 11,
+          "own_half": 6,
+          "opposition_half": 7,
+          "final_third": 16
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_albania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w0.rey_manaj",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 63,
+        "source": "on_ball_period",
+        "text": "kick-off to 64'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Rey Manaj",
+        "display_name": "Rey Manaj"
+      },
+      "label": "centre",
+      "value": "centre",
+      "claim": "Rey Manaj took 28 of 39 touches on the centre (kick-off to 64')",
+      "evidence": {
+        "event_count": 39,
+        "lane_counts": {
+          "left_wing": 4,
+          "left_half_space": 3,
+          "centre": 28,
+          "right_half_space": 4,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 5,
+          "own_half": 11,
+          "opposition_half": 10,
+          "final_third": 13
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "centre",
+        "observed_side": "centre",
+        "source": "team_shape_albania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w0.nedim_bajrami",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 63,
+        "source": "on_ball_period",
+        "text": "kick-off to 64'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Nedim Bajrami",
+        "display_name": "Nedim Bajrami"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "Nedim Bajrami took 26 of 37 touches on the left wing (kick-off to 64')",
+      "evidence": {
+        "event_count": 37,
+        "lane_counts": {
+          "left_wing": 26,
+          "left_half_space": 8,
+          "centre": 3,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 5,
+          "own_half": 9,
+          "opposition_half": 13,
+          "final_third": 10
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_albania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w0.qazim_la_i",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 63,
+        "source": "on_ball_period",
+        "text": "kick-off to 64'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Qazim La\u00e7i",
+        "display_name": "Qazim La\u00e7i"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Qazim La\u00e7i split touches between the centre (11) and the right wing (11) (kick-off to 64')",
+      "evidence": {
+        "event_count": 34,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 4,
+          "centre": 11,
+          "right_half_space": 8,
+          "right_wing": 11
+        },
+        "band_counts": {
+          "own_third": 17,
+          "own_half": 0,
+          "opposition_half": 13,
+          "final_third": 4
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "centre",
+        "source": "team_shape_albania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w0.thomas_strakosha",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 63,
+        "source": "on_ball_period",
+        "text": "kick-off to 64'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Thomas Strakosha",
+        "display_name": "Thomas Strakosha"
+      },
+      "label": "centre",
+      "value": "centre",
+      "claim": "Thomas Strakosha took 27 of 31 touches on the centre (kick-off to 64')",
+      "evidence": {
+        "event_count": 31,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 2,
+          "centre": 27,
+          "right_half_space": 2,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 31,
+          "own_half": 0,
+          "opposition_half": 0,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": null,
+        "observed_side": "centre",
+        "source": "team_shape_albania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w0.elseid_hysaj",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 63,
+        "source": "on_ball_period",
+        "text": "kick-off to 64'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Elseid Hysaj",
+        "display_name": "Elseid Hysaj"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Elseid Hysaj split touches between the right half-space (11) and the right wing (11) (kick-off to 64')",
+      "evidence": {
+        "event_count": 24,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 2,
+          "right_half_space": 11,
+          "right_wing": 11
+        },
+        "band_counts": {
+          "own_third": 11,
+          "own_half": 8,
+          "opposition_half": 3,
+          "final_third": 2
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_albania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w0.arlind_afrim_ajeti",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 63,
+        "source": "on_ball_period",
+        "text": "kick-off to 64'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Arlind Afrim Ajeti",
+        "display_name": "Arlind Afrim Ajeti"
+      },
+      "label": "centre",
+      "value": "centre",
+      "claim": "Arlind Afrim Ajeti took 6 of 10 touches on the centre (kick-off to 64')",
+      "evidence": {
+        "event_count": 10,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 6,
+          "right_half_space": 1,
+          "right_wing": 3
+        },
+        "band_counts": {
+          "own_third": 10,
+          "own_half": 0,
+          "opposition_half": 0,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "centre",
+        "source": "team_shape_albania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.team_height.ALB.w0",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Albania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 63,
+        "source": "on_ball_period",
+        "text": "kick-off to 64'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": null,
+      "label": "own_half",
+      "value": 53.53,
+      "claim": "Albania's average position in possession was in their own half (kick-off to 64')",
+      "evidence": {
+        "mean_x": 53.53,
+        "eligible_outfield_count": 10,
+        "event_count_total": 385,
+        "source": "team_shape_albania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "HALFWAY_LINE",
+        "value": 60
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.team_width.ALB.w0",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Albania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 63,
+        "source": "on_ball_period",
+        "text": "kick-off to 64'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 52.74,
+      "claim": null,
+      "evidence": {
+        "width": 52.74,
+        "eligible_outfield_count": 10,
+        "source": "team_shape_albania.json#on_ball"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w2.mario_mitaj",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 2,
+        "from_minute": 71,
+        "to_minute": 84,
+        "source": "on_ball_period",
+        "text": "72' to 85'"
+      },
+      "game_states": [
+        "leading",
+        "level"
+      ],
+      "subject": {
+        "player": "Mario Mitaj",
+        "display_name": "Mario Mitaj"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "Mario Mitaj took 13 of 15 touches on the left wing (72' to 85')",
+      "evidence": {
+        "event_count": 15,
+        "lane_counts": {
+          "left_wing": 13,
+          "left_half_space": 2,
+          "centre": 0,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 15,
+          "own_half": 0,
+          "opposition_half": 0,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_albania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w2.kristjan_asllani",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 2,
+        "from_minute": 71,
+        "to_minute": 84,
+        "source": "on_ball_period",
+        "text": "72' to 85'"
+      },
+      "game_states": [
+        "leading",
+        "level"
+      ],
+      "subject": {
+        "player": "Kristjan Asllani",
+        "display_name": "Kristjan Asllani"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "Kristjan Asllani took 12 of 15 touches on the left wing (72' to 85')",
+      "evidence": {
+        "event_count": 15,
+        "lane_counts": {
+          "left_wing": 12,
+          "left_half_space": 0,
+          "centre": 3,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 12,
+          "own_half": 3,
+          "opposition_half": 0,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_albania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w2.berat_djimsiti",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 2,
+        "from_minute": 71,
+        "to_minute": 84,
+        "source": "on_ball_period",
+        "text": "72' to 85'"
+      },
+      "game_states": [
+        "leading",
+        "level"
+      ],
+      "subject": {
+        "player": "Berat Djimsiti",
+        "display_name": "Berat Djimsiti"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "Berat Djimsiti took 7 of 13 touches on the left wing (72' to 85')",
+      "evidence": {
+        "event_count": 13,
+        "lane_counts": {
+          "left_wing": 7,
+          "left_half_space": 3,
+          "centre": 3,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 13,
+          "own_half": 0,
+          "opposition_half": 0,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_albania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w2.taulant_seferi",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 2,
+        "from_minute": 71,
+        "to_minute": 84,
+        "source": "on_ball_period",
+        "text": "72' to 85'"
+      },
+      "game_states": [
+        "leading",
+        "level"
+      ],
+      "subject": {
+        "player": "Taulant Sulejmanov",
+        "display_name": "Taulant Seferi"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "Taulant Seferi took 9 of 12 touches on the left wing (72' to 85')",
+      "evidence": {
+        "event_count": 12,
+        "lane_counts": {
+          "left_wing": 9,
+          "left_half_space": 3,
+          "centre": 0,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 6,
+          "own_half": 3,
+          "opposition_half": 0,
+          "final_third": 3
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_albania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w2.klaus_gjasula",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 2,
+        "from_minute": 71,
+        "to_minute": 84,
+        "source": "on_ball_period",
+        "text": "72' to 85'"
+      },
+      "game_states": [
+        "leading",
+        "level"
+      ],
+      "subject": {
+        "player": "Klaus Gjasula",
+        "display_name": "Klaus Gjasula"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "Klaus Gjasula took 6 of 10 touches on the left wing (72' to 85')",
+      "evidence": {
+        "event_count": 10,
+        "lane_counts": {
+          "left_wing": 6,
+          "left_half_space": 4,
+          "centre": 0,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 0,
+          "own_half": 7,
+          "opposition_half": 2,
+          "final_third": 1
+        },
+        "band_label": "own_half",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "left",
+        "source": "team_shape_albania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w3.kristjan_asllani",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 3,
+        "from_minute": 84,
+        "to_minute": 99,
+        "source": "on_ball_period",
+        "text": "85' to full time"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Kristjan Asllani",
+        "display_name": "Kristjan Asllani"
+      },
+      "label": "left_half_space",
+      "value": "left_half_space",
+      "claim": "Kristjan Asllani took 14 of 24 touches on the left half-space (85' to full time)",
+      "evidence": {
+        "event_count": 24,
+        "lane_counts": {
+          "left_wing": 7,
+          "left_half_space": 14,
+          "centre": 3,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 5,
+          "own_half": 10,
+          "opposition_half": 3,
+          "final_third": 6
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_albania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w3.berat_djimsiti",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 3,
+        "from_minute": 84,
+        "to_minute": 99,
+        "source": "on_ball_period",
+        "text": "85' to full time"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Berat Djimsiti",
+        "display_name": "Berat Djimsiti"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "Berat Djimsiti took 12 of 20 touches on the left wing (85' to full time)",
+      "evidence": {
+        "event_count": 20,
+        "lane_counts": {
+          "left_wing": 12,
+          "left_half_space": 6,
+          "centre": 2,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 20,
+          "own_half": 0,
+          "opposition_half": 0,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_albania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w3.mirlind_daku",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 3,
+        "from_minute": 84,
+        "to_minute": 99,
+        "source": "on_ball_period",
+        "text": "85' to full time"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Mirlind Daku",
+        "display_name": "Mirlind Daku"
+      },
+      "label": "centre",
+      "value": "centre",
+      "claim": "Mirlind Daku took 14 of 19 touches on the centre (85' to full time)",
+      "evidence": {
+        "event_count": 19,
+        "lane_counts": {
+          "left_wing": 1,
+          "left_half_space": 4,
+          "centre": 14,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 0,
+          "own_half": 0,
+          "opposition_half": 11,
+          "final_third": 8
+        },
+        "band_label": "opposition_half",
+        "band_mixed": false,
+        "declared_side": "centre",
+        "observed_side": "centre",
+        "source": "team_shape_albania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w3.arb_r_hoxha",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 3,
+        "from_minute": 84,
+        "to_minute": 99,
+        "source": "on_ball_period",
+        "text": "85' to full time"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Arb\u00ebr Hoxha",
+        "display_name": "Arb\u00ebr Hoxha"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "Arb\u00ebr Hoxha took 14 of 18 touches on the left wing (85' to full time)",
+      "evidence": {
+        "event_count": 18,
+        "lane_counts": {
+          "left_wing": 14,
+          "left_half_space": 3,
+          "centre": 1,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 1,
+          "own_half": 2,
+          "opposition_half": 4,
+          "final_third": 11
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_albania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w3.taulant_seferi",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 3,
+        "from_minute": 84,
+        "to_minute": 99,
+        "source": "on_ball_period",
+        "text": "85' to full time"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Taulant Sulejmanov",
+        "display_name": "Taulant Seferi"
+      },
+      "label": "centre",
+      "value": "centre",
+      "claim": "Taulant Seferi took 9 of 11 touches on the centre (85' to full time)",
+      "evidence": {
+        "event_count": 11,
+        "lane_counts": {
+          "left_wing": 2,
+          "left_half_space": 0,
+          "centre": 9,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 0,
+          "own_half": 3,
+          "opposition_half": 0,
+          "final_third": 8
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": "centre",
+        "observed_side": "centre",
+        "source": "team_shape_albania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w3.mario_mitaj",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 3,
+        "from_minute": 84,
+        "to_minute": 99,
+        "source": "on_ball_period",
+        "text": "85' to full time"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Mario Mitaj",
+        "display_name": "Mario Mitaj"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "Mario Mitaj took 9 of 10 touches on the left wing (85' to full time)",
+      "evidence": {
+        "event_count": 10,
+        "lane_counts": {
+          "left_wing": 9,
+          "left_half_space": 0,
+          "centre": 1,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 4,
+          "own_half": 0,
+          "opposition_half": 0,
+          "final_third": 6
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_albania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "out_of_possession.block_height.CRO.whole_match",
+      "category": "out_of_possession",
+      "type": "block_height",
+      "team": "Croatia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": null,
+        "source": "whole_match",
+        "text": "kick-off to full time"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 61.2,
+      "claim": null,
+      "evidence": {
+        "centroid_x": 61.2,
+        "camera_caveat": "360 frames follow the ball; the visible subset of out-of-possession positions is biased toward areas near the ball. The camera artifact and the real defensive shape point the same direction \u2014 they cannot be cleanly separated.",
+        "source": "team_shape_croatia.json#off_ball.centroid"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "out_of_possession.block_height.ALB.whole_match",
+      "category": "out_of_possession",
+      "type": "block_height",
+      "team": "Albania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": null,
+        "source": "whole_match",
+        "text": "kick-off to full time"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 42.59,
+      "claim": null,
+      "evidence": {
+        "centroid_x": 42.59,
+        "camera_caveat": "360 frames follow the ball; the visible subset of out-of-possession positions is biased toward areas near the ball. The camera artifact and the real defensive shape point the same direction \u2014 they cannot be cleanly separated.",
+        "source": "team_shape_albania.json#off_ball.centroid"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.CRO.w0.luka_modri",
+      "category": "passing",
+      "type": "hub",
+      "team": "Croatia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 45,
+        "source": "pass_network_window",
+        "text": "kick-off to 46'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Luka Modri\u0107",
+        "display_name": "Luka Modri\u0107"
+      },
+      "label": null,
+      "value": 0.1541,
+      "claim": "Luka Modri\u0107 was a hub for Croatia, involved in 15.4% of passes (kick-off to 46')",
+      "evidence": {
+        "passes_made": 47,
+        "passes_received": 51,
+        "share": 0.1541,
+        "source": "pass_network_Croatia.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.0272536687631026,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.CRO.w0.marcelo_brozovi",
+      "category": "passing",
+      "type": "hub",
+      "team": "Croatia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 45,
+        "source": "pass_network_window",
+        "text": "kick-off to 46'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Marcelo Brozovi\u0107",
+        "display_name": "Marcelo Brozovi\u0107"
+      },
+      "label": null,
+      "value": 0.184,
+      "claim": "Marcelo Brozovi\u0107 was a hub for Croatia, involved in 18.4% of passes (kick-off to 46')",
+      "evidence": {
+        "passes_made": 60,
+        "passes_received": 57,
+        "share": 0.184,
+        "source": "pass_network_Croatia.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.2264150943396226,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.CRO.w0.marcelo_brozovi_luka_modri",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Croatia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 45,
+        "source": "pass_network_window",
+        "text": "kick-off to 46'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "pair": [
+          "Marcelo Brozovi\u0107",
+          "Luka Modri\u0107"
+        ]
+      },
+      "label": null,
+      "value": 27,
+      "claim": "Marcelo Brozovi\u0107 and Luka Modri\u0107 combined 27 times (kick-off to 46')",
+      "evidence": {
+        "bidirectional_total": 27,
+        "source": "pass_network_Croatia.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.6981132075471697,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.CRO.w0.marcelo_brozovi_mateo_kova_i",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Croatia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 45,
+        "source": "pass_network_window",
+        "text": "kick-off to 46'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "pair": [
+          "Marcelo Brozovi\u0107",
+          "Mateo Kova\u010di\u0107"
+        ]
+      },
+      "label": null,
+      "value": 21,
+      "claim": "Marcelo Brozovi\u0107 and Mateo Kova\u010di\u0107 combined 21 times (kick-off to 46')",
+      "evidence": {
+        "bidirectional_total": 21,
+        "source": "pass_network_Croatia.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.320754716981132,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.CRO.w0.marcelo_brozovi_josip_utalo",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Croatia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 45,
+        "source": "pass_network_window",
+        "text": "kick-off to 46'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "pair": [
+          "Marcelo Brozovi\u0107",
+          "Josip \u0160utalo"
+        ]
+      },
+      "label": null,
+      "value": 20,
+      "claim": "Marcelo Brozovi\u0107 and Josip \u0160utalo combined 20 times (kick-off to 46')",
+      "evidence": {
+        "bidirectional_total": 20,
+        "source": "pass_network_Croatia.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.2578616352201257,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.concentration.CRO.w0",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Croatia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 45,
+        "source": "pass_network_window",
+        "text": "kick-off to 46'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 0.4717,
+      "claim": null,
+      "evidence": {
+        "top3_share": 0.4717,
+        "window_passes": 318,
+        "source": "pass_network_Croatia.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.CRO.w1.luka_modri",
+      "category": "passing",
+      "type": "hub",
+      "team": "Croatia",
+      "window": {
+        "index": 1,
+        "from_minute": 45,
+        "to_minute": 68,
+        "source": "pass_network_window",
+        "text": "46' to 69'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "Luka Modri\u0107",
+        "display_name": "Luka Modri\u0107"
+      },
+      "label": null,
+      "value": 0.2,
+      "claim": "Luka Modri\u0107 was a hub for Croatia, involved in 20.0% of passes (46' to 69')",
+      "evidence": {
+        "passes_made": 33,
+        "passes_received": 33,
+        "share": 0.2,
+        "source": "pass_network_Croatia.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.3333333333333335,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.CRO.w1.mateo_kova_i",
+      "category": "passing",
+      "type": "hub",
+      "team": "Croatia",
+      "window": {
+        "index": 1,
+        "from_minute": 45,
+        "to_minute": 68,
+        "source": "pass_network_window",
+        "text": "46' to 69'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "Mateo Kova\u010di\u0107",
+        "display_name": "Mateo Kova\u010di\u0107"
+      },
+      "label": null,
+      "value": 0.1879,
+      "claim": "Mateo Kova\u010di\u0107 was a hub for Croatia, involved in 18.8% of passes (46' to 69')",
+      "evidence": {
+        "passes_made": 31,
+        "passes_received": 31,
+        "share": 0.1879,
+        "source": "pass_network_Croatia.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.2525252525252526,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.CRO.w1.luka_modri_mateo_kova_i",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Croatia",
+      "window": {
+        "index": 1,
+        "from_minute": 45,
+        "to_minute": 68,
+        "source": "pass_network_window",
+        "text": "46' to 69'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "pair": [
+          "Luka Modri\u0107",
+          "Mateo Kova\u010di\u0107"
+        ]
+      },
+      "label": null,
+      "value": 19,
+      "claim": "Luka Modri\u0107 and Mateo Kova\u010di\u0107 combined 19 times (46' to 69')",
+      "evidence": {
+        "bidirectional_total": 19,
+        "source": "pass_network_Croatia.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 2.303030303030303,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.CRO.w1.luka_modri_josip_juranovi",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Croatia",
+      "window": {
+        "index": 1,
+        "from_minute": 45,
+        "to_minute": 68,
+        "source": "pass_network_window",
+        "text": "46' to 69'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "pair": [
+          "Luka Modri\u0107",
+          "Josip Juranovi\u0107"
+        ]
+      },
+      "label": null,
+      "value": 13,
+      "claim": "Luka Modri\u0107 and Josip Juranovi\u0107 combined 13 times (46' to 69')",
+      "evidence": {
+        "bidirectional_total": 13,
+        "source": "pass_network_Croatia.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.5757575757575755,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.CRO.w1.luka_modri_josip_utalo",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Croatia",
+      "window": {
+        "index": 1,
+        "from_minute": 45,
+        "to_minute": 68,
+        "source": "pass_network_window",
+        "text": "46' to 69'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "pair": [
+          "Luka Modri\u0107",
+          "Josip \u0160utalo"
+        ]
+      },
+      "label": null,
+      "value": 11,
+      "claim": "Luka Modri\u0107 and Josip \u0160utalo combined 11 times (46' to 69')",
+      "evidence": {
+        "bidirectional_total": 11,
+        "source": "pass_network_Croatia.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.3333333333333333,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.CRO.w1.mateo_kova_i_andrej_kramari",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Croatia",
+      "window": {
+        "index": 1,
+        "from_minute": 45,
+        "to_minute": 68,
+        "source": "pass_network_window",
+        "text": "46' to 69'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "pair": [
+          "Mateo Kova\u010di\u0107",
+          "Andrej Kramari\u0107"
+        ]
+      },
+      "label": null,
+      "value": 11,
+      "claim": "Mateo Kova\u010di\u0107 and Andrej Kramari\u0107 combined 11 times (46' to 69')",
+      "evidence": {
+        "bidirectional_total": 11,
+        "source": "pass_network_Croatia.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.3333333333333333,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.concentration.CRO.w1",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Croatia",
+      "window": {
+        "index": 1,
+        "from_minute": 45,
+        "to_minute": 68,
+        "source": "pass_network_window",
+        "text": "46' to 69'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 0.4848,
+      "claim": null,
+      "evidence": {
+        "top3_share": 0.4848,
+        "window_passes": 165,
+        "source": "pass_network_Croatia.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.CRO.w2.luka_modri",
+      "category": "passing",
+      "type": "hub",
+      "team": "Croatia",
+      "window": {
+        "index": 2,
+        "from_minute": 68,
+        "to_minute": 83,
+        "source": "pass_network_window",
+        "text": "69' to 84'"
+      },
+      "game_states": [
+        "trailing",
+        "level"
+      ],
+      "subject": {
+        "player": "Luka Modri\u0107",
+        "display_name": "Luka Modri\u0107"
+      },
+      "label": null,
+      "value": 0.2356,
+      "claim": "Luka Modri\u0107 was a hub for Croatia, involved in 23.6% of passes (69' to 84')",
+      "evidence": {
+        "passes_made": 26,
+        "passes_received": 23,
+        "share": 0.2356,
+        "source": "pass_network_Croatia.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.5705128205128205,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.CRO.w2.mateo_kova_i",
+      "category": "passing",
+      "type": "hub",
+      "team": "Croatia",
+      "window": {
+        "index": 2,
+        "from_minute": 68,
+        "to_minute": 83,
+        "source": "pass_network_window",
+        "text": "69' to 84'"
+      },
+      "game_states": [
+        "trailing",
+        "level"
+      ],
+      "subject": {
+        "player": "Mateo Kova\u010di\u0107",
+        "display_name": "Mateo Kova\u010di\u0107"
+      },
+      "label": null,
+      "value": 0.1538,
+      "claim": "Mateo Kova\u010di\u0107 was a hub for Croatia, involved in 15.4% of passes (69' to 84')",
+      "evidence": {
+        "passes_made": 16,
+        "passes_received": 16,
+        "share": 0.1538,
+        "source": "pass_network_Croatia.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.0256410256410258,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.CRO.w2.luka_modri_mateo_kova_i",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Croatia",
+      "window": {
+        "index": 2,
+        "from_minute": 68,
+        "to_minute": 83,
+        "source": "pass_network_window",
+        "text": "69' to 84'"
+      },
+      "game_states": [
+        "trailing",
+        "level"
+      ],
+      "subject": {
+        "pair": [
+          "Luka Modri\u0107",
+          "Mateo Kova\u010di\u0107"
+        ]
+      },
+      "label": null,
+      "value": 13,
+      "claim": "Luka Modri\u0107 and Mateo Kova\u010di\u0107 combined 13 times (69' to 84')",
+      "evidence": {
+        "bidirectional_total": 13,
+        "source": "pass_network_Croatia.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 2.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.CRO.w2.luka_modri_josip_juranovi",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Croatia",
+      "window": {
+        "index": 2,
+        "from_minute": 68,
+        "to_minute": 83,
+        "source": "pass_network_window",
+        "text": "69' to 84'"
+      },
+      "game_states": [
+        "trailing",
+        "level"
+      ],
+      "subject": {
+        "pair": [
+          "Luka Modri\u0107",
+          "Josip Juranovi\u0107"
+        ]
+      },
+      "label": null,
+      "value": 9,
+      "claim": "Luka Modri\u0107 and Josip Juranovi\u0107 combined 9 times (69' to 84')",
+      "evidence": {
+        "bidirectional_total": 9,
+        "source": "pass_network_Croatia.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.7307692307692306,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.CRO.w2.luka_modri_josip_utalo",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Croatia",
+      "window": {
+        "index": 2,
+        "from_minute": 68,
+        "to_minute": 83,
+        "source": "pass_network_window",
+        "text": "69' to 84'"
+      },
+      "game_states": [
+        "trailing",
+        "level"
+      ],
+      "subject": {
+        "pair": [
+          "Luka Modri\u0107",
+          "Josip \u0160utalo"
+        ]
+      },
+      "label": null,
+      "value": 8,
+      "claim": "Luka Modri\u0107 and Josip \u0160utalo combined 8 times (69' to 84')",
+      "evidence": {
+        "bidirectional_total": 8,
+        "source": "pass_network_Croatia.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.5384615384615385,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.CRO.w2.mateo_kova_i_jo_ko_gvardiol",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Croatia",
+      "window": {
+        "index": 2,
+        "from_minute": 68,
+        "to_minute": 83,
+        "source": "pass_network_window",
+        "text": "69' to 84'"
+      },
+      "game_states": [
+        "trailing",
+        "level"
+      ],
+      "subject": {
+        "pair": [
+          "Mateo Kova\u010di\u0107",
+          "Jo\u0161ko Gvardiol"
+        ]
+      },
+      "label": null,
+      "value": 8,
+      "claim": "Mateo Kova\u010di\u0107 and Jo\u0161ko Gvardiol combined 8 times (69' to 84')",
+      "evidence": {
+        "bidirectional_total": 8,
+        "source": "pass_network_Croatia.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.5384615384615385,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.CRO.w2.luka_modri_luka_su_i",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Croatia",
+      "window": {
+        "index": 2,
+        "from_minute": 68,
+        "to_minute": 83,
+        "source": "pass_network_window",
+        "text": "69' to 84'"
+      },
+      "game_states": [
+        "trailing",
+        "level"
+      ],
+      "subject": {
+        "pair": [
+          "Luka Modri\u0107",
+          "Luka Su\u010di\u0107"
+        ]
+      },
+      "label": null,
+      "value": 8,
+      "claim": "Luka Modri\u0107 and Luka Su\u010di\u0107 combined 8 times (69' to 84')",
+      "evidence": {
+        "bidirectional_total": 8,
+        "source": "pass_network_Croatia.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.5384615384615385,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.concentration.CRO.w2",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Croatia",
+      "window": {
+        "index": 2,
+        "from_minute": 68,
+        "to_minute": 83,
+        "source": "pass_network_window",
+        "text": "69' to 84'"
+      },
+      "game_states": [
+        "trailing",
+        "level"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 0.5337,
+      "claim": null,
+      "evidence": {
+        "top3_share": 0.5337,
+        "window_passes": 104,
+        "source": "pass_network_Croatia.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.ALB.w0.kristjan_asllani",
+      "category": "passing",
+      "type": "hub",
+      "team": "Albania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 63,
+        "source": "pass_network_window",
+        "text": "kick-off to 64'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Kristjan Asllani",
+        "display_name": "Kristjan Asllani"
+      },
+      "label": null,
+      "value": 0.1677,
+      "claim": "Kristjan Asllani was a hub for Albania, involved in 16.8% of passes (kick-off to 64')",
+      "evidence": {
+        "passes_made": 27,
+        "passes_received": 29,
+        "share": 0.1677,
+        "source": "pass_network_Albania.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.1177644710578842,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.ALB.w0.kristjan_asllani_ylber_ramadani",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Albania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 63,
+        "source": "pass_network_window",
+        "text": "kick-off to 64'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "pair": [
+          "Kristjan Asllani",
+          "Ylber Ramadani"
+        ]
+      },
+      "label": null,
+      "value": 14,
+      "claim": "Kristjan Asllani and Ylber Ramadani combined 14 times (kick-off to 64')",
+      "evidence": {
+        "bidirectional_total": 14,
+        "source": "pass_network_Albania.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.6766467065868262,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.ALB.w0.kristjan_asllani_mario_mitaj",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Albania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 63,
+        "source": "pass_network_window",
+        "text": "kick-off to 64'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "pair": [
+          "Kristjan Asllani",
+          "Mario Mitaj"
+        ]
+      },
+      "label": null,
+      "value": 13,
+      "claim": "Kristjan Asllani and Mario Mitaj combined 13 times (kick-off to 64')",
+      "evidence": {
+        "bidirectional_total": 13,
+        "source": "pass_network_Albania.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.5568862275449102,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.ALB.w0.berat_djimsiti_mario_mitaj",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Albania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 63,
+        "source": "pass_network_window",
+        "text": "kick-off to 64'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "pair": [
+          "Berat Djimsiti",
+          "Mario Mitaj"
+        ]
+      },
+      "label": null,
+      "value": 10,
+      "claim": "Berat Djimsiti and Mario Mitaj combined 10 times (kick-off to 64')",
+      "evidence": {
+        "bidirectional_total": 10,
+        "source": "pass_network_Albania.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.1976047904191616,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.ALB.w0.mario_mitaj_nedim_bajrami",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Albania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 63,
+        "source": "pass_network_window",
+        "text": "kick-off to 64'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "pair": [
+          "Mario Mitaj",
+          "Nedim Bajrami"
+        ]
+      },
+      "label": null,
+      "value": 10,
+      "claim": "Mario Mitaj and Nedim Bajrami combined 10 times (kick-off to 64')",
+      "evidence": {
+        "bidirectional_total": 10,
+        "source": "pass_network_Albania.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.1976047904191616,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.concentration.ALB.w0",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Albania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 63,
+        "source": "pass_network_window",
+        "text": "kick-off to 64'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 0.4222,
+      "claim": null,
+      "evidence": {
+        "top3_share": 0.4222,
+        "window_passes": 167,
+        "source": "pass_network_Albania.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.ALB.w3.berat_djimsiti",
+      "category": "passing",
+      "type": "hub",
+      "team": "Albania",
+      "window": {
+        "index": 3,
+        "from_minute": 84,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "85' to full time"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Berat Djimsiti",
+        "display_name": "Berat Djimsiti"
+      },
+      "label": null,
+      "value": 0.1636,
+      "claim": "Berat Djimsiti was a hub for Albania, involved in 16.4% of passes (85' to full time)",
+      "evidence": {
+        "passes_made": 11,
+        "passes_received": 7,
+        "share": 0.1636,
+        "source": "pass_network_Albania.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.090909090909091,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.ALB.w3.kristjan_asllani",
+      "category": "passing",
+      "type": "hub",
+      "team": "Albania",
+      "window": {
+        "index": 3,
+        "from_minute": 84,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "85' to full time"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Kristjan Asllani",
+        "display_name": "Kristjan Asllani"
+      },
+      "label": null,
+      "value": 0.2,
+      "claim": "Kristjan Asllani was a hub for Albania, involved in 20.0% of passes (85' to full time)",
+      "evidence": {
+        "passes_made": 11,
+        "passes_received": 11,
+        "share": 0.2,
+        "source": "pass_network_Albania.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.3333333333333335,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.concentration.ALB.w3",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Albania",
+      "window": {
+        "index": 3,
+        "from_minute": 84,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "85' to full time"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 0.5091,
+      "claim": null,
+      "evidence": {
+        "top3_share": 0.5091,
+        "window_passes": 55,
+        "source": "pass_network_Albania.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "cross.comparison.block_height.ALB",
+      "category": "cross_cutting",
+      "type": "comparison",
+      "team": "Albania",
+      "window": null,
+      "game_states": [],
+      "subject": null,
+      "label": "deeper",
+      "value": 18.61,
+      "claim": "Albania's average out-of-possession position was 18.6 yards deeper than Croatia's",
+      "evidence": {
+        "deeper_x": 42.59,
+        "other_x": 61.2,
+        "gap": 18.61
+      },
+      "threshold": {
+        "constant": "COMPARE_MIN_YARDS",
+        "value": 5
+      },
+      "notability": 3.722,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "cross.comparison.team_height.CRO",
+      "category": "cross_cutting",
+      "type": "comparison",
+      "team": "Croatia",
+      "window": null,
+      "game_states": [],
+      "subject": null,
+      "label": "higher",
+      "value": 13.95,
+      "claim": "Croatia's average position in possession was 14.0 yards higher than Albania's (Croatia kick-off to 46', Albania kick-off to 64')",
+      "evidence": {
+        "higher_value": 67.48,
+        "other_value": 53.53,
+        "gap": 13.95
+      },
+      "threshold": {
+        "constant": "COMPARE_MIN_YARDS",
+        "value": 5
+      },
+      "notability": 2.7900000000000005,
+      "definitions_version": "0.1.0"
+    }
+  ],
+  "suppressed": [
+    {
+      "id": "in_possession.player_zone.CRO.w1.dominik_livakovi",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Croatia",
+      "window": {
+        "index": 1,
+        "from_minute": 45,
+        "to_minute": 68,
+        "source": "on_ball_period",
+        "text": "46' to 69'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 8,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.CRO.w1.bruno_petkovi",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Croatia",
+      "window": {
+        "index": 1,
+        "from_minute": 45,
+        "to_minute": 68,
+        "source": "on_ball_period",
+        "text": "46' to 69'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 4,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.CRO.w3.luka_su_i",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Croatia",
+      "window": {
+        "index": 3,
+        "from_minute": 83,
+        "to_minute": 99,
+        "source": "on_ball_period",
+        "text": "84' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 8,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.CRO.w3.mateo_kova_i",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Croatia",
+      "window": {
+        "index": 3,
+        "from_minute": 83,
+        "to_minute": 99,
+        "source": "on_ball_period",
+        "text": "84' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 7,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.CRO.w3.dominik_livakovi",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Croatia",
+      "window": {
+        "index": 3,
+        "from_minute": 83,
+        "to_minute": 99,
+        "source": "on_ball_period",
+        "text": "84' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.CRO.w3.luka_modri",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Croatia",
+      "window": {
+        "index": 3,
+        "from_minute": 83,
+        "to_minute": 99,
+        "source": "on_ball_period",
+        "text": "84' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.CRO.w3.josip_utalo",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Croatia",
+      "window": {
+        "index": 3,
+        "from_minute": 83,
+        "to_minute": 99,
+        "source": "on_ball_period",
+        "text": "84' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.team_height.CRO.w3",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Croatia",
+      "window": {
+        "index": 3,
+        "from_minute": 83,
+        "to_minute": 99,
+        "source": "on_ball_period",
+        "text": "84' to full time"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_width.CRO.w3",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Croatia",
+      "window": {
+        "index": 3,
+        "from_minute": 83,
+        "to_minute": 99,
+        "source": "on_ball_period",
+        "text": "84' to full time"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w1.kristjan_asllani",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 1,
+        "from_minute": 63,
+        "to_minute": 71,
+        "source": "on_ball_period",
+        "text": "64' to 72'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 7,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w1.rey_manaj",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 1,
+        "from_minute": 63,
+        "to_minute": 71,
+        "source": "on_ball_period",
+        "text": "64' to 72'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 4,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w1.taulant_seferi",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 1,
+        "from_minute": 63,
+        "to_minute": 71,
+        "source": "on_ball_period",
+        "text": "64' to 72'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w1.qazim_la_i",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 1,
+        "from_minute": 63,
+        "to_minute": 71,
+        "source": "on_ball_period",
+        "text": "64' to 72'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w1.thomas_strakosha",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 1,
+        "from_minute": 63,
+        "to_minute": 71,
+        "source": "on_ball_period",
+        "text": "64' to 72'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w1.nedim_bajrami",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 1,
+        "from_minute": 63,
+        "to_minute": 71,
+        "source": "on_ball_period",
+        "text": "64' to 72'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.team_height.ALB.w1",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Albania",
+      "window": {
+        "index": 1,
+        "from_minute": 63,
+        "to_minute": 71,
+        "source": "on_ball_period",
+        "text": "64' to 72'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_width.ALB.w1",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Albania",
+      "window": {
+        "index": 1,
+        "from_minute": 63,
+        "to_minute": 71,
+        "source": "on_ball_period",
+        "text": "64' to 72'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w2.thomas_strakosha",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 2,
+        "from_minute": 71,
+        "to_minute": 84,
+        "source": "on_ball_period",
+        "text": "72' to 85'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 8,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w2.arlind_afrim_ajeti",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 2,
+        "from_minute": 71,
+        "to_minute": 84,
+        "source": "on_ball_period",
+        "text": "72' to 85'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 7,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w2.ylber_ramadani",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 2,
+        "from_minute": 71,
+        "to_minute": 84,
+        "source": "on_ball_period",
+        "text": "72' to 85'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 6,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w2.nedim_bajrami",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 2,
+        "from_minute": 71,
+        "to_minute": 84,
+        "source": "on_ball_period",
+        "text": "72' to 85'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w2.rey_manaj",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 2,
+        "from_minute": 71,
+        "to_minute": 84,
+        "source": "on_ball_period",
+        "text": "72' to 85'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 2,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w2.elseid_hysaj",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 2,
+        "from_minute": 71,
+        "to_minute": 84,
+        "source": "on_ball_period",
+        "text": "72' to 85'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 1,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.team_height.ALB.w2",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Albania",
+      "window": {
+        "index": 2,
+        "from_minute": 71,
+        "to_minute": 84,
+        "source": "on_ball_period",
+        "text": "72' to 85'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 5,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_width.ALB.w2",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Albania",
+      "window": {
+        "index": 2,
+        "from_minute": 71,
+        "to_minute": 84,
+        "source": "on_ball_period",
+        "text": "72' to 85'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 5,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w3.klaus_gjasula",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 3,
+        "from_minute": 84,
+        "to_minute": 99,
+        "source": "on_ball_period",
+        "text": "85' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 9,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w3.nedim_bajrami",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 3,
+        "from_minute": 84,
+        "to_minute": 99,
+        "source": "on_ball_period",
+        "text": "85' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 5,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w3.arlind_afrim_ajeti",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 3,
+        "from_minute": 84,
+        "to_minute": 99,
+        "source": "on_ball_period",
+        "text": "85' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 5,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w3.thomas_strakosha",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 3,
+        "from_minute": 84,
+        "to_minute": 99,
+        "source": "on_ball_period",
+        "text": "85' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 4,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w3.elseid_hysaj",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 3,
+        "from_minute": 84,
+        "to_minute": 99,
+        "source": "on_ball_period",
+        "text": "85' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 2,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.team_height.ALB.w3",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Albania",
+      "window": {
+        "index": 3,
+        "from_minute": 84,
+        "to_minute": 99,
+        "source": "on_ball_period",
+        "text": "85' to full time"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 6,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_width.ALB.w3",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Albania",
+      "window": {
+        "index": 3,
+        "from_minute": 84,
+        "to_minute": 99,
+        "source": "on_ball_period",
+        "text": "85' to full time"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 6,
+        "required": 8
+      }
+    },
+    {
+      "id": "passing.hub.CRO.w3",
+      "category": "passing",
+      "type": "hub",
+      "team": "Croatia",
+      "window": {
+        "index": 3,
+        "from_minute": 83,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "84' to full time"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 15,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.no_hub.CRO.w3",
+      "category": "passing",
+      "type": "no_hub",
+      "team": "Croatia",
+      "window": {
+        "index": 3,
+        "from_minute": 83,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "84' to full time"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 15,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.top_pair.CRO.w3",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Croatia",
+      "window": {
+        "index": 3,
+        "from_minute": 83,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "84' to full time"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 15,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.concentration.CRO.w3",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Croatia",
+      "window": {
+        "index": 3,
+        "from_minute": 83,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "84' to full time"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 15,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.hub.ALB.w1",
+      "category": "passing",
+      "type": "hub",
+      "team": "Albania",
+      "window": {
+        "index": 1,
+        "from_minute": 63,
+        "to_minute": 71,
+        "source": "pass_network_window",
+        "text": "64' to 72'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 10,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.no_hub.ALB.w1",
+      "category": "passing",
+      "type": "no_hub",
+      "team": "Albania",
+      "window": {
+        "index": 1,
+        "from_minute": 63,
+        "to_minute": 71,
+        "source": "pass_network_window",
+        "text": "64' to 72'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 10,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.top_pair.ALB.w1",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Albania",
+      "window": {
+        "index": 1,
+        "from_minute": 63,
+        "to_minute": 71,
+        "source": "pass_network_window",
+        "text": "64' to 72'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 10,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.concentration.ALB.w1",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Albania",
+      "window": {
+        "index": 1,
+        "from_minute": 63,
+        "to_minute": 71,
+        "source": "pass_network_window",
+        "text": "64' to 72'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 10,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.hub.ALB.w2",
+      "category": "passing",
+      "type": "hub",
+      "team": "Albania",
+      "window": {
+        "index": 2,
+        "from_minute": 71,
+        "to_minute": 84,
+        "source": "pass_network_window",
+        "text": "72' to 85'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 32,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.no_hub.ALB.w2",
+      "category": "passing",
+      "type": "no_hub",
+      "team": "Albania",
+      "window": {
+        "index": 2,
+        "from_minute": 71,
+        "to_minute": 84,
+        "source": "pass_network_window",
+        "text": "72' to 85'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 32,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.top_pair.ALB.w2",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Albania",
+      "window": {
+        "index": 2,
+        "from_minute": 71,
+        "to_minute": 84,
+        "source": "pass_network_window",
+        "text": "72' to 85'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 32,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.concentration.ALB.w2",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Albania",
+      "window": {
+        "index": 2,
+        "from_minute": 71,
+        "to_minute": 84,
+        "source": "pass_network_window",
+        "text": "72' to 85'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 32,
+        "required": 40
+      }
+    },
+    {
+      "id": "cross.comparison.concentration",
+      "category": "cross_cutting",
+      "type": "comparison",
+      "team": null,
+      "window": null,
+      "reason": "COMPARE_MIN_POINTS",
+      "detail": {
+        "gap": 4.95,
+        "required": 5
+      }
+    },
+    {
+      "id": "cross.comparison.team_width",
+      "category": "cross_cutting",
+      "type": "comparison",
+      "team": null,
+      "window": null,
+      "reason": "COMPARE_MIN_YARDS",
+      "detail": {
+        "gap": 1.34,
+        "required": 5
+      }
+    }
+  ],
+  "metadata": {
+    "match_id": 3930167,
+    "definitions_version": "0.1.0",
+    "teams": [
+      "Croatia",
+      "Albania"
+    ]
+  }
+}

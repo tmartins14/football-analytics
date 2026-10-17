@@ -1,0 +1,241 @@
+{
+  "goals": [
+    {
+      "window": {
+        "anchor_event_id": "35235060-e5aa-48bc-9a1a-9d50934f03ba",
+        "start_event_id": "d54887b6-075b-4d91-bd30-fd2ab9b85fa5",
+        "end_event_id": "35235060-e5aa-48bc-9a1a-9d50934f03ba",
+        "period": 1,
+        "window_seconds": 10.0,
+        "t_span_seconds": 11.21
+      },
+      "frames": [
+        {
+          "event_id": "d54887b6-075b-4d91-bd30-fd2ab9b85fa5",
+          "t_seconds": 0.0,
+          "team": "Belgium",
+          "event_type": "Ball Recovery",
+          "ball_x": 90.2,
+          "ball_y": 46.3,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Romelu Lukaku",
+          "outcome": null
+        },
+        {
+          "event_id": "d941637a-f080-49e3-9533-d166e782e310",
+          "t_seconds": 0.0,
+          "team": "Belgium",
+          "event_type": "Carry",
+          "ball_x": 90.2,
+          "ball_y": 46.3,
+          "ball_end_x": 93.3,
+          "ball_end_y": 43.6,
+          "actor": "Romelu Lukaku",
+          "outcome": null
+        },
+        {
+          "event_id": "7fe3aa87-7c28-409a-84f6-38a8c953888c",
+          "t_seconds": 1.554,
+          "team": "Romania",
+          "event_type": "Pressure",
+          "ball_x": 23.3,
+          "ball_y": 32.7,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Marius Marin",
+          "outcome": null
+        },
+        {
+          "event_id": "2e032ad0-9dbe-4a14-9553-cf3c7532fd86",
+          "t_seconds": 2.057,
+          "team": "Belgium",
+          "event_type": "Pass",
+          "ball_x": 93.3,
+          "ball_y": 43.6,
+          "ball_end_x": 94.2,
+          "ball_end_y": 23.5,
+          "actor": "Romelu Lukaku",
+          "outcome": null
+        },
+        {
+          "event_id": "9e98cd91-5264-48e1-8267-1f86a6d2467a",
+          "t_seconds": 3.287,
+          "team": "Belgium",
+          "event_type": "Carry",
+          "ball_x": 94.2,
+          "ball_y": 23.5,
+          "ball_end_x": 104.0,
+          "ball_end_y": 26.5,
+          "actor": "J\u00e9r\u00e9my Doku",
+          "outcome": null
+        },
+        {
+          "event_id": "f81b9ac6-b003-4818-8466-27e83e54e9d8",
+          "t_seconds": 8.385,
+          "team": "Belgium",
+          "event_type": "Pass",
+          "ball_x": 104.0,
+          "ball_y": 26.5,
+          "ball_end_x": 107.5,
+          "ball_end_y": 43.3,
+          "actor": "J\u00e9r\u00e9my Doku",
+          "outcome": null
+        },
+        {
+          "event_id": "cd84ab61-aeef-4697-b13e-5d095fa855a1",
+          "t_seconds": 9.272,
+          "team": "Romania",
+          "event_type": "Pressure",
+          "ball_x": 9.8,
+          "ball_y": 37.3,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Andrei Burc\u0103 Andonie",
+          "outcome": null
+        },
+        {
+          "event_id": "ab7f1b15-8cfc-43b1-af34-25cd380a55e0",
+          "t_seconds": 9.323,
+          "team": "Belgium",
+          "event_type": "Carry",
+          "ball_x": 107.5,
+          "ball_y": 43.3,
+          "ball_end_x": 107.3,
+          "ball_end_y": 43.9,
+          "actor": "Romelu Lukaku",
+          "outcome": null
+        },
+        {
+          "event_id": "6a215b28-e35f-4129-b2d3-f2ab7c6d0cfc",
+          "t_seconds": 10.41,
+          "team": "Belgium",
+          "event_type": "Pass",
+          "ball_x": 107.3,
+          "ball_y": 43.9,
+          "ball_end_x": 100.4,
+          "ball_end_y": 44.1,
+          "actor": "Romelu Lukaku",
+          "outcome": null
+        },
+        {
+          "event_id": "db4bd522-9595-4909-a903-df719b553fc1",
+          "t_seconds": 10.816,
+          "team": "Romania",
+          "event_type": "Pressure",
+          "ball_x": 18.1,
+          "ball_y": 41.1,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Nicolae Stanciu",
+          "outcome": null
+        },
+        {
+          "event_id": "35235060-e5aa-48bc-9a1a-9d50934f03ba",
+          "t_seconds": 11.21,
+          "team": "Belgium",
+          "event_type": "Shot",
+          "ball_x": 100.4,
+          "ball_y": 44.1,
+          "ball_end_x": 120.0,
+          "ball_end_y": 38.4,
+          "actor": "Youri Tielemans",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "35235060-e5aa-48bc-9a1a-9d50934f03ba",
+          "minute": 1,
+          "second": 14,
+          "scorer": "Youri Tielemans",
+          "team": "Belgium"
+        }
+      },
+      "metadata": {
+        "match_id": 3930175,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Belgium vs Romania"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "e2085374-4fd7-4722-81eb-42f8bf452876",
+        "start_event_id": "1e67a3eb-1ba4-4300-abac-e37c9879edec",
+        "end_event_id": "e2085374-4fd7-4722-81eb-42f8bf452876",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 58.036
+      },
+      "frames": [
+        {
+          "event_id": "1e67a3eb-1ba4-4300-abac-e37c9879edec",
+          "t_seconds": 52.721,
+          "team": "Belgium",
+          "event_type": "Pass",
+          "ball_x": 11.6,
+          "ball_y": 31.4,
+          "ball_end_x": 83.0,
+          "ball_end_y": 54.1,
+          "actor": "Koen Casteels",
+          "outcome": "Incomplete"
+        },
+        {
+          "event_id": "03e06466-ddbf-4a83-afc5-5c46b9ed6488",
+          "t_seconds": 56.344,
+          "team": "Romania",
+          "event_type": "Pressure",
+          "ball_x": 27.7,
+          "ball_y": 36.1,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Radu Dragusin",
+          "outcome": null
+        },
+        {
+          "event_id": "c103dc11-edc1-4d23-9fb9-43a2e141f43c",
+          "t_seconds": 56.917,
+          "team": "Belgium",
+          "event_type": "Ball Recovery",
+          "ball_x": 98.6,
+          "ball_y": 45.9,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Kevin De Bruyne",
+          "outcome": null
+        },
+        {
+          "event_id": "e2085374-4fd7-4722-81eb-42f8bf452876",
+          "t_seconds": 58.036,
+          "team": "Belgium",
+          "event_type": "Shot",
+          "ball_x": 106.4,
+          "ball_y": 44.6,
+          "ball_end_x": 120.0,
+          "ball_end_y": 42.3,
+          "actor": "Kevin De Bruyne",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "e2085374-4fd7-4722-81eb-42f8bf452876",
+          "minute": 79,
+          "second": 1,
+          "scorer": "Kevin De Bruyne",
+          "team": "Belgium"
+        }
+      },
+      "metadata": {
+        "match_id": 3930175,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Belgium vs Romania"
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3930175,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Belgium vs Romania"
+  }
+}

@@ -95,12 +95,19 @@ def _build_windows(
     passes = events[pass_mask].copy()
 
     windows = []
-    for i, (start, end) in enumerate(zip(starts, ends)):
+    for loop_i, (start, end) in enumerate(zip(starts, ends)):
         w = passes[passes["minute"] >= start]
         if end is not None:
             w = w[w["minute"] < end]
         if w.empty:
             continue
+        # `index` must stay contiguous among *emitted* windows (0..len(windows)-1):
+        # derive_tactical_findings.py's is_first/is_last checks compare it against
+        # len(windows)-1, so using the raw loop position here would create a gap
+        # whenever a zero-length window (two substitutions in the same minute) is
+        # skipped above. start_periods/end_periods are still indexed by loop_i —
+        # they're aligned to starts/ends, not to emitted windows.
+        i = len(windows)
 
         nodes = []
         for player, group in w.groupby("player"):
@@ -140,9 +147,9 @@ def _build_windows(
             "index":       i,
             "label":       label,
             "from_minute": start,
-            "from_period": start_periods[i],
+            "from_period": start_periods[loop_i],
             "to_minute":   end,
-            "to_period":   end_periods[i],
+            "to_period":   end_periods[loop_i],
             "nodes":       nodes,
             "edges":       edges,
         })

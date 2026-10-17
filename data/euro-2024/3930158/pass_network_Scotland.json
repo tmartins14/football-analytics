@@ -1,0 +1,1031 @@
+{
+  "windows": [
+    {
+      "index": 0,
+      "label": "0'\u201345' (Starting XI)",
+      "from_minute": 0,
+      "from_period": 1,
+      "to_minute": 45,
+      "to_period": 2,
+      "nodes": [
+        {
+          "player": "Andrew Robertson",
+          "display_name": "Andrew Robertson",
+          "x": 61.67,
+          "y": 7.38,
+          "passes": 13
+        },
+        {
+          "player": "Angus Gunn",
+          "display_name": "Angus Gunn",
+          "x": 14.0,
+          "y": 37.9,
+          "passes": 7
+        },
+        {
+          "player": "Anthony Ralston",
+          "display_name": "Anthony Ralston",
+          "x": 38.16,
+          "y": 69.89,
+          "passes": 10
+        },
+        {
+          "player": "Callum McGregor",
+          "display_name": "Callum McGregor",
+          "x": 56.08,
+          "y": 27.78,
+          "passes": 8
+        },
+        {
+          "player": "Che Adams",
+          "display_name": "Che Adams",
+          "x": 58.77,
+          "y": 43.7,
+          "passes": 6
+        },
+        {
+          "player": "Jack Hendry",
+          "display_name": "Jack Hendry",
+          "x": 25.24,
+          "y": 43.92,
+          "passes": 16
+        },
+        {
+          "player": "John McGinn",
+          "display_name": "John McGinn",
+          "x": 55.65,
+          "y": 53.27,
+          "passes": 4
+        },
+        {
+          "player": "Kieran Tierney",
+          "display_name": "Kieran Tierney",
+          "x": 37.7,
+          "y": 20.59,
+          "passes": 18
+        },
+        {
+          "player": "Ryan Christie",
+          "display_name": "Ryan Christie",
+          "x": 51.75,
+          "y": 21.73,
+          "passes": 4
+        },
+        {
+          "player": "Ryan Porteous",
+          "display_name": "Ryan Porteous",
+          "x": 35.27,
+          "y": 64.15,
+          "passes": 20
+        },
+        {
+          "player": "Scott McTominay",
+          "display_name": "Scott McTominay",
+          "x": 48.93,
+          "y": 42.34,
+          "passes": 9
+        }
+      ],
+      "edges": [
+        {
+          "from": "Jack Hendry",
+          "to": "Ryan Porteous",
+          "count": 8
+        },
+        {
+          "from": "Ryan Porteous",
+          "to": "Anthony Ralston",
+          "count": 7
+        },
+        {
+          "from": "Anthony Ralston",
+          "to": "Ryan Porteous",
+          "count": 6
+        },
+        {
+          "from": "Jack Hendry",
+          "to": "Kieran Tierney",
+          "count": 6
+        },
+        {
+          "from": "Andrew Robertson",
+          "to": "Kieran Tierney",
+          "count": 5
+        },
+        {
+          "from": "Angus Gunn",
+          "to": "Jack Hendry",
+          "count": 5
+        },
+        {
+          "from": "Ryan Porteous",
+          "to": "Jack Hendry",
+          "count": 5
+        },
+        {
+          "from": "Callum McGregor",
+          "to": "Andrew Robertson",
+          "count": 4
+        },
+        {
+          "from": "Che Adams",
+          "to": "Kieran Tierney",
+          "count": 3
+        },
+        {
+          "from": "Kieran Tierney",
+          "to": "Scott McTominay",
+          "count": 3
+        },
+        {
+          "from": "Kieran Tierney",
+          "to": "Ryan Christie",
+          "count": 3
+        },
+        {
+          "from": "Kieran Tierney",
+          "to": "Angus Gunn",
+          "count": 3
+        },
+        {
+          "from": "Kieran Tierney",
+          "to": "Jack Hendry",
+          "count": 3
+        },
+        {
+          "from": "Scott McTominay",
+          "to": "Anthony Ralston",
+          "count": 3
+        },
+        {
+          "from": "Ryan Christie",
+          "to": "Andrew Robertson",
+          "count": 2
+        },
+        {
+          "from": "Ryan Porteous",
+          "to": "Scott McTominay",
+          "count": 2
+        },
+        {
+          "from": "Ryan Porteous",
+          "to": "John McGinn",
+          "count": 2
+        },
+        {
+          "from": "Kieran Tierney",
+          "to": "Callum McGregor",
+          "count": 2
+        },
+        {
+          "from": "Kieran Tierney",
+          "to": "Andrew Robertson",
+          "count": 2
+        },
+        {
+          "from": "Callum McGregor",
+          "to": "John McGinn",
+          "count": 2
+        },
+        {
+          "from": "Scott McTominay",
+          "to": "Ryan Porteous",
+          "count": 2
+        },
+        {
+          "from": "Andrew Robertson",
+          "to": "Callum McGregor",
+          "count": 2
+        },
+        {
+          "from": "Andrew Robertson",
+          "to": "Scott McTominay",
+          "count": 2
+        },
+        {
+          "from": "Ryan Porteous",
+          "to": "Che Adams",
+          "count": 1
+        },
+        {
+          "from": "Che Adams",
+          "to": "John McGinn",
+          "count": 1
+        },
+        {
+          "from": "Jack Hendry",
+          "to": "Angus Gunn",
+          "count": 1
+        },
+        {
+          "from": "Angus Gunn",
+          "to": "John McGinn",
+          "count": 1
+        },
+        {
+          "from": "John McGinn",
+          "to": "Anthony Ralston",
+          "count": 1
+        },
+        {
+          "from": "Scott McTominay",
+          "to": "Callum McGregor",
+          "count": 1
+        },
+        {
+          "from": "Callum McGregor",
+          "to": "Che Adams",
+          "count": 1
+        },
+        {
+          "from": "Che Adams",
+          "to": "Anthony Ralston",
+          "count": 1
+        },
+        {
+          "from": "Ryan Christie",
+          "to": "Kieran Tierney",
+          "count": 1
+        },
+        {
+          "from": "Scott McTominay",
+          "to": "Ryan Christie",
+          "count": 1
+        },
+        {
+          "from": "Ryan Christie",
+          "to": "Callum McGregor",
+          "count": 1
+        },
+        {
+          "from": "Callum McGregor",
+          "to": "Kieran Tierney",
+          "count": 1
+        },
+        {
+          "from": "John McGinn",
+          "to": "Che Adams",
+          "count": 1
+        },
+        {
+          "from": "Che Adams",
+          "to": "Ryan Christie",
+          "count": 1
+        },
+        {
+          "from": "Andrew Robertson",
+          "to": "Che Adams",
+          "count": 1
+        },
+        {
+          "from": "Angus Gunn",
+          "to": "Ryan Porteous",
+          "count": 1
+        },
+        {
+          "from": "Scott McTominay",
+          "to": "Che Adams",
+          "count": 1
+        },
+        {
+          "from": "Kieran Tierney",
+          "to": "Ryan Porteous",
+          "count": 1
+        },
+        {
+          "from": "Andrew Robertson",
+          "to": "Jack Hendry",
+          "count": 1
+        },
+        {
+          "from": "John McGinn",
+          "to": "Kieran Tierney",
+          "count": 1
+        },
+        {
+          "from": "Scott McTominay",
+          "to": "Andrew Robertson",
+          "count": 1
+        },
+        {
+          "from": "Ryan Porteous",
+          "to": "Ryan Christie",
+          "count": 1
+        },
+        {
+          "from": "Ryan Porteous",
+          "to": "Angus Gunn",
+          "count": 1
+        },
+        {
+          "from": "Kieran Tierney",
+          "to": "John McGinn",
+          "count": 1
+        },
+        {
+          "from": "Jack Hendry",
+          "to": "Scott McTominay",
+          "count": 1
+        },
+        {
+          "from": "Anthony Ralston",
+          "to": "Callum McGregor",
+          "count": 1
+        },
+        {
+          "from": "John McGinn",
+          "to": "Andrew Robertson",
+          "count": 1
+        },
+        {
+          "from": "Andrew Robertson",
+          "to": "John McGinn",
+          "count": 1
+        },
+        {
+          "from": "Anthony Ralston",
+          "to": "Angus Gunn",
+          "count": 1
+        },
+        {
+          "from": "Anthony Ralston",
+          "to": "Andrew Robertson",
+          "count": 1
+        },
+        {
+          "from": "Andrew Robertson",
+          "to": "Angus Gunn",
+          "count": 1
+        },
+        {
+          "from": "Ryan Porteous",
+          "to": "Kieran Tierney",
+          "count": 1
+        },
+        {
+          "from": "Anthony Ralston",
+          "to": "Scott McTominay",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "label": "45'\u201366'",
+      "from_minute": 45,
+      "from_period": 2,
+      "to_minute": 66,
+      "to_period": 2,
+      "nodes": [
+        {
+          "player": "Andrew Robertson",
+          "display_name": "Andrew Robertson",
+          "x": 58.31,
+          "y": 7.71,
+          "passes": 8
+        },
+        {
+          "player": "Angus Gunn",
+          "display_name": "Angus Gunn",
+          "x": 10.44,
+          "y": 44.74,
+          "passes": 5
+        },
+        {
+          "player": "Anthony Ralston",
+          "display_name": "Anthony Ralston",
+          "x": 62.68,
+          "y": 65.02,
+          "passes": 5
+        },
+        {
+          "player": "Callum McGregor",
+          "display_name": "Callum McGregor",
+          "x": 55.98,
+          "y": 35.86,
+          "passes": 5
+        },
+        {
+          "player": "Che Adams",
+          "display_name": "Che Adams",
+          "x": 69.15,
+          "y": 24.25,
+          "passes": 2
+        },
+        {
+          "player": "Grant Campbell Hanley",
+          "display_name": "Grant Campbell Hanley",
+          "x": 27.1,
+          "y": 30.0,
+          "passes": 1
+        },
+        {
+          "player": "Jack Hendry",
+          "display_name": "Jack Hendry",
+          "x": 31.54,
+          "y": 67.64,
+          "passes": 5
+        },
+        {
+          "player": "John McGinn",
+          "display_name": "John McGinn",
+          "x": 47.62,
+          "y": 11.85,
+          "passes": 4
+        },
+        {
+          "player": "Kieran Tierney",
+          "display_name": "Kieran Tierney",
+          "x": 48.69,
+          "y": 11.24,
+          "passes": 10
+        },
+        {
+          "player": "Ryan Christie",
+          "display_name": "Ryan Christie",
+          "x": 54.2,
+          "y": 35.5,
+          "passes": 2
+        },
+        {
+          "player": "Scott McTominay",
+          "display_name": "Scott McTominay",
+          "x": 41.33,
+          "y": 63.67,
+          "passes": 3
+        }
+      ],
+      "edges": [
+        {
+          "from": "Kieran Tierney",
+          "to": "Andrew Robertson",
+          "count": 4
+        },
+        {
+          "from": "Andrew Robertson",
+          "to": "Kieran Tierney",
+          "count": 3
+        },
+        {
+          "from": "Jack Hendry",
+          "to": "Scott McTominay",
+          "count": 3
+        },
+        {
+          "from": "Angus Gunn",
+          "to": "Anthony Ralston",
+          "count": 3
+        },
+        {
+          "from": "Andrew Robertson",
+          "to": "Che Adams",
+          "count": 2
+        },
+        {
+          "from": "Kieran Tierney",
+          "to": "Callum McGregor",
+          "count": 2
+        },
+        {
+          "from": "Anthony Ralston",
+          "to": "Callum McGregor",
+          "count": 2
+        },
+        {
+          "from": "Kieran Tierney",
+          "to": "John McGinn",
+          "count": 2
+        },
+        {
+          "from": "Jack Hendry",
+          "to": "Kieran Tierney",
+          "count": 2
+        },
+        {
+          "from": "Andrew Robertson",
+          "to": "John McGinn",
+          "count": 2
+        },
+        {
+          "from": "John McGinn",
+          "to": "Kieran Tierney",
+          "count": 2
+        },
+        {
+          "from": "Scott McTominay",
+          "to": "Anthony Ralston",
+          "count": 2
+        },
+        {
+          "from": "Callum McGregor",
+          "to": "Kieran Tierney",
+          "count": 2
+        },
+        {
+          "from": "Che Adams",
+          "to": "Ryan Christie",
+          "count": 1
+        },
+        {
+          "from": "Ryan Christie",
+          "to": "Scott McTominay",
+          "count": 1
+        },
+        {
+          "from": "Angus Gunn",
+          "to": "Andrew Robertson",
+          "count": 1
+        },
+        {
+          "from": "Che Adams",
+          "to": "Kieran Tierney",
+          "count": 1
+        },
+        {
+          "from": "Callum McGregor",
+          "to": "Anthony Ralston",
+          "count": 1
+        },
+        {
+          "from": "Anthony Ralston",
+          "to": "Kieran Tierney",
+          "count": 1
+        },
+        {
+          "from": "Ryan Christie",
+          "to": "Grant Campbell Hanley",
+          "count": 1
+        },
+        {
+          "from": "John McGinn",
+          "to": "Ryan Christie",
+          "count": 1
+        },
+        {
+          "from": "Callum McGregor",
+          "to": "John McGinn",
+          "count": 1
+        },
+        {
+          "from": "Scott McTominay",
+          "to": "Jack Hendry",
+          "count": 1
+        },
+        {
+          "from": "Kieran Tierney",
+          "to": "Grant Campbell Hanley",
+          "count": 1
+        },
+        {
+          "from": "Grant Campbell Hanley",
+          "to": "Jack Hendry",
+          "count": 1
+        },
+        {
+          "from": "Anthony Ralston",
+          "to": "Jack Hendry",
+          "count": 1
+        },
+        {
+          "from": "Anthony Ralston",
+          "to": "Ryan Christie",
+          "count": 1
+        },
+        {
+          "from": "Callum McGregor",
+          "to": "Jack Hendry",
+          "count": 1
+        },
+        {
+          "from": "John McGinn",
+          "to": "Andrew Robertson",
+          "count": 1
+        },
+        {
+          "from": "Andrew Robertson",
+          "to": "Ryan Christie",
+          "count": 1
+        },
+        {
+          "from": "Angus Gunn",
+          "to": "Kieran Tierney",
+          "count": 1
+        },
+        {
+          "from": "Kieran Tierney",
+          "to": "Ryan Christie",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "label": "66'\u201376'",
+      "from_minute": 66,
+      "from_period": 2,
+      "to_minute": 76,
+      "to_period": 2,
+      "nodes": [
+        {
+          "player": "Andrew Robertson",
+          "display_name": "Andrew Robertson",
+          "x": 60.4,
+          "y": 2.85,
+          "passes": 2
+        },
+        {
+          "player": "Angus Gunn",
+          "display_name": "Angus Gunn",
+          "x": 7.0,
+          "y": 44.9,
+          "passes": 1
+        },
+        {
+          "player": "Billy Gilmour",
+          "display_name": "Billy Gilmour",
+          "x": 68.1,
+          "y": 49.23,
+          "passes": 4
+        },
+        {
+          "player": "Grant Campbell Hanley",
+          "display_name": "Grant Campbell Hanley",
+          "x": 49.8,
+          "y": 55.0,
+          "passes": 1
+        },
+        {
+          "player": "Kenneth McLean",
+          "display_name": "Kenneth McLean",
+          "x": 107.0,
+          "y": 8.2,
+          "passes": 1
+        },
+        {
+          "player": "Kieran Tierney",
+          "display_name": "Kieran Tierney",
+          "x": 36.1,
+          "y": 21.2,
+          "passes": 1
+        },
+        {
+          "player": "Ryan Christie",
+          "display_name": "Ryan Christie",
+          "x": 72.0,
+          "y": 65.73,
+          "passes": 3
+        }
+      ],
+      "edges": [
+        {
+          "from": "Ryan Christie",
+          "to": "Billy Gilmour",
+          "count": 2
+        },
+        {
+          "from": "Billy Gilmour",
+          "to": "Kieran Tierney",
+          "count": 1
+        },
+        {
+          "from": "Kieran Tierney",
+          "to": "Andrew Robertson",
+          "count": 1
+        },
+        {
+          "from": "Billy Gilmour",
+          "to": "Kenneth McLean",
+          "count": 1
+        },
+        {
+          "from": "Kenneth McLean",
+          "to": "Andrew Robertson",
+          "count": 1
+        },
+        {
+          "from": "Andrew Robertson",
+          "to": "Kenneth McLean",
+          "count": 1
+        },
+        {
+          "from": "Angus Gunn",
+          "to": "Ryan Christie",
+          "count": 1
+        },
+        {
+          "from": "Billy Gilmour",
+          "to": "Ryan Christie",
+          "count": 1
+        },
+        {
+          "from": "Ryan Christie",
+          "to": "Anthony Ralston",
+          "count": 1
+        },
+        {
+          "from": "Andrew Robertson",
+          "to": "Kieran Tierney",
+          "count": 1
+        },
+        {
+          "from": "Billy Gilmour",
+          "to": "Grant Campbell Hanley",
+          "count": 1
+        },
+        {
+          "from": "Grant Campbell Hanley",
+          "to": "Scott McTominay",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "label": "76'\u201380'",
+      "from_minute": 76,
+      "from_period": 2,
+      "to_minute": 80,
+      "to_period": 2,
+      "nodes": [
+        {
+          "player": "Andrew Robertson",
+          "display_name": "Andrew Robertson",
+          "x": 34.9,
+          "y": 10.4,
+          "passes": 1
+        },
+        {
+          "player": "Angus Gunn",
+          "display_name": "Angus Gunn",
+          "x": 4.1,
+          "y": 42.0,
+          "passes": 1
+        },
+        {
+          "player": "Jack Hendry",
+          "display_name": "Jack Hendry",
+          "x": 10.3,
+          "y": 60.4,
+          "passes": 1
+        },
+        {
+          "player": "Ryan Christie",
+          "display_name": "Ryan Christie",
+          "x": 46.8,
+          "y": 24.7,
+          "passes": 1
+        },
+        {
+          "player": "Scott McKenna",
+          "display_name": "Scott McKenna",
+          "x": 22.1,
+          "y": 25.3,
+          "passes": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "Ryan Christie",
+          "to": "Andrew Robertson",
+          "count": 1
+        },
+        {
+          "from": "Andrew Robertson",
+          "to": "Scott McKenna",
+          "count": 1
+        },
+        {
+          "from": "Scott McKenna",
+          "to": "Angus Gunn",
+          "count": 1
+        },
+        {
+          "from": "Angus Gunn",
+          "to": "Jack Hendry",
+          "count": 1
+        },
+        {
+          "from": "Jack Hendry",
+          "to": "Billy Gilmour",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "label": "80'\u2013FT",
+      "from_minute": 80,
+      "from_period": 2,
+      "to_minute": null,
+      "to_period": null,
+      "nodes": [
+        {
+          "player": "Andrew Robertson",
+          "display_name": "Andrew Robertson",
+          "x": 64.27,
+          "y": 5.2,
+          "passes": 3
+        },
+        {
+          "player": "Angus Gunn",
+          "display_name": "Angus Gunn",
+          "x": 12.97,
+          "y": 39.73,
+          "passes": 3
+        },
+        {
+          "player": "Anthony Ralston",
+          "display_name": "Anthony Ralston",
+          "x": 10.3,
+          "y": 60.7,
+          "passes": 1
+        },
+        {
+          "player": "Billy Gilmour",
+          "display_name": "Billy Gilmour",
+          "x": 46.17,
+          "y": 25.7,
+          "passes": 3
+        },
+        {
+          "player": "Grant Campbell Hanley",
+          "display_name": "Grant Campbell Hanley",
+          "x": 44.25,
+          "y": 34.65,
+          "passes": 2
+        },
+        {
+          "player": "Jack Hendry",
+          "display_name": "Jack Hendry",
+          "x": 45.45,
+          "y": 59.85,
+          "passes": 2
+        },
+        {
+          "player": "Kenneth McLean",
+          "display_name": "Kenneth McLean",
+          "x": 55.88,
+          "y": 28.1,
+          "passes": 4
+        },
+        {
+          "player": "Lawrence Shankland",
+          "display_name": "Lawrence Shankland",
+          "x": 72.6,
+          "y": 47.7,
+          "passes": 1
+        },
+        {
+          "player": "Scott McKenna",
+          "display_name": "Scott McKenna",
+          "x": 33.07,
+          "y": 20.73,
+          "passes": 3
+        },
+        {
+          "player": "Scott McTominay",
+          "display_name": "Scott McTominay",
+          "x": 63.5,
+          "y": 47.9,
+          "passes": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "Scott McKenna",
+          "to": "Andrew Robertson",
+          "count": 2
+        },
+        {
+          "from": "Billy Gilmour",
+          "to": "Kenneth McLean",
+          "count": 2
+        },
+        {
+          "from": "Angus Gunn",
+          "to": "Kenneth McLean",
+          "count": 2
+        },
+        {
+          "from": "Kenneth McLean",
+          "to": "Billy Gilmour",
+          "count": 2
+        },
+        {
+          "from": "Grant Campbell Hanley",
+          "to": "Andrew Robertson",
+          "count": 1
+        },
+        {
+          "from": "Andrew Robertson",
+          "to": "Kenneth McLean",
+          "count": 1
+        },
+        {
+          "from": "Kenneth McLean",
+          "to": "Anthony Ralston",
+          "count": 1
+        },
+        {
+          "from": "Angus Gunn",
+          "to": "Lawrence Shankland",
+          "count": 1
+        },
+        {
+          "from": "Lawrence Shankland",
+          "to": "Jack Hendry",
+          "count": 1
+        },
+        {
+          "from": "Jack Hendry",
+          "to": "Scott McTominay",
+          "count": 1
+        },
+        {
+          "from": "Scott McTominay",
+          "to": "Scott McKenna",
+          "count": 1
+        },
+        {
+          "from": "Andrew Robertson",
+          "to": "Billy Gilmour",
+          "count": 1
+        },
+        {
+          "from": "Kenneth McLean",
+          "to": "Andrew Robertson",
+          "count": 1
+        },
+        {
+          "from": "Andrew Robertson",
+          "to": "Scott McKenna",
+          "count": 1
+        },
+        {
+          "from": "Scott McKenna",
+          "to": "Grant Campbell Hanley",
+          "count": 1
+        },
+        {
+          "from": "Grant Campbell Hanley",
+          "to": "Jack Hendry",
+          "count": 1
+        },
+        {
+          "from": "Jack Hendry",
+          "to": "Anthony Ralston",
+          "count": 1
+        },
+        {
+          "from": "Anthony Ralston",
+          "to": "Lawrence Shankland",
+          "count": 1
+        },
+        {
+          "from": "Billy Gilmour",
+          "to": "Scott McKenna",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "substitutions": [
+    {
+      "minute": 45,
+      "period": 2,
+      "player_off": "Che Adams",
+      "player_on": "Grant Campbell Hanley"
+    },
+    {
+      "minute": 66,
+      "period": 2,
+      "player_off": "Callum McGregor",
+      "player_on": "Billy Gilmour"
+    },
+    {
+      "minute": 66,
+      "period": 2,
+      "player_off": "John McGinn",
+      "player_on": "Kenneth McLean"
+    },
+    {
+      "minute": 76,
+      "period": 2,
+      "player_off": "Kieran Tierney",
+      "player_on": "Scott McKenna"
+    },
+    {
+      "minute": 80,
+      "period": 2,
+      "player_off": "Ryan Christie",
+      "player_on": "Lawrence Shankland"
+    }
+  ],
+  "metadata": {
+    "match_id": 3930158,
+    "team": "Scotland",
+    "filter": "completed passes, per substitution window",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Germany vs Scotland"
+  }
+}

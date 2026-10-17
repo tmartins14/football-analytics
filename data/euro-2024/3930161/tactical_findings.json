@@ -1,0 +1,5368 @@
+{
+  "findings": [
+    {
+      "id": "context.final_score",
+      "category": "context",
+      "type": "final_score",
+      "team": null,
+      "window": null,
+      "game_states": [],
+      "subject": null,
+      "label": null,
+      "value": {
+        "home_score": 2,
+        "away_score": 1
+      },
+      "claim": "Italy beat Albania 2\u20131",
+      "evidence": {
+        "home_team": "Italy",
+        "home_score": 2,
+        "away_team": "Albania",
+        "away_score": 1,
+        "source": "match_stats.json#home.score,away.score"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "context.goal.ALB.nedim_bajrami",
+      "category": "context",
+      "type": "goal",
+      "team": "Albania",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "display_name": "Nedim Bajrami"
+      },
+      "label": null,
+      "value": "Nedim Bajrami",
+      "claim": "Nedim Bajrami scored for Albania (1')",
+      "evidence": {
+        "minute": 0,
+        "period": 1,
+        "display_minute": "1'",
+        "source": "shots.json"
+      },
+      "threshold": null,
+      "notability": 3.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "context.goal.ITA.alessandro_bastoni",
+      "category": "context",
+      "type": "goal",
+      "team": "Italy",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "display_name": "Alessandro Bastoni"
+      },
+      "label": null,
+      "value": "Alessandro Bastoni",
+      "claim": "Alessandro Bastoni scored for Italy (11')",
+      "evidence": {
+        "minute": 10,
+        "period": 1,
+        "display_minute": "11'",
+        "source": "shots.json"
+      },
+      "threshold": null,
+      "notability": 3.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "context.goal.ITA.nicol_barella",
+      "category": "context",
+      "type": "goal",
+      "team": "Italy",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "display_name": "Nicol\u00f2 Barella"
+      },
+      "label": null,
+      "value": "Nicol\u00f2 Barella",
+      "claim": "Nicol\u00f2 Barella scored for Italy (16')",
+      "evidence": {
+        "minute": 15,
+        "period": 1,
+        "display_minute": "16'",
+        "source": "shots.json"
+      },
+      "threshold": null,
+      "notability": 3.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "context.game_state.level.s0",
+      "category": "context",
+      "type": "game_state",
+      "team": null,
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 0,
+        "source": "game_state_segment",
+        "text": "kick-off to 1'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": null,
+      "label": "level",
+      "value": "0-0",
+      "claim": "the score was level at 0-0 from kick-off to 1'",
+      "evidence": {
+        "from_minute": 0,
+        "from_period": 1,
+        "to_minute": 0,
+        "to_period": 1,
+        "home_score": 0,
+        "away_score": 0,
+        "source": "derived from shots.json goals + match_stats.json final score"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "context.game_state.ALB.s1",
+      "category": "context",
+      "type": "game_state",
+      "team": "Albania",
+      "window": {
+        "index": 1,
+        "from_minute": 0,
+        "to_minute": 10,
+        "source": "game_state_segment",
+        "text": "1' to 11'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": null,
+      "label": "leading",
+      "value": "0-1",
+      "claim": "Albania led 1-0 from 1' to 11'",
+      "evidence": {
+        "from_minute": 0,
+        "from_period": 1,
+        "to_minute": 10,
+        "to_period": 1,
+        "home_score": 0,
+        "away_score": 1,
+        "source": "derived from shots.json goals + match_stats.json final score"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "context.game_state.level.s2",
+      "category": "context",
+      "type": "game_state",
+      "team": null,
+      "window": {
+        "index": 2,
+        "from_minute": 10,
+        "to_minute": 15,
+        "source": "game_state_segment",
+        "text": "11' to 16'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": null,
+      "label": "level",
+      "value": "1-1",
+      "claim": "the score was level at 1-1 from 11' to 16'",
+      "evidence": {
+        "from_minute": 10,
+        "from_period": 1,
+        "to_minute": 15,
+        "to_period": 1,
+        "home_score": 1,
+        "away_score": 1,
+        "source": "derived from shots.json goals + match_stats.json final score"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "context.game_state.ITA.s3",
+      "category": "context",
+      "type": "game_state",
+      "team": "Italy",
+      "window": {
+        "index": 3,
+        "from_minute": 15,
+        "to_minute": null,
+        "source": "game_state_segment",
+        "text": "16' to full time"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": null,
+      "label": "leading",
+      "value": "2-1",
+      "claim": "Italy led 2-1 from 16' to full time",
+      "evidence": {
+        "from_minute": 15,
+        "from_period": 1,
+        "to_minute": null,
+        "to_period": null,
+        "home_score": 2,
+        "away_score": 1,
+        "source": "derived from shots.json goals + match_stats.json final score"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.formation.ITA.p0",
+      "category": "structure",
+      "type": "formation",
+      "team": "Italy",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 76,
+        "source": "formation_period",
+        "text": "kick-off to 77'"
+      },
+      "game_states": [
+        "trailing",
+        "level",
+        "leading"
+      ],
+      "subject": null,
+      "label": null,
+      "value": "4-3-3",
+      "claim": "Italy played a 4-3-3 from kick-off to 77'",
+      "evidence": {
+        "from_minute": 0,
+        "from_period": 1,
+        "to_minute": 76,
+        "to_period": 2,
+        "source": "formation_italy.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.formation.ITA.p1",
+      "category": "structure",
+      "type": "formation",
+      "team": "Italy",
+      "window": {
+        "index": 1,
+        "from_minute": 76,
+        "to_minute": 95,
+        "source": "formation_period",
+        "text": "77' to full time"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": null,
+      "label": null,
+      "value": "4-3-3",
+      "claim": "Italy played a 4-3-3 from 77' to full time",
+      "evidence": {
+        "from_minute": 76,
+        "from_period": 2,
+        "to_minute": 95,
+        "to_period": 2,
+        "source": "formation_italy.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.ITA.nicol_barella.p1",
+      "category": "structure",
+      "type": "role_change",
+      "team": "Italy",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Nicol\u00f2 Barella",
+        "display_name": "Nicol\u00f2 Barella"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Left Center Midfield",
+        "new_position": "Left Wing"
+      },
+      "claim": "Nicol\u00f2 Barella moved from Left Center Midfield to Left Wing (77')",
+      "evidence": {
+        "minute": 76,
+        "period": 2,
+        "display_minute": "77'",
+        "source": "formation_italy.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.formation.ALB.p0",
+      "category": "structure",
+      "type": "formation",
+      "team": "Albania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 67,
+        "source": "formation_period",
+        "text": "kick-off to 68'"
+      },
+      "game_states": [
+        "leading",
+        "level",
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": "4-2-3-1",
+      "claim": "Albania played a 4-2-3-1 from kick-off to 68'",
+      "evidence": {
+        "from_minute": 0,
+        "from_period": 1,
+        "to_minute": 67,
+        "to_period": 2,
+        "source": "formation_albania.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.formation.ALB.p1",
+      "category": "structure",
+      "type": "formation",
+      "team": "Albania",
+      "window": {
+        "index": 1,
+        "from_minute": 67,
+        "to_minute": 95,
+        "source": "formation_period",
+        "text": "68' to full time"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": "4-2-3-1",
+      "claim": "Albania played a 4-2-3-1 from 68' to full time",
+      "evidence": {
+        "from_minute": 67,
+        "from_period": 2,
+        "to_minute": 95,
+        "to_period": 2,
+        "source": "formation_albania.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.ALB.qazim_la_i",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Albania",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Qazim La\u00e7i",
+        "display_name": "Qazim La\u00e7i"
+      },
+      "label": null,
+      "value": {
+        "on": "Qazim La\u00e7i",
+        "off": "Taulant Seferi"
+      },
+      "claim": "Qazim La\u00e7i replaced Taulant Seferi for Albania (68')",
+      "evidence": {
+        "minute": 67,
+        "period": 2,
+        "display_minute": "68'",
+        "on_player": "Qazim La\u00e7i",
+        "off_player": "Taulant Sulejmanov",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.ALB.rey_manaj",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Albania",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Rey Manaj",
+        "display_name": "Rey Manaj"
+      },
+      "label": null,
+      "value": {
+        "on": "Rey Manaj",
+        "off": "Armando Broja"
+      },
+      "claim": "Rey Manaj replaced Armando Broja for Albania (76')",
+      "evidence": {
+        "minute": 75,
+        "period": 2,
+        "display_minute": "76'",
+        "on_player": "Rey Manaj",
+        "off_player": "Armando Broja",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.ALB.ernest_mu_i",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Albania",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Ernest Mu\u00e7i",
+        "display_name": "Ernest Mu\u00e7i"
+      },
+      "label": null,
+      "value": {
+        "on": "Ernest Mu\u00e7i",
+        "off": "Nedim Bajrami"
+      },
+      "claim": "Ernest Mu\u00e7i replaced Nedim Bajrami for Albania (87')",
+      "evidence": {
+        "minute": 86,
+        "period": 2,
+        "display_minute": "87'",
+        "on_player": "Ernest Mu\u00e7i",
+        "off_player": "Nedim Bajrami",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.ALB.arb_r_hoxha",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Albania",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Arb\u00ebr Hoxha",
+        "display_name": "Arb\u00ebr Hoxha"
+      },
+      "label": null,
+      "value": {
+        "on": "Arb\u00ebr Hoxha",
+        "off": "Jasir Asani"
+      },
+      "claim": "Arb\u00ebr Hoxha replaced Jasir Asani for Albania (68')",
+      "evidence": {
+        "minute": 67,
+        "period": 2,
+        "display_minute": "68'",
+        "on_player": "Arb\u00ebr Hoxha",
+        "off_player": "Jasir Asani",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.ITA.matteo_darmian",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Italy",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Matteo Darmian",
+        "display_name": "Matteo Darmian"
+      },
+      "label": null,
+      "value": {
+        "on": "Matteo Darmian",
+        "off": "Federico Dimarco"
+      },
+      "claim": "Matteo Darmian replaced Federico Dimarco for Italy (83')",
+      "evidence": {
+        "minute": 82,
+        "period": 2,
+        "display_minute": "83'",
+        "on_player": "Matteo Darmian",
+        "off_player": "Federico Dimarco",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.ITA.bryan_cristante",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Italy",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Bryan Cristante",
+        "display_name": "Bryan Cristante"
+      },
+      "label": null,
+      "value": {
+        "on": "Bryan Cristante",
+        "off": "Lorenzo Pellegrini"
+      },
+      "claim": "Bryan Cristante replaced Lorenzo Pellegrini for Italy (77')",
+      "evidence": {
+        "minute": 76,
+        "period": 2,
+        "display_minute": "77'",
+        "on_player": "Bryan Cristante",
+        "off_player": "Lorenzo Pellegrini",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.ITA.mateo_retegui",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Italy",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Mateo Retegui",
+        "display_name": "Mateo Retegui"
+      },
+      "label": null,
+      "value": {
+        "on": "Mateo Retegui",
+        "off": "Gianluca Scamacca"
+      },
+      "claim": "Mateo Retegui replaced Gianluca Scamacca for Italy (82')",
+      "evidence": {
+        "minute": 81,
+        "period": 2,
+        "display_minute": "82'",
+        "on_player": "Mateo Retegui",
+        "off_player": "Gianluca Scamacca",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.ITA.michael_folorunsho",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Italy",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Michael Ijemuan Folorunsho",
+        "display_name": "Michael Folorunsho"
+      },
+      "label": null,
+      "value": {
+        "on": "Michael Folorunsho",
+        "off": "Nicol\u00f2 Barella"
+      },
+      "claim": "Michael Folorunsho replaced Nicol\u00f2 Barella for Italy (90+2')",
+      "evidence": {
+        "minute": 91,
+        "period": 2,
+        "display_minute": "90+2'",
+        "on_player": "Michael Ijemuan Folorunsho",
+        "off_player": "Nicol\u00f2 Barella",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.ITA.andrea_cambiaso",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Italy",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Andrea Cambiaso",
+        "display_name": "Andrea Cambiaso"
+      },
+      "label": null,
+      "value": {
+        "on": "Andrea Cambiaso",
+        "off": "Federico Chiesa"
+      },
+      "claim": "Andrea Cambiaso replaced Federico Chiesa for Italy (77')",
+      "evidence": {
+        "minute": 76,
+        "period": 2,
+        "display_minute": "77'",
+        "on_player": "Andrea Cambiaso",
+        "off_player": "Federico Chiesa",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ITA.w0.nicol_barella",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Italy",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 76,
+        "source": "on_ball_period",
+        "text": "kick-off to 77'"
+      },
+      "game_states": [
+        "trailing",
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Nicol\u00f2 Barella",
+        "display_name": "Nicol\u00f2 Barella"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Nicol\u00f2 Barella split touches between the centre (74) and the left half-space (39) (kick-off to 77')",
+      "evidence": {
+        "event_count": 161,
+        "lane_counts": {
+          "left_wing": 21,
+          "left_half_space": 39,
+          "centre": 74,
+          "right_half_space": 26,
+          "right_wing": 1
+        },
+        "band_counts": {
+          "own_third": 8,
+          "own_half": 21,
+          "opposition_half": 108,
+          "final_third": 24
+        },
+        "band_label": "opposition_half",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "centre",
+        "source": "team_shape_italy.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ITA.w0.jorginho",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Italy",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 76,
+        "source": "on_ball_period",
+        "text": "kick-off to 77'"
+      },
+      "game_states": [
+        "trailing",
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Jorge Luiz Frello Filho",
+        "display_name": "Jorginho"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Jorginho split touches between the centre (62) and the right half-space (54) (kick-off to 77')",
+      "evidence": {
+        "event_count": 158,
+        "lane_counts": {
+          "left_wing": 9,
+          "left_half_space": 23,
+          "centre": 62,
+          "right_half_space": 54,
+          "right_wing": 10
+        },
+        "band_counts": {
+          "own_third": 10,
+          "own_half": 5,
+          "opposition_half": 83,
+          "final_third": 60
+        },
+        "band_label": "opposition_half",
+        "band_mixed": false,
+        "declared_side": "centre",
+        "observed_side": "centre",
+        "source": "team_shape_italy.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ITA.w0.giovanni_di_lorenzo",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Italy",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 76,
+        "source": "on_ball_period",
+        "text": "kick-off to 77'"
+      },
+      "game_states": [
+        "trailing",
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Giovanni Di Lorenzo",
+        "display_name": "Giovanni Di Lorenzo"
+      },
+      "label": "right_half_space",
+      "value": "right_half_space",
+      "claim": "Giovanni Di Lorenzo took 75 of 148 touches on the right half-space (kick-off to 77')",
+      "evidence": {
+        "event_count": 148,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 8,
+          "right_half_space": 75,
+          "right_wing": 65
+        },
+        "band_counts": {
+          "own_third": 15,
+          "own_half": 25,
+          "opposition_half": 68,
+          "final_third": 40
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_italy.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ITA.w0.alessandro_bastoni",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Italy",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 76,
+        "source": "on_ball_period",
+        "text": "kick-off to 77'"
+      },
+      "game_states": [
+        "trailing",
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Alessandro Bastoni",
+        "display_name": "Alessandro Bastoni"
+      },
+      "label": "centre",
+      "value": "centre",
+      "claim": "Alessandro Bastoni took 76 of 144 touches on the centre (kick-off to 77')",
+      "evidence": {
+        "event_count": 144,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 4,
+          "centre": 76,
+          "right_half_space": 45,
+          "right_wing": 19
+        },
+        "band_counts": {
+          "own_third": 40,
+          "own_half": 50,
+          "opposition_half": 52,
+          "final_third": 2
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "right",
+        "observed_side": "centre",
+        "source": "team_shape_italy.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ITA.w0.riccardo_calafiori",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Italy",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 76,
+        "source": "on_ball_period",
+        "text": "kick-off to 77'"
+      },
+      "game_states": [
+        "trailing",
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Riccardo Calafiori",
+        "display_name": "Riccardo Calafiori"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Riccardo Calafiori split touches between the left half-space (47) and the centre (32) (kick-off to 77')",
+      "evidence": {
+        "event_count": 107,
+        "lane_counts": {
+          "left_wing": 28,
+          "left_half_space": 47,
+          "centre": 32,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 19,
+          "own_half": 27,
+          "opposition_half": 46,
+          "final_third": 15
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_italy.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ITA.w0.federico_chiesa",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Italy",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 76,
+        "source": "on_ball_period",
+        "text": "kick-off to 77'"
+      },
+      "game_states": [
+        "trailing",
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Federico Chiesa",
+        "display_name": "Federico Chiesa"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Federico Chiesa took 45 of 69 touches on the right wing (kick-off to 77')",
+      "evidence": {
+        "event_count": 69,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 3,
+          "right_half_space": 21,
+          "right_wing": 45
+        },
+        "band_counts": {
+          "own_third": 0,
+          "own_half": 8,
+          "opposition_half": 19,
+          "final_third": 42
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_italy.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ITA.w0.lorenzo_pellegrini",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Italy",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 76,
+        "source": "on_ball_period",
+        "text": "kick-off to 77'"
+      },
+      "game_states": [
+        "trailing",
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Lorenzo Pellegrini",
+        "display_name": "Lorenzo Pellegrini"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Lorenzo Pellegrini split touches between the left wing (27) and the left half-space (22) (kick-off to 77')",
+      "evidence": {
+        "event_count": 61,
+        "lane_counts": {
+          "left_wing": 27,
+          "left_half_space": 22,
+          "centre": 6,
+          "right_half_space": 3,
+          "right_wing": 3
+        },
+        "band_counts": {
+          "own_third": 0,
+          "own_half": 10,
+          "opposition_half": 20,
+          "final_third": 31
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_italy.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ITA.w0.federico_dimarco",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Italy",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 76,
+        "source": "on_ball_period",
+        "text": "kick-off to 77'"
+      },
+      "game_states": [
+        "trailing",
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Federico Dimarco",
+        "display_name": "Federico Dimarco"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "Federico Dimarco took 55 of 60 touches on the left wing (kick-off to 77')",
+      "evidence": {
+        "event_count": 60,
+        "lane_counts": {
+          "left_wing": 55,
+          "left_half_space": 1,
+          "centre": 4,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 3,
+          "own_half": 7,
+          "opposition_half": 19,
+          "final_third": 31
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_italy.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ITA.w0.davide_frattesi",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Italy",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 76,
+        "source": "on_ball_period",
+        "text": "kick-off to 77'"
+      },
+      "game_states": [
+        "trailing",
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Davide Frattesi",
+        "display_name": "Davide Frattesi"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Davide Frattesi took 24 of 45 touches on the right wing (kick-off to 77')",
+      "evidence": {
+        "event_count": 45,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 3,
+          "centre": 7,
+          "right_half_space": 11,
+          "right_wing": 24
+        },
+        "band_counts": {
+          "own_third": 3,
+          "own_half": 3,
+          "opposition_half": 13,
+          "final_third": 26
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_italy.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ITA.w0.gianluigi_donnarumma",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Italy",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 76,
+        "source": "on_ball_period",
+        "text": "kick-off to 77'"
+      },
+      "game_states": [
+        "trailing",
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Gianluigi Donnarumma",
+        "display_name": "Gianluigi Donnarumma"
+      },
+      "label": "centre",
+      "value": "centre",
+      "claim": "Gianluigi Donnarumma took 23 of 24 touches on the centre (kick-off to 77')",
+      "evidence": {
+        "event_count": 24,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 23,
+          "right_half_space": 1,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 24,
+          "own_half": 0,
+          "opposition_half": 0,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": null,
+        "observed_side": "centre",
+        "source": "team_shape_italy.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ITA.w0.gianluca_scamacca",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Italy",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 76,
+        "source": "on_ball_period",
+        "text": "kick-off to 77'"
+      },
+      "game_states": [
+        "trailing",
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Gianluca Scamacca",
+        "display_name": "Gianluca Scamacca"
+      },
+      "label": "centre",
+      "value": "centre",
+      "claim": "Gianluca Scamacca took 15 of 21 touches on the centre (kick-off to 77')",
+      "evidence": {
+        "event_count": 21,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 15,
+          "right_half_space": 2,
+          "right_wing": 4
+        },
+        "band_counts": {
+          "own_third": 0,
+          "own_half": 0,
+          "opposition_half": 6,
+          "final_third": 15
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": "centre",
+        "observed_side": "centre",
+        "source": "team_shape_italy.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.team_height.ITA.w0",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Italy",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 76,
+        "source": "on_ball_period",
+        "text": "kick-off to 77'"
+      },
+      "game_states": [
+        "trailing",
+        "level",
+        "leading"
+      ],
+      "subject": null,
+      "label": "opposition_half",
+      "value": 69.25,
+      "claim": "Italy's average position in possession was in the opposition half (kick-off to 77')",
+      "evidence": {
+        "mean_x": 69.25,
+        "eligible_outfield_count": 10,
+        "event_count_total": 974,
+        "source": "team_shape_italy.json#on_ball"
+      },
+      "threshold": {
+        "constant": "HALFWAY_LINE",
+        "value": 60
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.team_width.ITA.w0",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Italy",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 76,
+        "source": "on_ball_period",
+        "text": "kick-off to 77'"
+      },
+      "game_states": [
+        "trailing",
+        "level",
+        "leading"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 56.08,
+      "claim": null,
+      "evidence": {
+        "width": 56.08,
+        "eligible_outfield_count": 10,
+        "source": "team_shape_italy.json#on_ball"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ITA.w1.bryan_cristante",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Italy",
+      "window": {
+        "index": 1,
+        "from_minute": 76,
+        "to_minute": 81,
+        "source": "on_ball_period",
+        "text": "77' to 82'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": {
+        "player": "Bryan Cristante",
+        "display_name": "Bryan Cristante"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Bryan Cristante split touches between the left wing (14) and the left half-space (13) (77' to 82')",
+      "evidence": {
+        "event_count": 35,
+        "lane_counts": {
+          "left_wing": 14,
+          "left_half_space": 13,
+          "centre": 8,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 11,
+          "own_half": 3,
+          "opposition_half": 14,
+          "final_third": 7
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_italy.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ITA.w1.jorginho",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Italy",
+      "window": {
+        "index": 1,
+        "from_minute": 76,
+        "to_minute": 81,
+        "source": "on_ball_period",
+        "text": "77' to 82'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": {
+        "player": "Jorge Luiz Frello Filho",
+        "display_name": "Jorginho"
+      },
+      "label": "right_half_space",
+      "value": "right_half_space",
+      "claim": "Jorginho took 14 of 27 touches on the right half-space (77' to 82')",
+      "evidence": {
+        "event_count": 27,
+        "lane_counts": {
+          "left_wing": 1,
+          "left_half_space": 5,
+          "centre": 7,
+          "right_half_space": 14,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 3,
+          "own_half": 6,
+          "opposition_half": 12,
+          "final_third": 6
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "centre",
+        "observed_side": "right",
+        "source": "team_shape_italy.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ITA.w1.giovanni_di_lorenzo",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Italy",
+      "window": {
+        "index": 1,
+        "from_minute": 76,
+        "to_minute": 81,
+        "source": "on_ball_period",
+        "text": "77' to 82'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": {
+        "player": "Giovanni Di Lorenzo",
+        "display_name": "Giovanni Di Lorenzo"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Giovanni Di Lorenzo took 18 of 21 touches on the right wing (77' to 82')",
+      "evidence": {
+        "event_count": 21,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 0,
+          "right_half_space": 3,
+          "right_wing": 18
+        },
+        "band_counts": {
+          "own_third": 3,
+          "own_half": 0,
+          "opposition_half": 12,
+          "final_third": 6
+        },
+        "band_label": "opposition_half",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_italy.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ITA.w1.riccardo_calafiori",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Italy",
+      "window": {
+        "index": 1,
+        "from_minute": 76,
+        "to_minute": 81,
+        "source": "on_ball_period",
+        "text": "77' to 82'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": {
+        "player": "Riccardo Calafiori",
+        "display_name": "Riccardo Calafiori"
+      },
+      "label": "left_half_space",
+      "value": "left_half_space",
+      "claim": "Riccardo Calafiori took 10 of 16 touches on the left half-space (77' to 82')",
+      "evidence": {
+        "event_count": 16,
+        "lane_counts": {
+          "left_wing": 5,
+          "left_half_space": 10,
+          "centre": 1,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 10,
+          "own_half": 6,
+          "opposition_half": 0,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_italy.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ITA.w1.federico_dimarco",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Italy",
+      "window": {
+        "index": 1,
+        "from_minute": 76,
+        "to_minute": 81,
+        "source": "on_ball_period",
+        "text": "77' to 82'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": {
+        "player": "Federico Dimarco",
+        "display_name": "Federico Dimarco"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "Federico Dimarco took 15 of 16 touches on the left wing (77' to 82')",
+      "evidence": {
+        "event_count": 16,
+        "lane_counts": {
+          "left_wing": 15,
+          "left_half_space": 1,
+          "centre": 0,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 2,
+          "own_half": 2,
+          "opposition_half": 4,
+          "final_third": 8
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_italy.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ITA.w1.nicol_barella",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Italy",
+      "window": {
+        "index": 1,
+        "from_minute": 76,
+        "to_minute": 81,
+        "source": "on_ball_period",
+        "text": "77' to 82'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": {
+        "player": "Nicol\u00f2 Barella",
+        "display_name": "Nicol\u00f2 Barella"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "Nicol\u00f2 Barella took 9 of 14 touches on the left wing (77' to 82')",
+      "evidence": {
+        "event_count": 14,
+        "lane_counts": {
+          "left_wing": 9,
+          "left_half_space": 5,
+          "centre": 0,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 8,
+          "own_half": 0,
+          "opposition_half": 3,
+          "final_third": 3
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_italy.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ITA.w1.andrea_cambiaso",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Italy",
+      "window": {
+        "index": 1,
+        "from_minute": 76,
+        "to_minute": 81,
+        "source": "on_ball_period",
+        "text": "77' to 82'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": {
+        "player": "Andrea Cambiaso",
+        "display_name": "Andrea Cambiaso"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Andrea Cambiaso took 12 of 12 touches on the right wing (77' to 82')",
+      "evidence": {
+        "event_count": 12,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 0,
+          "right_half_space": 0,
+          "right_wing": 12
+        },
+        "band_counts": {
+          "own_third": 0,
+          "own_half": 0,
+          "opposition_half": 6,
+          "final_third": 6
+        },
+        "band_label": "opposition_half",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_italy.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ITA.w1.alessandro_bastoni",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Italy",
+      "window": {
+        "index": 1,
+        "from_minute": 76,
+        "to_minute": 81,
+        "source": "on_ball_period",
+        "text": "77' to 82'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": {
+        "player": "Alessandro Bastoni",
+        "display_name": "Alessandro Bastoni"
+      },
+      "label": "centre",
+      "value": "centre",
+      "claim": "Alessandro Bastoni took 8 of 10 touches on the centre (77' to 82')",
+      "evidence": {
+        "event_count": 10,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 8,
+          "right_half_space": 2,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 7,
+          "own_half": 0,
+          "opposition_half": 3,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "centre",
+        "source": "team_shape_italy.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.team_height.ITA.w1",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Italy",
+      "window": {
+        "index": 1,
+        "from_minute": 76,
+        "to_minute": 81,
+        "source": "on_ball_period",
+        "text": "77' to 82'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": null,
+      "label": "own_half",
+      "value": 58.64,
+      "claim": "Italy's average position in possession was in their own half (77' to 82')",
+      "evidence": {
+        "mean_x": 58.64,
+        "eligible_outfield_count": 8,
+        "event_count_total": 151,
+        "source": "team_shape_italy.json#on_ball"
+      },
+      "threshold": {
+        "constant": "HALFWAY_LINE",
+        "value": 60
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.team_width.ITA.w1",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Italy",
+      "window": {
+        "index": 1,
+        "from_minute": 76,
+        "to_minute": 81,
+        "source": "on_ball_period",
+        "text": "77' to 82'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 64.85,
+      "claim": null,
+      "evidence": {
+        "width": 64.85,
+        "eligible_outfield_count": 8,
+        "source": "team_shape_italy.json#on_ball"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ITA.w2.bryan_cristante",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Italy",
+      "window": {
+        "index": 2,
+        "from_minute": 81,
+        "to_minute": 82,
+        "source": "on_ball_period",
+        "text": "82' to 83'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": {
+        "player": "Bryan Cristante",
+        "display_name": "Bryan Cristante"
+      },
+      "label": "right_half_space",
+      "value": "right_half_space",
+      "claim": "Bryan Cristante took 6 of 12 touches on the right half-space (82' to 83')",
+      "evidence": {
+        "event_count": 12,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 3,
+          "right_half_space": 6,
+          "right_wing": 3
+        },
+        "band_counts": {
+          "own_third": 3,
+          "own_half": 3,
+          "opposition_half": 6,
+          "final_third": 0
+        },
+        "band_label": "opposition_half",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "right",
+        "source": "team_shape_italy.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ITA.w3.jorginho",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Italy",
+      "window": {
+        "index": 3,
+        "from_minute": 82,
+        "to_minute": 91,
+        "source": "on_ball_period",
+        "text": "83' to 90+2'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": {
+        "player": "Jorge Luiz Frello Filho",
+        "display_name": "Jorginho"
+      },
+      "label": "left_half_space",
+      "value": "left_half_space",
+      "claim": "Jorginho took 9 of 12 touches on the left half-space (83' to 90+2')",
+      "evidence": {
+        "event_count": 12,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 9,
+          "centre": 3,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 3,
+          "own_half": 9,
+          "opposition_half": 0,
+          "final_third": 0
+        },
+        "band_label": "own_half",
+        "band_mixed": false,
+        "declared_side": "centre",
+        "observed_side": "left",
+        "source": "team_shape_italy.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ITA.w3.bryan_cristante",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Italy",
+      "window": {
+        "index": 3,
+        "from_minute": 82,
+        "to_minute": 91,
+        "source": "on_ball_period",
+        "text": "83' to 90+2'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": {
+        "player": "Bryan Cristante",
+        "display_name": "Bryan Cristante"
+      },
+      "label": "centre",
+      "value": "centre",
+      "claim": "Bryan Cristante took 7 of 11 touches on the centre (83' to 90+2')",
+      "evidence": {
+        "event_count": 11,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 2,
+          "centre": 7,
+          "right_half_space": 2,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 5,
+          "own_half": 6,
+          "opposition_half": 0,
+          "final_third": 0
+        },
+        "band_label": "own_half",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "centre",
+        "source": "team_shape_italy.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ITA.w3.riccardo_calafiori",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Italy",
+      "window": {
+        "index": 3,
+        "from_minute": 82,
+        "to_minute": 91,
+        "source": "on_ball_period",
+        "text": "83' to 90+2'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": {
+        "player": "Riccardo Calafiori",
+        "display_name": "Riccardo Calafiori"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "Riccardo Calafiori took 10 of 10 touches on the left wing (83' to 90+2')",
+      "evidence": {
+        "event_count": 10,
+        "lane_counts": {
+          "left_wing": 10,
+          "left_half_space": 0,
+          "centre": 0,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 0,
+          "own_half": 10,
+          "opposition_half": 0,
+          "final_third": 0
+        },
+        "band_label": "own_half",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_italy.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w0.ylber_ramadani",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 67,
+        "source": "on_ball_period",
+        "text": "kick-off to 68'"
+      },
+      "game_states": [
+        "leading",
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Ylber Ramadani",
+        "display_name": "Ylber Ramadani"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Ylber Ramadani split touches between the centre (18) and the right half-space (15) (kick-off to 68')",
+      "evidence": {
+        "event_count": 44,
+        "lane_counts": {
+          "left_wing": 1,
+          "left_half_space": 2,
+          "centre": 18,
+          "right_half_space": 15,
+          "right_wing": 8
+        },
+        "band_counts": {
+          "own_third": 12,
+          "own_half": 11,
+          "opposition_half": 21,
+          "final_third": 0
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "right",
+        "observed_side": "centre",
+        "source": "team_shape_albania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w0.nedim_bajrami",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 67,
+        "source": "on_ball_period",
+        "text": "kick-off to 68'"
+      },
+      "game_states": [
+        "leading",
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Nedim Bajrami",
+        "display_name": "Nedim Bajrami"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Nedim Bajrami split touches between the left half-space (19) and the centre (10) (kick-off to 68')",
+      "evidence": {
+        "event_count": 41,
+        "lane_counts": {
+          "left_wing": 5,
+          "left_half_space": 19,
+          "centre": 10,
+          "right_half_space": 4,
+          "right_wing": 3
+        },
+        "band_counts": {
+          "own_third": 9,
+          "own_half": 10,
+          "opposition_half": 21,
+          "final_third": 1
+        },
+        "band_label": "opposition_half",
+        "band_mixed": false,
+        "declared_side": "centre",
+        "observed_side": "left",
+        "source": "team_shape_albania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w0.taulant_seferi",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 67,
+        "source": "on_ball_period",
+        "text": "kick-off to 68'"
+      },
+      "game_states": [
+        "leading",
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Taulant Sulejmanov",
+        "display_name": "Taulant Seferi"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "Taulant Seferi took 17 of 27 touches on the left wing (kick-off to 68')",
+      "evidence": {
+        "event_count": 27,
+        "lane_counts": {
+          "left_wing": 17,
+          "left_half_space": 9,
+          "centre": 1,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 9,
+          "own_half": 5,
+          "opposition_half": 11,
+          "final_third": 2
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_albania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w0.kristjan_asllani",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 67,
+        "source": "on_ball_period",
+        "text": "kick-off to 68'"
+      },
+      "game_states": [
+        "leading",
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Kristjan Asllani",
+        "display_name": "Kristjan Asllani"
+      },
+      "label": "centre",
+      "value": "centre",
+      "claim": "Kristjan Asllani took 14 of 26 touches on the centre (kick-off to 68')",
+      "evidence": {
+        "event_count": 26,
+        "lane_counts": {
+          "left_wing": 2,
+          "left_half_space": 1,
+          "centre": 14,
+          "right_half_space": 6,
+          "right_wing": 3
+        },
+        "band_counts": {
+          "own_third": 10,
+          "own_half": 7,
+          "opposition_half": 9,
+          "final_third": 0
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "centre",
+        "source": "team_shape_albania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w0.arlind_afrim_ajeti",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 67,
+        "source": "on_ball_period",
+        "text": "kick-off to 68'"
+      },
+      "game_states": [
+        "leading",
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Arlind Afrim Ajeti",
+        "display_name": "Arlind Afrim Ajeti"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Arlind Afrim Ajeti split touches between the right half-space (12) and the right wing (11) (kick-off to 68')",
+      "evidence": {
+        "event_count": 26,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 3,
+          "right_half_space": 12,
+          "right_wing": 11
+        },
+        "band_counts": {
+          "own_third": 15,
+          "own_half": 8,
+          "opposition_half": 3,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_albania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w0.mario_mitaj",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 67,
+        "source": "on_ball_period",
+        "text": "kick-off to 68'"
+      },
+      "game_states": [
+        "leading",
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Mario Mitaj",
+        "display_name": "Mario Mitaj"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "Mario Mitaj took 23 of 25 touches on the left wing (kick-off to 68')",
+      "evidence": {
+        "event_count": 25,
+        "lane_counts": {
+          "left_wing": 23,
+          "left_half_space": 2,
+          "centre": 0,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 7,
+          "own_half": 8,
+          "opposition_half": 10,
+          "final_third": 0
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_albania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w0.jasir_asani",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 67,
+        "source": "on_ball_period",
+        "text": "kick-off to 68'"
+      },
+      "game_states": [
+        "leading",
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Jasir Asani",
+        "display_name": "Jasir Asani"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Jasir Asani took 20 of 24 touches on the right wing (kick-off to 68')",
+      "evidence": {
+        "event_count": 24,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 4,
+          "centre": 0,
+          "right_half_space": 0,
+          "right_wing": 20
+        },
+        "band_counts": {
+          "own_third": 4,
+          "own_half": 8,
+          "opposition_half": 2,
+          "final_third": 10
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_albania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w0.berat_djimsiti",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 67,
+        "source": "on_ball_period",
+        "text": "kick-off to 68'"
+      },
+      "game_states": [
+        "leading",
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Berat Djimsiti",
+        "display_name": "Berat Djimsiti"
+      },
+      "label": "left_half_space",
+      "value": "left_half_space",
+      "claim": "Berat Djimsiti took 14 of 24 touches on the left half-space (kick-off to 68')",
+      "evidence": {
+        "event_count": 24,
+        "lane_counts": {
+          "left_wing": 5,
+          "left_half_space": 14,
+          "centre": 5,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 12,
+          "own_half": 11,
+          "opposition_half": 1,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_albania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w0.elseid_hysaj",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 67,
+        "source": "on_ball_period",
+        "text": "kick-off to 68'"
+      },
+      "game_states": [
+        "leading",
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Elseid Hysaj",
+        "display_name": "Elseid Hysaj"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Elseid Hysaj took 16 of 17 touches on the right wing (kick-off to 68')",
+      "evidence": {
+        "event_count": 17,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 0,
+          "right_half_space": 1,
+          "right_wing": 16
+        },
+        "band_counts": {
+          "own_third": 1,
+          "own_half": 2,
+          "opposition_half": 8,
+          "final_third": 6
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_albania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w0.armando_broja",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 67,
+        "source": "on_ball_period",
+        "text": "kick-off to 68'"
+      },
+      "game_states": [
+        "leading",
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Armando Broja",
+        "display_name": "Armando Broja"
+      },
+      "label": "centre",
+      "value": "centre",
+      "claim": "Armando Broja took 9 of 16 touches on the centre (kick-off to 68')",
+      "evidence": {
+        "event_count": 16,
+        "lane_counts": {
+          "left_wing": 5,
+          "left_half_space": 1,
+          "centre": 9,
+          "right_half_space": 0,
+          "right_wing": 1
+        },
+        "band_counts": {
+          "own_third": 2,
+          "own_half": 2,
+          "opposition_half": 6,
+          "final_third": 6
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "centre",
+        "observed_side": "centre",
+        "source": "team_shape_albania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w0.thomas_strakosha",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 67,
+        "source": "on_ball_period",
+        "text": "kick-off to 68'"
+      },
+      "game_states": [
+        "leading",
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Thomas Strakosha",
+        "display_name": "Thomas Strakosha"
+      },
+      "label": "centre",
+      "value": "centre",
+      "claim": "Thomas Strakosha took 12 of 15 touches on the centre (kick-off to 68')",
+      "evidence": {
+        "event_count": 15,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 3,
+          "centre": 12,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 15,
+          "own_half": 0,
+          "opposition_half": 0,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": null,
+        "observed_side": "centre",
+        "source": "team_shape_albania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.team_height.ALB.w0",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Albania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 67,
+        "source": "on_ball_period",
+        "text": "kick-off to 68'"
+      },
+      "game_states": [
+        "leading",
+        "level",
+        "trailing"
+      ],
+      "subject": null,
+      "label": "own_half",
+      "value": 54.36,
+      "claim": "Albania's average position in possession was in their own half (kick-off to 68')",
+      "evidence": {
+        "mean_x": 54.36,
+        "eligible_outfield_count": 10,
+        "event_count_total": 270,
+        "source": "team_shape_albania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "HALFWAY_LINE",
+        "value": 60
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.team_width.ALB.w0",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Albania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 67,
+        "source": "on_ball_period",
+        "text": "kick-off to 68'"
+      },
+      "game_states": [
+        "leading",
+        "level",
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 61.91,
+      "claim": null,
+      "evidence": {
+        "width": 61.91,
+        "eligible_outfield_count": 10,
+        "source": "team_shape_albania.json#on_ball"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w2.kristjan_asllani",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 2,
+        "from_minute": 75,
+        "to_minute": 86,
+        "source": "on_ball_period",
+        "text": "76' to 87'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "Kristjan Asllani",
+        "display_name": "Kristjan Asllani"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Kristjan Asllani split touches between the left half-space (9) and the right half-space (9) (76' to 87')",
+      "evidence": {
+        "event_count": 21,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 9,
+          "centre": 3,
+          "right_half_space": 9,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 4,
+          "own_half": 14,
+          "opposition_half": 3,
+          "final_third": 0
+        },
+        "band_label": "own_half",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_albania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w2.elseid_hysaj",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 2,
+        "from_minute": 75,
+        "to_minute": 86,
+        "source": "on_ball_period",
+        "text": "76' to 87'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "Elseid Hysaj",
+        "display_name": "Elseid Hysaj"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Elseid Hysaj took 9 of 12 touches on the right wing (76' to 87')",
+      "evidence": {
+        "event_count": 12,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 0,
+          "right_half_space": 3,
+          "right_wing": 9
+        },
+        "band_counts": {
+          "own_third": 6,
+          "own_half": 6,
+          "opposition_half": 0,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_albania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w2.berat_djimsiti",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 2,
+        "from_minute": 75,
+        "to_minute": 86,
+        "source": "on_ball_period",
+        "text": "76' to 87'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "Berat Djimsiti",
+        "display_name": "Berat Djimsiti"
+      },
+      "label": "left_half_space",
+      "value": "left_half_space",
+      "claim": "Berat Djimsiti took 11 of 11 touches on the left half-space (76' to 87')",
+      "evidence": {
+        "event_count": 11,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 11,
+          "centre": 0,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 3,
+          "own_half": 8,
+          "opposition_half": 0,
+          "final_third": 0
+        },
+        "band_label": "own_half",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_albania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w2.mario_mitaj",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 2,
+        "from_minute": 75,
+        "to_minute": 86,
+        "source": "on_ball_period",
+        "text": "76' to 87'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "Mario Mitaj",
+        "display_name": "Mario Mitaj"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "Mario Mitaj took 10 of 10 touches on the left wing (76' to 87')",
+      "evidence": {
+        "event_count": 10,
+        "lane_counts": {
+          "left_wing": 10,
+          "left_half_space": 0,
+          "centre": 0,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 4,
+          "own_half": 3,
+          "opposition_half": 3,
+          "final_third": 0
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_albania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w3.kristjan_asllani",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 3,
+        "from_minute": 86,
+        "to_minute": 96,
+        "source": "on_ball_period",
+        "text": "87' to full time"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "Kristjan Asllani",
+        "display_name": "Kristjan Asllani"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Kristjan Asllani split touches between the left half-space (8) and the centre (7) (87' to full time)",
+      "evidence": {
+        "event_count": 24,
+        "lane_counts": {
+          "left_wing": 3,
+          "left_half_space": 8,
+          "centre": 7,
+          "right_half_space": 4,
+          "right_wing": 2
+        },
+        "band_counts": {
+          "own_third": 3,
+          "own_half": 12,
+          "opposition_half": 7,
+          "final_third": 2
+        },
+        "band_label": "own_half",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_albania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w3.arlind_afrim_ajeti",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 3,
+        "from_minute": 86,
+        "to_minute": 96,
+        "source": "on_ball_period",
+        "text": "87' to full time"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "Arlind Afrim Ajeti",
+        "display_name": "Arlind Afrim Ajeti"
+      },
+      "label": "right_half_space",
+      "value": "right_half_space",
+      "claim": "Arlind Afrim Ajeti took 11 of 18 touches on the right half-space (87' to full time)",
+      "evidence": {
+        "event_count": 18,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 5,
+          "right_half_space": 11,
+          "right_wing": 2
+        },
+        "band_counts": {
+          "own_third": 2,
+          "own_half": 16,
+          "opposition_half": 0,
+          "final_third": 0
+        },
+        "band_label": "own_half",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_albania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w3.mario_mitaj",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 3,
+        "from_minute": 86,
+        "to_minute": 96,
+        "source": "on_ball_period",
+        "text": "87' to full time"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "Mario Mitaj",
+        "display_name": "Mario Mitaj"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "Mario Mitaj took 11 of 16 touches on the left wing (87' to full time)",
+      "evidence": {
+        "event_count": 16,
+        "lane_counts": {
+          "left_wing": 11,
+          "left_half_space": 5,
+          "centre": 0,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 6,
+          "own_half": 4,
+          "opposition_half": 3,
+          "final_third": 3
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_albania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w3.berat_djimsiti",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 3,
+        "from_minute": 86,
+        "to_minute": 96,
+        "source": "on_ball_period",
+        "text": "87' to full time"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "Berat Djimsiti",
+        "display_name": "Berat Djimsiti"
+      },
+      "label": "left_half_space",
+      "value": "left_half_space",
+      "claim": "Berat Djimsiti took 13 of 16 touches on the left half-space (87' to full time)",
+      "evidence": {
+        "event_count": 16,
+        "lane_counts": {
+          "left_wing": 1,
+          "left_half_space": 13,
+          "centre": 2,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 6,
+          "own_half": 5,
+          "opposition_half": 4,
+          "final_third": 1
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_albania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w3.elseid_hysaj",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 3,
+        "from_minute": 86,
+        "to_minute": 96,
+        "source": "on_ball_period",
+        "text": "87' to full time"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "Elseid Hysaj",
+        "display_name": "Elseid Hysaj"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Elseid Hysaj took 12 of 13 touches on the right wing (87' to full time)",
+      "evidence": {
+        "event_count": 13,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 1,
+          "right_half_space": 0,
+          "right_wing": 12
+        },
+        "band_counts": {
+          "own_third": 2,
+          "own_half": 6,
+          "opposition_half": 5,
+          "final_third": 0
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_albania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w3.qazim_la_i",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 3,
+        "from_minute": 86,
+        "to_minute": 96,
+        "source": "on_ball_period",
+        "text": "87' to full time"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "Qazim La\u00e7i",
+        "display_name": "Qazim La\u00e7i"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Qazim La\u00e7i took 11 of 13 touches on the right wing (87' to full time)",
+      "evidence": {
+        "event_count": 13,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 0,
+          "right_half_space": 2,
+          "right_wing": 11
+        },
+        "band_counts": {
+          "own_third": 0,
+          "own_half": 0,
+          "opposition_half": 12,
+          "final_third": 1
+        },
+        "band_label": "opposition_half",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_albania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w3.ernest_mu_i",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 3,
+        "from_minute": 86,
+        "to_minute": 96,
+        "source": "on_ball_period",
+        "text": "87' to full time"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "Ernest Mu\u00e7i",
+        "display_name": "Ernest Mu\u00e7i"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Ernest Mu\u00e7i took 6 of 11 touches on the right wing (87' to full time)",
+      "evidence": {
+        "event_count": 11,
+        "lane_counts": {
+          "left_wing": 2,
+          "left_half_space": 0,
+          "centre": 2,
+          "right_half_space": 1,
+          "right_wing": 6
+        },
+        "band_counts": {
+          "own_third": 0,
+          "own_half": 0,
+          "opposition_half": 9,
+          "final_third": 2
+        },
+        "band_label": "opposition_half",
+        "band_mixed": false,
+        "declared_side": null,
+        "observed_side": "right",
+        "source": "team_shape_albania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "out_of_possession.block_height.ITA.whole_match",
+      "category": "out_of_possession",
+      "type": "block_height",
+      "team": "Italy",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": null,
+        "source": "whole_match",
+        "text": "kick-off to full time"
+      },
+      "game_states": [
+        "trailing",
+        "level",
+        "leading"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 55.13,
+      "claim": null,
+      "evidence": {
+        "centroid_x": 55.13,
+        "camera_caveat": "360 frames follow the ball; the visible subset of out-of-possession positions is biased toward areas near the ball. The camera artifact and the real defensive shape point the same direction \u2014 they cannot be cleanly separated.",
+        "source": "team_shape_italy.json#off_ball.centroid"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "out_of_possession.block_height.ALB.whole_match",
+      "category": "out_of_possession",
+      "type": "block_height",
+      "team": "Albania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": null,
+        "source": "whole_match",
+        "text": "kick-off to full time"
+      },
+      "game_states": [
+        "leading",
+        "level",
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 41.61,
+      "claim": null,
+      "evidence": {
+        "centroid_x": 41.61,
+        "camera_caveat": "360 frames follow the ball; the visible subset of out-of-possession positions is biased toward areas near the ball. The camera artifact and the real defensive shape point the same direction \u2014 they cannot be cleanly separated.",
+        "source": "team_shape_albania.json#off_ball.centroid"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.ITA.w0.giovanni_di_lorenzo",
+      "category": "passing",
+      "type": "hub",
+      "team": "Italy",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 76,
+        "source": "pass_network_window",
+        "text": "kick-off to 77'"
+      },
+      "game_states": [
+        "trailing",
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Giovanni Di Lorenzo",
+        "display_name": "Giovanni Di Lorenzo"
+      },
+      "label": null,
+      "value": 0.1599,
+      "claim": "Giovanni Di Lorenzo was a hub for Italy, involved in 16.0% of passes (kick-off to 77')",
+      "evidence": {
+        "passes_made": 106,
+        "passes_received": 98,
+        "share": 0.1599,
+        "source": "pass_network_Italy.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.0658307210031348,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.ITA.w0.jorginho",
+      "category": "passing",
+      "type": "hub",
+      "team": "Italy",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 76,
+        "source": "pass_network_window",
+        "text": "kick-off to 77'"
+      },
+      "game_states": [
+        "trailing",
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Jorge Luiz Frello Filho",
+        "display_name": "Jorginho"
+      },
+      "label": null,
+      "value": 0.1528,
+      "claim": "Jorginho was a hub for Italy, involved in 15.3% of passes (kick-off to 77')",
+      "evidence": {
+        "passes_made": 95,
+        "passes_received": 100,
+        "share": 0.1528,
+        "source": "pass_network_Italy.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.0188087774294672,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.ITA.w0.nicol_barella",
+      "category": "passing",
+      "type": "hub",
+      "team": "Italy",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 76,
+        "source": "pass_network_window",
+        "text": "kick-off to 77'"
+      },
+      "game_states": [
+        "trailing",
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Nicol\u00f2 Barella",
+        "display_name": "Nicol\u00f2 Barella"
+      },
+      "label": null,
+      "value": 0.1552,
+      "claim": "Nicol\u00f2 Barella was a hub for Italy, involved in 15.5% of passes (kick-off to 77')",
+      "evidence": {
+        "passes_made": 98,
+        "passes_received": 100,
+        "share": 0.1552,
+        "source": "pass_network_Italy.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.0344827586206897,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.ITA.w0.giovanni_di_lorenzo_jorginho",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Italy",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 76,
+        "source": "pass_network_window",
+        "text": "kick-off to 77'"
+      },
+      "game_states": [
+        "trailing",
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "pair": [
+          "Giovanni Di Lorenzo",
+          "Jorginho"
+        ]
+      },
+      "label": null,
+      "value": 53,
+      "claim": "Giovanni Di Lorenzo and Jorginho combined 53 times (kick-off to 77')",
+      "evidence": {
+        "bidirectional_total": 53,
+        "source": "pass_network_Italy.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.6614420062695925,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.ITA.w0.nicol_barella_jorginho",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Italy",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 76,
+        "source": "pass_network_window",
+        "text": "kick-off to 77'"
+      },
+      "game_states": [
+        "trailing",
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "pair": [
+          "Nicol\u00f2 Barella",
+          "Jorginho"
+        ]
+      },
+      "label": null,
+      "value": 47,
+      "claim": "Nicol\u00f2 Barella and Jorginho combined 47 times (kick-off to 77')",
+      "evidence": {
+        "bidirectional_total": 47,
+        "source": "pass_network_Italy.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.4733542319749215,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.ITA.w0.giovanni_di_lorenzo_alessandro_bastoni",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Italy",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 76,
+        "source": "pass_network_window",
+        "text": "kick-off to 77'"
+      },
+      "game_states": [
+        "trailing",
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "pair": [
+          "Giovanni Di Lorenzo",
+          "Alessandro Bastoni"
+        ]
+      },
+      "label": null,
+      "value": 42,
+      "claim": "Giovanni Di Lorenzo and Alessandro Bastoni combined 42 times (kick-off to 77')",
+      "evidence": {
+        "bidirectional_total": 42,
+        "source": "pass_network_Italy.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.3166144200626957,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.ITA.w0.alessandro_bastoni_riccardo_calafiori",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Italy",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 76,
+        "source": "pass_network_window",
+        "text": "kick-off to 77'"
+      },
+      "game_states": [
+        "trailing",
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "pair": [
+          "Alessandro Bastoni",
+          "Riccardo Calafiori"
+        ]
+      },
+      "label": null,
+      "value": 42,
+      "claim": "Alessandro Bastoni and Riccardo Calafiori combined 42 times (kick-off to 77')",
+      "evidence": {
+        "bidirectional_total": 42,
+        "source": "pass_network_Italy.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.3166144200626957,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.concentration.ITA.w0",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Italy",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 76,
+        "source": "pass_network_window",
+        "text": "kick-off to 77'"
+      },
+      "game_states": [
+        "trailing",
+        "level",
+        "leading"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 0.4679,
+      "claim": null,
+      "evidence": {
+        "top3_share": 0.4679,
+        "window_passes": 638,
+        "source": "pass_network_Italy.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.ITA.w1.bryan_cristante",
+      "category": "passing",
+      "type": "hub",
+      "team": "Italy",
+      "window": {
+        "index": 1,
+        "from_minute": 76,
+        "to_minute": 81,
+        "source": "pass_network_window",
+        "text": "77' to 82'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": {
+        "player": "Bryan Cristante",
+        "display_name": "Bryan Cristante"
+      },
+      "label": null,
+      "value": 0.2264,
+      "claim": "Bryan Cristante was a hub for Italy, involved in 22.6% of passes (77' to 82')",
+      "evidence": {
+        "passes_made": 12,
+        "passes_received": 12,
+        "share": 0.2264,
+        "source": "pass_network_Italy.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.509433962264151,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.ITA.w1.jorginho",
+      "category": "passing",
+      "type": "hub",
+      "team": "Italy",
+      "window": {
+        "index": 1,
+        "from_minute": 76,
+        "to_minute": 81,
+        "source": "pass_network_window",
+        "text": "77' to 82'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": {
+        "player": "Jorge Luiz Frello Filho",
+        "display_name": "Jorginho"
+      },
+      "label": null,
+      "value": 0.1604,
+      "claim": "Jorginho was a hub for Italy, involved in 16.0% of passes (77' to 82')",
+      "evidence": {
+        "passes_made": 8,
+        "passes_received": 9,
+        "share": 0.1604,
+        "source": "pass_network_Italy.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.069182389937107,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.concentration.ITA.w1",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Italy",
+      "window": {
+        "index": 1,
+        "from_minute": 76,
+        "to_minute": 81,
+        "source": "pass_network_window",
+        "text": "77' to 82'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 0.5094,
+      "claim": null,
+      "evidence": {
+        "top3_share": 0.5094,
+        "window_passes": 53,
+        "source": "pass_network_Italy.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.ITA.w3.jorginho",
+      "category": "passing",
+      "type": "hub",
+      "team": "Italy",
+      "window": {
+        "index": 3,
+        "from_minute": 82,
+        "to_minute": 91,
+        "source": "pass_network_window",
+        "text": "83' to 90+2'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": {
+        "player": "Jorge Luiz Frello Filho",
+        "display_name": "Jorginho"
+      },
+      "label": null,
+      "value": 0.1953,
+      "claim": "Jorginho was a hub for Italy, involved in 19.5% of passes (83' to 90+2')",
+      "evidence": {
+        "passes_made": 13,
+        "passes_received": 12,
+        "share": 0.1953,
+        "source": "pass_network_Italy.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.3020833333333335,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.ITA.w3.riccardo_calafiori",
+      "category": "passing",
+      "type": "hub",
+      "team": "Italy",
+      "window": {
+        "index": 3,
+        "from_minute": 82,
+        "to_minute": 91,
+        "source": "pass_network_window",
+        "text": "83' to 90+2'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": {
+        "player": "Riccardo Calafiori",
+        "display_name": "Riccardo Calafiori"
+      },
+      "label": null,
+      "value": 0.1875,
+      "claim": "Riccardo Calafiori was a hub for Italy, involved in 18.8% of passes (83' to 90+2')",
+      "evidence": {
+        "passes_made": 12,
+        "passes_received": 12,
+        "share": 0.1875,
+        "source": "pass_network_Italy.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.25,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.ITA.w3.jorginho_riccardo_calafiori",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Italy",
+      "window": {
+        "index": 3,
+        "from_minute": 82,
+        "to_minute": 91,
+        "source": "pass_network_window",
+        "text": "83' to 90+2'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": {
+        "pair": [
+          "Jorginho",
+          "Riccardo Calafiori"
+        ]
+      },
+      "label": null,
+      "value": 9,
+      "claim": "Jorginho and Riccardo Calafiori combined 9 times (83' to 90+2')",
+      "evidence": {
+        "bidirectional_total": 9,
+        "source": "pass_network_Italy.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 2.8125,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.concentration.ITA.w3",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Italy",
+      "window": {
+        "index": 3,
+        "from_minute": 82,
+        "to_minute": 91,
+        "source": "pass_network_window",
+        "text": "83' to 90+2'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 0.5156,
+      "claim": null,
+      "evidence": {
+        "top3_share": 0.5156,
+        "window_passes": 64,
+        "source": "pass_network_Italy.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.ALB.w0.berat_djimsiti",
+      "category": "passing",
+      "type": "hub",
+      "team": "Albania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 67,
+        "source": "pass_network_window",
+        "text": "kick-off to 68'"
+      },
+      "game_states": [
+        "leading",
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Berat Djimsiti",
+        "display_name": "Berat Djimsiti"
+      },
+      "label": null,
+      "value": 0.1553,
+      "claim": "Berat Djimsiti was a hub for Albania, involved in 15.5% of passes (kick-off to 68')",
+      "evidence": {
+        "passes_made": 35,
+        "passes_received": 38,
+        "share": 0.1553,
+        "source": "pass_network_Albania.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.0354609929078016,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.ALB.w0.berat_djimsiti_kristjan_asllani",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Albania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 67,
+        "source": "pass_network_window",
+        "text": "kick-off to 68'"
+      },
+      "game_states": [
+        "leading",
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "pair": [
+          "Berat Djimsiti",
+          "Kristjan Asllani"
+        ]
+      },
+      "label": null,
+      "value": 20,
+      "claim": "Berat Djimsiti and Kristjan Asllani combined 20 times (kick-off to 68')",
+      "evidence": {
+        "bidirectional_total": 20,
+        "source": "pass_network_Albania.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.7021276595744679,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.ALB.w0.berat_djimsiti_mario_mitaj",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Albania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 67,
+        "source": "pass_network_window",
+        "text": "kick-off to 68'"
+      },
+      "game_states": [
+        "leading",
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "pair": [
+          "Berat Djimsiti",
+          "Mario Mitaj"
+        ]
+      },
+      "label": null,
+      "value": 16,
+      "claim": "Berat Djimsiti and Mario Mitaj combined 16 times (kick-off to 68')",
+      "evidence": {
+        "bidirectional_total": 16,
+        "source": "pass_network_Albania.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.3617021276595744,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.ALB.w0.kristjan_asllani_arlind_afrim_ajeti",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Albania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 67,
+        "source": "pass_network_window",
+        "text": "kick-off to 68'"
+      },
+      "game_states": [
+        "leading",
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "pair": [
+          "Kristjan Asllani",
+          "Arlind Afrim Ajeti"
+        ]
+      },
+      "label": null,
+      "value": 15,
+      "claim": "Kristjan Asllani and Arlind Afrim Ajeti combined 15 times (kick-off to 68')",
+      "evidence": {
+        "bidirectional_total": 15,
+        "source": "pass_network_Albania.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.276595744680851,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.concentration.ALB.w0",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Albania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 67,
+        "source": "pass_network_window",
+        "text": "kick-off to 68'"
+      },
+      "game_states": [
+        "leading",
+        "level",
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 0.4319,
+      "claim": null,
+      "evidence": {
+        "top3_share": 0.4319,
+        "window_passes": 235,
+        "source": "pass_network_Albania.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.ALB.w2.berat_djimsiti",
+      "category": "passing",
+      "type": "hub",
+      "team": "Albania",
+      "window": {
+        "index": 2,
+        "from_minute": 75,
+        "to_minute": 86,
+        "source": "pass_network_window",
+        "text": "76' to 87'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "Berat Djimsiti",
+        "display_name": "Berat Djimsiti"
+      },
+      "label": null,
+      "value": 0.1707,
+      "claim": "Berat Djimsiti was a hub for Albania, involved in 17.1% of passes (76' to 87')",
+      "evidence": {
+        "passes_made": 7,
+        "passes_received": 7,
+        "share": 0.1707,
+        "source": "pass_network_Albania.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.1382113821138213,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.ALB.w2.kristjan_asllani",
+      "category": "passing",
+      "type": "hub",
+      "team": "Albania",
+      "window": {
+        "index": 2,
+        "from_minute": 75,
+        "to_minute": 86,
+        "source": "pass_network_window",
+        "text": "76' to 87'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "Kristjan Asllani",
+        "display_name": "Kristjan Asllani"
+      },
+      "label": null,
+      "value": 0.2439,
+      "claim": "Kristjan Asllani was a hub for Albania, involved in 24.4% of passes (76' to 87')",
+      "evidence": {
+        "passes_made": 10,
+        "passes_received": 10,
+        "share": 0.2439,
+        "source": "pass_network_Albania.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.6260162601626016,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.concentration.ALB.w2",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Albania",
+      "window": {
+        "index": 2,
+        "from_minute": 75,
+        "to_minute": 86,
+        "source": "pass_network_window",
+        "text": "76' to 87'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 0.5366,
+      "claim": null,
+      "evidence": {
+        "top3_share": 0.5366,
+        "window_passes": 41,
+        "source": "pass_network_Albania.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.ALB.w3.arlind_afrim_ajeti",
+      "category": "passing",
+      "type": "hub",
+      "team": "Albania",
+      "window": {
+        "index": 3,
+        "from_minute": 86,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "87' to full time"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "Arlind Afrim Ajeti",
+        "display_name": "Arlind Afrim Ajeti"
+      },
+      "label": null,
+      "value": 0.16,
+      "claim": "Arlind Afrim Ajeti was a hub for Albania, involved in 16.0% of passes (87' to full time)",
+      "evidence": {
+        "passes_made": 8,
+        "passes_received": 8,
+        "share": 0.16,
+        "source": "pass_network_Albania.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.0666666666666667,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.ALB.w3.berat_djimsiti",
+      "category": "passing",
+      "type": "hub",
+      "team": "Albania",
+      "window": {
+        "index": 3,
+        "from_minute": 86,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "87' to full time"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "Berat Djimsiti",
+        "display_name": "Berat Djimsiti"
+      },
+      "label": null,
+      "value": 0.15,
+      "claim": "Berat Djimsiti was a hub for Albania, involved in 15.0% of passes (87' to full time)",
+      "evidence": {
+        "passes_made": 8,
+        "passes_received": 7,
+        "share": 0.15,
+        "source": "pass_network_Albania.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.ALB.w3.kristjan_asllani",
+      "category": "passing",
+      "type": "hub",
+      "team": "Albania",
+      "window": {
+        "index": 3,
+        "from_minute": 86,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "87' to full time"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "Kristjan Asllani",
+        "display_name": "Kristjan Asllani"
+      },
+      "label": null,
+      "value": 0.17,
+      "claim": "Kristjan Asllani was a hub for Albania, involved in 17.0% of passes (87' to full time)",
+      "evidence": {
+        "passes_made": 8,
+        "passes_received": 9,
+        "share": 0.17,
+        "source": "pass_network_Albania.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.1333333333333335,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.concentration.ALB.w3",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Albania",
+      "window": {
+        "index": 3,
+        "from_minute": 86,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "87' to full time"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 0.48,
+      "claim": null,
+      "evidence": {
+        "top3_share": 0.48,
+        "window_passes": 50,
+        "source": "pass_network_Albania.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "cross.comparison.block_height.ALB",
+      "category": "cross_cutting",
+      "type": "comparison",
+      "team": "Albania",
+      "window": null,
+      "game_states": [],
+      "subject": null,
+      "label": "deeper",
+      "value": 13.52,
+      "claim": "Albania's average out-of-possession position was 13.5 yards deeper than Italy's",
+      "evidence": {
+        "deeper_x": 41.61,
+        "other_x": 55.13,
+        "gap": 13.52
+      },
+      "threshold": {
+        "constant": "COMPARE_MIN_YARDS",
+        "value": 5
+      },
+      "notability": 2.7040000000000006,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "cross.comparison.team_height.ITA",
+      "category": "cross_cutting",
+      "type": "comparison",
+      "team": "Italy",
+      "window": null,
+      "game_states": [],
+      "subject": null,
+      "label": "higher",
+      "value": 14.89,
+      "claim": "Italy's average position in possession was 14.9 yards higher than Albania's (Italy kick-off to 77', Albania kick-off to 68')",
+      "evidence": {
+        "higher_value": 69.25,
+        "other_value": 54.36,
+        "gap": 14.89
+      },
+      "threshold": {
+        "constant": "COMPARE_MIN_YARDS",
+        "value": 5
+      },
+      "notability": 2.978,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "cross.comparison.team_width.ALB",
+      "category": "cross_cutting",
+      "type": "comparison",
+      "team": "Albania",
+      "window": null,
+      "game_states": [],
+      "subject": null,
+      "label": "wider",
+      "value": 5.83,
+      "claim": null,
+      "evidence": {
+        "gap": 5.83
+      },
+      "threshold": {
+        "constant": "COMPARE_MIN_YARDS",
+        "value": 5
+      },
+      "notability": 1.1659999999999997,
+      "definitions_version": "0.1.0"
+    }
+  ],
+  "suppressed": [
+    {
+      "id": "in_possession.player_zone.ITA.w1.davide_frattesi",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Italy",
+      "window": {
+        "index": 1,
+        "from_minute": 76,
+        "to_minute": 81,
+        "source": "on_ball_period",
+        "text": "77' to 82'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 8,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ITA.w1.gianluigi_donnarumma",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Italy",
+      "window": {
+        "index": 1,
+        "from_minute": 76,
+        "to_minute": 81,
+        "source": "on_ball_period",
+        "text": "77' to 82'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 2,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ITA.w2.jorginho",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Italy",
+      "window": {
+        "index": 2,
+        "from_minute": 81,
+        "to_minute": 82,
+        "source": "on_ball_period",
+        "text": "82' to 83'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 7,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ITA.w2.alessandro_bastoni",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Italy",
+      "window": {
+        "index": 2,
+        "from_minute": 81,
+        "to_minute": 82,
+        "source": "on_ball_period",
+        "text": "82' to 83'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 6,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ITA.w2.riccardo_calafiori",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Italy",
+      "window": {
+        "index": 2,
+        "from_minute": 81,
+        "to_minute": 82,
+        "source": "on_ball_period",
+        "text": "82' to 83'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 6,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ITA.w2.federico_dimarco",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Italy",
+      "window": {
+        "index": 2,
+        "from_minute": 81,
+        "to_minute": 82,
+        "source": "on_ball_period",
+        "text": "82' to 83'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ITA.w2.giovanni_di_lorenzo",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Italy",
+      "window": {
+        "index": 2,
+        "from_minute": 81,
+        "to_minute": 82,
+        "source": "on_ball_period",
+        "text": "82' to 83'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ITA.w2.andrea_cambiaso",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Italy",
+      "window": {
+        "index": 2,
+        "from_minute": 81,
+        "to_minute": 82,
+        "source": "on_ball_period",
+        "text": "82' to 83'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 1,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.team_height.ITA.w2",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Italy",
+      "window": {
+        "index": 2,
+        "from_minute": 81,
+        "to_minute": 82,
+        "source": "on_ball_period",
+        "text": "82' to 83'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 1,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_width.ITA.w2",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Italy",
+      "window": {
+        "index": 2,
+        "from_minute": 81,
+        "to_minute": 82,
+        "source": "on_ball_period",
+        "text": "82' to 83'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 1,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ITA.w3.nicol_barella",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Italy",
+      "window": {
+        "index": 3,
+        "from_minute": 82,
+        "to_minute": 91,
+        "source": "on_ball_period",
+        "text": "83' to 90+2'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 6,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ITA.w3.davide_frattesi",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Italy",
+      "window": {
+        "index": 3,
+        "from_minute": 82,
+        "to_minute": 91,
+        "source": "on_ball_period",
+        "text": "83' to 90+2'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 6,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ITA.w3.andrea_cambiaso",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Italy",
+      "window": {
+        "index": 3,
+        "from_minute": 82,
+        "to_minute": 91,
+        "source": "on_ball_period",
+        "text": "83' to 90+2'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 5,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ITA.w3.matteo_darmian",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Italy",
+      "window": {
+        "index": 3,
+        "from_minute": 82,
+        "to_minute": 91,
+        "source": "on_ball_period",
+        "text": "83' to 90+2'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 4,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ITA.w3.gianluigi_donnarumma",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Italy",
+      "window": {
+        "index": 3,
+        "from_minute": 82,
+        "to_minute": 91,
+        "source": "on_ball_period",
+        "text": "83' to 90+2'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 4,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ITA.w3.alessandro_bastoni",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Italy",
+      "window": {
+        "index": 3,
+        "from_minute": 82,
+        "to_minute": 91,
+        "source": "on_ball_period",
+        "text": "83' to 90+2'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ITA.w3.giovanni_di_lorenzo",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Italy",
+      "window": {
+        "index": 3,
+        "from_minute": 82,
+        "to_minute": 91,
+        "source": "on_ball_period",
+        "text": "83' to 90+2'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.team_height.ITA.w3",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Italy",
+      "window": {
+        "index": 3,
+        "from_minute": 82,
+        "to_minute": 91,
+        "source": "on_ball_period",
+        "text": "83' to 90+2'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 3,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_width.ITA.w3",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Italy",
+      "window": {
+        "index": 3,
+        "from_minute": 82,
+        "to_minute": 91,
+        "source": "on_ball_period",
+        "text": "83' to 90+2'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 3,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ITA.w4.michael_folorunsho",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Italy",
+      "window": {
+        "index": 4,
+        "from_minute": 91,
+        "to_minute": 96,
+        "source": "on_ball_period",
+        "text": "90+2' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 8,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ITA.w4.bryan_cristante",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Italy",
+      "window": {
+        "index": 4,
+        "from_minute": 91,
+        "to_minute": 96,
+        "source": "on_ball_period",
+        "text": "90+2' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 6,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ITA.w4.riccardo_calafiori",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Italy",
+      "window": {
+        "index": 4,
+        "from_minute": 91,
+        "to_minute": 96,
+        "source": "on_ball_period",
+        "text": "90+2' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 6,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ITA.w4.alessandro_bastoni",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Italy",
+      "window": {
+        "index": 4,
+        "from_minute": 91,
+        "to_minute": 96,
+        "source": "on_ball_period",
+        "text": "90+2' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 6,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ITA.w4.gianluigi_donnarumma",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Italy",
+      "window": {
+        "index": 4,
+        "from_minute": 91,
+        "to_minute": 96,
+        "source": "on_ball_period",
+        "text": "90+2' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 5,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ITA.w4.andrea_cambiaso",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Italy",
+      "window": {
+        "index": 4,
+        "from_minute": 91,
+        "to_minute": 96,
+        "source": "on_ball_period",
+        "text": "90+2' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 5,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ITA.w4.jorginho",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Italy",
+      "window": {
+        "index": 4,
+        "from_minute": 91,
+        "to_minute": 96,
+        "source": "on_ball_period",
+        "text": "90+2' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ITA.w4.mateo_retegui",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Italy",
+      "window": {
+        "index": 4,
+        "from_minute": 91,
+        "to_minute": 96,
+        "source": "on_ball_period",
+        "text": "90+2' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 2,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ITA.w4.matteo_darmian",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Italy",
+      "window": {
+        "index": 4,
+        "from_minute": 91,
+        "to_minute": 96,
+        "source": "on_ball_period",
+        "text": "90+2' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 1,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.team_height.ITA.w4",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Italy",
+      "window": {
+        "index": 4,
+        "from_minute": 91,
+        "to_minute": 96,
+        "source": "on_ball_period",
+        "text": "90+2' to full time"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_width.ITA.w4",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Italy",
+      "window": {
+        "index": 4,
+        "from_minute": 91,
+        "to_minute": 96,
+        "source": "on_ball_period",
+        "text": "90+2' to full time"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w1.ylber_ramadani",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 1,
+        "from_minute": 67,
+        "to_minute": 75,
+        "source": "on_ball_period",
+        "text": "68' to 76'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 7,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w1.mario_mitaj",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 1,
+        "from_minute": 67,
+        "to_minute": 75,
+        "source": "on_ball_period",
+        "text": "68' to 76'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 7,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w1.arb_r_hoxha",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 1,
+        "from_minute": 67,
+        "to_minute": 75,
+        "source": "on_ball_period",
+        "text": "68' to 76'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 4,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w1.kristjan_asllani",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 1,
+        "from_minute": 67,
+        "to_minute": 75,
+        "source": "on_ball_period",
+        "text": "68' to 76'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w1.thomas_strakosha",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 1,
+        "from_minute": 67,
+        "to_minute": 75,
+        "source": "on_ball_period",
+        "text": "68' to 76'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w1.arlind_afrim_ajeti",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 1,
+        "from_minute": 67,
+        "to_minute": 75,
+        "source": "on_ball_period",
+        "text": "68' to 76'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.team_height.ALB.w1",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Albania",
+      "window": {
+        "index": 1,
+        "from_minute": 67,
+        "to_minute": 75,
+        "source": "on_ball_period",
+        "text": "68' to 76'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_width.ALB.w1",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Albania",
+      "window": {
+        "index": 1,
+        "from_minute": 67,
+        "to_minute": 75,
+        "source": "on_ball_period",
+        "text": "68' to 76'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w2.nedim_bajrami",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 2,
+        "from_minute": 75,
+        "to_minute": 86,
+        "source": "on_ball_period",
+        "text": "76' to 87'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 6,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w2.arb_r_hoxha",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 2,
+        "from_minute": 75,
+        "to_minute": 86,
+        "source": "on_ball_period",
+        "text": "76' to 87'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 6,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w2.arlind_afrim_ajeti",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 2,
+        "from_minute": 75,
+        "to_minute": 86,
+        "source": "on_ball_period",
+        "text": "76' to 87'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 6,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w2.thomas_strakosha",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 2,
+        "from_minute": 75,
+        "to_minute": 86,
+        "source": "on_ball_period",
+        "text": "76' to 87'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 2,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w2.qazim_la_i",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 2,
+        "from_minute": 75,
+        "to_minute": 86,
+        "source": "on_ball_period",
+        "text": "76' to 87'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 2,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w2.rey_manaj",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 2,
+        "from_minute": 75,
+        "to_minute": 86,
+        "source": "on_ball_period",
+        "text": "76' to 87'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 2,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w2.ylber_ramadani",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 2,
+        "from_minute": 75,
+        "to_minute": 86,
+        "source": "on_ball_period",
+        "text": "76' to 87'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 1,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.team_height.ALB.w2",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Albania",
+      "window": {
+        "index": 2,
+        "from_minute": 75,
+        "to_minute": 86,
+        "source": "on_ball_period",
+        "text": "76' to 87'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 4,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_width.ALB.w2",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Albania",
+      "window": {
+        "index": 2,
+        "from_minute": 75,
+        "to_minute": 86,
+        "source": "on_ball_period",
+        "text": "76' to 87'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 4,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w3.rey_manaj",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 3,
+        "from_minute": 86,
+        "to_minute": 96,
+        "source": "on_ball_period",
+        "text": "87' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 9,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w3.ylber_ramadani",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 3,
+        "from_minute": 86,
+        "to_minute": 96,
+        "source": "on_ball_period",
+        "text": "87' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 7,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w3.arb_r_hoxha",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 3,
+        "from_minute": 86,
+        "to_minute": 96,
+        "source": "on_ball_period",
+        "text": "87' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 4,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ALB.w3.thomas_strakosha",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Albania",
+      "window": {
+        "index": 3,
+        "from_minute": 86,
+        "to_minute": 96,
+        "source": "on_ball_period",
+        "text": "87' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.team_height.ALB.w3",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Albania",
+      "window": {
+        "index": 3,
+        "from_minute": 86,
+        "to_minute": 96,
+        "source": "on_ball_period",
+        "text": "87' to full time"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 7,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_width.ALB.w3",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Albania",
+      "window": {
+        "index": 3,
+        "from_minute": 86,
+        "to_minute": 96,
+        "source": "on_ball_period",
+        "text": "87' to full time"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 7,
+        "required": 8
+      }
+    },
+    {
+      "id": "passing.hub.ITA.w2",
+      "category": "passing",
+      "type": "hub",
+      "team": "Italy",
+      "window": {
+        "index": 2,
+        "from_minute": 81,
+        "to_minute": 82,
+        "source": "pass_network_window",
+        "text": "82' to 83'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 11,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.no_hub.ITA.w2",
+      "category": "passing",
+      "type": "no_hub",
+      "team": "Italy",
+      "window": {
+        "index": 2,
+        "from_minute": 81,
+        "to_minute": 82,
+        "source": "pass_network_window",
+        "text": "82' to 83'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 11,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.top_pair.ITA.w2",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Italy",
+      "window": {
+        "index": 2,
+        "from_minute": 81,
+        "to_minute": 82,
+        "source": "pass_network_window",
+        "text": "82' to 83'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 11,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.concentration.ITA.w2",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Italy",
+      "window": {
+        "index": 2,
+        "from_minute": 81,
+        "to_minute": 82,
+        "source": "pass_network_window",
+        "text": "82' to 83'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 11,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.hub.ITA.w4",
+      "category": "passing",
+      "type": "hub",
+      "team": "Italy",
+      "window": {
+        "index": 4,
+        "from_minute": 91,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "90+2' to full time"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 18,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.no_hub.ITA.w4",
+      "category": "passing",
+      "type": "no_hub",
+      "team": "Italy",
+      "window": {
+        "index": 4,
+        "from_minute": 91,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "90+2' to full time"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 18,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.top_pair.ITA.w4",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Italy",
+      "window": {
+        "index": 4,
+        "from_minute": 91,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "90+2' to full time"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 18,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.concentration.ITA.w4",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Italy",
+      "window": {
+        "index": 4,
+        "from_minute": 91,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "90+2' to full time"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 18,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.hub.ALB.w1",
+      "category": "passing",
+      "type": "hub",
+      "team": "Albania",
+      "window": {
+        "index": 1,
+        "from_minute": 67,
+        "to_minute": 75,
+        "source": "pass_network_window",
+        "text": "68' to 76'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 14,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.no_hub.ALB.w1",
+      "category": "passing",
+      "type": "no_hub",
+      "team": "Albania",
+      "window": {
+        "index": 1,
+        "from_minute": 67,
+        "to_minute": 75,
+        "source": "pass_network_window",
+        "text": "68' to 76'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 14,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.top_pair.ALB.w1",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Albania",
+      "window": {
+        "index": 1,
+        "from_minute": 67,
+        "to_minute": 75,
+        "source": "pass_network_window",
+        "text": "68' to 76'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 14,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.concentration.ALB.w1",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Albania",
+      "window": {
+        "index": 1,
+        "from_minute": 67,
+        "to_minute": 75,
+        "source": "pass_network_window",
+        "text": "68' to 76'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 14,
+        "required": 40
+      }
+    },
+    {
+      "id": "cross.comparison.concentration",
+      "category": "cross_cutting",
+      "type": "comparison",
+      "team": null,
+      "window": null,
+      "reason": "COMPARE_MIN_POINTS",
+      "detail": {
+        "gap": 3.6,
+        "required": 5
+      }
+    }
+  ],
+  "metadata": {
+    "match_id": 3930161,
+    "definitions_version": "0.1.0",
+    "teams": [
+      "Italy",
+      "Albania"
+    ]
+  }
+}

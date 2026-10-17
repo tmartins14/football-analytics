@@ -1,0 +1,281 @@
+{
+  "teams": {
+    "Albania": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 251,
+        "defensive_actions_advanced": 17,
+        "value": 14.7647
+      },
+      "pressures_high": {
+        "count": 36,
+        "opponent_open_play_passes": 417,
+        "per_100": 8.63
+      },
+      "pressure_side": {
+        "left": 53,
+        "centre": 20,
+        "right": 39
+      }
+    },
+    "Italy": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 136,
+        "defensive_actions_advanced": 12,
+        "value": 11.3333
+      },
+      "pressures_high": {
+        "count": 36,
+        "opponent_open_play_passes": 166,
+        "per_100": 21.69
+      },
+      "pressure_side": {
+        "left": 13,
+        "centre": 11,
+        "right": 42
+      }
+    }
+  },
+  "pressure_received": [
+    {
+      "player_id": 31093,
+      "display_name": "Mateo Retegui",
+      "team": "Italy",
+      "on_ball_events": 4,
+      "under_pressure_events": 3,
+      "share": 0.75
+    },
+    {
+      "player_id": 36885,
+      "display_name": "Armando Broja",
+      "team": "Albania",
+      "on_ball_events": 35,
+      "under_pressure_events": 21,
+      "share": 0.6
+    },
+    {
+      "player_id": 7156,
+      "display_name": "Federico Chiesa",
+      "team": "Italy",
+      "on_ball_events": 106,
+      "under_pressure_events": 43,
+      "share": 0.4057
+    },
+    {
+      "player_id": 29531,
+      "display_name": "Taulant Seferi",
+      "team": "Albania",
+      "on_ball_events": 54,
+      "under_pressure_events": 19,
+      "share": 0.3519
+    },
+    {
+      "player_id": 133698,
+      "display_name": "Arb\u00ebr Hoxha",
+      "team": "Albania",
+      "on_ball_events": 18,
+      "under_pressure_events": 6,
+      "share": 0.3333
+    },
+    {
+      "player_id": 49445,
+      "display_name": "Michael Folorunsho",
+      "team": "Italy",
+      "on_ball_events": 6,
+      "under_pressure_events": 2,
+      "share": 0.3333
+    },
+    {
+      "player_id": 10992,
+      "display_name": "Gianluca Scamacca",
+      "team": "Italy",
+      "on_ball_events": 43,
+      "under_pressure_events": 13,
+      "share": 0.3023
+    },
+    {
+      "player_id": 23987,
+      "display_name": "Rey Manaj",
+      "team": "Albania",
+      "on_ball_events": 11,
+      "under_pressure_events": 3,
+      "share": 0.2727
+    },
+    {
+      "player_id": 50729,
+      "display_name": "Andrea Cambiaso",
+      "team": "Italy",
+      "on_ball_events": 23,
+      "under_pressure_events": 6,
+      "share": 0.2609
+    },
+    {
+      "player_id": 41186,
+      "display_name": "Jasir Asani",
+      "team": "Albania",
+      "on_ball_events": 53,
+      "under_pressure_events": 13,
+      "share": 0.2453
+    },
+    {
+      "player_id": 30926,
+      "display_name": "Davide Frattesi",
+      "team": "Italy",
+      "on_ball_events": 94,
+      "under_pressure_events": 22,
+      "share": 0.234
+    },
+    {
+      "player_id": 32030,
+      "display_name": "Nedim Bajrami",
+      "team": "Albania",
+      "on_ball_events": 66,
+      "under_pressure_events": 12,
+      "share": 0.1818
+    },
+    {
+      "player_id": 6963,
+      "display_name": "Lorenzo Pellegrini",
+      "team": "Italy",
+      "on_ball_events": 88,
+      "under_pressure_events": 15,
+      "share": 0.1705
+    },
+    {
+      "player_id": 7531,
+      "display_name": "Qazim La\u00e7i",
+      "team": "Albania",
+      "on_ball_events": 20,
+      "under_pressure_events": 3,
+      "share": 0.15
+    },
+    {
+      "player_id": 49097,
+      "display_name": "Mario Mitaj",
+      "team": "Albania",
+      "on_ball_events": 111,
+      "under_pressure_events": 14,
+      "share": 0.1261
+    },
+    {
+      "player_id": 92611,
+      "display_name": "Ernest Mu\u00e7i",
+      "team": "Albania",
+      "on_ball_events": 8,
+      "under_pressure_events": 1,
+      "share": 0.125
+    },
+    {
+      "player_id": 4587,
+      "display_name": "Matteo Darmian",
+      "team": "Italy",
+      "on_ball_events": 16,
+      "under_pressure_events": 2,
+      "share": 0.125
+    },
+    {
+      "player_id": 12255,
+      "display_name": "Federico Dimarco",
+      "team": "Italy",
+      "on_ball_events": 121,
+      "under_pressure_events": 15,
+      "share": 0.124
+    },
+    {
+      "player_id": 8181,
+      "display_name": "Nicol\u00f2 Barella",
+      "team": "Italy",
+      "on_ball_events": 228,
+      "under_pressure_events": 25,
+      "share": 0.1096
+    },
+    {
+      "player_id": 7108,
+      "display_name": "Berat Djimsiti",
+      "team": "Albania",
+      "on_ball_events": 118,
+      "under_pressure_events": 12,
+      "share": 0.1017
+    },
+    {
+      "player_id": 41768,
+      "display_name": "Riccardo Calafiori",
+      "team": "Italy",
+      "on_ball_events": 222,
+      "under_pressure_events": 18,
+      "share": 0.0811
+    },
+    {
+      "player_id": 8291,
+      "display_name": "Arlind Afrim Ajeti",
+      "team": "Albania",
+      "on_ball_events": 100,
+      "under_pressure_events": 8,
+      "share": 0.08
+    },
+    {
+      "player_id": 11514,
+      "display_name": "Giovanni Di Lorenzo",
+      "team": "Italy",
+      "on_ball_events": 274,
+      "under_pressure_events": 20,
+      "share": 0.073
+    },
+    {
+      "player_id": 24438,
+      "display_name": "Ylber Ramadani",
+      "team": "Albania",
+      "on_ball_events": 99,
+      "under_pressure_events": 7,
+      "share": 0.0707
+    },
+    {
+      "player_id": 7480,
+      "display_name": "Alessandro Bastoni",
+      "team": "Italy",
+      "on_ball_events": 229,
+      "under_pressure_events": 15,
+      "share": 0.0655
+    },
+    {
+      "player_id": 7024,
+      "display_name": "Jorginho",
+      "team": "Italy",
+      "on_ball_events": 266,
+      "under_pressure_events": 16,
+      "share": 0.0602
+    },
+    {
+      "player_id": 7031,
+      "display_name": "Elseid Hysaj",
+      "team": "Albania",
+      "on_ball_events": 72,
+      "under_pressure_events": 4,
+      "share": 0.0556
+    },
+    {
+      "player_id": 6993,
+      "display_name": "Bryan Cristante",
+      "team": "Italy",
+      "on_ball_events": 62,
+      "under_pressure_events": 3,
+      "share": 0.0484
+    },
+    {
+      "player_id": 57303,
+      "display_name": "Kristjan Asllani",
+      "team": "Albania",
+      "on_ball_events": 125,
+      "under_pressure_events": 6,
+      "share": 0.048
+    }
+  ],
+  "metadata": {
+    "match_id": 3930161,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Italy vs Albania",
+    "open_play_filter": "play_pattern + pass_type",
+    "ppda_zone": "opponent's own 60% (x < 72 in the opponent's own frame)",
+    "defensive_action_zone": "pressing team's own half+ (x >= 48 in its own frame)",
+    "pressures_high_zone": "opponent half (x >= 60 in the pressing team's own frame)"
+  }
+}

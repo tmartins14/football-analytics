@@ -1,0 +1,99 @@
+{
+  "home": {
+    "team": "Croatia",
+    "color": "#CC0000",
+    "score": 1
+  },
+  "away": {
+    "team": "Albania",
+    "color": "#E41E20",
+    "score": 2
+  },
+  "rows": [
+    {
+      "label": "Shots",
+      "home_value": 21.0,
+      "away_value": 14.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Shots on Target",
+      "home_value": 8.0,
+      "away_value": 7.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Possession",
+      "home_value": 66.5,
+      "away_value": 33.5,
+      "scale_type": "fixed100",
+      "format": "pct",
+      "tier": "basic"
+    },
+    {
+      "label": "Corners",
+      "home_value": 3.0,
+      "away_value": 1.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Fouls",
+      "home_value": 16.0,
+      "away_value": 13.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Yellow Cards",
+      "home_value": 1.0,
+      "away_value": 3.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Red Cards",
+      "home_value": 0.0,
+      "away_value": 0.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "xG",
+      "home_value": 1.86,
+      "away_value": 1.33,
+      "scale_type": "sum",
+      "format": "float1",
+      "tier": "advanced"
+    },
+    {
+      "label": "Passes",
+      "home_value": 681.0,
+      "away_value": 341.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "advanced"
+    },
+    {
+      "label": "Pass acc.",
+      "home_value": 88.4,
+      "away_value": 77.4,
+      "scale_type": "sum",
+      "format": "pct",
+      "tier": "advanced"
+    }
+  ],
+  "metadata": {
+    "match_id": 3930167,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Croatia vs Albania"
+  }
+}

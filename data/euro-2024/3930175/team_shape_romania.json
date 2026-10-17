@@ -1,0 +1,1374 @@
+{
+  "on_ball": {
+    "periods": [
+      {
+        "from_minute": 0,
+        "from_period": 1,
+        "to_minute": 66,
+        "to_period": 2,
+        "players_in": [
+          "Florin Constantin Ni\u0163\u0103",
+          "Andrei Florin Ratiu",
+          "Radu Dr\u0103gu\u0219in",
+          "Andrei Burc\u0103 Andonie",
+          "Nicu\u0219or Silviu Bancu",
+          "Marius Mihai Marin",
+          "Dennis Man",
+          "R\u0103zvan Gabriel Marin",
+          "Nicolae Claudiu Stanciu",
+          "Valentin Mihai Mih\u0103il\u0103",
+          "Denis Mihai Dr\u0103gu\u015f"
+        ],
+        "players_out": [],
+        "nodes": [
+          {
+            "player_id": 30913,
+            "player": "Marius Mihai Marin",
+            "display_name": "Marius Marin",
+            "x": 44.35,
+            "y": 37.48,
+            "event_count": 45,
+            "lane_counts": {
+              "left_wing": 11,
+              "left_half_space": 10,
+              "centre": 7,
+              "right_half_space": 13,
+              "right_wing": 4
+            },
+            "band_counts": {
+              "own_third": 17,
+              "own_half": 15,
+              "opposition_half": 13,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 28242,
+            "player": "Florin Constantin Ni\u0163\u0103",
+            "display_name": "Florin Nita",
+            "x": 8.37,
+            "y": 41.93,
+            "event_count": 38,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 34,
+              "right_half_space": 4,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 38,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 72512,
+            "player": "Valentin Mihai Mih\u0103il\u0103",
+            "display_name": "Valentin Mihai Mih\u0103il\u0103",
+            "x": 59.01,
+            "y": 13.81,
+            "event_count": 34,
+            "lane_counts": {
+              "left_wing": 25,
+              "left_half_space": 8,
+              "centre": 1,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 9,
+              "own_half": 7,
+              "opposition_half": 7,
+              "final_third": 11
+            }
+          },
+          {
+            "player_id": 31193,
+            "player": "Denis Mihai Dr\u0103gu\u015f",
+            "display_name": "Denis Dragus",
+            "x": 69.6,
+            "y": 41.95,
+            "event_count": 34,
+            "lane_counts": {
+              "left_wing": 8,
+              "left_half_space": 7,
+              "centre": 0,
+              "right_half_space": 7,
+              "right_wing": 12
+            },
+            "band_counts": {
+              "own_third": 1,
+              "own_half": 8,
+              "opposition_half": 15,
+              "final_third": 10
+            }
+          },
+          {
+            "player_id": 34600,
+            "player": "Nicu\u0219or Silviu Bancu",
+            "display_name": "Nicusor Bancu",
+            "x": 30.84,
+            "y": 14.26,
+            "event_count": 33,
+            "lane_counts": {
+              "left_wing": 22,
+              "left_half_space": 8,
+              "centre": 3,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 21,
+              "own_half": 9,
+              "opposition_half": 3,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 16344,
+            "player": "R\u0103zvan Gabriel Marin",
+            "display_name": "R\u0103zvan Marin",
+            "x": 57.4,
+            "y": 51.57,
+            "event_count": 32,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 6,
+              "centre": 6,
+              "right_half_space": 9,
+              "right_wing": 11
+            },
+            "band_counts": {
+              "own_third": 10,
+              "own_half": 8,
+              "opposition_half": 10,
+              "final_third": 4
+            }
+          },
+          {
+            "player_id": 24861,
+            "player": "Andrei Florin Ratiu",
+            "display_name": "Andrei Ratiu",
+            "x": 39.18,
+            "y": 67.29,
+            "event_count": 28,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 3,
+              "right_half_space": 3,
+              "right_wing": 22
+            },
+            "band_counts": {
+              "own_third": 17,
+              "own_half": 8,
+              "opposition_half": 0,
+              "final_third": 3
+            }
+          },
+          {
+            "player_id": 56905,
+            "player": "Dennis Man",
+            "display_name": "Dennis Man",
+            "x": 59.94,
+            "y": 68.45,
+            "event_count": 25,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 1,
+              "right_half_space": 3,
+              "right_wing": 21
+            },
+            "band_counts": {
+              "own_third": 5,
+              "own_half": 6,
+              "opposition_half": 10,
+              "final_third": 4
+            }
+          },
+          {
+            "player_id": 10916,
+            "player": "Nicolae Claudiu Stanciu",
+            "display_name": "Nicolae Stanciu",
+            "x": 60.47,
+            "y": 30.08,
+            "event_count": 23,
+            "lane_counts": {
+              "left_wing": 10,
+              "left_half_space": 3,
+              "centre": 5,
+              "right_half_space": 5,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 5,
+              "own_half": 3,
+              "opposition_half": 9,
+              "final_third": 6
+            }
+          },
+          {
+            "player_id": 31908,
+            "player": "Andrei Burc\u0103 Andonie",
+            "display_name": "Andrei Burc\u0103 Andonie",
+            "x": 16.73,
+            "y": 22.78,
+            "event_count": 23,
+            "lane_counts": {
+              "left_wing": 5,
+              "left_half_space": 17,
+              "centre": 0,
+              "right_half_space": 1,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 22,
+              "own_half": 1,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 39615,
+            "player": "Radu Dr\u0103gu\u0219in",
+            "display_name": "Radu Dragusin",
+            "x": 35.38,
+            "y": 59.71,
+            "event_count": 12,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 1,
+              "right_half_space": 8,
+              "right_wing": 3
+            },
+            "band_counts": {
+              "own_third": 8,
+              "own_half": 3,
+              "opposition_half": 1,
+              "final_third": 0
+            }
+          }
+        ],
+        "hull": [
+          [
+            59.01,
+            13.81
+          ],
+          [
+            69.6,
+            41.95
+          ],
+          [
+            59.94,
+            68.45
+          ],
+          [
+            39.18,
+            67.29
+          ],
+          [
+            8.37,
+            41.93
+          ],
+          [
+            16.73,
+            22.78
+          ],
+          [
+            30.84,
+            14.26
+          ]
+        ]
+      },
+      {
+        "from_minute": 66,
+        "from_period": 2,
+        "to_minute": 67,
+        "to_period": 2,
+        "players_in": [
+          "Darius Dumitru Olaru"
+        ],
+        "players_out": [
+          "Marius Mihai Marin"
+        ],
+        "nodes": [],
+        "hull": []
+      },
+      {
+        "from_minute": 67,
+        "from_period": 2,
+        "to_minute": 80,
+        "to_period": 2,
+        "players_in": [
+          "Ianis Hagi"
+        ],
+        "players_out": [
+          "Valentin Mihai Mih\u0103il\u0103"
+        ],
+        "nodes": [
+          {
+            "player_id": 28565,
+            "player": "Ianis Hagi",
+            "display_name": "Ianis Hagi",
+            "x": 57.16,
+            "y": 21.35,
+            "event_count": 13,
+            "lane_counts": {
+              "left_wing": 5,
+              "left_half_space": 5,
+              "centre": 3,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 7,
+              "opposition_half": 6,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 56905,
+            "player": "Dennis Man",
+            "display_name": "Dennis Man",
+            "x": 64.51,
+            "y": 70.31,
+            "event_count": 10,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 10
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 2,
+              "opposition_half": 1,
+              "final_third": 4
+            }
+          },
+          {
+            "player_id": 24861,
+            "player": "Andrei Florin Ratiu",
+            "display_name": "Andrei Ratiu",
+            "x": 78.18,
+            "y": 63.3,
+            "event_count": 9,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 1,
+              "centre": 0,
+              "right_half_space": 3,
+              "right_wing": 5
+            },
+            "band_counts": {
+              "own_third": 1,
+              "own_half": 2,
+              "opposition_half": 3,
+              "final_third": 3
+            }
+          },
+          {
+            "player_id": 31908,
+            "player": "Andrei Burc\u0103 Andonie",
+            "display_name": "Andrei Burc\u0103 Andonie",
+            "x": 34.1,
+            "y": 34.3,
+            "event_count": 8,
+            "lane_counts": {
+              "left_wing": 3,
+              "left_half_space": 1,
+              "centre": 2,
+              "right_half_space": 0,
+              "right_wing": 2
+            },
+            "band_counts": {
+              "own_third": 4,
+              "own_half": 3,
+              "opposition_half": 1,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 16344,
+            "player": "R\u0103zvan Gabriel Marin",
+            "display_name": "R\u0103zvan Marin",
+            "x": 28.4,
+            "y": 12.82,
+            "event_count": 6,
+            "lane_counts": {
+              "left_wing": 5,
+              "left_half_space": 1,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 6,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 10916,
+            "player": "Nicolae Claudiu Stanciu",
+            "display_name": "Nicolae Stanciu",
+            "x": 54.45,
+            "y": 23.75,
+            "event_count": 4,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 4,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 4,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 101821,
+            "player": "Darius Dumitru Olaru",
+            "display_name": "Darius Dumitru Olaru",
+            "x": 78.5,
+            "y": 40.67,
+            "event_count": 3,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 3,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 2,
+              "final_third": 1
+            }
+          },
+          {
+            "player_id": 39615,
+            "player": "Radu Dr\u0103gu\u0219in",
+            "display_name": "Radu Dragusin",
+            "x": 71.5,
+            "y": 67.93,
+            "event_count": 3,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 3
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 3,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 28242,
+            "player": "Florin Constantin Ni\u0163\u0103",
+            "display_name": "Florin Nita",
+            "x": 8.97,
+            "y": 46.37,
+            "event_count": 3,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 3,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 34600,
+            "player": "Nicu\u0219or Silviu Bancu",
+            "display_name": "Nicusor Bancu",
+            "x": 22.3,
+            "y": 15.5,
+            "event_count": 3,
+            "lane_counts": {
+              "left_wing": 3,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 31193,
+            "player": "Denis Mihai Dr\u0103gu\u015f",
+            "display_name": "Denis Dragus",
+            "x": 110.4,
+            "y": 42.7,
+            "event_count": 1,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 1,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 1
+            }
+          }
+        ],
+        "hull": [
+          [
+            64.51,
+            70.31
+          ],
+          [
+            8.97,
+            46.37
+          ],
+          [
+            22.3,
+            15.5
+          ],
+          [
+            28.4,
+            12.82
+          ],
+          [
+            57.16,
+            21.35
+          ],
+          [
+            110.4,
+            42.7
+          ],
+          [
+            71.5,
+            67.93
+          ]
+        ]
+      },
+      {
+        "from_minute": 80,
+        "from_period": 2,
+        "to_minute": 88,
+        "to_period": 2,
+        "players_in": [
+          "Denis Alibec"
+        ],
+        "players_out": [
+          "Denis Mihai Dr\u0103gu\u015f"
+        ],
+        "nodes": [
+          {
+            "player_id": 16344,
+            "player": "R\u0103zvan Gabriel Marin",
+            "display_name": "R\u0103zvan Marin",
+            "x": 43.78,
+            "y": 56.47,
+            "event_count": 6,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 2,
+              "right_half_space": 3,
+              "right_wing": 1
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 0,
+              "opposition_half": 3,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 39615,
+            "player": "Radu Dr\u0103gu\u0219in",
+            "display_name": "Radu Dragusin",
+            "x": 8.13,
+            "y": 34.6,
+            "event_count": 3,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 3,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 101821,
+            "player": "Darius Dumitru Olaru",
+            "display_name": "Darius Dumitru Olaru",
+            "x": 29.17,
+            "y": 52.2,
+            "event_count": 3,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 1,
+              "right_half_space": 2,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 34600,
+            "player": "Nicu\u0219or Silviu Bancu",
+            "display_name": "Nicusor Bancu",
+            "x": 42.13,
+            "y": 12.13,
+            "event_count": 3,
+            "lane_counts": {
+              "left_wing": 3,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 2,
+              "own_half": 1,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 28565,
+            "player": "Ianis Hagi",
+            "display_name": "Ianis Hagi",
+            "x": 67.43,
+            "y": 6.23,
+            "event_count": 3,
+            "lane_counts": {
+              "left_wing": 3,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 3,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 10916,
+            "player": "Nicolae Claudiu Stanciu",
+            "display_name": "Nicolae Stanciu",
+            "x": 69.4,
+            "y": 28.0,
+            "event_count": 3,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 3,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 3,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 56905,
+            "player": "Dennis Man",
+            "display_name": "Dennis Man",
+            "x": 74.23,
+            "y": 71.8,
+            "event_count": 3,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 3
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 3,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 24861,
+            "player": "Andrei Florin Ratiu",
+            "display_name": "Andrei Ratiu",
+            "x": 95.1,
+            "y": 69.43,
+            "event_count": 3,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 1,
+              "right_wing": 2
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 3
+            }
+          },
+          {
+            "player_id": 31908,
+            "player": "Andrei Burc\u0103 Andonie",
+            "display_name": "Andrei Burc\u0103 Andonie",
+            "x": 7.8,
+            "y": 42.7,
+            "event_count": 1,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 1,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 1,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          }
+        ],
+        "hull": [
+          [
+            67.43,
+            6.23
+          ],
+          [
+            95.1,
+            69.43
+          ],
+          [
+            74.23,
+            71.8
+          ],
+          [
+            29.17,
+            52.2
+          ],
+          [
+            7.8,
+            42.7
+          ],
+          [
+            8.13,
+            34.6
+          ],
+          [
+            42.13,
+            12.13
+          ]
+        ]
+      },
+      {
+        "from_minute": 88,
+        "from_period": 2,
+        "to_minute": 95,
+        "to_period": 2,
+        "players_in": [
+          "Deian Cristian Sorescu"
+        ],
+        "players_out": [
+          "Andrei Florin Ratiu"
+        ],
+        "nodes": [
+          {
+            "player_id": 31908,
+            "player": "Andrei Burc\u0103 Andonie",
+            "display_name": "Andrei Burc\u0103 Andonie",
+            "x": 29.83,
+            "y": 73.5,
+            "event_count": 3,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 3
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 56905,
+            "player": "Dennis Man",
+            "display_name": "Dennis Man",
+            "x": 11.57,
+            "y": 73.6,
+            "event_count": 3,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 3
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 130984,
+            "player": "Deian Cristian Sorescu",
+            "display_name": "Deian Cristian Sorescu",
+            "x": 35.1,
+            "y": 76.7,
+            "event_count": 1,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 1
+            },
+            "band_counts": {
+              "own_third": 1,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          }
+        ],
+        "hull": [
+          [
+            35.1,
+            76.7
+          ],
+          [
+            11.57,
+            73.6
+          ],
+          [
+            29.83,
+            73.5
+          ]
+        ]
+      }
+    ]
+  },
+  "off_ball": {
+    "density_grid": {
+      "cols": 24,
+      "rows": 16,
+      "values": [
+        [
+          0.1877,
+          0.2177,
+          0.2464,
+          0.2725,
+          0.2947,
+          0.312,
+          0.3239,
+          0.3301,
+          0.3306,
+          0.3258,
+          0.3164,
+          0.3029,
+          0.2862,
+          0.2669,
+          0.2457,
+          0.2231,
+          0.1998,
+          0.1762,
+          0.1528,
+          0.1302,
+          0.1089,
+          0.0893,
+          0.0716,
+          0.0561
+        ],
+        [
+          0.2482,
+          0.2884,
+          0.3271,
+          0.3625,
+          0.3929,
+          0.4171,
+          0.434,
+          0.4434,
+          0.4452,
+          0.44,
+          0.4284,
+          0.4114,
+          0.39,
+          0.3649,
+          0.3371,
+          0.3074,
+          0.2764,
+          0.2449,
+          0.2136,
+          0.1831,
+          0.1541,
+          0.1271,
+          0.1026,
+          0.081
+        ],
+        [
+          0.313,
+          0.3643,
+          0.4138,
+          0.4593,
+          0.4987,
+          0.5303,
+          0.5529,
+          0.5659,
+          0.5695,
+          0.5641,
+          0.5507,
+          0.5302,
+          0.504,
+          0.4731,
+          0.4386,
+          0.4015,
+          0.3626,
+          0.3228,
+          0.283,
+          0.2439,
+          0.2065,
+          0.1715,
+          0.1394,
+          0.1109
+        ],
+        [
+          0.3772,
+          0.4395,
+          0.4999,
+          0.5556,
+          0.6041,
+          0.6433,
+          0.6717,
+          0.6888,
+          0.6944,
+          0.6892,
+          0.6742,
+          0.6507,
+          0.6201,
+          0.5838,
+          0.5429,
+          0.4988,
+          0.4523,
+          0.4045,
+          0.3564,
+          0.309,
+          0.2632,
+          0.2199,
+          0.1801,
+          0.1443
+        ],
+        [
+          0.4349,
+          0.5073,
+          0.5777,
+          0.6428,
+          0.6999,
+          0.7463,
+          0.7805,
+          0.8015,
+          0.8094,
+          0.8048,
+          0.7888,
+          0.763,
+          0.7288,
+          0.688,
+          0.6418,
+          0.5916,
+          0.5385,
+          0.4836,
+          0.4281,
+          0.3731,
+          0.3196,
+          0.2687,
+          0.2215,
+          0.1787
+        ],
+        [
+          0.4796,
+          0.5603,
+          0.6391,
+          0.7123,
+          0.7766,
+          0.8294,
+          0.8688,
+          0.8937,
+          0.9041,
+          0.9006,
+          0.8845,
+          0.8574,
+          0.8209,
+          0.7768,
+          0.7267,
+          0.6719,
+          0.6137,
+          0.5534,
+          0.492,
+          0.4307,
+          0.3709,
+          0.3136,
+          0.2601,
+          0.2112
+        ],
+        [
+          0.5057,
+          0.5922,
+          0.6768,
+          0.7559,
+          0.8259,
+          0.8839,
+          0.9278,
+          0.9564,
+          0.9695,
+          0.9679,
+          0.9527,
+          0.9255,
+          0.8883,
+          0.8427,
+          0.7905,
+          0.733,
+          0.6716,
+          0.6076,
+          0.5423,
+          0.4767,
+          0.4123,
+          0.3504,
+          0.2921,
+          0.2385
+        ],
+        [
+          0.5092,
+          0.598,
+          0.6856,
+          0.768,
+          0.8415,
+          0.9032,
+          0.9507,
+          0.9827,
+          0.999,
+          1.0,
+          0.987,
+          0.9615,
+          0.9253,
+          0.8802,
+          0.8278,
+          0.7698,
+          0.7074,
+          0.6419,
+          0.5747,
+          0.507,
+          0.4402,
+          0.3755,
+          0.3144,
+          0.2579
+        ],
+        [
+          0.4887,
+          0.5764,
+          0.6635,
+          0.7462,
+          0.8209,
+          0.8845,
+          0.9345,
+          0.9696,
+          0.9892,
+          0.9937,
+          0.9841,
+          0.9619,
+          0.9286,
+          0.886,
+          0.8358,
+          0.7794,
+          0.7182,
+          0.6536,
+          0.5868,
+          0.5191,
+          0.452,
+          0.3869,
+          0.325,
+          0.2676
+        ],
+        [
+          0.4464,
+          0.5294,
+          0.6126,
+          0.6926,
+          0.7659,
+          0.8293,
+          0.8806,
+          0.918,
+          0.941,
+          0.9495,
+          0.9443,
+          0.9267,
+          0.8981,
+          0.86,
+          0.8139,
+          0.7613,
+          0.7036,
+          0.6419,
+          0.5778,
+          0.5124,
+          0.4473,
+          0.3837,
+          0.3232,
+          0.2668
+        ],
+        [
+          0.3877,
+          0.4627,
+          0.539,
+          0.6133,
+          0.6825,
+          0.7437,
+          0.7944,
+          0.8331,
+          0.8589,
+          0.8714,
+          0.8712,
+          0.8591,
+          0.8364,
+          0.8043,
+          0.7641,
+          0.7172,
+          0.6648,
+          0.6083,
+          0.5489,
+          0.4879,
+          0.4267,
+          0.3668,
+          0.3095,
+          0.256
+        ],
+        [
+          0.3197,
+          0.3846,
+          0.4514,
+          0.5176,
+          0.5803,
+          0.6369,
+          0.6853,
+          0.7238,
+          0.7511,
+          0.767,
+          0.7715,
+          0.7652,
+          0.7489,
+          0.7236,
+          0.6905,
+          0.6507,
+          0.6053,
+          0.5555,
+          0.5026,
+          0.4478,
+          0.3925,
+          0.338,
+          0.2856,
+          0.2366
+        ],
+        [
+          0.2502,
+          0.3036,
+          0.3595,
+          0.4158,
+          0.4702,
+          0.5204,
+          0.5645,
+          0.6009,
+          0.6283,
+          0.6463,
+          0.6545,
+          0.6533,
+          0.6432,
+          0.6249,
+          0.5993,
+          0.5672,
+          0.5298,
+          0.4879,
+          0.4428,
+          0.3956,
+          0.3475,
+          0.2999,
+          0.2539,
+          0.2106
+        ],
+        [
+          0.1858,
+          0.2277,
+          0.2722,
+          0.3178,
+          0.3627,
+          0.4051,
+          0.4433,
+          0.4759,
+          0.5017,
+          0.5201,
+          0.5306,
+          0.5333,
+          0.5284,
+          0.5165,
+          0.498,
+          0.4737,
+          0.4444,
+          0.411,
+          0.3743,
+          0.3355,
+          0.2955,
+          0.2557,
+          0.2169,
+          0.1803
+        ],
+        [
+          0.1309,
+          0.1621,
+          0.1957,
+          0.2308,
+          0.266,
+          0.3,
+          0.3314,
+          0.3589,
+          0.3816,
+          0.3988,
+          0.41,
+          0.415,
+          0.414,
+          0.4072,
+          0.3949,
+          0.3776,
+          0.356,
+          0.3308,
+          0.3025,
+          0.2722,
+          0.2406,
+          0.2088,
+          0.1777,
+          0.1481
+        ],
+        [
+          0.0875,
+          0.1095,
+          0.1336,
+          0.1592,
+          0.1854,
+          0.2111,
+          0.2354,
+          0.2572,
+          0.2759,
+          0.2906,
+          0.301,
+          0.307,
+          0.3083,
+          0.3051,
+          0.2977,
+          0.2863,
+          0.2714,
+          0.2534,
+          0.2328,
+          0.2104,
+          0.1868,
+          0.1628,
+          0.139,
+          0.1163
+        ]
+      ]
+    },
+    "centroid": {
+      "x": 52.74,
+      "y": 39.61
+    },
+    "thirds_spine": [
+      {
+        "third": "defensive",
+        "x": 25.52,
+        "y": 36.74
+      },
+      {
+        "third": "middle",
+        "x": 59.25,
+        "y": 40.54
+      },
+      {
+        "third": "attacking",
+        "x": 93.76,
+        "y": 43.42
+      }
+    ],
+    "ellipse": {
+      "cx": 52.74,
+      "cy": 39.61,
+      "rx": 27.14,
+      "ry": 16.48,
+      "angle_deg": -171.7
+    },
+    "depth_line": {
+      "x": 68.55,
+      "percentile": 70
+    }
+  },
+  "metadata": {
+    "match_id": 3930175,
+    "team": "Romania",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Belgium vs Romania",
+    "on_ball_event_count": 425,
+    "on_ball_period_count": 5,
+    "off_ball_bandwidth_yards": 8.0,
+    "off_ball_depth_percentile": 70,
+    "off_ball_grid_cols": 24,
+    "off_ball_grid_rows": 16,
+    "phase_filter": "open_play_only",
+    "coordinate_system": "statsbomb_120x80_normalised_attack_right",
+    "coordinate_note": "StatsBomb event and 360 freeze-frame coordinates are already in each team's own attack-right frame across both halves; no period-based flip is applied. Off-ball 360 dots from opponent-actor frames are mirrored (x\u2192120-x, y\u219280-y) into the analysed team's frame before pooling; own-actor dots are used as-is, and the goalkeeper is excluded.",
+    "camera_caveat": "360 frames follow the ball; the visible subset of out-of-possession positions is biased toward areas near the ball. The camera artifact and the real defensive shape point the same direction \u2014 they cannot be cleanly separated."
+  }
+}

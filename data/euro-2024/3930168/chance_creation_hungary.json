@@ -1,0 +1,110 @@
+{
+  "team": "Hungary",
+  "shots": {
+    "non_penalty_count": 11,
+    "total_npxg": 1.228033,
+    "by_zone": {
+      "six_yard_box": {
+        "npxg": 0.016573,
+        "count": 1
+      },
+      "box_central": {
+        "npxg": 1.054937,
+        "count": 5
+      },
+      "box_wide": {
+        "npxg": 0.042028,
+        "count": 1
+      },
+      "outside_box": {
+        "npxg": 0.114495,
+        "count": 4
+      }
+    },
+    "by_source": {
+      "open_play": {
+        "npxg": 0.744525,
+        "count": 4
+      },
+      "counter": {
+        "npxg": 0.0,
+        "count": 0
+      },
+      "set_piece": {
+        "npxg": 0.483509,
+        "count": 7
+      },
+      "other": {
+        "npxg": 0.0,
+        "count": 0
+      }
+    }
+  },
+  "shot_assists": {
+    "total_count": 3,
+    "by_side_and_type": {
+      "left": {
+        "cross": 1,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 1
+      },
+      "centre": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 0
+      },
+      "right": {
+        "cross": 1,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 0
+      }
+    }
+  },
+  "creators": [
+    {
+      "player_id": 19316,
+      "display_name": "Roland Sallai",
+      "xa": 0.188033,
+      "key_passes": 1,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 89635,
+      "display_name": "Milos Kerkez",
+      "xa": 0.0622,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 46789,
+      "display_name": "Bendeg\u00faz Bolla",
+      "xa": 0.060011,
+      "key_passes": 1,
+      "passes_into_box": 1
+    }
+  ],
+  "metadata": {
+    "match_id": 3930168,
+    "team": "Hungary",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Germany vs Hungary",
+    "zone_filter": "statsbomb_120x80_own_attack_right_frame",
+    "source_grouping": {
+      "open_play": [
+        "Regular Play"
+      ],
+      "counter": [
+        "From Counter"
+      ],
+      "set_piece": [
+        "From Corner",
+        "From Free Kick",
+        "From Throw In"
+      ],
+      "other": "every other play_pattern (From Goal Kick, From Kick Off, From Keeper, Other)"
+    }
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "team": "Croatia",
+  "shots": {
+    "non_penalty_count": 21,
+    "total_npxg": 1.8586,
+    "by_zone": {
+      "six_yard_box": {
+        "npxg": 0.372945,
+        "count": 2
+      },
+      "box_central": {
+        "npxg": 1.207676,
+        "count": 10
+      },
+      "box_wide": {
+        "npxg": 0.076462,
+        "count": 2
+      },
+      "outside_box": {
+        "npxg": 0.201517,
+        "count": 7
+      }
+    },
+    "by_source": {
+      "open_play": {
+        "npxg": 0.64796,
+        "count": 9
+      },
+      "counter": {
+        "npxg": 0.0,
+        "count": 0
+      },
+      "set_piece": {
+        "npxg": 1.000405,
+        "count": 9
+      },
+      "other": {
+        "npxg": 0.210235,
+        "count": 3
+      }
+    }
+  },
+  "shot_assists": {
+    "total_count": 18,
+    "by_side_and_type": {
+      "left": {
+        "cross": 2,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 5
+      },
+      "centre": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 1,
+        "other": 5
+      },
+      "right": {
+        "cross": 4,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 1
+      }
+    }
+  },
+  "creators": [
+    {
+      "player_id": 8654,
+      "display_name": "Ante Budimir",
+      "xa": 0.418261,
+      "key_passes": 2,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 5463,
+      "display_name": "Luka Modri\u0107",
+      "xa": 0.290203,
+      "key_passes": 2,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 5474,
+      "display_name": "Ivan Peri\u0161i\u0107",
+      "xa": 0.278798,
+      "key_passes": 3,
+      "passes_into_box": 3
+    },
+    {
+      "player_id": 29163,
+      "display_name": "Josip Juranovi\u0107",
+      "xa": 0.202227,
+      "key_passes": 2,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 28914,
+      "display_name": "Lovro Majer",
+      "xa": 0.151872,
+      "key_passes": 1,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 5460,
+      "display_name": "Andrej Kramari\u0107",
+      "xa": 0.111768,
+      "key_passes": 3,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 5456,
+      "display_name": "Mateo Kova\u010di\u0107",
+      "xa": 0.103486,
+      "key_passes": 3,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 39490,
+      "display_name": "Luka Su\u010di\u0107",
+      "xa": 0.084012,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 7693,
+      "display_name": "Bruno Petkovi\u0107",
+      "xa": 0.058311,
+      "key_passes": 1,
+      "passes_into_box": 1
+    }
+  ],
+  "metadata": {
+    "match_id": 3930167,
+    "team": "Croatia",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Croatia vs Albania",
+    "zone_filter": "statsbomb_120x80_own_attack_right_frame",
+    "source_grouping": {
+      "open_play": [
+        "Regular Play"
+      ],
+      "counter": [
+        "From Counter"
+      ],
+      "set_piece": [
+        "From Corner",
+        "From Free Kick",
+        "From Throw In"
+      ],
+      "other": "every other play_pattern (From Goal Kick, From Kick Off, From Keeper, Other)"
+    }
+  }
+}
