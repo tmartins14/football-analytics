@@ -1,0 +1,289 @@
+{
+  "teams": {
+    "Germany": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 93,
+        "defensive_actions_advanced": 21,
+        "value": 4.4286
+      },
+      "pressures_high": {
+        "count": 88,
+        "opponent_open_play_passes": 116,
+        "per_100": 75.86
+      },
+      "pressure_side": {
+        "left": 66,
+        "centre": 22,
+        "right": 52
+      }
+    },
+    "Hungary": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 261,
+        "defensive_actions_advanced": 17,
+        "value": 15.3529
+      },
+      "pressures_high": {
+        "count": 41,
+        "opponent_open_play_passes": 433,
+        "per_100": 9.47
+      },
+      "pressure_side": {
+        "left": 51,
+        "centre": 32,
+        "right": 60
+      }
+    }
+  },
+  "pressure_received": [
+    {
+      "player_id": 12921,
+      "display_name": "Barnab\u00e1s Varga",
+      "team": "Hungary",
+      "on_ball_events": 58,
+      "under_pressure_events": 29,
+      "share": 0.5
+    },
+    {
+      "player_id": 50329,
+      "display_name": "D\u00e1niel Gazdag",
+      "team": "Hungary",
+      "on_ball_events": 9,
+      "under_pressure_events": 4,
+      "share": 0.4444
+    },
+    {
+      "player_id": 3053,
+      "display_name": "Leroy San\u00e9",
+      "team": "Germany",
+      "on_ball_events": 55,
+      "under_pressure_events": 24,
+      "share": 0.4364
+    },
+    {
+      "player_id": 19316,
+      "display_name": "Roland Sallai",
+      "team": "Hungary",
+      "on_ball_events": 73,
+      "under_pressure_events": 27,
+      "share": 0.3699
+    },
+    {
+      "player_id": 39565,
+      "display_name": "Jamal Musiala",
+      "team": "Germany",
+      "on_ball_events": 134,
+      "under_pressure_events": 48,
+      "share": 0.3582
+    },
+    {
+      "player_id": 89635,
+      "display_name": "Milos Kerkez",
+      "team": "Hungary",
+      "on_ball_events": 68,
+      "under_pressure_events": 24,
+      "share": 0.3529
+    },
+    {
+      "player_id": 42822,
+      "display_name": "Andr\u00e1s Sch\u00e4fer",
+      "team": "Hungary",
+      "on_ball_events": 90,
+      "under_pressure_events": 29,
+      "share": 0.3222
+    },
+    {
+      "player_id": 21209,
+      "display_name": "Dominik Szoboszlai",
+      "team": "Hungary",
+      "on_ball_events": 106,
+      "under_pressure_events": 34,
+      "share": 0.3208
+    },
+    {
+      "player_id": 8966,
+      "display_name": "Kai Havertz",
+      "team": "Germany",
+      "on_ball_events": 57,
+      "under_pressure_events": 18,
+      "share": 0.3158
+    },
+    {
+      "player_id": 8509,
+      "display_name": "Willi Orban",
+      "team": "Hungary",
+      "on_ball_events": 90,
+      "under_pressure_events": 28,
+      "share": 0.3111
+    },
+    {
+      "player_id": 389882,
+      "display_name": "Kevin Csoboth",
+      "team": "Hungary",
+      "on_ball_events": 7,
+      "under_pressure_events": 2,
+      "share": 0.2857
+    },
+    {
+      "player_id": 46789,
+      "display_name": "Bendeg\u00faz Bolla",
+      "team": "Hungary",
+      "on_ball_events": 69,
+      "under_pressure_events": 19,
+      "share": 0.2754
+    },
+    {
+      "player_id": 73886,
+      "display_name": "Zsolt Nagy",
+      "team": "Hungary",
+      "on_ball_events": 19,
+      "under_pressure_events": 5,
+      "share": 0.2632
+    },
+    {
+      "player_id": 11268,
+      "display_name": "Attila Fiola",
+      "team": "Hungary",
+      "on_ball_events": 77,
+      "under_pressure_events": 17,
+      "share": 0.2208
+    },
+    {
+      "player_id": 23614,
+      "display_name": "Chris F\u00fchrich",
+      "team": "Germany",
+      "on_ball_events": 46,
+      "under_pressure_events": 10,
+      "share": 0.2174
+    },
+    {
+      "player_id": 8546,
+      "display_name": "Niclas F\u00fcllkrug",
+      "team": "Germany",
+      "on_ball_events": 23,
+      "under_pressure_events": 5,
+      "share": 0.2174
+    },
+    {
+      "player_id": 10287,
+      "display_name": "\u0130lkay G\u00fcndo\u011fan",
+      "team": "Germany",
+      "on_ball_events": 113,
+      "under_pressure_events": 22,
+      "share": 0.1947
+    },
+    {
+      "player_id": 40724,
+      "display_name": "Florian Wirtz",
+      "team": "Germany",
+      "on_ball_events": 141,
+      "under_pressure_events": 27,
+      "share": 0.1915
+    },
+    {
+      "player_id": 7162,
+      "display_name": "\u00c1d\u00e1m Nagy",
+      "team": "Hungary",
+      "on_ball_events": 42,
+      "under_pressure_events": 8,
+      "share": 0.1905
+    },
+    {
+      "player_id": 12407,
+      "display_name": "Maximilian Mittelst\u00e4dt",
+      "team": "Germany",
+      "on_ball_events": 145,
+      "under_pressure_events": 26,
+      "share": 0.1793
+    },
+    {
+      "player_id": 5579,
+      "display_name": "Joshua Kimmich",
+      "team": "Germany",
+      "on_ball_events": 178,
+      "under_pressure_events": 30,
+      "share": 0.1685
+    },
+    {
+      "player_id": 3493,
+      "display_name": "Emre Can",
+      "team": "Germany",
+      "on_ball_events": 40,
+      "under_pressure_events": 6,
+      "share": 0.15
+    },
+    {
+      "player_id": 40920,
+      "display_name": "M\u00e1rton D\u00e1rdai",
+      "team": "Hungary",
+      "on_ball_events": 96,
+      "under_pressure_events": 13,
+      "share": 0.1354
+    },
+    {
+      "player_id": 16502,
+      "display_name": "L\u00e1szl\u00f3 Kleinheisler",
+      "team": "Hungary",
+      "on_ball_events": 15,
+      "under_pressure_events": 2,
+      "share": 0.1333
+    },
+    {
+      "player_id": 264277,
+      "display_name": "Martin \u00c1d\u00e1m",
+      "team": "Hungary",
+      "on_ball_events": 9,
+      "under_pressure_events": 1,
+      "share": 0.1111
+    },
+    {
+      "player_id": 5574,
+      "display_name": "Toni Kroos",
+      "team": "Germany",
+      "on_ball_events": 280,
+      "under_pressure_events": 30,
+      "share": 0.1071
+    },
+    {
+      "player_id": 9195,
+      "display_name": "Robert Andrich",
+      "team": "Germany",
+      "on_ball_events": 117,
+      "under_pressure_events": 11,
+      "share": 0.094
+    },
+    {
+      "player_id": 131243,
+      "display_name": "Deniz Undav",
+      "team": "Germany",
+      "on_ball_events": 12,
+      "under_pressure_events": 1,
+      "share": 0.0833
+    },
+    {
+      "player_id": 8221,
+      "display_name": "Jonathan Tah",
+      "team": "Germany",
+      "on_ball_events": 201,
+      "under_pressure_events": 15,
+      "share": 0.0746
+    },
+    {
+      "player_id": 3167,
+      "display_name": "Antonio R\u00fcdiger",
+      "team": "Germany",
+      "on_ball_events": 194,
+      "under_pressure_events": 10,
+      "share": 0.0515
+    }
+  ],
+  "metadata": {
+    "match_id": 3930168,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Germany vs Hungary",
+    "open_play_filter": "play_pattern + pass_type",
+    "ppda_zone": "opponent's own 60% (x < 72 in the opponent's own frame)",
+    "defensive_action_zone": "pressing team's own half+ (x >= 48 in its own frame)",
+    "pressures_high_zone": "opponent half (x >= 60 in the pressing team's own frame)"
+  }
+}

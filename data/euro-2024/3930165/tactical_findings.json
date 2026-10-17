@@ -1,0 +1,4572 @@
+{
+  "findings": [
+    {
+      "id": "context.final_score",
+      "category": "context",
+      "type": "final_score",
+      "team": null,
+      "window": null,
+      "game_states": [],
+      "subject": null,
+      "label": null,
+      "value": {
+        "home_score": 0,
+        "away_score": 0
+      },
+      "claim": "Austria and France drew 0\u20130",
+      "evidence": {
+        "home_team": "Austria",
+        "home_score": 0,
+        "away_team": "France",
+        "away_score": 0,
+        "source": "match_stats.json#home.score,away.score"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "context.game_state.level.s0",
+      "category": "context",
+      "type": "game_state",
+      "team": null,
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": null,
+        "source": "game_state_segment",
+        "text": "kick-off to full time"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": null,
+      "label": "level",
+      "value": "0-0",
+      "claim": "the score was level at 0-0 from kick-off to full time",
+      "evidence": {
+        "from_minute": 0,
+        "from_period": 1,
+        "to_minute": null,
+        "to_period": null,
+        "home_score": 0,
+        "away_score": 0,
+        "source": "derived from shots.json goals + match_stats.json final score"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.formation.AUS.p0",
+      "category": "structure",
+      "type": "formation",
+      "team": "Austria",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 59,
+        "source": "formation_period",
+        "text": "kick-off to 60'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": null,
+      "label": null,
+      "value": "4-2-3-1",
+      "claim": "Austria played a 4-2-3-1 from kick-off to 60'",
+      "evidence": {
+        "from_minute": 0,
+        "from_period": 1,
+        "to_minute": 59,
+        "to_period": 2,
+        "source": "formation_austria.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.formation.AUS.p1",
+      "category": "structure",
+      "type": "formation",
+      "team": "Austria",
+      "window": {
+        "index": 1,
+        "from_minute": 59,
+        "to_minute": 91,
+        "source": "formation_period",
+        "text": "60' to 90+2'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": null,
+      "label": null,
+      "value": "4-2-3-1",
+      "claim": "Austria played a 4-2-3-1 from 60' to 90+2'",
+      "evidence": {
+        "from_minute": 59,
+        "from_period": 2,
+        "to_minute": 91,
+        "to_period": 2,
+        "source": "formation_austria.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.AUS.nicolas_seiwald.p1",
+      "category": "structure",
+      "type": "role_change",
+      "team": "Austria",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Nicolas Seiwald",
+        "display_name": "Nicolas Seiwald"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Right Defensive Midfield",
+        "new_position": "Left Defensive Midfield"
+      },
+      "claim": "Nicolas Seiwald moved from Right Defensive Midfield to Left Defensive Midfield (60')",
+      "evidence": {
+        "minute": 59,
+        "period": 2,
+        "display_minute": "60'",
+        "source": "formation_austria.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.AUS.marcel_sabitzer.p1",
+      "category": "structure",
+      "type": "role_change",
+      "team": "Austria",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Marcel Sabitzer",
+        "display_name": "Marcel Sabitzer"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Left Wing",
+        "new_position": "Center Attacking Midfield"
+      },
+      "claim": "Marcel Sabitzer moved from Left Wing to Center Attacking Midfield (60')",
+      "evidence": {
+        "minute": 59,
+        "period": 2,
+        "display_minute": "60'",
+        "source": "formation_austria.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.AUS.christoph_baumgartner.p1",
+      "category": "structure",
+      "type": "role_change",
+      "team": "Austria",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Christoph Baumgartner",
+        "display_name": "Christoph Baumgartner"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Center Attacking Midfield",
+        "new_position": "Left Wing"
+      },
+      "claim": "Christoph Baumgartner moved from Center Attacking Midfield to Left Wing (60')",
+      "evidence": {
+        "minute": 59,
+        "period": 2,
+        "display_minute": "60'",
+        "source": "formation_austria.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.AUS.konrad_laimer.p1",
+      "category": "structure",
+      "type": "role_change",
+      "team": "Austria",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Konrad Laimer",
+        "display_name": "Konrad Laimer"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Right Wing",
+        "new_position": "Right Defensive Midfield"
+      },
+      "claim": "Konrad Laimer moved from Right Wing to Right Defensive Midfield (60')",
+      "evidence": {
+        "minute": 59,
+        "period": 2,
+        "display_minute": "60'",
+        "source": "formation_austria.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.formation.AUS.p2",
+      "category": "structure",
+      "type": "formation",
+      "team": "Austria",
+      "window": {
+        "index": 2,
+        "from_minute": 91,
+        "to_minute": 99,
+        "source": "formation_period",
+        "text": "90+2' to full time"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": null,
+      "label": null,
+      "value": "4-2-3-1",
+      "claim": "Austria played a 4-2-3-1 from 90+2' to full time",
+      "evidence": {
+        "from_minute": 91,
+        "from_period": 2,
+        "to_minute": 99,
+        "to_period": 2,
+        "source": "formation_austria.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.AUS.marcel_sabitzer.p2",
+      "category": "structure",
+      "type": "role_change",
+      "team": "Austria",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Marcel Sabitzer",
+        "display_name": "Marcel Sabitzer"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Center Attacking Midfield",
+        "new_position": "Left Wing"
+      },
+      "claim": "Marcel Sabitzer moved from Center Attacking Midfield to Left Wing (90+2')",
+      "evidence": {
+        "minute": 91,
+        "period": 2,
+        "display_minute": "90+2'",
+        "source": "formation_austria.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.AUS.christoph_baumgartner.p2",
+      "category": "structure",
+      "type": "role_change",
+      "team": "Austria",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Christoph Baumgartner",
+        "display_name": "Christoph Baumgartner"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Left Wing",
+        "new_position": "Center Attacking Midfield"
+      },
+      "claim": "Christoph Baumgartner moved from Left Wing to Center Attacking Midfield (90+2')",
+      "evidence": {
+        "minute": 91,
+        "period": 2,
+        "display_minute": "90+2'",
+        "source": "formation_austria.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.formation.FRA.p0",
+      "category": "structure",
+      "type": "formation",
+      "team": "France",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 90,
+        "source": "formation_period",
+        "text": "kick-off to 90+1'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": null,
+      "label": null,
+      "value": "4-2-3-1",
+      "claim": "France played a 4-2-3-1 from kick-off to 90+1'",
+      "evidence": {
+        "from_minute": 0,
+        "from_period": 1,
+        "to_minute": 90,
+        "to_period": 2,
+        "source": "formation_france.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.formation.FRA.p1",
+      "category": "structure",
+      "type": "formation",
+      "team": "France",
+      "window": {
+        "index": 1,
+        "from_minute": 90,
+        "to_minute": 99,
+        "source": "formation_period",
+        "text": "90+1' to full time"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": null,
+      "label": null,
+      "value": "4-1-4-1",
+      "claim": "France played a 4-1-4-1 from 90+1' to full time",
+      "evidence": {
+        "from_minute": 90,
+        "from_period": 2,
+        "to_minute": 99,
+        "to_period": 2,
+        "source": "formation_france.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.formation_change.FRA.p1",
+      "category": "structure",
+      "type": "formation_change",
+      "team": "France",
+      "window": null,
+      "game_states": [],
+      "subject": null,
+      "label": null,
+      "value": {
+        "old": "4-2-3-1",
+        "new": "4-1-4-1"
+      },
+      "claim": "France changed from a 4-2-3-1 to a 4-1-4-1 (90+1')",
+      "evidence": {
+        "minute": 90,
+        "period": 2,
+        "display_minute": "90+1'",
+        "source": "formation_france.json"
+      },
+      "threshold": null,
+      "notability": 3.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.FRA.n_golo_kant.p1",
+      "category": "structure",
+      "type": "role_change",
+      "team": "France",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "N'Golo Kant\u00e9",
+        "display_name": "N'Golo Kant\u00e9"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Right Defensive Midfield",
+        "new_position": "Center Defensive Midfield"
+      },
+      "claim": "N'Golo Kant\u00e9 moved from Right Defensive Midfield to Center Defensive Midfield (90+1')",
+      "evidence": {
+        "minute": 90,
+        "period": 2,
+        "display_minute": "90+1'",
+        "source": "formation_france.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.FRA.marcus_thuram.p1",
+      "category": "structure",
+      "type": "role_change",
+      "team": "France",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Marcus Thuram",
+        "display_name": "Marcus Thuram"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Left Wing",
+        "new_position": "Left Midfield"
+      },
+      "claim": "Marcus Thuram moved from Left Wing to Left Midfield (90+1')",
+      "evidence": {
+        "minute": 90,
+        "period": 2,
+        "display_minute": "90+1'",
+        "source": "formation_france.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.AUS.marko_arnautovi",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Austria",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Marko Arnautovi\u0107",
+        "display_name": "Marko Arnautovi\u0107"
+      },
+      "label": null,
+      "value": {
+        "on": "Marko Arnautovi\u0107",
+        "off": "Michael Gregoritsch"
+      },
+      "claim": "Marko Arnautovi\u0107 replaced Michael Gregoritsch for Austria (59')",
+      "evidence": {
+        "minute": 58,
+        "period": 2,
+        "display_minute": "59'",
+        "on_player": "Marko Arnautovi\u0107",
+        "off_player": "Michael Gregoritsch",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.AUS.gernot_trauner",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Austria",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Gernot Trauner",
+        "display_name": "Gernot Trauner"
+      },
+      "label": null,
+      "value": {
+        "on": "Gernot Trauner",
+        "off": "Maximilian W\u00f6ber"
+      },
+      "claim": "Gernot Trauner replaced Maximilian W\u00f6ber for Austria (59')",
+      "evidence": {
+        "minute": 58,
+        "period": 2,
+        "display_minute": "59'",
+        "on_player": "Gernot Trauner",
+        "off_player": "Maximilian W\u00f6ber",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.AUS.romano_schmid",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Austria",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Romano Schmid",
+        "display_name": "Romano Schmid"
+      },
+      "label": null,
+      "value": {
+        "on": "Romano Schmid",
+        "off": "Konrad Laimer"
+      },
+      "claim": "Romano Schmid replaced Konrad Laimer for Austria (90+1')",
+      "evidence": {
+        "minute": 90,
+        "period": 2,
+        "display_minute": "90+1'",
+        "on_player": "Romano Schmid",
+        "off_player": "Konrad Laimer",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.AUS.patrick_wimmer",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Austria",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Patrick Wimmer",
+        "display_name": "Patrick Wimmer"
+      },
+      "label": null,
+      "value": {
+        "on": "Patrick Wimmer",
+        "off": "Florian Grillitsch"
+      },
+      "claim": "Patrick Wimmer replaced Florian Grillitsch for Austria (60')",
+      "evidence": {
+        "minute": 59,
+        "period": 2,
+        "display_minute": "60'",
+        "on_player": "Patrick Wimmer",
+        "off_player": "Florian Grillitsch",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.AUS.alexander_prass",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Austria",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Alexander Prass",
+        "display_name": "Alexander Prass"
+      },
+      "label": null,
+      "value": {
+        "on": "Alexander Prass",
+        "off": "Philipp Mwene"
+      },
+      "claim": "Alexander Prass replaced Philipp Mwene for Austria (88')",
+      "evidence": {
+        "minute": 87,
+        "period": 2,
+        "display_minute": "88'",
+        "on_player": "Alexander Prass",
+        "off_player": "Philipp Mwene",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.FRA.olivier_giroud",
+      "category": "structure",
+      "type": "substitution",
+      "team": "France",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Olivier Giroud",
+        "display_name": "Olivier Giroud"
+      },
+      "label": null,
+      "value": {
+        "on": "Olivier Giroud",
+        "off": "Kylian Mbapp\u00e9"
+      },
+      "claim": "Olivier Giroud replaced Kylian Mbapp\u00e9 for France (90')",
+      "evidence": {
+        "minute": 89,
+        "period": 2,
+        "display_minute": "90'",
+        "on_player": "Olivier Giroud",
+        "off_player": "Kylian Mbapp\u00e9 Lottin",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.FRA.youssouf_fofana",
+      "category": "structure",
+      "type": "substitution",
+      "team": "France",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Youssouf Fofana",
+        "display_name": "Youssouf Fofana"
+      },
+      "label": null,
+      "value": {
+        "on": "Youssouf Fofana",
+        "off": "Antoine Griezmann"
+      },
+      "claim": "Youssouf Fofana replaced Antoine Griezmann for France (90+1')",
+      "evidence": {
+        "minute": 90,
+        "period": 2,
+        "display_minute": "90+1'",
+        "on_player": "Youssouf Fofana",
+        "off_player": "Antoine Griezmann",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.FRA.randal_kolo",
+      "category": "structure",
+      "type": "substitution",
+      "team": "France",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Randal Kolo Muani",
+        "display_name": "Randal Kolo"
+      },
+      "label": null,
+      "value": {
+        "on": "Randal Kolo",
+        "off": "Ousmane Demb\u00e9l\u00e9"
+      },
+      "claim": "Randal Kolo replaced Ousmane Demb\u00e9l\u00e9 for France (71')",
+      "evidence": {
+        "minute": 70,
+        "period": 2,
+        "display_minute": "71'",
+        "on_player": "Randal Kolo Muani",
+        "off_player": "Ousmane Demb\u00e9l\u00e9",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.FRA.eduardo_camavinga",
+      "category": "structure",
+      "type": "substitution",
+      "team": "France",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Eduardo Camavinga",
+        "display_name": "Eduardo Camavinga"
+      },
+      "label": null,
+      "value": {
+        "on": "Eduardo Camavinga",
+        "off": "Adrien Rabiot"
+      },
+      "claim": "Eduardo Camavinga replaced Adrien Rabiot for France (71')",
+      "evidence": {
+        "minute": 70,
+        "period": 2,
+        "display_minute": "71'",
+        "on_player": "Eduardo Camavinga",
+        "off_player": "Adrien Rabiot",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.AUS.w0.florian_grillitsch",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Austria",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 58,
+        "source": "on_ball_period",
+        "text": "kick-off to 59'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Florian Grillitsch",
+        "display_name": "Florian Grillitsch"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Florian Grillitsch split touches between the centre (25) and the left half-space (16) (kick-off to 59')",
+      "evidence": {
+        "event_count": 66,
+        "lane_counts": {
+          "left_wing": 15,
+          "left_half_space": 16,
+          "centre": 25,
+          "right_half_space": 5,
+          "right_wing": 5
+        },
+        "band_counts": {
+          "own_third": 16,
+          "own_half": 19,
+          "opposition_half": 23,
+          "final_third": 8
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "centre",
+        "source": "team_shape_austria.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.AUS.w0.maximilian_w_ber",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Austria",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 58,
+        "source": "on_ball_period",
+        "text": "kick-off to 59'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Maximilian W\u00f6ber",
+        "display_name": "Maximilian W\u00f6ber"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Maximilian W\u00f6ber split touches between the left wing (21) and the left half-space (21) (kick-off to 59')",
+      "evidence": {
+        "event_count": 45,
+        "lane_counts": {
+          "left_wing": 21,
+          "left_half_space": 21,
+          "centre": 3,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 18,
+          "own_half": 17,
+          "opposition_half": 8,
+          "final_third": 2
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_austria.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.AUS.w0.kevin_danso",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Austria",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 58,
+        "source": "on_ball_period",
+        "text": "kick-off to 59'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Kevin Danso",
+        "display_name": "Kevin Danso"
+      },
+      "label": "right_half_space",
+      "value": "right_half_space",
+      "claim": "Kevin Danso took 23 of 42 touches on the right half-space (kick-off to 59')",
+      "evidence": {
+        "event_count": 42,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 1,
+          "centre": 15,
+          "right_half_space": 23,
+          "right_wing": 3
+        },
+        "band_counts": {
+          "own_third": 22,
+          "own_half": 13,
+          "opposition_half": 7,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_austria.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.AUS.w0.stefan_posch",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Austria",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 58,
+        "source": "on_ball_period",
+        "text": "kick-off to 59'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Stefan Posch",
+        "display_name": "Stefan Posch"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Stefan Posch took 30 of 40 touches on the right wing (kick-off to 59')",
+      "evidence": {
+        "event_count": 40,
+        "lane_counts": {
+          "left_wing": 3,
+          "left_half_space": 0,
+          "centre": 1,
+          "right_half_space": 6,
+          "right_wing": 30
+        },
+        "band_counts": {
+          "own_third": 8,
+          "own_half": 4,
+          "opposition_half": 12,
+          "final_third": 16
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_austria.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.AUS.w0.nicolas_seiwald",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Austria",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 58,
+        "source": "on_ball_period",
+        "text": "kick-off to 59'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Nicolas Seiwald",
+        "display_name": "Nicolas Seiwald"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Nicolas Seiwald split touches between the right half-space (13) and the centre (9) (kick-off to 59')",
+      "evidence": {
+        "event_count": 36,
+        "lane_counts": {
+          "left_wing": 3,
+          "left_half_space": 6,
+          "centre": 9,
+          "right_half_space": 13,
+          "right_wing": 5
+        },
+        "band_counts": {
+          "own_third": 3,
+          "own_half": 18,
+          "opposition_half": 14,
+          "final_third": 1
+        },
+        "band_label": "own_half",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_austria.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.AUS.w0.marcel_sabitzer",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Austria",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 58,
+        "source": "on_ball_period",
+        "text": "kick-off to 59'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Marcel Sabitzer",
+        "display_name": "Marcel Sabitzer"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "Marcel Sabitzer took 24 of 31 touches on the left wing (kick-off to 59')",
+      "evidence": {
+        "event_count": 31,
+        "lane_counts": {
+          "left_wing": 24,
+          "left_half_space": 0,
+          "centre": 6,
+          "right_half_space": 1,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 5,
+          "own_half": 7,
+          "opposition_half": 5,
+          "final_third": 14
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_austria.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.AUS.w0.patrick_pentz",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Austria",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 58,
+        "source": "on_ball_period",
+        "text": "kick-off to 59'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Patrick Pentz",
+        "display_name": "Patrick Pentz"
+      },
+      "label": "centre",
+      "value": "centre",
+      "claim": "Patrick Pentz took 18 of 30 touches on the centre (kick-off to 59')",
+      "evidence": {
+        "event_count": 30,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 9,
+          "centre": 18,
+          "right_half_space": 0,
+          "right_wing": 3
+        },
+        "band_counts": {
+          "own_third": 30,
+          "own_half": 0,
+          "opposition_half": 0,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": null,
+        "observed_side": "centre",
+        "source": "team_shape_austria.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.AUS.w0.christoph_baumgartner",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Austria",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 58,
+        "source": "on_ball_period",
+        "text": "kick-off to 59'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Christoph Baumgartner",
+        "display_name": "Christoph Baumgartner"
+      },
+      "label": "centre",
+      "value": "centre",
+      "claim": "Christoph Baumgartner took 17 of 30 touches on the centre (kick-off to 59')",
+      "evidence": {
+        "event_count": 30,
+        "lane_counts": {
+          "left_wing": 8,
+          "left_half_space": 5,
+          "centre": 17,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 1,
+          "own_half": 4,
+          "opposition_half": 10,
+          "final_third": 15
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": "centre",
+        "observed_side": "centre",
+        "source": "team_shape_austria.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.AUS.w0.michael_gregoritsch",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Austria",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 58,
+        "source": "on_ball_period",
+        "text": "kick-off to 59'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Michael Gregoritsch",
+        "display_name": "Michael Gregoritsch"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Michael Gregoritsch split touches between the centre (14) and the left wing (7) (kick-off to 59')",
+      "evidence": {
+        "event_count": 29,
+        "lane_counts": {
+          "left_wing": 7,
+          "left_half_space": 5,
+          "centre": 14,
+          "right_half_space": 3,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 0,
+          "own_half": 5,
+          "opposition_half": 10,
+          "final_third": 14
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "centre",
+        "observed_side": "centre",
+        "source": "team_shape_austria.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.AUS.w0.konrad_laimer",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Austria",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 58,
+        "source": "on_ball_period",
+        "text": "kick-off to 59'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Konrad Laimer",
+        "display_name": "Konrad Laimer"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Konrad Laimer split touches between the right half-space (10) and the left half-space (7) (kick-off to 59')",
+      "evidence": {
+        "event_count": 29,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 7,
+          "centre": 5,
+          "right_half_space": 10,
+          "right_wing": 7
+        },
+        "band_counts": {
+          "own_third": 5,
+          "own_half": 5,
+          "opposition_half": 3,
+          "final_third": 16
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_austria.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.AUS.w0.philipp_mwene",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Austria",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 58,
+        "source": "on_ball_period",
+        "text": "kick-off to 59'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Philipp Mwene",
+        "display_name": "Philipp Mwene"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "Philipp Mwene took 23 of 24 touches on the left wing (kick-off to 59')",
+      "evidence": {
+        "event_count": 24,
+        "lane_counts": {
+          "left_wing": 23,
+          "left_half_space": 1,
+          "centre": 0,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 3,
+          "own_half": 6,
+          "opposition_half": 6,
+          "final_third": 9
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_austria.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.team_height.AUS.w0",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Austria",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 58,
+        "source": "on_ball_period",
+        "text": "kick-off to 59'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": null,
+      "label": "opposition_half",
+      "value": 62.3,
+      "claim": "Austria's average position in possession was in the opposition half (kick-off to 59')",
+      "evidence": {
+        "mean_x": 62.3,
+        "eligible_outfield_count": 10,
+        "event_count_total": 372,
+        "source": "team_shape_austria.json#on_ball"
+      },
+      "threshold": {
+        "constant": "HALFWAY_LINE",
+        "value": 60
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.team_width.AUS.w0",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Austria",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 58,
+        "source": "on_ball_period",
+        "text": "kick-off to 59'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 59.9,
+      "claim": null,
+      "evidence": {
+        "width": 59.9,
+        "eligible_outfield_count": 10,
+        "source": "team_shape_austria.json#on_ball"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.AUS.w2.gernot_trauner",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Austria",
+      "window": {
+        "index": 2,
+        "from_minute": 59,
+        "to_minute": 87,
+        "source": "on_ball_period",
+        "text": "60' to 88'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Gernot Trauner",
+        "display_name": "Gernot Trauner"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Gernot Trauner split touches between the left wing (16) and the left half-space (13) (60' to 88')",
+      "evidence": {
+        "event_count": 33,
+        "lane_counts": {
+          "left_wing": 16,
+          "left_half_space": 13,
+          "centre": 4,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 12,
+          "own_half": 9,
+          "opposition_half": 11,
+          "final_third": 1
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_austria.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.AUS.w2.nicolas_seiwald",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Austria",
+      "window": {
+        "index": 2,
+        "from_minute": 59,
+        "to_minute": 87,
+        "source": "on_ball_period",
+        "text": "60' to 88'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Nicolas Seiwald",
+        "display_name": "Nicolas Seiwald"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Nicolas Seiwald split touches between the left wing (12) and the left half-space (7) (60' to 88')",
+      "evidence": {
+        "event_count": 26,
+        "lane_counts": {
+          "left_wing": 12,
+          "left_half_space": 7,
+          "centre": 7,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 5,
+          "own_half": 0,
+          "opposition_half": 10,
+          "final_third": 11
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_austria.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.AUS.w2.christoph_baumgartner",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Austria",
+      "window": {
+        "index": 2,
+        "from_minute": 59,
+        "to_minute": 87,
+        "source": "on_ball_period",
+        "text": "60' to 88'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Christoph Baumgartner",
+        "display_name": "Christoph Baumgartner"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "Christoph Baumgartner took 11 of 22 touches on the left wing (60' to 88')",
+      "evidence": {
+        "event_count": 22,
+        "lane_counts": {
+          "left_wing": 11,
+          "left_half_space": 1,
+          "centre": 7,
+          "right_half_space": 3,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 0,
+          "own_half": 0,
+          "opposition_half": 7,
+          "final_third": 15
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_austria.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.AUS.w2.konrad_laimer",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Austria",
+      "window": {
+        "index": 2,
+        "from_minute": 59,
+        "to_minute": 87,
+        "source": "on_ball_period",
+        "text": "60' to 88'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Konrad Laimer",
+        "display_name": "Konrad Laimer"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Konrad Laimer split touches between the right half-space (8) and the left half-space (6) (60' to 88')",
+      "evidence": {
+        "event_count": 21,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 6,
+          "centre": 6,
+          "right_half_space": 8,
+          "right_wing": 1
+        },
+        "band_counts": {
+          "own_third": 4,
+          "own_half": 4,
+          "opposition_half": 8,
+          "final_third": 5
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_austria.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.AUS.w2.philipp_mwene",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Austria",
+      "window": {
+        "index": 2,
+        "from_minute": 59,
+        "to_minute": 87,
+        "source": "on_ball_period",
+        "text": "60' to 88'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Philipp Mwene",
+        "display_name": "Philipp Mwene"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "Philipp Mwene took 14 of 18 touches on the left wing (60' to 88')",
+      "evidence": {
+        "event_count": 18,
+        "lane_counts": {
+          "left_wing": 14,
+          "left_half_space": 4,
+          "centre": 0,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 3,
+          "own_half": 3,
+          "opposition_half": 4,
+          "final_third": 8
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_austria.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.AUS.w2.marcel_sabitzer",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Austria",
+      "window": {
+        "index": 2,
+        "from_minute": 59,
+        "to_minute": 87,
+        "source": "on_ball_period",
+        "text": "60' to 88'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Marcel Sabitzer",
+        "display_name": "Marcel Sabitzer"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Marcel Sabitzer split touches between the left half-space (7) and the left wing (6) (60' to 88')",
+      "evidence": {
+        "event_count": 15,
+        "lane_counts": {
+          "left_wing": 6,
+          "left_half_space": 7,
+          "centre": 2,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 0,
+          "own_half": 3,
+          "opposition_half": 0,
+          "final_third": 12
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": "centre",
+        "observed_side": "left",
+        "source": "team_shape_austria.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.AUS.w2.patrick_wimmer",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Austria",
+      "window": {
+        "index": 2,
+        "from_minute": 59,
+        "to_minute": 87,
+        "source": "on_ball_period",
+        "text": "60' to 88'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Patrick Wimmer",
+        "display_name": "Patrick Wimmer"
+      },
+      "label": "right_half_space",
+      "value": "right_half_space",
+      "claim": "Patrick Wimmer took 8 of 15 touches on the right half-space (60' to 88')",
+      "evidence": {
+        "event_count": 15,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 4,
+          "right_half_space": 8,
+          "right_wing": 3
+        },
+        "band_counts": {
+          "own_third": 2,
+          "own_half": 1,
+          "opposition_half": 7,
+          "final_third": 5
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_austria.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.AUS.w2.kevin_danso",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Austria",
+      "window": {
+        "index": 2,
+        "from_minute": 59,
+        "to_minute": 87,
+        "source": "on_ball_period",
+        "text": "60' to 88'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Kevin Danso",
+        "display_name": "Kevin Danso"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Kevin Danso split touches between the centre (3) and the right half-space (3) (60' to 88')",
+      "evidence": {
+        "event_count": 11,
+        "lane_counts": {
+          "left_wing": 1,
+          "left_half_space": 2,
+          "centre": 3,
+          "right_half_space": 3,
+          "right_wing": 2
+        },
+        "band_counts": {
+          "own_third": 3,
+          "own_half": 3,
+          "opposition_half": 5,
+          "final_third": 0
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "right",
+        "observed_side": "centre",
+        "source": "team_shape_austria.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.team_height.AUS.w2",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Austria",
+      "window": {
+        "index": 2,
+        "from_minute": 59,
+        "to_minute": 87,
+        "source": "on_ball_period",
+        "text": "60' to 88'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": null,
+      "label": "opposition_half",
+      "value": 66.94,
+      "claim": "Austria's average position in possession was in the opposition half (60' to 88')",
+      "evidence": {
+        "mean_x": 66.94,
+        "eligible_outfield_count": 8,
+        "event_count_total": 161,
+        "source": "team_shape_austria.json#on_ball"
+      },
+      "threshold": {
+        "constant": "HALFWAY_LINE",
+        "value": 60
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.team_width.AUS.w2",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Austria",
+      "window": {
+        "index": 2,
+        "from_minute": 59,
+        "to_minute": 87,
+        "source": "on_ball_period",
+        "text": "60' to 88'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 45.32,
+      "claim": null,
+      "evidence": {
+        "width": 45.32,
+        "eligible_outfield_count": 8,
+        "source": "team_shape_austria.json#on_ball"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.AUS.w4.patrick_wimmer",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Austria",
+      "window": {
+        "index": 4,
+        "from_minute": 90,
+        "to_minute": 100,
+        "source": "on_ball_period",
+        "text": "90+1' to full time"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Patrick Wimmer",
+        "display_name": "Patrick Wimmer"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Patrick Wimmer split touches between the right half-space (10) and the right wing (9) (90+1' to full time)",
+      "evidence": {
+        "event_count": 22,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 3,
+          "right_half_space": 10,
+          "right_wing": 9
+        },
+        "band_counts": {
+          "own_third": 5,
+          "own_half": 2,
+          "opposition_half": 9,
+          "final_third": 6
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_austria.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.AUS.w4.gernot_trauner",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Austria",
+      "window": {
+        "index": 4,
+        "from_minute": 90,
+        "to_minute": 100,
+        "source": "on_ball_period",
+        "text": "90+1' to full time"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Gernot Trauner",
+        "display_name": "Gernot Trauner"
+      },
+      "label": "left_half_space",
+      "value": "left_half_space",
+      "claim": "Gernot Trauner took 10 of 18 touches on the left half-space (90+1' to full time)",
+      "evidence": {
+        "event_count": 18,
+        "lane_counts": {
+          "left_wing": 4,
+          "left_half_space": 10,
+          "centre": 4,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 6,
+          "own_half": 5,
+          "opposition_half": 7,
+          "final_third": 0
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_austria.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.AUS.w4.kevin_danso",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Austria",
+      "window": {
+        "index": 4,
+        "from_minute": 90,
+        "to_minute": 100,
+        "source": "on_ball_period",
+        "text": "90+1' to full time"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Kevin Danso",
+        "display_name": "Kevin Danso"
+      },
+      "label": "right_half_space",
+      "value": "right_half_space",
+      "claim": "Kevin Danso took 10 of 18 touches on the right half-space (90+1' to full time)",
+      "evidence": {
+        "event_count": 18,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 8,
+          "right_half_space": 10,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 5,
+          "own_half": 3,
+          "opposition_half": 10,
+          "final_third": 0
+        },
+        "band_label": "opposition_half",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_austria.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.AUS.w4.nicolas_seiwald",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Austria",
+      "window": {
+        "index": 4,
+        "from_minute": 90,
+        "to_minute": 100,
+        "source": "on_ball_period",
+        "text": "90+1' to full time"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Nicolas Seiwald",
+        "display_name": "Nicolas Seiwald"
+      },
+      "label": "centre",
+      "value": "centre",
+      "claim": "Nicolas Seiwald took 11 of 17 touches on the centre (90+1' to full time)",
+      "evidence": {
+        "event_count": 17,
+        "lane_counts": {
+          "left_wing": 1,
+          "left_half_space": 2,
+          "centre": 11,
+          "right_half_space": 0,
+          "right_wing": 3
+        },
+        "band_counts": {
+          "own_third": 6,
+          "own_half": 0,
+          "opposition_half": 8,
+          "final_third": 3
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "centre",
+        "source": "team_shape_austria.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.AUS.w4.romano_schmid",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Austria",
+      "window": {
+        "index": 4,
+        "from_minute": 90,
+        "to_minute": 100,
+        "source": "on_ball_period",
+        "text": "90+1' to full time"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Romano Schmid",
+        "display_name": "Romano Schmid"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Romano Schmid split touches between the centre (8) and the right half-space (6) (90+1' to full time)",
+      "evidence": {
+        "event_count": 17,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 3,
+          "centre": 8,
+          "right_half_space": 6,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 10,
+          "own_half": 1,
+          "opposition_half": 2,
+          "final_third": 4
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "centre",
+        "source": "team_shape_austria.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.AUS.w4.alexander_prass",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Austria",
+      "window": {
+        "index": 4,
+        "from_minute": 90,
+        "to_minute": 100,
+        "source": "on_ball_period",
+        "text": "90+1' to full time"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Alexander Prass",
+        "display_name": "Alexander Prass"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "Alexander Prass took 9 of 17 touches on the left wing (90+1' to full time)",
+      "evidence": {
+        "event_count": 17,
+        "lane_counts": {
+          "left_wing": 9,
+          "left_half_space": 2,
+          "centre": 3,
+          "right_half_space": 3,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 9,
+          "own_half": 3,
+          "opposition_half": 1,
+          "final_third": 4
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_austria.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.AUS.w4.stefan_posch",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Austria",
+      "window": {
+        "index": 4,
+        "from_minute": 90,
+        "to_minute": 100,
+        "source": "on_ball_period",
+        "text": "90+1' to full time"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Stefan Posch",
+        "display_name": "Stefan Posch"
+      },
+      "label": "right_half_space",
+      "value": "right_half_space",
+      "claim": "Stefan Posch took 7 of 14 touches on the right half-space (90+1' to full time)",
+      "evidence": {
+        "event_count": 14,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 0,
+          "right_half_space": 7,
+          "right_wing": 7
+        },
+        "band_counts": {
+          "own_third": 5,
+          "own_half": 0,
+          "opposition_half": 1,
+          "final_third": 8
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_austria.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.AUS.w4.christoph_baumgartner",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Austria",
+      "window": {
+        "index": 4,
+        "from_minute": 90,
+        "to_minute": 100,
+        "source": "on_ball_period",
+        "text": "90+1' to full time"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Christoph Baumgartner",
+        "display_name": "Christoph Baumgartner"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Christoph Baumgartner split touches between the left half-space (4) and the right half-space (4) (90+1' to full time)",
+      "evidence": {
+        "event_count": 13,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 4,
+          "centre": 3,
+          "right_half_space": 4,
+          "right_wing": 2
+        },
+        "band_counts": {
+          "own_third": 0,
+          "own_half": 2,
+          "opposition_half": 3,
+          "final_third": 8
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_austria.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.AUS.w4.marcel_sabitzer",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Austria",
+      "window": {
+        "index": 4,
+        "from_minute": 90,
+        "to_minute": 100,
+        "source": "on_ball_period",
+        "text": "90+1' to full time"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Marcel Sabitzer",
+        "display_name": "Marcel Sabitzer"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "Marcel Sabitzer took 6 of 11 touches on the left wing (90+1' to full time)",
+      "evidence": {
+        "event_count": 11,
+        "lane_counts": {
+          "left_wing": 6,
+          "left_half_space": 0,
+          "centre": 2,
+          "right_half_space": 0,
+          "right_wing": 3
+        },
+        "band_counts": {
+          "own_third": 0,
+          "own_half": 0,
+          "opposition_half": 3,
+          "final_third": 8
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": "centre",
+        "observed_side": "left",
+        "source": "team_shape_austria.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.AUS.w4.marko_arnautovi",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Austria",
+      "window": {
+        "index": 4,
+        "from_minute": 90,
+        "to_minute": 100,
+        "source": "on_ball_period",
+        "text": "90+1' to full time"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Marko Arnautovi\u0107",
+        "display_name": "Marko Arnautovi\u0107"
+      },
+      "label": "right_half_space",
+      "value": "right_half_space",
+      "claim": "Marko Arnautovi\u0107 took 5 of 10 touches on the right half-space (90+1' to full time)",
+      "evidence": {
+        "event_count": 10,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 3,
+          "centre": 2,
+          "right_half_space": 5,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 0,
+          "own_half": 8,
+          "opposition_half": 0,
+          "final_third": 2
+        },
+        "band_label": "own_half",
+        "band_mixed": false,
+        "declared_side": "centre",
+        "observed_side": "right",
+        "source": "team_shape_austria.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.team_height.AUS.w4",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Austria",
+      "window": {
+        "index": 4,
+        "from_minute": 90,
+        "to_minute": 100,
+        "source": "on_ball_period",
+        "text": "90+1' to full time"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": null,
+      "label": "own_half",
+      "value": 59.9,
+      "claim": "Austria's average position in possession was in their own half (90+1' to full time)",
+      "evidence": {
+        "mean_x": 59.9,
+        "eligible_outfield_count": 10,
+        "event_count_total": 157,
+        "source": "team_shape_austria.json#on_ball"
+      },
+      "threshold": {
+        "constant": "HALFWAY_LINE",
+        "value": 60
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.team_width.AUS.w4",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Austria",
+      "window": {
+        "index": 4,
+        "from_minute": 90,
+        "to_minute": 100,
+        "source": "on_ball_period",
+        "text": "90+1' to full time"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 39.72,
+      "claim": null,
+      "evidence": {
+        "width": 39.72,
+        "eligible_outfield_count": 10,
+        "source": "team_shape_austria.json#on_ball"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.FRA.w0.william_saliba",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "France",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 70,
+        "source": "on_ball_period",
+        "text": "kick-off to 71'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "William Saliba",
+        "display_name": "William Saliba"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "William Saliba split touches between the left half-space (38) and the left wing (21) (kick-off to 71')",
+      "evidence": {
+        "event_count": 83,
+        "lane_counts": {
+          "left_wing": 21,
+          "left_half_space": 38,
+          "centre": 21,
+          "right_half_space": 3,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 50,
+          "own_half": 22,
+          "opposition_half": 11,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_france.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.FRA.w0.kylian_mbapp",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "France",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 70,
+        "source": "on_ball_period",
+        "text": "kick-off to 71'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Kylian Mbapp\u00e9 Lottin",
+        "display_name": "Kylian Mbapp\u00e9"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "Kylian Mbapp\u00e9 took 46 of 82 touches on the left wing (kick-off to 71')",
+      "evidence": {
+        "event_count": 82,
+        "lane_counts": {
+          "left_wing": 46,
+          "left_half_space": 9,
+          "centre": 13,
+          "right_half_space": 9,
+          "right_wing": 5
+        },
+        "band_counts": {
+          "own_third": 0,
+          "own_half": 12,
+          "opposition_half": 22,
+          "final_third": 48
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": "centre",
+        "observed_side": "left",
+        "source": "team_shape_france.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.FRA.w0.theo_hern_ndez",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "France",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 70,
+        "source": "on_ball_period",
+        "text": "kick-off to 71'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+        "display_name": "Theo Hern\u00e1ndez"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "Theo Hern\u00e1ndez took 65 of 79 touches on the left wing (kick-off to 71')",
+      "evidence": {
+        "event_count": 79,
+        "lane_counts": {
+          "left_wing": 65,
+          "left_half_space": 14,
+          "centre": 0,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 16,
+          "own_half": 23,
+          "opposition_half": 15,
+          "final_third": 25
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_france.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.FRA.w0.adrien_rabiot",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "France",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 70,
+        "source": "on_ball_period",
+        "text": "kick-off to 71'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Adrien Rabiot",
+        "display_name": "Adrien Rabiot"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Adrien Rabiot split touches between the centre (25) and the left wing (21) (kick-off to 71')",
+      "evidence": {
+        "event_count": 75,
+        "lane_counts": {
+          "left_wing": 21,
+          "left_half_space": 7,
+          "centre": 25,
+          "right_half_space": 10,
+          "right_wing": 12
+        },
+        "band_counts": {
+          "own_third": 17,
+          "own_half": 26,
+          "opposition_half": 10,
+          "final_third": 22
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "centre",
+        "source": "team_shape_france.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.FRA.w0.ousmane_demb_l",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "France",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 70,
+        "source": "on_ball_period",
+        "text": "kick-off to 71'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Ousmane Demb\u00e9l\u00e9",
+        "display_name": "Ousmane Demb\u00e9l\u00e9"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Ousmane Demb\u00e9l\u00e9 took 44 of 62 touches on the right wing (kick-off to 71')",
+      "evidence": {
+        "event_count": 62,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 7,
+          "right_half_space": 11,
+          "right_wing": 44
+        },
+        "band_counts": {
+          "own_third": 11,
+          "own_half": 10,
+          "opposition_half": 12,
+          "final_third": 29
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_france.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.FRA.w0.n_golo_kant",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "France",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 70,
+        "source": "on_ball_period",
+        "text": "kick-off to 71'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "N'Golo Kant\u00e9",
+        "display_name": "N'Golo Kant\u00e9"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "N'Golo Kant\u00e9 split touches between the right half-space (17) and the centre (13) (kick-off to 71')",
+      "evidence": {
+        "event_count": 57,
+        "lane_counts": {
+          "left_wing": 12,
+          "left_half_space": 11,
+          "centre": 13,
+          "right_half_space": 17,
+          "right_wing": 4
+        },
+        "band_counts": {
+          "own_third": 22,
+          "own_half": 11,
+          "opposition_half": 12,
+          "final_third": 12
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_france.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.FRA.w0.dayotchanculle_upamecano",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "France",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 70,
+        "source": "on_ball_period",
+        "text": "kick-off to 71'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Dayotchanculle Upamecano",
+        "display_name": "Dayotchanculle Upamecano"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Dayotchanculle Upamecano split touches between the right half-space (25) and the centre (23) (kick-off to 71')",
+      "evidence": {
+        "event_count": 56,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 1,
+          "centre": 23,
+          "right_half_space": 25,
+          "right_wing": 7
+        },
+        "band_counts": {
+          "own_third": 32,
+          "own_half": 16,
+          "opposition_half": 8,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_france.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.FRA.w0.antoine_griezmann",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "France",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 70,
+        "source": "on_ball_period",
+        "text": "kick-off to 71'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Antoine Griezmann",
+        "display_name": "Antoine Griezmann"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Antoine Griezmann split touches between the right half-space (27) and the centre (14) (kick-off to 71')",
+      "evidence": {
+        "event_count": 56,
+        "lane_counts": {
+          "left_wing": 3,
+          "left_half_space": 3,
+          "centre": 14,
+          "right_half_space": 27,
+          "right_wing": 9
+        },
+        "band_counts": {
+          "own_third": 11,
+          "own_half": 17,
+          "opposition_half": 9,
+          "final_third": 19
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "centre",
+        "observed_side": "right",
+        "source": "team_shape_france.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.FRA.w0.jules_kound",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "France",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 70,
+        "source": "on_ball_period",
+        "text": "kick-off to 71'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Jules Kound\u00e9",
+        "display_name": "Jules Kound\u00e9"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Jules Kound\u00e9 took 37 of 51 touches on the right wing (kick-off to 71')",
+      "evidence": {
+        "event_count": 51,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 5,
+          "right_half_space": 9,
+          "right_wing": 37
+        },
+        "band_counts": {
+          "own_third": 22,
+          "own_half": 12,
+          "opposition_half": 2,
+          "final_third": 15
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_france.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.FRA.w0.marcus_thuram",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "France",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 70,
+        "source": "on_ball_period",
+        "text": "kick-off to 71'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Marcus Thuram",
+        "display_name": "Marcus Thuram"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Marcus Thuram split touches between the left wing (19) and the centre (9) (kick-off to 71')",
+      "evidence": {
+        "event_count": 42,
+        "lane_counts": {
+          "left_wing": 19,
+          "left_half_space": 8,
+          "centre": 9,
+          "right_half_space": 4,
+          "right_wing": 2
+        },
+        "band_counts": {
+          "own_third": 5,
+          "own_half": 10,
+          "opposition_half": 12,
+          "final_third": 15
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_france.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.FRA.w0.mike_maignan",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "France",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 70,
+        "source": "on_ball_period",
+        "text": "kick-off to 71'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Mike Maignan",
+        "display_name": "Mike Maignan"
+      },
+      "label": "centre",
+      "value": "centre",
+      "claim": "Mike Maignan took 32 of 36 touches on the centre (kick-off to 71')",
+      "evidence": {
+        "event_count": 36,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 2,
+          "centre": 32,
+          "right_half_space": 2,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 36,
+          "own_half": 0,
+          "opposition_half": 0,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": null,
+        "observed_side": "centre",
+        "source": "team_shape_france.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.team_height.FRA.w0",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "France",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 70,
+        "source": "on_ball_period",
+        "text": "kick-off to 71'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": null,
+      "label": "opposition_half",
+      "value": 60.32,
+      "claim": "France's average position in possession was in the opposition half (kick-off to 71')",
+      "evidence": {
+        "mean_x": 60.32,
+        "eligible_outfield_count": 10,
+        "event_count_total": 643,
+        "source": "team_shape_france.json#on_ball"
+      },
+      "threshold": {
+        "constant": "HALFWAY_LINE",
+        "value": 60
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.team_width.FRA.w0",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "France",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 70,
+        "source": "on_ball_period",
+        "text": "kick-off to 71'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 55.43,
+      "claim": null,
+      "evidence": {
+        "width": 55.43,
+        "eligible_outfield_count": 10,
+        "source": "team_shape_france.json#on_ball"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.FRA.w3.theo_hern_ndez",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "France",
+      "window": {
+        "index": 3,
+        "from_minute": 90,
+        "to_minute": 100,
+        "source": "on_ball_period",
+        "text": "90+1' to full time"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Theo Bernard Fran\u00e7ois Hern\u00e1ndez",
+        "display_name": "Theo Hern\u00e1ndez"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "Theo Hern\u00e1ndez took 11 of 16 touches on the left wing (90+1' to full time)",
+      "evidence": {
+        "event_count": 16,
+        "lane_counts": {
+          "left_wing": 11,
+          "left_half_space": 5,
+          "centre": 0,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 7,
+          "own_half": 4,
+          "opposition_half": 5,
+          "final_third": 0
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_france.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.FRA.w3.marcus_thuram",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "France",
+      "window": {
+        "index": 3,
+        "from_minute": 90,
+        "to_minute": 100,
+        "source": "on_ball_period",
+        "text": "90+1' to full time"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Marcus Thuram",
+        "display_name": "Marcus Thuram"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "Marcus Thuram took 10 of 12 touches on the left wing (90+1' to full time)",
+      "evidence": {
+        "event_count": 12,
+        "lane_counts": {
+          "left_wing": 10,
+          "left_half_space": 2,
+          "centre": 0,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 0,
+          "own_half": 2,
+          "opposition_half": 6,
+          "final_third": 4
+        },
+        "band_label": "opposition_half",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_france.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "out_of_possession.block_height.AUS.whole_match",
+      "category": "out_of_possession",
+      "type": "block_height",
+      "team": "Austria",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": null,
+        "source": "whole_match",
+        "text": "kick-off to full time"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 53.34,
+      "claim": null,
+      "evidence": {
+        "centroid_x": 53.34,
+        "camera_caveat": "360 frames follow the ball; the visible subset of out-of-possession positions is biased toward areas near the ball. The camera artifact and the real defensive shape point the same direction \u2014 they cannot be cleanly separated.",
+        "source": "team_shape_austria.json#off_ball.centroid"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "out_of_possession.block_height.FRA.whole_match",
+      "category": "out_of_possession",
+      "type": "block_height",
+      "team": "France",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": null,
+        "source": "whole_match",
+        "text": "kick-off to full time"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 49.56,
+      "claim": null,
+      "evidence": {
+        "centroid_x": 49.56,
+        "camera_caveat": "360 frames follow the ball; the visible subset of out-of-possession positions is biased toward areas near the ball. The camera artifact and the real defensive shape point the same direction \u2014 they cannot be cleanly separated.",
+        "source": "team_shape_france.json#off_ball.centroid"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.AUS.w0.florian_grillitsch",
+      "category": "passing",
+      "type": "hub",
+      "team": "Austria",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 58,
+        "source": "pass_network_window",
+        "text": "kick-off to 59'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Florian Grillitsch",
+        "display_name": "Florian Grillitsch"
+      },
+      "label": null,
+      "value": 0.1641,
+      "claim": "Florian Grillitsch was a hub for Austria, involved in 16.4% of passes (kick-off to 59')",
+      "evidence": {
+        "passes_made": 40,
+        "passes_received": 45,
+        "share": 0.1641,
+        "source": "pass_network_Austria.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.0939510939510941,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.AUS.w0.maximilian_w_ber",
+      "category": "passing",
+      "type": "hub",
+      "team": "Austria",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 58,
+        "source": "pass_network_window",
+        "text": "kick-off to 59'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Maximilian W\u00f6ber",
+        "display_name": "Maximilian W\u00f6ber"
+      },
+      "label": null,
+      "value": 0.1544,
+      "claim": "Maximilian W\u00f6ber was a hub for Austria, involved in 15.4% of passes (kick-off to 59')",
+      "evidence": {
+        "passes_made": 39,
+        "passes_received": 41,
+        "share": 0.1544,
+        "source": "pass_network_Austria.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.0296010296010296,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.AUS.w0.kevin_danso_maximilian_w_ber",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Austria",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 58,
+        "source": "pass_network_window",
+        "text": "kick-off to 59'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "pair": [
+          "Kevin Danso",
+          "Maximilian W\u00f6ber"
+        ]
+      },
+      "label": null,
+      "value": 22,
+      "claim": "Kevin Danso and Maximilian W\u00f6ber combined 22 times (kick-off to 59')",
+      "evidence": {
+        "bidirectional_total": 22,
+        "source": "pass_network_Austria.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.6988416988416988,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.AUS.w0.florian_grillitsch_maximilian_w_ber",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Austria",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 58,
+        "source": "pass_network_window",
+        "text": "kick-off to 59'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "pair": [
+          "Florian Grillitsch",
+          "Maximilian W\u00f6ber"
+        ]
+      },
+      "label": null,
+      "value": 17,
+      "claim": "Florian Grillitsch and Maximilian W\u00f6ber combined 17 times (kick-off to 59')",
+      "evidence": {
+        "bidirectional_total": 17,
+        "source": "pass_network_Austria.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.3127413127413126,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.AUS.w0.kevin_danso_nicolas_seiwald",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Austria",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 58,
+        "source": "pass_network_window",
+        "text": "kick-off to 59'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "pair": [
+          "Kevin Danso",
+          "Nicolas Seiwald"
+        ]
+      },
+      "label": null,
+      "value": 16,
+      "claim": "Kevin Danso and Nicolas Seiwald combined 16 times (kick-off to 59')",
+      "evidence": {
+        "bidirectional_total": 16,
+        "source": "pass_network_Austria.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.2355212355212355,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.concentration.AUS.w0",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Austria",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 58,
+        "source": "pass_network_window",
+        "text": "kick-off to 59'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 0.4653,
+      "claim": null,
+      "evidence": {
+        "top3_share": 0.4653,
+        "window_passes": 259,
+        "source": "pass_network_Austria.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.AUS.w1.gernot_trauner",
+      "category": "passing",
+      "type": "hub",
+      "team": "Austria",
+      "window": {
+        "index": 1,
+        "from_minute": 59,
+        "to_minute": 87,
+        "source": "pass_network_window",
+        "text": "60' to 88'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "Gernot Trauner",
+        "display_name": "Gernot Trauner"
+      },
+      "label": null,
+      "value": 0.1913,
+      "claim": "Gernot Trauner was a hub for Austria, involved in 19.1% of passes (60' to 88')",
+      "evidence": {
+        "passes_made": 23,
+        "passes_received": 21,
+        "share": 0.1913,
+        "source": "pass_network_Austria.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.2753623188405798,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.AUS.w1.gernot_trauner_nicolas_seiwald",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Austria",
+      "window": {
+        "index": 1,
+        "from_minute": 59,
+        "to_minute": 87,
+        "source": "pass_network_window",
+        "text": "60' to 88'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "pair": [
+          "Gernot Trauner",
+          "Nicolas Seiwald"
+        ]
+      },
+      "label": null,
+      "value": 12,
+      "claim": "Gernot Trauner and Nicolas Seiwald combined 12 times (60' to 88')",
+      "evidence": {
+        "bidirectional_total": 12,
+        "source": "pass_network_Austria.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 2.0869565217391304,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.AUS.w1.gernot_trauner_philipp_mwene",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Austria",
+      "window": {
+        "index": 1,
+        "from_minute": 59,
+        "to_minute": 87,
+        "source": "pass_network_window",
+        "text": "60' to 88'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "pair": [
+          "Gernot Trauner",
+          "Philipp Mwene"
+        ]
+      },
+      "label": null,
+      "value": 9,
+      "claim": "Gernot Trauner and Philipp Mwene combined 9 times (60' to 88')",
+      "evidence": {
+        "bidirectional_total": 9,
+        "source": "pass_network_Austria.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.565217391304348,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.AUS.w1.konrad_laimer_stefan_posch",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Austria",
+      "window": {
+        "index": 1,
+        "from_minute": 59,
+        "to_minute": 87,
+        "source": "pass_network_window",
+        "text": "60' to 88'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "pair": [
+          "Konrad Laimer",
+          "Stefan Posch"
+        ]
+      },
+      "label": null,
+      "value": 8,
+      "claim": "Konrad Laimer and Stefan Posch combined 8 times (60' to 88')",
+      "evidence": {
+        "bidirectional_total": 8,
+        "source": "pass_network_Austria.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.391304347826087,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.concentration.AUS.w1",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Austria",
+      "window": {
+        "index": 1,
+        "from_minute": 59,
+        "to_minute": 87,
+        "source": "pass_network_window",
+        "text": "60' to 88'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 0.4696,
+      "claim": null,
+      "evidence": {
+        "top3_share": 0.4696,
+        "window_passes": 115,
+        "source": "pass_network_Austria.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.no_hub.AUS.w3",
+      "category": "passing",
+      "type": "no_hub",
+      "team": "Austria",
+      "window": {
+        "index": 3,
+        "from_minute": 90,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "90+1' to full time"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 0.1383,
+      "claim": "Austria's passing had no single hub; the most involved player, Gernot Trauner, had 13.8% (90+1' to full time)",
+      "evidence": {
+        "most_involved_player": "Gernot Trauner",
+        "share": 0.1383,
+        "source": "pass_network_Austria.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.concentration.AUS.w3",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Austria",
+      "window": {
+        "index": 3,
+        "from_minute": 90,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "90+1' to full time"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 0.383,
+      "claim": null,
+      "evidence": {
+        "top3_share": 0.383,
+        "window_passes": 47,
+        "source": "pass_network_Austria.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.FRA.w0.william_saliba",
+      "category": "passing",
+      "type": "hub",
+      "team": "France",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 70,
+        "source": "pass_network_window",
+        "text": "kick-off to 71'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "player": "William Saliba",
+        "display_name": "William Saliba"
+      },
+      "label": null,
+      "value": 0.1523,
+      "claim": "William Saliba was a hub for France, involved in 15.2% of passes (kick-off to 71')",
+      "evidence": {
+        "passes_made": 55,
+        "passes_received": 51,
+        "share": 0.1523,
+        "source": "pass_network_France.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.0153256704980844,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.FRA.w0.william_saliba_theo_hern_ndez",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "France",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 70,
+        "source": "pass_network_window",
+        "text": "kick-off to 71'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "pair": [
+          "William Saliba",
+          "Theo Hern\u00e1ndez"
+        ]
+      },
+      "label": null,
+      "value": 29,
+      "claim": "William Saliba and Theo Hern\u00e1ndez combined 29 times (kick-off to 71')",
+      "evidence": {
+        "bidirectional_total": 29,
+        "source": "pass_network_France.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.6666666666666665,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.FRA.w0.dayotchanculle_upamecano_jules_kound",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "France",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 70,
+        "source": "pass_network_window",
+        "text": "kick-off to 71'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "pair": [
+          "Dayotchanculle Upamecano",
+          "Jules Kound\u00e9"
+        ]
+      },
+      "label": null,
+      "value": 22,
+      "claim": "Dayotchanculle Upamecano and Jules Kound\u00e9 combined 22 times (kick-off to 71')",
+      "evidence": {
+        "bidirectional_total": 22,
+        "source": "pass_network_France.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.264367816091954,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.FRA.w0.william_saliba_dayotchanculle_upamecano",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "France",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 70,
+        "source": "pass_network_window",
+        "text": "kick-off to 71'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": {
+        "pair": [
+          "William Saliba",
+          "Dayotchanculle Upamecano"
+        ]
+      },
+      "label": null,
+      "value": 21,
+      "claim": "William Saliba and Dayotchanculle Upamecano combined 21 times (kick-off to 71')",
+      "evidence": {
+        "bidirectional_total": 21,
+        "source": "pass_network_France.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.206896551724138,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.concentration.FRA.w0",
+      "category": "passing",
+      "type": "concentration",
+      "team": "France",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 70,
+        "source": "pass_network_window",
+        "text": "kick-off to 71'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 0.3822,
+      "claim": null,
+      "evidence": {
+        "top3_share": 0.3822,
+        "window_passes": 348,
+        "source": "pass_network_France.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.no_hub.FRA.w1",
+      "category": "passing",
+      "type": "no_hub",
+      "team": "France",
+      "window": {
+        "index": 1,
+        "from_minute": 70,
+        "to_minute": 89,
+        "source": "pass_network_window",
+        "text": "71' to 90'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 0.1429,
+      "claim": "France's passing had no single hub; the most involved player, Marcus Thuram, had 14.3% (71' to 90')",
+      "evidence": {
+        "most_involved_player": "Marcus Thuram",
+        "share": 0.1429,
+        "source": "pass_network_France.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.concentration.FRA.w1",
+      "category": "passing",
+      "type": "concentration",
+      "team": "France",
+      "window": {
+        "index": 1,
+        "from_minute": 70,
+        "to_minute": 89,
+        "source": "pass_network_window",
+        "text": "71' to 90'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 0.3929,
+      "claim": null,
+      "evidence": {
+        "top3_share": 0.3929,
+        "window_passes": 42,
+        "source": "pass_network_France.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "cross.comparison.concentration.AUS",
+      "category": "cross_cutting",
+      "type": "comparison",
+      "team": "Austria",
+      "window": null,
+      "game_states": [],
+      "subject": null,
+      "label": "more_concentrated",
+      "value": 8.31,
+      "claim": "Austria's passing was more concentrated than France's: the top three players had 46.5% of involvement against 38.2% (kick-off to 59')",
+      "evidence": {
+        "higher_value": 0.4653,
+        "other_value": 0.3822,
+        "gap": 8.31
+      },
+      "threshold": {
+        "constant": "COMPARE_MIN_POINTS",
+        "value": 5
+      },
+      "notability": 1.6620000000000001,
+      "definitions_version": "0.1.0"
+    }
+  ],
+  "suppressed": [
+    {
+      "id": "in_possession.team_height.AUS.w1",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Austria",
+      "window": {
+        "index": 1,
+        "from_minute": 58,
+        "to_minute": 59,
+        "source": "on_ball_period",
+        "text": "59' to 60'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_width.AUS.w1",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Austria",
+      "window": {
+        "index": 1,
+        "from_minute": 58,
+        "to_minute": 59,
+        "source": "on_ball_period",
+        "text": "59' to 60'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.player_zone.AUS.w2.patrick_pentz",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Austria",
+      "window": {
+        "index": 2,
+        "from_minute": 59,
+        "to_minute": 87,
+        "source": "on_ball_period",
+        "text": "60' to 88'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 8,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.AUS.w2.marko_arnautovi",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Austria",
+      "window": {
+        "index": 2,
+        "from_minute": 59,
+        "to_minute": 87,
+        "source": "on_ball_period",
+        "text": "60' to 88'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 7,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.AUS.w2.stefan_posch",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Austria",
+      "window": {
+        "index": 2,
+        "from_minute": 59,
+        "to_minute": 87,
+        "source": "on_ball_period",
+        "text": "60' to 88'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 5,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.team_height.AUS.w3",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Austria",
+      "window": {
+        "index": 3,
+        "from_minute": 87,
+        "to_minute": 90,
+        "source": "on_ball_period",
+        "text": "88' to 90+1'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_width.AUS.w3",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Austria",
+      "window": {
+        "index": 3,
+        "from_minute": 87,
+        "to_minute": 90,
+        "source": "on_ball_period",
+        "text": "88' to 90+1'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.player_zone.AUS.w4.patrick_pentz",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Austria",
+      "window": {
+        "index": 4,
+        "from_minute": 90,
+        "to_minute": 100,
+        "source": "on_ball_period",
+        "text": "90+1' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 7,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.FRA.w1.eduardo_camavinga",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "France",
+      "window": {
+        "index": 1,
+        "from_minute": 70,
+        "to_minute": 89,
+        "source": "on_ball_period",
+        "text": "71' to 90'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 8,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.FRA.w1.william_saliba",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "France",
+      "window": {
+        "index": 1,
+        "from_minute": 70,
+        "to_minute": 89,
+        "source": "on_ball_period",
+        "text": "71' to 90'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 6,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.FRA.w1.kylian_mbapp",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "France",
+      "window": {
+        "index": 1,
+        "from_minute": 70,
+        "to_minute": 89,
+        "source": "on_ball_period",
+        "text": "71' to 90'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 6,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.FRA.w1.antoine_griezmann",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "France",
+      "window": {
+        "index": 1,
+        "from_minute": 70,
+        "to_minute": 89,
+        "source": "on_ball_period",
+        "text": "71' to 90'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 5,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.FRA.w1.marcus_thuram",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "France",
+      "window": {
+        "index": 1,
+        "from_minute": 70,
+        "to_minute": 89,
+        "source": "on_ball_period",
+        "text": "71' to 90'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 5,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.FRA.w1.randal_kolo",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "France",
+      "window": {
+        "index": 1,
+        "from_minute": 70,
+        "to_minute": 89,
+        "source": "on_ball_period",
+        "text": "71' to 90'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 5,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.FRA.w1.mike_maignan",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "France",
+      "window": {
+        "index": 1,
+        "from_minute": 70,
+        "to_minute": 89,
+        "source": "on_ball_period",
+        "text": "71' to 90'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 4,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.FRA.w1.n_golo_kant",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "France",
+      "window": {
+        "index": 1,
+        "from_minute": 70,
+        "to_minute": 89,
+        "source": "on_ball_period",
+        "text": "71' to 90'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.FRA.w1.jules_kound",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "France",
+      "window": {
+        "index": 1,
+        "from_minute": 70,
+        "to_minute": 89,
+        "source": "on_ball_period",
+        "text": "71' to 90'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.FRA.w1.theo_hern_ndez",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "France",
+      "window": {
+        "index": 1,
+        "from_minute": 70,
+        "to_minute": 89,
+        "source": "on_ball_period",
+        "text": "71' to 90'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.team_height.FRA.w1",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "France",
+      "window": {
+        "index": 1,
+        "from_minute": 70,
+        "to_minute": 89,
+        "source": "on_ball_period",
+        "text": "71' to 90'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_width.FRA.w1",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "France",
+      "window": {
+        "index": 1,
+        "from_minute": 70,
+        "to_minute": 89,
+        "source": "on_ball_period",
+        "text": "71' to 90'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_height.FRA.w2",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "France",
+      "window": {
+        "index": 2,
+        "from_minute": 89,
+        "to_minute": 90,
+        "source": "on_ball_period",
+        "text": "90' to 90+1'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_width.FRA.w2",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "France",
+      "window": {
+        "index": 2,
+        "from_minute": 89,
+        "to_minute": 90,
+        "source": "on_ball_period",
+        "text": "90' to 90+1'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.player_zone.FRA.w3.eduardo_camavinga",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "France",
+      "window": {
+        "index": 3,
+        "from_minute": 90,
+        "to_minute": 100,
+        "source": "on_ball_period",
+        "text": "90+1' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 9,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.FRA.w3.n_golo_kant",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "France",
+      "window": {
+        "index": 3,
+        "from_minute": 90,
+        "to_minute": 100,
+        "source": "on_ball_period",
+        "text": "90+1' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 9,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.FRA.w3.randal_kolo",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "France",
+      "window": {
+        "index": 3,
+        "from_minute": 90,
+        "to_minute": 100,
+        "source": "on_ball_period",
+        "text": "90+1' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 7,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.FRA.w3.olivier_giroud",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "France",
+      "window": {
+        "index": 3,
+        "from_minute": 90,
+        "to_minute": 100,
+        "source": "on_ball_period",
+        "text": "90+1' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 6,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.FRA.w3.youssouf_fofana",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "France",
+      "window": {
+        "index": 3,
+        "from_minute": 90,
+        "to_minute": 100,
+        "source": "on_ball_period",
+        "text": "90+1' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 5,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.FRA.w3.william_saliba",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "France",
+      "window": {
+        "index": 3,
+        "from_minute": 90,
+        "to_minute": 100,
+        "source": "on_ball_period",
+        "text": "90+1' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 4,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.FRA.w3.mike_maignan",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "France",
+      "window": {
+        "index": 3,
+        "from_minute": 90,
+        "to_minute": 100,
+        "source": "on_ball_period",
+        "text": "90+1' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 2,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.FRA.w3.dayotchanculle_upamecano",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "France",
+      "window": {
+        "index": 3,
+        "from_minute": 90,
+        "to_minute": 100,
+        "source": "on_ball_period",
+        "text": "90+1' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 1,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.FRA.w3.jules_kound",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "France",
+      "window": {
+        "index": 3,
+        "from_minute": 90,
+        "to_minute": 100,
+        "source": "on_ball_period",
+        "text": "90+1' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 1,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.team_height.FRA.w3",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "France",
+      "window": {
+        "index": 3,
+        "from_minute": 90,
+        "to_minute": 100,
+        "source": "on_ball_period",
+        "text": "90+1' to full time"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 2,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_width.FRA.w3",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "France",
+      "window": {
+        "index": 3,
+        "from_minute": 90,
+        "to_minute": 100,
+        "source": "on_ball_period",
+        "text": "90+1' to full time"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 2,
+        "required": 8
+      }
+    },
+    {
+      "id": "passing.hub.AUS.w2",
+      "category": "passing",
+      "type": "hub",
+      "team": "Austria",
+      "window": {
+        "index": 2,
+        "from_minute": 87,
+        "to_minute": 90,
+        "source": "pass_network_window",
+        "text": "88' to 90+1'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 11,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.no_hub.AUS.w2",
+      "category": "passing",
+      "type": "no_hub",
+      "team": "Austria",
+      "window": {
+        "index": 2,
+        "from_minute": 87,
+        "to_minute": 90,
+        "source": "pass_network_window",
+        "text": "88' to 90+1'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 11,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.top_pair.AUS.w2",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Austria",
+      "window": {
+        "index": 2,
+        "from_minute": 87,
+        "to_minute": 90,
+        "source": "pass_network_window",
+        "text": "88' to 90+1'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 11,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.concentration.AUS.w2",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Austria",
+      "window": {
+        "index": 2,
+        "from_minute": 87,
+        "to_minute": 90,
+        "source": "pass_network_window",
+        "text": "88' to 90+1'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 11,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.hub.FRA.w2",
+      "category": "passing",
+      "type": "hub",
+      "team": "France",
+      "window": {
+        "index": 2,
+        "from_minute": 90,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "90+1' to full time"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 31,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.no_hub.FRA.w2",
+      "category": "passing",
+      "type": "no_hub",
+      "team": "France",
+      "window": {
+        "index": 2,
+        "from_minute": 90,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "90+1' to full time"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 31,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.top_pair.FRA.w2",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "France",
+      "window": {
+        "index": 2,
+        "from_minute": 90,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "90+1' to full time"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 31,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.concentration.FRA.w2",
+      "category": "passing",
+      "type": "concentration",
+      "team": "France",
+      "window": {
+        "index": 2,
+        "from_minute": 90,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "90+1' to full time"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 31,
+        "required": 40
+      }
+    },
+    {
+      "id": "cross.comparison.block_height",
+      "category": "cross_cutting",
+      "type": "comparison",
+      "team": null,
+      "window": null,
+      "reason": "COMPARE_MIN_YARDS",
+      "detail": {
+        "gap": 3.78,
+        "required": 5
+      }
+    },
+    {
+      "id": "cross.comparison.team_height",
+      "category": "cross_cutting",
+      "type": "comparison",
+      "team": null,
+      "window": null,
+      "reason": "COMPARE_MIN_YARDS",
+      "detail": {
+        "gap": 1.98,
+        "required": 5
+      }
+    },
+    {
+      "id": "cross.comparison.team_width",
+      "category": "cross_cutting",
+      "type": "comparison",
+      "team": null,
+      "window": null,
+      "reason": "COMPARE_MIN_YARDS",
+      "detail": {
+        "gap": 4.47,
+        "required": 5
+      }
+    }
+  ],
+  "metadata": {
+    "match_id": 3930165,
+    "definitions_version": "0.1.0",
+    "teams": [
+      "Austria",
+      "France"
+    ]
+  }
+}

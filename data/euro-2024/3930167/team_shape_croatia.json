@@ -1,0 +1,1424 @@
+{
+  "on_ball": {
+    "periods": [
+      {
+        "from_minute": 0,
+        "from_period": 1,
+        "to_minute": 45,
+        "to_period": 2,
+        "players_in": [
+          "Dominik Livakovi\u0107",
+          "Josip Juranovi\u0107",
+          "Josip \u0160utalo",
+          "Jo\u0161ko Gvardiol",
+          "Ivan Peri\u0161i\u0107",
+          "Marcelo Brozovi\u0107",
+          "Luka Modri\u0107",
+          "Mateo Kova\u010di\u0107",
+          "Lovro Majer",
+          "Andrej Kramari\u0107",
+          "Bruno Petkovi\u0107"
+        ],
+        "players_out": [],
+        "nodes": [
+          {
+            "player_id": 5456,
+            "player": "Mateo Kova\u010di\u0107",
+            "display_name": "Mateo Kova\u010di\u0107",
+            "x": 69.02,
+            "y": 22.15,
+            "event_count": 62,
+            "lane_counts": {
+              "left_wing": 23,
+              "left_half_space": 24,
+              "centre": 15,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 6,
+              "own_half": 17,
+              "opposition_half": 14,
+              "final_third": 25
+            }
+          },
+          {
+            "player_id": 5469,
+            "player": "Marcelo Brozovi\u0107",
+            "display_name": "Marcelo Brozovi\u0107",
+            "x": 58.72,
+            "y": 39.7,
+            "event_count": 55,
+            "lane_counts": {
+              "left_wing": 3,
+              "left_half_space": 11,
+              "centre": 27,
+              "right_half_space": 10,
+              "right_wing": 4
+            },
+            "band_counts": {
+              "own_third": 14,
+              "own_half": 12,
+              "opposition_half": 17,
+              "final_third": 12
+            }
+          },
+          {
+            "player_id": 5463,
+            "player": "Luka Modri\u0107",
+            "display_name": "Luka Modri\u0107",
+            "x": 69.42,
+            "y": 43.19,
+            "event_count": 54,
+            "lane_counts": {
+              "left_wing": 12,
+              "left_half_space": 5,
+              "centre": 14,
+              "right_half_space": 2,
+              "right_wing": 21
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 13,
+              "opposition_half": 20,
+              "final_third": 18
+            }
+          },
+          {
+            "player_id": 28914,
+            "player": "Lovro Majer",
+            "display_name": "Lovro Majer",
+            "x": 73.2,
+            "y": 41.0,
+            "event_count": 43,
+            "lane_counts": {
+              "left_wing": 9,
+              "left_half_space": 3,
+              "centre": 13,
+              "right_half_space": 9,
+              "right_wing": 9
+            },
+            "band_counts": {
+              "own_third": 6,
+              "own_half": 9,
+              "opposition_half": 7,
+              "final_third": 21
+            }
+          },
+          {
+            "player_id": 5460,
+            "player": "Andrej Kramari\u0107",
+            "display_name": "Andrej Kramari\u0107",
+            "x": 84.51,
+            "y": 21.81,
+            "event_count": 40,
+            "lane_counts": {
+              "left_wing": 14,
+              "left_half_space": 20,
+              "centre": 1,
+              "right_half_space": 5,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 3,
+              "opposition_half": 5,
+              "final_third": 29
+            }
+          },
+          {
+            "player_id": 37148,
+            "player": "Josip \u0160utalo",
+            "display_name": "Josip \u0160utalo",
+            "x": 36.8,
+            "y": 51.85,
+            "event_count": 30,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 14,
+              "right_half_space": 9,
+              "right_wing": 7
+            },
+            "band_counts": {
+              "own_third": 18,
+              "own_half": 6,
+              "opposition_half": 6,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 5474,
+            "player": "Ivan Peri\u0161i\u0107",
+            "display_name": "Ivan Peri\u0161i\u0107",
+            "x": 77.78,
+            "y": 11.2,
+            "event_count": 24,
+            "lane_counts": {
+              "left_wing": 16,
+              "left_half_space": 8,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 7,
+              "own_half": 0,
+              "opposition_half": 2,
+              "final_third": 15
+            }
+          },
+          {
+            "player_id": 7693,
+            "player": "Bruno Petkovi\u0107",
+            "display_name": "Bruno Petkovi\u0107",
+            "x": 87.01,
+            "y": 33.09,
+            "event_count": 24,
+            "lane_counts": {
+              "left_wing": 1,
+              "left_half_space": 10,
+              "centre": 10,
+              "right_half_space": 3,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 5,
+              "opposition_half": 2,
+              "final_third": 17
+            }
+          },
+          {
+            "player_id": 33018,
+            "player": "Jo\u0161ko Gvardiol",
+            "display_name": "Jo\u0161ko Gvardiol",
+            "x": 47.63,
+            "y": 25.74,
+            "event_count": 21,
+            "lane_counts": {
+              "left_wing": 3,
+              "left_half_space": 14,
+              "centre": 4,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 11,
+              "own_half": 3,
+              "opposition_half": 1,
+              "final_third": 6
+            }
+          },
+          {
+            "player_id": 29163,
+            "player": "Josip Juranovi\u0107",
+            "display_name": "Josip Juranovi\u0107",
+            "x": 66.27,
+            "y": 65.28,
+            "event_count": 20,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 5,
+              "right_half_space": 0,
+              "right_wing": 15
+            },
+            "band_counts": {
+              "own_third": 5,
+              "own_half": 0,
+              "opposition_half": 5,
+              "final_third": 10
+            }
+          },
+          {
+            "player_id": 16531,
+            "player": "Dominik Livakovi\u0107",
+            "display_name": "Dominik Livakovi\u0107",
+            "x": 7.62,
+            "y": 39.79,
+            "event_count": 12,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 1,
+              "centre": 11,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 12,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          }
+        ],
+        "hull": [
+          [
+            66.27,
+            65.28
+          ],
+          [
+            7.62,
+            39.79
+          ],
+          [
+            77.78,
+            11.2
+          ],
+          [
+            84.51,
+            21.81
+          ],
+          [
+            87.01,
+            33.09
+          ]
+        ]
+      },
+      {
+        "from_minute": 45,
+        "from_period": 2,
+        "to_minute": 68,
+        "to_period": 2,
+        "players_in": [
+          "Luka Su\u010di\u0107",
+          "Mario Pa\u0161ali\u0107"
+        ],
+        "players_out": [
+          "Lovro Majer",
+          "Marcelo Brozovi\u0107"
+        ],
+        "nodes": [
+          {
+            "player_id": 5456,
+            "player": "Mateo Kova\u010di\u0107",
+            "display_name": "Mateo Kova\u010di\u0107",
+            "x": 73.92,
+            "y": 32.25,
+            "event_count": 53,
+            "lane_counts": {
+              "left_wing": 4,
+              "left_half_space": 20,
+              "centre": 28,
+              "right_half_space": 1,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 10,
+              "opposition_half": 15,
+              "final_third": 25
+            }
+          },
+          {
+            "player_id": 5460,
+            "player": "Andrej Kramari\u0107",
+            "display_name": "Andrej Kramari\u0107",
+            "x": 89.92,
+            "y": 28.85,
+            "event_count": 34,
+            "lane_counts": {
+              "left_wing": 8,
+              "left_half_space": 8,
+              "centre": 17,
+              "right_half_space": 1,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 11,
+              "final_third": 23
+            }
+          },
+          {
+            "player_id": 5463,
+            "player": "Luka Modri\u0107",
+            "display_name": "Luka Modri\u0107",
+            "x": 75.33,
+            "y": 43.87,
+            "event_count": 30,
+            "lane_counts": {
+              "left_wing": 3,
+              "left_half_space": 5,
+              "centre": 8,
+              "right_half_space": 10,
+              "right_wing": 4
+            },
+            "band_counts": {
+              "own_third": 1,
+              "own_half": 4,
+              "opposition_half": 9,
+              "final_third": 16
+            }
+          },
+          {
+            "player_id": 33018,
+            "player": "Jo\u0161ko Gvardiol",
+            "display_name": "Jo\u0161ko Gvardiol",
+            "x": 64.16,
+            "y": 25.66,
+            "event_count": 25,
+            "lane_counts": {
+              "left_wing": 7,
+              "left_half_space": 7,
+              "centre": 11,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 5,
+              "own_half": 9,
+              "opposition_half": 3,
+              "final_third": 8
+            }
+          },
+          {
+            "player_id": 11603,
+            "player": "Mario Pa\u0161ali\u0107",
+            "display_name": "Mario Pa\u0161ali\u0107",
+            "x": 65.83,
+            "y": 57.07,
+            "event_count": 24,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 9,
+              "right_half_space": 7,
+              "right_wing": 8
+            },
+            "band_counts": {
+              "own_third": 7,
+              "own_half": 7,
+              "opposition_half": 2,
+              "final_third": 8
+            }
+          },
+          {
+            "player_id": 39490,
+            "player": "Luka Su\u010di\u0107",
+            "display_name": "Luka Su\u010di\u0107",
+            "x": 72.17,
+            "y": 54.16,
+            "event_count": 20,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 1,
+              "centre": 5,
+              "right_half_space": 9,
+              "right_wing": 5
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 5,
+              "opposition_half": 8,
+              "final_third": 7
+            }
+          },
+          {
+            "player_id": 5474,
+            "player": "Ivan Peri\u0161i\u0107",
+            "display_name": "Ivan Peri\u0161i\u0107",
+            "x": 78.45,
+            "y": 20.3,
+            "event_count": 17,
+            "lane_counts": {
+              "left_wing": 5,
+              "left_half_space": 11,
+              "centre": 1,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 0,
+              "opposition_half": 4,
+              "final_third": 10
+            }
+          },
+          {
+            "player_id": 29163,
+            "player": "Josip Juranovi\u0107",
+            "display_name": "Josip Juranovi\u0107",
+            "x": 77.39,
+            "y": 66.57,
+            "event_count": 17,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 1,
+              "right_half_space": 3,
+              "right_wing": 13
+            },
+            "band_counts": {
+              "own_third": 5,
+              "own_half": 0,
+              "opposition_half": 3,
+              "final_third": 9
+            }
+          },
+          {
+            "player_id": 37148,
+            "player": "Josip \u0160utalo",
+            "display_name": "Josip \u0160utalo",
+            "x": 45.33,
+            "y": 48.37,
+            "event_count": 10,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 6,
+              "right_half_space": 4,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 7,
+              "own_half": 0,
+              "opposition_half": 3,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 16531,
+            "player": "Dominik Livakovi\u0107",
+            "display_name": "Dominik Livakovi\u0107",
+            "x": 18.93,
+            "y": 41.54,
+            "event_count": 8,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 8,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 8,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 7693,
+            "player": "Bruno Petkovi\u0107",
+            "display_name": "Bruno Petkovi\u0107",
+            "x": 80.58,
+            "y": 48.83,
+            "event_count": 4,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 2,
+              "right_half_space": 2,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 2,
+              "final_third": 2
+            }
+          }
+        ],
+        "hull": [
+          [
+            77.39,
+            66.57
+          ],
+          [
+            18.93,
+            41.54
+          ],
+          [
+            78.45,
+            20.3
+          ],
+          [
+            89.92,
+            28.85
+          ]
+        ]
+      },
+      {
+        "from_minute": 68,
+        "from_period": 2,
+        "to_minute": 83,
+        "to_period": 2,
+        "players_in": [
+          "Ante Budimir"
+        ],
+        "players_out": [
+          "Bruno Petkovi\u0107"
+        ],
+        "nodes": [
+          {
+            "player_id": 5463,
+            "player": "Luka Modri\u0107",
+            "display_name": "Luka Modri\u0107",
+            "x": 60.79,
+            "y": 61.33,
+            "event_count": 68,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 12,
+              "right_half_space": 20,
+              "right_wing": 36
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 34,
+              "opposition_half": 28,
+              "final_third": 6
+            }
+          },
+          {
+            "player_id": 5456,
+            "player": "Mateo Kova\u010di\u0107",
+            "display_name": "Mateo Kova\u010di\u0107",
+            "x": 65.82,
+            "y": 47.71,
+            "event_count": 54,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 35,
+              "right_half_space": 8,
+              "right_wing": 11
+            },
+            "band_counts": {
+              "own_third": 5,
+              "own_half": 15,
+              "opposition_half": 21,
+              "final_third": 13
+            }
+          },
+          {
+            "player_id": 33018,
+            "player": "Jo\u0161ko Gvardiol",
+            "display_name": "Jo\u0161ko Gvardiol",
+            "x": 59.83,
+            "y": 28.32,
+            "event_count": 46,
+            "lane_counts": {
+              "left_wing": 6,
+              "left_half_space": 23,
+              "centre": 17,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 7,
+              "own_half": 16,
+              "opposition_half": 20,
+              "final_third": 3
+            }
+          },
+          {
+            "player_id": 37148,
+            "player": "Josip \u0160utalo",
+            "display_name": "Josip \u0160utalo",
+            "x": 54.14,
+            "y": 49.66,
+            "event_count": 27,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 3,
+              "centre": 9,
+              "right_half_space": 13,
+              "right_wing": 2
+            },
+            "band_counts": {
+              "own_third": 7,
+              "own_half": 9,
+              "opposition_half": 11,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 11603,
+            "player": "Mario Pa\u0161ali\u0107",
+            "display_name": "Mario Pa\u0161ali\u0107",
+            "x": 73.46,
+            "y": 63.09,
+            "event_count": 26,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 8,
+              "right_half_space": 1,
+              "right_wing": 17
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 3,
+              "opposition_half": 11,
+              "final_third": 9
+            }
+          },
+          {
+            "player_id": 8654,
+            "player": "Ante Budimir",
+            "display_name": "Ante Budimir",
+            "x": 102.52,
+            "y": 41.59,
+            "event_count": 25,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 7,
+              "centre": 9,
+              "right_half_space": 8,
+              "right_wing": 1
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 3,
+              "final_third": 22
+            }
+          },
+          {
+            "player_id": 5474,
+            "player": "Ivan Peri\u0161i\u0107",
+            "display_name": "Ivan Peri\u0161i\u0107",
+            "x": 83.94,
+            "y": 11.39,
+            "event_count": 23,
+            "lane_counts": {
+              "left_wing": 20,
+              "left_half_space": 2,
+              "centre": 1,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 1,
+              "own_half": 0,
+              "opposition_half": 11,
+              "final_third": 11
+            }
+          },
+          {
+            "player_id": 29163,
+            "player": "Josip Juranovi\u0107",
+            "display_name": "Josip Juranovi\u0107",
+            "x": 57.17,
+            "y": 68.33,
+            "event_count": 23,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 1,
+              "right_half_space": 4,
+              "right_wing": 18
+            },
+            "band_counts": {
+              "own_third": 4,
+              "own_half": 13,
+              "opposition_half": 3,
+              "final_third": 3
+            }
+          },
+          {
+            "player_id": 39490,
+            "player": "Luka Su\u010di\u0107",
+            "display_name": "Luka Su\u010di\u0107",
+            "x": 79.6,
+            "y": 54.22,
+            "event_count": 21,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 9,
+              "right_half_space": 3,
+              "right_wing": 9
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 3,
+              "opposition_half": 6,
+              "final_third": 12
+            }
+          },
+          {
+            "player_id": 5460,
+            "player": "Andrej Kramari\u0107",
+            "display_name": "Andrej Kramari\u0107",
+            "x": 92.74,
+            "y": 38.26,
+            "event_count": 17,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 7,
+              "centre": 5,
+              "right_half_space": 5,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 3,
+              "final_third": 14
+            }
+          },
+          {
+            "player_id": 16531,
+            "player": "Dominik Livakovi\u0107",
+            "display_name": "Dominik Livakovi\u0107",
+            "x": 9.67,
+            "y": 40.86,
+            "event_count": 11,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 10,
+              "right_half_space": 1,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 11,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          }
+        ],
+        "hull": [
+          [
+            9.67,
+            40.86
+          ],
+          [
+            83.94,
+            11.39
+          ],
+          [
+            102.52,
+            41.59
+          ],
+          [
+            73.46,
+            63.09
+          ],
+          [
+            57.17,
+            68.33
+          ]
+        ]
+      },
+      {
+        "from_minute": 83,
+        "from_period": 2,
+        "to_minute": 99,
+        "to_period": 2,
+        "players_in": [
+          "Borna Sosa",
+          "Martin Baturina"
+        ],
+        "players_out": [
+          "Ivan Peri\u0161i\u0107",
+          "Andrej Kramari\u0107"
+        ],
+        "nodes": [
+          {
+            "player_id": 39490,
+            "player": "Luka Su\u010di\u0107",
+            "display_name": "Luka Su\u010di\u0107",
+            "x": 53.19,
+            "y": 60.88,
+            "event_count": 8,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 1,
+              "right_half_space": 3,
+              "right_wing": 4
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 2,
+              "opposition_half": 0,
+              "final_third": 3
+            }
+          },
+          {
+            "player_id": 5456,
+            "player": "Mateo Kova\u010di\u0107",
+            "display_name": "Mateo Kova\u010di\u0107",
+            "x": 66.74,
+            "y": 44.36,
+            "event_count": 7,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 4,
+              "right_half_space": 3,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 4
+            }
+          },
+          {
+            "player_id": 16531,
+            "player": "Dominik Livakovi\u0107",
+            "display_name": "Dominik Livakovi\u0107",
+            "x": 6.83,
+            "y": 38.23,
+            "event_count": 3,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 3,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 5463,
+            "player": "Luka Modri\u0107",
+            "display_name": "Luka Modri\u0107",
+            "x": 51.13,
+            "y": 47.27,
+            "event_count": 3,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 3,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 2,
+              "opposition_half": 1,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 37148,
+            "player": "Josip \u0160utalo",
+            "display_name": "Josip \u0160utalo",
+            "x": 20.07,
+            "y": 33.7,
+            "event_count": 3,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 3,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          }
+        ],
+        "hull": [
+          [
+            53.19,
+            60.88
+          ],
+          [
+            6.83,
+            38.23
+          ],
+          [
+            20.07,
+            33.7
+          ],
+          [
+            66.74,
+            44.36
+          ]
+        ]
+      }
+    ]
+  },
+  "off_ball": {
+    "density_grid": {
+      "cols": 24,
+      "rows": 16,
+      "values": [
+        [
+          0.0697,
+          0.0846,
+          0.1005,
+          0.1172,
+          0.1342,
+          0.151,
+          0.167,
+          0.1818,
+          0.1949,
+          0.206,
+          0.2146,
+          0.2206,
+          0.2238,
+          0.2241,
+          0.2215,
+          0.216,
+          0.2077,
+          0.1968,
+          0.1835,
+          0.1683,
+          0.1517,
+          0.1341,
+          0.1163,
+          0.0987
+        ],
+        [
+          0.1042,
+          0.1254,
+          0.148,
+          0.1715,
+          0.1952,
+          0.2184,
+          0.2404,
+          0.2607,
+          0.2785,
+          0.2935,
+          0.3053,
+          0.3134,
+          0.3177,
+          0.3181,
+          0.3144,
+          0.3067,
+          0.295,
+          0.2796,
+          0.2609,
+          0.2395,
+          0.2159,
+          0.1911,
+          0.1658,
+          0.1409
+        ],
+        [
+          0.1483,
+          0.1771,
+          0.2076,
+          0.2389,
+          0.2702,
+          0.3006,
+          0.3293,
+          0.3556,
+          0.3786,
+          0.3979,
+          0.4129,
+          0.4233,
+          0.4288,
+          0.4291,
+          0.4241,
+          0.4137,
+          0.3981,
+          0.3776,
+          0.3526,
+          0.3238,
+          0.2922,
+          0.2587,
+          0.2247,
+          0.1911
+        ],
+        [
+          0.201,
+          0.2384,
+          0.2775,
+          0.3173,
+          0.3567,
+          0.3947,
+          0.4302,
+          0.4625,
+          0.4907,
+          0.5141,
+          0.5324,
+          0.5449,
+          0.5513,
+          0.5513,
+          0.5448,
+          0.5315,
+          0.5116,
+          0.4855,
+          0.4536,
+          0.4168,
+          0.3763,
+          0.3335,
+          0.2898,
+          0.2466
+        ],
+        [
+          0.2593,
+          0.3057,
+          0.3537,
+          0.402,
+          0.4494,
+          0.4947,
+          0.5367,
+          0.5745,
+          0.6074,
+          0.6345,
+          0.6555,
+          0.6697,
+          0.6767,
+          0.6762,
+          0.6679,
+          0.6515,
+          0.6272,
+          0.5953,
+          0.5563,
+          0.5114,
+          0.462,
+          0.4096,
+          0.3561,
+          0.3033
+        ],
+        [
+          0.3184,
+          0.3734,
+          0.4296,
+          0.4858,
+          0.5405,
+          0.5922,
+          0.6398,
+          0.6823,
+          0.7189,
+          0.749,
+          0.772,
+          0.7873,
+          0.7946,
+          0.7932,
+          0.7829,
+          0.7635,
+          0.7348,
+          0.6973,
+          0.6517,
+          0.5992,
+          0.5414,
+          0.4801,
+          0.4174,
+          0.3556
+        ],
+        [
+          0.3718,
+          0.434,
+          0.4973,
+          0.56,
+          0.6204,
+          0.6772,
+          0.7292,
+          0.7752,
+          0.8146,
+          0.8467,
+          0.8709,
+          0.8868,
+          0.8938,
+          0.8914,
+          0.8791,
+          0.8567,
+          0.8242,
+          0.7818,
+          0.7305,
+          0.6714,
+          0.6064,
+          0.5376,
+          0.4674,
+          0.3981
+        ],
+        [
+          0.4124,
+          0.4798,
+          0.5481,
+          0.6153,
+          0.6798,
+          0.74,
+          0.7947,
+          0.843,
+          0.884,
+          0.9172,
+          0.9421,
+          0.9581,
+          0.9646,
+          0.9611,
+          0.9472,
+          0.9223,
+          0.8867,
+          0.8405,
+          0.7847,
+          0.7207,
+          0.6505,
+          0.5763,
+          0.5006,
+          0.4261
+        ],
+        [
+          0.4344,
+          0.5045,
+          0.5751,
+          0.6445,
+          0.7108,
+          0.7725,
+          0.8284,
+          0.8776,
+          0.9194,
+          0.953,
+          0.978,
+          0.9939,
+          1.0,
+          0.9957,
+          0.9805,
+          0.9541,
+          0.9164,
+          0.8679,
+          0.8094,
+          0.7426,
+          0.6694,
+          0.5923,
+          0.5139,
+          0.4368
+        ],
+        [
+          0.4347,
+          0.5043,
+          0.5745,
+          0.6433,
+          0.7091,
+          0.7704,
+          0.826,
+          0.8749,
+          0.9164,
+          0.95,
+          0.9749,
+          0.9907,
+          0.9966,
+          0.992,
+          0.9764,
+          0.9495,
+          0.9111,
+          0.8619,
+          0.8029,
+          0.7356,
+          0.6621,
+          0.5848,
+          0.5065,
+          0.4298
+        ],
+        [
+          0.4131,
+          0.4794,
+          0.5462,
+          0.612,
+          0.675,
+          0.7339,
+          0.7875,
+          0.8349,
+          0.8755,
+          0.9084,
+          0.933,
+          0.9487,
+          0.9549,
+          0.9507,
+          0.9356,
+          0.9094,
+          0.872,
+          0.8241,
+          0.7666,
+          0.7012,
+          0.63,
+          0.5555,
+          0.4801,
+          0.4064
+        ],
+        [
+          0.3728,
+          0.4332,
+          0.4943,
+          0.5546,
+          0.6127,
+          0.6674,
+          0.7176,
+          0.7623,
+          0.8009,
+          0.8326,
+          0.8566,
+          0.8723,
+          0.8789,
+          0.8757,
+          0.8622,
+          0.838,
+          0.8032,
+          0.7584,
+          0.7046,
+          0.6435,
+          0.5772,
+          0.5078,
+          0.4379,
+          0.3699
+        ],
+        [
+          0.3195,
+          0.372,
+          0.4254,
+          0.4785,
+          0.53,
+          0.5789,
+          0.6242,
+          0.6651,
+          0.7006,
+          0.7303,
+          0.7532,
+          0.7686,
+          0.7758,
+          0.774,
+          0.7627,
+          0.7416,
+          0.7108,
+          0.6708,
+          0.6227,
+          0.568,
+          0.5086,
+          0.4467,
+          0.3844,
+          0.3239
+        ],
+        [
+          0.2598,
+          0.3033,
+          0.3479,
+          0.3925,
+          0.4363,
+          0.4782,
+          0.5174,
+          0.5532,
+          0.5848,
+          0.6115,
+          0.6326,
+          0.6473,
+          0.6549,
+          0.6546,
+          0.6459,
+          0.6286,
+          0.6027,
+          0.5688,
+          0.5278,
+          0.481,
+          0.4302,
+          0.3772,
+          0.3241,
+          0.2726
+        ],
+        [
+          0.2001,
+          0.2344,
+          0.2698,
+          0.3056,
+          0.3409,
+          0.3751,
+          0.4076,
+          0.4375,
+          0.4643,
+          0.4873,
+          0.5059,
+          0.5192,
+          0.5267,
+          0.5277,
+          0.5216,
+          0.5083,
+          0.4879,
+          0.4606,
+          0.4274,
+          0.3894,
+          0.3481,
+          0.305,
+          0.2617,
+          0.2198
+        ],
+        [
+          0.1457,
+          0.1713,
+          0.198,
+          0.2251,
+          0.2522,
+          0.2787,
+          0.3041,
+          0.3278,
+          0.3494,
+          0.3681,
+          0.3836,
+          0.395,
+          0.402,
+          0.4037,
+          0.4,
+          0.3905,
+          0.3753,
+          0.3547,
+          0.3293,
+          0.3001,
+          0.2682,
+          0.2349,
+          0.2015,
+          0.169
+        ]
+      ]
+    },
+    "centroid": {
+      "x": 61.2,
+      "y": 44.21
+    },
+    "thirds_spine": [
+      {
+        "third": "defensive",
+        "x": 23.99,
+        "y": 44.5
+      },
+      {
+        "third": "middle",
+        "x": 60.79,
+        "y": 44.15
+      },
+      {
+        "third": "attacking",
+        "x": 93.75,
+        "y": 44.03
+      }
+    ],
+    "ellipse": {
+      "cx": 61.2,
+      "cy": 44.21,
+      "rx": 28.54,
+      "ry": 16.35,
+      "angle_deg": 179.3
+    },
+    "depth_line": {
+      "x": 81.26,
+      "percentile": 70
+    }
+  },
+  "metadata": {
+    "match_id": 3930167,
+    "team": "Croatia",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Croatia vs Albania",
+    "on_ball_event_count": 992,
+    "on_ball_period_count": 4,
+    "off_ball_bandwidth_yards": 8.0,
+    "off_ball_depth_percentile": 70,
+    "off_ball_grid_cols": 24,
+    "off_ball_grid_rows": 16,
+    "phase_filter": "open_play_only",
+    "coordinate_system": "statsbomb_120x80_normalised_attack_right",
+    "coordinate_note": "StatsBomb event and 360 freeze-frame coordinates are already in each team's own attack-right frame across both halves; no period-based flip is applied. Off-ball 360 dots from opponent-actor frames are mirrored (x\u2192120-x, y\u219280-y) into the analysed team's frame before pooling; own-actor dots are used as-is, and the goalkeeper is excluded.",
+    "camera_caveat": "360 frames follow the ball; the visible subset of out-of-possession positions is biased toward areas near the ball. The camera artifact and the real defensive shape point the same direction \u2014 they cannot be cleanly separated."
+  }
+}

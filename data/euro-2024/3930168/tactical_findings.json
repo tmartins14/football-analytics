@@ -1,0 +1,4876 @@
+{
+  "findings": [
+    {
+      "id": "context.final_score",
+      "category": "context",
+      "type": "final_score",
+      "team": null,
+      "window": null,
+      "game_states": [],
+      "subject": null,
+      "label": null,
+      "value": {
+        "home_score": 2,
+        "away_score": 0
+      },
+      "claim": "Germany beat Hungary 2\u20130",
+      "evidence": {
+        "home_team": "Germany",
+        "home_score": 2,
+        "away_team": "Hungary",
+        "away_score": 0,
+        "source": "match_stats.json#home.score,away.score"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "context.goal.GER.jamal_musiala",
+      "category": "context",
+      "type": "goal",
+      "team": "Germany",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "display_name": "Jamal Musiala"
+      },
+      "label": null,
+      "value": "Jamal Musiala",
+      "claim": "Jamal Musiala scored for Germany (22')",
+      "evidence": {
+        "minute": 21,
+        "period": 1,
+        "display_minute": "22'",
+        "source": "shots.json"
+      },
+      "threshold": null,
+      "notability": 3.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "context.goal.GER.i_lkay_g_ndo_an",
+      "category": "context",
+      "type": "goal",
+      "team": "Germany",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "display_name": "\u0130lkay G\u00fcndo\u011fan"
+      },
+      "label": null,
+      "value": "\u0130lkay G\u00fcndo\u011fan",
+      "claim": "\u0130lkay G\u00fcndo\u011fan scored for Germany (67')",
+      "evidence": {
+        "minute": 66,
+        "period": 2,
+        "display_minute": "67'",
+        "source": "shots.json"
+      },
+      "threshold": null,
+      "notability": 3.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "context.game_state.level.s0",
+      "category": "context",
+      "type": "game_state",
+      "team": null,
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 21,
+        "source": "game_state_segment",
+        "text": "kick-off to 22'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": null,
+      "label": "level",
+      "value": "0-0",
+      "claim": "the score was level at 0-0 from kick-off to 22'",
+      "evidence": {
+        "from_minute": 0,
+        "from_period": 1,
+        "to_minute": 21,
+        "to_period": 1,
+        "home_score": 0,
+        "away_score": 0,
+        "source": "derived from shots.json goals + match_stats.json final score"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "context.game_state.GER.s1",
+      "category": "context",
+      "type": "game_state",
+      "team": "Germany",
+      "window": {
+        "index": 1,
+        "from_minute": 21,
+        "to_minute": 66,
+        "source": "game_state_segment",
+        "text": "22' to 67'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": null,
+      "label": "leading",
+      "value": "1-0",
+      "claim": "Germany led 1-0 from 22' to 67'",
+      "evidence": {
+        "from_minute": 21,
+        "from_period": 1,
+        "to_minute": 66,
+        "to_period": 2,
+        "home_score": 1,
+        "away_score": 0,
+        "source": "derived from shots.json goals + match_stats.json final score"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "context.game_state.GER.s2",
+      "category": "context",
+      "type": "game_state",
+      "team": "Germany",
+      "window": {
+        "index": 2,
+        "from_minute": 66,
+        "to_minute": null,
+        "source": "game_state_segment",
+        "text": "67' to full time"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": null,
+      "label": "leading",
+      "value": "2-0",
+      "claim": "Germany led 2-0 from 67' to full time",
+      "evidence": {
+        "from_minute": 66,
+        "from_period": 2,
+        "to_minute": null,
+        "to_period": null,
+        "home_score": 2,
+        "away_score": 0,
+        "source": "derived from shots.json goals + match_stats.json final score"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.formation.GER.p0",
+      "category": "structure",
+      "type": "formation",
+      "team": "Germany",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 50,
+        "source": "formation_period",
+        "text": "kick-off to 51'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": null,
+      "label": null,
+      "value": "4-2-3-1",
+      "claim": "Germany played a 4-2-3-1 from kick-off to 51'",
+      "evidence": {
+        "from_minute": 0,
+        "from_period": 1,
+        "to_minute": 50,
+        "to_period": 2,
+        "source": "formation_germany.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.formation.GER.p1",
+      "category": "structure",
+      "type": "formation",
+      "team": "Germany",
+      "window": {
+        "index": 1,
+        "from_minute": 50,
+        "to_minute": 93,
+        "source": "formation_period",
+        "text": "51' to full time"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": null,
+      "label": null,
+      "value": "4-2-3-1",
+      "claim": "Germany played a 4-2-3-1 from 51' to full time",
+      "evidence": {
+        "from_minute": 50,
+        "from_period": 2,
+        "to_minute": 93,
+        "to_period": 2,
+        "source": "formation_germany.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.GER.jamal_musiala.p1",
+      "category": "structure",
+      "type": "role_change",
+      "team": "Germany",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Jamal Musiala",
+        "display_name": "Jamal Musiala"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Right Wing",
+        "new_position": "Left Wing"
+      },
+      "claim": "Jamal Musiala moved from Right Wing to Left Wing (51')",
+      "evidence": {
+        "minute": 50,
+        "period": 2,
+        "display_minute": "51'",
+        "source": "formation_germany.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.GER.florian_wirtz.p1",
+      "category": "structure",
+      "type": "role_change",
+      "team": "Germany",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Florian Wirtz",
+        "display_name": "Florian Wirtz"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Left Wing",
+        "new_position": "Right Wing"
+      },
+      "claim": "Florian Wirtz moved from Left Wing to Right Wing (51')",
+      "evidence": {
+        "minute": 50,
+        "period": 2,
+        "display_minute": "51'",
+        "source": "formation_germany.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.formation.HUN.p0",
+      "category": "structure",
+      "type": "formation",
+      "team": "Hungary",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 63,
+        "source": "formation_period",
+        "text": "kick-off to 64'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": "3-4-2-1",
+      "claim": "Hungary played a 3-4-2-1 from kick-off to 64'",
+      "evidence": {
+        "from_minute": 0,
+        "from_period": 1,
+        "to_minute": 63,
+        "to_period": 2,
+        "source": "formation_hungary.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.formation.HUN.p1",
+      "category": "structure",
+      "type": "formation",
+      "team": "Hungary",
+      "window": {
+        "index": 1,
+        "from_minute": 63,
+        "to_minute": 75,
+        "source": "formation_period",
+        "text": "64' to 76'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": "3-4-2-1",
+      "claim": "Hungary played a 3-4-2-1 from 64' to 76'",
+      "evidence": {
+        "from_minute": 63,
+        "from_period": 2,
+        "to_minute": 75,
+        "to_period": 2,
+        "source": "formation_hungary.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.HUN.andr_s_sch_fer.p1",
+      "category": "structure",
+      "type": "role_change",
+      "team": "Hungary",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Andr\u00e1s Sch\u00e4fer",
+        "display_name": "Andr\u00e1s Sch\u00e4fer"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Left Defensive Midfield",
+        "new_position": "Right Defensive Midfield"
+      },
+      "claim": "Andr\u00e1s Sch\u00e4fer moved from Left Defensive Midfield to Right Defensive Midfield (64')",
+      "evidence": {
+        "minute": 63,
+        "period": 2,
+        "display_minute": "64'",
+        "source": "formation_hungary.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.formation.HUN.p2",
+      "category": "structure",
+      "type": "formation",
+      "team": "Hungary",
+      "window": {
+        "index": 2,
+        "from_minute": 75,
+        "to_minute": 93,
+        "source": "formation_period",
+        "text": "76' to full time"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": "3-5-2",
+      "claim": "Hungary played a 3-5-2 from 76' to full time",
+      "evidence": {
+        "from_minute": 75,
+        "from_period": 2,
+        "to_minute": 93,
+        "to_period": 2,
+        "source": "formation_hungary.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.formation_change.HUN.p2",
+      "category": "structure",
+      "type": "formation_change",
+      "team": "Hungary",
+      "window": null,
+      "game_states": [],
+      "subject": null,
+      "label": null,
+      "value": {
+        "old": "3-4-2-1",
+        "new": "3-5-2"
+      },
+      "claim": "Hungary changed from a 3-4-2-1 to a 3-5-2 (76')",
+      "evidence": {
+        "minute": 75,
+        "period": 2,
+        "display_minute": "76'",
+        "source": "formation_hungary.json"
+      },
+      "threshold": null,
+      "notability": 3.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.HUN.dominik_szoboszlai.p2",
+      "category": "structure",
+      "type": "role_change",
+      "team": "Hungary",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Dominik Szoboszlai",
+        "display_name": "Dominik Szoboszlai"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Right Attacking Midfield",
+        "new_position": "Right Center Midfield"
+      },
+      "claim": "Dominik Szoboszlai moved from Right Attacking Midfield to Right Center Midfield (76')",
+      "evidence": {
+        "minute": 75,
+        "period": 2,
+        "display_minute": "76'",
+        "source": "formation_hungary.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.HUN.andr_s_sch_fer.p2",
+      "category": "structure",
+      "type": "role_change",
+      "team": "Hungary",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Andr\u00e1s Sch\u00e4fer",
+        "display_name": "Andr\u00e1s Sch\u00e4fer"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Right Defensive Midfield",
+        "new_position": "Center Defensive Midfield"
+      },
+      "claim": "Andr\u00e1s Sch\u00e4fer moved from Right Defensive Midfield to Center Defensive Midfield (76')",
+      "evidence": {
+        "minute": 75,
+        "period": 2,
+        "display_minute": "76'",
+        "source": "formation_hungary.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.HUN.l_szl_kleinheisler.p2",
+      "category": "structure",
+      "type": "role_change",
+      "team": "Hungary",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "L\u00e1szl\u00f3 Kleinheisler",
+        "display_name": "L\u00e1szl\u00f3 Kleinheisler"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Left Defensive Midfield",
+        "new_position": "Left Center Midfield"
+      },
+      "claim": "L\u00e1szl\u00f3 Kleinheisler moved from Left Defensive Midfield to Left Center Midfield (76')",
+      "evidence": {
+        "minute": 75,
+        "period": 2,
+        "display_minute": "76'",
+        "source": "formation_hungary.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.HUN.barnab_s_varga.p2",
+      "category": "structure",
+      "type": "role_change",
+      "team": "Hungary",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Barnab\u00e1s Varga",
+        "display_name": "Barnab\u00e1s Varga"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Center Forward",
+        "new_position": "Left Center Forward"
+      },
+      "claim": "Barnab\u00e1s Varga moved from Center Forward to Left Center Forward (76')",
+      "evidence": {
+        "minute": 75,
+        "period": 2,
+        "display_minute": "76'",
+        "source": "formation_hungary.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.HUN.roland_sallai.p2",
+      "category": "structure",
+      "type": "role_change",
+      "team": "Hungary",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Roland Sallai",
+        "display_name": "Roland Sallai"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Left Attacking Midfield",
+        "new_position": "Right Wing Back"
+      },
+      "claim": "Roland Sallai moved from Left Attacking Midfield to Right Wing Back (76')",
+      "evidence": {
+        "minute": 75,
+        "period": 2,
+        "display_minute": "76'",
+        "source": "formation_hungary.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.GER.leroy_san",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Germany",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Leroy San\u00e9",
+        "display_name": "Leroy San\u00e9"
+      },
+      "label": null,
+      "value": {
+        "on": "Leroy San\u00e9",
+        "off": "Florian Wirtz"
+      },
+      "claim": "Leroy San\u00e9 replaced Florian Wirtz for Germany (58')",
+      "evidence": {
+        "minute": 57,
+        "period": 2,
+        "display_minute": "58'",
+        "on_player": "Leroy San\u00e9",
+        "off_player": "Florian Wirtz",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.GER.emre_can",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Germany",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Emre Can",
+        "display_name": "Emre Can"
+      },
+      "label": null,
+      "value": {
+        "on": "Emre Can",
+        "off": "Robert Andrich"
+      },
+      "claim": "Emre Can replaced Robert Andrich for Germany (71')",
+      "evidence": {
+        "minute": 70,
+        "period": 2,
+        "display_minute": "71'",
+        "on_player": "Emre Can",
+        "off_player": "Robert Andrich",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.GER.niclas_f_llkrug",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Germany",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Niclas F\u00fcllkrug",
+        "display_name": "Niclas F\u00fcllkrug"
+      },
+      "label": null,
+      "value": {
+        "on": "Niclas F\u00fcllkrug",
+        "off": "Kai Havertz"
+      },
+      "claim": "Niclas F\u00fcllkrug replaced Kai Havertz for Germany (58')",
+      "evidence": {
+        "minute": 57,
+        "period": 2,
+        "display_minute": "58'",
+        "on_player": "Niclas F\u00fcllkrug",
+        "off_player": "Kai Havertz",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.GER.chris_f_hrich",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Germany",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Chris F\u00fchrich",
+        "display_name": "Chris F\u00fchrich"
+      },
+      "label": null,
+      "value": {
+        "on": "Chris F\u00fchrich",
+        "off": "Jamal Musiala"
+      },
+      "claim": "Chris F\u00fchrich replaced Jamal Musiala for Germany (72')",
+      "evidence": {
+        "minute": 71,
+        "period": 2,
+        "display_minute": "72'",
+        "on_player": "Chris F\u00fchrich",
+        "off_player": "Jamal Musiala",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.GER.deniz_undav",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Germany",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Deniz Undav",
+        "display_name": "Deniz Undav"
+      },
+      "label": null,
+      "value": {
+        "on": "Deniz Undav",
+        "off": "\u0130lkay G\u00fcndo\u011fan"
+      },
+      "claim": "Deniz Undav replaced \u0130lkay G\u00fcndo\u011fan for Germany (84')",
+      "evidence": {
+        "minute": 83,
+        "period": 2,
+        "display_minute": "84'",
+        "on_player": "Deniz Undav",
+        "off_player": "\u0130lkay G\u00fcndo\u011fan",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.HUN.l_szl_kleinheisler",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Hungary",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "L\u00e1szl\u00f3 Kleinheisler",
+        "display_name": "L\u00e1szl\u00f3 Kleinheisler"
+      },
+      "label": null,
+      "value": {
+        "on": "L\u00e1szl\u00f3 Kleinheisler",
+        "off": "\u00c1d\u00e1m Nagy"
+      },
+      "claim": "L\u00e1szl\u00f3 Kleinheisler replaced \u00c1d\u00e1m Nagy for Hungary (64')",
+      "evidence": {
+        "minute": 63,
+        "period": 2,
+        "display_minute": "64'",
+        "on_player": "L\u00e1szl\u00f3 Kleinheisler",
+        "off_player": "\u00c1d\u00e1m Nagy",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.HUN.d_niel_gazdag",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Hungary",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "D\u00e1niel Gazdag",
+        "display_name": "D\u00e1niel Gazdag"
+      },
+      "label": null,
+      "value": {
+        "on": "D\u00e1niel Gazdag",
+        "off": "Barnab\u00e1s Varga"
+      },
+      "claim": "D\u00e1niel Gazdag replaced Barnab\u00e1s Varga for Hungary (87')",
+      "evidence": {
+        "minute": 86,
+        "period": 2,
+        "display_minute": "87'",
+        "on_player": "D\u00e1niel Gazdag",
+        "off_player": "Barnab\u00e1s Varga",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.HUN.zsolt_nagy",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Hungary",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Zsolt Nagy",
+        "display_name": "Zsolt Nagy"
+      },
+      "label": null,
+      "value": {
+        "on": "Zsolt Nagy",
+        "off": "Milos Kerkez"
+      },
+      "claim": "Zsolt Nagy replaced Milos Kerkez for Hungary (75')",
+      "evidence": {
+        "minute": 74,
+        "period": 2,
+        "display_minute": "75'",
+        "on_player": "Zsolt Nagy",
+        "off_player": "Milos Kerkez",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.HUN.martin_d_m",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Hungary",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Martin \u00c1d\u00e1m",
+        "display_name": "Martin \u00c1d\u00e1m"
+      },
+      "label": null,
+      "value": {
+        "on": "Martin \u00c1d\u00e1m",
+        "off": "Bendeg\u00faz Bolla"
+      },
+      "claim": "Martin \u00c1d\u00e1m replaced Bendeg\u00faz Bolla for Hungary (75')",
+      "evidence": {
+        "minute": 74,
+        "period": 2,
+        "display_minute": "75'",
+        "on_player": "Martin \u00c1d\u00e1m",
+        "off_player": "Bendeg\u00faz Bolla",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.HUN.kevin_csoboth",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Hungary",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Kevin Csoboth",
+        "display_name": "Kevin Csoboth"
+      },
+      "label": null,
+      "value": {
+        "on": "Kevin Csoboth",
+        "off": "Roland Sallai"
+      },
+      "claim": "Kevin Csoboth replaced Roland Sallai for Hungary (87')",
+      "evidence": {
+        "minute": 86,
+        "period": 2,
+        "display_minute": "87'",
+        "on_player": "Kevin Csoboth",
+        "off_player": "Roland Sallai",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.GER.w0.toni_kroos",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Germany",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 57,
+        "source": "on_ball_period",
+        "text": "kick-off to 58'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Toni Kroos",
+        "display_name": "Toni Kroos"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Toni Kroos split touches between the centre (60) and the left half-space (47) (kick-off to 58')",
+      "evidence": {
+        "event_count": 171,
+        "lane_counts": {
+          "left_wing": 29,
+          "left_half_space": 47,
+          "centre": 60,
+          "right_half_space": 35,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 13,
+          "own_half": 49,
+          "opposition_half": 97,
+          "final_third": 12
+        },
+        "band_label": "opposition_half",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "centre",
+        "source": "team_shape_germany.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.GER.w0.jonathan_tah",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Germany",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 57,
+        "source": "on_ball_period",
+        "text": "kick-off to 58'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Jonathan Tah",
+        "display_name": "Jonathan Tah"
+      },
+      "label": "centre",
+      "value": "centre",
+      "claim": "Jonathan Tah took 86 of 149 touches on the centre (kick-off to 58')",
+      "evidence": {
+        "event_count": 149,
+        "lane_counts": {
+          "left_wing": 11,
+          "left_half_space": 23,
+          "centre": 86,
+          "right_half_space": 29,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 26,
+          "own_half": 56,
+          "opposition_half": 61,
+          "final_third": 6
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "centre",
+        "source": "team_shape_germany.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.GER.w0.florian_wirtz",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Germany",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 57,
+        "source": "on_ball_period",
+        "text": "kick-off to 58'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Florian Wirtz",
+        "display_name": "Florian Wirtz"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Florian Wirtz split touches between the right wing (40) and the left wing (27) (kick-off to 58')",
+      "evidence": {
+        "event_count": 126,
+        "lane_counts": {
+          "left_wing": 27,
+          "left_half_space": 23,
+          "centre": 23,
+          "right_half_space": 13,
+          "right_wing": 40
+        },
+        "band_counts": {
+          "own_third": 5,
+          "own_half": 15,
+          "opposition_half": 45,
+          "final_third": 61
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "right",
+        "source": "team_shape_germany.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.GER.w0.antonio_r_diger",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Germany",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 57,
+        "source": "on_ball_period",
+        "text": "kick-off to 58'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Antonio R\u00fcdiger",
+        "display_name": "Antonio R\u00fcdiger"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Antonio R\u00fcdiger split touches between the right wing (58) and the right half-space (45) (kick-off to 58')",
+      "evidence": {
+        "event_count": 121,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 18,
+          "right_half_space": 45,
+          "right_wing": 58
+        },
+        "band_counts": {
+          "own_third": 16,
+          "own_half": 23,
+          "opposition_half": 60,
+          "final_third": 22
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_germany.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.GER.w0.i_lkay_g_ndo_an",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Germany",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 57,
+        "source": "on_ball_period",
+        "text": "kick-off to 58'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "\u0130lkay G\u00fcndo\u011fan",
+        "display_name": "\u0130lkay G\u00fcndo\u011fan"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "\u0130lkay G\u00fcndo\u011fan split touches between the centre (41) and the left wing (18) (kick-off to 58')",
+      "evidence": {
+        "event_count": 105,
+        "lane_counts": {
+          "left_wing": 18,
+          "left_half_space": 14,
+          "centre": 41,
+          "right_half_space": 18,
+          "right_wing": 14
+        },
+        "band_counts": {
+          "own_third": 0,
+          "own_half": 15,
+          "opposition_half": 52,
+          "final_third": 38
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "centre",
+        "observed_side": "centre",
+        "source": "team_shape_germany.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.GER.w0.joshua_kimmich",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Germany",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 57,
+        "source": "on_ball_period",
+        "text": "kick-off to 58'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Joshua Kimmich",
+        "display_name": "Joshua Kimmich"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Joshua Kimmich took 62 of 93 touches on the right wing (kick-off to 58')",
+      "evidence": {
+        "event_count": 93,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 6,
+          "right_half_space": 25,
+          "right_wing": 62
+        },
+        "band_counts": {
+          "own_third": 16,
+          "own_half": 12,
+          "opposition_half": 15,
+          "final_third": 50
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_germany.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.GER.w0.jamal_musiala",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Germany",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 57,
+        "source": "on_ball_period",
+        "text": "kick-off to 58'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Jamal Musiala",
+        "display_name": "Jamal Musiala"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Jamal Musiala split touches between the centre (24) and the right half-space (21) (kick-off to 58')",
+      "evidence": {
+        "event_count": 89,
+        "lane_counts": {
+          "left_wing": 12,
+          "left_half_space": 20,
+          "centre": 24,
+          "right_half_space": 21,
+          "right_wing": 12
+        },
+        "band_counts": {
+          "own_third": 3,
+          "own_half": 12,
+          "opposition_half": 27,
+          "final_third": 47
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "centre",
+        "source": "team_shape_germany.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.GER.w0.maximilian_mittelst_dt",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Germany",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 57,
+        "source": "on_ball_period",
+        "text": "kick-off to 58'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Maximilian Mittelst\u00e4dt",
+        "display_name": "Maximilian Mittelst\u00e4dt"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "Maximilian Mittelst\u00e4dt took 75 of 87 touches on the left wing (kick-off to 58')",
+      "evidence": {
+        "event_count": 87,
+        "lane_counts": {
+          "left_wing": 75,
+          "left_half_space": 12,
+          "centre": 0,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 6,
+          "own_half": 17,
+          "opposition_half": 32,
+          "final_third": 32
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_germany.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.GER.w0.robert_andrich",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Germany",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 57,
+        "source": "on_ball_period",
+        "text": "kick-off to 58'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Robert Andrich",
+        "display_name": "Robert Andrich"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Robert Andrich split touches between the right half-space (28) and the left half-space (22) (kick-off to 58')",
+      "evidence": {
+        "event_count": 75,
+        "lane_counts": {
+          "left_wing": 4,
+          "left_half_space": 22,
+          "centre": 16,
+          "right_half_space": 28,
+          "right_wing": 5
+        },
+        "band_counts": {
+          "own_third": 13,
+          "own_half": 12,
+          "opposition_half": 43,
+          "final_third": 7
+        },
+        "band_label": "opposition_half",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_germany.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.GER.w0.kai_havertz",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Germany",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 57,
+        "source": "on_ball_period",
+        "text": "kick-off to 58'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Kai Havertz",
+        "display_name": "Kai Havertz"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Kai Havertz split touches between the centre (25) and the right half-space (19) (kick-off to 58')",
+      "evidence": {
+        "event_count": 54,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 4,
+          "centre": 25,
+          "right_half_space": 19,
+          "right_wing": 6
+        },
+        "band_counts": {
+          "own_third": 3,
+          "own_half": 6,
+          "opposition_half": 3,
+          "final_third": 42
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": "centre",
+        "observed_side": "centre",
+        "source": "team_shape_germany.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.GER.w0.manuel_neuer",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Germany",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 57,
+        "source": "on_ball_period",
+        "text": "kick-off to 58'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Manuel Neuer",
+        "display_name": "Manuel Neuer"
+      },
+      "label": "centre",
+      "value": "centre",
+      "claim": "Manuel Neuer took 12 of 15 touches on the centre (kick-off to 58')",
+      "evidence": {
+        "event_count": 15,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 12,
+          "right_half_space": 3,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 15,
+          "own_half": 0,
+          "opposition_half": 0,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": null,
+        "observed_side": "centre",
+        "source": "team_shape_germany.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.team_height.GER.w0",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Germany",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 57,
+        "source": "on_ball_period",
+        "text": "kick-off to 58'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": null,
+      "label": "opposition_half",
+      "value": 69.77,
+      "claim": "Germany's average position in possession was in the opposition half (kick-off to 58')",
+      "evidence": {
+        "mean_x": 69.77,
+        "eligible_outfield_count": 10,
+        "event_count_total": 1070,
+        "source": "team_shape_germany.json#on_ball"
+      },
+      "threshold": {
+        "constant": "HALFWAY_LINE",
+        "value": 60
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.team_width.GER.w0",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Germany",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 57,
+        "source": "on_ball_period",
+        "text": "kick-off to 58'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 55.52,
+      "claim": null,
+      "evidence": {
+        "width": 55.52,
+        "eligible_outfield_count": 10,
+        "source": "team_shape_germany.json#on_ball"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.GER.w1.toni_kroos",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Germany",
+      "window": {
+        "index": 1,
+        "from_minute": 57,
+        "to_minute": 70,
+        "source": "on_ball_period",
+        "text": "58' to 71'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": {
+        "player": "Toni Kroos",
+        "display_name": "Toni Kroos"
+      },
+      "label": "left_half_space",
+      "value": "left_half_space",
+      "claim": "Toni Kroos took 5 of 10 touches on the left half-space (58' to 71')",
+      "evidence": {
+        "event_count": 10,
+        "lane_counts": {
+          "left_wing": 2,
+          "left_half_space": 5,
+          "centre": 1,
+          "right_half_space": 2,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 6,
+          "own_half": 0,
+          "opposition_half": 3,
+          "final_third": 1
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_germany.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.GER.w1.leroy_san",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Germany",
+      "window": {
+        "index": 1,
+        "from_minute": 57,
+        "to_minute": 70,
+        "source": "on_ball_period",
+        "text": "58' to 71'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": {
+        "player": "Leroy San\u00e9",
+        "display_name": "Leroy San\u00e9"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Leroy San\u00e9 took 7 of 10 touches on the right wing (58' to 71')",
+      "evidence": {
+        "event_count": 10,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 0,
+          "right_half_space": 3,
+          "right_wing": 7
+        },
+        "band_counts": {
+          "own_third": 2,
+          "own_half": 2,
+          "opposition_half": 0,
+          "final_third": 6
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": null,
+        "observed_side": "right",
+        "source": "team_shape_germany.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.GER.w3.toni_kroos",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Germany",
+      "window": {
+        "index": 3,
+        "from_minute": 71,
+        "to_minute": 83,
+        "source": "on_ball_period",
+        "text": "72' to 84'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": {
+        "player": "Toni Kroos",
+        "display_name": "Toni Kroos"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Toni Kroos split touches between the centre (16) and the left wing (7) (72' to 84')",
+      "evidence": {
+        "event_count": 34,
+        "lane_counts": {
+          "left_wing": 7,
+          "left_half_space": 5,
+          "centre": 16,
+          "right_half_space": 6,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 11,
+          "own_half": 4,
+          "opposition_half": 12,
+          "final_third": 7
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "centre",
+        "source": "team_shape_germany.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.GER.w3.emre_can",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Germany",
+      "window": {
+        "index": 3,
+        "from_minute": 71,
+        "to_minute": 83,
+        "source": "on_ball_period",
+        "text": "72' to 84'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": {
+        "player": "Emre Can",
+        "display_name": "Emre Can"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Emre Can split touches between the centre (10) and the left half-space (6) (72' to 84')",
+      "evidence": {
+        "event_count": 25,
+        "lane_counts": {
+          "left_wing": 4,
+          "left_half_space": 6,
+          "centre": 10,
+          "right_half_space": 2,
+          "right_wing": 3
+        },
+        "band_counts": {
+          "own_third": 6,
+          "own_half": 8,
+          "opposition_half": 8,
+          "final_third": 3
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": null,
+        "observed_side": "centre",
+        "source": "team_shape_germany.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.GER.w3.joshua_kimmich",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Germany",
+      "window": {
+        "index": 3,
+        "from_minute": 71,
+        "to_minute": 83,
+        "source": "on_ball_period",
+        "text": "72' to 84'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": {
+        "player": "Joshua Kimmich",
+        "display_name": "Joshua Kimmich"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Joshua Kimmich took 15 of 24 touches on the right wing (72' to 84')",
+      "evidence": {
+        "event_count": 24,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 3,
+          "right_half_space": 6,
+          "right_wing": 15
+        },
+        "band_counts": {
+          "own_third": 3,
+          "own_half": 3,
+          "opposition_half": 9,
+          "final_third": 9
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_germany.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.GER.w3.leroy_san",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Germany",
+      "window": {
+        "index": 3,
+        "from_minute": 71,
+        "to_minute": 83,
+        "source": "on_ball_period",
+        "text": "72' to 84'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": {
+        "player": "Leroy San\u00e9",
+        "display_name": "Leroy San\u00e9"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Leroy San\u00e9 split touches between the right half-space (9) and the right wing (9) (72' to 84')",
+      "evidence": {
+        "event_count": 24,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 3,
+          "centre": 3,
+          "right_half_space": 9,
+          "right_wing": 9
+        },
+        "band_counts": {
+          "own_third": 3,
+          "own_half": 2,
+          "opposition_half": 0,
+          "final_third": 19
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": null,
+        "observed_side": "right",
+        "source": "team_shape_germany.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.GER.w3.chris_f_hrich",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Germany",
+      "window": {
+        "index": 3,
+        "from_minute": 71,
+        "to_minute": 83,
+        "source": "on_ball_period",
+        "text": "72' to 84'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": {
+        "player": "Chris F\u00fchrich",
+        "display_name": "Chris F\u00fchrich"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Chris F\u00fchrich split touches between the left half-space (7) and the left wing (5) (72' to 84')",
+      "evidence": {
+        "event_count": 15,
+        "lane_counts": {
+          "left_wing": 5,
+          "left_half_space": 7,
+          "centre": 3,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 0,
+          "own_half": 0,
+          "opposition_half": 11,
+          "final_third": 4
+        },
+        "band_label": "opposition_half",
+        "band_mixed": false,
+        "declared_side": null,
+        "observed_side": "left",
+        "source": "team_shape_germany.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.GER.w3.antonio_r_diger",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Germany",
+      "window": {
+        "index": 3,
+        "from_minute": 71,
+        "to_minute": 83,
+        "source": "on_ball_period",
+        "text": "72' to 84'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": {
+        "player": "Antonio R\u00fcdiger",
+        "display_name": "Antonio R\u00fcdiger"
+      },
+      "label": "right_half_space",
+      "value": "right_half_space",
+      "claim": "Antonio R\u00fcdiger took 10 of 15 touches on the right half-space (72' to 84')",
+      "evidence": {
+        "event_count": 15,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 1,
+          "right_half_space": 10,
+          "right_wing": 4
+        },
+        "band_counts": {
+          "own_third": 3,
+          "own_half": 2,
+          "opposition_half": 3,
+          "final_third": 7
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_germany.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.GER.w3.jonathan_tah",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Germany",
+      "window": {
+        "index": 3,
+        "from_minute": 71,
+        "to_minute": 83,
+        "source": "on_ball_period",
+        "text": "72' to 84'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": {
+        "player": "Jonathan Tah",
+        "display_name": "Jonathan Tah"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Jonathan Tah split touches between the left half-space (3) and the centre (3) (72' to 84')",
+      "evidence": {
+        "event_count": 12,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 3,
+          "centre": 3,
+          "right_half_space": 3,
+          "right_wing": 3
+        },
+        "band_counts": {
+          "own_third": 1,
+          "own_half": 5,
+          "opposition_half": 3,
+          "final_third": 3
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_germany.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.HUN.w0.roland_sallai",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Hungary",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 63,
+        "source": "on_ball_period",
+        "text": "kick-off to 64'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Roland Sallai",
+        "display_name": "Roland Sallai"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Roland Sallai split touches between the left wing (13) and the centre (13) (kick-off to 64')",
+      "evidence": {
+        "event_count": 38,
+        "lane_counts": {
+          "left_wing": 13,
+          "left_half_space": 9,
+          "centre": 13,
+          "right_half_space": 2,
+          "right_wing": 1
+        },
+        "band_counts": {
+          "own_third": 18,
+          "own_half": 5,
+          "opposition_half": 7,
+          "final_third": 8
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_hungary.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.HUN.w0.andr_s_sch_fer",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Hungary",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 63,
+        "source": "on_ball_period",
+        "text": "kick-off to 64'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Andr\u00e1s Sch\u00e4fer",
+        "display_name": "Andr\u00e1s Sch\u00e4fer"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Andr\u00e1s Sch\u00e4fer split touches between the left half-space (16) and the left wing (14) (kick-off to 64')",
+      "evidence": {
+        "event_count": 37,
+        "lane_counts": {
+          "left_wing": 14,
+          "left_half_space": 16,
+          "centre": 5,
+          "right_half_space": 2,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 13,
+          "own_half": 12,
+          "opposition_half": 0,
+          "final_third": 12
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_hungary.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.HUN.w0.dominik_szoboszlai",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Hungary",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 63,
+        "source": "on_ball_period",
+        "text": "kick-off to 64'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Dominik Szoboszlai",
+        "display_name": "Dominik Szoboszlai"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Dominik Szoboszlai split touches between the right wing (11) and the centre (10) (kick-off to 64')",
+      "evidence": {
+        "event_count": 33,
+        "lane_counts": {
+          "left_wing": 3,
+          "left_half_space": 0,
+          "centre": 10,
+          "right_half_space": 9,
+          "right_wing": 11
+        },
+        "band_counts": {
+          "own_third": 10,
+          "own_half": 9,
+          "opposition_half": 5,
+          "final_third": 9
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_hungary.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.HUN.w0.m_rton_d_rdai",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Hungary",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 63,
+        "source": "on_ball_period",
+        "text": "kick-off to 64'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "M\u00e1rton D\u00e1rdai",
+        "display_name": "M\u00e1rton D\u00e1rdai"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "M\u00e1rton D\u00e1rdai took 23 of 30 touches on the left wing (kick-off to 64')",
+      "evidence": {
+        "event_count": 30,
+        "lane_counts": {
+          "left_wing": 23,
+          "left_half_space": 5,
+          "centre": 2,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 21,
+          "own_half": 9,
+          "opposition_half": 0,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_hungary.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.HUN.w0.bendeg_z_bolla",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Hungary",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 63,
+        "source": "on_ball_period",
+        "text": "kick-off to 64'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Bendeg\u00faz Bolla",
+        "display_name": "Bendeg\u00faz Bolla"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Bendeg\u00faz Bolla took 24 of 28 touches on the right wing (kick-off to 64')",
+      "evidence": {
+        "event_count": 28,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 0,
+          "right_half_space": 4,
+          "right_wing": 24
+        },
+        "band_counts": {
+          "own_third": 14,
+          "own_half": 4,
+          "opposition_half": 5,
+          "final_third": 5
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_hungary.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.HUN.w0.milos_kerkez",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Hungary",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 63,
+        "source": "on_ball_period",
+        "text": "kick-off to 64'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Milos Kerkez",
+        "display_name": "Milos Kerkez"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "Milos Kerkez took 17 of 26 touches on the left wing (kick-off to 64')",
+      "evidence": {
+        "event_count": 26,
+        "lane_counts": {
+          "left_wing": 17,
+          "left_half_space": 9,
+          "centre": 0,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 9,
+          "own_half": 9,
+          "opposition_half": 3,
+          "final_third": 5
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_hungary.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.HUN.w0.attila_fiola",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Hungary",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 63,
+        "source": "on_ball_period",
+        "text": "kick-off to 64'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Attila Fiola",
+        "display_name": "Attila Fiola"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Attila Fiola took 19 of 24 touches on the right wing (kick-off to 64')",
+      "evidence": {
+        "event_count": 24,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 2,
+          "right_half_space": 3,
+          "right_wing": 19
+        },
+        "band_counts": {
+          "own_third": 18,
+          "own_half": 6,
+          "opposition_half": 0,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_hungary.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.HUN.w0.barnab_s_varga",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Hungary",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 63,
+        "source": "on_ball_period",
+        "text": "kick-off to 64'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Barnab\u00e1s Varga",
+        "display_name": "Barnab\u00e1s Varga"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Barnab\u00e1s Varga split touches between the left wing (8) and the right half-space (5) (kick-off to 64')",
+      "evidence": {
+        "event_count": 23,
+        "lane_counts": {
+          "left_wing": 8,
+          "left_half_space": 3,
+          "centre": 3,
+          "right_half_space": 5,
+          "right_wing": 4
+        },
+        "band_counts": {
+          "own_third": 10,
+          "own_half": 1,
+          "opposition_half": 7,
+          "final_third": 5
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "centre",
+        "observed_side": "left",
+        "source": "team_shape_hungary.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.HUN.w0.d_m_nagy",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Hungary",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 63,
+        "source": "on_ball_period",
+        "text": "kick-off to 64'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "\u00c1d\u00e1m Nagy",
+        "display_name": "\u00c1d\u00e1m Nagy"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "\u00c1d\u00e1m Nagy took 12 of 19 touches on the right wing (kick-off to 64')",
+      "evidence": {
+        "event_count": 19,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 2,
+          "centre": 2,
+          "right_half_space": 3,
+          "right_wing": 12
+        },
+        "band_counts": {
+          "own_third": 2,
+          "own_half": 13,
+          "opposition_half": 1,
+          "final_third": 3
+        },
+        "band_label": "own_half",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_hungary.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.HUN.w0.willi_orban",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Hungary",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 63,
+        "source": "on_ball_period",
+        "text": "kick-off to 64'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Willi Orban",
+        "display_name": "Willi Orban"
+      },
+      "label": "centre",
+      "value": "centre",
+      "claim": "Willi Orban took 9 of 16 touches on the centre (kick-off to 64')",
+      "evidence": {
+        "event_count": 16,
+        "lane_counts": {
+          "left_wing": 1,
+          "left_half_space": 2,
+          "centre": 9,
+          "right_half_space": 4,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 13,
+          "own_half": 3,
+          "opposition_half": 0,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": "centre",
+        "observed_side": "centre",
+        "source": "team_shape_hungary.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.HUN.w0.p_ter_gul_csi",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Hungary",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 63,
+        "source": "on_ball_period",
+        "text": "kick-off to 64'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "P\u00e9ter Gul\u00e1csi",
+        "display_name": "P\u00e9ter Gul\u00e1csi"
+      },
+      "label": "centre",
+      "value": "centre",
+      "claim": "P\u00e9ter Gul\u00e1csi took 8 of 11 touches on the centre (kick-off to 64')",
+      "evidence": {
+        "event_count": 11,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 8,
+          "right_half_space": 3,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 11,
+          "own_half": 0,
+          "opposition_half": 0,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": null,
+        "observed_side": "centre",
+        "source": "team_shape_hungary.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.team_height.HUN.w0",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Hungary",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 63,
+        "source": "on_ball_period",
+        "text": "kick-off to 64'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": null,
+      "label": "own_half",
+      "value": 48.55,
+      "claim": "Hungary's average position in possession was in their own half (kick-off to 64')",
+      "evidence": {
+        "mean_x": 48.55,
+        "eligible_outfield_count": 10,
+        "event_count_total": 274,
+        "source": "team_shape_hungary.json#on_ball"
+      },
+      "threshold": {
+        "constant": "HALFWAY_LINE",
+        "value": 60
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.team_width.HUN.w0",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Hungary",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 63,
+        "source": "on_ball_period",
+        "text": "kick-off to 64'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 56.34,
+      "claim": null,
+      "evidence": {
+        "width": 56.34,
+        "eligible_outfield_count": 10,
+        "source": "team_shape_hungary.json#on_ball"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.HUN.w3.kevin_csoboth",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Hungary",
+      "window": {
+        "index": 3,
+        "from_minute": 86,
+        "to_minute": 94,
+        "source": "on_ball_period",
+        "text": "87' to full time"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "Kevin Csoboth",
+        "display_name": "Kevin Csoboth"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Kevin Csoboth took 6 of 11 touches on the right wing (87' to full time)",
+      "evidence": {
+        "event_count": 11,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 0,
+          "right_half_space": 5,
+          "right_wing": 6
+        },
+        "band_counts": {
+          "own_third": 3,
+          "own_half": 3,
+          "opposition_half": 5,
+          "final_third": 0
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": null,
+        "observed_side": "right",
+        "source": "team_shape_hungary.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "out_of_possession.block_height.GER.whole_match",
+      "category": "out_of_possession",
+      "type": "block_height",
+      "team": "Germany",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": null,
+        "source": "whole_match",
+        "text": "kick-off to full time"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 65.31,
+      "claim": null,
+      "evidence": {
+        "centroid_x": 65.31,
+        "camera_caveat": "360 frames follow the ball; the visible subset of out-of-possession positions is biased toward areas near the ball. The camera artifact and the real defensive shape point the same direction \u2014 they cannot be cleanly separated.",
+        "source": "team_shape_germany.json#off_ball.centroid"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "out_of_possession.block_height.HUN.whole_match",
+      "category": "out_of_possession",
+      "type": "block_height",
+      "team": "Hungary",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": null,
+        "source": "whole_match",
+        "text": "kick-off to full time"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 43.27,
+      "claim": null,
+      "evidence": {
+        "centroid_x": 43.27,
+        "camera_caveat": "360 frames follow the ball; the visible subset of out-of-possession positions is biased toward areas near the ball. The camera artifact and the real defensive shape point the same direction \u2014 they cannot be cleanly separated.",
+        "source": "team_shape_hungary.json#off_ball.centroid"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.GER.w0.toni_kroos",
+      "category": "passing",
+      "type": "hub",
+      "team": "Germany",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 57,
+        "source": "pass_network_window",
+        "text": "kick-off to 58'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Toni Kroos",
+        "display_name": "Toni Kroos"
+      },
+      "label": null,
+      "value": 0.1786,
+      "claim": "Toni Kroos was a hub for Germany, involved in 17.9% of passes (kick-off to 58')",
+      "evidence": {
+        "passes_made": 83,
+        "passes_received": 82,
+        "share": 0.1786,
+        "source": "pass_network_Germany.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.1904761904761905,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.GER.w0.jonathan_tah_antonio_r_diger",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Germany",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 57,
+        "source": "pass_network_window",
+        "text": "kick-off to 58'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "pair": [
+          "Jonathan Tah",
+          "Antonio R\u00fcdiger"
+        ]
+      },
+      "label": null,
+      "value": 34,
+      "claim": "Jonathan Tah and Antonio R\u00fcdiger combined 34 times (kick-off to 58')",
+      "evidence": {
+        "bidirectional_total": 34,
+        "source": "pass_network_Germany.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.471861471861472,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.GER.w0.toni_kroos_jonathan_tah",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Germany",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 57,
+        "source": "pass_network_window",
+        "text": "kick-off to 58'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "pair": [
+          "Toni Kroos",
+          "Jonathan Tah"
+        ]
+      },
+      "label": null,
+      "value": 30,
+      "claim": "Toni Kroos and Jonathan Tah combined 30 times (kick-off to 58')",
+      "evidence": {
+        "bidirectional_total": 30,
+        "source": "pass_network_Germany.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.2987012987012985,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.GER.w0.toni_kroos_florian_wirtz",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Germany",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 57,
+        "source": "pass_network_window",
+        "text": "kick-off to 58'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "pair": [
+          "Toni Kroos",
+          "Florian Wirtz"
+        ]
+      },
+      "label": null,
+      "value": 28,
+      "claim": "Toni Kroos and Florian Wirtz combined 28 times (kick-off to 58')",
+      "evidence": {
+        "bidirectional_total": 28,
+        "source": "pass_network_Germany.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.2121212121212122,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.concentration.GER.w0",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Germany",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 57,
+        "source": "pass_network_window",
+        "text": "kick-off to 58'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 0.4372,
+      "claim": null,
+      "evidence": {
+        "top3_share": 0.4372,
+        "window_passes": 462,
+        "source": "pass_network_Germany.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.GER.w1.toni_kroos",
+      "category": "passing",
+      "type": "hub",
+      "team": "Germany",
+      "window": {
+        "index": 1,
+        "from_minute": 57,
+        "to_minute": 70,
+        "source": "pass_network_window",
+        "text": "58' to 71'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": {
+        "player": "Toni Kroos",
+        "display_name": "Toni Kroos"
+      },
+      "label": null,
+      "value": 0.1948,
+      "claim": "Toni Kroos was a hub for Germany, involved in 19.5% of passes (58' to 71')",
+      "evidence": {
+        "passes_made": 16,
+        "passes_received": 14,
+        "share": 0.1948,
+        "source": "pass_network_Germany.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.298701298701299,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.GER.w1.antonio_r_diger_joshua_kimmich",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Germany",
+      "window": {
+        "index": 1,
+        "from_minute": 57,
+        "to_minute": 70,
+        "source": "pass_network_window",
+        "text": "58' to 71'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": {
+        "pair": [
+          "Antonio R\u00fcdiger",
+          "Joshua Kimmich"
+        ]
+      },
+      "label": null,
+      "value": 8,
+      "claim": "Antonio R\u00fcdiger and Joshua Kimmich combined 8 times (58' to 71')",
+      "evidence": {
+        "bidirectional_total": 8,
+        "source": "pass_network_Germany.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 2.0779220779220777,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.concentration.GER.w1",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Germany",
+      "window": {
+        "index": 1,
+        "from_minute": 57,
+        "to_minute": 70,
+        "source": "pass_network_window",
+        "text": "58' to 71'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 0.461,
+      "claim": null,
+      "evidence": {
+        "top3_share": 0.461,
+        "window_passes": 77,
+        "source": "pass_network_Germany.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.GER.w3.joshua_kimmich",
+      "category": "passing",
+      "type": "hub",
+      "team": "Germany",
+      "window": {
+        "index": 3,
+        "from_minute": 71,
+        "to_minute": 83,
+        "source": "pass_network_window",
+        "text": "72' to 84'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": {
+        "player": "Joshua Kimmich",
+        "display_name": "Joshua Kimmich"
+      },
+      "label": null,
+      "value": 0.1667,
+      "claim": "Joshua Kimmich was a hub for Germany, involved in 16.7% of passes (72' to 84')",
+      "evidence": {
+        "passes_made": 13,
+        "passes_received": 15,
+        "share": 0.1667,
+        "source": "pass_network_Germany.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.1111111111111112,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.GER.w3.toni_kroos",
+      "category": "passing",
+      "type": "hub",
+      "team": "Germany",
+      "window": {
+        "index": 3,
+        "from_minute": 71,
+        "to_minute": 83,
+        "source": "pass_network_window",
+        "text": "72' to 84'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": {
+        "player": "Toni Kroos",
+        "display_name": "Toni Kroos"
+      },
+      "label": null,
+      "value": 0.1667,
+      "claim": "Toni Kroos was a hub for Germany, involved in 16.7% of passes (72' to 84')",
+      "evidence": {
+        "passes_made": 15,
+        "passes_received": 13,
+        "share": 0.1667,
+        "source": "pass_network_Germany.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.1111111111111112,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.GER.w3.joshua_kimmich_leroy_san",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Germany",
+      "window": {
+        "index": 3,
+        "from_minute": 71,
+        "to_minute": 83,
+        "source": "pass_network_window",
+        "text": "72' to 84'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": {
+        "pair": [
+          "Joshua Kimmich",
+          "Leroy San\u00e9"
+        ]
+      },
+      "label": null,
+      "value": 8,
+      "claim": "Joshua Kimmich and Leroy San\u00e9 combined 8 times (72' to 84')",
+      "evidence": {
+        "bidirectional_total": 8,
+        "source": "pass_network_Germany.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.9047619047619047,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.concentration.GER.w3",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Germany",
+      "window": {
+        "index": 3,
+        "from_minute": 71,
+        "to_minute": 83,
+        "source": "pass_network_window",
+        "text": "72' to 84'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 0.4524,
+      "claim": null,
+      "evidence": {
+        "top3_share": 0.4524,
+        "window_passes": 84,
+        "source": "pass_network_Germany.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.GER.w4.antonio_r_diger",
+      "category": "passing",
+      "type": "hub",
+      "team": "Germany",
+      "window": {
+        "index": 4,
+        "from_minute": 83,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "84' to full time"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": {
+        "player": "Antonio R\u00fcdiger",
+        "display_name": "Antonio R\u00fcdiger"
+      },
+      "label": null,
+      "value": 0.1774,
+      "claim": "Antonio R\u00fcdiger was a hub for Germany, involved in 17.7% of passes (84' to full time)",
+      "evidence": {
+        "passes_made": 12,
+        "passes_received": 10,
+        "share": 0.1774,
+        "source": "pass_network_Germany.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.1827956989247312,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.GER.w4.joshua_kimmich",
+      "category": "passing",
+      "type": "hub",
+      "team": "Germany",
+      "window": {
+        "index": 4,
+        "from_minute": 83,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "84' to full time"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": {
+        "player": "Joshua Kimmich",
+        "display_name": "Joshua Kimmich"
+      },
+      "label": null,
+      "value": 0.1613,
+      "claim": "Joshua Kimmich was a hub for Germany, involved in 16.1% of passes (84' to full time)",
+      "evidence": {
+        "passes_made": 10,
+        "passes_received": 10,
+        "share": 0.1613,
+        "source": "pass_network_Germany.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.075268817204301,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.GER.w4.toni_kroos",
+      "category": "passing",
+      "type": "hub",
+      "team": "Germany",
+      "window": {
+        "index": 4,
+        "from_minute": 83,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "84' to full time"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": {
+        "player": "Toni Kroos",
+        "display_name": "Toni Kroos"
+      },
+      "label": null,
+      "value": 0.1694,
+      "claim": "Toni Kroos was a hub for Germany, involved in 16.9% of passes (84' to full time)",
+      "evidence": {
+        "passes_made": 10,
+        "passes_received": 11,
+        "share": 0.1694,
+        "source": "pass_network_Germany.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.129032258064516,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.concentration.GER.w4",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Germany",
+      "window": {
+        "index": 4,
+        "from_minute": 83,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "84' to full time"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 0.5081,
+      "claim": null,
+      "evidence": {
+        "top3_share": 0.5081,
+        "window_passes": 62,
+        "source": "pass_network_Germany.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.no_hub.HUN.w0",
+      "category": "passing",
+      "type": "no_hub",
+      "team": "Hungary",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 63,
+        "source": "pass_network_window",
+        "text": "kick-off to 64'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 0.1405,
+      "claim": "Hungary's passing had no single hub; the most involved player, M\u00e1rton D\u00e1rdai, had 14.1% (kick-off to 64')",
+      "evidence": {
+        "most_involved_player": "M\u00e1rton D\u00e1rdai",
+        "share": 0.1405,
+        "source": "pass_network_Hungary.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.HUN.w0.m_rton_d_rdai_milos_kerkez",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Hungary",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 63,
+        "source": "pass_network_window",
+        "text": "kick-off to 64'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "pair": [
+          "M\u00e1rton D\u00e1rdai",
+          "Milos Kerkez"
+        ]
+      },
+      "label": null,
+      "value": 17,
+      "claim": "M\u00e1rton D\u00e1rdai and Milos Kerkez combined 17 times (kick-off to 64')",
+      "evidence": {
+        "bidirectional_total": 17,
+        "source": "pass_network_Hungary.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.837837837837838,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.HUN.w0.m_rton_d_rdai_p_ter_gul_csi",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Hungary",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 63,
+        "source": "pass_network_window",
+        "text": "kick-off to 64'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "pair": [
+          "M\u00e1rton D\u00e1rdai",
+          "P\u00e9ter Gul\u00e1csi"
+        ]
+      },
+      "label": null,
+      "value": 9,
+      "claim": "M\u00e1rton D\u00e1rdai and P\u00e9ter Gul\u00e1csi combined 9 times (kick-off to 64')",
+      "evidence": {
+        "bidirectional_total": 9,
+        "source": "pass_network_Hungary.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 0.972972972972973,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.HUN.w0.attila_fiola_willi_orban",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Hungary",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 63,
+        "source": "pass_network_window",
+        "text": "kick-off to 64'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "pair": [
+          "Attila Fiola",
+          "Willi Orban"
+        ]
+      },
+      "label": null,
+      "value": 8,
+      "claim": "Attila Fiola and Willi Orban combined 8 times (kick-off to 64')",
+      "evidence": {
+        "bidirectional_total": 8,
+        "source": "pass_network_Hungary.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 0.8648648648648649,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.HUN.w0.m_rton_d_rdai_willi_orban",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Hungary",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 63,
+        "source": "pass_network_window",
+        "text": "kick-off to 64'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "pair": [
+          "M\u00e1rton D\u00e1rdai",
+          "Willi Orban"
+        ]
+      },
+      "label": null,
+      "value": 8,
+      "claim": "M\u00e1rton D\u00e1rdai and Willi Orban combined 8 times (kick-off to 64')",
+      "evidence": {
+        "bidirectional_total": 8,
+        "source": "pass_network_Hungary.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 0.8648648648648649,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.HUN.w0.p_ter_gul_csi_andr_s_sch_fer",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Hungary",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 63,
+        "source": "pass_network_window",
+        "text": "kick-off to 64'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "pair": [
+          "P\u00e9ter Gul\u00e1csi",
+          "Andr\u00e1s Sch\u00e4fer"
+        ]
+      },
+      "label": null,
+      "value": 8,
+      "claim": "P\u00e9ter Gul\u00e1csi and Andr\u00e1s Sch\u00e4fer combined 8 times (kick-off to 64')",
+      "evidence": {
+        "bidirectional_total": 8,
+        "source": "pass_network_Hungary.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 0.8648648648648649,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.HUN.w0.milos_kerkez_andr_s_sch_fer",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Hungary",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 63,
+        "source": "pass_network_window",
+        "text": "kick-off to 64'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "pair": [
+          "Milos Kerkez",
+          "Andr\u00e1s Sch\u00e4fer"
+        ]
+      },
+      "label": null,
+      "value": 8,
+      "claim": "Milos Kerkez and Andr\u00e1s Sch\u00e4fer combined 8 times (kick-off to 64')",
+      "evidence": {
+        "bidirectional_total": 8,
+        "source": "pass_network_Hungary.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 0.8648648648648649,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.concentration.HUN.w0",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Hungary",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 63,
+        "source": "pass_network_window",
+        "text": "kick-off to 64'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 0.3541,
+      "claim": null,
+      "evidence": {
+        "top3_share": 0.3541,
+        "window_passes": 185,
+        "source": "pass_network_Hungary.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "cross.comparison.block_height.HUN",
+      "category": "cross_cutting",
+      "type": "comparison",
+      "team": "Hungary",
+      "window": null,
+      "game_states": [],
+      "subject": null,
+      "label": "deeper",
+      "value": 22.04,
+      "claim": "Hungary's average out-of-possession position was 22.0 yards deeper than Germany's",
+      "evidence": {
+        "deeper_x": 43.27,
+        "other_x": 65.31,
+        "gap": 22.04
+      },
+      "threshold": {
+        "constant": "COMPARE_MIN_YARDS",
+        "value": 5
+      },
+      "notability": 4.4079999999999995,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "cross.comparison.team_height.GER",
+      "category": "cross_cutting",
+      "type": "comparison",
+      "team": "Germany",
+      "window": null,
+      "game_states": [],
+      "subject": null,
+      "label": "higher",
+      "value": 21.22,
+      "claim": "Germany's average position in possession was 21.2 yards higher than Hungary's (Germany kick-off to 58', Hungary kick-off to 64')",
+      "evidence": {
+        "higher_value": 69.77,
+        "other_value": 48.55,
+        "gap": 21.22
+      },
+      "threshold": {
+        "constant": "COMPARE_MIN_YARDS",
+        "value": 5
+      },
+      "notability": 4.244,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "cross.comparison.concentration.GER",
+      "category": "cross_cutting",
+      "type": "comparison",
+      "team": "Germany",
+      "window": null,
+      "game_states": [],
+      "subject": null,
+      "label": "more_concentrated",
+      "value": 8.31,
+      "claim": "Germany's passing was more concentrated than Hungary's: the top three players had 43.7% of involvement against 35.4% (kick-off to 58')",
+      "evidence": {
+        "higher_value": 0.4372,
+        "other_value": 0.3541,
+        "gap": 8.31
+      },
+      "threshold": {
+        "constant": "COMPARE_MIN_POINTS",
+        "value": 5
+      },
+      "notability": 1.661999999999999,
+      "definitions_version": "0.1.0"
+    }
+  ],
+  "suppressed": [
+    {
+      "id": "in_possession.player_zone.GER.w1.jamal_musiala",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Germany",
+      "window": {
+        "index": 1,
+        "from_minute": 57,
+        "to_minute": 70,
+        "source": "on_ball_period",
+        "text": "58' to 71'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 9,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.GER.w1.maximilian_mittelst_dt",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Germany",
+      "window": {
+        "index": 1,
+        "from_minute": 57,
+        "to_minute": 70,
+        "source": "on_ball_period",
+        "text": "58' to 71'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 9,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.GER.w1.joshua_kimmich",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Germany",
+      "window": {
+        "index": 1,
+        "from_minute": 57,
+        "to_minute": 70,
+        "source": "on_ball_period",
+        "text": "58' to 71'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 6,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.GER.w1.jonathan_tah",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Germany",
+      "window": {
+        "index": 1,
+        "from_minute": 57,
+        "to_minute": 70,
+        "source": "on_ball_period",
+        "text": "58' to 71'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 6,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.GER.w1.niclas_f_llkrug",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Germany",
+      "window": {
+        "index": 1,
+        "from_minute": 57,
+        "to_minute": 70,
+        "source": "on_ball_period",
+        "text": "58' to 71'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 6,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.GER.w1.antonio_r_diger",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Germany",
+      "window": {
+        "index": 1,
+        "from_minute": 57,
+        "to_minute": 70,
+        "source": "on_ball_period",
+        "text": "58' to 71'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 5,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.GER.w1.i_lkay_g_ndo_an",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Germany",
+      "window": {
+        "index": 1,
+        "from_minute": 57,
+        "to_minute": 70,
+        "source": "on_ball_period",
+        "text": "58' to 71'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 2,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.team_height.GER.w1",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Germany",
+      "window": {
+        "index": 1,
+        "from_minute": 57,
+        "to_minute": 70,
+        "source": "on_ball_period",
+        "text": "58' to 71'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 2,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_width.GER.w1",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Germany",
+      "window": {
+        "index": 1,
+        "from_minute": 57,
+        "to_minute": 70,
+        "source": "on_ball_period",
+        "text": "58' to 71'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 2,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_height.GER.w2",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Germany",
+      "window": {
+        "index": 2,
+        "from_minute": 70,
+        "to_minute": 71,
+        "source": "on_ball_period",
+        "text": "71' to 72'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_width.GER.w2",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Germany",
+      "window": {
+        "index": 2,
+        "from_minute": 70,
+        "to_minute": 71,
+        "source": "on_ball_period",
+        "text": "71' to 72'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.player_zone.GER.w3.maximilian_mittelst_dt",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Germany",
+      "window": {
+        "index": 3,
+        "from_minute": 71,
+        "to_minute": 83,
+        "source": "on_ball_period",
+        "text": "72' to 84'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 9,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.GER.w3.i_lkay_g_ndo_an",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Germany",
+      "window": {
+        "index": 3,
+        "from_minute": 71,
+        "to_minute": 83,
+        "source": "on_ball_period",
+        "text": "72' to 84'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 9,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.GER.w3.manuel_neuer",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Germany",
+      "window": {
+        "index": 3,
+        "from_minute": 71,
+        "to_minute": 83,
+        "source": "on_ball_period",
+        "text": "72' to 84'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.GER.w3.niclas_f_llkrug",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Germany",
+      "window": {
+        "index": 3,
+        "from_minute": 71,
+        "to_minute": 83,
+        "source": "on_ball_period",
+        "text": "72' to 84'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.team_height.GER.w3",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Germany",
+      "window": {
+        "index": 3,
+        "from_minute": 71,
+        "to_minute": 83,
+        "source": "on_ball_period",
+        "text": "72' to 84'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 7,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_width.GER.w3",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Germany",
+      "window": {
+        "index": 3,
+        "from_minute": 71,
+        "to_minute": 83,
+        "source": "on_ball_period",
+        "text": "72' to 84'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 7,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.player_zone.GER.w4.joshua_kimmich",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Germany",
+      "window": {
+        "index": 4,
+        "from_minute": 83,
+        "to_minute": 94,
+        "source": "on_ball_period",
+        "text": "84' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 8,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.GER.w4.antonio_r_diger",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Germany",
+      "window": {
+        "index": 4,
+        "from_minute": 83,
+        "to_minute": 94,
+        "source": "on_ball_period",
+        "text": "84' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 7,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.GER.w4.manuel_neuer",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Germany",
+      "window": {
+        "index": 4,
+        "from_minute": 83,
+        "to_minute": 94,
+        "source": "on_ball_period",
+        "text": "84' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 6,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.GER.w4.emre_can",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Germany",
+      "window": {
+        "index": 4,
+        "from_minute": 83,
+        "to_minute": 94,
+        "source": "on_ball_period",
+        "text": "84' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 6,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.GER.w4.jonathan_tah",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Germany",
+      "window": {
+        "index": 4,
+        "from_minute": 83,
+        "to_minute": 94,
+        "source": "on_ball_period",
+        "text": "84' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 6,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.GER.w4.toni_kroos",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Germany",
+      "window": {
+        "index": 4,
+        "from_minute": 83,
+        "to_minute": 94,
+        "source": "on_ball_period",
+        "text": "84' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 6,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.GER.w4.leroy_san",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Germany",
+      "window": {
+        "index": 4,
+        "from_minute": 83,
+        "to_minute": 94,
+        "source": "on_ball_period",
+        "text": "84' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 5,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.GER.w4.deniz_undav",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Germany",
+      "window": {
+        "index": 4,
+        "from_minute": 83,
+        "to_minute": 94,
+        "source": "on_ball_period",
+        "text": "84' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 4,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.GER.w4.niclas_f_llkrug",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Germany",
+      "window": {
+        "index": 4,
+        "from_minute": 83,
+        "to_minute": 94,
+        "source": "on_ball_period",
+        "text": "84' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.GER.w4.chris_f_hrich",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Germany",
+      "window": {
+        "index": 4,
+        "from_minute": 83,
+        "to_minute": 94,
+        "source": "on_ball_period",
+        "text": "84' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.GER.w4.maximilian_mittelst_dt",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Germany",
+      "window": {
+        "index": 4,
+        "from_minute": 83,
+        "to_minute": 94,
+        "source": "on_ball_period",
+        "text": "84' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 1,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.team_height.GER.w4",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Germany",
+      "window": {
+        "index": 4,
+        "from_minute": 83,
+        "to_minute": 94,
+        "source": "on_ball_period",
+        "text": "84' to full time"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_width.GER.w4",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Germany",
+      "window": {
+        "index": 4,
+        "from_minute": 83,
+        "to_minute": 94,
+        "source": "on_ball_period",
+        "text": "84' to full time"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.player_zone.HUN.w1.willi_orban",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Hungary",
+      "window": {
+        "index": 1,
+        "from_minute": 63,
+        "to_minute": 74,
+        "source": "on_ball_period",
+        "text": "64' to 75'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 9,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.HUN.w1.dominik_szoboszlai",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Hungary",
+      "window": {
+        "index": 1,
+        "from_minute": 63,
+        "to_minute": 74,
+        "source": "on_ball_period",
+        "text": "64' to 75'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 9,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.HUN.w1.bendeg_z_bolla",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Hungary",
+      "window": {
+        "index": 1,
+        "from_minute": 63,
+        "to_minute": 74,
+        "source": "on_ball_period",
+        "text": "64' to 75'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 8,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.HUN.w1.p_ter_gul_csi",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Hungary",
+      "window": {
+        "index": 1,
+        "from_minute": 63,
+        "to_minute": 74,
+        "source": "on_ball_period",
+        "text": "64' to 75'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 6,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.HUN.w1.attila_fiola",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Hungary",
+      "window": {
+        "index": 1,
+        "from_minute": 63,
+        "to_minute": 74,
+        "source": "on_ball_period",
+        "text": "64' to 75'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 6,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.HUN.w1.m_rton_d_rdai",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Hungary",
+      "window": {
+        "index": 1,
+        "from_minute": 63,
+        "to_minute": 74,
+        "source": "on_ball_period",
+        "text": "64' to 75'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 6,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.HUN.w1.barnab_s_varga",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Hungary",
+      "window": {
+        "index": 1,
+        "from_minute": 63,
+        "to_minute": 74,
+        "source": "on_ball_period",
+        "text": "64' to 75'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 6,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.HUN.w1.andr_s_sch_fer",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Hungary",
+      "window": {
+        "index": 1,
+        "from_minute": 63,
+        "to_minute": 74,
+        "source": "on_ball_period",
+        "text": "64' to 75'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 6,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.HUN.w1.roland_sallai",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Hungary",
+      "window": {
+        "index": 1,
+        "from_minute": 63,
+        "to_minute": 74,
+        "source": "on_ball_period",
+        "text": "64' to 75'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 2,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.team_height.HUN.w1",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Hungary",
+      "window": {
+        "index": 1,
+        "from_minute": 63,
+        "to_minute": 74,
+        "source": "on_ball_period",
+        "text": "64' to 75'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_width.HUN.w1",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Hungary",
+      "window": {
+        "index": 1,
+        "from_minute": 63,
+        "to_minute": 74,
+        "source": "on_ball_period",
+        "text": "64' to 75'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.player_zone.HUN.w2.zsolt_nagy",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Hungary",
+      "window": {
+        "index": 2,
+        "from_minute": 74,
+        "to_minute": 86,
+        "source": "on_ball_period",
+        "text": "75' to 87'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 4,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.HUN.w2.andr_s_sch_fer",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Hungary",
+      "window": {
+        "index": 2,
+        "from_minute": 74,
+        "to_minute": 86,
+        "source": "on_ball_period",
+        "text": "75' to 87'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.HUN.w2.martin_d_m",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Hungary",
+      "window": {
+        "index": 2,
+        "from_minute": 74,
+        "to_minute": 86,
+        "source": "on_ball_period",
+        "text": "75' to 87'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 2,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.HUN.w2.m_rton_d_rdai",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Hungary",
+      "window": {
+        "index": 2,
+        "from_minute": 74,
+        "to_minute": 86,
+        "source": "on_ball_period",
+        "text": "75' to 87'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 1,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.team_height.HUN.w2",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Hungary",
+      "window": {
+        "index": 2,
+        "from_minute": 74,
+        "to_minute": 86,
+        "source": "on_ball_period",
+        "text": "75' to 87'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_width.HUN.w2",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Hungary",
+      "window": {
+        "index": 2,
+        "from_minute": 74,
+        "to_minute": 86,
+        "source": "on_ball_period",
+        "text": "75' to 87'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.player_zone.HUN.w3.dominik_szoboszlai",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Hungary",
+      "window": {
+        "index": 3,
+        "from_minute": 86,
+        "to_minute": 94,
+        "source": "on_ball_period",
+        "text": "87' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 6,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.HUN.w3.willi_orban",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Hungary",
+      "window": {
+        "index": 3,
+        "from_minute": 86,
+        "to_minute": 94,
+        "source": "on_ball_period",
+        "text": "87' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 6,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.HUN.w3.m_rton_d_rdai",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Hungary",
+      "window": {
+        "index": 3,
+        "from_minute": 86,
+        "to_minute": 94,
+        "source": "on_ball_period",
+        "text": "87' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 5,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.HUN.w3.martin_d_m",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Hungary",
+      "window": {
+        "index": 3,
+        "from_minute": 86,
+        "to_minute": 94,
+        "source": "on_ball_period",
+        "text": "87' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 5,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.HUN.w3.andr_s_sch_fer",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Hungary",
+      "window": {
+        "index": 3,
+        "from_minute": 86,
+        "to_minute": 94,
+        "source": "on_ball_period",
+        "text": "87' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 5,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.HUN.w3.d_niel_gazdag",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Hungary",
+      "window": {
+        "index": 3,
+        "from_minute": 86,
+        "to_minute": 94,
+        "source": "on_ball_period",
+        "text": "87' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.HUN.w3.zsolt_nagy",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Hungary",
+      "window": {
+        "index": 3,
+        "from_minute": 86,
+        "to_minute": 94,
+        "source": "on_ball_period",
+        "text": "87' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.HUN.w3.p_ter_gul_csi",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Hungary",
+      "window": {
+        "index": 3,
+        "from_minute": 86,
+        "to_minute": 94,
+        "source": "on_ball_period",
+        "text": "87' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 2,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.team_height.HUN.w3",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Hungary",
+      "window": {
+        "index": 3,
+        "from_minute": 86,
+        "to_minute": 94,
+        "source": "on_ball_period",
+        "text": "87' to full time"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 1,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_width.HUN.w3",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Hungary",
+      "window": {
+        "index": 3,
+        "from_minute": 86,
+        "to_minute": 94,
+        "source": "on_ball_period",
+        "text": "87' to full time"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 1,
+        "required": 8
+      }
+    },
+    {
+      "id": "passing.hub.GER.w2",
+      "category": "passing",
+      "type": "hub",
+      "team": "Germany",
+      "window": {
+        "index": 2,
+        "from_minute": 70,
+        "to_minute": 71,
+        "source": "pass_network_window",
+        "text": "71' to 72'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 3,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.no_hub.GER.w2",
+      "category": "passing",
+      "type": "no_hub",
+      "team": "Germany",
+      "window": {
+        "index": 2,
+        "from_minute": 70,
+        "to_minute": 71,
+        "source": "pass_network_window",
+        "text": "71' to 72'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 3,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.top_pair.GER.w2",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Germany",
+      "window": {
+        "index": 2,
+        "from_minute": 70,
+        "to_minute": 71,
+        "source": "pass_network_window",
+        "text": "71' to 72'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 3,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.concentration.GER.w2",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Germany",
+      "window": {
+        "index": 2,
+        "from_minute": 70,
+        "to_minute": 71,
+        "source": "pass_network_window",
+        "text": "71' to 72'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 3,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.hub.HUN.w1",
+      "category": "passing",
+      "type": "hub",
+      "team": "Hungary",
+      "window": {
+        "index": 1,
+        "from_minute": 63,
+        "to_minute": 74,
+        "source": "pass_network_window",
+        "text": "64' to 75'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 20,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.no_hub.HUN.w1",
+      "category": "passing",
+      "type": "no_hub",
+      "team": "Hungary",
+      "window": {
+        "index": 1,
+        "from_minute": 63,
+        "to_minute": 74,
+        "source": "pass_network_window",
+        "text": "64' to 75'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 20,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.top_pair.HUN.w1",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Hungary",
+      "window": {
+        "index": 1,
+        "from_minute": 63,
+        "to_minute": 74,
+        "source": "pass_network_window",
+        "text": "64' to 75'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 20,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.concentration.HUN.w1",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Hungary",
+      "window": {
+        "index": 1,
+        "from_minute": 63,
+        "to_minute": 74,
+        "source": "pass_network_window",
+        "text": "64' to 75'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 20,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.hub.HUN.w2",
+      "category": "passing",
+      "type": "hub",
+      "team": "Hungary",
+      "window": {
+        "index": 2,
+        "from_minute": 74,
+        "to_minute": 86,
+        "source": "pass_network_window",
+        "text": "75' to 87'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 34,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.no_hub.HUN.w2",
+      "category": "passing",
+      "type": "no_hub",
+      "team": "Hungary",
+      "window": {
+        "index": 2,
+        "from_minute": 74,
+        "to_minute": 86,
+        "source": "pass_network_window",
+        "text": "75' to 87'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 34,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.top_pair.HUN.w2",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Hungary",
+      "window": {
+        "index": 2,
+        "from_minute": 74,
+        "to_minute": 86,
+        "source": "pass_network_window",
+        "text": "75' to 87'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 34,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.concentration.HUN.w2",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Hungary",
+      "window": {
+        "index": 2,
+        "from_minute": 74,
+        "to_minute": 86,
+        "source": "pass_network_window",
+        "text": "75' to 87'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 34,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.hub.HUN.w3",
+      "category": "passing",
+      "type": "hub",
+      "team": "Hungary",
+      "window": {
+        "index": 3,
+        "from_minute": 86,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "87' to full time"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 26,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.no_hub.HUN.w3",
+      "category": "passing",
+      "type": "no_hub",
+      "team": "Hungary",
+      "window": {
+        "index": 3,
+        "from_minute": 86,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "87' to full time"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 26,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.top_pair.HUN.w3",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Hungary",
+      "window": {
+        "index": 3,
+        "from_minute": 86,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "87' to full time"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 26,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.concentration.HUN.w3",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Hungary",
+      "window": {
+        "index": 3,
+        "from_minute": 86,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "87' to full time"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 26,
+        "required": 40
+      }
+    },
+    {
+      "id": "cross.comparison.team_width",
+      "category": "cross_cutting",
+      "type": "comparison",
+      "team": null,
+      "window": null,
+      "reason": "COMPARE_MIN_YARDS",
+      "detail": {
+        "gap": 0.82,
+        "required": 5
+      }
+    }
+  ],
+  "metadata": {
+    "match_id": 3930168,
+    "definitions_version": "0.1.0",
+    "teams": [
+      "Germany",
+      "Hungary"
+    ]
+  }
+}

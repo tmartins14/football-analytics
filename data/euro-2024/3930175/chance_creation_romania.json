@@ -1,0 +1,131 @@
+{
+  "team": "Romania",
+  "shots": {
+    "non_penalty_count": 14,
+    "total_npxg": 1.246037,
+    "by_zone": {
+      "six_yard_box": {
+        "npxg": 0.0,
+        "count": 0
+      },
+      "box_central": {
+        "npxg": 0.900337,
+        "count": 4
+      },
+      "box_wide": {
+        "npxg": 0.175329,
+        "count": 3
+      },
+      "outside_box": {
+        "npxg": 0.170371,
+        "count": 7
+      }
+    },
+    "by_source": {
+      "open_play": {
+        "npxg": 0.020378,
+        "count": 1
+      },
+      "counter": {
+        "npxg": 0.0,
+        "count": 0
+      },
+      "set_piece": {
+        "npxg": 0.488392,
+        "count": 9
+      },
+      "other": {
+        "npxg": 0.737267,
+        "count": 4
+      }
+    }
+  },
+  "shot_assists": {
+    "total_count": 8,
+    "by_side_and_type": {
+      "left": {
+        "cross": 1,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 2
+      },
+      "centre": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 0
+      },
+      "right": {
+        "cross": 2,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 3
+      }
+    }
+  },
+  "creators": [
+    {
+      "player_id": 10916,
+      "display_name": "Nicolae Stanciu",
+      "xa": 0.156468,
+      "key_passes": 3,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 30913,
+      "display_name": "Marius Marin",
+      "xa": 0.103839,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 16344,
+      "display_name": "R\u0103zvan Marin",
+      "xa": 0.033511,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 28565,
+      "display_name": "Ianis Hagi",
+      "xa": 0.024504,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 24861,
+      "display_name": "Andrei Ratiu",
+      "xa": 0.021335,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 56905,
+      "display_name": "Dennis Man",
+      "xa": 0.020378,
+      "key_passes": 1,
+      "passes_into_box": 1
+    }
+  ],
+  "metadata": {
+    "match_id": 3930175,
+    "team": "Romania",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Belgium vs Romania",
+    "zone_filter": "statsbomb_120x80_own_attack_right_frame",
+    "source_grouping": {
+      "open_play": [
+        "Regular Play"
+      ],
+      "counter": [
+        "From Counter"
+      ],
+      "set_piece": [
+        "From Corner",
+        "From Free Kick",
+        "From Throw In"
+      ],
+      "other": "every other play_pattern (From Goal Kick, From Kick Off, From Keeper, Other)"
+    }
+  }
+}

@@ -1,0 +1,361 @@
+{
+  "goals": [
+    {
+      "window": {
+        "anchor_event_id": "a6bbd277-3be1-488d-96da-c895d50fb9ac",
+        "start_event_id": "d27c08f3-f076-4bf0-9228-66ce3dec6b33",
+        "end_event_id": "a6bbd277-3be1-488d-96da-c895d50fb9ac",
+        "period": 1,
+        "window_seconds": 10.0,
+        "t_span_seconds": 10.441
+      },
+      "frames": [
+        {
+          "event_id": "d27c08f3-f076-4bf0-9228-66ce3dec6b33",
+          "t_seconds": 0.0,
+          "team": "Germany",
+          "event_type": "Carry",
+          "ball_x": 92.2,
+          "ball_y": 65.0,
+          "ball_end_x": 92.7,
+          "ball_end_y": 65.8,
+          "actor": "Florian Wirtz",
+          "outcome": null
+        },
+        {
+          "event_id": "7325ed32-f165-453e-ab82-e38b9014509e",
+          "t_seconds": 1.444,
+          "team": "Germany",
+          "event_type": "Pass",
+          "ball_x": 92.7,
+          "ball_y": 65.8,
+          "ball_end_x": 95.3,
+          "ball_end_y": 39.7,
+          "actor": "Florian Wirtz",
+          "outcome": null
+        },
+        {
+          "event_id": "beb2362b-268c-4b88-a4a0-f2181a769f97",
+          "t_seconds": 2.283,
+          "team": "Germany",
+          "event_type": "Carry",
+          "ball_x": 95.3,
+          "ball_y": 39.7,
+          "ball_end_x": 99.6,
+          "ball_end_y": 37.3,
+          "actor": "Jamal Musiala",
+          "outcome": null
+        },
+        {
+          "event_id": "dad68e00-bd67-4fff-9257-94f863a72097",
+          "t_seconds": 4.122,
+          "team": "Germany",
+          "event_type": "Pass",
+          "ball_x": 99.6,
+          "ball_y": 37.3,
+          "ball_end_x": 105.7,
+          "ball_end_y": 40.4,
+          "actor": "Jamal Musiala",
+          "outcome": null
+        },
+        {
+          "event_id": "bf97abd4-0e8c-4a9a-aabe-9b9ac2c93287",
+          "t_seconds": 4.65,
+          "team": "Germany",
+          "event_type": "Carry",
+          "ball_x": 105.7,
+          "ball_y": 40.4,
+          "ball_end_x": 105.7,
+          "ball_end_y": 40.4,
+          "actor": "\u0130lkay G\u00fcndo\u011fan",
+          "outcome": null
+        },
+        {
+          "event_id": "05b56544-7854-42ce-a0a6-1d43213aa7d6",
+          "t_seconds": 4.989,
+          "team": "Germany",
+          "event_type": "Pressure",
+          "ball_x": 106.2,
+          "ball_y": 39.9,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "\u0130lkay G\u00fcndo\u011fan",
+          "outcome": null
+        },
+        {
+          "event_id": "62418444-ae10-48a8-9347-209613881d2f",
+          "t_seconds": 6.741,
+          "team": "Hungary",
+          "event_type": "Ball Recovery",
+          "ball_x": 5.9,
+          "ball_y": 48.9,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Willi Orban",
+          "outcome": null
+        },
+        {
+          "event_id": "2cfe2fec-2fa3-448e-8155-08259fa4656f",
+          "t_seconds": 7.891,
+          "team": "Germany",
+          "event_type": "Ball Recovery",
+          "ball_x": 116.1,
+          "ball_y": 31.5,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "\u0130lkay G\u00fcndo\u011fan",
+          "outcome": null
+        },
+        {
+          "event_id": "d30e98e2-ad00-44e6-8b36-a76e84df4767",
+          "t_seconds": 7.891,
+          "team": "Germany",
+          "event_type": "Carry",
+          "ball_x": 116.1,
+          "ball_y": 31.5,
+          "ball_end_x": 114.5,
+          "ball_end_y": 30.2,
+          "actor": "\u0130lkay G\u00fcndo\u011fan",
+          "outcome": null
+        },
+        {
+          "event_id": "8557bf17-3f22-45e2-a340-beabeed21dd6",
+          "t_seconds": 8.577,
+          "team": "Hungary",
+          "event_type": "Duel",
+          "ball_x": 5.6,
+          "ball_y": 49.9,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Willi Orban",
+          "outcome": null
+        },
+        {
+          "event_id": "5b3300d2-faac-430c-b401-a90f074db0e1",
+          "t_seconds": 8.659,
+          "team": "Hungary",
+          "event_type": "Pressure",
+          "ball_x": 8.9,
+          "ball_y": 49.8,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Bendeg\u00faz Bolla",
+          "outcome": null
+        },
+        {
+          "event_id": "3e52de87-9c52-47aa-8807-276032e054e0",
+          "t_seconds": 9.201,
+          "team": "Germany",
+          "event_type": "Pass",
+          "ball_x": 113.0,
+          "ball_y": 31.5,
+          "ball_end_x": 110.4,
+          "ball_end_y": 35.2,
+          "actor": "\u0130lkay G\u00fcndo\u011fan",
+          "outcome": null
+        },
+        {
+          "event_id": "aa6eede6-2794-4929-970f-bb67fa02b00f",
+          "t_seconds": 9.867,
+          "team": "Germany",
+          "event_type": "Carry",
+          "ball_x": 110.4,
+          "ball_y": 35.2,
+          "ball_end_x": 111.1,
+          "ball_end_y": 36.9,
+          "actor": "Jamal Musiala",
+          "outcome": null
+        },
+        {
+          "event_id": "ce47ef79-34f0-4535-aaba-d94c6fcdf0f4",
+          "t_seconds": 9.954,
+          "team": "Hungary",
+          "event_type": "Pressure",
+          "ball_x": 9.6,
+          "ball_y": 47.7,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Dominik Szoboszlai",
+          "outcome": null
+        },
+        {
+          "event_id": "a6bbd277-3be1-488d-96da-c895d50fb9ac",
+          "t_seconds": 10.441,
+          "team": "Germany",
+          "event_type": "Shot",
+          "ball_x": 111.1,
+          "ball_y": 36.9,
+          "ball_end_x": 120.0,
+          "ball_end_y": 36.8,
+          "actor": "Jamal Musiala",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "a6bbd277-3be1-488d-96da-c895d50fb9ac",
+          "minute": 21,
+          "second": 44,
+          "scorer": "Jamal Musiala",
+          "team": "Germany"
+        }
+      },
+      "metadata": {
+        "match_id": 3930168,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Germany vs Hungary"
+      }
+    },
+    {
+      "window": {
+        "anchor_event_id": "4c8e0016-aaff-436c-93c8-75f3f30aed64",
+        "start_event_id": "ce2ced46-141b-4db8-9074-9b83d25093f9",
+        "end_event_id": "4c8e0016-aaff-436c-93c8-75f3f30aed64",
+        "period": 2,
+        "window_seconds": 10.0,
+        "t_span_seconds": 11.866
+      },
+      "frames": [
+        {
+          "event_id": "ce2ced46-141b-4db8-9074-9b83d25093f9",
+          "t_seconds": 2.256,
+          "team": "Germany",
+          "event_type": "Pass",
+          "ball_x": 99.7,
+          "ball_y": 47.7,
+          "ball_end_x": 88.2,
+          "ball_end_y": 48.1,
+          "actor": "Joshua Kimmich",
+          "outcome": null
+        },
+        {
+          "event_id": "3b2d10d3-4177-4b4b-9d4a-b082ab15dfa2",
+          "t_seconds": 3.092,
+          "team": "Germany",
+          "event_type": "Carry",
+          "ball_x": 88.2,
+          "ball_y": 48.1,
+          "ball_end_x": 85.6,
+          "ball_end_y": 46.8,
+          "actor": "Antonio R\u00fcdiger",
+          "outcome": null
+        },
+        {
+          "event_id": "0a7bfd5a-c93b-4a2e-a983-f80bcc391bc4",
+          "t_seconds": 5.585,
+          "team": "Germany",
+          "event_type": "Pass",
+          "ball_x": 85.6,
+          "ball_y": 46.8,
+          "ball_end_x": 84.7,
+          "ball_end_y": 30.1,
+          "actor": "Antonio R\u00fcdiger",
+          "outcome": null
+        },
+        {
+          "event_id": "7cf7ac9e-fee3-4245-bb9a-8b31375b168f",
+          "t_seconds": 6.723,
+          "team": "Germany",
+          "event_type": "Carry",
+          "ball_x": 84.7,
+          "ball_y": 30.1,
+          "ball_end_x": 84.7,
+          "ball_end_y": 30.1,
+          "actor": "Toni Kroos",
+          "outcome": null
+        },
+        {
+          "event_id": "781d1dfc-a3a0-4972-9e45-6a45e2168865",
+          "t_seconds": 7.056,
+          "team": "Germany",
+          "event_type": "Pass",
+          "ball_x": 84.7,
+          "ball_y": 30.1,
+          "ball_end_x": 97.6,
+          "ball_end_y": 29.3,
+          "actor": "Toni Kroos",
+          "outcome": null
+        },
+        {
+          "event_id": "df1b3e37-7127-4d87-a7a1-57f93a6963e7",
+          "t_seconds": 7.71,
+          "team": "Germany",
+          "event_type": "Carry",
+          "ball_x": 97.6,
+          "ball_y": 29.3,
+          "ball_end_x": 99.3,
+          "ball_end_y": 29.7,
+          "actor": "Jamal Musiala",
+          "outcome": null
+        },
+        {
+          "event_id": "0eaa29ca-a223-4276-8999-bdfdf8777af5",
+          "t_seconds": 8.973,
+          "team": "Germany",
+          "event_type": "Pass",
+          "ball_x": 99.3,
+          "ball_y": 29.7,
+          "ball_end_x": 112.1,
+          "ball_end_y": 21.1,
+          "actor": "Jamal Musiala",
+          "outcome": null
+        },
+        {
+          "event_id": "845407b1-8b0d-4bd0-9255-03c87657b061",
+          "t_seconds": 10.689,
+          "team": "Germany",
+          "event_type": "Carry",
+          "ball_x": 112.1,
+          "ball_y": 21.1,
+          "ball_end_x": 112.1,
+          "ball_end_y": 21.1,
+          "actor": "Maximilian Mittelst\u00e4dt",
+          "outcome": null
+        },
+        {
+          "event_id": "4a8a4a89-2e65-471d-b4d8-6200c0fad444",
+          "t_seconds": 11.008,
+          "team": "Germany",
+          "event_type": "Pass",
+          "ball_x": 112.1,
+          "ball_y": 21.1,
+          "ball_end_x": 107.9,
+          "ball_end_y": 35.3,
+          "actor": "Maximilian Mittelst\u00e4dt",
+          "outcome": null
+        },
+        {
+          "event_id": "4c8e0016-aaff-436c-93c8-75f3f30aed64",
+          "t_seconds": 11.866,
+          "team": "Germany",
+          "event_type": "Shot",
+          "ball_x": 107.9,
+          "ball_y": 35.3,
+          "ball_end_x": 120.0,
+          "ball_end_y": 41.8,
+          "actor": "\u0130lkay G\u00fcndo\u011fan",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "4c8e0016-aaff-436c-93c8-75f3f30aed64",
+          "minute": 66,
+          "second": 20,
+          "scorer": "\u0130lkay G\u00fcndo\u011fan",
+          "team": "Germany"
+        }
+      },
+      "metadata": {
+        "match_id": 3930168,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Germany vs Hungary"
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3930168,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Germany vs Hungary"
+  }
+}

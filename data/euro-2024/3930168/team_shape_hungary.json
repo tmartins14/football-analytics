@@ -1,0 +1,1343 @@
+{
+  "on_ball": {
+    "periods": [
+      {
+        "from_minute": 0,
+        "from_period": 1,
+        "to_minute": 63,
+        "to_period": 2,
+        "players_in": [
+          "P\u00e9ter Gul\u00e1csi",
+          "Attila Fiola",
+          "Willi Orban",
+          "M\u00e1rton D\u00e1rdai",
+          "Bendeg\u00faz Bolla",
+          "Milos Kerkez",
+          "\u00c1d\u00e1m Nagy",
+          "Andr\u00e1s Sch\u00e4fer",
+          "Dominik Szoboszlai",
+          "Roland Sallai",
+          "Barnab\u00e1s Varga"
+        ],
+        "players_out": [],
+        "nodes": [
+          {
+            "player_id": 19316,
+            "player": "Roland Sallai",
+            "display_name": "Roland Sallai",
+            "x": 54.61,
+            "y": 25.6,
+            "event_count": 38,
+            "lane_counts": {
+              "left_wing": 13,
+              "left_half_space": 9,
+              "centre": 13,
+              "right_half_space": 2,
+              "right_wing": 1
+            },
+            "band_counts": {
+              "own_third": 18,
+              "own_half": 5,
+              "opposition_half": 7,
+              "final_third": 8
+            }
+          },
+          {
+            "player_id": 42822,
+            "player": "Andr\u00e1s Sch\u00e4fer",
+            "display_name": "Andr\u00e1s Sch\u00e4fer",
+            "x": 57.16,
+            "y": 22.72,
+            "event_count": 37,
+            "lane_counts": {
+              "left_wing": 14,
+              "left_half_space": 16,
+              "centre": 5,
+              "right_half_space": 2,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 13,
+              "own_half": 12,
+              "opposition_half": 0,
+              "final_third": 12
+            }
+          },
+          {
+            "player_id": 21209,
+            "player": "Dominik Szoboszlai",
+            "display_name": "Dominik Szoboszlai",
+            "x": 59.68,
+            "y": 52.2,
+            "event_count": 33,
+            "lane_counts": {
+              "left_wing": 3,
+              "left_half_space": 0,
+              "centre": 10,
+              "right_half_space": 9,
+              "right_wing": 11
+            },
+            "band_counts": {
+              "own_third": 10,
+              "own_half": 9,
+              "opposition_half": 5,
+              "final_third": 9
+            }
+          },
+          {
+            "player_id": 40920,
+            "player": "M\u00e1rton D\u00e1rdai",
+            "display_name": "M\u00e1rton D\u00e1rdai",
+            "x": 30.62,
+            "y": 15.56,
+            "event_count": 30,
+            "lane_counts": {
+              "left_wing": 23,
+              "left_half_space": 5,
+              "centre": 2,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 21,
+              "own_half": 9,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 46789,
+            "player": "Bendeg\u00faz Bolla",
+            "display_name": "Bendeg\u00faz Bolla",
+            "x": 48.38,
+            "y": 68.23,
+            "event_count": 28,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 4,
+              "right_wing": 24
+            },
+            "band_counts": {
+              "own_third": 14,
+              "own_half": 4,
+              "opposition_half": 5,
+              "final_third": 5
+            }
+          },
+          {
+            "player_id": 89635,
+            "player": "Milos Kerkez",
+            "display_name": "Milos Kerkez",
+            "x": 54.03,
+            "y": 11.89,
+            "event_count": 26,
+            "lane_counts": {
+              "left_wing": 17,
+              "left_half_space": 9,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 9,
+              "own_half": 9,
+              "opposition_half": 3,
+              "final_third": 5
+            }
+          },
+          {
+            "player_id": 11268,
+            "player": "Attila Fiola",
+            "display_name": "Attila Fiola",
+            "x": 30.17,
+            "y": 67.19,
+            "event_count": 24,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 2,
+              "right_half_space": 3,
+              "right_wing": 19
+            },
+            "band_counts": {
+              "own_third": 18,
+              "own_half": 6,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 12921,
+            "player": "Barnab\u00e1s Varga",
+            "display_name": "Barnab\u00e1s Varga",
+            "x": 57.54,
+            "y": 36.2,
+            "event_count": 23,
+            "lane_counts": {
+              "left_wing": 8,
+              "left_half_space": 3,
+              "centre": 3,
+              "right_half_space": 5,
+              "right_wing": 4
+            },
+            "band_counts": {
+              "own_third": 10,
+              "own_half": 1,
+              "opposition_half": 7,
+              "final_third": 5
+            }
+          },
+          {
+            "player_id": 7162,
+            "player": "\u00c1d\u00e1m Nagy",
+            "display_name": "\u00c1d\u00e1m Nagy",
+            "x": 51.5,
+            "y": 60.21,
+            "event_count": 19,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 2,
+              "centre": 2,
+              "right_half_space": 3,
+              "right_wing": 12
+            },
+            "band_counts": {
+              "own_third": 2,
+              "own_half": 13,
+              "opposition_half": 1,
+              "final_third": 3
+            }
+          },
+          {
+            "player_id": 8509,
+            "player": "Willi Orban",
+            "display_name": "Willi Orban",
+            "x": 27.51,
+            "y": 39.46,
+            "event_count": 16,
+            "lane_counts": {
+              "left_wing": 1,
+              "left_half_space": 2,
+              "centre": 9,
+              "right_half_space": 4,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 13,
+              "own_half": 3,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 8524,
+            "player": "P\u00e9ter Gul\u00e1csi",
+            "display_name": "P\u00e9ter Gul\u00e1csi",
+            "x": 6.61,
+            "y": 43.57,
+            "event_count": 11,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 8,
+              "right_half_space": 3,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 11,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          }
+        ],
+        "hull": [
+          [
+            30.17,
+            67.19
+          ],
+          [
+            6.61,
+            43.57
+          ],
+          [
+            30.62,
+            15.56
+          ],
+          [
+            54.03,
+            11.89
+          ],
+          [
+            57.16,
+            22.72
+          ],
+          [
+            59.68,
+            52.2
+          ],
+          [
+            48.38,
+            68.23
+          ]
+        ]
+      },
+      {
+        "from_minute": 63,
+        "from_period": 2,
+        "to_minute": 74,
+        "to_period": 2,
+        "players_in": [
+          "L\u00e1szl\u00f3 Kleinheisler"
+        ],
+        "players_out": [
+          "\u00c1d\u00e1m Nagy"
+        ],
+        "nodes": [
+          {
+            "player_id": 8509,
+            "player": "Willi Orban",
+            "display_name": "Willi Orban",
+            "x": 33.19,
+            "y": 51.48,
+            "event_count": 9,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 3,
+              "right_half_space": 6,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 5,
+              "own_half": 3,
+              "opposition_half": 1,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 21209,
+            "player": "Dominik Szoboszlai",
+            "display_name": "Dominik Szoboszlai",
+            "x": 54.04,
+            "y": 68.44,
+            "event_count": 9,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 9
+            },
+            "band_counts": {
+              "own_third": 6,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 3
+            }
+          },
+          {
+            "player_id": 46789,
+            "player": "Bendeg\u00faz Bolla",
+            "display_name": "Bendeg\u00faz Bolla",
+            "x": 77.04,
+            "y": 71.58,
+            "event_count": 8,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 8
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 2,
+              "opposition_half": 2,
+              "final_third": 4
+            }
+          },
+          {
+            "player_id": 8524,
+            "player": "P\u00e9ter Gul\u00e1csi",
+            "display_name": "P\u00e9ter Gul\u00e1csi",
+            "x": 10.82,
+            "y": 40.08,
+            "event_count": 6,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 6,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 6,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 11268,
+            "player": "Attila Fiola",
+            "display_name": "Attila Fiola",
+            "x": 22.68,
+            "y": 58.18,
+            "event_count": 6,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 6,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 6,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 40920,
+            "player": "M\u00e1rton D\u00e1rdai",
+            "display_name": "M\u00e1rton D\u00e1rdai",
+            "x": 31.23,
+            "y": 28.3,
+            "event_count": 6,
+            "lane_counts": {
+              "left_wing": 3,
+              "left_half_space": 0,
+              "centre": 3,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 3,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 12921,
+            "player": "Barnab\u00e1s Varga",
+            "display_name": "Barnab\u00e1s Varga",
+            "x": 69.93,
+            "y": 57.65,
+            "event_count": 6,
+            "lane_counts": {
+              "left_wing": 1,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 2,
+              "right_wing": 3
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 6,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 42822,
+            "player": "Andr\u00e1s Sch\u00e4fer",
+            "display_name": "Andr\u00e1s Sch\u00e4fer",
+            "x": 63.53,
+            "y": 55.83,
+            "event_count": 6,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 6,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 3
+            }
+          },
+          {
+            "player_id": 19316,
+            "player": "Roland Sallai",
+            "display_name": "Roland Sallai",
+            "x": 84.95,
+            "y": 5.05,
+            "event_count": 2,
+            "lane_counts": {
+              "left_wing": 2,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 1,
+              "final_third": 1
+            }
+          }
+        ],
+        "hull": [
+          [
+            84.95,
+            5.05
+          ],
+          [
+            77.04,
+            71.58
+          ],
+          [
+            54.04,
+            68.44
+          ],
+          [
+            22.68,
+            58.18
+          ],
+          [
+            10.82,
+            40.08
+          ],
+          [
+            31.23,
+            28.3
+          ]
+        ]
+      },
+      {
+        "from_minute": 74,
+        "from_period": 2,
+        "to_minute": 86,
+        "to_period": 2,
+        "players_in": [
+          "Martin \u00c1d\u00e1m",
+          "Zsolt Nagy"
+        ],
+        "players_out": [
+          "Bendeg\u00faz Bolla",
+          "Milos Kerkez"
+        ],
+        "nodes": [
+          {
+            "player_id": 73886,
+            "player": "Zsolt Nagy",
+            "display_name": "Zsolt Nagy",
+            "x": 100.05,
+            "y": 12.18,
+            "event_count": 4,
+            "lane_counts": {
+              "left_wing": 4,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 4
+            }
+          },
+          {
+            "player_id": 42822,
+            "player": "Andr\u00e1s Sch\u00e4fer",
+            "display_name": "Andr\u00e1s Sch\u00e4fer",
+            "x": 95.67,
+            "y": 15.5,
+            "event_count": 3,
+            "lane_counts": {
+              "left_wing": 3,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 3
+            }
+          },
+          {
+            "player_id": 264277,
+            "player": "Martin \u00c1d\u00e1m",
+            "display_name": "Martin \u00c1d\u00e1m",
+            "x": 91.4,
+            "y": 18.3,
+            "event_count": 2,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 2,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 2
+            }
+          },
+          {
+            "player_id": 40920,
+            "player": "M\u00e1rton D\u00e1rdai",
+            "display_name": "M\u00e1rton D\u00e1rdai",
+            "x": 76.9,
+            "y": 11.1,
+            "event_count": 1,
+            "lane_counts": {
+              "left_wing": 1,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 1,
+              "final_third": 0
+            }
+          }
+        ],
+        "hull": [
+          [
+            76.9,
+            11.1
+          ],
+          [
+            100.05,
+            12.18
+          ],
+          [
+            95.67,
+            15.5
+          ],
+          [
+            91.4,
+            18.3
+          ]
+        ]
+      },
+      {
+        "from_minute": 86,
+        "from_period": 2,
+        "to_minute": 94,
+        "to_period": 2,
+        "players_in": [
+          "D\u00e1niel Gazdag",
+          "Kevin Csoboth"
+        ],
+        "players_out": [
+          "Barnab\u00e1s Varga",
+          "Roland Sallai"
+        ],
+        "nodes": [
+          {
+            "player_id": 389882,
+            "player": "Kevin Csoboth",
+            "display_name": "Kevin Csoboth",
+            "x": 57.39,
+            "y": 64.83,
+            "event_count": 11,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 5,
+              "right_wing": 6
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 3,
+              "opposition_half": 5,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 21209,
+            "player": "Dominik Szoboszlai",
+            "display_name": "Dominik Szoboszlai",
+            "x": 39.35,
+            "y": 70.25,
+            "event_count": 6,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 6
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 0,
+              "opposition_half": 3,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 8509,
+            "player": "Willi Orban",
+            "display_name": "Willi Orban",
+            "x": 28.27,
+            "y": 38.63,
+            "event_count": 6,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 6,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 6,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 40920,
+            "player": "M\u00e1rton D\u00e1rdai",
+            "display_name": "M\u00e1rton D\u00e1rdai",
+            "x": 23.46,
+            "y": 18.82,
+            "event_count": 5,
+            "lane_counts": {
+              "left_wing": 1,
+              "left_half_space": 4,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 5,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 264277,
+            "player": "Martin \u00c1d\u00e1m",
+            "display_name": "Martin \u00c1d\u00e1m",
+            "x": 70.46,
+            "y": 26.72,
+            "event_count": 5,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 4,
+              "centre": 1,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 4,
+              "final_third": 1
+            }
+          },
+          {
+            "player_id": 42822,
+            "player": "Andr\u00e1s Sch\u00e4fer",
+            "display_name": "Andr\u00e1s Sch\u00e4fer",
+            "x": 44.86,
+            "y": 39.46,
+            "event_count": 5,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 5,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 2,
+              "own_half": 3,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 50329,
+            "player": "D\u00e1niel Gazdag",
+            "display_name": "D\u00e1niel Gazdag",
+            "x": 5.83,
+            "y": 61.27,
+            "event_count": 3,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 2,
+              "right_wing": 1
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 73886,
+            "player": "Zsolt Nagy",
+            "display_name": "Zsolt Nagy",
+            "x": 46.07,
+            "y": 2.9,
+            "event_count": 3,
+            "lane_counts": {
+              "left_wing": 3,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 3,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 8524,
+            "player": "P\u00e9ter Gul\u00e1csi",
+            "display_name": "P\u00e9ter Gul\u00e1csi",
+            "x": 12.25,
+            "y": 38.2,
+            "event_count": 2,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 2,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 2,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          }
+        ],
+        "hull": [
+          [
+            46.07,
+            2.9
+          ],
+          [
+            70.46,
+            26.72
+          ],
+          [
+            57.39,
+            64.83
+          ],
+          [
+            39.35,
+            70.25
+          ],
+          [
+            5.83,
+            61.27
+          ],
+          [
+            12.25,
+            38.2
+          ],
+          [
+            23.46,
+            18.82
+          ]
+        ]
+      }
+    ]
+  },
+  "off_ball": {
+    "density_grid": {
+      "cols": 24,
+      "rows": 16,
+      "values": [
+        [
+          0.1274,
+          0.1551,
+          0.1822,
+          0.2067,
+          0.2268,
+          0.241,
+          0.2483,
+          0.2485,
+          0.2419,
+          0.2297,
+          0.213,
+          0.1936,
+          0.1728,
+          0.1518,
+          0.1317,
+          0.1129,
+          0.0958,
+          0.0805,
+          0.0668,
+          0.0547,
+          0.0441,
+          0.0349,
+          0.0271,
+          0.0205
+        ],
+        [
+          0.1845,
+          0.2247,
+          0.2639,
+          0.2994,
+          0.3284,
+          0.3487,
+          0.3589,
+          0.3586,
+          0.3484,
+          0.3298,
+          0.3049,
+          0.2759,
+          0.2452,
+          0.2145,
+          0.1852,
+          0.1582,
+          0.1338,
+          0.1121,
+          0.0931,
+          0.0763,
+          0.0617,
+          0.049,
+          0.0382,
+          0.029
+        ],
+        [
+          0.2511,
+          0.3058,
+          0.3593,
+          0.4078,
+          0.4473,
+          0.4749,
+          0.4885,
+          0.4877,
+          0.4732,
+          0.4471,
+          0.4123,
+          0.3721,
+          0.3294,
+          0.2871,
+          0.2469,
+          0.2101,
+          0.1773,
+          0.1483,
+          0.1231,
+          0.1011,
+          0.0819,
+          0.0654,
+          0.0511,
+          0.0391
+        ],
+        [
+          0.3216,
+          0.3919,
+          0.4609,
+          0.5233,
+          0.5744,
+          0.61,
+          0.6277,
+          0.6265,
+          0.6076,
+          0.5736,
+          0.5283,
+          0.4758,
+          0.4202,
+          0.3651,
+          0.3131,
+          0.2657,
+          0.2236,
+          0.1869,
+          0.1551,
+          0.1275,
+          0.1037,
+          0.0831,
+          0.0653,
+          0.0502
+        ],
+        [
+          0.3885,
+          0.4739,
+          0.5578,
+          0.6341,
+          0.6967,
+          0.7407,
+          0.7628,
+          0.762,
+          0.7393,
+          0.6979,
+          0.6425,
+          0.5781,
+          0.5099,
+          0.4423,
+          0.3785,
+          0.3206,
+          0.2694,
+          0.225,
+          0.1868,
+          0.1538,
+          0.1254,
+          0.1009,
+          0.0797,
+          0.0616
+        ],
+        [
+          0.4431,
+          0.5413,
+          0.6382,
+          0.7266,
+          0.7997,
+          0.8515,
+          0.8783,
+          0.8786,
+          0.8535,
+          0.8065,
+          0.7429,
+          0.6686,
+          0.5896,
+          0.5111,
+          0.4371,
+          0.3699,
+          0.3107,
+          0.2594,
+          0.2155,
+          0.1778,
+          0.1454,
+          0.1174,
+          0.0931,
+          0.0724
+        ],
+        [
+          0.4777,
+          0.5848,
+          0.6909,
+          0.7883,
+          0.8695,
+          0.928,
+          0.9593,
+          0.9616,
+          0.936,
+          0.8861,
+          0.8175,
+          0.7367,
+          0.6504,
+          0.5642,
+          0.4827,
+          0.4086,
+          0.3434,
+          0.287,
+          0.2387,
+          0.1973,
+          0.1617,
+          0.1309,
+          0.1043,
+          0.0814
+        ],
+        [
+          0.4872,
+          0.598,
+          0.7084,
+          0.8106,
+          0.8966,
+          0.9596,
+          0.9948,
+          1.0,
+          0.976,
+          0.9265,
+          0.8569,
+          0.774,
+          0.6847,
+          0.5952,
+          0.5101,
+          0.4326,
+          0.3641,
+          0.3048,
+          0.2539,
+          0.2103,
+          0.1728,
+          0.1402,
+          0.112,
+          0.0876
+        ],
+        [
+          0.4702,
+          0.5792,
+          0.6885,
+          0.7905,
+          0.8775,
+          0.9424,
+          0.9803,
+          0.9888,
+          0.9684,
+          0.9223,
+          0.8558,
+          0.7755,
+          0.6883,
+          0.6001,
+          0.5159,
+          0.4387,
+          0.3703,
+          0.3108,
+          0.2596,
+          0.2156,
+          0.1774,
+          0.1443,
+          0.1154,
+          0.0904
+        ],
+        [
+          0.4298,
+          0.5316,
+          0.6346,
+          0.7316,
+          0.8155,
+          0.8794,
+          0.9185,
+          0.9302,
+          0.9146,
+          0.8745,
+          0.8147,
+          0.7413,
+          0.6605,
+          0.5782,
+          0.4991,
+          0.4262,
+          0.3612,
+          0.3042,
+          0.2549,
+          0.2122,
+          0.175,
+          0.1426,
+          0.1142,
+          0.0895
+        ],
+        [
+          0.3721,
+          0.4625,
+          0.5548,
+          0.6428,
+          0.7199,
+          0.7801,
+          0.8186,
+          0.8328,
+          0.8226,
+          0.7901,
+          0.7394,
+          0.6758,
+          0.605,
+          0.5322,
+          0.4616,
+          0.3961,
+          0.3373,
+          0.2853,
+          0.24,
+          0.2004,
+          0.1657,
+          0.1351,
+          0.1083,
+          0.0849
+        ],
+        [
+          0.3051,
+          0.3814,
+          0.4602,
+          0.5362,
+          0.6038,
+          0.6578,
+          0.6939,
+          0.7096,
+          0.7044,
+          0.6799,
+          0.6395,
+          0.5874,
+          0.5286,
+          0.4674,
+          0.4076,
+          0.3517,
+          0.301,
+          0.2559,
+          0.2161,
+          0.1811,
+          0.1501,
+          0.1226,
+          0.0983,
+          0.0771
+        ],
+        [
+          0.2368,
+          0.2981,
+          0.362,
+          0.4245,
+          0.481,
+          0.5271,
+          0.5593,
+          0.5752,
+          0.5741,
+          0.5571,
+          0.5267,
+          0.4864,
+          0.44,
+          0.3913,
+          0.3431,
+          0.2977,
+          0.2561,
+          0.2189,
+          0.1857,
+          0.1561,
+          0.1297,
+          0.1061,
+          0.0852,
+          0.0668
+        ],
+        [
+          0.174,
+          0.2205,
+          0.2698,
+          0.3186,
+          0.3634,
+          0.401,
+          0.4282,
+          0.443,
+          0.4448,
+          0.4341,
+          0.4126,
+          0.3831,
+          0.3485,
+          0.3115,
+          0.2746,
+          0.2396,
+          0.2072,
+          0.1779,
+          0.1516,
+          0.1279,
+          0.1066,
+          0.0874,
+          0.0702,
+          0.0551
+        ],
+        [
+          0.1208,
+          0.1543,
+          0.1902,
+          0.2263,
+          0.2601,
+          0.289,
+          0.3107,
+          0.3236,
+          0.3269,
+          0.3209,
+          0.3068,
+          0.2864,
+          0.2619,
+          0.2353,
+          0.2085,
+          0.1828,
+          0.1588,
+          0.137,
+          0.1172,
+          0.0993,
+          0.083,
+          0.0682,
+          0.0549,
+          0.0431
+        ],
+        [
+          0.0791,
+          0.1018,
+          0.1265,
+          0.1518,
+          0.1758,
+          0.1968,
+          0.2131,
+          0.2235,
+          0.2273,
+          0.2245,
+          0.2159,
+          0.2026,
+          0.1862,
+          0.1681,
+          0.1497,
+          0.1318,
+          0.115,
+          0.0996,
+          0.0855,
+          0.0726,
+          0.0609,
+          0.0502,
+          0.0405,
+          0.0318
+        ]
+      ]
+    },
+    "centroid": {
+      "x": 43.27,
+      "y": 39.43
+    },
+    "thirds_spine": [
+      {
+        "third": "defensive",
+        "x": 26.53,
+        "y": 38.48
+      },
+      {
+        "third": "middle",
+        "x": 53.74,
+        "y": 40.11
+      },
+      {
+        "third": "attacking",
+        "x": 93.59,
+        "y": 41.92
+      }
+    ],
+    "ellipse": {
+      "cx": 43.27,
+      "cy": 39.43,
+      "rx": 22.89,
+      "ry": 15.42,
+      "angle_deg": -174.6
+    },
+    "depth_line": {
+      "x": 49.96,
+      "percentile": 70
+    }
+  },
+  "metadata": {
+    "match_id": 3930168,
+    "team": "Hungary",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Germany vs Hungary",
+    "on_ball_event_count": 399,
+    "on_ball_period_count": 4,
+    "off_ball_bandwidth_yards": 8.0,
+    "off_ball_depth_percentile": 70,
+    "off_ball_grid_cols": 24,
+    "off_ball_grid_rows": 16,
+    "phase_filter": "open_play_only",
+    "coordinate_system": "statsbomb_120x80_normalised_attack_right",
+    "coordinate_note": "StatsBomb event and 360 freeze-frame coordinates are already in each team's own attack-right frame across both halves; no period-based flip is applied. Off-ball 360 dots from opponent-actor frames are mirrored (x\u2192120-x, y\u219280-y) into the analysed team's frame before pooling; own-actor dots are used as-is, and the goalkeeper is excluded.",
+    "camera_caveat": "360 frames follow the ball; the visible subset of out-of-possession positions is biased toward areas near the ball. The camera artifact and the real defensive shape point the same direction \u2014 they cannot be cleanly separated."
+  }
+}

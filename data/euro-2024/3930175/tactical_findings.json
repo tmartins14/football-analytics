@@ -1,0 +1,4118 @@
+{
+  "findings": [
+    {
+      "id": "context.final_score",
+      "category": "context",
+      "type": "final_score",
+      "team": null,
+      "window": null,
+      "game_states": [],
+      "subject": null,
+      "label": null,
+      "value": {
+        "home_score": 2,
+        "away_score": 0
+      },
+      "claim": "Belgium beat Romania 2\u20130",
+      "evidence": {
+        "home_team": "Belgium",
+        "home_score": 2,
+        "away_team": "Romania",
+        "away_score": 0,
+        "source": "match_stats.json#home.score,away.score"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "context.goal.BEL.youri_tielemans",
+      "category": "context",
+      "type": "goal",
+      "team": "Belgium",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "display_name": "Youri Tielemans"
+      },
+      "label": null,
+      "value": "Youri Tielemans",
+      "claim": "Youri Tielemans scored for Belgium (2')",
+      "evidence": {
+        "minute": 1,
+        "period": 1,
+        "display_minute": "2'",
+        "source": "shots.json"
+      },
+      "threshold": null,
+      "notability": 3.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "context.goal.BEL.kevin_de_bruyne",
+      "category": "context",
+      "type": "goal",
+      "team": "Belgium",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "display_name": "Kevin De Bruyne"
+      },
+      "label": null,
+      "value": "Kevin De Bruyne",
+      "claim": "Kevin De Bruyne scored for Belgium (80')",
+      "evidence": {
+        "minute": 79,
+        "period": 2,
+        "display_minute": "80'",
+        "source": "shots.json"
+      },
+      "threshold": null,
+      "notability": 3.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "context.game_state.level.s0",
+      "category": "context",
+      "type": "game_state",
+      "team": null,
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 1,
+        "source": "game_state_segment",
+        "text": "kick-off to 2'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": null,
+      "label": "level",
+      "value": "0-0",
+      "claim": "the score was level at 0-0 from kick-off to 2'",
+      "evidence": {
+        "from_minute": 0,
+        "from_period": 1,
+        "to_minute": 1,
+        "to_period": 1,
+        "home_score": 0,
+        "away_score": 0,
+        "source": "derived from shots.json goals + match_stats.json final score"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "context.game_state.BEL.s1",
+      "category": "context",
+      "type": "game_state",
+      "team": "Belgium",
+      "window": {
+        "index": 1,
+        "from_minute": 1,
+        "to_minute": 79,
+        "source": "game_state_segment",
+        "text": "2' to 80'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": null,
+      "label": "leading",
+      "value": "1-0",
+      "claim": "Belgium led 1-0 from 2' to 80'",
+      "evidence": {
+        "from_minute": 1,
+        "from_period": 1,
+        "to_minute": 79,
+        "to_period": 2,
+        "home_score": 1,
+        "away_score": 0,
+        "source": "derived from shots.json goals + match_stats.json final score"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "context.game_state.BEL.s2",
+      "category": "context",
+      "type": "game_state",
+      "team": "Belgium",
+      "window": {
+        "index": 2,
+        "from_minute": 79,
+        "to_minute": null,
+        "source": "game_state_segment",
+        "text": "80' to full time"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": null,
+      "label": "leading",
+      "value": "2-0",
+      "claim": "Belgium led 2-0 from 80' to full time",
+      "evidence": {
+        "from_minute": 79,
+        "from_period": 2,
+        "to_minute": null,
+        "to_period": null,
+        "home_score": 2,
+        "away_score": 0,
+        "source": "derived from shots.json goals + match_stats.json final score"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.formation.BEL.p0",
+      "category": "structure",
+      "type": "formation",
+      "team": "Belgium",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 76,
+        "source": "formation_period",
+        "text": "kick-off to 77'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": null,
+      "label": null,
+      "value": "4-2-3-1",
+      "claim": "Belgium played a 4-2-3-1 from kick-off to 77'",
+      "evidence": {
+        "from_minute": 0,
+        "from_period": 1,
+        "to_minute": 76,
+        "to_period": 2,
+        "source": "formation_belgium.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.formation.BEL.p1",
+      "category": "structure",
+      "type": "formation",
+      "team": "Belgium",
+      "window": {
+        "index": 1,
+        "from_minute": 76,
+        "to_minute": 94,
+        "source": "formation_period",
+        "text": "77' to full time"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": null,
+      "label": null,
+      "value": "4-2-3-1",
+      "claim": "Belgium played a 4-2-3-1 from 77' to full time",
+      "evidence": {
+        "from_minute": 76,
+        "from_period": 2,
+        "to_minute": 94,
+        "to_period": 2,
+        "source": "formation_belgium.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.BEL.timothy_castagne.p1",
+      "category": "structure",
+      "type": "role_change",
+      "team": "Belgium",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Timothy Castagne",
+        "display_name": "Timothy Castagne"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Right Back",
+        "new_position": "Left Back"
+      },
+      "claim": "Timothy Castagne moved from Right Back to Left Back (77')",
+      "evidence": {
+        "minute": 76,
+        "period": 2,
+        "display_minute": "77'",
+        "source": "formation_belgium.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.formation.ROM.p0",
+      "category": "structure",
+      "type": "formation",
+      "team": "Romania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 67,
+        "source": "formation_period",
+        "text": "kick-off to 68'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": "4-1-4-1",
+      "claim": "Romania played a 4-1-4-1 from kick-off to 68'",
+      "evidence": {
+        "from_minute": 0,
+        "from_period": 1,
+        "to_minute": 67,
+        "to_period": 2,
+        "source": "formation_romania.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.formation.ROM.p1",
+      "category": "structure",
+      "type": "formation",
+      "team": "Romania",
+      "window": {
+        "index": 1,
+        "from_minute": 67,
+        "to_minute": 94,
+        "source": "formation_period",
+        "text": "68' to full time"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": "4-1-4-1",
+      "claim": "Romania played a 4-1-4-1 from 68' to full time",
+      "evidence": {
+        "from_minute": 67,
+        "from_period": 2,
+        "to_minute": 94,
+        "to_period": 2,
+        "source": "formation_romania.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.ROM.r_zvan_marin.p1",
+      "category": "structure",
+      "type": "role_change",
+      "team": "Romania",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "R\u0103zvan Gabriel Marin",
+        "display_name": "R\u0103zvan Marin"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Right Center Midfield",
+        "new_position": "Center Defensive Midfield"
+      },
+      "claim": "R\u0103zvan Marin moved from Right Center Midfield to Center Defensive Midfield (68')",
+      "evidence": {
+        "minute": 67,
+        "period": 2,
+        "display_minute": "68'",
+        "source": "formation_romania.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.BEL.yannick_carrasco",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Belgium",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Yannick Ferreira Carrasco",
+        "display_name": "Yannick Carrasco"
+      },
+      "label": null,
+      "value": {
+        "on": "Yannick Carrasco",
+        "off": "J\u00e9r\u00e9my Doku"
+      },
+      "claim": "Yannick Carrasco replaced J\u00e9r\u00e9my Doku for Belgium (72')",
+      "evidence": {
+        "minute": 71,
+        "period": 2,
+        "display_minute": "72'",
+        "on_player": "Yannick Ferreira Carrasco",
+        "off_player": "Jeremy Doku",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.BEL.orel_mangala",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Belgium",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Orel Mangala",
+        "display_name": "Orel Mangala"
+      },
+      "label": null,
+      "value": {
+        "on": "Orel Mangala",
+        "off": "Youri Tielemans"
+      },
+      "claim": "Orel Mangala replaced Youri Tielemans for Belgium (72')",
+      "evidence": {
+        "minute": 71,
+        "period": 2,
+        "display_minute": "72'",
+        "on_player": "Orel Mangala",
+        "off_player": "Youri Tielemans",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.BEL.leandro_trossard",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Belgium",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Leandro Trossard",
+        "display_name": "Leandro Trossard"
+      },
+      "label": null,
+      "value": {
+        "on": "Leandro Trossard",
+        "off": "Dodi Lukebakio"
+      },
+      "claim": "Leandro Trossard replaced Dodi Lukebakio for Belgium (56')",
+      "evidence": {
+        "minute": 55,
+        "period": 2,
+        "display_minute": "56'",
+        "on_player": "Leandro Trossard",
+        "off_player": "Dodi Lukebakio",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.BEL.zeno_debast",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Belgium",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Zeno Debast",
+        "display_name": "Zeno Debast"
+      },
+      "label": null,
+      "value": {
+        "on": "Zeno Debast",
+        "off": "Arthur Theate"
+      },
+      "claim": "Zeno Debast replaced Arthur Theate for Belgium (76')",
+      "evidence": {
+        "minute": 75,
+        "period": 2,
+        "display_minute": "76'",
+        "on_player": "Zeno Debast",
+        "off_player": "Arthur Theate",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.ROM.denis_alibec",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Romania",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Denis Alibec",
+        "display_name": "Denis Alibec"
+      },
+      "label": null,
+      "value": {
+        "on": "Denis Alibec",
+        "off": "Denis Dragus"
+      },
+      "claim": "Denis Alibec replaced Denis Dragus for Romania (81')",
+      "evidence": {
+        "minute": 80,
+        "period": 2,
+        "display_minute": "81'",
+        "on_player": "Denis Alibec",
+        "off_player": "Denis Mihai Dr\u0103gu\u015f",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.ROM.ianis_hagi",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Romania",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Ianis Hagi",
+        "display_name": "Ianis Hagi"
+      },
+      "label": null,
+      "value": {
+        "on": "Ianis Hagi",
+        "off": "Valentin Mihai Mih\u0103il\u0103"
+      },
+      "claim": "Ianis Hagi replaced Valentin Mihai Mih\u0103il\u0103 for Romania (68')",
+      "evidence": {
+        "minute": 67,
+        "period": 2,
+        "display_minute": "68'",
+        "on_player": "Ianis Hagi",
+        "off_player": "Valentin Mihai Mih\u0103il\u0103",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.ROM.darius_dumitru_olaru",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Romania",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Darius Dumitru Olaru",
+        "display_name": "Darius Dumitru Olaru"
+      },
+      "label": null,
+      "value": {
+        "on": "Darius Dumitru Olaru",
+        "off": "Marius Marin"
+      },
+      "claim": "Darius Dumitru Olaru replaced Marius Marin for Romania (67')",
+      "evidence": {
+        "minute": 66,
+        "period": 2,
+        "display_minute": "67'",
+        "on_player": "Darius Dumitru Olaru",
+        "off_player": "Marius Mihai Marin",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.ROM.deian_cristian_sorescu",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Romania",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Deian Cristian Sorescu",
+        "display_name": "Deian Cristian Sorescu"
+      },
+      "label": null,
+      "value": {
+        "on": "Deian Cristian Sorescu",
+        "off": "Andrei Ratiu"
+      },
+      "claim": "Deian Cristian Sorescu replaced Andrei Ratiu for Romania (89')",
+      "evidence": {
+        "minute": 88,
+        "period": 2,
+        "display_minute": "89'",
+        "on_player": "Deian Cristian Sorescu",
+        "off_player": "Andrei Florin Ratiu",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w0.dodi_lukebakio",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 55,
+        "source": "on_ball_period",
+        "text": "kick-off to 56'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Dodi Lukebakio",
+        "display_name": "Dodi Lukebakio"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Dodi Lukebakio took 33 of 62 touches on the right wing (kick-off to 56')",
+      "evidence": {
+        "event_count": 62,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 4,
+          "right_half_space": 25,
+          "right_wing": 33
+        },
+        "band_counts": {
+          "own_third": 8,
+          "own_half": 10,
+          "opposition_half": 4,
+          "final_third": 40
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_belgium.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w0.youri_tielemans",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 55,
+        "source": "on_ball_period",
+        "text": "kick-off to 56'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Youri Tielemans",
+        "display_name": "Youri Tielemans"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Youri Tielemans split touches between the centre (23) and the right half-space (20) (kick-off to 56')",
+      "evidence": {
+        "event_count": 60,
+        "lane_counts": {
+          "left_wing": 3,
+          "left_half_space": 1,
+          "centre": 23,
+          "right_half_space": 20,
+          "right_wing": 13
+        },
+        "band_counts": {
+          "own_third": 13,
+          "own_half": 15,
+          "opposition_half": 17,
+          "final_third": 15
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "right",
+        "observed_side": "centre",
+        "source": "team_shape_belgium.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w0.wout_faes",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 55,
+        "source": "on_ball_period",
+        "text": "kick-off to 56'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Wout Faes",
+        "display_name": "Wout Faes"
+      },
+      "label": "right_half_space",
+      "value": "right_half_space",
+      "claim": "Wout Faes took 35 of 58 touches on the right half-space (kick-off to 56')",
+      "evidence": {
+        "event_count": 58,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 2,
+          "centre": 7,
+          "right_half_space": 35,
+          "right_wing": 14
+        },
+        "band_counts": {
+          "own_third": 35,
+          "own_half": 16,
+          "opposition_half": 5,
+          "final_third": 2
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_belgium.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w0.jan_vertonghen",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 55,
+        "source": "on_ball_period",
+        "text": "kick-off to 56'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Jan Vertonghen",
+        "display_name": "Jan Vertonghen"
+      },
+      "label": "left_half_space",
+      "value": "left_half_space",
+      "claim": "Jan Vertonghen took 30 of 47 touches on the left half-space (kick-off to 56')",
+      "evidence": {
+        "event_count": 47,
+        "lane_counts": {
+          "left_wing": 3,
+          "left_half_space": 30,
+          "centre": 12,
+          "right_half_space": 2,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 32,
+          "own_half": 12,
+          "opposition_half": 3,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_belgium.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w0.kevin_de_bruyne",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 55,
+        "source": "on_ball_period",
+        "text": "kick-off to 56'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Kevin De Bruyne",
+        "display_name": "Kevin De Bruyne"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Kevin De Bruyne split touches between the centre (13) and the left half-space (9) (kick-off to 56')",
+      "evidence": {
+        "event_count": 46,
+        "lane_counts": {
+          "left_wing": 7,
+          "left_half_space": 9,
+          "centre": 13,
+          "right_half_space": 8,
+          "right_wing": 9
+        },
+        "band_counts": {
+          "own_third": 0,
+          "own_half": 9,
+          "opposition_half": 10,
+          "final_third": 27
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": "centre",
+        "observed_side": "centre",
+        "source": "team_shape_belgium.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w0.j_r_my_doku",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 55,
+        "source": "on_ball_period",
+        "text": "kick-off to 56'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Jeremy Doku",
+        "display_name": "J\u00e9r\u00e9my Doku"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "J\u00e9r\u00e9my Doku took 33 of 40 touches on the left wing (kick-off to 56')",
+      "evidence": {
+        "event_count": 40,
+        "lane_counts": {
+          "left_wing": 33,
+          "left_half_space": 7,
+          "centre": 0,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 0,
+          "own_half": 7,
+          "opposition_half": 8,
+          "final_third": 25
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_belgium.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w0.arthur_theate",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 55,
+        "source": "on_ball_period",
+        "text": "kick-off to 56'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Arthur Theate",
+        "display_name": "Arthur Theate"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "Arthur Theate took 28 of 40 touches on the left wing (kick-off to 56')",
+      "evidence": {
+        "event_count": 40,
+        "lane_counts": {
+          "left_wing": 28,
+          "left_half_space": 9,
+          "centre": 3,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 7,
+          "own_half": 20,
+          "opposition_half": 11,
+          "final_third": 2
+        },
+        "band_label": "own_half",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_belgium.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w0.amadou_onana",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 55,
+        "source": "on_ball_period",
+        "text": "kick-off to 56'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Amadou Onana",
+        "display_name": "Amadou Onana"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Amadou Onana split touches between the centre (14) and the left half-space (11) (kick-off to 56')",
+      "evidence": {
+        "event_count": 33,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 11,
+          "centre": 14,
+          "right_half_space": 8,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 6,
+          "own_half": 10,
+          "opposition_half": 13,
+          "final_third": 4
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "centre",
+        "source": "team_shape_belgium.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w0.timothy_castagne",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 55,
+        "source": "on_ball_period",
+        "text": "kick-off to 56'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Timothy Castagne",
+        "display_name": "Timothy Castagne"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Timothy Castagne took 26 of 30 touches on the right wing (kick-off to 56')",
+      "evidence": {
+        "event_count": 30,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 0,
+          "right_half_space": 4,
+          "right_wing": 26
+        },
+        "band_counts": {
+          "own_third": 4,
+          "own_half": 6,
+          "opposition_half": 8,
+          "final_third": 12
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_belgium.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w0.koen_casteels",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 55,
+        "source": "on_ball_period",
+        "text": "kick-off to 56'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Koen Casteels",
+        "display_name": "Koen Casteels"
+      },
+      "label": "centre",
+      "value": "centre",
+      "claim": "Koen Casteels took 25 of 25 touches on the centre (kick-off to 56')",
+      "evidence": {
+        "event_count": 25,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 25,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 25,
+          "own_half": 0,
+          "opposition_half": 0,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": null,
+        "observed_side": "centre",
+        "source": "team_shape_belgium.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w0.romelu_lukaku",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 55,
+        "source": "on_ball_period",
+        "text": "kick-off to 56'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Romelu Lukaku Menama",
+        "display_name": "Romelu Lukaku"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Romelu Lukaku split touches between the left half-space (9) and the centre (9) (kick-off to 56')",
+      "evidence": {
+        "event_count": 22,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 9,
+          "centre": 9,
+          "right_half_space": 0,
+          "right_wing": 4
+        },
+        "band_counts": {
+          "own_third": 0,
+          "own_half": 0,
+          "opposition_half": 8,
+          "final_third": 14
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": "centre",
+        "observed_side": "left",
+        "source": "team_shape_belgium.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.team_height.BEL.w0",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Belgium",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 55,
+        "source": "on_ball_period",
+        "text": "kick-off to 56'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": null,
+      "label": "opposition_half",
+      "value": 62.43,
+      "claim": "Belgium's average position in possession was in the opposition half (kick-off to 56')",
+      "evidence": {
+        "mean_x": 62.43,
+        "eligible_outfield_count": 10,
+        "event_count_total": 438,
+        "source": "team_shape_belgium.json#on_ball"
+      },
+      "threshold": {
+        "constant": "HALFWAY_LINE",
+        "value": 60
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.team_width.BEL.w0",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Belgium",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 55,
+        "source": "on_ball_period",
+        "text": "kick-off to 56'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 59.99,
+      "claim": null,
+      "evidence": {
+        "width": 59.99,
+        "eligible_outfield_count": 10,
+        "source": "team_shape_belgium.json#on_ball"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w1.kevin_de_bruyne",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 1,
+        "from_minute": 55,
+        "to_minute": 71,
+        "source": "on_ball_period",
+        "text": "56' to 72'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": {
+        "player": "Kevin De Bruyne",
+        "display_name": "Kevin De Bruyne"
+      },
+      "label": "centre",
+      "value": "centre",
+      "claim": "Kevin De Bruyne took 9 of 18 touches on the centre (56' to 72')",
+      "evidence": {
+        "event_count": 18,
+        "lane_counts": {
+          "left_wing": 6,
+          "left_half_space": 3,
+          "centre": 9,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 5,
+          "own_half": 10,
+          "opposition_half": 0,
+          "final_third": 3
+        },
+        "band_label": "own_half",
+        "band_mixed": false,
+        "declared_side": "centre",
+        "observed_side": "centre",
+        "source": "team_shape_belgium.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w1.j_r_my_doku",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 1,
+        "from_minute": 55,
+        "to_minute": 71,
+        "source": "on_ball_period",
+        "text": "56' to 72'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": {
+        "player": "Jeremy Doku",
+        "display_name": "J\u00e9r\u00e9my Doku"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "J\u00e9r\u00e9my Doku took 9 of 13 touches on the left wing (56' to 72')",
+      "evidence": {
+        "event_count": 13,
+        "lane_counts": {
+          "left_wing": 9,
+          "left_half_space": 2,
+          "centre": 2,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 5,
+          "own_half": 0,
+          "opposition_half": 2,
+          "final_third": 6
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_belgium.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w1.youri_tielemans",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 1,
+        "from_minute": 55,
+        "to_minute": 71,
+        "source": "on_ball_period",
+        "text": "56' to 72'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": {
+        "player": "Youri Tielemans",
+        "display_name": "Youri Tielemans"
+      },
+      "label": "right_half_space",
+      "value": "right_half_space",
+      "claim": "Youri Tielemans took 8 of 10 touches on the right half-space (56' to 72')",
+      "evidence": {
+        "event_count": 10,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 2,
+          "right_half_space": 8,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 4,
+          "own_half": 6,
+          "opposition_half": 0,
+          "final_third": 0
+        },
+        "band_label": "own_half",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_belgium.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w3.leandro_trossard",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 3,
+        "from_minute": 75,
+        "to_minute": 95,
+        "source": "on_ball_period",
+        "text": "76' to full time"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": {
+        "player": "Leandro Trossard",
+        "display_name": "Leandro Trossard"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Leandro Trossard took 7 of 11 touches on the right wing (76' to full time)",
+      "evidence": {
+        "event_count": 11,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 1,
+          "right_half_space": 3,
+          "right_wing": 7
+        },
+        "band_counts": {
+          "own_third": 0,
+          "own_half": 3,
+          "opposition_half": 0,
+          "final_third": 8
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_belgium.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w0.marius_marin",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 66,
+        "source": "on_ball_period",
+        "text": "kick-off to 67'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Marius Mihai Marin",
+        "display_name": "Marius Marin"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Marius Marin split touches between the right half-space (13) and the left wing (11) (kick-off to 67')",
+      "evidence": {
+        "event_count": 45,
+        "lane_counts": {
+          "left_wing": 11,
+          "left_half_space": 10,
+          "centre": 7,
+          "right_half_space": 13,
+          "right_wing": 4
+        },
+        "band_counts": {
+          "own_third": 17,
+          "own_half": 15,
+          "opposition_half": 13,
+          "final_third": 0
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "centre",
+        "observed_side": "right",
+        "source": "team_shape_romania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w0.florin_nita",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 66,
+        "source": "on_ball_period",
+        "text": "kick-off to 67'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Florin Constantin Ni\u0163\u0103",
+        "display_name": "Florin Nita"
+      },
+      "label": "centre",
+      "value": "centre",
+      "claim": "Florin Nita took 34 of 38 touches on the centre (kick-off to 67')",
+      "evidence": {
+        "event_count": 38,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 34,
+          "right_half_space": 4,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 38,
+          "own_half": 0,
+          "opposition_half": 0,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": null,
+        "observed_side": "centre",
+        "source": "team_shape_romania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w0.valentin_mihai_mih_il",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 66,
+        "source": "on_ball_period",
+        "text": "kick-off to 67'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Valentin Mihai Mih\u0103il\u0103",
+        "display_name": "Valentin Mihai Mih\u0103il\u0103"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "Valentin Mihai Mih\u0103il\u0103 took 25 of 34 touches on the left wing (kick-off to 67')",
+      "evidence": {
+        "event_count": 34,
+        "lane_counts": {
+          "left_wing": 25,
+          "left_half_space": 8,
+          "centre": 1,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 9,
+          "own_half": 7,
+          "opposition_half": 7,
+          "final_third": 11
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_romania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w0.denis_dragus",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 66,
+        "source": "on_ball_period",
+        "text": "kick-off to 67'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Denis Mihai Dr\u0103gu\u015f",
+        "display_name": "Denis Dragus"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Denis Dragus split touches between the right wing (12) and the left wing (8) (kick-off to 67')",
+      "evidence": {
+        "event_count": 34,
+        "lane_counts": {
+          "left_wing": 8,
+          "left_half_space": 7,
+          "centre": 0,
+          "right_half_space": 7,
+          "right_wing": 12
+        },
+        "band_counts": {
+          "own_third": 1,
+          "own_half": 8,
+          "opposition_half": 15,
+          "final_third": 10
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "centre",
+        "observed_side": "right",
+        "source": "team_shape_romania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w0.nicusor_bancu",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 66,
+        "source": "on_ball_period",
+        "text": "kick-off to 67'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Nicu\u0219or Silviu Bancu",
+        "display_name": "Nicusor Bancu"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "Nicusor Bancu took 22 of 33 touches on the left wing (kick-off to 67')",
+      "evidence": {
+        "event_count": 33,
+        "lane_counts": {
+          "left_wing": 22,
+          "left_half_space": 8,
+          "centre": 3,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 21,
+          "own_half": 9,
+          "opposition_half": 3,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_romania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w0.r_zvan_marin",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 66,
+        "source": "on_ball_period",
+        "text": "kick-off to 67'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "R\u0103zvan Gabriel Marin",
+        "display_name": "R\u0103zvan Marin"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "R\u0103zvan Marin split touches between the right wing (11) and the right half-space (9) (kick-off to 67')",
+      "evidence": {
+        "event_count": 32,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 6,
+          "centre": 6,
+          "right_half_space": 9,
+          "right_wing": 11
+        },
+        "band_counts": {
+          "own_third": 10,
+          "own_half": 8,
+          "opposition_half": 10,
+          "final_third": 4
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_romania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w0.andrei_ratiu",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 66,
+        "source": "on_ball_period",
+        "text": "kick-off to 67'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Andrei Florin Ratiu",
+        "display_name": "Andrei Ratiu"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Andrei Ratiu took 22 of 28 touches on the right wing (kick-off to 67')",
+      "evidence": {
+        "event_count": 28,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 3,
+          "right_half_space": 3,
+          "right_wing": 22
+        },
+        "band_counts": {
+          "own_third": 17,
+          "own_half": 8,
+          "opposition_half": 0,
+          "final_third": 3
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_romania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w0.dennis_man",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 66,
+        "source": "on_ball_period",
+        "text": "kick-off to 67'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Dennis Man",
+        "display_name": "Dennis Man"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Dennis Man took 21 of 25 touches on the right wing (kick-off to 67')",
+      "evidence": {
+        "event_count": 25,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 1,
+          "right_half_space": 3,
+          "right_wing": 21
+        },
+        "band_counts": {
+          "own_third": 5,
+          "own_half": 6,
+          "opposition_half": 10,
+          "final_third": 4
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_romania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w0.nicolae_stanciu",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 66,
+        "source": "on_ball_period",
+        "text": "kick-off to 67'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Nicolae Claudiu Stanciu",
+        "display_name": "Nicolae Stanciu"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Nicolae Stanciu split touches between the left wing (10) and the centre (5) (kick-off to 67')",
+      "evidence": {
+        "event_count": 23,
+        "lane_counts": {
+          "left_wing": 10,
+          "left_half_space": 3,
+          "centre": 5,
+          "right_half_space": 5,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 5,
+          "own_half": 3,
+          "opposition_half": 9,
+          "final_third": 6
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_romania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w0.andrei_burc_andonie",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 66,
+        "source": "on_ball_period",
+        "text": "kick-off to 67'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Andrei Burc\u0103 Andonie",
+        "display_name": "Andrei Burc\u0103 Andonie"
+      },
+      "label": "left_half_space",
+      "value": "left_half_space",
+      "claim": "Andrei Burc\u0103 Andonie took 17 of 23 touches on the left half-space (kick-off to 67')",
+      "evidence": {
+        "event_count": 23,
+        "lane_counts": {
+          "left_wing": 5,
+          "left_half_space": 17,
+          "centre": 0,
+          "right_half_space": 1,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 22,
+          "own_half": 1,
+          "opposition_half": 0,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_romania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w0.radu_dragusin",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 66,
+        "source": "on_ball_period",
+        "text": "kick-off to 67'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Radu Dr\u0103gu\u0219in",
+        "display_name": "Radu Dragusin"
+      },
+      "label": "right_half_space",
+      "value": "right_half_space",
+      "claim": "Radu Dragusin took 8 of 12 touches on the right half-space (kick-off to 67')",
+      "evidence": {
+        "event_count": 12,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 1,
+          "right_half_space": 8,
+          "right_wing": 3
+        },
+        "band_counts": {
+          "own_third": 8,
+          "own_half": 3,
+          "opposition_half": 1,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_romania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.team_height.ROM.w0",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Romania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 66,
+        "source": "on_ball_period",
+        "text": "kick-off to 67'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": null,
+      "label": "own_half",
+      "value": 48.51,
+      "claim": "Romania's average position in possession was in their own half (kick-off to 67')",
+      "evidence": {
+        "mean_x": 48.51,
+        "eligible_outfield_count": 10,
+        "event_count_total": 289,
+        "source": "team_shape_romania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "HALFWAY_LINE",
+        "value": 60
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.team_width.ROM.w0",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Romania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 66,
+        "source": "on_ball_period",
+        "text": "kick-off to 67'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 54.64,
+      "claim": null,
+      "evidence": {
+        "width": 54.64,
+        "eligible_outfield_count": 10,
+        "source": "team_shape_romania.json#on_ball"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w2.ianis_hagi",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 2,
+        "from_minute": 67,
+        "to_minute": 80,
+        "source": "on_ball_period",
+        "text": "68' to 81'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "Ianis Hagi",
+        "display_name": "Ianis Hagi"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Ianis Hagi split touches between the left wing (5) and the left half-space (5) (68' to 81')",
+      "evidence": {
+        "event_count": 13,
+        "lane_counts": {
+          "left_wing": 5,
+          "left_half_space": 5,
+          "centre": 3,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 0,
+          "own_half": 7,
+          "opposition_half": 6,
+          "final_third": 0
+        },
+        "band_label": "own_half",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_romania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w2.dennis_man",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 2,
+        "from_minute": 67,
+        "to_minute": 80,
+        "source": "on_ball_period",
+        "text": "68' to 81'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "Dennis Man",
+        "display_name": "Dennis Man"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Dennis Man took 10 of 10 touches on the right wing (68' to 81')",
+      "evidence": {
+        "event_count": 10,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 0,
+          "right_half_space": 0,
+          "right_wing": 10
+        },
+        "band_counts": {
+          "own_third": 3,
+          "own_half": 2,
+          "opposition_half": 1,
+          "final_third": 4
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_romania.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "out_of_possession.block_height.BEL.whole_match",
+      "category": "out_of_possession",
+      "type": "block_height",
+      "team": "Belgium",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": null,
+        "source": "whole_match",
+        "text": "kick-off to full time"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 61.34,
+      "claim": null,
+      "evidence": {
+        "centroid_x": 61.34,
+        "camera_caveat": "360 frames follow the ball; the visible subset of out-of-possession positions is biased toward areas near the ball. The camera artifact and the real defensive shape point the same direction \u2014 they cannot be cleanly separated.",
+        "source": "team_shape_belgium.json#off_ball.centroid"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "out_of_possession.block_height.ROM.whole_match",
+      "category": "out_of_possession",
+      "type": "block_height",
+      "team": "Romania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": null,
+        "source": "whole_match",
+        "text": "kick-off to full time"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 52.74,
+      "claim": null,
+      "evidence": {
+        "centroid_x": 52.74,
+        "camera_caveat": "360 frames follow the ball; the visible subset of out-of-possession positions is biased toward areas near the ball. The camera artifact and the real defensive shape point the same direction \u2014 they cannot be cleanly separated.",
+        "source": "team_shape_romania.json#off_ball.centroid"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.BEL.w0.wout_faes",
+      "category": "passing",
+      "type": "hub",
+      "team": "Belgium",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 55,
+        "source": "pass_network_window",
+        "text": "kick-off to 56'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Wout Faes",
+        "display_name": "Wout Faes"
+      },
+      "label": null,
+      "value": 0.1794,
+      "claim": "Wout Faes was a hub for Belgium, involved in 17.9% of passes (kick-off to 56')",
+      "evidence": {
+        "passes_made": 59,
+        "passes_received": 54,
+        "share": 0.1794,
+        "source": "pass_network_Belgium.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.1957671957671958,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.BEL.w0.wout_faes_jan_vertonghen",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Belgium",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 55,
+        "source": "pass_network_window",
+        "text": "kick-off to 56'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "pair": [
+          "Wout Faes",
+          "Jan Vertonghen"
+        ]
+      },
+      "label": null,
+      "value": 31,
+      "claim": "Wout Faes and Jan Vertonghen combined 31 times (kick-off to 56')",
+      "evidence": {
+        "bidirectional_total": 31,
+        "source": "pass_network_Belgium.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.9682539682539681,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.BEL.w0.wout_faes_amadou_onana",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Belgium",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 55,
+        "source": "pass_network_window",
+        "text": "kick-off to 56'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "pair": [
+          "Wout Faes",
+          "Amadou Onana"
+        ]
+      },
+      "label": null,
+      "value": 21,
+      "claim": "Wout Faes and Amadou Onana combined 21 times (kick-off to 56')",
+      "evidence": {
+        "bidirectional_total": 21,
+        "source": "pass_network_Belgium.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.3333333333333333,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.BEL.w0.youri_tielemans_timothy_castagne",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Belgium",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 55,
+        "source": "pass_network_window",
+        "text": "kick-off to 56'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "pair": [
+          "Youri Tielemans",
+          "Timothy Castagne"
+        ]
+      },
+      "label": null,
+      "value": 16,
+      "claim": "Youri Tielemans and Timothy Castagne combined 16 times (kick-off to 56')",
+      "evidence": {
+        "bidirectional_total": 16,
+        "source": "pass_network_Belgium.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.0158730158730158,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.BEL.w0.wout_faes_youri_tielemans",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Belgium",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 55,
+        "source": "pass_network_window",
+        "text": "kick-off to 56'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "pair": [
+          "Wout Faes",
+          "Youri Tielemans"
+        ]
+      },
+      "label": null,
+      "value": 16,
+      "claim": "Wout Faes and Youri Tielemans combined 16 times (kick-off to 56')",
+      "evidence": {
+        "bidirectional_total": 16,
+        "source": "pass_network_Belgium.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.0158730158730158,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.concentration.BEL.w0",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Belgium",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 55,
+        "source": "pass_network_window",
+        "text": "kick-off to 56'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 0.4238,
+      "claim": null,
+      "evidence": {
+        "top3_share": 0.4238,
+        "window_passes": 315,
+        "source": "pass_network_Belgium.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.BEL.w1.kevin_de_bruyne",
+      "category": "passing",
+      "type": "hub",
+      "team": "Belgium",
+      "window": {
+        "index": 1,
+        "from_minute": 55,
+        "to_minute": 71,
+        "source": "pass_network_window",
+        "text": "56' to 72'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": {
+        "player": "Kevin De Bruyne",
+        "display_name": "Kevin De Bruyne"
+      },
+      "label": null,
+      "value": 0.2021,
+      "claim": "Kevin De Bruyne was a hub for Belgium, involved in 20.2% of passes (56' to 72')",
+      "evidence": {
+        "passes_made": 8,
+        "passes_received": 11,
+        "share": 0.2021,
+        "source": "pass_network_Belgium.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.3475177304964538,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.concentration.BEL.w1",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Belgium",
+      "window": {
+        "index": 1,
+        "from_minute": 55,
+        "to_minute": 71,
+        "source": "pass_network_window",
+        "text": "56' to 72'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 0.4468,
+      "claim": null,
+      "evidence": {
+        "top3_share": 0.4468,
+        "window_passes": 47,
+        "source": "pass_network_Belgium.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.no_hub.ROM.w0",
+      "category": "passing",
+      "type": "no_hub",
+      "team": "Romania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 66,
+        "source": "pass_network_window",
+        "text": "kick-off to 67'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 0.1326,
+      "claim": "Romania's passing had no single hub; the most involved player, Marius Marin, had 13.3% (kick-off to 67')",
+      "evidence": {
+        "most_involved_player": "Marius Marin",
+        "share": 0.1326,
+        "source": "pass_network_Romania.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.ROM.w0.nicusor_bancu_andrei_burc_andonie",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Romania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 66,
+        "source": "pass_network_window",
+        "text": "kick-off to 67'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "pair": [
+          "Nicusor Bancu",
+          "Andrei Burc\u0103 Andonie"
+        ]
+      },
+      "label": null,
+      "value": 16,
+      "claim": "Nicusor Bancu and Andrei Burc\u0103 Andonie combined 16 times (kick-off to 67')",
+      "evidence": {
+        "bidirectional_total": 16,
+        "source": "pass_network_Romania.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.7679558011049723,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.ROM.w0.nicusor_bancu_valentin_mihai_mih_il",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Romania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 66,
+        "source": "pass_network_window",
+        "text": "kick-off to 67'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "pair": [
+          "Nicusor Bancu",
+          "Valentin Mihai Mih\u0103il\u0103"
+        ]
+      },
+      "label": null,
+      "value": 8,
+      "claim": "Nicusor Bancu and Valentin Mihai Mih\u0103il\u0103 combined 8 times (kick-off to 67')",
+      "evidence": {
+        "bidirectional_total": 8,
+        "source": "pass_network_Romania.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 0.8839779005524862,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.concentration.ROM.w0",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Romania",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 66,
+        "source": "pass_network_window",
+        "text": "kick-off to 67'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 0.3729,
+      "claim": null,
+      "evidence": {
+        "top3_share": 0.3729,
+        "window_passes": 181,
+        "source": "pass_network_Romania.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.ROM.w1.ianis_hagi",
+      "category": "passing",
+      "type": "hub",
+      "team": "Romania",
+      "window": {
+        "index": 1,
+        "from_minute": 67,
+        "to_minute": 80,
+        "source": "pass_network_window",
+        "text": "68' to 81'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "Ianis Hagi",
+        "display_name": "Ianis Hagi"
+      },
+      "label": null,
+      "value": 0.1846,
+      "claim": "Ianis Hagi was a hub for Romania, involved in 18.5% of passes (68' to 81')",
+      "evidence": {
+        "passes_made": 9,
+        "passes_received": 15,
+        "share": 0.1846,
+        "source": "pass_network_Romania.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.2307692307692308,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.ROM.w1.r_zvan_marin",
+      "category": "passing",
+      "type": "hub",
+      "team": "Romania",
+      "window": {
+        "index": 1,
+        "from_minute": 67,
+        "to_minute": 80,
+        "source": "pass_network_window",
+        "text": "68' to 81'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "R\u0103zvan Gabriel Marin",
+        "display_name": "R\u0103zvan Marin"
+      },
+      "label": null,
+      "value": 0.1692,
+      "claim": "R\u0103zvan Marin was a hub for Romania, involved in 16.9% of passes (68' to 81')",
+      "evidence": {
+        "passes_made": 10,
+        "passes_received": 12,
+        "share": 0.1692,
+        "source": "pass_network_Romania.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.1282051282051284,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.concentration.ROM.w1",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Romania",
+      "window": {
+        "index": 1,
+        "from_minute": 67,
+        "to_minute": 80,
+        "source": "pass_network_window",
+        "text": "68' to 81'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 0.4923,
+      "claim": null,
+      "evidence": {
+        "top3_share": 0.4923,
+        "window_passes": 65,
+        "source": "pass_network_Romania.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "cross.comparison.block_height.ROM",
+      "category": "cross_cutting",
+      "type": "comparison",
+      "team": "Romania",
+      "window": null,
+      "game_states": [],
+      "subject": null,
+      "label": "deeper",
+      "value": 8.6,
+      "claim": "Romania's average out-of-possession position was 8.6 yards deeper than Belgium's",
+      "evidence": {
+        "deeper_x": 52.74,
+        "other_x": 61.34,
+        "gap": 8.6
+      },
+      "threshold": {
+        "constant": "COMPARE_MIN_YARDS",
+        "value": 5
+      },
+      "notability": 1.7200000000000002,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "cross.comparison.team_height.BEL",
+      "category": "cross_cutting",
+      "type": "comparison",
+      "team": "Belgium",
+      "window": null,
+      "game_states": [],
+      "subject": null,
+      "label": "higher",
+      "value": 13.92,
+      "claim": "Belgium's average position in possession was 13.9 yards higher than Romania's (Belgium kick-off to 56', Romania kick-off to 67')",
+      "evidence": {
+        "higher_value": 62.43,
+        "other_value": 48.51,
+        "gap": 13.92
+      },
+      "threshold": {
+        "constant": "COMPARE_MIN_YARDS",
+        "value": 5
+      },
+      "notability": 2.7840000000000003,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "cross.comparison.concentration.BEL",
+      "category": "cross_cutting",
+      "type": "comparison",
+      "team": "Belgium",
+      "window": null,
+      "game_states": [],
+      "subject": null,
+      "label": "more_concentrated",
+      "value": 5.09,
+      "claim": "Belgium's passing was more concentrated than Romania's: the top three players had 42.4% of involvement against 37.3% (kick-off to 56')",
+      "evidence": {
+        "higher_value": 0.4238,
+        "other_value": 0.3729,
+        "gap": 5.09
+      },
+      "threshold": {
+        "constant": "COMPARE_MIN_POINTS",
+        "value": 5
+      },
+      "notability": 1.018,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "cross.comparison.team_width.BEL",
+      "category": "cross_cutting",
+      "type": "comparison",
+      "team": "Belgium",
+      "window": null,
+      "game_states": [],
+      "subject": null,
+      "label": "wider",
+      "value": 5.35,
+      "claim": null,
+      "evidence": {
+        "gap": 5.35
+      },
+      "threshold": {
+        "constant": "COMPARE_MIN_YARDS",
+        "value": 5
+      },
+      "notability": 1.0700000000000003,
+      "definitions_version": "0.1.0"
+    }
+  ],
+  "suppressed": [
+    {
+      "id": "in_possession.player_zone.BEL.w1.leandro_trossard",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 1,
+        "from_minute": 55,
+        "to_minute": 71,
+        "source": "on_ball_period",
+        "text": "56' to 72'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 9,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w1.timothy_castagne",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 1,
+        "from_minute": 55,
+        "to_minute": 71,
+        "source": "on_ball_period",
+        "text": "56' to 72'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 6,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w1.romelu_lukaku",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 1,
+        "from_minute": 55,
+        "to_minute": 71,
+        "source": "on_ball_period",
+        "text": "56' to 72'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 5,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w1.jan_vertonghen",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 1,
+        "from_minute": 55,
+        "to_minute": 71,
+        "source": "on_ball_period",
+        "text": "56' to 72'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w1.wout_faes",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 1,
+        "from_minute": 55,
+        "to_minute": 71,
+        "source": "on_ball_period",
+        "text": "56' to 72'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 2,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w1.arthur_theate",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 1,
+        "from_minute": 55,
+        "to_minute": 71,
+        "source": "on_ball_period",
+        "text": "56' to 72'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 1,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w1.amadou_onana",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 1,
+        "from_minute": 55,
+        "to_minute": 71,
+        "source": "on_ball_period",
+        "text": "56' to 72'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 1,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.team_height.BEL.w1",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Belgium",
+      "window": {
+        "index": 1,
+        "from_minute": 55,
+        "to_minute": 71,
+        "source": "on_ball_period",
+        "text": "56' to 72'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 3,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_width.BEL.w1",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Belgium",
+      "window": {
+        "index": 1,
+        "from_minute": 55,
+        "to_minute": 71,
+        "source": "on_ball_period",
+        "text": "56' to 72'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 3,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w2.arthur_theate",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 2,
+        "from_minute": 71,
+        "to_minute": 75,
+        "source": "on_ball_period",
+        "text": "72' to 76'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 6,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w2.leandro_trossard",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 2,
+        "from_minute": 71,
+        "to_minute": 75,
+        "source": "on_ball_period",
+        "text": "72' to 76'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w2.orel_mangala",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 2,
+        "from_minute": 71,
+        "to_minute": 75,
+        "source": "on_ball_period",
+        "text": "72' to 76'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w2.amadou_onana",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 2,
+        "from_minute": 71,
+        "to_minute": 75,
+        "source": "on_ball_period",
+        "text": "72' to 76'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w2.jan_vertonghen",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 2,
+        "from_minute": 71,
+        "to_minute": 75,
+        "source": "on_ball_period",
+        "text": "72' to 76'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w2.yannick_carrasco",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 2,
+        "from_minute": 71,
+        "to_minute": 75,
+        "source": "on_ball_period",
+        "text": "72' to 76'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w2.koen_casteels",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 2,
+        "from_minute": 71,
+        "to_minute": 75,
+        "source": "on_ball_period",
+        "text": "72' to 76'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w2.wout_faes",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 2,
+        "from_minute": 71,
+        "to_minute": 75,
+        "source": "on_ball_period",
+        "text": "72' to 76'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.team_height.BEL.w2",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Belgium",
+      "window": {
+        "index": 2,
+        "from_minute": 71,
+        "to_minute": 75,
+        "source": "on_ball_period",
+        "text": "72' to 76'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_width.BEL.w2",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Belgium",
+      "window": {
+        "index": 2,
+        "from_minute": 71,
+        "to_minute": 75,
+        "source": "on_ball_period",
+        "text": "72' to 76'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w3.koen_casteels",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 3,
+        "from_minute": 75,
+        "to_minute": 95,
+        "source": "on_ball_period",
+        "text": "76' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 6,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w3.zeno_debast",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 3,
+        "from_minute": 75,
+        "to_minute": 95,
+        "source": "on_ball_period",
+        "text": "76' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 6,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w3.yannick_carrasco",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 3,
+        "from_minute": 75,
+        "to_minute": 95,
+        "source": "on_ball_period",
+        "text": "76' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 5,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w3.kevin_de_bruyne",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 3,
+        "from_minute": 75,
+        "to_minute": 95,
+        "source": "on_ball_period",
+        "text": "76' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 5,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w3.timothy_castagne",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 3,
+        "from_minute": 75,
+        "to_minute": 95,
+        "source": "on_ball_period",
+        "text": "76' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w3.wout_faes",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 3,
+        "from_minute": 75,
+        "to_minute": 95,
+        "source": "on_ball_period",
+        "text": "76' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w3.amadou_onana",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 3,
+        "from_minute": 75,
+        "to_minute": 95,
+        "source": "on_ball_period",
+        "text": "76' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 1,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w3.romelu_lukaku",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 3,
+        "from_minute": 75,
+        "to_minute": 95,
+        "source": "on_ball_period",
+        "text": "76' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 1,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.team_height.BEL.w3",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Belgium",
+      "window": {
+        "index": 3,
+        "from_minute": 75,
+        "to_minute": 95,
+        "source": "on_ball_period",
+        "text": "76' to full time"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 1,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_width.BEL.w3",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Belgium",
+      "window": {
+        "index": 3,
+        "from_minute": 75,
+        "to_minute": 95,
+        "source": "on_ball_period",
+        "text": "76' to full time"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 1,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_height.ROM.w1",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Romania",
+      "window": {
+        "index": 1,
+        "from_minute": 66,
+        "to_minute": 67,
+        "source": "on_ball_period",
+        "text": "67' to 68'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_width.ROM.w1",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Romania",
+      "window": {
+        "index": 1,
+        "from_minute": 66,
+        "to_minute": 67,
+        "source": "on_ball_period",
+        "text": "67' to 68'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w2.andrei_ratiu",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 2,
+        "from_minute": 67,
+        "to_minute": 80,
+        "source": "on_ball_period",
+        "text": "68' to 81'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 9,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w2.andrei_burc_andonie",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 2,
+        "from_minute": 67,
+        "to_minute": 80,
+        "source": "on_ball_period",
+        "text": "68' to 81'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 8,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w2.r_zvan_marin",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 2,
+        "from_minute": 67,
+        "to_minute": 80,
+        "source": "on_ball_period",
+        "text": "68' to 81'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 6,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w2.nicolae_stanciu",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 2,
+        "from_minute": 67,
+        "to_minute": 80,
+        "source": "on_ball_period",
+        "text": "68' to 81'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 4,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w2.darius_dumitru_olaru",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 2,
+        "from_minute": 67,
+        "to_minute": 80,
+        "source": "on_ball_period",
+        "text": "68' to 81'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w2.radu_dragusin",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 2,
+        "from_minute": 67,
+        "to_minute": 80,
+        "source": "on_ball_period",
+        "text": "68' to 81'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w2.florin_nita",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 2,
+        "from_minute": 67,
+        "to_minute": 80,
+        "source": "on_ball_period",
+        "text": "68' to 81'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w2.nicusor_bancu",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 2,
+        "from_minute": 67,
+        "to_minute": 80,
+        "source": "on_ball_period",
+        "text": "68' to 81'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w2.denis_dragus",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 2,
+        "from_minute": 67,
+        "to_minute": 80,
+        "source": "on_ball_period",
+        "text": "68' to 81'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 1,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.team_height.ROM.w2",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Romania",
+      "window": {
+        "index": 2,
+        "from_minute": 67,
+        "to_minute": 80,
+        "source": "on_ball_period",
+        "text": "68' to 81'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 2,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_width.ROM.w2",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Romania",
+      "window": {
+        "index": 2,
+        "from_minute": 67,
+        "to_minute": 80,
+        "source": "on_ball_period",
+        "text": "68' to 81'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 2,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w3.r_zvan_marin",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 3,
+        "from_minute": 80,
+        "to_minute": 88,
+        "source": "on_ball_period",
+        "text": "81' to 89'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 6,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w3.radu_dragusin",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 3,
+        "from_minute": 80,
+        "to_minute": 88,
+        "source": "on_ball_period",
+        "text": "81' to 89'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w3.darius_dumitru_olaru",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 3,
+        "from_minute": 80,
+        "to_minute": 88,
+        "source": "on_ball_period",
+        "text": "81' to 89'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w3.nicusor_bancu",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 3,
+        "from_minute": 80,
+        "to_minute": 88,
+        "source": "on_ball_period",
+        "text": "81' to 89'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w3.ianis_hagi",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 3,
+        "from_minute": 80,
+        "to_minute": 88,
+        "source": "on_ball_period",
+        "text": "81' to 89'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w3.nicolae_stanciu",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 3,
+        "from_minute": 80,
+        "to_minute": 88,
+        "source": "on_ball_period",
+        "text": "81' to 89'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w3.dennis_man",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 3,
+        "from_minute": 80,
+        "to_minute": 88,
+        "source": "on_ball_period",
+        "text": "81' to 89'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w3.andrei_ratiu",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 3,
+        "from_minute": 80,
+        "to_minute": 88,
+        "source": "on_ball_period",
+        "text": "81' to 89'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w3.andrei_burc_andonie",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 3,
+        "from_minute": 80,
+        "to_minute": 88,
+        "source": "on_ball_period",
+        "text": "81' to 89'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 1,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.team_height.ROM.w3",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Romania",
+      "window": {
+        "index": 3,
+        "from_minute": 80,
+        "to_minute": 88,
+        "source": "on_ball_period",
+        "text": "81' to 89'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_width.ROM.w3",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Romania",
+      "window": {
+        "index": 3,
+        "from_minute": 80,
+        "to_minute": 88,
+        "source": "on_ball_period",
+        "text": "81' to 89'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w4.andrei_burc_andonie",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 4,
+        "from_minute": 88,
+        "to_minute": 95,
+        "source": "on_ball_period",
+        "text": "89' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w4.dennis_man",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 4,
+        "from_minute": 88,
+        "to_minute": 95,
+        "source": "on_ball_period",
+        "text": "89' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.ROM.w4.deian_cristian_sorescu",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Romania",
+      "window": {
+        "index": 4,
+        "from_minute": 88,
+        "to_minute": 95,
+        "source": "on_ball_period",
+        "text": "89' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 1,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.team_height.ROM.w4",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Romania",
+      "window": {
+        "index": 4,
+        "from_minute": 88,
+        "to_minute": 95,
+        "source": "on_ball_period",
+        "text": "89' to full time"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_width.ROM.w4",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Romania",
+      "window": {
+        "index": 4,
+        "from_minute": 88,
+        "to_minute": 95,
+        "source": "on_ball_period",
+        "text": "89' to full time"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "passing.hub.BEL.w2",
+      "category": "passing",
+      "type": "hub",
+      "team": "Belgium",
+      "window": {
+        "index": 2,
+        "from_minute": 71,
+        "to_minute": 75,
+        "source": "pass_network_window",
+        "text": "72' to 76'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 8,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.no_hub.BEL.w2",
+      "category": "passing",
+      "type": "no_hub",
+      "team": "Belgium",
+      "window": {
+        "index": 2,
+        "from_minute": 71,
+        "to_minute": 75,
+        "source": "pass_network_window",
+        "text": "72' to 76'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 8,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.top_pair.BEL.w2",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Belgium",
+      "window": {
+        "index": 2,
+        "from_minute": 71,
+        "to_minute": 75,
+        "source": "pass_network_window",
+        "text": "72' to 76'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 8,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.concentration.BEL.w2",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Belgium",
+      "window": {
+        "index": 2,
+        "from_minute": 71,
+        "to_minute": 75,
+        "source": "pass_network_window",
+        "text": "72' to 76'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 8,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.hub.BEL.w3",
+      "category": "passing",
+      "type": "hub",
+      "team": "Belgium",
+      "window": {
+        "index": 3,
+        "from_minute": 75,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "76' to full time"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 29,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.no_hub.BEL.w3",
+      "category": "passing",
+      "type": "no_hub",
+      "team": "Belgium",
+      "window": {
+        "index": 3,
+        "from_minute": 75,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "76' to full time"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 29,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.top_pair.BEL.w3",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Belgium",
+      "window": {
+        "index": 3,
+        "from_minute": 75,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "76' to full time"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 29,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.concentration.BEL.w3",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Belgium",
+      "window": {
+        "index": 3,
+        "from_minute": 75,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "76' to full time"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 29,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.hub.ROM.w2",
+      "category": "passing",
+      "type": "hub",
+      "team": "Romania",
+      "window": {
+        "index": 2,
+        "from_minute": 80,
+        "to_minute": 88,
+        "source": "pass_network_window",
+        "text": "81' to 89'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 37,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.no_hub.ROM.w2",
+      "category": "passing",
+      "type": "no_hub",
+      "team": "Romania",
+      "window": {
+        "index": 2,
+        "from_minute": 80,
+        "to_minute": 88,
+        "source": "pass_network_window",
+        "text": "81' to 89'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 37,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.top_pair.ROM.w2",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Romania",
+      "window": {
+        "index": 2,
+        "from_minute": 80,
+        "to_minute": 88,
+        "source": "pass_network_window",
+        "text": "81' to 89'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 37,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.concentration.ROM.w2",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Romania",
+      "window": {
+        "index": 2,
+        "from_minute": 80,
+        "to_minute": 88,
+        "source": "pass_network_window",
+        "text": "81' to 89'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 37,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.hub.ROM.w3",
+      "category": "passing",
+      "type": "hub",
+      "team": "Romania",
+      "window": {
+        "index": 3,
+        "from_minute": 88,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "89' to full time"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 28,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.no_hub.ROM.w3",
+      "category": "passing",
+      "type": "no_hub",
+      "team": "Romania",
+      "window": {
+        "index": 3,
+        "from_minute": 88,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "89' to full time"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 28,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.top_pair.ROM.w3",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Romania",
+      "window": {
+        "index": 3,
+        "from_minute": 88,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "89' to full time"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 28,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.concentration.ROM.w3",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Romania",
+      "window": {
+        "index": 3,
+        "from_minute": 88,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "89' to full time"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 28,
+        "required": 40
+      }
+    }
+  ],
+  "metadata": {
+    "match_id": 3930175,
+    "definitions_version": "0.1.0",
+    "teams": [
+      "Belgium",
+      "Romania"
+    ]
+  }
+}

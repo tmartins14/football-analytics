@@ -1,0 +1,5177 @@
+{
+  "findings": [
+    {
+      "id": "context.final_score",
+      "category": "context",
+      "type": "final_score",
+      "team": null,
+      "window": null,
+      "game_states": [],
+      "subject": null,
+      "label": null,
+      "value": {
+        "home_score": 0,
+        "away_score": 1
+      },
+      "claim": "Slovakia beat Belgium 1\u20130",
+      "evidence": {
+        "home_team": "Belgium",
+        "home_score": 0,
+        "away_team": "Slovakia",
+        "away_score": 1,
+        "source": "match_stats.json#home.score,away.score"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "context.goal.SLO.ivan_schranz",
+      "category": "context",
+      "type": "goal",
+      "team": "Slovakia",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "display_name": "Ivan Schranz"
+      },
+      "label": null,
+      "value": "Ivan Schranz",
+      "claim": "Ivan Schranz scored for Slovakia (7')",
+      "evidence": {
+        "minute": 6,
+        "period": 1,
+        "display_minute": "7'",
+        "source": "shots.json"
+      },
+      "threshold": null,
+      "notability": 3.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "context.game_state.level.s0",
+      "category": "context",
+      "type": "game_state",
+      "team": null,
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 6,
+        "source": "game_state_segment",
+        "text": "kick-off to 7'"
+      },
+      "game_states": [
+        "level"
+      ],
+      "subject": null,
+      "label": "level",
+      "value": "0-0",
+      "claim": "the score was level at 0-0 from kick-off to 7'",
+      "evidence": {
+        "from_minute": 0,
+        "from_period": 1,
+        "to_minute": 6,
+        "to_period": 1,
+        "home_score": 0,
+        "away_score": 0,
+        "source": "derived from shots.json goals + match_stats.json final score"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "context.game_state.SLO.s1",
+      "category": "context",
+      "type": "game_state",
+      "team": "Slovakia",
+      "window": {
+        "index": 1,
+        "from_minute": 6,
+        "to_minute": null,
+        "source": "game_state_segment",
+        "text": "7' to full time"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": null,
+      "label": "leading",
+      "value": "0-1",
+      "claim": "Slovakia led 1-0 from 7' to full time",
+      "evidence": {
+        "from_minute": 6,
+        "from_period": 1,
+        "to_minute": null,
+        "to_period": null,
+        "home_score": 0,
+        "away_score": 1,
+        "source": "derived from shots.json goals + match_stats.json final score"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.formation.BEL.p0",
+      "category": "structure",
+      "type": "formation",
+      "team": "Belgium",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 45,
+        "source": "formation_period",
+        "text": "kick-off to 46'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": "4-2-3-1",
+      "claim": "Belgium played a 4-2-3-1 from kick-off to 46'",
+      "evidence": {
+        "from_minute": 0,
+        "from_period": 1,
+        "to_minute": 45,
+        "to_period": 2,
+        "source": "formation_belgium.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.formation.BEL.p1",
+      "category": "structure",
+      "type": "formation",
+      "team": "Belgium",
+      "window": {
+        "index": 1,
+        "from_minute": 45,
+        "to_minute": 56,
+        "source": "formation_period",
+        "text": "46' to 57'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": "4-2-3-1",
+      "claim": "Belgium played a 4-2-3-1 from 46' to 57'",
+      "evidence": {
+        "from_minute": 45,
+        "from_period": 2,
+        "to_minute": 56,
+        "to_period": 2,
+        "source": "formation_belgium.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.BEL.leandro_trossard.p1",
+      "category": "structure",
+      "type": "role_change",
+      "team": "Belgium",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Leandro Trossard",
+        "display_name": "Leandro Trossard"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Left Wing",
+        "new_position": "Right Wing"
+      },
+      "claim": "Leandro Trossard moved from Left Wing to Right Wing (46')",
+      "evidence": {
+        "minute": 45,
+        "period": 2,
+        "display_minute": "46'",
+        "source": "formation_belgium.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.BEL.orel_mangala.p1",
+      "category": "structure",
+      "type": "role_change",
+      "team": "Belgium",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Orel Mangala",
+        "display_name": "Orel Mangala"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Right Defensive Midfield",
+        "new_position": "Left Defensive Midfield"
+      },
+      "claim": "Orel Mangala moved from Right Defensive Midfield to Left Defensive Midfield (46')",
+      "evidence": {
+        "minute": 45,
+        "period": 2,
+        "display_minute": "46'",
+        "source": "formation_belgium.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.BEL.j_r_my_doku.p1",
+      "category": "structure",
+      "type": "role_change",
+      "team": "Belgium",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Jeremy Doku",
+        "display_name": "J\u00e9r\u00e9my Doku"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Right Wing",
+        "new_position": "Left Wing"
+      },
+      "claim": "J\u00e9r\u00e9my Doku moved from Right Wing to Left Wing (46')",
+      "evidence": {
+        "minute": 45,
+        "period": 2,
+        "display_minute": "46'",
+        "source": "formation_belgium.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.BEL.amadou_onana.p1",
+      "category": "structure",
+      "type": "role_change",
+      "team": "Belgium",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Amadou Onana",
+        "display_name": "Amadou Onana"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Left Defensive Midfield",
+        "new_position": "Right Defensive Midfield"
+      },
+      "claim": "Amadou Onana moved from Left Defensive Midfield to Right Defensive Midfield (46')",
+      "evidence": {
+        "minute": 45,
+        "period": 2,
+        "display_minute": "46'",
+        "source": "formation_belgium.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.formation.BEL.p2",
+      "category": "structure",
+      "type": "formation",
+      "team": "Belgium",
+      "window": {
+        "index": 2,
+        "from_minute": 56,
+        "to_minute": 74,
+        "source": "formation_period",
+        "text": "57' to 75'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": "4-2-3-1",
+      "claim": "Belgium played a 4-2-3-1 from 57' to 75'",
+      "evidence": {
+        "from_minute": 56,
+        "from_period": 2,
+        "to_minute": 74,
+        "to_period": 2,
+        "source": "formation_belgium.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.BEL.kevin_de_bruyne.p2",
+      "category": "structure",
+      "type": "role_change",
+      "team": "Belgium",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Kevin De Bruyne",
+        "display_name": "Kevin De Bruyne"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Center Attacking Midfield",
+        "new_position": "Left Defensive Midfield"
+      },
+      "claim": "Kevin De Bruyne moved from Center Attacking Midfield to Left Defensive Midfield (57')",
+      "evidence": {
+        "minute": 56,
+        "period": 2,
+        "display_minute": "57'",
+        "source": "formation_belgium.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.BEL.leandro_trossard.p2",
+      "category": "structure",
+      "type": "role_change",
+      "team": "Belgium",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Leandro Trossard",
+        "display_name": "Leandro Trossard"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Right Wing",
+        "new_position": "Center Attacking Midfield"
+      },
+      "claim": "Leandro Trossard moved from Right Wing to Center Attacking Midfield (57')",
+      "evidence": {
+        "minute": 56,
+        "period": 2,
+        "display_minute": "57'",
+        "source": "formation_belgium.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.formation.BEL.p3",
+      "category": "structure",
+      "type": "formation",
+      "team": "Belgium",
+      "window": {
+        "index": 3,
+        "from_minute": 74,
+        "to_minute": 83,
+        "source": "formation_period",
+        "text": "75' to 84'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": "4-2-3-1",
+      "claim": "Belgium played a 4-2-3-1 from 75' to 84'",
+      "evidence": {
+        "from_minute": 74,
+        "from_period": 2,
+        "to_minute": 83,
+        "to_period": 2,
+        "source": "formation_belgium.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.BEL.kevin_de_bruyne.p3",
+      "category": "structure",
+      "type": "role_change",
+      "team": "Belgium",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Kevin De Bruyne",
+        "display_name": "Kevin De Bruyne"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Left Defensive Midfield",
+        "new_position": "Center Attacking Midfield"
+      },
+      "claim": "Kevin De Bruyne moved from Left Defensive Midfield to Center Attacking Midfield (75')",
+      "evidence": {
+        "minute": 74,
+        "period": 2,
+        "display_minute": "75'",
+        "source": "formation_belgium.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.BEL.amadou_onana.p3",
+      "category": "structure",
+      "type": "role_change",
+      "team": "Belgium",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Amadou Onana",
+        "display_name": "Amadou Onana"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Right Defensive Midfield",
+        "new_position": "Left Defensive Midfield"
+      },
+      "claim": "Amadou Onana moved from Right Defensive Midfield to Left Defensive Midfield (75')",
+      "evidence": {
+        "minute": 74,
+        "period": 2,
+        "display_minute": "75'",
+        "source": "formation_belgium.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.formation.BEL.p4",
+      "category": "structure",
+      "type": "formation",
+      "team": "Belgium",
+      "window": {
+        "index": 4,
+        "from_minute": 83,
+        "to_minute": 98,
+        "source": "formation_period",
+        "text": "84' to full time"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": "3-4-1-2",
+      "claim": "Belgium played a 3-4-1-2 from 84' to full time",
+      "evidence": {
+        "from_minute": 83,
+        "from_period": 2,
+        "to_minute": 98,
+        "to_period": 2,
+        "source": "formation_belgium.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.formation_change.BEL.p4",
+      "category": "structure",
+      "type": "formation_change",
+      "team": "Belgium",
+      "window": null,
+      "game_states": [],
+      "subject": null,
+      "label": null,
+      "value": {
+        "old": "4-2-3-1",
+        "new": "3-4-1-2"
+      },
+      "claim": "Belgium changed from a 4-2-3-1 to a 3-4-1-2 (84')",
+      "evidence": {
+        "minute": 83,
+        "period": 2,
+        "display_minute": "84'",
+        "source": "formation_belgium.json"
+      },
+      "threshold": null,
+      "notability": 3.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.BEL.wout_faes.p4",
+      "category": "structure",
+      "type": "role_change",
+      "team": "Belgium",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Wout Faes",
+        "display_name": "Wout Faes"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Right Center Back",
+        "new_position": "Center Back"
+      },
+      "claim": "Wout Faes moved from Right Center Back to Center Back (84')",
+      "evidence": {
+        "minute": 83,
+        "period": 2,
+        "display_minute": "84'",
+        "source": "formation_belgium.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.BEL.romelu_lukaku.p4",
+      "category": "structure",
+      "type": "role_change",
+      "team": "Belgium",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Romelu Lukaku Menama",
+        "display_name": "Romelu Lukaku"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Center Forward",
+        "new_position": "Right Center Forward"
+      },
+      "claim": "Romelu Lukaku moved from Center Forward to Right Center Forward (84')",
+      "evidence": {
+        "minute": 83,
+        "period": 2,
+        "display_minute": "84'",
+        "source": "formation_belgium.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.BEL.johan_bakayoko.p4",
+      "category": "structure",
+      "type": "role_change",
+      "team": "Belgium",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Johan Bakayoko",
+        "display_name": "Johan Bakayoko"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Right Wing",
+        "new_position": "Left Wing Back"
+      },
+      "claim": "Johan Bakayoko moved from Right Wing to Left Wing Back (84')",
+      "evidence": {
+        "minute": 83,
+        "period": 2,
+        "display_minute": "84'",
+        "source": "formation_belgium.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.BEL.timothy_castagne.p4",
+      "category": "structure",
+      "type": "role_change",
+      "team": "Belgium",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Timothy Castagne",
+        "display_name": "Timothy Castagne"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Right Back",
+        "new_position": "Right Center Back"
+      },
+      "claim": "Timothy Castagne moved from Right Back to Right Center Back (84')",
+      "evidence": {
+        "minute": 83,
+        "period": 2,
+        "display_minute": "84'",
+        "source": "formation_belgium.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.formation.SLO.p0",
+      "category": "structure",
+      "type": "formation",
+      "team": "Slovakia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 93,
+        "source": "formation_period",
+        "text": "kick-off to 90+4'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": null,
+      "label": null,
+      "value": "4-3-3",
+      "claim": "Slovakia played a 4-3-3 from kick-off to 90+4'",
+      "evidence": {
+        "from_minute": 0,
+        "from_period": 1,
+        "to_minute": 93,
+        "to_period": 2,
+        "source": "formation_slovakia.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.formation.SLO.p1",
+      "category": "structure",
+      "type": "formation",
+      "team": "Slovakia",
+      "window": {
+        "index": 1,
+        "from_minute": 93,
+        "to_minute": 98,
+        "source": "formation_period",
+        "text": "90+4' to full time"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": null,
+      "label": null,
+      "value": "3-4-3",
+      "claim": "Slovakia played a 3-4-3 from 90+4' to full time",
+      "evidence": {
+        "from_minute": 93,
+        "from_period": 2,
+        "to_minute": 98,
+        "to_period": 2,
+        "source": "formation_slovakia.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.formation_change.SLO.p1",
+      "category": "structure",
+      "type": "formation_change",
+      "team": "Slovakia",
+      "window": null,
+      "game_states": [],
+      "subject": null,
+      "label": null,
+      "value": {
+        "old": "4-3-3",
+        "new": "3-4-3"
+      },
+      "claim": "Slovakia changed from a 4-3-3 to a 3-4-3 (90+4')",
+      "evidence": {
+        "minute": 93,
+        "period": 2,
+        "display_minute": "90+4'",
+        "source": "formation_slovakia.json"
+      },
+      "threshold": null,
+      "notability": 3.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.SLO.peter_pekar_k.p1",
+      "category": "structure",
+      "type": "role_change",
+      "team": "Slovakia",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Peter Pekar\u00edk",
+        "display_name": "Peter Pekar\u00edk"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Right Back",
+        "new_position": "Right Wing Back"
+      },
+      "claim": "Peter Pekar\u00edk moved from Right Back to Right Wing Back (90+4')",
+      "evidence": {
+        "minute": 93,
+        "period": 2,
+        "display_minute": "90+4'",
+        "source": "formation_slovakia.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.SLO.milan_kriniar.p1",
+      "category": "structure",
+      "type": "role_change",
+      "team": "Slovakia",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Milan \u0160kriniar",
+        "display_name": "Milan \u0160kriniar"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Left Center Back",
+        "new_position": "Center Back"
+      },
+      "claim": "Milan \u0160kriniar moved from Left Center Back to Center Back (90+4')",
+      "evidence": {
+        "minute": 93,
+        "period": 2,
+        "display_minute": "90+4'",
+        "source": "formation_slovakia.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.SLO.d_vid_hancko.p1",
+      "category": "structure",
+      "type": "role_change",
+      "team": "Slovakia",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "D\u00e1vid Hancko",
+        "display_name": "D\u00e1vid Hancko"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Left Back",
+        "new_position": "Left Wing Back"
+      },
+      "claim": "D\u00e1vid Hancko moved from Left Back to Left Wing Back (90+4')",
+      "evidence": {
+        "minute": 93,
+        "period": 2,
+        "display_minute": "90+4'",
+        "source": "formation_slovakia.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.SLO.juraj_kucka.p1",
+      "category": "structure",
+      "type": "role_change",
+      "team": "Slovakia",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Juraj Kucka",
+        "display_name": "Juraj Kucka"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Right Center Midfield",
+        "new_position": "Right Defensive Midfield"
+      },
+      "claim": "Juraj Kucka moved from Right Center Midfield to Right Defensive Midfield (90+4')",
+      "evidence": {
+        "minute": 93,
+        "period": 2,
+        "display_minute": "90+4'",
+        "source": "formation_slovakia.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.role_change.SLO.stanislav_lobotka.p1",
+      "category": "structure",
+      "type": "role_change",
+      "team": "Slovakia",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Stanislav Lobotka",
+        "display_name": "Stanislav Lobotka"
+      },
+      "label": null,
+      "value": {
+        "old_position": "Center Defensive Midfield",
+        "new_position": "Left Defensive Midfield"
+      },
+      "claim": "Stanislav Lobotka moved from Center Defensive Midfield to Left Defensive Midfield (90+4')",
+      "evidence": {
+        "minute": 93,
+        "period": 2,
+        "display_minute": "90+4'",
+        "source": "formation_slovakia.json"
+      },
+      "threshold": null,
+      "notability": 2.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.BEL.youri_tielemans",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Belgium",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Youri Tielemans",
+        "display_name": "Youri Tielemans"
+      },
+      "label": null,
+      "value": {
+        "on": "Youri Tielemans",
+        "off": "Leandro Trossard"
+      },
+      "claim": "Youri Tielemans replaced Leandro Trossard for Belgium (74')",
+      "evidence": {
+        "minute": 73,
+        "period": 2,
+        "display_minute": "74'",
+        "on_player": "Youri Tielemans",
+        "off_player": "Leandro Trossard",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.BEL.dodi_lukebakio",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Belgium",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Dodi Lukebakio",
+        "display_name": "Dodi Lukebakio"
+      },
+      "label": null,
+      "value": {
+        "on": "Dodi Lukebakio",
+        "off": "Yannick Carrasco"
+      },
+      "claim": "Dodi Lukebakio replaced Yannick Carrasco for Belgium (84')",
+      "evidence": {
+        "minute": 83,
+        "period": 2,
+        "display_minute": "84'",
+        "on_player": "Dodi Lukebakio",
+        "off_player": "Yannick Ferreira Carrasco",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.BEL.lo_s_openda",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Belgium",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Ikoma Lo\u00efs Openda",
+        "display_name": "Lo\u00efs Openda"
+      },
+      "label": null,
+      "value": {
+        "on": "Lo\u00efs Openda",
+        "off": "J\u00e9r\u00e9my Doku"
+      },
+      "claim": "Lo\u00efs Openda replaced J\u00e9r\u00e9my Doku for Belgium (84')",
+      "evidence": {
+        "minute": 83,
+        "period": 2,
+        "display_minute": "84'",
+        "on_player": "Ikoma Lo\u00efs Openda",
+        "off_player": "Jeremy Doku",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.BEL.johan_bakayoko",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Belgium",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Johan Bakayoko",
+        "display_name": "Johan Bakayoko"
+      },
+      "label": null,
+      "value": {
+        "on": "Johan Bakayoko",
+        "off": "Orel Mangala"
+      },
+      "claim": "Johan Bakayoko replaced Orel Mangala for Belgium (57')",
+      "evidence": {
+        "minute": 56,
+        "period": 2,
+        "display_minute": "57'",
+        "on_player": "Johan Bakayoko",
+        "off_player": "Orel Mangala",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.SLO.tom_suslov",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Slovakia",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Tom\u00e1\u0161 Suslov",
+        "display_name": "Tom\u00e1\u0161 Suslov"
+      },
+      "label": null,
+      "value": {
+        "on": "Tom\u00e1\u0161 Suslov",
+        "off": "Luk\u00e1\u0161 Harasl\u00edn"
+      },
+      "claim": "Tom\u00e1\u0161 Suslov replaced Luk\u00e1\u0161 Harasl\u00edn for Slovakia (70')",
+      "evidence": {
+        "minute": 69,
+        "period": 2,
+        "display_minute": "70'",
+        "on_player": "Tom\u00e1\u0161 Suslov",
+        "off_player": "Luk\u00e1\u0161 Harasl\u00edn",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.SLO.david_strelec",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Slovakia",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "David Strelec",
+        "display_name": "David Strelec"
+      },
+      "label": null,
+      "value": {
+        "on": "David Strelec",
+        "off": "R\u00f3bert Bo\u017een\u00edk"
+      },
+      "claim": "David Strelec replaced R\u00f3bert Bo\u017een\u00edk for Slovakia (70')",
+      "evidence": {
+        "minute": 69,
+        "period": 2,
+        "display_minute": "70'",
+        "on_player": "David Strelec",
+        "off_player": "R\u00f3bert Bo\u017een\u00edk",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.SLO.d_vid_uri",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Slovakia",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "D\u00e1vid \u010euri\u0161",
+        "display_name": "D\u00e1vid \u010euri\u0161"
+      },
+      "label": null,
+      "value": {
+        "on": "D\u00e1vid \u010euri\u0161",
+        "off": "Ivan Schranz"
+      },
+      "claim": "D\u00e1vid \u010euri\u0161 replaced Ivan Schranz for Slovakia (81')",
+      "evidence": {
+        "minute": 80,
+        "period": 2,
+        "display_minute": "81'",
+        "on_player": "D\u00e1vid \u010euri\u0161",
+        "off_player": "Ivan Schranz",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "structure.substitution.SLO.adam_obert",
+      "category": "structure",
+      "type": "substitution",
+      "team": "Slovakia",
+      "window": null,
+      "game_states": [],
+      "subject": {
+        "player": "Adam Obert",
+        "display_name": "Adam Obert"
+      },
+      "label": null,
+      "value": {
+        "on": "Adam Obert",
+        "off": "Ondrej Duda"
+      },
+      "claim": "Adam Obert replaced Ondrej Duda for Slovakia (90+4')",
+      "evidence": {
+        "minute": 93,
+        "period": 2,
+        "display_minute": "90+4'",
+        "on_player": "Adam Obert",
+        "off_player": "Ondrej Duda",
+        "source": "substitutes.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w0.wout_faes",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 56,
+        "source": "on_ball_period",
+        "text": "kick-off to 57'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Wout Faes",
+        "display_name": "Wout Faes"
+      },
+      "label": "right_half_space",
+      "value": "right_half_space",
+      "claim": "Wout Faes took 47 of 70 touches on the right half-space (kick-off to 57')",
+      "evidence": {
+        "event_count": 70,
+        "lane_counts": {
+          "left_wing": 2,
+          "left_half_space": 2,
+          "centre": 4,
+          "right_half_space": 47,
+          "right_wing": 15
+        },
+        "band_counts": {
+          "own_third": 47,
+          "own_half": 17,
+          "opposition_half": 5,
+          "final_third": 1
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_belgium.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w0.zeno_debast",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 56,
+        "source": "on_ball_period",
+        "text": "kick-off to 57'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Zeno Debast",
+        "display_name": "Zeno Debast"
+      },
+      "label": "left_half_space",
+      "value": "left_half_space",
+      "claim": "Zeno Debast took 36 of 66 touches on the left half-space (kick-off to 57')",
+      "evidence": {
+        "event_count": 66,
+        "lane_counts": {
+          "left_wing": 28,
+          "left_half_space": 36,
+          "centre": 2,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 47,
+          "own_half": 16,
+          "opposition_half": 0,
+          "final_third": 3
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_belgium.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w0.amadou_onana",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 56,
+        "source": "on_ball_period",
+        "text": "kick-off to 57'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Amadou Onana",
+        "display_name": "Amadou Onana"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Amadou Onana split touches between the right half-space (26) and the centre (22) (kick-off to 57')",
+      "evidence": {
+        "event_count": 66,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 12,
+          "centre": 22,
+          "right_half_space": 26,
+          "right_wing": 6
+        },
+        "band_counts": {
+          "own_third": 19,
+          "own_half": 27,
+          "opposition_half": 12,
+          "final_third": 8
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "right",
+        "source": "team_shape_belgium.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w0.yannick_carrasco",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 56,
+        "source": "on_ball_period",
+        "text": "kick-off to 57'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Yannick Ferreira Carrasco",
+        "display_name": "Yannick Carrasco"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "Yannick Carrasco took 49 of 55 touches on the left wing (kick-off to 57')",
+      "evidence": {
+        "event_count": 55,
+        "lane_counts": {
+          "left_wing": 49,
+          "left_half_space": 2,
+          "centre": 0,
+          "right_half_space": 0,
+          "right_wing": 4
+        },
+        "band_counts": {
+          "own_third": 21,
+          "own_half": 10,
+          "opposition_half": 7,
+          "final_third": 17
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_belgium.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w0.timothy_castagne",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 56,
+        "source": "on_ball_period",
+        "text": "kick-off to 57'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Timothy Castagne",
+        "display_name": "Timothy Castagne"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Timothy Castagne took 43 of 49 touches on the right wing (kick-off to 57')",
+      "evidence": {
+        "event_count": 49,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 1,
+          "right_half_space": 5,
+          "right_wing": 43
+        },
+        "band_counts": {
+          "own_third": 20,
+          "own_half": 23,
+          "opposition_half": 5,
+          "final_third": 1
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_belgium.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w0.orel_mangala",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 56,
+        "source": "on_ball_period",
+        "text": "kick-off to 57'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Orel Mangala",
+        "display_name": "Orel Mangala"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Orel Mangala split touches between the centre (14) and the right half-space (12) (kick-off to 57')",
+      "evidence": {
+        "event_count": 48,
+        "lane_counts": {
+          "left_wing": 10,
+          "left_half_space": 6,
+          "centre": 14,
+          "right_half_space": 12,
+          "right_wing": 6
+        },
+        "band_counts": {
+          "own_third": 12,
+          "own_half": 17,
+          "opposition_half": 12,
+          "final_third": 7
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "right",
+        "observed_side": "centre",
+        "source": "team_shape_belgium.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w0.j_r_my_doku",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 56,
+        "source": "on_ball_period",
+        "text": "kick-off to 57'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Jeremy Doku",
+        "display_name": "J\u00e9r\u00e9my Doku"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "J\u00e9r\u00e9my Doku took 29 of 44 touches on the right wing (kick-off to 57')",
+      "evidence": {
+        "event_count": 44,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 2,
+          "centre": 4,
+          "right_half_space": 9,
+          "right_wing": 29
+        },
+        "band_counts": {
+          "own_third": 5,
+          "own_half": 11,
+          "opposition_half": 8,
+          "final_third": 20
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_belgium.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w0.koen_casteels",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 56,
+        "source": "on_ball_period",
+        "text": "kick-off to 57'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Koen Casteels",
+        "display_name": "Koen Casteels"
+      },
+      "label": "centre",
+      "value": "centre",
+      "claim": "Koen Casteels took 36 of 43 touches on the centre (kick-off to 57')",
+      "evidence": {
+        "event_count": 43,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 1,
+          "centre": 36,
+          "right_half_space": 5,
+          "right_wing": 1
+        },
+        "band_counts": {
+          "own_third": 43,
+          "own_half": 0,
+          "opposition_half": 0,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": null,
+        "observed_side": "centre",
+        "source": "team_shape_belgium.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w0.kevin_de_bruyne",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 56,
+        "source": "on_ball_period",
+        "text": "kick-off to 57'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Kevin De Bruyne",
+        "display_name": "Kevin De Bruyne"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Kevin De Bruyne split touches between the left half-space (15) and the centre (13) (kick-off to 57')",
+      "evidence": {
+        "event_count": 43,
+        "lane_counts": {
+          "left_wing": 6,
+          "left_half_space": 15,
+          "centre": 13,
+          "right_half_space": 5,
+          "right_wing": 4
+        },
+        "band_counts": {
+          "own_third": 3,
+          "own_half": 9,
+          "opposition_half": 10,
+          "final_third": 21
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "centre",
+        "observed_side": "left",
+        "source": "team_shape_belgium.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w0.leandro_trossard",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 56,
+        "source": "on_ball_period",
+        "text": "kick-off to 57'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Leandro Trossard",
+        "display_name": "Leandro Trossard"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Leandro Trossard split touches between the left wing (18) and the left half-space (14) (kick-off to 57')",
+      "evidence": {
+        "event_count": 39,
+        "lane_counts": {
+          "left_wing": 18,
+          "left_half_space": 14,
+          "centre": 4,
+          "right_half_space": 3,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 3,
+          "own_half": 10,
+          "opposition_half": 7,
+          "final_third": 19
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_belgium.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w0.romelu_lukaku",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 56,
+        "source": "on_ball_period",
+        "text": "kick-off to 57'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Romelu Lukaku Menama",
+        "display_name": "Romelu Lukaku"
+      },
+      "label": "centre",
+      "value": "centre",
+      "claim": "Romelu Lukaku took 9 of 18 touches on the centre (kick-off to 57')",
+      "evidence": {
+        "event_count": 18,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 9,
+          "right_half_space": 4,
+          "right_wing": 5
+        },
+        "band_counts": {
+          "own_third": 0,
+          "own_half": 3,
+          "opposition_half": 0,
+          "final_third": 15
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": "centre",
+        "observed_side": "centre",
+        "source": "team_shape_belgium.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.team_height.BEL.w0",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Belgium",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 56,
+        "source": "on_ball_period",
+        "text": "kick-off to 57'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": null,
+      "label": "own_half",
+      "value": 54.01,
+      "claim": "Belgium's average position in possession was in their own half (kick-off to 57')",
+      "evidence": {
+        "mean_x": 54.01,
+        "eligible_outfield_count": 10,
+        "event_count_total": 498,
+        "source": "team_shape_belgium.json#on_ball"
+      },
+      "threshold": {
+        "constant": "HALFWAY_LINE",
+        "value": 60
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.team_width.BEL.w0",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Belgium",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 56,
+        "source": "on_ball_period",
+        "text": "kick-off to 57'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 62.01,
+      "claim": null,
+      "evidence": {
+        "width": 62.01,
+        "eligible_outfield_count": 10,
+        "source": "team_shape_belgium.json#on_ball"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w1.yannick_carrasco",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 1,
+        "from_minute": 56,
+        "to_minute": 73,
+        "source": "on_ball_period",
+        "text": "57' to 74'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "Yannick Ferreira Carrasco",
+        "display_name": "Yannick Carrasco"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "Yannick Carrasco took 33 of 39 touches on the left wing (57' to 74')",
+      "evidence": {
+        "event_count": 39,
+        "lane_counts": {
+          "left_wing": 33,
+          "left_half_space": 6,
+          "centre": 0,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 0,
+          "own_half": 12,
+          "opposition_half": 20,
+          "final_third": 7
+        },
+        "band_label": "opposition_half",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_belgium.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w1.kevin_de_bruyne",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 1,
+        "from_minute": 56,
+        "to_minute": 73,
+        "source": "on_ball_period",
+        "text": "57' to 74'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "Kevin De Bruyne",
+        "display_name": "Kevin De Bruyne"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Kevin De Bruyne split touches between the centre (10) and the left half-space (9) (57' to 74')",
+      "evidence": {
+        "event_count": 39,
+        "lane_counts": {
+          "left_wing": 8,
+          "left_half_space": 9,
+          "centre": 10,
+          "right_half_space": 9,
+          "right_wing": 3
+        },
+        "band_counts": {
+          "own_third": 6,
+          "own_half": 6,
+          "opposition_half": 10,
+          "final_third": 17
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "centre",
+        "source": "team_shape_belgium.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w1.zeno_debast",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 1,
+        "from_minute": 56,
+        "to_minute": 73,
+        "source": "on_ball_period",
+        "text": "57' to 74'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "Zeno Debast",
+        "display_name": "Zeno Debast"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Zeno Debast split touches between the left wing (17) and the centre (10) (57' to 74')",
+      "evidence": {
+        "event_count": 36,
+        "lane_counts": {
+          "left_wing": 17,
+          "left_half_space": 8,
+          "centre": 10,
+          "right_half_space": 1,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 10,
+          "own_half": 16,
+          "opposition_half": 10,
+          "final_third": 0
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_belgium.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w1.amadou_onana",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 1,
+        "from_minute": 56,
+        "to_minute": 73,
+        "source": "on_ball_period",
+        "text": "57' to 74'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "Amadou Onana",
+        "display_name": "Amadou Onana"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Amadou Onana split touches between the left half-space (13) and the left wing (11) (57' to 74')",
+      "evidence": {
+        "event_count": 34,
+        "lane_counts": {
+          "left_wing": 11,
+          "left_half_space": 13,
+          "centre": 9,
+          "right_half_space": 1,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 1,
+          "own_half": 4,
+          "opposition_half": 24,
+          "final_third": 5
+        },
+        "band_label": "opposition_half",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "left",
+        "source": "team_shape_belgium.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w1.wout_faes",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 1,
+        "from_minute": 56,
+        "to_minute": 73,
+        "source": "on_ball_period",
+        "text": "57' to 74'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "Wout Faes",
+        "display_name": "Wout Faes"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Wout Faes took 15 of 28 touches on the right wing (57' to 74')",
+      "evidence": {
+        "event_count": 28,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 2,
+          "centre": 5,
+          "right_half_space": 6,
+          "right_wing": 15
+        },
+        "band_counts": {
+          "own_third": 20,
+          "own_half": 6,
+          "opposition_half": 2,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_belgium.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w1.johan_bakayoko",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 1,
+        "from_minute": 56,
+        "to_minute": 73,
+        "source": "on_ball_period",
+        "text": "57' to 74'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "Johan Bakayoko",
+        "display_name": "Johan Bakayoko"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Johan Bakayoko took 13 of 23 touches on the right wing (57' to 74')",
+      "evidence": {
+        "event_count": 23,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 10,
+          "right_half_space": 0,
+          "right_wing": 13
+        },
+        "band_counts": {
+          "own_third": 3,
+          "own_half": 1,
+          "opposition_half": 6,
+          "final_third": 13
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_belgium.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w1.j_r_my_doku",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 1,
+        "from_minute": 56,
+        "to_minute": 73,
+        "source": "on_ball_period",
+        "text": "57' to 74'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "Jeremy Doku",
+        "display_name": "J\u00e9r\u00e9my Doku"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "J\u00e9r\u00e9my Doku took 14 of 21 touches on the left wing (57' to 74')",
+      "evidence": {
+        "event_count": 21,
+        "lane_counts": {
+          "left_wing": 14,
+          "left_half_space": 6,
+          "centre": 1,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 0,
+          "own_half": 5,
+          "opposition_half": 3,
+          "final_third": 13
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_belgium.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w1.timothy_castagne",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 1,
+        "from_minute": 56,
+        "to_minute": 73,
+        "source": "on_ball_period",
+        "text": "57' to 74'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "Timothy Castagne",
+        "display_name": "Timothy Castagne"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Timothy Castagne took 17 of 20 touches on the right wing (57' to 74')",
+      "evidence": {
+        "event_count": 20,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 3,
+          "centre": 0,
+          "right_half_space": 0,
+          "right_wing": 17
+        },
+        "band_counts": {
+          "own_third": 9,
+          "own_half": 11,
+          "opposition_half": 0,
+          "final_third": 0
+        },
+        "band_label": "own_half",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_belgium.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w1.romelu_lukaku",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 1,
+        "from_minute": 56,
+        "to_minute": 73,
+        "source": "on_ball_period",
+        "text": "57' to 74'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "Romelu Lukaku Menama",
+        "display_name": "Romelu Lukaku"
+      },
+      "label": "centre",
+      "value": "centre",
+      "claim": "Romelu Lukaku took 17 of 17 touches on the centre (57' to 74')",
+      "evidence": {
+        "event_count": 17,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 17,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 0,
+          "own_half": 0,
+          "opposition_half": 0,
+          "final_third": 17
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": "centre",
+        "observed_side": "centre",
+        "source": "team_shape_belgium.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w1.leandro_trossard",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 1,
+        "from_minute": 56,
+        "to_minute": 73,
+        "source": "on_ball_period",
+        "text": "57' to 74'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "Leandro Trossard",
+        "display_name": "Leandro Trossard"
+      },
+      "label": "centre",
+      "value": "centre",
+      "claim": "Leandro Trossard took 9 of 16 touches on the centre (57' to 74')",
+      "evidence": {
+        "event_count": 16,
+        "lane_counts": {
+          "left_wing": 1,
+          "left_half_space": 3,
+          "centre": 9,
+          "right_half_space": 1,
+          "right_wing": 2
+        },
+        "band_counts": {
+          "own_third": 0,
+          "own_half": 0,
+          "opposition_half": 2,
+          "final_third": 14
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": "centre",
+        "observed_side": "centre",
+        "source": "team_shape_belgium.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.team_height.BEL.w1",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Belgium",
+      "window": {
+        "index": 1,
+        "from_minute": 56,
+        "to_minute": 73,
+        "source": "on_ball_period",
+        "text": "57' to 74'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": null,
+      "label": "opposition_half",
+      "value": 64.47,
+      "claim": "Belgium's average position in possession was in the opposition half (57' to 74')",
+      "evidence": {
+        "mean_x": 64.47,
+        "eligible_outfield_count": 10,
+        "event_count_total": 273,
+        "source": "team_shape_belgium.json#on_ball"
+      },
+      "threshold": {
+        "constant": "HALFWAY_LINE",
+        "value": 60
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.team_width.BEL.w1",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Belgium",
+      "window": {
+        "index": 1,
+        "from_minute": 56,
+        "to_minute": 73,
+        "source": "on_ball_period",
+        "text": "57' to 74'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 57.13,
+      "claim": null,
+      "evidence": {
+        "width": 57.13,
+        "eligible_outfield_count": 10,
+        "source": "team_shape_belgium.json#on_ball"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w3.lo_s_openda",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 3,
+        "from_minute": 83,
+        "to_minute": 99,
+        "source": "on_ball_period",
+        "text": "84' to full time"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "Ikoma Lo\u00efs Openda",
+        "display_name": "Lo\u00efs Openda"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "Lo\u00efs Openda took 9 of 12 touches on the left wing (84' to full time)",
+      "evidence": {
+        "event_count": 12,
+        "lane_counts": {
+          "left_wing": 9,
+          "left_half_space": 0,
+          "centre": 3,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 0,
+          "own_half": 2,
+          "opposition_half": 3,
+          "final_third": 7
+        },
+        "band_label": "final_third",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_belgium.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w3.zeno_debast",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 3,
+        "from_minute": 83,
+        "to_minute": 99,
+        "source": "on_ball_period",
+        "text": "84' to full time"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "Zeno Debast",
+        "display_name": "Zeno Debast"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Zeno Debast split touches between the left wing (5) and the left half-space (5) (84' to full time)",
+      "evidence": {
+        "event_count": 11,
+        "lane_counts": {
+          "left_wing": 5,
+          "left_half_space": 5,
+          "centre": 1,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 5,
+          "own_half": 3,
+          "opposition_half": 3,
+          "final_third": 0
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_belgium.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w0.ondrej_duda",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 69,
+        "source": "on_ball_period",
+        "text": "kick-off to 70'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Ondrej Duda",
+        "display_name": "Ondrej Duda"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Ondrej Duda split touches between the left wing (21) and the left half-space (19) (kick-off to 70')",
+      "evidence": {
+        "event_count": 55,
+        "lane_counts": {
+          "left_wing": 21,
+          "left_half_space": 19,
+          "centre": 15,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 17,
+          "own_half": 17,
+          "opposition_half": 18,
+          "final_third": 3
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_slovakia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w0.stanislav_lobotka",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 69,
+        "source": "on_ball_period",
+        "text": "kick-off to 70'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Stanislav Lobotka",
+        "display_name": "Stanislav Lobotka"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Stanislav Lobotka split touches between the left half-space (21) and the centre (16) (kick-off to 70')",
+      "evidence": {
+        "event_count": 52,
+        "lane_counts": {
+          "left_wing": 6,
+          "left_half_space": 21,
+          "centre": 16,
+          "right_half_space": 7,
+          "right_wing": 2
+        },
+        "band_counts": {
+          "own_third": 14,
+          "own_half": 22,
+          "opposition_half": 8,
+          "final_third": 8
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "centre",
+        "observed_side": "left",
+        "source": "team_shape_slovakia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w0.denis_vavro",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 69,
+        "source": "on_ball_period",
+        "text": "kick-off to 70'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Denis Vavro",
+        "display_name": "Denis Vavro"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Denis Vavro split touches between the right half-space (23) and the right wing (11) (kick-off to 70')",
+      "evidence": {
+        "event_count": 48,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 6,
+          "centre": 8,
+          "right_half_space": 23,
+          "right_wing": 11
+        },
+        "band_counts": {
+          "own_third": 20,
+          "own_half": 25,
+          "opposition_half": 3,
+          "final_third": 0
+        },
+        "band_label": "own_half",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_slovakia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w0.martin_d_bravka",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 69,
+        "source": "on_ball_period",
+        "text": "kick-off to 70'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Martin D\u00fabravka",
+        "display_name": "Martin D\u00fabravka"
+      },
+      "label": "centre",
+      "value": "centre",
+      "claim": "Martin D\u00fabravka took 38 of 45 touches on the centre (kick-off to 70')",
+      "evidence": {
+        "event_count": 45,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 4,
+          "centre": 38,
+          "right_half_space": 3,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 45,
+          "own_half": 0,
+          "opposition_half": 0,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": null,
+        "observed_side": "centre",
+        "source": "team_shape_slovakia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w0.peter_pekar_k",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 69,
+        "source": "on_ball_period",
+        "text": "kick-off to 70'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Peter Pekar\u00edk",
+        "display_name": "Peter Pekar\u00edk"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Peter Pekar\u00edk took 32 of 38 touches on the right wing (kick-off to 70')",
+      "evidence": {
+        "event_count": 38,
+        "lane_counts": {
+          "left_wing": 3,
+          "left_half_space": 0,
+          "centre": 0,
+          "right_half_space": 3,
+          "right_wing": 32
+        },
+        "band_counts": {
+          "own_third": 8,
+          "own_half": 8,
+          "opposition_half": 18,
+          "final_third": 4
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_slovakia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w0.r_bert_bo_en_k",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 69,
+        "source": "on_ball_period",
+        "text": "kick-off to 70'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "R\u00f3bert Bo\u017een\u00edk",
+        "display_name": "R\u00f3bert Bo\u017een\u00edk"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "R\u00f3bert Bo\u017een\u00edk split touches between the centre (16) and the right half-space (12) (kick-off to 70')",
+      "evidence": {
+        "event_count": 38,
+        "lane_counts": {
+          "left_wing": 4,
+          "left_half_space": 6,
+          "centre": 16,
+          "right_half_space": 12,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 0,
+          "own_half": 19,
+          "opposition_half": 8,
+          "final_third": 11
+        },
+        "band_label": "own_half",
+        "band_mixed": false,
+        "declared_side": "centre",
+        "observed_side": "centre",
+        "source": "team_shape_slovakia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w0.d_vid_hancko",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 69,
+        "source": "on_ball_period",
+        "text": "kick-off to 70'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "D\u00e1vid Hancko",
+        "display_name": "D\u00e1vid Hancko"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "D\u00e1vid Hancko took 27 of 36 touches on the left wing (kick-off to 70')",
+      "evidence": {
+        "event_count": 36,
+        "lane_counts": {
+          "left_wing": 27,
+          "left_half_space": 9,
+          "centre": 0,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 9,
+          "own_half": 14,
+          "opposition_half": 10,
+          "final_third": 3
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_slovakia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w0.luk_harasl_n",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 69,
+        "source": "on_ball_period",
+        "text": "kick-off to 70'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Luk\u00e1\u0161 Harasl\u00edn",
+        "display_name": "Luk\u00e1\u0161 Harasl\u00edn"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "Luk\u00e1\u0161 Harasl\u00edn took 20 of 32 touches on the left wing (kick-off to 70')",
+      "evidence": {
+        "event_count": 32,
+        "lane_counts": {
+          "left_wing": 20,
+          "left_half_space": 7,
+          "centre": 5,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 13,
+          "own_half": 4,
+          "opposition_half": 7,
+          "final_third": 8
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_slovakia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w0.ivan_schranz",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 69,
+        "source": "on_ball_period",
+        "text": "kick-off to 70'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Ivan Schranz",
+        "display_name": "Ivan Schranz"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Ivan Schranz took 18 of 30 touches on the right wing (kick-off to 70')",
+      "evidence": {
+        "event_count": 30,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 2,
+          "centre": 2,
+          "right_half_space": 8,
+          "right_wing": 18
+        },
+        "band_counts": {
+          "own_third": 0,
+          "own_half": 14,
+          "opposition_half": 10,
+          "final_third": 6
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_slovakia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w0.juraj_kucka",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 69,
+        "source": "on_ball_period",
+        "text": "kick-off to 70'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Juraj Kucka",
+        "display_name": "Juraj Kucka"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Juraj Kucka split touches between the centre (10) and the right wing (10) (kick-off to 70')",
+      "evidence": {
+        "event_count": 22,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 2,
+          "centre": 10,
+          "right_half_space": 0,
+          "right_wing": 10
+        },
+        "band_counts": {
+          "own_third": 3,
+          "own_half": 5,
+          "opposition_half": 11,
+          "final_third": 3
+        },
+        "band_label": "opposition_half",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "centre",
+        "source": "team_shape_slovakia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w0.milan_kriniar",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 69,
+        "source": "on_ball_period",
+        "text": "kick-off to 70'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "player": "Milan \u0160kriniar",
+        "display_name": "Milan \u0160kriniar"
+      },
+      "label": "mixed",
+      "value": "mixed",
+      "claim": "Milan \u0160kriniar split touches between the left wing (7) and the centre (5) (kick-off to 70')",
+      "evidence": {
+        "event_count": 19,
+        "lane_counts": {
+          "left_wing": 7,
+          "left_half_space": 3,
+          "centre": 5,
+          "right_half_space": 3,
+          "right_wing": 1
+        },
+        "band_counts": {
+          "own_third": 9,
+          "own_half": 10,
+          "opposition_half": 0,
+          "final_third": 0
+        },
+        "band_label": "own_half",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_slovakia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.team_height.SLO.w0",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Slovakia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 69,
+        "source": "on_ball_period",
+        "text": "kick-off to 70'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": null,
+      "label": "own_half",
+      "value": 55.11,
+      "claim": "Slovakia's average position in possession was in their own half (kick-off to 70')",
+      "evidence": {
+        "mean_x": 55.11,
+        "eligible_outfield_count": 10,
+        "event_count_total": 370,
+        "source": "team_shape_slovakia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "HALFWAY_LINE",
+        "value": 60
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.team_width.SLO.w0",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Slovakia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 69,
+        "source": "on_ball_period",
+        "text": "kick-off to 70'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 56.81,
+      "claim": null,
+      "evidence": {
+        "width": 56.81,
+        "eligible_outfield_count": 10,
+        "source": "team_shape_slovakia.json#on_ball"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w1.denis_vavro",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 1,
+        "from_minute": 69,
+        "to_minute": 80,
+        "source": "on_ball_period",
+        "text": "70' to 81'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": {
+        "player": "Denis Vavro",
+        "display_name": "Denis Vavro"
+      },
+      "label": "right_half_space",
+      "value": "right_half_space",
+      "claim": "Denis Vavro took 14 of 21 touches on the right half-space (70' to 81')",
+      "evidence": {
+        "event_count": 21,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 1,
+          "right_half_space": 14,
+          "right_wing": 6
+        },
+        "band_counts": {
+          "own_third": 14,
+          "own_half": 7,
+          "opposition_half": 0,
+          "final_third": 0
+        },
+        "band_label": "own_third",
+        "band_mixed": false,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_slovakia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w1.ondrej_duda",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 1,
+        "from_minute": 69,
+        "to_minute": 80,
+        "source": "on_ball_period",
+        "text": "70' to 81'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": {
+        "player": "Ondrej Duda",
+        "display_name": "Ondrej Duda"
+      },
+      "label": "centre",
+      "value": "centre",
+      "claim": "Ondrej Duda took 12 of 17 touches on the centre (70' to 81')",
+      "evidence": {
+        "event_count": 17,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 1,
+          "centre": 12,
+          "right_half_space": 4,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 1,
+          "own_half": 11,
+          "opposition_half": 0,
+          "final_third": 5
+        },
+        "band_label": "own_half",
+        "band_mixed": false,
+        "declared_side": "left",
+        "observed_side": "centre",
+        "source": "team_shape_slovakia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w1.juraj_kucka",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 1,
+        "from_minute": 69,
+        "to_minute": 80,
+        "source": "on_ball_period",
+        "text": "70' to 81'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": {
+        "player": "Juraj Kucka",
+        "display_name": "Juraj Kucka"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Juraj Kucka took 9 of 16 touches on the right wing (70' to 81')",
+      "evidence": {
+        "event_count": 16,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 1,
+          "right_half_space": 6,
+          "right_wing": 9
+        },
+        "band_counts": {
+          "own_third": 1,
+          "own_half": 7,
+          "opposition_half": 4,
+          "final_third": 4
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "right",
+        "observed_side": "right",
+        "source": "team_shape_slovakia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w1.stanislav_lobotka",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 1,
+        "from_minute": 69,
+        "to_minute": 80,
+        "source": "on_ball_period",
+        "text": "70' to 81'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": {
+        "player": "Stanislav Lobotka",
+        "display_name": "Stanislav Lobotka"
+      },
+      "label": "right_wing",
+      "value": "right_wing",
+      "claim": "Stanislav Lobotka took 6 of 10 touches on the right wing (70' to 81')",
+      "evidence": {
+        "event_count": 10,
+        "lane_counts": {
+          "left_wing": 0,
+          "left_half_space": 0,
+          "centre": 4,
+          "right_half_space": 0,
+          "right_wing": 6
+        },
+        "band_counts": {
+          "own_third": 3,
+          "own_half": 5,
+          "opposition_half": 2,
+          "final_third": 0
+        },
+        "band_label": "own_half",
+        "band_mixed": false,
+        "declared_side": "centre",
+        "observed_side": "right",
+        "source": "team_shape_slovakia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.5,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w3.tom_suslov",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 3,
+        "from_minute": 93,
+        "to_minute": 99,
+        "source": "on_ball_period",
+        "text": "90+4' to full time"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": {
+        "player": "Tom\u00e1\u0161 Suslov",
+        "display_name": "Tom\u00e1\u0161 Suslov"
+      },
+      "label": "left_wing",
+      "value": "left_wing",
+      "claim": "Tom\u00e1\u0161 Suslov took 10 of 11 touches on the left wing (90+4' to full time)",
+      "evidence": {
+        "event_count": 11,
+        "lane_counts": {
+          "left_wing": 10,
+          "left_half_space": 1,
+          "centre": 0,
+          "right_half_space": 0,
+          "right_wing": 0
+        },
+        "band_counts": {
+          "own_third": 5,
+          "own_half": 3,
+          "opposition_half": 2,
+          "final_third": 1
+        },
+        "band_label": "mixed",
+        "band_mixed": true,
+        "declared_side": "left",
+        "observed_side": "left",
+        "source": "team_shape_slovakia.json#on_ball"
+      },
+      "threshold": {
+        "constant": "MODAL_SHARE",
+        "value": 0.5
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "out_of_possession.block_height.BEL.whole_match",
+      "category": "out_of_possession",
+      "type": "block_height",
+      "team": "Belgium",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": null,
+        "source": "whole_match",
+        "text": "kick-off to full time"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 58.8,
+      "claim": null,
+      "evidence": {
+        "centroid_x": 58.8,
+        "camera_caveat": "360 frames follow the ball; the visible subset of out-of-possession positions is biased toward areas near the ball. The camera artifact and the real defensive shape point the same direction \u2014 they cannot be cleanly separated.",
+        "source": "team_shape_belgium.json#off_ball.centroid"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "out_of_possession.block_height.SLO.whole_match",
+      "category": "out_of_possession",
+      "type": "block_height",
+      "team": "Slovakia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": null,
+        "source": "whole_match",
+        "text": "kick-off to full time"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 52.87,
+      "claim": null,
+      "evidence": {
+        "centroid_x": 52.87,
+        "camera_caveat": "360 frames follow the ball; the visible subset of out-of-possession positions is biased toward areas near the ball. The camera artifact and the real defensive shape point the same direction \u2014 they cannot be cleanly separated.",
+        "source": "team_shape_slovakia.json#off_ball.centroid"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.BEL.w0.zeno_debast",
+      "category": "passing",
+      "type": "hub",
+      "team": "Belgium",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 56,
+        "source": "pass_network_window",
+        "text": "kick-off to 57'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "player": "Zeno Debast",
+        "display_name": "Zeno Debast"
+      },
+      "label": null,
+      "value": 0.1837,
+      "claim": "Zeno Debast was a hub for Belgium, involved in 18.4% of passes (kick-off to 57')",
+      "evidence": {
+        "passes_made": 59,
+        "passes_received": 56,
+        "share": 0.1837,
+        "source": "pass_network_Belgium.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.2247071352502663,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.BEL.w0.zeno_debast_yannick_carrasco",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Belgium",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 56,
+        "source": "pass_network_window",
+        "text": "kick-off to 57'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "pair": [
+          "Zeno Debast",
+          "Yannick Carrasco"
+        ]
+      },
+      "label": null,
+      "value": 43,
+      "claim": "Zeno Debast and Yannick Carrasco combined 43 times (kick-off to 57')",
+      "evidence": {
+        "bidirectional_total": 43,
+        "source": "pass_network_Belgium.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 2.747603833865815,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.BEL.w0.wout_faes_timothy_castagne",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Belgium",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 56,
+        "source": "pass_network_window",
+        "text": "kick-off to 57'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "pair": [
+          "Wout Faes",
+          "Timothy Castagne"
+        ]
+      },
+      "label": null,
+      "value": 21,
+      "claim": "Wout Faes and Timothy Castagne combined 21 times (kick-off to 57')",
+      "evidence": {
+        "bidirectional_total": 21,
+        "source": "pass_network_Belgium.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.3418530351437699,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.BEL.w0.zeno_debast_koen_casteels",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Belgium",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 56,
+        "source": "pass_network_window",
+        "text": "kick-off to 57'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "pair": [
+          "Zeno Debast",
+          "Koen Casteels"
+        ]
+      },
+      "label": null,
+      "value": 21,
+      "claim": "Zeno Debast and Koen Casteels combined 21 times (kick-off to 57')",
+      "evidence": {
+        "bidirectional_total": 21,
+        "source": "pass_network_Belgium.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.3418530351437699,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.BEL.w0.zeno_debast_wout_faes",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Belgium",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 56,
+        "source": "pass_network_window",
+        "text": "kick-off to 57'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": {
+        "pair": [
+          "Zeno Debast",
+          "Wout Faes"
+        ]
+      },
+      "label": null,
+      "value": 20,
+      "claim": "Zeno Debast and Wout Faes combined 20 times (kick-off to 57')",
+      "evidence": {
+        "bidirectional_total": 20,
+        "source": "pass_network_Belgium.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.2779552715654952,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.concentration.BEL.w0",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Belgium",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 56,
+        "source": "pass_network_window",
+        "text": "kick-off to 57'"
+      },
+      "game_states": [
+        "level",
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 0.4409,
+      "claim": null,
+      "evidence": {
+        "top3_share": 0.4409,
+        "window_passes": 313,
+        "source": "pass_network_Belgium.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.BEL.w1.kevin_de_bruyne",
+      "category": "passing",
+      "type": "hub",
+      "team": "Belgium",
+      "window": {
+        "index": 1,
+        "from_minute": 56,
+        "to_minute": 73,
+        "source": "pass_network_window",
+        "text": "57' to 74'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "Kevin De Bruyne",
+        "display_name": "Kevin De Bruyne"
+      },
+      "label": null,
+      "value": 0.1589,
+      "claim": "Kevin De Bruyne was a hub for Belgium, involved in 15.9% of passes (57' to 74')",
+      "evidence": {
+        "passes_made": 15,
+        "passes_received": 19,
+        "share": 0.1589,
+        "source": "pass_network_Belgium.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.0591900311526479,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.BEL.w1.yannick_carrasco",
+      "category": "passing",
+      "type": "hub",
+      "team": "Belgium",
+      "window": {
+        "index": 1,
+        "from_minute": 56,
+        "to_minute": 73,
+        "source": "pass_network_window",
+        "text": "57' to 74'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "Yannick Ferreira Carrasco",
+        "display_name": "Yannick Carrasco"
+      },
+      "label": null,
+      "value": 0.1542,
+      "claim": "Yannick Carrasco was a hub for Belgium, involved in 15.4% of passes (57' to 74')",
+      "evidence": {
+        "passes_made": 17,
+        "passes_received": 16,
+        "share": 0.1542,
+        "source": "pass_network_Belgium.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.02803738317757,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.BEL.w1.zeno_debast",
+      "category": "passing",
+      "type": "hub",
+      "team": "Belgium",
+      "window": {
+        "index": 1,
+        "from_minute": 56,
+        "to_minute": 73,
+        "source": "pass_network_window",
+        "text": "57' to 74'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "Zeno Debast",
+        "display_name": "Zeno Debast"
+      },
+      "label": null,
+      "value": 0.1682,
+      "claim": "Zeno Debast was a hub for Belgium, involved in 16.8% of passes (57' to 74')",
+      "evidence": {
+        "passes_made": 19,
+        "passes_received": 17,
+        "share": 0.1682,
+        "source": "pass_network_Belgium.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.1214953271028036,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.BEL.w1.zeno_debast_yannick_carrasco",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Belgium",
+      "window": {
+        "index": 1,
+        "from_minute": 56,
+        "to_minute": 73,
+        "source": "pass_network_window",
+        "text": "57' to 74'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "pair": [
+          "Zeno Debast",
+          "Yannick Carrasco"
+        ]
+      },
+      "label": null,
+      "value": 12,
+      "claim": "Zeno Debast and Yannick Carrasco combined 12 times (57' to 74')",
+      "evidence": {
+        "bidirectional_total": 12,
+        "source": "pass_network_Belgium.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 2.2429906542056073,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.BEL.w1.yannick_carrasco_amadou_onana",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Belgium",
+      "window": {
+        "index": 1,
+        "from_minute": 56,
+        "to_minute": 73,
+        "source": "pass_network_window",
+        "text": "57' to 74'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "pair": [
+          "Yannick Carrasco",
+          "Amadou Onana"
+        ]
+      },
+      "label": null,
+      "value": 10,
+      "claim": "Yannick Carrasco and Amadou Onana combined 10 times (57' to 74')",
+      "evidence": {
+        "bidirectional_total": 10,
+        "source": "pass_network_Belgium.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.8691588785046727,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.concentration.BEL.w1",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Belgium",
+      "window": {
+        "index": 1,
+        "from_minute": 56,
+        "to_minute": 73,
+        "source": "pass_network_window",
+        "text": "57' to 74'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 0.4813,
+      "claim": null,
+      "evidence": {
+        "top3_share": 0.4813,
+        "window_passes": 107,
+        "source": "pass_network_Belgium.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.no_hub.BEL.w2",
+      "category": "passing",
+      "type": "no_hub",
+      "team": "Belgium",
+      "window": {
+        "index": 2,
+        "from_minute": 73,
+        "to_minute": 83,
+        "source": "pass_network_window",
+        "text": "74' to 84'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 0.1489,
+      "claim": "Belgium's passing had no single hub; the most involved player, Timothy Castagne, had 14.9% (74' to 84')",
+      "evidence": {
+        "most_involved_player": "Timothy Castagne",
+        "share": 0.1489,
+        "source": "pass_network_Belgium.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.concentration.BEL.w2",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Belgium",
+      "window": {
+        "index": 2,
+        "from_minute": 73,
+        "to_minute": 83,
+        "source": "pass_network_window",
+        "text": "74' to 84'"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 0.4043,
+      "claim": null,
+      "evidence": {
+        "top3_share": 0.4043,
+        "window_passes": 47,
+        "source": "pass_network_Belgium.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.BEL.w3.timothy_castagne",
+      "category": "passing",
+      "type": "hub",
+      "team": "Belgium",
+      "window": {
+        "index": 3,
+        "from_minute": 83,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "84' to full time"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "Timothy Castagne",
+        "display_name": "Timothy Castagne"
+      },
+      "label": null,
+      "value": 0.1951,
+      "claim": "Timothy Castagne was a hub for Belgium, involved in 19.5% of passes (84' to full time)",
+      "evidence": {
+        "passes_made": 9,
+        "passes_received": 7,
+        "share": 0.1951,
+        "source": "pass_network_Belgium.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.3008130081300815,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.BEL.w3.wout_faes",
+      "category": "passing",
+      "type": "hub",
+      "team": "Belgium",
+      "window": {
+        "index": 3,
+        "from_minute": 83,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "84' to full time"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "Wout Faes",
+        "display_name": "Wout Faes"
+      },
+      "label": null,
+      "value": 0.1585,
+      "claim": "Wout Faes was a hub for Belgium, involved in 15.9% of passes (84' to full time)",
+      "evidence": {
+        "passes_made": 9,
+        "passes_received": 4,
+        "share": 0.1585,
+        "source": "pass_network_Belgium.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.056910569105691,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.BEL.w3.youri_tielemans",
+      "category": "passing",
+      "type": "hub",
+      "team": "Belgium",
+      "window": {
+        "index": 3,
+        "from_minute": 83,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "84' to full time"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": {
+        "player": "Youri Tielemans",
+        "display_name": "Youri Tielemans"
+      },
+      "label": null,
+      "value": 0.1829,
+      "claim": "Youri Tielemans was a hub for Belgium, involved in 18.3% of passes (84' to full time)",
+      "evidence": {
+        "passes_made": 8,
+        "passes_received": 7,
+        "share": 0.1829,
+        "source": "pass_network_Belgium.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.2195121951219512,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.concentration.BEL.w3",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Belgium",
+      "window": {
+        "index": 3,
+        "from_minute": 83,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "84' to full time"
+      },
+      "game_states": [
+        "trailing"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 0.5366,
+      "claim": null,
+      "evidence": {
+        "top3_share": 0.5366,
+        "window_passes": 41,
+        "source": "pass_network_Belgium.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.no_hub.SLO.w0",
+      "category": "passing",
+      "type": "no_hub",
+      "team": "Slovakia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 69,
+        "source": "pass_network_window",
+        "text": "kick-off to 70'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 0.1429,
+      "claim": "Slovakia's passing had no single hub; the most involved player, Ondrej Duda, had 14.3% (kick-off to 70')",
+      "evidence": {
+        "most_involved_player": "Ondrej Duda",
+        "share": 0.1429,
+        "source": "pass_network_Slovakia.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.SLO.w0.d_vid_hancko_luk_harasl_n",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Slovakia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 69,
+        "source": "pass_network_window",
+        "text": "kick-off to 70'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "pair": [
+          "D\u00e1vid Hancko",
+          "Luk\u00e1\u0161 Harasl\u00edn"
+        ]
+      },
+      "label": null,
+      "value": 15,
+      "claim": "D\u00e1vid Hancko and Luk\u00e1\u0161 Harasl\u00edn combined 15 times (kick-off to 70')",
+      "evidence": {
+        "bidirectional_total": 15,
+        "source": "pass_network_Slovakia.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.2605042016806722,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.SLO.w0.ondrej_duda_d_vid_hancko",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Slovakia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 69,
+        "source": "pass_network_window",
+        "text": "kick-off to 70'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "pair": [
+          "Ondrej Duda",
+          "D\u00e1vid Hancko"
+        ]
+      },
+      "label": null,
+      "value": 15,
+      "claim": "Ondrej Duda and D\u00e1vid Hancko combined 15 times (kick-off to 70')",
+      "evidence": {
+        "bidirectional_total": 15,
+        "source": "pass_network_Slovakia.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.2605042016806722,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.SLO.w0.ondrej_duda_stanislav_lobotka",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Slovakia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 69,
+        "source": "pass_network_window",
+        "text": "kick-off to 70'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "pair": [
+          "Ondrej Duda",
+          "Stanislav Lobotka"
+        ]
+      },
+      "label": null,
+      "value": 14,
+      "claim": "Ondrej Duda and Stanislav Lobotka combined 14 times (kick-off to 70')",
+      "evidence": {
+        "bidirectional_total": 14,
+        "source": "pass_network_Slovakia.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.176470588235294,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.top_pair.SLO.w0.denis_vavro_peter_pekar_k",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Slovakia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 69,
+        "source": "pass_network_window",
+        "text": "kick-off to 70'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": {
+        "pair": [
+          "Denis Vavro",
+          "Peter Pekar\u00edk"
+        ]
+      },
+      "label": null,
+      "value": 13,
+      "claim": "Denis Vavro and Peter Pekar\u00edk combined 13 times (kick-off to 70')",
+      "evidence": {
+        "bidirectional_total": 13,
+        "source": "pass_network_Slovakia.json"
+      },
+      "threshold": {
+        "constant": "MIN_PAIR_COUNT",
+        "value": 8
+      },
+      "notability": 1.0924369747899159,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.concentration.SLO.w0",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Slovakia",
+      "window": {
+        "index": 0,
+        "from_minute": 0,
+        "to_minute": 69,
+        "source": "pass_network_window",
+        "text": "kick-off to 70'"
+      },
+      "game_states": [
+        "level",
+        "leading"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 0.3908,
+      "claim": null,
+      "evidence": {
+        "top3_share": 0.3908,
+        "window_passes": 238,
+        "source": "pass_network_Slovakia.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.SLO.w1.denis_vavro",
+      "category": "passing",
+      "type": "hub",
+      "team": "Slovakia",
+      "window": {
+        "index": 1,
+        "from_minute": 69,
+        "to_minute": 80,
+        "source": "pass_network_window",
+        "text": "70' to 81'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": {
+        "player": "Denis Vavro",
+        "display_name": "Denis Vavro"
+      },
+      "label": null,
+      "value": 0.2,
+      "claim": "Denis Vavro was a hub for Slovakia, involved in 20.0% of passes (70' to 81')",
+      "evidence": {
+        "passes_made": 9,
+        "passes_received": 7,
+        "share": 0.2,
+        "source": "pass_network_Slovakia.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.3333333333333335,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.hub.SLO.w1.stanislav_lobotka",
+      "category": "passing",
+      "type": "hub",
+      "team": "Slovakia",
+      "window": {
+        "index": 1,
+        "from_minute": 69,
+        "to_minute": 80,
+        "source": "pass_network_window",
+        "text": "70' to 81'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": {
+        "player": "Stanislav Lobotka",
+        "display_name": "Stanislav Lobotka"
+      },
+      "label": null,
+      "value": 0.15,
+      "claim": "Stanislav Lobotka was a hub for Slovakia, involved in 15.0% of passes (70' to 81')",
+      "evidence": {
+        "passes_made": 7,
+        "passes_received": 5,
+        "share": 0.15,
+        "source": "pass_network_Slovakia.json"
+      },
+      "threshold": {
+        "constant": "HUB_SHARE",
+        "value": 0.15
+      },
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "passing.concentration.SLO.w1",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Slovakia",
+      "window": {
+        "index": 1,
+        "from_minute": 69,
+        "to_minute": 80,
+        "source": "pass_network_window",
+        "text": "70' to 81'"
+      },
+      "game_states": [
+        "leading"
+      ],
+      "subject": null,
+      "label": null,
+      "value": 0.4875,
+      "claim": null,
+      "evidence": {
+        "top3_share": 0.4875,
+        "window_passes": 40,
+        "source": "pass_network_Slovakia.json"
+      },
+      "threshold": null,
+      "notability": 1.0,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "cross.comparison.block_height.SLO",
+      "category": "cross_cutting",
+      "type": "comparison",
+      "team": "Slovakia",
+      "window": null,
+      "game_states": [],
+      "subject": null,
+      "label": "deeper",
+      "value": 5.93,
+      "claim": "Slovakia's average out-of-possession position was 5.9 yards deeper than Belgium's",
+      "evidence": {
+        "deeper_x": 52.87,
+        "other_x": 58.8,
+        "gap": 5.93
+      },
+      "threshold": {
+        "constant": "COMPARE_MIN_YARDS",
+        "value": 5
+      },
+      "notability": 1.186,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "cross.comparison.concentration.BEL",
+      "category": "cross_cutting",
+      "type": "comparison",
+      "team": "Belgium",
+      "window": null,
+      "game_states": [],
+      "subject": null,
+      "label": "more_concentrated",
+      "value": 5.01,
+      "claim": "Belgium's passing was more concentrated than Slovakia's: the top three players had 44.1% of involvement against 39.1% (kick-off to 57')",
+      "evidence": {
+        "higher_value": 0.4409,
+        "other_value": 0.3908,
+        "gap": 5.01
+      },
+      "threshold": {
+        "constant": "COMPARE_MIN_POINTS",
+        "value": 5
+      },
+      "notability": 1.0020000000000007,
+      "definitions_version": "0.1.0"
+    },
+    {
+      "id": "cross.comparison.team_width.BEL",
+      "category": "cross_cutting",
+      "type": "comparison",
+      "team": "Belgium",
+      "window": null,
+      "game_states": [],
+      "subject": null,
+      "label": "wider",
+      "value": 5.2,
+      "claim": null,
+      "evidence": {
+        "gap": 5.2
+      },
+      "threshold": {
+        "constant": "COMPARE_MIN_YARDS",
+        "value": 5
+      },
+      "notability": 1.0399999999999991,
+      "definitions_version": "0.1.0"
+    }
+  ],
+  "suppressed": [
+    {
+      "id": "in_possession.player_zone.BEL.w1.koen_casteels",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 1,
+        "from_minute": 56,
+        "to_minute": 73,
+        "source": "on_ball_period",
+        "text": "57' to 74'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 9,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w2.zeno_debast",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 2,
+        "from_minute": 73,
+        "to_minute": 83,
+        "source": "on_ball_period",
+        "text": "74' to 84'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 6,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w2.koen_casteels",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 2,
+        "from_minute": 73,
+        "to_minute": 83,
+        "source": "on_ball_period",
+        "text": "74' to 84'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w2.yannick_carrasco",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 2,
+        "from_minute": 73,
+        "to_minute": 83,
+        "source": "on_ball_period",
+        "text": "74' to 84'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w2.johan_bakayoko",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 2,
+        "from_minute": 73,
+        "to_minute": 83,
+        "source": "on_ball_period",
+        "text": "74' to 84'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w2.youri_tielemans",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 2,
+        "from_minute": 73,
+        "to_minute": 83,
+        "source": "on_ball_period",
+        "text": "74' to 84'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 2,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w2.j_r_my_doku",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 2,
+        "from_minute": 73,
+        "to_minute": 83,
+        "source": "on_ball_period",
+        "text": "74' to 84'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 1,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.team_height.BEL.w2",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Belgium",
+      "window": {
+        "index": 2,
+        "from_minute": 73,
+        "to_minute": 83,
+        "source": "on_ball_period",
+        "text": "74' to 84'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_width.BEL.w2",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Belgium",
+      "window": {
+        "index": 2,
+        "from_minute": 73,
+        "to_minute": 83,
+        "source": "on_ball_period",
+        "text": "74' to 84'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w3.wout_faes",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 3,
+        "from_minute": 83,
+        "to_minute": 99,
+        "source": "on_ball_period",
+        "text": "84' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 8,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w3.koen_casteels",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 3,
+        "from_minute": 83,
+        "to_minute": 99,
+        "source": "on_ball_period",
+        "text": "84' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 7,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w3.kevin_de_bruyne",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 3,
+        "from_minute": 83,
+        "to_minute": 99,
+        "source": "on_ball_period",
+        "text": "84' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 6,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w3.youri_tielemans",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 3,
+        "from_minute": 83,
+        "to_minute": 99,
+        "source": "on_ball_period",
+        "text": "84' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 5,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w3.romelu_lukaku",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 3,
+        "from_minute": 83,
+        "to_minute": 99,
+        "source": "on_ball_period",
+        "text": "84' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 5,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w3.timothy_castagne",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 3,
+        "from_minute": 83,
+        "to_minute": 99,
+        "source": "on_ball_period",
+        "text": "84' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 4,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.BEL.w3.amadou_onana",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Belgium",
+      "window": {
+        "index": 3,
+        "from_minute": 83,
+        "to_minute": 99,
+        "source": "on_ball_period",
+        "text": "84' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 4,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.team_height.BEL.w3",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Belgium",
+      "window": {
+        "index": 3,
+        "from_minute": 83,
+        "to_minute": 99,
+        "source": "on_ball_period",
+        "text": "84' to full time"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 2,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_width.BEL.w3",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Belgium",
+      "window": {
+        "index": 3,
+        "from_minute": 83,
+        "to_minute": 99,
+        "source": "on_ball_period",
+        "text": "84' to full time"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 2,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w1.david_strelec",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 1,
+        "from_minute": 69,
+        "to_minute": 80,
+        "source": "on_ball_period",
+        "text": "70' to 81'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 7,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w1.tom_suslov",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 1,
+        "from_minute": 69,
+        "to_minute": 80,
+        "source": "on_ball_period",
+        "text": "70' to 81'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 4,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w1.d_vid_hancko",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 1,
+        "from_minute": 69,
+        "to_minute": 80,
+        "source": "on_ball_period",
+        "text": "70' to 81'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w1.martin_d_bravka",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 1,
+        "from_minute": 69,
+        "to_minute": 80,
+        "source": "on_ball_period",
+        "text": "70' to 81'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w1.ivan_schranz",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 1,
+        "from_minute": 69,
+        "to_minute": 80,
+        "source": "on_ball_period",
+        "text": "70' to 81'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 1,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.team_height.SLO.w1",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Slovakia",
+      "window": {
+        "index": 1,
+        "from_minute": 69,
+        "to_minute": 80,
+        "source": "on_ball_period",
+        "text": "70' to 81'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 4,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_width.SLO.w1",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Slovakia",
+      "window": {
+        "index": 1,
+        "from_minute": 69,
+        "to_minute": 80,
+        "source": "on_ball_period",
+        "text": "70' to 81'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 4,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w2.d_vid_hancko",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 2,
+        "from_minute": 80,
+        "to_minute": 93,
+        "source": "on_ball_period",
+        "text": "81' to 90+4'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 7,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w2.ondrej_duda",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 2,
+        "from_minute": 80,
+        "to_minute": 93,
+        "source": "on_ball_period",
+        "text": "81' to 90+4'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 6,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w2.tom_suslov",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 2,
+        "from_minute": 80,
+        "to_minute": 93,
+        "source": "on_ball_period",
+        "text": "81' to 90+4'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w2.martin_d_bravka",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 2,
+        "from_minute": 80,
+        "to_minute": 93,
+        "source": "on_ball_period",
+        "text": "81' to 90+4'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w2.david_strelec",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 2,
+        "from_minute": 80,
+        "to_minute": 93,
+        "source": "on_ball_period",
+        "text": "81' to 90+4'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 2,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w2.d_vid_uri",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 2,
+        "from_minute": 80,
+        "to_minute": 93,
+        "source": "on_ball_period",
+        "text": "81' to 90+4'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 2,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w2.milan_kriniar",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 2,
+        "from_minute": 80,
+        "to_minute": 93,
+        "source": "on_ball_period",
+        "text": "81' to 90+4'"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 1,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.team_height.SLO.w2",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Slovakia",
+      "window": {
+        "index": 2,
+        "from_minute": 80,
+        "to_minute": 93,
+        "source": "on_ball_period",
+        "text": "81' to 90+4'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_width.SLO.w2",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Slovakia",
+      "window": {
+        "index": 2,
+        "from_minute": 80,
+        "to_minute": 93,
+        "source": "on_ball_period",
+        "text": "81' to 90+4'"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 0,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w3.david_strelec",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 3,
+        "from_minute": 93,
+        "to_minute": 99,
+        "source": "on_ball_period",
+        "text": "90+4' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 8,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w3.stanislav_lobotka",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 3,
+        "from_minute": 93,
+        "to_minute": 99,
+        "source": "on_ball_period",
+        "text": "90+4' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 6,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w3.d_vid_hancko",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 3,
+        "from_minute": 93,
+        "to_minute": 99,
+        "source": "on_ball_period",
+        "text": "90+4' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 4,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w3.adam_obert",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 3,
+        "from_minute": 93,
+        "to_minute": 99,
+        "source": "on_ball_period",
+        "text": "90+4' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 4,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w3.d_vid_uri",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 3,
+        "from_minute": 93,
+        "to_minute": 99,
+        "source": "on_ball_period",
+        "text": "90+4' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 3,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.player_zone.SLO.w3.martin_d_bravka",
+      "category": "in_possession",
+      "type": "player_zone",
+      "team": "Slovakia",
+      "window": {
+        "index": 3,
+        "from_minute": 93,
+        "to_minute": 99,
+        "source": "on_ball_period",
+        "text": "90+4' to full time"
+      },
+      "reason": "MIN_NODE_EVENTS",
+      "detail": {
+        "event_count": 2,
+        "required": 10
+      }
+    },
+    {
+      "id": "in_possession.team_height.SLO.w3",
+      "category": "in_possession",
+      "type": "team_height",
+      "team": "Slovakia",
+      "window": {
+        "index": 3,
+        "from_minute": 93,
+        "to_minute": 99,
+        "source": "on_ball_period",
+        "text": "90+4' to full time"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 1,
+        "required": 8
+      }
+    },
+    {
+      "id": "in_possession.team_width.SLO.w3",
+      "category": "in_possession",
+      "type": "team_width",
+      "team": "Slovakia",
+      "window": {
+        "index": 3,
+        "from_minute": 93,
+        "to_minute": 99,
+        "source": "on_ball_period",
+        "text": "90+4' to full time"
+      },
+      "reason": "MIN_ELIGIBLE_OUTFIELD",
+      "detail": {
+        "eligible_outfield_count": 1,
+        "required": 8
+      }
+    },
+    {
+      "id": "passing.hub.SLO.w2",
+      "category": "passing",
+      "type": "hub",
+      "team": "Slovakia",
+      "window": {
+        "index": 2,
+        "from_minute": 80,
+        "to_minute": 93,
+        "source": "pass_network_window",
+        "text": "81' to 90+4'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 22,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.no_hub.SLO.w2",
+      "category": "passing",
+      "type": "no_hub",
+      "team": "Slovakia",
+      "window": {
+        "index": 2,
+        "from_minute": 80,
+        "to_minute": 93,
+        "source": "pass_network_window",
+        "text": "81' to 90+4'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 22,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.top_pair.SLO.w2",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Slovakia",
+      "window": {
+        "index": 2,
+        "from_minute": 80,
+        "to_minute": 93,
+        "source": "pass_network_window",
+        "text": "81' to 90+4'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 22,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.concentration.SLO.w2",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Slovakia",
+      "window": {
+        "index": 2,
+        "from_minute": 80,
+        "to_minute": 93,
+        "source": "pass_network_window",
+        "text": "81' to 90+4'"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 22,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.hub.SLO.w3",
+      "category": "passing",
+      "type": "hub",
+      "team": "Slovakia",
+      "window": {
+        "index": 3,
+        "from_minute": 93,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "90+4' to full time"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 9,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.no_hub.SLO.w3",
+      "category": "passing",
+      "type": "no_hub",
+      "team": "Slovakia",
+      "window": {
+        "index": 3,
+        "from_minute": 93,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "90+4' to full time"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 9,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.top_pair.SLO.w3",
+      "category": "passing",
+      "type": "top_pair",
+      "team": "Slovakia",
+      "window": {
+        "index": 3,
+        "from_minute": 93,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "90+4' to full time"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 9,
+        "required": 40
+      }
+    },
+    {
+      "id": "passing.concentration.SLO.w3",
+      "category": "passing",
+      "type": "concentration",
+      "team": "Slovakia",
+      "window": {
+        "index": 3,
+        "from_minute": 93,
+        "to_minute": null,
+        "source": "pass_network_window",
+        "text": "90+4' to full time"
+      },
+      "reason": "MIN_WINDOW_PASSES",
+      "detail": {
+        "window_passes": 9,
+        "required": 40
+      }
+    },
+    {
+      "id": "cross.comparison.team_height",
+      "category": "cross_cutting",
+      "type": "comparison",
+      "team": null,
+      "window": null,
+      "reason": "COMPARE_MIN_YARDS",
+      "detail": {
+        "gap": 1.1,
+        "required": 5
+      }
+    }
+  ],
+  "metadata": {
+    "match_id": 3930164,
+    "definitions_version": "0.1.0",
+    "teams": [
+      "Belgium",
+      "Slovakia"
+    ]
+  }
+}

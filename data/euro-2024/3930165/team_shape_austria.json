@@ -1,0 +1,1321 @@
+{
+  "on_ball": {
+    "periods": [
+      {
+        "from_minute": 0,
+        "from_period": 1,
+        "to_minute": 58,
+        "to_period": 2,
+        "players_in": [
+          "Patrick Pentz",
+          "Stefan Posch",
+          "Kevin Danso",
+          "Maximilian W\u00f6ber",
+          "Philipp Mwene",
+          "Nicolas Seiwald",
+          "Florian Grillitsch",
+          "Konrad Laimer",
+          "Christoph Baumgartner",
+          "Marcel Sabitzer",
+          "Michael Gregoritsch"
+        ],
+        "players_out": [],
+        "nodes": [
+          {
+            "player_id": 11396,
+            "player": "Florian Grillitsch",
+            "display_name": "Florian Grillitsch",
+            "x": 58.03,
+            "y": 33.22,
+            "event_count": 66,
+            "lane_counts": {
+              "left_wing": 15,
+              "left_half_space": 16,
+              "centre": 25,
+              "right_half_space": 5,
+              "right_wing": 5
+            },
+            "band_counts": {
+              "own_third": 16,
+              "own_half": 19,
+              "opposition_half": 23,
+              "final_third": 8
+            }
+          },
+          {
+            "player_id": 8068,
+            "player": "Maximilian W\u00f6ber",
+            "display_name": "Maximilian W\u00f6ber",
+            "x": 46.92,
+            "y": 18.28,
+            "event_count": 45,
+            "lane_counts": {
+              "left_wing": 21,
+              "left_half_space": 21,
+              "centre": 3,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 18,
+              "own_half": 17,
+              "opposition_half": 8,
+              "final_third": 2
+            }
+          },
+          {
+            "player_id": 11820,
+            "player": "Kevin Danso",
+            "display_name": "Kevin Danso",
+            "x": 42.31,
+            "y": 51.47,
+            "event_count": 42,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 1,
+              "centre": 15,
+              "right_half_space": 23,
+              "right_wing": 3
+            },
+            "band_counts": {
+              "own_third": 22,
+              "own_half": 13,
+              "opposition_half": 7,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 11821,
+            "player": "Stefan Posch",
+            "display_name": "Stefan Posch",
+            "x": 64.97,
+            "y": 66.85,
+            "event_count": 40,
+            "lane_counts": {
+              "left_wing": 3,
+              "left_half_space": 0,
+              "centre": 1,
+              "right_half_space": 6,
+              "right_wing": 30
+            },
+            "band_counts": {
+              "own_third": 8,
+              "own_half": 4,
+              "opposition_half": 12,
+              "final_third": 16
+            }
+          },
+          {
+            "player_id": 39460,
+            "player": "Nicolas Seiwald",
+            "display_name": "Nicolas Seiwald",
+            "x": 54.79,
+            "y": 42.96,
+            "event_count": 36,
+            "lane_counts": {
+              "left_wing": 3,
+              "left_half_space": 6,
+              "centre": 9,
+              "right_half_space": 13,
+              "right_wing": 5
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 18,
+              "opposition_half": 14,
+              "final_third": 1
+            }
+          },
+          {
+            "player_id": 8518,
+            "player": "Marcel Sabitzer",
+            "display_name": "Marcel Sabitzer",
+            "x": 73.04,
+            "y": 16.03,
+            "event_count": 31,
+            "lane_counts": {
+              "left_wing": 24,
+              "left_half_space": 0,
+              "centre": 6,
+              "right_half_space": 1,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 5,
+              "own_half": 7,
+              "opposition_half": 5,
+              "final_third": 14
+            }
+          },
+          {
+            "player_id": 9731,
+            "player": "Patrick Pentz",
+            "display_name": "Patrick Pentz",
+            "x": 13.17,
+            "y": 37.21,
+            "event_count": 30,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 9,
+              "centre": 18,
+              "right_half_space": 0,
+              "right_wing": 3
+            },
+            "band_counts": {
+              "own_third": 30,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 24977,
+            "player": "Christoph Baumgartner",
+            "display_name": "Christoph Baumgartner",
+            "x": 81.83,
+            "y": 28.51,
+            "event_count": 30,
+            "lane_counts": {
+              "left_wing": 8,
+              "left_half_space": 5,
+              "centre": 17,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 1,
+              "own_half": 4,
+              "opposition_half": 10,
+              "final_third": 15
+            }
+          },
+          {
+            "player_id": 8309,
+            "player": "Michael Gregoritsch",
+            "display_name": "Michael Gregoritsch",
+            "x": 78.69,
+            "y": 31.77,
+            "event_count": 29,
+            "lane_counts": {
+              "left_wing": 7,
+              "left_half_space": 5,
+              "centre": 14,
+              "right_half_space": 3,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 5,
+              "opposition_half": 10,
+              "final_third": 14
+            }
+          },
+          {
+            "player_id": 8506,
+            "player": "Konrad Laimer",
+            "display_name": "Konrad Laimer",
+            "x": 74.51,
+            "y": 49.2,
+            "event_count": 29,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 7,
+              "centre": 5,
+              "right_half_space": 10,
+              "right_wing": 7
+            },
+            "band_counts": {
+              "own_third": 5,
+              "own_half": 5,
+              "opposition_half": 3,
+              "final_third": 16
+            }
+          },
+          {
+            "player_id": 13315,
+            "player": "Philipp Mwene",
+            "display_name": "Philipp Mwene",
+            "x": 71.77,
+            "y": 6.95,
+            "event_count": 24,
+            "lane_counts": {
+              "left_wing": 23,
+              "left_half_space": 1,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 6,
+              "opposition_half": 6,
+              "final_third": 9
+            }
+          }
+        ],
+        "hull": [
+          [
+            64.97,
+            66.85
+          ],
+          [
+            13.17,
+            37.21
+          ],
+          [
+            46.92,
+            18.28
+          ],
+          [
+            71.77,
+            6.95
+          ],
+          [
+            81.83,
+            28.51
+          ],
+          [
+            74.51,
+            49.2
+          ]
+        ]
+      },
+      {
+        "from_minute": 58,
+        "from_period": 2,
+        "to_minute": 59,
+        "to_period": 2,
+        "players_in": [
+          "Gernot Trauner",
+          "Marko Arnautovi\u0107"
+        ],
+        "players_out": [
+          "Maximilian W\u00f6ber",
+          "Michael Gregoritsch"
+        ],
+        "nodes": [],
+        "hull": []
+      },
+      {
+        "from_minute": 59,
+        "from_period": 2,
+        "to_minute": 87,
+        "to_period": 2,
+        "players_in": [
+          "Patrick Wimmer"
+        ],
+        "players_out": [
+          "Florian Grillitsch"
+        ],
+        "nodes": [
+          {
+            "player_id": 8778,
+            "player": "Gernot Trauner",
+            "display_name": "Gernot Trauner",
+            "x": 53.22,
+            "y": 20.77,
+            "event_count": 33,
+            "lane_counts": {
+              "left_wing": 16,
+              "left_half_space": 13,
+              "centre": 4,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 12,
+              "own_half": 9,
+              "opposition_half": 11,
+              "final_third": 1
+            }
+          },
+          {
+            "player_id": 39460,
+            "player": "Nicolas Seiwald",
+            "display_name": "Nicolas Seiwald",
+            "x": 68.71,
+            "y": 21.84,
+            "event_count": 26,
+            "lane_counts": {
+              "left_wing": 12,
+              "left_half_space": 7,
+              "centre": 7,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 5,
+              "own_half": 0,
+              "opposition_half": 10,
+              "final_third": 11
+            }
+          },
+          {
+            "player_id": 24977,
+            "player": "Christoph Baumgartner",
+            "display_name": "Christoph Baumgartner",
+            "x": 84.21,
+            "y": 27.54,
+            "event_count": 22,
+            "lane_counts": {
+              "left_wing": 11,
+              "left_half_space": 1,
+              "centre": 7,
+              "right_half_space": 3,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 7,
+              "final_third": 15
+            }
+          },
+          {
+            "player_id": 8506,
+            "player": "Konrad Laimer",
+            "display_name": "Konrad Laimer",
+            "x": 60.49,
+            "y": 44.09,
+            "event_count": 21,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 6,
+              "centre": 6,
+              "right_half_space": 8,
+              "right_wing": 1
+            },
+            "band_counts": {
+              "own_third": 4,
+              "own_half": 4,
+              "opposition_half": 8,
+              "final_third": 5
+            }
+          },
+          {
+            "player_id": 13315,
+            "player": "Philipp Mwene",
+            "display_name": "Philipp Mwene",
+            "x": 73.04,
+            "y": 9.13,
+            "event_count": 18,
+            "lane_counts": {
+              "left_wing": 14,
+              "left_half_space": 4,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 3,
+              "opposition_half": 4,
+              "final_third": 8
+            }
+          },
+          {
+            "player_id": 8518,
+            "player": "Marcel Sabitzer",
+            "display_name": "Marcel Sabitzer",
+            "x": 83.21,
+            "y": 16.56,
+            "event_count": 15,
+            "lane_counts": {
+              "left_wing": 6,
+              "left_half_space": 7,
+              "centre": 2,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 3,
+              "opposition_half": 0,
+              "final_third": 12
+            }
+          },
+          {
+            "player_id": 33297,
+            "player": "Patrick Wimmer",
+            "display_name": "Patrick Wimmer",
+            "x": 70.03,
+            "y": 54.45,
+            "event_count": 15,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 4,
+              "right_half_space": 8,
+              "right_wing": 3
+            },
+            "band_counts": {
+              "own_third": 2,
+              "own_half": 1,
+              "opposition_half": 7,
+              "final_third": 5
+            }
+          },
+          {
+            "player_id": 11820,
+            "player": "Kevin Danso",
+            "display_name": "Kevin Danso",
+            "x": 45.3,
+            "y": 45.27,
+            "event_count": 11,
+            "lane_counts": {
+              "left_wing": 1,
+              "left_half_space": 2,
+              "centre": 3,
+              "right_half_space": 3,
+              "right_wing": 2
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 3,
+              "opposition_half": 5,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 9731,
+            "player": "Patrick Pentz",
+            "display_name": "Patrick Pentz",
+            "x": 12.82,
+            "y": 33.49,
+            "event_count": 8,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 3,
+              "centre": 5,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 8,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 3325,
+            "player": "Marko Arnautovi\u0107",
+            "display_name": "Marko Arnautovi\u0107",
+            "x": 89.11,
+            "y": 35.83,
+            "event_count": 7,
+            "lane_counts": {
+              "left_wing": 1,
+              "left_half_space": 2,
+              "centre": 2,
+              "right_half_space": 2,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 2,
+              "final_third": 5
+            }
+          },
+          {
+            "player_id": 11821,
+            "player": "Stefan Posch",
+            "display_name": "Stefan Posch",
+            "x": 93.46,
+            "y": 63.14,
+            "event_count": 5,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 1,
+              "right_half_space": 0,
+              "right_wing": 4
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 1,
+              "final_third": 4
+            }
+          }
+        ],
+        "hull": [
+          [
+            93.46,
+            63.14
+          ],
+          [
+            12.82,
+            33.49
+          ],
+          [
+            73.04,
+            9.13
+          ],
+          [
+            83.21,
+            16.56
+          ],
+          [
+            89.11,
+            35.83
+          ]
+        ]
+      },
+      {
+        "from_minute": 87,
+        "from_period": 2,
+        "to_minute": 90,
+        "to_period": 2,
+        "players_in": [
+          "Alexander Prass"
+        ],
+        "players_out": [
+          "Philipp Mwene"
+        ],
+        "nodes": [],
+        "hull": []
+      },
+      {
+        "from_minute": 90,
+        "from_period": 2,
+        "to_minute": 100,
+        "to_period": 2,
+        "players_in": [
+          "Romano Schmid"
+        ],
+        "players_out": [
+          "Konrad Laimer"
+        ],
+        "nodes": [
+          {
+            "player_id": 33297,
+            "player": "Patrick Wimmer",
+            "display_name": "Patrick Wimmer",
+            "x": 64.24,
+            "y": 59.13,
+            "event_count": 22,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 3,
+              "right_half_space": 10,
+              "right_wing": 9
+            },
+            "band_counts": {
+              "own_third": 5,
+              "own_half": 2,
+              "opposition_half": 9,
+              "final_third": 6
+            }
+          },
+          {
+            "player_id": 8778,
+            "player": "Gernot Trauner",
+            "display_name": "Gernot Trauner",
+            "x": 50.54,
+            "y": 23.32,
+            "event_count": 18,
+            "lane_counts": {
+              "left_wing": 4,
+              "left_half_space": 10,
+              "centre": 4,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 6,
+              "own_half": 5,
+              "opposition_half": 7,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 11820,
+            "player": "Kevin Danso",
+            "display_name": "Kevin Danso",
+            "x": 50.57,
+            "y": 49.32,
+            "event_count": 18,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 8,
+              "right_half_space": 10,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 5,
+              "own_half": 3,
+              "opposition_half": 10,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 39460,
+            "player": "Nicolas Seiwald",
+            "display_name": "Nicolas Seiwald",
+            "x": 53.96,
+            "y": 40.51,
+            "event_count": 17,
+            "lane_counts": {
+              "left_wing": 1,
+              "left_half_space": 2,
+              "centre": 11,
+              "right_half_space": 0,
+              "right_wing": 3
+            },
+            "band_counts": {
+              "own_third": 6,
+              "own_half": 0,
+              "opposition_half": 8,
+              "final_third": 3
+            }
+          },
+          {
+            "player_id": 8784,
+            "player": "Romano Schmid",
+            "display_name": "Romano Schmid",
+            "x": 50.53,
+            "y": 40.31,
+            "event_count": 17,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 3,
+              "centre": 8,
+              "right_half_space": 6,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 10,
+              "own_half": 1,
+              "opposition_half": 2,
+              "final_third": 4
+            }
+          },
+          {
+            "player_id": 39545,
+            "player": "Alexander Prass",
+            "display_name": "Alexander Prass",
+            "x": 48.35,
+            "y": 27.09,
+            "event_count": 17,
+            "lane_counts": {
+              "left_wing": 9,
+              "left_half_space": 2,
+              "centre": 3,
+              "right_half_space": 3,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 9,
+              "own_half": 3,
+              "opposition_half": 1,
+              "final_third": 4
+            }
+          },
+          {
+            "player_id": 11821,
+            "player": "Stefan Posch",
+            "display_name": "Stefan Posch",
+            "x": 68.35,
+            "y": 63.04,
+            "event_count": 14,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 7,
+              "right_wing": 7
+            },
+            "band_counts": {
+              "own_third": 5,
+              "own_half": 0,
+              "opposition_half": 1,
+              "final_third": 8
+            }
+          },
+          {
+            "player_id": 24977,
+            "player": "Christoph Baumgartner",
+            "display_name": "Christoph Baumgartner",
+            "x": 83.69,
+            "y": 43.32,
+            "event_count": 13,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 4,
+              "centre": 3,
+              "right_half_space": 4,
+              "right_wing": 2
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 2,
+              "opposition_half": 3,
+              "final_third": 8
+            }
+          },
+          {
+            "player_id": 8518,
+            "player": "Marcel Sabitzer",
+            "display_name": "Marcel Sabitzer",
+            "x": 85.15,
+            "y": 27.53,
+            "event_count": 11,
+            "lane_counts": {
+              "left_wing": 6,
+              "left_half_space": 0,
+              "centre": 2,
+              "right_half_space": 0,
+              "right_wing": 3
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 3,
+              "final_third": 8
+            }
+          },
+          {
+            "player_id": 3325,
+            "player": "Marko Arnautovi\u0107",
+            "display_name": "Marko Arnautovi\u0107",
+            "x": 59.11,
+            "y": 41.83,
+            "event_count": 10,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 3,
+              "centre": 2,
+              "right_half_space": 5,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 8,
+              "opposition_half": 0,
+              "final_third": 2
+            }
+          },
+          {
+            "player_id": 9731,
+            "player": "Patrick Pentz",
+            "display_name": "Patrick Pentz",
+            "x": 28.59,
+            "y": 33.29,
+            "event_count": 7,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 1,
+              "centre": 6,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 6,
+              "own_half": 1,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          }
+        ],
+        "hull": [
+          [
+            68.35,
+            63.04
+          ],
+          [
+            28.59,
+            33.29
+          ],
+          [
+            50.54,
+            23.32
+          ],
+          [
+            85.15,
+            27.53
+          ],
+          [
+            83.69,
+            43.32
+          ]
+        ]
+      }
+    ]
+  },
+  "off_ball": {
+    "density_grid": {
+      "cols": 24,
+      "rows": 16,
+      "values": [
+        [
+          0.1473,
+          0.1699,
+          0.1921,
+          0.2134,
+          0.2329,
+          0.2502,
+          0.2646,
+          0.276,
+          0.2839,
+          0.2882,
+          0.2888,
+          0.2858,
+          0.2792,
+          0.2691,
+          0.2559,
+          0.2399,
+          0.2215,
+          0.2012,
+          0.1798,
+          0.1579,
+          0.1361,
+          0.115,
+          0.0953,
+          0.0773
+        ],
+        [
+          0.2055,
+          0.2365,
+          0.267,
+          0.2959,
+          0.3224,
+          0.3456,
+          0.3649,
+          0.3799,
+          0.3901,
+          0.3955,
+          0.396,
+          0.3916,
+          0.3824,
+          0.3686,
+          0.3506,
+          0.3289,
+          0.3041,
+          0.2768,
+          0.2479,
+          0.2182,
+          0.1886,
+          0.1599,
+          0.1329,
+          0.1083
+        ],
+        [
+          0.2724,
+          0.313,
+          0.3528,
+          0.3903,
+          0.4243,
+          0.454,
+          0.4785,
+          0.4972,
+          0.5099,
+          0.5163,
+          0.5164,
+          0.5103,
+          0.4981,
+          0.4803,
+          0.4572,
+          0.4293,
+          0.3975,
+          0.3625,
+          0.3254,
+          0.2872,
+          0.249,
+          0.2119,
+          0.1768,
+          0.1445
+        ],
+        [
+          0.3435,
+          0.3942,
+          0.4436,
+          0.49,
+          0.5319,
+          0.5682,
+          0.5978,
+          0.6203,
+          0.6352,
+          0.6424,
+          0.6419,
+          0.634,
+          0.6188,
+          0.5968,
+          0.5685,
+          0.5345,
+          0.4956,
+          0.4529,
+          0.4075,
+          0.3607,
+          0.3137,
+          0.2678,
+          0.2243,
+          0.1841
+        ],
+        [
+          0.4123,
+          0.4728,
+          0.5315,
+          0.5865,
+          0.6359,
+          0.6784,
+          0.7129,
+          0.7388,
+          0.7557,
+          0.7635,
+          0.7625,
+          0.7527,
+          0.7347,
+          0.7088,
+          0.6757,
+          0.636,
+          0.5907,
+          0.5409,
+          0.4878,
+          0.4329,
+          0.3776,
+          0.3234,
+          0.2718,
+          0.2239
+        ],
+        [
+          0.4713,
+          0.5404,
+          0.6074,
+          0.6699,
+          0.7259,
+          0.7739,
+          0.8127,
+          0.8416,
+          0.8602,
+          0.8686,
+          0.8671,
+          0.8558,
+          0.8354,
+          0.8063,
+          0.7691,
+          0.7248,
+          0.6741,
+          0.6184,
+          0.5588,
+          0.4971,
+          0.4347,
+          0.3735,
+          0.3148,
+          0.2601
+        ],
+        [
+          0.5133,
+          0.589,
+          0.6623,
+          0.7308,
+          0.7921,
+          0.8446,
+          0.8869,
+          0.9183,
+          0.9385,
+          0.9476,
+          0.9458,
+          0.9336,
+          0.9115,
+          0.8801,
+          0.8401,
+          0.7923,
+          0.7378,
+          0.6777,
+          0.6135,
+          0.5468,
+          0.4792,
+          0.4126,
+          0.3487,
+          0.2889
+        ],
+        [
+          0.5329,
+          0.6125,
+          0.6898,
+          0.762,
+          0.827,
+          0.8826,
+          0.9276,
+          0.9611,
+          0.9828,
+          0.9927,
+          0.9912,
+          0.9788,
+          0.9559,
+          0.9234,
+          0.8819,
+          0.8323,
+          0.7756,
+          0.7131,
+          0.6463,
+          0.5767,
+          0.5062,
+          0.4366,
+          0.3696,
+          0.3069
+        ],
+        [
+          0.5279,
+          0.6082,
+          0.6866,
+          0.7603,
+          0.8268,
+          0.8841,
+          0.9308,
+          0.9658,
+          0.9889,
+          1.0,
+          0.9994,
+          0.9875,
+          0.965,
+          0.9326,
+          0.891,
+          0.8412,
+          0.7843,
+          0.7214,
+          0.6542,
+          0.5842,
+          0.5132,
+          0.443,
+          0.3755,
+          0.3121
+        ],
+        [
+          0.4993,
+          0.5772,
+          0.6538,
+          0.7262,
+          0.7922,
+          0.8495,
+          0.8967,
+          0.9327,
+          0.957,
+          0.9694,
+          0.9701,
+          0.9596,
+          0.9385,
+          0.9075,
+          0.8673,
+          0.819,
+          0.7636,
+          0.7025,
+          0.637,
+          0.5688,
+          0.4998,
+          0.4315,
+          0.3659,
+          0.3043
+        ],
+        [
+          0.4514,
+          0.524,
+          0.596,
+          0.6647,
+          0.7279,
+          0.7834,
+          0.8298,
+          0.8658,
+          0.8908,
+          0.9044,
+          0.9069,
+          0.8985,
+          0.8797,
+          0.8512,
+          0.8138,
+          0.7685,
+          0.7164,
+          0.6588,
+          0.5972,
+          0.533,
+          0.4681,
+          0.4041,
+          0.3425,
+          0.2848
+        ],
+        [
+          0.3906,
+          0.4556,
+          0.5205,
+          0.5832,
+          0.6415,
+          0.6935,
+          0.7375,
+          0.7723,
+          0.7973,
+          0.8119,
+          0.816,
+          0.81,
+          0.7941,
+          0.7691,
+          0.7357,
+          0.6948,
+          0.6475,
+          0.5952,
+          0.5391,
+          0.4809,
+          0.422,
+          0.364,
+          0.3083,
+          0.2562
+        ],
+        [
+          0.3236,
+          0.3794,
+          0.4357,
+          0.4906,
+          0.5423,
+          0.5889,
+          0.6291,
+          0.6615,
+          0.6854,
+          0.7002,
+          0.7057,
+          0.7021,
+          0.6895,
+          0.6685,
+          0.6399,
+          0.6045,
+          0.5633,
+          0.5175,
+          0.4685,
+          0.4176,
+          0.3661,
+          0.3155,
+          0.267,
+          0.2217
+        ],
+        [
+          0.2569,
+          0.3027,
+          0.3494,
+          0.3954,
+          0.4392,
+          0.4793,
+          0.5143,
+          0.5431,
+          0.5649,
+          0.5791,
+          0.5853,
+          0.5837,
+          0.5743,
+          0.5577,
+          0.5343,
+          0.5049,
+          0.4706,
+          0.4323,
+          0.3911,
+          0.3484,
+          0.3053,
+          0.2629,
+          0.2223,
+          0.1845
+        ],
+        [
+          0.1951,
+          0.2311,
+          0.268,
+          0.3049,
+          0.3403,
+          0.373,
+          0.402,
+          0.4263,
+          0.4451,
+          0.4578,
+          0.4642,
+          0.4641,
+          0.4576,
+          0.445,
+          0.4268,
+          0.4037,
+          0.3764,
+          0.3458,
+          0.3129,
+          0.2786,
+          0.244,
+          0.2101,
+          0.1776,
+          0.1473
+        ],
+        [
+          0.1416,
+          0.1685,
+          0.1963,
+          0.2243,
+          0.2514,
+          0.2768,
+          0.2996,
+          0.3189,
+          0.3342,
+          0.3449,
+          0.3507,
+          0.3515,
+          0.3474,
+          0.3384,
+          0.3251,
+          0.3078,
+          0.2872,
+          0.264,
+          0.239,
+          0.2128,
+          0.1864,
+          0.1605,
+          0.1357,
+          0.1126
+        ]
+      ]
+    },
+    "centroid": {
+      "x": 53.34,
+      "y": 41.21
+    },
+    "thirds_spine": [
+      {
+        "third": "defensive",
+        "x": 22.94,
+        "y": 40.17
+      },
+      {
+        "third": "middle",
+        "x": 59.53,
+        "y": 41.71
+      },
+      {
+        "third": "attacking",
+        "x": 93.38,
+        "y": 41.96
+      }
+    ],
+    "ellipse": {
+      "cx": 53.34,
+      "cy": 41.21,
+      "rx": 28.02,
+      "ry": 16.74,
+      "angle_deg": -177.5
+    },
+    "depth_line": {
+      "x": 70.45,
+      "percentile": 70
+    }
+  },
+  "metadata": {
+    "match_id": 3930165,
+    "team": "Austria",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Austria vs France",
+    "on_ball_event_count": 747,
+    "on_ball_period_count": 5,
+    "off_ball_bandwidth_yards": 8.0,
+    "off_ball_depth_percentile": 70,
+    "off_ball_grid_cols": 24,
+    "off_ball_grid_rows": 16,
+    "phase_filter": "open_play_only",
+    "coordinate_system": "statsbomb_120x80_normalised_attack_right",
+    "coordinate_note": "StatsBomb event and 360 freeze-frame coordinates are already in each team's own attack-right frame across both halves; no period-based flip is applied. Off-ball 360 dots from opponent-actor frames are mirrored (x\u2192120-x, y\u219280-y) into the analysed team's frame before pooling; own-actor dots are used as-is, and the goalkeeper is excluded.",
+    "camera_caveat": "360 frames follow the ball; the visible subset of out-of-possession positions is biased toward areas near the ball. The camera artifact and the real defensive shape point the same direction \u2014 they cannot be cleanly separated."
+  }
+}

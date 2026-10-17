@@ -1,0 +1,90 @@
+{
+  "team": "Hungary",
+  "progressive_actions": {
+    "total_count": 27,
+    "by_side": {
+      "left": 11,
+      "centre": 5,
+      "right": 11
+    },
+    "by_mode": {
+      "pass": 21,
+      "carry": 6
+    }
+  },
+  "progressors": [
+    {
+      "player_id": 46789,
+      "display_name": "Bendeg\u00faz Bolla",
+      "count": 6,
+      "passes": 5,
+      "carries": 1
+    },
+    {
+      "player_id": 40920,
+      "display_name": "M\u00e1rton D\u00e1rdai",
+      "count": 6,
+      "passes": 6,
+      "carries": 0
+    },
+    {
+      "player_id": 19316,
+      "display_name": "Roland Sallai",
+      "count": 5,
+      "passes": 3,
+      "carries": 2
+    },
+    {
+      "player_id": 21209,
+      "display_name": "Dominik Szoboszlai",
+      "count": 4,
+      "passes": 2,
+      "carries": 2
+    },
+    {
+      "player_id": 89635,
+      "display_name": "Milos Kerkez",
+      "count": 2,
+      "passes": 1,
+      "carries": 1
+    },
+    {
+      "player_id": 11268,
+      "display_name": "Attila Fiola",
+      "count": 1,
+      "passes": 1,
+      "carries": 0
+    },
+    {
+      "player_id": 8524,
+      "display_name": "P\u00e9ter Gul\u00e1csi",
+      "count": 1,
+      "passes": 1,
+      "carries": 0
+    },
+    {
+      "player_id": 8509,
+      "display_name": "Willi Orban",
+      "count": 1,
+      "passes": 1,
+      "carries": 0
+    },
+    {
+      "player_id": 73886,
+      "display_name": "Zsolt Nagy",
+      "count": 1,
+      "passes": 1,
+      "carries": 0
+    }
+  ],
+  "params": {
+    "progressive_threshold": 0.25
+  },
+  "metadata": {
+    "match_id": 3930168,
+    "team": "Hungary",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Germany vs Hungary",
+    "open_play_filter": "play_pattern"
+  }
+}

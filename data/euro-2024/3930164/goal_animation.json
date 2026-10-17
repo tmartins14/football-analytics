@@ -1,0 +1,143 @@
+{
+  "goals": [
+    {
+      "window": {
+        "anchor_event_id": "58d2164c-49cd-4096-b09d-60e8e2f616a6",
+        "start_event_id": "ef7c22c0-a66a-4ce4-81e0-c67e94e7b576",
+        "end_event_id": "58d2164c-49cd-4096-b09d-60e8e2f616a6",
+        "period": 1,
+        "window_seconds": 10.0,
+        "t_span_seconds": 29.777
+      },
+      "frames": [
+        {
+          "event_id": "ef7c22c0-a66a-4ce4-81e0-c67e94e7b576",
+          "t_seconds": 20.969,
+          "team": "Belgium",
+          "event_type": "Pass",
+          "ball_x": 9.8,
+          "ball_y": 80.0,
+          "ball_end_x": 4.5,
+          "ball_end_y": 75.9,
+          "actor": "Timothy Castagne",
+          "outcome": null
+        },
+        {
+          "event_id": "cc62c026-964d-4365-8244-fb668729405d",
+          "t_seconds": 21.569,
+          "team": "Belgium",
+          "event_type": "Carry",
+          "ball_x": 4.5,
+          "ball_y": 75.9,
+          "ball_end_x": 3.9,
+          "ball_end_y": 75.0,
+          "actor": "J\u00e9r\u00e9my Doku",
+          "outcome": null
+        },
+        {
+          "event_id": "b8cec28d-9113-4db8-bab9-c9c790813635",
+          "t_seconds": 24.491,
+          "team": "Slovakia",
+          "event_type": "Pressure",
+          "ball_x": 116.2,
+          "ball_y": 5.0,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "R\u00f3bert Bo\u017een\u00edk",
+          "outcome": null
+        },
+        {
+          "event_id": "056efa02-2d96-493f-9899-6655a2d301e2",
+          "t_seconds": 25.182,
+          "team": "Belgium",
+          "event_type": "Pass",
+          "ball_x": 3.9,
+          "ball_y": 75.0,
+          "ball_end_x": 10.0,
+          "ball_end_y": 48.0,
+          "actor": "J\u00e9r\u00e9my Doku",
+          "outcome": "Incomplete"
+        },
+        {
+          "event_id": "000ee578-5f4e-428d-bb9e-73701d0704b6",
+          "t_seconds": 27.174,
+          "team": "Belgium",
+          "event_type": "Pressure",
+          "ball_x": 9.8,
+          "ball_y": 46.4,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Zeno Debast",
+          "outcome": null
+        },
+        {
+          "event_id": "cf1960f2-8047-49d5-9bae-4a4f3660cc74",
+          "t_seconds": 27.459,
+          "team": "Slovakia",
+          "event_type": "Pass",
+          "ball_x": 110.1,
+          "ball_y": 32.1,
+          "ball_end_x": 105.4,
+          "ball_end_y": 32.4,
+          "actor": "Ivan Schranz",
+          "outcome": null
+        },
+        {
+          "event_id": "4eeb81a5-36d8-4e73-87a0-c57dfe8b1f60",
+          "t_seconds": 28.376,
+          "team": "Slovakia",
+          "event_type": "Shot",
+          "ball_x": 105.4,
+          "ball_y": 32.4,
+          "ball_end_x": 117.2,
+          "ball_end_y": 37.5,
+          "actor": "Juraj Kucka",
+          "outcome": null
+        },
+        {
+          "event_id": "083264df-8151-40cb-b831-a53a78096ba6",
+          "t_seconds": 29.693,
+          "team": "Slovakia",
+          "event_type": "Ball Recovery",
+          "ball_x": 116.8,
+          "ball_y": 27.6,
+          "ball_end_x": null,
+          "ball_end_y": null,
+          "actor": "Ivan Schranz",
+          "outcome": null
+        },
+        {
+          "event_id": "58d2164c-49cd-4096-b09d-60e8e2f616a6",
+          "t_seconds": 29.777,
+          "team": "Slovakia",
+          "event_type": "Shot",
+          "ball_x": 116.3,
+          "ball_y": 28.9,
+          "ball_end_x": 120.0,
+          "ball_end_y": 42.6,
+          "actor": "Ivan Schranz",
+          "outcome": null
+        }
+      ],
+      "context": {
+        "goal": {
+          "event_id": "58d2164c-49cd-4096-b09d-60e8e2f616a6",
+          "minute": 6,
+          "second": 5,
+          "scorer": "Ivan Schranz",
+          "team": "Slovakia"
+        }
+      },
+      "metadata": {
+        "match_id": 3930164,
+        "competition": "UEFA Euro 2024",
+        "match_label": "Belgium vs Slovakia"
+      }
+    }
+  ],
+  "match_metadata": {
+    "match_id": 3930164,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Belgium vs Slovakia"
+  }
+}

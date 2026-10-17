@@ -1,0 +1,1655 @@
+{
+  "on_ball": {
+    "periods": [
+      {
+        "from_minute": 0,
+        "from_period": 1,
+        "to_minute": 76,
+        "to_period": 2,
+        "players_in": [
+          "Gianluigi Donnarumma",
+          "Giovanni Di Lorenzo",
+          "Alessandro Bastoni",
+          "Riccardo Calafiori",
+          "Federico Dimarco",
+          "Jorge Luiz Frello Filho",
+          "Davide Frattesi",
+          "Nicol\u00f2 Barella",
+          "Federico Chiesa",
+          "Lorenzo Pellegrini",
+          "Gianluca Scamacca"
+        ],
+        "players_out": [],
+        "nodes": [
+          {
+            "player_id": 8181,
+            "player": "Nicol\u00f2 Barella",
+            "display_name": "Nicol\u00f2 Barella",
+            "x": 67.95,
+            "y": 35.75,
+            "event_count": 161,
+            "lane_counts": {
+              "left_wing": 21,
+              "left_half_space": 39,
+              "centre": 74,
+              "right_half_space": 26,
+              "right_wing": 1
+            },
+            "band_counts": {
+              "own_third": 8,
+              "own_half": 21,
+              "opposition_half": 108,
+              "final_third": 24
+            }
+          },
+          {
+            "player_id": 7024,
+            "player": "Jorge Luiz Frello Filho",
+            "display_name": "Jorginho",
+            "x": 73.68,
+            "y": 43.3,
+            "event_count": 158,
+            "lane_counts": {
+              "left_wing": 9,
+              "left_half_space": 23,
+              "centre": 62,
+              "right_half_space": 54,
+              "right_wing": 10
+            },
+            "band_counts": {
+              "own_third": 10,
+              "own_half": 5,
+              "opposition_half": 83,
+              "final_third": 60
+            }
+          },
+          {
+            "player_id": 11514,
+            "player": "Giovanni Di Lorenzo",
+            "display_name": "Giovanni Di Lorenzo",
+            "x": 67.19,
+            "y": 62.12,
+            "event_count": 148,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 8,
+              "right_half_space": 75,
+              "right_wing": 65
+            },
+            "band_counts": {
+              "own_third": 15,
+              "own_half": 25,
+              "opposition_half": 68,
+              "final_third": 40
+            }
+          },
+          {
+            "player_id": 7480,
+            "player": "Alessandro Bastoni",
+            "display_name": "Alessandro Bastoni",
+            "x": 51.88,
+            "y": 48.68,
+            "event_count": 144,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 4,
+              "centre": 76,
+              "right_half_space": 45,
+              "right_wing": 19
+            },
+            "band_counts": {
+              "own_third": 40,
+              "own_half": 50,
+              "opposition_half": 52,
+              "final_third": 2
+            }
+          },
+          {
+            "player_id": 41768,
+            "player": "Riccardo Calafiori",
+            "display_name": "Riccardo Calafiori",
+            "x": 59.25,
+            "y": 24.14,
+            "event_count": 107,
+            "lane_counts": {
+              "left_wing": 28,
+              "left_half_space": 47,
+              "centre": 32,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 19,
+              "own_half": 27,
+              "opposition_half": 46,
+              "final_third": 15
+            }
+          },
+          {
+            "player_id": 7156,
+            "player": "Federico Chiesa",
+            "display_name": "Federico Chiesa",
+            "x": 85.16,
+            "y": 66.37,
+            "event_count": 69,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 3,
+              "right_half_space": 21,
+              "right_wing": 45
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 8,
+              "opposition_half": 19,
+              "final_third": 42
+            }
+          },
+          {
+            "player_id": 6963,
+            "player": "Lorenzo Pellegrini",
+            "display_name": "Lorenzo Pellegrini",
+            "x": 79.59,
+            "y": 23.42,
+            "event_count": 61,
+            "lane_counts": {
+              "left_wing": 27,
+              "left_half_space": 22,
+              "centre": 6,
+              "right_half_space": 3,
+              "right_wing": 3
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 10,
+              "opposition_half": 20,
+              "final_third": 31
+            }
+          },
+          {
+            "player_id": 12255,
+            "player": "Federico Dimarco",
+            "display_name": "Federico Dimarco",
+            "x": 78.47,
+            "y": 10.29,
+            "event_count": 60,
+            "lane_counts": {
+              "left_wing": 55,
+              "left_half_space": 1,
+              "centre": 4,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 7,
+              "opposition_half": 19,
+              "final_third": 31
+            }
+          },
+          {
+            "player_id": 30926,
+            "player": "Davide Frattesi",
+            "display_name": "Davide Frattesi",
+            "x": 84.95,
+            "y": 58.14,
+            "event_count": 45,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 3,
+              "centre": 7,
+              "right_half_space": 11,
+              "right_wing": 24
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 3,
+              "opposition_half": 13,
+              "final_third": 26
+            }
+          },
+          {
+            "player_id": 7036,
+            "player": "Gianluigi Donnarumma",
+            "display_name": "Gianluigi Donnarumma",
+            "x": 12.22,
+            "y": 41.15,
+            "event_count": 24,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 23,
+              "right_half_space": 1,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 24,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 10992,
+            "player": "Gianluca Scamacca",
+            "display_name": "Gianluca Scamacca",
+            "x": 88.12,
+            "y": 49.22,
+            "event_count": 21,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 15,
+              "right_half_space": 2,
+              "right_wing": 4
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 6,
+              "final_third": 15
+            }
+          }
+        ],
+        "hull": [
+          [
+            12.22,
+            41.15
+          ],
+          [
+            78.47,
+            10.29
+          ],
+          [
+            88.12,
+            49.22
+          ],
+          [
+            85.16,
+            66.37
+          ],
+          [
+            67.19,
+            62.12
+          ]
+        ]
+      },
+      {
+        "from_minute": 76,
+        "from_period": 2,
+        "to_minute": 81,
+        "to_period": 2,
+        "players_in": [
+          "Andrea Cambiaso",
+          "Bryan Cristante"
+        ],
+        "players_out": [
+          "Federico Chiesa",
+          "Lorenzo Pellegrini"
+        ],
+        "nodes": [
+          {
+            "player_id": 6993,
+            "player": "Bryan Cristante",
+            "display_name": "Bryan Cristante",
+            "x": 58.11,
+            "y": 20.93,
+            "event_count": 35,
+            "lane_counts": {
+              "left_wing": 14,
+              "left_half_space": 13,
+              "centre": 8,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 11,
+              "own_half": 3,
+              "opposition_half": 14,
+              "final_third": 7
+            }
+          },
+          {
+            "player_id": 7024,
+            "player": "Jorge Luiz Frello Filho",
+            "display_name": "Jorginho",
+            "x": 67.77,
+            "y": 44.02,
+            "event_count": 27,
+            "lane_counts": {
+              "left_wing": 1,
+              "left_half_space": 5,
+              "centre": 7,
+              "right_half_space": 14,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 6,
+              "opposition_half": 12,
+              "final_third": 6
+            }
+          },
+          {
+            "player_id": 11514,
+            "player": "Giovanni Di Lorenzo",
+            "display_name": "Giovanni Di Lorenzo",
+            "x": 66.27,
+            "y": 64.5,
+            "event_count": 21,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 3,
+              "right_wing": 18
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 0,
+              "opposition_half": 12,
+              "final_third": 6
+            }
+          },
+          {
+            "player_id": 41768,
+            "player": "Riccardo Calafiori",
+            "display_name": "Riccardo Calafiori",
+            "x": 27.42,
+            "y": 20.62,
+            "event_count": 16,
+            "lane_counts": {
+              "left_wing": 5,
+              "left_half_space": 10,
+              "centre": 1,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 10,
+              "own_half": 6,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 12255,
+            "player": "Federico Dimarco",
+            "display_name": "Federico Dimarco",
+            "x": 71.48,
+            "y": 6.83,
+            "event_count": 16,
+            "lane_counts": {
+              "left_wing": 15,
+              "left_half_space": 1,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 2,
+              "own_half": 2,
+              "opposition_half": 4,
+              "final_third": 8
+            }
+          },
+          {
+            "player_id": 8181,
+            "player": "Nicol\u00f2 Barella",
+            "display_name": "Nicol\u00f2 Barella",
+            "x": 46.01,
+            "y": 16.19,
+            "event_count": 14,
+            "lane_counts": {
+              "left_wing": 9,
+              "left_half_space": 5,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 8,
+              "own_half": 0,
+              "opposition_half": 3,
+              "final_third": 3
+            }
+          },
+          {
+            "player_id": 50729,
+            "player": "Andrea Cambiaso",
+            "display_name": "Andrea Cambiaso",
+            "x": 85.26,
+            "y": 71.68,
+            "event_count": 12,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 12
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 6,
+              "final_third": 6
+            }
+          },
+          {
+            "player_id": 7480,
+            "player": "Alessandro Bastoni",
+            "display_name": "Alessandro Bastoni",
+            "x": 35.02,
+            "y": 45.09,
+            "event_count": 10,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 8,
+              "right_half_space": 2,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 7,
+              "own_half": 0,
+              "opposition_half": 3,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 30926,
+            "player": "Davide Frattesi",
+            "display_name": "Davide Frattesi",
+            "x": 70.06,
+            "y": 37.9,
+            "event_count": 8,
+            "lane_counts": {
+              "left_wing": 1,
+              "left_half_space": 4,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 3
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 5,
+              "opposition_half": 0,
+              "final_third": 3
+            }
+          },
+          {
+            "player_id": 7036,
+            "player": "Gianluigi Donnarumma",
+            "display_name": "Gianluigi Donnarumma",
+            "x": 7.8,
+            "y": 35.45,
+            "event_count": 2,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 2,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 2,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          }
+        ],
+        "hull": [
+          [
+            71.48,
+            6.83
+          ],
+          [
+            85.26,
+            71.68
+          ],
+          [
+            66.27,
+            64.5
+          ],
+          [
+            7.8,
+            35.45
+          ],
+          [
+            27.42,
+            20.62
+          ]
+        ]
+      },
+      {
+        "from_minute": 81,
+        "from_period": 2,
+        "to_minute": 82,
+        "to_period": 2,
+        "players_in": [
+          "Mateo Retegui"
+        ],
+        "players_out": [
+          "Gianluca Scamacca"
+        ],
+        "nodes": [
+          {
+            "player_id": 6993,
+            "player": "Bryan Cristante",
+            "display_name": "Bryan Cristante",
+            "x": 59.27,
+            "y": 58.09,
+            "event_count": 12,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 3,
+              "right_half_space": 6,
+              "right_wing": 3
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 3,
+              "opposition_half": 6,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 7024,
+            "player": "Jorge Luiz Frello Filho",
+            "display_name": "Jorginho",
+            "x": 74.54,
+            "y": 55.23,
+            "event_count": 7,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 7,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 6,
+              "final_third": 1
+            }
+          },
+          {
+            "player_id": 7480,
+            "player": "Alessandro Bastoni",
+            "display_name": "Alessandro Bastoni",
+            "x": 50.85,
+            "y": 60.98,
+            "event_count": 6,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 3,
+              "right_wing": 3
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 0,
+              "opposition_half": 3,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 41768,
+            "player": "Riccardo Calafiori",
+            "display_name": "Riccardo Calafiori",
+            "x": 54.28,
+            "y": 23.42,
+            "event_count": 6,
+            "lane_counts": {
+              "left_wing": 3,
+              "left_half_space": 0,
+              "centre": 3,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 3,
+              "opposition_half": 3,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 12255,
+            "player": "Federico Dimarco",
+            "display_name": "Federico Dimarco",
+            "x": 76.7,
+            "y": 7.53,
+            "event_count": 3,
+            "lane_counts": {
+              "left_wing": 3,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 3,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 11514,
+            "player": "Giovanni Di Lorenzo",
+            "display_name": "Giovanni Di Lorenzo",
+            "x": 41.2,
+            "y": 64.07,
+            "event_count": 3,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 3
+            },
+            "band_counts": {
+              "own_third": 1,
+              "own_half": 2,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 50729,
+            "player": "Andrea Cambiaso",
+            "display_name": "Andrea Cambiaso",
+            "x": 104.9,
+            "y": 70.0,
+            "event_count": 1,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 1
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 1
+            }
+          }
+        ],
+        "hull": [
+          [
+            104.9,
+            70.0
+          ],
+          [
+            41.2,
+            64.07
+          ],
+          [
+            54.28,
+            23.42
+          ],
+          [
+            76.7,
+            7.53
+          ]
+        ]
+      },
+      {
+        "from_minute": 82,
+        "from_period": 2,
+        "to_minute": 91,
+        "to_period": 2,
+        "players_in": [
+          "Matteo Darmian"
+        ],
+        "players_out": [
+          "Federico Dimarco"
+        ],
+        "nodes": [
+          {
+            "player_id": 7024,
+            "player": "Jorge Luiz Frello Filho",
+            "display_name": "Jorginho",
+            "x": 39.71,
+            "y": 25.8,
+            "event_count": 12,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 9,
+              "centre": 3,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 9,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 6993,
+            "player": "Bryan Cristante",
+            "display_name": "Bryan Cristante",
+            "x": 45.28,
+            "y": 40.07,
+            "event_count": 11,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 2,
+              "centre": 7,
+              "right_half_space": 2,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 5,
+              "own_half": 6,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 41768,
+            "player": "Riccardo Calafiori",
+            "display_name": "Riccardo Calafiori",
+            "x": 46.85,
+            "y": 12.43,
+            "event_count": 10,
+            "lane_counts": {
+              "left_wing": 10,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 10,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 8181,
+            "player": "Nicol\u00f2 Barella",
+            "display_name": "Nicol\u00f2 Barella",
+            "x": 54.87,
+            "y": 21.72,
+            "event_count": 6,
+            "lane_counts": {
+              "left_wing": 3,
+              "left_half_space": 0,
+              "centre": 3,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 3,
+              "opposition_half": 3,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 30926,
+            "player": "Davide Frattesi",
+            "display_name": "Davide Frattesi",
+            "x": 49.33,
+            "y": 57.32,
+            "event_count": 6,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 3,
+              "right_half_space": 0,
+              "right_wing": 3
+            },
+            "band_counts": {
+              "own_third": 1,
+              "own_half": 5,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 50729,
+            "player": "Andrea Cambiaso",
+            "display_name": "Andrea Cambiaso",
+            "x": 68.74,
+            "y": 40.4,
+            "event_count": 5,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 5,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 5,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 4587,
+            "player": "Matteo Darmian",
+            "display_name": "Matteo Darmian",
+            "x": 54.55,
+            "y": 8.1,
+            "event_count": 4,
+            "lane_counts": {
+              "left_wing": 4,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 1,
+              "own_half": 0,
+              "opposition_half": 3,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 7036,
+            "player": "Gianluigi Donnarumma",
+            "display_name": "Gianluigi Donnarumma",
+            "x": 8.6,
+            "y": 31.5,
+            "event_count": 4,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 4,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 4,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 7480,
+            "player": "Alessandro Bastoni",
+            "display_name": "Alessandro Bastoni",
+            "x": 49.1,
+            "y": 50.5,
+            "event_count": 3,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 3,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 3,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 11514,
+            "player": "Giovanni Di Lorenzo",
+            "display_name": "Giovanni Di Lorenzo",
+            "x": 27.8,
+            "y": 56.4,
+            "event_count": 3,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 3,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          }
+        ],
+        "hull": [
+          [
+            8.6,
+            31.5
+          ],
+          [
+            54.55,
+            8.1
+          ],
+          [
+            68.74,
+            40.4
+          ],
+          [
+            49.33,
+            57.32
+          ],
+          [
+            27.8,
+            56.4
+          ]
+        ]
+      },
+      {
+        "from_minute": 91,
+        "from_period": 2,
+        "to_minute": 96,
+        "to_period": 2,
+        "players_in": [
+          "Michael Ijemuan Folorunsho"
+        ],
+        "players_out": [
+          "Nicol\u00f2 Barella"
+        ],
+        "nodes": [
+          {
+            "player_id": 49445,
+            "player": "Michael Ijemuan Folorunsho",
+            "display_name": "Michael Folorunsho",
+            "x": 65.64,
+            "y": 36.79,
+            "event_count": 8,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 2,
+              "centre": 6,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 3,
+              "opposition_half": 5,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 6993,
+            "player": "Bryan Cristante",
+            "display_name": "Bryan Cristante",
+            "x": 58.52,
+            "y": 28.53,
+            "event_count": 6,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 4,
+              "centre": 2,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 3,
+              "opposition_half": 3,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 41768,
+            "player": "Riccardo Calafiori",
+            "display_name": "Riccardo Calafiori",
+            "x": 35.58,
+            "y": 16.02,
+            "event_count": 6,
+            "lane_counts": {
+              "left_wing": 3,
+              "left_half_space": 3,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 3,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 7480,
+            "player": "Alessandro Bastoni",
+            "display_name": "Alessandro Bastoni",
+            "x": 27.25,
+            "y": 51.98,
+            "event_count": 6,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 3,
+              "right_half_space": 0,
+              "right_wing": 3
+            },
+            "band_counts": {
+              "own_third": 6,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 7036,
+            "player": "Gianluigi Donnarumma",
+            "display_name": "Gianluigi Donnarumma",
+            "x": 11.44,
+            "y": 42.52,
+            "event_count": 5,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 4,
+              "right_half_space": 1,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 5,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 50729,
+            "player": "Andrea Cambiaso",
+            "display_name": "Andrea Cambiaso",
+            "x": 51.56,
+            "y": 53.86,
+            "event_count": 5,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 3,
+              "right_half_space": 0,
+              "right_wing": 2
+            },
+            "band_counts": {
+              "own_third": 2,
+              "own_half": 0,
+              "opposition_half": 3,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 7024,
+            "player": "Jorge Luiz Frello Filho",
+            "display_name": "Jorginho",
+            "x": 34.97,
+            "y": 62.2,
+            "event_count": 3,
+            "lane_counts": {
+              "left_wing": 0,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 1,
+              "right_wing": 2
+            },
+            "band_counts": {
+              "own_third": 3,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          },
+          {
+            "player_id": 31093,
+            "player": "Mateo Retegui",
+            "display_name": "Mateo Retegui",
+            "x": 84.2,
+            "y": 17.2,
+            "event_count": 2,
+            "lane_counts": {
+              "left_wing": 2,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 0,
+              "opposition_half": 0,
+              "final_third": 2
+            }
+          },
+          {
+            "player_id": 4587,
+            "player": "Matteo Darmian",
+            "display_name": "Matteo Darmian",
+            "x": 44.7,
+            "y": 13.9,
+            "event_count": 1,
+            "lane_counts": {
+              "left_wing": 1,
+              "left_half_space": 0,
+              "centre": 0,
+              "right_half_space": 0,
+              "right_wing": 0
+            },
+            "band_counts": {
+              "own_third": 0,
+              "own_half": 1,
+              "opposition_half": 0,
+              "final_third": 0
+            }
+          }
+        ],
+        "hull": [
+          [
+            34.97,
+            62.2
+          ],
+          [
+            11.44,
+            42.52
+          ],
+          [
+            35.58,
+            16.02
+          ],
+          [
+            44.7,
+            13.9
+          ],
+          [
+            84.2,
+            17.2
+          ],
+          [
+            51.56,
+            53.86
+          ]
+        ]
+      }
+    ]
+  },
+  "off_ball": {
+    "density_grid": {
+      "cols": 24,
+      "rows": 16,
+      "values": [
+        [
+          0.1,
+          0.1294,
+          0.1616,
+          0.195,
+          0.2274,
+          0.2567,
+          0.2807,
+          0.298,
+          0.3074,
+          0.3087,
+          0.3023,
+          0.289,
+          0.2704,
+          0.2478,
+          0.2228,
+          0.1966,
+          0.1704,
+          0.1451,
+          0.1212,
+          0.0991,
+          0.0794,
+          0.062,
+          0.0471,
+          0.0348
+        ],
+        [
+          0.1337,
+          0.1734,
+          0.217,
+          0.2622,
+          0.3064,
+          0.3466,
+          0.3799,
+          0.4041,
+          0.4178,
+          0.4206,
+          0.4128,
+          0.3958,
+          0.3713,
+          0.3413,
+          0.3078,
+          0.2726,
+          0.2372,
+          0.2027,
+          0.17,
+          0.1398,
+          0.1124,
+          0.0882,
+          0.0674,
+          0.05
+        ],
+        [
+          0.17,
+          0.2207,
+          0.2766,
+          0.3349,
+          0.392,
+          0.4442,
+          0.4878,
+          0.5199,
+          0.5386,
+          0.5433,
+          0.5344,
+          0.5137,
+          0.4832,
+          0.4455,
+          0.4031,
+          0.3583,
+          0.313,
+          0.2686,
+          0.2263,
+          0.187,
+          0.1511,
+          0.1192,
+          0.0916,
+          0.0684
+        ],
+        [
+          0.2061,
+          0.2679,
+          0.3362,
+          0.4076,
+          0.4778,
+          0.5423,
+          0.5965,
+          0.6368,
+          0.661,
+          0.668,
+          0.6585,
+          0.6344,
+          0.5983,
+          0.5533,
+          0.5024,
+          0.4483,
+          0.3932,
+          0.339,
+          0.2871,
+          0.2383,
+          0.1937,
+          0.1537,
+          0.1188,
+          0.0892
+        ],
+        [
+          0.2388,
+          0.3108,
+          0.3905,
+          0.474,
+          0.5566,
+          0.6326,
+          0.697,
+          0.7454,
+          0.7751,
+          0.7848,
+          0.7754,
+          0.7488,
+          0.7081,
+          0.6568,
+          0.5985,
+          0.5361,
+          0.4724,
+          0.4093,
+          0.3483,
+          0.2908,
+          0.2376,
+          0.1896,
+          0.1474,
+          0.1113
+        ],
+        [
+          0.2649,
+          0.3452,
+          0.4343,
+          0.5281,
+          0.6211,
+          0.7071,
+          0.7805,
+          0.8362,
+          0.8712,
+          0.884,
+          0.8753,
+          0.8474,
+          0.8037,
+          0.7479,
+          0.684,
+          0.6153,
+          0.5447,
+          0.4743,
+          0.4058,
+          0.3407,
+          0.28,
+          0.2247,
+          0.1757,
+          0.1335
+        ],
+        [
+          0.2816,
+          0.3676,
+          0.4634,
+          0.5645,
+          0.6651,
+          0.7588,
+          0.8393,
+          0.9011,
+          0.9409,
+          0.9569,
+          0.9499,
+          0.9222,
+          0.8772,
+          0.8192,
+          0.7521,
+          0.6795,
+          0.6043,
+          0.5289,
+          0.455,
+          0.3841,
+          0.3175,
+          0.2563,
+          0.2016,
+          0.1541
+        ],
+        [
+          0.2869,
+          0.3754,
+          0.4744,
+          0.5793,
+          0.6842,
+          0.7825,
+          0.8676,
+          0.9339,
+          0.9776,
+          0.997,
+          0.9925,
+          0.9664,
+          0.9224,
+          0.8645,
+          0.7969,
+          0.7232,
+          0.6462,
+          0.5684,
+          0.4916,
+          0.4173,
+          0.3468,
+          0.2815,
+          0.2226,
+          0.1711
+        ],
+        [
+          0.2801,
+          0.3676,
+          0.4659,
+          0.5706,
+          0.6759,
+          0.7754,
+          0.8623,
+          0.931,
+          0.9775,
+          1.0,
+          0.9987,
+          0.9758,
+          0.9346,
+          0.8794,
+          0.8139,
+          0.7419,
+          0.6661,
+          0.5888,
+          0.5118,
+          0.4366,
+          0.3648,
+          0.2976,
+          0.2366,
+          0.1828
+        ],
+        [
+          0.2618,
+          0.3448,
+          0.4385,
+          0.539,
+          0.6408,
+          0.7376,
+          0.8231,
+          0.8919,
+          0.9397,
+          0.9647,
+          0.9669,
+          0.9481,
+          0.9116,
+          0.8611,
+          0.8003,
+          0.7327,
+          0.6608,
+          0.5869,
+          0.5126,
+          0.4394,
+          0.3688,
+          0.3024,
+          0.2415,
+          0.1874
+        ],
+        [
+          0.2338,
+          0.3092,
+          0.3949,
+          0.4874,
+          0.5818,
+          0.6725,
+          0.7534,
+          0.8195,
+          0.8669,
+          0.8933,
+          0.8988,
+          0.8847,
+          0.854,
+          0.8099,
+          0.7558,
+          0.6949,
+          0.6295,
+          0.5615,
+          0.4926,
+          0.4242,
+          0.3577,
+          0.2945,
+          0.2362,
+          0.1841
+        ],
+        [
+          0.1992,
+          0.2647,
+          0.3397,
+          0.4212,
+          0.505,
+          0.5862,
+          0.6596,
+          0.7205,
+          0.7653,
+          0.7918,
+          0.7998,
+          0.7905,
+          0.766,
+          0.7293,
+          0.6834,
+          0.6308,
+          0.5738,
+          0.514,
+          0.4528,
+          0.3916,
+          0.3315,
+          0.2741,
+          0.2208,
+          0.1727
+        ],
+        [
+          0.1616,
+          0.2159,
+          0.2784,
+          0.3468,
+          0.4178,
+          0.4873,
+          0.5508,
+          0.6043,
+          0.6446,
+          0.6697,
+          0.6792,
+          0.6738,
+          0.6555,
+          0.6265,
+          0.5893,
+          0.546,
+          0.4986,
+          0.4484,
+          0.3966,
+          0.3443,
+          0.2927,
+          0.243,
+          0.1964,
+          0.1543
+        ],
+        [
+          0.1246,
+          0.1673,
+          0.2168,
+          0.2715,
+          0.3287,
+          0.3851,
+          0.4373,
+          0.4819,
+          0.5162,
+          0.5385,
+          0.5483,
+          0.546,
+          0.5331,
+          0.5113,
+          0.4827,
+          0.4489,
+          0.4113,
+          0.3713,
+          0.3296,
+          0.2873,
+          0.2452,
+          0.2043,
+          0.1659,
+          0.1308
+        ],
+        [
+          0.0911,
+          0.1229,
+          0.1601,
+          0.2014,
+          0.245,
+          0.2885,
+          0.329,
+          0.3642,
+          0.3917,
+          0.4102,
+          0.4193,
+          0.419,
+          0.4105,
+          0.3951,
+          0.3741,
+          0.3491,
+          0.321,
+          0.2908,
+          0.2591,
+          0.2266,
+          0.1942,
+          0.1625,
+          0.1324,
+          0.1048
+        ],
+        [
+          0.0629,
+          0.0853,
+          0.1117,
+          0.1413,
+          0.1726,
+          0.2042,
+          0.2339,
+          0.2599,
+          0.2807,
+          0.2951,
+          0.3026,
+          0.3035,
+          0.2983,
+          0.2879,
+          0.2735,
+          0.2559,
+          0.2361,
+          0.2145,
+          0.1918,
+          0.1685,
+          0.1449,
+          0.1217,
+          0.0996,
+          0.0792
+        ]
+      ]
+    },
+    "centroid": {
+      "x": 55.13,
+      "y": 40.48
+    },
+    "thirds_spine": [
+      {
+        "third": "defensive",
+        "x": 30.41,
+        "y": 38.34
+      },
+      {
+        "third": "middle",
+        "x": 57.15,
+        "y": 40.59
+      },
+      {
+        "third": "attacking",
+        "x": 92.72,
+        "y": 43.94
+      }
+    ],
+    "ellipse": {
+      "cx": 55.13,
+      "cy": 40.48,
+      "rx": 23.01,
+      "ry": 16.3,
+      "angle_deg": -171.1
+    },
+    "depth_line": {
+      "x": 66.19,
+      "percentile": 70
+    }
+  },
+  "metadata": {
+    "match_id": 3930161,
+    "team": "Italy",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Italy vs Albania",
+    "on_ball_event_count": 1303,
+    "on_ball_period_count": 5,
+    "off_ball_bandwidth_yards": 8.0,
+    "off_ball_depth_percentile": 70,
+    "off_ball_grid_cols": 24,
+    "off_ball_grid_rows": 16,
+    "phase_filter": "open_play_only",
+    "coordinate_system": "statsbomb_120x80_normalised_attack_right",
+    "coordinate_note": "StatsBomb event and 360 freeze-frame coordinates are already in each team's own attack-right frame across both halves; no period-based flip is applied. Off-ball 360 dots from opponent-actor frames are mirrored (x\u2192120-x, y\u219280-y) into the analysed team's frame before pooling; own-actor dots are used as-is, and the goalkeeper is excluded.",
+    "camera_caveat": "360 frames follow the ball; the visible subset of out-of-possession positions is biased toward areas near the ball. The camera artifact and the real defensive shape point the same direction \u2014 they cannot be cleanly separated."
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "team": "Germany",
+  "shots": {
+    "non_penalty_count": 19,
+    "total_npxg": 1.061134,
+    "by_zone": {
+      "six_yard_box": {
+        "npxg": 0.0,
+        "count": 0
+      },
+      "box_central": {
+        "npxg": 0.497573,
+        "count": 5
+      },
+      "box_wide": {
+        "npxg": 0.234756,
+        "count": 4
+      },
+      "outside_box": {
+        "npxg": 0.328805,
+        "count": 10
+      }
+    },
+    "by_source": {
+      "open_play": {
+        "npxg": 0.343709,
+        "count": 7
+      },
+      "counter": {
+        "npxg": 0.104179,
+        "count": 2
+      },
+      "set_piece": {
+        "npxg": 0.613246,
+        "count": 10
+      },
+      "other": {
+        "npxg": 0.0,
+        "count": 0
+      }
+    }
+  },
+  "shot_assists": {
+    "total_count": 14,
+    "by_side_and_type": {
+      "left": {
+        "cross": 1,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 5
+      },
+      "centre": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 3
+      },
+      "right": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 5
+      }
+    }
+  },
+  "creators": [
+    {
+      "player_id": 5579,
+      "display_name": "Joshua Kimmich",
+      "xa": 0.246062,
+      "key_passes": 4,
+      "passes_into_box": 2
+    },
+    {
+      "player_id": 12407,
+      "display_name": "Maximilian Mittelst\u00e4dt",
+      "xa": 0.189448,
+      "key_passes": 2,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 5574,
+      "display_name": "Toni Kroos",
+      "xa": 0.128194,
+      "key_passes": 4,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 8966,
+      "display_name": "Kai Havertz",
+      "xa": 0.093475,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 5562,
+      "display_name": "Thomas M\u00fcller",
+      "xa": 0.049994,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 8546,
+      "display_name": "Niclas F\u00fcllkrug",
+      "xa": 0.030833,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 8221,
+      "display_name": "Jonathan Tah",
+      "xa": 0.006108,
+      "key_passes": 1,
+      "passes_into_box": 0
+    }
+  ],
+  "metadata": {
+    "match_id": 3930158,
+    "team": "Germany",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Germany vs Scotland",
+    "zone_filter": "statsbomb_120x80_own_attack_right_frame",
+    "source_grouping": {
+      "open_play": [
+        "Regular Play"
+      ],
+      "counter": [
+        "From Counter"
+      ],
+      "set_piece": [
+        "From Corner",
+        "From Free Kick",
+        "From Throw In"
+      ],
+      "other": "every other play_pattern (From Goal Kick, From Kick Off, From Keeper, Other)"
+    }
+  }
+}

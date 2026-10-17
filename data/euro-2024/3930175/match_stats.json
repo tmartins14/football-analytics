@@ -1,0 +1,99 @@
+{
+  "home": {
+    "team": "Belgium",
+    "color": "#1D1D1B",
+    "score": 2
+  },
+  "away": {
+    "team": "Romania",
+    "color": "#002B7F",
+    "score": 0
+  },
+  "rows": [
+    {
+      "label": "Shots",
+      "home_value": 20.0,
+      "away_value": 14.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Shots on Target",
+      "home_value": 9.0,
+      "away_value": 4.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Possession",
+      "home_value": 56.3,
+      "away_value": 43.7,
+      "scale_type": "fixed100",
+      "format": "pct",
+      "tier": "basic"
+    },
+    {
+      "label": "Corners",
+      "home_value": 7.0,
+      "away_value": 7.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Fouls",
+      "home_value": 12.0,
+      "away_value": 14.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Yellow Cards",
+      "home_value": 1.0,
+      "away_value": 2.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "Red Cards",
+      "home_value": 0.0,
+      "away_value": 0.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "basic"
+    },
+    {
+      "label": "xG",
+      "home_value": 1.65,
+      "away_value": 1.25,
+      "scale_type": "sum",
+      "format": "float1",
+      "tier": "advanced"
+    },
+    {
+      "label": "Passes",
+      "home_value": 483.0,
+      "away_value": 387.0,
+      "scale_type": "sum",
+      "format": "int",
+      "tier": "advanced"
+    },
+    {
+      "label": "Pass acc.",
+      "home_value": 82.6,
+      "away_value": 80.4,
+      "scale_type": "sum",
+      "format": "pct",
+      "tier": "advanced"
+    }
+  ],
+  "metadata": {
+    "match_id": 3930175,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Belgium vs Romania"
+  }
+}
