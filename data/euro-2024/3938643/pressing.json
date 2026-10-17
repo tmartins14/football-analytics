@@ -1,0 +1,265 @@
+{
+  "teams": {
+    "France": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 113,
+        "defensive_actions_advanced": 26,
+        "value": 4.3462
+      },
+      "pressures_high": {
+        "count": 104,
+        "opponent_open_play_passes": 156,
+        "per_100": 66.67
+      },
+      "pressure_side": {
+        "left": 43,
+        "centre": 39,
+        "right": 71
+      }
+    },
+    "Poland": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 124,
+        "defensive_actions_advanced": 24,
+        "value": 5.1667
+      },
+      "pressures_high": {
+        "count": 52,
+        "opponent_open_play_passes": 196,
+        "per_100": 26.53
+      },
+      "pressure_side": {
+        "left": 57,
+        "centre": 32,
+        "right": 89
+      }
+    }
+  },
+  "pressure_received": [
+    {
+      "player_id": 3009,
+      "display_name": "Kylian Mbapp\u00e9",
+      "team": "France",
+      "on_ball_events": 142,
+      "under_pressure_events": 74,
+      "share": 0.5211
+    },
+    {
+      "player_id": 5668,
+      "display_name": "Robert Lewandowski",
+      "team": "Poland",
+      "on_ball_events": 94,
+      "under_pressure_events": 44,
+      "share": 0.4681
+    },
+    {
+      "player_id": 3604,
+      "display_name": "Olivier Giroud",
+      "team": "France",
+      "on_ball_events": 19,
+      "under_pressure_events": 8,
+      "share": 0.4211
+    },
+    {
+      "player_id": 39420,
+      "display_name": "Bradley Barcola",
+      "team": "France",
+      "on_ball_events": 75,
+      "under_pressure_events": 31,
+      "share": 0.4133
+    },
+    {
+      "player_id": 5477,
+      "display_name": "Ousmane Demb\u00e9l\u00e9",
+      "team": "France",
+      "on_ball_events": 139,
+      "under_pressure_events": 48,
+      "share": 0.3453
+    },
+    {
+      "player_id": 33680,
+      "display_name": "Kacper Urbanski",
+      "team": "Poland",
+      "on_ball_events": 122,
+      "under_pressure_events": 40,
+      "share": 0.3279
+    },
+    {
+      "player_id": 5487,
+      "display_name": "Antoine Griezmann",
+      "team": "France",
+      "on_ball_events": 34,
+      "under_pressure_events": 9,
+      "share": 0.2647
+    },
+    {
+      "player_id": 4664,
+      "display_name": "Sebastian Szyma\u0144ski",
+      "team": "Poland",
+      "on_ball_events": 87,
+      "under_pressure_events": 22,
+      "share": 0.2529
+    },
+    {
+      "player_id": 24778,
+      "display_name": "Eduardo Camavinga",
+      "team": "France",
+      "on_ball_events": 40,
+      "under_pressure_events": 10,
+      "share": 0.25
+    },
+    {
+      "player_id": 29480,
+      "display_name": "Jakub Moder",
+      "team": "Poland",
+      "on_ball_events": 174,
+      "under_pressure_events": 41,
+      "share": 0.2356
+    },
+    {
+      "player_id": 50502,
+      "display_name": "Nicola Zalewski",
+      "team": "Poland",
+      "on_ball_events": 73,
+      "under_pressure_events": 17,
+      "share": 0.2329
+    },
+    {
+      "player_id": 3961,
+      "display_name": "N'Golo Kant\u00e9",
+      "team": "France",
+      "on_ball_events": 117,
+      "under_pressure_events": 27,
+      "share": 0.2308
+    },
+    {
+      "player_id": 11990,
+      "display_name": "Youssouf Fofana",
+      "team": "France",
+      "on_ball_events": 22,
+      "under_pressure_events": 5,
+      "share": 0.2273
+    },
+    {
+      "player_id": 10481,
+      "display_name": "Aur\u00e9lien Tchouam\u00e9ni",
+      "team": "France",
+      "on_ball_events": 107,
+      "under_pressure_events": 24,
+      "share": 0.2243
+    },
+    {
+      "player_id": 8519,
+      "display_name": "Dayotchanculle Upamecano",
+      "team": "France",
+      "on_ball_events": 114,
+      "under_pressure_events": 25,
+      "share": 0.2193
+    },
+    {
+      "player_id": 8836,
+      "display_name": "Karol \u015awiderski",
+      "team": "Poland",
+      "on_ball_events": 15,
+      "under_pressure_events": 3,
+      "share": 0.2
+    },
+    {
+      "player_id": 3026,
+      "display_name": "Adrien Rabiot",
+      "team": "France",
+      "on_ball_events": 92,
+      "under_pressure_events": 18,
+      "share": 0.1957
+    },
+    {
+      "player_id": 28453,
+      "display_name": "Micha\u0142 Sk\u00f3ra\u015b",
+      "team": "Poland",
+      "on_ball_events": 26,
+      "under_pressure_events": 5,
+      "share": 0.1923
+    },
+    {
+      "player_id": 44166,
+      "display_name": "Jakub Piotr Kiwior",
+      "team": "Poland",
+      "on_ball_events": 126,
+      "under_pressure_events": 23,
+      "share": 0.1825
+    },
+    {
+      "player_id": 7979,
+      "display_name": "Przemys\u0142aw Frankowski",
+      "team": "Poland",
+      "on_ball_events": 141,
+      "under_pressure_events": 25,
+      "share": 0.1773
+    },
+    {
+      "player_id": 17592,
+      "display_name": "William Saliba",
+      "team": "France",
+      "on_ball_events": 108,
+      "under_pressure_events": 19,
+      "share": 0.1759
+    },
+    {
+      "player_id": 4445,
+      "display_name": "Jules Kound\u00e9",
+      "team": "France",
+      "on_ball_events": 141,
+      "under_pressure_events": 24,
+      "share": 0.1702
+    },
+    {
+      "player_id": 5660,
+      "display_name": "Piotr Zieli\u0144ski",
+      "team": "Poland",
+      "on_ball_events": 126,
+      "under_pressure_events": 20,
+      "share": 0.1587
+    },
+    {
+      "player_id": 6704,
+      "display_name": "Theo Hern\u00e1ndez",
+      "team": "France",
+      "on_ball_events": 207,
+      "under_pressure_events": 26,
+      "share": 0.1256
+    },
+    {
+      "player_id": 4626,
+      "display_name": "Jan Bednarek",
+      "team": "Poland",
+      "on_ball_events": 75,
+      "under_pressure_events": 9,
+      "share": 0.12
+    },
+    {
+      "player_id": 30739,
+      "display_name": "Pawe\u0142 Dawidowicz",
+      "team": "Poland",
+      "on_ball_events": 77,
+      "under_pressure_events": 6,
+      "share": 0.0779
+    },
+    {
+      "player_id": 22097,
+      "display_name": "Randal Kolo",
+      "team": "France",
+      "on_ball_events": 4,
+      "under_pressure_events": 0,
+      "share": 0.0
+    }
+  ],
+  "metadata": {
+    "match_id": 3938643,
+    "competition": "UEFA Euro 2024",
+    "match_label": "France vs Poland",
+    "open_play_filter": "play_pattern + pass_type",
+    "ppda_zone": "opponent's own 60% (x < 72 in the opponent's own frame)",
+    "defensive_action_zone": "pressing team's own half+ (x >= 48 in its own frame)",
+    "pressures_high_zone": "opponent half (x >= 60 in the pressing team's own frame)"
+  }
+}

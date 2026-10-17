@@ -1,0 +1,281 @@
+{
+  "teams": {
+    "France": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 148,
+        "defensive_actions_advanced": 16,
+        "value": 9.25
+      },
+      "pressures_high": {
+        "count": 56,
+        "opponent_open_play_passes": 201,
+        "per_100": 27.86
+      },
+      "pressure_side": {
+        "left": 35,
+        "centre": 21,
+        "right": 63
+      }
+    },
+    "Portugal": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 145,
+        "defensive_actions_advanced": 18,
+        "value": 8.0556
+      },
+      "pressures_high": {
+        "count": 52,
+        "opponent_open_play_passes": 261,
+        "per_100": 19.92
+      },
+      "pressure_side": {
+        "left": 52,
+        "centre": 28,
+        "right": 63
+      }
+    }
+  },
+  "pressure_received": [
+    {
+      "player_id": 39420,
+      "display_name": "Bradley Barcola",
+      "team": "France",
+      "on_ball_events": 17,
+      "under_pressure_events": 7,
+      "share": 0.4118
+    },
+    {
+      "player_id": 5477,
+      "display_name": "Ousmane Demb\u00e9l\u00e9",
+      "team": "France",
+      "on_ball_events": 69,
+      "under_pressure_events": 26,
+      "share": 0.3768
+    },
+    {
+      "player_id": 22097,
+      "display_name": "Randal Kolo",
+      "team": "France",
+      "on_ball_events": 62,
+      "under_pressure_events": 23,
+      "share": 0.371
+    },
+    {
+      "player_id": 3009,
+      "display_name": "Kylian Mbapp\u00e9",
+      "team": "France",
+      "on_ball_events": 101,
+      "under_pressure_events": 33,
+      "share": 0.3267
+    },
+    {
+      "player_id": 2972,
+      "display_name": "Marcus Thuram",
+      "team": "France",
+      "on_ball_events": 38,
+      "under_pressure_events": 12,
+      "share": 0.3158
+    },
+    {
+      "player_id": 5207,
+      "display_name": "Cristiano Ronaldo",
+      "team": "Portugal",
+      "on_ball_events": 84,
+      "under_pressure_events": 26,
+      "share": 0.3095
+    },
+    {
+      "player_id": 18360,
+      "display_name": "Rafael Le\u00e3o",
+      "team": "Portugal",
+      "on_ball_events": 91,
+      "under_pressure_events": 26,
+      "share": 0.2857
+    },
+    {
+      "player_id": 11990,
+      "display_name": "Youssouf Fofana",
+      "team": "France",
+      "on_ball_events": 39,
+      "under_pressure_events": 10,
+      "share": 0.2564
+    },
+    {
+      "player_id": 3961,
+      "display_name": "N'Golo Kant\u00e9",
+      "team": "France",
+      "on_ball_events": 168,
+      "under_pressure_events": 36,
+      "share": 0.2143
+    },
+    {
+      "player_id": 6704,
+      "display_name": "Theo Hern\u00e1ndez",
+      "team": "France",
+      "on_ball_events": 140,
+      "under_pressure_events": 30,
+      "share": 0.2143
+    },
+    {
+      "player_id": 5487,
+      "display_name": "Antoine Griezmann",
+      "team": "France",
+      "on_ball_events": 93,
+      "under_pressure_events": 19,
+      "share": 0.2043
+    },
+    {
+      "player_id": 24778,
+      "display_name": "Eduardo Camavinga",
+      "team": "France",
+      "on_ball_events": 139,
+      "under_pressure_events": 26,
+      "share": 0.1871
+    },
+    {
+      "player_id": 17592,
+      "display_name": "William Saliba",
+      "team": "France",
+      "on_ball_events": 98,
+      "under_pressure_events": 17,
+      "share": 0.1735
+    },
+    {
+      "player_id": 10481,
+      "display_name": "Aur\u00e9lien Tchouam\u00e9ni",
+      "team": "France",
+      "on_ball_events": 179,
+      "under_pressure_events": 30,
+      "share": 0.1676
+    },
+    {
+      "player_id": 34639,
+      "display_name": "Vitinha",
+      "team": "Portugal",
+      "on_ball_events": 231,
+      "under_pressure_events": 38,
+      "share": 0.1645
+    },
+    {
+      "player_id": 12169,
+      "display_name": "Jo\u00e3o Palhinha",
+      "team": "Portugal",
+      "on_ball_events": 166,
+      "under_pressure_events": 26,
+      "share": 0.1566
+    },
+    {
+      "player_id": 6374,
+      "display_name": "N\u00e9lson Semedo",
+      "team": "Portugal",
+      "on_ball_events": 57,
+      "under_pressure_events": 8,
+      "share": 0.1404
+    },
+    {
+      "player_id": 5204,
+      "display_name": "Bruno Fernandes",
+      "team": "Portugal",
+      "on_ball_events": 129,
+      "under_pressure_events": 18,
+      "share": 0.1395
+    },
+    {
+      "player_id": 41092,
+      "display_name": "Nuno Mendes",
+      "team": "Portugal",
+      "on_ball_events": 240,
+      "under_pressure_events": 32,
+      "share": 0.1333
+    },
+    {
+      "player_id": 39624,
+      "display_name": "Francisco Concei\u00e7\u00e3o",
+      "team": "Portugal",
+      "on_ball_events": 89,
+      "under_pressure_events": 11,
+      "share": 0.1236
+    },
+    {
+      "player_id": 3193,
+      "display_name": "Bernardo Silva",
+      "team": "Portugal",
+      "on_ball_events": 196,
+      "under_pressure_events": 24,
+      "share": 0.1224
+    },
+    {
+      "player_id": 4445,
+      "display_name": "Jules Kound\u00e9",
+      "team": "France",
+      "on_ball_events": 144,
+      "under_pressure_events": 17,
+      "share": 0.1181
+    },
+    {
+      "player_id": 9927,
+      "display_name": "R\u00faben Neves",
+      "team": "Portugal",
+      "on_ball_events": 81,
+      "under_pressure_events": 8,
+      "share": 0.0988
+    },
+    {
+      "player_id": 8519,
+      "display_name": "Dayotchanculle Upamecano",
+      "team": "France",
+      "on_ball_events": 110,
+      "under_pressure_events": 10,
+      "share": 0.0909
+    },
+    {
+      "player_id": 7005,
+      "display_name": "Jo\u00e3o Cancelo",
+      "team": "Portugal",
+      "on_ball_events": 107,
+      "under_pressure_events": 9,
+      "share": 0.0841
+    },
+    {
+      "player_id": 20016,
+      "display_name": "Pepe",
+      "team": "Portugal",
+      "on_ball_events": 284,
+      "under_pressure_events": 20,
+      "share": 0.0704
+    },
+    {
+      "player_id": 5206,
+      "display_name": "R\u00faben Dias",
+      "team": "Portugal",
+      "on_ball_events": 216,
+      "under_pressure_events": 9,
+      "share": 0.0417
+    },
+    {
+      "player_id": 12041,
+      "display_name": "Jo\u00e3o F\u00e9lix",
+      "team": "Portugal",
+      "on_ball_events": 20,
+      "under_pressure_events": 0,
+      "share": 0.0
+    },
+    {
+      "player_id": 40874,
+      "display_name": "Matheus Nunes",
+      "team": "Portugal",
+      "on_ball_events": 1,
+      "under_pressure_events": 0,
+      "share": 0.0
+    }
+  ],
+  "metadata": {
+    "match_id": 3942349,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Portugal vs France",
+    "open_play_filter": "play_pattern + pass_type",
+    "ppda_zone": "opponent's own 60% (x < 72 in the opponent's own frame)",
+    "defensive_action_zone": "pressing team's own half+ (x >= 48 in its own frame)",
+    "pressures_high_zone": "opponent half (x >= 60 in the pressing team's own frame)"
+  }
+}

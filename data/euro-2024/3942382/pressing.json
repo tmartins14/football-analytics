@@ -1,0 +1,289 @@
+{
+  "teams": {
+    "Netherlands": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 103,
+        "defensive_actions_advanced": 20,
+        "value": 5.15
+      },
+      "pressures_high": {
+        "count": 56,
+        "opponent_open_play_passes": 127,
+        "per_100": 44.09
+      },
+      "pressure_side": {
+        "left": 44,
+        "centre": 23,
+        "right": 35
+      }
+    },
+    "Turkey": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 155,
+        "defensive_actions_advanced": 20,
+        "value": 7.75
+      },
+      "pressures_high": {
+        "count": 36,
+        "opponent_open_play_passes": 274,
+        "per_100": 13.14
+      },
+      "pressure_side": {
+        "left": 44,
+        "centre": 37,
+        "right": 58
+      }
+    }
+  },
+  "pressure_received": [
+    {
+      "player_id": 32712,
+      "display_name": "Jeremie Frimpong",
+      "team": "Netherlands",
+      "on_ball_events": 4,
+      "under_pressure_events": 3,
+      "share": 0.75
+    },
+    {
+      "player_id": 149576,
+      "display_name": "Semih K\u0131l\u0131\u00e7soy",
+      "team": "Turkey",
+      "on_ball_events": 4,
+      "under_pressure_events": 3,
+      "share": 0.75
+    },
+    {
+      "player_id": 3648,
+      "display_name": "Cenk Tosun",
+      "team": "Turkey",
+      "on_ball_events": 6,
+      "under_pressure_events": 3,
+      "share": 0.5
+    },
+    {
+      "player_id": 134209,
+      "display_name": "Bar\u0131\u015f Alper Y\u0131lmaz",
+      "team": "Turkey",
+      "on_ball_events": 68,
+      "under_pressure_events": 31,
+      "share": 0.4559
+    },
+    {
+      "player_id": 7829,
+      "display_name": "Wout Weghorst",
+      "team": "Netherlands",
+      "on_ball_events": 34,
+      "under_pressure_events": 14,
+      "share": 0.4118
+    },
+    {
+      "player_id": 2988,
+      "display_name": "Memphis Depay",
+      "team": "Netherlands",
+      "on_ball_events": 98,
+      "under_pressure_events": 38,
+      "share": 0.3878
+    },
+    {
+      "player_id": 12555,
+      "display_name": "Okay Yoku\u015flu",
+      "team": "Turkey",
+      "on_ball_events": 25,
+      "under_pressure_events": 9,
+      "share": 0.36
+    },
+    {
+      "player_id": 20750,
+      "display_name": "Cody Gakpo",
+      "team": "Netherlands",
+      "on_ball_events": 84,
+      "under_pressure_events": 28,
+      "share": 0.3333
+    },
+    {
+      "player_id": 33281,
+      "display_name": "Joshua Zirkzee",
+      "team": "Netherlands",
+      "on_ball_events": 9,
+      "under_pressure_events": 3,
+      "share": 0.3333
+    },
+    {
+      "player_id": 39167,
+      "display_name": "Xavi Simons",
+      "team": "Netherlands",
+      "on_ball_events": 111,
+      "under_pressure_events": 32,
+      "share": 0.2883
+    },
+    {
+      "player_id": 30438,
+      "display_name": "Ferdi Kadioglu",
+      "team": "Turkey",
+      "on_ball_events": 97,
+      "under_pressure_events": 26,
+      "share": 0.268
+    },
+    {
+      "player_id": 116587,
+      "display_name": "Arda G\u00fcler",
+      "team": "Turkey",
+      "on_ball_events": 140,
+      "under_pressure_events": 34,
+      "share": 0.2429
+    },
+    {
+      "player_id": 32547,
+      "display_name": "Micky van de Ven",
+      "team": "Netherlands",
+      "on_ball_events": 13,
+      "under_pressure_events": 3,
+      "share": 0.2308
+    },
+    {
+      "player_id": 9085,
+      "display_name": "Salih \u00d6zcan",
+      "team": "Turkey",
+      "on_ball_events": 78,
+      "under_pressure_events": 17,
+      "share": 0.2179
+    },
+    {
+      "player_id": 8259,
+      "display_name": "Steven Bergwijn",
+      "team": "Netherlands",
+      "on_ball_events": 61,
+      "under_pressure_events": 13,
+      "share": 0.2131
+    },
+    {
+      "player_id": 133305,
+      "display_name": "Samet Akaydin",
+      "team": "Turkey",
+      "on_ball_events": 83,
+      "under_pressure_events": 16,
+      "share": 0.1928
+    },
+    {
+      "player_id": 48383,
+      "display_name": "Abd\u00fclkerim Bardakc\u0131",
+      "team": "Turkey",
+      "on_ball_events": 112,
+      "under_pressure_events": 21,
+      "share": 0.1875
+    },
+    {
+      "player_id": 49689,
+      "display_name": "Kerem Akt\u00fcrkoglu",
+      "team": "Turkey",
+      "on_ball_events": 24,
+      "under_pressure_events": 4,
+      "share": 0.1667
+    },
+    {
+      "player_id": 8125,
+      "display_name": "Denzel Dumfries",
+      "team": "Netherlands",
+      "on_ball_events": 121,
+      "under_pressure_events": 20,
+      "share": 0.1653
+    },
+    {
+      "player_id": 10826,
+      "display_name": "Mert M\u00fcld\u00fcr",
+      "team": "Turkey",
+      "on_ball_events": 74,
+      "under_pressure_events": 12,
+      "share": 0.1622
+    },
+    {
+      "player_id": 12293,
+      "display_name": "Kaan Ayhan",
+      "team": "Turkey",
+      "on_ball_events": 93,
+      "under_pressure_events": 14,
+      "share": 0.1505
+    },
+    {
+      "player_id": 151813,
+      "display_name": "Kenan Yildiz",
+      "team": "Turkey",
+      "on_ball_events": 51,
+      "under_pressure_events": 7,
+      "share": 0.1373
+    },
+    {
+      "player_id": 21633,
+      "display_name": "Joey Veerman",
+      "team": "Netherlands",
+      "on_ball_events": 30,
+      "under_pressure_events": 4,
+      "share": 0.1333
+    },
+    {
+      "player_id": 21582,
+      "display_name": "Tijjani Reijnders",
+      "team": "Netherlands",
+      "on_ball_events": 121,
+      "under_pressure_events": 16,
+      "share": 0.1322
+    },
+    {
+      "player_id": 3669,
+      "display_name": "Virgil van Dijk",
+      "team": "Netherlands",
+      "on_ball_events": 147,
+      "under_pressure_events": 17,
+      "share": 0.1156
+    },
+    {
+      "player_id": 15503,
+      "display_name": "Jerdy Schouten",
+      "team": "Netherlands",
+      "on_ball_events": 126,
+      "under_pressure_events": 13,
+      "share": 0.1032
+    },
+    {
+      "player_id": 7039,
+      "display_name": "Hakan \u00c7alhano\u011flu",
+      "team": "Turkey",
+      "on_ball_events": 125,
+      "under_pressure_events": 12,
+      "share": 0.096
+    },
+    {
+      "player_id": 3306,
+      "display_name": "Nathan Ak\u00e9",
+      "team": "Netherlands",
+      "on_ball_events": 130,
+      "under_pressure_events": 7,
+      "share": 0.0538
+    },
+    {
+      "player_id": 7787,
+      "display_name": "Stefan de Vrij",
+      "team": "Netherlands",
+      "on_ball_events": 170,
+      "under_pressure_events": 9,
+      "share": 0.0529
+    },
+    {
+      "player_id": 10349,
+      "display_name": "Zeki Celik",
+      "team": "Turkey",
+      "on_ball_events": 14,
+      "under_pressure_events": 0,
+      "share": 0.0
+    }
+  ],
+  "metadata": {
+    "match_id": 3942382,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Netherlands vs Turkey",
+    "open_play_filter": "play_pattern + pass_type",
+    "ppda_zone": "opponent's own 60% (x < 72 in the opponent's own frame)",
+    "defensive_action_zone": "pressing team's own half+ (x >= 48 in its own frame)",
+    "pressures_high_zone": "opponent half (x >= 60 in the pressing team's own frame)"
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "team": "Hungary",
+  "shots": {
+    "non_penalty_count": 14,
+    "total_npxg": 1.001013,
+    "by_zone": {
+      "six_yard_box": {
+        "npxg": 0.140242,
+        "count": 1
+      },
+      "box_central": {
+        "npxg": 0.377963,
+        "count": 3
+      },
+      "box_wide": {
+        "npxg": 0.320501,
+        "count": 4
+      },
+      "outside_box": {
+        "npxg": 0.162307,
+        "count": 6
+      }
+    },
+    "by_source": {
+      "open_play": {
+        "npxg": 0.339302,
+        "count": 3
+      },
+      "counter": {
+        "npxg": 0.081782,
+        "count": 2
+      },
+      "set_piece": {
+        "npxg": 0.579929,
+        "count": 9
+      },
+      "other": {
+        "npxg": 0.0,
+        "count": 0
+      }
+    }
+  },
+  "shot_assists": {
+    "total_count": 11,
+    "by_side_and_type": {
+      "left": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 1
+      },
+      "centre": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 1,
+        "other": 4
+      },
+      "right": {
+        "cross": 2,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 3
+      }
+    }
+  },
+  "creators": [
+    {
+      "player_id": 19316,
+      "display_name": "Roland Sallai",
+      "xa": 0.447705,
+      "key_passes": 2,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 21209,
+      "display_name": "Dominik Szoboszlai",
+      "xa": 0.244219,
+      "key_passes": 4,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 264277,
+      "display_name": "Martin \u00c1d\u00e1m",
+      "xa": 0.060671,
+      "key_passes": 1,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 4286,
+      "display_name": "Callum Styles",
+      "xa": 0.059049,
+      "key_passes": 2,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 12921,
+      "display_name": "Barnab\u00e1s Varga",
+      "xa": 0.057924,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 46789,
+      "display_name": "Bendeg\u00faz Bolla",
+      "xa": 0.057134,
+      "key_passes": 1,
+      "passes_into_box": 0
+    }
+  ],
+  "metadata": {
+    "match_id": 3930177,
+    "team": "Hungary",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Scotland vs Hungary",
+    "zone_filter": "statsbomb_120x80_own_attack_right_frame",
+    "source_grouping": {
+      "open_play": [
+        "Regular Play"
+      ],
+      "counter": [
+        "From Counter"
+      ],
+      "set_piece": [
+        "From Corner",
+        "From Free Kick",
+        "From Throw In"
+      ],
+      "other": "every other play_pattern (From Goal Kick, From Kick Off, From Keeper, Other)"
+    }
+  }
+}

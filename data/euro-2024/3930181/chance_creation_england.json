@@ -1,0 +1,131 @@
+{
+  "team": "England",
+  "shots": {
+    "non_penalty_count": 12,
+    "total_npxg": 0.756222,
+    "by_zone": {
+      "six_yard_box": {
+        "npxg": 0.395335,
+        "count": 1
+      },
+      "box_central": {
+        "npxg": 0.142385,
+        "count": 3
+      },
+      "box_wide": {
+        "npxg": 0.082472,
+        "count": 2
+      },
+      "outside_box": {
+        "npxg": 0.13603,
+        "count": 6
+      }
+    },
+    "by_source": {
+      "open_play": {
+        "npxg": 0.433623,
+        "count": 2
+      },
+      "counter": {
+        "npxg": 0.0,
+        "count": 0
+      },
+      "set_piece": {
+        "npxg": 0.279772,
+        "count": 9
+      },
+      "other": {
+        "npxg": 0.042826,
+        "count": 1
+      }
+    }
+  },
+  "shot_assists": {
+    "total_count": 10,
+    "by_side_and_type": {
+      "left": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 6
+      },
+      "centre": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 1
+      },
+      "right": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 3
+      }
+    }
+  },
+  "creators": [
+    {
+      "player_id": 3308,
+      "display_name": "Kieran Trippier",
+      "xa": 0.423326,
+      "key_passes": 2,
+      "passes_into_box": 2
+    },
+    {
+      "player_id": 4354,
+      "display_name": "Phil Foden",
+      "xa": 0.106705,
+      "key_passes": 2,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 10955,
+      "display_name": "Harry Kane",
+      "xa": 0.085623,
+      "key_passes": 2,
+      "passes_into_box": 2
+    },
+    {
+      "player_id": 3943,
+      "display_name": "Declan Rice",
+      "xa": 0.06283,
+      "key_passes": 2,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 3244,
+      "display_name": "John Stones",
+      "xa": 0.02261,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 28104,
+      "display_name": "Anthony Gordon",
+      "xa": 0.022423,
+      "key_passes": 1,
+      "passes_into_box": 0
+    }
+  ],
+  "metadata": {
+    "match_id": 3930181,
+    "team": "England",
+    "competition": "UEFA Euro 2024",
+    "match_label": "England vs Slovenia",
+    "zone_filter": "statsbomb_120x80_own_attack_right_frame",
+    "source_grouping": {
+      "open_play": [
+        "Regular Play"
+      ],
+      "counter": [
+        "From Counter"
+      ],
+      "set_piece": [
+        "From Corner",
+        "From Free Kick",
+        "From Throw In"
+      ],
+      "other": "every other play_pattern (From Goal Kick, From Kick Off, From Keeper, Other)"
+    }
+  }
+}

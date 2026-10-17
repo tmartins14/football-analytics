@@ -1,0 +1,145 @@
+{
+  "team": "Germany",
+  "shots": {
+    "non_penalty_count": 23,
+    "total_npxg": 1.629075,
+    "by_zone": {
+      "six_yard_box": {
+        "npxg": 0.0,
+        "count": 0
+      },
+      "box_central": {
+        "npxg": 1.165481,
+        "count": 12
+      },
+      "box_wide": {
+        "npxg": 0.106369,
+        "count": 2
+      },
+      "outside_box": {
+        "npxg": 0.357224,
+        "count": 9
+      }
+    },
+    "by_source": {
+      "open_play": {
+        "npxg": 0.712423,
+        "count": 9
+      },
+      "counter": {
+        "npxg": 0.045802,
+        "count": 1
+      },
+      "set_piece": {
+        "npxg": 0.726845,
+        "count": 10
+      },
+      "other": {
+        "npxg": 0.144004,
+        "count": 3
+      }
+    }
+  },
+  "shot_assists": {
+    "total_count": 20,
+    "by_side_and_type": {
+      "left": {
+        "cross": 1,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 0
+      },
+      "centre": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 8
+      },
+      "right": {
+        "cross": 7,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 4
+      }
+    }
+  },
+  "creators": [
+    {
+      "player_id": 5579,
+      "display_name": "Joshua Kimmich",
+      "xa": 0.504812,
+      "key_passes": 5,
+      "passes_into_box": 2
+    },
+    {
+      "player_id": 8546,
+      "display_name": "Niclas F\u00fcllkrug",
+      "xa": 0.26425,
+      "key_passes": 4,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 3167,
+      "display_name": "Antonio R\u00fcdiger",
+      "xa": 0.232691,
+      "key_passes": 2,
+      "passes_into_box": 2
+    },
+    {
+      "player_id": 39565,
+      "display_name": "Jamal Musiala",
+      "xa": 0.147829,
+      "key_passes": 2,
+      "passes_into_box": 2
+    },
+    {
+      "player_id": 40724,
+      "display_name": "Florian Wirtz",
+      "xa": 0.146699,
+      "key_passes": 2,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 5562,
+      "display_name": "Thomas M\u00fcller",
+      "xa": 0.085947,
+      "key_passes": 1,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 9195,
+      "display_name": "Robert Andrich",
+      "xa": 0.068867,
+      "key_passes": 2,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 5574,
+      "display_name": "Toni Kroos",
+      "xa": 0.068154,
+      "key_passes": 2,
+      "passes_into_box": 0
+    }
+  ],
+  "metadata": {
+    "match_id": 3942226,
+    "team": "Germany",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Spain vs Germany",
+    "zone_filter": "statsbomb_120x80_own_attack_right_frame",
+    "source_grouping": {
+      "open_play": [
+        "Regular Play"
+      ],
+      "counter": [
+        "From Counter"
+      ],
+      "set_piece": [
+        "From Corner",
+        "From Free Kick",
+        "From Throw In"
+      ],
+      "other": "every other play_pattern (From Goal Kick, From Kick Off, From Keeper, Other)"
+    }
+  }
+}

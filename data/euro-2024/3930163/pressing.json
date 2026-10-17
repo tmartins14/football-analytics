@@ -1,0 +1,273 @@
+{
+  "teams": {
+    "England": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 138,
+        "defensive_actions_advanced": 18,
+        "value": 7.6667
+      },
+      "pressures_high": {
+        "count": 41,
+        "opponent_open_play_passes": 179,
+        "per_100": 22.91
+      },
+      "pressure_side": {
+        "left": 42,
+        "centre": 26,
+        "right": 40
+      }
+    },
+    "Serbia": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 256,
+        "defensive_actions_advanced": 21,
+        "value": 12.1905
+      },
+      "pressures_high": {
+        "count": 73,
+        "opponent_open_play_passes": 328,
+        "per_100": 22.26
+      },
+      "pressure_side": {
+        "left": 47,
+        "centre": 49,
+        "right": 52
+      }
+    }
+  },
+  "pressure_received": [
+    {
+      "player_id": 10955,
+      "display_name": "Harry Kane",
+      "team": "England",
+      "on_ball_events": 61,
+      "under_pressure_events": 31,
+      "share": 0.5082
+    },
+    {
+      "player_id": 3831,
+      "display_name": "Du\u0161an Tadi\u0107",
+      "team": "Serbia",
+      "on_ball_events": 29,
+      "under_pressure_events": 13,
+      "share": 0.4483
+    },
+    {
+      "player_id": 22084,
+      "display_name": "Bukayo Saka",
+      "team": "England",
+      "on_ball_events": 90,
+      "under_pressure_events": 34,
+      "share": 0.3778
+    },
+    {
+      "player_id": 99174,
+      "display_name": "Kobbie Mainoo",
+      "team": "England",
+      "on_ball_events": 8,
+      "under_pressure_events": 3,
+      "share": 0.375
+    },
+    {
+      "player_id": 18015,
+      "display_name": "Du\u0161an Vlahovi\u0107",
+      "team": "Serbia",
+      "on_ball_events": 53,
+      "under_pressure_events": 18,
+      "share": 0.3396
+    },
+    {
+      "player_id": 5591,
+      "display_name": "Filip Kosti\u0107",
+      "team": "Serbia",
+      "on_ball_events": 37,
+      "under_pressure_events": 11,
+      "share": 0.2973
+    },
+    {
+      "player_id": 6319,
+      "display_name": "Luka Jovi\u0107",
+      "team": "Serbia",
+      "on_ball_events": 17,
+      "under_pressure_events": 5,
+      "share": 0.2941
+    },
+    {
+      "player_id": 3244,
+      "display_name": "John Stones",
+      "team": "England",
+      "on_ball_events": 123,
+      "under_pressure_events": 33,
+      "share": 0.2683
+    },
+    {
+      "player_id": 6687,
+      "display_name": "Sa\u0161a Luki\u0107",
+      "team": "Serbia",
+      "on_ball_events": 117,
+      "under_pressure_events": 31,
+      "share": 0.265
+    },
+    {
+      "player_id": 4269,
+      "display_name": "Aleksandar Mitrovi\u0107",
+      "team": "Serbia",
+      "on_ball_events": 58,
+      "under_pressure_events": 15,
+      "share": 0.2586
+    },
+    {
+      "player_id": 3308,
+      "display_name": "Kieran Trippier",
+      "team": "England",
+      "on_ball_events": 94,
+      "under_pressure_events": 24,
+      "share": 0.2553
+    },
+    {
+      "player_id": 30714,
+      "display_name": "Jude Bellingham",
+      "team": "England",
+      "on_ball_events": 192,
+      "under_pressure_events": 42,
+      "share": 0.2188
+    },
+    {
+      "player_id": 4354,
+      "display_name": "Phil Foden",
+      "team": "England",
+      "on_ball_events": 129,
+      "under_pressure_events": 27,
+      "share": 0.2093
+    },
+    {
+      "player_id": 27719,
+      "display_name": "Strahinja Pavlovi\u0107",
+      "team": "Serbia",
+      "on_ball_events": 123,
+      "under_pressure_events": 25,
+      "share": 0.2033
+    },
+    {
+      "player_id": 29399,
+      "display_name": "Conor Gallagher",
+      "team": "England",
+      "on_ball_events": 35,
+      "under_pressure_events": 7,
+      "share": 0.2
+    },
+    {
+      "player_id": 7993,
+      "display_name": "Filip Mladenovi\u0107",
+      "team": "Serbia",
+      "on_ball_events": 57,
+      "under_pressure_events": 11,
+      "share": 0.193
+    },
+    {
+      "player_id": 9640,
+      "display_name": "Jarrod Bowen",
+      "team": "England",
+      "on_ball_events": 22,
+      "under_pressure_events": 4,
+      "share": 0.1818
+    },
+    {
+      "player_id": 6318,
+      "display_name": "Andrija \u017divkovi\u0107",
+      "team": "Serbia",
+      "on_ball_events": 96,
+      "under_pressure_events": 16,
+      "share": 0.1667
+    },
+    {
+      "player_id": 5589,
+      "display_name": "Sergej Milinkovi\u0107-Savi\u0107",
+      "team": "Serbia",
+      "on_ball_events": 126,
+      "under_pressure_events": 21,
+      "share": 0.1667
+    },
+    {
+      "player_id": 3664,
+      "display_name": "Trent Alexander-Arnold",
+      "team": "England",
+      "on_ball_events": 112,
+      "under_pressure_events": 18,
+      "share": 0.1607
+    },
+    {
+      "player_id": 5603,
+      "display_name": "Nikola Milenkovi\u0107",
+      "team": "Serbia",
+      "on_ball_events": 158,
+      "under_pressure_events": 24,
+      "share": 0.1519
+    },
+    {
+      "player_id": 30179,
+      "display_name": "Ivan Ili\u0107",
+      "team": "Serbia",
+      "on_ball_events": 82,
+      "under_pressure_events": 12,
+      "share": 0.1463
+    },
+    {
+      "player_id": 34526,
+      "display_name": "Marc Guehi",
+      "team": "England",
+      "on_ball_events": 111,
+      "under_pressure_events": 15,
+      "share": 0.1351
+    },
+    {
+      "player_id": 16489,
+      "display_name": "Nemanja Gudelj",
+      "team": "Serbia",
+      "on_ball_events": 74,
+      "under_pressure_events": 9,
+      "share": 0.1216
+    },
+    {
+      "player_id": 28075,
+      "display_name": "Veljko Birman\u010devi\u0107",
+      "team": "Serbia",
+      "on_ball_events": 26,
+      "under_pressure_events": 3,
+      "share": 0.1154
+    },
+    {
+      "player_id": 3943,
+      "display_name": "Declan Rice",
+      "team": "England",
+      "on_ball_events": 176,
+      "under_pressure_events": 20,
+      "share": 0.1136
+    },
+    {
+      "player_id": 6321,
+      "display_name": "Milos Veljkovic",
+      "team": "Serbia",
+      "on_ball_events": 134,
+      "under_pressure_events": 10,
+      "share": 0.0746
+    },
+    {
+      "player_id": 3205,
+      "display_name": "Kyle Walker",
+      "team": "England",
+      "on_ball_events": 161,
+      "under_pressure_events": 12,
+      "share": 0.0745
+    }
+  ],
+  "metadata": {
+    "match_id": 3930163,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Serbia vs England",
+    "open_play_filter": "play_pattern + pass_type",
+    "ppda_zone": "opponent's own 60% (x < 72 in the opponent's own frame)",
+    "defensive_action_zone": "pressing team's own half+ (x >= 48 in its own frame)",
+    "pressures_high_zone": "opponent half (x >= 60 in the pressing team's own frame)"
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "team": "Ukraine",
+  "shots": {
+    "non_penalty_count": 13,
+    "total_npxg": 0.543476,
+    "by_zone": {
+      "six_yard_box": {
+        "npxg": 0.0,
+        "count": 0
+      },
+      "box_central": {
+        "npxg": 0.116741,
+        "count": 2
+      },
+      "box_wide": {
+        "npxg": 0.174031,
+        "count": 3
+      },
+      "outside_box": {
+        "npxg": 0.252704,
+        "count": 8
+      }
+    },
+    "by_source": {
+      "open_play": {
+        "npxg": 0.090397,
+        "count": 4
+      },
+      "counter": {
+        "npxg": 0.115173,
+        "count": 1
+      },
+      "set_piece": {
+        "npxg": 0.274102,
+        "count": 7
+      },
+      "other": {
+        "npxg": 0.063805,
+        "count": 1
+      }
+    }
+  },
+  "shot_assists": {
+    "total_count": 11,
+    "by_side_and_type": {
+      "left": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 4
+      },
+      "centre": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 4
+      },
+      "right": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 1,
+        "other": 2
+      }
+    }
+  },
+  "creators": [
+    {
+      "player_id": 25079,
+      "display_name": "Artem Dovbyk",
+      "xa": 0.225359,
+      "key_passes": 3,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 38975,
+      "display_name": "Georgiy Sudakov",
+      "xa": 0.050423,
+      "key_passes": 1,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 18617,
+      "display_name": "Mykola Matvienko",
+      "xa": 0.049008,
+      "key_passes": 2,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 39483,
+      "display_name": "Mykhailo Mudryk",
+      "xa": 0.036114,
+      "key_passes": 2,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 144127,
+      "display_name": "Volodymyr Brazhko",
+      "xa": 0.031945,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 3575,
+      "display_name": "Oleksandr Zinchenko",
+      "xa": 0.031143,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 39136,
+      "display_name": "Ilya Zabarnyi",
+      "xa": 0.027715,
+      "key_passes": 1,
+      "passes_into_box": 0
+    }
+  ],
+  "metadata": {
+    "match_id": 3938638,
+    "team": "Ukraine",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Romania vs Ukraine",
+    "zone_filter": "statsbomb_120x80_own_attack_right_frame",
+    "source_grouping": {
+      "open_play": [
+        "Regular Play"
+      ],
+      "counter": [
+        "From Counter"
+      ],
+      "set_piece": [
+        "From Corner",
+        "From Free Kick",
+        "From Throw In"
+      ],
+      "other": "every other play_pattern (From Goal Kick, From Kick Off, From Keeper, Other)"
+    }
+  }
+}

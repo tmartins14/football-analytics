@@ -1,0 +1,289 @@
+{
+  "teams": {
+    "Romania": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 196,
+        "defensive_actions_advanced": 13,
+        "value": 15.0769
+      },
+      "pressures_high": {
+        "count": 42,
+        "opponent_open_play_passes": 292,
+        "per_100": 14.38
+      },
+      "pressure_side": {
+        "left": 49,
+        "centre": 35,
+        "right": 42
+      }
+    },
+    "Ukraine": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 91,
+        "defensive_actions_advanced": 16,
+        "value": 5.6875
+      },
+      "pressures_high": {
+        "count": 43,
+        "opponent_open_play_passes": 117,
+        "per_100": 36.75
+      },
+      "pressure_side": {
+        "left": 30,
+        "centre": 21,
+        "right": 38
+      }
+    }
+  },
+  "pressure_received": [
+    {
+      "player_id": 8660,
+      "display_name": "George Puscas",
+      "team": "Romania",
+      "on_ball_events": 15,
+      "under_pressure_events": 9,
+      "share": 0.6
+    },
+    {
+      "player_id": 34602,
+      "display_name": "Adri\u00e1n Rus",
+      "team": "Romania",
+      "on_ball_events": 6,
+      "under_pressure_events": 3,
+      "share": 0.5
+    },
+    {
+      "player_id": 72512,
+      "display_name": "Valentin Mihai Mih\u0103il\u0103",
+      "team": "Romania",
+      "on_ball_events": 31,
+      "under_pressure_events": 13,
+      "share": 0.4194
+    },
+    {
+      "player_id": 25079,
+      "display_name": "Artem Dovbyk",
+      "team": "Ukraine",
+      "on_ball_events": 42,
+      "under_pressure_events": 17,
+      "share": 0.4048
+    },
+    {
+      "player_id": 31193,
+      "display_name": "Denis Dragus",
+      "team": "Romania",
+      "on_ball_events": 88,
+      "under_pressure_events": 33,
+      "share": 0.375
+    },
+    {
+      "player_id": 56905,
+      "display_name": "Dennis Man",
+      "team": "Romania",
+      "on_ball_events": 61,
+      "under_pressure_events": 22,
+      "share": 0.3607
+    },
+    {
+      "player_id": 28565,
+      "display_name": "Ianis Hagi",
+      "team": "Romania",
+      "on_ball_events": 19,
+      "under_pressure_events": 6,
+      "share": 0.3158
+    },
+    {
+      "player_id": 10916,
+      "display_name": "Nicolae Stanciu",
+      "team": "Romania",
+      "on_ball_events": 70,
+      "under_pressure_events": 22,
+      "share": 0.3143
+    },
+    {
+      "player_id": 23649,
+      "display_name": "Roman Yaremchuk",
+      "team": "Ukraine",
+      "on_ball_events": 26,
+      "under_pressure_events": 8,
+      "share": 0.3077
+    },
+    {
+      "player_id": 16509,
+      "display_name": "Viktor Tsygankov",
+      "team": "Ukraine",
+      "on_ball_events": 74,
+      "under_pressure_events": 22,
+      "share": 0.2973
+    },
+    {
+      "player_id": 34599,
+      "display_name": "Florinel Coman",
+      "team": "Romania",
+      "on_ball_events": 47,
+      "under_pressure_events": 13,
+      "share": 0.2766
+    },
+    {
+      "player_id": 39483,
+      "display_name": "Mykhailo Mudryk",
+      "team": "Ukraine",
+      "on_ball_events": 91,
+      "under_pressure_events": 25,
+      "share": 0.2747
+    },
+    {
+      "player_id": 16344,
+      "display_name": "R\u0103zvan Marin",
+      "team": "Romania",
+      "on_ball_events": 68,
+      "under_pressure_events": 18,
+      "share": 0.2647
+    },
+    {
+      "player_id": 38975,
+      "display_name": "Georgiy Sudakov",
+      "team": "Ukraine",
+      "on_ball_events": 127,
+      "under_pressure_events": 31,
+      "share": 0.2441
+    },
+    {
+      "player_id": 8830,
+      "display_name": "Andriy Yarmolenko",
+      "team": "Ukraine",
+      "on_ball_events": 38,
+      "under_pressure_events": 8,
+      "share": 0.2105
+    },
+    {
+      "player_id": 45785,
+      "display_name": "Yukhym Konoplya",
+      "team": "Ukraine",
+      "on_ball_events": 92,
+      "under_pressure_events": 19,
+      "share": 0.2065
+    },
+    {
+      "player_id": 30913,
+      "display_name": "Marius Marin",
+      "team": "Romania",
+      "on_ball_events": 64,
+      "under_pressure_events": 13,
+      "share": 0.2031
+    },
+    {
+      "player_id": 34600,
+      "display_name": "Nicusor Bancu",
+      "team": "Romania",
+      "on_ball_events": 78,
+      "under_pressure_events": 15,
+      "share": 0.1923
+    },
+    {
+      "player_id": 31908,
+      "display_name": "Andrei Burc\u0103 Andonie",
+      "team": "Romania",
+      "on_ball_events": 50,
+      "under_pressure_events": 9,
+      "share": 0.18
+    },
+    {
+      "player_id": 39615,
+      "display_name": "Radu Dragusin",
+      "team": "Romania",
+      "on_ball_events": 53,
+      "under_pressure_events": 9,
+      "share": 0.1698
+    },
+    {
+      "player_id": 24861,
+      "display_name": "Andrei Ratiu",
+      "team": "Romania",
+      "on_ball_events": 78,
+      "under_pressure_events": 12,
+      "share": 0.1538
+    },
+    {
+      "player_id": 16557,
+      "display_name": "Ruslan Malinovskiy",
+      "team": "Ukraine",
+      "on_ball_events": 39,
+      "under_pressure_events": 6,
+      "share": 0.1538
+    },
+    {
+      "player_id": 3575,
+      "display_name": "Oleksandr Zinchenko",
+      "team": "Ukraine",
+      "on_ball_events": 185,
+      "under_pressure_events": 28,
+      "share": 0.1514
+    },
+    {
+      "player_id": 144127,
+      "display_name": "Volodymyr Brazhko",
+      "team": "Ukraine",
+      "on_ball_events": 47,
+      "under_pressure_events": 7,
+      "share": 0.1489
+    },
+    {
+      "player_id": 11000,
+      "display_name": "Taras Stepanenko",
+      "team": "Ukraine",
+      "on_ball_events": 119,
+      "under_pressure_events": 15,
+      "share": 0.1261
+    },
+    {
+      "player_id": 21294,
+      "display_name": "Mykola Shaparenko",
+      "team": "Ukraine",
+      "on_ball_events": 136,
+      "under_pressure_events": 17,
+      "share": 0.125
+    },
+    {
+      "player_id": 39136,
+      "display_name": "Ilya Zabarnyi",
+      "team": "Ukraine",
+      "on_ball_events": 162,
+      "under_pressure_events": 14,
+      "share": 0.0864
+    },
+    {
+      "player_id": 18617,
+      "display_name": "Mykola Matvienko",
+      "team": "Ukraine",
+      "on_ball_events": 173,
+      "under_pressure_events": 13,
+      "share": 0.0751
+    },
+    {
+      "player_id": 45863,
+      "display_name": "Oleksandr Tymchyk",
+      "team": "Ukraine",
+      "on_ball_events": 23,
+      "under_pressure_events": 1,
+      "share": 0.0435
+    },
+    {
+      "player_id": 45023,
+      "display_name": "Bogdan Racovi\u021ban",
+      "team": "Romania",
+      "on_ball_events": 1,
+      "under_pressure_events": 0,
+      "share": 0.0
+    }
+  ],
+  "metadata": {
+    "match_id": 3938638,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Romania vs Ukraine",
+    "open_play_filter": "play_pattern + pass_type",
+    "ppda_zone": "opponent's own 60% (x < 72 in the opponent's own frame)",
+    "defensive_action_zone": "pressing team's own half+ (x >= 48 in its own frame)",
+    "pressures_high_zone": "opponent half (x >= 60 in the pressing team's own frame)"
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "team": "Turkey",
+  "shots": {
+    "non_penalty_count": 11,
+    "total_npxg": 0.778987,
+    "by_zone": {
+      "six_yard_box": {
+        "npxg": 0.450199,
+        "count": 1
+      },
+      "box_central": {
+        "npxg": 0.048342,
+        "count": 1
+      },
+      "box_wide": {
+        "npxg": 0.161846,
+        "count": 2
+      },
+      "outside_box": {
+        "npxg": 0.118599,
+        "count": 7
+      }
+    },
+    "by_source": {
+      "open_play": {
+        "npxg": 0.617131,
+        "count": 6
+      },
+      "counter": {
+        "npxg": 0.039147,
+        "count": 1
+      },
+      "set_piece": {
+        "npxg": 0.122709,
+        "count": 4
+      },
+      "other": {
+        "npxg": 0.0,
+        "count": 0
+      }
+    }
+  },
+  "shot_assists": {
+    "total_count": 9,
+    "by_side_and_type": {
+      "left": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 5
+      },
+      "centre": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 1
+      },
+      "right": {
+        "cross": 2,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 1
+      }
+    }
+  },
+  "creators": [
+    {
+      "player_id": 10349,
+      "display_name": "Zeki Celik",
+      "xa": 0.450199,
+      "key_passes": 1,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 48383,
+      "display_name": "Abd\u00fclkerim Bardakc\u0131",
+      "xa": 0.099701,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 12293,
+      "display_name": "Kaan Ayhan",
+      "xa": 0.062145,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 18723,
+      "display_name": "Yunus Akg\u00fcn",
+      "xa": 0.054802,
+      "key_passes": 2,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 49689,
+      "display_name": "Kerem Akt\u00fcrkoglu",
+      "xa": 0.039147,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 78241,
+      "display_name": "\u0130smail Y\u00fcksek",
+      "xa": 0.025981,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 30438,
+      "display_name": "Ferdi Kadioglu",
+      "xa": 0.019998,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 7039,
+      "display_name": "Hakan \u00c7alhano\u011flu",
+      "xa": 0.004204,
+      "key_passes": 1,
+      "passes_into_box": 1
+    }
+  ],
+  "metadata": {
+    "match_id": 3930174,
+    "team": "Turkey",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Turkey vs Portugal",
+    "zone_filter": "statsbomb_120x80_own_attack_right_frame",
+    "source_grouping": {
+      "open_play": [
+        "Regular Play"
+      ],
+      "counter": [
+        "From Counter"
+      ],
+      "set_piece": [
+        "From Corner",
+        "From Free Kick",
+        "From Throw In"
+      ],
+      "other": "every other play_pattern (From Goal Kick, From Kick Off, From Keeper, Other)"
+    }
+  }
+}

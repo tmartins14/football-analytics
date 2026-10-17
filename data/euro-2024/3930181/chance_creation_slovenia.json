@@ -1,0 +1,110 @@
+{
+  "team": "Slovenia",
+  "shots": {
+    "non_penalty_count": 4,
+    "total_npxg": 0.164917,
+    "by_zone": {
+      "six_yard_box": {
+        "npxg": 0.0,
+        "count": 0
+      },
+      "box_central": {
+        "npxg": 0.068929,
+        "count": 1
+      },
+      "box_wide": {
+        "npxg": 0.0,
+        "count": 0
+      },
+      "outside_box": {
+        "npxg": 0.095988,
+        "count": 3
+      }
+    },
+    "by_source": {
+      "open_play": {
+        "npxg": 0.042729,
+        "count": 1
+      },
+      "counter": {
+        "npxg": 0.0,
+        "count": 0
+      },
+      "set_piece": {
+        "npxg": 0.096826,
+        "count": 2
+      },
+      "other": {
+        "npxg": 0.025362,
+        "count": 1
+      }
+    }
+  },
+  "shot_assists": {
+    "total_count": 3,
+    "by_side_and_type": {
+      "left": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 1
+      },
+      "centre": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 1
+      },
+      "right": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 1
+      }
+    }
+  },
+  "creators": [
+    {
+      "player_id": 16528,
+      "display_name": "Petar Stojanovi\u0107",
+      "xa": 0.068929,
+      "key_passes": 1,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 31089,
+      "display_name": "Jan Mlakar",
+      "xa": 0.042729,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 31866,
+      "display_name": "Andra\u017e \u0160porar",
+      "xa": 0.027897,
+      "key_passes": 1,
+      "passes_into_box": 0
+    }
+  ],
+  "metadata": {
+    "match_id": 3930181,
+    "team": "Slovenia",
+    "competition": "UEFA Euro 2024",
+    "match_label": "England vs Slovenia",
+    "zone_filter": "statsbomb_120x80_own_attack_right_frame",
+    "source_grouping": {
+      "open_play": [
+        "Regular Play"
+      ],
+      "counter": [
+        "From Counter"
+      ],
+      "set_piece": [
+        "From Corner",
+        "From Free Kick",
+        "From Throw In"
+      ],
+      "other": "every other play_pattern (From Goal Kick, From Kick Off, From Keeper, Other)"
+    }
+  }
+}

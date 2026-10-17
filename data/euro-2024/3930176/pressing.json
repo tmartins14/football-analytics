@@ -1,0 +1,273 @@
+{
+  "teams": {
+    "Germany": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 103,
+        "defensive_actions_advanced": 23,
+        "value": 4.4783
+      },
+      "pressures_high": {
+        "count": 83,
+        "opponent_open_play_passes": 152,
+        "per_100": 54.61
+      },
+      "pressure_side": {
+        "left": 60,
+        "centre": 37,
+        "right": 50
+      }
+    },
+    "Switzerland": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 226,
+        "defensive_actions_advanced": 20,
+        "value": 11.3
+      },
+      "pressures_high": {
+        "count": 94,
+        "opponent_open_play_passes": 305,
+        "per_100": 30.82
+      },
+      "pressure_side": {
+        "left": 69,
+        "centre": 52,
+        "right": 71
+      }
+    }
+  },
+  "pressure_received": [
+    {
+      "player_id": 8546,
+      "display_name": "Niclas F\u00fcllkrug",
+      "team": "Germany",
+      "on_ball_events": 8,
+      "under_pressure_events": 5,
+      "share": 0.625
+    },
+    {
+      "player_id": 3053,
+      "display_name": "Leroy San\u00e9",
+      "team": "Germany",
+      "on_ball_events": 24,
+      "under_pressure_events": 13,
+      "share": 0.5417
+    },
+    {
+      "player_id": 35242,
+      "display_name": "Maximilian Beier",
+      "team": "Germany",
+      "on_ball_events": 20,
+      "under_pressure_events": 10,
+      "share": 0.5
+    },
+    {
+      "player_id": 8966,
+      "display_name": "Kai Havertz",
+      "team": "Germany",
+      "on_ball_events": 97,
+      "under_pressure_events": 41,
+      "share": 0.4227
+    },
+    {
+      "player_id": 49007,
+      "display_name": "Kwadwo Duah",
+      "team": "Switzerland",
+      "on_ball_events": 25,
+      "under_pressure_events": 10,
+      "share": 0.4
+    },
+    {
+      "player_id": 39565,
+      "display_name": "Jamal Musiala",
+      "team": "Germany",
+      "on_ball_events": 103,
+      "under_pressure_events": 40,
+      "share": 0.3883
+    },
+    {
+      "player_id": 45190,
+      "display_name": "Dan Ndoye",
+      "team": "Switzerland",
+      "on_ball_events": 73,
+      "under_pressure_events": 28,
+      "share": 0.3836
+    },
+    {
+      "player_id": 48335,
+      "display_name": "Mohamed Amdouni",
+      "team": "Switzerland",
+      "on_ball_events": 38,
+      "under_pressure_events": 14,
+      "share": 0.3684
+    },
+    {
+      "player_id": 50436,
+      "display_name": "Fabian Rieder",
+      "team": "Switzerland",
+      "on_ball_events": 78,
+      "under_pressure_events": 26,
+      "share": 0.3333
+    },
+    {
+      "player_id": 40724,
+      "display_name": "Florian Wirtz",
+      "team": "Germany",
+      "on_ball_events": 141,
+      "under_pressure_events": 46,
+      "share": 0.3262
+    },
+    {
+      "player_id": 12407,
+      "display_name": "Maximilian Mittelst\u00e4dt",
+      "team": "Germany",
+      "on_ball_events": 108,
+      "under_pressure_events": 33,
+      "share": 0.3056
+    },
+    {
+      "player_id": 5545,
+      "display_name": "Breel Embolo",
+      "team": "Switzerland",
+      "on_ball_events": 57,
+      "under_pressure_events": 16,
+      "share": 0.2807
+    },
+    {
+      "player_id": 16016,
+      "display_name": "Michel Aebischer",
+      "team": "Switzerland",
+      "on_ball_events": 112,
+      "under_pressure_events": 31,
+      "share": 0.2768
+    },
+    {
+      "player_id": 5537,
+      "display_name": "Fabian Sch\u00e4r",
+      "team": "Switzerland",
+      "on_ball_events": 77,
+      "under_pressure_events": 17,
+      "share": 0.2208
+    },
+    {
+      "player_id": 5544,
+      "display_name": "Ricardo Rodr\u00edguez",
+      "team": "Switzerland",
+      "on_ball_events": 50,
+      "under_pressure_events": 11,
+      "share": 0.22
+    },
+    {
+      "player_id": 3500,
+      "display_name": "Granit Xhaka",
+      "team": "Switzerland",
+      "on_ball_events": 101,
+      "under_pressure_events": 22,
+      "share": 0.2178
+    },
+    {
+      "player_id": 12034,
+      "display_name": "David Raum",
+      "team": "Germany",
+      "on_ball_events": 48,
+      "under_pressure_events": 10,
+      "share": 0.2083
+    },
+    {
+      "player_id": 6983,
+      "display_name": "Remo Freuler",
+      "team": "Switzerland",
+      "on_ball_events": 97,
+      "under_pressure_events": 19,
+      "share": 0.1959
+    },
+    {
+      "player_id": 5579,
+      "display_name": "Joshua Kimmich",
+      "team": "Germany",
+      "on_ball_events": 171,
+      "under_pressure_events": 32,
+      "share": 0.1871
+    },
+    {
+      "player_id": 5574,
+      "display_name": "Toni Kroos",
+      "team": "Germany",
+      "on_ball_events": 227,
+      "under_pressure_events": 40,
+      "share": 0.1762
+    },
+    {
+      "player_id": 5549,
+      "display_name": "Manuel Akanji",
+      "team": "Switzerland",
+      "on_ball_events": 87,
+      "under_pressure_events": 14,
+      "share": 0.1609
+    },
+    {
+      "player_id": 30401,
+      "display_name": "Ruben Vargas",
+      "team": "Switzerland",
+      "on_ball_events": 34,
+      "under_pressure_events": 5,
+      "share": 0.1471
+    },
+    {
+      "player_id": 3167,
+      "display_name": "Antonio R\u00fcdiger",
+      "team": "Germany",
+      "on_ball_events": 179,
+      "under_pressure_events": 25,
+      "share": 0.1397
+    },
+    {
+      "player_id": 10287,
+      "display_name": "\u0130lkay G\u00fcndo\u011fan",
+      "team": "Germany",
+      "on_ball_events": 110,
+      "under_pressure_events": 15,
+      "share": 0.1364
+    },
+    {
+      "player_id": 7796,
+      "display_name": "Silvan Widmer",
+      "team": "Switzerland",
+      "on_ball_events": 89,
+      "under_pressure_events": 11,
+      "share": 0.1236
+    },
+    {
+      "player_id": 24118,
+      "display_name": "Nico Schlotterbeck",
+      "team": "Germany",
+      "on_ball_events": 41,
+      "under_pressure_events": 5,
+      "share": 0.122
+    },
+    {
+      "player_id": 8221,
+      "display_name": "Jonathan Tah",
+      "team": "Germany",
+      "on_ball_events": 103,
+      "under_pressure_events": 10,
+      "share": 0.0971
+    },
+    {
+      "player_id": 9195,
+      "display_name": "Robert Andrich",
+      "team": "Germany",
+      "on_ball_events": 145,
+      "under_pressure_events": 13,
+      "share": 0.0897
+    }
+  ],
+  "metadata": {
+    "match_id": 3930176,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Switzerland vs Germany",
+    "open_play_filter": "play_pattern + pass_type",
+    "ppda_zone": "opponent's own 60% (x < 72 in the opponent's own frame)",
+    "defensive_action_zone": "pressing team's own half+ (x >= 48 in its own frame)",
+    "pressures_high_zone": "opponent half (x >= 60 in the pressing team's own frame)"
+  }
+}

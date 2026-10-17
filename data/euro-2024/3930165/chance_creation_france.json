@@ -1,0 +1,145 @@
+{
+  "team": "France",
+  "shots": {
+    "non_penalty_count": 14,
+    "total_npxg": 1.904532,
+    "by_zone": {
+      "six_yard_box": {
+        "npxg": 0.766232,
+        "count": 2
+      },
+      "box_central": {
+        "npxg": 0.755614,
+        "count": 4
+      },
+      "box_wide": {
+        "npxg": 0.332063,
+        "count": 6
+      },
+      "outside_box": {
+        "npxg": 0.050623,
+        "count": 2
+      }
+    },
+    "by_source": {
+      "open_play": {
+        "npxg": 1.095676,
+        "count": 5
+      },
+      "counter": {
+        "npxg": 0.458917,
+        "count": 2
+      },
+      "set_piece": {
+        "npxg": 0.349939,
+        "count": 7
+      },
+      "other": {
+        "npxg": 0.0,
+        "count": 0
+      }
+    }
+  },
+  "shot_assists": {
+    "total_count": 12,
+    "by_side_and_type": {
+      "left": {
+        "cross": 3,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 3
+      },
+      "centre": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 3
+      },
+      "right": {
+        "cross": 1,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 2
+      }
+    }
+  },
+  "creators": [
+    {
+      "player_id": 6704,
+      "display_name": "Theo Hern\u00e1ndez",
+      "xa": 0.745628,
+      "key_passes": 2,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 24778,
+      "display_name": "Eduardo Camavinga",
+      "xa": 0.199905,
+      "key_passes": 1,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 5487,
+      "display_name": "Antoine Griezmann",
+      "xa": 0.149684,
+      "key_passes": 2,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 3026,
+      "display_name": "Adrien Rabiot",
+      "xa": 0.135027,
+      "key_passes": 2,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 3961,
+      "display_name": "N'Golo Kant\u00e9",
+      "xa": 0.094993,
+      "key_passes": 2,
+      "passes_into_box": 2
+    },
+    {
+      "player_id": 5477,
+      "display_name": "Ousmane Demb\u00e9l\u00e9",
+      "xa": 0.070751,
+      "key_passes": 1,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 3604,
+      "display_name": "Olivier Giroud",
+      "xa": 0.034579,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 2972,
+      "display_name": "Marcus Thuram",
+      "xa": 0.020864,
+      "key_passes": 1,
+      "passes_into_box": 0
+    }
+  ],
+  "metadata": {
+    "match_id": 3930165,
+    "team": "France",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Austria vs France",
+    "zone_filter": "statsbomb_120x80_own_attack_right_frame",
+    "source_grouping": {
+      "open_play": [
+        "Regular Play"
+      ],
+      "counter": [
+        "From Counter"
+      ],
+      "set_piece": [
+        "From Corner",
+        "From Free Kick",
+        "From Throw In"
+      ],
+      "other": "every other play_pattern (From Goal Kick, From Kick Off, From Keeper, Other)"
+    }
+  }
+}

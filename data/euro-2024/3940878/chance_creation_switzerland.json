@@ -1,0 +1,138 @@
+{
+  "team": "Switzerland",
+  "shots": {
+    "non_penalty_count": 16,
+    "total_npxg": 0.782357,
+    "by_zone": {
+      "six_yard_box": {
+        "npxg": 0.0,
+        "count": 0
+      },
+      "box_central": {
+        "npxg": 0.343872,
+        "count": 2
+      },
+      "box_wide": {
+        "npxg": 0.230006,
+        "count": 6
+      },
+      "outside_box": {
+        "npxg": 0.208478,
+        "count": 8
+      }
+    },
+    "by_source": {
+      "open_play": {
+        "npxg": 0.5662,
+        "count": 12
+      },
+      "counter": {
+        "npxg": 0.0,
+        "count": 0
+      },
+      "set_piece": {
+        "npxg": 0.216157,
+        "count": 4
+      },
+      "other": {
+        "npxg": 0.0,
+        "count": 0
+      }
+    }
+  },
+  "shot_assists": {
+    "total_count": 11,
+    "by_side_and_type": {
+      "left": {
+        "cross": 1,
+        "cut_back": 0,
+        "through_ball": 3,
+        "other": 2
+      },
+      "centre": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 4
+      },
+      "right": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 1
+      }
+    }
+  },
+  "creators": [
+    {
+      "player_id": 16016,
+      "display_name": "Michel Aebischer",
+      "xa": 0.244638,
+      "key_passes": 2,
+      "passes_into_box": 3
+    },
+    {
+      "player_id": 30401,
+      "display_name": "Ruben Vargas",
+      "xa": 0.184774,
+      "key_passes": 2,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 3500,
+      "display_name": "Granit Xhaka",
+      "xa": 0.117631,
+      "key_passes": 3,
+      "passes_into_box": 2
+    },
+    {
+      "player_id": 5545,
+      "display_name": "Breel Embolo",
+      "xa": 0.035142,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 5537,
+      "display_name": "Fabian Sch\u00e4r",
+      "xa": 0.026606,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 45190,
+      "display_name": "Dan Ndoye",
+      "xa": 0.017792,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 5549,
+      "display_name": "Manuel Akanji",
+      "xa": 0.014435,
+      "key_passes": 1,
+      "passes_into_box": 0
+    }
+  ],
+  "metadata": {
+    "match_id": 3940878,
+    "team": "Switzerland",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Switzerland vs Italy",
+    "zone_filter": "statsbomb_120x80_own_attack_right_frame",
+    "source_grouping": {
+      "open_play": [
+        "Regular Play"
+      ],
+      "counter": [
+        "From Counter"
+      ],
+      "set_piece": [
+        "From Corner",
+        "From Free Kick",
+        "From Throw In"
+      ],
+      "other": "every other play_pattern (From Goal Kick, From Kick Off, From Keeper, Other)"
+    }
+  }
+}

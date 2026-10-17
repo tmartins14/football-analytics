@@ -1,0 +1,131 @@
+{
+  "team": "England",
+  "shots": {
+    "non_penalty_count": 12,
+    "total_npxg": 1.172705,
+    "by_zone": {
+      "six_yard_box": {
+        "npxg": 0.061605,
+        "count": 1
+      },
+      "box_central": {
+        "npxg": 0.454891,
+        "count": 1
+      },
+      "box_wide": {
+        "npxg": 0.50164,
+        "count": 5
+      },
+      "outside_box": {
+        "npxg": 0.154569,
+        "count": 5
+      }
+    },
+    "by_source": {
+      "open_play": {
+        "npxg": 0.175979,
+        "count": 4
+      },
+      "counter": {
+        "npxg": 0.454891,
+        "count": 1
+      },
+      "set_piece": {
+        "npxg": 0.496692,
+        "count": 5
+      },
+      "other": {
+        "npxg": 0.045143,
+        "count": 2
+      }
+    }
+  },
+  "shot_assists": {
+    "total_count": 9,
+    "by_side_and_type": {
+      "left": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 1,
+        "other": 2
+      },
+      "centre": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 2
+      },
+      "right": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 1,
+        "other": 3
+      }
+    }
+  },
+  "creators": [
+    {
+      "player_id": 30714,
+      "display_name": "Jude Bellingham",
+      "xa": 0.114346,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 3664,
+      "display_name": "Trent Alexander-Arnold",
+      "xa": 0.108539,
+      "key_passes": 3,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 3205,
+      "display_name": "Kyle Walker",
+      "xa": 0.101472,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 22084,
+      "display_name": "Bukayo Saka",
+      "xa": 0.055358,
+      "key_passes": 2,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 10955,
+      "display_name": "Harry Kane",
+      "xa": 0.040369,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 3308,
+      "display_name": "Kieran Trippier",
+      "xa": 0.021318,
+      "key_passes": 1,
+      "passes_into_box": 1
+    }
+  ],
+  "metadata": {
+    "match_id": 3930171,
+    "team": "England",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Denmark vs England",
+    "zone_filter": "statsbomb_120x80_own_attack_right_frame",
+    "source_grouping": {
+      "open_play": [
+        "Regular Play"
+      ],
+      "counter": [
+        "From Counter"
+      ],
+      "set_piece": [
+        "From Corner",
+        "From Free Kick",
+        "From Throw In"
+      ],
+      "other": "every other play_pattern (From Goal Kick, From Kick Off, From Keeper, Other)"
+    }
+  }
+}

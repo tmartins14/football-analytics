@@ -1,0 +1,145 @@
+{
+  "team": "Austria",
+  "shots": {
+    "non_penalty_count": 21,
+    "total_npxg": 2.487028,
+    "by_zone": {
+      "six_yard_box": {
+        "npxg": 0.94146,
+        "count": 3
+      },
+      "box_central": {
+        "npxg": 1.276952,
+        "count": 10
+      },
+      "box_wide": {
+        "npxg": 0.06528,
+        "count": 1
+      },
+      "outside_box": {
+        "npxg": 0.203336,
+        "count": 7
+      }
+    },
+    "by_source": {
+      "open_play": {
+        "npxg": 1.121775,
+        "count": 8
+      },
+      "counter": {
+        "npxg": 0.030357,
+        "count": 1
+      },
+      "set_piece": {
+        "npxg": 1.291584,
+        "count": 11
+      },
+      "other": {
+        "npxg": 0.043313,
+        "count": 1
+      }
+    }
+  },
+  "shot_assists": {
+    "total_count": 15,
+    "by_side_and_type": {
+      "left": {
+        "cross": 1,
+        "cut_back": 0,
+        "through_ball": 1,
+        "other": 4
+      },
+      "centre": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 1,
+        "other": 1
+      },
+      "right": {
+        "cross": 3,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 4
+      }
+    }
+  },
+  "creators": [
+    {
+      "player_id": 11821,
+      "display_name": "Stefan Posch",
+      "xa": 0.858769,
+      "key_passes": 5,
+      "passes_into_box": 5
+    },
+    {
+      "player_id": 39545,
+      "display_name": "Alexander Prass",
+      "xa": 0.232395,
+      "key_passes": 1,
+      "passes_into_box": 2
+    },
+    {
+      "player_id": 8518,
+      "display_name": "Marcel Sabitzer",
+      "xa": 0.211743,
+      "key_passes": 3,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 8068,
+      "display_name": "Maximilian W\u00f6ber",
+      "xa": 0.131727,
+      "key_passes": 2,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 8784,
+      "display_name": "Romano Schmid",
+      "xa": 0.120858,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 39460,
+      "display_name": "Nicolas Seiwald",
+      "xa": 0.098569,
+      "key_passes": 1,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 24977,
+      "display_name": "Christoph Baumgartner",
+      "xa": 0.060313,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 13315,
+      "display_name": "Philipp Mwene",
+      "xa": 0.008235,
+      "key_passes": 1,
+      "passes_into_box": 1
+    }
+  ],
+  "metadata": {
+    "match_id": 3941022,
+    "team": "Austria",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Austria vs Turkey",
+    "zone_filter": "statsbomb_120x80_own_attack_right_frame",
+    "source_grouping": {
+      "open_play": [
+        "Regular Play"
+      ],
+      "counter": [
+        "From Counter"
+      ],
+      "set_piece": [
+        "From Corner",
+        "From Free Kick",
+        "From Throw In"
+      ],
+      "other": "every other play_pattern (From Goal Kick, From Kick Off, From Keeper, Other)"
+    }
+  }
+}

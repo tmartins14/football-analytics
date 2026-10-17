@@ -1,0 +1,138 @@
+{
+  "team": "Switzerland",
+  "shots": {
+    "non_penalty_count": 15,
+    "total_npxg": 2.095769,
+    "by_zone": {
+      "six_yard_box": {
+        "npxg": 0.044237,
+        "count": 1
+      },
+      "box_central": {
+        "npxg": 1.670912,
+        "count": 6
+      },
+      "box_wide": {
+        "npxg": 0.275812,
+        "count": 4
+      },
+      "outside_box": {
+        "npxg": 0.104808,
+        "count": 4
+      }
+    },
+    "by_source": {
+      "open_play": {
+        "npxg": 0.625797,
+        "count": 4
+      },
+      "counter": {
+        "npxg": 0.4427,
+        "count": 1
+      },
+      "set_piece": {
+        "npxg": 0.580547,
+        "count": 9
+      },
+      "other": {
+        "npxg": 0.446725,
+        "count": 1
+      }
+    }
+  },
+  "shot_assists": {
+    "total_count": 11,
+    "by_side_and_type": {
+      "left": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 6
+      },
+      "centre": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 1,
+        "other": 1
+      },
+      "right": {
+        "cross": 0,
+        "cut_back": 1,
+        "through_ball": 0,
+        "other": 2
+      }
+    }
+  },
+  "creators": [
+    {
+      "player_id": 16016,
+      "display_name": "Michel Aebischer",
+      "xa": 0.409107,
+      "key_passes": 2,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 3500,
+      "display_name": "Granit Xhaka",
+      "xa": 0.303494,
+      "key_passes": 4,
+      "passes_into_box": 2
+    },
+    {
+      "player_id": 5544,
+      "display_name": "Ricardo Rodr\u00edguez",
+      "xa": 0.14828,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 30401,
+      "display_name": "Ruben Vargas",
+      "xa": 0.119837,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 45190,
+      "display_name": "Dan Ndoye",
+      "xa": 0.060899,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 50436,
+      "display_name": "Fabian Rieder",
+      "xa": 0.044237,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 6983,
+      "display_name": "Remo Freuler",
+      "xa": 0.035578,
+      "key_passes": 1,
+      "passes_into_box": 0
+    }
+  ],
+  "metadata": {
+    "match_id": 3930159,
+    "team": "Switzerland",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Hungary vs Switzerland",
+    "zone_filter": "statsbomb_120x80_own_attack_right_frame",
+    "source_grouping": {
+      "open_play": [
+        "Regular Play"
+      ],
+      "counter": [
+        "From Counter"
+      ],
+      "set_piece": [
+        "From Corner",
+        "From Free Kick",
+        "From Throw In"
+      ],
+      "other": "every other play_pattern (From Goal Kick, From Kick Off, From Keeper, Other)"
+    }
+  }
+}

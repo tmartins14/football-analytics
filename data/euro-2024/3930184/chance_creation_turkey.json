@@ -1,0 +1,145 @@
+{
+  "team": "Turkey",
+  "shots": {
+    "non_penalty_count": 18,
+    "total_npxg": 1.217544,
+    "by_zone": {
+      "six_yard_box": {
+        "npxg": 0.0,
+        "count": 0
+      },
+      "box_central": {
+        "npxg": 0.737069,
+        "count": 6
+      },
+      "box_wide": {
+        "npxg": 0.174238,
+        "count": 5
+      },
+      "outside_box": {
+        "npxg": 0.306236,
+        "count": 7
+      }
+    },
+    "by_source": {
+      "open_play": {
+        "npxg": 0.244129,
+        "count": 4
+      },
+      "counter": {
+        "npxg": 0.085987,
+        "count": 1
+      },
+      "set_piece": {
+        "npxg": 0.498063,
+        "count": 8
+      },
+      "other": {
+        "npxg": 0.389364,
+        "count": 5
+      }
+    }
+  },
+  "shot_assists": {
+    "total_count": 14,
+    "by_side_and_type": {
+      "left": {
+        "cross": 1,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 6
+      },
+      "centre": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 5
+      },
+      "right": {
+        "cross": 1,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 1
+      }
+    }
+  },
+  "creators": [
+    {
+      "player_id": 134209,
+      "display_name": "Bar\u0131\u015f Alper Y\u0131lmaz",
+      "xa": 0.272293,
+      "key_passes": 2,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 30438,
+      "display_name": "Ferdi Kadioglu",
+      "xa": 0.267269,
+      "key_passes": 5,
+      "passes_into_box": 2
+    },
+    {
+      "player_id": 12293,
+      "display_name": "Kaan Ayhan",
+      "xa": 0.103811,
+      "key_passes": 1,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 78241,
+      "display_name": "\u0130smail Y\u00fcksek",
+      "xa": 0.097799,
+      "key_passes": 2,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 22212,
+      "display_name": "Orkun K\u00f6k\u00e7\u00fc",
+      "xa": 0.085987,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 116587,
+      "display_name": "Arda G\u00fcler",
+      "xa": 0.07527,
+      "key_passes": 1,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 23558,
+      "display_name": "Merih Demiral",
+      "xa": 0.048629,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 49689,
+      "display_name": "Kerem Akt\u00fcrkoglu",
+      "xa": 0.040462,
+      "key_passes": 1,
+      "passes_into_box": 0
+    }
+  ],
+  "metadata": {
+    "match_id": 3930184,
+    "team": "Turkey",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Czech Republic vs Turkey",
+    "zone_filter": "statsbomb_120x80_own_attack_right_frame",
+    "source_grouping": {
+      "open_play": [
+        "Regular Play"
+      ],
+      "counter": [
+        "From Counter"
+      ],
+      "set_piece": [
+        "From Corner",
+        "From Free Kick",
+        "From Throw In"
+      ],
+      "other": "every other play_pattern (From Goal Kick, From Kick Off, From Keeper, Other)"
+    }
+  }
+}

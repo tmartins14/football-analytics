@@ -1,0 +1,145 @@
+{
+  "team": "France",
+  "shots": {
+    "non_penalty_count": 18,
+    "total_npxg": 1.107968,
+    "by_zone": {
+      "six_yard_box": {
+        "npxg": 0.0,
+        "count": 0
+      },
+      "box_central": {
+        "npxg": 0.540562,
+        "count": 5
+      },
+      "box_wide": {
+        "npxg": 0.295236,
+        "count": 6
+      },
+      "outside_box": {
+        "npxg": 0.27217,
+        "count": 7
+      }
+    },
+    "by_source": {
+      "open_play": {
+        "npxg": 0.368058,
+        "count": 5
+      },
+      "counter": {
+        "npxg": 0.289459,
+        "count": 2
+      },
+      "set_piece": {
+        "npxg": 0.450451,
+        "count": 11
+      },
+      "other": {
+        "npxg": 0.0,
+        "count": 0
+      }
+    }
+  },
+  "shot_assists": {
+    "total_count": 15,
+    "by_side_and_type": {
+      "left": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 4
+      },
+      "centre": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 4
+      },
+      "right": {
+        "cross": 1,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 6
+      }
+    }
+  },
+  "creators": [
+    {
+      "player_id": 3961,
+      "display_name": "N'Golo Kant\u00e9",
+      "xa": 0.296006,
+      "key_passes": 2,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 5477,
+      "display_name": "Ousmane Demb\u00e9l\u00e9",
+      "xa": 0.241236,
+      "key_passes": 3,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 4445,
+      "display_name": "Jules Kound\u00e9",
+      "xa": 0.153093,
+      "key_passes": 3,
+      "passes_into_box": 2
+    },
+    {
+      "player_id": 5487,
+      "display_name": "Antoine Griezmann",
+      "xa": 0.099317,
+      "key_passes": 2,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 39420,
+      "display_name": "Bradley Barcola",
+      "xa": 0.0468,
+      "key_passes": 2,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 8519,
+      "display_name": "Dayotchanculle Upamecano",
+      "xa": 0.046296,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 6704,
+      "display_name": "Theo Hern\u00e1ndez",
+      "xa": 0.030019,
+      "key_passes": 1,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 3604,
+      "display_name": "Olivier Giroud",
+      "xa": 0.02301,
+      "key_passes": 1,
+      "passes_into_box": 0
+    }
+  ],
+  "metadata": {
+    "match_id": 3938643,
+    "team": "France",
+    "competition": "UEFA Euro 2024",
+    "match_label": "France vs Poland",
+    "zone_filter": "statsbomb_120x80_own_attack_right_frame",
+    "source_grouping": {
+      "open_play": [
+        "Regular Play"
+      ],
+      "counter": [
+        "From Counter"
+      ],
+      "set_piece": [
+        "From Corner",
+        "From Free Kick",
+        "From Throw In"
+      ],
+      "other": "every other play_pattern (From Goal Kick, From Kick Off, From Keeper, Other)"
+    }
+  }
+}

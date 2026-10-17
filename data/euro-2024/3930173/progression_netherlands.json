@@ -1,0 +1,97 @@
+{
+  "team": "Netherlands",
+  "progressive_actions": {
+    "total_count": 22,
+    "by_side": {
+      "left": 6,
+      "centre": 6,
+      "right": 10
+    },
+    "by_mode": {
+      "pass": 14,
+      "carry": 8
+    }
+  },
+  "progressors": [
+    {
+      "player_id": 39167,
+      "display_name": "Xavi Simons",
+      "count": 6,
+      "passes": 3,
+      "carries": 3
+    },
+    {
+      "player_id": 20750,
+      "display_name": "Cody Gakpo",
+      "count": 4,
+      "passes": 2,
+      "carries": 2
+    },
+    {
+      "player_id": 7787,
+      "display_name": "Stefan de Vrij",
+      "count": 3,
+      "passes": 2,
+      "carries": 1
+    },
+    {
+      "player_id": 15503,
+      "display_name": "Jerdy Schouten",
+      "count": 2,
+      "passes": 1,
+      "carries": 1
+    },
+    {
+      "player_id": 32712,
+      "display_name": "Jeremie Frimpong",
+      "count": 2,
+      "passes": 1,
+      "carries": 1
+    },
+    {
+      "player_id": 37274,
+      "display_name": "Bart Verbruggen",
+      "count": 1,
+      "passes": 1,
+      "carries": 0
+    },
+    {
+      "player_id": 8125,
+      "display_name": "Denzel Dumfries",
+      "count": 1,
+      "passes": 1,
+      "carries": 0
+    },
+    {
+      "player_id": 3567,
+      "display_name": "Georginio Wijnaldum",
+      "count": 1,
+      "passes": 1,
+      "carries": 0
+    },
+    {
+      "player_id": 2988,
+      "display_name": "Memphis Depay",
+      "count": 1,
+      "passes": 1,
+      "carries": 0
+    },
+    {
+      "player_id": 3669,
+      "display_name": "Virgil van Dijk",
+      "count": 1,
+      "passes": 1,
+      "carries": 0
+    }
+  ],
+  "params": {
+    "progressive_threshold": 0.25
+  },
+  "metadata": {
+    "match_id": 3930173,
+    "team": "Netherlands",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Netherlands vs France",
+    "open_play_filter": "play_pattern"
+  }
+}
