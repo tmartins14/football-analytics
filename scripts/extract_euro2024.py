@@ -12,6 +12,10 @@ the following files into data/euro-2024/{match_id}/ for each match:
     pass_network_{team}.json   (both teams)
     formation_{team_slug}.json (both teams)
     team_shape_{team_slug}.json (both teams)
+    chance_creation_{team_slug}.json (both teams)
+    progression_{team_slug}.json (both teams)
+    pressing.json
+    defending_{team_slug}.json (both teams)
     freeze_frames_goals.json
     convex_hull_goals.json
     tactical_findings.json (requires shots/match_stats/substitutes/pass_network/
@@ -48,6 +52,10 @@ from statsbomb.extract_substitutes import main as substitutes_main
 from statsbomb.extract_pass_network import main as pass_network_main
 from statsbomb.extract_formation import main as formation_main
 from statsbomb.extract_team_shape import main as team_shape_main
+from statsbomb.extract_chance_creation import main as chance_creation_main
+from statsbomb.extract_progression import main as progression_main
+from statsbomb.extract_pressing import main as pressing_main
+from statsbomb.extract_defending import main as defending_main
 from statsbomb.extract_freeze_frame import main as freeze_frame_main
 from statsbomb.extract_convex_hull import main as convex_hull_main
 from statsbomb.derive_tactical_findings import main as tactical_findings_main
@@ -87,6 +95,10 @@ def _extract_match(match_id: int, home_team: str, away_team: str, force: bool) -
         ("pass_network",   lambda: pass_network_main(match_id, out_dir, teams)),
         ("formation",      lambda: formation_main(match_id, out_dir, teams)),
         ("team_shape",     lambda: team_shape_main(match_id, out_dir, teams)),
+        ("chance_creation", lambda: chance_creation_main(match_id, out_dir, teams)),
+        ("progression",    lambda: progression_main(match_id, out_dir, teams)),
+        ("pressing",       lambda: pressing_main(match_id, out_dir)),
+        ("defending",      lambda: defending_main(match_id, out_dir, teams)),
         ("freeze_frames",  lambda: freeze_frame_main(match_id, out_dir)),
         ("convex_hull",    lambda: convex_hull_main(match_id, out_dir)),
         ("tactical_findings", lambda: tactical_findings_main(match_id, out_dir)),

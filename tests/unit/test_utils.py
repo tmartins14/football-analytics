@@ -10,6 +10,7 @@ from statsbomb.utils import (
     open_play_mask,
     parse_timestamp,
     pass_outcome,
+    side_group,
 )
 
 
@@ -83,6 +84,37 @@ class TestPassOutcome:
     def test_non_pass_type_returns_none(self):
         row = pd.Series({"type": "Carry", "pass_outcome": "Incomplete"})
         assert pass_outcome(row) is None
+
+
+class TestSideGroup:
+    def test_left_wing_is_left(self):
+        assert side_group(0.0) == "left"
+
+    def test_left_half_space_is_left(self):
+        assert side_group(18.0) == "left"
+
+    def test_boundary_between_left_half_space_and_centre(self):
+        # 30 is lane_for_y's half-open boundary into "centre" (DATA-SPEC-v2
+        # §A) — side_group must land on the same side, not its own rule.
+        assert side_group(29.9) == "left"
+        assert side_group(30.0) == "centre"
+
+    def test_centre_of_pitch_is_centre(self):
+        assert side_group(40.0) == "centre"
+
+    def test_boundary_between_centre_and_right_half_space(self):
+        assert side_group(49.9) == "centre"
+        assert side_group(50.0) == "right"
+
+    def test_right_half_space_is_right(self):
+        assert side_group(55.0) == "right"
+
+    def test_right_wing_closed_upper_bound_is_right(self):
+        assert side_group(80.0) == "right"
+
+    def test_outside_pitch_raises(self):
+        with pytest.raises(ValueError):
+            side_group(-0.1)
 
 
 class TestCleanNan:

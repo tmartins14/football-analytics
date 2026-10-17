@@ -14,6 +14,7 @@ Public API:
     parse_timestamp(ts) -> float
     end_location(row) -> tuple[float | None, float | None]
     pass_outcome(row) -> str | None
+    side_group(y) -> str
     clean_nan(value) -> Any
 """
 
@@ -25,6 +26,8 @@ import requests
 
 import pandas as pd
 from statsbombpy import sb
+
+from .tactical_definitions import lane_for_y
 
 
 SET_PIECE_PLAY_PATTERNS: frozenset[str] = frozenset({
@@ -289,6 +292,28 @@ def pass_outcome(row: pd.Series) -> str | None:
             return str(outcome)
         return None
     return None
+
+
+def side_group(y: float) -> str:
+    """Map a pitch y coordinate to its DATA-SPEC-v3 side group.
+
+    `left` = left_wing + left_half_space, `right` = right_half_space +
+    right_wing, `centre` is the lane of the same name — built on
+    `tactical_definitions.lane_for_y` rather than its own interval table, so
+    the two can never drift apart.
+
+    Args:
+        y (float): StatsBomb y coordinate, 0 (left touchline) to 80.
+
+    Returns:
+        str: One of "left", "centre", "right".
+    """
+    lane = lane_for_y(y)
+    if lane in ("left_wing", "left_half_space"):
+        return "left"
+    if lane in ("right_half_space", "right_wing"):
+        return "right"
+    return "centre"
 
 
 def clean_nan(value):
