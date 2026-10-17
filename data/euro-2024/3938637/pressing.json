@@ -1,0 +1,289 @@
+{
+  "teams": {
+    "Netherlands": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 74,
+        "defensive_actions_advanced": 15,
+        "value": 4.9333
+      },
+      "pressures_high": {
+        "count": 72,
+        "opponent_open_play_passes": 115,
+        "per_100": 62.61
+      },
+      "pressure_side": {
+        "left": 34,
+        "centre": 27,
+        "right": 66
+      }
+    },
+    "Poland": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 133,
+        "defensive_actions_advanced": 10,
+        "value": 13.3
+      },
+      "pressures_high": {
+        "count": 34,
+        "opponent_open_play_passes": 163,
+        "per_100": 20.86
+      },
+      "pressure_side": {
+        "left": 60,
+        "centre": 27,
+        "right": 49
+      }
+    }
+  },
+  "pressure_received": [
+    {
+      "player_id": 32712,
+      "display_name": "Jeremie Frimpong",
+      "team": "Netherlands",
+      "on_ball_events": 8,
+      "under_pressure_events": 5,
+      "share": 0.625
+    },
+    {
+      "player_id": 20841,
+      "display_name": "Jakub Piotrowski",
+      "team": "Poland",
+      "on_ball_events": 24,
+      "under_pressure_events": 14,
+      "share": 0.5833
+    },
+    {
+      "player_id": 7829,
+      "display_name": "Wout Weghorst",
+      "team": "Netherlands",
+      "on_ball_events": 21,
+      "under_pressure_events": 12,
+      "share": 0.5714
+    },
+    {
+      "player_id": 7663,
+      "display_name": "Adam Buksa",
+      "team": "Poland",
+      "on_ball_events": 51,
+      "under_pressure_events": 25,
+      "share": 0.4902
+    },
+    {
+      "player_id": 15859,
+      "display_name": "Bartosz Slisz",
+      "team": "Poland",
+      "on_ball_events": 27,
+      "under_pressure_events": 11,
+      "share": 0.4074
+    },
+    {
+      "player_id": 20750,
+      "display_name": "Cody Gakpo",
+      "team": "Netherlands",
+      "on_ball_events": 106,
+      "under_pressure_events": 40,
+      "share": 0.3774
+    },
+    {
+      "player_id": 8836,
+      "display_name": "Karol \u015awiderski",
+      "team": "Poland",
+      "on_ball_events": 27,
+      "under_pressure_events": 10,
+      "share": 0.3704
+    },
+    {
+      "player_id": 2988,
+      "display_name": "Memphis Depay",
+      "team": "Netherlands",
+      "on_ball_events": 92,
+      "under_pressure_events": 32,
+      "share": 0.3478
+    },
+    {
+      "player_id": 50502,
+      "display_name": "Nicola Zalewski",
+      "team": "Poland",
+      "on_ball_events": 89,
+      "under_pressure_events": 30,
+      "share": 0.3371
+    },
+    {
+      "player_id": 3567,
+      "display_name": "Georginio Wijnaldum",
+      "team": "Netherlands",
+      "on_ball_events": 16,
+      "under_pressure_events": 5,
+      "share": 0.3125
+    },
+    {
+      "player_id": 4626,
+      "display_name": "Jan Bednarek",
+      "team": "Poland",
+      "on_ball_events": 67,
+      "under_pressure_events": 18,
+      "share": 0.2687
+    },
+    {
+      "player_id": 15582,
+      "display_name": "Donyell Malen",
+      "team": "Netherlands",
+      "on_ball_events": 41,
+      "under_pressure_events": 11,
+      "share": 0.2683
+    },
+    {
+      "player_id": 5673,
+      "display_name": "Bartosz Bereszy\u0144ski",
+      "team": "Poland",
+      "on_ball_events": 4,
+      "under_pressure_events": 1,
+      "share": 0.25
+    },
+    {
+      "player_id": 7979,
+      "display_name": "Przemys\u0142aw Frankowski",
+      "team": "Poland",
+      "on_ball_events": 85,
+      "under_pressure_events": 20,
+      "share": 0.2353
+    },
+    {
+      "player_id": 4664,
+      "display_name": "Sebastian Szyma\u0144ski",
+      "team": "Poland",
+      "on_ball_events": 50,
+      "under_pressure_events": 11,
+      "share": 0.22
+    },
+    {
+      "player_id": 29480,
+      "display_name": "Jakub Moder",
+      "team": "Poland",
+      "on_ball_events": 60,
+      "under_pressure_events": 13,
+      "share": 0.2167
+    },
+    {
+      "player_id": 21582,
+      "display_name": "Tijjani Reijnders",
+      "team": "Netherlands",
+      "on_ball_events": 117,
+      "under_pressure_events": 25,
+      "share": 0.2137
+    },
+    {
+      "player_id": 44166,
+      "display_name": "Jakub Piotr Kiwior",
+      "team": "Poland",
+      "on_ball_events": 98,
+      "under_pressure_events": 20,
+      "share": 0.2041
+    },
+    {
+      "player_id": 33680,
+      "display_name": "Kacper Urbanski",
+      "team": "Poland",
+      "on_ball_events": 54,
+      "under_pressure_events": 11,
+      "share": 0.2037
+    },
+    {
+      "player_id": 7787,
+      "display_name": "Stefan de Vrij",
+      "team": "Netherlands",
+      "on_ball_events": 150,
+      "under_pressure_events": 30,
+      "share": 0.2
+    },
+    {
+      "player_id": 8289,
+      "display_name": "Bartosz Salamon",
+      "team": "Poland",
+      "on_ball_events": 70,
+      "under_pressure_events": 13,
+      "share": 0.1857
+    },
+    {
+      "player_id": 39167,
+      "display_name": "Xavi Simons",
+      "team": "Netherlands",
+      "on_ball_events": 87,
+      "under_pressure_events": 16,
+      "share": 0.1839
+    },
+    {
+      "player_id": 7982,
+      "display_name": "Taras Wiktorowicz Romanczuk",
+      "team": "Poland",
+      "on_ball_events": 34,
+      "under_pressure_events": 6,
+      "share": 0.1765
+    },
+    {
+      "player_id": 15503,
+      "display_name": "Jerdy Schouten",
+      "team": "Netherlands",
+      "on_ball_events": 171,
+      "under_pressure_events": 30,
+      "share": 0.1754
+    },
+    {
+      "player_id": 3669,
+      "display_name": "Virgil van Dijk",
+      "team": "Netherlands",
+      "on_ball_events": 144,
+      "under_pressure_events": 23,
+      "share": 0.1597
+    },
+    {
+      "player_id": 21633,
+      "display_name": "Joey Veerman",
+      "team": "Netherlands",
+      "on_ball_events": 138,
+      "under_pressure_events": 22,
+      "share": 0.1594
+    },
+    {
+      "player_id": 5660,
+      "display_name": "Piotr Zieli\u0144ski",
+      "team": "Poland",
+      "on_ball_events": 87,
+      "under_pressure_events": 11,
+      "share": 0.1264
+    },
+    {
+      "player_id": 3306,
+      "display_name": "Nathan Ak\u00e9",
+      "team": "Netherlands",
+      "on_ball_events": 142,
+      "under_pressure_events": 16,
+      "share": 0.1127
+    },
+    {
+      "player_id": 8125,
+      "display_name": "Denzel Dumfries",
+      "team": "Netherlands",
+      "on_ball_events": 169,
+      "under_pressure_events": 17,
+      "share": 0.1006
+    },
+    {
+      "player_id": 32547,
+      "display_name": "Micky van de Ven",
+      "team": "Netherlands",
+      "on_ball_events": 5,
+      "under_pressure_events": 0,
+      "share": 0.0
+    }
+  ],
+  "metadata": {
+    "match_id": 3938637,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Poland vs Netherlands",
+    "open_play_filter": "play_pattern + pass_type",
+    "ppda_zone": "opponent's own 60% (x < 72 in the opponent's own frame)",
+    "defensive_action_zone": "pressing team's own half+ (x >= 48 in its own frame)",
+    "pressures_high_zone": "opponent half (x >= 60 in the pressing team's own frame)"
+  }
+}

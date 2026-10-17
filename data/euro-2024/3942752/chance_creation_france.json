@@ -1,0 +1,131 @@
+{
+  "team": "France",
+  "shots": {
+    "non_penalty_count": 9,
+    "total_npxg": 0.850765,
+    "by_zone": {
+      "six_yard_box": {
+        "npxg": 0.367865,
+        "count": 2
+      },
+      "box_central": {
+        "npxg": 0.315838,
+        "count": 4
+      },
+      "box_wide": {
+        "npxg": 0.13677,
+        "count": 2
+      },
+      "outside_box": {
+        "npxg": 0.030292,
+        "count": 1
+      }
+    },
+    "by_source": {
+      "open_play": {
+        "npxg": 0.240071,
+        "count": 3
+      },
+      "counter": {
+        "npxg": 0.0,
+        "count": 0
+      },
+      "set_piece": {
+        "npxg": 0.511054,
+        "count": 5
+      },
+      "other": {
+        "npxg": 0.099639,
+        "count": 1
+      }
+    }
+  },
+  "shot_assists": {
+    "total_count": 8,
+    "by_side_and_type": {
+      "left": {
+        "cross": 2,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 4
+      },
+      "centre": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 1
+      },
+      "right": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 1
+      }
+    }
+  },
+  "creators": [
+    {
+      "player_id": 3009,
+      "display_name": "Kylian Mbapp\u00e9",
+      "xa": 0.27132,
+      "key_passes": 1,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 5477,
+      "display_name": "Ousmane Demb\u00e9l\u00e9",
+      "xa": 0.177635,
+      "key_passes": 2,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 39420,
+      "display_name": "Bradley Barcola",
+      "xa": 0.131447,
+      "key_passes": 2,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 24778,
+      "display_name": "Eduardo Camavinga",
+      "xa": 0.121718,
+      "key_passes": 1,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 6704,
+      "display_name": "Theo Hern\u00e1ndez",
+      "xa": 0.081223,
+      "key_passes": 1,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 3026,
+      "display_name": "Adrien Rabiot",
+      "xa": 0.03713,
+      "key_passes": 1,
+      "passes_into_box": 0
+    }
+  ],
+  "metadata": {
+    "match_id": 3942752,
+    "team": "France",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Spain vs France",
+    "zone_filter": "statsbomb_120x80_own_attack_right_frame",
+    "source_grouping": {
+      "open_play": [
+        "Regular Play"
+      ],
+      "counter": [
+        "From Counter"
+      ],
+      "set_piece": [
+        "From Corner",
+        "From Free Kick",
+        "From Throw In"
+      ],
+      "other": "every other play_pattern (From Goal Kick, From Kick Off, From Keeper, Other)"
+    }
+  }
+}

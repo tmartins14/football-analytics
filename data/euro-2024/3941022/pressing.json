@@ -1,0 +1,273 @@
+{
+  "teams": {
+    "Austria": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 169,
+        "defensive_actions_advanced": 16,
+        "value": 10.5625
+      },
+      "pressures_high": {
+        "count": 78,
+        "opponent_open_play_passes": 199,
+        "per_100": 39.2
+      },
+      "pressure_side": {
+        "left": 36,
+        "centre": 35,
+        "right": 66
+      }
+    },
+    "Turkey": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 200,
+        "defensive_actions_advanced": 13,
+        "value": 15.3846
+      },
+      "pressures_high": {
+        "count": 48,
+        "opponent_open_play_passes": 355,
+        "per_100": 13.52
+      },
+      "pressure_side": {
+        "left": 57,
+        "centre": 56,
+        "right": 59
+      }
+    }
+  },
+  "pressure_received": [
+    {
+      "player_id": 24977,
+      "display_name": "Christoph Baumgartner",
+      "team": "Austria",
+      "on_ball_events": 135,
+      "under_pressure_events": 61,
+      "share": 0.4519
+    },
+    {
+      "player_id": 134209,
+      "display_name": "Bar\u0131\u015f Alper Y\u0131lmaz",
+      "team": "Turkey",
+      "on_ball_events": 78,
+      "under_pressure_events": 35,
+      "share": 0.4487
+    },
+    {
+      "player_id": 8309,
+      "display_name": "Michael Gregoritsch",
+      "team": "Austria",
+      "on_ball_events": 27,
+      "under_pressure_events": 11,
+      "share": 0.4074
+    },
+    {
+      "player_id": 151813,
+      "display_name": "Kenan Yildiz",
+      "team": "Turkey",
+      "on_ball_events": 77,
+      "under_pressure_events": 30,
+      "share": 0.3896
+    },
+    {
+      "player_id": 3325,
+      "display_name": "Marko Arnautovi\u0107",
+      "team": "Austria",
+      "on_ball_events": 49,
+      "under_pressure_events": 19,
+      "share": 0.3878
+    },
+    {
+      "player_id": 30438,
+      "display_name": "Ferdi Kadioglu",
+      "team": "Turkey",
+      "on_ball_events": 130,
+      "under_pressure_events": 42,
+      "share": 0.3231
+    },
+    {
+      "player_id": 39545,
+      "display_name": "Alexander Prass",
+      "team": "Austria",
+      "on_ball_events": 82,
+      "under_pressure_events": 26,
+      "share": 0.3171
+    },
+    {
+      "player_id": 12555,
+      "display_name": "Okay Yoku\u015flu",
+      "team": "Turkey",
+      "on_ball_events": 17,
+      "under_pressure_events": 5,
+      "share": 0.2941
+    },
+    {
+      "player_id": 116587,
+      "display_name": "Arda G\u00fcler",
+      "team": "Turkey",
+      "on_ball_events": 109,
+      "under_pressure_events": 32,
+      "share": 0.2936
+    },
+    {
+      "player_id": 12293,
+      "display_name": "Kaan Ayhan",
+      "team": "Turkey",
+      "on_ball_events": 82,
+      "under_pressure_events": 22,
+      "share": 0.2683
+    },
+    {
+      "player_id": 8506,
+      "display_name": "Konrad Laimer",
+      "team": "Austria",
+      "on_ball_events": 96,
+      "under_pressure_events": 25,
+      "share": 0.2604
+    },
+    {
+      "player_id": 22212,
+      "display_name": "Orkun K\u00f6k\u00e7\u00fc",
+      "team": "Turkey",
+      "on_ball_events": 120,
+      "under_pressure_events": 31,
+      "share": 0.2583
+    },
+    {
+      "player_id": 8518,
+      "display_name": "Marcel Sabitzer",
+      "team": "Austria",
+      "on_ball_events": 138,
+      "under_pressure_events": 35,
+      "share": 0.2536
+    },
+    {
+      "player_id": 78241,
+      "display_name": "\u0130smail Y\u00fcksek",
+      "team": "Turkey",
+      "on_ball_events": 75,
+      "under_pressure_events": 17,
+      "share": 0.2267
+    },
+    {
+      "player_id": 11821,
+      "display_name": "Stefan Posch",
+      "team": "Austria",
+      "on_ball_events": 158,
+      "under_pressure_events": 35,
+      "share": 0.2215
+    },
+    {
+      "player_id": 48383,
+      "display_name": "Abd\u00fclkerim Bardakc\u0131",
+      "team": "Turkey",
+      "on_ball_events": 118,
+      "under_pressure_events": 26,
+      "share": 0.2203
+    },
+    {
+      "player_id": 23558,
+      "display_name": "Merih Demiral",
+      "team": "Turkey",
+      "on_ball_events": 102,
+      "under_pressure_events": 22,
+      "share": 0.2157
+    },
+    {
+      "player_id": 49689,
+      "display_name": "Kerem Akt\u00fcrkoglu",
+      "team": "Turkey",
+      "on_ball_events": 24,
+      "under_pressure_events": 5,
+      "share": 0.2083
+    },
+    {
+      "player_id": 10826,
+      "display_name": "Mert M\u00fcld\u00fcr",
+      "team": "Turkey",
+      "on_ball_events": 106,
+      "under_pressure_events": 22,
+      "share": 0.2075
+    },
+    {
+      "player_id": 11396,
+      "display_name": "Florian Grillitsch",
+      "team": "Austria",
+      "on_ball_events": 84,
+      "under_pressure_events": 17,
+      "share": 0.2024
+    },
+    {
+      "player_id": 8784,
+      "display_name": "Romano Schmid",
+      "team": "Austria",
+      "on_ball_events": 52,
+      "under_pressure_events": 9,
+      "share": 0.1731
+    },
+    {
+      "player_id": 13315,
+      "display_name": "Philipp Mwene",
+      "team": "Austria",
+      "on_ball_events": 55,
+      "under_pressure_events": 9,
+      "share": 0.1636
+    },
+    {
+      "player_id": 39460,
+      "display_name": "Nicolas Seiwald",
+      "team": "Austria",
+      "on_ball_events": 178,
+      "under_pressure_events": 28,
+      "share": 0.1573
+    },
+    {
+      "player_id": 8931,
+      "display_name": "Philipp Lienhart",
+      "team": "Austria",
+      "on_ball_events": 99,
+      "under_pressure_events": 14,
+      "share": 0.1414
+    },
+    {
+      "player_id": 11820,
+      "display_name": "Kevin Danso",
+      "team": "Austria",
+      "on_ball_events": 192,
+      "under_pressure_events": 26,
+      "share": 0.1354
+    },
+    {
+      "player_id": 9085,
+      "display_name": "Salih \u00d6zcan",
+      "team": "Turkey",
+      "on_ball_events": 39,
+      "under_pressure_events": 5,
+      "share": 0.1282
+    },
+    {
+      "player_id": 8068,
+      "display_name": "Maximilian W\u00f6ber",
+      "team": "Austria",
+      "on_ball_events": 56,
+      "under_pressure_events": 6,
+      "share": 0.1071
+    },
+    {
+      "player_id": 30311,
+      "display_name": "\u0130rfan Can Kahveci",
+      "team": "Turkey",
+      "on_ball_events": 5,
+      "under_pressure_events": 0,
+      "share": 0.0
+    }
+  ],
+  "metadata": {
+    "match_id": 3941022,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Austria vs Turkey",
+    "open_play_filter": "play_pattern + pass_type",
+    "ppda_zone": "opponent's own 60% (x < 72 in the opponent's own frame)",
+    "defensive_action_zone": "pressing team's own half+ (x >= 48 in its own frame)",
+    "pressures_high_zone": "opponent half (x >= 60 in the pressing team's own frame)"
+  }
+}

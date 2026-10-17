@@ -1,0 +1,131 @@
+{
+  "team": "Belgium",
+  "shots": {
+    "non_penalty_count": 12,
+    "total_npxg": 0.633985,
+    "by_zone": {
+      "six_yard_box": {
+        "npxg": 0.0,
+        "count": 0
+      },
+      "box_central": {
+        "npxg": 0.402888,
+        "count": 3
+      },
+      "box_wide": {
+        "npxg": 0.039801,
+        "count": 2
+      },
+      "outside_box": {
+        "npxg": 0.191295,
+        "count": 7
+      }
+    },
+    "by_source": {
+      "open_play": {
+        "npxg": 0.452186,
+        "count": 7
+      },
+      "counter": {
+        "npxg": 0.096066,
+        "count": 2
+      },
+      "set_piece": {
+        "npxg": 0.085732,
+        "count": 3
+      },
+      "other": {
+        "npxg": 0.0,
+        "count": 0
+      }
+    }
+  },
+  "shot_assists": {
+    "total_count": 9,
+    "by_side_and_type": {
+      "left": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 6
+      },
+      "centre": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 2
+      },
+      "right": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 1
+      }
+    }
+  },
+  "creators": [
+    {
+      "player_id": 3089,
+      "display_name": "Kevin De Bruyne",
+      "xa": 0.341073,
+      "key_passes": 3,
+      "passes_into_box": 3
+    },
+    {
+      "player_id": 16559,
+      "display_name": "Leandro Trossard",
+      "xa": 0.073124,
+      "key_passes": 2,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 3289,
+      "display_name": "Romelu Lukaku",
+      "xa": 0.065058,
+      "key_passes": 1,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 23650,
+      "display_name": "J\u00e9r\u00e9my Doku",
+      "xa": 0.020854,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 48347,
+      "display_name": "Amadou Onana",
+      "xa": 0.008175,
+      "key_passes": 1,
+      "passes_into_box": 3
+    },
+    {
+      "player_id": 43913,
+      "display_name": "Arthur Theate",
+      "xa": 0.007043,
+      "key_passes": 1,
+      "passes_into_box": 0
+    }
+  ],
+  "metadata": {
+    "match_id": 3938645,
+    "team": "Belgium",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Ukraine vs Belgium",
+    "zone_filter": "statsbomb_120x80_own_attack_right_frame",
+    "source_grouping": {
+      "open_play": [
+        "Regular Play"
+      ],
+      "counter": [
+        "From Counter"
+      ],
+      "set_piece": [
+        "From Corner",
+        "From Free Kick",
+        "From Throw In"
+      ],
+      "other": "every other play_pattern (From Goal Kick, From Kick Off, From Keeper, Other)"
+    }
+  }
+}

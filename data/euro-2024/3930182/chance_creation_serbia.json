@@ -1,0 +1,110 @@
+{
+  "team": "Serbia",
+  "shots": {
+    "non_penalty_count": 5,
+    "total_npxg": 0.324442,
+    "by_zone": {
+      "six_yard_box": {
+        "npxg": 0.0,
+        "count": 0
+      },
+      "box_central": {
+        "npxg": 0.187886,
+        "count": 3
+      },
+      "box_wide": {
+        "npxg": 0.031953,
+        "count": 1
+      },
+      "outside_box": {
+        "npxg": 0.104604,
+        "count": 1
+      }
+    },
+    "by_source": {
+      "open_play": {
+        "npxg": 0.065198,
+        "count": 1
+      },
+      "counter": {
+        "npxg": 0.0,
+        "count": 0
+      },
+      "set_piece": {
+        "npxg": 0.259244,
+        "count": 4
+      },
+      "other": {
+        "npxg": 0.0,
+        "count": 0
+      }
+    }
+  },
+  "shot_assists": {
+    "total_count": 4,
+    "by_side_and_type": {
+      "left": {
+        "cross": 1,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 0
+      },
+      "centre": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 0
+      },
+      "right": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 3
+      }
+    }
+  },
+  "creators": [
+    {
+      "player_id": 3831,
+      "display_name": "Du\u0161an Tadi\u0107",
+      "xa": 0.169802,
+      "key_passes": 2,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 6318,
+      "display_name": "Andrija \u017divkovi\u0107",
+      "xa": 0.061911,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 5589,
+      "display_name": "Sergej Milinkovi\u0107-Savi\u0107",
+      "xa": 0.060777,
+      "key_passes": 1,
+      "passes_into_box": 0
+    }
+  ],
+  "metadata": {
+    "match_id": 3930182,
+    "team": "Serbia",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Denmark vs Serbia",
+    "zone_filter": "statsbomb_120x80_own_attack_right_frame",
+    "source_grouping": {
+      "open_play": [
+        "Regular Play"
+      ],
+      "counter": [
+        "From Counter"
+      ],
+      "set_piece": [
+        "From Corner",
+        "From Free Kick",
+        "From Throw In"
+      ],
+      "other": "every other play_pattern (From Goal Kick, From Kick Off, From Keeper, Other)"
+    }
+  }
+}

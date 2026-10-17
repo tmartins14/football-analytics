@@ -1,0 +1,124 @@
+{
+  "team": "Netherlands",
+  "shots": {
+    "non_penalty_count": 11,
+    "total_npxg": 0.718929,
+    "by_zone": {
+      "six_yard_box": {
+        "npxg": 0.155619,
+        "count": 1
+      },
+      "box_central": {
+        "npxg": 0.334644,
+        "count": 4
+      },
+      "box_wide": {
+        "npxg": 0.110643,
+        "count": 2
+      },
+      "outside_box": {
+        "npxg": 0.118024,
+        "count": 4
+      }
+    },
+    "by_source": {
+      "open_play": {
+        "npxg": 0.401922,
+        "count": 6
+      },
+      "counter": {
+        "npxg": 0.0,
+        "count": 0
+      },
+      "set_piece": {
+        "npxg": 0.216038,
+        "count": 3
+      },
+      "other": {
+        "npxg": 0.100969,
+        "count": 2
+      }
+    }
+  },
+  "shot_assists": {
+    "total_count": 9,
+    "by_side_and_type": {
+      "left": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 4
+      },
+      "centre": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 3
+      },
+      "right": {
+        "cross": 2,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 0
+      }
+    }
+  },
+  "creators": [
+    {
+      "player_id": 2988,
+      "display_name": "Memphis Depay",
+      "xa": 0.256108,
+      "key_passes": 3,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 39167,
+      "display_name": "Xavi Simons",
+      "xa": 0.088474,
+      "key_passes": 3,
+      "passes_into_box": 2
+    },
+    {
+      "player_id": 7829,
+      "display_name": "Wout Weghorst",
+      "xa": 0.078851,
+      "key_passes": 1,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 32712,
+      "display_name": "Jeremie Frimpong",
+      "xa": 0.071894,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 8125,
+      "display_name": "Denzel Dumfries",
+      "xa": 0.064,
+      "key_passes": 1,
+      "passes_into_box": 1
+    }
+  ],
+  "metadata": {
+    "match_id": 3942382,
+    "team": "Netherlands",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Netherlands vs Turkey",
+    "zone_filter": "statsbomb_120x80_own_attack_right_frame",
+    "source_grouping": {
+      "open_play": [
+        "Regular Play"
+      ],
+      "counter": [
+        "From Counter"
+      ],
+      "set_piece": [
+        "From Corner",
+        "From Free Kick",
+        "From Throw In"
+      ],
+      "other": "every other play_pattern (From Goal Kick, From Kick Off, From Keeper, Other)"
+    }
+  }
+}

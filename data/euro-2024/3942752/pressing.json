@@ -1,0 +1,281 @@
+{
+  "teams": {
+    "France": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 118,
+        "defensive_actions_advanced": 25,
+        "value": 4.72
+      },
+      "pressures_high": {
+        "count": 70,
+        "opponent_open_play_passes": 187,
+        "per_100": 37.43
+      },
+      "pressure_side": {
+        "left": 54,
+        "centre": 38,
+        "right": 82
+      }
+    },
+    "Spain": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 102,
+        "defensive_actions_advanced": 11,
+        "value": 9.2727
+      },
+      "pressures_high": {
+        "count": 65,
+        "opponent_open_play_passes": 142,
+        "per_100": 45.77
+      },
+      "pressure_side": {
+        "left": 60,
+        "centre": 20,
+        "right": 42
+      }
+    }
+  },
+  "pressure_received": [
+    {
+      "player_id": 6748,
+      "display_name": "Ferr\u00e1n Torres",
+      "team": "Spain",
+      "on_ball_events": 4,
+      "under_pressure_events": 3,
+      "share": 0.75
+    },
+    {
+      "player_id": 3604,
+      "display_name": "Olivier Giroud",
+      "team": "France",
+      "on_ball_events": 8,
+      "under_pressure_events": 5,
+      "share": 0.625
+    },
+    {
+      "player_id": 3042,
+      "display_name": "Mikel Merino",
+      "team": "Spain",
+      "on_ball_events": 37,
+      "under_pressure_events": 18,
+      "share": 0.4865
+    },
+    {
+      "player_id": 24921,
+      "display_name": "Mart\u00edn Zubimendi",
+      "team": "Spain",
+      "on_ball_events": 7,
+      "under_pressure_events": 3,
+      "share": 0.4286
+    },
+    {
+      "player_id": 3009,
+      "display_name": "Kylian Mbapp\u00e9",
+      "team": "France",
+      "on_ball_events": 62,
+      "under_pressure_events": 23,
+      "share": 0.371
+    },
+    {
+      "player_id": 39420,
+      "display_name": "Bradley Barcola",
+      "team": "France",
+      "on_ball_events": 31,
+      "under_pressure_events": 11,
+      "share": 0.3548
+    },
+    {
+      "player_id": 6821,
+      "display_name": "Jes\u00fas Navas",
+      "team": "Spain",
+      "on_ball_events": 45,
+      "under_pressure_events": 15,
+      "share": 0.3333
+    },
+    {
+      "player_id": 6765,
+      "display_name": "Rodri",
+      "team": "Spain",
+      "on_ball_events": 141,
+      "under_pressure_events": 44,
+      "share": 0.3121
+    },
+    {
+      "player_id": 16532,
+      "display_name": "Daniel Olmo",
+      "team": "Spain",
+      "on_ball_events": 95,
+      "under_pressure_events": 28,
+      "share": 0.2947
+    },
+    {
+      "player_id": 3026,
+      "display_name": "Adrien Rabiot",
+      "team": "France",
+      "on_ball_events": 62,
+      "under_pressure_events": 18,
+      "share": 0.2903
+    },
+    {
+      "player_id": 4445,
+      "display_name": "Jules Kound\u00e9",
+      "team": "France",
+      "on_ball_events": 136,
+      "under_pressure_events": 39,
+      "share": 0.2868
+    },
+    {
+      "player_id": 68574,
+      "display_name": "Nico Williams",
+      "team": "Spain",
+      "on_ball_events": 111,
+      "under_pressure_events": 31,
+      "share": 0.2793
+    },
+    {
+      "player_id": 316046,
+      "display_name": "Lamine Yamal",
+      "team": "Spain",
+      "on_ball_events": 97,
+      "under_pressure_events": 27,
+      "share": 0.2784
+    },
+    {
+      "player_id": 5487,
+      "display_name": "Antoine Griezmann",
+      "team": "France",
+      "on_ball_events": 22,
+      "under_pressure_events": 6,
+      "share": 0.2727
+    },
+    {
+      "player_id": 8519,
+      "display_name": "Dayotchanculle Upamecano",
+      "team": "France",
+      "on_ball_events": 91,
+      "under_pressure_events": 23,
+      "share": 0.2527
+    },
+    {
+      "player_id": 17620,
+      "display_name": "Marc Cucurella",
+      "team": "Spain",
+      "on_ball_events": 132,
+      "under_pressure_events": 32,
+      "share": 0.2424
+    },
+    {
+      "player_id": 5477,
+      "display_name": "Ousmane Demb\u00e9l\u00e9",
+      "team": "France",
+      "on_ball_events": 105,
+      "under_pressure_events": 25,
+      "share": 0.2381
+    },
+    {
+      "player_id": 6704,
+      "display_name": "Theo Hern\u00e1ndez",
+      "team": "France",
+      "on_ball_events": 96,
+      "under_pressure_events": 22,
+      "share": 0.2292
+    },
+    {
+      "player_id": 3477,
+      "display_name": "\u00c1lvaro Morata",
+      "team": "Spain",
+      "on_ball_events": 63,
+      "under_pressure_events": 14,
+      "share": 0.2222
+    },
+    {
+      "player_id": 22097,
+      "display_name": "Randal Kolo",
+      "team": "France",
+      "on_ball_events": 38,
+      "under_pressure_events": 8,
+      "share": 0.2105
+    },
+    {
+      "player_id": 6685,
+      "display_name": "Mikel Oyarzabal",
+      "team": "Spain",
+      "on_ball_events": 30,
+      "under_pressure_events": 6,
+      "share": 0.2
+    },
+    {
+      "player_id": 3961,
+      "display_name": "N'Golo Kant\u00e9",
+      "team": "France",
+      "on_ball_events": 87,
+      "under_pressure_events": 17,
+      "share": 0.1954
+    },
+    {
+      "player_id": 17592,
+      "display_name": "William Saliba",
+      "team": "France",
+      "on_ball_events": 101,
+      "under_pressure_events": 19,
+      "share": 0.1881
+    },
+    {
+      "player_id": 10481,
+      "display_name": "Aur\u00e9lien Tchouam\u00e9ni",
+      "team": "France",
+      "on_ball_events": 90,
+      "under_pressure_events": 15,
+      "share": 0.1667
+    },
+    {
+      "player_id": 6655,
+      "display_name": "Fabi\u00e1n Ruiz",
+      "team": "Spain",
+      "on_ball_events": 142,
+      "under_pressure_events": 22,
+      "share": 0.1549
+    },
+    {
+      "player_id": 5202,
+      "display_name": "Nacho",
+      "team": "Spain",
+      "on_ball_events": 97,
+      "under_pressure_events": 15,
+      "share": 0.1546
+    },
+    {
+      "player_id": 24778,
+      "display_name": "Eduardo Camavinga",
+      "team": "France",
+      "on_ball_events": 39,
+      "under_pressure_events": 6,
+      "share": 0.1538
+    },
+    {
+      "player_id": 4353,
+      "display_name": "Aymeric Laporte",
+      "team": "Spain",
+      "on_ball_events": 164,
+      "under_pressure_events": 16,
+      "share": 0.0976
+    },
+    {
+      "player_id": 41542,
+      "display_name": "Dani Vivian",
+      "team": "Spain",
+      "on_ball_events": 52,
+      "under_pressure_events": 4,
+      "share": 0.0769
+    }
+  ],
+  "metadata": {
+    "match_id": 3942752,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Spain vs France",
+    "open_play_filter": "play_pattern + pass_type",
+    "ppda_zone": "opponent's own 60% (x < 72 in the opponent's own frame)",
+    "defensive_action_zone": "pressing team's own half+ (x >= 48 in its own frame)",
+    "pressures_high_zone": "opponent half (x >= 60 in the pressing team's own frame)"
+  }
+}

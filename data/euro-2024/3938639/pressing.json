@@ -1,0 +1,281 @@
+{
+  "teams": {
+    "Georgia": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 169,
+        "defensive_actions_advanced": 11,
+        "value": 15.3636
+      },
+      "pressures_high": {
+        "count": 34,
+        "opponent_open_play_passes": 338,
+        "per_100": 10.06
+      },
+      "pressure_side": {
+        "left": 45,
+        "centre": 27,
+        "right": 64
+      }
+    },
+    "Turkey": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 188,
+        "defensive_actions_advanced": 19,
+        "value": 9.8947
+      },
+      "pressures_high": {
+        "count": 41,
+        "opponent_open_play_passes": 220,
+        "per_100": 18.64
+      },
+      "pressure_side": {
+        "left": 36,
+        "centre": 23,
+        "right": 30
+      }
+    }
+  },
+  "pressure_received": [
+    {
+      "player_id": 9085,
+      "display_name": "Salih \u00d6zcan",
+      "team": "Turkey",
+      "on_ball_events": 4,
+      "under_pressure_events": 2,
+      "share": 0.5
+    },
+    {
+      "player_id": 29989,
+      "display_name": "Yusuf Yaz\u0131c\u0131",
+      "team": "Turkey",
+      "on_ball_events": 13,
+      "under_pressure_events": 6,
+      "share": 0.4615
+    },
+    {
+      "player_id": 134209,
+      "display_name": "Bar\u0131\u015f Alper Y\u0131lmaz",
+      "team": "Turkey",
+      "on_ball_events": 68,
+      "under_pressure_events": 28,
+      "share": 0.4118
+    },
+    {
+      "player_id": 151813,
+      "display_name": "Kenan Yildiz",
+      "team": "Turkey",
+      "on_ball_events": 101,
+      "under_pressure_events": 40,
+      "share": 0.396
+    },
+    {
+      "player_id": 102372,
+      "display_name": "Budu Zivzivadze",
+      "team": "Georgia",
+      "on_ball_events": 8,
+      "under_pressure_events": 3,
+      "share": 0.375
+    },
+    {
+      "player_id": 49689,
+      "display_name": "Kerem Akt\u00fcrkoglu",
+      "team": "Turkey",
+      "on_ball_events": 19,
+      "under_pressure_events": 7,
+      "share": 0.3684
+    },
+    {
+      "player_id": 33234,
+      "display_name": "Georges Mikautadze",
+      "team": "Georgia",
+      "on_ball_events": 75,
+      "under_pressure_events": 27,
+      "share": 0.36
+    },
+    {
+      "player_id": 44183,
+      "display_name": "Zurab Davitashvili",
+      "team": "Georgia",
+      "on_ball_events": 23,
+      "under_pressure_events": 8,
+      "share": 0.3478
+    },
+    {
+      "player_id": 38229,
+      "display_name": "Kvara",
+      "team": "Georgia",
+      "on_ball_events": 119,
+      "under_pressure_events": 37,
+      "share": 0.3109
+    },
+    {
+      "player_id": 22212,
+      "display_name": "Orkun K\u00f6k\u00e7\u00fc",
+      "team": "Turkey",
+      "on_ball_events": 128,
+      "under_pressure_events": 36,
+      "share": 0.2812
+    },
+    {
+      "player_id": 48178,
+      "display_name": "Luka Lochoshvili",
+      "team": "Georgia",
+      "on_ball_events": 20,
+      "under_pressure_events": 5,
+      "share": 0.25
+    },
+    {
+      "player_id": 116587,
+      "display_name": "Arda G\u00fcler",
+      "team": "Turkey",
+      "on_ball_events": 117,
+      "under_pressure_events": 29,
+      "share": 0.2479
+    },
+    {
+      "player_id": 23558,
+      "display_name": "Merih Demiral",
+      "team": "Turkey",
+      "on_ball_events": 5,
+      "under_pressure_events": 1,
+      "share": 0.2
+    },
+    {
+      "player_id": 23646,
+      "display_name": "Giorgi Chakvetadze",
+      "team": "Georgia",
+      "on_ball_events": 95,
+      "under_pressure_events": 16,
+      "share": 0.1684
+    },
+    {
+      "player_id": 25036,
+      "display_name": "Otar Kakabadze",
+      "team": "Georgia",
+      "on_ball_events": 127,
+      "under_pressure_events": 21,
+      "share": 0.1654
+    },
+    {
+      "player_id": 135844,
+      "display_name": "Sandro Altunashvili",
+      "team": "Georgia",
+      "on_ball_events": 19,
+      "under_pressure_events": 3,
+      "share": 0.1579
+    },
+    {
+      "player_id": 30438,
+      "display_name": "Ferdi Kadioglu",
+      "team": "Turkey",
+      "on_ball_events": 174,
+      "under_pressure_events": 27,
+      "share": 0.1552
+    },
+    {
+      "player_id": 7839,
+      "display_name": "Guram Kashia",
+      "team": "Georgia",
+      "on_ball_events": 115,
+      "under_pressure_events": 17,
+      "share": 0.1478
+    },
+    {
+      "player_id": 12293,
+      "display_name": "Kaan Ayhan",
+      "team": "Turkey",
+      "on_ball_events": 137,
+      "under_pressure_events": 20,
+      "share": 0.146
+    },
+    {
+      "player_id": 10349,
+      "display_name": "Zeki Celik",
+      "team": "Turkey",
+      "on_ball_events": 7,
+      "under_pressure_events": 1,
+      "share": 0.1429
+    },
+    {
+      "player_id": 48383,
+      "display_name": "Abd\u00fclkerim Bardakc\u0131",
+      "team": "Turkey",
+      "on_ball_events": 150,
+      "under_pressure_events": 20,
+      "share": 0.1333
+    },
+    {
+      "player_id": 22242,
+      "display_name": "Georgiy Tsitaishvili",
+      "team": "Georgia",
+      "on_ball_events": 83,
+      "under_pressure_events": 11,
+      "share": 0.1325
+    },
+    {
+      "player_id": 10826,
+      "display_name": "Mert M\u00fcld\u00fcr",
+      "team": "Turkey",
+      "on_ball_events": 102,
+      "under_pressure_events": 13,
+      "share": 0.1275
+    },
+    {
+      "player_id": 7655,
+      "display_name": "Lasha Dvali",
+      "team": "Georgia",
+      "on_ball_events": 104,
+      "under_pressure_events": 12,
+      "share": 0.1154
+    },
+    {
+      "player_id": 264017,
+      "display_name": "Anzor Mekvabishvili",
+      "team": "Georgia",
+      "on_ball_events": 117,
+      "under_pressure_events": 13,
+      "share": 0.1111
+    },
+    {
+      "player_id": 133305,
+      "display_name": "Samet Akaydin",
+      "team": "Turkey",
+      "on_ball_events": 147,
+      "under_pressure_events": 16,
+      "share": 0.1088
+    },
+    {
+      "player_id": 7039,
+      "display_name": "Hakan \u00c7alhano\u011flu",
+      "team": "Turkey",
+      "on_ball_events": 203,
+      "under_pressure_events": 21,
+      "share": 0.1034
+    },
+    {
+      "player_id": 16005,
+      "display_name": "Saba Kverkvelia",
+      "team": "Georgia",
+      "on_ball_events": 68,
+      "under_pressure_events": 7,
+      "share": 0.1029
+    },
+    {
+      "player_id": 41202,
+      "display_name": "Giorgi Kochorashvili",
+      "team": "Georgia",
+      "on_ball_events": 174,
+      "under_pressure_events": 17,
+      "share": 0.0977
+    }
+  ],
+  "metadata": {
+    "match_id": 3938639,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Turkey vs Georgia",
+    "open_play_filter": "play_pattern + pass_type",
+    "ppda_zone": "opponent's own 60% (x < 72 in the opponent's own frame)",
+    "defensive_action_zone": "pressing team's own half+ (x >= 48 in its own frame)",
+    "pressures_high_zone": "opponent half (x >= 60 in the pressing team's own frame)"
+  }
+}

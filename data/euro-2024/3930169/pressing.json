@@ -1,0 +1,281 @@
+{
+  "teams": {
+    "Scotland": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 152,
+        "defensive_actions_advanced": 19,
+        "value": 8.0
+      },
+      "pressures_high": {
+        "count": 99,
+        "opponent_open_play_passes": 186,
+        "per_100": 53.23
+      },
+      "pressure_side": {
+        "left": 65,
+        "centre": 32,
+        "right": 64
+      }
+    },
+    "Switzerland": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 170,
+        "defensive_actions_advanced": 14,
+        "value": 12.1429
+      },
+      "pressures_high": {
+        "count": 66,
+        "opponent_open_play_passes": 210,
+        "per_100": 31.43
+      },
+      "pressure_side": {
+        "left": 66,
+        "centre": 31,
+        "right": 57
+      }
+    }
+  },
+  "pressure_received": [
+    {
+      "player_id": 12510,
+      "display_name": "Ryan Christie",
+      "team": "Scotland",
+      "on_ball_events": 9,
+      "under_pressure_events": 6,
+      "share": 0.6667
+    },
+    {
+      "player_id": 5545,
+      "display_name": "Breel Embolo",
+      "team": "Switzerland",
+      "on_ball_events": 18,
+      "under_pressure_events": 10,
+      "share": 0.5556
+    },
+    {
+      "player_id": 45190,
+      "display_name": "Dan Ndoye",
+      "team": "Switzerland",
+      "on_ball_events": 77,
+      "under_pressure_events": 35,
+      "share": 0.4545
+    },
+    {
+      "player_id": 22308,
+      "display_name": "Anthony Ralston",
+      "team": "Scotland",
+      "on_ball_events": 90,
+      "under_pressure_events": 40,
+      "share": 0.4444
+    },
+    {
+      "player_id": 38169,
+      "display_name": "Lawrence Shankland",
+      "team": "Scotland",
+      "on_ball_events": 7,
+      "under_pressure_events": 3,
+      "share": 0.4286
+    },
+    {
+      "player_id": 3620,
+      "display_name": "Scott McTominay",
+      "team": "Scotland",
+      "on_ball_events": 90,
+      "under_pressure_events": 36,
+      "share": 0.4
+    },
+    {
+      "player_id": 9478,
+      "display_name": "Kenneth McLean",
+      "team": "Scotland",
+      "on_ball_events": 29,
+      "under_pressure_events": 11,
+      "share": 0.3793
+    },
+    {
+      "player_id": 9466,
+      "display_name": "Che Adams",
+      "team": "Scotland",
+      "on_ball_events": 63,
+      "under_pressure_events": 22,
+      "share": 0.3492
+    },
+    {
+      "player_id": 11457,
+      "display_name": "Vincent Sierro",
+      "team": "Switzerland",
+      "on_ball_events": 26,
+      "under_pressure_events": 9,
+      "share": 0.3462
+    },
+    {
+      "player_id": 50436,
+      "display_name": "Fabian Rieder",
+      "team": "Switzerland",
+      "on_ball_events": 24,
+      "under_pressure_events": 8,
+      "share": 0.3333
+    },
+    {
+      "player_id": 29227,
+      "display_name": "Leonidas Stergiou",
+      "team": "Switzerland",
+      "on_ball_events": 6,
+      "under_pressure_events": 2,
+      "share": 0.3333
+    },
+    {
+      "player_id": 9974,
+      "display_name": "John McGinn",
+      "team": "Scotland",
+      "on_ball_events": 55,
+      "under_pressure_events": 18,
+      "share": 0.3273
+    },
+    {
+      "player_id": 3500,
+      "display_name": "Granit Xhaka",
+      "team": "Switzerland",
+      "on_ball_events": 118,
+      "under_pressure_events": 38,
+      "share": 0.322
+    },
+    {
+      "player_id": 10534,
+      "display_name": "Callum McGregor",
+      "team": "Scotland",
+      "on_ball_events": 99,
+      "under_pressure_events": 31,
+      "share": 0.3131
+    },
+    {
+      "player_id": 10002,
+      "display_name": "Scott McKenna",
+      "team": "Scotland",
+      "on_ball_events": 23,
+      "under_pressure_events": 7,
+      "share": 0.3043
+    },
+    {
+      "player_id": 30401,
+      "display_name": "Ruben Vargas",
+      "team": "Switzerland",
+      "on_ball_events": 96,
+      "under_pressure_events": 29,
+      "share": 0.3021
+    },
+    {
+      "player_id": 31067,
+      "display_name": "Billy Gilmour",
+      "team": "Scotland",
+      "on_ball_events": 98,
+      "under_pressure_events": 28,
+      "share": 0.2857
+    },
+    {
+      "player_id": 3533,
+      "display_name": "Xherdan Shaqiri",
+      "team": "Switzerland",
+      "on_ball_events": 61,
+      "under_pressure_events": 16,
+      "share": 0.2623
+    },
+    {
+      "player_id": 5537,
+      "display_name": "Fabian Sch\u00e4r",
+      "team": "Switzerland",
+      "on_ball_events": 142,
+      "under_pressure_events": 37,
+      "share": 0.2606
+    },
+    {
+      "player_id": 5549,
+      "display_name": "Manuel Akanji",
+      "team": "Switzerland",
+      "on_ball_events": 109,
+      "under_pressure_events": 28,
+      "share": 0.2569
+    },
+    {
+      "player_id": 7796,
+      "display_name": "Silvan Widmer",
+      "team": "Switzerland",
+      "on_ball_events": 76,
+      "under_pressure_events": 19,
+      "share": 0.25
+    },
+    {
+      "player_id": 5544,
+      "display_name": "Ricardo Rodr\u00edguez",
+      "team": "Switzerland",
+      "on_ball_events": 103,
+      "under_pressure_events": 25,
+      "share": 0.2427
+    },
+    {
+      "player_id": 11116,
+      "display_name": "Jack Hendry",
+      "team": "Scotland",
+      "on_ball_events": 91,
+      "under_pressure_events": 22,
+      "share": 0.2418
+    },
+    {
+      "player_id": 3655,
+      "display_name": "Andrew Robertson",
+      "team": "Scotland",
+      "on_ball_events": 106,
+      "under_pressure_events": 25,
+      "share": 0.2358
+    },
+    {
+      "player_id": 6983,
+      "display_name": "Remo Freuler",
+      "team": "Switzerland",
+      "on_ball_events": 101,
+      "under_pressure_events": 22,
+      "share": 0.2178
+    },
+    {
+      "player_id": 16016,
+      "display_name": "Michel Aebischer",
+      "team": "Switzerland",
+      "on_ball_events": 113,
+      "under_pressure_events": 22,
+      "share": 0.1947
+    },
+    {
+      "player_id": 48335,
+      "display_name": "Mohamed Amdouni",
+      "team": "Switzerland",
+      "on_ball_events": 8,
+      "under_pressure_events": 1,
+      "share": 0.125
+    },
+    {
+      "player_id": 9481,
+      "display_name": "Grant Campbell Hanley",
+      "team": "Scotland",
+      "on_ball_events": 95,
+      "under_pressure_events": 11,
+      "share": 0.1158
+    },
+    {
+      "player_id": 10540,
+      "display_name": "Kieran Tierney",
+      "team": "Scotland",
+      "on_ball_events": 101,
+      "under_pressure_events": 10,
+      "share": 0.099
+    }
+  ],
+  "metadata": {
+    "match_id": 3930169,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Scotland vs Switzerland",
+    "open_play_filter": "play_pattern + pass_type",
+    "ppda_zone": "opponent's own 60% (x < 72 in the opponent's own frame)",
+    "defensive_action_zone": "pressing team's own half+ (x >= 48 in its own frame)",
+    "pressures_high_zone": "opponent half (x >= 60 in the pressing team's own frame)"
+  }
+}

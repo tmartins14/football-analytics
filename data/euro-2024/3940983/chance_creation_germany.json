@@ -1,0 +1,145 @@
+{
+  "team": "Germany",
+  "shots": {
+    "non_penalty_count": 14,
+    "total_npxg": 1.443121,
+    "by_zone": {
+      "six_yard_box": {
+        "npxg": 0.0,
+        "count": 0
+      },
+      "box_central": {
+        "npxg": 0.685563,
+        "count": 5
+      },
+      "box_wide": {
+        "npxg": 0.519745,
+        "count": 3
+      },
+      "outside_box": {
+        "npxg": 0.237814,
+        "count": 6
+      }
+    },
+    "by_source": {
+      "open_play": {
+        "npxg": 0.838813,
+        "count": 6
+      },
+      "counter": {
+        "npxg": 0.189602,
+        "count": 1
+      },
+      "set_piece": {
+        "npxg": 0.414706,
+        "count": 7
+      },
+      "other": {
+        "npxg": 0.0,
+        "count": 0
+      }
+    }
+  },
+  "shot_assists": {
+    "total_count": 13,
+    "by_side_and_type": {
+      "left": {
+        "cross": 1,
+        "cut_back": 0,
+        "through_ball": 1,
+        "other": 2
+      },
+      "centre": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 3
+      },
+      "right": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 6
+      }
+    }
+  },
+  "creators": [
+    {
+      "player_id": 12034,
+      "display_name": "David Raum",
+      "xa": 0.561328,
+      "key_passes": 2,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 24118,
+      "display_name": "Nico Schlotterbeck",
+      "xa": 0.256394,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 40724,
+      "display_name": "Florian Wirtz",
+      "xa": 0.208174,
+      "key_passes": 2,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 5574,
+      "display_name": "Toni Kroos",
+      "xa": 0.133414,
+      "key_passes": 4,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 8966,
+      "display_name": "Kai Havertz",
+      "xa": 0.111366,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 3167,
+      "display_name": "Antonio R\u00fcdiger",
+      "xa": 0.073749,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 5579,
+      "display_name": "Joshua Kimmich",
+      "xa": 0.039884,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 8546,
+      "display_name": "Niclas F\u00fcllkrug",
+      "xa": 0.002724,
+      "key_passes": 1,
+      "passes_into_box": 0
+    }
+  ],
+  "metadata": {
+    "match_id": 3940983,
+    "team": "Germany",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Germany vs Denmark",
+    "zone_filter": "statsbomb_120x80_own_attack_right_frame",
+    "source_grouping": {
+      "open_play": [
+        "Regular Play"
+      ],
+      "counter": [
+        "From Counter"
+      ],
+      "set_piece": [
+        "From Corner",
+        "From Free Kick",
+        "From Throw In"
+      ],
+      "other": "every other play_pattern (From Goal Kick, From Kick Off, From Keeper, Other)"
+    }
+  }
+}

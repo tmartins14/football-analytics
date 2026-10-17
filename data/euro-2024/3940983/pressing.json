@@ -1,0 +1,289 @@
+{
+  "teams": {
+    "Denmark": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 157,
+        "defensive_actions_advanced": 15,
+        "value": 10.4667
+      },
+      "pressures_high": {
+        "count": 79,
+        "opponent_open_play_passes": 236,
+        "per_100": 33.47
+      },
+      "pressure_side": {
+        "left": 50,
+        "centre": 42,
+        "right": 74
+      }
+    },
+    "Germany": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 179,
+        "defensive_actions_advanced": 10,
+        "value": 17.9
+      },
+      "pressures_high": {
+        "count": 56,
+        "opponent_open_play_passes": 237,
+        "per_100": 23.63
+      },
+      "pressure_side": {
+        "left": 39,
+        "centre": 20,
+        "right": 57
+      }
+    }
+  },
+  "pressure_received": [
+    {
+      "player_id": 40724,
+      "display_name": "Florian Wirtz",
+      "team": "Germany",
+      "on_ball_events": 26,
+      "under_pressure_events": 13,
+      "share": 0.5
+    },
+    {
+      "player_id": 8538,
+      "display_name": "Waldemar Anton",
+      "team": "Germany",
+      "on_ball_events": 4,
+      "under_pressure_events": 2,
+      "share": 0.5
+    },
+    {
+      "player_id": 8966,
+      "display_name": "Kai Havertz",
+      "team": "Germany",
+      "on_ball_events": 101,
+      "under_pressure_events": 50,
+      "share": 0.495
+    },
+    {
+      "player_id": 8546,
+      "display_name": "Niclas F\u00fcllkrug",
+      "team": "Germany",
+      "on_ball_events": 31,
+      "under_pressure_events": 14,
+      "share": 0.4516
+    },
+    {
+      "player_id": 39565,
+      "display_name": "Jamal Musiala",
+      "team": "Germany",
+      "on_ball_events": 98,
+      "under_pressure_events": 42,
+      "share": 0.4286
+    },
+    {
+      "player_id": 21261,
+      "display_name": "Jonas Wind",
+      "team": "Denmark",
+      "on_ball_events": 12,
+      "under_pressure_events": 5,
+      "share": 0.4167
+    },
+    {
+      "player_id": 51672,
+      "display_name": "Rasmus H\u00f6jlund",
+      "team": "Denmark",
+      "on_ball_events": 78,
+      "under_pressure_events": 25,
+      "share": 0.3205
+    },
+    {
+      "player_id": 3053,
+      "display_name": "Leroy San\u00e9",
+      "team": "Germany",
+      "on_ball_events": 81,
+      "under_pressure_events": 25,
+      "share": 0.3086
+    },
+    {
+      "player_id": 17042,
+      "display_name": "Andreas Skov Olsen",
+      "team": "Denmark",
+      "on_ball_events": 49,
+      "under_pressure_events": 13,
+      "share": 0.2653
+    },
+    {
+      "player_id": 24118,
+      "display_name": "Nico Schlotterbeck",
+      "team": "Germany",
+      "on_ball_events": 145,
+      "under_pressure_events": 37,
+      "share": 0.2552
+    },
+    {
+      "player_id": 5527,
+      "display_name": "Thomas Delaney",
+      "team": "Denmark",
+      "on_ball_events": 62,
+      "under_pressure_events": 13,
+      "share": 0.2097
+    },
+    {
+      "player_id": 5574,
+      "display_name": "Toni Kroos",
+      "team": "Germany",
+      "on_ball_events": 179,
+      "under_pressure_events": 37,
+      "share": 0.2067
+    },
+    {
+      "player_id": 8247,
+      "display_name": "Joachim Andersen",
+      "team": "Denmark",
+      "on_ball_events": 110,
+      "under_pressure_events": 22,
+      "share": 0.2
+    },
+    {
+      "player_id": 10287,
+      "display_name": "\u0130lkay G\u00fcndo\u011fan",
+      "team": "Germany",
+      "on_ball_events": 55,
+      "under_pressure_events": 11,
+      "share": 0.2
+    },
+    {
+      "player_id": 3570,
+      "display_name": "Pierre-Emile H\u00f8jbjerg",
+      "team": "Denmark",
+      "on_ball_events": 156,
+      "under_pressure_events": 31,
+      "share": 0.1987
+    },
+    {
+      "player_id": 5536,
+      "display_name": "Yussuf Poulsen",
+      "team": "Denmark",
+      "on_ball_events": 23,
+      "under_pressure_events": 4,
+      "share": 0.1739
+    },
+    {
+      "player_id": 16554,
+      "display_name": "Joakim Maehle",
+      "team": "Denmark",
+      "on_ball_events": 123,
+      "under_pressure_events": 21,
+      "share": 0.1707
+    },
+    {
+      "player_id": 12034,
+      "display_name": "David Raum",
+      "team": "Germany",
+      "on_ball_events": 89,
+      "under_pressure_events": 15,
+      "share": 0.1685
+    },
+    {
+      "player_id": 3493,
+      "display_name": "Emre Can",
+      "team": "Germany",
+      "on_ball_events": 45,
+      "under_pressure_events": 7,
+      "share": 0.1556
+    },
+    {
+      "player_id": 7097,
+      "display_name": "Christian N\u00f8rgaard",
+      "team": "Denmark",
+      "on_ball_events": 53,
+      "under_pressure_events": 8,
+      "share": 0.1509
+    },
+    {
+      "player_id": 8815,
+      "display_name": "Jannik Vestergaard",
+      "team": "Denmark",
+      "on_ball_events": 106,
+      "under_pressure_events": 15,
+      "share": 0.1415
+    },
+    {
+      "player_id": 60343,
+      "display_name": "Victor Kristiansen",
+      "team": "Denmark",
+      "on_ball_events": 29,
+      "under_pressure_events": 4,
+      "share": 0.1379
+    },
+    {
+      "player_id": 24547,
+      "display_name": "Alexander Bah",
+      "team": "Denmark",
+      "on_ball_events": 66,
+      "under_pressure_events": 9,
+      "share": 0.1364
+    },
+    {
+      "player_id": 8961,
+      "display_name": "Jacob Bruun Larsen",
+      "team": "Denmark",
+      "on_ball_events": 15,
+      "under_pressure_events": 2,
+      "share": 0.1333
+    },
+    {
+      "player_id": 3167,
+      "display_name": "Antonio R\u00fcdiger",
+      "team": "Germany",
+      "on_ball_events": 147,
+      "under_pressure_events": 19,
+      "share": 0.1293
+    },
+    {
+      "player_id": 3043,
+      "display_name": "Christian Eriksen",
+      "team": "Denmark",
+      "on_ball_events": 112,
+      "under_pressure_events": 14,
+      "share": 0.125
+    },
+    {
+      "player_id": 9195,
+      "display_name": "Robert Andrich",
+      "team": "Germany",
+      "on_ball_events": 121,
+      "under_pressure_events": 15,
+      "share": 0.124
+    },
+    {
+      "player_id": 3959,
+      "display_name": "Andreas Christensen",
+      "team": "Denmark",
+      "on_ball_events": 89,
+      "under_pressure_events": 11,
+      "share": 0.1236
+    },
+    {
+      "player_id": 8211,
+      "display_name": "Benjamin Henrichs",
+      "team": "Germany",
+      "on_ball_events": 10,
+      "under_pressure_events": 1,
+      "share": 0.1
+    },
+    {
+      "player_id": 5579,
+      "display_name": "Joshua Kimmich",
+      "team": "Germany",
+      "on_ball_events": 161,
+      "under_pressure_events": 11,
+      "share": 0.0683
+    }
+  ],
+  "metadata": {
+    "match_id": 3940983,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Germany vs Denmark",
+    "open_play_filter": "play_pattern + pass_type",
+    "ppda_zone": "opponent's own 60% (x < 72 in the opponent's own frame)",
+    "defensive_action_zone": "pressing team's own half+ (x >= 48 in its own frame)",
+    "pressures_high_zone": "opponent half (x >= 60 in the pressing team's own frame)"
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "team": "Slovenia",
+  "shots": {
+    "non_penalty_count": 11,
+    "total_npxg": 0.966391,
+    "by_zone": {
+      "six_yard_box": {
+        "npxg": 0.334571,
+        "count": 1
+      },
+      "box_central": {
+        "npxg": 0.486472,
+        "count": 3
+      },
+      "box_wide": {
+        "npxg": 0.026201,
+        "count": 1
+      },
+      "outside_box": {
+        "npxg": 0.119147,
+        "count": 6
+      }
+    },
+    "by_source": {
+      "open_play": {
+        "npxg": 0.339905,
+        "count": 4
+      },
+      "counter": {
+        "npxg": 0.0,
+        "count": 0
+      },
+      "set_piece": {
+        "npxg": 0.626486,
+        "count": 7
+      },
+      "other": {
+        "npxg": 0.0,
+        "count": 0
+      }
+    }
+  },
+  "shot_assists": {
+    "total_count": 8,
+    "by_side_and_type": {
+      "left": {
+        "cross": 3,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 2
+      },
+      "centre": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 1
+      },
+      "right": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 1,
+        "other": 1
+      }
+    }
+  },
+  "creators": [
+    {
+      "player_id": 28211,
+      "display_name": "Erik Jan\u017ea",
+      "xa": 0.51641,
+      "key_passes": 2,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 31866,
+      "display_name": "Andra\u017e \u0160porar",
+      "xa": 0.19573,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 16510,
+      "display_name": "Benjamin Verbi\u010d",
+      "xa": 0.026201,
+      "key_passes": 1,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 15896,
+      "display_name": "Timi El\u0161nik",
+      "xa": 0.022962,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 16047,
+      "display_name": "Jaka Bijol",
+      "xa": 0.022824,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 31968,
+      "display_name": "Adam Gnezda \u010cerin",
+      "xa": 0.020022,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 38759,
+      "display_name": "Benjamin \u0160e\u0161ko",
+      "xa": 0.007764,
+      "key_passes": 1,
+      "passes_into_box": 0
+    }
+  ],
+  "metadata": {
+    "match_id": 3930162,
+    "team": "Slovenia",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Slovenia vs Denmark",
+    "zone_filter": "statsbomb_120x80_own_attack_right_frame",
+    "source_grouping": {
+      "open_play": [
+        "Regular Play"
+      ],
+      "counter": [
+        "From Counter"
+      ],
+      "set_piece": [
+        "From Corner",
+        "From Free Kick",
+        "From Throw In"
+      ],
+      "other": "every other play_pattern (From Goal Kick, From Kick Off, From Keeper, Other)"
+    }
+  }
+}

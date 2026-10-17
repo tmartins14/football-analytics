@@ -1,0 +1,289 @@
+{
+  "teams": {
+    "Czech Republic": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 149,
+        "defensive_actions_advanced": 18,
+        "value": 8.2778
+      },
+      "pressures_high": {
+        "count": 45,
+        "opponent_open_play_passes": 290,
+        "per_100": 15.52
+      },
+      "pressure_side": {
+        "left": 50,
+        "centre": 21,
+        "right": 71
+      }
+    },
+    "Portugal": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 79,
+        "defensive_actions_advanced": 11,
+        "value": 7.1818
+      },
+      "pressures_high": {
+        "count": 72,
+        "opponent_open_play_passes": 104,
+        "per_100": 69.23
+      },
+      "pressure_side": {
+        "left": 66,
+        "centre": 20,
+        "right": 36
+      }
+    }
+  },
+  "pressure_received": [
+    {
+      "player_id": 23256,
+      "display_name": "Pedro Neto",
+      "team": "Portugal",
+      "on_ball_events": 9,
+      "under_pressure_events": 6,
+      "share": 0.6667
+    },
+    {
+      "player_id": 23454,
+      "display_name": "Petr \u0160ev\u010d\u00edk",
+      "team": "Czech Republic",
+      "on_ball_events": 13,
+      "under_pressure_events": 8,
+      "share": 0.6154
+    },
+    {
+      "player_id": 32985,
+      "display_name": "Mojm\u00edr Chytil",
+      "team": "Czech Republic",
+      "on_ball_events": 30,
+      "under_pressure_events": 16,
+      "share": 0.5333
+    },
+    {
+      "player_id": 7801,
+      "display_name": "Anton\u00edn Bar\u00e1k",
+      "team": "Czech Republic",
+      "on_ball_events": 24,
+      "under_pressure_events": 11,
+      "share": 0.4583
+    },
+    {
+      "player_id": 16570,
+      "display_name": "Vladim\u00edr Coufal",
+      "team": "Czech Republic",
+      "on_ball_events": 101,
+      "under_pressure_events": 46,
+      "share": 0.4554
+    },
+    {
+      "player_id": 7044,
+      "display_name": "Patrik Schick",
+      "team": "Czech Republic",
+      "on_ball_events": 63,
+      "under_pressure_events": 27,
+      "share": 0.4286
+    },
+    {
+      "player_id": 4870,
+      "display_name": "Tom\u00e1\u0161 Sou\u010dek",
+      "team": "Czech Republic",
+      "on_ball_events": 74,
+      "under_pressure_events": 28,
+      "share": 0.3784
+    },
+    {
+      "player_id": 28227,
+      "display_name": "Pavel \u0160ulc",
+      "team": "Czech Republic",
+      "on_ball_events": 59,
+      "under_pressure_events": 22,
+      "share": 0.3729
+    },
+    {
+      "player_id": 29484,
+      "display_name": "Jan Kuchta",
+      "team": "Czech Republic",
+      "on_ball_events": 41,
+      "under_pressure_events": 15,
+      "share": 0.3659
+    },
+    {
+      "player_id": 9929,
+      "display_name": "Diogo Jota",
+      "team": "Portugal",
+      "on_ball_events": 44,
+      "under_pressure_events": 16,
+      "share": 0.3636
+    },
+    {
+      "player_id": 81330,
+      "display_name": "Robin Hran\u00e1\u010d",
+      "team": "Czech Republic",
+      "on_ball_events": 40,
+      "under_pressure_events": 14,
+      "share": 0.35
+    },
+    {
+      "player_id": 21226,
+      "display_name": "Tom\u00e1\u0161 Chor\u00fd",
+      "team": "Czech Republic",
+      "on_ball_events": 3,
+      "under_pressure_events": 1,
+      "share": 0.3333
+    },
+    {
+      "player_id": 16469,
+      "display_name": "Tom\u00e1\u0161 Hole\u0161",
+      "team": "Czech Republic",
+      "on_ball_events": 52,
+      "under_pressure_events": 17,
+      "share": 0.3269
+    },
+    {
+      "player_id": 27826,
+      "display_name": "Ond\u0159ej Lingr",
+      "team": "Czech Republic",
+      "on_ball_events": 22,
+      "under_pressure_events": 7,
+      "share": 0.3182
+    },
+    {
+      "player_id": 28034,
+      "display_name": "Luk\u00e1\u0161 Provod",
+      "team": "Czech Republic",
+      "on_ball_events": 74,
+      "under_pressure_events": 21,
+      "share": 0.2838
+    },
+    {
+      "player_id": 5207,
+      "display_name": "Cristiano Ronaldo",
+      "team": "Portugal",
+      "on_ball_events": 61,
+      "under_pressure_events": 17,
+      "share": 0.2787
+    },
+    {
+      "player_id": 18360,
+      "display_name": "Rafael Le\u00e3o",
+      "team": "Portugal",
+      "on_ball_events": 61,
+      "under_pressure_events": 17,
+      "share": 0.2787
+    },
+    {
+      "player_id": 28272,
+      "display_name": "Ladislav Krej\u010d\u00ed",
+      "team": "Czech Republic",
+      "on_ball_events": 59,
+      "under_pressure_events": 14,
+      "share": 0.2373
+    },
+    {
+      "player_id": 16028,
+      "display_name": "Diogo Dalot",
+      "team": "Portugal",
+      "on_ball_events": 92,
+      "under_pressure_events": 21,
+      "share": 0.2283
+    },
+    {
+      "player_id": 7005,
+      "display_name": "Jo\u00e3o Cancelo",
+      "team": "Portugal",
+      "on_ball_events": 166,
+      "under_pressure_events": 37,
+      "share": 0.2229
+    },
+    {
+      "player_id": 35441,
+      "display_name": "David Doudera",
+      "team": "Czech Republic",
+      "on_ball_events": 83,
+      "under_pressure_events": 17,
+      "share": 0.2048
+    },
+    {
+      "player_id": 34639,
+      "display_name": "Vitinha",
+      "team": "Portugal",
+      "on_ball_events": 224,
+      "under_pressure_events": 43,
+      "share": 0.192
+    },
+    {
+      "player_id": 5204,
+      "display_name": "Bruno Fernandes",
+      "team": "Portugal",
+      "on_ball_events": 206,
+      "under_pressure_events": 35,
+      "share": 0.1699
+    },
+    {
+      "player_id": 42106,
+      "display_name": "Gon\u00e7alo In\u00e1cio",
+      "team": "Portugal",
+      "on_ball_events": 78,
+      "under_pressure_events": 13,
+      "share": 0.1667
+    },
+    {
+      "player_id": 41092,
+      "display_name": "Nuno Mendes",
+      "team": "Portugal",
+      "on_ball_events": 204,
+      "under_pressure_events": 28,
+      "share": 0.1373
+    },
+    {
+      "player_id": 3193,
+      "display_name": "Bernardo Silva",
+      "team": "Portugal",
+      "on_ball_events": 143,
+      "under_pressure_events": 19,
+      "share": 0.1329
+    },
+    {
+      "player_id": 5206,
+      "display_name": "R\u00faben Dias",
+      "team": "Portugal",
+      "on_ball_events": 192,
+      "under_pressure_events": 24,
+      "share": 0.125
+    },
+    {
+      "player_id": 20016,
+      "display_name": "Pepe",
+      "team": "Portugal",
+      "on_ball_events": 171,
+      "under_pressure_events": 15,
+      "share": 0.0877
+    },
+    {
+      "player_id": 39624,
+      "display_name": "Francisco Concei\u00e7\u00e3o",
+      "team": "Portugal",
+      "on_ball_events": 4,
+      "under_pressure_events": 0,
+      "share": 0.0
+    },
+    {
+      "player_id": 6374,
+      "display_name": "N\u00e9lson Semedo",
+      "team": "Portugal",
+      "on_ball_events": 0,
+      "under_pressure_events": 0,
+      "share": 0.0
+    }
+  ],
+  "metadata": {
+    "match_id": 3930166,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Portugal vs Czech Republic",
+    "open_play_filter": "play_pattern + pass_type",
+    "ppda_zone": "opponent's own 60% (x < 72 in the opponent's own frame)",
+    "defensive_action_zone": "pressing team's own half+ (x >= 48 in its own frame)",
+    "pressures_high_zone": "opponent half (x >= 60 in the pressing team's own frame)"
+  }
+}

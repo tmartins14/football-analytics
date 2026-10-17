@@ -1,0 +1,281 @@
+{
+  "teams": {
+    "Serbia": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 89,
+        "defensive_actions_advanced": 13,
+        "value": 6.8462
+      },
+      "pressures_high": {
+        "count": 43,
+        "opponent_open_play_passes": 128,
+        "per_100": 33.59
+      },
+      "pressure_side": {
+        "left": 51,
+        "centre": 17,
+        "right": 29
+      }
+    },
+    "Slovenia": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 166,
+        "defensive_actions_advanced": 18,
+        "value": 9.2222
+      },
+      "pressures_high": {
+        "count": 53,
+        "opponent_open_play_passes": 217,
+        "per_100": 24.42
+      },
+      "pressure_side": {
+        "left": 73,
+        "centre": 36,
+        "right": 49
+      }
+    }
+  },
+  "pressure_received": [
+    {
+      "player_id": 101806,
+      "display_name": "David Brekalo",
+      "team": "Slovenia",
+      "on_ball_events": 3,
+      "under_pressure_events": 3,
+      "share": 1.0
+    },
+    {
+      "player_id": 18015,
+      "display_name": "Du\u0161an Vlahovi\u0107",
+      "team": "Serbia",
+      "on_ball_events": 57,
+      "under_pressure_events": 29,
+      "share": 0.5088
+    },
+    {
+      "player_id": 4269,
+      "display_name": "Aleksandar Mitrovi\u0107",
+      "team": "Serbia",
+      "on_ball_events": 68,
+      "under_pressure_events": 32,
+      "share": 0.4706
+    },
+    {
+      "player_id": 6319,
+      "display_name": "Luka Jovi\u0107",
+      "team": "Serbia",
+      "on_ball_events": 14,
+      "under_pressure_events": 6,
+      "share": 0.4286
+    },
+    {
+      "player_id": 38759,
+      "display_name": "Benjamin \u0160e\u0161ko",
+      "team": "Slovenia",
+      "on_ball_events": 61,
+      "under_pressure_events": 26,
+      "share": 0.4262
+    },
+    {
+      "player_id": 31866,
+      "display_name": "Andra\u017e \u0160porar",
+      "team": "Slovenia",
+      "on_ball_events": 58,
+      "under_pressure_events": 22,
+      "share": 0.3793
+    },
+    {
+      "player_id": 3831,
+      "display_name": "Du\u0161an Tadi\u0107",
+      "team": "Serbia",
+      "on_ball_events": 107,
+      "under_pressure_events": 40,
+      "share": 0.3738
+    },
+    {
+      "player_id": 31089,
+      "display_name": "Jan Mlakar",
+      "team": "Slovenia",
+      "on_ball_events": 54,
+      "under_pressure_events": 19,
+      "share": 0.3519
+    },
+    {
+      "player_id": 16528,
+      "display_name": "Petar Stojanovi\u0107",
+      "team": "Slovenia",
+      "on_ball_events": 109,
+      "under_pressure_events": 38,
+      "share": 0.3486
+    },
+    {
+      "player_id": 28075,
+      "display_name": "Veljko Birman\u010devi\u0107",
+      "team": "Serbia",
+      "on_ball_events": 21,
+      "under_pressure_events": 7,
+      "share": 0.3333
+    },
+    {
+      "player_id": 8669,
+      "display_name": "Mijat Ga\u0107inovi\u0107",
+      "team": "Serbia",
+      "on_ball_events": 61,
+      "under_pressure_events": 17,
+      "share": 0.2787
+    },
+    {
+      "player_id": 5589,
+      "display_name": "Sergej Milinkovi\u0107-Savi\u0107",
+      "team": "Serbia",
+      "on_ball_events": 36,
+      "under_pressure_events": 10,
+      "share": 0.2778
+    },
+    {
+      "player_id": 290289,
+      "display_name": "\u017dan Vipotnik",
+      "team": "Slovenia",
+      "on_ball_events": 12,
+      "under_pressure_events": 3,
+      "share": 0.25
+    },
+    {
+      "player_id": 6687,
+      "display_name": "Sa\u0161a Luki\u0107",
+      "team": "Serbia",
+      "on_ball_events": 109,
+      "under_pressure_events": 27,
+      "share": 0.2477
+    },
+    {
+      "player_id": 16510,
+      "display_name": "Benjamin Verbi\u010d",
+      "team": "Slovenia",
+      "on_ball_events": 9,
+      "under_pressure_events": 2,
+      "share": 0.2222
+    },
+    {
+      "player_id": 6318,
+      "display_name": "Andrija \u017divkovi\u0107",
+      "team": "Serbia",
+      "on_ball_events": 131,
+      "under_pressure_events": 28,
+      "share": 0.2137
+    },
+    {
+      "player_id": 40735,
+      "display_name": "Lazar Samard\u017ei\u0107",
+      "team": "Serbia",
+      "on_ball_events": 19,
+      "under_pressure_events": 4,
+      "share": 0.2105
+    },
+    {
+      "player_id": 15896,
+      "display_name": "Timi El\u0161nik",
+      "team": "Slovenia",
+      "on_ball_events": 131,
+      "under_pressure_events": 26,
+      "share": 0.1985
+    },
+    {
+      "player_id": 7993,
+      "display_name": "Filip Mladenovi\u0107",
+      "team": "Serbia",
+      "on_ball_events": 66,
+      "under_pressure_events": 13,
+      "share": 0.197
+    },
+    {
+      "player_id": 16047,
+      "display_name": "Jaka Bijol",
+      "team": "Slovenia",
+      "on_ball_events": 92,
+      "under_pressure_events": 18,
+      "share": 0.1957
+    },
+    {
+      "player_id": 137487,
+      "display_name": "\u017dan Karni\u010dnik",
+      "team": "Slovenia",
+      "on_ball_events": 151,
+      "under_pressure_events": 27,
+      "share": 0.1788
+    },
+    {
+      "player_id": 31968,
+      "display_name": "Adam Gnezda \u010cerin",
+      "team": "Slovenia",
+      "on_ball_events": 148,
+      "under_pressure_events": 26,
+      "share": 0.1757
+    },
+    {
+      "player_id": 11416,
+      "display_name": "Jon Gorenc-Stankovic",
+      "team": "Slovenia",
+      "on_ball_events": 12,
+      "under_pressure_events": 2,
+      "share": 0.1667
+    },
+    {
+      "player_id": 27719,
+      "display_name": "Strahinja Pavlovi\u0107",
+      "team": "Serbia",
+      "on_ball_events": 157,
+      "under_pressure_events": 25,
+      "share": 0.1592
+    },
+    {
+      "player_id": 205932,
+      "display_name": "Vanja Drku\u0161i\u0107",
+      "team": "Slovenia",
+      "on_ball_events": 73,
+      "under_pressure_events": 11,
+      "share": 0.1507
+    },
+    {
+      "player_id": 28211,
+      "display_name": "Erik Jan\u017ea",
+      "team": "Slovenia",
+      "on_ball_events": 114,
+      "under_pressure_events": 16,
+      "share": 0.1404
+    },
+    {
+      "player_id": 30179,
+      "display_name": "Ivan Ili\u0107",
+      "team": "Serbia",
+      "on_ball_events": 166,
+      "under_pressure_events": 20,
+      "share": 0.1205
+    },
+    {
+      "player_id": 6321,
+      "display_name": "Milos Veljkovic",
+      "team": "Serbia",
+      "on_ball_events": 184,
+      "under_pressure_events": 20,
+      "share": 0.1087
+    },
+    {
+      "player_id": 5603,
+      "display_name": "Nikola Milenkovi\u0107",
+      "team": "Serbia",
+      "on_ball_events": 152,
+      "under_pressure_events": 11,
+      "share": 0.0724
+    }
+  ],
+  "metadata": {
+    "match_id": 3930170,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Slovenia vs Serbia",
+    "open_play_filter": "play_pattern + pass_type",
+    "ppda_zone": "opponent's own 60% (x < 72 in the opponent's own frame)",
+    "defensive_action_zone": "pressing team's own half+ (x >= 48 in its own frame)",
+    "pressures_high_zone": "opponent half (x >= 60 in the pressing team's own frame)"
+  }
+}

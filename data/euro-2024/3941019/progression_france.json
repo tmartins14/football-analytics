@@ -1,0 +1,97 @@
+{
+  "team": "France",
+  "progressive_actions": {
+    "total_count": 43,
+    "by_side": {
+      "left": 18,
+      "centre": 14,
+      "right": 11
+    },
+    "by_mode": {
+      "pass": 26,
+      "carry": 17
+    }
+  },
+  "progressors": [
+    {
+      "player_id": 3009,
+      "display_name": "Kylian Mbapp\u00e9",
+      "count": 11,
+      "passes": 2,
+      "carries": 9
+    },
+    {
+      "player_id": 3026,
+      "display_name": "Adrien Rabiot",
+      "count": 7,
+      "passes": 5,
+      "carries": 2
+    },
+    {
+      "player_id": 3961,
+      "display_name": "N'Golo Kant\u00e9",
+      "count": 7,
+      "passes": 5,
+      "carries": 2
+    },
+    {
+      "player_id": 10481,
+      "display_name": "Aur\u00e9lien Tchouam\u00e9ni",
+      "count": 4,
+      "passes": 3,
+      "carries": 1
+    },
+    {
+      "player_id": 4445,
+      "display_name": "Jules Kound\u00e9",
+      "count": 4,
+      "passes": 3,
+      "carries": 1
+    },
+    {
+      "player_id": 6704,
+      "display_name": "Theo Hern\u00e1ndez",
+      "count": 4,
+      "passes": 3,
+      "carries": 1
+    },
+    {
+      "player_id": 5487,
+      "display_name": "Antoine Griezmann",
+      "count": 2,
+      "passes": 1,
+      "carries": 1
+    },
+    {
+      "player_id": 8519,
+      "display_name": "Dayotchanculle Upamecano",
+      "count": 2,
+      "passes": 2,
+      "carries": 0
+    },
+    {
+      "player_id": 3761,
+      "display_name": "Mike Maignan",
+      "count": 1,
+      "passes": 1,
+      "carries": 0
+    },
+    {
+      "player_id": 17592,
+      "display_name": "William Saliba",
+      "count": 1,
+      "passes": 1,
+      "carries": 0
+    }
+  ],
+  "params": {
+    "progressive_threshold": 0.25
+  },
+  "metadata": {
+    "match_id": 3941019,
+    "team": "France",
+    "competition": "UEFA Euro 2024",
+    "match_label": "France vs Belgium",
+    "open_play_filter": "play_pattern"
+  }
+}

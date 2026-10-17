@@ -1,0 +1,124 @@
+{
+  "team": "Czech Republic",
+  "shots": {
+    "non_penalty_count": 12,
+    "total_npxg": 1.410323,
+    "by_zone": {
+      "six_yard_box": {
+        "npxg": 0.602029,
+        "count": 2
+      },
+      "box_central": {
+        "npxg": 0.637452,
+        "count": 5
+      },
+      "box_wide": {
+        "npxg": 0.073082,
+        "count": 1
+      },
+      "outside_box": {
+        "npxg": 0.09776,
+        "count": 4
+      }
+    },
+    "by_source": {
+      "open_play": {
+        "npxg": 0.031836,
+        "count": 1
+      },
+      "counter": {
+        "npxg": 0.073082,
+        "count": 1
+      },
+      "set_piece": {
+        "npxg": 1.278793,
+        "count": 9
+      },
+      "other": {
+        "npxg": 0.026612,
+        "count": 1
+      }
+    }
+  },
+  "shot_assists": {
+    "total_count": 7,
+    "by_side_and_type": {
+      "left": {
+        "cross": 1,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 1
+      },
+      "centre": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 4
+      },
+      "right": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 1
+      }
+    }
+  },
+  "creators": [
+    {
+      "player_id": 4870,
+      "display_name": "Tom\u00e1\u0161 Sou\u010dek",
+      "xa": 0.337057,
+      "key_passes": 2,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 28034,
+      "display_name": "Luk\u00e1\u0161 Provod",
+      "xa": 0.123872,
+      "key_passes": 2,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 134272,
+      "display_name": "David Jur\u00e1sek",
+      "xa": 0.10604,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 16570,
+      "display_name": "Vladim\u00edr Coufal",
+      "xa": 0.074509,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 7801,
+      "display_name": "Anton\u00edn Bar\u00e1k",
+      "xa": 0.031836,
+      "key_passes": 1,
+      "passes_into_box": 0
+    }
+  ],
+  "metadata": {
+    "match_id": 3930184,
+    "team": "Czech Republic",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Czech Republic vs Turkey",
+    "zone_filter": "statsbomb_120x80_own_attack_right_frame",
+    "source_grouping": {
+      "open_play": [
+        "Regular Play"
+      ],
+      "counter": [
+        "From Counter"
+      ],
+      "set_piece": [
+        "From Corner",
+        "From Free Kick",
+        "From Throw In"
+      ],
+      "other": "every other play_pattern (From Goal Kick, From Kick Off, From Keeper, Other)"
+    }
+  }
+}

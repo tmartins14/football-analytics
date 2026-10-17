@@ -1,0 +1,241 @@
+{
+  "teams": {
+    "Belgium": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 150,
+        "defensive_actions_advanced": 19,
+        "value": 7.8947
+      },
+      "pressures_high": {
+        "count": 44,
+        "opponent_open_play_passes": 258,
+        "per_100": 17.05
+      },
+      "pressure_side": {
+        "left": 59,
+        "centre": 25,
+        "right": 45
+      }
+    },
+    "France": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 75,
+        "defensive_actions_advanced": 19,
+        "value": 3.9474
+      },
+      "pressures_high": {
+        "count": 68,
+        "opponent_open_play_passes": 97,
+        "per_100": 70.1
+      },
+      "pressure_side": {
+        "left": 51,
+        "centre": 21,
+        "right": 57
+      }
+    }
+  },
+  "pressure_received": [
+    {
+      "player_id": 3289,
+      "display_name": "Romelu Lukaku",
+      "team": "Belgium",
+      "on_ball_events": 38,
+      "under_pressure_events": 24,
+      "share": 0.6316
+    },
+    {
+      "player_id": 32688,
+      "display_name": "Charles De Ketelaere",
+      "team": "Belgium",
+      "on_ball_events": 2,
+      "under_pressure_events": 1,
+      "share": 0.5
+    },
+    {
+      "player_id": 23650,
+      "display_name": "J\u00e9r\u00e9my Doku",
+      "team": "Belgium",
+      "on_ball_events": 105,
+      "under_pressure_events": 41,
+      "share": 0.3905
+    },
+    {
+      "player_id": 12306,
+      "display_name": "Dodi Lukebakio",
+      "team": "Belgium",
+      "on_ball_events": 13,
+      "under_pressure_events": 5,
+      "share": 0.3846
+    },
+    {
+      "player_id": 2972,
+      "display_name": "Marcus Thuram",
+      "team": "France",
+      "on_ball_events": 34,
+      "under_pressure_events": 13,
+      "share": 0.3824
+    },
+    {
+      "player_id": 22097,
+      "display_name": "Randal Kolo",
+      "team": "France",
+      "on_ball_events": 38,
+      "under_pressure_events": 14,
+      "share": 0.3684
+    },
+    {
+      "player_id": 5633,
+      "display_name": "Yannick Carrasco",
+      "team": "Belgium",
+      "on_ball_events": 65,
+      "under_pressure_events": 19,
+      "share": 0.2923
+    },
+    {
+      "player_id": 3009,
+      "display_name": "Kylian Mbapp\u00e9",
+      "team": "France",
+      "on_ball_events": 133,
+      "under_pressure_events": 38,
+      "share": 0.2857
+    },
+    {
+      "player_id": 3089,
+      "display_name": "Kevin De Bruyne",
+      "team": "Belgium",
+      "on_ball_events": 106,
+      "under_pressure_events": 24,
+      "share": 0.2264
+    },
+    {
+      "player_id": 5487,
+      "display_name": "Antoine Griezmann",
+      "team": "France",
+      "on_ball_events": 134,
+      "under_pressure_events": 30,
+      "share": 0.2239
+    },
+    {
+      "player_id": 48347,
+      "display_name": "Amadou Onana",
+      "team": "Belgium",
+      "on_ball_events": 129,
+      "under_pressure_events": 27,
+      "share": 0.2093
+    },
+    {
+      "player_id": 16275,
+      "display_name": "Lo\u00efs Openda",
+      "team": "Belgium",
+      "on_ball_events": 35,
+      "under_pressure_events": 7,
+      "share": 0.2
+    },
+    {
+      "player_id": 8950,
+      "display_name": "Orel Mangala",
+      "team": "Belgium",
+      "on_ball_events": 51,
+      "under_pressure_events": 10,
+      "share": 0.1961
+    },
+    {
+      "player_id": 6989,
+      "display_name": "Timothy Castagne",
+      "team": "Belgium",
+      "on_ball_events": 93,
+      "under_pressure_events": 15,
+      "share": 0.1613
+    },
+    {
+      "player_id": 3961,
+      "display_name": "N'Golo Kant\u00e9",
+      "team": "France",
+      "on_ball_events": 154,
+      "under_pressure_events": 22,
+      "share": 0.1429
+    },
+    {
+      "player_id": 3026,
+      "display_name": "Adrien Rabiot",
+      "team": "France",
+      "on_ball_events": 152,
+      "under_pressure_events": 20,
+      "share": 0.1316
+    },
+    {
+      "player_id": 17592,
+      "display_name": "William Saliba",
+      "team": "France",
+      "on_ball_events": 143,
+      "under_pressure_events": 17,
+      "share": 0.1189
+    },
+    {
+      "player_id": 10481,
+      "display_name": "Aur\u00e9lien Tchouam\u00e9ni",
+      "team": "France",
+      "on_ball_events": 224,
+      "under_pressure_events": 22,
+      "share": 0.0982
+    },
+    {
+      "player_id": 8854,
+      "display_name": "Wout Faes",
+      "team": "Belgium",
+      "on_ball_events": 161,
+      "under_pressure_events": 15,
+      "share": 0.0932
+    },
+    {
+      "player_id": 4445,
+      "display_name": "Jules Kound\u00e9",
+      "team": "France",
+      "on_ball_events": 152,
+      "under_pressure_events": 14,
+      "share": 0.0921
+    },
+    {
+      "player_id": 43913,
+      "display_name": "Arthur Theate",
+      "team": "Belgium",
+      "on_ball_events": 150,
+      "under_pressure_events": 13,
+      "share": 0.0867
+    },
+    {
+      "player_id": 6704,
+      "display_name": "Theo Hern\u00e1ndez",
+      "team": "France",
+      "on_ball_events": 182,
+      "under_pressure_events": 15,
+      "share": 0.0824
+    },
+    {
+      "player_id": 8519,
+      "display_name": "Dayotchanculle Upamecano",
+      "team": "France",
+      "on_ball_events": 116,
+      "under_pressure_events": 9,
+      "share": 0.0776
+    },
+    {
+      "player_id": 3077,
+      "display_name": "Jan Vertonghen",
+      "team": "Belgium",
+      "on_ball_events": 204,
+      "under_pressure_events": 13,
+      "share": 0.0637
+    }
+  ],
+  "metadata": {
+    "match_id": 3941019,
+    "competition": "UEFA Euro 2024",
+    "match_label": "France vs Belgium",
+    "open_play_filter": "play_pattern + pass_type",
+    "ppda_zone": "opponent's own 60% (x < 72 in the opponent's own frame)",
+    "defensive_action_zone": "pressing team's own half+ (x >= 48 in its own frame)",
+    "pressures_high_zone": "opponent half (x >= 60 in the pressing team's own frame)"
+  }
+}

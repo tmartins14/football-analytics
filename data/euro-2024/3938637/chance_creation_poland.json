@@ -1,0 +1,138 @@
+{
+  "team": "Poland",
+  "shots": {
+    "non_penalty_count": 12,
+    "total_npxg": 0.909158,
+    "by_zone": {
+      "six_yard_box": {
+        "npxg": 0.403373,
+        "count": 3
+      },
+      "box_central": {
+        "npxg": 0.304515,
+        "count": 2
+      },
+      "box_wide": {
+        "npxg": 0.122792,
+        "count": 3
+      },
+      "outside_box": {
+        "npxg": 0.078478,
+        "count": 4
+      }
+    },
+    "by_source": {
+      "open_play": {
+        "npxg": 0.345969,
+        "count": 4
+      },
+      "counter": {
+        "npxg": 0.0,
+        "count": 0
+      },
+      "set_piece": {
+        "npxg": 0.51951,
+        "count": 7
+      },
+      "other": {
+        "npxg": 0.043679,
+        "count": 1
+      }
+    }
+  },
+  "shot_assists": {
+    "total_count": 8,
+    "by_side_and_type": {
+      "left": {
+        "cross": 2,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 4
+      },
+      "centre": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 0
+      },
+      "right": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 2
+      }
+    }
+  },
+  "creators": [
+    {
+      "player_id": 8836,
+      "display_name": "Karol \u015awiderski",
+      "xa": 0.467938,
+      "key_passes": 2,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 20841,
+      "display_name": "Jakub Piotrowski",
+      "xa": 0.13145,
+      "key_passes": 1,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 5660,
+      "display_name": "Piotr Zieli\u0144ski",
+      "xa": 0.087217,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 50502,
+      "display_name": "Nicola Zalewski",
+      "xa": 0.060536,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 7979,
+      "display_name": "Przemys\u0142aw Frankowski",
+      "xa": 0.043679,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 44166,
+      "display_name": "Jakub Piotr Kiwior",
+      "xa": 0.036215,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 7663,
+      "display_name": "Adam Buksa",
+      "xa": 0.018692,
+      "key_passes": 1,
+      "passes_into_box": 0
+    }
+  ],
+  "metadata": {
+    "match_id": 3938637,
+    "team": "Poland",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Poland vs Netherlands",
+    "zone_filter": "statsbomb_120x80_own_attack_right_frame",
+    "source_grouping": {
+      "open_play": [
+        "Regular Play"
+      ],
+      "counter": [
+        "From Counter"
+      ],
+      "set_piece": [
+        "From Corner",
+        "From Free Kick",
+        "From Throw In"
+      ],
+      "other": "every other play_pattern (From Goal Kick, From Kick Off, From Keeper, Other)"
+    }
+  }
+}

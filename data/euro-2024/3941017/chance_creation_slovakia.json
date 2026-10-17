@@ -1,0 +1,138 @@
+{
+  "team": "Slovakia",
+  "shots": {
+    "non_penalty_count": 13,
+    "total_npxg": 1.547847,
+    "by_zone": {
+      "six_yard_box": {
+        "npxg": 0.506364,
+        "count": 1
+      },
+      "box_central": {
+        "npxg": 0.886405,
+        "count": 6
+      },
+      "box_wide": {
+        "npxg": 0.008433,
+        "count": 1
+      },
+      "outside_box": {
+        "npxg": 0.146646,
+        "count": 5
+      }
+    },
+    "by_source": {
+      "open_play": {
+        "npxg": 0.191237,
+        "count": 4
+      },
+      "counter": {
+        "npxg": 0.0,
+        "count": 0
+      },
+      "set_piece": {
+        "npxg": 0.70339,
+        "count": 6
+      },
+      "other": {
+        "npxg": 0.65322,
+        "count": 3
+      }
+    }
+  },
+  "shot_assists": {
+    "total_count": 10,
+    "by_side_and_type": {
+      "left": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 2
+      },
+      "centre": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 1,
+        "other": 2
+      },
+      "right": {
+        "cross": 3,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 2
+      }
+    }
+  },
+  "creators": [
+    {
+      "player_id": 43976,
+      "display_name": "David Strelec",
+      "xa": 0.66078,
+      "key_passes": 3,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 11383,
+      "display_name": "L\u00e1szl\u00f3 B\u00e9nes",
+      "xa": 0.506364,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 35653,
+      "display_name": "Tom\u00e1\u0161 Suslov",
+      "xa": 0.118734,
+      "key_passes": 2,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 8967,
+      "display_name": "Ondrej Duda",
+      "xa": 0.092394,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 20043,
+      "display_name": "Norbert Gy\u00f6mb\u00e9r",
+      "xa": 0.067865,
+      "key_passes": 1,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 34904,
+      "display_name": "R\u00f3bert Bo\u017een\u00edk",
+      "xa": 0.014195,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 6798,
+      "display_name": "Stanislav Lobotka",
+      "xa": 0.008433,
+      "key_passes": 1,
+      "passes_into_box": 0
+    }
+  ],
+  "metadata": {
+    "match_id": 3941017,
+    "team": "Slovakia",
+    "competition": "UEFA Euro 2024",
+    "match_label": "England vs Slovakia",
+    "zone_filter": "statsbomb_120x80_own_attack_right_frame",
+    "source_grouping": {
+      "open_play": [
+        "Regular Play"
+      ],
+      "counter": [
+        "From Counter"
+      ],
+      "set_piece": [
+        "From Corner",
+        "From Free Kick",
+        "From Throw In"
+      ],
+      "other": "every other play_pattern (From Goal Kick, From Kick Off, From Keeper, Other)"
+    }
+  }
+}

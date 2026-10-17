@@ -1,0 +1,131 @@
+{
+  "team": "Poland",
+  "shots": {
+    "non_penalty_count": 15,
+    "total_npxg": 1.438092,
+    "by_zone": {
+      "six_yard_box": {
+        "npxg": 0.0,
+        "count": 0
+      },
+      "box_central": {
+        "npxg": 1.015771,
+        "count": 7
+      },
+      "box_wide": {
+        "npxg": 0.099121,
+        "count": 1
+      },
+      "outside_box": {
+        "npxg": 0.3232,
+        "count": 7
+      }
+    },
+    "by_source": {
+      "open_play": {
+        "npxg": 0.0,
+        "count": 0
+      },
+      "counter": {
+        "npxg": 0.0,
+        "count": 0
+      },
+      "set_piece": {
+        "npxg": 1.280272,
+        "count": 13
+      },
+      "other": {
+        "npxg": 0.15782,
+        "count": 2
+      }
+    }
+  },
+  "shot_assists": {
+    "total_count": 10,
+    "by_side_and_type": {
+      "left": {
+        "cross": 2,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 1
+      },
+      "centre": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 2
+      },
+      "right": {
+        "cross": 2,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 3
+      }
+    }
+  },
+  "creators": [
+    {
+      "player_id": 7979,
+      "display_name": "Przemys\u0142aw Frankowski",
+      "xa": 0.264247,
+      "key_passes": 3,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 44166,
+      "display_name": "Jakub Piotr Kiwior",
+      "xa": 0.203687,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 5660,
+      "display_name": "Piotr Zieli\u0144ski",
+      "xa": 0.13364,
+      "key_passes": 3,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 7663,
+      "display_name": "Adam Buksa",
+      "xa": 0.113001,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 15859,
+      "display_name": "Bartosz Slisz",
+      "xa": 0.074024,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 5668,
+      "display_name": "Robert Lewandowski",
+      "xa": 0.072915,
+      "key_passes": 1,
+      "passes_into_box": 0
+    }
+  ],
+  "metadata": {
+    "match_id": 3938641,
+    "team": "Poland",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Poland vs Austria",
+    "zone_filter": "statsbomb_120x80_own_attack_right_frame",
+    "source_grouping": {
+      "open_play": [
+        "Regular Play"
+      ],
+      "counter": [
+        "From Counter"
+      ],
+      "set_piece": [
+        "From Corner",
+        "From Free Kick",
+        "From Throw In"
+      ],
+      "other": "every other play_pattern (From Goal Kick, From Kick Off, From Keeper, Other)"
+    }
+  }
+}

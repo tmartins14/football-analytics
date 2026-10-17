@@ -1,0 +1,138 @@
+{
+  "team": "Netherlands",
+  "shots": {
+    "non_penalty_count": 24,
+    "total_npxg": 2.626237,
+    "by_zone": {
+      "six_yard_box": {
+        "npxg": 0.706253,
+        "count": 2
+      },
+      "box_central": {
+        "npxg": 1.18089,
+        "count": 9
+      },
+      "box_wide": {
+        "npxg": 0.436841,
+        "count": 6
+      },
+      "outside_box": {
+        "npxg": 0.302252,
+        "count": 7
+      }
+    },
+    "by_source": {
+      "open_play": {
+        "npxg": 0.506282,
+        "count": 6
+      },
+      "counter": {
+        "npxg": 0.460919,
+        "count": 3
+      },
+      "set_piece": {
+        "npxg": 1.606115,
+        "count": 14
+      },
+      "other": {
+        "npxg": 0.05292,
+        "count": 1
+      }
+    }
+  },
+  "shot_assists": {
+    "total_count": 19,
+    "by_side_and_type": {
+      "left": {
+        "cross": 1,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 6
+      },
+      "centre": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 5
+      },
+      "right": {
+        "cross": 3,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 4
+      }
+    }
+  },
+  "creators": [
+    {
+      "player_id": 20750,
+      "display_name": "Cody Gakpo",
+      "xa": 0.661215,
+      "key_passes": 3,
+      "passes_into_box": 3
+    },
+    {
+      "player_id": 39167,
+      "display_name": "Xavi Simons",
+      "xa": 0.426971,
+      "key_passes": 3,
+      "passes_into_box": 2
+    },
+    {
+      "player_id": 8125,
+      "display_name": "Denzel Dumfries",
+      "xa": 0.365431,
+      "key_passes": 2,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 2988,
+      "display_name": "Memphis Depay",
+      "xa": 0.356115,
+      "key_passes": 5,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 3669,
+      "display_name": "Virgil van Dijk",
+      "xa": 0.140384,
+      "key_passes": 3,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 15582,
+      "display_name": "Donyell Malen",
+      "xa": 0.132555,
+      "key_passes": 2,
+      "passes_into_box": 2
+    },
+    {
+      "player_id": 15503,
+      "display_name": "Jerdy Schouten",
+      "xa": 0.073736,
+      "key_passes": 1,
+      "passes_into_box": 0
+    }
+  ],
+  "metadata": {
+    "match_id": 3941021,
+    "team": "Netherlands",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Romania vs Netherlands",
+    "zone_filter": "statsbomb_120x80_own_attack_right_frame",
+    "source_grouping": {
+      "open_play": [
+        "Regular Play"
+      ],
+      "counter": [
+        "From Counter"
+      ],
+      "set_piece": [
+        "From Corner",
+        "From Free Kick",
+        "From Throw In"
+      ],
+      "other": "every other play_pattern (From Goal Kick, From Kick Off, From Keeper, Other)"
+    }
+  }
+}
