@@ -1,0 +1,145 @@
+{
+  "team": "Spain",
+  "shots": {
+    "non_penalty_count": 16,
+    "total_npxg": 0.951713,
+    "by_zone": {
+      "six_yard_box": {
+        "npxg": 0.0,
+        "count": 0
+      },
+      "box_central": {
+        "npxg": 0.686837,
+        "count": 8
+      },
+      "box_wide": {
+        "npxg": 0.210332,
+        "count": 4
+      },
+      "outside_box": {
+        "npxg": 0.054543,
+        "count": 4
+      }
+    },
+    "by_source": {
+      "open_play": {
+        "npxg": 0.244586,
+        "count": 7
+      },
+      "counter": {
+        "npxg": 0.187236,
+        "count": 1
+      },
+      "set_piece": {
+        "npxg": 0.437748,
+        "count": 6
+      },
+      "other": {
+        "npxg": 0.082142,
+        "count": 2
+      }
+    }
+  },
+  "shot_assists": {
+    "total_count": 14,
+    "by_side_and_type": {
+      "left": {
+        "cross": 4,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 2
+      },
+      "centre": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 1
+      },
+      "right": {
+        "cross": 2,
+        "cut_back": 0,
+        "through_ball": 2,
+        "other": 3
+      }
+    }
+  },
+  "creators": [
+    {
+      "player_id": 10336,
+      "display_name": "\u00c1lex Grimaldo",
+      "xa": 0.401718,
+      "key_passes": 6,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 3042,
+      "display_name": "Mikel Merino",
+      "xa": 0.187236,
+      "key_passes": 1,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 6821,
+      "display_name": "Jes\u00fas Navas",
+      "xa": 0.129079,
+      "key_passes": 2,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 16532,
+      "display_name": "Daniel Olmo",
+      "xa": 0.103582,
+      "key_passes": 1,
+      "passes_into_box": 2
+    },
+    {
+      "player_id": 4353,
+      "display_name": "Aymeric Laporte",
+      "xa": 0.060585,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 316046,
+      "display_name": "Lamine Yamal",
+      "xa": 0.029392,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 24921,
+      "display_name": "Mart\u00edn Zubimendi",
+      "xa": 0.014969,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 6685,
+      "display_name": "Mikel Oyarzabal",
+      "xa": 0.010365,
+      "key_passes": 1,
+      "passes_into_box": 1
+    }
+  ],
+  "metadata": {
+    "match_id": 3930179,
+    "team": "Spain",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Albania vs Spain",
+    "zone_filter": "statsbomb_120x80_own_attack_right_frame",
+    "source_grouping": {
+      "open_play": [
+        "Regular Play"
+      ],
+      "counter": [
+        "From Counter"
+      ],
+      "set_piece": [
+        "From Corner",
+        "From Free Kick",
+        "From Throw In"
+      ],
+      "other": "every other play_pattern (From Goal Kick, From Kick Off, From Keeper, Other)"
+    }
+  }
+}

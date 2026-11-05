@@ -1,0 +1,289 @@
+{
+  "teams": {
+    "Italy": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 169,
+        "defensive_actions_advanced": 24,
+        "value": 7.0417
+      },
+      "pressures_high": {
+        "count": 86,
+        "opponent_open_play_passes": 281,
+        "per_100": 30.6
+      },
+      "pressure_side": {
+        "left": 73,
+        "centre": 61,
+        "right": 97
+      }
+    },
+    "Spain": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 143,
+        "defensive_actions_advanced": 28,
+        "value": 5.1071
+      },
+      "pressures_high": {
+        "count": 101,
+        "opponent_open_play_passes": 186,
+        "per_100": 54.3
+      },
+      "pressure_side": {
+        "left": 52,
+        "centre": 43,
+        "right": 58
+      }
+    }
+  },
+  "pressure_received": [
+    {
+      "player_id": 3076,
+      "display_name": "Ayoze P\u00e9rez",
+      "team": "Spain",
+      "on_ball_events": 21,
+      "under_pressure_events": 13,
+      "share": 0.619
+    },
+    {
+      "player_id": 8792,
+      "display_name": "Mattia Zaccagni",
+      "team": "Italy",
+      "on_ball_events": 39,
+      "under_pressure_events": 17,
+      "share": 0.4359
+    },
+    {
+      "player_id": 68574,
+      "display_name": "Nico Williams",
+      "team": "Spain",
+      "on_ball_events": 122,
+      "under_pressure_events": 50,
+      "share": 0.4098
+    },
+    {
+      "player_id": 3477,
+      "display_name": "\u00c1lvaro Morata",
+      "team": "Spain",
+      "on_ball_events": 59,
+      "under_pressure_events": 24,
+      "share": 0.4068
+    },
+    {
+      "player_id": 6685,
+      "display_name": "Mikel Oyarzabal",
+      "team": "Spain",
+      "on_ball_events": 15,
+      "under_pressure_events": 6,
+      "share": 0.4
+    },
+    {
+      "player_id": 25048,
+      "display_name": "Giacomo Raspadori",
+      "team": "Italy",
+      "on_ball_events": 29,
+      "under_pressure_events": 11,
+      "share": 0.3793
+    },
+    {
+      "player_id": 30926,
+      "display_name": "Davide Frattesi",
+      "team": "Italy",
+      "on_ball_events": 43,
+      "under_pressure_events": 14,
+      "share": 0.3256
+    },
+    {
+      "player_id": 10992,
+      "display_name": "Gianluca Scamacca",
+      "team": "Italy",
+      "on_ball_events": 40,
+      "under_pressure_events": 13,
+      "share": 0.325
+    },
+    {
+      "player_id": 7156,
+      "display_name": "Federico Chiesa",
+      "team": "Italy",
+      "on_ball_events": 60,
+      "under_pressure_events": 18,
+      "share": 0.3
+    },
+    {
+      "player_id": 316046,
+      "display_name": "Lamine Yamal",
+      "team": "Spain",
+      "on_ball_events": 97,
+      "under_pressure_events": 29,
+      "share": 0.299
+    },
+    {
+      "player_id": 6748,
+      "display_name": "Ferr\u00e1n Torres",
+      "team": "Spain",
+      "on_ball_events": 17,
+      "under_pressure_events": 5,
+      "share": 0.2941
+    },
+    {
+      "player_id": 30486,
+      "display_name": "Pedri",
+      "team": "Spain",
+      "on_ball_events": 120,
+      "under_pressure_events": 35,
+      "share": 0.2917
+    },
+    {
+      "player_id": 6655,
+      "display_name": "Fabi\u00e1n Ruiz",
+      "team": "Spain",
+      "on_ball_events": 202,
+      "under_pressure_events": 56,
+      "share": 0.2772
+    },
+    {
+      "player_id": 41768,
+      "display_name": "Riccardo Calafiori",
+      "team": "Italy",
+      "on_ball_events": 148,
+      "under_pressure_events": 40,
+      "share": 0.2703
+    },
+    {
+      "player_id": 6993,
+      "display_name": "Bryan Cristante",
+      "team": "Italy",
+      "on_ball_events": 52,
+      "under_pressure_events": 14,
+      "share": 0.2692
+    },
+    {
+      "player_id": 50729,
+      "display_name": "Andrea Cambiaso",
+      "team": "Italy",
+      "on_ball_events": 67,
+      "under_pressure_events": 16,
+      "share": 0.2388
+    },
+    {
+      "player_id": 6765,
+      "display_name": "Rodri",
+      "team": "Spain",
+      "on_ball_events": 206,
+      "under_pressure_events": 49,
+      "share": 0.2379
+    },
+    {
+      "player_id": 41115,
+      "display_name": "\u00c1lex Baena",
+      "team": "Spain",
+      "on_ball_events": 31,
+      "under_pressure_events": 7,
+      "share": 0.2258
+    },
+    {
+      "player_id": 17620,
+      "display_name": "Marc Cucurella",
+      "team": "Spain",
+      "on_ball_events": 143,
+      "under_pressure_events": 30,
+      "share": 0.2098
+    },
+    {
+      "player_id": 31093,
+      "display_name": "Mateo Retegui",
+      "team": "Italy",
+      "on_ball_events": 15,
+      "under_pressure_events": 3,
+      "share": 0.2
+    },
+    {
+      "player_id": 6963,
+      "display_name": "Lorenzo Pellegrini",
+      "team": "Italy",
+      "on_ball_events": 82,
+      "under_pressure_events": 15,
+      "share": 0.1829
+    },
+    {
+      "player_id": 12255,
+      "display_name": "Federico Dimarco",
+      "team": "Italy",
+      "on_ball_events": 89,
+      "under_pressure_events": 16,
+      "share": 0.1798
+    },
+    {
+      "player_id": 8181,
+      "display_name": "Nicol\u00f2 Barella",
+      "team": "Italy",
+      "on_ball_events": 137,
+      "under_pressure_events": 24,
+      "share": 0.1752
+    },
+    {
+      "player_id": 4353,
+      "display_name": "Aymeric Laporte",
+      "team": "Spain",
+      "on_ball_events": 164,
+      "under_pressure_events": 28,
+      "share": 0.1707
+    },
+    {
+      "player_id": 7024,
+      "display_name": "Jorginho",
+      "team": "Italy",
+      "on_ball_events": 71,
+      "under_pressure_events": 12,
+      "share": 0.169
+    },
+    {
+      "player_id": 5721,
+      "display_name": "Daniel Carvajal",
+      "team": "Spain",
+      "on_ball_events": 137,
+      "under_pressure_events": 21,
+      "share": 0.1533
+    },
+    {
+      "player_id": 11514,
+      "display_name": "Giovanni Di Lorenzo",
+      "team": "Italy",
+      "on_ball_events": 144,
+      "under_pressure_events": 18,
+      "share": 0.125
+    },
+    {
+      "player_id": 7480,
+      "display_name": "Alessandro Bastoni",
+      "team": "Italy",
+      "on_ball_events": 137,
+      "under_pressure_events": 16,
+      "share": 0.1168
+    },
+    {
+      "player_id": 22128,
+      "display_name": "Robin Le Normand",
+      "team": "Spain",
+      "on_ball_events": 139,
+      "under_pressure_events": 16,
+      "share": 0.1151
+    },
+    {
+      "player_id": 3042,
+      "display_name": "Mikel Merino",
+      "team": "Spain",
+      "on_ball_events": 0,
+      "under_pressure_events": 0,
+      "share": 0.0
+    }
+  ],
+  "metadata": {
+    "match_id": 3930172,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Spain vs Italy",
+    "open_play_filter": "play_pattern + pass_type",
+    "ppda_zone": "opponent's own 60% (x < 72 in the opponent's own frame)",
+    "defensive_action_zone": "pressing team's own half+ (x >= 48 in its own frame)",
+    "pressures_high_zone": "opponent half (x >= 60 in the pressing team's own frame)"
+  }
+}

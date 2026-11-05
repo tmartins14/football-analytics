@@ -1,0 +1,97 @@
+{
+  "team": "Belgium",
+  "progressive_actions": {
+    "total_count": 28,
+    "by_side": {
+      "left": 8,
+      "centre": 5,
+      "right": 15
+    },
+    "by_mode": {
+      "pass": 17,
+      "carry": 11
+    }
+  },
+  "progressors": [
+    {
+      "player_id": 3089,
+      "display_name": "Kevin De Bruyne",
+      "count": 5,
+      "passes": 4,
+      "carries": 1
+    },
+    {
+      "player_id": 48347,
+      "display_name": "Amadou Onana",
+      "count": 4,
+      "passes": 1,
+      "carries": 3
+    },
+    {
+      "player_id": 6989,
+      "display_name": "Timothy Castagne",
+      "count": 4,
+      "passes": 4,
+      "carries": 0
+    },
+    {
+      "player_id": 23650,
+      "display_name": "J\u00e9r\u00e9my Doku",
+      "count": 3,
+      "passes": 1,
+      "carries": 2
+    },
+    {
+      "player_id": 5633,
+      "display_name": "Yannick Carrasco",
+      "count": 3,
+      "passes": 1,
+      "carries": 2
+    },
+    {
+      "player_id": 3077,
+      "display_name": "Jan Vertonghen",
+      "count": 2,
+      "passes": 2,
+      "carries": 0
+    },
+    {
+      "player_id": 8240,
+      "display_name": "Koen Casteels",
+      "count": 2,
+      "passes": 2,
+      "carries": 0
+    },
+    {
+      "player_id": 3289,
+      "display_name": "Romelu Lukaku",
+      "count": 2,
+      "passes": 0,
+      "carries": 2
+    },
+    {
+      "player_id": 8854,
+      "display_name": "Wout Faes",
+      "count": 2,
+      "passes": 2,
+      "carries": 0
+    },
+    {
+      "player_id": 12306,
+      "display_name": "Dodi Lukebakio",
+      "count": 1,
+      "passes": 0,
+      "carries": 1
+    }
+  ],
+  "params": {
+    "progressive_threshold": 0.25
+  },
+  "metadata": {
+    "match_id": 3941019,
+    "team": "Belgium",
+    "competition": "UEFA Euro 2024",
+    "match_label": "France vs Belgium",
+    "open_play_filter": "play_pattern"
+  }
+}

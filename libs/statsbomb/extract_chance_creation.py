@@ -197,8 +197,11 @@ def extract_chance_creation(match_id: int, team: str) -> dict:
         d["npxg"] = round(d["npxg"], 6)
 
     # Shot assists: shots in `shots` whose assisting Pass is a shot/goal assist.
+    # `shot_key_pass_id` can be entirely absent (not just NaN) when zero shots
+    # in the match were key-pass-assisted — same sparse-column behavior as
+    # pass_shot_assist/pass_goal_assist above.
     assist_pass_ids = {
-        str(v) for v in shots["shot_key_pass_id"].dropna().tolist()
+        str(v) for v in shots.get("shot_key_pass_id", pd.Series(dtype=object)).dropna().tolist()
     }
     by_side_and_type: dict[str, dict] = {
         side: {"cross": 0, "cut_back": 0, "through_ball": 0, "other": 0}
@@ -218,9 +221,16 @@ def extract_chance_creation(match_id: int, team: str) -> dict:
 
     # Creators (Q2): xA, key passes, passes into the box, per player.
     team_passes = events[(events["team"] == team) & (events["type"] == "Pass")]
+    # `pass_shot_assist`/`pass_goal_assist` are entirely absent from the
+    # DataFrame (not just NaN) when zero events in the whole match set
+    # them — statsbombpy's flattening only creates a column when at least
+    # one event carries it. `.get()` with a same-index False default
+    # covers that case; `.fillna(False)` alone (bracket indexing) still
+    # raises a KeyError when the column doesn't exist at all.
+    false_series = pd.Series(False, index=team_passes.index)
     key_pass_mask = (
-        team_passes["pass_shot_assist"].fillna(False).astype(bool)
-        | team_passes["pass_goal_assist"].fillna(False).astype(bool)
+        team_passes.get("pass_shot_assist", false_series).fillna(False).astype(bool)
+        | team_passes.get("pass_goal_assist", false_series).fillna(False).astype(bool)
     )
     key_passes = team_passes[key_pass_mask]
 

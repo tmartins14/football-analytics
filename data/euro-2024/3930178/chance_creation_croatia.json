@@ -1,0 +1,117 @@
+{
+  "team": "Croatia",
+  "shots": {
+    "non_penalty_count": 5,
+    "total_npxg": 0.699735,
+    "by_zone": {
+      "six_yard_box": {
+        "npxg": 0.485304,
+        "count": 1
+      },
+      "box_central": {
+        "npxg": 0.148558,
+        "count": 1
+      },
+      "box_wide": {
+        "npxg": 0.024292,
+        "count": 1
+      },
+      "outside_box": {
+        "npxg": 0.041581,
+        "count": 2
+      }
+    },
+    "by_source": {
+      "open_play": {
+        "npxg": 0.021476,
+        "count": 1
+      },
+      "counter": {
+        "npxg": 0.0,
+        "count": 0
+      },
+      "set_piece": {
+        "npxg": 0.044397,
+        "count": 2
+      },
+      "other": {
+        "npxg": 0.633862,
+        "count": 2
+      }
+    }
+  },
+  "shot_assists": {
+    "total_count": 4,
+    "by_side_and_type": {
+      "left": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 0
+      },
+      "centre": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 2
+      },
+      "right": {
+        "cross": 1,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 1
+      }
+    }
+  },
+  "creators": [
+    {
+      "player_id": 39490,
+      "display_name": "Luka Su\u010di\u0107",
+      "xa": 0.148558,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 5469,
+      "display_name": "Marcelo Brozovi\u0107",
+      "xa": 0.024292,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 5463,
+      "display_name": "Luka Modri\u0107",
+      "xa": 0.021476,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 5460,
+      "display_name": "Andrej Kramari\u0107",
+      "xa": 0.020105,
+      "key_passes": 1,
+      "passes_into_box": 0
+    }
+  ],
+  "metadata": {
+    "match_id": 3930178,
+    "team": "Croatia",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Croatia vs Italy",
+    "zone_filter": "statsbomb_120x80_own_attack_right_frame",
+    "source_grouping": {
+      "open_play": [
+        "Regular Play"
+      ],
+      "counter": [
+        "From Counter"
+      ],
+      "set_piece": [
+        "From Corner",
+        "From Free Kick",
+        "From Throw In"
+      ],
+      "other": "every other play_pattern (From Goal Kick, From Kick Off, From Keeper, Other)"
+    }
+  }
+}

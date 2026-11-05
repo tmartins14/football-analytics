@@ -1,0 +1,145 @@
+{
+  "team": "Ukraine",
+  "shots": {
+    "non_penalty_count": 14,
+    "total_npxg": 0.70917,
+    "by_zone": {
+      "six_yard_box": {
+        "npxg": 0.054199,
+        "count": 1
+      },
+      "box_central": {
+        "npxg": 0.349951,
+        "count": 3
+      },
+      "box_wide": {
+        "npxg": 0.084051,
+        "count": 2
+      },
+      "outside_box": {
+        "npxg": 0.220969,
+        "count": 8
+      }
+    },
+    "by_source": {
+      "open_play": {
+        "npxg": 0.234926,
+        "count": 5
+      },
+      "counter": {
+        "npxg": 0.18075,
+        "count": 1
+      },
+      "set_piece": {
+        "npxg": 0.212948,
+        "count": 6
+      },
+      "other": {
+        "npxg": 0.080546,
+        "count": 2
+      }
+    }
+  },
+  "shot_assists": {
+    "total_count": 12,
+    "by_side_and_type": {
+      "left": {
+        "cross": 2,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 1
+      },
+      "centre": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 7
+      },
+      "right": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 2
+      }
+    }
+  },
+  "creators": [
+    {
+      "player_id": 16557,
+      "display_name": "Ruslan Malinovskiy",
+      "xa": 0.24779,
+      "key_passes": 2,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 20827,
+      "display_name": "Vitalii Mykolenko",
+      "xa": 0.15215,
+      "key_passes": 2,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 25079,
+      "display_name": "Artem Dovbyk",
+      "xa": 0.108786,
+      "key_passes": 2,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 18617,
+      "display_name": "Mykola Matvienko",
+      "xa": 0.054199,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 38975,
+      "display_name": "Georgiy Sudakov",
+      "xa": 0.049368,
+      "key_passes": 2,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 23649,
+      "display_name": "Roman Yaremchuk",
+      "xa": 0.040269,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 21294,
+      "display_name": "Mykola Shaparenko",
+      "xa": 0.030925,
+      "key_passes": 1,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 45863,
+      "display_name": "Oleksandr Tymchyk",
+      "xa": 0.018025,
+      "key_passes": 1,
+      "passes_into_box": 0
+    }
+  ],
+  "metadata": {
+    "match_id": 3938645,
+    "team": "Ukraine",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Ukraine vs Belgium",
+    "zone_filter": "statsbomb_120x80_own_attack_right_frame",
+    "source_grouping": {
+      "open_play": [
+        "Regular Play"
+      ],
+      "counter": [
+        "From Counter"
+      ],
+      "set_piece": [
+        "From Corner",
+        "From Free Kick",
+        "From Throw In"
+      ],
+      "other": "every other play_pattern (From Goal Kick, From Kick Off, From Keeper, Other)"
+    }
+  }
+}

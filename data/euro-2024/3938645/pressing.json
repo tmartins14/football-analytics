@@ -1,0 +1,281 @@
+{
+  "teams": {
+    "Belgium": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 127,
+        "defensive_actions_advanced": 12,
+        "value": 10.5833
+      },
+      "pressures_high": {
+        "count": 28,
+        "opponent_open_play_passes": 160,
+        "per_100": 17.5
+      },
+      "pressure_side": {
+        "left": 24,
+        "centre": 17,
+        "right": 22
+      }
+    },
+    "Ukraine": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 132,
+        "defensive_actions_advanced": 19,
+        "value": 6.9474
+      },
+      "pressures_high": {
+        "count": 83,
+        "opponent_open_play_passes": 247,
+        "per_100": 33.6
+      },
+      "pressure_side": {
+        "left": 66,
+        "centre": 47,
+        "right": 98
+      }
+    }
+  },
+  "pressure_received": [
+    {
+      "player_id": 3289,
+      "display_name": "Romelu Lukaku",
+      "team": "Belgium",
+      "on_ball_events": 35,
+      "under_pressure_events": 24,
+      "share": 0.6857
+    },
+    {
+      "player_id": 16275,
+      "display_name": "Lo\u00efs Openda",
+      "team": "Belgium",
+      "on_ball_events": 3,
+      "under_pressure_events": 2,
+      "share": 0.6667
+    },
+    {
+      "player_id": 23650,
+      "display_name": "J\u00e9r\u00e9my Doku",
+      "team": "Belgium",
+      "on_ball_events": 134,
+      "under_pressure_events": 65,
+      "share": 0.4851
+    },
+    {
+      "player_id": 25079,
+      "display_name": "Artem Dovbyk",
+      "team": "Ukraine",
+      "on_ball_events": 56,
+      "under_pressure_events": 22,
+      "share": 0.3929
+    },
+    {
+      "player_id": 3089,
+      "display_name": "Kevin De Bruyne",
+      "team": "Belgium",
+      "on_ball_events": 171,
+      "under_pressure_events": 61,
+      "share": 0.3567
+    },
+    {
+      "player_id": 48347,
+      "display_name": "Amadou Onana",
+      "team": "Belgium",
+      "on_ball_events": 144,
+      "under_pressure_events": 50,
+      "share": 0.3472
+    },
+    {
+      "player_id": 5633,
+      "display_name": "Yannick Carrasco",
+      "team": "Belgium",
+      "on_ball_events": 22,
+      "under_pressure_events": 7,
+      "share": 0.3182
+    },
+    {
+      "player_id": 52218,
+      "display_name": "Johan Bakayoko",
+      "team": "Belgium",
+      "on_ball_events": 19,
+      "under_pressure_events": 6,
+      "share": 0.3158
+    },
+    {
+      "player_id": 16559,
+      "display_name": "Leandro Trossard",
+      "team": "Belgium",
+      "on_ball_events": 88,
+      "under_pressure_events": 26,
+      "share": 0.2955
+    },
+    {
+      "player_id": 40141,
+      "display_name": "Vladyslav Vanat",
+      "team": "Ukraine",
+      "on_ball_events": 14,
+      "under_pressure_events": 4,
+      "share": 0.2857
+    },
+    {
+      "player_id": 8950,
+      "display_name": "Orel Mangala",
+      "team": "Belgium",
+      "on_ball_events": 41,
+      "under_pressure_events": 11,
+      "share": 0.2683
+    },
+    {
+      "player_id": 144127,
+      "display_name": "Volodymyr Brazhko",
+      "team": "Ukraine",
+      "on_ball_events": 68,
+      "under_pressure_events": 18,
+      "share": 0.2647
+    },
+    {
+      "player_id": 23649,
+      "display_name": "Roman Yaremchuk",
+      "team": "Ukraine",
+      "on_ball_events": 60,
+      "under_pressure_events": 15,
+      "share": 0.25
+    },
+    {
+      "player_id": 16557,
+      "display_name": "Ruslan Malinovskiy",
+      "team": "Ukraine",
+      "on_ball_events": 36,
+      "under_pressure_events": 8,
+      "share": 0.2222
+    },
+    {
+      "player_id": 8854,
+      "display_name": "Wout Faes",
+      "team": "Belgium",
+      "on_ball_events": 123,
+      "under_pressure_events": 27,
+      "share": 0.2195
+    },
+    {
+      "player_id": 2954,
+      "display_name": "Youri Tielemans",
+      "team": "Belgium",
+      "on_ball_events": 101,
+      "under_pressure_events": 22,
+      "share": 0.2178
+    },
+    {
+      "player_id": 3575,
+      "display_name": "Oleksandr Zinchenko",
+      "team": "Ukraine",
+      "on_ball_events": 46,
+      "under_pressure_events": 9,
+      "share": 0.1957
+    },
+    {
+      "player_id": 6989,
+      "display_name": "Timothy Castagne",
+      "team": "Belgium",
+      "on_ball_events": 128,
+      "under_pressure_events": 22,
+      "share": 0.1719
+    },
+    {
+      "player_id": 43913,
+      "display_name": "Arthur Theate",
+      "team": "Belgium",
+      "on_ball_events": 161,
+      "under_pressure_events": 24,
+      "share": 0.1491
+    },
+    {
+      "player_id": 38975,
+      "display_name": "Georgiy Sudakov",
+      "team": "Ukraine",
+      "on_ball_events": 116,
+      "under_pressure_events": 17,
+      "share": 0.1466
+    },
+    {
+      "player_id": 11000,
+      "display_name": "Taras Stepanenko",
+      "team": "Ukraine",
+      "on_ball_events": 35,
+      "under_pressure_events": 5,
+      "share": 0.1429
+    },
+    {
+      "player_id": 45863,
+      "display_name": "Oleksandr Tymchyk",
+      "team": "Ukraine",
+      "on_ball_events": 100,
+      "under_pressure_events": 14,
+      "share": 0.14
+    },
+    {
+      "player_id": 3077,
+      "display_name": "Jan Vertonghen",
+      "team": "Belgium",
+      "on_ball_events": 120,
+      "under_pressure_events": 16,
+      "share": 0.1333
+    },
+    {
+      "player_id": 8830,
+      "display_name": "Andriy Yarmolenko",
+      "team": "Ukraine",
+      "on_ball_events": 17,
+      "under_pressure_events": 2,
+      "share": 0.1176
+    },
+    {
+      "player_id": 39136,
+      "display_name": "Ilya Zabarnyi",
+      "team": "Ukraine",
+      "on_ball_events": 119,
+      "under_pressure_events": 12,
+      "share": 0.1008
+    },
+    {
+      "player_id": 21294,
+      "display_name": "Mykola Shaparenko",
+      "team": "Ukraine",
+      "on_ball_events": 98,
+      "under_pressure_events": 7,
+      "share": 0.0714
+    },
+    {
+      "player_id": 18617,
+      "display_name": "Mykola Matvienko",
+      "team": "Ukraine",
+      "on_ball_events": 150,
+      "under_pressure_events": 9,
+      "share": 0.06
+    },
+    {
+      "player_id": 30059,
+      "display_name": "Oleksandr Svatok",
+      "team": "Ukraine",
+      "on_ball_events": 60,
+      "under_pressure_events": 3,
+      "share": 0.05
+    },
+    {
+      "player_id": 20827,
+      "display_name": "Vitalii Mykolenko",
+      "team": "Ukraine",
+      "on_ball_events": 45,
+      "under_pressure_events": 2,
+      "share": 0.0444
+    }
+  ],
+  "metadata": {
+    "match_id": 3938645,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Ukraine vs Belgium",
+    "open_play_filter": "play_pattern + pass_type",
+    "ppda_zone": "opponent's own 60% (x < 72 in the opponent's own frame)",
+    "defensive_action_zone": "pressing team's own half+ (x >= 48 in its own frame)",
+    "pressures_high_zone": "opponent half (x >= 60 in the pressing team's own frame)"
+  }
+}

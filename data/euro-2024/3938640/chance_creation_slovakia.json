@@ -1,0 +1,138 @@
+{
+  "team": "Slovakia",
+  "shots": {
+    "non_penalty_count": 14,
+    "total_npxg": 0.746139,
+    "by_zone": {
+      "six_yard_box": {
+        "npxg": 0.273457,
+        "count": 2
+      },
+      "box_central": {
+        "npxg": 0.150238,
+        "count": 3
+      },
+      "box_wide": {
+        "npxg": 0.096519,
+        "count": 2
+      },
+      "outside_box": {
+        "npxg": 0.225923,
+        "count": 7
+      }
+    },
+    "by_source": {
+      "open_play": {
+        "npxg": 0.024953,
+        "count": 1
+      },
+      "counter": {
+        "npxg": 0.0,
+        "count": 0
+      },
+      "set_piece": {
+        "npxg": 0.441163,
+        "count": 8
+      },
+      "other": {
+        "npxg": 0.280022,
+        "count": 5
+      }
+    }
+  },
+  "shot_assists": {
+    "total_count": 11,
+    "by_side_and_type": {
+      "left": {
+        "cross": 2,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 5
+      },
+      "centre": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 2
+      },
+      "right": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 2
+      }
+    }
+  },
+  "creators": [
+    {
+      "player_id": 7975,
+      "display_name": "Luk\u00e1\u0161 Harasl\u00edn",
+      "xa": 0.169306,
+      "key_passes": 2,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 10919,
+      "display_name": "Juraj Kucka",
+      "xa": 0.089186,
+      "key_passes": 2,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 6798,
+      "display_name": "Stanislav Lobotka",
+      "xa": 0.072622,
+      "key_passes": 2,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 11383,
+      "display_name": "L\u00e1szl\u00f3 B\u00e9nes",
+      "xa": 0.066842,
+      "key_passes": 2,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 8967,
+      "display_name": "Ondrej Duda",
+      "xa": 0.061842,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 35653,
+      "display_name": "Tom\u00e1\u0161 Suslov",
+      "xa": 0.037745,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 6990,
+      "display_name": "Milan \u0160kriniar",
+      "xa": 0.032029,
+      "key_passes": 1,
+      "passes_into_box": 0
+    }
+  ],
+  "metadata": {
+    "match_id": 3938640,
+    "team": "Slovakia",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Slovakia vs Ukraine",
+    "zone_filter": "statsbomb_120x80_own_attack_right_frame",
+    "source_grouping": {
+      "open_play": [
+        "Regular Play"
+      ],
+      "counter": [
+        "From Counter"
+      ],
+      "set_piece": [
+        "From Corner",
+        "From Free Kick",
+        "From Throw In"
+      ],
+      "other": "every other play_pattern (From Goal Kick, From Kick Off, From Keeper, Other)"
+    }
+  }
+}

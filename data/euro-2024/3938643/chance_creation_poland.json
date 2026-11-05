@@ -1,0 +1,110 @@
+{
+  "team": "Poland",
+  "shots": {
+    "non_penalty_count": 9,
+    "total_npxg": 0.395594,
+    "by_zone": {
+      "six_yard_box": {
+        "npxg": 0.0,
+        "count": 0
+      },
+      "box_central": {
+        "npxg": 0.151976,
+        "count": 2
+      },
+      "box_wide": {
+        "npxg": 0.13617,
+        "count": 2
+      },
+      "outside_box": {
+        "npxg": 0.107448,
+        "count": 5
+      }
+    },
+    "by_source": {
+      "open_play": {
+        "npxg": 0.106338,
+        "count": 2
+      },
+      "counter": {
+        "npxg": 0.0,
+        "count": 0
+      },
+      "set_piece": {
+        "npxg": 0.195785,
+        "count": 4
+      },
+      "other": {
+        "npxg": 0.09347,
+        "count": 3
+      }
+    }
+  },
+  "shot_assists": {
+    "total_count": 5,
+    "by_side_and_type": {
+      "left": {
+        "cross": 1,
+        "cut_back": 0,
+        "through_ball": 1,
+        "other": 1
+      },
+      "centre": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 1
+      },
+      "right": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 1
+      }
+    }
+  },
+  "creators": [
+    {
+      "player_id": 5660,
+      "display_name": "Piotr Zieli\u0144ski",
+      "xa": 0.164388,
+      "key_passes": 2,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 33680,
+      "display_name": "Kacper Urbanski",
+      "xa": 0.071647,
+      "key_passes": 2,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 44166,
+      "display_name": "Jakub Piotr Kiwior",
+      "xa": 0.016467,
+      "key_passes": 1,
+      "passes_into_box": 0
+    }
+  ],
+  "metadata": {
+    "match_id": 3938643,
+    "team": "Poland",
+    "competition": "UEFA Euro 2024",
+    "match_label": "France vs Poland",
+    "zone_filter": "statsbomb_120x80_own_attack_right_frame",
+    "source_grouping": {
+      "open_play": [
+        "Regular Play"
+      ],
+      "counter": [
+        "From Counter"
+      ],
+      "set_piece": [
+        "From Corner",
+        "From Free Kick",
+        "From Throw In"
+      ],
+      "other": "every other play_pattern (From Goal Kick, From Kick Off, From Keeper, Other)"
+    }
+  }
+}

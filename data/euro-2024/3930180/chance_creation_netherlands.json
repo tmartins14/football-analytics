@@ -1,0 +1,145 @@
+{
+  "team": "Netherlands",
+  "shots": {
+    "non_penalty_count": 11,
+    "total_npxg": 1.510209,
+    "by_zone": {
+      "six_yard_box": {
+        "npxg": 0.516456,
+        "count": 2
+      },
+      "box_central": {
+        "npxg": 0.821698,
+        "count": 5
+      },
+      "box_wide": {
+        "npxg": 0.106968,
+        "count": 2
+      },
+      "outside_box": {
+        "npxg": 0.065086,
+        "count": 2
+      }
+    },
+    "by_source": {
+      "open_play": {
+        "npxg": 0.518221,
+        "count": 2
+      },
+      "counter": {
+        "npxg": 0.126146,
+        "count": 1
+      },
+      "set_piece": {
+        "npxg": 0.865842,
+        "count": 8
+      },
+      "other": {
+        "npxg": 0.0,
+        "count": 0
+      }
+    }
+  },
+  "shot_assists": {
+    "total_count": 10,
+    "by_side_and_type": {
+      "left": {
+        "cross": 1,
+        "cut_back": 0,
+        "through_ball": 1,
+        "other": 2
+      },
+      "centre": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 2
+      },
+      "right": {
+        "cross": 2,
+        "cut_back": 1,
+        "through_ball": 0,
+        "other": 1
+      }
+    }
+  },
+  "creators": [
+    {
+      "player_id": 20750,
+      "display_name": "Cody Gakpo",
+      "xa": 0.553148,
+      "key_passes": 3,
+      "passes_into_box": 2
+    },
+    {
+      "player_id": 21582,
+      "display_name": "Tijjani Reijnders",
+      "xa": 0.350758,
+      "key_passes": 1,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 2988,
+      "display_name": "Memphis Depay",
+      "xa": 0.140793,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 39167,
+      "display_name": "Xavi Simons",
+      "xa": 0.126146,
+      "key_passes": 1,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 7829,
+      "display_name": "Wout Weghorst",
+      "xa": 0.121777,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 22352,
+      "display_name": "Lutsharel Geertruida",
+      "xa": 0.08046,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 15582,
+      "display_name": "Donyell Malen",
+      "xa": 0.072041,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 15503,
+      "display_name": "Jerdy Schouten",
+      "xa": 0.044638,
+      "key_passes": 1,
+      "passes_into_box": 0
+    }
+  ],
+  "metadata": {
+    "match_id": 3930180,
+    "team": "Netherlands",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Netherlands vs Austria",
+    "zone_filter": "statsbomb_120x80_own_attack_right_frame",
+    "source_grouping": {
+      "open_play": [
+        "Regular Play"
+      ],
+      "counter": [
+        "From Counter"
+      ],
+      "set_piece": [
+        "From Corner",
+        "From Free Kick",
+        "From Throw In"
+      ],
+      "other": "every other play_pattern (From Goal Kick, From Kick Off, From Keeper, Other)"
+    }
+  }
+}

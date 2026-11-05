@@ -1,0 +1,131 @@
+{
+  "team": "Belgium",
+  "shots": {
+    "non_penalty_count": 16,
+    "total_npxg": 1.750255,
+    "by_zone": {
+      "six_yard_box": {
+        "npxg": 0.636787,
+        "count": 2
+      },
+      "box_central": {
+        "npxg": 0.591259,
+        "count": 5
+      },
+      "box_wide": {
+        "npxg": 0.243466,
+        "count": 3
+      },
+      "outside_box": {
+        "npxg": 0.278743,
+        "count": 6
+      }
+    },
+    "by_source": {
+      "open_play": {
+        "npxg": 1.266941,
+        "count": 8
+      },
+      "counter": {
+        "npxg": 0.0,
+        "count": 0
+      },
+      "set_piece": {
+        "npxg": 0.415857,
+        "count": 6
+      },
+      "other": {
+        "npxg": 0.067457,
+        "count": 2
+      }
+    }
+  },
+  "shot_assists": {
+    "total_count": 9,
+    "by_side_and_type": {
+      "left": {
+        "cross": 1,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 0
+      },
+      "centre": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 2
+      },
+      "right": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 6
+      }
+    }
+  },
+  "creators": [
+    {
+      "player_id": 3089,
+      "display_name": "Kevin De Bruyne",
+      "xa": 0.173495,
+      "key_passes": 3,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 23650,
+      "display_name": "J\u00e9r\u00e9my Doku",
+      "xa": 0.149772,
+      "key_passes": 1,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 16275,
+      "display_name": "Lo\u00efs Openda",
+      "xa": 0.123352,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 3289,
+      "display_name": "Romelu Lukaku",
+      "xa": 0.099074,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 16559,
+      "display_name": "Leandro Trossard",
+      "xa": 0.092316,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 52218,
+      "display_name": "Johan Bakayoko",
+      "xa": 0.080635,
+      "key_passes": 2,
+      "passes_into_box": 1
+    }
+  ],
+  "metadata": {
+    "match_id": 3930164,
+    "team": "Belgium",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Belgium vs Slovakia",
+    "zone_filter": "statsbomb_120x80_own_attack_right_frame",
+    "source_grouping": {
+      "open_play": [
+        "Regular Play"
+      ],
+      "counter": [
+        "From Counter"
+      ],
+      "set_piece": [
+        "From Corner",
+        "From Free Kick",
+        "From Throw In"
+      ],
+      "other": "every other play_pattern (From Goal Kick, From Kick Off, From Keeper, Other)"
+    }
+  }
+}

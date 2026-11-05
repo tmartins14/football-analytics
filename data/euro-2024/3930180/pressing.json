@@ -1,0 +1,281 @@
+{
+  "teams": {
+    "Austria": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 114,
+        "defensive_actions_advanced": 28,
+        "value": 4.0714
+      },
+      "pressures_high": {
+        "count": 79,
+        "opponent_open_play_passes": 144,
+        "per_100": 54.86
+      },
+      "pressure_side": {
+        "left": 61,
+        "centre": 35,
+        "right": 69
+      }
+    },
+    "Netherlands": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 119,
+        "defensive_actions_advanced": 26,
+        "value": 4.5769
+      },
+      "pressures_high": {
+        "count": 75,
+        "opponent_open_play_passes": 164,
+        "per_100": 45.73
+      },
+      "pressure_side": {
+        "left": 74,
+        "centre": 31,
+        "right": 36
+      }
+    }
+  },
+  "pressure_received": [
+    {
+      "player_id": 4813,
+      "display_name": "Andreas Weimann",
+      "team": "Austria",
+      "on_ball_events": 3,
+      "under_pressure_events": 2,
+      "share": 0.6667
+    },
+    {
+      "player_id": 15582,
+      "display_name": "Donyell Malen",
+      "team": "Netherlands",
+      "on_ball_events": 63,
+      "under_pressure_events": 35,
+      "share": 0.5556
+    },
+    {
+      "player_id": 7829,
+      "display_name": "Wout Weghorst",
+      "team": "Netherlands",
+      "on_ball_events": 20,
+      "under_pressure_events": 9,
+      "share": 0.45
+    },
+    {
+      "player_id": 8506,
+      "display_name": "Konrad Laimer",
+      "team": "Austria",
+      "on_ball_events": 24,
+      "under_pressure_events": 10,
+      "share": 0.4167
+    },
+    {
+      "player_id": 152512,
+      "display_name": "Leopold Querfeld",
+      "team": "Austria",
+      "on_ball_events": 26,
+      "under_pressure_events": 10,
+      "share": 0.3846
+    },
+    {
+      "player_id": 3325,
+      "display_name": "Marko Arnautovi\u0107",
+      "team": "Austria",
+      "on_ball_events": 73,
+      "under_pressure_events": 28,
+      "share": 0.3836
+    },
+    {
+      "player_id": 8784,
+      "display_name": "Romano Schmid",
+      "team": "Austria",
+      "on_ball_events": 114,
+      "under_pressure_events": 43,
+      "share": 0.3772
+    },
+    {
+      "player_id": 2988,
+      "display_name": "Memphis Depay",
+      "team": "Netherlands",
+      "on_ball_events": 109,
+      "under_pressure_events": 40,
+      "share": 0.367
+    },
+    {
+      "player_id": 21582,
+      "display_name": "Tijjani Reijnders",
+      "team": "Netherlands",
+      "on_ball_events": 58,
+      "under_pressure_events": 21,
+      "share": 0.3621
+    },
+    {
+      "player_id": 39167,
+      "display_name": "Xavi Simons",
+      "team": "Netherlands",
+      "on_ball_events": 62,
+      "under_pressure_events": 21,
+      "share": 0.3387
+    },
+    {
+      "player_id": 33297,
+      "display_name": "Patrick Wimmer",
+      "team": "Austria",
+      "on_ball_events": 60,
+      "under_pressure_events": 20,
+      "share": 0.3333
+    },
+    {
+      "player_id": 11821,
+      "display_name": "Stefan Posch",
+      "team": "Austria",
+      "on_ball_events": 107,
+      "under_pressure_events": 33,
+      "share": 0.3084
+    },
+    {
+      "player_id": 3567,
+      "display_name": "Georginio Wijnaldum",
+      "team": "Netherlands",
+      "on_ball_events": 17,
+      "under_pressure_events": 5,
+      "share": 0.2941
+    },
+    {
+      "player_id": 24977,
+      "display_name": "Christoph Baumgartner",
+      "team": "Austria",
+      "on_ball_events": 42,
+      "under_pressure_events": 12,
+      "share": 0.2857
+    },
+    {
+      "player_id": 22352,
+      "display_name": "Lutsharel Geertruida",
+      "team": "Netherlands",
+      "on_ball_events": 131,
+      "under_pressure_events": 35,
+      "share": 0.2672
+    },
+    {
+      "player_id": 15503,
+      "display_name": "Jerdy Schouten",
+      "team": "Netherlands",
+      "on_ball_events": 109,
+      "under_pressure_events": 28,
+      "share": 0.2569
+    },
+    {
+      "player_id": 8309,
+      "display_name": "Michael Gregoritsch",
+      "team": "Austria",
+      "on_ball_events": 17,
+      "under_pressure_events": 4,
+      "share": 0.2353
+    },
+    {
+      "player_id": 8518,
+      "display_name": "Marcel Sabitzer",
+      "team": "Austria",
+      "on_ball_events": 89,
+      "under_pressure_events": 20,
+      "share": 0.2247
+    },
+    {
+      "player_id": 39460,
+      "display_name": "Nicolas Seiwald",
+      "team": "Austria",
+      "on_ball_events": 124,
+      "under_pressure_events": 27,
+      "share": 0.2177
+    },
+    {
+      "player_id": 21633,
+      "display_name": "Joey Veerman",
+      "team": "Netherlands",
+      "on_ball_events": 53,
+      "under_pressure_events": 11,
+      "share": 0.2075
+    },
+    {
+      "player_id": 8068,
+      "display_name": "Maximilian W\u00f6ber",
+      "team": "Austria",
+      "on_ball_events": 94,
+      "under_pressure_events": 19,
+      "share": 0.2021
+    },
+    {
+      "player_id": 32547,
+      "display_name": "Micky van de Ven",
+      "team": "Netherlands",
+      "on_ball_events": 55,
+      "under_pressure_events": 11,
+      "share": 0.2
+    },
+    {
+      "player_id": 7787,
+      "display_name": "Stefan de Vrij",
+      "team": "Netherlands",
+      "on_ball_events": 121,
+      "under_pressure_events": 23,
+      "share": 0.1901
+    },
+    {
+      "player_id": 20750,
+      "display_name": "Cody Gakpo",
+      "team": "Netherlands",
+      "on_ball_events": 76,
+      "under_pressure_events": 14,
+      "share": 0.1842
+    },
+    {
+      "player_id": 11396,
+      "display_name": "Florian Grillitsch",
+      "team": "Austria",
+      "on_ball_events": 84,
+      "under_pressure_events": 15,
+      "share": 0.1786
+    },
+    {
+      "player_id": 39545,
+      "display_name": "Alexander Prass",
+      "team": "Austria",
+      "on_ball_events": 98,
+      "under_pressure_events": 16,
+      "share": 0.1633
+    },
+    {
+      "player_id": 8931,
+      "display_name": "Philipp Lienhart",
+      "team": "Austria",
+      "on_ball_events": 86,
+      "under_pressure_events": 14,
+      "share": 0.1628
+    },
+    {
+      "player_id": 3306,
+      "display_name": "Nathan Ak\u00e9",
+      "team": "Netherlands",
+      "on_ball_events": 77,
+      "under_pressure_events": 11,
+      "share": 0.1429
+    },
+    {
+      "player_id": 3669,
+      "display_name": "Virgil van Dijk",
+      "team": "Netherlands",
+      "on_ball_events": 123,
+      "under_pressure_events": 15,
+      "share": 0.122
+    }
+  ],
+  "metadata": {
+    "match_id": 3930180,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Netherlands vs Austria",
+    "open_play_filter": "play_pattern + pass_type",
+    "ppda_zone": "opponent's own 60% (x < 72 in the opponent's own frame)",
+    "defensive_action_zone": "pressing team's own half+ (x >= 48 in its own frame)",
+    "pressures_high_zone": "opponent half (x >= 60 in the pressing team's own frame)"
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "team": "Switzerland",
+  "shots": {
+    "non_penalty_count": 12,
+    "total_npxg": 1.201406,
+    "by_zone": {
+      "six_yard_box": {
+        "npxg": 0.673555,
+        "count": 1
+      },
+      "box_central": {
+        "npxg": 0.389223,
+        "count": 5
+      },
+      "box_wide": {
+        "npxg": 0.098728,
+        "count": 4
+      },
+      "outside_box": {
+        "npxg": 0.039901,
+        "count": 2
+      }
+    },
+    "by_source": {
+      "open_play": {
+        "npxg": 0.125976,
+        "count": 2
+      },
+      "counter": {
+        "npxg": 0.078986,
+        "count": 2
+      },
+      "set_piece": {
+        "npxg": 0.941579,
+        "count": 7
+      },
+      "other": {
+        "npxg": 0.054865,
+        "count": 1
+      }
+    }
+  },
+  "shot_assists": {
+    "total_count": 6,
+    "by_side_and_type": {
+      "left": {
+        "cross": 1,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 3
+      },
+      "centre": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 2
+      },
+      "right": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 0
+      }
+    }
+  },
+  "creators": [
+    {
+      "player_id": 5544,
+      "display_name": "Ricardo Rodr\u00edguez",
+      "xa": 0.113653,
+      "key_passes": 1,
+      "passes_into_box": 2
+    },
+    {
+      "player_id": 6983,
+      "display_name": "Remo Freuler",
+      "xa": 0.052397,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 50436,
+      "display_name": "Fabian Rieder",
+      "xa": 0.050618,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 3533,
+      "display_name": "Xherdan Shaqiri",
+      "xa": 0.039721,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 5548,
+      "display_name": "Steven Zuber",
+      "xa": 0.028369,
+      "key_passes": 1,
+      "passes_into_box": 2
+    },
+    {
+      "player_id": 7796,
+      "display_name": "Silvan Widmer",
+      "xa": 0.012323,
+      "key_passes": 1,
+      "passes_into_box": 1
+    }
+  ],
+  "metadata": {
+    "match_id": 3942227,
+    "team": "Switzerland",
+    "competition": "UEFA Euro 2024",
+    "match_label": "England vs Switzerland",
+    "zone_filter": "statsbomb_120x80_own_attack_right_frame",
+    "source_grouping": {
+      "open_play": [
+        "Regular Play"
+      ],
+      "counter": [
+        "From Counter"
+      ],
+      "set_piece": [
+        "From Corner",
+        "From Free Kick",
+        "From Throw In"
+      ],
+      "other": "every other play_pattern (From Goal Kick, From Kick Off, From Keeper, Other)"
+    }
+  }
+}

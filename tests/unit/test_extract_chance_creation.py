@@ -2,9 +2,25 @@
 No network calls.
 """
 
+import sys
+
 import pandas as pd
 
-from statsbomb.extract_chance_creation import _assist_type, _shot_zone, _source_group
+from statsbomb.extract_chance_creation import (
+    _assist_type,
+    _shot_zone,
+    _source_group,
+    extract_chance_creation,
+)
+
+# `libs/statsbomb/__init__.py` does `from .extract_chance_creation import
+# extract_chance_creation`, which rebinds the *package attribute*
+# `statsbomb.extract_chance_creation` to the function — so `import
+# statsbomb.extract_chance_creation as cc` (or `from statsbomb import
+# extract_chance_creation`) resolves to the function, not the module.
+# `sys.modules` is unaffected by that clobbering and always has the real
+# submodule, which is what a monkeypatch target needs.
+cc = sys.modules["statsbomb.extract_chance_creation"]
 
 
 class TestShotZone:
@@ -92,3 +108,39 @@ class TestAssistType:
     def test_false_flags_are_other(self):
         row = pd.Series({"pass_cross": False, "pass_cut_back": False, "pass_technique": None})
         assert _assist_type(row) == "other"
+
+
+class TestExtractChanceCreationMissingAssistColumns:
+    """Regression: pass_shot_assist/pass_goal_assist/shot_key_pass_id are
+    entirely absent from sb.events() (not just NaN) whenever zero events in
+    the whole match set them — statsbombpy's flattening only creates a
+    column when at least one event carries it. Found while backfilling
+    Euro 2024 reference data: 14 of 51 matches hit this and crashed with
+    KeyError before the fix.
+    """
+
+    def test_no_crash_when_assist_columns_are_entirely_absent(self, monkeypatch):
+        events = pd.DataFrame([
+            {
+                "id": "shot1", "team": "TeamA", "type": "Shot", "shot_type": "Open Play",
+                "location": [110.0, 40.0], "shot_statsbomb_xg": 0.3, "play_pattern": "Regular Play",
+            },
+            {
+                "id": "pass1", "team": "TeamA", "type": "Pass", "location": [50.0, 40.0],
+                "play_pattern": "Regular Play", "pass_outcome": None,
+                "pass_end_location": [60.0, 40.0], "player_id": 1, "player": "P1",
+            },
+        ])
+        # No pass_shot_assist, pass_goal_assist or shot_key_pass_id column at
+        # all — the exact real-world shape that crashed before the fix.
+        assert "pass_shot_assist" not in events.columns
+        assert "shot_key_pass_id" not in events.columns
+
+        monkeypatch.setattr(cc.sb, "events", lambda match_id: events)
+        monkeypatch.setattr(cc, "build_nickname_lookup", lambda match_id: {})
+
+        result = extract_chance_creation(match_id=1, team="TeamA")
+
+        assert result["shots"]["non_penalty_count"] == 1
+        assert result["shot_assists"]["total_count"] == 0
+        assert result["creators"] == []

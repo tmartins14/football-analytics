@@ -1,0 +1,117 @@
+{
+  "team": "Austria",
+  "shots": {
+    "non_penalty_count": 5,
+    "total_npxg": 0.748317,
+    "by_zone": {
+      "six_yard_box": {
+        "npxg": 0.0,
+        "count": 0
+      },
+      "box_central": {
+        "npxg": 0.508704,
+        "count": 2
+      },
+      "box_wide": {
+        "npxg": 0.217932,
+        "count": 2
+      },
+      "outside_box": {
+        "npxg": 0.021682,
+        "count": 1
+      }
+    },
+    "by_source": {
+      "open_play": {
+        "npxg": 0.471292,
+        "count": 1
+      },
+      "counter": {
+        "npxg": 0.0,
+        "count": 0
+      },
+      "set_piece": {
+        "npxg": 0.277025,
+        "count": 4
+      },
+      "other": {
+        "npxg": 0.0,
+        "count": 0
+      }
+    }
+  },
+  "shot_assists": {
+    "total_count": 5,
+    "by_side_and_type": {
+      "left": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 0
+      },
+      "centre": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 1,
+        "other": 1
+      },
+      "right": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 3
+      }
+    }
+  },
+  "creators": [
+    {
+      "player_id": 8518,
+      "display_name": "Marcel Sabitzer",
+      "xa": 0.508704,
+      "key_passes": 2,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 8506,
+      "display_name": "Konrad Laimer",
+      "xa": 0.197664,
+      "key_passes": 1,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 24977,
+      "display_name": "Christoph Baumgartner",
+      "xa": 0.021682,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 11821,
+      "display_name": "Stefan Posch",
+      "xa": 0.020268,
+      "key_passes": 1,
+      "passes_into_box": 3
+    }
+  ],
+  "metadata": {
+    "match_id": 3930165,
+    "team": "Austria",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Austria vs France",
+    "zone_filter": "statsbomb_120x80_own_attack_right_frame",
+    "source_grouping": {
+      "open_play": [
+        "Regular Play"
+      ],
+      "counter": [
+        "From Counter"
+      ],
+      "set_piece": [
+        "From Corner",
+        "From Free Kick",
+        "From Throw In"
+      ],
+      "other": "every other play_pattern (From Goal Kick, From Kick Off, From Keeper, Other)"
+    }
+  }
+}

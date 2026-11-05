@@ -159,12 +159,64 @@ for Tyler, not silently patched over.
 
 Full test suite (297 tests) and the docs gate both pass after the backfill.
 
+### 2026-10-17 — Part 2 (reference data)
+
+Two deliverables, per the spec's "Tournament reference labels" section:
+`data/euro-2024/reference/reference_distributions.json` (tercile cut points
+for the three tercile-labelled measures — `ppda`, `block_height`,
+`defensive_action_height`) and `xt_grid_v1.json` (a 16×12 expected-threat
+grid fitted with `socceraction.xthreat` on SPADL actions from all 51
+matches). New module `libs/statsbomb/reference_distributions.py` holds the
+tercile math (`tercile_cutpoints`/`tercile_label`, direction-agnostic,
+"lower tercile owns the cut") as reusable functions Part 4 will import;
+`scripts/build_euro2024_reference.py` is the thin CLI wrapper, matching
+`scripts/extract_euro2024.py`'s relationship to `libs/statsbomb/`.
+
+Building the reference distributions surfaced that Part 1's four extractors
+had in fact only ever run against 9 of 51 matches (3943043 plus the 8 the
+previous backfill covered) — `scripts/extract_euro2024.py`'s PR never
+retroactively ran them against the other 43 already-extracted matches. Ran
+them against all 51, which surfaced a real bug in `extract_chance_creation.py`:
+`pass_shot_assist`/`pass_goal_assist`/`shot_key_pass_id` are entirely absent
+from `sb.events()` (not just `NaN`) whenever zero events in a match set them
+— `statsbombpy`'s flattening only creates a column when at least one event
+carries it — so bracket indexing raised `KeyError` on 14 of 51 matches.
+Fixed both call sites with `.get(col, <same-index False series>)`, with a
+regression test covering the exact missing-column shape. All 51 matches now
+have all four Part 1 extractor outputs; `reference_distributions.json`
+reflects `n=102` for `ppda`/`defensive_action_height` and `n=101` for
+`block_height` (the one known, already-flagged `3930158`/Scotland gap from
+the backfill PR, carried forward as a `missing` entry, not re-litigated).
+
+The xT grid fit surfaced a second, more serious bug: `socceraction.spadl.
+statsbomb.convert_to_actions` unconditionally flips the away team's
+coordinates, assuming a physically pitch-fixed raw frame — but StatsBomb's
+own data (confirmed directly against `socceraction`'s own loader output,
+pre-conversion: both teams' shots cluster at the *same* end in *both*
+periods) is already per-team-attack-right normalized, the same convention
+this whole project already relies on elsewhere. Applying the library's flip
+as-is double-flips every away-team action in every match — caught by
+comparing England's (away, match 3943043) mean shot x before (13.75, reads
+as deep in their own box) and after undoing the flip (91.25, matching
+Spain's 92.94). Without this, the fitted grid showed implausible
+near-symmetric high-threat peaks at *both* ends of the pitch instead of
+rising only toward the attacking goal. Fixed by re-applying the same flip to
+away-team rows after conversion (cancels out, restoring the original
+frame) — `_undo_away_team_flip` in `scripts/build_euro2024_reference.py`,
+with a unit test. Final grid matches the expected shape (max ~0.0047 near
+the own goal line, peak ~0.233 directly in front of the attacking goal,
+consistent with the published Karun Singh xT grid's general profile). Fit
+converged in 53 iterations on 109,985 SPADL actions from all 51 matches (0
+skipped).
+
+Full test suite (311 tests) and the docs gate both pass.
+
 ## Outcome
 
-Parts 0 and 1 complete, all four audit questions resolved, `socceraction`
-added, and all 51 Euro 2024 matches now extracted locally. Part 2 (reference
-data: `reference_distributions.json`, `xt_grid_v1.json`, built from the four
-Part 1 extractors run across all 51 matches) is next.
+Parts 0, 1 and 2 complete, all four audit questions resolved, `socceraction`
+added, all 51 Euro 2024 matches extracted locally with every Part 1
+extractor's output, and both reference-data files built. Part 3 (player
+contribution, the xT-grid-based rating) is next.
 
 ## Where to look for more
 

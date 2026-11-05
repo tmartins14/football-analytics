@@ -1,0 +1,145 @@
+{
+  "team": "Netherlands",
+  "shots": {
+    "non_penalty_count": 21,
+    "total_npxg": 1.312755,
+    "by_zone": {
+      "six_yard_box": {
+        "npxg": 0.075012,
+        "count": 1
+      },
+      "box_central": {
+        "npxg": 0.75503,
+        "count": 8
+      },
+      "box_wide": {
+        "npxg": 0.329487,
+        "count": 5
+      },
+      "outside_box": {
+        "npxg": 0.153226,
+        "count": 7
+      }
+    },
+    "by_source": {
+      "open_play": {
+        "npxg": 0.583056,
+        "count": 6
+      },
+      "counter": {
+        "npxg": 0.158697,
+        "count": 2
+      },
+      "set_piece": {
+        "npxg": 0.571001,
+        "count": 13
+      },
+      "other": {
+        "npxg": 0.0,
+        "count": 0
+      }
+    }
+  },
+  "shot_assists": {
+    "total_count": 18,
+    "by_side_and_type": {
+      "left": {
+        "cross": 2,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 7
+      },
+      "centre": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 2
+      },
+      "right": {
+        "cross": 3,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 4
+      }
+    }
+  },
+  "creators": [
+    {
+      "player_id": 3306,
+      "display_name": "Nathan Ak\u00e9",
+      "xa": 0.32588,
+      "key_passes": 4,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 39167,
+      "display_name": "Xavi Simons",
+      "xa": 0.203627,
+      "key_passes": 3,
+      "passes_into_box": 2
+    },
+    {
+      "player_id": 20750,
+      "display_name": "Cody Gakpo",
+      "xa": 0.188168,
+      "key_passes": 3,
+      "passes_into_box": 2
+    },
+    {
+      "player_id": 8125,
+      "display_name": "Denzel Dumfries",
+      "xa": 0.124113,
+      "key_passes": 2,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 15503,
+      "display_name": "Jerdy Schouten",
+      "xa": 0.114312,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 2988,
+      "display_name": "Memphis Depay",
+      "xa": 0.068771,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 21633,
+      "display_name": "Joey Veerman",
+      "xa": 0.059565,
+      "key_passes": 3,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 15582,
+      "display_name": "Donyell Malen",
+      "xa": 0.036829,
+      "key_passes": 1,
+      "passes_into_box": 0
+    }
+  ],
+  "metadata": {
+    "match_id": 3938637,
+    "team": "Netherlands",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Poland vs Netherlands",
+    "zone_filter": "statsbomb_120x80_own_attack_right_frame",
+    "source_grouping": {
+      "open_play": [
+        "Regular Play"
+      ],
+      "counter": [
+        "From Counter"
+      ],
+      "set_piece": [
+        "From Corner",
+        "From Free Kick",
+        "From Throw In"
+      ],
+      "other": "every other play_pattern (From Goal Kick, From Kick Off, From Keeper, Other)"
+    }
+  }
+}

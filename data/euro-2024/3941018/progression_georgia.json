@@ -1,0 +1,83 @@
+{
+  "team": "Georgia",
+  "progressive_actions": {
+    "total_count": 25,
+    "by_side": {
+      "left": 12,
+      "centre": 3,
+      "right": 10
+    },
+    "by_mode": {
+      "pass": 17,
+      "carry": 8
+    }
+  },
+  "progressors": [
+    {
+      "player_id": 38229,
+      "display_name": "Kvara",
+      "count": 6,
+      "passes": 2,
+      "carries": 4
+    },
+    {
+      "player_id": 33234,
+      "display_name": "Georges Mikautadze",
+      "count": 5,
+      "passes": 3,
+      "carries": 2
+    },
+    {
+      "player_id": 48178,
+      "display_name": "Luka Lochoshvili",
+      "count": 4,
+      "passes": 3,
+      "carries": 1
+    },
+    {
+      "player_id": 25036,
+      "display_name": "Otar Kakabadze",
+      "count": 4,
+      "passes": 4,
+      "carries": 0
+    },
+    {
+      "player_id": 23646,
+      "display_name": "Giorgi Chakvetadze",
+      "count": 2,
+      "passes": 1,
+      "carries": 1
+    },
+    {
+      "player_id": 7839,
+      "display_name": "Guram Kashia",
+      "count": 2,
+      "passes": 2,
+      "carries": 0
+    },
+    {
+      "player_id": 41202,
+      "display_name": "Giorgi Kochorashvili",
+      "count": 1,
+      "passes": 1,
+      "carries": 0
+    },
+    {
+      "player_id": 11335,
+      "display_name": "Otar Kiteishvili",
+      "count": 1,
+      "passes": 1,
+      "carries": 0
+    }
+  ],
+  "params": {
+    "progressive_threshold": 0.25
+  },
+  "metadata": {
+    "match_id": 3941018,
+    "team": "Georgia",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Spain vs Georgia",
+    "open_play_filter": "play_pattern"
+  }
+}

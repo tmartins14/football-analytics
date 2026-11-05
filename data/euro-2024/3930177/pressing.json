@@ -1,0 +1,289 @@
+{
+  "teams": {
+    "Hungary": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 112,
+        "defensive_actions_advanced": 21,
+        "value": 5.3333
+      },
+      "pressures_high": {
+        "count": 85,
+        "opponent_open_play_passes": 144,
+        "per_100": 59.03
+      },
+      "pressure_side": {
+        "left": 84,
+        "centre": 63,
+        "right": 73
+      }
+    },
+    "Scotland": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 87,
+        "defensive_actions_advanced": 20,
+        "value": 4.35
+      },
+      "pressures_high": {
+        "count": 65,
+        "opponent_open_play_passes": 110,
+        "per_100": 59.09
+      },
+      "pressure_side": {
+        "left": 50,
+        "centre": 27,
+        "right": 34
+      }
+    }
+  },
+  "pressure_received": [
+    {
+      "player_id": 12510,
+      "display_name": "Ryan Christie",
+      "team": "Scotland",
+      "on_ball_events": 21,
+      "under_pressure_events": 15,
+      "share": 0.7143
+    },
+    {
+      "player_id": 10285,
+      "display_name": "Stuart Armstrong",
+      "team": "Scotland",
+      "on_ball_events": 28,
+      "under_pressure_events": 17,
+      "share": 0.6071
+    },
+    {
+      "player_id": 9974,
+      "display_name": "John McGinn",
+      "team": "Scotland",
+      "on_ball_events": 58,
+      "under_pressure_events": 34,
+      "share": 0.5862
+    },
+    {
+      "player_id": 3620,
+      "display_name": "Scott McTominay",
+      "team": "Scotland",
+      "on_ball_events": 62,
+      "under_pressure_events": 33,
+      "share": 0.5323
+    },
+    {
+      "player_id": 3655,
+      "display_name": "Andrew Robertson",
+      "team": "Scotland",
+      "on_ball_events": 79,
+      "under_pressure_events": 34,
+      "share": 0.4304
+    },
+    {
+      "player_id": 9466,
+      "display_name": "Che Adams",
+      "team": "Scotland",
+      "on_ball_events": 63,
+      "under_pressure_events": 27,
+      "share": 0.4286
+    },
+    {
+      "player_id": 73886,
+      "display_name": "Zsolt Nagy",
+      "team": "Hungary",
+      "on_ball_events": 12,
+      "under_pressure_events": 5,
+      "share": 0.4167
+    },
+    {
+      "player_id": 16931,
+      "display_name": "Lewis Morgan",
+      "team": "Scotland",
+      "on_ball_events": 8,
+      "under_pressure_events": 3,
+      "share": 0.375
+    },
+    {
+      "player_id": 22308,
+      "display_name": "Anthony Ralston",
+      "team": "Scotland",
+      "on_ball_events": 81,
+      "under_pressure_events": 30,
+      "share": 0.3704
+    },
+    {
+      "player_id": 264277,
+      "display_name": "Martin \u00c1d\u00e1m",
+      "team": "Hungary",
+      "on_ball_events": 30,
+      "under_pressure_events": 11,
+      "share": 0.3667
+    },
+    {
+      "player_id": 12921,
+      "display_name": "Barnab\u00e1s Varga",
+      "team": "Hungary",
+      "on_ball_events": 53,
+      "under_pressure_events": 19,
+      "share": 0.3585
+    },
+    {
+      "player_id": 31887,
+      "display_name": "Endre Botka",
+      "team": "Hungary",
+      "on_ball_events": 96,
+      "under_pressure_events": 33,
+      "share": 0.3438
+    },
+    {
+      "player_id": 8509,
+      "display_name": "Willi Orban",
+      "team": "Hungary",
+      "on_ball_events": 98,
+      "under_pressure_events": 32,
+      "share": 0.3265
+    },
+    {
+      "player_id": 38169,
+      "display_name": "Lawrence Shankland",
+      "team": "Scotland",
+      "on_ball_events": 28,
+      "under_pressure_events": 9,
+      "share": 0.3214
+    },
+    {
+      "player_id": 21209,
+      "display_name": "Dominik Szoboszlai",
+      "team": "Hungary",
+      "on_ball_events": 159,
+      "under_pressure_events": 50,
+      "share": 0.3145
+    },
+    {
+      "player_id": 31067,
+      "display_name": "Billy Gilmour",
+      "team": "Scotland",
+      "on_ball_events": 138,
+      "under_pressure_events": 43,
+      "share": 0.3116
+    },
+    {
+      "player_id": 19316,
+      "display_name": "Roland Sallai",
+      "team": "Hungary",
+      "on_ball_events": 94,
+      "under_pressure_events": 28,
+      "share": 0.2979
+    },
+    {
+      "player_id": 10534,
+      "display_name": "Callum McGregor",
+      "team": "Scotland",
+      "on_ball_events": 144,
+      "under_pressure_events": 39,
+      "share": 0.2708
+    },
+    {
+      "player_id": 11116,
+      "display_name": "Jack Hendry",
+      "team": "Scotland",
+      "on_ball_events": 118,
+      "under_pressure_events": 31,
+      "share": 0.2627
+    },
+    {
+      "player_id": 9478,
+      "display_name": "Kenneth McLean",
+      "team": "Scotland",
+      "on_ball_events": 16,
+      "under_pressure_events": 4,
+      "share": 0.25
+    },
+    {
+      "player_id": 9481,
+      "display_name": "Grant Campbell Hanley",
+      "team": "Scotland",
+      "on_ball_events": 170,
+      "under_pressure_events": 37,
+      "share": 0.2176
+    },
+    {
+      "player_id": 10002,
+      "display_name": "Scott McKenna",
+      "team": "Scotland",
+      "on_ball_events": 152,
+      "under_pressure_events": 33,
+      "share": 0.2171
+    },
+    {
+      "player_id": 89635,
+      "display_name": "Milos Kerkez",
+      "team": "Hungary",
+      "on_ball_events": 61,
+      "under_pressure_events": 13,
+      "share": 0.2131
+    },
+    {
+      "player_id": 42822,
+      "display_name": "Andr\u00e1s Sch\u00e4fer",
+      "team": "Hungary",
+      "on_ball_events": 143,
+      "under_pressure_events": 30,
+      "share": 0.2098
+    },
+    {
+      "player_id": 46789,
+      "display_name": "Bendeg\u00faz Bolla",
+      "team": "Hungary",
+      "on_ball_events": 74,
+      "under_pressure_events": 13,
+      "share": 0.1757
+    },
+    {
+      "player_id": 4286,
+      "display_name": "Callum Styles",
+      "team": "Hungary",
+      "on_ball_events": 70,
+      "under_pressure_events": 12,
+      "share": 0.1714
+    },
+    {
+      "player_id": 7162,
+      "display_name": "\u00c1d\u00e1m Nagy",
+      "team": "Hungary",
+      "on_ball_events": 33,
+      "under_pressure_events": 4,
+      "share": 0.1212
+    },
+    {
+      "player_id": 40920,
+      "display_name": "M\u00e1rton D\u00e1rdai",
+      "team": "Hungary",
+      "on_ball_events": 84,
+      "under_pressure_events": 9,
+      "share": 0.1071
+    },
+    {
+      "player_id": 46376,
+      "display_name": "Attila Szalai",
+      "team": "Hungary",
+      "on_ball_events": 19,
+      "under_pressure_events": 0,
+      "share": 0.0
+    },
+    {
+      "player_id": 389882,
+      "display_name": "Kevin Csoboth",
+      "team": "Hungary",
+      "on_ball_events": 18,
+      "under_pressure_events": 0,
+      "share": 0.0
+    }
+  ],
+  "metadata": {
+    "match_id": 3930177,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Scotland vs Hungary",
+    "open_play_filter": "play_pattern + pass_type",
+    "ppda_zone": "opponent's own 60% (x < 72 in the opponent's own frame)",
+    "defensive_action_zone": "pressing team's own half+ (x >= 48 in its own frame)",
+    "pressures_high_zone": "opponent half (x >= 60 in the pressing team's own frame)"
+  }
+}

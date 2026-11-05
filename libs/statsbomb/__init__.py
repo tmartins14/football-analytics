@@ -26,6 +26,7 @@ from .extract_progression import extract_progression
 from .extract_pressing import extract_pressing
 from .extract_defending import extract_defending
 from .derive_tactical_findings import derive_tactical_findings
+from .reference_distributions import build_reference_distributions, tercile_cutpoints, tercile_label
 from .extract_xt import extract_xt
 from .extract_momentum import extract_momentum
 from .extract_goal_animation import extract_goal_animation, extract_play_animation
@@ -47,6 +48,9 @@ __all__ = [
     "extract_pressing",
     "extract_defending",
     "derive_tactical_findings",
+    "build_reference_distributions",
+    "tercile_cutpoints",
+    "tercile_label",
     "extract_xt",
     "extract_momentum",
     "extract_goal_animation",

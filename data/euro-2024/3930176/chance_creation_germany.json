@@ -1,0 +1,145 @@
+{
+  "team": "Germany",
+  "shots": {
+    "non_penalty_count": 18,
+    "total_npxg": 1.541678,
+    "by_zone": {
+      "six_yard_box": {
+        "npxg": 0.581262,
+        "count": 4
+      },
+      "box_central": {
+        "npxg": 0.668012,
+        "count": 7
+      },
+      "box_wide": {
+        "npxg": 0.037312,
+        "count": 1
+      },
+      "outside_box": {
+        "npxg": 0.255093,
+        "count": 6
+      }
+    },
+    "by_source": {
+      "open_play": {
+        "npxg": 0.456151,
+        "count": 6
+      },
+      "counter": {
+        "npxg": 0.074332,
+        "count": 1
+      },
+      "set_piece": {
+        "npxg": 1.011196,
+        "count": 11
+      },
+      "other": {
+        "npxg": 0.0,
+        "count": 0
+      }
+    }
+  },
+  "shot_assists": {
+    "total_count": 15,
+    "by_side_and_type": {
+      "left": {
+        "cross": 4,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 2
+      },
+      "centre": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 3
+      },
+      "right": {
+        "cross": 2,
+        "cut_back": 0,
+        "through_ball": 1,
+        "other": 3
+      }
+    }
+  },
+  "creators": [
+    {
+      "player_id": 5574,
+      "display_name": "Toni Kroos",
+      "xa": 0.407452,
+      "key_passes": 4,
+      "passes_into_box": 2
+    },
+    {
+      "player_id": 12034,
+      "display_name": "David Raum",
+      "xa": 0.392755,
+      "key_passes": 2,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 40724,
+      "display_name": "Florian Wirtz",
+      "xa": 0.20017,
+      "key_passes": 2,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 39565,
+      "display_name": "Jamal Musiala",
+      "xa": 0.133196,
+      "key_passes": 3,
+      "passes_into_box": 2
+    },
+    {
+      "player_id": 12407,
+      "display_name": "Maximilian Mittelst\u00e4dt",
+      "xa": 0.087086,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 5579,
+      "display_name": "Joshua Kimmich",
+      "xa": 0.061764,
+      "key_passes": 1,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 9195,
+      "display_name": "Robert Andrich",
+      "xa": 0.042105,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 24118,
+      "display_name": "Nico Schlotterbeck",
+      "xa": 0.024444,
+      "key_passes": 1,
+      "passes_into_box": 0
+    }
+  ],
+  "metadata": {
+    "match_id": 3930176,
+    "team": "Germany",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Switzerland vs Germany",
+    "zone_filter": "statsbomb_120x80_own_attack_right_frame",
+    "source_grouping": {
+      "open_play": [
+        "Regular Play"
+      ],
+      "counter": [
+        "From Counter"
+      ],
+      "set_piece": [
+        "From Corner",
+        "From Free Kick",
+        "From Throw In"
+      ],
+      "other": "every other play_pattern (From Goal Kick, From Kick Off, From Keeper, Other)"
+    }
+  }
+}

@@ -1,0 +1,289 @@
+{
+  "teams": {
+    "Slovakia": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 149,
+        "defensive_actions_advanced": 13,
+        "value": 11.4615
+      },
+      "pressures_high": {
+        "count": 52,
+        "opponent_open_play_passes": 191,
+        "per_100": 27.23
+      },
+      "pressure_side": {
+        "left": 33,
+        "centre": 16,
+        "right": 33
+      }
+    },
+    "Ukraine": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 157,
+        "defensive_actions_advanced": 14,
+        "value": 11.2143
+      },
+      "pressures_high": {
+        "count": 56,
+        "opponent_open_play_passes": 178,
+        "per_100": 31.46
+      },
+      "pressure_side": {
+        "left": 38,
+        "centre": 21,
+        "right": 60
+      }
+    }
+  },
+  "pressure_received": [
+    {
+      "player_id": 163610,
+      "display_name": "Leo Sauer",
+      "team": "Slovakia",
+      "on_ball_events": 10,
+      "under_pressure_events": 5,
+      "share": 0.5
+    },
+    {
+      "player_id": 35653,
+      "display_name": "Tom\u00e1\u0161 Suslov",
+      "team": "Slovakia",
+      "on_ball_events": 32,
+      "under_pressure_events": 16,
+      "share": 0.5
+    },
+    {
+      "player_id": 43976,
+      "display_name": "David Strelec",
+      "team": "Slovakia",
+      "on_ball_events": 19,
+      "under_pressure_events": 7,
+      "share": 0.3684
+    },
+    {
+      "player_id": 7975,
+      "display_name": "Luk\u00e1\u0161 Harasl\u00edn",
+      "team": "Slovakia",
+      "on_ball_events": 55,
+      "under_pressure_events": 19,
+      "share": 0.3455
+    },
+    {
+      "player_id": 85063,
+      "display_name": "Adam Obert",
+      "team": "Slovakia",
+      "on_ball_events": 56,
+      "under_pressure_events": 19,
+      "share": 0.3393
+    },
+    {
+      "player_id": 23649,
+      "display_name": "Roman Yaremchuk",
+      "team": "Ukraine",
+      "on_ball_events": 26,
+      "under_pressure_events": 8,
+      "share": 0.3077
+    },
+    {
+      "player_id": 16514,
+      "display_name": "Sergiy Sydorchuk",
+      "team": "Ukraine",
+      "on_ball_events": 10,
+      "under_pressure_events": 3,
+      "share": 0.3
+    },
+    {
+      "player_id": 39483,
+      "display_name": "Mykhailo Mudryk",
+      "team": "Ukraine",
+      "on_ball_events": 60,
+      "under_pressure_events": 17,
+      "share": 0.2833
+    },
+    {
+      "player_id": 25079,
+      "display_name": "Artem Dovbyk",
+      "team": "Ukraine",
+      "on_ball_events": 39,
+      "under_pressure_events": 11,
+      "share": 0.2821
+    },
+    {
+      "player_id": 38975,
+      "display_name": "Georgiy Sudakov",
+      "team": "Ukraine",
+      "on_ball_events": 77,
+      "under_pressure_events": 21,
+      "share": 0.2727
+    },
+    {
+      "player_id": 8967,
+      "display_name": "Ondrej Duda",
+      "team": "Slovakia",
+      "on_ball_events": 77,
+      "under_pressure_events": 21,
+      "share": 0.2727
+    },
+    {
+      "player_id": 34904,
+      "display_name": "R\u00f3bert Bo\u017een\u00edk",
+      "team": "Slovakia",
+      "on_ball_events": 39,
+      "under_pressure_events": 9,
+      "share": 0.2308
+    },
+    {
+      "player_id": 10919,
+      "display_name": "Juraj Kucka",
+      "team": "Slovakia",
+      "on_ball_events": 93,
+      "under_pressure_events": 21,
+      "share": 0.2258
+    },
+    {
+      "player_id": 3575,
+      "display_name": "Oleksandr Zinchenko",
+      "team": "Ukraine",
+      "on_ball_events": 124,
+      "under_pressure_events": 28,
+      "share": 0.2258
+    },
+    {
+      "player_id": 144127,
+      "display_name": "Volodymyr Brazhko",
+      "team": "Ukraine",
+      "on_ball_events": 100,
+      "under_pressure_events": 22,
+      "share": 0.22
+    },
+    {
+      "player_id": 21294,
+      "display_name": "Mykola Shaparenko",
+      "team": "Ukraine",
+      "on_ball_events": 112,
+      "under_pressure_events": 23,
+      "share": 0.2054
+    },
+    {
+      "player_id": 31892,
+      "display_name": "Oleksandr Zubkov",
+      "team": "Ukraine",
+      "on_ball_events": 33,
+      "under_pressure_events": 6,
+      "share": 0.1818
+    },
+    {
+      "player_id": 6798,
+      "display_name": "Stanislav Lobotka",
+      "team": "Slovakia",
+      "on_ball_events": 177,
+      "under_pressure_events": 32,
+      "share": 0.1808
+    },
+    {
+      "player_id": 9722,
+      "display_name": "Peter Pekar\u00edk",
+      "team": "Slovakia",
+      "on_ball_events": 101,
+      "under_pressure_events": 18,
+      "share": 0.1782
+    },
+    {
+      "player_id": 28032,
+      "display_name": "Ivan Schranz",
+      "team": "Slovakia",
+      "on_ball_events": 79,
+      "under_pressure_events": 14,
+      "share": 0.1772
+    },
+    {
+      "player_id": 45863,
+      "display_name": "Oleksandr Tymchyk",
+      "team": "Ukraine",
+      "on_ball_events": 83,
+      "under_pressure_events": 13,
+      "share": 0.1566
+    },
+    {
+      "player_id": 39136,
+      "display_name": "Ilya Zabarnyi",
+      "team": "Ukraine",
+      "on_ball_events": 145,
+      "under_pressure_events": 22,
+      "share": 0.1517
+    },
+    {
+      "player_id": 11383,
+      "display_name": "L\u00e1szl\u00f3 B\u00e9nes",
+      "team": "Slovakia",
+      "on_ball_events": 36,
+      "under_pressure_events": 5,
+      "share": 0.1389
+    },
+    {
+      "player_id": 8830,
+      "display_name": "Andriy Yarmolenko",
+      "team": "Ukraine",
+      "on_ball_events": 65,
+      "under_pressure_events": 7,
+      "share": 0.1077
+    },
+    {
+      "player_id": 16879,
+      "display_name": "D\u00e1vid Hancko",
+      "team": "Slovakia",
+      "on_ball_events": 87,
+      "under_pressure_events": 8,
+      "share": 0.092
+    },
+    {
+      "player_id": 16298,
+      "display_name": "Denis Vavro",
+      "team": "Slovakia",
+      "on_ball_events": 150,
+      "under_pressure_events": 10,
+      "share": 0.0667
+    },
+    {
+      "player_id": 18617,
+      "display_name": "Mykola Matvienko",
+      "team": "Ukraine",
+      "on_ball_events": 153,
+      "under_pressure_events": 10,
+      "share": 0.0654
+    },
+    {
+      "player_id": 6990,
+      "display_name": "Milan \u0160kriniar",
+      "team": "Slovakia",
+      "on_ball_events": 203,
+      "under_pressure_events": 9,
+      "share": 0.0443
+    },
+    {
+      "player_id": 36911,
+      "display_name": "Maksym Taloverov",
+      "team": "Ukraine",
+      "on_ball_events": 2,
+      "under_pressure_events": 0,
+      "share": 0.0
+    },
+    {
+      "player_id": 16557,
+      "display_name": "Ruslan Malinovskiy",
+      "team": "Ukraine",
+      "on_ball_events": 3,
+      "under_pressure_events": 0,
+      "share": 0.0
+    }
+  ],
+  "metadata": {
+    "match_id": 3938640,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Slovakia vs Ukraine",
+    "open_play_filter": "play_pattern + pass_type",
+    "ppda_zone": "opponent's own 60% (x < 72 in the opponent's own frame)",
+    "defensive_action_zone": "pressing team's own half+ (x >= 48 in its own frame)",
+    "pressures_high_zone": "opponent half (x >= 60 in the pressing team's own frame)"
+  }
+}

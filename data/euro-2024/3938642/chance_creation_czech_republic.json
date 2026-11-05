@@ -1,0 +1,152 @@
+{
+  "team": "Czech Republic",
+  "shots": {
+    "non_penalty_count": 27,
+    "total_npxg": 2.865452,
+    "by_zone": {
+      "six_yard_box": {
+        "npxg": 0.887138,
+        "count": 2
+      },
+      "box_central": {
+        "npxg": 1.622246,
+        "count": 13
+      },
+      "box_wide": {
+        "npxg": 0.022316,
+        "count": 1
+      },
+      "outside_box": {
+        "npxg": 0.333753,
+        "count": 11
+      }
+    },
+    "by_source": {
+      "open_play": {
+        "npxg": 0.740656,
+        "count": 7
+      },
+      "counter": {
+        "npxg": 0.066843,
+        "count": 1
+      },
+      "set_piece": {
+        "npxg": 1.868984,
+        "count": 16
+      },
+      "other": {
+        "npxg": 0.18897,
+        "count": 3
+      }
+    }
+  },
+  "shot_assists": {
+    "total_count": 17,
+    "by_side_and_type": {
+      "left": {
+        "cross": 3,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 2
+      },
+      "centre": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 2
+      },
+      "right": {
+        "cross": 1,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 9
+      }
+    }
+  },
+  "creators": [
+    {
+      "player_id": 16570,
+      "display_name": "Vladim\u00edr Coufal",
+      "xa": 0.394247,
+      "key_passes": 5,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 4870,
+      "display_name": "Tom\u00e1\u0161 Sou\u010dek",
+      "xa": 0.158575,
+      "key_passes": 3,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 134272,
+      "display_name": "David Jur\u00e1sek",
+      "xa": 0.092198,
+      "key_passes": 2,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 8116,
+      "display_name": "V\u00e1clav \u010cern\u00fd",
+      "xa": 0.085339,
+      "key_passes": 1,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 81330,
+      "display_name": "Robin Hran\u00e1\u010d",
+      "xa": 0.066843,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 28272,
+      "display_name": "Ladislav Krej\u010d\u00ed",
+      "xa": 0.049008,
+      "key_passes": 2,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 16469,
+      "display_name": "Tom\u00e1\u0161 Hole\u0161",
+      "xa": 0.047343,
+      "key_passes": 1,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 7044,
+      "display_name": "Patrik Schick",
+      "xa": 0.029279,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 39143,
+      "display_name": "Mat\u011bj Jur\u00e1sek",
+      "xa": 0.022316,
+      "key_passes": 1,
+      "passes_into_box": 2
+    }
+  ],
+  "metadata": {
+    "match_id": 3938642,
+    "team": "Czech Republic",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Georgia vs Czech Republic",
+    "zone_filter": "statsbomb_120x80_own_attack_right_frame",
+    "source_grouping": {
+      "open_play": [
+        "Regular Play"
+      ],
+      "counter": [
+        "From Counter"
+      ],
+      "set_piece": [
+        "From Corner",
+        "From Free Kick",
+        "From Throw In"
+      ],
+      "other": "every other play_pattern (From Goal Kick, From Kick Off, From Keeper, Other)"
+    }
+  }
+}

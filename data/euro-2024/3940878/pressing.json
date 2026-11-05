@@ -1,0 +1,289 @@
+{
+  "teams": {
+    "Italy": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 96,
+        "defensive_actions_advanced": 15,
+        "value": 6.4
+      },
+      "pressures_high": {
+        "count": 61,
+        "opponent_open_play_passes": 189,
+        "per_100": 32.28
+      },
+      "pressure_side": {
+        "left": 47,
+        "centre": 36,
+        "right": 69
+      }
+    },
+    "Switzerland": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 131,
+        "defensive_actions_advanced": 17,
+        "value": 7.7059
+      },
+      "pressures_high": {
+        "count": 62,
+        "opponent_open_play_passes": 188,
+        "per_100": 32.98
+      },
+      "pressure_side": {
+        "left": 36,
+        "centre": 36,
+        "right": 56
+      }
+    }
+  },
+  "pressure_received": [
+    {
+      "player_id": 7156,
+      "display_name": "Federico Chiesa",
+      "team": "Italy",
+      "on_ball_events": 110,
+      "under_pressure_events": 41,
+      "share": 0.3727
+    },
+    {
+      "player_id": 5545,
+      "display_name": "Breel Embolo",
+      "team": "Switzerland",
+      "on_ball_events": 68,
+      "under_pressure_events": 25,
+      "share": 0.3676
+    },
+    {
+      "player_id": 6979,
+      "display_name": "Stephan El Shaarawy",
+      "team": "Italy",
+      "on_ball_events": 30,
+      "under_pressure_events": 11,
+      "share": 0.3667
+    },
+    {
+      "player_id": 11457,
+      "display_name": "Vincent Sierro",
+      "team": "Switzerland",
+      "on_ball_events": 26,
+      "under_pressure_events": 9,
+      "share": 0.3462
+    },
+    {
+      "player_id": 49007,
+      "display_name": "Kwadwo Duah",
+      "team": "Switzerland",
+      "on_ball_events": 13,
+      "under_pressure_events": 4,
+      "share": 0.3077
+    },
+    {
+      "player_id": 50436,
+      "display_name": "Fabian Rieder",
+      "team": "Switzerland",
+      "on_ball_events": 87,
+      "under_pressure_events": 25,
+      "share": 0.2874
+    },
+    {
+      "player_id": 31093,
+      "display_name": "Mateo Retegui",
+      "team": "Italy",
+      "on_ball_events": 14,
+      "under_pressure_events": 4,
+      "share": 0.2857
+    },
+    {
+      "player_id": 8792,
+      "display_name": "Mattia Zaccagni",
+      "team": "Italy",
+      "on_ball_events": 56,
+      "under_pressure_events": 15,
+      "share": 0.2679
+    },
+    {
+      "player_id": 30401,
+      "display_name": "Ruben Vargas",
+      "team": "Switzerland",
+      "on_ball_events": 79,
+      "under_pressure_events": 21,
+      "share": 0.2658
+    },
+    {
+      "player_id": 45190,
+      "display_name": "Dan Ndoye",
+      "team": "Switzerland",
+      "on_ball_events": 93,
+      "under_pressure_events": 22,
+      "share": 0.2366
+    },
+    {
+      "player_id": 10992,
+      "display_name": "Gianluca Scamacca",
+      "team": "Italy",
+      "on_ball_events": 47,
+      "under_pressure_events": 11,
+      "share": 0.234
+    },
+    {
+      "player_id": 29227,
+      "display_name": "Leonidas Stergiou",
+      "team": "Switzerland",
+      "on_ball_events": 23,
+      "under_pressure_events": 5,
+      "share": 0.2174
+    },
+    {
+      "player_id": 8181,
+      "display_name": "Nicol\u00f2 Barella",
+      "team": "Italy",
+      "on_ball_events": 71,
+      "under_pressure_events": 15,
+      "share": 0.2113
+    },
+    {
+      "player_id": 16016,
+      "display_name": "Michel Aebischer",
+      "team": "Switzerland",
+      "on_ball_events": 141,
+      "under_pressure_events": 28,
+      "share": 0.1986
+    },
+    {
+      "player_id": 5537,
+      "display_name": "Fabian Sch\u00e4r",
+      "team": "Switzerland",
+      "on_ball_events": 101,
+      "under_pressure_events": 19,
+      "share": 0.1881
+    },
+    {
+      "player_id": 38909,
+      "display_name": "Nicol\u00f2 Fagioli",
+      "team": "Italy",
+      "on_ball_events": 196,
+      "under_pressure_events": 35,
+      "share": 0.1786
+    },
+    {
+      "player_id": 5549,
+      "display_name": "Manuel Akanji",
+      "team": "Switzerland",
+      "on_ball_events": 122,
+      "under_pressure_events": 20,
+      "share": 0.1639
+    },
+    {
+      "player_id": 50729,
+      "display_name": "Andrea Cambiaso",
+      "team": "Italy",
+      "on_ball_events": 25,
+      "under_pressure_events": 4,
+      "share": 0.16
+    },
+    {
+      "player_id": 6993,
+      "display_name": "Bryan Cristante",
+      "team": "Italy",
+      "on_ball_events": 130,
+      "under_pressure_events": 16,
+      "share": 0.1231
+    },
+    {
+      "player_id": 3500,
+      "display_name": "Granit Xhaka",
+      "team": "Switzerland",
+      "on_ball_events": 198,
+      "under_pressure_events": 24,
+      "share": 0.1212
+    },
+    {
+      "player_id": 11514,
+      "display_name": "Giovanni Di Lorenzo",
+      "team": "Italy",
+      "on_ball_events": 119,
+      "under_pressure_events": 12,
+      "share": 0.1008
+    },
+    {
+      "player_id": 4587,
+      "display_name": "Matteo Darmian",
+      "team": "Italy",
+      "on_ball_events": 104,
+      "under_pressure_events": 10,
+      "share": 0.0962
+    },
+    {
+      "player_id": 5544,
+      "display_name": "Ricardo Rodr\u00edguez",
+      "team": "Switzerland",
+      "on_ball_events": 150,
+      "under_pressure_events": 14,
+      "share": 0.0933
+    },
+    {
+      "player_id": 6983,
+      "display_name": "Remo Freuler",
+      "team": "Switzerland",
+      "on_ball_events": 135,
+      "under_pressure_events": 12,
+      "share": 0.0889
+    },
+    {
+      "player_id": 7480,
+      "display_name": "Alessandro Bastoni",
+      "team": "Italy",
+      "on_ball_events": 153,
+      "under_pressure_events": 11,
+      "share": 0.0719
+    },
+    {
+      "player_id": 5548,
+      "display_name": "Steven Zuber",
+      "team": "Switzerland",
+      "on_ball_events": 30,
+      "under_pressure_events": 2,
+      "share": 0.0667
+    },
+    {
+      "player_id": 7004,
+      "display_name": "Gianluca Mancini",
+      "team": "Italy",
+      "on_ball_events": 139,
+      "under_pressure_events": 9,
+      "share": 0.0647
+    },
+    {
+      "player_id": 6963,
+      "display_name": "Lorenzo Pellegrini",
+      "team": "Italy",
+      "on_ball_events": 39,
+      "under_pressure_events": 1,
+      "share": 0.0256
+    },
+    {
+      "player_id": 30926,
+      "display_name": "Davide Frattesi",
+      "team": "Italy",
+      "on_ball_events": 3,
+      "under_pressure_events": 0,
+      "share": 0.0
+    },
+    {
+      "player_id": 12326,
+      "display_name": "Renato Steffen",
+      "team": "Switzerland",
+      "on_ball_events": 4,
+      "under_pressure_events": 0,
+      "share": 0.0
+    }
+  ],
+  "metadata": {
+    "match_id": 3940878,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Switzerland vs Italy",
+    "open_play_filter": "play_pattern + pass_type",
+    "ppda_zone": "opponent's own 60% (x < 72 in the opponent's own frame)",
+    "defensive_action_zone": "pressing team's own half+ (x >= 48 in its own frame)",
+    "pressures_high_zone": "opponent half (x >= 60 in the pressing team's own frame)"
+  }
+}

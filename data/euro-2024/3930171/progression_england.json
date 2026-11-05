@@ -1,0 +1,104 @@
+{
+  "team": "England",
+  "progressive_actions": {
+    "total_count": 32,
+    "by_side": {
+      "left": 6,
+      "centre": 6,
+      "right": 20
+    },
+    "by_mode": {
+      "pass": 22,
+      "carry": 10
+    }
+  },
+  "progressors": [
+    {
+      "player_id": 22084,
+      "display_name": "Bukayo Saka",
+      "count": 9,
+      "passes": 3,
+      "carries": 6
+    },
+    {
+      "player_id": 3205,
+      "display_name": "Kyle Walker",
+      "count": 6,
+      "passes": 3,
+      "carries": 3
+    },
+    {
+      "player_id": 3308,
+      "display_name": "Kieran Trippier",
+      "count": 4,
+      "passes": 4,
+      "carries": 0
+    },
+    {
+      "player_id": 3664,
+      "display_name": "Trent Alexander-Arnold",
+      "count": 4,
+      "passes": 3,
+      "carries": 1
+    },
+    {
+      "player_id": 3468,
+      "display_name": "Jordan Pickford",
+      "count": 2,
+      "passes": 2,
+      "carries": 0
+    },
+    {
+      "player_id": 34526,
+      "display_name": "Marc Guehi",
+      "count": 2,
+      "passes": 2,
+      "carries": 0
+    },
+    {
+      "player_id": 3943,
+      "display_name": "Declan Rice",
+      "count": 1,
+      "passes": 1,
+      "carries": 0
+    },
+    {
+      "player_id": 9000,
+      "display_name": "Eberechi Eze",
+      "count": 1,
+      "passes": 1,
+      "carries": 0
+    },
+    {
+      "player_id": 10955,
+      "display_name": "Harry Kane",
+      "count": 1,
+      "passes": 1,
+      "carries": 0
+    },
+    {
+      "player_id": 3244,
+      "display_name": "John Stones",
+      "count": 1,
+      "passes": 1,
+      "carries": 0
+    },
+    {
+      "player_id": 4354,
+      "display_name": "Phil Foden",
+      "count": 1,
+      "passes": 1,
+      "carries": 0
+    }
+  ],
+  "params": {
+    "progressive_threshold": 0.25
+  },
+  "metadata": {
+    "match_id": 3930171,
+    "team": "England",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Denmark vs England",
+    "open_play_filter": "play_pattern"
+  }
+}

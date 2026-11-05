@@ -1,0 +1,90 @@
+{
+  "team": "Denmark",
+  "progressive_actions": {
+    "total_count": 31,
+    "by_side": {
+      "left": 14,
+      "centre": 7,
+      "right": 10
+    },
+    "by_mode": {
+      "pass": 25,
+      "carry": 6
+    }
+  },
+  "progressors": [
+    {
+      "player_id": 8621,
+      "display_name": "Morten Hjulmand",
+      "count": 7,
+      "passes": 6,
+      "carries": 1
+    },
+    {
+      "player_id": 60343,
+      "display_name": "Victor Kristiansen",
+      "count": 5,
+      "passes": 5,
+      "carries": 0
+    },
+    {
+      "player_id": 24547,
+      "display_name": "Alexander Bah",
+      "count": 4,
+      "passes": 4,
+      "carries": 0
+    },
+    {
+      "player_id": 8247,
+      "display_name": "Joachim Andersen",
+      "count": 4,
+      "passes": 4,
+      "carries": 0
+    },
+    {
+      "player_id": 3043,
+      "display_name": "Christian Eriksen",
+      "count": 3,
+      "passes": 2,
+      "carries": 1
+    },
+    {
+      "player_id": 3570,
+      "display_name": "Pierre-Emile H\u00f8jbjerg",
+      "count": 3,
+      "passes": 2,
+      "carries": 1
+    },
+    {
+      "player_id": 8815,
+      "display_name": "Jannik Vestergaard",
+      "count": 2,
+      "passes": 1,
+      "carries": 1
+    },
+    {
+      "player_id": 21261,
+      "display_name": "Jonas Wind",
+      "count": 2,
+      "passes": 1,
+      "carries": 1
+    },
+    {
+      "player_id": 51672,
+      "display_name": "Rasmus H\u00f6jlund",
+      "count": 1,
+      "passes": 0,
+      "carries": 1
+    }
+  ],
+  "params": {
+    "progressive_threshold": 0.25
+  },
+  "metadata": {
+    "match_id": 3930162,
+    "team": "Denmark",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Slovenia vs Denmark",
+    "open_play_filter": "play_pattern"
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "team": "Spain",
+  "shots": {
+    "non_penalty_count": 19,
+    "total_npxg": 1.534054,
+    "by_zone": {
+      "six_yard_box": {
+        "npxg": 0.0,
+        "count": 0
+      },
+      "box_central": {
+        "npxg": 0.573354,
+        "count": 4
+      },
+      "box_wide": {
+        "npxg": 0.436817,
+        "count": 3
+      },
+      "outside_box": {
+        "npxg": 0.523883,
+        "count": 12
+      }
+    },
+    "by_source": {
+      "open_play": {
+        "npxg": 0.414582,
+        "count": 7
+      },
+      "counter": {
+        "npxg": 0.319919,
+        "count": 2
+      },
+      "set_piece": {
+        "npxg": 0.747693,
+        "count": 9
+      },
+      "other": {
+        "npxg": 0.051861,
+        "count": 1
+      }
+    }
+  },
+  "shot_assists": {
+    "total_count": 16,
+    "by_side_and_type": {
+      "left": {
+        "cross": 2,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 2
+      },
+      "centre": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 5
+      },
+      "right": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 7
+      }
+    }
+  },
+  "creators": [
+    {
+      "player_id": 316046,
+      "display_name": "Lamine Yamal",
+      "xa": 0.389437,
+      "key_passes": 3,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 6685,
+      "display_name": "Mikel Oyarzabal",
+      "xa": 0.293186,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 16532,
+      "display_name": "Daniel Olmo",
+      "xa": 0.266114,
+      "key_passes": 3,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 3477,
+      "display_name": "\u00c1lvaro Morata",
+      "xa": 0.117437,
+      "key_passes": 1,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 6655,
+      "display_name": "Fabi\u00e1n Ruiz",
+      "xa": 0.069875,
+      "key_passes": 3,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 6765,
+      "display_name": "Rodri",
+      "xa": 0.069015,
+      "key_passes": 2,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 3042,
+      "display_name": "Mikel Merino",
+      "xa": 0.06871,
+      "key_passes": 2,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 5721,
+      "display_name": "Daniel Carvajal",
+      "xa": 0.022106,
+      "key_passes": 1,
+      "passes_into_box": 0
+    }
+  ],
+  "metadata": {
+    "match_id": 3942226,
+    "team": "Spain",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Spain vs Germany",
+    "zone_filter": "statsbomb_120x80_own_attack_right_frame",
+    "source_grouping": {
+      "open_play": [
+        "Regular Play"
+      ],
+      "counter": [
+        "From Counter"
+      ],
+      "set_piece": [
+        "From Corner",
+        "From Free Kick",
+        "From Throw In"
+      ],
+      "other": "every other play_pattern (From Goal Kick, From Kick Off, From Keeper, Other)"
+    }
+  }
+}

@@ -1,0 +1,281 @@
+{
+  "teams": {
+    "Croatia": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 170,
+        "defensive_actions_advanced": 21,
+        "value": 8.0952
+      },
+      "pressures_high": {
+        "count": 112,
+        "opponent_open_play_passes": 210,
+        "per_100": 53.33
+      },
+      "pressure_side": {
+        "left": 87,
+        "centre": 45,
+        "right": 90
+      }
+    },
+    "Spain": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 110,
+        "defensive_actions_advanced": 22,
+        "value": 5.0
+      },
+      "pressures_high": {
+        "count": 119,
+        "opponent_open_play_passes": 150,
+        "per_100": 79.33
+      },
+      "pressure_side": {
+        "left": 93,
+        "centre": 46,
+        "right": 69
+      }
+    }
+  },
+  "pressure_received": [
+    {
+      "player_id": 3042,
+      "display_name": "Mikel Merino",
+      "team": "Spain",
+      "on_ball_events": 25,
+      "under_pressure_events": 14,
+      "share": 0.56
+    },
+    {
+      "player_id": 68574,
+      "display_name": "Nico Williams",
+      "team": "Spain",
+      "on_ball_events": 67,
+      "under_pressure_events": 28,
+      "share": 0.4179
+    },
+    {
+      "player_id": 30486,
+      "display_name": "Pedri",
+      "team": "Spain",
+      "on_ball_events": 67,
+      "under_pressure_events": 27,
+      "share": 0.403
+    },
+    {
+      "player_id": 6748,
+      "display_name": "Ferr\u00e1n Torres",
+      "team": "Spain",
+      "on_ball_events": 8,
+      "under_pressure_events": 3,
+      "share": 0.375
+    },
+    {
+      "player_id": 5474,
+      "display_name": "Ivan Peri\u0161i\u0107",
+      "team": "Croatia",
+      "on_ball_events": 51,
+      "under_pressure_events": 19,
+      "share": 0.3725
+    },
+    {
+      "player_id": 22128,
+      "display_name": "Robin Le Normand",
+      "team": "Spain",
+      "on_ball_events": 107,
+      "under_pressure_events": 39,
+      "share": 0.3645
+    },
+    {
+      "player_id": 6685,
+      "display_name": "Mikel Oyarzabal",
+      "team": "Spain",
+      "on_ball_events": 25,
+      "under_pressure_events": 9,
+      "share": 0.36
+    },
+    {
+      "player_id": 16532,
+      "display_name": "Daniel Olmo",
+      "team": "Spain",
+      "on_ball_events": 53,
+      "under_pressure_events": 19,
+      "share": 0.3585
+    },
+    {
+      "player_id": 33018,
+      "display_name": "Jo\u0161ko Gvardiol",
+      "team": "Croatia",
+      "on_ball_events": 96,
+      "under_pressure_events": 34,
+      "share": 0.3542
+    },
+    {
+      "player_id": 5202,
+      "display_name": "Nacho",
+      "team": "Spain",
+      "on_ball_events": 117,
+      "under_pressure_events": 40,
+      "share": 0.3419
+    },
+    {
+      "player_id": 6765,
+      "display_name": "Rodri",
+      "team": "Spain",
+      "on_ball_events": 130,
+      "under_pressure_events": 43,
+      "share": 0.3308
+    },
+    {
+      "player_id": 3477,
+      "display_name": "\u00c1lvaro Morata",
+      "team": "Spain",
+      "on_ball_events": 61,
+      "under_pressure_events": 20,
+      "share": 0.3279
+    },
+    {
+      "player_id": 8654,
+      "display_name": "Ante Budimir",
+      "team": "Croatia",
+      "on_ball_events": 43,
+      "under_pressure_events": 14,
+      "share": 0.3256
+    },
+    {
+      "player_id": 316046,
+      "display_name": "Lamine Yamal",
+      "team": "Spain",
+      "on_ball_events": 85,
+      "under_pressure_events": 27,
+      "share": 0.3176
+    },
+    {
+      "player_id": 6655,
+      "display_name": "Fabi\u00e1n Ruiz",
+      "team": "Spain",
+      "on_ball_events": 135,
+      "under_pressure_events": 39,
+      "share": 0.2889
+    },
+    {
+      "player_id": 5456,
+      "display_name": "Mateo Kova\u010di\u0107",
+      "team": "Croatia",
+      "on_ball_events": 101,
+      "under_pressure_events": 28,
+      "share": 0.2772
+    },
+    {
+      "player_id": 5721,
+      "display_name": "Daniel Carvajal",
+      "team": "Spain",
+      "on_ball_events": 125,
+      "under_pressure_events": 34,
+      "share": 0.272
+    },
+    {
+      "player_id": 17620,
+      "display_name": "Marc Cucurella",
+      "team": "Spain",
+      "on_ball_events": 120,
+      "under_pressure_events": 32,
+      "share": 0.2667
+    },
+    {
+      "player_id": 49337,
+      "display_name": "Josip Stani\u0161i\u0107",
+      "team": "Croatia",
+      "on_ball_events": 140,
+      "under_pressure_events": 37,
+      "share": 0.2643
+    },
+    {
+      "player_id": 28914,
+      "display_name": "Lovro Majer",
+      "team": "Croatia",
+      "on_ball_events": 155,
+      "under_pressure_events": 40,
+      "share": 0.2581
+    },
+    {
+      "player_id": 24921,
+      "display_name": "Mart\u00edn Zubimendi",
+      "team": "Spain",
+      "on_ball_events": 24,
+      "under_pressure_events": 6,
+      "share": 0.25
+    },
+    {
+      "player_id": 11603,
+      "display_name": "Mario Pa\u0161ali\u0107",
+      "team": "Croatia",
+      "on_ball_events": 34,
+      "under_pressure_events": 8,
+      "share": 0.2353
+    },
+    {
+      "player_id": 5460,
+      "display_name": "Andrej Kramari\u0107",
+      "team": "Croatia",
+      "on_ball_events": 87,
+      "under_pressure_events": 20,
+      "share": 0.2299
+    },
+    {
+      "player_id": 8773,
+      "display_name": "Marin Pongracic",
+      "team": "Croatia",
+      "on_ball_events": 141,
+      "under_pressure_events": 30,
+      "share": 0.2128
+    },
+    {
+      "player_id": 7693,
+      "display_name": "Bruno Petkovi\u0107",
+      "team": "Croatia",
+      "on_ball_events": 25,
+      "under_pressure_events": 5,
+      "share": 0.2
+    },
+    {
+      "player_id": 37148,
+      "display_name": "Josip \u0160utalo",
+      "team": "Croatia",
+      "on_ball_events": 155,
+      "under_pressure_events": 31,
+      "share": 0.2
+    },
+    {
+      "player_id": 5463,
+      "display_name": "Luka Modri\u0107",
+      "team": "Croatia",
+      "on_ball_events": 100,
+      "under_pressure_events": 19,
+      "share": 0.19
+    },
+    {
+      "player_id": 39490,
+      "display_name": "Luka Su\u010di\u0107",
+      "team": "Croatia",
+      "on_ball_events": 57,
+      "under_pressure_events": 8,
+      "share": 0.1404
+    },
+    {
+      "player_id": 5469,
+      "display_name": "Marcelo Brozovi\u0107",
+      "team": "Croatia",
+      "on_ball_events": 158,
+      "under_pressure_events": 17,
+      "share": 0.1076
+    }
+  ],
+  "metadata": {
+    "match_id": 3930160,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Spain vs Croatia",
+    "open_play_filter": "play_pattern + pass_type",
+    "ppda_zone": "opponent's own 60% (x < 72 in the opponent's own frame)",
+    "defensive_action_zone": "pressing team's own half+ (x >= 48 in its own frame)",
+    "pressures_high_zone": "opponent half (x >= 60 in the pressing team's own frame)"
+  }
+}

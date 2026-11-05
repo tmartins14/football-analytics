@@ -1,0 +1,305 @@
+{
+  "teams": {
+    "Germany": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 172,
+        "defensive_actions_advanced": 27,
+        "value": 6.3704
+      },
+      "pressures_high": {
+        "count": 72,
+        "opponent_open_play_passes": 269,
+        "per_100": 26.77
+      },
+      "pressure_side": {
+        "left": 61,
+        "centre": 53,
+        "right": 69
+      }
+    },
+    "Spain": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 195,
+        "defensive_actions_advanced": 23,
+        "value": 8.4783
+      },
+      "pressures_high": {
+        "count": 94,
+        "opponent_open_play_passes": 289,
+        "per_100": 32.53
+      },
+      "pressure_side": {
+        "left": 50,
+        "centre": 56,
+        "right": 81
+      }
+    }
+  },
+  "pressure_received": [
+    {
+      "player_id": 30486,
+      "display_name": "Pedri",
+      "team": "Spain",
+      "on_ball_events": 4,
+      "under_pressure_events": 2,
+      "share": 0.5
+    },
+    {
+      "player_id": 3265,
+      "display_name": "Joselu",
+      "team": "Spain",
+      "on_ball_events": 9,
+      "under_pressure_events": 4,
+      "share": 0.4444
+    },
+    {
+      "player_id": 3042,
+      "display_name": "Mikel Merino",
+      "team": "Spain",
+      "on_ball_events": 75,
+      "under_pressure_events": 32,
+      "share": 0.4267
+    },
+    {
+      "player_id": 316046,
+      "display_name": "Lamine Yamal",
+      "team": "Spain",
+      "on_ball_events": 73,
+      "under_pressure_events": 31,
+      "share": 0.4247
+    },
+    {
+      "player_id": 6685,
+      "display_name": "Mikel Oyarzabal",
+      "team": "Spain",
+      "on_ball_events": 52,
+      "under_pressure_events": 22,
+      "share": 0.4231
+    },
+    {
+      "player_id": 3477,
+      "display_name": "\u00c1lvaro Morata",
+      "team": "Spain",
+      "on_ball_events": 77,
+      "under_pressure_events": 29,
+      "share": 0.3766
+    },
+    {
+      "player_id": 3053,
+      "display_name": "Leroy San\u00e9",
+      "team": "Germany",
+      "on_ball_events": 37,
+      "under_pressure_events": 13,
+      "share": 0.3514
+    },
+    {
+      "player_id": 39565,
+      "display_name": "Jamal Musiala",
+      "team": "Germany",
+      "on_ball_events": 123,
+      "under_pressure_events": 41,
+      "share": 0.3333
+    },
+    {
+      "player_id": 68574,
+      "display_name": "Nico Williams",
+      "team": "Spain",
+      "on_ball_events": 90,
+      "under_pressure_events": 28,
+      "share": 0.3111
+    },
+    {
+      "player_id": 8966,
+      "display_name": "Kai Havertz",
+      "team": "Germany",
+      "on_ball_events": 74,
+      "under_pressure_events": 22,
+      "share": 0.2973
+    },
+    {
+      "player_id": 16532,
+      "display_name": "Daniel Olmo",
+      "team": "Spain",
+      "on_ball_events": 128,
+      "under_pressure_events": 38,
+      "share": 0.2969
+    },
+    {
+      "player_id": 12034,
+      "display_name": "David Raum",
+      "team": "Germany",
+      "on_ball_events": 84,
+      "under_pressure_events": 24,
+      "share": 0.2857
+    },
+    {
+      "player_id": 6655,
+      "display_name": "Fabi\u00e1n Ruiz",
+      "team": "Spain",
+      "on_ball_events": 166,
+      "under_pressure_events": 47,
+      "share": 0.2831
+    },
+    {
+      "player_id": 40724,
+      "display_name": "Florian Wirtz",
+      "team": "Germany",
+      "on_ball_events": 122,
+      "under_pressure_events": 32,
+      "share": 0.2623
+    },
+    {
+      "player_id": 8221,
+      "display_name": "Jonathan Tah",
+      "team": "Germany",
+      "on_ball_events": 100,
+      "under_pressure_events": 25,
+      "share": 0.25
+    },
+    {
+      "player_id": 8546,
+      "display_name": "Niclas F\u00fcllkrug",
+      "team": "Germany",
+      "on_ball_events": 61,
+      "under_pressure_events": 15,
+      "share": 0.2459
+    },
+    {
+      "player_id": 5721,
+      "display_name": "Daniel Carvajal",
+      "team": "Spain",
+      "on_ball_events": 120,
+      "under_pressure_events": 29,
+      "share": 0.2417
+    },
+    {
+      "player_id": 3493,
+      "display_name": "Emre Can",
+      "team": "Germany",
+      "on_ball_events": 64,
+      "under_pressure_events": 15,
+      "share": 0.2344
+    },
+    {
+      "player_id": 5562,
+      "display_name": "Thomas M\u00fcller",
+      "team": "Germany",
+      "on_ball_events": 47,
+      "under_pressure_events": 11,
+      "share": 0.234
+    },
+    {
+      "player_id": 9195,
+      "display_name": "Robert Andrich",
+      "team": "Germany",
+      "on_ball_events": 95,
+      "under_pressure_events": 21,
+      "share": 0.2211
+    },
+    {
+      "player_id": 5574,
+      "display_name": "Toni Kroos",
+      "team": "Germany",
+      "on_ball_events": 190,
+      "under_pressure_events": 42,
+      "share": 0.2211
+    },
+    {
+      "player_id": 10287,
+      "display_name": "\u0130lkay G\u00fcndo\u011fan",
+      "team": "Germany",
+      "on_ball_events": 65,
+      "under_pressure_events": 14,
+      "share": 0.2154
+    },
+    {
+      "player_id": 5202,
+      "display_name": "Nacho",
+      "team": "Spain",
+      "on_ball_events": 66,
+      "under_pressure_events": 14,
+      "share": 0.2121
+    },
+    {
+      "player_id": 22128,
+      "display_name": "Robin Le Normand",
+      "team": "Spain",
+      "on_ball_events": 60,
+      "under_pressure_events": 12,
+      "share": 0.2
+    },
+    {
+      "player_id": 6765,
+      "display_name": "Rodri",
+      "team": "Spain",
+      "on_ball_events": 173,
+      "under_pressure_events": 32,
+      "share": 0.185
+    },
+    {
+      "player_id": 4353,
+      "display_name": "Aymeric Laporte",
+      "team": "Spain",
+      "on_ball_events": 150,
+      "under_pressure_events": 25,
+      "share": 0.1667
+    },
+    {
+      "player_id": 3167,
+      "display_name": "Antonio R\u00fcdiger",
+      "team": "Germany",
+      "on_ball_events": 152,
+      "under_pressure_events": 22,
+      "share": 0.1447
+    },
+    {
+      "player_id": 12407,
+      "display_name": "Maximilian Mittelst\u00e4dt",
+      "team": "Germany",
+      "on_ball_events": 78,
+      "under_pressure_events": 11,
+      "share": 0.141
+    },
+    {
+      "player_id": 5579,
+      "display_name": "Joshua Kimmich",
+      "team": "Germany",
+      "on_ball_events": 168,
+      "under_pressure_events": 19,
+      "share": 0.1131
+    },
+    {
+      "player_id": 6748,
+      "display_name": "Ferr\u00e1n Torres",
+      "team": "Spain",
+      "on_ball_events": 54,
+      "under_pressure_events": 6,
+      "share": 0.1111
+    },
+    {
+      "player_id": 8538,
+      "display_name": "Waldemar Anton",
+      "team": "Germany",
+      "on_ball_events": 42,
+      "under_pressure_events": 4,
+      "share": 0.0952
+    },
+    {
+      "player_id": 17620,
+      "display_name": "Marc Cucurella",
+      "team": "Spain",
+      "on_ball_events": 135,
+      "under_pressure_events": 12,
+      "share": 0.0889
+    }
+  ],
+  "metadata": {
+    "match_id": 3942226,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Spain vs Germany",
+    "open_play_filter": "play_pattern + pass_type",
+    "ppda_zone": "opponent's own 60% (x < 72 in the opponent's own frame)",
+    "defensive_action_zone": "pressing team's own half+ (x >= 48 in its own frame)",
+    "pressures_high_zone": "opponent half (x >= 60 in the pressing team's own frame)"
+  }
+}

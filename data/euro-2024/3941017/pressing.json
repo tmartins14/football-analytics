@@ -1,0 +1,297 @@
+{
+  "teams": {
+    "England": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 146,
+        "defensive_actions_advanced": 25,
+        "value": 5.84
+      },
+      "pressures_high": {
+        "count": 81,
+        "opponent_open_play_passes": 223,
+        "per_100": 36.32
+      },
+      "pressure_side": {
+        "left": 43,
+        "centre": 39,
+        "right": 61
+      }
+    },
+    "Slovakia": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 183,
+        "defensive_actions_advanced": 24,
+        "value": 7.625
+      },
+      "pressures_high": {
+        "count": 81,
+        "opponent_open_play_passes": 283,
+        "per_100": 28.62
+      },
+      "pressure_side": {
+        "left": 96,
+        "centre": 37,
+        "right": 64
+      }
+    }
+  },
+  "pressure_received": [
+    {
+      "player_id": 3834,
+      "display_name": "Ivan Toney",
+      "team": "England",
+      "on_ball_events": 36,
+      "under_pressure_events": 14,
+      "share": 0.3889
+    },
+    {
+      "player_id": 7975,
+      "display_name": "Luk\u00e1\u0161 Harasl\u00edn",
+      "team": "Slovakia",
+      "on_ball_events": 42,
+      "under_pressure_events": 16,
+      "share": 0.381
+    },
+    {
+      "player_id": 34904,
+      "display_name": "R\u00f3bert Bo\u017een\u00edk",
+      "team": "Slovakia",
+      "on_ball_events": 58,
+      "under_pressure_events": 20,
+      "share": 0.3448
+    },
+    {
+      "player_id": 30714,
+      "display_name": "Jude Bellingham",
+      "team": "England",
+      "on_ball_events": 122,
+      "under_pressure_events": 42,
+      "share": 0.3443
+    },
+    {
+      "player_id": 10955,
+      "display_name": "Harry Kane",
+      "team": "England",
+      "on_ball_events": 62,
+      "under_pressure_events": 20,
+      "share": 0.3226
+    },
+    {
+      "player_id": 22084,
+      "display_name": "Bukayo Saka",
+      "team": "England",
+      "on_ball_events": 151,
+      "under_pressure_events": 46,
+      "share": 0.3046
+    },
+    {
+      "player_id": 8422,
+      "display_name": "\u013dubom\u00edr Tupta",
+      "team": "Slovakia",
+      "on_ball_events": 10,
+      "under_pressure_events": 3,
+      "share": 0.3
+    },
+    {
+      "player_id": 28032,
+      "display_name": "Ivan Schranz",
+      "team": "Slovakia",
+      "on_ball_events": 67,
+      "under_pressure_events": 20,
+      "share": 0.2985
+    },
+    {
+      "player_id": 10919,
+      "display_name": "Juraj Kucka",
+      "team": "Slovakia",
+      "on_ball_events": 76,
+      "under_pressure_events": 22,
+      "share": 0.2895
+    },
+    {
+      "player_id": 8967,
+      "display_name": "Ondrej Duda",
+      "team": "Slovakia",
+      "on_ball_events": 96,
+      "under_pressure_events": 27,
+      "share": 0.2812
+    },
+    {
+      "player_id": 43976,
+      "display_name": "David Strelec",
+      "team": "Slovakia",
+      "on_ball_events": 41,
+      "under_pressure_events": 11,
+      "share": 0.2683
+    },
+    {
+      "player_id": 6798,
+      "display_name": "Stanislav Lobotka",
+      "team": "Slovakia",
+      "on_ball_events": 149,
+      "under_pressure_events": 38,
+      "share": 0.255
+    },
+    {
+      "player_id": 3943,
+      "display_name": "Declan Rice",
+      "team": "England",
+      "on_ball_events": 201,
+      "under_pressure_events": 49,
+      "share": 0.2438
+    },
+    {
+      "player_id": 15546,
+      "display_name": "Mat\u00fa\u0161 Bero",
+      "team": "Slovakia",
+      "on_ball_events": 58,
+      "under_pressure_events": 13,
+      "share": 0.2241
+    },
+    {
+      "player_id": 16879,
+      "display_name": "D\u00e1vid Hancko",
+      "team": "Slovakia",
+      "on_ball_events": 120,
+      "under_pressure_events": 26,
+      "share": 0.2167
+    },
+    {
+      "player_id": 39461,
+      "display_name": "Cole Palmer",
+      "team": "England",
+      "on_ball_events": 65,
+      "under_pressure_events": 14,
+      "share": 0.2154
+    },
+    {
+      "player_id": 9000,
+      "display_name": "Eberechi Eze",
+      "team": "England",
+      "on_ball_events": 38,
+      "under_pressure_events": 8,
+      "share": 0.2105
+    },
+    {
+      "player_id": 9722,
+      "display_name": "Peter Pekar\u00edk",
+      "team": "Slovakia",
+      "on_ball_events": 60,
+      "under_pressure_events": 12,
+      "share": 0.2
+    },
+    {
+      "player_id": 4354,
+      "display_name": "Phil Foden",
+      "team": "England",
+      "on_ball_events": 117,
+      "under_pressure_events": 22,
+      "share": 0.188
+    },
+    {
+      "player_id": 35653,
+      "display_name": "Tom\u00e1\u0161 Suslov",
+      "team": "Slovakia",
+      "on_ball_events": 91,
+      "under_pressure_events": 17,
+      "share": 0.1868
+    },
+    {
+      "player_id": 20043,
+      "display_name": "Norbert Gy\u00f6mb\u00e9r",
+      "team": "Slovakia",
+      "on_ball_events": 83,
+      "under_pressure_events": 14,
+      "share": 0.1687
+    },
+    {
+      "player_id": 29399,
+      "display_name": "Conor Gallagher",
+      "team": "England",
+      "on_ball_events": 18,
+      "under_pressure_events": 3,
+      "share": 0.1667
+    },
+    {
+      "player_id": 11383,
+      "display_name": "L\u00e1szl\u00f3 B\u00e9nes",
+      "team": "Slovakia",
+      "on_ball_events": 68,
+      "under_pressure_events": 11,
+      "share": 0.1618
+    },
+    {
+      "player_id": 99174,
+      "display_name": "Kobbie Mainoo",
+      "team": "England",
+      "on_ball_events": 151,
+      "under_pressure_events": 22,
+      "share": 0.1457
+    },
+    {
+      "player_id": 16298,
+      "display_name": "Denis Vavro",
+      "team": "Slovakia",
+      "on_ball_events": 118,
+      "under_pressure_events": 17,
+      "share": 0.1441
+    },
+    {
+      "player_id": 6990,
+      "display_name": "Milan \u0160kriniar",
+      "team": "Slovakia",
+      "on_ball_events": 137,
+      "under_pressure_events": 19,
+      "share": 0.1387
+    },
+    {
+      "player_id": 34526,
+      "display_name": "Marc Guehi",
+      "team": "England",
+      "on_ball_events": 245,
+      "under_pressure_events": 31,
+      "share": 0.1265
+    },
+    {
+      "player_id": 3205,
+      "display_name": "Kyle Walker",
+      "team": "England",
+      "on_ball_events": 186,
+      "under_pressure_events": 23,
+      "share": 0.1237
+    },
+    {
+      "player_id": 3244,
+      "display_name": "John Stones",
+      "team": "England",
+      "on_ball_events": 256,
+      "under_pressure_events": 30,
+      "share": 0.1172
+    },
+    {
+      "player_id": 3822,
+      "display_name": "Ezri Konsa",
+      "team": "England",
+      "on_ball_events": 9,
+      "under_pressure_events": 1,
+      "share": 0.1111
+    },
+    {
+      "player_id": 3308,
+      "display_name": "Kieran Trippier",
+      "team": "England",
+      "on_ball_events": 156,
+      "under_pressure_events": 17,
+      "share": 0.109
+    }
+  ],
+  "metadata": {
+    "match_id": 3941017,
+    "competition": "UEFA Euro 2024",
+    "match_label": "England vs Slovakia",
+    "open_play_filter": "play_pattern + pass_type",
+    "ppda_zone": "opponent's own 60% (x < 72 in the opponent's own frame)",
+    "defensive_action_zone": "pressing team's own half+ (x >= 48 in its own frame)",
+    "pressures_high_zone": "opponent half (x >= 60 in the pressing team's own frame)"
+  }
+}

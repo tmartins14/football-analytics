@@ -1,0 +1,131 @@
+{
+  "team": "Spain",
+  "shots": {
+    "non_penalty_count": 11,
+    "total_npxg": 1.567183,
+    "by_zone": {
+      "six_yard_box": {
+        "npxg": 0.318753,
+        "count": 2
+      },
+      "box_central": {
+        "npxg": 1.112233,
+        "count": 5
+      },
+      "box_wide": {
+        "npxg": 0.012741,
+        "count": 1
+      },
+      "outside_box": {
+        "npxg": 0.123455,
+        "count": 3
+      }
+    },
+    "by_source": {
+      "open_play": {
+        "npxg": 0.848957,
+        "count": 6
+      },
+      "counter": {
+        "npxg": 0.0,
+        "count": 0
+      },
+      "set_piece": {
+        "npxg": 0.718225,
+        "count": 5
+      },
+      "other": {
+        "npxg": 0.0,
+        "count": 0
+      }
+    }
+  },
+  "shot_assists": {
+    "total_count": 10,
+    "by_side_and_type": {
+      "left": {
+        "cross": 1,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 3
+      },
+      "centre": {
+        "cross": 0,
+        "cut_back": 0,
+        "through_ball": 1,
+        "other": 2
+      },
+      "right": {
+        "cross": 1,
+        "cut_back": 0,
+        "through_ball": 0,
+        "other": 2
+      }
+    }
+  },
+  "creators": [
+    {
+      "player_id": 316046,
+      "display_name": "Lamine Yamal",
+      "xa": 0.56504,
+      "key_passes": 3,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 6655,
+      "display_name": "Fabi\u00e1n Ruiz",
+      "xa": 0.42534,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 30486,
+      "display_name": "Pedri",
+      "xa": 0.385889,
+      "key_passes": 3,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 68574,
+      "display_name": "Nico Williams",
+      "xa": 0.108392,
+      "key_passes": 1,
+      "passes_into_box": 1
+    },
+    {
+      "player_id": 5202,
+      "display_name": "Nacho",
+      "xa": 0.027441,
+      "key_passes": 1,
+      "passes_into_box": 0
+    },
+    {
+      "player_id": 6685,
+      "display_name": "Mikel Oyarzabal",
+      "xa": 0.012741,
+      "key_passes": 1,
+      "passes_into_box": 0
+    }
+  ],
+  "metadata": {
+    "match_id": 3930160,
+    "team": "Spain",
+    "competition": "UEFA Euro 2024",
+    "match_label": "Spain vs Croatia",
+    "zone_filter": "statsbomb_120x80_own_attack_right_frame",
+    "source_grouping": {
+      "open_play": [
+        "Regular Play"
+      ],
+      "counter": [
+        "From Counter"
+      ],
+      "set_piece": [
+        "From Corner",
+        "From Free Kick",
+        "From Throw In"
+      ],
+      "other": "every other play_pattern (From Goal Kick, From Kick Off, From Keeper, Other)"
+    }
+  }
+}

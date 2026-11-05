@@ -1,0 +1,289 @@
+{
+  "teams": {
+    "Croatia": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 145,
+        "defensive_actions_advanced": 26,
+        "value": 5.5769
+      },
+      "pressures_high": {
+        "count": 103,
+        "opponent_open_play_passes": 181,
+        "per_100": 56.91
+      },
+      "pressure_side": {
+        "left": 76,
+        "centre": 58,
+        "right": 52
+      }
+    },
+    "Italy": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 149,
+        "defensive_actions_advanced": 11,
+        "value": 13.5455
+      },
+      "pressures_high": {
+        "count": 65,
+        "opponent_open_play_passes": 214,
+        "per_100": 30.37
+      },
+      "pressure_side": {
+        "left": 56,
+        "centre": 26,
+        "right": 57
+      }
+    }
+  },
+  "pressure_received": [
+    {
+      "player_id": 8792,
+      "display_name": "Mattia Zaccagni",
+      "team": "Italy",
+      "on_ball_events": 13,
+      "under_pressure_events": 6,
+      "share": 0.4615
+    },
+    {
+      "player_id": 29163,
+      "display_name": "Josip Juranovi\u0107",
+      "team": "Croatia",
+      "on_ball_events": 9,
+      "under_pressure_events": 4,
+      "share": 0.4444
+    },
+    {
+      "player_id": 11603,
+      "display_name": "Mario Pa\u0161ali\u0107",
+      "team": "Croatia",
+      "on_ball_events": 31,
+      "under_pressure_events": 13,
+      "share": 0.4194
+    },
+    {
+      "player_id": 31093,
+      "display_name": "Mateo Retegui",
+      "team": "Italy",
+      "on_ball_events": 62,
+      "under_pressure_events": 25,
+      "share": 0.4032
+    },
+    {
+      "player_id": 6963,
+      "display_name": "Lorenzo Pellegrini",
+      "team": "Italy",
+      "on_ball_events": 64,
+      "under_pressure_events": 25,
+      "share": 0.3906
+    },
+    {
+      "player_id": 25048,
+      "display_name": "Giacomo Raspadori",
+      "team": "Italy",
+      "on_ball_events": 80,
+      "under_pressure_events": 31,
+      "share": 0.3875
+    },
+    {
+      "player_id": 28368,
+      "display_name": "Luka Ivanu\u0161ec",
+      "team": "Croatia",
+      "on_ball_events": 24,
+      "under_pressure_events": 7,
+      "share": 0.2917
+    },
+    {
+      "player_id": 30926,
+      "display_name": "Davide Frattesi",
+      "team": "Italy",
+      "on_ball_events": 49,
+      "under_pressure_events": 14,
+      "share": 0.2857
+    },
+    {
+      "player_id": 5460,
+      "display_name": "Andrej Kramari\u0107",
+      "team": "Croatia",
+      "on_ball_events": 73,
+      "under_pressure_events": 20,
+      "share": 0.274
+    },
+    {
+      "player_id": 10992,
+      "display_name": "Gianluca Scamacca",
+      "team": "Italy",
+      "on_ball_events": 22,
+      "under_pressure_events": 6,
+      "share": 0.2727
+    },
+    {
+      "player_id": 33018,
+      "display_name": "Jo\u0161ko Gvardiol",
+      "team": "Croatia",
+      "on_ball_events": 131,
+      "under_pressure_events": 34,
+      "share": 0.2595
+    },
+    {
+      "player_id": 38909,
+      "display_name": "Nicol\u00f2 Fagioli",
+      "team": "Italy",
+      "on_ball_events": 28,
+      "under_pressure_events": 7,
+      "share": 0.25
+    },
+    {
+      "player_id": 7480,
+      "display_name": "Alessandro Bastoni",
+      "team": "Italy",
+      "on_ball_events": 165,
+      "under_pressure_events": 40,
+      "share": 0.2424
+    },
+    {
+      "player_id": 39490,
+      "display_name": "Luka Su\u010di\u0107",
+      "team": "Croatia",
+      "on_ball_events": 91,
+      "under_pressure_events": 22,
+      "share": 0.2418
+    },
+    {
+      "player_id": 8654,
+      "display_name": "Ante Budimir",
+      "team": "Croatia",
+      "on_ball_events": 43,
+      "under_pressure_events": 10,
+      "share": 0.2326
+    },
+    {
+      "player_id": 5463,
+      "display_name": "Luka Modri\u0107",
+      "team": "Croatia",
+      "on_ball_events": 138,
+      "under_pressure_events": 30,
+      "share": 0.2174
+    },
+    {
+      "player_id": 8773,
+      "display_name": "Marin Pongracic",
+      "team": "Croatia",
+      "on_ball_events": 150,
+      "under_pressure_events": 29,
+      "share": 0.1933
+    },
+    {
+      "player_id": 8181,
+      "display_name": "Nicol\u00f2 Barella",
+      "team": "Italy",
+      "on_ball_events": 188,
+      "under_pressure_events": 36,
+      "share": 0.1915
+    },
+    {
+      "player_id": 12255,
+      "display_name": "Federico Dimarco",
+      "team": "Italy",
+      "on_ball_events": 64,
+      "under_pressure_events": 12,
+      "share": 0.1875
+    },
+    {
+      "player_id": 7156,
+      "display_name": "Federico Chiesa",
+      "team": "Italy",
+      "on_ball_events": 66,
+      "under_pressure_events": 12,
+      "share": 0.1818
+    },
+    {
+      "player_id": 49337,
+      "display_name": "Josip Stani\u0161i\u0107",
+      "team": "Croatia",
+      "on_ball_events": 165,
+      "under_pressure_events": 28,
+      "share": 0.1697
+    },
+    {
+      "player_id": 5474,
+      "display_name": "Ivan Peri\u0161i\u0107",
+      "team": "Croatia",
+      "on_ball_events": 18,
+      "under_pressure_events": 3,
+      "share": 0.1667
+    },
+    {
+      "player_id": 5469,
+      "display_name": "Marcelo Brozovi\u0107",
+      "team": "Croatia",
+      "on_ball_events": 143,
+      "under_pressure_events": 23,
+      "share": 0.1608
+    },
+    {
+      "player_id": 7024,
+      "display_name": "Jorginho",
+      "team": "Italy",
+      "on_ball_events": 170,
+      "under_pressure_events": 27,
+      "share": 0.1588
+    },
+    {
+      "player_id": 41768,
+      "display_name": "Riccardo Calafiori",
+      "team": "Italy",
+      "on_ball_events": 146,
+      "under_pressure_events": 22,
+      "share": 0.1507
+    },
+    {
+      "player_id": 5456,
+      "display_name": "Mateo Kova\u010di\u0107",
+      "team": "Croatia",
+      "on_ball_events": 96,
+      "under_pressure_events": 14,
+      "share": 0.1458
+    },
+    {
+      "player_id": 28914,
+      "display_name": "Lovro Majer",
+      "team": "Croatia",
+      "on_ball_events": 28,
+      "under_pressure_events": 4,
+      "share": 0.1429
+    },
+    {
+      "player_id": 11514,
+      "display_name": "Giovanni Di Lorenzo",
+      "team": "Italy",
+      "on_ball_events": 150,
+      "under_pressure_events": 20,
+      "share": 0.1333
+    },
+    {
+      "player_id": 37148,
+      "display_name": "Josip \u0160utalo",
+      "team": "Croatia",
+      "on_ball_events": 159,
+      "under_pressure_events": 19,
+      "share": 0.1195
+    },
+    {
+      "player_id": 4587,
+      "display_name": "Matteo Darmian",
+      "team": "Italy",
+      "on_ball_events": 106,
+      "under_pressure_events": 11,
+      "share": 0.1038
+    }
+  ],
+  "metadata": {
+    "match_id": 3930178,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Croatia vs Italy",
+    "open_play_filter": "play_pattern + pass_type",
+    "ppda_zone": "opponent's own 60% (x < 72 in the opponent's own frame)",
+    "defensive_action_zone": "pressing team's own half+ (x >= 48 in its own frame)",
+    "pressures_high_zone": "opponent half (x >= 60 in the pressing team's own frame)"
+  }
+}

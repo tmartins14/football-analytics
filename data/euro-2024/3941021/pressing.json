@@ -1,0 +1,289 @@
+{
+  "teams": {
+    "Netherlands": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 71,
+        "defensive_actions_advanced": 14,
+        "value": 5.0714
+      },
+      "pressures_high": {
+        "count": 33,
+        "opponent_open_play_passes": 83,
+        "per_100": 39.76
+      },
+      "pressure_side": {
+        "left": 31,
+        "centre": 11,
+        "right": 33
+      }
+    },
+    "Romania": {
+      "ppda": {
+        "opponent_passes_attempted_deep": 108,
+        "defensive_actions_advanced": 11,
+        "value": 9.8182
+      },
+      "pressures_high": {
+        "count": 59,
+        "opponent_open_play_passes": 151,
+        "per_100": 39.07
+      },
+      "pressure_side": {
+        "left": 65,
+        "centre": 35,
+        "right": 46
+      }
+    }
+  },
+  "pressure_received": [
+    {
+      "player_id": 7829,
+      "display_name": "Wout Weghorst",
+      "team": "Netherlands",
+      "on_ball_events": 11,
+      "under_pressure_events": 6,
+      "share": 0.5455
+    },
+    {
+      "player_id": 72512,
+      "display_name": "Valentin Mihai Mih\u0103il\u0103",
+      "team": "Romania",
+      "on_ball_events": 14,
+      "under_pressure_events": 7,
+      "share": 0.5
+    },
+    {
+      "player_id": 15582,
+      "display_name": "Donyell Malen",
+      "team": "Netherlands",
+      "on_ball_events": 57,
+      "under_pressure_events": 28,
+      "share": 0.4912
+    },
+    {
+      "player_id": 2988,
+      "display_name": "Memphis Depay",
+      "team": "Netherlands",
+      "on_ball_events": 95,
+      "under_pressure_events": 38,
+      "share": 0.4
+    },
+    {
+      "player_id": 8259,
+      "display_name": "Steven Bergwijn",
+      "team": "Netherlands",
+      "on_ball_events": 58,
+      "under_pressure_events": 20,
+      "share": 0.3448
+    },
+    {
+      "player_id": 20750,
+      "display_name": "Cody Gakpo",
+      "team": "Netherlands",
+      "on_ball_events": 61,
+      "under_pressure_events": 19,
+      "share": 0.3115
+    },
+    {
+      "player_id": 16344,
+      "display_name": "R\u0103zvan Marin",
+      "team": "Romania",
+      "on_ball_events": 82,
+      "under_pressure_events": 24,
+      "share": 0.2927
+    },
+    {
+      "player_id": 56905,
+      "display_name": "Dennis Man",
+      "team": "Romania",
+      "on_ball_events": 62,
+      "under_pressure_events": 18,
+      "share": 0.2903
+    },
+    {
+      "player_id": 31193,
+      "display_name": "Denis Dragus",
+      "team": "Romania",
+      "on_ball_events": 70,
+      "under_pressure_events": 20,
+      "share": 0.2857
+    },
+    {
+      "player_id": 8125,
+      "display_name": "Denzel Dumfries",
+      "team": "Netherlands",
+      "on_ball_events": 125,
+      "under_pressure_events": 34,
+      "share": 0.272
+    },
+    {
+      "player_id": 39167,
+      "display_name": "Xavi Simons",
+      "team": "Netherlands",
+      "on_ball_events": 96,
+      "under_pressure_events": 26,
+      "share": 0.2708
+    },
+    {
+      "player_id": 31908,
+      "display_name": "Andrei Burc\u0103 Andonie",
+      "team": "Romania",
+      "on_ball_events": 82,
+      "under_pressure_events": 20,
+      "share": 0.2439
+    },
+    {
+      "player_id": 39615,
+      "display_name": "Radu Dragusin",
+      "team": "Romania",
+      "on_ball_events": 68,
+      "under_pressure_events": 16,
+      "share": 0.2353
+    },
+    {
+      "player_id": 10915,
+      "display_name": "Denis Alibec",
+      "team": "Romania",
+      "on_ball_events": 9,
+      "under_pressure_events": 2,
+      "share": 0.2222
+    },
+    {
+      "player_id": 28565,
+      "display_name": "Ianis Hagi",
+      "team": "Romania",
+      "on_ball_events": 63,
+      "under_pressure_events": 13,
+      "share": 0.2063
+    },
+    {
+      "player_id": 15503,
+      "display_name": "Jerdy Schouten",
+      "team": "Netherlands",
+      "on_ball_events": 107,
+      "under_pressure_events": 21,
+      "share": 0.1963
+    },
+    {
+      "player_id": 21582,
+      "display_name": "Tijjani Reijnders",
+      "team": "Netherlands",
+      "on_ball_events": 168,
+      "under_pressure_events": 32,
+      "share": 0.1905
+    },
+    {
+      "player_id": 30839,
+      "display_name": "Vasile Mogos",
+      "team": "Romania",
+      "on_ball_events": 11,
+      "under_pressure_events": 2,
+      "share": 0.1818
+    },
+    {
+      "player_id": 24861,
+      "display_name": "Andrei Ratiu",
+      "team": "Romania",
+      "on_ball_events": 64,
+      "under_pressure_events": 11,
+      "share": 0.1719
+    },
+    {
+      "player_id": 7787,
+      "display_name": "Stefan de Vrij",
+      "team": "Netherlands",
+      "on_ball_events": 149,
+      "under_pressure_events": 22,
+      "share": 0.1477
+    },
+    {
+      "player_id": 10916,
+      "display_name": "Nicolae Stanciu",
+      "team": "Romania",
+      "on_ball_events": 67,
+      "under_pressure_events": 9,
+      "share": 0.1343
+    },
+    {
+      "player_id": 45125,
+      "display_name": "Alexandru Cic\u00e2ld\u0103u",
+      "team": "Romania",
+      "on_ball_events": 16,
+      "under_pressure_events": 2,
+      "share": 0.125
+    },
+    {
+      "player_id": 45023,
+      "display_name": "Bogdan Racovi\u021ban",
+      "team": "Romania",
+      "on_ball_events": 66,
+      "under_pressure_events": 8,
+      "share": 0.1212
+    },
+    {
+      "player_id": 3669,
+      "display_name": "Virgil van Dijk",
+      "team": "Netherlands",
+      "on_ball_events": 124,
+      "under_pressure_events": 15,
+      "share": 0.121
+    },
+    {
+      "player_id": 30913,
+      "display_name": "Marius Marin",
+      "team": "Romania",
+      "on_ball_events": 67,
+      "under_pressure_events": 8,
+      "share": 0.1194
+    },
+    {
+      "player_id": 32547,
+      "display_name": "Micky van de Ven",
+      "team": "Netherlands",
+      "on_ball_events": 20,
+      "under_pressure_events": 2,
+      "share": 0.1
+    },
+    {
+      "player_id": 21633,
+      "display_name": "Joey Veerman",
+      "team": "Netherlands",
+      "on_ball_events": 26,
+      "under_pressure_events": 2,
+      "share": 0.0769
+    },
+    {
+      "player_id": 3306,
+      "display_name": "Nathan Ak\u00e9",
+      "team": "Netherlands",
+      "on_ball_events": 80,
+      "under_pressure_events": 6,
+      "share": 0.075
+    },
+    {
+      "player_id": 3311,
+      "display_name": "Daley Blind",
+      "team": "Netherlands",
+      "on_ball_events": 0,
+      "under_pressure_events": 0,
+      "share": 0.0
+    },
+    {
+      "player_id": 101821,
+      "display_name": "Darius Dumitru Olaru",
+      "team": "Romania",
+      "on_ball_events": 3,
+      "under_pressure_events": 0,
+      "share": 0.0
+    }
+  ],
+  "metadata": {
+    "match_id": 3941021,
+    "competition": "UEFA Euro 2024",
+    "match_label": "Romania vs Netherlands",
+    "open_play_filter": "play_pattern + pass_type",
+    "ppda_zone": "opponent's own 60% (x < 72 in the opponent's own frame)",
+    "defensive_action_zone": "pressing team's own half+ (x >= 48 in its own frame)",
+    "pressures_high_zone": "opponent half (x >= 60 in the pressing team's own frame)"
+  }
+}
