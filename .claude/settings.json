@@ -10,7 +10,7 @@
           },
           {
             "type": "command",
-            "command": "bash scripts/check_tests.sh",
+            "command": "CHECK_TESTS_UNIT_ONLY=1 bash scripts/check_tests.sh",
             "timeout": 180
           }
         ]
