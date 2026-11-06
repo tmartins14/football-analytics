@@ -189,6 +189,20 @@ bash scripts/check_tests.sh; echo "exit: $?"
 - Exit 0 → everything passes.
 - Exit 2 → something failed; reasons are printed above the summary line.
 
+## Running the gates
+
+- **`CHECK_TESTS_UNIT_ONLY=1`** makes `check_tests.sh` pass `-m "not integration"`
+  to pytest, skipping tests marked `integration` (they call the live StatsBomb
+  API). The Claude Code Stop hook sets it. Pre-commit and CI run the full suite.
+  ```bash
+  CHECK_TESTS_UNIT_ONLY=1 bash scripts/check_tests.sh
+  ```
+- **JS bootstrap.** Both `check_tests.sh` and `check_docs.sh` run `npm ci` when
+  `node_modules` is missing (cloud sessions start without it), installing from
+  the lockfile. They then call `npx --no-install`, so nothing unpinned is ever
+  downloaded: a tool missing from the lockfile fails the gate instead of being
+  fetched.
+
 ## Extending the gate
 
 - **Not built now:** a required test-coverage percentage. `check_tests.sh` gates
