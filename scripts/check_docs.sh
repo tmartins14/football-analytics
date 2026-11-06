@@ -38,10 +38,16 @@ else
   fail=1
 fi
 
+# JS deps. Cloud sessions start without node_modules. Install from the lockfile so
+# npx never downloads an unpinned tool.
+if [ ! -d node_modules ] && command -v npm >/dev/null 2>&1; then
+  npm ci --no-audit --no-fund 1>&2 || { err "✗ npm ci failed"; fail=1; }
+fi
+
 # 2. JS/D3 JSDoc — enforced by your eslint config + eslint-plugin-jsdoc.
 if [ -d "$JS_DIR" ]; then
   if command -v npx >/dev/null 2>&1; then
-    if ! npx eslint "$JS_DIR" 1>&2; then
+    if ! npx --no-install eslint "$JS_DIR" 1>&2; then
       err "✗ JSDoc/ESLint failed in ${JS_DIR}/  (require jsdoc on exported functions)"
       fail=1
     fi
