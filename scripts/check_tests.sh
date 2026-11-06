@@ -20,11 +20,15 @@ set -uo pipefail
 PY_RUNNER="uv run"   # how to invoke Python tools (uv, per stack)
 
 fail=0
+PYTEST_ARGS=(-q)
+# CHECK_TESTS_UNIT_ONLY=1 skips tests marked "integration" (live StatsBomb API).
+# The Claude Code Stop hook sets it; pre-commit and CI keep the full suite.
+if [ "${CHECK_TESTS_UNIT_ONLY:-0}" = "1" ]; then PYTEST_ARGS+=(-m "not integration"); fi
 err() { printf '%s\n' "$*" >&2; }
 
 # 1. Python tests (pytest) — unit + integration (tests/ dir, per pyproject.toml).
 if command -v "${PY_RUNNER%% *}" >/dev/null 2>&1; then
-  if ! $PY_RUNNER pytest -q; then
+  if ! $PY_RUNNER pytest "${PYTEST_ARGS[@]}"; then
     err "✗ Python tests failed  (detail: ${PY_RUNNER} pytest -v)"
     fail=1
   fi

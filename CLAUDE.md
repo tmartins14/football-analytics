@@ -71,3 +71,8 @@ These apply to every agent session in this repo, local or cloud. They add to the
 - Anything that needs Tyler gets the label `needs-ceo`. Use one shape: two lines of context, two or three options, your recommendation, and what happens if he stays silent.
 - Never publish publicly in this project's name, spend money, or sign up for a service.
 - Log recurring friction in the PR description under a "Friction" heading, so it can be copied to `hq/FRICTION.md`.
+
+### gstack skills
+- Never file GitHub issues, spawn agents or worktrees, run outside or Codex reviews, or fetch from the network from a gstack skill.
+- Run `/review` report-only. Do not enable cross-project learnings.
+- Keep skill scratch output outside the repo.
