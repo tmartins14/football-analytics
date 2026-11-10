@@ -47,3 +47,4 @@ jobs:
           claude_args: |
             --model claude-sonnet-5-5
             --max-turns 30
+            --allowedTools "Bash(bash scripts/check_docs.sh),Bash(bash scripts/check_tests.sh),Bash(uv run pytest:*),Bash(uv run ruff:*)"
